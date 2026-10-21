@@ -506,15 +506,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_2"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2.dds"
+		name = "GFX_pl2027_081_granica_1"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2.dds"
+		name = "GFX_pl2027_081_granica_1_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_2.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -594,15 +594,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_1"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_1.dds"
+		name = "GFX_pl2027_081_granica_2"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_1_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_1.dds"
+		name = "GFX_pl2027_081_granica_2_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_2.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_1.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -1386,6 +1386,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_wojna_4"
+		texturefile = "gfx/interface/goals/pl2027_081/wojna_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojna_4_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wojna_4.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wojna_4.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_ofensywa_0"
 		texturefile = "gfx/interface/goals/pl2027_081/ofensywa_0.dds"
 	}
@@ -2055,6 +2077,116 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/korona_2_bst_f.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pomoc_1"
+		texturefile = "gfx/interface/goals/pl2027_081/pomoc_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pomoc_1_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/pomoc_1.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/pomoc_1.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_1_bst"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_1_bst.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_1_bst_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_1_bst.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wojsko_1_bst.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_mapa_3_bst_k"
+		texturefile = "gfx/interface/goals/pl2027_081/mapa_3_bst_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_mapa_3_bst_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/mapa_3_bst_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_3_bst_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojna_1_bst"
+		texturefile = "gfx/interface/goals/pl2027_081/wojna_1_bst.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojna_1_bst_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wojna_1_bst.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wojna_1_bst.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_szpital_0_bst_k"
+		texturefile = "gfx/interface/goals/pl2027_081/szpital_0_bst_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_szpital_0_bst_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/szpital_0_bst_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/szpital_0_bst_k.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3630,6 +3762,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_parlament_0_trn"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_trn.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_0_trn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_trn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_0_trn.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_konstytucja_0"
 		texturefile = "gfx/interface/goals/pl2027_081/konstytucja_0.dds"
 	}
@@ -3806,15 +3960,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_0_trn"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_trn.dds"
+		name = "GFX_pl2027_081_parlament_1_trn"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_trn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_0_trn_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_trn.dds"
+		name = "GFX_pl2027_081_parlament_1_trn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_trn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_0_trn.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_1_trn.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3850,15 +4004,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_1_trn"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_trn.dds"
+		name = "GFX_pl2027_081_parlament_2_trn"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_trn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_1_trn_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_trn.dds"
+		name = "GFX_pl2027_081_parlament_2_trn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_trn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_1_trn.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_2_trn.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -3960,28 +4114,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_2_trn"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_trn.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_parlament_2_trn_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_trn.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_2_trn.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
 		name = "GFX_pl2027_081_mapa_2_trn"
 		texturefile = "gfx/interface/goals/pl2027_081/mapa_2_trn.dds"
 	}
@@ -4048,15 +4180,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_1_trn_f"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_trn_f.dds"
+		name = "GFX_pl2027_081_parlament_2_trn_f"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_trn_f.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_1_trn_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_trn_f.dds"
+		name = "GFX_pl2027_081_parlament_2_trn_f_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_trn_f.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_1_trn_f.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_2_trn_f.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -4950,6 +5082,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_rada_1_byd_k"
+		texturefile = "gfx/interface/goals/pl2027_081/rada_1_byd_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_rada_1_byd_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/rada_1_byd_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/rada_1_byd_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_bankiet_0"
 		texturefile = "gfx/interface/goals/pl2027_081/bankiet_0.dds"
 	}
@@ -4994,15 +5148,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_rada_1_byd_k"
-		texturefile = "gfx/interface/goals/pl2027_081/rada_1_byd_k.dds"
+		name = "GFX_pl2027_081_rada_2_byd_k"
+		texturefile = "gfx/interface/goals/pl2027_081/rada_2_byd_k.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_rada_1_byd_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/rada_1_byd_k.dds"
+		name = "GFX_pl2027_081_rada_2_byd_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/rada_2_byd_k.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/rada_1_byd_k.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/rada_2_byd_k.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5038,15 +5192,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_rada_2_byd_k"
-		texturefile = "gfx/interface/goals/pl2027_081/rada_2_byd_k.dds"
+		name = "GFX_pl2027_081_rada_0_byd_k"
+		texturefile = "gfx/interface/goals/pl2027_081/rada_0_byd_k.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_rada_2_byd_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/rada_2_byd_k.dds"
+		name = "GFX_pl2027_081_rada_0_byd_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/rada_0_byd_k.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/rada_2_byd_k.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/rada_0_byd_k.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5104,28 +5258,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_rada_0_byd_k"
-		texturefile = "gfx/interface/goals/pl2027_081/rada_0_byd_k.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_rada_0_byd_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/rada_0_byd_k.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/rada_0_byd_k.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
 		name = "GFX_pl2027_081_polska_0_byd"
 		texturefile = "gfx/interface/goals/pl2027_081/polska_0_byd.dds"
 	}
@@ -5148,15 +5280,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_ludzie_2"
-		texturefile = "gfx/interface/goals/pl2027_081/ludzie_2.dds"
+		name = "GFX_pl2027_081_czas_0"
+		texturefile = "gfx/interface/goals/pl2027_081/czas_0.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_ludzie_2_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/ludzie_2.dds"
+		name = "GFX_pl2027_081_czas_0_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/czas_0.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/ludzie_2.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/czas_0.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5170,15 +5302,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_0_pmn"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_pmn.dds"
+		name = "GFX_pl2027_081_port_2"
+		texturefile = "gfx/interface/goals/pl2027_081/port_2.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_0_pmn_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_pmn.dds"
+		name = "GFX_pl2027_081_port_2_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/port_2.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_0_pmn.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/port_2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5192,15 +5324,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_most_1"
-		texturefile = "gfx/interface/goals/pl2027_081/most_1.dds"
+		name = "GFX_pl2027_081_budowa_2_pmn_k"
+		texturefile = "gfx/interface/goals/pl2027_081/budowa_2_pmn_k.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_most_1_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/most_1.dds"
+		name = "GFX_pl2027_081_budowa_2_pmn_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/budowa_2_pmn_k.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/most_1.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/budowa_2_pmn_k.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5214,15 +5346,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_szpital_1"
-		texturefile = "gfx/interface/goals/pl2027_081/szpital_1.dds"
+		name = "GFX_pl2027_081_budowa_3"
+		texturefile = "gfx/interface/goals/pl2027_081/budowa_3.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_szpital_1_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/szpital_1.dds"
+		name = "GFX_pl2027_081_budowa_3_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/budowa_3.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/szpital_1.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/budowa_3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5236,15 +5368,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_energia_4_f"
-		texturefile = "gfx/interface/goals/pl2027_081/energia_4_f.dds"
+		name = "GFX_pl2027_081_polska_0_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/polska_0_pmn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_energia_4_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/energia_4_f.dds"
+		name = "GFX_pl2027_081_polska_0_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/polska_0_pmn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/energia_4_f.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/polska_0_pmn.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5258,15 +5390,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_droga_0_pmn_k"
-		texturefile = "gfx/interface/goals/pl2027_081/droga_0_pmn_k.dds"
+		name = "GFX_pl2027_081_sojusz_0_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_0_pmn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_droga_0_pmn_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/droga_0_pmn_k.dds"
+		name = "GFX_pl2027_081_sojusz_0_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_0_pmn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/droga_0_pmn_k.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sojusz_0_pmn.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5280,15 +5412,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_porzadek_2"
-		texturefile = "gfx/interface/goals/pl2027_081/porzadek_2.dds"
+		name = "GFX_pl2027_081_sojusz_1_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_1_pmn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_porzadek_2_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/porzadek_2.dds"
+		name = "GFX_pl2027_081_sojusz_1_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_1_pmn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/porzadek_2.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sojusz_1_pmn.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5302,103 +5434,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_mapa_1_pmn_f"
-		texturefile = "gfx/interface/goals/pl2027_081/mapa_1_pmn_f.dds"
+		name = "GFX_pl2027_081_budowa_4_pmn_k"
+		texturefile = "gfx/interface/goals/pl2027_081/budowa_4_pmn_k.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_mapa_1_pmn_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/mapa_1_pmn_f.dds"
+		name = "GFX_pl2027_081_budowa_4_pmn_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/budowa_4_pmn_k.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_1_pmn_f.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_orzel_1_pmn_k"
-		texturefile = "gfx/interface/goals/pl2027_081/orzel_1_pmn_k.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_orzel_1_pmn_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/orzel_1_pmn_k.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/orzel_1_pmn_k.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_szkola_1"
-		texturefile = "gfx/interface/goals/pl2027_081/szkola_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_szkola_1_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/szkola_1.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/szkola_1.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_gwardia_0_pmn"
-		texturefile = "gfx/interface/goals/pl2027_081/gwardia_0_pmn.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_gwardia_0_pmn_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/gwardia_0_pmn.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/gwardia_0_pmn.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_wywiad_2"
-		texturefile = "gfx/interface/goals/pl2027_081/wywiad_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_wywiad_2_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/wywiad_2.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/wywiad_2.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/budowa_4_pmn_k.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5434,15 +5478,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_dyplomacja_5_f"
-		texturefile = "gfx/interface/goals/pl2027_081/dyplomacja_5_f.dds"
+		name = "GFX_pl2027_081_mapa_1_pmn_k"
+		texturefile = "gfx/interface/goals/pl2027_081/mapa_1_pmn_k.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_dyplomacja_5_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/dyplomacja_5_f.dds"
+		name = "GFX_pl2027_081_mapa_1_pmn_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/mapa_1_pmn_k.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/dyplomacja_5_f.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_1_pmn_k.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5456,15 +5500,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_pmn"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2_pmn.dds"
+		name = "GFX_pl2027_081_wojsko_0_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_0_pmn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_pmn_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2_pmn.dds"
+		name = "GFX_pl2027_081_wojsko_0_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_0_pmn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_2_pmn.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wojsko_0_pmn.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5478,15 +5522,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_pmn_k"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2_pmn_k.dds"
+		name = "GFX_pl2027_081_oficer_0_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/oficer_0_pmn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_pmn_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2_pmn_k.dds"
+		name = "GFX_pl2027_081_oficer_0_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/oficer_0_pmn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_2_pmn_k.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/oficer_0_pmn.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5500,15 +5544,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_3_pmn_k"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_3_pmn_k.dds"
+		name = "GFX_pl2027_081_kolej_1"
+		texturefile = "gfx/interface/goals/pl2027_081/kolej_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_3_pmn_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_3_pmn_k.dds"
+		name = "GFX_pl2027_081_kolej_1_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/kolej_1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_3_pmn_k.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/kolej_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5522,37 +5566,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_1_pmn"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_1_pmn.dds"
+		name = "GFX_pl2027_081_granica_0_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_0_pmn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_1_pmn_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_1_pmn.dds"
+		name = "GFX_pl2027_081_granica_0_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_0_pmn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_1_pmn.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_most_1_f"
-		texturefile = "gfx/interface/goals/pl2027_081/most_1_f.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_most_1_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/most_1_f.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/most_1_f.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_0_pmn.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5720,15 +5742,125 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_zawodowa_1_pmn_f"
-		texturefile = "gfx/interface/goals/pl2027_081/zawodowa_1_pmn_f.dds"
+		name = "GFX_pl2027_081_zawodowa_1_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/zawodowa_1_pmn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_zawodowa_1_pmn_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/zawodowa_1_pmn_f.dds"
+		name = "GFX_pl2027_081_zawodowa_1_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/zawodowa_1_pmn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/zawodowa_1_pmn_f.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/zawodowa_1_pmn.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sztab_0_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/sztab_0_pmn.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sztab_0_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sztab_0_pmn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sztab_0_pmn.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_ofensywa_3_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/ofensywa_3_pmn.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_ofensywa_3_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/ofensywa_3_pmn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/ofensywa_3_pmn.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_integracja_1_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/integracja_1_pmn.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_integracja_1_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/integracja_1_pmn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/integracja_1_pmn.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_ofensywa_1_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/ofensywa_1_pmn.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_ofensywa_1_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/ofensywa_1_pmn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/ofensywa_1_pmn.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_korona_0_pmn_f"
+		texturefile = "gfx/interface/goals/pl2027_081/korona_0_pmn_f.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_korona_0_pmn_f_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/korona_0_pmn_f.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/korona_0_pmn_f.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5773,28 +5905,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/handel_1_pmn_k.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_wspolnota_1_f"
-		texturefile = "gfx/interface/goals/pl2027_081/wspolnota_1_f.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_wspolnota_1_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/wspolnota_1_f.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/wspolnota_1_f.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5896,15 +6006,653 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_wyposazenie_2_f"
-		texturefile = "gfx/interface/goals/pl2027_081/wyposazenie_2_f.dds"
+		name = "GFX_pl2027_081_gotowosc_0_pmn"
+		texturefile = "gfx/interface/goals/pl2027_081/gotowosc_0_pmn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_wyposazenie_2_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/wyposazenie_2_f.dds"
+		name = "GFX_pl2027_081_gotowosc_0_pmn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/gotowosc_0_pmn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/wyposazenie_2_f.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/gotowosc_0_pmn.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_las_0"
+		texturefile = "gfx/interface/goals/pl2027_081/las_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_las_0_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/las_0.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/las_0.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_energia_0"
+		texturefile = "gfx/interface/goals/pl2027_081/energia_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_energia_0_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/energia_0.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/energia_0.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_granica_0_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_0_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_granica_0_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_0_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_0_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_budowa_1_sls_k"
+		texturefile = "gfx/interface/goals/pl2027_081/budowa_1_sls_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_budowa_1_sls_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/budowa_1_sls_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/budowa_1_sls_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_most_0_sls_k"
+		texturefile = "gfx/interface/goals/pl2027_081/most_0_sls_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_most_0_sls_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/most_0_sls_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/most_0_sls_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_energia_1"
+		texturefile = "gfx/interface/goals/pl2027_081/energia_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_energia_1_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/energia_1.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/energia_1.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_0_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_0_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_0_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_0_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_0_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_0_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_0_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wojsko_0_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_twierdza_0_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/twierdza_0_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_twierdza_0_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/twierdza_0_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/twierdza_0_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sztab_0_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/sztab_0_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sztab_0_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sztab_0_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sztab_0_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sztab_1_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sztab_1_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sztab_1_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pobor_1_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/pobor_1_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pobor_1_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/pobor_1_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_1_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pobor_3_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/pobor_3_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pobor_3_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/pobor_3_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_3_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pobor_2_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/pobor_2_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pobor_2_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/pobor_2_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_2_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_4_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_4_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_4_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_4_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wojsko_4_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_obrona_terytorialna_1_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/obrona_terytorialna_1_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_obrona_terytorialna_1_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/obrona_terytorialna_1_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/obrona_terytorialna_1_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_oficer_1_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/oficer_1_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_oficer_1_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/oficer_1_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/oficer_1_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_zawodowa_1_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/zawodowa_1_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_zawodowa_1_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/zawodowa_1_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/zawodowa_1_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_ofensywa_3_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/ofensywa_3_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_ofensywa_3_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/ofensywa_3_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/ofensywa_3_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_integracja_1_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/integracja_1_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_integracja_1_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/integracja_1_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/integracja_1_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_ofensywa_1_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/ofensywa_1_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_ofensywa_1_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/ofensywa_1_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/ofensywa_1_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_korona_0_sls_f"
+		texturefile = "gfx/interface/goals/pl2027_081/korona_0_sls_f.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_korona_0_sls_f_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/korona_0_sls_f.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/korona_0_sls_f.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_kartki_0_sls_k"
+		texturefile = "gfx/interface/goals/pl2027_081/kartki_0_sls_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_kartki_0_sls_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/kartki_0_sls_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/kartki_0_sls_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_handel_1_sls_k"
+		texturefile = "gfx/interface/goals/pl2027_081/handel_1_sls_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_handel_1_sls_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/handel_1_sls_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/handel_1_sls_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_defilada_1_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/defilada_1_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_defilada_1_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/defilada_1_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/defilada_1_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_integracja_2_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/integracja_2_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_integracja_2_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/integracja_2_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/integracja_2_sls.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_gotowosc_1_sls_k"
+		texturefile = "gfx/interface/goals/pl2027_081/gotowosc_1_sls_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_gotowosc_1_sls_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/gotowosc_1_sls_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/gotowosc_1_sls_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pojednanie_3_sls_k"
+		texturefile = "gfx/interface/goals/pl2027_081/pojednanie_3_sls_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pojednanie_3_sls_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/pojednanie_3_sls_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/pojednanie_3_sls_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_gotowosc_0_sls"
+		texturefile = "gfx/interface/goals/pl2027_081/gotowosc_0_sls.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_gotowosc_0_sls_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/gotowosc_0_sls.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/gotowosc_0_sls.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5940,6 +6688,50 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_szpital_0"
+		texturefile = "gfx/interface/goals/pl2027_081/szpital_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_szpital_0_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/szpital_0.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/szpital_0.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_energia_0_f"
+		texturefile = "gfx/interface/goals/pl2027_081/energia_0_f.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_energia_0_f_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/energia_0_f.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/energia_0_f.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_droga_0_psn_k"
 		texturefile = "gfx/interface/goals/pl2027_081/droga_0_psn_k.dds"
 	}
@@ -5962,15 +6754,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_mapa_1_psn_f"
-		texturefile = "gfx/interface/goals/pl2027_081/mapa_1_psn_f.dds"
+		name = "GFX_pl2027_081_ludzie_1"
+		texturefile = "gfx/interface/goals/pl2027_081/ludzie_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_mapa_1_psn_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/mapa_1_psn_f.dds"
+		name = "GFX_pl2027_081_ludzie_1_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/ludzie_1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_1_psn_f.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/ludzie_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -5984,15 +6776,37 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_orzel_1_psn_k"
-		texturefile = "gfx/interface/goals/pl2027_081/orzel_1_psn_k.dds"
+		name = "GFX_pl2027_081_mapa_0_psn_f"
+		texturefile = "gfx/interface/goals/pl2027_081/mapa_0_psn_f.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_orzel_1_psn_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/orzel_1_psn_k.dds"
+		name = "GFX_pl2027_081_mapa_0_psn_f_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/mapa_0_psn_f.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/orzel_1_psn_k.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_0_psn_f.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_orzel_0_psn_k"
+		texturefile = "gfx/interface/goals/pl2027_081/orzel_0_psn_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_orzel_0_psn_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/orzel_0_psn_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/orzel_0_psn_k.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -6028,15 +6842,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_szpital_0"
-		texturefile = "gfx/interface/goals/pl2027_081/szpital_0.dds"
+		name = "GFX_pl2027_081_szpital_1"
+		texturefile = "gfx/interface/goals/pl2027_081/szpital_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_szpital_0_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/szpital_0.dds"
+		name = "GFX_pl2027_081_szpital_1_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/szpital_1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/szpital_0.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/szpital_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -6050,15 +6864,59 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_psn"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2_psn.dds"
+		name = "GFX_pl2027_081_dyplomacja_0_f"
+		texturefile = "gfx/interface/goals/pl2027_081/dyplomacja_0_f.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_psn_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2_psn.dds"
+		name = "GFX_pl2027_081_dyplomacja_0_f_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/dyplomacja_0_f.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_2_psn.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/dyplomacja_0_f.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_granica_0_psn"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_0_psn.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_granica_0_psn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_0_psn.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_0_psn.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_granica_1_psn_k"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_1_psn_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_granica_1_psn_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_1_psn_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_1_psn_k.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -6094,15 +6952,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_3_psn_k"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_3_psn_k.dds"
+		name = "GFX_pl2027_081_granica_3_psn"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_3_psn.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_3_psn_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_3_psn_k.dds"
+		name = "GFX_pl2027_081_granica_3_psn_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/granica_3_psn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_3_psn_k.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_3_psn.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -6116,15 +6974,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_1_psn"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_1_psn.dds"
+		name = "GFX_pl2027_081_most_1_f"
+		texturefile = "gfx/interface/goals/pl2027_081/most_1_f.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_granica_1_psn_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_1_psn.dds"
+		name = "GFX_pl2027_081_most_1_f_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/most_1_f.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_1_psn.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/most_1_f.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -6358,6 +7216,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_wspolnota_1_f"
+		texturefile = "gfx/interface/goals/pl2027_081/wspolnota_1_f.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wspolnota_1_f_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wspolnota_1_f.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wspolnota_1_f.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_defilada_1_psn"
 		texturefile = "gfx/interface/goals/pl2027_081/defilada_1_psn.dds"
 	}
@@ -6446,499 +7326,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_0_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_sls.dds"
+		name = "GFX_pl2027_081_wyposazenie_2_f"
+		texturefile = "gfx/interface/goals/pl2027_081/wyposazenie_2_f.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_0_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_sls.dds"
+		name = "GFX_pl2027_081_wyposazenie_2_f_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wyposazenie_2_f.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_0_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_droga_0_sls_k"
-		texturefile = "gfx/interface/goals/pl2027_081/droga_0_sls_k.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_droga_0_sls_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/droga_0_sls_k.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/droga_0_sls_k.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_mapa_1_sls_f"
-		texturefile = "gfx/interface/goals/pl2027_081/mapa_1_sls_f.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_mapa_1_sls_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/mapa_1_sls_f.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_1_sls_f.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_orzel_1_sls_k"
-		texturefile = "gfx/interface/goals/pl2027_081/orzel_1_sls_k.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_orzel_1_sls_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/orzel_1_sls_k.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/orzel_1_sls_k.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_gwardia_0_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/gwardia_0_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_gwardia_0_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/gwardia_0_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/gwardia_0_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_2_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_sls_k"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2_sls_k.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_granica_2_sls_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_2_sls_k.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_2_sls_k.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_granica_3_sls_k"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_3_sls_k.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_granica_3_sls_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_3_sls_k.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_3_sls_k.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_granica_1_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_1_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_granica_1_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/granica_1_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/granica_1_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_sztab_1_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_sztab_1_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/sztab_1_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pobor_1_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/pobor_1_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pobor_1_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/pobor_1_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_1_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pobor_3_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/pobor_3_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pobor_3_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/pobor_3_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_3_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pobor_2_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/pobor_2_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pobor_2_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/pobor_2_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_2_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_wojsko_4_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/wojsko_4_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_wojsko_4_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/wojsko_4_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/wojsko_4_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_obrona_terytorialna_1_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/obrona_terytorialna_1_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_obrona_terytorialna_1_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/obrona_terytorialna_1_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/obrona_terytorialna_1_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_oficer_1_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/oficer_1_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_oficer_1_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/oficer_1_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/oficer_1_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_zawodowa_1_sls_f"
-		texturefile = "gfx/interface/goals/pl2027_081/zawodowa_1_sls_f.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_zawodowa_1_sls_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/zawodowa_1_sls_f.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/zawodowa_1_sls_f.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_kartki_0_sls_k"
-		texturefile = "gfx/interface/goals/pl2027_081/kartki_0_sls_k.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_kartki_0_sls_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/kartki_0_sls_k.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/kartki_0_sls_k.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_handel_1_sls_k"
-		texturefile = "gfx/interface/goals/pl2027_081/handel_1_sls_k.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_handel_1_sls_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/handel_1_sls_k.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/handel_1_sls_k.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_defilada_1_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/defilada_1_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_defilada_1_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/defilada_1_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/defilada_1_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_integracja_2_sls"
-		texturefile = "gfx/interface/goals/pl2027_081/integracja_2_sls.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_integracja_2_sls_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/integracja_2_sls.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/integracja_2_sls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_gotowosc_1_sls_k"
-		texturefile = "gfx/interface/goals/pl2027_081/gotowosc_1_sls_k.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_gotowosc_1_sls_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/gotowosc_1_sls_k.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/gotowosc_1_sls_k.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pojednanie_3_sls_k"
-		texturefile = "gfx/interface/goals/pl2027_081/pojednanie_3_sls_k.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pojednanie_3_sls_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/pojednanie_3_sls_k.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/pojednanie_3_sls_k.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wyposazenie_2_f.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -7524,28 +7920,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_port_2"
-		texturefile = "gfx/interface/goals/pl2027_081/port_2.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_port_2_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/port_2.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/port_2.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
 		name = "GFX_pl2027_081_port_4"
 		texturefile = "gfx/interface/goals/pl2027_081/port_4.dds"
 	}
@@ -7766,28 +8140,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_ludzie_1"
-		texturefile = "gfx/interface/goals/pl2027_081/ludzie_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_ludzie_1_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/ludzie_1.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/ludzie_1.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
 		name = "GFX_pl2027_081_parlament_2"
 		texturefile = "gfx/interface/goals/pl2027_081/parlament_2.dds"
 	}
@@ -7898,37 +8250,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_energia_0"
-		texturefile = "gfx/interface/goals/pl2027_081/energia_0.dds"
+		name = "GFX_pl2027_081_most_1"
+		texturefile = "gfx/interface/goals/pl2027_081/most_1.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_energia_0_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/energia_0.dds"
+		name = "GFX_pl2027_081_most_1_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/most_1.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/energia_0.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_kolej_1"
-		texturefile = "gfx/interface/goals/pl2027_081/kolej_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_kolej_1_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/kolej_1.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/kolej_1.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/most_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -8228,15 +8558,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_polska_0_tec"
-		texturefile = "gfx/interface/goals/pl2027_081/polska_0_tec.dds"
+		name = "GFX_pl2027_081_polska_1_tec"
+		texturefile = "gfx/interface/goals/pl2027_081/polska_1_tec.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_polska_0_tec_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/polska_0_tec.dds"
+		name = "GFX_pl2027_081_polska_1_tec_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/polska_1_tec.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/polska_0_tec.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/polska_1_tec.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -8325,28 +8655,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_2_tec.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_budowa_3"
-		texturefile = "gfx/interface/goals/pl2027_081/budowa_3.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_budowa_3_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/budowa_3.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/budowa_3.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -9029,6 +9337,28 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/ultimatum_2_nna.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_porzadek_2"
+		texturefile = "gfx/interface/goals/pl2027_081/porzadek_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_porzadek_2_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/porzadek_2.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/porzadek_2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -10494,6 +10824,72 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_flota_0_maz"
+		texturefile = "gfx/interface/goals/pl2027_081/flota_0_maz.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_flota_0_maz_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/flota_0_maz.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/flota_0_maz.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_mapa_3_maz"
+		texturefile = "gfx/interface/goals/pl2027_081/mapa_3_maz.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_mapa_3_maz_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/mapa_3_maz.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_3_maz.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_mapa_4_maz"
+		texturefile = "gfx/interface/goals/pl2027_081/mapa_4_maz.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_mapa_4_maz_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/mapa_4_maz.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_4_maz.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_sztab_1_maz"
 		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_maz.dds"
 	}
@@ -11902,6 +12298,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_polska_1"
+		texturefile = "gfx/interface/goals/pl2027_081/polska_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_polska_1_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/polska_1.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/polska_1.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_mapa_0_che"
 		texturefile = "gfx/interface/goals/pl2027_081/mapa_0_che.dds"
 	}
@@ -12791,28 +13209,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_0_chj.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_las_0"
-		texturefile = "gfx/interface/goals/pl2027_081/las_0.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_las_0_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/las_0.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/las_0.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -16632,6 +17028,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_porzadek_4"
+		texturefile = "gfx/interface/goals/pl2027_081/porzadek_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_porzadek_4_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/porzadek_4.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/porzadek_4.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_parlament_0_gru"
 		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_gru.dds"
 	}
@@ -19171,28 +19589,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/gotowosc_0_kls.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_energia_1"
-		texturefile = "gfx/interface/goals/pl2027_081/energia_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_energia_1_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/energia_1.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/energia_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -32516,6 +32912,72 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_sojusz_2_prw"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_2_prw.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sojusz_2_prw_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_2_prw.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sojusz_2_prw.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sojusz_3_prw"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_3_prw.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sojusz_3_prw_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_3_prw.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sojusz_3_prw.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_gwardia_0_prw"
+		texturefile = "gfx/interface/goals/pl2027_081/gwardia_0_prw.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_gwardia_0_prw_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/gwardia_0_prw.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/gwardia_0_prw.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_sztab_1_prw"
 		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_prw.dds"
 	}
@@ -32525,6 +32987,50 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/sztab_1_prw.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_lotnictwo_0_prw"
+		texturefile = "gfx/interface/goals/pl2027_081/lotnictwo_0_prw.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_lotnictwo_0_prw_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/lotnictwo_0_prw.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/lotnictwo_0_prw.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_centralizacja_1_prw"
+		texturefile = "gfx/interface/goals/pl2027_081/centralizacja_1_prw.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_centralizacja_1_prw_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/centralizacja_1_prw.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/centralizacja_1_prw.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -36036,6 +36542,94 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_sojusz_0_suw"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_0_suw.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sojusz_0_suw_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_0_suw.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sojusz_0_suw.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_2_suw"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_2_suw.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_2_suw_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_2_suw.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wojsko_2_suw.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_polska_0_suw"
+		texturefile = "gfx/interface/goals/pl2027_081/polska_0_suw.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_polska_0_suw_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/polska_0_suw.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/polska_0_suw.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sojusz_1_suw"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_1_suw.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sojusz_1_suw_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_1_suw.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sojusz_1_suw.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_sztab_1_suw"
 		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_suw.dds"
 	}
@@ -38456,6 +39050,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_ludzie_2"
+		texturefile = "gfx/interface/goals/pl2027_081/ludzie_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_ludzie_2_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/ludzie_2.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/ludzie_2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_sztab_1_wol"
 		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_wol.dds"
 	}
@@ -39204,15 +39820,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_transport_0"
-		texturefile = "gfx/interface/goals/pl2027_081/transport_0.dds"
+		name = "GFX_pl2027_081_transport_4"
+		texturefile = "gfx/interface/goals/pl2027_081/transport_4.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_transport_0_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/transport_0.dds"
+		name = "GFX_pl2027_081_transport_4_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/transport_4.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/transport_0.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/transport_4.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -40150,50 +40766,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_cenzura_1"
-		texturefile = "gfx/interface/goals/pl2027_081/cenzura_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_cenzura_1_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/cenzura_1.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/cenzura_1.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_polska_1_f"
-		texturefile = "gfx/interface/goals/pl2027_081/polska_1_f.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_polska_1_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/polska_1_f.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/polska_1_f.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
 		name = "GFX_pl2027_081_flota_0_wlc"
 		texturefile = "gfx/interface/goals/pl2027_081/flota_0_wlc.dds"
 	}
@@ -40445,6 +41017,28 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/mapa_0_wlc.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_transport_0"
+		texturefile = "gfx/interface/goals/pl2027_081/transport_0.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_transport_0_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/transport_0.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/transport_0.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -42746,28 +43340,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_czas_0"
-		texturefile = "gfx/interface/goals/pl2027_081/czas_0.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_czas_0_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/czas_0.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/czas_0.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
 		name = "GFX_pl2027_081_sojusz_3_gdy_k"
 		texturefile = "gfx/interface/goals/pl2027_081/sojusz_3_gdy_k.dds"
 	}
@@ -43129,6 +43701,28 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_2_gdy.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_flota_1_gdy"
+		texturefile = "gfx/interface/goals/pl2027_081/flota_1_gdy.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_flota_1_gdy_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/flota_1_gdy.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/flota_1_gdy.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -43890,6 +44484,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_pancerne_0_spt"
+		texturefile = "gfx/interface/goals/pl2027_081/pancerne_0_spt.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pancerne_0_spt_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/pancerne_0_spt.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/pancerne_0_spt.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_sztab_1_spt"
 		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_spt.dds"
 	}
@@ -44559,6 +45175,28 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_2_wmg.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sojusz_0_wmg"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_0_wmg.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sojusz_0_wmg_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sojusz_0_wmg.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sojusz_0_wmg.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -45263,6 +45901,28 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/sztab_1_wmz.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_0_wmz"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_0_wmz.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_0_wmz_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_0_wmz.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wojsko_0_wmz.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -46046,6 +46706,50 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_pobor_2_kpr"
+		texturefile = "gfx/interface/goals/pl2027_081/pobor_2_kpr.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pobor_2_kpr_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/pobor_2_kpr.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_2_kpr.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_twierdza_0_kpr"
+		texturefile = "gfx/interface/goals/pl2027_081/twierdza_0_kpr.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_twierdza_0_kpr_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/twierdza_0_kpr.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/twierdza_0_kpr.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_sztab_1_kpr"
 		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_kpr.dds"
 	}
@@ -46077,28 +46781,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_3_kpr.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pobor_2_kpr"
-		texturefile = "gfx/interface/goals/pl2027_081/pobor_2_kpr.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pobor_2_kpr_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/pobor_2_kpr.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_2_kpr.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -46486,15 +47168,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_sztab_1_leg"
-		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_leg.dds"
+		name = "GFX_pl2027_081_twierdza_0_leg"
+		texturefile = "gfx/interface/goals/pl2027_081/twierdza_0_leg.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_sztab_1_leg_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_leg.dds"
+		name = "GFX_pl2027_081_twierdza_0_leg_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/twierdza_0_leg.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/sztab_1_leg.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/twierdza_0_leg.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -46530,6 +47212,50 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_pieniadze_0_leg_k"
+		texturefile = "gfx/interface/goals/pl2027_081/pieniadze_0_leg_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_pieniadze_0_leg_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/pieniadze_0_leg_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/pieniadze_0_leg_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_kibice_0_leg_k"
+		texturefile = "gfx/interface/goals/pl2027_081/kibice_0_leg_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_kibice_0_leg_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/kibice_0_leg_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/kibice_0_leg_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_pobor_2_leg"
 		texturefile = "gfx/interface/goals/pl2027_081/pobor_2_leg.dds"
 	}
@@ -46539,6 +47265,28 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/pobor_2_leg.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sztab_1_leg"
+		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_leg.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_sztab_1_leg_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/sztab_1_leg.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/sztab_1_leg.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -46926,6 +47674,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_ludzie_3"
+		texturefile = "gfx/interface/goals/pl2027_081/ludzie_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_ludzie_3_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/ludzie_3.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/ludzie_3.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_kibice_0_mpr_k"
 		texturefile = "gfx/interface/goals/pl2027_081/kibice_0_mpr_k.dds"
 	}
@@ -47014,15 +47784,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_ludzie_3"
-		texturefile = "gfx/interface/goals/pl2027_081/ludzie_3.dds"
+		name = "GFX_pl2027_081_ludzie_4"
+		texturefile = "gfx/interface/goals/pl2027_081/ludzie_4.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_ludzie_3_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/ludzie_3.dds"
+		name = "GFX_pl2027_081_ludzie_4_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/ludzie_4.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/ludzie_3.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/ludzie_4.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -47133,28 +47903,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/ofensywa_0_mpr.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_ludzie_4"
-		texturefile = "gfx/interface/goals/pl2027_081/ludzie_4.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_ludzie_4_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/ludzie_4.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/ludzie_4.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -47287,6 +48035,28 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/polska_1_mpr.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_milicja_0_mpr"
+		texturefile = "gfx/interface/goals/pl2027_081/milicja_0_mpr.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_milicja_0_mpr_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/milicja_0_mpr.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/milicja_0_mpr.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -47683,6 +48453,72 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/gwardia_0_plc_f.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_0_plc"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_0_plc.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_wojsko_0_plc_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/wojsko_0_plc.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/wojsko_0_plc.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_0_plc_k"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_plc_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_0_plc_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_plc_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_0_plc_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_porzadek_2_plc_k"
+		texturefile = "gfx/interface/goals/pl2027_081/porzadek_2_plc_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_porzadek_2_plc_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/porzadek_2_plc_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/porzadek_2_plc_k.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -48642,6 +49478,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_pl2027_081_parlament_0_smr"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_smr.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_0_smr_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_smr.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_0_smr.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_pl2027_081_pobor_0_smr"
 		texturefile = "gfx/interface/goals/pl2027_081/pobor_0_smr.dds"
 	}
@@ -48686,15 +49544,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_0_smr"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_smr.dds"
+		name = "GFX_pl2027_081_parlament_1_smr"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_smr.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_0_smr_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_smr.dds"
+		name = "GFX_pl2027_081_parlament_1_smr_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_smr.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_0_smr.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_1_smr.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -48708,15 +49566,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_1_smr_k"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_smr_k.dds"
+		name = "GFX_pl2027_081_parlament_2_smr_k"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_smr_k.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_1_smr_k_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_smr_k.dds"
+		name = "GFX_pl2027_081_parlament_2_smr_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_smr_k.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_1_smr_k.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_2_smr_k.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -48752,28 +49610,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_2_smr"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_smr.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_parlament_2_smr_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_smr.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_2_smr.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
 		name = "GFX_pl2027_081_ultimatum_2_smr"
 		texturefile = "gfx/interface/goals/pl2027_081/ultimatum_2_smr.dds"
 	}
@@ -48783,28 +49619,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/ultimatum_2_smr.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_parlament_1_smr"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_smr.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_parlament_1_smr_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_smr.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_1_smr.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -49060,15 +49874,103 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_0_smr_f"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_smr_f.dds"
+		name = "GFX_pl2027_081_parlament_2_smr_f"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_smr_f.dds"
 	}
 	SpriteType = {
-		name = "GFX_pl2027_081_parlament_0_smr_f_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_smr_f.dds"
+		name = "GFX_pl2027_081_parlament_2_smr_f_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_smr_f.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_0_smr_f.dds"
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_2_smr_f.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_0_smr_k"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_smr_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_0_smr_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_0_smr_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_0_smr_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_most_powietrzny_0_smr"
+		texturefile = "gfx/interface/goals/pl2027_081/most_powietrzny_0_smr.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_most_powietrzny_0_smr_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/most_powietrzny_0_smr.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/most_powietrzny_0_smr.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_1_smr_k"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_smr_k.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_1_smr_k_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_1_smr_k.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_1_smr_k.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_2_smr"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_smr.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_081_parlament_2_smr_shine"
+		texturefile = "gfx/interface/goals/pl2027_081/parlament_2_smr.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_081/parlament_2_smr.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -50939,28 +51841,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/milicja_1.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pomoc_1"
-		texturefile = "gfx/interface/goals/pl2027_081/pomoc_1.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_pomoc_1_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/pomoc_1.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/pomoc_1.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -53117,28 +53997,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/pl2027_081/wojna_0_wmp.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_porzadek_4"
-		texturefile = "gfx/interface/goals/pl2027_081/porzadek_4.dds"
-	}
-	SpriteType = {
-		name = "GFX_pl2027_081_porzadek_4_shine"
-		texturefile = "gfx/interface/goals/pl2027_081/porzadek_4.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/pl2027_081/porzadek_4.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no

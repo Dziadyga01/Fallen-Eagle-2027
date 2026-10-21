@@ -1,0 +1,53 @@
+MAL_kat = {
+	MAL_d_urzad = {
+		icon = generic_civil_support
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 30
+		days_re_enable = 200
+		complete_effect = { add_timed_idea = { idea = MAL_sprawny_urzad days = 180 } }
+		ai_will_do = { factor = 3 }
+	}
+	MAL_d_fundusz = {
+		icon = generic_civil_support
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 50
+		days_re_enable = 240
+		complete_effect = { capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+		ai_will_do = { factor = 3 }
+	}
+	MAL_d_straz = {
+		icon = generic_civil_support
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 40
+		days_re_enable = 180
+		complete_effect = { if = { limit = { NOT = { has_template = "Straż Obywatelska" } } division_template = { name = "Straż Obywatelska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } } } capital_scope = { create_unit = { division = "division_template = \"Straż Obywatelska\" start_experience_factor = 0.1" owner = ROOT } } add_manpower = 1500 add_equipment_to_stockpile = { type = ranged_equipment amount = 300 } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 any_neighbor_country = { has_war = yes } } }
+	}
+	MAL_d_neutralnosc = {
+		icon = generic_civil_support
+		allowed = { has_country_flag = PL2027_polska }
+		available = { has_war = no }
+		cost = 20
+		fire_only_once = yes
+		complete_effect = { add_ideas = MAL_neutralnosc }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_government = social_liberal } }
+	}
+	MAL_d_granica = {
+		icon = generic_civil_support
+		allowed = { has_country_flag = PL2027_polska }
+		available = { any_neighbor_country = { has_war = yes } }
+		cost = 35
+		days_re_enable = 180
+		complete_effect = { add_timed_idea = { idea = MAL_obrona_granicy days = 180 } every_owned_state = { limit = { any_neighbor_state = { NOT = { is_owned_by = ROOT } } } add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } } }
+		ai_will_do = { factor = 6 }
+	}
+	MAL_d_opieka = {
+		icon = generic_civil_support
+		allowed = { has_country_flag = PL2027_polska }
+		available = { any_neighbor_country = { has_country_flag = PL2027_polska is_subject = no NOT = { has_war_with = ROOT } num_of_controlled_states > 5 } }
+		cost = 25
+		days_re_enable = 180
+		complete_effect = { random_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no NOT = { has_war_with = ROOT } num_of_controlled_states > 5 } country_event = { id = mal.1 days = 2 } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 any_neighbor_country = { has_war = yes } } }
+	}
+}

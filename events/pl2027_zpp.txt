@@ -1,0 +1,158 @@
+add_namespace = zpp
+
+country_event = {
+	id = zpp.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = zpp.1.t
+	desc = zpp.1.d
+	picture = GFX_pl2027_ev081_polityka_5
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = ZPP_kongres_rozstrzygniety } }
+	option = {
+		name = zpp.1.a
+		ai_chance = { factor = 8 }
+		country_event = { id = zpp.2 days = 20 }
+	}
+	option = {
+		name = zpp.1.b
+		ai_chance = { factor = 4 }
+		country_event = { id = zpp.2 days = 60 } add_political_power = 10
+	}
+}
+
+country_event = {
+	id = zpp.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = zpp.2.t
+	desc = zpp.2.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = zpp.2.a
+		ai_chance = { factor = 1 }
+		country_event = { id = zpp.3 days = 10 }
+	}
+}
+
+country_event = {
+	id = zpp.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = zpp.3.t
+	desc = zpp.3.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = zpp.3.a
+		ai_chance = { factor = 6 }
+		set_country_flag = ZPP_cyber_aktywny custom_effect_tooltip = ZPP_tt_cyber18_harcm4 hidden_effect = { add_to_variable = { ZPP_cyber = 18 } add_to_variable = { ZPP_harc = -4 } ZPP_przelicz = yes }
+	}
+	option = {
+		name = zpp.3.b
+		ai_chance = { factor = 5 }
+		set_country_flag = ZPP_cyber_aktywny custom_effect_tooltip = ZPP_tt_cyber6_masl4 hidden_effect = { add_to_variable = { ZPP_cyber = 6 } add_to_variable = { ZPP_masl = 4 } ZPP_przelicz = yes } add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = zpp.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = zpp.21.t
+	desc = zpp.21.d
+	picture = GFX_pl2027_ev081_dyplomacja_3
+	is_triggered_only = yes
+	option = {
+		name = zpp.21.a
+		ai_chance = { factor = 1 }
+		ZPP_wygrana_masl = yes
+	}
+}
+
+country_event = {
+	id = zpp.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = zpp.22.t
+	desc = zpp.22.d
+	picture = GFX_pl2027_ev081_gospodarka_0
+	is_triggered_only = yes
+	option = {
+		name = zpp.22.a
+		ai_chance = { factor = 1 }
+		ZPP_wygrana_harc = yes
+	}
+}
+
+country_event = {
+	id = zpp.23
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = zpp.23.t
+	desc = zpp.23.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = zpp.23.a
+		ai_chance = { factor = 1 }
+		ZPP_wygrana_cyber = yes
+	}
+}
+
+country_event = {
+	id = zpp.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = zpp.20.t
+	desc = zpp.20.d
+	picture = GFX_pl2027_ev081_kolej_1
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = ZPP_kongres_rozstrzygniety } }
+	option = {
+		name = zpp.20.a
+		ai_chance = { factor = 1 }
+		if = { limit = { AND = { check_variable = { ZPP_masl > ZPP_harc } check_variable = { ZPP_masl > ZPP_cyber } } check_variable = { ZPP_masl > 54 } } country_event = { id = zpp.21 days = 1 } } else_if = { limit = { AND = { check_variable = { ZPP_harc > ZPP_masl } check_variable = { ZPP_harc > ZPP_cyber } } check_variable = { ZPP_harc > 54 } } country_event = { id = zpp.22 days = 1 } } else_if = { limit = { AND = { check_variable = { ZPP_cyber > ZPP_masl } check_variable = { ZPP_cyber > ZPP_harc } } check_variable = { ZPP_cyber > 54 } } country_event = { id = zpp.23 days = 1 } } else = { country_event = { id = zpp.25 days = 1 } }
+	}
+}
+
+country_event = {
+	id = zpp.25
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = zpp.25.t
+	desc = zpp.25.d
+	picture = GFX_pl2027_ev081_dyplomacja_1
+	is_triggered_only = yes
+	option = {
+		name = zpp.25.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.02 custom_effect_tooltip = ZPP_tt_maslm3_harcm3 hidden_effect = { add_to_variable = { ZPP_masl = -3 } add_to_variable = { ZPP_harc = -3 } ZPP_przelicz = yes }
+	}
+}
+
+news_event = {
+	id = zpp.29
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = zpp.29.t
+	desc = zpp.29.d
+	picture = GFX_pl2027_ev081_wybory_1_news
+	is_triggered_only = yes
+	option = {
+		name = zpp.29.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = zpp.40
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = zpp.40.t
+	desc = zpp.40.d
+	picture = GFX_pl2027_ev081_miasto_0
+	is_triggered_only = yes
+	option = {
+		name = zpp.40.a
+		trigger = { NOT = { has_idea = ZPP_c_zaleznosc } }
+		ai_chance = { factor = 5 modifier = { factor = 2 has_stability < 0.35 } }
+		add_ideas = ZPP_c_zaleznosc add_opinion_modifier = { target = FROM modifier = ZPP_uklad_op }
+	}
+	option = {
+		name = zpp.40.b
+		ai_chance = { factor = 8 }
+		add_opinion_modifier = { target = FROM modifier = ZPP_cyfrowa_presja_op } add_stability = 0.01
+	}
+}

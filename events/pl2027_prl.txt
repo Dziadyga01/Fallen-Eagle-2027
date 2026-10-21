@@ -1,0 +1,814 @@
+add_namespace = prl
+
+country_event = {
+	id = prl.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.1.t
+	desc = prl.1.d
+	picture = GFX_tfe_mapa_jedna
+	is_triggered_only = yes
+	option = {
+		name = prl.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = prl.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = prl.2.t
+	desc = prl.2.d
+	picture = GFX_tfe_mapa_jedna_news
+	is_triggered_only = yes
+	option = {
+		name = prl.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.100
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.100.a
+		ai_chance = { factor = 1 }
+		PRL_start_WMG = yes
+	}
+}
+
+country_event = {
+	id = prl.200
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.200.t
+	desc = prl.200.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.200.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.101
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.101.a
+		ai_chance = { factor = 1 }
+		PRL_start_TRN = yes
+	}
+}
+
+country_event = {
+	id = prl.201
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.201.t
+	desc = prl.201.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.201.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.102
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.102.a
+		ai_chance = { factor = 1 }
+		PRL_start_GDY = yes
+	}
+}
+
+country_event = {
+	id = prl.202
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.202.t
+	desc = prl.202.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.202.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.103
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.103.a
+		ai_chance = { factor = 1 }
+		PRL_start_BYD = yes
+	}
+}
+
+country_event = {
+	id = prl.203
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.203.t
+	desc = prl.203.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.203.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.104
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.104.a
+		ai_chance = { factor = 1 }
+		PRL_start_SPT = yes
+	}
+}
+
+country_event = {
+	id = prl.204
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.204.t
+	desc = prl.204.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.204.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.105
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.105.a
+		ai_chance = { factor = 1 }
+		PRL_start_NNA = yes
+	}
+}
+
+country_event = {
+	id = prl.205
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.205.t
+	desc = prl.205.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.205.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.106
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.106.a
+		ai_chance = { factor = 1 }
+		PRL_start_WMZ = yes
+	}
+}
+
+country_event = {
+	id = prl.206
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.206.t
+	desc = prl.206.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.206.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.107
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.107.a
+		ai_chance = { factor = 1 }
+		PRL_start_SUW = yes
+	}
+}
+
+country_event = {
+	id = prl.207
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.207.t
+	desc = prl.207.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.207.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.108
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.108.a
+		ai_chance = { factor = 1 }
+		PRL_start_BST = yes
+	}
+}
+
+country_event = {
+	id = prl.208
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.208.t
+	desc = prl.208.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.208.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.109
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.109.a
+		ai_chance = { factor = 1 }
+		PRL_start_PRW = yes
+	}
+}
+
+country_event = {
+	id = prl.209
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.209.t
+	desc = prl.209.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.209.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.110
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.110.a
+		ai_chance = { factor = 1 }
+		PRL_start_LWC = yes
+	}
+}
+
+country_event = {
+	id = prl.210
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.210.t
+	desc = prl.210.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.210.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.111
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.111.a
+		ai_chance = { factor = 1 }
+		PRL_start_ZKR = yes
+	}
+}
+
+country_event = {
+	id = prl.211
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.211.t
+	desc = prl.211.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.211.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.112
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.112.a
+		ai_chance = { factor = 1 }
+		PRL_start_KOC = yes
+	}
+}
+
+country_event = {
+	id = prl.212
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.212.t
+	desc = prl.212.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.212.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.113
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.113.a
+		ai_chance = { factor = 1 }
+		PRL_start_WLC = yes
+	}
+}
+
+country_event = {
+	id = prl.213
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.213.t
+	desc = prl.213.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.213.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.114
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = prl.114.a
+		ai_chance = { factor = 1 }
+		PRL_start_PLO = yes
+	}
+}
+
+country_event = {
+	id = prl.214
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.214.t
+	desc = prl.214.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = prl.214.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = prl.12
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = prl.12.t
+	desc = prl.12.d
+	picture = GFX_tfe_mapa_secesja_news
+	is_triggered_only = yes
+	option = {
+		name = prl.12.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = prl.13
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = prl.13.t
+	desc = prl.13.d
+	picture = GFX_tfe_mapa_jedna_news
+	is_triggered_only = yes
+	option = {
+		name = prl.13.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = prl.14
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = prl.14.t
+	desc = prl.14.d
+	picture = GFX_tfe_mapa_secesja_news
+	is_triggered_only = yes
+	option = {
+		name = prl.14.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.70
+	title = prl.70.t
+	desc = prl.70.d
+	picture = GFX_pl2027_ev081_mazury_3
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PRL_afera_tasmy } }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_global_flag = PRL_afera_tasmy }
+	option = {
+		name = prl.70.a
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_10 hidden_effect = { add_to_variable = { global.PRL_poparcie = -4 } add_to_variable = { global.PRL_zaufanie = 3 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = WMG } WMG = { add_to_variable = { PRL_lojalnosc = 3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = GDY } GDY = { add_to_variable = { PRL_lojalnosc = 3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = WMZ } WMZ = { add_to_variable = { PRL_lojalnosc = 3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = KOC } KOC = { add_to_variable = { PRL_lojalnosc = 3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+	option = {
+		name = prl.70.b
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_11 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -6 } add_to_variable = { global.PRL_koszt = 1 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = WMG } WMG = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = GDY } GDY = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = WMZ } WMZ = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = KOC } KOC = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+	option = {
+		name = prl.70.c
+		ai_chance = { factor = 10 modifier = { factor = 0.5 has_political_power < 40 } }
+		add_political_power = -30 custom_effect_tooltip = PRL_tt_12 hidden_effect = { add_to_variable = { global.PRL_administracja = -3 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = WMG } WMG = { add_to_variable = { PRL_lojalnosc = -2 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = GDY } GDY = { add_to_variable = { PRL_lojalnosc = -2 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = WMZ } WMZ = { add_to_variable = { PRL_lojalnosc = -2 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = KOC } KOC = { add_to_variable = { PRL_lojalnosc = -2 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+}
+
+country_event = {
+	id = prl.71
+	title = prl.71.t
+	desc = prl.71.d
+	picture = GFX_pl2027_ev081_paliwo_5
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PRL_afera_paliwo } }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_global_flag = PRL_afera_paliwo }
+	option = {
+		name = prl.71.a
+		ai_chance = { factor = 10 modifier = { factor = 0.5 has_political_power < 40 } }
+		add_political_power = -25 custom_effect_tooltip = PRL_tt_13 hidden_effect = { add_to_variable = { global.PRL_rezerwy = 6 } add_to_variable = { global.PRL_zaufanie = 1 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = PLO } PLO = { add_to_variable = { PRL_lojalnosc = 2 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = BST } BST = { add_to_variable = { PRL_lojalnosc = 2 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+	option = {
+		name = prl.71.b
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_14 hidden_effect = { add_to_variable = { global.PRL_poparcie = 3 } add_to_variable = { global.PRL_koszt = 1 } add_to_variable = { global.PRL_rezerwy = -6 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = PLO } PLO = { add_to_variable = { PRL_lojalnosc = -6 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = BST } BST = { add_to_variable = { PRL_lojalnosc = -6 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+	option = {
+		name = prl.71.c
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_15 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -5 } add_to_variable = { global.PRL_rezerwy = -10 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = PLO } PLO = { add_to_variable = { PRL_lojalnosc = -4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = BST } BST = { add_to_variable = { PRL_lojalnosc = -4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+}
+
+country_event = {
+	id = prl.72
+	title = prl.72.t
+	desc = prl.72.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PRL_afera_lista } }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_global_flag = PRL_afera_lista }
+	option = {
+		name = prl.72.a
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_16 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -3 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = NNA } NNA = { add_to_variable = { PRL_lojalnosc = -5 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = PRW } PRW = { add_to_variable = { PRL_lojalnosc = -5 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = LWC } LWC = { add_to_variable = { PRL_lojalnosc = -5 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = TRN } TRN = { add_to_variable = { PRL_lojalnosc = -5 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = BYD } BYD = { add_to_variable = { PRL_lojalnosc = -5 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+	option = {
+		name = prl.72.b
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_17 hidden_effect = { add_to_variable = { global.PRL_administracja = -5 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = NNA } NNA = { add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = PRW } PRW = { add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = LWC } LWC = { add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = TRN } TRN = { add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = BYD } BYD = { add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+	option = {
+		name = prl.72.c
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_18 hidden_effect = { add_to_variable = { global.PRL_administracja = 5 } add_to_variable = { global.PRL_koszt = 1 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = NNA } NNA = { add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = PRW } PRW = { add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = LWC } LWC = { add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = TRN } TRN = { add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = BYD } BYD = { add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+}
+
+country_event = {
+	id = prl.73
+	title = prl.73.t
+	desc = prl.73.d
+	picture = GFX_pl2027_ev081_gospodarka_2
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PRL_afera_fundusze } }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_global_flag = PRL_afera_fundusze }
+	option = {
+		name = prl.73.a
+		ai_chance = { factor = 10 modifier = { factor = 0.5 has_political_power < 40 } }
+		add_political_power = -35 custom_effect_tooltip = PRL_tt_19 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = PRW } PRW = { add_to_variable = { PRL_lojalnosc = 6 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = NNA } NNA = { add_to_variable = { PRL_lojalnosc = 6 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = PLO } PLO = { add_to_variable = { PRL_lojalnosc = 6 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+	option = {
+		name = prl.73.b
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_20 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -4 } add_to_variable = { global.PRL_koszt = 1 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = PRW } PRW = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = NNA } NNA = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = PLO } PLO = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+}
+
+country_event = {
+	id = prl.74
+	title = prl.74.t
+	desc = prl.74.d
+	picture = GFX_pl2027_ev081_dyplomacja_4
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PRL_afera_argus } }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_global_flag = PRL_afera_argus }
+	option = {
+		name = prl.74.a
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_21 hidden_effect = { add_to_variable = { global.PRL_poparcie = -5 } add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_administracja = -3 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = WMG } WMG = { add_to_variable = { PRL_lojalnosc = 2 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = TRN } TRN = { add_to_variable = { PRL_lojalnosc = 2 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = BYD } BYD = { add_to_variable = { PRL_lojalnosc = 2 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = SPT } SPT = { add_to_variable = { PRL_lojalnosc = 2 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+	option = {
+		name = prl.74.b
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_22 hidden_effect = { add_to_variable = { global.PRL_administracja = 4 } add_to_variable = { global.PRL_zaufanie = -6 } add_to_variable = { global.PRL_koszt = 1 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = WMG } WMG = { add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = TRN } TRN = { add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = BYD } BYD = { add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = SPT } SPT = { add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+}
+
+country_event = {
+	id = prl.75
+	title = prl.75.t
+	desc = prl.75.d
+	picture = GFX_pl2027_ev081_gospodarka_1
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PRL_afera_energetyka } }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_global_flag = PRL_afera_energetyka }
+	option = {
+		name = prl.75.a
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_23 hidden_effect = { add_to_variable = { global.PRL_rezerwy = -12 } add_to_variable = { global.PRL_zaufanie = 3 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = LWC } LWC = { add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = WLC } WLC = { add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+	option = {
+		name = prl.75.b
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_24 hidden_effect = { add_to_variable = { global.PRL_administracja = -4 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = LWC } LWC = { add_to_variable = { PRL_lojalnosc = 6 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = WLC } WLC = { add_to_variable = { PRL_lojalnosc = 6 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+	option = {
+		name = prl.75.c
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = PRL_tt_25 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -6 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } hidden_effect = { if = { limit = { country_exists = LWC } LWC = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = WLC } WLC = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } } PRL_przelicz = yes
+	}
+}
+
+country_event = {
+	id = prl.60
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { has_global_flag = PL2027_prolog }
+	option = {
+		name = prl.60.a
+		ai_chance = { factor = 1 }
+		random_list = { 10 = { modifier = { factor = 0 has_global_flag = PRL_afera_tasmy } country_event = { id = prl.70 } } 10 = { modifier = { factor = 0 has_global_flag = PRL_afera_paliwo } country_event = { id = prl.71 } } 10 = { modifier = { factor = 0 has_global_flag = PRL_afera_lista } country_event = { id = prl.72 } } 10 = { modifier = { factor = 0 has_global_flag = PRL_afera_fundusze } country_event = { id = prl.73 } } 10 = { modifier = { factor = 0 has_global_flag = PRL_afera_argus } country_event = { id = prl.74 } } 10 = { modifier = { factor = 0 has_global_flag = PRL_afera_energetyka } country_event = { id = prl.75 } } }
+	}
+}
+
+country_event = {
+	id = prl.50
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.50.t
+	desc = prl.50.d
+	picture = GFX_tfe_mapa_zachod
+	is_triggered_only = yes
+	trigger = { country_exists = PMN }
+	option = {
+		name = prl.50.a
+		trigger = { has_political_power > 39 }
+		ai_chance = { factor = 10 modifier = { factor = 0.3 has_political_power < 60 } }
+		add_political_power = -40 set_global_flag = PRL_pmn_umowa custom_effect_tooltip = PRL_tt_26 hidden_effect = { add_to_variable = { global.PRL_rezerwy = 8 } add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -3 } PRL_przelicz = yes } if = { limit = { country_exists = PMN PMN = { is_subject_of = POL } } PMN = { clr_country_flag = ROZ_wojewodztwo clr_country_flag = ROZ_autonomia set_country_flag = ROZ_niepodlegly set_country_flag = PRL_odeszlo } POL = { set_autonomy = { target = PMN autonomous_state = autonomy_free } } } PMN = { set_country_flag = EK_eurokomisariat } every_country = { limit = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRW original_tag = KST original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = ZIE original_tag = ZKR original_tag = PMN original_tag = PSN original_tag = SLS } } news_event = { id = prl.51 days = 1 } } POL = { country_event = { id = prl.20 days = 1 } if = { limit = { is_ai = no } country_event = { id = prl.30 days = 2 } } }
+	}
+	option = {
+		name = prl.50.b
+		ai_chance = { factor = 6 }
+		set_global_flag = PRL_pmn_protest custom_effect_tooltip = PRL_tt_27 hidden_effect = { add_to_variable = { global.PRL_poparcie = 4 } add_to_variable = { global.PRL_zaufanie = -2 } add_to_variable = { global.PRL_rezerwy = -6 } PRL_przelicz = yes } if = { limit = { country_exists = PMN PMN = { is_subject_of = POL } } PMN = { clr_country_flag = ROZ_wojewodztwo clr_country_flag = ROZ_autonomia set_country_flag = ROZ_niepodlegly set_country_flag = PRL_odeszlo } POL = { set_autonomy = { target = PMN autonomous_state = autonomy_free } } } PMN = { set_country_flag = EK_eurokomisariat } every_country = { limit = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRW original_tag = KST original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = ZIE original_tag = ZKR original_tag = PMN original_tag = PSN original_tag = SLS } } news_event = { id = prl.51 days = 1 } } POL = { country_event = { id = prl.20 days = 1 } if = { limit = { is_ai = no } country_event = { id = prl.30 days = 2 } } }
+	}
+	option = {
+		name = prl.50.c
+		trigger = { has_political_power > 24 check_variable = { global.PRL_zaufanie > 39 } }
+		ai_chance = { factor = 5 }
+		add_political_power = -25 set_global_flag = PRL_europa_otwarta set_global_flag = PRL_pmn_umowa custom_effect_tooltip = PRL_tt_28 hidden_effect = { add_to_variable = { global.PRL_administracja = 3 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } if = { limit = { country_exists = PMN PMN = { is_subject_of = POL } } PMN = { clr_country_flag = ROZ_wojewodztwo clr_country_flag = ROZ_autonomia set_country_flag = ROZ_niepodlegly set_country_flag = PRL_odeszlo } POL = { set_autonomy = { target = PMN autonomous_state = autonomy_free } } } PMN = { set_country_flag = EK_eurokomisariat } every_country = { limit = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRW original_tag = KST original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = ZIE original_tag = ZKR original_tag = PMN original_tag = PSN original_tag = SLS } } news_event = { id = prl.51 days = 1 } } POL = { country_event = { id = prl.20 days = 1 } if = { limit = { is_ai = no } country_event = { id = prl.30 days = 2 } } }
+	}
+}
+
+news_event = {
+	id = prl.51
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = prl.51.t
+	desc = prl.51.d
+	picture = GFX_tfe_mapa_zachod_news
+	is_triggered_only = yes
+	option = {
+		name = prl.51.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.55
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.55.t
+	desc = prl.55.d
+	picture = GFX_tfe_mapa_zachod
+	is_triggered_only = yes
+	trigger = { country_exists = SLS }
+	option = {
+		name = prl.55.a
+		trigger = { has_political_power > 34 }
+		ai_chance = { factor = 10 modifier = { factor = 0.3 has_political_power < 55 } }
+		add_political_power = -35 set_global_flag = PRL_sls_umowa custom_effect_tooltip = PRL_tt_29 hidden_effect = { add_to_variable = { global.PRL_rezerwy = 6 } add_to_variable = { global.PRL_zaufanie = 2 } PRL_przelicz = yes } if = { limit = { country_exists = SLS SLS = { is_subject_of = POL } } SLS = { clr_country_flag = ROZ_wojewodztwo clr_country_flag = ROZ_autonomia set_country_flag = ROZ_niepodlegly set_country_flag = PRL_odeszlo } POL = { set_autonomy = { target = SLS autonomous_state = autonomy_free } } } SLS = { set_country_flag = EK_eurokomisariat } every_country = { limit = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRW original_tag = KST original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = ZIE original_tag = ZKR original_tag = PMN original_tag = PSN original_tag = SLS } } news_event = { id = prl.56 days = 1 } } POL = { if = { limit = { is_ai = no } country_event = { id = prl.30 days = 2 } } }
+	}
+	option = {
+		name = prl.55.b
+		ai_chance = { factor = 6 }
+		set_global_flag = PRL_sls_protest custom_effect_tooltip = PRL_tt_30 hidden_effect = { add_to_variable = { global.PRL_poparcie = 4 } add_to_variable = { global.PRL_rezerwy = -5 } add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } if = { limit = { country_exists = SLS SLS = { is_subject_of = POL } } SLS = { clr_country_flag = ROZ_wojewodztwo clr_country_flag = ROZ_autonomia set_country_flag = ROZ_niepodlegly set_country_flag = PRL_odeszlo } POL = { set_autonomy = { target = SLS autonomous_state = autonomy_free } } } SLS = { set_country_flag = EK_eurokomisariat } every_country = { limit = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRW original_tag = KST original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = ZIE original_tag = ZKR original_tag = PMN original_tag = PSN original_tag = SLS } } news_event = { id = prl.56 days = 1 } } POL = { if = { limit = { is_ai = no } country_event = { id = prl.30 days = 2 } } }
+	}
+	option = {
+		name = prl.55.c
+		trigger = { has_political_power > 19 check_variable = { global.PRL_administracja > 44 } }
+		ai_chance = { factor = 4 }
+		add_political_power = -20 set_global_flag = PRL_sls_umowa custom_effect_tooltip = PRL_tt_31 hidden_effect = { add_to_variable = { global.PRL_rezerwy = 10 } add_to_variable = { global.PRL_poparcie = -4 } PRL_przelicz = yes } if = { limit = { country_exists = SLS SLS = { is_subject_of = POL } } SLS = { clr_country_flag = ROZ_wojewodztwo clr_country_flag = ROZ_autonomia set_country_flag = ROZ_niepodlegly set_country_flag = PRL_odeszlo } POL = { set_autonomy = { target = SLS autonomous_state = autonomy_free } } } SLS = { set_country_flag = EK_eurokomisariat } every_country = { limit = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRW original_tag = KST original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = ZIE original_tag = ZKR original_tag = PMN original_tag = PSN original_tag = SLS } } news_event = { id = prl.56 days = 1 } } POL = { if = { limit = { is_ai = no } country_event = { id = prl.30 days = 2 } } }
+	}
+}
+
+news_event = {
+	id = prl.56
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = prl.56.t
+	desc = prl.56.d
+	picture = GFX_tfe_mapa_zachod_news
+	is_triggered_only = yes
+	option = {
+		name = prl.56.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.58
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.58.t
+	desc = prl.58.d
+	picture = GFX_tfe_mapa_zachod
+	is_triggered_only = yes
+	trigger = { country_exists = PSN country_exists = GER }
+	option = {
+		name = prl.58.a
+		ai_chance = { factor = 5 }
+		set_global_flag = PRL_psn_uznany custom_effect_tooltip = PRL_tt_32 hidden_effect = { add_to_variable = { global.PRL_rezerwy = 4 } add_to_variable = { global.PRL_poparcie = -3 } PRL_przelicz = yes } if = { limit = { country_exists = PSN PSN = { is_subject_of = POL } } PSN = { clr_country_flag = ROZ_wojewodztwo clr_country_flag = ROZ_autonomia set_country_flag = ROZ_niepodlegly set_country_flag = PRL_odeszlo } POL = { set_autonomy = { target = PSN autonomous_state = autonomy_free } } } PSN = { UNI_zapamietaj_rzad = yes } GER = { puppet = PSN } PSN = { UNI_przywroc_rzad = yes }
+	}
+	option = {
+		name = prl.58.b
+		ai_chance = { factor = 5 }
+		custom_effect_tooltip = PRL_tt_33 hidden_effect = { add_to_variable = { global.PRL_poparcie = 4 } add_to_variable = { global.PRL_zaufanie = -1 } PRL_przelicz = yes } if = { limit = { country_exists = PSN PSN = { is_subject_of = POL } } PSN = { clr_country_flag = ROZ_wojewodztwo clr_country_flag = ROZ_autonomia set_country_flag = ROZ_niepodlegly set_country_flag = PRL_odeszlo } POL = { set_autonomy = { target = PSN autonomous_state = autonomy_free } } } PSN = { UNI_zapamietaj_rzad = yes } GER = { puppet = PSN } PSN = { UNI_przywroc_rzad = yes }
+	}
+}
+
+country_event = {
+	id = prl.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.30.t
+	desc = prl.30.d
+	picture = GFX_tfe_mapa_zachod
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = {
+		name = prl.30.a
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = prl.30.b
+		trigger = { country_exists = PMN PMN = { is_subject = no has_country_flag = EK_eurokomisariat } }
+		ai_chance = { factor = 0 }
+		PMN = { change_tag_from = ROOT }
+	}
+	option = {
+		name = prl.30.c
+		trigger = { country_exists = SLS SLS = { is_subject = no has_country_flag = EK_eurokomisariat } }
+		ai_chance = { factor = 0 }
+		SLS = { change_tag_from = ROOT }
+	}
+}
+
+country_event = {
+	id = prl.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.20.t
+	desc = prl.20.d
+	picture = GFX_tfe_mapa_zachod
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PRL_tusk_sejm } NOT = { has_global_flag = PRL_tusk_pomorze } }
+	option = {
+		name = prl.20.a
+		ai_chance = { factor = 6 }
+		set_global_flag = PRL_tusk_sejm custom_effect_tooltip = PRL_tt_34 hidden_effect = { add_to_variable = { global.PRL_administracja = 6 } add_to_variable = { global.PRL_zaufanie = 2 } PRL_przelicz = yes }
+	}
+	option = {
+		name = prl.20.b
+		trigger = { country_exists = PMN }
+		ai_chance = { factor = 4 }
+		set_global_flag = PRL_tusk_pomorze custom_effect_tooltip = PRL_tt_35 hidden_effect = { add_to_variable = { global.PRL_poparcie = -6 } add_to_variable = { global.PRL_administracja = -5 } PRL_przelicz = yes } PMN = { if = { limit = { NOT = { has_character = PMN_tusk } } recruit_character = PMN_tusk } promote_character = PMN_tusk set_country_flag = EK_tusk } every_country = { limit = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRW original_tag = KST original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = ZIE original_tag = ZKR original_tag = PMN original_tag = PSN original_tag = SLS } } news_event = { id = prl.22 days = 1 } } country_event = { id = prl.21 days = 2 }
+	}
+}
+
+country_event = {
+	id = prl.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.21.t
+	desc = prl.21.d
+	picture = GFX_tfe_mapa_warszawa
+	is_triggered_only = yes
+	option = {
+		name = prl.21.a
+		ai_chance = { factor = 4 }
+		set_global_flag = PRL_nast_prezydium custom_effect_tooltip = PRL_tt_7 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } PRL_przelicz = yes }
+	}
+	option = {
+		name = prl.21.b
+		ai_chance = { factor = 3 }
+		set_global_flag = PRL_nast_marszalek custom_effect_tooltip = PRL_tt_36 hidden_effect = { add_to_variable = { global.PRL_poparcie = 3 } PRL_przelicz = yes }
+	}
+	option = {
+		name = prl.21.c
+		ai_chance = { factor = 3 }
+		set_global_flag = PRL_nast_rada custom_effect_tooltip = PRL_tt_37 hidden_effect = { add_to_variable = { global.PRL_administracja = 4 } add_to_variable = { global.PRL_zaufanie = -3 } PRL_przelicz = yes }
+	}
+}
+
+news_event = {
+	id = prl.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = prl.22.t
+	desc = prl.22.d
+	picture = GFX_tfe_mapa_zachod_news
+	is_triggered_only = yes
+	option = {
+		name = prl.22.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = prl.40
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = prl.40.t
+	desc = prl.40.d
+	picture = GFX_tfe_mapa_rozpad
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PRL_po_rozpadzie } }
+	option = {
+		name = prl.40.a
+		ai_chance = { factor = 10 }
+		if = { limit = { is_ai = no country_exists = SMR } SMR = { change_tag_from = ROOT } } custom_effect_tooltip = PRL_tt_38  PRL_rozpad = yes
+	}
+	option = {
+		name = prl.40.b
+		trigger = { is_ai = no country_exists = PMN PMN = { is_subject = no } }
+		ai_chance = { factor = 0 }
+		PMN = { change_tag_from = ROOT } PRL_rozpad = yes
+	}
+	option = {
+		name = prl.40.c
+		trigger = { is_ai = no country_exists = SLS SLS = { is_subject = no } }
+		ai_chance = { factor = 0 }
+		SLS = { change_tag_from = ROOT } PRL_rozpad = yes
+	}
+}
+
+country_event = {
+	id = prl.41
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PRL_po_rozpadzie } }
+	option = {
+		name = prl.41.a
+		ai_chance = { factor = 1 }
+		PRL_rozpad = yes
+	}
+}
+
+news_event = {
+	id = prl.42
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = prl.42.t
+	desc = prl.42.d
+	picture = GFX_tfe_mapa_rozpad_news
+	is_triggered_only = yes
+	option = {
+		name = prl.42.a
+		ai_chance = { factor = 1 }
+	}
+}

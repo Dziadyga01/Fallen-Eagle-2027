@@ -1,0 +1,7 @@
+on_actions = {
+	on_annex = {
+		effect = {
+			if = { limit = { has_country_flag = PL2027_polska } if = { limit = { has_idea = PL2027_odbudowa_po_wojnie } remove_ideas = PL2027_odbudowa_po_wojnie } add_timed_idea = { idea = PL2027_odbudowa_po_wojnie days = 180 } }
+		}
+	}
+}

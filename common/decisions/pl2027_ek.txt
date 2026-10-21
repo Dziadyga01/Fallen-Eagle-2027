@@ -1,0 +1,13 @@
+EK_rada = {
+	EK_d_oferta = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = PMN original_tag = SMR } }
+		targets = { WMG GDY SPT KPM KOC CHJ TRN BYD KUJ GRU WLC LES KLS KRJ NOT GNZ WMP SLS PMN SMR LWC WMZ MAZ SUW BST KON SRD }
+		target_non_existing = no
+		target_trigger = { FROM = { exists = yes is_subject = no NOT = { has_country_flag = EK_stowarzyszony } NOT = { has_war_with = ROOT } NOT = { tag = ROOT } has_country_flag = PL2027_polska } }
+		cost = 30
+		days_re_enable = 45
+		complete_effect = { FROM = { country_event = { id = ek.10 days = 2 } } custom_effect_tooltip = EUR_tt_zp2 hidden_effect = { add_to_variable = { EUR_zaleznosc = 2 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 FROM = { has_opinion = { target = ROOT value > 19 } } } modifier = { factor = 0.2 FROM = { has_opinion = { target = ROOT value < 0 } } } }
+	}
+}

@@ -1,0 +1,6 @@
+EK_rada = {
+	icon = generic_political_discourse
+	allowed = { OR = { original_tag = PMN original_tag = SMR } }
+	visible = { has_country_flag = EK_rada_regionow }
+	priority = 85
+}

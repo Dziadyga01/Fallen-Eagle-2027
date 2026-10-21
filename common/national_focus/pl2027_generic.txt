@@ -39,6 +39,7 @@ focus_tree = {
 		x = 4
 		y = 0
 		cost = 7
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -77,7 +78,7 @@ focus_tree = {
 
 	focus = {
 		id = PLG_drogi
-		icon = GFX_pl2027_081_most_1
+		icon = GFX_pl2027_081_most_0
 		x = 0
 		y = 2
 		cost = 7
@@ -227,6 +228,7 @@ focus_tree = {
 		x = 14
 		y = 0
 		cost = 7
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -395,6 +397,7 @@ focus_tree = {
 		x = 20
 		y = 0
 		cost = 7
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		search_filters = { FOCUS_FILTER_AIR_XP }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -454,6 +457,7 @@ focus_tree = {
 		x = 35
 		y = 0
 		cost = 7
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -863,6 +867,7 @@ focus_tree = {
 		x = 51
 		y = 0
 		cost = 7
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -937,7 +942,8 @@ focus_tree = {
 		icon = GFX_pl2027_081_polska_2_wmp
 		x = 58
 		y = 0
-		cost = 5
+		cost = 6
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -951,7 +957,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_administracja_0
 		x = 58
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = PLG_mo_start }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 1 }
@@ -966,7 +972,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_droga_0_wmp_k
 		x = 56
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = PLG_mo_kronika }
 		mutually_exclusive = { focus = PLG_mo_liga focus = PLG_mo_twierdza }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -983,7 +989,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_anarchia_0
 		x = 56
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = PLG_mo_patron }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available = { OR = { is_subject = yes has_country_flag = PLG_odmowa } }
@@ -1016,7 +1022,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_polska_0_wmp_k
 		x = 58
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = PLG_mo_kronika }
 		mutually_exclusive = { focus = PLG_mo_patron focus = PLG_mo_twierdza }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1033,7 +1039,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_sojusz_1_wmp
 		x = 58
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = PLG_mo_liga }
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		ai_will_do = { factor = 1 }
@@ -1064,7 +1070,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_las_0_wmp_k
 		x = 60
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = PLG_mo_kronika }
 		mutually_exclusive = { focus = PLG_mo_patron focus = PLG_mo_liga }
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
@@ -1081,7 +1087,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_porzadek_0
 		x = 60
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = PLG_mo_twierdza }
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		ai_will_do = { factor = 1 }
@@ -1129,7 +1135,8 @@ focus_tree = {
 		icon = GFX_pl2027_081_sztab_1_wmp
 		x = 64
 		y = 0
-		cost = 5
+		cost = 6
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		bypass = { has_country_flag = MIL_start }
 		search_filters = { FOCUS_FILTER_MANPOWER }
 		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }

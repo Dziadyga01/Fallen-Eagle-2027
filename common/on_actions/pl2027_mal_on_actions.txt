@@ -1,0 +1,5 @@
+on_actions = {
+	on_monthly = {
+		effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } }  if = { limit = { PL2027_male_panstwo = yes NOT = { has_country_flag = MAL_mod } } set_country_flag = MAL_mod add_dynamic_modifier = { modifier = MAL_male_mod } }  } }
+	}
+}

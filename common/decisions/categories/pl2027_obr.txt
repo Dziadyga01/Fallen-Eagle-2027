@@ -1,0 +1,12 @@
+OBR_ros = {
+	icon = generic_army_support
+	allowed = { original_tag = ROS }
+	visible = { has_country_flag = ROS_operacja_nieudana NOT = { has_global_flag = ROS_operacja_wygrana } }
+	priority = 80
+}
+OBR_obrona = {
+	icon = generic_army_support
+	allowed = { OR = { original_tag = WMZ original_tag = MAZ original_tag = SUW original_tag = BST } }
+	visible = { country_exists = ROS NOT = { has_global_flag = ROS_operacja_wygrana } OR = { NOT = { has_country_flag = ROS_zakonczona_obrona } ROS = { has_country_flag = ROS_operacja_nieudana } } }
+	priority = 92
+}

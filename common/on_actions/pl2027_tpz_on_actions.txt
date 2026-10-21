@@ -1,6 +1,6 @@
 on_actions = {
 	on_monthly_WLC = {
-		effect = { if = { limit = { check_variable = { TPZ_satysfakcja > 52 } } add_to_variable = { TPZ_satysfakcja = -2 } }
+		effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } }  if = { limit = { check_variable = { TPZ_satysfakcja > 52 } } add_to_variable = { TPZ_satysfakcja = -2 } }
 		else_if = { limit = { check_variable = { TPZ_satysfakcja > 50 } } add_to_variable = { TPZ_satysfakcja = -1 } }
 		else_if = { limit = { check_variable = { TPZ_satysfakcja < 48 } } add_to_variable = { TPZ_satysfakcja = 2 } }
 		else_if = { limit = { check_variable = { TPZ_satysfakcja < 50 } } add_to_variable = { TPZ_satysfakcja = 1 } }
@@ -32,6 +32,6 @@ on_actions = {
 				6 = { set_country_flag = { flag = TPZ_losowe_cd days = 150 } country_event = { id = tpz.22 } }
 				88 = { }
 			}
-		} }
+		}  } }
 	}
 }

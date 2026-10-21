@@ -1,0 +1,1407 @@
+PRL_regiony = {
+	PRL_m_WMG = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_WMG }
+		activation = { has_country_flag = PRL_zad_WMG }
+		cost = 0
+		days_mission_timeout = 7
+		timeout_effect = { clr_country_flag = PRL_zad_WMG if = { limit = { has_country_flag = PRL_odw_WMG NOT = { has_country_flag = PRL_r2_WMG } NOT = { has_country_flag = PRL_zal_WMG } } set_country_flag = PRL_r2_WMG set_country_flag = PRL_zad2_WMG PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_WMG } } PRL_bez_odpowiedzi_WMG = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = WMG } NOT = { WMG = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_WMG clr_country_flag = PRL_zad_WMG clr_country_flag = PRL_zad2_WMG }
+		complete_effect = { clr_country_flag = PRL_zad_WMG }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_WMG = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_WMG }
+		activation = { has_country_flag = PRL_zad2_WMG }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_WMG if = { limit = { NOT = { has_country_flag = PRL_zal_WMG } } PRL_bez_odpowiedzi_WMG = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = WMG } NOT = { WMG = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_WMG clr_country_flag = PRL_zad_WMG clr_country_flag = PRL_zad2_WMG }
+		complete_effect = { clr_country_flag = PRL_zad2_WMG }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_WMG_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMG has_country_flag = PRL_zad2_WMG } NOT = { has_country_flag = PRL_zal_WMG } country_exists = WMG WMG = { is_subject_of = POL } WMG = { check_variable = { PRL_poziom = 0 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_WMG clr_country_flag = PRL_zad_WMG clr_country_flag = PRL_zad2_WMG add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WMG = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 WMG = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_WMG_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMG has_country_flag = PRL_zad2_WMG } NOT = { has_country_flag = PRL_zal_WMG } country_exists = WMG WMG = { is_subject_of = POL } WMG = { check_variable = { PRL_poziom = 1 } } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_WMG clr_country_flag = PRL_zad_WMG clr_country_flag = PRL_zad2_WMG add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WMG = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 90 } modifier = { factor = 2 WMG = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_WMG_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMG has_country_flag = PRL_zad2_WMG } NOT = { has_country_flag = PRL_zal_WMG } country_exists = WMG WMG = { is_subject_of = POL } WMG = { check_variable = { PRL_poziom = 2 } } }
+		cost = 85
+		complete_effect = { set_country_flag = PRL_zal_WMG clr_country_flag = PRL_zad_WMG clr_country_flag = PRL_zad2_WMG add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WMG = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 105 } modifier = { factor = 2 WMG = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_WMG = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMG has_country_flag = PRL_zad2_WMG } NOT = { has_country_flag = PRL_zal_WMG } country_exists = WMG WMG = { is_subject_of = POL } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_WMG clr_country_flag = PRL_zad_WMG clr_country_flag = PRL_zad2_WMG random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 WMG = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 WMG = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WMG = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } WMG = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_WMG = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMG has_country_flag = PRL_zad2_WMG } NOT = { has_country_flag = PRL_zal_WMG } country_exists = WMG WMG = { is_subject_of = POL } }
+		cost = 30
+		complete_effect = { set_country_flag = PRL_zal_WMG clr_country_flag = PRL_zad_WMG clr_country_flag = PRL_zad2_WMG add_to_variable = { global.PRL_bilans = 1 } WMG = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 55 } }
+	}
+	PRL_odw_WMG = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMG has_country_flag = PRL_zad2_WMG } NOT = { has_country_flag = PRL_zal_WMG } country_exists = WMG WMG = { is_subject_of = POL } has_country_flag = PRL_zad_WMG NOT = { has_country_flag = PRL_odw_WMG } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_WMG WMG = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_TRN = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_TRN }
+		activation = { has_country_flag = PRL_zad_TRN }
+		cost = 0
+		days_mission_timeout = 7
+		timeout_effect = { clr_country_flag = PRL_zad_TRN if = { limit = { has_country_flag = PRL_odw_TRN NOT = { has_country_flag = PRL_r2_TRN } NOT = { has_country_flag = PRL_zal_TRN } } set_country_flag = PRL_r2_TRN set_country_flag = PRL_zad2_TRN PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_TRN } } PRL_bez_odpowiedzi_TRN = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = TRN } NOT = { TRN = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_TRN clr_country_flag = PRL_zad_TRN clr_country_flag = PRL_zad2_TRN }
+		complete_effect = { clr_country_flag = PRL_zad_TRN }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_TRN = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_TRN }
+		activation = { has_country_flag = PRL_zad2_TRN }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_TRN if = { limit = { NOT = { has_country_flag = PRL_zal_TRN } } PRL_bez_odpowiedzi_TRN = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = TRN } NOT = { TRN = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_TRN clr_country_flag = PRL_zad_TRN clr_country_flag = PRL_zad2_TRN }
+		complete_effect = { clr_country_flag = PRL_zad2_TRN }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_TRN_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_TRN has_country_flag = PRL_zad2_TRN } NOT = { has_country_flag = PRL_zal_TRN } country_exists = TRN TRN = { is_subject_of = POL } TRN = { check_variable = { PRL_poziom = 0 } } }
+		cost = 45
+		complete_effect = { set_country_flag = PRL_zal_TRN clr_country_flag = PRL_zad_TRN clr_country_flag = PRL_zad2_TRN add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } TRN = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 65 } modifier = { factor = 2 TRN = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_TRN_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_TRN has_country_flag = PRL_zad2_TRN } NOT = { has_country_flag = PRL_zal_TRN } country_exists = TRN TRN = { is_subject_of = POL } TRN = { check_variable = { PRL_poziom = 1 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_TRN clr_country_flag = PRL_zad_TRN clr_country_flag = PRL_zad2_TRN add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } TRN = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 TRN = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_TRN_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_TRN has_country_flag = PRL_zad2_TRN } NOT = { has_country_flag = PRL_zal_TRN } country_exists = TRN TRN = { is_subject_of = POL } TRN = { check_variable = { PRL_poziom = 2 } } }
+		cost = 65
+		complete_effect = { set_country_flag = PRL_zal_TRN clr_country_flag = PRL_zad_TRN clr_country_flag = PRL_zad2_TRN add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } TRN = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 85 } modifier = { factor = 2 TRN = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_TRN = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_TRN has_country_flag = PRL_zad2_TRN } NOT = { has_country_flag = PRL_zal_TRN } country_exists = TRN TRN = { is_subject_of = POL } }
+		cost = 60
+		complete_effect = { set_country_flag = PRL_zal_TRN clr_country_flag = PRL_zad_TRN clr_country_flag = PRL_zad2_TRN random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 TRN = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 TRN = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } TRN = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } TRN = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_TRN = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_TRN has_country_flag = PRL_zad2_TRN } NOT = { has_country_flag = PRL_zal_TRN } country_exists = TRN TRN = { is_subject_of = POL } }
+		cost = 25
+		complete_effect = { set_country_flag = PRL_zal_TRN clr_country_flag = PRL_zad_TRN clr_country_flag = PRL_zad2_TRN add_to_variable = { global.PRL_bilans = 1 } TRN = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 45 } }
+	}
+	PRL_odw_TRN = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_TRN has_country_flag = PRL_zad2_TRN } NOT = { has_country_flag = PRL_zal_TRN } country_exists = TRN TRN = { is_subject_of = POL } has_country_flag = PRL_zad_TRN NOT = { has_country_flag = PRL_odw_TRN } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_TRN TRN = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_GDY = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_GDY }
+		activation = { has_country_flag = PRL_zad_GDY }
+		cost = 0
+		days_mission_timeout = 6
+		timeout_effect = { clr_country_flag = PRL_zad_GDY if = { limit = { has_country_flag = PRL_odw_GDY NOT = { has_country_flag = PRL_r2_GDY } NOT = { has_country_flag = PRL_zal_GDY } } set_country_flag = PRL_r2_GDY set_country_flag = PRL_zad2_GDY PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_GDY } } PRL_bez_odpowiedzi_GDY = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = GDY } NOT = { GDY = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_GDY clr_country_flag = PRL_zad_GDY clr_country_flag = PRL_zad2_GDY }
+		complete_effect = { clr_country_flag = PRL_zad_GDY }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_GDY = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_GDY }
+		activation = { has_country_flag = PRL_zad2_GDY }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_GDY if = { limit = { NOT = { has_country_flag = PRL_zal_GDY } } PRL_bez_odpowiedzi_GDY = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = GDY } NOT = { GDY = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_GDY clr_country_flag = PRL_zad_GDY clr_country_flag = PRL_zad2_GDY }
+		complete_effect = { clr_country_flag = PRL_zad2_GDY }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_GDY_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_GDY has_country_flag = PRL_zad2_GDY } NOT = { has_country_flag = PRL_zal_GDY } country_exists = GDY GDY = { is_subject_of = POL } GDY = { check_variable = { PRL_poziom = 0 } } }
+		cost = 45
+		complete_effect = { set_country_flag = PRL_zal_GDY clr_country_flag = PRL_zad_GDY clr_country_flag = PRL_zad2_GDY add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } GDY = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 65 } modifier = { factor = 2 GDY = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_GDY_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_GDY has_country_flag = PRL_zad2_GDY } NOT = { has_country_flag = PRL_zal_GDY } country_exists = GDY GDY = { is_subject_of = POL } GDY = { check_variable = { PRL_poziom = 1 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_GDY clr_country_flag = PRL_zad_GDY clr_country_flag = PRL_zad2_GDY add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } GDY = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 GDY = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_GDY_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_GDY has_country_flag = PRL_zad2_GDY } NOT = { has_country_flag = PRL_zal_GDY } country_exists = GDY GDY = { is_subject_of = POL } GDY = { check_variable = { PRL_poziom = 2 } } }
+		cost = 65
+		complete_effect = { set_country_flag = PRL_zal_GDY clr_country_flag = PRL_zad_GDY clr_country_flag = PRL_zad2_GDY add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } GDY = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 85 } modifier = { factor = 2 GDY = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_GDY = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_GDY has_country_flag = PRL_zad2_GDY } NOT = { has_country_flag = PRL_zal_GDY } country_exists = GDY GDY = { is_subject_of = POL } }
+		cost = 60
+		complete_effect = { set_country_flag = PRL_zal_GDY clr_country_flag = PRL_zad_GDY clr_country_flag = PRL_zad2_GDY random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 GDY = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 GDY = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } GDY = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } GDY = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_GDY = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_GDY has_country_flag = PRL_zad2_GDY } NOT = { has_country_flag = PRL_zal_GDY } country_exists = GDY GDY = { is_subject_of = POL } }
+		cost = 25
+		complete_effect = { set_country_flag = PRL_zal_GDY clr_country_flag = PRL_zad_GDY clr_country_flag = PRL_zad2_GDY add_to_variable = { global.PRL_bilans = 1 } GDY = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 45 } }
+	}
+	PRL_odw_GDY = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_GDY has_country_flag = PRL_zad2_GDY } NOT = { has_country_flag = PRL_zal_GDY } country_exists = GDY GDY = { is_subject_of = POL } has_country_flag = PRL_zad_GDY NOT = { has_country_flag = PRL_odw_GDY } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_GDY GDY = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_BYD = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_BYD }
+		activation = { has_country_flag = PRL_zad_BYD }
+		cost = 0
+		days_mission_timeout = 7
+		timeout_effect = { clr_country_flag = PRL_zad_BYD if = { limit = { has_country_flag = PRL_odw_BYD NOT = { has_country_flag = PRL_r2_BYD } NOT = { has_country_flag = PRL_zal_BYD } } set_country_flag = PRL_r2_BYD set_country_flag = PRL_zad2_BYD PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_BYD } } PRL_bez_odpowiedzi_BYD = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = BYD } NOT = { BYD = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_BYD clr_country_flag = PRL_zad_BYD clr_country_flag = PRL_zad2_BYD }
+		complete_effect = { clr_country_flag = PRL_zad_BYD }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_BYD = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_BYD }
+		activation = { has_country_flag = PRL_zad2_BYD }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_BYD if = { limit = { NOT = { has_country_flag = PRL_zal_BYD } } PRL_bez_odpowiedzi_BYD = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = BYD } NOT = { BYD = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_BYD clr_country_flag = PRL_zad_BYD clr_country_flag = PRL_zad2_BYD }
+		complete_effect = { clr_country_flag = PRL_zad2_BYD }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_BYD_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BYD has_country_flag = PRL_zad2_BYD } NOT = { has_country_flag = PRL_zal_BYD } country_exists = BYD BYD = { is_subject_of = POL } BYD = { check_variable = { PRL_poziom = 0 } } }
+		cost = 45
+		complete_effect = { set_country_flag = PRL_zal_BYD clr_country_flag = PRL_zad_BYD clr_country_flag = PRL_zad2_BYD add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } BYD = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 65 } modifier = { factor = 2 BYD = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_BYD_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BYD has_country_flag = PRL_zad2_BYD } NOT = { has_country_flag = PRL_zal_BYD } country_exists = BYD BYD = { is_subject_of = POL } BYD = { check_variable = { PRL_poziom = 1 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_BYD clr_country_flag = PRL_zad_BYD clr_country_flag = PRL_zad2_BYD add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } BYD = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 BYD = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_BYD_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BYD has_country_flag = PRL_zad2_BYD } NOT = { has_country_flag = PRL_zal_BYD } country_exists = BYD BYD = { is_subject_of = POL } BYD = { check_variable = { PRL_poziom = 2 } } }
+		cost = 65
+		complete_effect = { set_country_flag = PRL_zal_BYD clr_country_flag = PRL_zad_BYD clr_country_flag = PRL_zad2_BYD add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } BYD = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 85 } modifier = { factor = 2 BYD = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_BYD = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BYD has_country_flag = PRL_zad2_BYD } NOT = { has_country_flag = PRL_zal_BYD } country_exists = BYD BYD = { is_subject_of = POL } }
+		cost = 60
+		complete_effect = { set_country_flag = PRL_zal_BYD clr_country_flag = PRL_zad_BYD clr_country_flag = PRL_zad2_BYD random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 BYD = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 BYD = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } BYD = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } BYD = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_BYD = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BYD has_country_flag = PRL_zad2_BYD } NOT = { has_country_flag = PRL_zal_BYD } country_exists = BYD BYD = { is_subject_of = POL } }
+		cost = 25
+		complete_effect = { set_country_flag = PRL_zal_BYD clr_country_flag = PRL_zad_BYD clr_country_flag = PRL_zad2_BYD add_to_variable = { global.PRL_bilans = 1 } BYD = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 45 } }
+	}
+	PRL_odw_BYD = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BYD has_country_flag = PRL_zad2_BYD } NOT = { has_country_flag = PRL_zal_BYD } country_exists = BYD BYD = { is_subject_of = POL } has_country_flag = PRL_zad_BYD NOT = { has_country_flag = PRL_odw_BYD } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_BYD BYD = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_SPT = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_SPT }
+		activation = { has_country_flag = PRL_zad_SPT }
+		cost = 0
+		days_mission_timeout = 6
+		timeout_effect = { clr_country_flag = PRL_zad_SPT if = { limit = { has_country_flag = PRL_odw_SPT NOT = { has_country_flag = PRL_r2_SPT } NOT = { has_country_flag = PRL_zal_SPT } } set_country_flag = PRL_r2_SPT set_country_flag = PRL_zad2_SPT PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_SPT } } PRL_bez_odpowiedzi_SPT = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = SPT } NOT = { SPT = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_SPT clr_country_flag = PRL_zad_SPT clr_country_flag = PRL_zad2_SPT }
+		complete_effect = { clr_country_flag = PRL_zad_SPT }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_SPT = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_SPT }
+		activation = { has_country_flag = PRL_zad2_SPT }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_SPT if = { limit = { NOT = { has_country_flag = PRL_zal_SPT } } PRL_bez_odpowiedzi_SPT = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = SPT } NOT = { SPT = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_SPT clr_country_flag = PRL_zad_SPT clr_country_flag = PRL_zad2_SPT }
+		complete_effect = { clr_country_flag = PRL_zad2_SPT }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_SPT_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SPT has_country_flag = PRL_zad2_SPT } NOT = { has_country_flag = PRL_zal_SPT } country_exists = SPT SPT = { is_subject_of = POL } SPT = { check_variable = { PRL_poziom = 0 } } }
+		cost = 30
+		complete_effect = { set_country_flag = PRL_zal_SPT clr_country_flag = PRL_zad_SPT clr_country_flag = PRL_zad2_SPT add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } SPT = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 50 } modifier = { factor = 2 SPT = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_SPT_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SPT has_country_flag = PRL_zad2_SPT } NOT = { has_country_flag = PRL_zal_SPT } country_exists = SPT SPT = { is_subject_of = POL } SPT = { check_variable = { PRL_poziom = 1 } } }
+		cost = 40
+		complete_effect = { set_country_flag = PRL_zal_SPT clr_country_flag = PRL_zad_SPT clr_country_flag = PRL_zad2_SPT add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } SPT = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 60 } modifier = { factor = 2 SPT = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_SPT_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SPT has_country_flag = PRL_zad2_SPT } NOT = { has_country_flag = PRL_zal_SPT } country_exists = SPT SPT = { is_subject_of = POL } SPT = { check_variable = { PRL_poziom = 2 } } }
+		cost = 50
+		complete_effect = { set_country_flag = PRL_zal_SPT clr_country_flag = PRL_zad_SPT clr_country_flag = PRL_zad2_SPT add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } SPT = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 70 } modifier = { factor = 2 SPT = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_SPT = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SPT has_country_flag = PRL_zad2_SPT } NOT = { has_country_flag = PRL_zal_SPT } country_exists = SPT SPT = { is_subject_of = POL } }
+		cost = 50
+		complete_effect = { set_country_flag = PRL_zal_SPT clr_country_flag = PRL_zad_SPT clr_country_flag = PRL_zad2_SPT random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 SPT = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 SPT = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } SPT = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } SPT = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_SPT = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SPT has_country_flag = PRL_zad2_SPT } NOT = { has_country_flag = PRL_zal_SPT } country_exists = SPT SPT = { is_subject_of = POL } }
+		cost = 20
+		complete_effect = { set_country_flag = PRL_zal_SPT clr_country_flag = PRL_zad_SPT clr_country_flag = PRL_zad2_SPT add_to_variable = { global.PRL_bilans = 1 } SPT = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 30 } }
+	}
+	PRL_odw_SPT = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SPT has_country_flag = PRL_zad2_SPT } NOT = { has_country_flag = PRL_zal_SPT } country_exists = SPT SPT = { is_subject_of = POL } has_country_flag = PRL_zad_SPT NOT = { has_country_flag = PRL_odw_SPT } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_SPT SPT = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_NNA = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_NNA }
+		activation = { has_country_flag = PRL_zad_NNA }
+		cost = 0
+		days_mission_timeout = 8
+		timeout_effect = { clr_country_flag = PRL_zad_NNA if = { limit = { has_country_flag = PRL_odw_NNA NOT = { has_country_flag = PRL_r2_NNA } NOT = { has_country_flag = PRL_zal_NNA } } set_country_flag = PRL_r2_NNA set_country_flag = PRL_zad2_NNA PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_NNA } } PRL_bez_odpowiedzi_NNA = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = NNA } NOT = { NNA = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_NNA clr_country_flag = PRL_zad_NNA clr_country_flag = PRL_zad2_NNA }
+		complete_effect = { clr_country_flag = PRL_zad_NNA }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_NNA = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_NNA }
+		activation = { has_country_flag = PRL_zad2_NNA }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_NNA if = { limit = { NOT = { has_country_flag = PRL_zal_NNA } } PRL_bez_odpowiedzi_NNA = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = NNA } NOT = { NNA = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_NNA clr_country_flag = PRL_zad_NNA clr_country_flag = PRL_zad2_NNA }
+		complete_effect = { clr_country_flag = PRL_zad2_NNA }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_NNA_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_NNA has_country_flag = PRL_zad2_NNA } NOT = { has_country_flag = PRL_zal_NNA } country_exists = NNA NNA = { is_subject_of = POL } NNA = { check_variable = { PRL_poziom = 0 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_NNA clr_country_flag = PRL_zad_NNA clr_country_flag = PRL_zad2_NNA add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } NNA = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 NNA = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_NNA_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_NNA has_country_flag = PRL_zad2_NNA } NOT = { has_country_flag = PRL_zal_NNA } country_exists = NNA NNA = { is_subject_of = POL } NNA = { check_variable = { PRL_poziom = 1 } } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_NNA clr_country_flag = PRL_zad_NNA clr_country_flag = PRL_zad2_NNA add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } NNA = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 90 } modifier = { factor = 2 NNA = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_NNA_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_NNA has_country_flag = PRL_zad2_NNA } NOT = { has_country_flag = PRL_zal_NNA } country_exists = NNA NNA = { is_subject_of = POL } NNA = { check_variable = { PRL_poziom = 2 } } }
+		cost = 85
+		complete_effect = { set_country_flag = PRL_zal_NNA clr_country_flag = PRL_zad_NNA clr_country_flag = PRL_zad2_NNA add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } NNA = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 105 } modifier = { factor = 2 NNA = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_NNA = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_NNA has_country_flag = PRL_zad2_NNA } NOT = { has_country_flag = PRL_zal_NNA } country_exists = NNA NNA = { is_subject_of = POL } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_NNA clr_country_flag = PRL_zad_NNA clr_country_flag = PRL_zad2_NNA random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 NNA = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 NNA = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } NNA = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } NNA = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_NNA = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_NNA has_country_flag = PRL_zad2_NNA } NOT = { has_country_flag = PRL_zal_NNA } country_exists = NNA NNA = { is_subject_of = POL } }
+		cost = 30
+		complete_effect = { set_country_flag = PRL_zal_NNA clr_country_flag = PRL_zad_NNA clr_country_flag = PRL_zad2_NNA add_to_variable = { global.PRL_bilans = 1 } NNA = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 55 } }
+	}
+	PRL_odw_NNA = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_NNA has_country_flag = PRL_zad2_NNA } NOT = { has_country_flag = PRL_zal_NNA } country_exists = NNA NNA = { is_subject_of = POL } has_country_flag = PRL_zad_NNA NOT = { has_country_flag = PRL_odw_NNA } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_NNA NNA = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_WMZ = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_WMZ }
+		activation = { has_country_flag = PRL_zad_WMZ }
+		cost = 0
+		days_mission_timeout = 8
+		timeout_effect = { clr_country_flag = PRL_zad_WMZ if = { limit = { has_country_flag = PRL_odw_WMZ NOT = { has_country_flag = PRL_r2_WMZ } NOT = { has_country_flag = PRL_zal_WMZ } } set_country_flag = PRL_r2_WMZ set_country_flag = PRL_zad2_WMZ PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_WMZ } } PRL_bez_odpowiedzi_WMZ = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = WMZ } NOT = { WMZ = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_WMZ clr_country_flag = PRL_zad_WMZ clr_country_flag = PRL_zad2_WMZ }
+		complete_effect = { clr_country_flag = PRL_zad_WMZ }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_WMZ = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_WMZ }
+		activation = { has_country_flag = PRL_zad2_WMZ }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_WMZ if = { limit = { NOT = { has_country_flag = PRL_zal_WMZ } } PRL_bez_odpowiedzi_WMZ = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = WMZ } NOT = { WMZ = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_WMZ clr_country_flag = PRL_zad_WMZ clr_country_flag = PRL_zad2_WMZ }
+		complete_effect = { clr_country_flag = PRL_zad2_WMZ }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_WMZ_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMZ has_country_flag = PRL_zad2_WMZ } NOT = { has_country_flag = PRL_zal_WMZ } country_exists = WMZ WMZ = { is_subject_of = POL } WMZ = { check_variable = { PRL_poziom = 0 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_WMZ clr_country_flag = PRL_zad_WMZ clr_country_flag = PRL_zad2_WMZ add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WMZ = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 WMZ = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_WMZ_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMZ has_country_flag = PRL_zad2_WMZ } NOT = { has_country_flag = PRL_zal_WMZ } country_exists = WMZ WMZ = { is_subject_of = POL } WMZ = { check_variable = { PRL_poziom = 1 } } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_WMZ clr_country_flag = PRL_zad_WMZ clr_country_flag = PRL_zad2_WMZ add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WMZ = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 90 } modifier = { factor = 2 WMZ = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_WMZ_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMZ has_country_flag = PRL_zad2_WMZ } NOT = { has_country_flag = PRL_zal_WMZ } country_exists = WMZ WMZ = { is_subject_of = POL } WMZ = { check_variable = { PRL_poziom = 2 } } }
+		cost = 85
+		complete_effect = { set_country_flag = PRL_zal_WMZ clr_country_flag = PRL_zad_WMZ clr_country_flag = PRL_zad2_WMZ add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WMZ = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 105 } modifier = { factor = 2 WMZ = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_WMZ = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMZ has_country_flag = PRL_zad2_WMZ } NOT = { has_country_flag = PRL_zal_WMZ } country_exists = WMZ WMZ = { is_subject_of = POL } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_WMZ clr_country_flag = PRL_zad_WMZ clr_country_flag = PRL_zad2_WMZ random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 WMZ = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 WMZ = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WMZ = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } WMZ = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_WMZ = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMZ has_country_flag = PRL_zad2_WMZ } NOT = { has_country_flag = PRL_zal_WMZ } country_exists = WMZ WMZ = { is_subject_of = POL } }
+		cost = 30
+		complete_effect = { set_country_flag = PRL_zal_WMZ clr_country_flag = PRL_zad_WMZ clr_country_flag = PRL_zad2_WMZ add_to_variable = { global.PRL_bilans = 1 } WMZ = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 55 } }
+	}
+	PRL_odw_WMZ = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WMZ has_country_flag = PRL_zad2_WMZ } NOT = { has_country_flag = PRL_zal_WMZ } country_exists = WMZ WMZ = { is_subject_of = POL } has_country_flag = PRL_zad_WMZ NOT = { has_country_flag = PRL_odw_WMZ } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_WMZ WMZ = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_SUW = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_SUW }
+		activation = { has_country_flag = PRL_zad_SUW }
+		cost = 0
+		days_mission_timeout = 6
+		timeout_effect = { clr_country_flag = PRL_zad_SUW if = { limit = { has_country_flag = PRL_odw_SUW NOT = { has_country_flag = PRL_r2_SUW } NOT = { has_country_flag = PRL_zal_SUW } } set_country_flag = PRL_r2_SUW set_country_flag = PRL_zad2_SUW PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_SUW } } PRL_bez_odpowiedzi_SUW = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = SUW } NOT = { SUW = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_SUW clr_country_flag = PRL_zad_SUW clr_country_flag = PRL_zad2_SUW }
+		complete_effect = { clr_country_flag = PRL_zad_SUW }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_SUW = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_SUW }
+		activation = { has_country_flag = PRL_zad2_SUW }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_SUW if = { limit = { NOT = { has_country_flag = PRL_zal_SUW } } PRL_bez_odpowiedzi_SUW = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = SUW } NOT = { SUW = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_SUW clr_country_flag = PRL_zad_SUW clr_country_flag = PRL_zad2_SUW }
+		complete_effect = { clr_country_flag = PRL_zad2_SUW }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_SUW_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SUW has_country_flag = PRL_zad2_SUW } NOT = { has_country_flag = PRL_zal_SUW } country_exists = SUW SUW = { is_subject_of = POL } SUW = { check_variable = { PRL_poziom = 0 } } }
+		cost = 45
+		complete_effect = { set_country_flag = PRL_zal_SUW clr_country_flag = PRL_zad_SUW clr_country_flag = PRL_zad2_SUW add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } SUW = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 65 } modifier = { factor = 2 SUW = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_SUW_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SUW has_country_flag = PRL_zad2_SUW } NOT = { has_country_flag = PRL_zal_SUW } country_exists = SUW SUW = { is_subject_of = POL } SUW = { check_variable = { PRL_poziom = 1 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_SUW clr_country_flag = PRL_zad_SUW clr_country_flag = PRL_zad2_SUW add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } SUW = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 SUW = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_SUW_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SUW has_country_flag = PRL_zad2_SUW } NOT = { has_country_flag = PRL_zal_SUW } country_exists = SUW SUW = { is_subject_of = POL } SUW = { check_variable = { PRL_poziom = 2 } } }
+		cost = 65
+		complete_effect = { set_country_flag = PRL_zal_SUW clr_country_flag = PRL_zad_SUW clr_country_flag = PRL_zad2_SUW add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } SUW = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 85 } modifier = { factor = 2 SUW = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_SUW = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SUW has_country_flag = PRL_zad2_SUW } NOT = { has_country_flag = PRL_zal_SUW } country_exists = SUW SUW = { is_subject_of = POL } }
+		cost = 60
+		complete_effect = { set_country_flag = PRL_zal_SUW clr_country_flag = PRL_zad_SUW clr_country_flag = PRL_zad2_SUW random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 SUW = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 SUW = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } SUW = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } SUW = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_SUW = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SUW has_country_flag = PRL_zad2_SUW } NOT = { has_country_flag = PRL_zal_SUW } country_exists = SUW SUW = { is_subject_of = POL } }
+		cost = 25
+		complete_effect = { set_country_flag = PRL_zal_SUW clr_country_flag = PRL_zad_SUW clr_country_flag = PRL_zad2_SUW add_to_variable = { global.PRL_bilans = 1 } SUW = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 45 } }
+	}
+	PRL_odw_SUW = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_SUW has_country_flag = PRL_zad2_SUW } NOT = { has_country_flag = PRL_zal_SUW } country_exists = SUW SUW = { is_subject_of = POL } has_country_flag = PRL_zad_SUW NOT = { has_country_flag = PRL_odw_SUW } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_SUW SUW = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_BST = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_BST }
+		activation = { has_country_flag = PRL_zad_BST }
+		cost = 0
+		days_mission_timeout = 7
+		timeout_effect = { clr_country_flag = PRL_zad_BST if = { limit = { has_country_flag = PRL_odw_BST NOT = { has_country_flag = PRL_r2_BST } NOT = { has_country_flag = PRL_zal_BST } } set_country_flag = PRL_r2_BST set_country_flag = PRL_zad2_BST PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_BST } } PRL_bez_odpowiedzi_BST = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = BST } NOT = { BST = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_BST clr_country_flag = PRL_zad_BST clr_country_flag = PRL_zad2_BST }
+		complete_effect = { clr_country_flag = PRL_zad_BST }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_BST = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_BST }
+		activation = { has_country_flag = PRL_zad2_BST }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_BST if = { limit = { NOT = { has_country_flag = PRL_zal_BST } } PRL_bez_odpowiedzi_BST = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = BST } NOT = { BST = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_BST clr_country_flag = PRL_zad_BST clr_country_flag = PRL_zad2_BST }
+		complete_effect = { clr_country_flag = PRL_zad2_BST }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_BST_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BST has_country_flag = PRL_zad2_BST } NOT = { has_country_flag = PRL_zal_BST } country_exists = BST BST = { is_subject_of = POL } BST = { check_variable = { PRL_poziom = 0 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_BST clr_country_flag = PRL_zad_BST clr_country_flag = PRL_zad2_BST add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } BST = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 BST = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_BST_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BST has_country_flag = PRL_zad2_BST } NOT = { has_country_flag = PRL_zal_BST } country_exists = BST BST = { is_subject_of = POL } BST = { check_variable = { PRL_poziom = 1 } } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_BST clr_country_flag = PRL_zad_BST clr_country_flag = PRL_zad2_BST add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } BST = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 90 } modifier = { factor = 2 BST = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_BST_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BST has_country_flag = PRL_zad2_BST } NOT = { has_country_flag = PRL_zal_BST } country_exists = BST BST = { is_subject_of = POL } BST = { check_variable = { PRL_poziom = 2 } } }
+		cost = 85
+		complete_effect = { set_country_flag = PRL_zal_BST clr_country_flag = PRL_zad_BST clr_country_flag = PRL_zad2_BST add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } BST = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 105 } modifier = { factor = 2 BST = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_BST = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BST has_country_flag = PRL_zad2_BST } NOT = { has_country_flag = PRL_zal_BST } country_exists = BST BST = { is_subject_of = POL } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_BST clr_country_flag = PRL_zad_BST clr_country_flag = PRL_zad2_BST random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 BST = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 BST = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } BST = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } BST = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_BST = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BST has_country_flag = PRL_zad2_BST } NOT = { has_country_flag = PRL_zal_BST } country_exists = BST BST = { is_subject_of = POL } }
+		cost = 30
+		complete_effect = { set_country_flag = PRL_zal_BST clr_country_flag = PRL_zad_BST clr_country_flag = PRL_zad2_BST add_to_variable = { global.PRL_bilans = 1 } BST = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 55 } }
+	}
+	PRL_odw_BST = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_BST has_country_flag = PRL_zad2_BST } NOT = { has_country_flag = PRL_zal_BST } country_exists = BST BST = { is_subject_of = POL } has_country_flag = PRL_zad_BST NOT = { has_country_flag = PRL_odw_BST } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_BST BST = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_PRW = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_PRW }
+		activation = { has_country_flag = PRL_zad_PRW }
+		cost = 0
+		days_mission_timeout = 8
+		timeout_effect = { clr_country_flag = PRL_zad_PRW if = { limit = { has_country_flag = PRL_odw_PRW NOT = { has_country_flag = PRL_r2_PRW } NOT = { has_country_flag = PRL_zal_PRW } } set_country_flag = PRL_r2_PRW set_country_flag = PRL_zad2_PRW PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_PRW } } PRL_bez_odpowiedzi_PRW = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = PRW } NOT = { PRW = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_PRW clr_country_flag = PRL_zad_PRW clr_country_flag = PRL_zad2_PRW }
+		complete_effect = { clr_country_flag = PRL_zad_PRW }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_PRW = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_PRW }
+		activation = { has_country_flag = PRL_zad2_PRW }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_PRW if = { limit = { NOT = { has_country_flag = PRL_zal_PRW } } PRL_bez_odpowiedzi_PRW = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = PRW } NOT = { PRW = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_PRW clr_country_flag = PRL_zad_PRW clr_country_flag = PRL_zad2_PRW }
+		complete_effect = { clr_country_flag = PRL_zad2_PRW }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_PRW_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PRW has_country_flag = PRL_zad2_PRW } NOT = { has_country_flag = PRL_zal_PRW } country_exists = PRW PRW = { is_subject_of = POL } PRW = { check_variable = { PRL_poziom = 0 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_PRW clr_country_flag = PRL_zad_PRW clr_country_flag = PRL_zad2_PRW add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } PRW = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 PRW = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_PRW_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PRW has_country_flag = PRL_zad2_PRW } NOT = { has_country_flag = PRL_zal_PRW } country_exists = PRW PRW = { is_subject_of = POL } PRW = { check_variable = { PRL_poziom = 1 } } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_PRW clr_country_flag = PRL_zad_PRW clr_country_flag = PRL_zad2_PRW add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } PRW = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 90 } modifier = { factor = 2 PRW = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_PRW_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PRW has_country_flag = PRL_zad2_PRW } NOT = { has_country_flag = PRL_zal_PRW } country_exists = PRW PRW = { is_subject_of = POL } PRW = { check_variable = { PRL_poziom = 2 } } }
+		cost = 85
+		complete_effect = { set_country_flag = PRL_zal_PRW clr_country_flag = PRL_zad_PRW clr_country_flag = PRL_zad2_PRW add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } PRW = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 105 } modifier = { factor = 2 PRW = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_PRW = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PRW has_country_flag = PRL_zad2_PRW } NOT = { has_country_flag = PRL_zal_PRW } country_exists = PRW PRW = { is_subject_of = POL } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_PRW clr_country_flag = PRL_zad_PRW clr_country_flag = PRL_zad2_PRW random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 PRW = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 PRW = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } PRW = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } PRW = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_PRW = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PRW has_country_flag = PRL_zad2_PRW } NOT = { has_country_flag = PRL_zal_PRW } country_exists = PRW PRW = { is_subject_of = POL } }
+		cost = 30
+		complete_effect = { set_country_flag = PRL_zal_PRW clr_country_flag = PRL_zad_PRW clr_country_flag = PRL_zad2_PRW add_to_variable = { global.PRL_bilans = 1 } PRW = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 55 } }
+	}
+	PRL_odw_PRW = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PRW has_country_flag = PRL_zad2_PRW } NOT = { has_country_flag = PRL_zal_PRW } country_exists = PRW PRW = { is_subject_of = POL } has_country_flag = PRL_zad_PRW NOT = { has_country_flag = PRL_odw_PRW } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_PRW PRW = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_LWC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_LWC }
+		activation = { has_country_flag = PRL_zad_LWC }
+		cost = 0
+		days_mission_timeout = 7
+		timeout_effect = { clr_country_flag = PRL_zad_LWC if = { limit = { has_country_flag = PRL_odw_LWC NOT = { has_country_flag = PRL_r2_LWC } NOT = { has_country_flag = PRL_zal_LWC } } set_country_flag = PRL_r2_LWC set_country_flag = PRL_zad2_LWC PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_LWC } } PRL_bez_odpowiedzi_LWC = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = LWC } NOT = { LWC = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_LWC clr_country_flag = PRL_zad_LWC clr_country_flag = PRL_zad2_LWC }
+		complete_effect = { clr_country_flag = PRL_zad_LWC }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_LWC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_LWC }
+		activation = { has_country_flag = PRL_zad2_LWC }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_LWC if = { limit = { NOT = { has_country_flag = PRL_zal_LWC } } PRL_bez_odpowiedzi_LWC = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = LWC } NOT = { LWC = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_LWC clr_country_flag = PRL_zad_LWC clr_country_flag = PRL_zad2_LWC }
+		complete_effect = { clr_country_flag = PRL_zad2_LWC }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_LWC_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_LWC has_country_flag = PRL_zad2_LWC } NOT = { has_country_flag = PRL_zal_LWC } country_exists = LWC LWC = { is_subject_of = POL } LWC = { check_variable = { PRL_poziom = 0 } } }
+		cost = 45
+		complete_effect = { set_country_flag = PRL_zal_LWC clr_country_flag = PRL_zad_LWC clr_country_flag = PRL_zad2_LWC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } LWC = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 65 } modifier = { factor = 2 LWC = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_LWC_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_LWC has_country_flag = PRL_zad2_LWC } NOT = { has_country_flag = PRL_zal_LWC } country_exists = LWC LWC = { is_subject_of = POL } LWC = { check_variable = { PRL_poziom = 1 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_LWC clr_country_flag = PRL_zad_LWC clr_country_flag = PRL_zad2_LWC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } LWC = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 LWC = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_LWC_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_LWC has_country_flag = PRL_zad2_LWC } NOT = { has_country_flag = PRL_zal_LWC } country_exists = LWC LWC = { is_subject_of = POL } LWC = { check_variable = { PRL_poziom = 2 } } }
+		cost = 65
+		complete_effect = { set_country_flag = PRL_zal_LWC clr_country_flag = PRL_zad_LWC clr_country_flag = PRL_zad2_LWC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } LWC = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 4 modifier = { factor = 0.3 has_political_power < 85 } modifier = { factor = 2 LWC = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_LWC = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_LWC has_country_flag = PRL_zad2_LWC } NOT = { has_country_flag = PRL_zal_LWC } country_exists = LWC LWC = { is_subject_of = POL } }
+		cost = 60
+		complete_effect = { set_country_flag = PRL_zal_LWC clr_country_flag = PRL_zad_LWC clr_country_flag = PRL_zad2_LWC random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 LWC = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 LWC = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } LWC = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } LWC = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_LWC = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_LWC has_country_flag = PRL_zad2_LWC } NOT = { has_country_flag = PRL_zal_LWC } country_exists = LWC LWC = { is_subject_of = POL } }
+		cost = 25
+		complete_effect = { set_country_flag = PRL_zal_LWC clr_country_flag = PRL_zad_LWC clr_country_flag = PRL_zad2_LWC add_to_variable = { global.PRL_bilans = 1 } LWC = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 45 } }
+	}
+	PRL_odw_LWC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_LWC has_country_flag = PRL_zad2_LWC } NOT = { has_country_flag = PRL_zal_LWC } country_exists = LWC LWC = { is_subject_of = POL } has_country_flag = PRL_zad_LWC NOT = { has_country_flag = PRL_odw_LWC } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_LWC LWC = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_ZKR = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_ZKR }
+		activation = { has_country_flag = PRL_zad_ZKR }
+		cost = 0
+		days_mission_timeout = 5
+		timeout_effect = { clr_country_flag = PRL_zad_ZKR if = { limit = { has_country_flag = PRL_odw_ZKR NOT = { has_country_flag = PRL_r2_ZKR } NOT = { has_country_flag = PRL_zal_ZKR } } set_country_flag = PRL_r2_ZKR set_country_flag = PRL_zad2_ZKR PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_ZKR } } PRL_bez_odpowiedzi_ZKR = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = ZKR } NOT = { ZKR = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_ZKR clr_country_flag = PRL_zad_ZKR clr_country_flag = PRL_zad2_ZKR }
+		complete_effect = { clr_country_flag = PRL_zad_ZKR }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_ZKR = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_ZKR }
+		activation = { has_country_flag = PRL_zad2_ZKR }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_ZKR if = { limit = { NOT = { has_country_flag = PRL_zal_ZKR } } PRL_bez_odpowiedzi_ZKR = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = ZKR } NOT = { ZKR = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_ZKR clr_country_flag = PRL_zad_ZKR clr_country_flag = PRL_zad2_ZKR }
+		complete_effect = { clr_country_flag = PRL_zad2_ZKR }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_ZKR_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_ZKR has_country_flag = PRL_zad2_ZKR } NOT = { has_country_flag = PRL_zal_ZKR } country_exists = ZKR ZKR = { is_subject_of = POL } ZKR = { check_variable = { PRL_poziom = 0 } } }
+		cost = 30
+		complete_effect = { set_country_flag = PRL_zal_ZKR clr_country_flag = PRL_zad_ZKR clr_country_flag = PRL_zad2_ZKR add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } ZKR = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 50 } modifier = { factor = 2 ZKR = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_ZKR_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_ZKR has_country_flag = PRL_zad2_ZKR } NOT = { has_country_flag = PRL_zal_ZKR } country_exists = ZKR ZKR = { is_subject_of = POL } ZKR = { check_variable = { PRL_poziom = 1 } } }
+		cost = 40
+		complete_effect = { set_country_flag = PRL_zal_ZKR clr_country_flag = PRL_zad_ZKR clr_country_flag = PRL_zad2_ZKR add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } ZKR = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 60 } modifier = { factor = 2 ZKR = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_ZKR_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_ZKR has_country_flag = PRL_zad2_ZKR } NOT = { has_country_flag = PRL_zal_ZKR } country_exists = ZKR ZKR = { is_subject_of = POL } ZKR = { check_variable = { PRL_poziom = 2 } } }
+		cost = 50
+		complete_effect = { set_country_flag = PRL_zal_ZKR clr_country_flag = PRL_zad_ZKR clr_country_flag = PRL_zad2_ZKR add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } ZKR = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 70 } modifier = { factor = 2 ZKR = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_ZKR = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_ZKR has_country_flag = PRL_zad2_ZKR } NOT = { has_country_flag = PRL_zal_ZKR } country_exists = ZKR ZKR = { is_subject_of = POL } }
+		cost = 50
+		complete_effect = { set_country_flag = PRL_zal_ZKR clr_country_flag = PRL_zad_ZKR clr_country_flag = PRL_zad2_ZKR random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 ZKR = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 ZKR = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } ZKR = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } ZKR = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_ZKR = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_ZKR has_country_flag = PRL_zad2_ZKR } NOT = { has_country_flag = PRL_zal_ZKR } country_exists = ZKR ZKR = { is_subject_of = POL } }
+		cost = 20
+		complete_effect = { set_country_flag = PRL_zal_ZKR clr_country_flag = PRL_zad_ZKR clr_country_flag = PRL_zad2_ZKR add_to_variable = { global.PRL_bilans = 1 } ZKR = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 30 } }
+	}
+	PRL_odw_ZKR = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_ZKR has_country_flag = PRL_zad2_ZKR } NOT = { has_country_flag = PRL_zal_ZKR } country_exists = ZKR ZKR = { is_subject_of = POL } has_country_flag = PRL_zad_ZKR NOT = { has_country_flag = PRL_odw_ZKR } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_ZKR ZKR = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_KOC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_KOC }
+		activation = { has_country_flag = PRL_zad_KOC }
+		cost = 0
+		days_mission_timeout = 6
+		timeout_effect = { clr_country_flag = PRL_zad_KOC if = { limit = { has_country_flag = PRL_odw_KOC NOT = { has_country_flag = PRL_r2_KOC } NOT = { has_country_flag = PRL_zal_KOC } } set_country_flag = PRL_r2_KOC set_country_flag = PRL_zad2_KOC PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_KOC } } PRL_bez_odpowiedzi_KOC = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = KOC } NOT = { KOC = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_KOC clr_country_flag = PRL_zad_KOC clr_country_flag = PRL_zad2_KOC }
+		complete_effect = { clr_country_flag = PRL_zad_KOC }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_KOC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_KOC }
+		activation = { has_country_flag = PRL_zad2_KOC }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_KOC if = { limit = { NOT = { has_country_flag = PRL_zal_KOC } } PRL_bez_odpowiedzi_KOC = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = KOC } NOT = { KOC = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_KOC clr_country_flag = PRL_zad_KOC clr_country_flag = PRL_zad2_KOC }
+		complete_effect = { clr_country_flag = PRL_zad2_KOC }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_KOC_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_KOC has_country_flag = PRL_zad2_KOC } NOT = { has_country_flag = PRL_zal_KOC } country_exists = KOC KOC = { is_subject_of = POL } KOC = { check_variable = { PRL_poziom = 0 } } }
+		cost = 30
+		complete_effect = { set_country_flag = PRL_zal_KOC clr_country_flag = PRL_zad_KOC clr_country_flag = PRL_zad2_KOC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } KOC = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 50 } modifier = { factor = 2 KOC = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_KOC_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_KOC has_country_flag = PRL_zad2_KOC } NOT = { has_country_flag = PRL_zal_KOC } country_exists = KOC KOC = { is_subject_of = POL } KOC = { check_variable = { PRL_poziom = 1 } } }
+		cost = 40
+		complete_effect = { set_country_flag = PRL_zal_KOC clr_country_flag = PRL_zad_KOC clr_country_flag = PRL_zad2_KOC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } KOC = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 60 } modifier = { factor = 2 KOC = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_KOC_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_KOC has_country_flag = PRL_zad2_KOC } NOT = { has_country_flag = PRL_zal_KOC } country_exists = KOC KOC = { is_subject_of = POL } KOC = { check_variable = { PRL_poziom = 2 } } }
+		cost = 50
+		complete_effect = { set_country_flag = PRL_zal_KOC clr_country_flag = PRL_zad_KOC clr_country_flag = PRL_zad2_KOC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } KOC = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 70 } modifier = { factor = 2 KOC = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_KOC = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_KOC has_country_flag = PRL_zad2_KOC } NOT = { has_country_flag = PRL_zal_KOC } country_exists = KOC KOC = { is_subject_of = POL } }
+		cost = 50
+		complete_effect = { set_country_flag = PRL_zal_KOC clr_country_flag = PRL_zad_KOC clr_country_flag = PRL_zad2_KOC random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 KOC = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 KOC = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } KOC = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } KOC = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_KOC = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_KOC has_country_flag = PRL_zad2_KOC } NOT = { has_country_flag = PRL_zal_KOC } country_exists = KOC KOC = { is_subject_of = POL } }
+		cost = 20
+		complete_effect = { set_country_flag = PRL_zal_KOC clr_country_flag = PRL_zad_KOC clr_country_flag = PRL_zad2_KOC add_to_variable = { global.PRL_bilans = 1 } KOC = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 30 } }
+	}
+	PRL_odw_KOC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_KOC has_country_flag = PRL_zad2_KOC } NOT = { has_country_flag = PRL_zal_KOC } country_exists = KOC KOC = { is_subject_of = POL } has_country_flag = PRL_zad_KOC NOT = { has_country_flag = PRL_odw_KOC } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_KOC KOC = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_WLC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_WLC }
+		activation = { has_country_flag = PRL_zad_WLC }
+		cost = 0
+		days_mission_timeout = 6
+		timeout_effect = { clr_country_flag = PRL_zad_WLC if = { limit = { has_country_flag = PRL_odw_WLC NOT = { has_country_flag = PRL_r2_WLC } NOT = { has_country_flag = PRL_zal_WLC } } set_country_flag = PRL_r2_WLC set_country_flag = PRL_zad2_WLC PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_WLC } } PRL_bez_odpowiedzi_WLC = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = WLC } NOT = { WLC = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_WLC clr_country_flag = PRL_zad_WLC clr_country_flag = PRL_zad2_WLC }
+		complete_effect = { clr_country_flag = PRL_zad_WLC }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_WLC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_WLC }
+		activation = { has_country_flag = PRL_zad2_WLC }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_WLC if = { limit = { NOT = { has_country_flag = PRL_zal_WLC } } PRL_bez_odpowiedzi_WLC = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = WLC } NOT = { WLC = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_WLC clr_country_flag = PRL_zad_WLC clr_country_flag = PRL_zad2_WLC }
+		complete_effect = { clr_country_flag = PRL_zad2_WLC }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_WLC_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WLC has_country_flag = PRL_zad2_WLC } NOT = { has_country_flag = PRL_zal_WLC } country_exists = WLC WLC = { is_subject_of = POL } WLC = { check_variable = { PRL_poziom = 0 } } }
+		cost = 30
+		complete_effect = { set_country_flag = PRL_zal_WLC clr_country_flag = PRL_zad_WLC clr_country_flag = PRL_zad2_WLC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WLC = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 50 } modifier = { factor = 2 WLC = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_WLC_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WLC has_country_flag = PRL_zad2_WLC } NOT = { has_country_flag = PRL_zal_WLC } country_exists = WLC WLC = { is_subject_of = POL } WLC = { check_variable = { PRL_poziom = 1 } } }
+		cost = 40
+		complete_effect = { set_country_flag = PRL_zal_WLC clr_country_flag = PRL_zad_WLC clr_country_flag = PRL_zad2_WLC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WLC = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 60 } modifier = { factor = 2 WLC = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_WLC_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WLC has_country_flag = PRL_zad2_WLC } NOT = { has_country_flag = PRL_zal_WLC } country_exists = WLC WLC = { is_subject_of = POL } WLC = { check_variable = { PRL_poziom = 2 } } }
+		cost = 50
+		complete_effect = { set_country_flag = PRL_zal_WLC clr_country_flag = PRL_zad_WLC clr_country_flag = PRL_zad2_WLC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WLC = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 has_political_power < 70 } modifier = { factor = 2 WLC = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_WLC = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WLC has_country_flag = PRL_zad2_WLC } NOT = { has_country_flag = PRL_zal_WLC } country_exists = WLC WLC = { is_subject_of = POL } }
+		cost = 50
+		complete_effect = { set_country_flag = PRL_zal_WLC clr_country_flag = PRL_zad_WLC clr_country_flag = PRL_zad2_WLC random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 WLC = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 WLC = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } WLC = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } WLC = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_WLC = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WLC has_country_flag = PRL_zad2_WLC } NOT = { has_country_flag = PRL_zal_WLC } country_exists = WLC WLC = { is_subject_of = POL } }
+		cost = 20
+		complete_effect = { set_country_flag = PRL_zal_WLC clr_country_flag = PRL_zad_WLC clr_country_flag = PRL_zad2_WLC add_to_variable = { global.PRL_bilans = 1 } WLC = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 30 } }
+	}
+	PRL_odw_WLC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_WLC has_country_flag = PRL_zad2_WLC } NOT = { has_country_flag = PRL_zal_WLC } country_exists = WLC WLC = { is_subject_of = POL } has_country_flag = PRL_zad_WLC NOT = { has_country_flag = PRL_odw_WLC } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_WLC WLC = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_m_PLO = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_PLO }
+		activation = { has_country_flag = PRL_zad_PLO }
+		cost = 0
+		days_mission_timeout = 7
+		timeout_effect = { clr_country_flag = PRL_zad_PLO if = { limit = { has_country_flag = PRL_odw_PLO NOT = { has_country_flag = PRL_r2_PLO } NOT = { has_country_flag = PRL_zal_PLO } } set_country_flag = PRL_r2_PLO set_country_flag = PRL_zad2_PLO PRL_przelicz = yes } else_if = { limit = { NOT = { has_country_flag = PRL_zal_PLO } } PRL_bez_odpowiedzi_PLO = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = PLO } NOT = { PLO = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_PLO clr_country_flag = PRL_zad_PLO clr_country_flag = PRL_zad2_PLO }
+		complete_effect = { clr_country_flag = PRL_zad_PLO }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_m2_PLO = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { has_country_flag = PRL_zal_PLO }
+		activation = { has_country_flag = PRL_zad2_PLO }
+		cost = 0
+		days_mission_timeout = 4
+		timeout_effect = { clr_country_flag = PRL_zad2_PLO if = { limit = { NOT = { has_country_flag = PRL_zal_PLO } } PRL_bez_odpowiedzi_PLO = yes } }
+		cancel_trigger = { OR = { NOT = { country_exists = PLO } NOT = { PLO = { is_subject_of = POL } } } }
+		cancel_effect = { set_country_flag = PRL_zal_PLO clr_country_flag = PRL_zad_PLO clr_country_flag = PRL_zad2_PLO }
+		complete_effect = { clr_country_flag = PRL_zad2_PLO }
+		ai_will_do = { factor = 1 }
+	}
+	PRL_neg_PLO_0 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PLO has_country_flag = PRL_zad2_PLO } NOT = { has_country_flag = PRL_zal_PLO } country_exists = PLO PLO = { is_subject_of = POL } PLO = { check_variable = { PRL_poziom = 0 } } }
+		cost = 55
+		complete_effect = { set_country_flag = PRL_zal_PLO clr_country_flag = PRL_zad_PLO clr_country_flag = PRL_zad2_PLO add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } PLO = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 75 } modifier = { factor = 2 PLO = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_PLO_1 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PLO has_country_flag = PRL_zad2_PLO } NOT = { has_country_flag = PRL_zal_PLO } country_exists = PLO PLO = { is_subject_of = POL } PLO = { check_variable = { PRL_poziom = 1 } } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_PLO clr_country_flag = PRL_zad_PLO clr_country_flag = PRL_zad2_PLO add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } PLO = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 90 } modifier = { factor = 2 PLO = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_neg_PLO_2 = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PLO has_country_flag = PRL_zad2_PLO } NOT = { has_country_flag = PRL_zal_PLO } country_exists = PLO PLO = { is_subject_of = POL } PLO = { check_variable = { PRL_poziom = 2 } } }
+		cost = 85
+		complete_effect = { set_country_flag = PRL_zal_PLO clr_country_flag = PRL_zad_PLO clr_country_flag = PRL_zad2_PLO add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } PLO = { set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 25 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 4 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_2 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } add_to_variable = { global.PRL_poparcie = -1 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 6 modifier = { factor = 0.3 has_political_power < 105 } modifier = { factor = 2 PLO = { check_variable = { PRL_lojalnosc > 39 } } } }
+	}
+	PRL_ref_PLO = {
+		icon = generic_democracy
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PLO has_country_flag = PRL_zad2_PLO } NOT = { has_country_flag = PRL_zal_PLO } country_exists = PLO PLO = { is_subject_of = POL } }
+		cost = 70
+		complete_effect = { set_country_flag = PRL_zal_PLO clr_country_flag = PRL_zad_PLO clr_country_flag = PRL_zad2_PLO random_list = { 40 = { modifier = { add = 20 check_variable = { global.PRL_zaufanie > 54 } } modifier = { add = -15 check_variable = { global.PRL_zaufanie < 30 } } modifier = { add = 15 PLO = { check_variable = { PRL_lojalnosc > 49 } } } modifier = { add = -15 PLO = { check_variable = { PRL_lojalnosc < 25 } } } add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } PLO = { set_country_flag = PRL_ref_tak add_to_variable = { PRL_lojalnosc = 30 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_3 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 4 } add_to_variable = { global.PRL_poparcie = 2 } PRL_przelicz = yes } news_event = { id = prl.13 } } 60 = { add_to_variable = { global.PRL_bilans = 1 } PLO = { set_country_flag = PRL_ref_nie add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_4 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 2 } add_to_variable = { global.PRL_poparcie = -5 } PRL_przelicz = yes } news_event = { id = prl.14 } } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { global.PRL_zaufanie > 49 } } modifier = { factor = 0.2 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_ust_PLO = {
+		icon = generic_civil_support
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PLO has_country_flag = PRL_zad2_PLO } NOT = { has_country_flag = PRL_zal_PLO } country_exists = PLO PLO = { is_subject_of = POL } }
+		cost = 30
+		complete_effect = { set_country_flag = PRL_zal_PLO clr_country_flag = PRL_zad_PLO clr_country_flag = PRL_zad2_PLO add_to_variable = { global.PRL_bilans = 1 } PLO = { set_country_flag = PRL_autonomia add_to_variable = { PRL_lojalnosc = 10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } POL = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_autonomia } } set_country_flag = ROZ_autonomia clr_country_flag = ROZ_wojewodztwo } custom_effect_tooltip = PRL_tt_5 hidden_effect = { add_to_variable = { global.PRL_administracja = -2 } add_to_variable = { global.PRL_poparcie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_political_power < 55 } }
+	}
+	PRL_odw_PLO = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		visible = { OR = { has_country_flag = PRL_zad_PLO has_country_flag = PRL_zad2_PLO } NOT = { has_country_flag = PRL_zal_PLO } country_exists = PLO PLO = { is_subject_of = POL } has_country_flag = PRL_zad_PLO NOT = { has_country_flag = PRL_odw_PLO } }
+		cost = 10
+		complete_effect = { set_country_flag = PRL_odw_PLO PLO = { add_to_variable = { PRL_lojalnosc = -8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } every_neighbor_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = -3 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } custom_effect_tooltip = PRL_tt_6 hidden_effect = { add_to_variable = { global.PRL_zaufanie = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_political_power < 40 } }
+	}
+	PRL_d_konferencja = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		cost = 20
+		days_re_enable = 6
+		complete_effect = { custom_effect_tooltip = PRL_tt_7 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 3 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 check_variable = { global.PRL_zaufanie < 35 } } }
+	}
+	PRL_d_pakiet = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		cost = 40
+		fire_only_once = yes
+		complete_effect = { every_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 6 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } custom_effect_tooltip = PRL_tt_8 hidden_effect = { add_to_variable = { global.PRL_rezerwy = -10 } PRL_przelicz = yes } POL = { PRL_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	PRL_d_rezerwy = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		available = { check_variable = { global.PRL_rezerwy > 19 } }
+		cost = 0
+		fire_only_once = yes
+		complete_effect = { add_political_power = 45 custom_effect_tooltip = PRL_tt_9 hidden_effect = { add_to_variable = { global.PRL_rezerwy = -15 } add_to_variable = { global.PRL_administracja = -2 } PRL_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 4 has_political_power < 30 } }
+	}
+}
+PRL_region_WMG = {
+	PRL_twarde_WMG = {
+		icon = generic_political_discourse
+		allowed = { original_tag = WMG }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_WMG has_country_flag = PRL_zad2_WMG } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_WMG = {
+		icon = generic_political_discourse
+		allowed = { original_tag = WMG }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_WMG has_country_flag = PRL_zad2_WMG } NOT = { has_country_flag = PRL_zal_WMG } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_WMG clr_country_flag = PRL_zad_WMG clr_country_flag = PRL_zad2_WMG add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_TRN = {
+	PRL_twarde_TRN = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_TRN has_country_flag = PRL_zad2_TRN } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_TRN = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_TRN has_country_flag = PRL_zad2_TRN } NOT = { has_country_flag = PRL_zal_TRN } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_TRN clr_country_flag = PRL_zad_TRN clr_country_flag = PRL_zad2_TRN add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_GDY = {
+	PRL_twarde_GDY = {
+		icon = generic_political_discourse
+		allowed = { original_tag = GDY }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_GDY has_country_flag = PRL_zad2_GDY } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_GDY = {
+		icon = generic_political_discourse
+		allowed = { original_tag = GDY }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_GDY has_country_flag = PRL_zad2_GDY } NOT = { has_country_flag = PRL_zal_GDY } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_GDY clr_country_flag = PRL_zad_GDY clr_country_flag = PRL_zad2_GDY add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_BYD = {
+	PRL_twarde_BYD = {
+		icon = generic_political_discourse
+		allowed = { original_tag = BYD }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_BYD has_country_flag = PRL_zad2_BYD } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_BYD = {
+		icon = generic_political_discourse
+		allowed = { original_tag = BYD }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_BYD has_country_flag = PRL_zad2_BYD } NOT = { has_country_flag = PRL_zal_BYD } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_BYD clr_country_flag = PRL_zad_BYD clr_country_flag = PRL_zad2_BYD add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_SPT = {
+	PRL_twarde_SPT = {
+		icon = generic_political_discourse
+		allowed = { original_tag = SPT }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_SPT has_country_flag = PRL_zad2_SPT } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_SPT = {
+		icon = generic_political_discourse
+		allowed = { original_tag = SPT }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_SPT has_country_flag = PRL_zad2_SPT } NOT = { has_country_flag = PRL_zal_SPT } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_SPT clr_country_flag = PRL_zad_SPT clr_country_flag = PRL_zad2_SPT add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_NNA = {
+	PRL_twarde_NNA = {
+		icon = generic_political_discourse
+		allowed = { original_tag = NNA }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_NNA has_country_flag = PRL_zad2_NNA } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_NNA = {
+		icon = generic_political_discourse
+		allowed = { original_tag = NNA }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_NNA has_country_flag = PRL_zad2_NNA } NOT = { has_country_flag = PRL_zal_NNA } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_NNA clr_country_flag = PRL_zad_NNA clr_country_flag = PRL_zad2_NNA add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_WMZ = {
+	PRL_twarde_WMZ = {
+		icon = generic_political_discourse
+		allowed = { original_tag = WMZ }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_WMZ has_country_flag = PRL_zad2_WMZ } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_WMZ = {
+		icon = generic_political_discourse
+		allowed = { original_tag = WMZ }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_WMZ has_country_flag = PRL_zad2_WMZ } NOT = { has_country_flag = PRL_zal_WMZ } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_WMZ clr_country_flag = PRL_zad_WMZ clr_country_flag = PRL_zad2_WMZ add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_SUW = {
+	PRL_twarde_SUW = {
+		icon = generic_political_discourse
+		allowed = { original_tag = SUW }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_SUW has_country_flag = PRL_zad2_SUW } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_SUW = {
+		icon = generic_political_discourse
+		allowed = { original_tag = SUW }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_SUW has_country_flag = PRL_zad2_SUW } NOT = { has_country_flag = PRL_zal_SUW } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_SUW clr_country_flag = PRL_zad_SUW clr_country_flag = PRL_zad2_SUW add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_BST = {
+	PRL_twarde_BST = {
+		icon = generic_political_discourse
+		allowed = { original_tag = BST }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_BST has_country_flag = PRL_zad2_BST } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_BST = {
+		icon = generic_political_discourse
+		allowed = { original_tag = BST }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_BST has_country_flag = PRL_zad2_BST } NOT = { has_country_flag = PRL_zal_BST } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_BST clr_country_flag = PRL_zad_BST clr_country_flag = PRL_zad2_BST add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_PRW = {
+	PRL_twarde_PRW = {
+		icon = generic_political_discourse
+		allowed = { original_tag = PRW }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_PRW has_country_flag = PRL_zad2_PRW } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_PRW = {
+		icon = generic_political_discourse
+		allowed = { original_tag = PRW }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_PRW has_country_flag = PRL_zad2_PRW } NOT = { has_country_flag = PRL_zal_PRW } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_PRW clr_country_flag = PRL_zad_PRW clr_country_flag = PRL_zad2_PRW add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_LWC = {
+	PRL_twarde_LWC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = LWC }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_LWC has_country_flag = PRL_zad2_LWC } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_LWC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = LWC }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_LWC has_country_flag = PRL_zad2_LWC } NOT = { has_country_flag = PRL_zal_LWC } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_LWC clr_country_flag = PRL_zad_LWC clr_country_flag = PRL_zad2_LWC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_ZKR = {
+	PRL_twarde_ZKR = {
+		icon = generic_political_discourse
+		allowed = { original_tag = ZKR }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_ZKR has_country_flag = PRL_zad2_ZKR } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_ZKR = {
+		icon = generic_political_discourse
+		allowed = { original_tag = ZKR }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_ZKR has_country_flag = PRL_zad2_ZKR } NOT = { has_country_flag = PRL_zal_ZKR } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_ZKR clr_country_flag = PRL_zad_ZKR clr_country_flag = PRL_zad2_ZKR add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_KOC = {
+	PRL_twarde_KOC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = KOC }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_KOC has_country_flag = PRL_zad2_KOC } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_KOC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = KOC }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_KOC has_country_flag = PRL_zad2_KOC } NOT = { has_country_flag = PRL_zal_KOC } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_KOC clr_country_flag = PRL_zad_KOC clr_country_flag = PRL_zad2_KOC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_WLC = {
+	PRL_twarde_WLC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = WLC }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_WLC has_country_flag = PRL_zad2_WLC } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_WLC = {
+		icon = generic_political_discourse
+		allowed = { original_tag = WLC }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_WLC has_country_flag = PRL_zad2_WLC } NOT = { has_country_flag = PRL_zal_WLC } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_WLC clr_country_flag = PRL_zad_WLC clr_country_flag = PRL_zad2_WLC add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}
+PRL_region_PLO = {
+	PRL_twarde_PLO = {
+		icon = generic_political_discourse
+		allowed = { original_tag = PLO }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_PLO has_country_flag = PRL_zad2_PLO } } NOT = { has_country_flag = PRL_twarde } }
+		cost = 15
+		complete_effect = { set_country_flag = PRL_twarde POL = { PRL_przelicz = yes } add_to_variable = { PRL_lojalnosc = -10 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+	PRL_wycofaj_PLO = {
+		icon = generic_political_discourse
+		allowed = { original_tag = PLO }
+		visible = { POL = { OR = { has_country_flag = PRL_zad_PLO has_country_flag = PRL_zad2_PLO } NOT = { has_country_flag = PRL_zal_PLO } } }
+		cost = 25
+		complete_effect = { POL = { set_country_flag = PRL_zal_PLO clr_country_flag = PRL_zad_PLO clr_country_flag = PRL_zad2_PLO add_to_variable = { global.PRL_porozumienia = 1 } add_to_variable = { global.PRL_bilans = 2 } } set_country_flag = PRL_porozumienie add_to_variable = { PRL_lojalnosc = 20 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 0 }
+	}
+}

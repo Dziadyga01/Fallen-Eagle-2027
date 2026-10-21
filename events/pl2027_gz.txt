@@ -5,7 +5,7 @@ country_event = {
 	title = gz.1.t
 	desc = gz.1.d
 	picture = GFX_pl2027_ev081_paliwo_5
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_1 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_2 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_1 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_2 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_gz_1  }
 	option = {
@@ -25,7 +25,7 @@ country_event = {
 	title = gz.2.t
 	desc = gz.2.d
 	picture = GFX_pl2027_ev081_ulica_4
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_2 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_2 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_2 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_2 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_gz_2  }
 	option = {
@@ -45,7 +45,7 @@ country_event = {
 	title = gz.3.t
 	desc = gz.3.d
 	picture = GFX_pl2027_ev081_zaopatrzenie_1
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_3 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_2 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_3 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_2 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_gz_3  }
 	option = {
@@ -65,7 +65,7 @@ country_event = {
 	title = gz.4.t
 	desc = gz.4.d
 	picture = GFX_pl2027_ev081_gospodarka_2
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_4 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_2 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_4 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_2 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_gz_4  }
 	option = {
@@ -85,7 +85,7 @@ country_event = {
 	title = gz.5.t
 	desc = gz.5.d
 	picture = GFX_pl2027_ev081_blackout_4
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_5 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_3 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_5 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_3 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_gz_5  }
 	option = {
@@ -105,7 +105,7 @@ country_event = {
 	title = gz.6.t
 	desc = gz.6.d
 	picture = GFX_pl2027_ev081_porzadek_5
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_6 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_3 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_6 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_3 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = PL2027_ev_gz_6  }
 	option = {
@@ -125,7 +125,7 @@ country_event = {
 	title = gz.7.t
 	desc = gz.7.d
 	picture = GFX_pl2027_ev081_zima_4
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_7 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } date < 2028.3.31 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_7 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } date < 2028.3.31 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_gz_7  }
 	option = {
@@ -145,7 +145,7 @@ country_event = {
 	title = gz.8.t
 	desc = gz.8.d
 	picture = GFX_pl2027_ev081_granica_0
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_8 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_4 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_8 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_4 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } set_country_flag = PL2027_ev_gz_8  }
 	option = {
@@ -165,7 +165,7 @@ country_event = {
 	title = gz.9.t
 	desc = gz.9.d
 	picture = GFX_pl2027_ev081_paliwo_5
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_9 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_3 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_9 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_3 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_gz_9  }
 	option = {
@@ -185,7 +185,7 @@ country_event = {
 	title = gz.10.t
 	desc = gz.10.d
 	picture = GFX_pl2027_ev081_szpital_0
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_10 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_2 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_10 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_global_flag = TFE_faza_2 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } set_country_flag = PL2027_ev_gz_10  }
 	option = {
@@ -205,7 +205,7 @@ country_event = {
 	title = gz.11.t
 	desc = gz.11.d
 	picture = GFX_pl2027_ev081_granica_5
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_11 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } OR = { tag = SUW tag = BST tag = PDL tag = PRW tag = WMZ tag = NAR } has_global_flag = TFE_faza_2 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_11 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } OR = { tag = SUW tag = BST tag = PDL tag = PRW tag = WMZ tag = NAR } has_global_flag = TFE_faza_2 }
 	mean_time_to_happen = { days = 90 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = PL2027_ev_gz_11  }
 	option = {
@@ -225,7 +225,7 @@ country_event = {
 	title = gz.12.t
 	desc = gz.12.d
 	picture = GFX_pl2027_ev081_granica_3
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_12 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } OR = { tag = SUW tag = BST tag = PDL tag = PRW tag = WMZ tag = NAR } has_global_flag = TFE_faza_2 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_12 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } OR = { tag = SUW tag = BST tag = PDL tag = PRW tag = WMZ tag = NAR } has_global_flag = TFE_faza_2 }
 	mean_time_to_happen = { days = 100 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_gz_12  }
 	option = {
@@ -245,7 +245,7 @@ country_event = {
 	title = gz.13.t
 	desc = gz.13.d
 	picture = GFX_pl2027_ev081_porzadek_3
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_13 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } OR = { tag = SUW tag = BST } has_global_flag = TFE_faza_3 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_13 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } OR = { tag = SUW tag = BST } has_global_flag = TFE_faza_3 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } set_country_flag = PL2027_ev_gz_13  }
 	option = {
@@ -265,7 +265,7 @@ country_event = {
 	title = gz.14.t
 	desc = gz.14.d
 	picture = GFX_pl2027_ev081_praca_2
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_14 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } tag = KOC }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_14 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } tag = KOC }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_gz_14  }
 	option = {
@@ -285,7 +285,7 @@ country_event = {
 	title = gz.15.t
 	desc = gz.15.d
 	picture = GFX_pl2027_ev081_porzadek_0
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_15 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } tag = KOC has_global_flag = TFE_faza_3 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_15 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } tag = KOC has_global_flag = TFE_faza_3 }
 	mean_time_to_happen = { days = 100 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_gz_15  }
 	option = {
@@ -305,7 +305,7 @@ country_event = {
 	title = gz.16.t
 	desc = gz.16.d
 	picture = GFX_pl2027_ev081_kolej_0
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_16 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } tag = KOC has_global_flag = TFE_faza_2 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_16 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } tag = KOC has_global_flag = TFE_faza_2 }
 	mean_time_to_happen = { days = 150 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_gz_16  }
 	option = {
@@ -325,7 +325,7 @@ country_event = {
 	title = gz.17.t
 	desc = gz.17.d
 	picture = GFX_pl2027_ev081_mazury_4
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_17 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } tag = WMZ has_global_flag = TFE_faza_2 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_17 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } tag = WMZ has_global_flag = TFE_faza_2 }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_gz_17  }
 	option = {
@@ -345,7 +345,7 @@ country_event = {
 	title = gz.18.t
 	desc = gz.18.d
 	picture = GFX_pl2027_ev081_porzadek_3
-	trigger = { NOT = { has_country_flag = PL2027_ev_gz_18 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } OR = { tag = WMZ tag = SUW tag = GDY tag = WMG } has_global_flag = TFE_faza_4 }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_gz_18 } has_country_flag = PL2027_polska NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } OR = { tag = WMZ tag = SUW tag = GDY tag = WMG } has_global_flag = TFE_faza_4 }
 	mean_time_to_happen = { days = 150 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } set_country_flag = PL2027_ev_gz_18  }
 	option = {

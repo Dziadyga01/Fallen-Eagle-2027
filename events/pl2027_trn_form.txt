@@ -96,7 +96,8 @@ country_event = {
 	option = {
 		name = trn.6.a
 		ai_chance = { factor = 60 }
-		FROM = { annex_country = { target = ROOT transfer_troops = yes } add_to_variable = { TRN_wpl_byd = 10 } TRN_przelicz = yes }
+		custom_effect_tooltip = UNI_tt_tylko_rozmowy
+		UNI_btu_z_wydarzenia_2 = yes
 	}
 	option = {
 		name = trn.6.b

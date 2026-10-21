@@ -1,0 +1,63 @@
+defined_text = {
+	name = UNI_btu_forma_txt
+	text = { trigger = { check_variable = { global.UNI_btu_forma = 1 } } localization_key = UNI_btu_forma_1 }
+	text = { trigger = { check_variable = { global.UNI_btu_forma = 2 } } localization_key = UNI_btu_forma_2 }
+	text = { trigger = { check_variable = { global.UNI_btu_forma = 3 } } localization_key = UNI_btu_forma_3 }
+}
+defined_text = {
+	name = UNI_btu_stolica_txt
+	text = { trigger = { check_variable = { global.UNI_btu_stolica = 1 } } localization_key = UNI_btu_stolica_1 }
+	text = { trigger = { check_variable = { global.UNI_btu_stolica = 2 } } localization_key = UNI_btu_stolica_2 }
+	text = { trigger = { check_variable = { global.UNI_btu_stolica = 3 } } localization_key = UNI_btu_stolica_3 }
+}
+defined_text = {
+	name = UNI_btu_instytucje_txt
+	text = { trigger = { check_variable = { global.UNI_btu_instytucje = 1 } } localization_key = UNI_btu_instytucje_1 }
+	text = { trigger = { check_variable = { global.UNI_btu_instytucje = 2 } } localization_key = UNI_btu_instytucje_2 }
+}
+defined_text = {
+	name = UNI_btu_dowodztwo_txt
+	text = { trigger = { check_variable = { global.UNI_btu_dowodztwo = 1 } } localization_key = UNI_btu_dowodztwo_1 }
+	text = { trigger = { check_variable = { global.UNI_btu_dowodztwo = 2 } } localization_key = UNI_btu_dowodztwo_2 }
+}
+defined_text = {
+	name = UNI_btu_autonomia_txt
+	text = { trigger = { check_variable = { global.UNI_btu_autonomia = 1 } } localization_key = UNI_btu_autonomia_1 }
+	text = { trigger = { check_variable = { global.UNI_btu_autonomia = 2 } } localization_key = UNI_btu_autonomia_2 }
+}
+defined_text = {
+	name = UNI_kujpom_forma_txt
+	text = { trigger = { check_variable = { global.UNI_kujpom_forma = 1 } } localization_key = UNI_forma_1 }
+	text = { trigger = { check_variable = { global.UNI_kujpom_forma = 2 } } localization_key = UNI_forma_2 }
+	text = { trigger = { check_variable = { global.UNI_kujpom_forma = 3 } } localization_key = UNI_forma_3 }
+}
+defined_text = {
+	name = UNI_trojmiasto_forma_txt
+	text = { trigger = { check_variable = { global.UNI_trojmiasto_forma = 1 } } localization_key = UNI_forma_1 }
+	text = { trigger = { check_variable = { global.UNI_trojmiasto_forma = 2 } } localization_key = UNI_forma_2 }
+	text = { trigger = { check_variable = { global.UNI_trojmiasto_forma = 3 } } localization_key = UNI_forma_3 }
+}
+defined_text = {
+	name = UNI_warmaz_forma_txt
+	text = { trigger = { check_variable = { global.UNI_warmaz_forma = 1 } } localization_key = UNI_forma_1 }
+	text = { trigger = { check_variable = { global.UNI_warmaz_forma = 2 } } localization_key = UNI_forma_2 }
+	text = { trigger = { check_variable = { global.UNI_warmaz_forma = 3 } } localization_key = UNI_forma_3 }
+}
+defined_text = {
+	name = UNI_pnwsch_forma_txt
+	text = { trigger = { check_variable = { global.UNI_pnwsch_forma = 1 } } localization_key = UNI_forma_1 }
+	text = { trigger = { check_variable = { global.UNI_pnwsch_forma = 2 } } localization_key = UNI_forma_2 }
+	text = { trigger = { check_variable = { global.UNI_pnwsch_forma = 3 } } localization_key = UNI_forma_3 }
+}
+defined_text = {
+	name = UNI_warszawa_forma_txt
+	text = { trigger = { check_variable = { global.UNI_warszawa_forma = 1 } } localization_key = UNI_forma_1 }
+	text = { trigger = { check_variable = { global.UNI_warszawa_forma = 2 } } localization_key = UNI_forma_2 }
+	text = { trigger = { check_variable = { global.UNI_warszawa_forma = 3 } } localization_key = UNI_forma_3 }
+}
+defined_text = {
+	name = UNI_europa_forma_txt
+	text = { trigger = { check_variable = { global.UNI_europa_forma = 1 } } localization_key = UNI_forma_1 }
+	text = { trigger = { check_variable = { global.UNI_europa_forma = 2 } } localization_key = UNI_forma_2 }
+	text = { trigger = { check_variable = { global.UNI_europa_forma = 3 } } localization_key = UNI_forma_3 }
+}

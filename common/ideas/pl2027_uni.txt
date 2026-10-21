@@ -1,0 +1,87 @@
+ideas = {
+	country = {
+		UNI_federacja_idea = {
+			picture = DU_UNI_federacja_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				war_support_factor = -0.03
+			}
+		}
+		UNI_integracja_trwa = {
+			picture = DU_UNI_integracja_trwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = 0.02
+			}
+		}
+		UNI_btu_sejm = {
+			picture = DU_UNI_btu_sejm
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.02
+			}
+		}
+		UNI_btu_rada_miast = {
+			picture = DU_UNI_btu_rada_miast
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = -0.05
+			}
+		}
+		UNI_btu_dowodztwo_wspolne = {
+			picture = DU_UNI_btu_dowodztwo_wspolne
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.1
+			}
+		}
+		UNI_btu_dwa_dowodztwa = {
+			picture = DU_UNI_btu_dwa_dowodztwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				planning_speed = -0.05
+			}
+		}
+		UNI_btu_dwie_stolice = {
+			picture = DU_UNI_btu_dwie_stolice
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = -0.05
+			}
+		}
+		UNI_btu_autonomia_miast = {
+			picture = DU_UNI_btu_autonomia_miast
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		UNI_odbudowa_administracji = {
+			picture = DU_UNI_odbudowa_administracji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.03
+				production_speed_buildings_factor = -0.05
+			}
+		}
+	}
+}

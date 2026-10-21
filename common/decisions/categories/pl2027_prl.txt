@@ -1,0 +1,96 @@
+PRL_regiony = {
+	icon = generic_political_discourse
+	allowed = { original_tag = POL }
+	visible = { has_global_flag = PL2027_prolog }
+	priority = 99
+}
+PRL_region_WMG = {
+	icon = generic_political_discourse
+	allowed = { original_tag = WMG }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_TRN = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_GDY = {
+	icon = generic_political_discourse
+	allowed = { original_tag = GDY }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_BYD = {
+	icon = generic_political_discourse
+	allowed = { original_tag = BYD }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_SPT = {
+	icon = generic_political_discourse
+	allowed = { original_tag = SPT }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_NNA = {
+	icon = generic_political_discourse
+	allowed = { original_tag = NNA }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_WMZ = {
+	icon = generic_political_discourse
+	allowed = { original_tag = WMZ }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_SUW = {
+	icon = generic_political_discourse
+	allowed = { original_tag = SUW }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_BST = {
+	icon = generic_political_discourse
+	allowed = { original_tag = BST }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_PRW = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_LWC = {
+	icon = generic_political_discourse
+	allowed = { original_tag = LWC }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_ZKR = {
+	icon = generic_political_discourse
+	allowed = { original_tag = ZKR }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_KOC = {
+	icon = generic_political_discourse
+	allowed = { original_tag = KOC }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_WLC = {
+	icon = generic_political_discourse
+	allowed = { original_tag = WLC }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}
+PRL_region_PLO = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PLO }
+	visible = { has_global_flag = PL2027_prolog is_subject_of = POL }
+	priority = 95
+}

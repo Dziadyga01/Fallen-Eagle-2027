@@ -1,73 +1,78 @@
 bookmarks = {
 	bookmark = {
-		name = "PL2027_BOOKMARK_NAME"
-		desc = "PL2027_BOOKMARK_DESC"
-		date = 2027.11.11.12
-		picture = "GFX_pl2027_select_date"
-		default_country = "TRN"
-		default = yes
+		name = "PL2027_BOOKMARK_PROLOG_NAME"
+		desc = "PL2027_BOOKMARK_PROLOG_DESC"
+		date = 2027.10.22.12
+		picture = "GFX_pl2027_select_prolog"
+		default_country = "POL"
 		"POL" = {
 			history = "PL2027_BM_POL"
 			ideology = social_liberal
-			ideas = { ROZ_rzad_rp }
-
+			ideas = { PRL_rzad_rp }
 		}
-		"TRN" = {
-			history = "PL2027_BM_TRN"
+		"PMN" = {
+			history = "PL2027_BM_PMN"
 			ideology = social_liberal
-			ideas = { TR2_rzad_tymczasowy }
-
+			ideas = { EK_komisariat }
 		}
-		"BYD" = {
-			history = "PL2027_BM_BYD"
+		"SLS" = {
+			history = "PL2027_BM_SLS"
 			ideology = social_liberal
-			ideas = { BYD_i_miasto_bez_rzadu }
-
-		}
-		"SMR" = {
-			history = "PL2027_BM_SMR"
-			ideology = social_liberal
-			ideas = { WWD_gmachy }
-
-		}
-		"KPR" = {
-			history = "PL2027_BM_KPR"
-			ideology = social_liberal
-			ideas = { WWD_gmachy }
-
-		}
-		"MPR" = {
-			history = "PL2027_BM_MPR"
-			ideology = nationalist
-			ideas = {  }
-
-		}
-		"ZKR" = {
-			history = "PL2027_BM_ZKR"
-			ideology = nationalist
-			ideas = {  }
-
+			ideas = { EK_komisariat }
 		}
 		"ROS" = {
 			history = "PL2027_BM_ROS"
 			ideology = authoritarian_democrat
 			ideas = { ROS_wyczerpana_armia ROS_koszty_wojny ROS_niezadowolenie ROS_kryzys_elit }
-			focuses = { ROS_imperium ROS_polska_upadla ROS_operacja_mazurska }
 		}
-		"WMZ" = {
-			history = "PL2027_BM_WMZ"
+		"SMR" = {
+			history = "PL2027_BM_SMR"
 			ideology = social_liberal
-			ideas = {  }
-
+			ideas = { WWD_gmachy }
 		}
-		"NNA" = {
-			history = "PL2027_BM_NNA"
-			ideology = market_liberal
-			ideas = {  }
-
+		"TRN" = {
+			history = "PL2027_BM_TRN"
+			ideology = social_liberal
+			ideas = { TR2_rzad_tymczasowy }
 		}
 		"---" = {
 			history = "PL2027_OTHER_DESC"
+		}
+		"BYD" = {
+			minor = yes
+			history = "PL2027_BM_BYD"
+			ideology = social_liberal
+			ideas = { BYD_i_miasto_bez_rzadu }
+		}
+		"KPR" = {
+			minor = yes
+			history = "PL2027_BM_KPR"
+			ideology = social_liberal
+			ideas = { WWD_gmachy }
+		}
+		"MPR" = {
+			minor = yes
+			history = "PL2027_BM_MPR"
+			ideology = nationalist
+			ideas = {  }
+		}
+		"ZKR" = {
+			minor = yes
+			history = "PL2027_BM_ZKR"
+			ideology = nationalist
+			ideas = {  }
+		}
+		"WMZ" = {
+			minor = yes
+			history = "PL2027_BM_WMZ"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"NNA" = {
+			minor = yes
+			history = "PL2027_BM_NNA"
+			ideology = market_liberal
+			ideas = {  }
 		}
 		"PRW" = {
 			minor = yes
@@ -92,12 +97,6 @@ bookmarks = {
 			history = "PL2027_BM_PTK"
 			ideology = authoritarian_democrat
 			ideas = {  }
-		}
-		"SLS" = {
-			minor = yes
-			history = "PL2027_BM_SLS"
-			ideology = conservative
-			ideas = { PL2027_eurostaat }
 		}
 		"NAR" = {
 			minor = yes
@@ -146,12 +145,6 @@ bookmarks = {
 			history = "PL2027_BM_PLO"
 			ideology = authoritarian_democrat
 			ideas = { KOR_niepewnosc }
-		}
-		"PMN" = {
-			minor = yes
-			history = "PL2027_BM_PMN"
-			ideology = conservative
-			ideas = { PL2027_eurostaat }
 		}
 		"WOL" = {
 			minor = yes
@@ -426,7 +419,463 @@ bookmarks = {
 		"NML" = {
 			minor = yes
 			history = "PL2027_BM_NML"
+			ideology = social_democrat
+			ideas = {  }
+		}
+		"PDG" = {
+			minor = yes
+			history = "PL2027_BM_PDG"
 			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"ROZ" = {
+			minor = yes
+			history = "PL2027_BM_ROZ"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"SCK" = {
+			minor = yes
+			history = "PL2027_BM_SCK"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"TEC" = {
+			minor = yes
+			history = "PL2027_BM_TEC"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"WMP" = {
+			minor = yes
+			history = "PL2027_BM_WMP"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"SLK" = {
+			minor = yes
+			history = "PL2027_BM_SLK"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"ZIE" = {
+			minor = yes
+			history = "PL2027_BM_ZIE"
+			ideology = social_democrat
+			ideas = {  }
+		}
+	}
+	bookmark = {
+		name = "PL2027_BOOKMARK_NAME"
+		desc = "PL2027_BOOKMARK_DESC"
+		date = 2027.11.11.12
+		picture = "GFX_pl2027_select_date"
+		default_country = "TRN"
+		default = yes
+		"TRN" = {
+			history = "PL2027_BM_TRN"
+			ideology = social_liberal
+			ideas = { TR2_rzad_tymczasowy }
+		}
+		"BYD" = {
+			history = "PL2027_BM_BYD"
+			ideology = social_liberal
+			ideas = { BYD_i_miasto_bez_rzadu }
+		}
+		"SMR" = {
+			history = "PL2027_BM_SMR"
+			ideology = social_liberal
+			ideas = { WWD_gmachy }
+		}
+		"KPR" = {
+			history = "PL2027_BM_KPR"
+			ideology = social_liberal
+			ideas = { WWD_gmachy }
+		}
+		"MPR" = {
+			history = "PL2027_BM_MPR"
+			ideology = nationalist
+			ideas = {  }
+		}
+		"ZKR" = {
+			history = "PL2027_BM_ZKR"
+			ideology = nationalist
+			ideas = {  }
+		}
+		"PMN" = {
+			history = "PL2027_BM_PMN"
+			ideology = social_liberal
+			ideas = { EK_komisariat }
+		}
+		"SLS" = {
+			history = "PL2027_BM_SLS"
+			ideology = social_liberal
+			ideas = { EK_komisariat }
+		}
+		"ROS" = {
+			history = "PL2027_BM_ROS"
+			ideology = authoritarian_democrat
+			ideas = { ROS_wyczerpana_armia ROS_koszty_wojny ROS_niezadowolenie ROS_kryzys_elit }
+		}
+		"WMZ" = {
+			history = "PL2027_BM_WMZ"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"NNA" = {
+			history = "PL2027_BM_NNA"
+			ideology = market_liberal
+			ideas = {  }
+		}
+		"---" = {
+			history = "PL2027_OTHER_DESC"
+		}
+		"PRW" = {
+			minor = yes
+			history = "PL2027_BM_PRW"
+			ideology = conservative
+			ideas = {  }
+		}
+		"BST" = {
+			minor = yes
+			history = "PL2027_BM_BST"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"KKR" = {
+			minor = yes
+			history = "PL2027_BM_KKR"
+			ideology = conservative
+			ideas = {  }
+		}
+		"PTK" = {
+			minor = yes
+			history = "PL2027_BM_PTK"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"NAR" = {
+			minor = yes
+			history = "PL2027_BM_NAR"
+			ideology = nationalist
+			ideas = {  }
+		}
+		"PDL" = {
+			minor = yes
+			history = "PL2027_BM_PDL"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"RAD" = {
+			minor = yes
+			history = "PL2027_BM_RAD"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"LWC" = {
+			minor = yes
+			history = "PL2027_BM_LWC"
+			ideology = social_democrat
+			ideas = {  }
+		}
+		"SRD" = {
+			minor = yes
+			history = "PL2027_BM_SRD"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"KLS" = {
+			minor = yes
+			history = "PL2027_BM_KLS"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"KON" = {
+			minor = yes
+			history = "PL2027_BM_KON"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"PLO" = {
+			minor = yes
+			history = "PL2027_BM_PLO"
+			ideology = authoritarian_democrat
+			ideas = { KOR_niepewnosc }
+		}
+		"WOL" = {
+			minor = yes
+			history = "PL2027_BM_WOL"
+			ideology = market_liberal
+			ideas = {  }
+		}
+		"KOC" = {
+			minor = yes
+			history = "PL2027_BM_KOC"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"DOB" = {
+			minor = yes
+			history = "PL2027_BM_DOB"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"SUW" = {
+			minor = yes
+			history = "PL2027_BM_SUW"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"LOW" = {
+			minor = yes
+			history = "PL2027_BM_LOW"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"KTN" = {
+			minor = yes
+			history = "PL2027_BM_KTN"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"LES" = {
+			minor = yes
+			history = "PL2027_BM_LES"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"WLC" = {
+			minor = yes
+			history = "PL2027_BM_WLC"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"KPM" = {
+			minor = yes
+			history = "PL2027_BM_KPM"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"LBW" = {
+			minor = yes
+			history = "PL2027_BM_LBW"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"GNZ" = {
+			minor = yes
+			history = "PL2027_BM_GNZ"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"GDY" = {
+			minor = yes
+			history = "PL2027_BM_GDY"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"KRJ" = {
+			minor = yes
+			history = "PL2027_BM_KRJ"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"PLK" = {
+			minor = yes
+			history = "PL2027_BM_PLK"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"KUJ" = {
+			minor = yes
+			history = "PL2027_BM_KUJ"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"MAZ" = {
+			minor = yes
+			history = "PL2027_BM_MAZ"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"SPT" = {
+			minor = yes
+			history = "PL2027_BM_SPT"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"GRU" = {
+			minor = yes
+			history = "PL2027_BM_GRU"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"WLM" = {
+			minor = yes
+			history = "PL2027_BM_WLM"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"WMG" = {
+			minor = yes
+			history = "PL2027_BM_WMG"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"MLA" = {
+			minor = yes
+			history = "PL2027_BM_MLA"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"NOT" = {
+			minor = yes
+			history = "PL2027_BM_NOT"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"CHJ" = {
+			minor = yes
+			history = "PL2027_BM_CHJ"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"OTW" = {
+			minor = yes
+			history = "PL2027_BM_OTW"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"PSC" = {
+			minor = yes
+			history = "PL2027_BM_PSC"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"CHZ" = {
+			minor = yes
+			history = "PL2027_BM_CHZ"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"OZM" = {
+			minor = yes
+			history = "PL2027_BM_OZM"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"CHE" = {
+			minor = yes
+			history = "PL2027_BM_CHE"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"PSN" = {
+			minor = yes
+			history = "PL2027_BM_PSN"
+			ideology = conservative
+			ideas = { PL2027_eurostaat }
+		}
+		"TUC" = {
+			minor = yes
+			history = "PL2027_BM_TUC"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"SWC" = {
+			minor = yes
+			history = "PL2027_BM_SWC"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"GRD" = {
+			minor = yes
+			history = "PL2027_BM_GRD"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"LEG" = {
+			minor = yes
+			history = "PL2027_BM_LEG"
+			ideology = nationalist
+			ideas = {  }
+		}
+		"PLC" = {
+			minor = yes
+			history = "PL2027_BM_PLC"
+			ideology = authoritarian_democrat
+			ideas = { WWD_gmachy }
+		}
+		"PRG" = {
+			minor = yes
+			history = "PL2027_BM_PRG"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"LUB" = {
+			minor = yes
+			history = "PL2027_BM_LUB"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"WOJ" = {
+			minor = yes
+			history = "PL2027_BM_WOJ"
+			ideology = nationalist
+			ideas = { WWD_gmachy }
+		}
+		"DAB" = {
+			minor = yes
+			history = "PL2027_BM_DAB"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"LYS" = {
+			minor = yes
+			history = "PL2027_BM_LYS"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"KST" = {
+			minor = yes
+			history = "PL2027_BM_KST"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"OSD" = {
+			minor = yes
+			history = "PL2027_BM_OSD"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"UBJ" = {
+			minor = yes
+			history = "PL2027_BM_UBJ"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"GNL" = {
+			minor = yes
+			history = "PL2027_BM_GNL"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"KRW" = {
+			minor = yes
+			history = "PL2027_BM_KRW"
+			ideology = authoritarian_democrat
+			ideas = {  }
+		}
+		"NWW" = {
+			minor = yes
+			history = "PL2027_BM_NWW"
+			ideology = social_liberal
+			ideas = {  }
+		}
+		"NML" = {
+			minor = yes
+			history = "PL2027_BM_NML"
+			ideology = social_democrat
 			ideas = {  }
 		}
 		"PDG" = {

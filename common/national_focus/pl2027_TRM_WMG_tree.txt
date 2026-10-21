@@ -16,9 +16,10 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_wolne
 		icon = GFX_pl2027_tfr_portret_wmg_leader
-		x = 22
+		x = 25
 		y = 0
-		cost = 2
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_political_power = 50
@@ -29,9 +30,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_artus
 		icon = GFX_pl2027_081_rada_0
-		x = 25
+		x = 27
 		y = 1
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_wolne }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -42,9 +43,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_stocznia
 		icon = GFX_pl2027_081_port_0
-		x = 27
+		x = 29
 		y = 2
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_artus }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -56,9 +57,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_port
 		icon = GFX_pl2027_081_port_1
-		x = 26
+		x = 28
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_stocznia }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -70,9 +71,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_sierpien
 		icon = GFX_pl2027_081_port_2
-		x = 28
+		x = 30
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_stocznia }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -83,9 +84,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_spor
 		icon = GFX_pl2027_081_port_1
-		x = 26
+		x = 28
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_port }
 		prerequisite = { focus = TRM_WMG_sierpien }
 		ai_will_do = { factor = 1 }
@@ -99,9 +100,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_droga
 		icon = GFX_pl2027_081_droga_0
-		x = 26
+		x = 28
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_spor }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -112,9 +113,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_a_mob
 		icon = GFX_pl2027_081_sojusz_3_wmg_k
-		x = 22
+		x = 24
 		y = 6
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_droga }
 		mutually_exclusive = { focus = TRM_WMG_b_konf focus = TRM_WMG_c_koal }
 		ai_will_do = { factor = 4 }
@@ -127,7 +128,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_a_ultimatum
 		icon = GFX_pl2027_081_ultimatum_1_wmg
-		x = 21
+		x = 23
 		y = 7
 		cost = 1
 		prerequisite = { focus = TRM_WMG_a_mob }
@@ -141,9 +142,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_a_desant
 		icon = GFX_pl2027_081_flota_0_wmg
-		x = 23
+		x = 25
 		y = 7
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_a_mob }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -155,9 +156,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_a_wojna
 		icon = GFX_pl2027_081_wojna_2_wmg
-		x = 21
+		x = 23
 		y = 8
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
 		cost = 8
 		prerequisite = { focus = TRM_WMG_a_ultimatum }
 		prerequisite = { focus = TRM_WMG_a_desant }
@@ -174,7 +175,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_a_hegemon
 		icon = GFX_pl2027_081_korona_3_wmg
-		x = 21
+		x = 23
 		y = 9
 		cost = 10
 		prerequisite = { focus = TRM_WMG_a_wojna }
@@ -192,9 +193,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_a_porzadek
 		icon = GFX_pl2027_081_mapa_4_wmg
-		x = 20
+		x = 22
 		y = 10
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_a_hegemon }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -206,9 +207,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_a_kaszuby
 		icon = GFX_pl2027_081_las_2
-		x = 22
+		x = 24
 		y = 10
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } } }
 		cost = 8
 		prerequisite = { focus = TRM_WMG_a_hegemon }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -223,9 +224,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_a_metro
 		icon = GFX_pl2027_081_mapa_1_wmg
-		x = 21
+		x = 23
 		y = 11
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_a_porzadek }
 		prerequisite = { focus = TRM_WMG_a_kaszuby }
 		ai_will_do = { factor = 1 }
@@ -237,9 +238,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_b_konf
 		icon = GFX_pl2027_081_sojusz_1_wmg_k
-		x = 26
+		x = 28
 		y = 6
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_droga }
 		mutually_exclusive = { focus = TRM_WMG_a_mob focus = TRM_WMG_c_koal }
 		ai_will_do = { factor = 3 }
@@ -253,7 +254,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_b_malbork
 		icon = GFX_pl2027_081_dyplomacja_1
-		x = 25
+		x = 27
 		y = 7
 		cost = 1
 		prerequisite = { focus = TRM_WMG_b_konf }
@@ -266,9 +267,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_b_zloty
 		icon = GFX_pl2027_081_port_3
-		x = 27
+		x = 29
 		y = 7
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_b_konf }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -279,9 +280,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_b_straz
 		icon = GFX_pl2027_081_port_2
-		x = 25
+		x = 27
 		y = 8
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_b_malbork }
 		prerequisite = { focus = TRM_WMG_b_zloty }
 		ai_will_do = { factor = 1 }
@@ -295,7 +296,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_b_akt
 		icon = GFX_pl2027_081_mapa_1_wmg
-		x = 25
+		x = 27
 		y = 9
 		cost = 10
 		prerequisite = { focus = TRM_WMG_b_straz }
@@ -312,9 +313,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_b_rada
 		icon = GFX_pl2027_081_rada_0
-		x = 24
+		x = 26
 		y = 10
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_b_akt }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -325,9 +326,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_b_obrona
 		icon = GFX_pl2027_081_sojusz_2_wmg
-		x = 26
+		x = 28
 		y = 10
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_b_akt }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -339,9 +340,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_b_unia
 		icon = GFX_pl2027_081_sojusz_1_wmg
-		x = 24
+		x = 26
 		y = 11
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_b_rada }
 		prerequisite = { focus = TRM_WMG_b_obrona }
 		ai_will_do = { factor = 1 }
@@ -355,9 +356,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_c_koal
 		icon = GFX_TRN_form_tarcza
-		x = 30
+		x = 32
 		y = 6
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_droga }
 		mutually_exclusive = { focus = TRM_WMG_a_mob focus = TRM_WMG_b_konf }
 		ai_will_do = { factor = 3 }
@@ -372,7 +373,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_c_kociewie
 		icon = GFX_pl2027_081_mapa_1_wmg
-		x = 29
+		x = 31
 		y = 7
 		cost = 1
 		prerequisite = { focus = TRM_WMG_c_koal }
@@ -385,9 +386,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_c_ambicje
 		icon = GFX_pl2027_081_polska_0_wmg
-		x = 31
+		x = 33
 		y = 7
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_c_koal }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -400,9 +401,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_c_malbork
 		icon = GFX_pl2027_081_wojna_1_wmg
-		x = 29
+		x = 31
 		y = 8
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } } }
 		cost = 8
 		prerequisite = { focus = TRM_WMG_c_kociewie }
 		prerequisite = { focus = TRM_WMG_c_ambicje }
@@ -419,9 +420,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_c_warmia
 		icon = GFX_pl2027_081_mapa_3_wmg
-		x = 29
+		x = 31
 		y = 9
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } } }
 		cost = 8
 		prerequisite = { focus = TRM_WMG_c_malbork }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -435,9 +436,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_c_krolewiec
 		icon = GFX_pl2027_081_korona_3_wmg
-		x = 29
+		x = 31
 		y = 10
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_30000 has_army_manpower = { size > 29999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_30000 has_army_manpower = { size > 29999 } } }
 		cost = 8
 		prerequisite = { focus = TRM_WMG_c_warmia }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -452,7 +453,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_c_pomorze
 		icon = GFX_pl2027_081_mapa_2_wmg
-		x = 29
+		x = 31
 		y = 11
 		cost = 10
 		prerequisite = { focus = TRM_WMG_c_krolewiec }
@@ -469,9 +470,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_p_port
 		icon = GFX_pl2027_081_port_2
-		x = 18
+		x = 20
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_artus }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -482,9 +483,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_p_przeladunki
 		icon = GFX_pl2027_081_port_2
-		x = 16
+		x = 18
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TRM_WMG_p_port }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -495,9 +496,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_p_kolej
 		icon = GFX_pl2027_081_kolej_3
-		x = 20
+		x = 22
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_p_port }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -508,9 +509,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_p_stocznie
 		icon = GFX_pl2027_081_port_2
-		x = 18
+		x = 20
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TRM_WMG_p_port }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -521,9 +522,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_p_handel
 		icon = GFX_pl2027_081_port_0
-		x = 20
+		x = 22
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TRM_WMG_p_kolej }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -535,9 +536,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_p_zbrojownia
 		icon = GFX_pl2027_081_port_3
-		x = 20
+		x = 22
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TRM_WMG_p_stocznie }
 		prerequisite = { focus = TRM_WMG_p_handel }
 		prerequisite = { focus = TRM_WMG_p_przeladunki }
@@ -550,9 +551,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_p_bogactwo
 		icon = GFX_pl2027_081_polska_2_wmg
-		x = 20
+		x = 22
 		y = 6
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_p_zbrojownia }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -563,9 +564,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_o_straz
 		icon = GFX_pl2027_081_port_1
-		x = 32
+		x = 34
 		y = 2
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_artus }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -577,9 +578,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_o_baterie
 		icon = GFX_pl2027_081_twierdza_2_wmg
-		x = 30
+		x = 32
 		y = 3
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_o_straz }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -591,9 +592,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_o_kutry
 		icon = GFX_pl2027_081_porzadek_3
-		x = 34
+		x = 36
 		y = 3
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_o_straz }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -604,9 +605,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_o_ruszenie
 		icon = GFX_pl2027_081_pobor_2_wmg
-		x = 32
+		x = 34
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_o_straz }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -618,9 +619,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_o_magazyny
 		icon = GFX_pl2027_081_port_3
-		x = 34
+		x = 36
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TRM_WMG_o_kutry }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -633,9 +634,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_o_obrona
 		icon = GFX_TRN_form_tarcza
-		x = 34
+		x = 36
 		y = 5
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_o_ruszenie }
 		prerequisite = { focus = TRM_WMG_o_magazyny }
 		prerequisite = { focus = TRM_WMG_o_baterie }
@@ -648,9 +649,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_o_piechota
 		icon = GFX_pl2027_081_port_2
-		x = 34
+		x = 36
 		y = 6
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_o_obrona }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -663,9 +664,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_baltyk
 		icon = GFX_TRN_form_mapa
-		x = 25
+		x = 27
 		y = 12
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_a_metro focus = TRM_WMG_b_unia focus = TRM_WMG_c_pomorze }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
@@ -675,11 +676,152 @@ focus_tree = {
 	}
 
 	focus = {
+		id = FAB_WMG_motlawa
+		icon = GFX_pl2027_081_port_4
+		x = 2
+		y = 1
+		cost = 5
+		prerequisite = { focus = TRM_WMG_wolne }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = FAB_WMG_port_polnocny
+		icon = GFX_pl2027_081_port_4
+		x = 1
+		y = 2
+		cost = 6
+		prerequisite = { focus = FAB_WMG_motlawa }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = dockyard size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			add_ideas = FAB_WMG_port
+		}
+	}
+
+	focus = {
+		id = FAB_WMG_rafineria
+		icon = GFX_pl2027_081_rzeka_0
+		x = 0
+		y = 3
+		cost = 6
+		prerequisite = { focus = FAB_WMG_port_polnocny }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = FAB_WMG_bursztyn
+		icon = GFX_pl2027_081_handel_0
+		x = 2
+		y = 3
+		cost = 5
+		prerequisite = { focus = FAB_WMG_port_polnocny }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = FAB_WMG_hanza
+		icon = GFX_pl2027_081_port_0
+		x = 4
+		y = 2
+		cost = 5
+		prerequisite = { focus = FAB_WMG_motlawa }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			every_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no  } add_opinion_modifier = { target = ROOT modifier = FAB_hanza_op } }
+			if = { limit = { country_exists = SWE } SWE = { add_opinion_modifier = { target = ROOT modifier = FAB_hanza_op } } }
+		}
+	}
+
+	focus = {
+		id = FAB_WMG_sala_bhp
+		icon = GFX_pl2027_081_nauka_0
+		x = 4
+		y = 3
+		cost = 5
+		prerequisite = { focus = FAB_WMG_hanza }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = { ideology = social_liberal popularity = 0.05 }
+		}
+	}
+
+	focus = {
+		id = FAB_WMG_westerplatte
+		icon = GFX_pl2027_081_porzadek_0
+		x = 2
+		y = 4
+		cost = 7
+		prerequisite = { focus = FAB_WMG_rafineria focus = FAB_WMG_bursztyn focus = FAB_WMG_sala_bhp }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			every_owned_state = { limit = { any_neighbor_state = { NOT = { is_owned_by = ROOT } } } add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } }
+			if = { limit = { NOT = { has_template = "Straż Portowa Gdańska" } } division_template = { name = "Straż Portowa Gdańska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } support = { engineer = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Straż Portowa Gdańska\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Straż Portowa Gdańska\" start_experience_factor = 0.2" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = FAB_WMG_unia_baltycka
+		icon = GFX_pl2027_081_port_4
+		x = 1
+		y = 5
+		cost = 5
+		prerequisite = { focus = FAB_WMG_westerplatte }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 40
+			set_country_flag = FAB_WMG_baltyk
+		}
+	}
+
+	focus = {
+		id = FAB_WMG_trojmiasto
+		icon = GFX_pl2027_081_sojusz_0_wmg
+		x = 3
+		y = 5
+		cost = 5
+		prerequisite = { focus = FAB_WMG_westerplatte }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			every_country = { limit = { OR = { tag = GDY tag = SPT } } add_opinion_modifier = { target = ROOT modifier = FAB_hanza_op } }
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = FAB_WMG_wolne_miasto
+		icon = GFX_pl2027_081_port_0
+		x = 2
+		y = 6
+		cost = 7
+		prerequisite = { focus = FAB_WMG_unia_baltycka focus = FAB_WMG_trojmiasto }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { has_idea = FAB_WMG_port } remove_ideas = FAB_WMG_port } add_ideas = FAB_WMG_wolne
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
 		id = TRM_WMG_mil_start
 		icon = GFX_pl2027_081_sztab_1_wmg
-		x = 5
+		x = 11
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_wolne }
 		bypass = { has_country_flag = MIL_start }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -694,9 +836,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_wmg
-		x = 1
+		x = 7
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_mil_start }
 		bypass = { has_country_flag = MIL_rejestr }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -710,9 +852,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_wmg
-		x = 5
+		x = 11
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_mil_start }
 		bypass = { has_country_flag = MIL_ochotnicy }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -726,9 +868,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 9
+		x = 15
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_mil_start }
 		bypass = { has_country_flag = MIL_fabryka }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -742,9 +884,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_wmg
-		x = 0
+		x = 6
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_mil_rejestr }
 		bypass = { has_country_flag = MIL_pobor }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -758,9 +900,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_wmg
-		x = 4
+		x = 10
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_bataliony }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -776,9 +918,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 8
+		x = 14
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TRM_WMG_mil_fabryka }
 		bypass = { has_country_flag = MIL_produkcja }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -794,9 +936,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_wmg
-		x = 2
+		x = 8
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_mil_rejestr }
 		bypass = { has_country_flag = MIL_rezerwisci }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -810,9 +952,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_wmg
-		x = 6
+		x = 12
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_brygady }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -829,9 +971,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 10
+		x = 16
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_mil_fabryka }
 		bypass = { has_country_flag = MIL_zaplecze }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -847,9 +989,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_wmg
-		x = 0
+		x = 6
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_mil_rezerwisci }
 		prerequisite = { focus = TRM_WMG_mil_brygady }
 		prerequisite = { focus = TRM_WMG_mil_pobor }
@@ -867,9 +1009,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_wmg
-		x = 6
+		x = 12
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_mil_kadra }
 		prerequisite = { focus = TRM_WMG_mil_zaplecze }
 		prerequisite = { focus = TRM_WMG_mil_produkcja }
@@ -887,7 +1029,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 12
+		x = 40
 		y = 1
 		cost = 1
 		prerequisite = { focus = TRM_WMG_wolne }
@@ -903,9 +1045,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 11
+		x = 38
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_s_ulica }
 		bypass = { has_country_flag = TFR_zy_pl_s_media }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -919,7 +1061,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 13
+		x = 41
 		y = 2
 		cost = 1
 		prerequisite = { focus = TRM_WMG_zy_s_ulica }
@@ -935,9 +1077,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_wmg_k
-		x = 12
+		x = 40
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_s_media }
 		prerequisite = { focus = TRM_WMG_zy_s_spis }
 		mutually_exclusive = { focus = TRM_WMG_zy_s_rynek }
@@ -953,9 +1095,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_wmg_k
-		x = 14
+		x = 42
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_s_media }
 		prerequisite = { focus = TRM_WMG_zy_s_spis }
 		mutually_exclusive = { focus = TRM_WMG_zy_s_kartki }
@@ -971,9 +1113,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 12
+		x = 38
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_s_kartki focus = TRM_WMG_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -988,7 +1130,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 14
+		x = 40
 		y = 4
 		cost = 1
 		prerequisite = { focus = TRM_WMG_zy_s_kartki focus = TRM_WMG_zy_s_rynek }
@@ -1004,9 +1146,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 16
+		x = 42
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_s_kartki focus = TRM_WMG_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_straze }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1021,9 +1163,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 14
+		x = 40
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TRM_WMG_zy_s_szkoly }
 		prerequisite = { focus = TRM_WMG_zy_s_czarny }
 		prerequisite = { focus = TRM_WMG_zy_s_straze }
@@ -1041,9 +1183,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 35
+		x = 44
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TRM_WMG_wolne }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
 		bypass = { has_country_flag = TFR_zy_k_k_admin }
@@ -1059,9 +1201,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_wmg
-		x = 34
+		x = 43
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_k_admin }
 		bypass = { has_country_flag = TFR_zy_k_k_defilada }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1076,7 +1218,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 36
+		x = 45
 		y = 2
 		cost = 1
 		prerequisite = { focus = TRM_WMG_zy_k_admin }
@@ -1092,9 +1234,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_wmg
-		x = 36
+		x = 44
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_k_defilada }
 		prerequisite = { focus = TRM_WMG_zy_k_opor }
 		bypass = { has_country_flag = TFR_zy_k_k_owoce }
@@ -1109,9 +1251,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 39
+		x = 48
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_wolne }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
 		bypass = { has_country_flag = TFR_zy_p_p_straty }
@@ -1127,9 +1269,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 39
+		x = 48
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_p_straty }
 		bypass = { has_country_flag = TFR_zy_p_p_rzad }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1144,9 +1286,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_wmg_k
-		x = 38
+		x = 47
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_p_rzad }
 		mutually_exclusive = { focus = TRM_WMG_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
@@ -1161,9 +1303,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_wmg_k
-		x = 40
+		x = 49
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_p_rzad }
 		mutually_exclusive = { focus = TRM_WMG_zy_p_rewanz }
 		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
@@ -1178,9 +1320,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 39
+		x = 48
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TRM_WMG_zy_p_rewanz focus = TRM_WMG_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1197,9 +1339,9 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_wmg
-		x = 29
+		x = 31
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TRM_WMG_sierpien }
 		prerequisite = { focus = TRM_WMG_port }
 		prerequisite = { focus = TRM_WMG_o_ruszenie }

@@ -1,0 +1,3 @@
+UNI_btu_wazna = {
+	country_exists = TRN country_exists = BYD TRN = { has_country_flag = UNI_btu_ratyfikacja } BYD = { has_country_flag = UNI_btu_ratyfikacja } NOT = { TRN = { has_war_with = BYD } } TRN = { OR = { is_subject = no is_subject_of = BYD } } BYD = { OR = { is_subject = no is_subject_of = TRN } }
+}

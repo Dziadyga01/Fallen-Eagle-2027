@@ -209,7 +209,7 @@ TFE_start_jedna_polska = {
 		NML = { set_country_flag = ROZ_wojewodztwo }
 		POL = { puppet = NML }
 		POL = { set_autonomy = { target = NML autonomous_state = autonomy_tfe_wojewodztwo } }
-		NML = { set_politics = { ruling_party = authoritarian_democrat elections_allowed = no } set_popularities = { communist = 3 libertarian_socialist = 3 social_democrat = 7 social_liberal = 11 market_liberal = 7 conservative = 13 nationalist = 8 fascist = 1 authoritarian_democrat = 47 } }
+		NML = { set_politics = { ruling_party = social_democrat elections_allowed = no } set_popularities = { communist = 3 libertarian_socialist = 3 social_democrat = 47 social_liberal = 11 market_liberal = 7 conservative = 13 nationalist = 8 fascist = 1 authoritarian_democrat = 7 } }
 	}
 	if = { limit = { country_exists = NNA NNA = { is_subject = no } }
 		NNA = { set_country_flag = ROZ_wojewodztwo }
@@ -432,5 +432,23 @@ TFE_start_jedna_polska = {
 		POL = { puppet = ZKR }
 		POL = { set_autonomy = { target = ZKR autonomous_state = autonomy_tfe_wojewodztwo } }
 		ZKR = { set_politics = { ruling_party = nationalist elections_allowed = no } set_popularities = { communist = 2 libertarian_socialist = 2 social_democrat = 6 social_liberal = 15 market_liberal = 4 conservative = 13 authoritarian_democrat = 10 fascist = 3 nationalist = 45 } }
+	}
+	if = { limit = { country_exists = PMN PMN = { is_subject = no } }
+		PMN = { set_country_flag = ROZ_wojewodztwo }
+		POL = { puppet = PMN }
+		POL = { set_autonomy = { target = PMN autonomous_state = autonomy_tfe_wojewodztwo } }
+		PMN = { set_politics = { ruling_party = social_liberal elections_allowed = yes } set_popularities = { communist = 2 libertarian_socialist = 2 social_democrat = 5 social_liberal = 17 market_liberal = 6 authoritarian_democrat = 14 nationalist = 11 fascist = 2 conservative = 41 } }
+	}
+	if = { limit = { country_exists = PSN PSN = { is_subject = no } }
+		PSN = { set_country_flag = ROZ_wojewodztwo }
+		POL = { puppet = PSN }
+		POL = { set_autonomy = { target = PSN autonomous_state = autonomy_tfe_wojewodztwo } }
+		PSN = { set_politics = { ruling_party = conservative elections_allowed = yes } set_popularities = { communist = 3 libertarian_socialist = 2 social_democrat = 11 social_liberal = 16 market_liberal = 4 authoritarian_democrat = 11 nationalist = 10 fascist = 3 conservative = 40 } }
+	}
+	if = { limit = { country_exists = SLS SLS = { is_subject = no } }
+		SLS = { set_country_flag = ROZ_wojewodztwo }
+		POL = { puppet = SLS }
+		POL = { set_autonomy = { target = SLS autonomous_state = autonomy_tfe_wojewodztwo } }
+		SLS = { set_politics = { ruling_party = social_liberal elections_allowed = yes } set_popularities = { totalitarian_socialist = 1 communist = 2 libertarian_socialist = 5 social_democrat = 10 social_liberal = 11 market_liberal = 9 authoritarian_democrat = 8 nationalist = 8 fascist = 2 conservative = 44 } }
 	}
 }

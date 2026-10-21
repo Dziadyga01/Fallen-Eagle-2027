@@ -1,0 +1,197 @@
+ideas = {
+	country = {
+		FAB_WMG_port = {
+			picture = DU_FAB_WMG_port
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		FAB_WMG_wolne = {
+			picture = DU_FAB_WMG_wolne
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.08
+				enemy_justify_war_goal_time = 0.3
+			}
+		}
+		FAB_GDY_flota = {
+			picture = DU_FAB_GDY_flota
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				navy_org_factor = 0.1
+				naval_speed_factor = 0.05
+			}
+		}
+		FAB_GDY_urzad = {
+			picture = DU_FAB_GDY_urzad
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.03
+			}
+		}
+		FAB_GDY_republika = {
+			picture = DU_FAB_GDY_republika
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.12
+				stability_factor = 0.05
+				navy_org_factor = 0.05
+			}
+		}
+		FAB_SPT_kasyna = {
+			picture = DU_FAB_SPT_kasyna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.12
+				consumer_goods_factor = -0.03
+			}
+		}
+		FAB_SPT_neutralnosc = {
+			picture = DU_FAB_SPT_neutralnosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				enemy_justify_war_goal_time = 1.0
+				war_support_factor = -0.15
+				stability_factor = 0.05
+			}
+		}
+		FAB_SPT_riwiera = {
+			picture = DU_FAB_SPT_riwiera
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		FAB_MPR_rynek_idea = {
+			picture = DU_FAB_MPR_rynek_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.03
+			}
+		}
+		FAB_MPR_rodziny_idea = {
+			picture = DU_FAB_MPR_rodziny_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.02
+				consumer_goods_factor = -0.03
+			}
+		}
+		FAB_PLC_porzadek_idea = {
+			picture = DU_FAB_PLC_porzadek_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				army_defence_factor = 0.05
+			}
+		}
+		FAB_LEG_legion_idea = {
+			picture = DU_FAB_LEG_legion_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.06
+				war_support_factor = 0.08
+				stability_factor = -0.02
+			}
+		}
+		FAB_WMZ_sztab_idea = {
+			picture = DU_FAB_WMZ_sztab_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.1
+				army_defence_factor = 0.04
+			}
+		}
+		FAB_MAZ_jeziora = {
+			picture = DU_FAB_MAZ_jeziora
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.05
+			}
+		}
+		FAB_MAZ_mosty = {
+			picture = DU_FAB_MAZ_mosty
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+			}
+		}
+		FAB_MAZ_twierdza = {
+			picture = DU_FAB_MAZ_twierdza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				army_org_factor = 0.05
+			}
+		}
+		FAB_SUW_straz = {
+			picture = DU_FAB_SUW_straz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.02
+			}
+		}
+		FAB_SUW_brama = {
+			picture = DU_FAB_SUW_brama
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				supply_consumption_factor = -0.05
+			}
+		}
+		FAB_BST_granica_idea = {
+			picture = DU_FAB_BST_granica_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.04
+				stability_factor = 0.02
+			}
+		}
+		FAB_BST_front = {
+			picture = DU_FAB_BST_front
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		FAB_BST_neutralny = {
+			picture = DU_FAB_BST_neutralny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.03
+			}
+		}
+	}
+}

@@ -1,6 +1,6 @@
 on_actions = {
-	on_monthly_WMZ = { effect = { FED_miesiecznie = yes } }
-	on_monthly_MAZ = { effect = { FED_miesiecznie = yes } }
+	on_monthly_WMZ = { effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } }  FED_miesiecznie = yes  } } }
+	on_monthly_MAZ = { effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } }  FED_miesiecznie = yes  } } }
 	on_civil_war_end = {
 		effect = {
 			if = { limit = { has_country_flag = FED_rebel_sep } country_event = { id = fed.71 } }

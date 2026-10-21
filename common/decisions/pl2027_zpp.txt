@@ -1,0 +1,43 @@
+ZPP_frakcje = {
+	ZPP_d_struktury = {
+		icon = generic_political_discourse
+		allowed = { original_tag = PRW }
+		cost = 35
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = ZPP_tt_masl8_harcm3 hidden_effect = { add_to_variable = { ZPP_masl = 8 } add_to_variable = { ZPP_harc = -3 } ZPP_przelicz = yes } add_stability = 0.01 }
+		ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+	}
+	ZPP_d_kadry = {
+		icon = generic_political_discourse
+		allowed = { original_tag = PRW }
+		cost = 35
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = ZPP_tt_harc8_maslm3 hidden_effect = { add_to_variable = { ZPP_harc = 8 } add_to_variable = { ZPP_masl = -3 } ZPP_przelicz = yes } add_political_power = 10 }
+		ai_will_do = { factor = 2 modifier = { factor = 2 has_stability > 0.5 } }
+	}
+	ZPP_d_serwerownia = {
+		icon = generic_political_discourse
+		allowed = { original_tag = PRW }
+		available = { has_country_flag = ZPP_cyber_aktywny }
+		cost = 25
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = ZPP_tt_cyber8 hidden_effect = { add_to_variable = { ZPP_cyber = 8 } ZPP_przelicz = yes } add_stability = -0.02 }
+		ai_will_do = { factor = 1 modifier = { factor = 0.3 has_stability < 0.35 } }
+	}
+	ZPP_d_rozejm = {
+		icon = generic_political_discourse
+		allowed = { original_tag = PRW }
+		cost = 50
+		days_re_enable = 45
+		complete_effect = { add_stability = 0.03 custom_effect_tooltip = ZPP_tt_1 hidden_effect = { if = { limit = { check_variable = { ZPP_masl > ZPP_harc } check_variable = { ZPP_masl > ZPP_cyber } } add_to_variable = { ZPP_masl = -6 } add_to_variable = { ZPP_harc = 2 } add_to_variable = { ZPP_cyber = 2 } } if = { limit = { check_variable = { ZPP_harc > ZPP_masl } check_variable = { ZPP_harc > ZPP_cyber } } add_to_variable = { ZPP_harc = -6 } add_to_variable = { ZPP_masl = 2 } add_to_variable = { ZPP_cyber = 2 } } if = { limit = { check_variable = { ZPP_cyber > ZPP_masl } check_variable = { ZPP_cyber > ZPP_harc } } add_to_variable = { ZPP_cyber = -6 } add_to_variable = { ZPP_masl = 2 } add_to_variable = { ZPP_harc = 2 } } ZPP_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_stability < 0.3 } }
+	}
+	ZPP_d_kongres = {
+		icon = generic_political_discourse
+		allowed = { original_tag = PRW }
+		available = { custom_trigger_tooltip = { tooltip = ZPP_tt_2 date > 2028.1.31 OR = { check_variable = { ZPP_masl > 54 } check_variable = { ZPP_harc > 54 } check_variable = { ZPP_cyber > 54 } } } NOT = { has_country_flag = ZPP_kongres_cd } }
+		cost = 50
+		complete_effect = { set_country_flag = { flag = ZPP_kongres_cd days = 120 } country_event = { id = zpp.20 days = 2 } }
+		ai_will_do = { factor = 0 }
+	}
+}

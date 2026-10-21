@@ -18,7 +18,8 @@ focus_tree = {
 		icon = GFX_pl2027_081_administracja_0
 		x = 23
 		y = 0
-		cost = 3
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_political_power = 50
@@ -45,7 +46,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_0_pdl
 		x = 31
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = RPDL_start }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -59,7 +60,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_rada_0
 		x = 29
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_porzadek }
 		prerequisite = { focus = RPDL_zaopatrzenie }
 		ai_will_do = { factor = 1 }
@@ -75,7 +76,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_handel_0
 		x = 20
 		y = 3
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_wladza }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -89,7 +90,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_rada_1_pdl_k
 		x = 16
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_wybor }
 		mutually_exclusive = { focus = RPDL_b1 focus = RPDL_c1 }
 		ai_will_do = { factor = 3 modifier = { factor = 2 has_government = social_liberal } }
@@ -104,7 +105,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pomoc_0
 		x = 15
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_a1 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -118,7 +119,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_wybory_3
 		x = 17
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_a1 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -150,7 +151,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_porzadek_0_pdl_k
 		x = 20
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_wybor }
 		mutually_exclusive = { focus = RPDL_a1 focus = RPDL_c1 }
 		ai_will_do = { factor = 3 modifier = { factor = 2 has_government = nationalist } }
@@ -165,7 +166,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_czarny_rynek_0
 		x = 19
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_b1 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -179,7 +180,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_administracja_1
 		x = 21
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_b1 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -211,7 +212,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_czas_0_pdl_k
 		x = 24
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_wybor }
 		mutually_exclusive = { focus = RPDL_a1 focus = RPDL_b1 }
 		ai_will_do = { factor = 3 modifier = { factor = 2 has_government = market_liberal } }
@@ -226,7 +227,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_kolej_0
 		x = 23
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_c1 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -240,7 +241,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pieniadze_0
 		x = 25
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_c1 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -272,7 +273,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_energia_0
 		x = 29
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = RPDL_wladza }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -285,7 +286,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_przemysl_0
 		x = 28
 		y = 4
-		cost = 6
+		cost = 7
 		prerequisite = { focus = RPDL_e1 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -299,7 +300,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_czas_1
 		x = 30
 		y = 4
-		cost = 6
+		cost = 7
 		prerequisite = { focus = RPDL_e1 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -314,7 +315,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_kolej_1_pdl_k
 		x = 27
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = RPDL_e2 }
 		prerequisite = { focus = RPDL_e3 }
 		mutually_exclusive = { focus = RPDL_e5 }
@@ -332,7 +333,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_kolej_1_pdl_k
 		x = 29
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = RPDL_e2 }
 		prerequisite = { focus = RPDL_e3 }
 		mutually_exclusive = { focus = RPDL_e4 }
@@ -348,7 +349,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_fabryka_broni_0
 		x = 27
 		y = 6
-		cost = 6
+		cost = 7
 		prerequisite = { focus = RPDL_e4 focus = RPDL_e5 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -363,7 +364,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_porzadek_2
 		x = 34
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = RPDL_wladza }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -378,7 +379,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_1_pdl_k
 		x = 33
 		y = 4
-		cost = 6
+		cost = 7
 		prerequisite = { focus = RPDL_m1 }
 		mutually_exclusive = { focus = RPDL_m3 }
 		ai_will_do = { factor = 3 modifier = { factor = 3 has_war = yes } modifier = { factor = 2 threat > 0.3 } }
@@ -396,7 +397,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_wojsko_1_pdl_k
 		x = 35
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = RPDL_m1 }
 		mutually_exclusive = { focus = RPDL_m2 }
 		ai_will_do = { factor = 3 modifier = { factor = 0.5 has_war = yes } }
@@ -413,7 +414,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_wojsko_0_pdl
 		x = 33
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = RPDL_m2 focus = RPDL_m3 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -428,7 +429,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_porzadek_3
 		x = 33
 		y = 6
-		cost = 3
+		cost = 5
 		prerequisite = { focus = RPDL_m4 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -442,7 +443,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_administracja_2
 		x = 38
 		y = 3
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_wladza }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -455,7 +456,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_twierdza_0_pdl_k
 		x = 37
 		y = 5
-		cost = 3
+		cost = 5
 		prerequisite = { focus = RPDL_d0 }
 		mutually_exclusive = { focus = RPDL_w1 }
 		ai_will_do = { factor = 4 }
@@ -472,7 +473,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_sojusz_0_pdl
 		x = 37
 		y = 6
-		cost = 3
+		cost = 5
 		prerequisite = { focus = RPDL_s1 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -486,7 +487,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pomoc_2_pdl_k
 		x = 37
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = RPDL_d0 }
 		mutually_exclusive = { focus = RPDL_samodzielnosc }
 		ai_will_do = { factor = 3 modifier = { factor = 2 has_war = yes } modifier = { factor = 0.5 has_political_power < 50 } }
@@ -503,7 +504,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_orzel_0_pdl_k
 		x = 39
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = RPDL_d0 }
 		mutually_exclusive = { focus = RPDL_pomoc }
 		ai_will_do = { factor = 2 modifier = { factor = 0.4 has_war = yes } }
@@ -537,7 +538,7 @@ focus_tree = {
 		prerequisite = { focus = RPDL_d0 }
 		prerequisite = { focus = REG_PDL_tree_gotowosc }
 		mutually_exclusive = { focus = RPDL_s1 }
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
 			every_state = { limit = { is_owned_by = PRW } add_claim_by = ROOT }
@@ -554,7 +555,7 @@ focus_tree = {
 		y = 7
 		cost = 8
 		prerequisite = { focus = RPDL_w1 }
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
 			if = { limit = { country_exists = KKR NOT = { has_war_with = KKR } NOT = { KKR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = KKR } } create_wargoal = { type = annex_everything target = KKR } } else = { add_political_power = 40 }
@@ -568,7 +569,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_ludzie_0
 		x = 37
 		y = 8
-		cost = 6
+		cost = 7
 		prerequisite = { focus = RPDL_s3 focus = RPDL_w2 }
 		available = { custom_trigger_tooltip = { tooltip = RPDL_tt_region OR = { num_of_controlled_states > 60 AND = { is_faction_leader = yes num_faction_members > 2 } } } }
 		ai_will_do = { factor = 10 }
@@ -587,7 +588,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_centralizacja_0_pdl_k
 		x = 36
 		y = 9
-		cost = 3
+		cost = 5
 		prerequisite = { focus = RPDL_region }
 		mutually_exclusive = { focus = RPDL_porozumienie }
 		ai_will_do = { factor = 3 modifier = { factor = 0.3 has_stability < 0.5 } modifier = { factor = 1.5 has_stability > 0.7 } }
@@ -602,7 +603,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_administracja_0_pdl_k
 		x = 38
 		y = 9
-		cost = 3
+		cost = 5
 		prerequisite = { focus = RPDL_region }
 		mutually_exclusive = { focus = RPDL_centralizacja }
 		ai_will_do = { factor = 3 modifier = { factor = 2 has_stability < 0.5 } }
@@ -616,7 +617,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_korona_3_pdl
 		x = 36
 		y = 10
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_region }
 		ai_will_do = { factor = 8 }
 		completion_reward = {
@@ -633,7 +634,7 @@ focus_tree = {
 		y = 11
 		cost = 8
 		prerequisite = { focus = RPDL_pl1 }
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_15000 has_army_manpower = { size > 14999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_15000 has_army_manpower = { size > 14999 } } }
 		ai_will_do = { factor = 8 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
 			745 = { if = { limit = { NOT = { is_owned_by = ROOT } owner = { NOT = { is_in_faction_with = ROOT } NOT = { is_subject_of = ROOT } } } owner = { ROOT = { create_wargoal = { type = annex_everything target = PREV } } } } }
@@ -667,7 +668,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_lotnictwo_0_pdl
 		x = 29
 		y = 6
-		cost = 5
+		cost = 6
 		prerequisite = { focus = RPDL_e2 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -681,7 +682,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_sztab_1_pdl
 		x = 5
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = RPDL_start }
 		bypass = { has_country_flag = MIL_start }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -698,7 +699,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_1_pdl
 		x = 1
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_mil_start }
 		bypass = { has_country_flag = MIL_rejestr }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -714,7 +715,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_3_pdl
 		x = 5
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_mil_start }
 		bypass = { has_country_flag = MIL_ochotnicy }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -730,7 +731,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_fabryka_broni_1
 		x = 9
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_mil_start }
 		bypass = { has_country_flag = MIL_fabryka }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -746,7 +747,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_2_pdl
 		x = 0
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_mil_rejestr }
 		bypass = { has_country_flag = MIL_pobor }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -762,7 +763,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_wojsko_4_pdl
 		x = 4
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = REG_PDL_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_bataliony }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -780,7 +781,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_przemysl_4
 		x = 8
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = REG_PDL_mil_fabryka }
 		bypass = { has_country_flag = MIL_produkcja }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -798,7 +799,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_3_pdl
 		x = 2
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_mil_rejestr }
 		bypass = { has_country_flag = MIL_rezerwisci }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -814,7 +815,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_obrona_terytorialna_1_pdl
 		x = 6
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = REG_PDL_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_brygady }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -833,7 +834,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_logistyka_0
 		x = 10
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_mil_fabryka }
 		bypass = { has_country_flag = MIL_zaplecze }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -851,7 +852,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_oficer_1_pdl
 		x = 0
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_mil_rezerwisci }
 		prerequisite = { focus = REG_PDL_mil_brygady }
 		prerequisite = { focus = REG_PDL_mil_pobor }
@@ -871,7 +872,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_zawodowa_1_pdl
 		x = 6
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = REG_PDL_mil_kadra }
 		prerequisite = { focus = REG_PDL_mil_zaplecze }
 		prerequisite = { focus = REG_PDL_mil_produkcja }
@@ -907,7 +908,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_media_1
 		x = 13
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_zy_s_ulica }
 		bypass = { has_country_flag = TFR_zy_pl_s_media }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -939,7 +940,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_kartki_0_pdl_k
 		x = 12
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_zy_s_media }
 		prerequisite = { focus = REG_PDL_zy_s_spis }
 		mutually_exclusive = { focus = REG_PDL_zy_s_rynek }
@@ -957,7 +958,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_handel_1_pdl_k
 		x = 14
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_zy_s_media }
 		prerequisite = { focus = REG_PDL_zy_s_spis }
 		mutually_exclusive = { focus = REG_PDL_zy_s_kartki }
@@ -975,7 +976,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_szkola_0
 		x = 10
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = REG_PDL_zy_s_kartki focus = REG_PDL_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1008,7 +1009,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_straz_1
 		x = 14
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_zy_s_kartki focus = REG_PDL_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_straze }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1025,7 +1026,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_wspolnota_1
 		x = 12
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = REG_PDL_zy_s_szkoly }
 		prerequisite = { focus = REG_PDL_zy_s_czarny }
 		prerequisite = { focus = REG_PDL_zy_s_straze }
@@ -1043,9 +1044,9 @@ focus_tree = {
 	focus = {
 		id = REG_PDL_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 33
+		x = 35
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = RPDL_start }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
 		bypass = { has_country_flag = TFR_zy_k_k_admin }
@@ -1061,9 +1062,9 @@ focus_tree = {
 	focus = {
 		id = REG_PDL_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_pdl
-		x = 32
+		x = 34
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = REG_PDL_zy_k_admin }
 		bypass = { has_country_flag = TFR_zy_k_k_defilada }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1078,7 +1079,7 @@ focus_tree = {
 	focus = {
 		id = REG_PDL_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 34
+		x = 36
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_PDL_zy_k_admin }
@@ -1094,9 +1095,9 @@ focus_tree = {
 	focus = {
 		id = REG_PDL_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_pdl
-		x = 32
+		x = 36
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_zy_k_defilada }
 		prerequisite = { focus = REG_PDL_zy_k_opor }
 		bypass = { has_country_flag = TFR_zy_k_k_owoce }
@@ -1113,7 +1114,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_straty_0
 		x = 41
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = RPDL_start }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
 		bypass = { has_country_flag = TFR_zy_p_p_straty }
@@ -1131,7 +1132,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_rada_0
 		x = 41
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = REG_PDL_zy_p_straty }
 		bypass = { has_country_flag = TFR_zy_p_p_rzad }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1148,7 +1149,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_gotowosc_1_pdl_k
 		x = 40
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_zy_p_rzad }
 		mutually_exclusive = { focus = REG_PDL_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
@@ -1165,7 +1166,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pojednanie_3_pdl_k
 		x = 42
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = REG_PDL_zy_p_rzad }
 		mutually_exclusive = { focus = REG_PDL_zy_p_rewanz }
 		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
@@ -1182,7 +1183,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_wyposazenie_2
 		x = 41
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = REG_PDL_zy_p_rewanz focus = REG_PDL_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1201,7 +1202,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_gotowosc_0_pdl
 		x = 31
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = RPDL_wybor }
 		prerequisite = { focus = RPDL_e1 }
 		prerequisite = { focus = RPDL_m1 }

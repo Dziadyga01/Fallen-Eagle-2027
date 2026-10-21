@@ -1,0 +1,98 @@
+ideas = {
+	country = {
+		PRL_rzad_rp = {
+			picture = DU_PRL_rzad_rp
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.05
+			}
+		}
+		PRL_goraczka_secesji = {
+			picture = DU_PRL_goraczka_secesji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+		PRL_umowa_z_warszawa = {
+			picture = DU_PRL_umowa_z_warszawa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.08
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		PRL_mandat_jednosci = {
+			picture = DU_PRL_mandat_jednosci
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.1
+			}
+		}
+		PRL_mandat_niepodleglosci = {
+			picture = DU_PRL_mandat_niepodleglosci
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		PRL_autonomia_umowna = {
+			picture = DU_PRL_autonomia_umowna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = 0.03
+			}
+		}
+		PRL_sejm_sprawny = {
+			picture = DU_PRL_sejm_sprawny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		PRL_sejm_rozsypka = {
+			picture = DU_PRL_sejm_rozsypka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = -0.03
+			}
+		}
+		PRL_panstwo_z_papieru = {
+			picture = DU_PRL_panstwo_z_papieru
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+			}
+		}
+		PRL_plan_obrony = {
+			picture = DU_PRL_plan_obrony
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				planning_speed = 0.1
+			}
+		}
+	}
+}

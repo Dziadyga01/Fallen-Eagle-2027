@@ -1,5 +1,0 @@
-on_actions = {
-	on_startup = {
-		effect = { if = { limit = { country_exists = MPR } MPR = { add_timed_idea = { idea = WWD_bojowki days = 300 } } } if = { limit = { country_exists = LEG } LEG = { add_timed_idea = { idea = WWD_kibole days = 200 } } } }
-	}
-}

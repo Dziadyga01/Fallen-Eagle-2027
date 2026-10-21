@@ -1,0 +1,7 @@
+ROS_priorytet_mazurski = {
+	icon = GFX_idea_ROS_priorytet_mazurski
+	enable = { always = yes }
+	remove_trigger = { has_global_flag = ROS_operacja_wygrana }
+	justify_war_goal_time = 10.0
+	send_volunteers_tension = 1.0
+}

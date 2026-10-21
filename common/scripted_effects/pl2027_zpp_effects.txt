@@ -1,0 +1,15 @@
+ZPP_przelicz = {
+	clamp_variable = { var = ZPP_masl min = 0 max = 100 } clamp_variable = { var = ZPP_harc min = 0 max = 100 } clamp_variable = { var = ZPP_cyber min = 0 max = 100 } set_variable = { ZPP_mod_stab = ZPP_masl } subtract_from_variable = { ZPP_mod_stab = ZPP_harc } divide_variable = { ZPP_mod_stab = 1000 } set_variable = { ZPP_mod_pp = ZPP_harc } divide_variable = { ZPP_mod_pp = 500 } set_variable = { ZPP_mod_bud = ZPP_cyber } divide_variable = { ZPP_mod_bud = 500 } set_variable = { ZPP_mod_ws = ZPP_masl } divide_variable = { ZPP_mod_ws = 800 } set_variable = { ZPP_mod_napiecie = ZPP_masl } add_to_variable = { ZPP_mod_napiecie = ZPP_harc } add_to_variable = { ZPP_mod_napiecie = ZPP_cyber } subtract_from_variable = { ZPP_mod_napiecie = 100 } divide_variable = { ZPP_mod_napiecie = -1000 } clamp_variable = { var = ZPP_mod_napiecie min = -0.08 max = 0 }
+}
+ZPP_start = {
+	if = { limit = { country_exists = PRW } PRW = { set_variable = { ZPP_masl = 36 } set_variable = { ZPP_harc = 34 } set_variable = { ZPP_cyber = 0 } add_dynamic_modifier = { modifier = ZPP_frakcje_mod } ZPP_przelicz = yes country_event = { id = zpp.1 days = 75 } } }
+}
+ZPP_wygrana_masl = {
+	set_country_flag = ZPP_kongres_rozstrzygniety set_country_flag = ZPP_sciezka_masl remove_dynamic_modifier = { modifier = ZPP_frakcje_mod } set_politics = { ruling_party = conservative elections_allowed = no } add_popularity = { ideology = conservative popularity = 0.10 } if = { limit = { NOT = { has_character = ZPP_maslarz } } recruit_character = ZPP_maslarz } promote_character = ZPP_maslarz add_ideas = ZPP_maslarze_idea mark_focus_tree_layout_dirty = yes news_event = { id = zpp.29 days = 1 }
+}
+ZPP_wygrana_harc = {
+	set_country_flag = ZPP_kongres_rozstrzygniety set_country_flag = ZPP_sciezka_harc remove_dynamic_modifier = { modifier = ZPP_frakcje_mod } set_politics = { ruling_party = conservative elections_allowed = no } add_popularity = { ideology = conservative popularity = 0.10 } if = { limit = { NOT = { has_character = ZPP_harcerz } } recruit_character = ZPP_harcerz } promote_character = ZPP_harcerz add_ideas = ZPP_harcerze_idea mark_focus_tree_layout_dirty = yes news_event = { id = zpp.29 days = 1 }
+}
+ZPP_wygrana_cyber = {
+	set_country_flag = ZPP_kongres_rozstrzygniety set_country_flag = ZPP_sciezka_cyber remove_dynamic_modifier = { modifier = ZPP_frakcje_mod } set_politics = { ruling_party = nationalist elections_allowed = no } add_popularity = { ideology = nationalist popularity = 0.10 } if = { limit = { NOT = { has_character = ZPP_cyberjarek } } recruit_character = ZPP_cyberjarek } promote_character = ZPP_cyberjarek add_ideas = ZPP_cyber_idea mark_focus_tree_layout_dirty = yes news_event = { id = zpp.29 days = 1 }
+}

@@ -1,0 +1,8 @@
+on_actions = {
+	on_startup = {
+		effect = { if = { limit = { country_exists = ROS } ROS = { add_dynamic_modifier = { modifier = ROS_priorytet_mazurski } } } }
+	}
+	on_weekly_ROS = {
+		effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } }  if = { limit = { has_country_flag = ROS_wojna_rozstrzygnieta } every_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW tag = BST } } set_country_flag = ROS_zakonczona_obrona } } if = { limit = { has_country_flag = ROS_wojna_rozstrzygnieta NOT = { has_global_flag = ROS_operacja_wygrana } has_country_flag = ROS_operacja_nieudana } every_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW } exists = yes } set_country_flag = PL2027_obrona_udana } }  } }
+	}
+}

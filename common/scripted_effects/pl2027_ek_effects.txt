@@ -1,0 +1,3 @@
+EK_tusk_listopad = {
+	if = { limit = { OR = { has_game_rule = { rule = PL2027_TUSK option = POMORZE } AND = { has_game_rule = { rule = PL2027_TUSK option = LOSOWO } has_global_flag = EK_los_pomorze } } } set_global_flag = PRL_tusk_pomorze set_global_flag = PRL_nast_prezydium if = { limit = { country_exists = PMN } PMN = { recruit_character = PMN_tusk promote_character = PMN_tusk set_country_flag = EK_tusk } } if = { limit = { country_exists = SMR } SMR = { recruit_character = SMR_prezydium promote_character = SMR_prezydium } } } else = { set_global_flag = PRL_tusk_sejm if = { limit = { country_exists = SMR } SMR = { if = { limit = { NOT = { has_character = SMR_leader } } recruit_character = SMR_leader } promote_character = SMR_leader set_country_flag = SMR_tusk } } }
+}

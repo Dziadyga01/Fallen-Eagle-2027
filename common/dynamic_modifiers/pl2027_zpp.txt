@@ -1,0 +1,9 @@
+ZPP_frakcje_mod = {
+	icon = GFX_idea_ZPP_frakcje_mod
+	enable = { always = yes }
+	remove_trigger = { has_country_flag = ZPP_kongres_rozstrzygniety }
+	stability_factor = ZPP_mod_napiecie
+	war_support_factor = ZPP_mod_ws
+	political_power_gain = ZPP_mod_pp
+	production_speed_buildings_factor = ZPP_mod_bud
+}

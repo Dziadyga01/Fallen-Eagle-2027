@@ -541,7 +541,7 @@ country_event = {
 	option = {
 		name = byd2.80.a
 		ai_chance = { factor = 30 }
-		FROM = { annex_country = { target = ROOT transfer_troops = yes } set_cosmetic_tag = MET_FEDERACJA } set_global_flag = MET_rozstrzygniete
+		custom_effect_tooltip = UNI_tt_tylko_rozmowy UNI_btu_z_wydarzenia_3_dwie = yes
 	}
 	option = {
 		name = byd2.80.b
@@ -559,7 +559,7 @@ country_event = {
 	option = {
 		name = byd2.81.a
 		ai_chance = { factor = 40 }
-		FROM = { annex_country = { target = ROOT transfer_troops = yes } set_cosmetic_tag = MET_FEDERACJA } set_global_flag = MET_rozstrzygniete
+		custom_effect_tooltip = UNI_tt_tylko_rozmowy UNI_btu_z_wydarzenia_2 = yes
 	}
 	option = {
 		name = byd2.81.b
@@ -578,7 +578,7 @@ country_event = {
 	option = {
 		name = byd2.82.a
 		ai_chance = { factor = 25 }
-		FROM = { annex_country = { target = ROOT transfer_troops = yes } } set_global_flag = MET_rozstrzygniete
+		custom_effect_tooltip = UNI_tt_tylko_rozmowy UNI_btu_z_wydarzenia_2 = yes
 	}
 	option = {
 		name = byd2.82.b

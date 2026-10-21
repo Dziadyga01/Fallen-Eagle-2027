@@ -1,0 +1,41 @@
+characters = {
+	ZPP_maslarz = {
+		name = ZPP_maslarz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZPP/ZPP_maslarz.dds"
+				small = "gfx/leaders/ZPP/ZPP_maslarz_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = patronage_populism
+			expire = "2065.1.1.1"
+		}
+	}
+	ZPP_harcerz = {
+		name = ZPP_harcerz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZPP/ZPP_harcerz.dds"
+				small = "gfx/leaders/ZPP/ZPP_harcerz_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = managerial_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	ZPP_cyberjarek = {
+		name = ZPP_cyberjarek
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZPP/ZPP_cyberjarek.dds"
+				small = "gfx/leaders/ZPP/ZPP_cyberjarek_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = cyberocracy
+			expire = "2065.1.1.1"
+		}
+	}
+}

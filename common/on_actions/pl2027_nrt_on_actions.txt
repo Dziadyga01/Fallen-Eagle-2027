@@ -1,0 +1,8 @@
+on_actions = {
+	on_monthly = {
+		effect = { if = { limit = { has_country_flag = PL2027_polska } if = { limit = { NOT = { has_country_flag = NRT_mod } } set_country_flag = NRT_mod add_dynamic_modifier = { modifier = NRT_nurt_mod } } NRT_przelicz = yes } }
+	}
+	on_ruling_party_change = {
+		effect = { if = { limit = { has_country_flag = PL2027_polska } NRT_przelicz = yes } }
+	}
+}

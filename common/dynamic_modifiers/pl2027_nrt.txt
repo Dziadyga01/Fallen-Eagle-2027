@@ -1,0 +1,9 @@
+NRT_nurt_mod = {
+	icon = GFX_idea_NRT_nurt_mod
+	enable = { always = yes }
+	political_power_gain = NRT_pp
+	stability_factor = NRT_stab
+	war_support_factor = NRT_ws
+	production_speed_buildings_factor = NRT_bud
+	conscription_factor = NRT_rek
+}

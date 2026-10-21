@@ -15,6 +15,7 @@ focus_tree = {
 		x = 16
 		y = 0
 		cost = 2
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			ROS_wladza_szojgu = yes
@@ -37,7 +38,7 @@ focus_tree = {
 
 	focus = {
 		id = ROS_szo_stan_wyjatkowy
-		icon = GFX_pl2027_081_cenzura_1
+		icon = GFX_pl2027_081_cenzura_0
 		x = 12
 		y = 1
 		cost = 2
@@ -347,7 +348,7 @@ focus_tree = {
 		cost = 8
 		prerequisite = { focus = ROS_zw_final_szojgu }
 		prerequisite = { focus = ROS_szojgu_tree_gotowosc }
-		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
+		available = { custom_trigger_tooltip = { tooltip = ROS_req_operacja_wygrana has_global_flag = ROS_operacja_wygrana } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
 		bypass = { has_country_flag = ROS_wyn_zw_druga_fala }
 		ai_will_do = { factor = 10 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
@@ -366,7 +367,7 @@ focus_tree = {
 		y = 7
 		cost = 8
 		prerequisite = { focus = ROS_zw_zwiazkowe_szojgu focus = ROS_zw_druga_fala_szojgu }
-		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
+		available = { custom_trigger_tooltip = { tooltip = ROS_req_operacja_wygrana has_global_flag = ROS_operacja_wygrana } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
 		bypass = { has_country_flag = ROS_wyn_zw_podlasie }
 		ai_will_do = { factor = 10 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
@@ -536,7 +537,7 @@ focus_tree = {
 		cost = 1
 		mutually_exclusive = { focus = ROS_zw_administracja_szojgu focus = ROS_zw_obwod_wm_szojgu focus = ROS_zw_pokoj_szojgu }
 		allow_branch = { has_country_flag = ROS_zwyciestwo }
-		available = { has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } NOT = { has_country_flag = ROS_lider_szl } NOT = { has_country_flag = ROS_lider_naw } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } NOT = { has_country_flag = ROS_lider_szl } NOT = { has_country_flag = ROS_lider_naw } }
 		bypass = { OR = { has_country_flag = ROS_wojna_rozstrzygnieta has_country_flag = ROS_wyn_zw_aneksja has_country_flag = ROS_wyn_zw_administracja has_country_flag = ROS_wyn_zw_obwod_wm has_country_flag = ROS_wyn_zw_pokoj } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -553,7 +554,7 @@ focus_tree = {
 		cost = 1
 		mutually_exclusive = { focus = ROS_zw_aneksja_szojgu focus = ROS_zw_obwod_wm_szojgu focus = ROS_zw_pokoj_szojgu }
 		allow_branch = { has_country_flag = ROS_zwyciestwo }
-		available = { has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } NOT = { has_country_flag = ROS_lider_szl } NOT = { has_country_flag = ROS_lider_naw } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } NOT = { has_country_flag = ROS_lider_szl } NOT = { has_country_flag = ROS_lider_naw } }
 		bypass = { OR = { has_country_flag = ROS_wojna_rozstrzygnieta has_country_flag = ROS_wyn_zw_aneksja has_country_flag = ROS_wyn_zw_administracja has_country_flag = ROS_wyn_zw_obwod_wm has_country_flag = ROS_wyn_zw_pokoj } }
 		ai_will_do = { factor = 5 }
 		completion_reward = {
@@ -570,7 +571,7 @@ focus_tree = {
 		cost = 1
 		mutually_exclusive = { focus = ROS_zw_aneksja_szojgu focus = ROS_zw_administracja_szojgu focus = ROS_zw_pokoj_szojgu }
 		allow_branch = { has_country_flag = ROS_zwyciestwo }
-		available = { has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } }
 		bypass = { OR = { has_country_flag = ROS_wojna_rozstrzygnieta has_country_flag = ROS_wyn_zw_aneksja has_country_flag = ROS_wyn_zw_administracja has_country_flag = ROS_wyn_zw_obwod_wm has_country_flag = ROS_wyn_zw_pokoj } }
 		ai_will_do = { factor = 15 }
 		completion_reward = {
@@ -587,7 +588,7 @@ focus_tree = {
 		cost = 1
 		mutually_exclusive = { focus = ROS_zw_aneksja_szojgu focus = ROS_zw_administracja_szojgu focus = ROS_zw_obwod_wm_szojgu }
 		allow_branch = { has_country_flag = ROS_zwyciestwo }
-		available = { has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } }
 		bypass = { OR = { has_country_flag = ROS_wojna_rozstrzygnieta has_country_flag = ROS_wyn_zw_aneksja has_country_flag = ROS_wyn_zw_administracja has_country_flag = ROS_wyn_zw_obwod_wm has_country_flag = ROS_wyn_zw_pokoj } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -752,7 +753,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_r_tv
 		icon = GFX_pl2027_081_telewizja_0
-		x = 23
+		x = 24
 		y = 1
 		cost = 3
 		prerequisite = { focus = ROS_szo_zarzad }
@@ -768,7 +769,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_r_listy
 		icon = GFX_pl2027_081_dyplomacja_1
-		x = 22
+		x = 23
 		y = 2
 		cost = 1
 		prerequisite = { focus = ROS_szojgu_zy_r_tv }
@@ -784,7 +785,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_r_oligarchowie
 		icon = GFX_pl2027_081_oligarchia_0
-		x = 24
+		x = 25
 		y = 2
 		cost = 1
 		prerequisite = { focus = ROS_szojgu_zy_r_tv }
@@ -800,7 +801,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_r_rubel
 		icon = GFX_pl2027_081_kryzys_gosp_3
-		x = 23
+		x = 22
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_szojgu_zy_r_listy }
@@ -818,7 +819,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_r_druk
 		icon = GFX_pl2027_081_kryzys_gosp_0
-		x = 25
+		x = 24
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_szojgu_zy_r_listy }
@@ -836,7 +837,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_r_cenzura
 		icon = GFX_pl2027_081_cenzura_2
-		x = 22
+		x = 21
 		y = 4
 		cost = 2
 		prerequisite = { focus = ROS_szojgu_zy_r_rubel focus = ROS_szojgu_zy_r_druk }
@@ -853,7 +854,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_r_regiony
 		icon = GFX_pl2027_081_mapa_0
-		x = 24
+		x = 23
 		y = 4
 		cost = 3
 		prerequisite = { focus = ROS_szojgu_zy_r_rubel focus = ROS_szojgu_zy_r_druk }
@@ -870,7 +871,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_r_jednosc
 		icon = GFX_pl2027_081_wojna_1
-		x = 23
+		x = 22
 		y = 5
 		cost = 6
 		prerequisite = { focus = ROS_szojgu_zy_r_cenzura }
@@ -888,7 +889,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 27
+		x = 28
 		y = 1
 		cost = 5
 		prerequisite = { focus = ROS_szo_zarzad }
@@ -906,7 +907,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1
-		x = 26
+		x = 27
 		y = 2
 		cost = 2
 		prerequisite = { focus = ROS_szojgu_zy_k_admin }
@@ -923,7 +924,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 28
+		x = 29
 		y = 2
 		cost = 1
 		prerequisite = { focus = ROS_szojgu_zy_k_admin }
@@ -939,7 +940,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2
-		x = 27
+		x = 28
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_szojgu_zy_k_defilada }
@@ -956,7 +957,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 31
+		x = 32
 		y = 1
 		cost = 3
 		prerequisite = { focus = ROS_szo_zarzad }
@@ -974,7 +975,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 31
+		x = 32
 		y = 2
 		cost = 2
 		prerequisite = { focus = ROS_szojgu_zy_p_straty }
@@ -991,7 +992,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1
-		x = 30
+		x = 31
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_szojgu_zy_p_rzad }
@@ -1008,7 +1009,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3
-		x = 32
+		x = 33
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_szojgu_zy_p_rzad }
@@ -1025,7 +1026,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szojgu_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 31
+		x = 32
 		y = 4
 		cost = 5
 		prerequisite = { focus = ROS_szojgu_zy_p_rewanz focus = ROS_szojgu_zy_p_pojednanie }

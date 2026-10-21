@@ -1,8 +1,8 @@
-THE FALLEN EAGLE – ALPHA 0.8.6 „GODZINA ZERO” · ETAP II (WERSJA TESTOWA) MONKEY
-Modyfikacja do Hearts of Iron IV (1.19) · scenariusz alternatywnej historii · start: 11 listopada 2027
+THE FALLEN EAGLE – ALPHA 0.8.8 „GODZINA ZERO” · ETAP II (WERSJA TESTOWA) – zawiera „Dwa początki” (0.8.7)
+Modyfikacja do Hearts of Iron IV (1.19) · scenariusz alternatywnej historii · start: 22 października albo 11 listopada 2027
 
 =====================================================================
-KRÓTKA HISTORIA 
+KRÓTKA HISTORIA
 =====================================================================
 
 Jesienią 2027 roku Polska poszła do wyborów, których wyniku nikt nie uznał. Sejm ogłosił jedno, Pałac drugie,
@@ -16,7 +16,7 @@ i Pomorza. Gminy wokół nich ogłosiły się „wolnymi państwami”, bo nikt 
 Trójmiasto rozpadło się na trzy miasta-państwa. W Malborku grupa rekonstruktorów i biznesmenów ogłosiła
 odrodzenie Zakonu Krzyżackiego – i znalazła sponsorów. Olsztyn stanął na czele Warmii i Mazur.
 
-Na zachodzie Berlin i Bruksela „tymczasowo” przejęły administrację Pomorza Zachodniego, Wielkopolski i Śląska.
+Na zachodzie Bruksela utworzyła Eurokomisariat Pomorza w Szczecinie i Eurokomisariat Śląska we Wrocławiu, a pod Poznaniem Berlin nadzoruje Eurostaat Posen.
 Na wschodzie Rosja z obwodu królewieckiego patrzy na Mazury, a Białoruś czeka, czy Moskwa poprosi ją o pomoc.
 
 Orzeł spadł. Pytanie brzmi: kto go podniesie – i czy to jeszcze będzie Polska?
@@ -31,7 +31,7 @@ MAPA I PAŃSTWA
   Roztocza i Gór Świętokrzyskich, miasta), surowce w miejscach prawdziwych złóż i zakładów (Bogdanka, rudy Suwalszczyzny,
   huta aluminium w Koninie, ropa z Bałtyku i Wielkopolski, petrochemia w Płocku).
 - 82 państwa polskie: miasta-państwa, ziemie, księstwa, republiki, bloki warszawskie, Zakon, Warmia;
-  do tego Eurostaaty pod niemieckim zarządem, Rosja (obwód królewiecki) i sąsiedzi.
+  do tego Eurokomisariaty Pomorza i Śląska (UE), Eurostaat Posen pod niemieckim zarządem, Rosja (obwód królewiecki) i sąsiedzi.
 
 DRZEWKA I WYDARZENIA
 - 98 drzewek narodowych, ponad 7000 fokusów, ponad 500 wydarzeń, 603 duchy narodowe, 211 postaci.
@@ -56,9 +56,11 @@ DRZEWKA I WYDARZENIA
 ROZGRYWKA
 - Kompromisy w fokusach: odbudowa albo zbrojenia, mobilizacja albo armia z kadr, pomoc z zagranicy albo samodzielność,
   centralizacja albo porozumienie z samorządami; premie czasowe zamiast dziesiątek stałych.
-- Dwa scenariusze startowe (zasada gry): „Godzina Zero” – gra zaczyna się jako jedna Rzeczpospolita, której regiony są województwami
-  i w kolejnych fazach żądają autonomii, ogłaszają niepodległość albo wypowiadają posłuszeństwo; „Polska już podzielona” – start
-  z kilkudziesięcioma niezależnymi państwami. Można grać rządem Rzeczypospolitej albo dowolnym regionem.
+- Dwa początki kampanii (ekran wyboru): 22.10.2027 – prolog jednej Rzeczypospolitej (20 dni: żądania regionów z licznikiem eskalacji,
+  negocjacje, referenda, ustępstwa, afery, obowiązkowe secesje eurokomisariatów, wybór Donalda Tuska – fikcja moda); 11.11.2027 – Polska już podzielona.
+  Bilans prologu ustala start regionalny; po Godzinie Zero gra się Sejmem w Warszawie albo eurokomisariatem.
+- Pokojowe unie z negocjacjami i osobną ratyfikacją (Unia Bydgosko-Toruńska i 6 projektów „Integracji regionów”), frakcje Zjednoczonej Polskiej Prawicy,
+  Atlas nurtów politycznych, obrona Mazur z jasnymi warunkami operacji rosyjskiej, wolniejsze tempo (fokusy 35–56 dni, odbudowa po wojnie, małe państwa bez podbojów).
 - Godzina Zero – rozpad Polski w 5 fazach (kryzys instytucjonalny, bunty regionalne, utrata kontroli, secesje, walka o nowy porządek).
   Tempo zależy od presji rozpadu i pięciu wskaźników w panelu decyzji „Kryzys Rzeczypospolitej”. Wojny z drzewek państw polskich odblokowują się w fazie IV.
   Od 2029 r. możliwe zakończenia: korporacyjne, Rzeczpospolita Regionów, demokratyczne, wojskowe, protektorat albo trwały rozpad.
@@ -88,6 +90,7 @@ GRAFIKA I DŹWIĘK
 INSTALACJA
 =====================================================================
 Rozpakuj wszystkie części do folderu „Dokumenty/Paradox Interactive/Hearts of Iron IV/mod” (każda część zawiera
-ten sam folder polska_2027_v8_6 – zgódź się na scalanie), włącz „The Fallen Eagle Alpha 0.8.6 Godzina Zero – etap II (wersja testowa)” w launcherze.
-Kolejność: najpierw część 1 (zawiera plik .mod), potem pozostałe w dowolnej kolejności. Starsze wersje (0.8.1–0.8.5 i pierwsze wydanie 0.8.6) wyłącz w launcherze. Starsze zapisy nie są zgodne – zacznij nową grę.
+ten sam folder polska_2027_v8_6 – zgódź się na scalanie), włącz „The Fallen Eagle Alpha 0.8.8 Godzina Zero – etap II (wersja testowa)” w launcherze.
+Jeśli folder polska_2027_v8_6 to Twoje repozytorium git – zamiast paczek zrób „git pull” (gałąź wersja-0.8.8): paczki nie usuwają plików skasowanych w nowej wersji.
+Kolejność: najpierw część 1 (zawiera plik .mod), potem pozostałe w dowolnej kolejności. Starsze wersje (0.8.1–0.8.7) wyłącz w launcherze. Starsze zapisy nie są zgodne – zacznij nową grę.
 To wersja alfa: część treści nie była jeszcze sprawdzona w grze – zgłaszaj błędy razem z plikiem error.log.

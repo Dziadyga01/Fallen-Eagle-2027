@@ -1,5 +1,5 @@
 on_actions = {
 	on_monthly_BYD = {
-		effect = { if = { limit = { has_country_flag = BYD_fed_brdy_wisly NOT = { has_country_flag = BYD_spor_fed } country_exists = TRN TRN = { is_in_faction_with = ROOT } } if = { limit = { TRN = { OR = { has_country_flag = TRN_wolna_komuna NOT = { has_government = libertarian_socialist } } } } random = { chance = 15 set_country_flag = BYD_spor_fed country_event = { id = byd.17 } } } else = { random = { chance = 2 set_country_flag = BYD_spor_fed country_event = { id = byd.17 } } } } }
+		effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } }  if = { limit = { has_country_flag = BYD_fed_brdy_wisly NOT = { has_country_flag = BYD_spor_fed } country_exists = TRN TRN = { is_in_faction_with = ROOT } } if = { limit = { TRN = { OR = { has_country_flag = TRN_wolna_komuna NOT = { has_government = libertarian_socialist } } } } random = { chance = 15 set_country_flag = BYD_spor_fed country_event = { id = byd.17 } } } else = { random = { chance = 2 set_country_flag = BYD_spor_fed country_event = { id = byd.17 } } } }  } }
 	}
 }

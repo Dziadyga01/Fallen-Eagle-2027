@@ -35,7 +35,7 @@ set_technology = {
 	tech_support = 1
 }
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = social_democrat
 	last_election = "2027.10.10"
 	election_frequency = 48
 	elections_allowed = no
@@ -43,12 +43,13 @@ set_politics = {
 set_popularities = {
 	communist = 3
 	libertarian_socialist = 3
-	social_democrat = 7
+	social_democrat = 47
 	social_liberal = 11
 	market_liberal = 7
 	conservative = 13
 	nationalist = 8
 	fascist = 1
-	authoritarian_democrat = 47
+	authoritarian_democrat = 7
 }
-recruit_character = NML_leader
+
+recruit_character = NML_filip_orlowski

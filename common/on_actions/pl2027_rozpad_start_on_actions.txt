@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = { has_game_rule = { rule = PL2027_SCENARIUSZ option = PODZIELONA } }
+				if = { limit = { country_exists = POL POL = { is_ai = no } country_exists = KPR } KPR = { change_tag_from = POL } }
+				if = { limit = { country_exists = KPR } KPR = { transfer_state = 745 set_capital = { state = 745 } } }
+			}
+			else_if = { limit = { country_exists = POL } TFE_start_jedna_polska = yes }
+		}
+	}
+}

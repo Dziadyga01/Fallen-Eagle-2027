@@ -1,0 +1,37 @@
+defined_text = {
+	name = TRK_GetZwyciezca
+	text = {
+		trigger = { has_country_flag = TR2_wybrany_gulewski }
+		localization_key = TRK_zw_gulewski
+	}
+	text = {
+		trigger = { has_country_flag = TR2_wybrany_zaleski }
+		localization_key = TRK_zw_zaleski
+	}
+	text = {
+		trigger = { has_country_flag = TR2_wybrany_romanowski }
+		localization_key = TRK_zw_romanowski
+	}
+	text = {
+		trigger = { has_country_flag = TR2_wybrany_kowalczyk }
+		localization_key = TRK_zw_kowalczyk
+	}
+	text = {
+		trigger = { has_country_flag = TR2_wybrany_elana }
+		localization_key = TRK_zw_elana
+	}
+	text = {
+		trigger = { has_country_flag = TR2_wybrany_krevienko }
+		localization_key = TRK_zw_krevienko
+	}
+}
+defined_text = {
+	name = TRK_GetRemis
+	text = {
+		trigger = { has_country_flag = TRK_remis }
+		localization_key = TRK_remis_tak
+	}
+	text = {
+		localization_key = TRK_remis_nie
+	}
+}

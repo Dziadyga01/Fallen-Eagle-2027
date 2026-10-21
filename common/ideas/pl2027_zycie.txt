@@ -1,0 +1,216 @@
+ideas = {
+	country = {
+		TFR_media = {
+			picture = DU_TFR_media
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = 0.03
+				stability_factor = -0.02
+			}
+		}
+		TFR_kartki = {
+			picture = DU_TFR_kartki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+		TFR_wolny_rynek = {
+			picture = DU_TFR_wolny_rynek
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				production_speed_buildings_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		TFR_spoleczenstwo = {
+			picture = DU_TFR_spoleczenstwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		TFR_ros_tv = {
+			picture = DU_TFR_ros_tv
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.06
+				political_power_gain = 0.05
+			}
+		}
+		TFR_ros_rubel = {
+			picture = DU_TFR_ros_rubel
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+		TFR_ros_druk = {
+			picture = DU_TFR_ros_druk
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.04
+			}
+		}
+		TFR_ros_jednosc = {
+			picture = DU_TFR_ros_jednosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				war_support_factor = 0.06
+				conscription_factor = 0.05
+			}
+		}
+		TFR_zag_pomoc = {
+			picture = DU_TFR_zag_pomoc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.05
+			}
+		}
+		TFR_zag_granica = {
+			picture = DU_TFR_zag_granica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				war_support_factor = 0.03
+			}
+		}
+		TFR_zag_polityka = {
+			picture = DU_TFR_zag_polityka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = 0.04
+			}
+		}
+		TFR_owoce = {
+			picture = DU_TFR_owoce
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		TFR_rewanz = {
+			picture = DU_TFR_rewanz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				conscription_factor = 0.1
+				war_support_factor = 0.08
+			}
+		}
+		TFR_pojednanie = {
+			picture = DU_TFR_pojednanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.08
+			}
+		}
+		TFR_zima = {
+			picture = DU_TFR_zima
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				stability_factor = -0.03
+			}
+		}
+		TFR_blackout = {
+			picture = DU_TFR_blackout
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.08
+			}
+		}
+		TFR_strajk = {
+			picture = DU_TFR_strajk
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.1
+				political_power_gain = -0.05
+			}
+		}
+		TFR_afera = {
+			picture = DU_TFR_afera
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.03
+			}
+		}
+		TFR_inflacja = {
+			picture = DU_TFR_inflacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		TFR_powodz = {
+			picture = DU_TFR_powodz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				stability_factor = -0.02
+			}
+		}
+		TFR_jednosc = {
+			picture = DU_TFR_jednosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		TFR_zniwa = {
+			picture = DU_TFR_zniwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		TFR_panika = {
+			picture = DU_TFR_panika
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.08
+				stability_factor = -0.04
+			}
+		}
+	}
+}

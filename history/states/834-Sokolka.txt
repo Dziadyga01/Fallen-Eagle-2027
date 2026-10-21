@@ -1,0 +1,25 @@
+state = {
+	id = 834
+	name = "STATE_834"
+	manpower = 27172
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = BST
+		add_core_of = BST
+		victory_points = { 6520 1 }
+		victory_points = { 6504 1 }
+		victory_points = { 6509 1 }
+		victory_points = { 6511 1 }
+		victory_points = { 6513 1 }
+		victory_points = { 6501 1 }
+		victory_points = { 10512 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 6501 6511 6520 10505 6523 10507 6522 10506 6513 10508 6514 10509 6512 10511 6508 10510 6510 10512 6509 6504 }
+	local_supplies = 0.0
+}

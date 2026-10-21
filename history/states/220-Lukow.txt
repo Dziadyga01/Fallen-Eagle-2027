@@ -1,0 +1,21 @@
+state = {
+	id = 220
+	name = "STATE_220"
+	manpower = 37966
+	state_category = town
+	resources = {
+		steel = 4
+	}
+	history = {
+		owner = PDL
+		add_core_of = PDL
+		victory_points = { 4996 1 }
+		victory_points = { 4985 1 }
+		victory_points = { 1649 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1649 4985 4989 5011 5009 4999 4998 4996 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,153 @@
+ideas = {
+	country = {
+		PKP_chaos = {
+			picture = DU_PKP_chaos
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		PKP_holding_kolejowy = {
+			picture = DU_PKP_holding_kolejowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		PKP_bilet_idea = {
+			picture = DU_PKP_bilet_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = 0.05
+			}
+		}
+		PKP_lojalny_pasazer = {
+			picture = DU_PKP_lojalny_pasazer
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		PKP_windykacja = {
+			picture = DU_PKP_windykacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = -0.03
+			}
+		}
+		PKP_sok = {
+			picture = DU_PKP_sok
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+		PKP_mosty = {
+			picture = DU_PKP_mosty
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+			}
+		}
+		PKP_strajk = {
+			picture = DU_PKP_strajk
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				stability_factor = -0.03
+			}
+		}
+		PKP_maszynisci = {
+			picture = DU_PKP_maszynisci
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				stability_factor = 0.02
+			}
+		}
+		PKP_wegiel = {
+			picture = DU_PKP_wegiel
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+		PKP_port_gdanski = {
+			picture = DU_PKP_port_gdanski
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		PKP_wojenny_rozklad = {
+			picture = DU_PKP_wojenny_rozklad
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.03
+			}
+		}
+		PKP_konfederacja = {
+			picture = DU_PKP_konfederacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		PKP_imperium = {
+			picture = DU_PKP_imperium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				war_support_factor = 0.08
+				production_speed_buildings_factor = 0.08
+			}
+		}
+		PKP_logistyka_korporacji = {
+			picture = DU_PKP_logistyka_korporacji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				consumer_goods_factor = -0.03
+				political_power_gain = 0.05
+			}
+		}
+		PKP_rada_korporacji = {
+			picture = DU_PKP_rada_korporacji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}

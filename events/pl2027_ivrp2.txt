@@ -1,0 +1,62 @@
+add_namespace = ivrp2
+
+country_event = {
+	id = ivrp2.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ivrp2.10.t
+	desc = ivrp2.10.d
+	picture = GFX_pl2027_ev081_front_2
+	is_triggered_only = yes
+	option = {
+		name = ivrp2.10.a
+		ai_chance = { factor = 20 modifier = { factor = 4 strength_ratio = { tag = FROM ratio < 0.3 } } modifier = { factor = 0.2 strength_ratio = { tag = FROM ratio > 0.8 } } }
+		if = { limit = { is_in_faction = yes } leave_faction = yes } FROM = { puppet = ROOT country_event = { id = ivrp2.11 } }
+	}
+	option = {
+		name = ivrp2.10.b
+		ai_chance = { factor = 30 }
+		FROM = { if = { limit = { NOT = { has_war_with = ROOT } } create_wargoal = { type = annex_everything target = ROOT } } country_event = { id = ivrp2.12 } }
+	}
+}
+
+country_event = {
+	id = ivrp2.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ivrp2.11.t
+	desc = ivrp2.11.d
+	picture = GFX_pl2027_ev081_kolej_3
+	is_triggered_only = yes
+	option = {
+		name = ivrp2.11.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = ivrp2.12
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ivrp2.12.t
+	desc = ivrp2.12.d
+	picture = GFX_pl2027_ev081_narada_1
+	is_triggered_only = yes
+	option = {
+		name = ivrp2.12.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03
+	}
+}
+
+news_event = {
+	id = ivrp2.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = ivrp2.20.t
+	desc = ivrp2.20.d
+	picture = GFX_pl2027_ev081_rosja_0_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = ivrp2.20.a
+		ai_chance = { factor = 1 }
+	}
+}

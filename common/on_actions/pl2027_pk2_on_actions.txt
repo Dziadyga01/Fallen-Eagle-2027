@@ -1,0 +1,8 @@
+on_actions = {
+	on_startup = {
+		effect = { 72 = { set_state_flag = PKP_wezel } 154 = { set_state_flag = PKP_wezel } 155 = { set_state_flag = PKP_wezel } 156 = { set_state_flag = PKP_wezel } 159 = { set_state_flag = PKP_wezel } 298 = { set_state_flag = PKP_wezel } 330 = { set_state_flag = PKP_wezel } 423 = { set_state_flag = PKP_wezel } 438 = { set_state_flag = PKP_wezel } 440 = { set_state_flag = PKP_wezel } 642 = { set_state_flag = PKP_wezel } 723 = { set_state_flag = PKP_wezel } 743 = { set_state_flag = PKP_wezel } 858 = { set_state_flag = PKP_wezel } 867 = { set_state_flag = PKP_wezel } 909 = { set_state_flag = PKP_wezel } 942 = { set_state_flag = PKP_wezel } 944 = { set_state_flag = PKP_wezel } 964 = { set_state_flag = PKP_wezel } 966 = { set_state_flag = PKP_wezel } 1030 = { set_state_flag = PKP_wezel } 1045 = { set_state_flag = PKP_wezel } 1054 = { set_state_flag = PKP_wezel } 1123 = { set_state_flag = PKP_wezel } 1124 = { set_state_flag = PKP_wezel } 1130 = { set_state_flag = PKP_wezel } 1134 = { set_state_flag = PKP_wezel } 1213 = { set_state_flag = PKP_wezel } 1260 = { set_state_flag = PKP_wezel } set_variable = { global.PKP_wezly_wszystkie = 29 } }
+	}
+	on_monthly_KOC = {
+		effect = { if = { limit = { has_country_flag = PKP_siec } PKP_policz_wezly = yes if = { limit = { check_variable = { PKP_kontrakty > 3 } } add_political_power = 16 } else_if = { limit = { check_variable = { PKP_kontrakty > 2 } } add_political_power = 12 } else_if = { limit = { check_variable = { PKP_kontrakty > 1 } } add_political_power = 8 } else_if = { limit = { check_variable = { PKP_kontrakty > 0 } } add_political_power = 4 } } }
+	}
+}

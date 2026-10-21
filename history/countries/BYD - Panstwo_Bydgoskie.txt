@@ -1,0 +1,84 @@
+﻿capital = 154
+oob = "BYD_2027"
+set_research_slots = 3
+set_stability = 0.45
+set_war_support = 0.35
+set_technology = {
+	army_uniform = 1
+	basic_fortification_tech = 1
+	basic_machine_tools = 1
+	basic_train = 1
+	construction1 = 1
+	excavation1 = 1
+	infantry_training = 1
+	light_artillery = 1
+	light_artillery1 = 1
+	light_artillery2 = 1
+	light_artillery3 = 1
+	light_artillery_upgrade1 = 1
+	melee_weapons = 1
+	nsb_bicycle = 1
+	nsb_truck_1 = 1
+	nsb_truck_2 = 1
+	nsb_truck_3 = 1
+	nsb_truck_4 = 1
+	post_collapse_assesment = 1
+	ranged_weapons = 1
+	ranged_weapons1 = 1
+	ranged_weapons2 = 1
+	ranged_weapons3 = 1
+	ranged_weapons_upgrade = 1
+	ranged_weapons_upgrade1 = 1
+	ranged_weapons_upgrade2 = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_support = 1
+}
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "2027.10.10"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	totalitarian_socialist = 1
+	communist = 3
+	libertarian_socialist = 4
+	social_democrat = 8
+	market_liberal = 10
+	conservative = 12
+	authoritarian_democrat = 12
+	nationalist = 6
+	fascist = 2
+	social_liberal = 42
+}
+recruit_character = BYD_leader
+# --- byd ---
+set_variable = { BYD_pop_rep = 40 }
+set_variable = { BYD_pop_jun = 30 }
+set_variable = { BYD_pop_wd = 30 }
+add_ideas = BYD_i_miasto_bez_rzadu
+recruit_character = BYD_komitet
+promote_character = BYD_komitet
+retire_character = BYD_leader
+recruit_character = BYD_gen_bartodziej
+# --- byd2 ---
+set_variable = { BYD2_pop_bruski = 28 }
+set_variable = { BYD2_pop_przemysl = 18 }
+set_variable = { BYD2_pop_rady = 16 }
+set_variable = { BYD2_pop_junta = 20 }
+set_variable = { BYD2_pop_brdowski = 18 }
+set_country_flag = BYD2_kampania
+add_dynamic_modifier = { modifier = BYD2_kampania_mod }
+# --- gnr ---
+recruit_character = BYD_gen_krasnicki
+# --- lok ---
+recruit_character = LOK_byd_szwedzki
+recruit_character = LOK_byd_kujawa
+# --- dor ---
+recruit_character = BYD_dor_brdowska
+recruit_character = BYD_dor_sielski
+recruit_character = BYD_dor_fordonska
+recruit_character = BYD_dor_nowosielski
+recruit_character = BYD_dor_kolasa
+recruit_character = BYD_dor_bielawski

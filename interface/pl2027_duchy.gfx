@@ -1,0 +1,2666 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_idea_DU_BLR_gospodarka_panstwowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BLR_gospodarka_panstwowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BLR_integracja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BLR_integracja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BLR_izolacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BLR_izolacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BLR_otwarcie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BLR_otwarcie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BLR_panstwo_zwiazkowe"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BLR_panstwo_zwiazkowe.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BLR_rada_przejsciowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BLR_rada_przejsciowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BLR_tranzyt_odbiorca"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BLR_tranzyt_odbiorca.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BLR_wielowektorowosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BLR_wielowektorowosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BST_enklawa_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BST_enklawa_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BST_enklawa_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BST_enklawa_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BST_mleko_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BST_mleko_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BST_mleko_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BST_mleko_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BST_nizina_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BST_nizina_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BST_nizina_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BST_nizina_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BST_spokojna_granica"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BST_spokojna_granica.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BST_zapora"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BST_zapora.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD2_brdowski_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD2_brdowski_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD2_brdowski_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD2_brdowski_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD2_kontrowersyjny"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD2_kontrowersyjny.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD2_przemysl_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD2_przemysl_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD2_przemysl_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD2_przemysl_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD2_rady_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD2_rady_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD2_rady_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD2_rady_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_armia_regionalna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_armia_regionalna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_autonomia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_autonomia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_bezpieczna_brda"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_bezpieczna_brda.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_gosp_wojenna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_gosp_wojenna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_gosp_wspolnotowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_gosp_wspolnotowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_kartki"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_kartki.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_mandat_jun"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_mandat_jun.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_mandat_rep"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_mandat_rep.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_mandat_wd"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_mandat_wd.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_miasto_bez_rzadu"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_miasto_bez_rzadu.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_milicje"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_milicje.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_mobilizacja_fabryk"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_mobilizacja_fabryk.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_mobilizacja_obyw"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_mobilizacja_obyw.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_mosty_pod_kontrola"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_mosty_pod_kontrola.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_nowy_porzadek"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_nowy_porzadek.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_pesa_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_pesa_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_pesa_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_pesa_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_porzadek"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_porzadek.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_przeprawy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_przeprawy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_rady_dzielnic"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_rady_dzielnic.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_rep_demokracja_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_rep_demokracja_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_rep_demokracja_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_rep_demokracja_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_rep_demokracja_3"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_rep_demokracja_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_rzad_tymczasowy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_rzad_tymczasowy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_samodzielne_rady"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_samodzielne_rady.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_samodzielnosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_samodzielnosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_sejm_kujawski"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_sejm_kujawski.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_spoldzielnie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_spoldzielnie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_stan_wyjatkowy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_stan_wyjatkowy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_strajki"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_strajki.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_straz_obywatelska"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_straz_obywatelska.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_twierdza_bydgoszcz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_twierdza_bydgoszcz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_BYD_i_wolna_bydgoszcz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/BYD_i_wolna_bydgoszcz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_EUR_euroregion_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/EUR_euroregion_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_EUR_fundusze"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/EUR_fundusze.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_EUR_rozczarowanie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/EUR_rozczarowanie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_EUR_straz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/EUR_straz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_EUR_wlasne_panstwo"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/EUR_wlasne_panstwo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_autonomia_maz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_autonomia_maz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_blok_bialostocki"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_blok_bialostocki.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_brygady_jeziorne"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_brygady_jeziorne.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_cyfrowy_sztab"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_cyfrowy_sztab.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_idea_fed_balt"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_idea_fed_balt.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_idea_republika"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_idea_republika.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_idea_unia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_idea_unia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_idea_wielka"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_idea_wielka.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_lider_brakoniecki"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_lider_brakoniecki.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_lider_malinowski"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_lider_malinowski.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_lider_mazur1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_lider_mazur1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_lider_traba"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_lider_traba.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_lider_wojcikowska"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_lider_wojcikowska.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_mloda_federacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_mloda_federacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_neutralnosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_neutralnosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_obrona_terytorialna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_obrona_terytorialna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_panstwo_warminskie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_panstwo_warminskie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_protesty"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_protesty.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_radykalizacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_radykalizacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_rosyjskie_bazy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_rosyjskie_bazy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_skonsolidowana"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_skonsolidowana.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_tozsamosc_warm"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_tozsamosc_warm.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_twierdza"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_twierdza.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_FED_wolne_mazury"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/FED_wolne_mazury.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_GZ_gotowosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/GZ_gotowosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_GZ_opal_szkoly"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/GZ_opal_szkoly.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_gospodarka"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_gospodarka.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_kadra"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_kadra.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_m_rodzina"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_m_rodzina.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_mazowsze"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_mazowsze.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_odbudowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_odbudowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_p_wladza"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_p_wladza.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_pobor"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_pobor.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_s_prawo"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_s_prawo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP2_zjednoczona"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP2_zjednoczona.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP_panstwo_mafijne"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP_panstwo_mafijne.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP_republika_sejmowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP_republika_sejmowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_IVRP_rzady_prezydenckie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/IVRP_rzady_prezydenckie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_archiwa_wojewodzkie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_archiwa_wojewodzkie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_blackout"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_blackout.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_blackout_wspolpraca"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_blackout_wspolpraca.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_bony"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_bony.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_eksport_pradu"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_eksport_pradu.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_garnizony_neutralne"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_garnizony_neutralne.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_kanal_bydgoski"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_kanal_bydgoski.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_kolejowy_paraliz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_kolejowy_paraliz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_konfederacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_konfederacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_myto_wislane"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_myto_wislane.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_odbudowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_odbudowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_oplaty_mostowe"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_oplaty_mostowe.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_przejecie_administracji"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_przejecie_administracji.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_przewoznik_regionalny"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_przewoznik_regionalny.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_pusta_stolica"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_pusta_stolica.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_robotnicy_z_warszawy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_robotnicy_z_warszawy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_straz_regionalna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_straz_regionalna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_uchodzcy_pomoc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_uchodzcy_pomoc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_wlasna_waluta"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_wlasna_waluta.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KAL_zloty_bez_banku"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KAL_zloty_bez_banku.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KNF_front_prawicy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KNF_front_prawicy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KNF_gwardia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KNF_gwardia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KNF_konstytucja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KNF_konstytucja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KNF_pelnia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KNF_pelnia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KNF_ruch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KNF_ruch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KNF_stolik"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KNF_stolik.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KNF_straz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KNF_straz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KNF_sztab_zn"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KNF_sztab_zn.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KNF_wolny_rynek"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KNF_wolny_rynek.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KNF_wolny_rynek2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KNF_wolny_rynek2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_czlonek_konsorcjum"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_czlonek_konsorcjum.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_czlonek_konsorcjum2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_czlonek_konsorcjum2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_hossa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_hossa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_karta_lojalnosci"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_karta_lojalnosci.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_niepewnosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_niepewnosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_paliwo_armii"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_paliwo_armii.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_panika"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_panika.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_panstwo_koncern"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_panstwo_koncern.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_panstwo_koncern2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_panstwo_koncern2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_panstwo_koncern3"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_panstwo_koncern3.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_petrochemia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_petrochemia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_petrochemia2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_petrochemia2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_stacje_urzedy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_stacje_urzedy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_KOR_straz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/KOR_straz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_MIL_kadra"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/MIL_kadra.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_MIL_pobor_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/MIL_pobor_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_MIL_pobor_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/MIL_pobor_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_MIL_produkcja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/MIL_produkcja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_MIL_zaopatrzenie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/MIL_zaopatrzenie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_MIL_zawodowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/MIL_zawodowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_OWM_pod_opieka"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/OWM_pod_opieka.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PDG_donejty"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PDG_donejty.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PDG_festiwal"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PDG_festiwal.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PDG_hype"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PDG_hype.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PDG_magiczny_torun"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PDG_magiczny_torun.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PDG_minister_rozrywki"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PDG_minister_rozrywki.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PDG_moderatorzy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PDG_moderatorzy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PDG_offline"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PDG_offline.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PDG_panstwo_na_zywo"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PDG_panstwo_na_zywo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PDG_panstwo_na_zywo2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PDG_panstwo_na_zywo2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_bilet_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_bilet_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_chaos"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_chaos.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_holding_kolejowy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_holding_kolejowy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_imperium"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_imperium.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_konfederacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_konfederacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_kontrakt_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_kontrakt_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_logistyka_korporacji"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_logistyka_korporacji.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_lojalny_pasazer"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_lojalny_pasazer.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_maszynisci"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_maszynisci.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_mosty"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_mosty.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_port_gdanski"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_port_gdanski.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_rada_korporacji"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_rada_korporacji.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_siec_frontowa_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_siec_frontowa_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_siec_monopol_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_siec_monopol_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_sok"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_sok.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_strajk"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_strajk.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_wegiel"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_wegiel.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_windykacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_windykacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PKP_wojenny_rozklad"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PKP_wojenny_rozklad.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PL2027_chaos_w_moskwie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PL2027_chaos_w_moskwie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PL2027_eurostaat"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PL2027_eurostaat.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PL2027_mobilizacja_mazurska"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PL2027_mobilizacja_mazurska.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PL2027_republika_baltycka"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PL2027_republika_baltycka.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PLG_autonomia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PLG_autonomia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PLG_liga"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PLG_liga.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PLG_samorzad"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PLG_samorzad.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_PLG_twierdza"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/PLG_twierdza.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHE_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHE_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHE_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHE_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHE_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHE_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHE_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHE_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHE_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHE_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHE_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHE_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHE_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHE_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHE_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHE_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHJ_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHJ_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHJ_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHJ_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHJ_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHJ_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHJ_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHJ_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHJ_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHJ_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHJ_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHJ_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHJ_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHJ_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHJ_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHJ_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHZ_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHZ_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHZ_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHZ_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHZ_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHZ_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHZ_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHZ_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHZ_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHZ_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHZ_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHZ_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHZ_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHZ_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RCHZ_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RCHZ_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RDOB_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RDOB_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RDOB_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RDOB_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RDOB_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RDOB_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RDOB_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RDOB_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RDOB_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RDOB_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RDOB_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RDOB_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RDOB_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RDOB_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RDOB_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RDOB_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_rzeczpospolita"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_rzeczpospolita.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_t_centralizacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_t_centralizacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_t_cywilna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_t_cywilna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_t_kadry"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_t_kadry.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_t_mobilizacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_t_mobilizacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_t_niezadowolenie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_t_niezadowolenie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_t_porozumienie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_t_porozumienie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_t_przejscie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_t_przejscie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_t_samodzielnosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_t_samodzielnosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_t_ustepstwa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_t_ustepstwa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_REG_t_wojenna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/REG_t_wojenna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGNZ_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGNZ_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGNZ_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGNZ_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGNZ_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGNZ_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGNZ_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGNZ_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGNZ_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGNZ_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGNZ_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGNZ_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGNZ_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGNZ_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGNZ_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGNZ_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGRU_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGRU_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGRU_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGRU_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGRU_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGRU_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGRU_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGRU_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGRU_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGRU_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGRU_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGRU_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGRU_port_tymczasowy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGRU_port_tymczasowy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGRU_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGRU_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RGRU_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RGRU_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKKR_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKKR_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKKR_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKKR_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKKR_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKKR_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKKR_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKKR_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKKR_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKKR_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKKR_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKKR_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKKR_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKKR_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKKR_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKKR_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKLS_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKLS_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKLS_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKLS_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKLS_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKLS_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKLS_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKLS_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKLS_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKLS_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKLS_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKLS_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKLS_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKLS_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKLS_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKLS_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKON_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKON_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKON_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKON_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKON_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKON_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKON_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKON_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKON_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKON_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKON_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKON_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKON_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKON_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKON_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKON_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKPM_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKPM_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKPM_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKPM_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKPM_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKPM_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKPM_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKPM_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKPM_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKPM_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKPM_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKPM_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKPM_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKPM_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKPM_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKPM_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKRJ_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKRJ_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKRJ_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKRJ_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKRJ_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKRJ_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKRJ_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKRJ_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKRJ_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKRJ_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKRJ_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKRJ_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKRJ_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKRJ_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKRJ_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKRJ_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKTN_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKTN_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKTN_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKTN_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKTN_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKTN_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKTN_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKTN_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKTN_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKTN_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKTN_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKTN_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKTN_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKTN_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKTN_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKTN_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKUJ_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKUJ_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKUJ_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKUJ_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKUJ_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKUJ_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKUJ_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKUJ_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKUJ_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKUJ_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKUJ_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKUJ_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKUJ_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKUJ_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKUJ_sanatoria"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKUJ_sanatoria.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RKUJ_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RKUJ_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLBW_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLBW_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLBW_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLBW_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLBW_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLBW_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLBW_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLBW_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLBW_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLBW_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLBW_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLBW_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLBW_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLBW_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLBW_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLBW_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLES_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLES_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLES_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLES_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLES_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLES_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLES_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLES_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLES_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLES_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLES_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLES_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLES_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLES_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLES_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLES_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLOW_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLOW_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLOW_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLOW_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLOW_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLOW_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLOW_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLOW_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLOW_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLOW_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLOW_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLOW_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLOW_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLOW_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLOW_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLOW_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLWC_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLWC_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLWC_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLWC_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLWC_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLWC_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLWC_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLWC_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLWC_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLWC_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLWC_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLWC_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLWC_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLWC_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RLWC_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RLWC_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RMLA_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RMLA_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RMLA_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RMLA_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RMLA_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RMLA_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RMLA_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RMLA_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RMLA_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RMLA_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RMLA_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RMLA_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RMLA_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RMLA_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RMLA_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RMLA_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNAR_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNAR_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNAR_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNAR_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNAR_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNAR_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNAR_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNAR_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNAR_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNAR_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNAR_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNAR_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNAR_puszcza"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNAR_puszcza.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNAR_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNAR_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNAR_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNAR_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNOT_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNOT_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNOT_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNOT_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNOT_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNOT_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNOT_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNOT_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNOT_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNOT_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNOT_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNOT_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNOT_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNOT_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RNOT_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RNOT_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROSW_linia_rozejmu"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROSW_linia_rozejmu.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROSW_odbudowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROSW_odbudowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROSW_strefa_wplywow"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROSW_strefa_wplywow.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_administracja_kryzysowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_administracja_kryzysowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_administracja_mazur"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_administracja_mazur.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_ani_kroku"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_ani_kroku.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_chaos_sztab"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_chaos_sztab.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_cho_oligarchia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_cho_oligarchia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_drugie_imperium"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_drugie_imperium.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_federacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_federacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_front_ukrainski"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_front_ukrainski.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_iskander"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_iskander.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_jesien_patriarchy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_jesien_patriarchy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_kociol"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_kociol.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_koszty_wojny"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_koszty_wojny.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_kryzys_elit"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_kryzys_elit.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_kryzys_rzadowy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_kryzys_rzadowy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_mie_putinizm"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_mie_putinizm.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_naw_antykorupcja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_naw_antykorupcja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_niepewna_przyszlosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_niepewna_przyszlosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_niezadowolenie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_niezadowolenie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_nowa_demokracja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_nowa_demokracja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_obrona_pozycji"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_obrona_pozycji.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_panstwo_koszary"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_panstwo_koszary.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_planowanie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_planowanie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_pokoj_negocjowany"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_pokoj_negocjowany.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_proznia_wladzy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_proznia_wladzy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_przesmyk"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_przesmyk.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_przewaga_powietrzna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_przewaga_powietrzna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_putin_umocniony"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_putin_umocniony.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_rosja_sa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_rosja_sa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_stan_wyjatkowy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_stan_wyjatkowy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_szl_parlament"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_szl_parlament.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_szo_junta"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_szo_junta.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_szturm"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_szturm.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_triumf_mazurski"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_triumf_mazurski.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_twierdza_krolewiec"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_twierdza_krolewiec.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_wieczna_rosja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_wieczna_rosja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_wyczerpana_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_wyczerpana_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_zaklocanie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_zaklocanie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_zaplecze_imperium"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_zaplecze_imperium.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROS_zwyciestwo_za_wszelka_cene"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROS_zwyciestwo_za_wszelka_cene.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROZ_mloda_niepodleglosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROZ_mloda_niepodleglosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROZ_odmowa_warszawy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROZ_odmowa_warszawy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROZ_okrojona_rp"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROZ_okrojona_rp.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ROZ_rzad_rp"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ROZ_rzad_rp.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPDL_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPDL_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPDL_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPDL_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPDL_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPDL_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPDL_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPDL_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPDL_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPDL_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPDL_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPDL_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPDL_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPDL_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPDL_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPDL_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPLK_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPLK_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPLK_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPLK_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPLK_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPLK_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPLK_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPLK_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPLK_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPLK_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPLK_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPLK_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPLK_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPLK_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPLK_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPLK_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPRW_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPRW_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPRW_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPRW_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPRW_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPRW_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPRW_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPRW_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPRW_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPRW_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPRW_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPRW_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPRW_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPRW_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPRW_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPRW_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPTK_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPTK_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPTK_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPTK_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPTK_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPTK_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPTK_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPTK_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPTK_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPTK_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPTK_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPTK_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPTK_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPTK_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RPTK_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RPTK_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RRAD_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RRAD_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RRAD_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RRAD_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RRAD_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RRAD_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RRAD_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RRAD_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RRAD_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RRAD_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RRAD_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RRAD_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RRAD_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RRAD_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RRAD_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RRAD_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSRD_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSRD_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSRD_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSRD_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSRD_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSRD_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSRD_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSRD_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSRD_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSRD_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSRD_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSRD_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSRD_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSRD_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSRD_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSRD_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSUW_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSUW_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSUW_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSUW_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSUW_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSUW_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSUW_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSUW_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSUW_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSUW_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSUW_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSUW_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSUW_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSUW_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSUW_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSUW_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSWC_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSWC_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSWC_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSWC_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSWC_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSWC_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSWC_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSWC_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSWC_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSWC_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSWC_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSWC_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSWC_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSWC_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RSWC_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RSWC_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RTUC_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RTUC_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RTUC_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RTUC_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RTUC_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RTUC_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RTUC_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RTUC_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RTUC_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RTUC_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RTUC_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RTUC_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RTUC_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RTUC_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RTUC_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RTUC_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RWOL_a_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RWOL_a_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RWOL_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RWOL_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RWOL_b_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RWOL_b_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RWOL_c_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RWOL_c_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RWOL_duch"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RWOL_duch.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RWOL_duch2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RWOL_duch2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RWOL_region"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RWOL_region.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_RWOL_sojusz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/RWOL_sojusz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFE_autonomia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFE_autonomia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFE_dotacje"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFE_dotacje.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFE_koniec_demokracja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFE_koniec_demokracja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFE_koniec_korporacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFE_koniec_korporacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFE_koniec_protektorat"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFE_koniec_protektorat.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFE_koniec_regiony"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFE_koniec_regiony.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFE_koniec_rozpad"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFE_koniec_rozpad.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFE_koniec_wojsko"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFE_koniec_wojsko.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFE_ochrona_infra"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFE_ochrona_infra.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFE_suwerennosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFE_suwerennosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_afera"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_afera.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_blackout"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_blackout.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_inflacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_inflacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_jednosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_jednosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_kartki"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_kartki.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_media"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_media.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_owoce"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_owoce.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_panika"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_panika.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_pojednanie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_pojednanie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_powodz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_powodz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_rewanz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_rewanz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_ros_druk"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_ros_druk.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_ros_jednosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_ros_jednosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_ros_rubel"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_ros_rubel.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_ros_tv"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_ros_tv.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_spoleczenstwo"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_spoleczenstwo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_strajk"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_strajk.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_wolny_rynek"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_wolny_rynek.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_zag_granica"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_zag_granica.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_zag_polityka"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_zag_polityka.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_zag_pomoc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_zag_pomoc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_zima"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_zima.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TFR_zniwa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TFR_zniwa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TKW_korytarz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TKW_korytarz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TKW_mobilizacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TKW_mobilizacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TKW_obrona_kujaw"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TKW_obrona_kujaw.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TKW_ofensywa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TKW_ofensywa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_brak_maki"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_brak_maki.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_embargo"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_embargo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_franczyza"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_franczyza.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_imperium"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_imperium.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_jedna_firma"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_jedna_firma.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_kupony"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_kupony.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_magazyny"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_magazyny.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_marketing"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_marketing.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_monopol"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_monopol.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_panstwo_firma"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_panstwo_firma.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_piece"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_piece.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_podatek"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_podatek.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_porzadek"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_porzadek.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_premium"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_premium.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_strajk"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_strajk.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_straz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_straz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_duch_weekend"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_duch_weekend.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_siec_flota_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_siec_flota_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_siec_imperium_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_siec_imperium_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TPZ_siec_kuchnia_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TPZ_siec_kuchnia_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_elana_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_elana_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_elana_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_elana_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_gulewski_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_gulewski_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_gulewski_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_gulewski_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_kontrowersyjny"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_kontrowersyjny.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_kowalczyk_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_kowalczyk_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_kowalczyk_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_kowalczyk_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_krevienko_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_krevienko_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_krevienko_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_krevienko_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_romanowski_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_romanowski_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_romanowski_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_romanowski_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_rzad_tymczasowy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_rzad_tymczasowy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_zaleski_1"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_zaleski_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TR2_zaleski_2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TR2_zaleski_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_autobusy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_autobusy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_bilet"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_bilet.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_blokada"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_blokada.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_budowa_mieszkan"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_budowa_mieszkan.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_dostawy_gmin"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_dostawy_gmin.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_dostawy_tpz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_dostawy_tpz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_godzina"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_godzina.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_inwestycje_stop"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_inwestycje_stop.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_lekarze_umk"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_lekarze_umk.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_mobilizacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_mobilizacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_obrona_alarm"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_obrona_alarm.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_ogrzewanie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_ogrzewanie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_oplaty_przeprawa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_oplaty_przeprawa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_paliwo"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_paliwo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_praca"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_praca.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_przedsiebiorcy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_przedsiebiorcy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_umowa_pkp"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_umowa_pkp.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRK_wspolna_przeprawa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRK_wspolna_przeprawa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_GDY_morze"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_GDY_morze.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_SPT_kasyno"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_SPT_kasyno.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_SPT_las"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_SPT_las.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_WMG_sierpien"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_WMG_sierpien.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_baltyk"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_baltyk.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_koalicja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_koalicja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_metro"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_metro.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_obrona"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_obrona.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_pomorze"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_pomorze.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_port"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_port.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_port2"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_port2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_rada"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_rada.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_spor"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_spor.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_wojna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_wojna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRM_zloty"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRM_zloty.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_kryzys_stolic"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_kryzys_stolic.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_militaryzacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_militaryzacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_ofensywa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_ofensywa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_panstwo_nauki"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_panstwo_nauki.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_protesty_nauka"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_protesty_nauka.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_sekretne_zakonczenie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_sekretne_zakonczenie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_twierdza"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_twierdza.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_wielkie_panstwo"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_wielkie_panstwo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_wolne_komuny"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_wolne_komuny.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_zjednoczona_republika"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_zjednoczona_republika.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_TRN_zjednoczone_kujawy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/TRN_zjednoczone_kujawy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_UBT_federacja_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/UBT_federacja_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_UBT_straz_idea"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/UBT_straz_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_UBT_taryfa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/UBT_taryfa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_UBT_zloty"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/UBT_zloty.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WPL_blokada_kolejowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WPL_blokada_kolejowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WPL_dostawy_wloclawek"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WPL_dostawy_wloclawek.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WPL_spolka_zalezna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WPL_spolka_zalezna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WPL_straty_przewozowe"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WPL_straty_przewozowe.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_bojowki"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_bojowki.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_dekrety"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_dekrety.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_dzielnica_twierdza"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_dzielnica_twierdza.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_gmachy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_gmachy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_kibole"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_kibole.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_koalicja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_koalicja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_leg_idea_doktryna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_leg_idea_doktryna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_leg_idea_elita"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_leg_idea_elita.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_leg_idea_szkolenie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_leg_idea_szkolenie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_obrona_pruszkowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_obrona_pruszkowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_ofensywa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_ofensywa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_osmiornica"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_osmiornica.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_plc_idea_doktryna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_plc_idea_doktryna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_plc_idea_elita"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_plc_idea_elita.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_plc_idea_szkolenie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_plc_idea_szkolenie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_region_stoleczny"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_region_stoleczny.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_rodzina"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_rodzina.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_sejm_trwa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_sejm_trwa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_sojusznik"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_sojusznik.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_woj_idea_doktryna"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_woj_idea_doktryna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_woj_idea_elita"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_woj_idea_elita.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_woj_idea_szkolenie"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_woj_idea_szkolenie.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_wolna_dzielnica"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_wolna_dzielnica.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWD_zamrozone"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWD_zamrozone.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWP_dekret"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWP_dekret.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWP_jednosc"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWP_jednosc.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWP_osmiornica"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWP_osmiornica.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWP_podzial"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWP_podzial.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_WWP_rzady_prawa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/WWP_rzady_prawa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZAG_armia"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZAG_armia.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZAG_gospodarka"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZAG_gospodarka.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZAG_logistyka"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZAG_logistyka.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZAG_odbudowa"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZAG_odbudowa.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZAG_pobor"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZAG_pobor.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZAG_produkcja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZAG_produkcja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_garnizony_komturii"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_garnizony_komturii.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_izolacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_izolacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_kampania_pruska"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_kampania_pruska.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_ksiestwo"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_ksiestwo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_linia_pasleki"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_linia_pasleki.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_maryja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_maryja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_militaryzacja"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_militaryzacja.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_mury_malborka"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_mury_malborka.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_namiestnictwo"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_namiestnictwo.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_ordensstaat"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_ordensstaat.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_regula"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_regula.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_tarcza_baltyku"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_tarcza_baltyku.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_wiara_miecz"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_wiara_miecz.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_wielkie_prusy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_wielkie_prusy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_wierny_kremlowi"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_wierny_kremlowi.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_wolne_prusy"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_wolne_prusy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_wolny_zakon"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_wolny_zakon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_wsparcie_rosji"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_wsparcie_rosji.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_DU_ZKR_wspolny_sztab"
+		texturefile = "gfx/interface/ideas/pl2027_duchy/ZKR_wspolny_sztab.dds"
+	}
+}

@@ -1,0 +1,1368 @@
+characters = {
+	TRN_dor_grabowska = {
+		name = TRN_dor_grabowska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/TRN_dor_grabowska.dds"
+				small = "gfx/leaders/DOR/TRN_dor_grabowska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_dor_grabowska
+			allowed = { original_tag = TRN }
+			traits = { PL2027_dor_TRN_grabowska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	TRN_dor_pierzchala = {
+		name = TRN_dor_pierzchala
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/TRN_dor_pierzchala.dds"
+				small = "gfx/leaders/DOR/TRN_dor_pierzchala_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_dor_pierzchala
+			allowed = { original_tag = TRN }
+			traits = { PL2027_dor_TRN_pierzchala }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	TRN_dor_wislanska = {
+		name = TRN_dor_wislanska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/TRN_dor_wislanska.dds"
+				small = "gfx/leaders/DOR/TRN_dor_wislanska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_dor_wislanska
+			allowed = { original_tag = TRN }
+			available = { date > 2027.12.1 }
+			traits = { PL2027_dor_TRN_wislanska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	TRN_dor_lisowski = {
+		name = TRN_dor_lisowski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/TRN_dor_lisowski.dds"
+				small = "gfx/leaders/DOR/TRN_dor_lisowski_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = TRN_dor_lisowski
+			allowed = { original_tag = TRN }
+			traits = { PL2027_dor_TRN_lisowski }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	TRN_dor_podgorski = {
+		name = TRN_dor_podgorski
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/TRN_dor_podgorski.dds"
+				small = "gfx/leaders/DOR/TRN_dor_podgorski_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = TRN_dor_podgorski
+			ledger = army
+			allowed = { original_tag = TRN }
+			available = { has_war_support > 0.3 }
+			traits = { PL2027_dor_TRN_podgorski }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	TRN_dor_barska = {
+		name = TRN_dor_barska
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/TRN_dor_barska.dds"
+				small = "gfx/leaders/DOR/TRN_dor_barska_small.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = TRN_dor_barska
+			ledger = army
+			allowed = { original_tag = TRN }
+			traits = { PL2027_dor_TRN_barska }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BYD_dor_brdowska = {
+		name = BYD_dor_brdowska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/BYD_dor_brdowska.dds"
+				small = "gfx/leaders/DOR/BYD_dor_brdowska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BYD_dor_brdowska
+			allowed = { original_tag = BYD }
+			traits = { PL2027_dor_BYD_brdowska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BYD_dor_sielski = {
+		name = BYD_dor_sielski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/BYD_dor_sielski.dds"
+				small = "gfx/leaders/DOR/BYD_dor_sielski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BYD_dor_sielski
+			allowed = { original_tag = BYD }
+			available = { date > 2027.12.1 }
+			traits = { PL2027_dor_BYD_sielski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BYD_dor_fordonska = {
+		name = BYD_dor_fordonska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/BYD_dor_fordonska.dds"
+				small = "gfx/leaders/DOR/BYD_dor_fordonska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BYD_dor_fordonska
+			allowed = { original_tag = BYD }
+			traits = { PL2027_dor_BYD_fordonska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BYD_dor_nowosielski = {
+		name = BYD_dor_nowosielski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/BYD_dor_nowosielski.dds"
+				small = "gfx/leaders/DOR/BYD_dor_nowosielski_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = BYD_dor_nowosielski
+			allowed = { original_tag = BYD }
+			traits = { PL2027_dor_BYD_nowosielski }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BYD_dor_kolasa = {
+		name = BYD_dor_kolasa
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/BYD_dor_kolasa.dds"
+				small = "gfx/leaders/DOR/BYD_dor_kolasa_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BYD_dor_kolasa
+			ledger = army
+			allowed = { original_tag = BYD }
+			traits = { PL2027_dor_BYD_kolasa }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BYD_dor_bielawski = {
+		name = BYD_dor_bielawski
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/BYD_dor_bielawski.dds"
+				small = "gfx/leaders/DOR/BYD_dor_bielawski_small.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BYD_dor_bielawski
+			ledger = army
+			allowed = { original_tag = BYD }
+			available = { has_war = yes }
+			traits = { PL2027_dor_BYD_bielawski }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	SMR_dor_konopka = {
+		name = SMR_dor_konopka
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/SMR_dor_konopka.dds"
+				small = "gfx/leaders/DOR/SMR_dor_konopka_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SMR_dor_konopka
+			allowed = { original_tag = SMR }
+			traits = { PL2027_dor_SMR_konopka }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	SMR_dor_hoza = {
+		name = SMR_dor_hoza
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/SMR_dor_hoza.dds"
+				small = "gfx/leaders/DOR/SMR_dor_hoza_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SMR_dor_hoza
+			allowed = { original_tag = SMR }
+			traits = { PL2027_dor_SMR_hoza }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	SMR_dor_szuch = {
+		name = SMR_dor_szuch
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/SMR_dor_szuch.dds"
+				small = "gfx/leaders/DOR/SMR_dor_szuch_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SMR_dor_szuch
+			allowed = { original_tag = SMR }
+			traits = { PL2027_dor_SMR_szuch }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	SMR_dor_lesinski = {
+		name = SMR_dor_lesinski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/SMR_dor_lesinski.dds"
+				small = "gfx/leaders/DOR/SMR_dor_lesinski_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = SMR_dor_lesinski
+			allowed = { original_tag = SMR }
+			available = { has_stability > 0.35 }
+			traits = { PL2027_dor_SMR_lesinski }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	SMR_dor_ostrowski = {
+		name = SMR_dor_ostrowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/SMR_dor_ostrowski.dds"
+				small = "gfx/leaders/DOR/SMR_dor_ostrowski_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = SMR_dor_ostrowski
+			ledger = army
+			allowed = { original_tag = SMR }
+			traits = { PL2027_dor_SMR_ostrowski }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	SMR_dor_rybak = {
+		name = SMR_dor_rybak
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/SMR_dor_rybak.dds"
+				small = "gfx/leaders/DOR/SMR_dor_rybak_small.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = SMR_dor_rybak
+			ledger = army
+			allowed = { original_tag = SMR }
+			available = { has_war = yes }
+			traits = { PL2027_dor_SMR_rybak }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	KPR_dor_krupinski = {
+		name = KPR_dor_krupinski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/KPR_dor_krupinski.dds"
+				small = "gfx/leaders/DOR/KPR_dor_krupinski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KPR_dor_krupinski
+			allowed = { original_tag = KPR }
+			traits = { PL2027_dor_KPR_krupinski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	KPR_dor_zbikowska = {
+		name = KPR_dor_zbikowska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/KPR_dor_zbikowska.dds"
+				small = "gfx/leaders/DOR/KPR_dor_zbikowska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KPR_dor_zbikowska
+			allowed = { original_tag = KPR }
+			traits = { PL2027_dor_KPR_zbikowska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	KPR_dor_rogowski = {
+		name = KPR_dor_rogowski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/KPR_dor_rogowski.dds"
+				small = "gfx/leaders/DOR/KPR_dor_rogowski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KPR_dor_rogowski
+			allowed = { original_tag = KPR }
+			traits = { PL2027_dor_KPR_rogowski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	KPR_dor_sowinski = {
+		name = KPR_dor_sowinski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/KPR_dor_sowinski.dds"
+				small = "gfx/leaders/DOR/KPR_dor_sowinski_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = KPR_dor_sowinski
+			allowed = { original_tag = KPR }
+			traits = { PL2027_dor_KPR_sowinski }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	KPR_dor_zolnowski = {
+		name = KPR_dor_zolnowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/KPR_dor_zolnowski.dds"
+				small = "gfx/leaders/DOR/KPR_dor_zolnowski_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = KPR_dor_zolnowski
+			ledger = army
+			allowed = { original_tag = KPR }
+			traits = { PL2027_dor_KPR_zolnowski }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	KPR_dor_grot = {
+		name = KPR_dor_grot
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/KPR_dor_grot.dds"
+				small = "gfx/leaders/DOR/KPR_dor_grot_small.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = KPR_dor_grot
+			ledger = army
+			allowed = { original_tag = KPR }
+			available = { has_war_support > 0.3 }
+			traits = { PL2027_dor_KPR_grot }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	MPR_dor_ksiegowy = {
+		name = MPR_dor_ksiegowy
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/MPR_dor_ksiegowy.dds"
+				small = "gfx/leaders/DOR/MPR_dor_ksiegowy_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MPR_dor_ksiegowy
+			allowed = { original_tag = MPR }
+			traits = { PL2027_dor_MPR_ksiegowy }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	MPR_dor_doktor = {
+		name = MPR_dor_doktor
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/MPR_dor_doktor.dds"
+				small = "gfx/leaders/DOR/MPR_dor_doktor_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MPR_dor_doktor
+			allowed = { original_tag = MPR }
+			traits = { PL2027_dor_MPR_doktor }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	MPR_dor_kantor = {
+		name = MPR_dor_kantor
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/MPR_dor_kantor.dds"
+				small = "gfx/leaders/DOR/MPR_dor_kantor_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = MPR_dor_kantor
+			allowed = { original_tag = MPR }
+			available = { date > 2028.1.1 }
+			traits = { PL2027_dor_MPR_kantor }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	MPR_dor_profesor = {
+		name = MPR_dor_profesor
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/MPR_dor_profesor.dds"
+				small = "gfx/leaders/DOR/MPR_dor_profesor_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = MPR_dor_profesor
+			allowed = { original_tag = MPR }
+			available = { date > 2028.2.1 }
+			traits = { PL2027_dor_MPR_profesor }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	MPR_dor_kierowca = {
+		name = MPR_dor_kierowca
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/MPR_dor_kierowca.dds"
+				small = "gfx/leaders/DOR/MPR_dor_kierowca_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = MPR_dor_kierowca
+			ledger = army
+			allowed = { original_tag = MPR }
+			available = { date > 2028.3.1 }
+			traits = { PL2027_dor_MPR_kierowca }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	MPR_dor_kwatermistrz = {
+		name = MPR_dor_kwatermistrz
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/MPR_dor_kwatermistrz.dds"
+				small = "gfx/leaders/DOR/MPR_dor_kwatermistrz_small.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = MPR_dor_kwatermistrz
+			ledger = army
+			allowed = { original_tag = MPR }
+			traits = { PL2027_dor_MPR_kwatermistrz }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ZKR_dor_baumann = {
+		name = ZKR_dor_baumann
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/ZKR_dor_baumann.dds"
+				small = "gfx/leaders/DOR/ZKR_dor_baumann_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZKR_dor_baumann
+			allowed = { original_tag = ZKR }
+			traits = { PL2027_dor_ZKR_baumann }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ZKR_dor_kessler = {
+		name = ZKR_dor_kessler
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/ZKR_dor_kessler.dds"
+				small = "gfx/leaders/DOR/ZKR_dor_kessler_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZKR_dor_kessler
+			allowed = { original_tag = ZKR }
+			traits = { PL2027_dor_ZKR_kessler }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ZKR_dor_vogel = {
+		name = ZKR_dor_vogel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/ZKR_dor_vogel.dds"
+				small = "gfx/leaders/DOR/ZKR_dor_vogel_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ZKR_dor_vogel
+			allowed = { original_tag = ZKR }
+			traits = { PL2027_dor_ZKR_vogel }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ZKR_dor_reinholt = {
+		name = ZKR_dor_reinholt
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/ZKR_dor_reinholt.dds"
+				small = "gfx/leaders/DOR/ZKR_dor_reinholt_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ZKR_dor_reinholt
+			allowed = { original_tag = ZKR }
+			traits = { PL2027_dor_ZKR_reinholt }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ZKR_dor_falk = {
+		name = ZKR_dor_falk
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/ZKR_dor_falk.dds"
+				small = "gfx/leaders/DOR/ZKR_dor_falk_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ZKR_dor_falk
+			ledger = army
+			allowed = { original_tag = ZKR }
+			available = { has_war_support > 0.4 }
+			traits = { PL2027_dor_ZKR_falk }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ZKR_dor_lindner = {
+		name = ZKR_dor_lindner
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/ZKR_dor_lindner.dds"
+				small = "gfx/leaders/DOR/ZKR_dor_lindner_small.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ZKR_dor_lindner
+			ledger = army
+			allowed = { original_tag = ZKR }
+			traits = { PL2027_dor_ZKR_lindner }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ROS_dor_sokolow = {
+		name = ROS_dor_sokolow
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/ROS_dor_sokolow.dds"
+				small = "gfx/leaders/DOR/ROS_dor_sokolow_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ROS_dor_sokolow
+			allowed = { original_tag = ROS }
+			traits = { PL2027_dor_ROS_sokolow }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ROS_dor_bielajew = {
+		name = ROS_dor_bielajew
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/ROS_dor_bielajew.dds"
+				small = "gfx/leaders/DOR/ROS_dor_bielajew_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ROS_dor_bielajew
+			allowed = { original_tag = ROS }
+			traits = { PL2027_dor_ROS_bielajew }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ROS_dor_morozowa = {
+		name = ROS_dor_morozowa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/ROS_dor_morozowa.dds"
+				small = "gfx/leaders/DOR/ROS_dor_morozowa_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = ROS_dor_morozowa
+			allowed = { original_tag = ROS }
+			traits = { PL2027_dor_ROS_morozowa }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ROS_dor_rybin = {
+		name = ROS_dor_rybin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/ROS_dor_rybin.dds"
+				small = "gfx/leaders/DOR/ROS_dor_rybin_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = ROS_dor_rybin
+			allowed = { original_tag = ROS }
+			traits = { PL2027_dor_ROS_rybin }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ROS_dor_tarasow = {
+		name = ROS_dor_tarasow
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/ROS_dor_tarasow.dds"
+				small = "gfx/leaders/DOR/ROS_dor_tarasow_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = ROS_dor_tarasow
+			ledger = army
+			allowed = { original_tag = ROS }
+			traits = { PL2027_dor_ROS_tarasow }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	ROS_dor_siemionow = {
+		name = ROS_dor_siemionow
+		portraits = {
+			navy = {
+				large = "gfx/leaders/DOR/ROS_dor_siemionow.dds"
+				small = "gfx/leaders/DOR/ROS_dor_siemionow_small.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = ROS_dor_siemionow
+			ledger = navy
+			allowed = { original_tag = ROS }
+			traits = { PL2027_dor_ROS_siemionow }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMZ_dor_lidzbarska = {
+		name = WMZ_dor_lidzbarska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/WMZ_dor_lidzbarska.dds"
+				small = "gfx/leaders/DOR/WMZ_dor_lidzbarska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WMZ_dor_lidzbarska
+			allowed = { original_tag = WMZ }
+			traits = { PL2027_dor_WMZ_lidzbarska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMZ_dor_jezioranski = {
+		name = WMZ_dor_jezioranski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/WMZ_dor_jezioranski.dds"
+				small = "gfx/leaders/DOR/WMZ_dor_jezioranski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WMZ_dor_jezioranski
+			allowed = { original_tag = WMZ }
+			traits = { PL2027_dor_WMZ_jezioranski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMZ_dor_reszelski = {
+		name = WMZ_dor_reszelski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/WMZ_dor_reszelski.dds"
+				small = "gfx/leaders/DOR/WMZ_dor_reszelski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WMZ_dor_reszelski
+			allowed = { original_tag = WMZ }
+			traits = { PL2027_dor_WMZ_reszelski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMZ_dor_sowka = {
+		name = WMZ_dor_sowka
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/WMZ_dor_sowka.dds"
+				small = "gfx/leaders/DOR/WMZ_dor_sowka_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = WMZ_dor_sowka
+			allowed = { original_tag = WMZ }
+			traits = { PL2027_dor_WMZ_sowka }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMZ_dor_borowiecki = {
+		name = WMZ_dor_borowiecki
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/WMZ_dor_borowiecki.dds"
+				small = "gfx/leaders/DOR/WMZ_dor_borowiecki_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = WMZ_dor_borowiecki
+			ledger = army
+			allowed = { original_tag = WMZ }
+			traits = { PL2027_dor_WMZ_borowiecki }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMZ_dor_mikolajski = {
+		name = WMZ_dor_mikolajski
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/WMZ_dor_mikolajski.dds"
+				small = "gfx/leaders/DOR/WMZ_dor_mikolajski_small.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = WMZ_dor_mikolajski
+			ledger = army
+			allowed = { original_tag = WMZ }
+			available = { has_war = yes }
+			traits = { PL2027_dor_WMZ_mikolajski }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	NNA_dor_ciechanski = {
+		name = NNA_dor_ciechanski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/NNA_dor_ciechanski.dds"
+				small = "gfx/leaders/DOR/NNA_dor_ciechanski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NNA_dor_ciechanski
+			allowed = { original_tag = NNA }
+			traits = { PL2027_dor_NNA_ciechanski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	NNA_dor_opinska = {
+		name = NNA_dor_opinska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/NNA_dor_opinska.dds"
+				small = "gfx/leaders/DOR/NNA_dor_opinska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NNA_dor_opinska
+			allowed = { original_tag = NNA }
+			traits = { PL2027_dor_NNA_opinska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	NNA_dor_nasielski = {
+		name = NNA_dor_nasielski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/NNA_dor_nasielski.dds"
+				small = "gfx/leaders/DOR/NNA_dor_nasielski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = NNA_dor_nasielski
+			allowed = { original_tag = NNA }
+			traits = { PL2027_dor_NNA_nasielski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	NNA_dor_wolski = {
+		name = NNA_dor_wolski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/NNA_dor_wolski.dds"
+				small = "gfx/leaders/DOR/NNA_dor_wolski_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = NNA_dor_wolski
+			allowed = { original_tag = NNA }
+			available = { has_stability > 0.4 }
+			traits = { PL2027_dor_NNA_wolski }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	NNA_dor_grabowiecki = {
+		name = NNA_dor_grabowiecki
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/NNA_dor_grabowiecki.dds"
+				small = "gfx/leaders/DOR/NNA_dor_grabowiecki_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = NNA_dor_grabowiecki
+			ledger = army
+			allowed = { original_tag = NNA }
+			traits = { PL2027_dor_NNA_grabowiecki }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	NNA_dor_krajewska = {
+		name = NNA_dor_krajewska
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/NNA_dor_krajewska.dds"
+				small = "gfx/leaders/DOR/NNA_dor_krajewska_small.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = NNA_dor_krajewska
+			ledger = army
+			allowed = { original_tag = NNA }
+			traits = { PL2027_dor_NNA_krajewska }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	PRW_dor_chelminski = {
+		name = PRW_dor_chelminski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/PRW_dor_chelminski.dds"
+				small = "gfx/leaders/DOR/PRW_dor_chelminski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRW_dor_chelminski
+			allowed = { original_tag = PRW }
+			traits = { PL2027_dor_PRW_chelminski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	PRW_dor_rudnicka = {
+		name = PRW_dor_rudnicka
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/PRW_dor_rudnicka.dds"
+				small = "gfx/leaders/DOR/PRW_dor_rudnicka_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRW_dor_rudnicka
+			allowed = { original_tag = PRW }
+			traits = { PL2027_dor_PRW_rudnicka }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	PRW_dor_wierzbicki = {
+		name = PRW_dor_wierzbicki
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/PRW_dor_wierzbicki.dds"
+				small = "gfx/leaders/DOR/PRW_dor_wierzbicki_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PRW_dor_wierzbicki
+			allowed = { original_tag = PRW }
+			traits = { PL2027_dor_PRW_wierzbicki }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	PRW_dor_wojtowicz = {
+		name = PRW_dor_wojtowicz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/PRW_dor_wojtowicz.dds"
+				small = "gfx/leaders/DOR/PRW_dor_wojtowicz_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = PRW_dor_wojtowicz
+			allowed = { original_tag = PRW }
+			traits = { PL2027_dor_PRW_wojtowicz }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	PRW_dor_kozak = {
+		name = PRW_dor_kozak
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/PRW_dor_kozak.dds"
+				small = "gfx/leaders/DOR/PRW_dor_kozak_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = PRW_dor_kozak
+			ledger = army
+			allowed = { original_tag = PRW }
+			traits = { PL2027_dor_PRW_kozak }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	PRW_dor_bugaj = {
+		name = PRW_dor_bugaj
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/PRW_dor_bugaj.dds"
+				small = "gfx/leaders/DOR/PRW_dor_bugaj_small.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = PRW_dor_bugaj
+			ledger = army
+			allowed = { original_tag = PRW }
+			traits = { PL2027_dor_PRW_bugaj }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BST_dor_sokolska = {
+		name = BST_dor_sokolska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/BST_dor_sokolska.dds"
+				small = "gfx/leaders/DOR/BST_dor_sokolska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BST_dor_sokolska
+			allowed = { original_tag = BST }
+			traits = { PL2027_dor_BST_sokolska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BST_dor_lapinski = {
+		name = BST_dor_lapinski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/BST_dor_lapinski.dds"
+				small = "gfx/leaders/DOR/BST_dor_lapinski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BST_dor_lapinski
+			allowed = { original_tag = BST }
+			traits = { PL2027_dor_BST_lapinski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BST_dor_kiryluk = {
+		name = BST_dor_kiryluk
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/BST_dor_kiryluk.dds"
+				small = "gfx/leaders/DOR/BST_dor_kiryluk_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = BST_dor_kiryluk
+			allowed = { original_tag = BST }
+			traits = { PL2027_dor_BST_kiryluk }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BST_dor_biernacki = {
+		name = BST_dor_biernacki
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/BST_dor_biernacki.dds"
+				small = "gfx/leaders/DOR/BST_dor_biernacki_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = BST_dor_biernacki
+			allowed = { original_tag = BST }
+			traits = { PL2027_dor_BST_biernacki }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BST_dor_puszczanski = {
+		name = BST_dor_puszczanski
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/BST_dor_puszczanski.dds"
+				small = "gfx/leaders/DOR/BST_dor_puszczanski_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = BST_dor_puszczanski
+			ledger = army
+			allowed = { original_tag = BST }
+			traits = { PL2027_dor_BST_puszczanski }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	BST_dor_bielska = {
+		name = BST_dor_bielska
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/BST_dor_bielska.dds"
+				small = "gfx/leaders/DOR/BST_dor_bielska_small.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = BST_dor_bielska
+			ledger = army
+			allowed = { original_tag = BST }
+			available = { has_war_support > 0.3 }
+			traits = { PL2027_dor_BST_bielska }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	GDY_dor_orlowska = {
+		name = GDY_dor_orlowska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/GDY_dor_orlowska.dds"
+				small = "gfx/leaders/DOR/GDY_dor_orlowska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GDY_dor_orlowska
+			allowed = { original_tag = GDY }
+			traits = { PL2027_dor_GDY_orlowska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	GDY_dor_ruminski = {
+		name = GDY_dor_ruminski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/GDY_dor_ruminski.dds"
+				small = "gfx/leaders/DOR/GDY_dor_ruminski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GDY_dor_ruminski
+			allowed = { original_tag = GDY }
+			traits = { PL2027_dor_GDY_ruminski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	GDY_dor_puzdrowska = {
+		name = GDY_dor_puzdrowska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/GDY_dor_puzdrowska.dds"
+				small = "gfx/leaders/DOR/GDY_dor_puzdrowska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = GDY_dor_puzdrowska
+			allowed = { original_tag = GDY }
+			traits = { PL2027_dor_GDY_puzdrowska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	GDY_dor_wronski = {
+		name = GDY_dor_wronski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/GDY_dor_wronski.dds"
+				small = "gfx/leaders/DOR/GDY_dor_wronski_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = GDY_dor_wronski
+			allowed = { original_tag = GDY }
+			traits = { PL2027_dor_GDY_wronski }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	GDY_dor_kaszubowski = {
+		name = GDY_dor_kaszubowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/GDY_dor_kaszubowski.dds"
+				small = "gfx/leaders/DOR/GDY_dor_kaszubowski_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = GDY_dor_kaszubowski
+			ledger = army
+			allowed = { original_tag = GDY }
+			traits = { PL2027_dor_GDY_kaszubowski }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	GDY_dor_gajewski = {
+		name = GDY_dor_gajewski
+		portraits = {
+			navy = {
+				large = "gfx/leaders/DOR/GDY_dor_gajewski.dds"
+				small = "gfx/leaders/DOR/GDY_dor_gajewski_small.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = GDY_dor_gajewski
+			ledger = navy
+			allowed = { original_tag = GDY }
+			traits = { PL2027_dor_GDY_gajewski }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMG_dor_szadkowska = {
+		name = WMG_dor_szadkowska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/WMG_dor_szadkowska.dds"
+				small = "gfx/leaders/DOR/WMG_dor_szadkowska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WMG_dor_szadkowska
+			allowed = { original_tag = WMG }
+			traits = { PL2027_dor_WMG_szadkowska }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMG_dor_palaszewski = {
+		name = WMG_dor_palaszewski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/WMG_dor_palaszewski.dds"
+				small = "gfx/leaders/DOR/WMG_dor_palaszewski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WMG_dor_palaszewski
+			allowed = { original_tag = WMG }
+			traits = { PL2027_dor_WMG_palaszewski }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMG_dor_brzeznicka = {
+		name = WMG_dor_brzeznicka
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/WMG_dor_brzeznicka.dds"
+				small = "gfx/leaders/DOR/WMG_dor_brzeznicka_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = WMG_dor_brzeznicka
+			allowed = { original_tag = WMG }
+			traits = { PL2027_dor_WMG_brzeznicka }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMG_dor_zielinski = {
+		name = WMG_dor_zielinski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/WMG_dor_zielinski.dds"
+				small = "gfx/leaders/DOR/WMG_dor_zielinski_small.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = WMG_dor_zielinski
+			allowed = { original_tag = WMG }
+			traits = { PL2027_dor_WMG_zielinski }
+			cost = 125
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMG_dor_sobieszewski = {
+		name = WMG_dor_sobieszewski
+		portraits = {
+			army = {
+				large = "gfx/leaders/DOR/WMG_dor_sobieszewski.dds"
+				small = "gfx/leaders/DOR/WMG_dor_sobieszewski_small.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = WMG_dor_sobieszewski
+			ledger = army
+			allowed = { original_tag = WMG }
+			traits = { PL2027_dor_WMG_sobieszewski }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+	WMG_dor_bielecki = {
+		name = WMG_dor_bielecki
+		portraits = {
+			navy = {
+				large = "gfx/leaders/DOR/WMG_dor_bielecki.dds"
+				small = "gfx/leaders/DOR/WMG_dor_bielecki_small.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = WMG_dor_bielecki
+			ledger = navy
+			allowed = { original_tag = WMG }
+			traits = { PL2027_dor_WMG_bielecki }
+			cost = 100
+			ai_will_do = { factor = 1 }
+		}
+	}
+}

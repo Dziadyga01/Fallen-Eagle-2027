@@ -1,0 +1,118 @@
+# Alpha 0.78: dzwieki wydarzen The Fallen Eagle
+category = {
+	name = "PL2027 Wydarzenia"
+	soundeffects = {
+		pl2027_ev_raport
+		pl2027_ev_front
+		pl2027_ev_alarm
+		pl2027_ev_radio
+		pl2027_ev_tlum
+		pl2027_ev_teleks
+		pl2027_ev_dzwon
+		pl2027_ev_super
+	}
+}
+
+sound = {
+	name = "pl2027_ev_raport_snd"
+	file = "pl2027_wydarzenia/pl2027_ev_raport.wav"
+}
+
+soundeffect = {
+	name = pl2027_ev_raport
+	sounds = {
+		sound = pl2027_ev_raport_snd
+	}
+	volume = 0.8
+}
+
+sound = {
+	name = "pl2027_ev_front_snd"
+	file = "pl2027_wydarzenia/pl2027_ev_front.wav"
+}
+
+soundeffect = {
+	name = pl2027_ev_front
+	sounds = {
+		sound = pl2027_ev_front_snd
+	}
+	volume = 0.8
+}
+
+sound = {
+	name = "pl2027_ev_alarm_snd"
+	file = "pl2027_wydarzenia/pl2027_ev_alarm.wav"
+}
+
+soundeffect = {
+	name = pl2027_ev_alarm
+	sounds = {
+		sound = pl2027_ev_alarm_snd
+	}
+	volume = 0.8
+}
+
+sound = {
+	name = "pl2027_ev_radio_snd"
+	file = "pl2027_wydarzenia/pl2027_ev_radio.wav"
+}
+
+soundeffect = {
+	name = pl2027_ev_radio
+	sounds = {
+		sound = pl2027_ev_radio_snd
+	}
+	volume = 0.8
+}
+
+sound = {
+	name = "pl2027_ev_tlum_snd"
+	file = "pl2027_wydarzenia/pl2027_ev_tlum.wav"
+}
+
+soundeffect = {
+	name = pl2027_ev_tlum
+	sounds = {
+		sound = pl2027_ev_tlum_snd
+	}
+	volume = 0.8
+}
+
+sound = {
+	name = "pl2027_ev_teleks_snd"
+	file = "pl2027_wydarzenia/pl2027_ev_teleks.wav"
+}
+
+soundeffect = {
+	name = pl2027_ev_teleks
+	sounds = {
+		sound = pl2027_ev_teleks_snd
+	}
+	volume = 0.8
+}
+
+sound = {
+	name = "pl2027_ev_dzwon_snd"
+	file = "pl2027_wydarzenia/pl2027_ev_dzwon.wav"
+}
+
+soundeffect = {
+	name = pl2027_ev_dzwon
+	sounds = {
+		sound = pl2027_ev_dzwon_snd
+	}
+	volume = 0.8
+}
+
+sound = {
+	name = "pl2027_ev_super_snd"
+	file = "pl2027_wydarzenia/pl2027_ev_super.wav"
+}
+
+soundeffect = {
+	name = pl2027_ev_super
+	sounds = {
+		sound = pl2027_ev_super_snd
+	}
+	volume = 0.8
+}

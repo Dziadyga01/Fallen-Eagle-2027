@@ -1,0 +1,22 @@
+state = {
+	id = 337
+	name = "STATE_337"
+	manpower = 31277
+	state_category = town
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = PTK
+		add_core_of = PTK
+		victory_points = { 4483 1 }
+		victory_points = { 6864 1 }
+		victory_points = { 6863 1 }
+		victory_points = { 6869 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1059 6867 6869 6868 6858 6864 6863 6861 6860 4483 }
+	local_supplies = 0.0
+}

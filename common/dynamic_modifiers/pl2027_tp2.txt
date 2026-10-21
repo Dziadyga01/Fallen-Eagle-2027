@@ -1,0 +1,7 @@
+TPZ_siec_mod = {
+	icon = GFX_idea_TPZ_siec_mod
+	enable = { always = yes }
+	political_power_gain = TPZ_mod_pp
+	consumer_goods_factor = TPZ_mod_kons
+	production_speed_buildings_factor = TPZ_mod_bud
+}

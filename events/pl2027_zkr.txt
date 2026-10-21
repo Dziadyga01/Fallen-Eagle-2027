@@ -1,0 +1,391 @@
+add_namespace = zkr
+
+country_event = {
+	id = zkr.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.1.t
+	desc = zkr.1.d
+	picture = GFX_pl2027_ev081_zakon_2
+	is_triggered_only = yes
+	option = {
+		name = zkr.1.a
+		ai_chance = { factor = 20 modifier = { factor = 3 FROM = { has_army_size = { size > 5 } } } modifier = { factor = 0.3 tag = WMZ } }
+		set_country_flag = ZKR_podporzadkowany
+		FROM = { puppet = ROOT country_event = { id = zkr.2 } }
+	}
+	option = {
+		name = zkr.1.b
+		ai_chance = { factor = 60 }
+		set_country_flag = ZKR_zagrozony
+		set_country_flag = ZKR_odmowil
+		if = { limit = { FROM = { ZKR_moze_ultimatum = yes } }
+			FROM = { create_wargoal = { type = annex_everything target = ROOT } set_country_flag = { flag = ZKR_WAR_COOLDOWN days = 180 } country_event = { id = zkr.3 } }
+		}
+		else = { FROM = { country_event = { id = zkr.4 } } }
+	}
+}
+
+country_event = {
+	id = zkr.4
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.4.t
+	desc = zkr.4.d
+	picture = GFX_pl2027_ev081_zakon_0
+	is_triggered_only = yes
+	option = {
+		name = zkr.4.a
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = zkr.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.2.t
+	desc = zkr.2.d
+	picture = GFX_pl2027_ev081_zakon_0
+	is_triggered_only = yes
+	option = {
+		name = zkr.2.a
+	}
+}
+
+country_event = {
+	id = zkr.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = zkr.3.t
+	desc = zkr.3.d
+	picture = GFX_pl2027_ev081_front_ros_0
+	is_triggered_only = yes
+	option = {
+		name = zkr.3.a
+		trigger = { has_war = no }
+		ai_chance = { factor = 3 }
+		declare_war_on = { target = FROM type = annex_everything }
+		set_country_flag = { flag = ZKR_WAR_COOLDOWN days = 180 }
+	}
+	option = {
+		name = zkr.3.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = zkr.10
+	title = zkr.10.t
+	desc = zkr.10.d
+	picture = GFX_pl2027_ev081_rosja_3
+	is_triggered_only = yes
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front }
+		set_country_flag = ZKR_kryzys_rosyjski
+	}
+	option = {
+		name = zkr.10.a
+		trigger = { NOT = { has_country_flag = ZKR_kongres } }
+		ai_chance = { factor = 3 }
+		set_country_flag = ZKR_wybor_obrona
+		add_war_support = 0.05
+	}
+	option = {
+		name = zkr.10.b
+		trigger = { NOT = { has_country_flag = ZKR_kongres } }
+		ai_chance = { factor = 1 }
+		set_country_flag = ZKR_wybor_kreml
+		add_political_power = 50
+	}
+	option = {
+		name = zkr.10.c
+		trigger = { NOT = { has_country_flag = ZKR_kongres } }
+		ai_chance = { factor = 2 }
+		set_country_flag = ZKR_wybor_krucjata
+		add_war_support = 0.05
+	}
+	option = {
+		name = zkr.10.e
+		trigger = { has_country_flag = ZKR_kongres }
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = zkr.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.30.t
+	desc = zkr.30.d
+	picture = GFX_pl2027_ev081_rosja_3
+	is_triggered_only = yes
+	option = {
+		name = zkr.30.a
+		ai_chance = { factor = 50 modifier = { factor = 0.1 has_country_flag = ZKR_zagrozony } modifier = { factor = 0.4 FROM = { check_variable = { ZKR_agresja > 1 } } } modifier = { factor = 3 has_war_with = ROS } }
+		if = { limit = { FROM = { is_faction_leader = yes } } FROM = { add_to_faction = ROOT } }
+		FROM = { country_event = { id = zkr.31 } }
+	}
+	option = {
+		name = zkr.30.b
+		ai_chance = { factor = 40 }
+		FROM = { country_event = { id = zkr.32 } }
+	}
+}
+
+country_event = {
+	id = zkr.31
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.31.t
+	desc = zkr.31.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = zkr.31.a
+	}
+}
+
+country_event = {
+	id = zkr.32
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.32.t
+	desc = zkr.32.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	option = {
+		name = zkr.32.a
+	}
+}
+
+country_event = {
+	id = zkr.35
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.35.t
+	desc = zkr.35.d
+	picture = GFX_pl2027_ev081_zakon_3
+	is_triggered_only = yes
+	option = {
+		name = zkr.35.a
+	}
+}
+
+country_event = {
+	id = zkr.40
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { has_country_flag = ZKR_protektorat country_exists = ROS }
+	immediate = {
+		if = { limit = { ROS = { OR = { has_country_flag = ROS_lider_cho has_country_flag = ROS_lider_szl has_country_flag = ROS_lider_naw } } } country_event = { id = zkr.60 } }
+		else_if = { limit = { ROS = { has_country_flag = ROS_lider_szo } } ZKR_ideologia_namiestnika = yes country_event = { id = zkr.61 } }
+	}
+	option = {
+		name = zkr.40.a
+	}
+}
+
+country_event = {
+	id = zkr.41
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.41.t
+	desc = zkr.41.d
+	picture = GFX_pl2027_ev081_rosja_2
+	is_triggered_only = yes
+	option = {
+		name = zkr.41.a
+		add_to_variable = { ZKR_wplywy = -20 }
+		ZKR_wplywy_przelicz = yes
+		set_country_flag = ZKR_okazja
+	}
+}
+
+country_event = {
+	id = zkr.50
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.50.t
+	desc = zkr.50.d
+	picture = GFX_pl2027_ev081_pokoj_4
+	is_triggered_only = yes
+	option = {
+		name = zkr.50.a
+	}
+}
+
+country_event = {
+	id = zkr.52
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.52.t
+	desc = zkr.52.d
+	picture = GFX_pl2027_ev081_rosja_2
+	is_triggered_only = yes
+	option = {
+		name = zkr.52.a
+		ai_chance = { factor = 70 }
+		ZKR_protektorat = yes
+	}
+	option = {
+		name = zkr.52.b
+		ai_chance = { factor = 30 }
+		ZKR_wojna_domowa = yes
+	}
+}
+
+country_event = {
+	id = zkr.60
+	title = zkr.60.t
+	desc = zkr.60.d
+	picture = GFX_pl2027_ev081_rosja_0
+	is_triggered_only = yes
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio }
+		if = { limit = { is_subject_of = ROS } ROS = { set_autonomy = { target = ROOT autonomous_state = autonomy_free } } }
+	}
+	option = {
+		name = zkr.60.a
+		trigger = { has_character = ZKR_leader }
+		ai_chance = { factor = 3 }
+		set_politics = { ruling_party = nationalist elections_allowed = no }
+		if = { limit = { has_character = ZKR_leader } promote_character = ZKR_leader }
+		drop_cosmetic_tag = yes
+		clr_country_flag = ZKR_protektorat
+		if = { limit = { has_idea = ZKR_namiestnictwo } remove_ideas = ZKR_namiestnictwo }
+		load_focus_tree = { tree = ZKR_kajdany_tree keep_completed = no }
+	}
+	option = {
+		name = zkr.60.b
+		trigger = { has_character = ZKR_leader }
+		ai_chance = { factor = 1 }
+		clr_country_flag = ZKR_protektorat
+		if = { limit = { NOT = { has_idea = ZKR_izolacja } } add_ideas = ZKR_izolacja }
+	}
+	option = {
+		name = zkr.60.c
+		trigger = { NOT = { has_character = ZKR_leader } }
+		ai_chance = { factor = 1 }
+		clr_country_flag = ZKR_protektorat
+		drop_cosmetic_tag = yes
+		if = { limit = { has_idea = ZKR_namiestnictwo } remove_ideas = ZKR_namiestnictwo }
+		load_focus_tree = { tree = ZKR_kajdany_tree keep_completed = no }
+	}
+}
+
+country_event = {
+	id = zkr.61
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.61.t
+	desc = zkr.61.d
+	picture = GFX_pl2027_ev081_rosja_2
+	is_triggered_only = yes
+	option = {
+		name = zkr.61.a
+	}
+}
+
+country_event = {
+	id = zkr.70
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = zkr.70.t
+	desc = zkr.70.d
+	picture = GFX_pl2027_ev081_zakon_2
+	is_triggered_only = yes
+	option = {
+		name = zkr.70.a
+	}
+}
+
+country_event = {
+	id = zkr.71
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.71.t
+	desc = zkr.71.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	option = {
+		name = zkr.71.a
+	}
+}
+
+country_event = {
+	id = zkr.75
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = zkr.75.t
+	desc = zkr.75.d
+	picture = GFX_pl2027_ev081_rosja_2
+	is_triggered_only = yes
+	option = {
+		name = zkr.75.a
+		remove_dynamic_modifier = { modifier = ZKR_wplywy_mod }
+		set_variable = { ZKR_wplywy = 0 }
+		clr_country_flag = ZKR_uklad
+		load_focus_tree = { tree = ZKR_kajdany_tree keep_completed = no }
+	}
+}
+
+country_event = {
+	id = zkr.76
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.76.t
+	desc = zkr.76.d
+	picture = GFX_pl2027_ev081_zakon_4
+	is_triggered_only = yes
+	option = {
+		name = zkr.76.a
+		set_country_flag = ZKR_protektorat
+		if = { limit = { country_exists = ROS } ROS = { puppet = ROOT } }
+		set_cosmetic_tag = ZKR_NAMIESTNICTWO
+		ZKR_ideologia_namiestnika = yes
+		load_focus_tree = { tree = ZKR_rosyjskie_prusy_tree keep_completed = no }
+	}
+}
+
+country_event = {
+	id = zkr.80
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.80.t
+	desc = zkr.80.d
+	picture = GFX_pl2027_ev081_krolewiec_0
+	is_triggered_only = yes
+	option = {
+		name = zkr.80.a
+		set_cosmetic_tag = ZKR_ORDENSSTAAT
+		add_ideas = ZKR_ordensstaat
+		news_event = { id = zkr.81 }
+		load_focus_tree = { tree = ZKR_ordensstaat_tree keep_completed = no }
+	}
+}
+
+news_event = {
+	id = zkr.81
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zkr.81.t
+	desc = zkr.81.d
+	picture = GFX_pl2027_ev081_zakon_0_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = zkr.81.a
+	}
+}
+
+country_event = {
+	id = zkr.90
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = zkr.90.t
+	desc = zkr.90.d
+	picture = GFX_pl2027_ev081_zakon_2
+	is_triggered_only = yes
+	option = {
+		name = zkr.90.a
+		if = { limit = { NOT = { has_character = ZKR_ksiaze } } recruit_character = ZKR_ksiaze }
+		set_politics = { ruling_party = conservative elections_allowed = yes }
+		promote_character = ZKR_ksiaze
+		set_cosmetic_tag = ZKR_KSIESTWO
+		add_ideas = ZKR_ksiestwo
+		news_event = { id = zkr.91 }
+	}
+}
+
+news_event = {
+	id = zkr.91
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = zkr.91.t
+	desc = zkr.91.d
+	picture = GFX_pl2027_ev081_zakon_0_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = zkr.91.a
+	}
+}

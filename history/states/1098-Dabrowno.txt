@@ -1,0 +1,18 @@
+state = {
+	id = 1098
+	name = "STATE_1098"
+	manpower = 5150
+	state_category = rural
+	history = {
+		owner = LBW
+		add_core_of = LBW
+		victory_points = { 2166 1 }
+		victory_points = { 2374 1 }
+		victory_points = { 3311 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 750 2166 2613 3311 3576 1992 2374 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,25 @@
+state = {
+	id = 1081
+	name = "STATE_1081"
+	manpower = 10000
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = UBJ
+		add_core_of = UBJ
+		victory_points = { 10407 5 }
+		victory_points = { 10408 1 }
+		victory_points = { 10409 1 }
+		victory_points = { 10410 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 10407 10408 10409 10410 }
+	local_supplies = 0.0
+}

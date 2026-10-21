@@ -1,0 +1,22 @@
+state = {
+	id = 50
+	name = "STATE_50"
+	manpower = 3983
+	state_category = town
+	history = {
+		owner = NWW
+		add_core_of = NWW
+		victory_points = { 7811 5 }
+		victory_points = { 7810 1 }
+		victory_points = { 1575 1 }
+		victory_points = { 7806 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 1569 7806 7812 1575 7810 7811 7808 7804 7803 }
+	local_supplies = 0.0
+}

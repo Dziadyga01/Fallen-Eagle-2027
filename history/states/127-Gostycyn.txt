@@ -1,0 +1,18 @@
+state = {
+	id = 127
+	name = "STATE_127"
+	manpower = 3379
+	state_category = rural
+	history = {
+		owner = TUC
+		add_core_of = TUC
+		victory_points = { 7841 1 }
+		victory_points = { 1440 1 }
+		victory_points = { 7842 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1210 7841 7843 1440 7840 7842 }
+	local_supplies = 0.0
+}

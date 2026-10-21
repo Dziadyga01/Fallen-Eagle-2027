@@ -1,0 +1,20 @@
+state = {
+	id = 124
+	name = "STATE_124"
+	manpower = 32500
+	state_category = town
+	history = {
+		owner = TRN
+		add_core_of = TRN
+		victory_points = { 8026 1 }
+		victory_points = { 8029 1 }
+		victory_points = { 8031 1 }
+		victory_points = { 8024 1 }
+		victory_points = { 8027 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 334 8030 8031 8034 8033 8029 8027 8025 8024 8026 8028 1586 8032 }
+	local_supplies = 0.0
+}

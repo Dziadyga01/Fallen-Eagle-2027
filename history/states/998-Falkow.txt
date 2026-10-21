@@ -1,0 +1,17 @@
+state = {
+	id = 998
+	name = "STATE_998"
+	manpower = 10000
+	state_category = rural
+	history = {
+		owner = PTK
+		add_core_of = PTK
+		victory_points = { 1947 1 }
+		victory_points = { 4127 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1947 2509 3346 658 4127 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,31 @@
+characters = {
+	PDG_magical = {
+		name = PDG_magical
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PDG/PDG_magical.dds"
+				small = "gfx/leaders/PDG/PDG_magical_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = streamocracy
+			expire = "2065.1.1.1"
+		}
+	}
+	PDG_moderator = {
+		name = PDG_moderator
+		portraits = {
+			army = {
+				large = "gfx/leaders/PDG/PDG_moderator.dds"
+				small = "gfx/leaders/PDG/PDG_moderator_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

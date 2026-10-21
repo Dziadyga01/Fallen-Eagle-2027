@@ -1,0 +1,36 @@
+ideas = {
+	country = {
+		IVRP_republika_sejmowa = {
+			picture = DU_IVRP_republika_sejmowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				research_speed_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		IVRP_rzady_prezydenckie = {
+			picture = DU_IVRP_rzady_prezydenckie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.1
+				army_org_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		IVRP_panstwo_mafijne = {
+			picture = DU_IVRP_panstwo_mafijne
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				political_power_gain = 0.1
+				war_support_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+	}
+}

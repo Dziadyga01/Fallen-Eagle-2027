@@ -1,0 +1,19 @@
+state = {
+	id = 62
+	name = "STATE_62"
+	manpower = 18464
+	state_category = rural
+	history = {
+		owner = DOB
+		add_core_of = DOB
+		victory_points = { 8368 1 }
+		victory_points = { 8366 1 }
+		victory_points = { 8370 1 }
+		victory_points = { 8371 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 272 8371 8370 8378 1566 8377 8366 8367 8368 8369 }
+	local_supplies = 0.0
+}

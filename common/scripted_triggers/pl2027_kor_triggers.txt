@@ -1,0 +1,6 @@
+KOR_w_konsorcjum = {
+	OR = {
+		AND = { original_tag = PLO has_country_flag = KOR_konsorcjum is_in_faction = yes }
+		AND = { NOT = { original_tag = PLO } any_country = { original_tag = PLO has_country_flag = KOR_konsorcjum is_in_faction_with = PREV } }
+	}
+}

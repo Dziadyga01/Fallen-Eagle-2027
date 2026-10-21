@@ -1,0 +1,22 @@
+state = {
+	id = 1017
+	name = "STATE_1017"
+	manpower = 35654
+	state_category = town
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = PRW
+		add_core_of = PRW
+		victory_points = { 378 1 }
+		victory_points = { 86 1 }
+		victory_points = { 822 1 }
+		victory_points = { 1127 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 274 378 1750 687 86 516 185 418 822 1127 }
+	local_supplies = 0.0
+}

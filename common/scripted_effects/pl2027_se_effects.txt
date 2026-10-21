@@ -1,0 +1,30 @@
+PL2027_SE_ivrp_sejm = {
+	clr_global_flag = PL2027_SE_ivrp_prezydent clr_global_flag = PL2027_SE_ivrp_mafia clr_global_flag = PL2027_SE_inwazja_rosji clr_global_flag = PL2027_SE_krucjata clr_global_flag = PL2027_SE_wojna_metropolitalna clr_global_flag = PL2027_SE_bialorus clr_global_flag = PL2027_SE_bitwa_o_warszawe clr_global_flag = PL2027_SE_odrodzona clr_global_flag = PL2027_SE_zima set_global_flag = PL2027_SE_ivrp_sejm set_global_flag = PL2027_SE_widoczny every_country = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_super }
+}
+PL2027_SE_ivrp_prezydent = {
+	clr_global_flag = PL2027_SE_ivrp_sejm clr_global_flag = PL2027_SE_ivrp_mafia clr_global_flag = PL2027_SE_inwazja_rosji clr_global_flag = PL2027_SE_krucjata clr_global_flag = PL2027_SE_wojna_metropolitalna clr_global_flag = PL2027_SE_bialorus clr_global_flag = PL2027_SE_bitwa_o_warszawe clr_global_flag = PL2027_SE_odrodzona clr_global_flag = PL2027_SE_zima set_global_flag = PL2027_SE_ivrp_prezydent set_global_flag = PL2027_SE_widoczny every_country = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_super }
+}
+PL2027_SE_ivrp_mafia = {
+	clr_global_flag = PL2027_SE_ivrp_sejm clr_global_flag = PL2027_SE_ivrp_prezydent clr_global_flag = PL2027_SE_inwazja_rosji clr_global_flag = PL2027_SE_krucjata clr_global_flag = PL2027_SE_wojna_metropolitalna clr_global_flag = PL2027_SE_bialorus clr_global_flag = PL2027_SE_bitwa_o_warszawe clr_global_flag = PL2027_SE_odrodzona clr_global_flag = PL2027_SE_zima set_global_flag = PL2027_SE_ivrp_mafia set_global_flag = PL2027_SE_widoczny every_country = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_super }
+}
+PL2027_SE_inwazja_rosji = {
+	clr_global_flag = PL2027_SE_ivrp_sejm clr_global_flag = PL2027_SE_ivrp_prezydent clr_global_flag = PL2027_SE_ivrp_mafia clr_global_flag = PL2027_SE_krucjata clr_global_flag = PL2027_SE_wojna_metropolitalna clr_global_flag = PL2027_SE_bialorus clr_global_flag = PL2027_SE_bitwa_o_warszawe clr_global_flag = PL2027_SE_odrodzona clr_global_flag = PL2027_SE_zima set_global_flag = PL2027_SE_inwazja_rosji set_global_flag = PL2027_SE_widoczny every_country = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_super } play_song = "pl2027_se_inwazja_rosji"
+}
+PL2027_SE_krucjata = {
+	clr_global_flag = PL2027_SE_ivrp_sejm clr_global_flag = PL2027_SE_ivrp_prezydent clr_global_flag = PL2027_SE_ivrp_mafia clr_global_flag = PL2027_SE_inwazja_rosji clr_global_flag = PL2027_SE_wojna_metropolitalna clr_global_flag = PL2027_SE_bialorus clr_global_flag = PL2027_SE_bitwa_o_warszawe clr_global_flag = PL2027_SE_odrodzona clr_global_flag = PL2027_SE_zima set_global_flag = PL2027_SE_krucjata set_global_flag = PL2027_SE_widoczny every_country = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_super }
+}
+PL2027_SE_wojna_metropolitalna = {
+	clr_global_flag = PL2027_SE_ivrp_sejm clr_global_flag = PL2027_SE_ivrp_prezydent clr_global_flag = PL2027_SE_ivrp_mafia clr_global_flag = PL2027_SE_inwazja_rosji clr_global_flag = PL2027_SE_krucjata clr_global_flag = PL2027_SE_bialorus clr_global_flag = PL2027_SE_bitwa_o_warszawe clr_global_flag = PL2027_SE_odrodzona clr_global_flag = PL2027_SE_zima set_global_flag = PL2027_SE_wojna_metropolitalna set_global_flag = PL2027_SE_widoczny every_country = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_super } play_song = "pl2027_se_wojna_metropolitalna"
+}
+PL2027_SE_bialorus = {
+	clr_global_flag = PL2027_SE_ivrp_sejm clr_global_flag = PL2027_SE_ivrp_prezydent clr_global_flag = PL2027_SE_ivrp_mafia clr_global_flag = PL2027_SE_inwazja_rosji clr_global_flag = PL2027_SE_krucjata clr_global_flag = PL2027_SE_wojna_metropolitalna clr_global_flag = PL2027_SE_bitwa_o_warszawe clr_global_flag = PL2027_SE_odrodzona clr_global_flag = PL2027_SE_zima set_global_flag = PL2027_SE_bialorus set_global_flag = PL2027_SE_widoczny every_country = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_super }
+}
+PL2027_SE_bitwa_o_warszawe = {
+	clr_global_flag = PL2027_SE_ivrp_sejm clr_global_flag = PL2027_SE_ivrp_prezydent clr_global_flag = PL2027_SE_ivrp_mafia clr_global_flag = PL2027_SE_inwazja_rosji clr_global_flag = PL2027_SE_krucjata clr_global_flag = PL2027_SE_wojna_metropolitalna clr_global_flag = PL2027_SE_bialorus clr_global_flag = PL2027_SE_odrodzona clr_global_flag = PL2027_SE_zima set_global_flag = PL2027_SE_bitwa_o_warszawe set_global_flag = PL2027_SE_widoczny every_country = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_super }
+}
+PL2027_SE_odrodzona = {
+	clr_global_flag = PL2027_SE_ivrp_sejm clr_global_flag = PL2027_SE_ivrp_prezydent clr_global_flag = PL2027_SE_ivrp_mafia clr_global_flag = PL2027_SE_inwazja_rosji clr_global_flag = PL2027_SE_krucjata clr_global_flag = PL2027_SE_wojna_metropolitalna clr_global_flag = PL2027_SE_bialorus clr_global_flag = PL2027_SE_bitwa_o_warszawe clr_global_flag = PL2027_SE_zima set_global_flag = PL2027_SE_odrodzona set_global_flag = PL2027_SE_widoczny every_country = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_super }
+}
+PL2027_SE_zima = {
+	clr_global_flag = PL2027_SE_ivrp_sejm clr_global_flag = PL2027_SE_ivrp_prezydent clr_global_flag = PL2027_SE_ivrp_mafia clr_global_flag = PL2027_SE_inwazja_rosji clr_global_flag = PL2027_SE_krucjata clr_global_flag = PL2027_SE_wojna_metropolitalna clr_global_flag = PL2027_SE_bialorus clr_global_flag = PL2027_SE_bitwa_o_warszawe clr_global_flag = PL2027_SE_odrodzona set_global_flag = PL2027_SE_zima set_global_flag = PL2027_SE_widoczny every_country = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_super }
+}

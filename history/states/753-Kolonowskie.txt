@@ -1,0 +1,21 @@
+state = {
+	id = 753
+	name = "STATE_753"
+	manpower = 17461
+	state_category = rural
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = SLS
+		add_core_of = SLS
+		victory_points = { 268 1 }
+		victory_points = { 5137 2 }
+		victory_points = { 5138 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 268 5140 5139 5138 5137 }
+	local_supplies = 0.0
+}

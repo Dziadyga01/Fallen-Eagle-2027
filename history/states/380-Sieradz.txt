@@ -1,0 +1,19 @@
+state = {
+	id = 380
+	name = "STATE_380"
+	manpower = 45225
+	state_category = town
+	history = {
+		owner = SRD
+		add_core_of = SRD
+		victory_points = { 4489 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 4489 4580 }
+	local_supplies = 0.0
+}

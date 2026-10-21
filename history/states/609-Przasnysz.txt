@@ -1,0 +1,23 @@
+state = {
+	id = 609
+	name = "STATE_609"
+	manpower = 8685
+	state_category = rural
+	resources = {
+		aluminium = 2
+	}
+	history = {
+		owner = NNA
+		add_core_of = NNA
+		victory_points = { 10361 1 }
+		victory_points = { 2061 1 }
+		victory_points = { 10362 1 }
+		victory_points = { 10365 1 }
+		victory_points = { 5643 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1092 10362 10364 10367 10368 10366 10365 10363 10361 1361 5643 2061 }
+	local_supplies = 0.0
+}

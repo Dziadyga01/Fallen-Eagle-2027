@@ -1,0 +1,22 @@
+state = {
+	id = 1257
+	name = "STATE_1257"
+	manpower = 109351
+	state_category = large_town
+	history = {
+		owner = KLS
+		add_core_of = KLS
+		victory_points = { 7234 5 }
+		victory_points = { 7240 1 }
+		victory_points = { 7235 1 }
+		victory_points = { 7242 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 2
+		}
+	}
+	provinces = { 7232 7240 7239 7242 7241 7237 7236 7606 7238 7235 7234 }
+	local_supplies = 0.0
+}

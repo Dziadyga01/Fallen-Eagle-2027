@@ -1,0 +1,6 @@
+UBT_unia = {
+	icon = generic_naval
+	allowed = { has_country_flag = PL2027_polska }
+	visible = { OR = { has_country_flag = UBT_czlonek AND = { NOT = { has_global_flag = UBT_istnieje } has_country_flag = PL2027_polska is_subject = no any_owned_state = { is_coastal = yes } } } }
+	priority = 80
+}

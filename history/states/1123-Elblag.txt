@@ -1,0 +1,20 @@
+state = {
+	id = 1123
+	name = "STATE_1123"
+	manpower = 129025
+	state_category = large_town
+	history = {
+		owner = ZKR
+		add_core_of = ZKR
+		victory_points = { 3359 2 }
+		victory_points = { 3179 1 }
+		victory_points = { 1266 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			3391 = { naval_base = 2 }
+		}
+	}
+	provinces = { 1266 4055 4047 3391 3359 2588 3243 3179 3186 3241 }
+	local_supplies = 0.0
+}

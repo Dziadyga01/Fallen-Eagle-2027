@@ -1,0 +1,485 @@
+add_namespace = ros
+
+country_event = {
+	id = ros.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = ros.1.t
+	desc = ros.1.d
+	picture = GFX_pl2027_ev081_mazury_5
+	is_triggered_only = yes
+	option = {
+		name = ros.1.a
+		add_timed_idea = { idea = PL2027_mobilizacja_mazurska days = 240 }
+		add_war_support = 0.10
+		division_template = { name = "Ochotnicza Brygada Mazurska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } }
+		if = { limit = { tag = WMZ } capital_scope = { create_unit = { division = "division_template = \"Ochotnicza Brygada Mazurska\" start_experience_factor = 0.1" owner = WMZ } create_unit = { division = "division_template = \"Ochotnicza Brygada Mazurska\" start_experience_factor = 0.1" owner = WMZ } } }
+		if = { limit = { tag = MAZ } capital_scope = { create_unit = { division = "division_template = \"Ochotnicza Brygada Mazurska\" start_experience_factor = 0.1" owner = MAZ } create_unit = { division = "division_template = \"Ochotnicza Brygada Mazurska\" start_experience_factor = 0.1" owner = MAZ } } }
+		if = { limit = { tag = SUW } capital_scope = { create_unit = { division = "division_template = \"Ochotnicza Brygada Mazurska\" start_experience_factor = 0.1" owner = SUW } create_unit = { division = "division_template = \"Ochotnicza Brygada Mazurska\" start_experience_factor = 0.1" owner = SUW } } }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 1500 }
+	}
+}
+
+news_event = {
+	id = ros.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = ros.2.t
+	desc = ros.2.d
+	picture = GFX_pl2027_ev081_mazury_2_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = ros.2.a
+		trigger = { NOT = { tag = ROS } }
+	}
+	option = {
+		name = ros.2.b
+		trigger = { tag = ROS }
+	}
+}
+
+country_event = {
+	id = ros.20
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { has_country_flag = ROS_putin_zyje NOT = { has_country_flag = ROS_los_putina } }
+	immediate = {
+		set_country_flag = ROS_los_putina
+		if = { limit = { has_game_rule = { rule = ROS_PUTIN_FATE option = DIES } } country_event = { id = ros.100 } }
+		else_if = { limit = { has_game_rule = { rule = ROS_PUTIN_FATE option = SURVIVES } } country_event = { id = ros.21 } }
+		else = { random_list = { 90 = { country_event = { id = ros.100 } } 10 = { country_event = { id = ros.21 } } } }
+	}
+	option = {
+		name = ros.20.a
+	}
+}
+
+country_event = {
+	id = ros.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ros.21.t
+	desc = ros.21.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = ros.21.a
+		add_ideas = ROS_putin_umocniony
+		ROS_lider_putin = yes
+		set_country_flag = ROS_putin_przezyl
+		load_focus_tree = { tree = ROS_car_tree keep_completed = yes }
+	}
+}
+
+country_event = {
+	id = ros.100
+	title = ros.100.t
+	desc = ros.100.d
+	picture = GFX_pl2027_ev081_zaloba_3
+	is_triggered_only = yes
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio }
+		clr_country_flag = ROS_putin_zyje
+		set_country_flag = ROS_putin_zmarl
+		set_global_flag = ROS_putin_zmarl
+		recruit_character = ROS_premier
+		promote_character = ROS_premier
+		retire_character = ROS_putin
+		ROS_lider_pre = yes
+		add_ideas = { ROS_proznia_wladzy ROS_chaos_sztab ROS_niepewna_przyszlosc }
+		add_war_support = -0.10
+		news_event = { id = ros.101 }
+		every_country = { limit = { has_war_with = ROS } country_event = { id = ros.102 } }
+		every_country = { limit = { original_tag = ZKR has_country_flag = ZKR_uklad NOT = { has_country_flag = ZKR_protektorat } } country_event = { id = zkr.41 days = 5 } }
+	}
+	option = {
+		name = ros.100.a
+		load_focus_tree = { tree = ROS_kryzys_tree keep_completed = no }
+	}
+}
+
+news_event = {
+	id = ros.101
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = ros.101.t
+	desc = ros.101.d
+	picture = GFX_pl2027_ev081_zaloba_5_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = ros.101.a
+		trigger = { NOT = { tag = ROS } }
+	}
+	option = {
+		name = ros.101.b
+		trigger = { tag = ROS }
+	}
+}
+
+country_event = {
+	id = ros.102
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = ros.102.t
+	desc = ros.102.d
+	picture = GFX_pl2027_ev081_mazury_2
+	is_triggered_only = yes
+	option = {
+		name = ros.102.a
+		add_timed_idea = { idea = PL2027_chaos_w_moskwie days = 180 }
+	}
+}
+
+country_event = {
+	id = ros.199
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ros.199.t
+	desc = ros.199.d
+	picture = GFX_pl2027_ev081_rosja_2
+	is_triggered_only = yes
+	option = {
+		name = ros.199.a
+		country_event = { id = ros.201 }
+	}
+	option = {
+		name = ros.199.b
+		country_event = { id = ros.202 }
+	}
+	option = {
+		name = ros.199.c
+		country_event = { id = ros.203 }
+	}
+	option = {
+		name = ros.199.e
+		country_event = { id = ros.204 }
+	}
+	option = {
+		name = ros.199.f
+		country_event = { id = ros.205 }
+	}
+}
+
+country_event = {
+	id = ros.200
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		random_list = {
+			10 = { modifier = { add = 10 check_variable = { ROS_glos_mie > 9 } } modifier = { add = 15 check_variable = { ROS_glos_mie > 24 } } modifier = { add = 15 check_variable = { ROS_glos_mie > 39 } } modifier = { add = 20 check_variable = { ROS_glos_mie > 59 } } modifier = { add = 35 has_country_flag = ROS_wybory_kontrolowane } country_event = { id = ros.201 } }
+			10 = { modifier = { add = 10 check_variable = { ROS_glos_szo > 9 } } modifier = { add = 15 check_variable = { ROS_glos_szo > 24 } } modifier = { add = 15 check_variable = { ROS_glos_szo > 39 } } modifier = { add = 20 check_variable = { ROS_glos_szo > 59 } } modifier = { add = 35 has_country_flag = ROS_wybory_kontrolowane } modifier = { factor = 0.6 has_country_flag = ROS_wybory_wolne } country_event = { id = ros.202 } }
+			10 = { modifier = { add = 10 check_variable = { ROS_glos_cho > 9 } } modifier = { add = 15 check_variable = { ROS_glos_cho > 24 } } modifier = { add = 15 check_variable = { ROS_glos_cho > 39 } } modifier = { add = 20 check_variable = { ROS_glos_cho > 59 } } modifier = { factor = 0.5 has_country_flag = ROS_wybory_kontrolowane } country_event = { id = ros.203 } }
+			10 = { modifier = { add = 10 check_variable = { ROS_glos_szl > 9 } } modifier = { add = 15 check_variable = { ROS_glos_szl > 24 } } modifier = { add = 15 check_variable = { ROS_glos_szl > 39 } } modifier = { add = 20 check_variable = { ROS_glos_szl > 59 } } modifier = { factor = 0.5 has_country_flag = ROS_wybory_kontrolowane } modifier = { add = 15 has_country_flag = ROS_wybory_wolne } country_event = { id = ros.204 } }
+			10 = { modifier = { add = 10 check_variable = { ROS_glos_naw > 9 } } modifier = { add = 15 check_variable = { ROS_glos_naw > 24 } } modifier = { add = 15 check_variable = { ROS_glos_naw > 39 } } modifier = { add = 20 check_variable = { ROS_glos_naw > 59 } } modifier = { factor = 0.5 has_country_flag = ROS_wybory_kontrolowane } modifier = { add = 15 has_country_flag = ROS_wybory_wolne } country_event = { id = ros.205 } }
+		}
+	}
+	option = {
+		name = ros.200.a
+	}
+}
+
+country_event = {
+	id = ros.201
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ros.201.t
+	desc = ros.201.d
+	picture = GFX_pl2027_ev081_polityka_0
+	is_triggered_only = yes
+	option = {
+		name = ros.201.a
+		ROS_wladza_mie = yes
+	}
+}
+
+country_event = {
+	id = ros.202
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ros.202.t
+	desc = ros.202.d
+	picture = GFX_pl2027_ev081_rosja_0
+	is_triggered_only = yes
+	option = {
+		name = ros.202.a
+		ROS_wladza_szo = yes
+	}
+}
+
+country_event = {
+	id = ros.203
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ros.203.t
+	desc = ros.203.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	option = {
+		name = ros.203.a
+		ROS_wladza_cho = yes
+	}
+}
+
+country_event = {
+	id = ros.204
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ros.204.t
+	desc = ros.204.d
+	picture = GFX_pl2027_ev081_polityka_5
+	is_triggered_only = yes
+	option = {
+		name = ros.204.a
+		ROS_wladza_szl = yes
+	}
+}
+
+country_event = {
+	id = ros.205
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ros.205.t
+	desc = ros.205.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = ros.205.a
+		ROS_wladza_naw = yes
+	}
+}
+
+country_event = {
+	id = ros.300
+	title = ros.300.t
+	desc = ros.300.d
+	picture = GFX_pl2027_ev081_mazury_4
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = ROS_zwyciestwo } }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front }
+		set_country_flag = ROS_zwyciestwo
+		set_variable = { ROS_dni_po_zwyciestwie = 0 }
+		mark_focus_tree_layout_dirty = yes
+	}
+	option = {
+		name = ros.300.a
+		add_timed_idea = { idea = ROS_triumf_mazurski days = 365 }
+		news_event = { id = ros.301 }
+	}
+}
+
+country_event = {
+	id = ros.302
+	title = ros.302.t
+	desc = ros.302.d
+	picture = GFX_pl2027_ev081_rosja_2
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } NOT = { has_country_flag = ROS_302_wyslane } }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio }
+		set_country_flag = ROS_302_wyslane
+	}
+	option = {
+		name = ros.302.a
+		if = { limit = { OR = { has_country_flag = ROS_lider_szl has_country_flag = ROS_lider_naw } } ROS_pokoj_negocjowany = yes }
+		else_if = { limit = { has_country_flag = ROS_lider_szo } ROS_administracja_mazur = yes }
+		else = { ROS_obwod_wm = yes }
+	}
+}
+
+news_event = {
+	id = ros.301
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = ros.301.t
+	desc = ros.301.d
+	picture = GFX_pl2027_ev081_mazury_0_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = ros.301.a
+		trigger = { NOT = { tag = ROS } }
+	}
+	option = {
+		name = ros.301.b
+		trigger = { tag = ROS }
+	}
+}
+
+country_event = {
+	id = ros.310
+	title = ros.310.t
+	desc = ros.310.d
+	picture = GFX_pl2027_ev081_mazury_1
+	is_triggered_only = yes
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front }
+		ROS_zachowaj_zdobycze = yes
+		ROS_koniec_wojny = yes
+		set_country_flag = ROS_kleska
+		mark_focus_tree_layout_dirty = yes
+		add_war_support = -0.10
+		add_stability = -0.05
+		news_event = { id = ros.316 }
+		if = { limit = { has_stability < 0.40 } country_event = { id = ros.320 days = 14 } }
+	}
+	option = {
+		name = ros.310.a
+		if = { limit = { has_country_flag = ROS_lider_mie } country_event = { id = ros.311 days = 3 } }
+		else_if = { limit = { has_country_flag = ROS_lider_szo } country_event = { id = ros.312 days = 3 } }
+		else_if = { limit = { has_country_flag = ROS_lider_cho } country_event = { id = ros.313 days = 3 } }
+		else_if = { limit = { has_country_flag = ROS_lider_putin } country_event = { id = ros.314 days = 3 } }
+		else = { country_event = { id = ros.315 days = 3 } }
+	}
+}
+
+country_event = {
+	id = ros.311
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ros.311.t
+	desc = ros.311.d
+	picture = GFX_pl2027_ev081_mazury_5
+	is_triggered_only = yes
+	option = {
+		name = ros.311.a
+		ai_chance = { factor = 1 }
+		clr_country_flag = ROS_wybory_kontrolowane
+		set_country_flag = ROS_wybory_wolne
+		load_focus_tree = { tree = ROS_wybory_tree keep_completed = no }
+	}
+	option = {
+		name = ros.311.b
+		ai_chance = { factor = 2 }
+		add_stability = -0.10
+		add_ideas = ROS_kryzys_rzadowy
+	}
+}
+
+country_event = {
+	id = ros.312
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ros.312.t
+	desc = ros.312.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = ros.312.a
+		ai_chance = { factor = 2 }
+		add_manpower = -15000
+		add_stability = -0.08
+		army_experience = -10
+	}
+	option = {
+		name = ros.312.b
+		ai_chance = { factor = 1 }
+		clr_country_flag = ROS_wybory_kontrolowane
+		set_country_flag = ROS_wybory_wolne
+		load_focus_tree = { tree = ROS_wybory_tree keep_completed = no }
+	}
+}
+
+country_event = {
+	id = ros.313
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = ros.313.t
+	desc = ros.313.d
+	picture = GFX_pl2027_ev081_dyplomacja_3
+	is_triggered_only = yes
+	option = {
+		name = ros.313.a
+		add_ideas = ROS_kryzys_rzadowy
+		add_political_power = -50
+	}
+}
+
+country_event = {
+	id = ros.314
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ros.314.t
+	desc = ros.314.d
+	picture = GFX_pl2027_ev081_mazury_0
+	is_triggered_only = yes
+	option = {
+		name = ros.314.a
+		add_ideas = ROS_kryzys_rzadowy
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = ros.315
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ros.315.t
+	desc = ros.315.d
+	picture = GFX_pl2027_ev081_mazury_2
+	is_triggered_only = yes
+	option = {
+		name = ros.315.a
+		add_stability = -0.05
+	}
+}
+
+news_event = {
+	id = ros.316
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = ros.316.t
+	desc = ros.316.d
+	picture = GFX_pl2027_ev081_mazury_3_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = ros.316.a
+		trigger = { NOT = { tag = ROS } }
+	}
+	option = {
+		name = ros.316.b
+		trigger = { tag = ROS }
+	}
+}
+
+country_event = {
+	id = ros.320
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ros.320.t
+	desc = ros.320.d
+	picture = GFX_pl2027_ev081_krolewiec_0
+	is_triggered_only = yes
+	trigger = { country_exists = ROS NOT = { country_exists = KRL } }
+	option = {
+		name = ros.320.a
+		release = KRL
+		KRL = { country_event = { id = ros.321 } }
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = ros.321
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ros.321.t
+	desc = ros.321.d
+	picture = GFX_pl2027_ev081_rosja_2
+	is_triggered_only = yes
+	option = {
+		name = ros.321.a
+		add_ideas = PL2027_republika_baltycka
+	}
+}
+
+country_event = {
+	id = ros.330
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = ros.330.t
+	desc = ros.330.d
+	picture = GFX_pl2027_ev081_pokoj_2
+	is_triggered_only = yes
+	trigger = { NOT = { tag = ROS } }
+	option = {
+		name = ros.330.a
+		add_stability = 0.05
+	}
+}
+
+news_event = {
+	id = ros.331
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = ros.331.t
+	desc = ros.331.d
+	picture = GFX_pl2027_ev081_pokoj_5_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = ros.331.a
+		trigger = { NOT = { tag = ROS } }
+	}
+	option = {
+		name = ros.331.b
+		trigger = { tag = ROS }
+	}
+}

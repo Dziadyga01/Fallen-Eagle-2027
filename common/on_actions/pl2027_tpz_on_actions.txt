@@ -1,0 +1,37 @@
+on_actions = {
+	on_monthly_WLC = {
+		effect = { if = { limit = { check_variable = { TPZ_satysfakcja > 52 } } add_to_variable = { TPZ_satysfakcja = -2 } }
+		else_if = { limit = { check_variable = { TPZ_satysfakcja > 50 } } add_to_variable = { TPZ_satysfakcja = -1 } }
+		else_if = { limit = { check_variable = { TPZ_satysfakcja < 48 } } add_to_variable = { TPZ_satysfakcja = 2 } }
+		else_if = { limit = { check_variable = { TPZ_satysfakcja < 50 } } add_to_variable = { TPZ_satysfakcja = 1 } }
+		if = { limit = { has_idea = TPZ_duch_kupony } add_to_variable = { TPZ_satysfakcja = 1 } }
+		if = { limit = { has_idea = TPZ_duch_weekend } add_to_variable = { TPZ_satysfakcja = 1 } }
+		if = { limit = { has_idea = TPZ_duch_jedna_firma } add_to_variable = { TPZ_satysfakcja = 1 } }
+		if = { limit = { has_idea = TPZ_duch_podatek } add_to_variable = { TPZ_satysfakcja = -1 } }
+		if = { limit = { has_idea = TPZ_duch_premium } add_to_variable = { TPZ_satysfakcja = -1 } }
+		if = { limit = { has_idea = TPZ_duch_monopol } add_to_variable = { TPZ_satysfakcja = -1 } }
+		if = { limit = { has_idea = TPZ_duch_brak_maki } add_to_variable = { TPZ_satysfakcja = -2 } }
+		if = { limit = { has_war = yes } add_to_variable = { TPZ_satysfakcja = -1 } }
+		if = { limit = { has_country_flag = TPZ_lojalnosc } add_to_variable = { TPZ_punkty = 5 } }
+		TPZ_przelicz = yes
+		if = { limit = { check_variable = { TPZ_satysfakcja < 15 } NOT = { has_country_flag = TPZ_bunt_cd } }
+			set_country_flag = { flag = TPZ_bunt_cd days = 180 } set_country_flag = { flag = TPZ_strajk_cd days = 60 }
+			country_event = { id = tpz.42 }
+		}
+		else_if = { limit = { check_variable = { TPZ_satysfakcja < 30 } NOT = { has_country_flag = TPZ_strajk_cd } }
+			set_country_flag = { flag = TPZ_strajk_cd days = 75 }
+			country_event = { id = tpz.41 }
+		}
+		else_if = { limit = { check_variable = { TPZ_satysfakcja > 70 } NOT = { has_country_flag = TPZ_zachwyt_cd } }
+			set_country_flag = { flag = TPZ_zachwyt_cd days = 150 }
+			country_event = { id = tpz.43 }
+		}
+		if = { limit = { has_completed_focus = TPZ_kryzys_dostaw NOT = { has_country_flag = TPZ_losowe_cd } }
+			random_list = {
+				6 = { set_country_flag = { flag = TPZ_losowe_cd days = 150 } country_event = { id = tpz.20 } }
+				6 = { set_country_flag = { flag = TPZ_losowe_cd days = 150 } country_event = { id = tpz.22 } }
+				88 = { }
+			}
+		} }
+	}
+}

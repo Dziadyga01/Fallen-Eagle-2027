@@ -1,0 +1,21 @@
+state = {
+	id = 462
+	name = "STATE_462"
+	manpower = 3196
+	state_category = rural
+	resources = {
+		aluminium = 1
+		rubber = 2
+	}
+	history = {
+		owner = KKR
+		add_core_of = KKR
+		victory_points = { 2479 1 }
+		victory_points = { 699 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 699 3898 2479 }
+	local_supplies = 0.0
+}

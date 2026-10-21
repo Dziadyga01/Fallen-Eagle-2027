@@ -1,0 +1,28 @@
+state = {
+	id = 156
+	name = "STATE_156"
+	manpower = 145000
+	state_category = city
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = TRN
+		add_core_of = TRN
+		victory_points = { 1225 2 }
+		victory_points = { 7734 2 }
+		victory_points = { 7735 10 }
+		victory_points = { 7737 2 }
+		victory_points = { 7738 2 }
+		victory_points = { 7739 2 }
+		victory_points = { 7740 2 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 1225 7734 7735 7737 7738 7739 7740 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,1332 @@
+# Generyczne drzewko Polski 2027 – wszystkie panstwa poza Toruniem
+focus_tree = {
+	id = PL2027_generic_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			OR = {
+				original_tag = DAB
+				original_tag = GNL
+				original_tag = GRD
+				original_tag = KRL
+				original_tag = KRW
+				original_tag = KST
+				original_tag = LUB
+				original_tag = LYS
+				original_tag = NML
+				original_tag = NWW
+				original_tag = OSD
+				original_tag = OTW
+				original_tag = OZM
+				original_tag = PSC
+				original_tag = ROZ
+				original_tag = SCK
+				original_tag = SLK
+				original_tag = UBJ
+				original_tag = WLM
+				original_tag = WMP
+			}
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1200 }
+	initial_show_position = { focus = PLG_nowe_panstwo }
+
+	focus = {
+		id = PLG_odbudowa
+		icon = GFX_pl2027_081_budowa_0
+		x = 4
+		y = 0
+		cost = 7
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_lokalny_przemysl
+		icon = GFX_pl2027_081_przemysl_0
+		x = 2
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_odbudowa }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PLG_zbrojeniowka
+		icon = GFX_pl2027_081_przemysl_1
+		x = 6
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_odbudowa }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PLG_drogi
+		icon = GFX_pl2027_081_most_1
+		x = 0
+		y = 2
+		cost = 7
+		prerequisite = { focus = PLG_lokalny_przemysl }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PLG_fabryki
+		icon = GFX_pl2027_081_przemysl_2
+		x = 2
+		y = 2
+		cost = 7
+		prerequisite = { focus = PLG_lokalny_przemysl }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PLG_amunicja
+		icon = GFX_pl2027_081_przemysl_3
+		x = 6
+		y = 2
+		cost = 7
+		prerequisite = { focus = PLG_zbrojeniowka }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PLG_paliwo
+		icon = GFX_pl2027_081_paliwo_0
+		x = 8
+		y = 2
+		cost = 7
+		prerequisite = { focus = PLG_zbrojeniowka }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = fuel_silo level = 1 instant_build = yes } }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = PLG_kolej
+		icon = GFX_pl2027_081_kolej_2
+		x = 0
+		y = 3
+		cost = 7
+		prerequisite = { focus = PLG_drogi }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = PLG_technologie
+		icon = GFX_pl2027_081_technika_0
+		x = 4
+		y = 3
+		cost = 7
+		prerequisite = { focus = PLG_fabryki }
+		prerequisite = { focus = PLG_amunicja }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_tech_bonus = { name = PLG_technologie bonus = 1.0 uses = 1 category = industry }
+		}
+	}
+
+	focus = {
+		id = PLG_produkcja
+		icon = GFX_pl2027_081_przemysl_4
+		x = 6
+		y = 3
+		cost = 7
+		prerequisite = { focus = PLG_amunicja }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PLG_badania
+		icon = GFX_pl2027_081_nauka_0
+		x = 3
+		y = 4
+		cost = 10
+		prerequisite = { focus = PLG_technologie }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = PLG_elektronika
+		icon = GFX_pl2027_081_przemysl_5
+		x = 5
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_technologie }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_tech_bonus = { name = PLG_elektronika bonus = 1.0 uses = 1 category = electronics }
+		}
+	}
+
+	focus = {
+		id = PLG_samowystarczalnosc
+		icon = GFX_pl2027_081_przemysl_4_f
+		x = 4
+		y = 5
+		cost = 10
+		prerequisite = { focus = PLG_badania }
+		prerequisite = { focus = PLG_elektronika }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = PLG_armia
+		icon = GFX_pl2027_081_porzadek_0
+		x = 14
+		y = 0
+		cost = 7
+		search_filters = { FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			army_experience = 10
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = PLG_ot
+		icon = GFX_pl2027_081_obrona_terytorialna_0_wmp
+		x = 12
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_armia }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_tech_bonus = { name = PLG_ot bonus = 1.0 uses = 1 category = infantry_weapons }
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = PLG_rezerwisci
+		icon = GFX_pl2027_081_pobor_3_wmp
+		x = 14
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_armia }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 4000
+			add_war_support = 0.03
+			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = PLG_transport
+		icon = GFX_pl2027_081_wojsko_0_wmp
+		x = 16
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_armia }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 60 }
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = PLG_artyleria
+		icon = GFX_pl2027_081_artyleria_0_wmp
+		x = 12
+		y = 2
+		cost = 7
+		prerequisite = { focus = PLG_ot }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_tech_bonus = { name = PLG_artyleria bonus = 1.0 uses = 1 category = artillery }
+		}
+	}
+
+	focus = {
+		id = PLG_szkolenie
+		icon = GFX_pl2027_081_wojsko_1_wmp
+		x = 14
+		y = 2
+		cost = 7
+		prerequisite = { focus = PLG_ot }
+		prerequisite = { focus = PLG_rezerwisci }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			army_experience = 15
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_zmotoryzowani
+		icon = GFX_pl2027_081_wojsko_2_wmp
+		x = 16
+		y = 2
+		cost = 7
+		prerequisite = { focus = PLG_transport }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 100 }
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = PLG_bron
+		icon = GFX_pl2027_081_porzadek_1
+		x = 12
+		y = 3
+		cost = 7
+		prerequisite = { focus = PLG_artyleria }
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = ranged_equipment_1 amount = 500 }
+			add_tech_bonus = { name = PLG_bron bonus = 1.0 uses = 1 category = infantry_weapons }
+		}
+	}
+
+	focus = {
+		id = PLG_fortyfikacje
+		icon = GFX_pl2027_081_granica_0_wmp
+		x = 14
+		y = 3
+		cost = 7
+		prerequisite = { focus = PLG_szkolenie }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = PLG_doktryna
+		icon = GFX_pl2027_081_pobor_0_wmp
+		x = 14
+		y = 4
+		cost = 10
+		prerequisite = { focus = PLG_bron }
+		prerequisite = { focus = PLG_fortyfikacje }
+		prerequisite = { focus = PLG_zmotoryzowani }
+		search_filters = { FOCUS_FILTER_ARMY_XP }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			army_experience = 25
+			add_tech_bonus = { name = PLG_doktryna bonus = 0.5 uses = 1 category = artillery }
+		}
+	}
+
+	focus = {
+		id = PLG_sztab
+		icon = GFX_pl2027_081_sztab_0_wmp_f
+		x = 14
+		y = 5
+		cost = 10
+		prerequisite = { focus = PLG_doktryna }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 20
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = PLG_lotnisko
+		icon = GFX_pl2027_081_lotnictwo_0_wmp
+		x = 20
+		y = 0
+		cost = 7
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } }
+			air_experience = 10
+		}
+	}
+
+	focus = {
+		id = PLG_drony
+		icon = GFX_pl2027_081_lotnictwo_1_wmp
+		x = 19
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_lotnisko }
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_tech_bonus = { name = PLG_drony bonus = 0.5 uses = 1 category = electronics }
+			air_experience = 10
+		}
+	}
+
+	focus = {
+		id = PLG_plot
+		icon = GFX_pl2027_081_twierdza_0_wmp
+		x = 21
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_lotnisko }
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			capital_scope = { add_building_construction = { type = anti_air_building level = 2 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PLG_radar
+		icon = GFX_pl2027_081_media_0
+		x = 20
+		y = 2
+		cost = 7
+		prerequisite = { focus = PLG_drony }
+		prerequisite = { focus = PLG_plot }
+		search_filters = { FOCUS_FILTER_AIR_XP }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			capital_scope = { add_building_construction = { type = radar_station level = 1 instant_build = yes } }
+			air_experience = 10
+		}
+	}
+
+	focus = {
+		id = PLG_nowe_panstwo
+		icon = GFX_pl2027_081_ludzie_0
+		x = 35
+		y = 0
+		cost = 7
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = PLG_rada
+		icon = GFX_pl2027_081_administracja_0
+		x = 33
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_nowe_panstwo }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = PLG_porzadek
+		icon = GFX_pl2027_081_porzadek_2
+		x = 37
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_nowe_panstwo }
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = PLG_kierunek
+		icon = GFX_pl2027_081_administracja_1
+		x = 35
+		y = 2
+		cost = 10
+		prerequisite = { focus = PLG_rada }
+		prerequisite = { focus = PLG_porzadek }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = PLG_demokracja
+		icon = GFX_pl2027_081_wybory_3_wmp_k
+		x = 27
+		y = 3
+		cost = 7
+		prerequisite = { focus = PLG_kierunek }
+		mutually_exclusive = { focus = PLG_silna_reka focus = PLG_rewolucja focus = PLG_narod }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_socjalliberalowie
+		icon = GFX_pl2027_081_zwyciestwo_0_wmp_k
+		x = 24
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_demokracja }
+		mutually_exclusive = { focus = PLG_socjaldemokraci focus = PLG_liberalowie focus = PLG_konserwatysci }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_politics = { ruling_party = social_liberal elections_allowed = yes }
+			add_popularity = { ideology = social_liberal popularity = 0.2 }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_socjaldemokraci
+		icon = GFX_pl2027_081_zwyciestwo_1_wmp_k
+		x = 26
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_demokracja }
+		mutually_exclusive = { focus = PLG_socjalliberalowie focus = PLG_liberalowie focus = PLG_konserwatysci }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_politics = { ruling_party = social_democrat elections_allowed = yes }
+			add_popularity = { ideology = social_democrat popularity = 0.2 }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_liberalowie
+		icon = GFX_pl2027_081_zwyciestwo_2_wmp_k
+		x = 28
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_demokracja }
+		mutually_exclusive = { focus = PLG_socjalliberalowie focus = PLG_socjaldemokraci focus = PLG_konserwatysci }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_politics = { ruling_party = market_liberal elections_allowed = yes }
+			add_popularity = { ideology = market_liberal popularity = 0.2 }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_konserwatysci
+		icon = GFX_pl2027_081_zwyciestwo_3_wmp_k
+		x = 30
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_demokracja }
+		mutually_exclusive = { focus = PLG_socjalliberalowie focus = PLG_socjaldemokraci focus = PLG_liberalowie }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_politics = { ruling_party = conservative elections_allowed = yes }
+			add_popularity = { ideology = conservative popularity = 0.2 }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_wolne_media
+		icon = GFX_pl2027_081_media_0
+		x = 26
+		y = 5
+		cost = 7
+		prerequisite = { focus = PLG_socjalliberalowie focus = PLG_socjaldemokraci focus = PLG_liberalowie focus = PLG_konserwatysci }
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = PLG_samorzad
+		icon = GFX_pl2027_081_ludzie_1
+		x = 29
+		y = 5
+		cost = 7
+		prerequisite = { focus = PLG_socjalliberalowie focus = PLG_socjaldemokraci focus = PLG_liberalowie focus = PLG_konserwatysci }
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = PLG_panstwo_prawa
+		icon = GFX_pl2027_081_sad_0_f
+		x = 27
+		y = 6
+		cost = 10
+		prerequisite = { focus = PLG_wolne_media }
+		prerequisite = { focus = PLG_samorzad }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.08
+			add_tech_bonus = { name = PLG_panstwo_prawa bonus = 1.0 uses = 1 category = industry }
+		}
+	}
+
+	focus = {
+		id = PLG_silna_reka
+		icon = GFX_pl2027_081_administracja_2_wmp_k
+		x = 35
+		y = 3
+		cost = 7
+		prerequisite = { focus = PLG_kierunek }
+		mutually_exclusive = { focus = PLG_demokracja focus = PLG_rewolucja focus = PLG_narod }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = PLG_rada_ocalenia
+		icon = GFX_pl2027_081_rada_0_wmp_k
+		x = 34
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_silna_reka }
+		mutually_exclusive = { focus = PLG_dyktatura }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.2 }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_dyktatura
+		icon = GFX_pl2027_081_polska_0_wmp_k
+		x = 36
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_silna_reka }
+		mutually_exclusive = { focus = PLG_rada_ocalenia }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_politics = { ruling_party = nationalist elections_allowed = no }
+			add_popularity = { ideology = nationalist popularity = 0.2 }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_rada_bezpieczenstwa
+		icon = GFX_pl2027_081_rada_1
+		x = 35
+		y = 5
+		cost = 7
+		prerequisite = { focus = PLG_rada_ocalenia focus = PLG_dyktatura }
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = PLG_porzadek_ponad
+		icon = GFX_pl2027_081_porzadek_3_f
+		x = 35
+		y = 6
+		cost = 10
+		prerequisite = { focus = PLG_rada_bezpieczenstwa }
+		search_filters = { FOCUS_FILTER_STABILITY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = PLG_rewolucja
+		icon = GFX_pl2027_081_bunt_0_wmp_k
+		x = 41
+		y = 3
+		cost = 7
+		prerequisite = { focus = PLG_kierunek }
+		mutually_exclusive = { focus = PLG_demokracja focus = PLG_silna_reka focus = PLG_narod }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = PLG_komunizm
+		icon = GFX_pl2027_081_pieniadze_0_wmp_k
+		x = 40
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_rewolucja }
+		mutually_exclusive = { focus = PLG_komuny }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_politics = { ruling_party = communist elections_allowed = no }
+			add_popularity = { ideology = communist popularity = 0.2 }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_komuny
+		icon = GFX_pl2027_081_sojusz_0_wmp_k
+		x = 42
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_rewolucja }
+		mutually_exclusive = { focus = PLG_komunizm }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_politics = { ruling_party = libertarian_socialist elections_allowed = no }
+			add_popularity = { ideology = libertarian_socialist popularity = 0.2 }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_rady_robotnicze
+		icon = GFX_pl2027_081_rada_2
+		x = 41
+		y = 5
+		cost = 7
+		prerequisite = { focus = PLG_komunizm focus = PLG_komuny }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PLG_gwardia_ludowa
+		icon = GFX_pl2027_081_gwardia_0_wmp_f
+		x = 41
+		y = 6
+		cost = 10
+		prerequisite = { focus = PLG_rady_robotnicze }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 5000
+			add_war_support = 0.05
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = PLG_narod
+		icon = GFX_pl2027_081_polska_1_wmp_k
+		x = 46
+		y = 3
+		cost = 7
+		prerequisite = { focus = PLG_kierunek }
+		mutually_exclusive = { focus = PLG_demokracja focus = PLG_silna_reka focus = PLG_rewolucja }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_front_narodowy
+		icon = GFX_pl2027_081_wojna_0_wmp
+		x = 46
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_narod }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_politics = { ruling_party = fascist elections_allowed = no }
+			add_popularity = { ideology = fascist popularity = 0.2 }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = PLG_straze
+		icon = GFX_pl2027_081_porzadek_4
+		x = 46
+		y = 5
+		cost = 7
+		prerequisite = { focus = PLG_front_narodowy }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 4000
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = PLG_mobilizacja
+		icon = GFX_pl2027_081_pobor_1_wmp_f
+		x = 46
+		y = 6
+		cost = 10
+		prerequisite = { focus = PLG_straze }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_war_support = 0.1
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = PLG_sasiedzi
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 51
+		y = 0
+		cost = 7
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = PLG_handel
+		icon = GFX_pl2027_081_handel_0
+		x = 50
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_sasiedzi }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_tech_bonus = { name = PLG_handel bonus = 0.5 uses = 1 category = industry }
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = PLG_wywiad
+		icon = GFX_pl2027_081_wywiad_0
+		x = 52
+		y = 1
+		cost = 7
+		prerequisite = { focus = PLG_sasiedzi }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = PLG_dawne_granice
+		icon = GFX_pl2027_081_granica_1_wmp
+		x = 51
+		y = 2
+		cost = 7
+		prerequisite = { focus = PLG_handel }
+		prerequisite = { focus = PLG_wywiad }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = PLG_przyszlosc_regionu
+		icon = GFX_pl2027_081_mapa_0_wmp
+		x = 51
+		y = 3
+		cost = 10
+		prerequisite = { focus = PLG_dawne_granice }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			set_country_flag = PLG_przyszlosc_regionu
+		}
+	}
+
+	focus = {
+		id = PLG_mo_start
+		icon = GFX_pl2027_081_polska_2_wmp
+		x = 58
+		y = 0
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PLG_mo_kronika
+		icon = GFX_pl2027_081_administracja_0
+		x = 58
+		y = 1
+		cost = 5
+		prerequisite = { focus = PLG_mo_start }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = plg.4 days = 2 }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = PLG_mo_patron
+		icon = GFX_pl2027_081_droga_0_wmp_k
+		x = 56
+		y = 2
+		cost = 5
+		prerequisite = { focus = PLG_mo_kronika }
+		mutually_exclusive = { focus = PLG_mo_liga focus = PLG_mo_twierdza }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = { custom_trigger_tooltip = { tooltip = PLG_req_patron any_neighbor_country = { has_country_flag = PL2027_polska is_subject = no NOT = { has_war_with = ROOT } NOT = { tag = ROOT } strength_ratio = { tag = ROOT ratio > 2 } } } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			random_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no NOT = { has_war_with = ROOT } NOT = { tag = ROOT } strength_ratio = { tag = ROOT ratio > 2 } } country_event = { id = plg.1 days = 1 } }
+			custom_effect_tooltip = PLG_tt_patron
+		}
+	}
+
+	focus = {
+		id = PLG_mo_autonomia
+		icon = GFX_pl2027_081_anarchia_0
+		x = 56
+		y = 3
+		cost = 5
+		prerequisite = { focus = PLG_mo_patron }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = { OR = { is_subject = yes has_country_flag = PLG_odmowa } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { is_subject = yes } add_ideas = PLG_autonomia } else = { add_ideas = PLG_samorzad }
+			custom_effect_tooltip = PLG_tt_autonomia
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = PLG_mo_wspolnota
+		icon = GFX_pl2027_081_handel_1
+		x = 56
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_mo_autonomia }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_manpower = 2000
+			country_event = { id = plg.5 days = 3 }
+		}
+	}
+
+	focus = {
+		id = PLG_mo_liga
+		icon = GFX_pl2027_081_polska_0_wmp_k
+		x = 58
+		y = 2
+		cost = 5
+		prerequisite = { focus = PLG_mo_kronika }
+		mutually_exclusive = { focus = PLG_mo_patron focus = PLG_mo_twierdza }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			if = { limit = { is_in_faction = no } create_faction = PLG_LIGA }
+			every_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no num_of_controlled_states < 6 NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { tag = SMR tag = KPR tag = MPR tag = PLC tag = WOJ tag = LEG } } country_event = { id = reg.1 days = 1 } }
+			custom_effect_tooltip = PLG_tt_liga
+		}
+	}
+
+	focus = {
+		id = PLG_mo_obrona
+		icon = GFX_pl2027_081_sojusz_1_wmp
+		x = 58
+		y = 3
+		cost = 5
+		prerequisite = { focus = PLG_mo_liga }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = PLG_liga
+			add_manpower = 1500
+		}
+	}
+
+	focus = {
+		id = PLG_mo_unia
+		icon = GFX_pl2027_081_sojusz_2_wmp
+		x = 58
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_mo_obrona }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = { is_faction_leader = yes }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			every_country = { limit = { is_in_faction_with = ROOT NOT = { tag = ROOT } } country_event = { id = reg.4 days = 2 } }
+			custom_effect_tooltip = PLG_tt_unia
+		}
+	}
+
+	focus = {
+		id = PLG_mo_twierdza
+		icon = GFX_pl2027_081_las_0_wmp_k
+		x = 60
+		y = 2
+		cost = 5
+		prerequisite = { focus = PLG_mo_kronika }
+		mutually_exclusive = { focus = PLG_mo_patron focus = PLG_mo_liga }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			add_ideas = PLG_twierdza
+			add_war_support = 0.05
+			add_political_power = -25
+		}
+	}
+
+	focus = {
+		id = PLG_mo_straz
+		icon = GFX_pl2027_081_porzadek_0
+		x = 60
+		y = 3
+		cost = 5
+		prerequisite = { focus = PLG_mo_twierdza }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 2500
+			army_experience = 10
+			if = { limit = { NOT = { has_template = "Straż Gminna" } } division_template = { name = "Straż Gminna" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { recon = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Straż Gminna\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Straż Gminna\" start_experience_factor = 0.3" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = PLG_mo_przetrwanie
+		icon = GFX_pl2027_081_twierdza_1_wmp
+		x = 60
+		y = 4
+		cost = 7
+		prerequisite = { focus = PLG_mo_straz }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			capital_scope = { add_building_construction = { type = bunker level = 2 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } }
+			country_event = { id = plg.6 days = 3 }
+		}
+	}
+
+	focus = {
+		id = PLG_mo_dom
+		icon = GFX_pl2027_081_pobor_2_wmp_f
+		x = 58
+		y = 5
+		cost = 10
+		prerequisite = { focus = PLG_mo_wspolnota focus = PLG_mo_unia focus = PLG_mo_przetrwanie }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_manpower = 1000
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_start
+		icon = GFX_pl2027_081_sztab_1_wmp
+		x = 64
+		y = 0
+		cost = 5
+		bypass = { has_country_flag = MIL_start }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_start
+			army_experience = 5
+			add_manpower = 1000
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_rejestr
+		icon = GFX_pl2027_081_pobor_1_wmp
+		x = 62
+		y = 1
+		cost = 7
+		prerequisite = { focus = PL2027_generic_mil_start }
+		bypass = { has_country_flag = MIL_rejestr }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_rejestr
+			add_ideas = MIL_pobor_1
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_ochotnicy
+		icon = GFX_pl2027_081_pobor_3_wmp
+		x = 64
+		y = 1
+		cost = 7
+		prerequisite = { focus = PL2027_generic_mil_start }
+		bypass = { has_country_flag = MIL_ochotnicy }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_ochotnicy
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_fabryka
+		icon = GFX_pl2027_081_fabryka_broni_1
+		x = 66
+		y = 1
+		cost = 10
+		prerequisite = { focus = PL2027_generic_mil_start }
+		bypass = { has_country_flag = MIL_fabryka }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_fabryka
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_pobor
+		icon = GFX_pl2027_081_pobor_2_wmp
+		x = 62
+		y = 2
+		cost = 10
+		prerequisite = { focus = PL2027_generic_mil_rejestr }
+		bypass = { has_country_flag = MIL_pobor }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_pobor
+			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_bataliony
+		icon = GFX_pl2027_081_wojsko_4_wmp
+		x = 64
+		y = 2
+		cost = 7
+		prerequisite = { focus = PL2027_generic_mil_ochotnicy }
+		bypass = { has_country_flag = MIL_bataliony }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_bataliony
+			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_produkcja
+		icon = GFX_pl2027_081_przemysl_4
+		x = 66
+		y = 2
+		cost = 7
+		prerequisite = { focus = PL2027_generic_mil_fabryka }
+		bypass = { has_country_flag = MIL_produkcja }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_produkcja
+			add_timed_idea = { idea = MIL_produkcja days = 365 }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 50 }
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_rezerwisci
+		icon = GFX_pl2027_081_pobor_3_wmp
+		x = 62
+		y = 3
+		cost = 7
+		prerequisite = { focus = PL2027_generic_mil_pobor }
+		bypass = { has_country_flag = MIL_rezerwisci }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_rezerwisci
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_brygady
+		icon = GFX_pl2027_081_obrona_terytorialna_1_wmp
+		x = 64
+		y = 3
+		cost = 10
+		prerequisite = { focus = PL2027_generic_mil_bataliony }
+		bypass = { has_country_flag = MIL_brygady }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_brygady
+			if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 40 }
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_zaplecze
+		icon = GFX_pl2027_081_logistyka_0
+		x = 66
+		y = 3
+		cost = 7
+		prerequisite = { focus = PL2027_generic_mil_produkcja }
+		bypass = { has_country_flag = MIL_zaplecze }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_zaplecze
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_ideas = MIL_zaopatrzenie
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_kadra
+		icon = GFX_pl2027_081_oficer_1_wmp
+		x = 63
+		y = 4
+		cost = 10
+		prerequisite = { focus = PL2027_generic_mil_rezerwisci }
+		prerequisite = { focus = PL2027_generic_mil_brygady }
+		bypass = { has_country_flag = MIL_kadra }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_kadra
+			army_experience = 25
+			add_ideas = MIL_kadra
+		}
+	}
+
+	focus = {
+		id = PL2027_generic_mil_zawodowa
+		icon = GFX_pl2027_081_zawodowa_1_wmp_f
+		x = 65
+		y = 5
+		cost = 10
+		prerequisite = { focus = PL2027_generic_mil_kadra }
+		prerequisite = { focus = PL2027_generic_mil_zaplecze }
+		bypass = { has_country_flag = MIL_zawodowa }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_zawodowa
+			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+			add_manpower = 2000
+		}
+	}
+}

@@ -1,0 +1,79 @@
+ideas = {
+	country = {
+		BLR_panstwo_zwiazkowe = {
+			picture = DU_BLR_panstwo_zwiazkowe
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = -0.05
+				stability_factor = 0.05
+			}
+		}
+		BLR_gospodarka_panstwowa = {
+			picture = DU_BLR_gospodarka_panstwowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		BLR_wielowektorowosc = {
+			picture = DU_BLR_wielowektorowosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				trade_opinion_factor = 0.2
+			}
+		}
+		BLR_integracja = {
+			picture = DU_BLR_integracja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				stability_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+		BLR_otwarcie = {
+			picture = DU_BLR_otwarcie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				research_speed_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		BLR_izolacja = {
+			picture = DU_BLR_izolacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.08
+				political_power_gain = -0.05
+			}
+		}
+		BLR_rada_przejsciowa = {
+			picture = DU_BLR_rada_przejsciowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		BLR_tranzyt_odbiorca = {
+			picture = DU_BLR_tranzyt_odbiorca
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+			}
+		}
+	}
+}

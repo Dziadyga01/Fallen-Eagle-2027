@@ -1,0 +1,26 @@
+state = {
+	id = 1049
+	name = "STATE_1049"
+	manpower = 34512
+	state_category = town
+	resources = {
+		rubber = 1
+		steel = 1
+	}
+	history = {
+		owner = MAZ
+		add_core_of = MAZ
+		victory_points = { 2477 5 }
+		victory_points = { 2703 1 }
+		victory_points = { 2740 1 }
+		victory_points = { 3753 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 1427 2041 3761 2477 3132 2703 2740 3469 1868 3753 }
+	local_supplies = 0.0
+}

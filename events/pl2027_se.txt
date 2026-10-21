@@ -1,0 +1,79 @@
+add_namespace = se
+
+country_event = {
+	id = se.1
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_SE_D_inwazja_rosji } OR = { tag = ROS tag = KRL tag = OWM } has_war = yes any_country = { has_country_flag = PL2027_polska has_war_with = ROOT } }
+	mean_time_to_happen = { days = 1 }
+	immediate = { if = { limit = { NOT = { has_global_flag = PL2027_SE_D_inwazja_rosji } always = yes } set_global_flag = PL2027_SE_D_inwazja_rosji PL2027_SE_inwazja_rosji = yes } }
+	option = {
+		name = se.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = se.2
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_SE_D_krucjata } tag = ZKR has_war = yes any_country = { has_country_flag = PL2027_polska has_war_with = ROOT } }
+	mean_time_to_happen = { days = 1 }
+	immediate = { if = { limit = { NOT = { has_global_flag = PL2027_SE_D_krucjata } always = yes } set_global_flag = PL2027_SE_D_krucjata PL2027_SE_krucjata = yes } }
+	option = {
+		name = se.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = se.3
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_SE_D_wojna_metropolitalna } tag = TRN has_war = yes country_exists = BYD has_war_with = BYD }
+	mean_time_to_happen = { days = 1 }
+	immediate = { if = { limit = { NOT = { has_global_flag = PL2027_SE_D_wojna_metropolitalna } always = yes } set_global_flag = PL2027_SE_D_wojna_metropolitalna PL2027_SE_wojna_metropolitalna = yes } }
+	option = {
+		name = se.3.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = se.4
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_SE_D_bialorus } tag = BLR has_war = yes any_country = { has_country_flag = PL2027_polska has_war_with = ROOT } }
+	mean_time_to_happen = { days = 1 }
+	immediate = { if = { limit = { NOT = { has_global_flag = PL2027_SE_D_bialorus } always = yes } set_global_flag = PL2027_SE_D_bialorus PL2027_SE_bialorus = yes } }
+	option = {
+		name = se.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = se.5
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_SE_D_bitwa_o_warszawe } OR = { tag = SMR tag = KPR tag = MPR } has_war = yes any_country = { OR = { tag = SMR tag = KPR tag = MPR tag = PLC tag = WOJ tag = LEG } has_war_with = ROOT } }
+	mean_time_to_happen = { days = 1 }
+	immediate = { if = { limit = { NOT = { has_global_flag = PL2027_SE_D_bitwa_o_warszawe } always = yes } set_global_flag = PL2027_SE_D_bitwa_o_warszawe PL2027_SE_bitwa_o_warszawe = yes } }
+	option = {
+		name = se.5.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = se.6
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_SE_D_zima } tag = GER date > 2028.1.10 }
+	mean_time_to_happen = { days = 1 }
+	immediate = { if = { limit = { NOT = { has_global_flag = PL2027_SE_D_zima } always = yes } set_global_flag = PL2027_SE_D_zima PL2027_SE_zima = yes } }
+	option = {
+		name = se.6.a
+		ai_chance = { factor = 1 }
+	}
+}

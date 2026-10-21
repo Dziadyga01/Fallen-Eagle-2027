@@ -1,0 +1,22 @@
+state = {
+	id = 1192
+	name = "STATE_1192"
+	manpower = 33383
+	resources = {
+		oil = 10
+	}
+	state_category = town
+	history = {
+		owner = NOT
+		add_core_of = NOT
+		victory_points = { 7882 1 }
+		victory_points = { 7889 2 }
+		victory_points = { 7890 1 }
+		victory_points = { 7885 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 7882 7884 7883 7885 7889 7890 7893 7891 }
+	local_supplies = 0.0
+}

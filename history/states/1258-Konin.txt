@@ -1,0 +1,23 @@
+state = {
+	id = 1258
+	name = "STATE_1258"
+	manpower = 81850
+	state_category = large_town
+	resources = {
+		aluminium = 6
+	}
+	history = {
+		owner = KON
+		add_core_of = KON
+		victory_points = { 7249 5 }
+		victory_points = { 7216 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 7216 7222 7248 7249 7245 }
+	local_supplies = 0.0
+}

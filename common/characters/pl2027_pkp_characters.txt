@@ -1,0 +1,47 @@
+characters = {
+	PKP_prezes = {
+		name = PKP_prezes
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PKP/PKP_prezes.dds"
+				small = "gfx/leaders/PKP/PKP_prezes_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = right_libertarianism
+			expire = "2065.1.1.1"
+		}
+	}
+	PKP_kolasinski = {
+		name = PKP_kolasinski
+		portraits = {
+			army = {
+				large = "gfx/leaders/PKP/PKP_kolasinski.dds"
+				small = "gfx/leaders/PKP/PKP_kolasinski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	PKP_mostowska = {
+		name = PKP_mostowska
+		portraits = {
+			army = {
+				large = "gfx/leaders/PKP/PKP_mostowska.dds"
+				small = "gfx/leaders/PKP/PKP_mostowska_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

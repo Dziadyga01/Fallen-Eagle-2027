@@ -1,0 +1,5 @@
+on_actions = {
+	on_monthly_TRN = {
+		effect = { if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } } add_to_variable = { global.MET_napiecie = -1 } if = { limit = { has_war = no } random_list = { 10 = { add_to_variable = { global.MET_solec_trn = 1 } } 10 = { add_to_variable = { global.MET_zlawies_trn = 1 } } 10 = { add_to_variable = { global.MET_ostromecko_trn = 1 } } 10 = { add_to_variable = { global.MET_unislaw_trn = 1 } } 10 = { add_to_variable = { global.MET_nowawies_trn = 1 } } 10 = { add_to_variable = { global.MET_chelmno_trn = 1 } } } } MET_przelicz = yes } }
+	}
+}

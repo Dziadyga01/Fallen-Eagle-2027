@@ -1,0 +1,19 @@
+state = {
+	id = 734
+	name = "STATE_734"
+	manpower = 24000
+	state_category = town
+	history = {
+		owner = WOJ
+		add_core_of = WOJ
+		victory_points = { 3696 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 3696 }
+	local_supplies = 0.0
+}

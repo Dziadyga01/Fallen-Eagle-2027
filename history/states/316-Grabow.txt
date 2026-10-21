@@ -1,0 +1,21 @@
+state = {
+	id = 316
+	name = "STATE_316"
+	manpower = 15315
+	state_category = rural
+	resources = {
+		aluminium = 2
+	}
+	history = {
+		owner = KTN
+		add_core_of = KTN
+		victory_points = { 6089 1 }
+		victory_points = { 6091 1 }
+		victory_points = { 6092 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 719 6092 6091 6090 6089 6087 6081 }
+	local_supplies = 0.0
+}

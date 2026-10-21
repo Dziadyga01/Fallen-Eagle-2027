@@ -1,0 +1,29 @@
+state = {
+	id = 570
+	name = "STATE_570"
+	manpower = 47214
+	state_category = town
+	resources = {
+		aluminium = 2
+		rubber = 2
+	}
+	history = {
+		owner = PSC
+		add_core_of = PSC
+		victory_points = { 832 5 }
+		victory_points = { 3470 1 }
+		victory_points = { 2802 1 }
+		victory_points = { 4094 1 }
+		victory_points = { 2075 1 }
+		victory_points = { 4197 1 }
+		victory_points = { 2990 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 832 2911 4094 2288 1413 3068 4049 3470 2990 3490 2786 4197 2802 2075 3165 4089 2248 4182 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,20 @@
+state = {
+	id = 404
+	name = "STATE_404"
+	manpower = 5026
+	state_category = rural
+	resources = {
+		steel = 3
+	}
+	history = {
+		owner = PTK
+		add_core_of = PTK
+		victory_points = { 6785 1 }
+		victory_points = { 6786 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 6747 6748 6755 6786 6785 }
+	local_supplies = 0.0
+}

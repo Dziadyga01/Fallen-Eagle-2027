@@ -1,0 +1,23 @@
+state = {
+	id = 749
+	name = "STATE_749"
+	manpower = 41806
+	state_category = town
+	resources = {
+		aluminium = 1
+	}
+	history = {
+		owner = SLS
+		add_core_of = SLS
+		victory_points = { 5115 1 }
+		victory_points = { 5112 1 }
+		victory_points = { 5084 1 }
+		victory_points = { 5113 1 }
+		victory_points = { 1272 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 364 1272 5116 5115 5113 7726 5112 5111 5101 5102 1354 5086 5084 }
+	local_supplies = 0.0
+}

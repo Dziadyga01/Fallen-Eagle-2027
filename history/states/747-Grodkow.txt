@@ -1,0 +1,31 @@
+state = {
+	id = 747
+	name = "STATE_747"
+	manpower = 102882
+	state_category = large_town
+	resources = {
+		aluminium = 2
+	}
+	history = {
+		owner = SLS
+		add_core_of = SLS
+		victory_points = { 5075 1 }
+		victory_points = { 5080 2 }
+		victory_points = { 704 2 }
+		victory_points = { 1438 2 }
+		victory_points = { 1140 2 }
+		victory_points = { 5090 2 }
+		victory_points = { 5091 1 }
+		victory_points = { 5087 1 }
+		victory_points = { 5081 1 }
+		victory_points = { 5076 1 }
+		victory_points = { 5088 1 }
+		victory_points = { 5083 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	provinces = { 433 5076 5087 5077 5081 5082 5083 5080 704 5075 1140 5093 5091 1438 5089 5088 5092 5090 }
+	local_supplies = 0.0
+}

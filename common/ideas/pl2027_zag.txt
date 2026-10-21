@@ -1,0 +1,60 @@
+ideas = {
+	country = {
+		ZAG_odbudowa = {
+			picture = DU_ZAG_odbudowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.02
+			}
+		}
+		ZAG_gospodarka = {
+			picture = DU_ZAG_gospodarka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.04
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZAG_logistyka = {
+			picture = DU_ZAG_logistyka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.1
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		ZAG_pobor = {
+			picture = DU_ZAG_pobor
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.4
+				conscription = 0.01
+			}
+		}
+		ZAG_produkcja = {
+			picture = DU_ZAG_produkcja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		ZAG_armia = {
+			picture = DU_ZAG_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				army_attack_factor = 0.05
+				army_defence_factor = 0.08
+			}
+		}
+	}
+}

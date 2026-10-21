@@ -1,0 +1,20 @@
+state = {
+	id = 1051
+	name = "STATE_1051"
+	manpower = 2566
+	state_category = rural
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = MAZ
+		add_core_of = MAZ
+		victory_points = { 3172 1 }
+		victory_points = { 3538 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1507 3538 3687 3172 2575 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		ROZ_mloda_niepodleglosc = {
+			picture = DU_ROZ_mloda_niepodleglosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = -0.03
+				war_support_factor = 0.05
+			}
+		}
+		ROZ_odmowa_warszawy = {
+			picture = DU_ROZ_odmowa_warszawy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.04
+				war_support_factor = 0.05
+			}
+		}
+		ROZ_okrojona_rp = {
+			picture = DU_ROZ_okrojona_rp
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		ROZ_rzad_rp = {
+			picture = DU_ROZ_rzad_rp
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.25
+				stability_factor = 0.05
+			}
+		}
+	}
+}

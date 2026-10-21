@@ -1,0 +1,23 @@
+state = {
+	id = 158
+	name = "STATE_158"
+	manpower = 20000
+	state_category = town
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = PDG
+		add_core_of = PDG
+		victory_points = { 7732 3 }
+		victory_points = { 7733 2 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 7732 7733 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,375 @@
+add_namespace = kal
+
+country_event = {
+	id = kal.101
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { if = { limit = { NOT = { has_global_flag = KAL_01 } } set_global_flag = KAL_01 every_country = { limit = { KAL_polska = yes } news_event = { id = kal.1 } } } }
+}
+
+country_event = {
+	id = kal.108
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { if = { limit = { NOT = { has_global_flag = KAL_08 } } set_global_flag = KAL_08 every_country = { limit = { KAL_polska = yes } news_event = { id = kal.8 } } } }
+}
+
+country_event = {
+	id = kal.102
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { if = { limit = { NOT = { has_global_flag = KAL_02 } } set_global_flag = KAL_02 every_country = { limit = { KAL_polska = yes } news_event = { id = kal.2 } } } }
+}
+
+country_event = {
+	id = kal.105
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { if = { limit = { NOT = { has_global_flag = KAL_05 } } set_global_flag = KAL_05 every_country = { limit = { KAL_polska = yes } news_event = { id = kal.5 } } } }
+}
+
+country_event = {
+	id = kal.103
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { if = { limit = { NOT = { has_global_flag = KAL_03 } } set_global_flag = KAL_03 every_country = { limit = { KAL_polska = yes } news_event = { id = kal.3 } } } }
+}
+
+country_event = {
+	id = kal.104
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { if = { limit = { NOT = { has_global_flag = KAL_04 } } set_global_flag = KAL_04 every_country = { limit = { KAL_polska = yes } news_event = { id = kal.4 } } } }
+}
+
+country_event = {
+	id = kal.106
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { if = { limit = { NOT = { has_global_flag = KAL_06 } } set_global_flag = KAL_06 every_country = { limit = { KAL_polska = yes } news_event = { id = kal.6 } } } }
+}
+
+country_event = {
+	id = kal.109
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { if = { limit = { NOT = { has_global_flag = KAL_09 } } set_global_flag = KAL_09 every_country = { limit = { KAL_polska = yes } news_event = { id = kal.9 } } } }
+}
+
+country_event = {
+	id = kal.107
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { if = { limit = { NOT = { has_global_flag = KAL_07 } } set_global_flag = KAL_07 every_country = { limit = { KAL_polska = yes } news_event = { id = kal.7 } } } }
+}
+
+country_event = {
+	id = kal.110
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { if = { limit = { NOT = { has_global_flag = KAL_10 } } set_global_flag = KAL_10 every_country = { limit = { KAL_polska = yes } news_event = { id = kal.10 } } } }
+}
+
+news_event = {
+	id = kal.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kal.1.t
+	desc = kal.1.d
+	picture = GFX_pl2027_ev081_polityka_4_news
+	is_triggered_only = yes
+	option = {
+		name = kal.1.a
+		ai_chance = { factor = 3 }
+		add_timed_idea = { idea = KAL_przejecie_administracji days = 180 } add_political_power = 25
+	}
+	option = {
+		name = kal.1.b
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = KAL_straz_regionalna days = 180 } add_war_support = 0.03 add_manpower = 500
+	}
+	option = {
+		name = kal.1.c
+		ai_chance = { factor = 1 }
+		add_stability = 0.03 add_political_power = -10
+	}
+}
+
+news_event = {
+	id = kal.8
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kal.8.t
+	desc = kal.8.d
+	picture = GFX_pl2027_ev081_paliwo_0_news
+	is_triggered_only = yes
+	option = {
+		name = kal.8.a
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = KAL_myto_wislane days = 120 }
+	}
+	option = {
+		name = kal.8.b
+		trigger = { has_political_power > 25 }
+		ai_chance = { factor = 1 }
+		add_political_power = -25 add_stability = 0.02
+	}
+	option = {
+		name = kal.8.c
+		trigger = { tag = TRN }
+		ai_chance = { factor = 5 }
+		add_timed_idea = { idea = KAL_oplaty_mostowe days = 180 } add_political_power = 20
+	}
+	option = {
+		name = kal.8.e
+		trigger = { tag = BYD }
+		ai_chance = { factor = 5 }
+		add_timed_idea = { idea = KAL_kanal_bydgoski days = 180 } REG_BYD_wszyscy_plus_5 = yes
+	}
+	option = {
+		name = kal.8.f
+		trigger = { tag = WLC }
+		ai_chance = { factor = 5 }
+		add_political_power = 30 add_war_support = 0.02 REG_WLC_wszyscy_plus_5 = yes
+	}
+	option = {
+		name = kal.8.g
+		trigger = { tag = KOC }
+		ai_chance = { factor = 5 }
+		add_political_power = 15 add_equipment_to_stockpile = { type = train_equipment amount = 2 } REG_KOC_wszyscy_plus_5 = yes
+	}
+}
+
+news_event = {
+	id = kal.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kal.2.t
+	desc = kal.2.d
+	picture = GFX_pl2027_ev081_miasto_5_news
+	is_triggered_only = yes
+	option = {
+		name = kal.2.a
+		ai_chance = { factor = 3 }
+		add_stability = 0.03 add_war_support = 0.03 set_country_flag = KAL_republika_ogloszona
+	}
+	option = {
+		name = kal.2.b
+		ai_chance = { factor = 2 }
+		add_political_power = 50 add_stability = -0.02
+	}
+	option = {
+		name = kal.2.c
+		trigger = { has_political_power > 25 }
+		ai_chance = { factor = 2 }
+		add_political_power = -25 add_timed_idea = { idea = KAL_archiwa_wojewodzkie days = 365 }
+	}
+}
+
+news_event = {
+	id = kal.5
+	title = kal.5.t
+	desc = kal.5.d
+	picture = GFX_pl2027_ev081_kolej_1_news
+	is_triggered_only = yes
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_global_flag = KAL_05 }
+	option = {
+		name = kal.5.a
+		trigger = { has_political_power > 25 }
+		ai_chance = { factor = 3 }
+		add_political_power = -25 add_timed_idea = { idea = KAL_przewoznik_regionalny days = 180 }
+	}
+	option = {
+		name = kal.5.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = KAL_kolejowy_paraliz days = 120 }
+	}
+	option = {
+		name = kal.5.c
+		trigger = { tag = KOC }
+		ai_chance = { factor = 10 }
+		set_country_flag = KAL_holding_kolejowy add_political_power = 30 add_equipment_to_stockpile = { type = train_equipment amount = 3 } REG_KOC_wszyscy_plus_8 = yes
+	}
+	option = {
+		name = kal.5.e
+		trigger = { NOT = { tag = KOC } country_exists = KOC has_political_power > 15 }
+		ai_chance = { factor = 1 }
+		add_political_power = -15 add_equipment_to_stockpile = { type = train_equipment amount = 1 } set_country_flag = KAL_sklady_z_kociewia
+	}
+}
+
+news_event = {
+	id = kal.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
+	title = kal.3.t
+	desc = kal.3.d
+	picture = GFX_pl2027_ev081_blackout_2_news
+	is_triggered_only = yes
+	option = {
+		name = kal.3.a
+		ai_chance = { factor = 3 }
+		add_timed_idea = { idea = KAL_blackout_wspolpraca days = 90 }
+	}
+	option = {
+		name = kal.3.b
+		trigger = { has_political_power > 50 }
+		ai_chance = { factor = 2 }
+		add_political_power = -50 add_war_support = 0.03 add_stability = -0.02
+	}
+	option = {
+		name = kal.3.c
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = KAL_blackout days = 90 }
+	}
+	option = {
+		name = kal.3.e
+		trigger = { OR = { tag = KON tag = PTK } }
+		ai_chance = { factor = 10 }
+		add_political_power = 40 add_timed_idea = { idea = KAL_eksport_pradu days = 120 }
+	}
+}
+
+news_event = {
+	id = kal.4
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kal.4.t
+	desc = kal.4.d
+	picture = GFX_pl2027_ev081_front_3_news
+	is_triggered_only = yes
+	option = {
+		name = kal.4.a
+		ai_chance = { factor = 3 }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 300 } add_manpower = 1000 add_war_support = 0.03 add_stability = -0.02
+	}
+	option = {
+		name = kal.4.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = KAL_garnizony_neutralne days = 180 }
+	}
+	option = {
+		name = kal.4.c
+		trigger = { has_political_power > 50 }
+		ai_chance = { factor = 2 }
+		add_political_power = -50 add_equipment_to_stockpile = { type = ranged_equipment amount = 500 } add_equipment_to_stockpile = { type = support_equipment amount = 100 } army_experience = 10
+	}
+	option = {
+		name = kal.4.e
+		trigger = { OR = { tag = WOJ tag = KPR tag = SMR } }
+		ai_chance = { factor = 10 }
+		army_experience = 25 add_war_support = 0.05 add_equipment_to_stockpile = { type = ranged_equipment amount = 500 } set_country_flag = KAL_spadkobierca_armii
+	}
+}
+
+news_event = {
+	id = kal.6
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
+	title = kal.6.t
+	desc = kal.6.d
+	picture = GFX_pl2027_ev081_blackout_3_news
+	is_triggered_only = yes
+	option = {
+		name = kal.6.a
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = KAL_uchodzcy_pomoc days = 180 } add_manpower = 1500
+	}
+	option = {
+		name = kal.6.b
+		ai_chance = { factor = 2 }
+		add_war_support = 0.04 add_stability = 0.01 set_country_flag = KAL_granice_zamkniete
+	}
+	option = {
+		name = kal.6.c
+		trigger = { has_political_power > 25 }
+		ai_chance = { factor = 2 }
+		add_political_power = -25 add_timed_idea = { idea = KAL_robotnicy_z_warszawy days = 365 }
+	}
+	option = {
+		name = kal.6.e
+		trigger = { OR = { tag = KPR tag = SMR tag = PLC tag = LEG tag = WOJ tag = PRG tag = TEC tag = ZIE } }
+		ai_chance = { factor = 10 }
+		add_timed_idea = { idea = KAL_pusta_stolica days = 180 } add_manpower = -500
+	}
+}
+
+news_event = {
+	id = kal.9
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = kal.9.t
+	desc = kal.9.d
+	picture = GFX_pl2027_ev081_dyplomacja_4_news
+	is_triggered_only = yes
+	option = {
+		name = kal.9.a
+		ai_chance = { factor = 2 }
+		set_country_flag = KAL_kongres_uznanie add_stability = 0.05 add_political_power = 30 add_war_support = -0.03
+	}
+	option = {
+		name = kal.9.b
+		ai_chance = { factor = 3 }
+		set_country_flag = KAL_kongres_konfederacja add_timed_idea = { idea = KAL_konfederacja days = 365 }
+	}
+	option = {
+		name = kal.9.c
+		ai_chance = { factor = 2 }
+		set_country_flag = KAL_kongres_suwerennosc add_war_support = 0.05 add_political_power = 25 add_stability = -0.02
+	}
+}
+
+news_event = {
+	id = kal.7
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kal.7.t
+	desc = kal.7.d
+	picture = GFX_pl2027_ev081_gospodarka_3_news
+	is_triggered_only = yes
+	option = {
+		name = kal.7.a
+		trigger = { has_political_power > 50 }
+		ai_chance = { factor = 2 }
+		add_political_power = -50 add_stability = -0.03 add_timed_idea = { idea = KAL_wlasna_waluta days = 365 } set_country_flag = KAL_wlasna_waluta
+	}
+	option = {
+		name = kal.7.b
+		ai_chance = { factor = 3 }
+		add_timed_idea = { idea = KAL_zloty_bez_banku days = 180 }
+	}
+	option = {
+		name = kal.7.c
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = KAL_bony days = 180 } add_war_support = 0.02
+	}
+	option = {
+		name = kal.7.e
+		trigger = { tag = WLC }
+		ai_chance = { factor = 10 }
+		REG_WLC_wszyscy_plus_8 = yes add_stability = 0.02 set_country_flag = KAL_kupony_pizzy
+	}
+}
+
+news_event = {
+	id = kal.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = kal.10.t
+	desc = kal.10.d
+	picture = GFX_pl2027_ev081_media_4_news
+	is_triggered_only = yes
+	option = {
+		name = kal.10.a
+		trigger = { num_of_controlled_states > 40 }
+		ai_chance = { factor = 10 }
+		set_country_flag = KAL_odbudowa_polski add_political_power = 50 add_war_support = 0.05 add_timed_idea = { idea = KAL_odbudowa days = 365 }
+	}
+	option = {
+		name = kal.10.b
+		trigger = { has_country_flag = KAL_kongres_uznanie }
+		ai_chance = { factor = 5 }
+		add_stability = 0.05 add_political_power = 20
+	}
+	option = {
+		name = kal.10.c
+		ai_chance = { factor = 2 }
+		add_stability = 0.03 add_political_power = 25
+	}
+	option = {
+		name = kal.10.e
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03 add_stability = -0.01
+	}
+}

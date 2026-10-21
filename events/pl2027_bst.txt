@@ -1,0 +1,186 @@
+add_namespace = bst
+
+country_event = {
+	id = bst.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = bst.10.t
+	desc = bst.10.d
+	picture = GFX_pl2027_ev081_granica_4
+	is_triggered_only = yes
+	option = {
+		name = bst.10.a
+		ai_chance = { factor = 60 modifier = { factor = 0.3 NOT = { has_army_manpower = { size > 2999 } } } }
+		custom_effect_tooltip = BST_szanse hidden_effect = { random_list = { 75 = { modifier = { factor = 1.15 has_army_manpower = { size > 9999 } } modifier = { factor = 1.15 has_idea = BST_zapora } modifier = { factor = 1.07 has_country_flag = BST_siatki } country_event = { id = bst.11 } } 25 = { modifier = { factor = 1.6 NOT = { has_army_manpower = { size > 2999 } } } modifier = { factor = 1.4 has_stability < 0.3 } country_event = { id = bst.12 } } } }
+	}
+	option = {
+		name = bst.10.b
+		ai_chance = { factor = 25 }
+		custom_effect_tooltip = BST_szanse hidden_effect = { random_list = { 55 = { modifier = { factor = 1.15 has_army_manpower = { size > 9999 } } modifier = { factor = 1.15 has_idea = BST_zapora } modifier = { factor = 1.07 has_country_flag = BST_siatki } country_event = { id = bst.11 } } 45 = { modifier = { factor = 1.6 NOT = { has_army_manpower = { size > 2999 } } } modifier = { factor = 1.4 has_stability < 0.3 } country_event = { id = bst.12 } } } }
+	}
+	option = {
+		name = bst.10.c
+		trigger = { has_political_power > 24 }
+		ai_chance = { factor = 15 }
+		add_political_power = -25 custom_effect_tooltip = BST_tt_pm4_d2 hidden_effect = { add_to_variable = { BST_presja = -4 } add_to_variable = { BST_destab = 2 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } } add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = bst.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = bst.11.t
+	desc = bst.11.d
+	picture = GFX_pl2027_ev081_granica_1
+	is_triggered_only = yes
+	option = {
+		name = bst.11.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BST_tt_pm8_dm3 hidden_effect = { add_to_variable = { BST_presja = -8 } add_to_variable = { BST_destab = -3 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } } army_experience = 3 add_war_support = 0.01
+	}
+}
+
+country_event = {
+	id = bst.12
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = bst.12.t
+	desc = bst.12.d
+	picture = GFX_pl2027_ev081_granica_5
+	is_triggered_only = yes
+	option = {
+		name = bst.12.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BST_tt_p5_d8 hidden_effect = { add_to_variable = { BST_presja = 5 } add_to_variable = { BST_destab = 8 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } } add_stability = -0.02 add_manpower = -300 event_target:BST_odcinek = { add_dynamic_modifier = { modifier = BST_odcinek_utracony days = 120 } damage_building = { type = infrastructure damage = 1 } }
+	}
+}
+
+country_event = {
+	id = bst.40
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = bst.40.t
+	desc = bst.40.d
+	picture = GFX_pl2027_ev081_porzadek_5
+	is_triggered_only = yes
+	option = {
+		name = bst.40.a
+		trigger = { has_political_power > 149 }
+		ai_chance = { factor = 30 }
+		add_political_power = -150 add_stability = -0.05 custom_effect_tooltip = BST_tt_p0_dm30 hidden_effect = { add_to_variable = { BST_destab = -30 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
+	}
+	option = {
+		name = bst.40.b
+		ai_chance = { factor = 10 }
+		BST_przejecie_enklawy = yes
+	}
+}
+
+country_event = {
+	id = bst.41
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = bst.41.t
+	desc = bst.41.d
+	picture = GFX_pl2027_ev081_granica_1
+	is_triggered_only = yes
+	option = {
+		name = bst.41.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = bst.70
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = bst.70.t
+	desc = bst.70.d
+	picture = GFX_pl2027_ev081_granica_5
+	is_triggered_only = yes
+	option = {
+		name = bst.70.a
+		ai_chance = { factor = 25 modifier = { factor = 3 strength_ratio = { tag = FROM ratio < 0.4 } } modifier = { factor = 0.3 strength_ratio = { tag = FROM ratio > 0.9 } } }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } } if = { limit = { is_in_faction = yes } leave_faction = yes } FROM = { puppet = ROOT } } FROM = { country_event = { id = bst.72 } }
+	}
+	option = {
+		name = bst.70.b
+		ai_chance = { factor = 35 }
+		FROM = { country_event = { id = bst.73 } }
+	}
+}
+
+country_event = {
+	id = bst.71
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = bst.71.t
+	desc = bst.71.d
+	picture = GFX_pl2027_ev081_granica_4
+	is_triggered_only = yes
+	option = {
+		name = bst.71.a
+		ai_chance = { factor = 20 modifier = { factor = 3 strength_ratio = { tag = FROM ratio < 0.3 } } }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } } if = { limit = { is_in_faction = yes } leave_faction = yes } FROM = { puppet = ROOT } } FROM = { country_event = { id = bst.72 } }
+	}
+	option = {
+		name = bst.71.b
+		ai_chance = { factor = 30 }
+		FROM = { if = { limit = { NOT = { has_war_with = ROOT } } create_wargoal = { type = annex_everything target = ROOT } } country_event = { id = bst.73 } }
+	}
+}
+
+country_event = {
+	id = bst.72
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = bst.72.t
+	desc = bst.72.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = bst.72.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = bst.73
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = bst.73.t
+	desc = bst.73.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	option = {
+		name = bst.73.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = bst.50
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = bst.50.t
+	desc = bst.50.d
+	picture = GFX_pl2027_ev081_mazury_5
+	is_triggered_only = yes
+	option = {
+		name = bst.50.a
+		ai_chance = { factor = 1 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.10 }
+	}
+}
+
+country_event = {
+	id = bst.51
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = bst.51.t
+	desc = bst.51.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	option = {
+		name = bst.51.a
+		ai_chance = { factor = 1 }
+		set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+	set_party_name = { ideology = authoritarian_democrat long_name = BST_party_mleko name = BST_party_mleko }
+	add_popularity = { ideology = authoritarian_democrat popularity = 0.25 }
+	if = { limit = { NOT = { has_character = BST_kononowicz } } recruit_character = BST_kononowicz } promote_character = BST_kononowicz
+	set_country_flag = BST_kononowicz_rzadzi
+	}
+}

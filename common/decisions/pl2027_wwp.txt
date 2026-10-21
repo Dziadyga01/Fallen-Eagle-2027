@@ -1,0 +1,94 @@
+WWP_stolica = {
+	WWP_smr_ustawa = {
+		icon = generic_operation
+		allowed = { original_tag = SMR }
+		cost = 40
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = WWP_tt_1 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 6 } WWP_clamp = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	WWP_smr_sledztwo = {
+		icon = generic_operation
+		allowed = { OR = { original_tag = SMR original_tag = KPR } }
+		available = { check_variable = { global.TFE_wwa_mpr > 29 } }
+		cost = 50
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = WWP_tt_2 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = -8 } add_to_variable = { global.TFE_wwa_smr = 2 } WWP_clamp = yes } if = { limit = { country_exists = MPR } MPR = { country_event = { id = wwp.3 days = 3 } } } }
+		ai_will_do = { factor = 2 }
+	}
+	WWP_kpr_dekret = {
+		icon = generic_operation
+		allowed = { original_tag = KPR }
+		cost = 40
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = WWP_tt_3 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 6 } WWP_clamp = yes } add_stability = -0.02 }
+		ai_will_do = { factor = 2 }
+	}
+	WWP_kpr_mosty = {
+		icon = generic_operation
+		allowed = { original_tag = KPR }
+		available = { has_manpower > 1499 }
+		cost = 30
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = WWP_tt_4 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 5 } add_to_variable = { global.TFE_wwa_mpr = -3 } WWP_clamp = yes } add_manpower = -1000 }
+		ai_will_do = { factor = 2 }
+	}
+	WWP_mpr_ochrona = {
+		icon = generic_operation
+		allowed = { original_tag = MPR }
+		cost = 0
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = WWP_tt_5 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 5 } WWP_clamp = yes } add_political_power = 40 add_stability = -0.02 }
+		ai_will_do = { factor = 2 }
+	}
+	WWP_mpr_koperty = {
+		icon = generic_operation
+		allowed = { original_tag = MPR }
+		cost = 30
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = WWP_tt_6 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 8 } WWP_clamp = yes } random_list = { 75 = { } 25 = { every_country = { limit = { OR = { tag = SMR tag = KPR } } country_event = { id = wwp.4 days = 2 } } } } }
+		ai_will_do = { factor = 2 }
+	}
+	WWP_mpr_zyleta = {
+		icon = generic_operation
+		allowed = { original_tag = MPR }
+		available = { country_exists = LEG LEG = { is_subject_of = ROOT } }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = WWP_tt_7 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 4 } add_to_variable = { global.TFE_wwa_smr = -2 } add_to_variable = { global.TFE_wwa_kpr = -2 } WWP_clamp = yes } add_war_support = 0.03 }
+		ai_will_do = { factor = 2 }
+	}
+	WWP_plc_wsparcie = {
+		icon = generic_operation
+		allowed = { original_tag = PLC }
+		cost = 20
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = WWP_tt_8 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 3 } WWP_clamp = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	WWP_woj_wsparcie = {
+		icon = generic_operation
+		allowed = { original_tag = WOJ }
+		cost = 20
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = WWP_tt_9 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 3 } WWP_clamp = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	WWP_leg_wsparcie = {
+		icon = generic_operation
+		allowed = { original_tag = LEG }
+		cost = 20
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = WWP_tt_10 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 3 } WWP_clamp = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	WWP_jednosc_stolica = {
+		icon = generic_operation
+		allowed = { OR = { original_tag = SMR original_tag = KPR } }
+		available = { OR = { has_global_flag = TFE_rzad_jednosci has_global_flag = WWD_koalicja_zawarta } }
+		cost = 60
+		days_re_enable = 90
+		complete_effect = { custom_effect_tooltip = WWP_tt_11 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 5 } add_to_variable = { global.TFE_wwa_kpr = 5 } add_to_variable = { global.TFE_wwa_mpr = -5 } WWP_clamp = yes } }
+		ai_will_do = { factor = 2 }
+	}
+}

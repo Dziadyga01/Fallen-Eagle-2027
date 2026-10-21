@@ -1,0 +1,64 @@
+add_namespace = tp2
+
+country_event = {
+	id = tp2.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tp2.1.t
+	desc = tp2.1.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_1
+	is_triggered_only = yes
+	option = {
+		name = tp2.1.a
+		trigger = { has_political_power > 39 }
+		ai_chance = { factor = 10 }
+		add_political_power = -40 custom_effect_tooltip = TP2_tt_dp15 hidden_effect = { add_to_variable = { TPZ_dostawy = 15 } clamp_variable = { var = TPZ_dostawy min = 0 max = 100 } }
+	}
+	option = {
+		name = tp2.1.b
+		ai_chance = { factor = 6 }
+		custom_effect_tooltip = TP2_tt_dp5 hidden_effect = { add_to_variable = { TPZ_dostawy = 5 } clamp_variable = { var = TPZ_dostawy min = 0 max = 100 } } add_to_variable = { TPZ_satysfakcja = -6 } TPZ_przelicz = yes
+	}
+	option = {
+		name = tp2.1.c
+		ai_chance = { factor = 3 }
+		custom_effect_tooltip = TP2_tt_dp8 hidden_effect = { add_to_variable = { TPZ_dostawy = 8 } clamp_variable = { var = TPZ_dostawy min = 0 max = 100 } } add_to_variable = { TPZ_lokale = -3 } clamp_variable = { var = TPZ_lokale min = 0 max = 200 }
+	}
+}
+
+country_event = {
+	id = tp2.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tp2.2.t
+	desc = tp2.2.d
+	picture = GFX_pl2027_ev081_gospodarka_4
+	is_triggered_only = yes
+	option = {
+		name = tp2.2.a
+		ai_chance = { factor = 10 modifier = { factor = 0.2 has_war_with = FROM } }
+		add_political_power = 25 add_stability = 0.01 add_opinion_modifier = { target = FROM modifier = TPZ_kontrakt_maki_op } FROM = { add_to_variable = { TPZ_dostawy = 10 } clamp_variable = { var = TPZ_dostawy min = 0 max = 100 } }
+	}
+	option = {
+		name = tp2.2.b
+		ai_chance = { factor = 3 }
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = tp2.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tp2.3.t
+	desc = tp2.3.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_2
+	is_triggered_only = yes
+	option = {
+		name = tp2.3.a
+		ai_chance = { factor = 10 modifier = { factor = 0.2 has_war_with = FROM } }
+		add_stability = 0.02 add_opinion_modifier = { target = FROM modifier = TPZ_franczyza_op } FROM = { add_to_variable = { TPZ_lokale = 3 } clamp_variable = { var = TPZ_lokale min = 0 max = 200 } add_political_power = 15 }
+	}
+	option = {
+		name = tp2.3.b
+		ai_chance = { factor = 4 }
+		add_political_power = 10
+	}
+}

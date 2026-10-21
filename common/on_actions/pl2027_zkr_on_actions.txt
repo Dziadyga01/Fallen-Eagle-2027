@@ -1,0 +1,8 @@
+on_actions = {
+	on_civil_war_end = {
+		effect = {
+			if = { limit = { original_tag = ZKR has_country_flag = ZKR_rzad_tymczasowy } country_event = { id = zkr.76 } }
+			else_if = { limit = { original_tag = ZKR has_country_flag = ZKR_wojna_domowa } country_event = { id = zkr.75 } }
+		}
+	}
+}

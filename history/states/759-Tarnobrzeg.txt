@@ -1,0 +1,19 @@
+state = {
+	id = 759
+	name = "STATE_759"
+	manpower = 61168
+	state_category = large_town
+	history = {
+		owner = PRW
+		add_core_of = PRW
+		victory_points = { 9019 1 }
+		victory_points = { 9018 2 }
+		victory_points = { 9020 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	provinces = { 9019 9018 9020 }
+	local_supplies = 0.0
+}

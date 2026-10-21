@@ -1,0 +1,23 @@
+state = {
+	id = 1250
+	name = "STATE_1250"
+	manpower = 50063
+	state_category = town
+	resources = {
+		aluminium = 2
+	}
+	history = {
+		owner = GNZ
+		add_core_of = GNZ
+		victory_points = { 7171 1 }
+		victory_points = { 7149 2 }
+		victory_points = { 7886 2 }
+		victory_points = { 7170 1 }
+		victory_points = { 7162 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1045 7171 7172 7170 7149 7162 7886 7887 }
+	local_supplies = 0.0
+}

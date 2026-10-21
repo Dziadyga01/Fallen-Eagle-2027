@@ -1,0 +1,18 @@
+state = {
+	id = 422
+	name = "STATE_422"
+	manpower = 11258
+	state_category = rural
+	history = {
+		owner = SRD
+		add_core_of = SRD
+		victory_points = { 4642 1 }
+		victory_points = { 4641 1 }
+		victory_points = { 4644 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 4639 4649 4645 4642 4644 4641 4643 }
+	local_supplies = 0.0
+}

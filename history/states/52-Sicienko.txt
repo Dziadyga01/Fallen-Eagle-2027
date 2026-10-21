@@ -1,0 +1,22 @@
+state = {
+	id = 52
+	name = "STATE_52"
+	manpower = 7629
+	state_category = town
+	history = {
+		owner = SCK
+		add_core_of = SCK
+		victory_points = { 7773 5 }
+		victory_points = { 7798 1 }
+		victory_points = { 1118 1 }
+		victory_points = { 7774 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 777 1118 7773 7767 1224 7775 7445 7798 7772 7774 7776 }
+	local_supplies = 0.0
+}

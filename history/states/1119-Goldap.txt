@@ -1,0 +1,26 @@
+state = {
+	id = 1119
+	name = "STATE_1119"
+	manpower = 20480
+	state_category = rural
+	resources = {
+		rubber = 1
+		steel = 1
+	}
+	history = {
+		owner = ROS
+		add_core_of = KRL
+		victory_points = { 5680 1 }
+		victory_points = { 9680 1 }
+		victory_points = { 6692 1 }
+		victory_points = { 5696 1 }
+		victory_points = { 354 1 }
+		victory_points = { 5704 1 }
+		victory_points = { 5686 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 201 5663 5686 5687 5683 5704 1538 6692 6691 5696 5666 5690 9682 9681 998 354 5680 9680 5697 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,30 @@
+defined_text = {
+	name = IVRP_GetOpis
+	text = {
+		trigger = { has_global_flag = IVRP_sejm }
+		localization_key = IVRP_opis_sejm
+	}
+	text = {
+		trigger = { has_global_flag = IVRP_prezydent }
+		localization_key = IVRP_opis_prezydent
+	}
+	text = {
+		trigger = { has_global_flag = IVRP_mafia }
+		localization_key = IVRP_opis_mafia
+	}
+}
+defined_text = {
+	name = IVRP_GetWariant
+	text = {
+		trigger = { has_global_flag = IVRP_sejm }
+		localization_key = IVRP_wariant_sejm
+	}
+	text = {
+		trigger = { has_global_flag = IVRP_prezydent }
+		localization_key = IVRP_wariant_prezydent
+	}
+	text = {
+		trigger = { has_global_flag = IVRP_mafia }
+		localization_key = IVRP_wariant_mafia
+	}
+}

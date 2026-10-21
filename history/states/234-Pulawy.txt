@@ -1,0 +1,22 @@
+state = {
+	id = 234
+	name = "STATE_234"
+	manpower = 50153
+	state_category = town
+	resources = {
+		rubber = 3
+	}
+	history = {
+		owner = PRW
+		add_core_of = PRW
+		victory_points = { 1990 1 }
+		victory_points = { 2240 1 }
+		victory_points = { 3063 1 }
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+		}
+	}
+	provinces = { 1990 4831 3319 3063 3121 3495 2240 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,20 @@
+state = {
+	id = 930
+	name = "STATE_930"
+	manpower = 5758
+	state_category = rural
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = KPM
+		add_core_of = KPM
+		victory_points = { 8928 1 }
+		victory_points = { 8929 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 8928 8934 8932 8929 }
+	local_supplies = 0.0
+}

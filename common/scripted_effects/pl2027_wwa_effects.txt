@@ -1,0 +1,12 @@
+IVRP_wchlon_warszawe = {
+	every_country = { limit = { is_subject_of = ROOT any_owned_state = { OR = { state = 725 state = 726 state = 727 state = 728 state = 729 state = 730 state = 731 state = 732 state = 733 state = 734 state = 735 state = 736 state = 737 state = 738 state = 739 state = 740 state = 741 state = 742 state = 743 state = 744 state = 745 state = 746 } } } ROOT = { annex_country = { target = PREV transfer_troops = yes } } }
+}
+IVRP_proklamuj_sejm = {
+	set_global_flag = IVRP_proklamowana set_global_flag = IVRP_sejm IVRP_wchlon_warszawe = yes set_party_name = { ideology = social_liberal long_name = IVRP_partia_sejm name = IVRP_partia_sejm } set_politics = { ruling_party = social_liberal elections_allowed = yes } add_popularity = { ideology = social_liberal popularity = 0.20 } recruit_character = IVRP_lider_sejm promote_character = IVRP_lider_sejm add_ideas = IVRP_republika_sejmowa set_cosmetic_tag = IVRP_SEJM add_stability = 0.05 add_political_power = 100 set_capital = { state = 735 } load_focus_tree = { tree = IVRP_sejm_tree keep_completed = no } PL2027_SE_ivrp_sejm = yes
+}
+IVRP_proklamuj_prezydent = {
+	set_global_flag = IVRP_proklamowana set_global_flag = IVRP_prezydent IVRP_wchlon_warszawe = yes set_party_name = { ideology = authoritarian_democrat long_name = IVRP_partia_prezydent name = IVRP_partia_prezydent } set_politics = { ruling_party = authoritarian_democrat elections_allowed = no } add_popularity = { ideology = authoritarian_democrat popularity = 0.20 } recruit_character = IVRP_lider_prezydent promote_character = IVRP_lider_prezydent add_ideas = IVRP_rzady_prezydenckie set_cosmetic_tag = IVRP_PREZYDENT add_stability = 0.05 add_political_power = 100 set_capital = { state = 745 } load_focus_tree = { tree = IVRP_prezydent_tree keep_completed = no } PL2027_SE_ivrp_prezydent = yes
+}
+IVRP_proklamuj_mafia = {
+	set_global_flag = IVRP_proklamowana set_global_flag = IVRP_mafia IVRP_wchlon_warszawe = yes set_party_name = { ideology = nationalist long_name = IVRP_partia_mafia name = IVRP_partia_mafia } set_politics = { ruling_party = nationalist elections_allowed = no } add_popularity = { ideology = nationalist popularity = 0.20 } recruit_character = IVRP_lider_mafia promote_character = IVRP_lider_mafia add_ideas = IVRP_panstwo_mafijne set_cosmetic_tag = IVRP_MAFIA add_stability = 0.05 add_political_power = 100 set_capital = { state = 745 } load_focus_tree = { tree = IVRP_mafia_tree keep_completed = no } PL2027_SE_ivrp_mafia = yes
+}

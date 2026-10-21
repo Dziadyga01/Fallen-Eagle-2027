@@ -1,0 +1,23 @@
+state = {
+	id = 572
+	name = "STATE_572"
+	manpower = 12597
+	state_category = rural
+	resources = {
+		aluminium = 1
+	}
+	history = {
+		owner = PSC
+		add_core_of = PSC
+		victory_points = { 980 1 }
+		victory_points = { 2090 1 }
+		victory_points = { 2002 1 }
+		victory_points = { 3452 1 }
+		victory_points = { 1869 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 6 3505 3452 2002 1869 2090 2072 3252 3008 2242 980 1897 }
+	local_supplies = 0.0
+}

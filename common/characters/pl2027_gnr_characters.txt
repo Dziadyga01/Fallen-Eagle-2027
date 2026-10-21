@@ -1,0 +1,898 @@
+characters = {
+	WOJ_gen_andrzejczak = {
+		name = WOJ_gen_andrzejczak
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_andrzejczak.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_andrzejczak_small.dds"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	WOJ_gen_kukula = {
+		name = WOJ_gen_kukula
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_kukula.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_kukula_small.dds"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	WOJ_gen_mika = {
+		name = WOJ_gen_mika
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_mika.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_mika_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	WOJ_gen_blazeusz = {
+		name = WOJ_gen_blazeusz
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_blazeusz.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_blazeusz_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WOJ_gen_krol = {
+		name = WOJ_gen_krol
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_krol.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_krol_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WOJ_gen_sikora = {
+		name = WOJ_gen_sikora
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_sikora.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_sikora_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WOJ_gen_gocul = {
+		name = WOJ_gen_gocul
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_gocul.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_gocul_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WOJ_gen_surawski = {
+		name = WOJ_gen_surawski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_surawski.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_surawski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WOJ_gen_lewandowski = {
+		name = WOJ_gen_lewandowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_lewandowski.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_lewandowski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	WOJ_gen_skrzypczak = {
+		name = WOJ_gen_skrzypczak
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_skrzypczak.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_skrzypczak_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WOJ_gen_polko = {
+		name = WOJ_gen_polko
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_polko.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_polko_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WOJ_gen_komornicki = {
+		name = WOJ_gen_komornicki
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOJ_gen_komornicki.dds"
+				small = "gfx/leaders/GNR/WOJ_gen_komornicki_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	PRW_gen_wronski = {
+		name = PRW_gen_wronski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/PRW_gen_wronski.dds"
+				small = "gfx/leaders/GNR/PRW_gen_wronski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	PRW_gen_czajka = {
+		name = PRW_gen_czajka
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/PRW_gen_czajka.dds"
+				small = "gfx/leaders/GNR/PRW_gen_czajka_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	NNA_gen_sowinski = {
+		name = NNA_gen_sowinski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/NNA_gen_sowinski.dds"
+				small = "gfx/leaders/GNR/NNA_gen_sowinski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	BST_gen_korycki = {
+		name = BST_gen_korycki
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/BST_gen_korycki.dds"
+				small = "gfx/leaders/GNR/BST_gen_korycki_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	KKR_gen_odrowaz = {
+		name = KKR_gen_odrowaz
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/KKR_gen_odrowaz.dds"
+				small = "gfx/leaders/GNR/KKR_gen_odrowaz_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	TRN_gen_wierzbicki = {
+		name = TRN_gen_wierzbicki
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/TRN_gen_wierzbicki.dds"
+				small = "gfx/leaders/GNR/TRN_gen_wierzbicki_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	BYD_gen_krasnicki = {
+		name = BYD_gen_krasnicki
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/BYD_gen_krasnicki.dds"
+				small = "gfx/leaders/GNR/BYD_gen_krasnicki_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WMZ_gen_olszewski = {
+		name = WMZ_gen_olszewski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WMZ_gen_olszewski.dds"
+				small = "gfx/leaders/GNR/WMZ_gen_olszewski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	PTK_gen_nowicki = {
+		name = PTK_gen_nowicki
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/PTK_gen_nowicki.dds"
+				small = "gfx/leaders/GNR/PTK_gen_nowicki_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	RAD_gen_kozlowski = {
+		name = RAD_gen_kozlowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/RAD_gen_kozlowski.dds"
+				small = "gfx/leaders/GNR/RAD_gen_kozlowski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	KLS_gen_ostrowski = {
+		name = KLS_gen_ostrowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/KLS_gen_ostrowski.dds"
+				small = "gfx/leaders/GNR/KLS_gen_ostrowski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	PLO_gen_gajewski = {
+		name = PLO_gen_gajewski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/PLO_gen_gajewski.dds"
+				small = "gfx/leaders/GNR/PLO_gen_gajewski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	SUW_gen_malinowski = {
+		name = SUW_gen_malinowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/SUW_gen_malinowski.dds"
+				small = "gfx/leaders/GNR/SUW_gen_malinowski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	LWC_gen_zawada = {
+		name = LWC_gen_zawada
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/LWC_gen_zawada.dds"
+				small = "gfx/leaders/GNR/LWC_gen_zawada_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	WOL_gen_rogalski = {
+		name = WOL_gen_rogalski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/WOL_gen_rogalski.dds"
+				small = "gfx/leaders/GNR/WOL_gen_rogalski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	MPR_gen_kruk = {
+		name = MPR_gen_kruk
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/MPR_gen_kruk.dds"
+				small = "gfx/leaders/GNR/MPR_gen_kruk_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	LEG_gen_brodacz = {
+		name = LEG_gen_brodacz
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/LEG_gen_brodacz.dds"
+				small = "gfx/leaders/GNR/LEG_gen_brodacz_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	ROS_gen_gerasimow = {
+		name = ROS_gen_gerasimow
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_gerasimow.dds"
+				small = "gfx/leaders/GNR/ROS_gen_gerasimow_small.dds"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	ROS_gen_surowikin = {
+		name = ROS_gen_surowikin
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_surowikin.dds"
+				small = "gfx/leaders/GNR/ROS_gen_surowikin_small.dds"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	ROS_gen_dwornikow = {
+		name = ROS_gen_dwornikow
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_dwornikow.dds"
+				small = "gfx/leaders/GNR/ROS_gen_dwornikow_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROS_gen_teplinski = {
+		name = ROS_gen_teplinski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_teplinski.dds"
+				small = "gfx/leaders/GNR/ROS_gen_teplinski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	ROS_gen_lapin = {
+		name = ROS_gen_lapin
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_lapin.dds"
+				small = "gfx/leaders/GNR/ROS_gen_lapin_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROS_gen_mordwiczew = {
+		name = ROS_gen_mordwiczew
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_mordwiczew.dds"
+				small = "gfx/leaders/GNR/ROS_gen_mordwiczew_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROS_gen_nikiforow = {
+		name = ROS_gen_nikiforow
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_nikiforow.dds"
+				small = "gfx/leaders/GNR/ROS_gen_nikiforow_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROS_gen_rudskoj = {
+		name = ROS_gen_rudskoj
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_rudskoj.dds"
+				small = "gfx/leaders/GNR/ROS_gen_rudskoj_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROS_gen_salukow = {
+		name = ROS_gen_salukow
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_salukow.dds"
+				small = "gfx/leaders/GNR/ROS_gen_salukow_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROS_gen_czajko = {
+		name = ROS_gen_czajko
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_czajko.dds"
+				small = "gfx/leaders/GNR/ROS_gen_czajko_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROS_gen_serdiukow = {
+		name = ROS_gen_serdiukow
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_serdiukow.dds"
+				small = "gfx/leaders/GNR/ROS_gen_serdiukow_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROS_gen_zydko = {
+		name = ROS_gen_zydko
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/ROS_gen_zydko.dds"
+				small = "gfx/leaders/GNR/ROS_gen_zydko_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	ROS_gen_jewmienow = {
+		name = ROS_gen_jewmienow
+		portraits = {
+			navy = {
+				large = "gfx/leaders/GNR/ROS_gen_jewmienow.dds"
+				small = "gfx/leaders/GNR/ROS_gen_jewmienow_small.dds"
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	KRL_gen_nosatow = {
+		name = KRL_gen_nosatow
+		portraits = {
+			navy = {
+				large = "gfx/leaders/GNR/KRL_gen_nosatow.dds"
+				small = "gfx/leaders/GNR/KRL_gen_nosatow_small.dds"
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	KRL_gen_muradow = {
+		name = KRL_gen_muradow
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/KRL_gen_muradow.dds"
+				small = "gfx/leaders/GNR/KRL_gen_muradow_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	BLR_gen_chrenin = {
+		name = BLR_gen_chrenin
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/BLR_gen_chrenin.dds"
+				small = "gfx/leaders/GNR/BLR_gen_chrenin_small.dds"
+			}
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	BLR_gen_wolfowicz = {
+		name = BLR_gen_wolfowicz
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/BLR_gen_wolfowicz.dds"
+				small = "gfx/leaders/GNR/BLR_gen_wolfowicz_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	BLR_gen_hulewicz = {
+		name = BLR_gen_hulewicz
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/BLR_gen_hulewicz.dds"
+				small = "gfx/leaders/GNR/BLR_gen_hulewicz_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	BLR_gen_bielokoniew = {
+		name = BLR_gen_bielokoniew
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/BLR_gen_bielokoniew.dds"
+				small = "gfx/leaders/GNR/BLR_gen_bielokoniew_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	GER_gen_breuer = {
+		name = GER_gen_breuer
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/GER_gen_breuer.dds"
+				small = "gfx/leaders/GNR/GER_gen_breuer_small.dds"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	GER_gen_mais = {
+		name = GER_gen_mais
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/GER_gen_mais.dds"
+				small = "gfx/leaders/GNR/GER_gen_mais_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	GER_gen_vollmer = {
+		name = GER_gen_vollmer
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/GER_gen_vollmer.dds"
+				small = "gfx/leaders/GNR/GER_gen_vollmer_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	GER_gen_domrose = {
+		name = GER_gen_domrose
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/GER_gen_domrose.dds"
+				small = "gfx/leaders/GNR/GER_gen_domrose_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	UKR_gen_syrski = {
+		name = UKR_gen_syrski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/UKR_gen_syrski.dds"
+				small = "gfx/leaders/GNR/UKR_gen_syrski_small.dds"
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	UKR_gen_zaluzny = {
+		name = UKR_gen_zaluzny
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/UKR_gen_zaluzny.dds"
+				small = "gfx/leaders/GNR/UKR_gen_zaluzny_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	UKR_gen_zabrodski = {
+		name = UKR_gen_zabrodski
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/UKR_gen_zabrodski.dds"
+				small = "gfx/leaders/GNR/UKR_gen_zabrodski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	UKR_gen_szaptala = {
+		name = UKR_gen_szaptala
+		portraits = {
+			army = {
+				large = "gfx/leaders/GNR/UKR_gen_szaptala.dds"
+				small = "gfx/leaders/GNR/UKR_gen_szaptala_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

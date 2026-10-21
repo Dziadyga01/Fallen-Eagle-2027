@@ -1,0 +1,58 @@
+division_template = {
+	name = "Brygada Obrony Terytorialnej"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Batalion Piechoty"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+division_template = {
+	name = "Oddział Milicji"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		division_name = { is_name_ordered = yes name_order = 1 }
+		location = 5503
+		division_template = "Batalion Piechoty"
+		start_experience_factor = 0.24
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 2 }
+		location = 5693
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.36
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 3 }
+		location = 5701
+		division_template = "Oddział Milicji"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 4 }
+		location = 1436
+		division_template = "Oddział Milicji"
+		start_experience_factor = 0.23
+	}
+}

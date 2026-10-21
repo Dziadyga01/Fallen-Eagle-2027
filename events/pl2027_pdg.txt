@@ -1,0 +1,190 @@
+add_namespace = pdg
+
+country_event = {
+	id = pdg.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pdg.1.t
+	desc = pdg.1.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	option = {
+		name = pdg.1.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = PDG_widz_tt_p5 hidden_effect = { add_to_variable = { PDG_widzowie = 5 } PDG_przelicz = yes }
+	}
+	option = {
+		name = pdg.1.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = pdg.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pdg.2.t
+	desc = pdg.2.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = pdg.2.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = PDG_widz_tt_m10 hidden_effect = { add_to_variable = { PDG_widzowie = -10 } PDG_przelicz = yes } add_stability = 0.03
+	}
+	option = {
+		name = pdg.2.b
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = PDG_widz_tt_p8 hidden_effect = { add_to_variable = { PDG_widzowie = 8 } PDG_przelicz = yes } add_political_power = 20
+	}
+}
+
+country_event = {
+	id = pdg.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = pdg.3.t
+	desc = pdg.3.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = pdg.3.a
+		ai_chance = { factor = 1 }
+		add_political_power = 30 custom_effect_tooltip = PDG_widz_tt_p5 hidden_effect = { add_to_variable = { PDG_widzowie = 5 } PDG_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = pdg.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = pdg.20.t
+	desc = pdg.20.d
+	picture = GFX_pl2027_ev081_ulica_2
+	is_triggered_only = yes
+	option = {
+		name = pdg.20.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.03 custom_effect_tooltip = PDG_widz_tt_p4 hidden_effect = { add_to_variable = { PDG_widzowie = 4 } PDG_przelicz = yes }
+	}
+	option = {
+		name = pdg.20.b
+		ai_chance = { factor = 1 }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } custom_effect_tooltip = PDG_widz_tt_p2 hidden_effect = { add_to_variable = { PDG_widzowie = 2 } PDG_przelicz = yes }
+	}
+	option = {
+		name = pdg.20.c
+		ai_chance = { factor = 1 }
+		army_experience = 5 add_war_support = 0.03 custom_effect_tooltip = PDG_widz_tt_p3 hidden_effect = { add_to_variable = { PDG_widzowie = 3 } PDG_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = pdg.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pdg.21.t
+	desc = pdg.21.d
+	picture = GFX_pl2027_ev081_wisla_2
+	is_triggered_only = yes
+	option = {
+		name = pdg.21.a
+		ai_chance = { factor = 2 }
+		add_stability = -0.02
+	}
+	option = {
+		name = pdg.21.b
+		ai_chance = { factor = 1 }
+		add_political_power = -15 FROM = { custom_effect_tooltip = PDG_widz_tt_p3 hidden_effect = { add_to_variable = { PDG_widzowie = 3 } PDG_przelicz = yes } }
+	}
+}
+
+country_event = {
+	id = pdg.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pdg.22.t
+	desc = pdg.22.d
+	picture = GFX_pl2027_ev081_polityka_5
+	is_triggered_only = yes
+	option = {
+		name = pdg.22.a
+		ai_chance = { factor = 3 modifier = { factor = 0 has_war_with = FROM } }
+		give_guarantee = FROM FROM = { country_event = { id = pdg.23 } }
+	}
+	option = {
+		name = pdg.22.b
+		ai_chance = { factor = 1 }
+		FROM = { country_event = { id = pdg.24 } }
+	}
+}
+
+country_event = {
+	id = pdg.23
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pdg.23.t
+	desc = pdg.23.d
+	picture = GFX_pl2027_ev081_miasto_5
+	is_triggered_only = yes
+	option = {
+		name = pdg.23.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = pdg.24
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pdg.24.t
+	desc = pdg.24.d
+	picture = GFX_pl2027_ev081_narada_4
+	is_triggered_only = yes
+	option = {
+		name = pdg.24.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = pdg.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = pdg.30.t
+	desc = pdg.30.d
+	picture = GFX_pl2027_ev081_ulica_2
+	is_triggered_only = yes
+	option = {
+		name = pdg.30.a
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = PDG_hype days = 90 } add_manpower = 1500
+	}
+	option = {
+		name = pdg.30.b
+		ai_chance = { factor = 1 }
+		add_political_power = 80
+	}
+}
+
+country_event = {
+	id = pdg.31
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
+	title = pdg.31.t
+	desc = pdg.31.d
+	picture = GFX_pl2027_ev081_blackout_4
+	is_triggered_only = yes
+	option = {
+		name = pdg.31.a
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = PDG_offline days = 60 } custom_effect_tooltip = PDG_widz_tt_p10 hidden_effect = { add_to_variable = { PDG_widzowie = 10 } PDG_przelicz = yes }
+	}
+}
+
+news_event = {
+	id = pdg.40
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pdg.40.t
+	desc = pdg.40.d
+	picture = GFX_pl2027_ev081_miasto_5_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = pdg.40.a
+		ai_chance = { factor = 1 }
+	}
+}

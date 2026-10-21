@@ -1,0 +1,22 @@
+state = {
+	id = 1057
+	name = "STATE_1057"
+	manpower = 9935
+	state_category = rural
+	resources = {
+		steel = 4
+	}
+	history = {
+		owner = LBW
+		add_core_of = LBW
+		victory_points = { 3216 1 }
+		victory_points = { 4150 1 }
+		victory_points = { 2120 1 }
+		victory_points = { 2369 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1046 4150 3216 4136 2120 2808 4160 2369 4133 2496 }
+	local_supplies = 0.0
+}

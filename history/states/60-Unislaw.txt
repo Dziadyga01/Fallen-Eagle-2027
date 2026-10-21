@@ -1,0 +1,19 @@
+state = {
+	id = 60
+	name = "STATE_60"
+	manpower = 5464
+	state_category = rural
+	history = {
+		owner = DAB
+		add_core_of = DAB
+		add_claim_by = BYD
+		add_claim_by = TRN
+		victory_points = { 8073 1 }
+		victory_points = { 1344 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 174 1344 8073 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,162 @@
+FED_przelicz = {
+	clamp_variable = { var = FED_niez_w min = 0 max = 100 }
+	clamp_variable = { var = FED_niez_m min = 0 max = 100 }
+	clamp_variable = { var = FED_postep min = 0 max = 100 }
+	if = {
+		limit = { has_country_flag = FED_federacja NOT = { has_country_flag = FED_wojna_domowa } NOT = { has_country_flag = FED_skonsolidowana } }
+		if = { limit = { check_variable = { FED_niez_w > 74 } NOT = { has_country_flag = FED_kryzys_w } } set_country_flag = FED_kryzys_w set_country_flag = FED_prog65_w set_country_flag = FED_prog50_w country_event = { id = fed.52 } }
+		else_if = { limit = { check_variable = { FED_niez_w > 64 } NOT = { has_country_flag = FED_prog65_w } } set_country_flag = FED_prog65_w country_event = { id = fed.51 } }
+		else_if = { limit = { check_variable = { FED_niez_w > 49 } NOT = { has_country_flag = FED_prog50_w } } set_country_flag = FED_prog50_w country_event = { id = fed.50 } }
+		if = { limit = { check_variable = { FED_niez_w < 40 } } clr_country_flag = FED_prog50_w clr_country_flag = FED_prog65_w }
+		if = { limit = { check_variable = { FED_niez_m > 74 } NOT = { has_country_flag = FED_kryzys_m } } set_country_flag = FED_kryzys_m set_country_flag = FED_prog65_m set_country_flag = FED_prog50_m country_event = { id = fed.57 } }
+		else_if = { limit = { check_variable = { FED_niez_m > 64 } NOT = { has_country_flag = FED_prog65_m } } set_country_flag = FED_prog65_m country_event = { id = fed.56 } }
+		else_if = { limit = { check_variable = { FED_niez_m > 49 } NOT = { has_country_flag = FED_prog50_m } } set_country_flag = FED_prog50_m country_event = { id = fed.55 } }
+		if = { limit = { check_variable = { FED_niez_m < 40 } } clr_country_flag = FED_prog50_m clr_country_flag = FED_prog65_m }
+	}
+}
+FED_miesiecznie = {
+	if = {
+		limit = { has_country_flag = FED_federacja NOT = { has_country_flag = FED_wojna_domowa } NOT = { has_country_flag = FED_skonsolidowana } }
+		add_to_variable = { FED_niez_w = 1 }
+		add_to_variable = { FED_niez_m = 1 }
+		if = { limit = { has_stability < 0.40 } add_to_variable = { FED_niez_w = 1 } add_to_variable = { FED_niez_m = 1 } }
+		if = { limit = { check_variable = { FED_niez_m > FED_niez_w } } add_to_variable = { FED_niez_m = 1 } }
+		else_if = { limit = { check_variable = { FED_niez_w > FED_niez_m } } add_to_variable = { FED_niez_w = 1 } }
+		FED_przelicz = yes
+	}
+}
+FED_utworz_federacje = {
+	set_country_flag = FED_federacja
+	if = { limit = { has_country_flag = FED_rosyjska } set_cosmetic_tag = FED_WMRA }
+	else = { set_cosmetic_tag = FED_USWM }
+	set_variable = { FED_niez_w = 30 }
+	set_variable = { FED_niez_m = 35 }
+	if = { limit = { has_country_flag = FED_metoda_militarne } if = { limit = { original_tag = WMZ } add_to_variable = { FED_niez_m = 20 } } else = { add_to_variable = { FED_niez_w = 20 } } }
+	if = { limit = { has_country_flag = FED_metoda_pokoj } add_to_variable = { FED_postep = 10 } }
+	if = { limit = { check_variable = { FED_postep < 30 } } set_variable = { FED_postep = 30 } }
+	add_ideas = FED_mloda_federacja
+	FED_przelicz = yes
+	news_event = { id = fed.11 }
+	load_focus_tree = { tree = FED_federacja_tree keep_completed = no }
+}
+FED_patronat_rosyjski = {
+	set_country_flag = FED_rosyjska
+	set_country_flag = FED_metoda_rosja
+	set_country_flag = FED_wplyw_rosji
+	if = { limit = { country_exists = ROS } ROS = { if = { limit = { has_war_with = ROOT } white_peace = ROOT } } }
+	if = { limit = { tag = WMZ country_exists = MAZ }
+		if = { limit = { country_exists = ROS ROS = { has_war_with = MAZ } } ROS = { white_peace = MAZ } }
+		annex_country = { target = MAZ transfer_troops = yes }
+	}
+	if = { limit = { tag = MAZ country_exists = WMZ }
+		if = { limit = { country_exists = ROS ROS = { has_war_with = WMZ } } ROS = { white_peace = WMZ } }
+		annex_country = { target = WMZ transfer_troops = yes }
+	}
+	if = { limit = { country_exists = ROS } ROS = { puppet = ROOT } }
+	FED_utworz_federacje = yes
+}
+FED_wladza_traba = {
+	set_politics = { ruling_party = social_liberal elections_allowed = yes }
+	add_popularity = { ideology = social_liberal popularity = 0.10 }
+	if = { limit = { NOT = { has_character = FED_traba } } recruit_character = FED_traba }
+	promote_character = FED_traba
+	set_country_flag = FED_lider_traba
+}
+FED_wladza_brakoniecki = {
+	set_politics = { ruling_party = social_democrat elections_allowed = yes }
+	add_popularity = { ideology = social_democrat popularity = 0.10 }
+	if = { limit = { NOT = { has_character = FED_brakoniecki } } recruit_character = FED_brakoniecki }
+	promote_character = FED_brakoniecki
+	set_country_flag = FED_lider_brakoniecki
+}
+FED_wladza_wojcikowska = {
+	set_politics = { ruling_party = nationalist elections_allowed = no }
+	add_popularity = { ideology = nationalist popularity = 0.10 }
+	if = { limit = { NOT = { has_character = FED_wojcikowska } } recruit_character = FED_wojcikowska }
+	promote_character = FED_wojcikowska
+	set_country_flag = FED_lider_wojcikowska
+}
+FED_wladza_malinowski = {
+	set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+	add_popularity = { ideology = authoritarian_democrat popularity = 0.10 }
+	if = { limit = { NOT = { has_character = FED_malinowski } } recruit_character = FED_malinowski }
+	promote_character = FED_malinowski
+	set_country_flag = FED_lider_malinowski
+}
+FED_wladza_mazur1 = {
+	set_politics = { ruling_party = social_liberal elections_allowed = yes }
+	add_popularity = { ideology = social_liberal popularity = 0.10 }
+	if = { limit = { NOT = { has_character = FED_mazur1 } } recruit_character = FED_mazur1 }
+	promote_character = FED_mazur1
+	set_country_flag = FED_lider_mazur1
+}
+FED_unia_utworz = {
+	if = { limit = { is_in_faction = no } create_faction = FED_UNIA_BALTYCKA }
+	every_country = { limit = { has_country_flag = FED_pakt_z_federacja is_in_faction = no } ROOT = { if = { limit = { is_faction_leader = yes } add_to_faction = PREV } } }
+}
+FED_federacja_baltycka_utworz = {
+	if = { limit = { is_in_faction = no } create_faction = FED_UNIA_BALTYCKA }
+	set_cosmetic_tag = FED_BALTYCKA
+	add_ideas = FED_idea_fed_balt
+	every_country = { limit = { has_country_flag = FED_pakt_z_federacja } country_event = { id = fed.35 } }
+}
+FED_wojna_domowa_w = {
+	clr_country_flag = FED_typ_kol
+	clr_country_flag = FED_typ_cen
+	clr_country_flag = FED_typ_sep
+	set_country_flag = FED_wojna_domowa
+	clr_country_flag = FED_kryzys_w
+	if = { limit = { has_country_flag = FED_wplyw_rosji NOT = { has_country_flag = FED_rosyjska } }
+		if = { limit = { NOT = { has_government = authoritarian_democrat } } start_civil_war = { ideology = authoritarian_democrat size = 0.4 } }
+		else = { start_civil_war = { ideology = nationalist size = 0.4 } }
+		set_country_flag = FED_typ_kol
+	}
+	else = {
+		if = { limit = { NOT = { has_government = nationalist } } start_civil_war = { ideology = nationalist size = 0.4 states_filter = { is_core_of = WMZ } } }
+		else = { start_civil_war = { ideology = conservative size = 0.4 states_filter = { is_core_of = WMZ } } }
+		set_country_flag = FED_typ_cen
+	}
+	random_country = {
+		limit = { OR = { original_tag = WMZ original_tag = MAZ } NOT = { tag = WMZ } NOT = { tag = MAZ } NOT = { has_country_flag = FED_rebel_aktywny } }
+		set_country_flag = FED_rebel_aktywny
+		if = { limit = { ROOT = { has_country_flag = FED_typ_kol } } set_country_flag = FED_rebel_kol set_cosmetic_tag = FED_WMRA set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+			if = { limit = { NOT = { any_country = { has_character = FED_malinowski } } } recruit_character = FED_malinowski promote_character = FED_malinowski }
+			else = { recruit_character = FED_kol_lider promote_character = FED_kol_lider } }
+		else_if = { limit = { ROOT = { has_country_flag = FED_typ_cen } } set_country_flag = FED_rebel_cen set_cosmetic_tag = FED_WARMIA set_politics = { ruling_party = nationalist elections_allowed = no } recruit_character = FED_cen_lider promote_character = FED_cen_lider }
+		else = { set_country_flag = FED_rebel_sep set_cosmetic_tag = FED_WOLNE_MAZURY set_politics = { ruling_party = social_democrat elections_allowed = yes } recruit_character = FED_sep_lider promote_character = FED_sep_lider }
+		country_event = { id = fed.59 }
+	}
+	country_event = { id = fed.54 }
+	if = { limit = { country_exists = ZKR NOT = { ZKR = { is_subject_of = ROOT } } } ZKR = { country_event = { id = fed.60 days = 3 } } }
+	if = { limit = { country_exists = ROS } ROS = { country_event = { id = fed.61 days = 3 } } }
+}
+FED_wojna_domowa_m = {
+	clr_country_flag = FED_typ_kol
+	clr_country_flag = FED_typ_cen
+	clr_country_flag = FED_typ_sep
+	set_country_flag = FED_wojna_domowa
+	clr_country_flag = FED_kryzys_m
+	if = { limit = { has_country_flag = FED_wplyw_rosji NOT = { has_country_flag = FED_rosyjska } }
+		if = { limit = { NOT = { has_government = authoritarian_democrat } } start_civil_war = { ideology = authoritarian_democrat size = 0.4 } }
+		else = { start_civil_war = { ideology = nationalist size = 0.4 } }
+		set_country_flag = FED_typ_kol
+	}
+	else = {
+		if = { limit = { NOT = { has_government = social_democrat } } start_civil_war = { ideology = social_democrat size = 0.4 states_filter = { is_core_of = MAZ } } }
+		else = { start_civil_war = { ideology = libertarian_socialist size = 0.4 states_filter = { is_core_of = MAZ } } }
+		set_country_flag = FED_typ_sep
+	}
+	random_country = {
+		limit = { OR = { original_tag = WMZ original_tag = MAZ } NOT = { tag = WMZ } NOT = { tag = MAZ } NOT = { has_country_flag = FED_rebel_aktywny } }
+		set_country_flag = FED_rebel_aktywny
+		if = { limit = { ROOT = { has_country_flag = FED_typ_kol } } set_country_flag = FED_rebel_kol set_cosmetic_tag = FED_WMRA set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+			if = { limit = { NOT = { any_country = { has_character = FED_malinowski } } } recruit_character = FED_malinowski promote_character = FED_malinowski }
+			else = { recruit_character = FED_kol_lider promote_character = FED_kol_lider } }
+		else_if = { limit = { ROOT = { has_country_flag = FED_typ_cen } } set_country_flag = FED_rebel_cen set_cosmetic_tag = FED_WARMIA set_politics = { ruling_party = nationalist elections_allowed = no } recruit_character = FED_cen_lider promote_character = FED_cen_lider }
+		else = { set_country_flag = FED_rebel_sep set_cosmetic_tag = FED_WOLNE_MAZURY set_politics = { ruling_party = social_democrat elections_allowed = yes } recruit_character = FED_sep_lider promote_character = FED_sep_lider }
+		country_event = { id = fed.59 }
+	}
+	country_event = { id = fed.54 }
+	if = { limit = { country_exists = ZKR NOT = { ZKR = { is_subject_of = ROOT } } } ZKR = { country_event = { id = fed.60 days = 3 } } }
+	if = { limit = { country_exists = ROS } ROS = { country_event = { id = fed.61 days = 3 } } }
+}

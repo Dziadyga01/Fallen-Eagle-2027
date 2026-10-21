@@ -1,0 +1,622 @@
+# The Fallen Eagle 2027 – Miasto nad Brdą
+focus_tree = {
+	id = BYD2_start_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BYD
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1300 }
+	initial_show_position = { focus = BYD2_bez_panstwa }
+
+	focus = {
+		id = BYD2_bez_panstwa
+		icon = GFX_pl2027_081_administracja_0
+		x = 6
+		y = 0
+		cost = 1
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_political_power = 25
+			country_event = { id = byd2.1 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_komitet
+		icon = GFX_pl2027_081_rada_0
+		x = 6
+		y = 1
+		cost = 1
+		prerequisite = { focus = BYD2_bez_panstwa }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			if = { limit = { has_idea = BYD_i_miasto_bez_rzadu } remove_ideas = BYD_i_miasto_bez_rzadu } add_ideas = BYD_i_rzad_tymczasowy
+			set_country_flag = BYD_mech_wplywy
+			add_political_power = 30
+			custom_effect_tooltip = BYD2_tt_wplywy
+		}
+	}
+
+	focus = {
+		id = BYD2_mosty
+		icon = GFX_pl2027_081_most_0
+		x = 16
+		y = 2
+		cost = 1
+		prerequisite = { focus = BYD2_komitet }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_timed_idea = { idea = BYD_i_mosty_pod_kontrola days = 240 }
+			country_event = { id = byd2.2 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_kolejki
+		icon = GFX_pl2027_081_paliwo_0
+		x = 18
+		y = 2
+		cost = 1
+		prerequisite = { focus = BYD2_komitet }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			country_event = { id = byd2.3 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_pesa
+		icon = GFX_pl2027_081_strajk_0
+		x = 17
+		y = 3
+		cost = 1
+		prerequisite = { focus = BYD2_mosty }
+		prerequisite = { focus = BYD2_kolejki }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			country_event = { id = byd2.4 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_fordon
+		icon = GFX_pl2027_081_rzeka_0
+		x = 16
+		y = 4
+		cost = 1
+		prerequisite = { focus = BYD2_pesa }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_to_variable = { global.MET_ostromecko_byd = 3 } MET_przelicz = yes
+			country_event = { id = byd2.5 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_solec
+		icon = GFX_pl2027_081_droga_0
+		x = 18
+		y = 4
+		cost = 1
+		prerequisite = { focus = BYD2_pesa }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_to_variable = { global.MET_solec_byd = 5 } MET_przelicz = yes
+			if = { limit = { country_exists = SLK } SLK = { add_to_variable = { REG_BYD = 5 } REG_przelicz = yes } }
+			country_event = { id = byd2.6 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_oficerowie
+		icon = GFX_pl2027_081_oficer_0_byd
+		x = 17
+		y = 5
+		cost = 1
+		prerequisite = { focus = BYD2_fordon }
+		prerequisite = { focus = BYD2_solec }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			country_event = { id = byd2.7 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_rady
+		icon = GFX_pl2027_081_rada_1
+		x = 16
+		y = 6
+		cost = 1
+		prerequisite = { focus = BYD2_oficerowie }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			country_event = { id = byd2.8 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemyslowcy
+		icon = GFX_pl2027_081_przemysl_0
+		x = 18
+		y = 6
+		cost = 1
+		prerequisite = { focus = BYD2_oficerowie }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			country_event = { id = byd2.9 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_brdowski
+		icon = GFX_pl2027_081_telewizja_0
+		x = 17
+		y = 7
+		cost = 1
+		prerequisite = { focus = BYD2_rady }
+		prerequisite = { focus = BYD2_przemyslowcy }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			country_event = { id = byd2.10 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_koniec_komitetu
+		icon = GFX_pl2027_081_rada_2
+		x = 17
+		y = 8
+		cost = 1
+		prerequisite = { focus = BYD2_brdowski }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			country_event = { id = byd2.20 days = 1 }
+			custom_effect_tooltip = BYD2_tt_kand
+		}
+	}
+
+	focus = {
+		id = BYD2_rejestracja
+		icon = GFX_pl2027_081_rada_0
+		x = 17
+		y = 9
+		cost = 1
+		prerequisite = { focus = BYD2_koniec_komitetu }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kand BYD2_jest_kandydat = yes } }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = BYD2_debata
+		icon = GFX_pl2027_081_kampania_0
+		x = 17
+		y = 10
+		cost = 1
+		prerequisite = { focus = BYD2_rejestracja }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			country_event = { id = byd2.30 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_wybory
+		icon = GFX_pl2027_081_wybory_0
+		x = 17
+		y = 11
+		cost = 1
+		prerequisite = { focus = BYD2_debata }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			BYD2_wskaz_faworyta = yes
+			country_event = { id = byd2.40 days = 1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_zaprzysiezenie
+		icon = GFX_pl2027_081_administracja_1_f
+		x = 17
+		y = 12
+		cost = 1
+		prerequisite = { focus = BYD2_wybory }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_zwyciezca OR = { has_country_flag = BYD2_wybrany_bruski has_country_flag = BYD2_wybrany_przemysl has_country_flag = BYD2_wybrany_rady has_country_flag = BYD2_wybrany_junta has_country_flag = BYD2_wybrany_brdowski } } }
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			if = { limit = { has_country_flag = BYD2_wybrany_bruski } BYD2_przejecie_bruski = yes } if = { limit = { has_country_flag = BYD2_wybrany_przemysl } BYD2_przejecie_przemysl = yes } if = { limit = { has_country_flag = BYD2_wybrany_rady } BYD2_przejecie_rady = yes } if = { limit = { has_country_flag = BYD2_wybrany_junta } BYD2_przejecie_junta = yes } if = { limit = { has_country_flag = BYD2_wybrany_brdowski } BYD2_przejecie_brdowski = yes }
+			custom_effect_tooltip = BYD2_tt_zaprz
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_brus_osiedla
+		icon = GFX_pl2027_081_osiedle_0
+		x = 0
+		y = 2
+		cost = 1
+		prerequisite = { focus = BYD2_komitet }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_bruski > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_bruski_p4 hidden_effect = { add_to_variable = { BYD2_pop_bruski = 4 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } }
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_brus_program
+		icon = GFX_pl2027_081_kampania_1
+		x = 0
+		y = 3
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_brus_osiedla }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_bruski > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_bruski_p5 hidden_effect = { add_to_variable = { BYD2_pop_bruski = 5 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } }
+			custom_effect_tooltip = BYD2_sup_junta_m2 hidden_effect = { add_to_variable = { BYD2_pop_junta = -2 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_brus_urzednicy
+		icon = GFX_pl2027_081_administracja_2
+		x = 0
+		y = 4
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_brus_program }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_bruski > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_bruski_p4 hidden_effect = { add_to_variable = { BYD2_pop_bruski = 4 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_brus_rynek
+		icon = GFX_pl2027_081_ulica_0
+		x = 0
+		y = 5
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_brus_urzednicy }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_bruski > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_bruski_p6 hidden_effect = { add_to_variable = { BYD2_pop_bruski = 6 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } }
+			custom_effect_tooltip = BYD2_sup_brdowski_m2 hidden_effect = { add_to_variable = { BYD2_pop_brdowski = -2 } clamp_variable = { var = BYD2_pop_brdowski min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_brus_poparcie
+		icon = GFX_pl2027_tfr_portret_byd_rafal_bruski
+		x = 0
+		y = 6
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_brus_rynek }
+		mutually_exclusive = { focus = BYD2_kamp_prze_poparcie focus = BYD2_kamp_rady_poparcie focus = BYD2_kamp_junt_poparcie focus = BYD2_kamp_brdo_poparcie }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 4 check_variable = { BYD2_pop_bruski > 29 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_bruski_p12 hidden_effect = { add_to_variable = { BYD2_pop_bruski = 12 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } }
+			set_country_flag = BYD2_kand_bruski
+			custom_effect_tooltip = BYD2_tt_pop_bruski
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_prze_mlyny
+		icon = GFX_pl2027_081_bankiet_0
+		x = 3
+		y = 2
+		cost = 1
+		prerequisite = { focus = BYD2_komitet }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_przemysl > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_przemysl_p4 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = 4 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } }
+			add_political_power = 15
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_prze_program
+		icon = GFX_pl2027_081_kampania_2
+		x = 3
+		y = 3
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_prze_mlyny }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_przemysl > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_przemysl_p5 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = 5 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } }
+			custom_effect_tooltip = BYD2_sup_rady_m2 hidden_effect = { add_to_variable = { BYD2_pop_rady = -2 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_prze_izba
+		icon = GFX_pl2027_081_pieniadze_0
+		x = 3
+		y = 4
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_prze_program }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_przemysl > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_przemysl_p4 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = 4 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } }
+			add_political_power = 15
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_prze_media
+		icon = GFX_pl2027_081_media_0
+		x = 3
+		y = 5
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_prze_izba }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_przemysl > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_przemysl_p6 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = 6 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } }
+			custom_effect_tooltip = BYD2_sup_bruski_m2 hidden_effect = { add_to_variable = { BYD2_pop_bruski = -2 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_prze_poparcie
+		icon = GFX_pl2027_081_rada_1_byd_k
+		x = 3
+		y = 6
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_prze_media }
+		mutually_exclusive = { focus = BYD2_kamp_brus_poparcie focus = BYD2_kamp_rady_poparcie focus = BYD2_kamp_junt_poparcie focus = BYD2_kamp_brdo_poparcie }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 4 check_variable = { BYD2_pop_przemysl > 29 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_przemysl_p12 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = 12 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } }
+			set_country_flag = BYD2_kand_przemysl
+			custom_effect_tooltip = BYD2_tt_pop_przemysl
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_rady_zebrania
+		icon = GFX_pl2027_081_robotnicy_0
+		x = 6
+		y = 2
+		cost = 1
+		prerequisite = { focus = BYD2_komitet }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_rady > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_rady_p4 hidden_effect = { add_to_variable = { BYD2_pop_rady = 4 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } }
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_rady_program
+		icon = GFX_pl2027_081_przemysl_1
+		x = 6
+		y = 3
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_rady_zebrania }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_rady > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_rady_p5 hidden_effect = { add_to_variable = { BYD2_pop_rady = 5 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } }
+			custom_effect_tooltip = BYD2_sup_przemysl_m2 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = -2 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_rady_zwiazki
+		icon = GFX_pl2027_081_robotnicy_1
+		x = 6
+		y = 4
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_rady_program }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_rady > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_rady_p4 hidden_effect = { add_to_variable = { BYD2_pop_rady = 4 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } }
+			custom_effect_tooltip = BYD2_sup_junta_m2 hidden_effect = { add_to_variable = { BYD2_pop_junta = -2 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_rady_brama
+		icon = GFX_pl2027_081_ulica_1
+		x = 6
+		y = 5
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_rady_zwiazki }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_rady > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_rady_p6 hidden_effect = { add_to_variable = { BYD2_pop_rady = 6 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_rady_poparcie
+		icon = GFX_pl2027_081_rada_2_byd_k
+		x = 6
+		y = 6
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_rady_brama }
+		mutually_exclusive = { focus = BYD2_kamp_brus_poparcie focus = BYD2_kamp_prze_poparcie focus = BYD2_kamp_junt_poparcie focus = BYD2_kamp_brdo_poparcie }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 4 check_variable = { BYD2_pop_rady > 29 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_rady_p12 hidden_effect = { add_to_variable = { BYD2_pop_rady = 12 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } }
+			set_country_flag = BYD2_kand_rady
+			custom_effect_tooltip = BYD2_tt_pop_rady
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_junt_patrole
+		icon = GFX_pl2027_081_porzadek_0
+		x = 9
+		y = 2
+		cost = 1
+		prerequisite = { focus = BYD2_komitet }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_junta > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_junta_p4 hidden_effect = { add_to_variable = { BYD2_pop_junta = 4 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } }
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_junt_program
+		icon = GFX_pl2027_081_porzadek_1
+		x = 9
+		y = 3
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_junt_patrole }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_junta > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_junta_p5 hidden_effect = { add_to_variable = { BYD2_pop_junta = 5 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } }
+			custom_effect_tooltip = BYD2_sup_rady_m2 hidden_effect = { add_to_variable = { BYD2_pop_rady = -2 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_junt_rezerwisci
+		icon = GFX_pl2027_081_pobor_0_byd
+		x = 9
+		y = 4
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_junt_program }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_junta > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_junta_p5 hidden_effect = { add_to_variable = { BYD2_pop_junta = 5 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } }
+			add_stability = -0.01
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_junt_defilada
+		icon = GFX_pl2027_081_defilada_0_byd
+		x = 9
+		y = 5
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_junt_rezerwisci }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_junta > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_junta_p6 hidden_effect = { add_to_variable = { BYD2_pop_junta = 6 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } }
+			custom_effect_tooltip = BYD2_sup_bruski_m2 hidden_effect = { add_to_variable = { BYD2_pop_bruski = -2 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } }
+			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_junt_poparcie
+		icon = GFX_pl2027_081_rada_0_byd_k
+		x = 9
+		y = 6
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_junt_defilada }
+		mutually_exclusive = { focus = BYD2_kamp_brus_poparcie focus = BYD2_kamp_prze_poparcie focus = BYD2_kamp_rady_poparcie focus = BYD2_kamp_brdo_poparcie }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 4 check_variable = { BYD2_pop_junta > 29 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_junta_p12 hidden_effect = { add_to_variable = { BYD2_pop_junta = 12 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } }
+			set_country_flag = BYD2_kand_junta
+			custom_effect_tooltip = BYD2_tt_pop_junta
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_brdo_myjnie
+		icon = GFX_pl2027_081_ludzie_0
+		x = 12
+		y = 2
+		cost = 1
+		prerequisite = { focus = BYD2_komitet }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_brdowski > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_brdowski_p4 hidden_effect = { add_to_variable = { BYD2_pop_brdowski = 4 } clamp_variable = { var = BYD2_pop_brdowski min = 0 max = 100 } }
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_brdo_program
+		icon = GFX_pl2027_081_kampania_0
+		x = 12
+		y = 3
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_brdo_myjnie }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_brdowski > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_brdowski_p5 hidden_effect = { add_to_variable = { BYD2_pop_brdowski = 5 } clamp_variable = { var = BYD2_pop_brdowski min = 0 max = 100 } }
+			custom_effect_tooltip = BYD2_sup_bruski_m2 hidden_effect = { add_to_variable = { BYD2_pop_bruski = -2 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_brdo_telewizja
+		icon = GFX_pl2027_081_telewizja_1
+		x = 12
+		y = 4
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_brdo_program }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_brdowski > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_brdowski_p5 hidden_effect = { add_to_variable = { BYD2_pop_brdowski = 5 } clamp_variable = { var = BYD2_pop_brdowski min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_brdo_festyn
+		icon = GFX_pl2027_081_polska_0_byd
+		x = 12
+		y = 5
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_brdo_telewizja }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_brdowski > 24 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_brdowski_p6 hidden_effect = { add_to_variable = { BYD2_pop_brdowski = 6 } clamp_variable = { var = BYD2_pop_brdowski min = 0 max = 100 } }
+			custom_effect_tooltip = BYD2_sup_przemysl_m2 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = -2 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } }
+		}
+	}
+
+	focus = {
+		id = BYD2_kamp_brdo_poparcie
+		icon = GFX_TRN_form_korona
+		x = 12
+		y = 6
+		cost = 1
+		prerequisite = { focus = BYD2_kamp_brdo_festyn }
+		mutually_exclusive = { focus = BYD2_kamp_brus_poparcie focus = BYD2_kamp_prze_poparcie focus = BYD2_kamp_rady_poparcie focus = BYD2_kamp_junt_poparcie }
+		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
+		ai_will_do = { factor = 4 modifier = { factor = 4 check_variable = { BYD2_pop_brdowski > 29 } } }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_sup_brdowski_p12 hidden_effect = { add_to_variable = { BYD2_pop_brdowski = 12 } clamp_variable = { var = BYD2_pop_brdowski min = 0 max = 100 } }
+			set_country_flag = BYD2_kand_brdowski
+			custom_effect_tooltip = BYD2_tt_pop_brdowski
+		}
+	}
+}

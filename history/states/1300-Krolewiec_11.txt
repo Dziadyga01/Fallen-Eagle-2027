@@ -1,0 +1,17 @@
+state = {
+	id = 1300
+	name = "STATE_1300"
+	manpower = 26070
+	state_category = town
+	history = {
+		owner = ROS
+		add_core_of = ROS
+		victory_points = { 895 1 }
+		victory_points = { 4004 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 895 3096 2529 2689 3007 4013 2869 4004 4003 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,24 @@
+state = {
+	id = 1288
+	name = "STATE_1288"
+	manpower = 349595
+	state_category = city
+	history = {
+		owner = BLR
+		add_core_of = BLR
+		victory_points = { 128 5 }
+		victory_points = { 1660 1 }
+		victory_points = { 160 1 }
+		victory_points = { 486 1 }
+		victory_points = { 465 1 }
+		victory_points = { 423 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 99 438 465 160 486 128 1026 1660 423 164 }
+	local_supplies = 0.0
+}

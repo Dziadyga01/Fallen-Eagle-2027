@@ -1,0 +1,1527 @@
+# The Fallen Eagle 2027 – Bydgoska Republika Przemysłowa
+focus_tree = {
+	id = BYD2_przemysl_tree
+	country = {
+		factor = 0
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 2080 }
+	initial_show_position = { focus = BYD2_prz_rada }
+
+	focus = {
+		id = BYD2_prz_rada
+		icon = GFX_pl2027_081_rada_0
+		x = 27
+		y = 0
+		cost = 3
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = BYD2_przemysl_1
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_zarzad
+		icon = GFX_pl2027_081_rada_1
+		x = 25
+		y = 1
+		cost = 2
+		prerequisite = { focus = BYD2_prz_rada }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_audyt
+		icon = GFX_pl2027_081_pieniadze_0
+		x = 28
+		y = 1
+		cost = 2
+		prerequisite = { focus = BYD2_prz_rada }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_prywatyzacja
+		icon = GFX_pl2027_081_pieniadze_1
+		x = 24
+		y = 2
+		cost = 5
+		prerequisite = { focus = BYD2_prz_zarzad }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_banki
+		icon = GFX_pl2027_081_pieniadze_2
+		x = 26
+		y = 2
+		cost = 2
+		prerequisite = { focus = BYD2_prz_zarzad }
+		prerequisite = { focus = BYD2_prz_audyt }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_lobby
+		icon = GFX_pl2027_081_przemysl_0
+		x = 28
+		y = 2
+		cost = 2
+		prerequisite = { focus = BYD2_prz_audyt }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_popularity = { ideology = market_liberal popularity = 0.08 }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_pesa_eksport
+		icon = GFX_pl2027_081_kolej_0
+		x = 26
+		y = 3
+		cost = 6
+		prerequisite = { focus = BYD2_prz_prywatyzacja focus = BYD2_prz_banki focus = BYD2_prz_lobby }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_nitrochem
+		icon = GFX_pl2027_081_przemysl_1
+		x = 25
+		y = 4
+		cost = 5
+		prerequisite = { focus = BYD2_prz_pesa_eksport }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_belma
+		icon = GFX_pl2027_081_przemysl_2
+		x = 28
+		y = 4
+		cost = 5
+		prerequisite = { focus = BYD2_prz_pesa_eksport }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = { name = BYD2_prz_belma_tb bonus = 1.0 uses = 1 category = electronics }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_logistyka
+		icon = GFX_pl2027_081_logistyka_0
+		x = 24
+		y = 5
+		cost = 6
+		prerequisite = { focus = BYD2_prz_nitrochem }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			REG_BYD_wszyscy_plus_3 = yes
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_strefa
+		icon = GFX_pl2027_081_handel_0
+		x = 26
+		y = 5
+		cost = 6
+		prerequisite = { focus = BYD2_prz_nitrochem }
+		prerequisite = { focus = BYD2_prz_belma }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_konsorcjum
+		icon = GFX_pl2027_081_rzeka_0
+		x = 28
+		y = 5
+		cost = 6
+		prerequisite = { focus = BYD2_prz_belma }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { has_idea = BYD2_przemysl_1 } remove_ideas = BYD2_przemysl_1 } add_ideas = BYD2_przemysl_2
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_kontrakty
+		icon = GFX_pl2027_081_pieniadze_3
+		x = 26
+		y = 6
+		cost = 3
+		prerequisite = { focus = BYD2_prz_logistyka focus = BYD2_prz_strefa focus = BYD2_prz_konsorcjum }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			REG_BYD_wszyscy_plus_5 = yes
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_wykup
+		icon = GFX_pl2027_081_kryzys_gosp_0
+		x = 25
+		y = 7
+		cost = 1
+		prerequisite = { focus = BYD2_prz_kontrakty }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_3000 has_army_manpower = { size > 2999 } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { country_exists = SLK SLK = { is_subject = no } NOT = { has_war_with = SLK } NOT = { tag = SLK } } SLK = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = NWW NWW = { is_subject = no } NOT = { has_war_with = NWW } NOT = { tag = NWW } } NWW = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = OSD OSD = { is_subject = no } NOT = { has_war_with = OSD } NOT = { tag = OSD } } OSD = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = KRW KRW = { is_subject = no } NOT = { has_war_with = KRW } NOT = { tag = KRW } } KRW = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = SCK SCK = { is_subject = no } NOT = { has_war_with = SCK } NOT = { tag = SCK } } SCK = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = ROZ ROZ = { is_subject = no } NOT = { has_war_with = ROZ } NOT = { tag = ROZ } } ROZ = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = DAB DAB = { is_subject = no } NOT = { has_war_with = DAB } NOT = { tag = DAB } } DAB = { country_event = { id = byd2.70 days = 2 } } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_sponsor_pdg
+		icon = GFX_pl2027_081_media_0
+		x = 28
+		y = 7
+		cost = 1
+		prerequisite = { focus = BYD2_prz_kontrakty }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { country_exists = PDG PDG = { has_country_flag = PDG_magiczna } NOT = { has_war_with = PDG } } PDG = { country_event = { id = byd2.84 days = 2 } } } else = { add_political_power = 40 }
+			custom_effect_tooltip = BYD2_tt_sponsor
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_przedstawicielstwa
+		icon = GFX_pl2027_081_handel_1
+		x = 24
+		y = 8
+		cost = 5
+		prerequisite = { focus = BYD2_prz_wykup }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 40
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_rynek_trn
+		icon = GFX_pl2027_081_handel_2
+		x = 26
+		y = 8
+		cost = 3
+		prerequisite = { focus = BYD2_prz_wykup }
+		prerequisite = { focus = BYD2_prz_sponsor_pdg }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { country_exists = TRN } TRN = { add_to_variable = { REG_BYD = 10 } REG_przelicz = yes } }
+			if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } } add_to_variable = { global.MET_solec_byd = 4 } add_to_variable = { global.MET_zlawies_byd = 4 } add_to_variable = { global.MET_ostromecko_byd = 4 } add_to_variable = { global.MET_unislaw_byd = 4 } add_to_variable = { global.MET_nowawies_byd = 4 } add_to_variable = { global.MET_chelmno_byd = 4 } MET_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_monopol
+		icon = GFX_pl2027_081_mapa_0_trn
+		x = 28
+		y = 8
+		cost = 3
+		prerequisite = { focus = BYD2_prz_sponsor_pdg }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			REG_BYD_wszyscy_plus_8 = yes
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_ochrona
+		icon = GFX_pl2027_081_przemysl_3
+		x = 26
+		y = 9
+		cost = 6
+		prerequisite = { focus = BYD2_prz_przedstawicielstwa focus = BYD2_prz_rynek_trn focus = BYD2_prz_monopol }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { NOT = { has_template = "Ochrona Przemysłowa" } } division_template = { name = "Ochrona Przemysłowa" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } } support = { military_police = { x = 0 y = 0 } recon = { x = 0 y = 1 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Ochrona Przemysłowa\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Ochrona Przemysłowa\" start_experience_factor = 0.3" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_zbrojenia
+		icon = GFX_pl2027_081_fabryka_broni_0
+		x = 25
+		y = 10
+		cost = 6
+		prerequisite = { focus = BYD2_prz_ochrona }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_sprzet
+		icon = GFX_pl2027_081_wyposazenie_0
+		x = 28
+		y = 10
+		cost = 5
+		prerequisite = { focus = BYD2_prz_ochrona }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
+			add_equipment_to_stockpile = { type = inf_anti_tank_equipment amount = 50 }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_wywiad
+		icon = GFX_pl2027_081_wywiad_0
+		x = 24
+		y = 11
+		cost = 3
+		prerequisite = { focus = BYD2_prz_zbrojenia }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = { name = BYD2_prz_wyw_tb bonus = 1.0 uses = 1 category = electronics }
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_kadra
+		icon = GFX_pl2027_081_pieniadze_4
+		x = 26
+		y = 11
+		cost = 3
+		prerequisite = { focus = BYD2_prz_zbrojenia }
+		prerequisite = { focus = BYD2_prz_sprzet }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			army_experience = 20
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_armia
+		icon = GFX_pl2027_081_wojsko_0_trn
+		x = 28
+		y = 11
+		cost = 6
+		prerequisite = { focus = BYD2_prz_sprzet }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			capital_scope = { create_unit = { division = "division_template = \"Ochrona Przemysłowa\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Ochrona Przemysłowa\" start_experience_factor = 0.3" owner = ROOT } }
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_holding
+		icon = GFX_pl2027_081_pieniadze_5
+		x = 26
+		y = 12
+		cost = 2
+		prerequisite = { focus = BYD2_prz_wywiad focus = BYD2_prz_kadra focus = BYD2_prz_armia }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_przejecia
+		icon = GFX_pl2027_081_pieniadze_6
+		x = 25
+		y = 13
+		cost = 10
+		prerequisite = { focus = BYD2_prz_holding }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_country = { limit = { is_subject_of = ROOT } ROOT = { annex_country = { target = PREV transfer_troops = yes } } }
+			every_owned_state = { add_core_of = ROOT }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_roszczenia
+		icon = GFX_pl2027_081_handel_3
+		x = 28
+		y = 13
+		cost = 2
+		prerequisite = { focus = BYD2_prz_holding }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			154 = { add_claim_by = ROOT } 156 = { add_claim_by = ROOT } 53 = { add_claim_by = ROOT } 72 = { add_claim_by = ROOT } 116 = { add_claim_by = ROOT } 130 = { add_claim_by = ROOT } 54 = { add_claim_by = ROOT } 66 = { add_claim_by = ROOT } 147 = { add_claim_by = ROOT } 153 = { add_claim_by = ROOT } 49 = { add_claim_by = ROOT }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_kujawy
+		icon = GFX_pl2027_081_budowa_0_f
+		x = 24
+		y = 14
+		cost = 1
+		prerequisite = { focus = BYD2_prz_przejecia }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { country_exists = KUJ KUJ = { is_subject = no } NOT = { has_war_with = KUJ } NOT = { tag = KUJ } } KUJ = { country_event = { id = byd2.70 days = 2 } } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_dominacja
+		icon = GFX_pl2027_081_korona_0_trn_f
+		x = 26
+		y = 14
+		cost = 3
+		prerequisite = { focus = BYD2_prz_przejecia }
+		prerequisite = { focus = BYD2_prz_roszczenia }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			REG_BYD_wszyscy_plus_15 = yes
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_final
+		icon = GFX_pl2027_081_parlament_0_trn_f
+		x = 28
+		y = 14
+		cost = 10
+		prerequisite = { focus = BYD2_prz_roszczenia }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_cosmetic_tag = BYD2_FIN_PRZEMYSL
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_r_plan
+		icon = GFX_pl2027_081_budowa_1
+		x = 32
+		y = 1
+		cost = 5
+		prerequisite = { focus = BYD2_prz_rada }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 30
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_r_fordon
+		icon = GFX_pl2027_081_osiedle_2
+		x = 30
+		y = 2
+		cost = 5
+		prerequisite = { focus = BYD2_prz_r_plan }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.03
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_r_kapusciska
+		icon = GFX_pl2027_081_osiedle_1
+		x = 34
+		y = 2
+		cost = 5
+		prerequisite = { focus = BYD2_prz_r_plan }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_r_uczelnie
+		icon = GFX_pl2027_081_nauka_3
+		x = 32
+		y = 2
+		cost = 3
+		prerequisite = { focus = BYD2_prz_r_plan }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = { name = BYD2_prz_r_uczelnie_tb bonus = 1.0 uses = 1 category = industry }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_r_osiedla
+		icon = GFX_pl2027_081_osiedle_2
+		x = 34
+		y = 3
+		cost = 3
+		prerequisite = { focus = BYD2_prz_r_kapusciska }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.03
+			add_manpower = 1500
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_r_tramwaje
+		icon = GFX_pl2027_081_tramwaj_0
+		x = 33
+		y = 4
+		cost = 6
+		prerequisite = { focus = BYD2_prz_r_uczelnie }
+		prerequisite = { focus = BYD2_prz_r_osiedla }
+		prerequisite = { focus = BYD2_prz_r_fordon }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_r_infrastruktura
+		icon = GFX_pl2027_081_mapa_1_trn
+		x = 32
+		y = 5
+		cost = 6
+		prerequisite = { focus = BYD2_prz_r_tramwaje }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_r_2030
+		icon = GFX_pl2027_081_przemysl_5
+		x = 34
+		y = 5
+		cost = 5
+		prerequisite = { focus = BYD2_prz_r_tramwaje }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.04
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_p_odbudowa
+		icon = GFX_pl2027_081_budowa_2
+		x = 2
+		y = 1
+		cost = 3
+		prerequisite = { focus = BYD2_prz_rada }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = { name = BYD2_prz_p_odbudowa_tb bonus = 1.0 uses = 1 category = industry }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_p_pesa
+		icon = GFX_pl2027_081_kolej_2
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = BYD2_prz_p_odbudowa }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			REG_BYD_wszyscy_plus_3 = yes
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_p_chemia
+		icon = GFX_pl2027_081_chemia_2
+		x = 4
+		y = 2
+		cost = 5
+		prerequisite = { focus = BYD2_prz_p_odbudowa }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_p_zachem
+		icon = GFX_pl2027_081_chemia_1
+		x = 2
+		y = 2
+		cost = 2
+		prerequisite = { focus = BYD2_prz_p_odbudowa }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_p_port
+		icon = GFX_pl2027_081_port_3
+		x = 4
+		y = 3
+		cost = 6
+		prerequisite = { focus = BYD2_prz_p_chemia }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_p_belma
+		icon = GFX_pl2027_081_przemysl_3
+		x = 4
+		y = 4
+		cost = 5
+		prerequisite = { focus = BYD2_prz_p_zachem }
+		prerequisite = { focus = BYD2_prz_p_port }
+		prerequisite = { focus = BYD2_prz_p_pesa }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = { name = BYD2_prz_p_belma_tb bonus = 1.0 uses = 1 category = electronics }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_p_strefa
+		icon = GFX_pl2027_081_handel_2
+		x = 3
+		y = 5
+		cost = 6
+		prerequisite = { focus = BYD2_prz_p_belma }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_p_przemysl
+		icon = GFX_pl2027_081_przemysl_4
+		x = 5
+		y = 5
+		cost = 5
+		prerequisite = { focus = BYD2_prz_p_belma }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = { name = BYD2_prz_p_przemysl_tb bonus = 1.0 uses = 2 category = industry }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_d_urzednicy
+		icon = GFX_pl2027_081_administracja_1
+		x = 38
+		y = 1
+		cost = 3
+		prerequisite = { focus = BYD2_prz_rada }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_tt_urzad hidden_effect = { every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = ROOT } exists = yes is_subject = no NOT = { has_war_with = ROOT }  } add_to_variable = { REG_BYD = 8 } REG_przelicz = yes set_country_flag = REG_urzad_BYD } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_d_misje
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 36
+		y = 2
+		cost = 3
+		prerequisite = { focus = BYD2_prz_d_urzednicy }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			REG_BYD_wszyscy_plus_5 = yes
+			every_neighbor_country = { add_opinion_modifier = { target = ROOT modifier = PL2027_wplywy } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_d_finansowanie
+		icon = GFX_pl2027_081_pieniadze_4
+		x = 40
+		y = 2
+		cost = 3
+		prerequisite = { focus = BYD2_prz_d_urzednicy }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = BYD2_tt_fin hidden_effect = { every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = ROOT } exists = yes is_subject = no NOT = { has_war_with = ROOT } check_variable = { REG_BYD > 49 } } add_to_variable = { REG_BYD = 10 } REG_przelicz = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_d_metropolia
+		icon = GFX_pl2027_081_mapa_0_trn
+		x = 38
+		y = 2
+		cost = 2
+		prerequisite = { focus = BYD2_prz_d_urzednicy }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } } add_to_variable = { global.MET_solec_byd = 6 } add_to_variable = { global.MET_zlawies_byd = 6 } add_to_variable = { global.MET_ostromecko_byd = 6 } add_to_variable = { global.MET_unislaw_byd = 6 } add_to_variable = { global.MET_nowawies_byd = 6 } add_to_variable = { global.MET_chelmno_byd = 6 } MET_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_d_kampanie
+		icon = GFX_pl2027_081_budowa_2
+		x = 40
+		y = 3
+		cost = 2
+		prerequisite = { focus = BYD2_prz_d_finansowanie }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } } add_to_variable = { global.MET_solec_byd = 8 } add_to_variable = { global.MET_zlawies_byd = 8 } add_to_variable = { global.MET_ostromecko_byd = 8 } add_to_variable = { global.MET_unislaw_byd = 8 } add_to_variable = { global.MET_nowawies_byd = 8 } add_to_variable = { global.MET_chelmno_byd = 8 } MET_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_d_referenda
+		icon = GFX_pl2027_081_wybory_1
+		x = 40
+		y = 4
+		cost = 10
+		prerequisite = { focus = BYD2_prz_d_metropolia }
+		prerequisite = { focus = BYD2_prz_d_kampanie }
+		prerequisite = { focus = BYD2_prz_d_misje }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_3000 has_army_manpower = { size > 2999 } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_solec_byd > 59 } check_variable = { global.MET_solec_przewaga < -19 } 53 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_solec_byd = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_zlawies_byd > 59 } check_variable = { global.MET_zlawies_przewaga < -19 } 125 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_zlawies_byd = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_ostromecko_byd > 59 } check_variable = { global.MET_ostromecko_przewaga < -19 } 47 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_ostromecko_byd = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_unislaw_byd > 59 } check_variable = { global.MET_unislaw_przewaga < -19 } 60 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_unislaw_byd = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_nowawies_byd > 59 } check_variable = { global.MET_nowawies_przewaga < -19 } 50 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_nowawies_byd = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_chelmno_byd > 59 } check_variable = { global.MET_chelmno_przewaga < -19 } 54 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_chelmno_byd = yes }
+			custom_effect_tooltip = BYD2_tt_ref hidden_effect = { every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = ROOT } exists = yes is_subject = no NOT = { has_war_with = ROOT } check_variable = { REG_BYD > 69 } } random_list = { 65 = { if = { limit = { num_of_controlled_states < 4 } ROOT = { annex_country = { target = PREV transfer_troops = yes } } } else = { ROOT = { puppet = PREV } } } 35 = { add_to_variable = { REG_BYD = -20 } REG_przelicz = yes add_opinion_modifier = { target = ROOT modifier = PL2027_nieudane_referendum } } } } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_d_sasiedzi
+		icon = GFX_pl2027_081_polska_0_trn
+		x = 39
+		y = 5
+		cost = 1
+		prerequisite = { focus = BYD2_prz_d_referenda }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_4000 has_army_manpower = { size > 3999 } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { country_exists = SCK SCK = { is_subject = no } NOT = { has_war_with = SCK } NOT = { tag = SCK } } SCK = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = KRW KRW = { is_subject = no } NOT = { has_war_with = KRW } NOT = { tag = KRW } } KRW = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = TUC TUC = { is_subject = no } NOT = { has_war_with = TUC } NOT = { tag = TUC } } TUC = { country_event = { id = byd2.70 days = 2 } } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_d_metropolia_f
+		icon = GFX_pl2027_081_sojusz_3_trn
+		x = 41
+		y = 5
+		cost = 1
+		prerequisite = { focus = BYD2_prz_d_referenda }
+		available = { check_variable = { global.MET_trn_obszary > 1 } check_variable = { global.MET_byd_obszary > 1 } check_variable = { global.MET_napiecie < 30 } NOT = { has_global_flag = MET_rozstrzygniete } }
+		bypass = { has_global_flag = MET_rozstrzygniete }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_global_flag = MET_fed_oczekuje
+			if = { limit = { country_exists = TRN NOT = { has_war_with = TRN } } TRN = { country_event = { id = met.55 } } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_w_obrona
+		icon = GFX_pl2027_081_rzeka_1
+		x = 8
+		y = 1
+		cost = 3
+		prerequisite = { focus = BYD2_prz_rada }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_war_support = 0.03
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_w_mobilizacja
+		icon = GFX_pl2027_081_pobor_1_trn
+		x = 6
+		y = 2
+		cost = 5
+		prerequisite = { focus = BYD2_prz_w_obrona }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_manpower = 5000
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 600 }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_w_garnizon
+		icon = GFX_pl2027_081_wojsko_5_trn
+		x = 10
+		y = 2
+		cost = 6
+		prerequisite = { focus = BYD2_prz_w_obrona }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { NOT = { has_template = "Brygada Nadbrdziańska" } } division_template = { name = "Brygada Nadbrdziańska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Nadbrdziańska\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada Nadbrdziańska\" start_experience_factor = 0.3" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_w_roszczenia
+		icon = GFX_pl2027_081_ultimatum_0_trn
+		x = 8
+		y = 2
+		cost = 2
+		prerequisite = { focus = BYD2_prz_w_obrona }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_state = { limit = { is_owned_by = SLK } add_claim_by = ROOT } every_state = { limit = { is_owned_by = NWW } add_claim_by = ROOT } every_state = { limit = { is_owned_by = OSD } add_claim_by = ROOT } every_state = { limit = { is_owned_by = KRW } add_claim_by = ROOT } every_state = { limit = { is_owned_by = SCK } add_claim_by = ROOT } every_state = { limit = { is_owned_by = ROZ } add_claim_by = ROOT } every_state = { limit = { is_owned_by = DAB } add_claim_by = ROOT }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_w_lokalne
+		icon = GFX_pl2027_081_dyplomacja_5
+		x = 10
+		y = 3
+		cost = 1
+		prerequisite = { focus = BYD2_prz_w_garnizon }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_4000 has_army_manpower = { size > 3999 } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { country_exists = SLK SLK = { is_subject = no } NOT = { has_war_with = SLK } NOT = { tag = SLK } } SLK = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = NWW NWW = { is_subject = no } NOT = { has_war_with = NWW } NOT = { tag = NWW } } NWW = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = OSD OSD = { is_subject = no } NOT = { has_war_with = OSD } NOT = { tag = OSD } } OSD = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = KRW KRW = { is_subject = no } NOT = { has_war_with = KRW } NOT = { tag = KRW } } KRW = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = SCK SCK = { is_subject = no } NOT = { has_war_with = SCK } NOT = { tag = SCK } } SCK = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = ROZ ROZ = { is_subject = no } NOT = { has_war_with = ROZ } NOT = { tag = ROZ } } ROZ = { country_event = { id = byd2.70 days = 2 } } } if = { limit = { country_exists = DAB DAB = { is_subject = no } NOT = { has_war_with = DAB } NOT = { tag = DAB } } DAB = { country_event = { id = byd2.70 days = 2 } } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_w_integracja
+		icon = GFX_pl2027_081_integracja_2_trn
+		x = 10
+		y = 4
+		cost = 10
+		prerequisite = { focus = BYD2_prz_w_roszczenia }
+		prerequisite = { focus = BYD2_prz_w_lokalne }
+		prerequisite = { focus = BYD2_prz_w_mobilizacja }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_country = { limit = { is_subject_of = ROOT } ROOT = { annex_country = { target = PREV transfer_troops = yes } } }
+			every_owned_state = { add_core_of = ROOT }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_w_swiecie
+		icon = GFX_pl2027_081_sojusz_0_trn
+		x = 9
+		y = 5
+		cost = 1
+		prerequisite = { focus = BYD2_prz_w_integracja }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
+		bypass = { OR = { NOT = { country_exists = SWC } SWC = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { country_exists = SWC SWC = { is_subject = no } NOT = { has_war_with = SWC } NOT = { tag = SWC } } SWC = { country_event = { id = byd2.70 days = 2 } } }
+		}
+	}
+
+	focus = {
+		id = BYD2_prz_w_dominacja
+		icon = GFX_pl2027_081_mapa_2_trn
+		x = 11
+		y = 5
+		cost = 2
+		prerequisite = { focus = BYD2_prz_w_integracja }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_owned_state = { add_core_of = ROOT }
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_start
+		icon = GFX_pl2027_081_sztab_1_trn
+		x = 18
+		y = 1
+		cost = 3
+		prerequisite = { focus = BYD2_prz_rada }
+		bypass = { has_country_flag = MIL_start }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_start
+			army_experience = 5
+			add_manpower = 1000
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_rejestr
+		icon = GFX_pl2027_081_pobor_1_trn
+		x = 14
+		y = 2
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_mil_start }
+		bypass = { has_country_flag = MIL_rejestr }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_rejestr
+			add_ideas = MIL_pobor_1
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_ochotnicy
+		icon = GFX_pl2027_081_pobor_3_trn
+		x = 18
+		y = 2
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_mil_start }
+		bypass = { has_country_flag = MIL_ochotnicy }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_ochotnicy
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_fabryka
+		icon = GFX_pl2027_081_fabryka_broni_1
+		x = 22
+		y = 2
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_mil_start }
+		bypass = { has_country_flag = MIL_fabryka }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_fabryka
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_pobor
+		icon = GFX_pl2027_081_pobor_2_trn
+		x = 13
+		y = 3
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_mil_rejestr }
+		bypass = { has_country_flag = MIL_pobor }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_pobor
+			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_bataliony
+		icon = GFX_pl2027_081_wojsko_4_trn
+		x = 17
+		y = 3
+		cost = 6
+		prerequisite = { focus = BYD2_przemysl_mil_ochotnicy }
+		bypass = { has_country_flag = MIL_bataliony }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_bataliony
+			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_produkcja
+		icon = GFX_pl2027_081_przemysl_4
+		x = 21
+		y = 3
+		cost = 5
+		prerequisite = { focus = BYD2_przemysl_mil_fabryka }
+		bypass = { has_country_flag = MIL_produkcja }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_produkcja
+			add_timed_idea = { idea = MIL_produkcja days = 365 }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 50 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_rezerwisci
+		icon = GFX_pl2027_081_pobor_3_trn
+		x = 15
+		y = 3
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_mil_rejestr }
+		bypass = { has_country_flag = MIL_rezerwisci }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_rezerwisci
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_brygady
+		icon = GFX_pl2027_081_obrona_terytorialna_1_trn
+		x = 19
+		y = 3
+		cost = 6
+		prerequisite = { focus = BYD2_przemysl_mil_ochotnicy }
+		bypass = { has_country_flag = MIL_brygady }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_brygady
+			if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 40 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_zaplecze
+		icon = GFX_pl2027_081_logistyka_0
+		x = 23
+		y = 3
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_mil_fabryka }
+		bypass = { has_country_flag = MIL_zaplecze }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_zaplecze
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_ideas = MIL_zaopatrzenie
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_kadra
+		icon = GFX_pl2027_081_oficer_1_trn
+		x = 13
+		y = 4
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_mil_rezerwisci }
+		prerequisite = { focus = BYD2_przemysl_mil_brygady }
+		prerequisite = { focus = BYD2_przemysl_mil_pobor }
+		prerequisite = { focus = BYD2_przemysl_mil_bataliony }
+		bypass = { has_country_flag = MIL_kadra }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_kadra
+			army_experience = 25
+			add_ideas = MIL_kadra
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_mil_zawodowa
+		icon = GFX_pl2027_081_zawodowa_1_trn
+		x = 19
+		y = 5
+		cost = 6
+		prerequisite = { focus = BYD2_przemysl_mil_kadra }
+		prerequisite = { focus = BYD2_przemysl_mil_zaplecze }
+		prerequisite = { focus = BYD2_przemysl_mil_produkcja }
+		bypass = { has_country_flag = MIL_zawodowa }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_zawodowa
+			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_atak_plan
+		icon = GFX_pl2027_081_sztab_0_trn
+		x = 40
+		y = 1
+		cost = 3
+		prerequisite = { focus = BYD2_prz_rada }
+		bypass = { has_country_flag = ATAK_plan }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			set_country_flag = ATAK_plan
+			add_war_support = 0.05
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_atak_cel1
+		icon = GFX_pl2027_081_ofensywa_3_trn
+		x = 36
+		y = 5
+		cost = 8
+		prerequisite = { focus = BYD2_przemysl_atak_plan }
+		prerequisite = { focus = BYD2_przemysl_tree_gotowosc }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_3000 has_army_manpower = { size > 2999 } } custom_trigger_tooltip = { tooltip = ATAK_req_cel any_neighbor_country = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } } custom_trigger_tooltip = { tooltip = ATAK_req_pokoj has_war = no } is_subject = no custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } }
+		bypass = { has_country_flag = ATAK_cel1 }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		ai_will_do = { factor = 30 modifier = { factor = 0.2 has_war = yes } }
+		completion_reward = {
+			set_country_flag = ATAK_cel1
+			custom_effect_tooltip = ATAK_tt_cel
+			hidden_effect = { random_neighbor_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } if = { limit = { ROOT = { is_ai = yes has_war = no } } ROOT = { declare_war_on = { target = PREV type = annex_everything } } } } }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_atak_cel2
+		icon = GFX_pl2027_081_ofensywa_3_trn
+		x = 35
+		y = 6
+		cost = 8
+		prerequisite = { focus = BYD2_przemysl_atak_cel1 }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } custom_trigger_tooltip = { tooltip = ATAK_req_cel any_neighbor_country = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } } custom_trigger_tooltip = { tooltip = ATAK_req_pokoj has_war = no } is_subject = no custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } }
+		bypass = { has_country_flag = ATAK_cel2 }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		ai_will_do = { factor = 30 modifier = { factor = 0.2 has_war = yes } }
+		completion_reward = {
+			set_country_flag = ATAK_cel2
+			custom_effect_tooltip = ATAK_tt_cel
+			hidden_effect = { random_neighbor_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } if = { limit = { ROOT = { is_ai = yes has_war = no } } ROOT = { declare_war_on = { target = PREV type = annex_everything } } } } }
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_atak_integracja
+		icon = GFX_pl2027_081_integracja_1_trn
+		x = 37
+		y = 6
+		cost = 10
+		prerequisite = { focus = BYD2_przemysl_atak_cel1 }
+		bypass = { has_country_flag = ATAK_integracja }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			set_country_flag = ATAK_integracja
+			every_owned_state = { limit = { NOT = { is_core_of = ROOT } } add_core_of = ROOT }
+			every_country = { limit = { is_subject_of = ROOT } ROOT = { annex_country = { target = PREV transfer_troops = yes } } }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_atak_cel3
+		icon = GFX_pl2027_081_ofensywa_1_trn
+		x = 35
+		y = 7
+		cost = 8
+		prerequisite = { focus = BYD2_przemysl_atak_cel2 }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_8000 has_army_manpower = { size > 7999 } } custom_trigger_tooltip = { tooltip = ATAK_req_cel any_neighbor_country = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } } custom_trigger_tooltip = { tooltip = ATAK_req_pokoj has_war = no } is_subject = no custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } }
+		bypass = { has_country_flag = ATAK_cel3 }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		ai_will_do = { factor = 30 modifier = { factor = 0.2 has_war = yes } }
+		completion_reward = {
+			set_country_flag = ATAK_cel3
+			custom_effect_tooltip = ATAK_tt_cel
+			hidden_effect = { random_neighbor_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } if = { limit = { ROOT = { is_ai = yes has_war = no } } ROOT = { declare_war_on = { target = PREV type = annex_everything } } } } }
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_atak_dominacja
+		icon = GFX_pl2027_081_korona_0_trn
+		x = 36
+		y = 8
+		cost = 2
+		prerequisite = { focus = BYD2_przemysl_atak_cel3 }
+		prerequisite = { focus = BYD2_przemysl_atak_integracja }
+		bypass = { has_country_flag = ATAK_dominacja }
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			set_country_flag = ATAK_dominacja
+			add_political_power = 100
+			add_war_support = 0.05
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_s_ulica
+		icon = GFX_pl2027_081_media_0
+		x = 44
+		y = 1
+		cost = 1
+		prerequisite = { focus = BYD2_prz_rada }
+		bypass = { has_country_flag = TFR_zy_pl_s_ulica }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_ulica
+			country_event = { id = zycie.1 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_s_media
+		icon = GFX_pl2027_081_media_1
+		x = 42
+		y = 2
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_zy_s_ulica }
+		bypass = { has_country_flag = TFR_zy_pl_s_media }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_media
+			add_ideas = TFR_media
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_s_spis
+		icon = GFX_pl2027_081_spis_0
+		x = 45
+		y = 2
+		cost = 1
+		prerequisite = { focus = BYD2_przemysl_zy_s_ulica }
+		bypass = { has_country_flag = TFR_zy_pl_s_spis }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_spis
+			country_event = { id = zycie.3 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_s_kartki
+		icon = GFX_pl2027_081_kartki_0_trn_k
+		x = 44
+		y = 3
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_zy_s_media }
+		prerequisite = { focus = BYD2_przemysl_zy_s_spis }
+		mutually_exclusive = { focus = BYD2_przemysl_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_kartki }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_kartki
+			add_ideas = TFR_kartki
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_s_rynek
+		icon = GFX_pl2027_081_handel_1_trn_k
+		x = 46
+		y = 3
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_zy_s_media }
+		prerequisite = { focus = BYD2_przemysl_zy_s_spis }
+		mutually_exclusive = { focus = BYD2_przemysl_zy_s_kartki }
+		bypass = { has_country_flag = TFR_zy_pl_s_rynek }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_rynek
+			add_ideas = TFR_wolny_rynek
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_s_szkoly
+		icon = GFX_pl2027_081_szkola_0
+		x = 42
+		y = 4
+		cost = 2
+		prerequisite = { focus = BYD2_przemysl_zy_s_kartki focus = BYD2_przemysl_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_szkoly
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_s_czarny
+		icon = GFX_pl2027_081_czarny_rynek_1
+		x = 44
+		y = 4
+		cost = 1
+		prerequisite = { focus = BYD2_przemysl_zy_s_kartki focus = BYD2_przemysl_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_czarny }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_czarny
+			country_event = { id = zycie.2 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_s_straze
+		icon = GFX_pl2027_081_straz_1
+		x = 46
+		y = 4
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_zy_s_kartki focus = BYD2_przemysl_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_straze }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_straze
+			add_manpower = 2500
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_s_wspolnota
+		icon = GFX_pl2027_081_wspolnota_1
+		x = 44
+		y = 5
+		cost = 6
+		prerequisite = { focus = BYD2_przemysl_zy_s_szkoly }
+		prerequisite = { focus = BYD2_przemysl_zy_s_czarny }
+		prerequisite = { focus = BYD2_przemysl_zy_s_straze }
+		bypass = { has_country_flag = TFR_zy_pl_s_wspolnota }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_wspolnota
+			if = { limit = { has_idea = TFR_kartki } remove_ideas = TFR_kartki }
+			if = { limit = { has_idea = TFR_wolny_rynek } remove_ideas = TFR_wolny_rynek }
+			add_ideas = TFR_spoleczenstwo
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_k_admin
+		icon = GFX_pl2027_081_administracja_1
+		x = 48
+		y = 1
+		cost = 5
+		prerequisite = { focus = BYD2_prz_rada }
+		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
+		bypass = { has_country_flag = TFR_zy_k_k_admin }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_admin
+			add_political_power = 40
+			random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_k_defilada
+		icon = GFX_pl2027_081_defilada_1_trn
+		x = 47
+		y = 2
+		cost = 2
+		prerequisite = { focus = BYD2_przemysl_zy_k_admin }
+		bypass = { has_country_flag = TFR_zy_k_k_defilada }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_defilada
+			add_war_support = 0.05
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_k_opor
+		icon = GFX_pl2027_081_bunt_3
+		x = 49
+		y = 2
+		cost = 1
+		prerequisite = { focus = BYD2_przemysl_zy_k_admin }
+		bypass = { has_country_flag = TFR_zy_k_k_opor }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_opor
+			country_event = { id = zycie.10 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_k_owoce
+		icon = GFX_pl2027_081_integracja_2_trn
+		x = 48
+		y = 3
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_zy_k_defilada }
+		prerequisite = { focus = BYD2_przemysl_zy_k_opor }
+		bypass = { has_country_flag = TFR_zy_k_k_owoce }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_owoce
+			add_timed_idea = { idea = TFR_owoce days = 365 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_p_straty
+		icon = GFX_pl2027_081_straty_0
+		x = 52
+		y = 1
+		cost = 3
+		prerequisite = { focus = BYD2_prz_rada }
+		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
+		bypass = { has_country_flag = TFR_zy_p_p_straty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_straty
+			country_event = { id = zycie.11 }
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_p_rzad
+		icon = GFX_pl2027_081_rada_0
+		x = 52
+		y = 2
+		cost = 2
+		prerequisite = { focus = BYD2_przemysl_zy_p_straty }
+		bypass = { has_country_flag = TFR_zy_p_p_rzad }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_rzad
+			add_stability = 0.05
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_p_rewanz
+		icon = GFX_pl2027_081_gotowosc_1_trn_k
+		x = 51
+		y = 3
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_zy_p_rzad }
+		mutually_exclusive = { focus = BYD2_przemysl_zy_p_pojednanie }
+		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_rewanz
+			add_timed_idea = { idea = TFR_rewanz days = 730 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_p_pojednanie
+		icon = GFX_pl2027_081_pojednanie_3_trn_k
+		x = 53
+		y = 3
+		cost = 3
+		prerequisite = { focus = BYD2_przemysl_zy_p_rzad }
+		mutually_exclusive = { focus = BYD2_przemysl_zy_p_rewanz }
+		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_pojednanie
+			add_timed_idea = { idea = TFR_pojednanie days = 730 }
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_zy_p_odbudowa
+		icon = GFX_pl2027_081_wyposazenie_2
+		x = 52
+		y = 4
+		cost = 5
+		prerequisite = { focus = BYD2_przemysl_zy_p_rewanz focus = BYD2_przemysl_zy_p_pojednanie }
+		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_odbudowa
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
+			army_experience = 15
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = BYD2_przemysl_tree_gotowosc
+		icon = GFX_pl2027_081_gotowosc_0_trn
+		x = 36
+		y = 4
+		cost = 2
+		prerequisite = { focus = BYD2_prz_d_kampanie }
+		prerequisite = { focus = BYD2_prz_pesa_eksport }
+		prerequisite = { focus = BYD2_prz_r_osiedla }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = { factor = 30 }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+			army_experience = 10
+		}
+	}
+}

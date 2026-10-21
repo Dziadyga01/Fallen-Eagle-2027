@@ -1,0 +1,1183 @@
+# The Fallen Eagle 2027 – Skonfederowana Polska
+focus_tree = {
+	id = KNF_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NNA
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1690 }
+	initial_show_position = { focus = KNF_start }
+
+	focus = {
+		id = KNF_start
+		icon = GFX_pl2027_tfr_portret_nna_leader
+		x = 24
+		y = 0
+		cost = 3
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = KNF_ruch
+		}
+	}
+
+	focus = {
+		id = KNF_sztab
+		icon = GFX_pl2027_081_sztab_0_nna
+		x = 27
+		y = 1
+		cost = 2
+		prerequisite = { focus = KNF_start }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = KNF_rynek
+		icon = GFX_pl2027_081_polska_0_nna
+		x = 19
+		y = 2
+		cost = 3
+		prerequisite = { focus = KNF_sztab }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = KNF_wolny_rynek
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = KNF_podatki
+		icon = GFX_pl2027_081_pieniadze_0
+		x = 17
+		y = 3
+		cost = 5
+		prerequisite = { focus = KNF_rynek }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = KNF_drogi
+		icon = GFX_pl2027_081_droga_0
+		x = 21
+		y = 3
+		cost = 6
+		prerequisite = { focus = KNF_rynek }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = KNF_fabryki
+		icon = GFX_pl2027_081_przemysl_0
+		x = 19
+		y = 3
+		cost = 6
+		prerequisite = { focus = KNF_rynek }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = KNF_zbrojownie
+		icon = GFX_pl2027_081_fabryka_broni_0
+		x = 21
+		y = 4
+		cost = 5
+		prerequisite = { focus = KNF_drogi }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = KNF_kapital
+		icon = GFX_pl2027_081_pieniadze_1
+		x = 21
+		y = 5
+		cost = 6
+		prerequisite = { focus = KNF_fabryki }
+		prerequisite = { focus = KNF_zbrojownie }
+		prerequisite = { focus = KNF_podatki }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { has_idea = KNF_wolny_rynek } remove_ideas = KNF_wolny_rynek } add_ideas = KNF_wolny_rynek2
+		}
+	}
+
+	focus = {
+		id = KNF_strefa
+		icon = GFX_pl2027_081_pieniadze_2
+		x = 21
+		y = 6
+		cost = 6
+		prerequisite = { focus = KNF_kapital }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = KNF_sn
+		icon = GFX_pl2027_081_porzadek_0
+		x = 35
+		y = 2
+		cost = 6
+		prerequisite = { focus = KNF_sztab }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { NOT = { has_template = "Batalion Straży Narodowej" } } division_template = { name = "Batalion Straży Narodowej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } } support = { recon = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } }
+			add_ideas = KNF_straz
+		}
+	}
+
+	focus = {
+		id = KNF_ochotnicy
+		icon = GFX_pl2027_081_milicja_0_nna
+		x = 33
+		y = 3
+		cost = 6
+		prerequisite = { focus = KNF_sn }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 6000
+			capital_scope = { create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = KNF_magazyny
+		icon = GFX_pl2027_081_porzadek_1
+		x = 37
+		y = 3
+		cost = 5
+		prerequisite = { focus = KNF_sn }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 100 }
+		}
+	}
+
+	focus = {
+		id = KNF_szkola
+		icon = GFX_pl2027_081_szkola_0
+		x = 35
+		y = 3
+		cost = 3
+		prerequisite = { focus = KNF_sn }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = KNF_kolumny
+		icon = GFX_pl2027_081_zmotoryzowane_0_nna
+		x = 37
+		y = 4
+		cost = 6
+		prerequisite = { focus = KNF_magazyny }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = motorized_equipment amount = 150 }
+			if = { limit = { NOT = { has_template = "Kolumna Zmotoryzowana Straży" } } division_template = { name = "Kolumna Zmotoryzowana Straży" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 1 y = 0 } motorized = { x = 1 y = 1 } } support = { recon = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Kolumna Zmotoryzowana Straży\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Kolumna Zmotoryzowana Straży\" start_experience_factor = 0.3" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = KNF_gwardia
+		icon = GFX_pl2027_081_gwardia_0_nna
+		x = 37
+		y = 5
+		cost = 6
+		prerequisite = { focus = KNF_szkola }
+		prerequisite = { focus = KNF_kolumny }
+		prerequisite = { focus = KNF_ochotnicy }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { has_idea = KNF_straz } remove_ideas = KNF_straz } add_ideas = KNF_gwardia
+			capital_scope = { create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = KNF_artyleria
+		icon = GFX_pl2027_081_artyleria_0_nna
+		x = 37
+		y = 6
+		cost = 6
+		prerequisite = { focus = KNF_gwardia }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = light_artillery_equipment amount = 120 }
+			if = { limit = { NOT = { has_template = "Dywizjon Artylerii Straży" } } division_template = { name = "Dywizjon Artylerii Straży" regiments = { artillery_brigade = { x = 0 y = 0 } artillery_brigade = { x = 0 y = 1 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } } support = { engineer = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Dywizjon Artylerii Straży\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Dywizjon Artylerii Straży\" start_experience_factor = 0.3" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = KNF_program
+		icon = GFX_pl2027_081_pieniadze_3
+		x = 29
+		y = 2
+		cost = 2
+		prerequisite = { focus = KNF_sztab }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = KNF_wybor
+		icon = GFX_pl2027_081_wybory_0
+		x = 29
+		y = 3
+		cost = 2
+		prerequisite = { focus = KNF_program }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = KNF_tt_wybor
+		}
+	}
+
+	focus = {
+		id = KNF_a_korona
+		icon = GFX_pl2027_tfr_portret_kkr_leader
+		x = 24
+		y = 4
+		cost = 3
+		prerequisite = { focus = KNF_wybor }
+		mutually_exclusive = { focus = KNF_b_palac focus = KNF_c_stolik }
+		available = { country_exists = KKR NOT = { has_war_with = KKR } }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			if = { limit = { is_in_faction = no } create_faction = KNF_FRONT }
+			if = { limit = { country_exists = KKR NOT = { has_war_with = KKR } } KKR = { country_event = { id = knf.1 days = 1 } } }
+			custom_effect_tooltip = KNF_tt_a
+		}
+	}
+
+	focus = {
+		id = KNF_a_front
+		icon = GFX_pl2027_081_sojusz_0_nna
+		x = 23
+		y = 5
+		cost = 3
+		prerequisite = { focus = KNF_a_korona }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = KNF_front_prawicy
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = KNF_a_strefy
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 25
+		y = 5
+		cost = 2
+		prerequisite = { focus = KNF_a_korona }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			every_state = { limit = { NOT = { is_owned_by = ROOT } any_neighbor_state = { is_owned_by = ROOT } } add_claim_by = ROOT }
+		}
+	}
+
+	focus = {
+		id = KNF_a_ekspansja
+		icon = GFX_pl2027_081_korona_0_nna
+		x = 25
+		y = 6
+		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_9000 has_army_manpower = { size > 8999 } } }
+		cost = 8
+		prerequisite = { focus = KNF_a_front }
+		prerequisite = { focus = KNF_a_strefy }
+		prerequisite = { focus = KNF_tree_gotowosc }
+		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			if = { limit = { country_exists = MLA NOT = { has_war_with = MLA } NOT = { MLA = { is_subject_of = ROOT } } NOT = { is_in_faction_with = MLA } } create_wargoal = { type = annex_everything target = MLA } } else = { add_political_power = 40 }
+			if = { limit = { country_exists = NAR NOT = { has_war_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = NAR } } create_wargoal = { type = annex_everything target = NAR } } else = { add_political_power = 40 }
+		 # PL2027_AI_ATAK
+			if = { limit = { is_ai = yes has_war = no country_exists = MLA NOT = { has_war_with = MLA } NOT = { is_in_faction_with = MLA } NOT = { MLA = { is_subject_of = ROOT } } NOT = { is_subject_of = MLA } NOT = { MLA = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = MLA type = annex_everything } } if = { limit = { is_ai = yes country_exists = MLA } add_ai_strategy = { type = conquer id = MLA value = 150 } add_ai_strategy = { type = antagonize id = MLA value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = NAR NOT = { has_war_with = NAR } NOT = { is_in_faction_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_subject_of = NAR } NOT = { NAR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = NAR type = annex_everything } } if = { limit = { is_ai = yes country_exists = NAR } add_ai_strategy = { type = conquer id = NAR value = 150 } add_ai_strategy = { type = antagonize id = NAR value = 100 } }
+		}
+	}
+
+	focus = {
+		id = KNF_a_imperium
+		icon = GFX_pl2027_081_korona_1_nna
+		x = 25
+		y = 7
+		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } } }
+		cost = 8
+		prerequisite = { focus = KNF_a_ekspansja }
+		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			if = { limit = { country_exists = PLO NOT = { has_war_with = PLO } NOT = { PLO = { is_subject_of = ROOT } } NOT = { is_in_faction_with = PLO } } create_wargoal = { type = annex_everything target = PLO } } else = { add_political_power = 40 }
+			if = { limit = { country_exists = WLM NOT = { has_war_with = WLM } NOT = { WLM = { is_subject_of = ROOT } } NOT = { is_in_faction_with = WLM } } create_wargoal = { type = annex_everything target = WLM } } else = { add_political_power = 40 }
+			army_experience = 25
+		 # PL2027_AI_ATAK
+			if = { limit = { is_ai = yes has_war = no country_exists = PLO NOT = { has_war_with = PLO } NOT = { is_in_faction_with = PLO } NOT = { PLO = { is_subject_of = ROOT } } NOT = { is_subject_of = PLO } NOT = { PLO = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = PLO type = annex_everything } } if = { limit = { is_ai = yes country_exists = PLO } add_ai_strategy = { type = conquer id = PLO value = 150 } add_ai_strategy = { type = antagonize id = PLO value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = WLM NOT = { has_war_with = WLM } NOT = { is_in_faction_with = WLM } NOT = { WLM = { is_subject_of = ROOT } } NOT = { is_subject_of = WLM } NOT = { WLM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = WLM type = annex_everything } } if = { limit = { is_ai = yes country_exists = WLM } add_ai_strategy = { type = conquer id = WLM value = 150 } add_ai_strategy = { type = antagonize id = WLM value = 100 } }
+		}
+	}
+
+	focus = {
+		id = KNF_a_ivrp
+		icon = GFX_pl2027_081_wojna_0_nna
+		x = 25
+		y = 8
+		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
+		cost = 8
+		prerequisite = { focus = KNF_a_imperium }
+		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			if = { limit = { any_country = { OR = { has_cosmetic_tag = IVRP_SEJM has_cosmetic_tag = IVRP_PREZYDENT has_cosmetic_tag = IVRP_MAFIA } } } every_country = { limit = { OR = { has_cosmetic_tag = IVRP_SEJM has_cosmetic_tag = IVRP_PREZYDENT has_cosmetic_tag = IVRP_MAFIA } NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } } } else = { if = { limit = { country_exists = SMR NOT = { has_war_with = SMR } NOT = { SMR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = SMR } } create_wargoal = { type = annex_everything target = SMR } } else = { add_political_power = 40 } if = { limit = { country_exists = KPR NOT = { has_war_with = KPR } NOT = { KPR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = KPR } } create_wargoal = { type = annex_everything target = KPR } } else = { add_political_power = 40 } if = { limit = { country_exists = MPR NOT = { has_war_with = MPR } NOT = { MPR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = MPR } } create_wargoal = { type = annex_everything target = MPR } } else = { add_political_power = 40 } }
+			add_war_support = 0.05
+		 # PL2027_AI_ATAK
+			if = { limit = { is_ai = yes has_war = no country_exists = SMR NOT = { has_war_with = SMR } NOT = { is_in_faction_with = SMR } NOT = { SMR = { is_subject_of = ROOT } } NOT = { is_subject_of = SMR } NOT = { SMR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = SMR type = annex_everything } } if = { limit = { is_ai = yes country_exists = SMR } add_ai_strategy = { type = conquer id = SMR value = 150 } add_ai_strategy = { type = antagonize id = SMR value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = KPR NOT = { has_war_with = KPR } NOT = { is_in_faction_with = KPR } NOT = { KPR = { is_subject_of = ROOT } } NOT = { is_subject_of = KPR } NOT = { KPR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = KPR type = annex_everything } } if = { limit = { is_ai = yes country_exists = KPR } add_ai_strategy = { type = conquer id = KPR value = 150 } add_ai_strategy = { type = antagonize id = KPR value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = MPR NOT = { has_war_with = MPR } NOT = { is_in_faction_with = MPR } NOT = { MPR = { is_subject_of = ROOT } } NOT = { is_subject_of = MPR } NOT = { MPR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = MPR type = annex_everything } } if = { limit = { is_ai = yes country_exists = MPR } add_ai_strategy = { type = conquer id = MPR value = 150 } add_ai_strategy = { type = antagonize id = MPR value = 100 } }
+		}
+	}
+
+	focus = {
+		id = KNF_a_unia
+		icon = GFX_pl2027_081_korona_2_nna
+		x = 25
+		y = 9
+		cost = 1
+		prerequisite = { focus = KNF_a_ivrp }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { country_exists = KKR NOT = { has_war_with = KKR } } KKR = { country_event = { id = knf.9 days = 1 } } }
+			custom_effect_tooltip = KNF_tt_unia
+		}
+	}
+
+	focus = {
+		id = KNF_b_palac
+		icon = GFX_pl2027_tfr_portret_kpr_leader
+		x = 28
+		y = 4
+		cost = 1
+		prerequisite = { focus = KNF_wybor }
+		mutually_exclusive = { focus = KNF_a_korona focus = KNF_c_stolik }
+		available = { country_exists = KPR NOT = { has_war_with = KPR } }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			if = { limit = { country_exists = KPR NOT = { has_war_with = KPR } } KPR = { country_event = { id = knf.4 days = 1 } } }
+			custom_effect_tooltip = KNF_tt_b
+		}
+	}
+
+	focus = {
+		id = KNF_b_wojsko
+		icon = GFX_pl2027_tfr_portret_woj_leader
+		x = 27
+		y = 5
+		cost = 3
+		prerequisite = { focus = KNF_b_palac }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { country_exists = WOJ NOT = { has_war_with = WOJ } } WOJ = { country_event = { id = knf.7 days = 1 } } }
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = KNF_b_sztab
+		icon = GFX_pl2027_081_sztab_1_nna
+		x = 29
+		y = 5
+		cost = 3
+		prerequisite = { focus = KNF_b_palac }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = KNF_sztab_zn
+		}
+	}
+
+	focus = {
+		id = KNF_b_warszawa
+		icon = GFX_pl2027_081_sojusz_1_nna
+		x = 29
+		y = 6
+		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_3000 has_army_manpower = { size > 2999 } } }
+		cost = 8
+		prerequisite = { focus = KNF_b_wojsko }
+		prerequisite = { focus = KNF_b_sztab }
+		prerequisite = { focus = KNF_tree_gotowosc }
+		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			if = { limit = { country_exists = SMR NOT = { has_war_with = SMR } NOT = { SMR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = SMR } } create_wargoal = { type = annex_everything target = SMR } } else = { add_political_power = 40 }
+			if = { limit = { country_exists = MPR NOT = { has_war_with = MPR } NOT = { MPR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = MPR } } create_wargoal = { type = annex_everything target = MPR } } else = { add_political_power = 40 }
+		 # PL2027_AI_ATAK
+			if = { limit = { is_ai = yes has_war = no country_exists = SMR NOT = { has_war_with = SMR } NOT = { is_in_faction_with = SMR } NOT = { SMR = { is_subject_of = ROOT } } NOT = { is_subject_of = SMR } NOT = { SMR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = SMR type = annex_everything } } if = { limit = { is_ai = yes country_exists = SMR } add_ai_strategy = { type = conquer id = SMR value = 150 } add_ai_strategy = { type = antagonize id = SMR value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = MPR NOT = { has_war_with = MPR } NOT = { is_in_faction_with = MPR } NOT = { MPR = { is_subject_of = ROOT } } NOT = { is_subject_of = MPR } NOT = { MPR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = MPR type = annex_everything } } if = { limit = { is_ai = yes country_exists = MPR } add_ai_strategy = { type = conquer id = MPR value = 150 } add_ai_strategy = { type = antagonize id = MPR value = 100 } }
+		}
+	}
+
+	focus = {
+		id = KNF_b_rzad
+		icon = GFX_pl2027_081_sojusz_2_nna
+		x = 29
+		y = 7
+		cost = 2
+		prerequisite = { focus = KNF_b_warszawa }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			every_state = { limit = { NOT = { is_owned_by = ROOT } any_neighbor_state = { is_owned_by = ROOT } } add_claim_by = ROOT }
+		}
+	}
+
+	focus = {
+		id = KNF_b_front
+		icon = GFX_pl2027_081_wojna_1_nna
+		x = 29
+		y = 8
+		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_9000 has_army_manpower = { size > 8999 } } }
+		cost = 8
+		prerequisite = { focus = KNF_b_rzad }
+		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			if = { limit = { country_exists = MLA NOT = { has_war_with = MLA } NOT = { MLA = { is_subject_of = ROOT } } NOT = { is_in_faction_with = MLA } } create_wargoal = { type = annex_everything target = MLA } } else = { add_political_power = 40 }
+			if = { limit = { country_exists = PLO NOT = { has_war_with = PLO } NOT = { PLO = { is_subject_of = ROOT } } NOT = { is_in_faction_with = PLO } } create_wargoal = { type = annex_everything target = PLO } } else = { add_political_power = 40 }
+			if = { limit = { country_exists = NAR NOT = { has_war_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = NAR } } create_wargoal = { type = annex_everything target = NAR } } else = { add_political_power = 40 }
+		 # PL2027_AI_ATAK
+			if = { limit = { is_ai = yes has_war = no country_exists = MLA NOT = { has_war_with = MLA } NOT = { is_in_faction_with = MLA } NOT = { MLA = { is_subject_of = ROOT } } NOT = { is_subject_of = MLA } NOT = { MLA = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = MLA type = annex_everything } } if = { limit = { is_ai = yes country_exists = MLA } add_ai_strategy = { type = conquer id = MLA value = 150 } add_ai_strategy = { type = antagonize id = MLA value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = PLO NOT = { has_war_with = PLO } NOT = { is_in_faction_with = PLO } NOT = { PLO = { is_subject_of = ROOT } } NOT = { is_subject_of = PLO } NOT = { PLO = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = PLO type = annex_everything } } if = { limit = { is_ai = yes country_exists = PLO } add_ai_strategy = { type = conquer id = PLO value = 150 } add_ai_strategy = { type = antagonize id = PLO value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = NAR NOT = { has_war_with = NAR } NOT = { is_in_faction_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_subject_of = NAR } NOT = { NAR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = NAR type = annex_everything } } if = { limit = { is_ai = yes country_exists = NAR } add_ai_strategy = { type = conquer id = NAR value = 150 } add_ai_strategy = { type = antagonize id = NAR value = 100 } }
+		}
+	}
+
+	focus = {
+		id = KNF_b_zn
+		icon = GFX_pl2027_081_sojusz_3_nna
+		x = 29
+		y = 9
+		cost = 2
+		prerequisite = { focus = KNF_b_front }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 75
+		}
+	}
+
+	focus = {
+		id = KNF_c_stolik
+		icon = GFX_pl2027_081_sojusz_0_nna_k
+		x = 32
+		y = 4
+		cost = 10
+		prerequisite = { focus = KNF_wybor }
+		mutually_exclusive = { focus = KNF_a_korona focus = KNF_b_palac }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			if = { limit = { is_in_faction = yes } leave_faction = yes }
+			add_ideas = KNF_stolik
+			set_cosmetic_tag = KNF_RZAD
+		}
+	}
+
+	focus = {
+		id = KNF_c_rzad
+		icon = GFX_pl2027_081_administracja_0
+		x = 31
+		y = 5
+		cost = 2
+		prerequisite = { focus = KNF_c_stolik }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = KNF_c_ultimata
+		icon = GFX_pl2027_081_ultimatum_2_nna
+		x = 33
+		y = 5
+		cost = 1
+		prerequisite = { focus = KNF_c_stolik }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { country_exists = MLA NOT = { has_war_with = MLA } } MLA = { country_event = { id = knf.8 days = 1 } } }
+			if = { limit = { country_exists = WLM NOT = { has_war_with = WLM } } WLM = { country_event = { id = knf.8 days = 1 } } }
+			if = { limit = { country_exists = OZM NOT = { has_war_with = OZM } } OZM = { country_event = { id = knf.8 days = 1 } } }
+		}
+	}
+
+	focus = {
+		id = KNF_c_nikt
+		icon = GFX_pl2027_081_porzadek_2
+		x = 33
+		y = 6
+		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_9000 has_army_manpower = { size > 8999 } } }
+		cost = 8
+		prerequisite = { focus = KNF_c_rzad }
+		prerequisite = { focus = KNF_c_ultimata }
+		prerequisite = { focus = KNF_tree_gotowosc }
+		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			if = { limit = { country_exists = PLO NOT = { has_war_with = PLO } NOT = { PLO = { is_subject_of = ROOT } } NOT = { is_in_faction_with = PLO } } create_wargoal = { type = annex_everything target = PLO } } else = { add_political_power = 40 }
+			if = { limit = { country_exists = NAR NOT = { has_war_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = NAR } } create_wargoal = { type = annex_everything target = NAR } } else = { add_political_power = 40 }
+		 # PL2027_AI_ATAK
+			if = { limit = { is_ai = yes has_war = no country_exists = PLO NOT = { has_war_with = PLO } NOT = { is_in_faction_with = PLO } NOT = { PLO = { is_subject_of = ROOT } } NOT = { is_subject_of = PLO } NOT = { PLO = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = PLO type = annex_everything } } if = { limit = { is_ai = yes country_exists = PLO } add_ai_strategy = { type = conquer id = PLO value = 150 } add_ai_strategy = { type = antagonize id = PLO value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = NAR NOT = { has_war_with = NAR } NOT = { is_in_faction_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_subject_of = NAR } NOT = { NAR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = NAR type = annex_everything } } if = { limit = { is_ai = yes country_exists = NAR } add_ai_strategy = { type = conquer id = NAR value = 150 } add_ai_strategy = { type = antagonize id = NAR value = 100 } }
+		}
+	}
+
+	focus = {
+		id = KNF_c_warszawa
+		icon = GFX_pl2027_081_ofensywa_2_nna
+		x = 33
+		y = 7
+		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
+		cost = 8
+		prerequisite = { focus = KNF_c_nikt }
+		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			if = { limit = { any_country = { OR = { has_cosmetic_tag = IVRP_SEJM has_cosmetic_tag = IVRP_PREZYDENT has_cosmetic_tag = IVRP_MAFIA } } } every_country = { limit = { OR = { has_cosmetic_tag = IVRP_SEJM has_cosmetic_tag = IVRP_PREZYDENT has_cosmetic_tag = IVRP_MAFIA } NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } } } else = { if = { limit = { country_exists = SMR NOT = { has_war_with = SMR } NOT = { SMR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = SMR } } create_wargoal = { type = annex_everything target = SMR } } else = { add_political_power = 40 } if = { limit = { country_exists = KPR NOT = { has_war_with = KPR } NOT = { KPR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = KPR } } create_wargoal = { type = annex_everything target = KPR } } else = { add_political_power = 40 } if = { limit = { country_exists = MPR NOT = { has_war_with = MPR } NOT = { MPR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = MPR } } create_wargoal = { type = annex_everything target = MPR } } else = { add_political_power = 40 } }
+			if = { limit = { country_exists = PRG NOT = { has_war_with = PRG } NOT = { PRG = { is_subject_of = ROOT } } NOT = { is_in_faction_with = PRG } } create_wargoal = { type = annex_everything target = PRG } } else = { add_political_power = 40 }
+		 # PL2027_AI_ATAK
+			if = { limit = { is_ai = yes has_war = no country_exists = SMR NOT = { has_war_with = SMR } NOT = { is_in_faction_with = SMR } NOT = { SMR = { is_subject_of = ROOT } } NOT = { is_subject_of = SMR } NOT = { SMR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = SMR type = annex_everything } } if = { limit = { is_ai = yes country_exists = SMR } add_ai_strategy = { type = conquer id = SMR value = 150 } add_ai_strategy = { type = antagonize id = SMR value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = KPR NOT = { has_war_with = KPR } NOT = { is_in_faction_with = KPR } NOT = { KPR = { is_subject_of = ROOT } } NOT = { is_subject_of = KPR } NOT = { KPR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = KPR type = annex_everything } } if = { limit = { is_ai = yes country_exists = KPR } add_ai_strategy = { type = conquer id = KPR value = 150 } add_ai_strategy = { type = antagonize id = KPR value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = MPR NOT = { has_war_with = MPR } NOT = { is_in_faction_with = MPR } NOT = { MPR = { is_subject_of = ROOT } } NOT = { is_subject_of = MPR } NOT = { MPR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = MPR type = annex_everything } } if = { limit = { is_ai = yes country_exists = MPR } add_ai_strategy = { type = conquer id = MPR value = 150 } add_ai_strategy = { type = antagonize id = MPR value = 100 } } if = { limit = { is_ai = yes has_war = no country_exists = PRG NOT = { has_war_with = PRG } NOT = { is_in_faction_with = PRG } NOT = { PRG = { is_subject_of = ROOT } } NOT = { is_subject_of = PRG } NOT = { PRG = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = PRG type = annex_everything } } if = { limit = { is_ai = yes country_exists = PRG } add_ai_strategy = { type = conquer id = PRG value = 150 } add_ai_strategy = { type = antagonize id = PRG value = 100 } }
+		}
+	}
+
+	focus = {
+		id = KNF_c_korona
+		icon = GFX_pl2027_081_korona_3_nna
+		x = 33
+		y = 8
+		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_9000 has_army_manpower = { size > 8999 } } }
+		cost = 8
+		prerequisite = { focus = KNF_c_warszawa }
+		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			if = { limit = { country_exists = KKR NOT = { has_war_with = KKR } NOT = { KKR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = KKR } } create_wargoal = { type = annex_everything target = KKR } } else = { add_political_power = 40 }
+		 # PL2027_AI_ATAK
+			if = { limit = { is_ai = yes has_war = no country_exists = KKR NOT = { has_war_with = KKR } NOT = { is_in_faction_with = KKR } NOT = { KKR = { is_subject_of = ROOT } } NOT = { is_subject_of = KKR } NOT = { KKR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = KKR type = annex_everything } } if = { limit = { is_ai = yes country_exists = KKR } add_ai_strategy = { type = conquer id = KKR value = 150 } add_ai_strategy = { type = antagonize id = KKR value = 100 } }
+		}
+	}
+
+	focus = {
+		id = KNF_c_pelnia
+		icon = GFX_pl2027_081_administracja_1
+		x = 33
+		y = 9
+		cost = 6
+		prerequisite = { focus = KNF_c_korona }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { has_idea = KNF_stolik } remove_ideas = KNF_stolik } add_ideas = KNF_pelnia
+			every_state = { limit = { NOT = { is_owned_by = ROOT } any_neighbor_state = { is_owned_by = ROOT } } add_claim_by = ROOT }
+		}
+	}
+
+	focus = {
+		id = KNF_skonf
+		icon = GFX_pl2027_081_polska_1_nna
+		x = 29
+		y = 10
+		cost = 10
+		prerequisite = { focus = KNF_a_unia focus = KNF_b_zn focus = KNF_c_pelnia }
+		available = { custom_trigger_tooltip = { tooltip = KNF_tt_stolica OR = { 745 = { is_controlled_by = ROOT } num_of_controlled_states > 149 } } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_cosmetic_tag = KNF_SKONF
+			every_owned_state = { add_core_of = ROOT }
+			every_state = { limit = { NOT = { is_owned_by = ROOT } any_neighbor_state = { is_owned_by = ROOT } } add_claim_by = ROOT }
+			add_political_power = 150
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = KNF_konstytucja
+		icon = GFX_pl2027_081_konstytucja_0_f
+		x = 28
+		y = 11
+		cost = 3
+		prerequisite = { focus = KNF_skonf }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = KNF_konstytucja
+		}
+	}
+
+	focus = {
+		id = KNF_armia
+		icon = GFX_pl2027_081_wojsko_0_nna_f
+		x = 30
+		y = 11
+		cost = 6
+		prerequisite = { focus = KNF_skonf }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 20000
+			capital_scope = { create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Batalion Straży Narodowej\" start_experience_factor = 0.3" owner = ROOT } }
+			army_experience = 50
+		}
+	}
+
+	focus = {
+		id = KNF_mil_start
+		icon = GFX_pl2027_081_sztab_1_nna
+		x = 5
+		y = 1
+		cost = 3
+		prerequisite = { focus = KNF_start }
+		bypass = { has_country_flag = MIL_start }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_start
+			army_experience = 5
+			add_manpower = 1000
+		}
+	}
+
+	focus = {
+		id = KNF_mil_rejestr
+		icon = GFX_pl2027_081_pobor_1_nna
+		x = 1
+		y = 2
+		cost = 3
+		prerequisite = { focus = KNF_mil_start }
+		bypass = { has_country_flag = MIL_rejestr }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_rejestr
+			add_ideas = MIL_pobor_1
+		}
+	}
+
+	focus = {
+		id = KNF_mil_ochotnicy
+		icon = GFX_pl2027_081_pobor_3_nna
+		x = 5
+		y = 2
+		cost = 3
+		prerequisite = { focus = KNF_mil_start }
+		bypass = { has_country_flag = MIL_ochotnicy }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_ochotnicy
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = KNF_mil_fabryka
+		icon = GFX_pl2027_081_fabryka_broni_1
+		x = 9
+		y = 2
+		cost = 3
+		prerequisite = { focus = KNF_mil_start }
+		bypass = { has_country_flag = MIL_fabryka }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_fabryka
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = KNF_mil_pobor
+		icon = GFX_pl2027_081_pobor_2_nna
+		x = 0
+		y = 3
+		cost = 3
+		prerequisite = { focus = KNF_mil_rejestr }
+		bypass = { has_country_flag = MIL_pobor }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_pobor
+			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
+		}
+	}
+
+	focus = {
+		id = KNF_mil_bataliony
+		icon = GFX_pl2027_081_wojsko_4_nna
+		x = 4
+		y = 3
+		cost = 6
+		prerequisite = { focus = KNF_mil_ochotnicy }
+		bypass = { has_country_flag = MIL_bataliony }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_bataliony
+			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+		}
+	}
+
+	focus = {
+		id = KNF_mil_produkcja
+		icon = GFX_pl2027_081_przemysl_4
+		x = 8
+		y = 3
+		cost = 5
+		prerequisite = { focus = KNF_mil_fabryka }
+		bypass = { has_country_flag = MIL_produkcja }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_produkcja
+			add_timed_idea = { idea = MIL_produkcja days = 365 }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 50 }
+		}
+	}
+
+	focus = {
+		id = KNF_mil_rezerwisci
+		icon = GFX_pl2027_081_pobor_3_nna
+		x = 2
+		y = 3
+		cost = 3
+		prerequisite = { focus = KNF_mil_rejestr }
+		bypass = { has_country_flag = MIL_rezerwisci }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_rezerwisci
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = KNF_mil_brygady
+		icon = GFX_pl2027_081_obrona_terytorialna_1_nna
+		x = 6
+		y = 3
+		cost = 6
+		prerequisite = { focus = KNF_mil_ochotnicy }
+		bypass = { has_country_flag = MIL_brygady }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_brygady
+			if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 40 }
+		}
+	}
+
+	focus = {
+		id = KNF_mil_zaplecze
+		icon = GFX_pl2027_081_logistyka_0
+		x = 10
+		y = 3
+		cost = 3
+		prerequisite = { focus = KNF_mil_fabryka }
+		bypass = { has_country_flag = MIL_zaplecze }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_zaplecze
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_ideas = MIL_zaopatrzenie
+		}
+	}
+
+	focus = {
+		id = KNF_mil_kadra
+		icon = GFX_pl2027_081_oficer_1_nna
+		x = 0
+		y = 4
+		cost = 3
+		prerequisite = { focus = KNF_mil_rezerwisci }
+		prerequisite = { focus = KNF_mil_brygady }
+		prerequisite = { focus = KNF_mil_pobor }
+		prerequisite = { focus = KNF_mil_bataliony }
+		bypass = { has_country_flag = MIL_kadra }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_kadra
+			army_experience = 25
+			add_ideas = MIL_kadra
+		}
+	}
+
+	focus = {
+		id = KNF_mil_zawodowa
+		icon = GFX_pl2027_081_zawodowa_1_nna
+		x = 6
+		y = 5
+		cost = 6
+		prerequisite = { focus = KNF_mil_kadra }
+		prerequisite = { focus = KNF_mil_zaplecze }
+		prerequisite = { focus = KNF_mil_produkcja }
+		bypass = { has_country_flag = MIL_zawodowa }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_zawodowa
+			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = KNF_zy_s_ulica
+		icon = GFX_pl2027_081_media_0
+		x = 13
+		y = 1
+		cost = 1
+		prerequisite = { focus = KNF_start }
+		bypass = { has_country_flag = TFR_zy_pl_s_ulica }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_ulica
+			country_event = { id = zycie.1 }
+		}
+	}
+
+	focus = {
+		id = KNF_zy_s_media
+		icon = GFX_pl2027_081_media_1
+		x = 11
+		y = 2
+		cost = 3
+		prerequisite = { focus = KNF_zy_s_ulica }
+		bypass = { has_country_flag = TFR_zy_pl_s_media }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_media
+			add_ideas = TFR_media
+		}
+	}
+
+	focus = {
+		id = KNF_zy_s_spis
+		icon = GFX_pl2027_081_spis_0
+		x = 14
+		y = 2
+		cost = 1
+		prerequisite = { focus = KNF_zy_s_ulica }
+		bypass = { has_country_flag = TFR_zy_pl_s_spis }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_spis
+			country_event = { id = zycie.3 }
+		}
+	}
+
+	focus = {
+		id = KNF_zy_s_kartki
+		icon = GFX_pl2027_081_kartki_0_nna_k
+		x = 13
+		y = 3
+		cost = 3
+		prerequisite = { focus = KNF_zy_s_media }
+		prerequisite = { focus = KNF_zy_s_spis }
+		mutually_exclusive = { focus = KNF_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_kartki }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_kartki
+			add_ideas = TFR_kartki
+		}
+	}
+
+	focus = {
+		id = KNF_zy_s_rynek
+		icon = GFX_pl2027_081_handel_1_nna_k
+		x = 15
+		y = 3
+		cost = 3
+		prerequisite = { focus = KNF_zy_s_media }
+		prerequisite = { focus = KNF_zy_s_spis }
+		mutually_exclusive = { focus = KNF_zy_s_kartki }
+		bypass = { has_country_flag = TFR_zy_pl_s_rynek }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_rynek
+			add_ideas = TFR_wolny_rynek
+		}
+	}
+
+	focus = {
+		id = KNF_zy_s_szkoly
+		icon = GFX_pl2027_081_szkola_0
+		x = 11
+		y = 4
+		cost = 2
+		prerequisite = { focus = KNF_zy_s_kartki focus = KNF_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_szkoly
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = KNF_zy_s_czarny
+		icon = GFX_pl2027_081_czarny_rynek_1
+		x = 13
+		y = 4
+		cost = 1
+		prerequisite = { focus = KNF_zy_s_kartki focus = KNF_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_czarny }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_czarny
+			country_event = { id = zycie.2 }
+		}
+	}
+
+	focus = {
+		id = KNF_zy_s_straze
+		icon = GFX_pl2027_081_straz_1
+		x = 15
+		y = 4
+		cost = 3
+		prerequisite = { focus = KNF_zy_s_kartki focus = KNF_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_straze }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_straze
+			add_manpower = 2500
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = KNF_zy_s_wspolnota
+		icon = GFX_pl2027_081_wspolnota_1
+		x = 13
+		y = 5
+		cost = 6
+		prerequisite = { focus = KNF_zy_s_szkoly }
+		prerequisite = { focus = KNF_zy_s_czarny }
+		prerequisite = { focus = KNF_zy_s_straze }
+		bypass = { has_country_flag = TFR_zy_pl_s_wspolnota }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_wspolnota
+			if = { limit = { has_idea = TFR_kartki } remove_ideas = TFR_kartki }
+			if = { limit = { has_idea = TFR_wolny_rynek } remove_ideas = TFR_wolny_rynek }
+			add_ideas = TFR_spoleczenstwo
+		}
+	}
+
+	focus = {
+		id = KNF_zy_k_admin
+		icon = GFX_pl2027_081_administracja_1
+		x = 38
+		y = 1
+		cost = 5
+		prerequisite = { focus = KNF_start }
+		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
+		bypass = { has_country_flag = TFR_zy_k_k_admin }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_admin
+			add_political_power = 40
+			random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = KNF_zy_k_defilada
+		icon = GFX_pl2027_081_defilada_1_nna
+		x = 37
+		y = 2
+		cost = 2
+		prerequisite = { focus = KNF_zy_k_admin }
+		bypass = { has_country_flag = TFR_zy_k_k_defilada }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_defilada
+			add_war_support = 0.05
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = KNF_zy_k_opor
+		icon = GFX_pl2027_081_bunt_3
+		x = 39
+		y = 2
+		cost = 1
+		prerequisite = { focus = KNF_zy_k_admin }
+		bypass = { has_country_flag = TFR_zy_k_k_opor }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_opor
+			country_event = { id = zycie.10 }
+		}
+	}
+
+	focus = {
+		id = KNF_zy_k_owoce
+		icon = GFX_pl2027_081_integracja_2_nna
+		x = 39
+		y = 3
+		cost = 3
+		prerequisite = { focus = KNF_zy_k_defilada }
+		prerequisite = { focus = KNF_zy_k_opor }
+		bypass = { has_country_flag = TFR_zy_k_k_owoce }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_owoce
+			add_timed_idea = { idea = TFR_owoce days = 365 }
+		}
+	}
+
+	focus = {
+		id = KNF_zy_p_straty
+		icon = GFX_pl2027_081_straty_0
+		x = 42
+		y = 1
+		cost = 3
+		prerequisite = { focus = KNF_start }
+		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
+		bypass = { has_country_flag = TFR_zy_p_p_straty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_straty
+			country_event = { id = zycie.11 }
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = KNF_zy_p_rzad
+		icon = GFX_pl2027_081_rada_0
+		x = 42
+		y = 2
+		cost = 2
+		prerequisite = { focus = KNF_zy_p_straty }
+		bypass = { has_country_flag = TFR_zy_p_p_rzad }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_rzad
+			add_stability = 0.05
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = KNF_zy_p_rewanz
+		icon = GFX_pl2027_081_gotowosc_1_nna_k
+		x = 41
+		y = 3
+		cost = 3
+		prerequisite = { focus = KNF_zy_p_rzad }
+		mutually_exclusive = { focus = KNF_zy_p_pojednanie }
+		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_rewanz
+			add_timed_idea = { idea = TFR_rewanz days = 730 }
+		}
+	}
+
+	focus = {
+		id = KNF_zy_p_pojednanie
+		icon = GFX_pl2027_081_pojednanie_3_nna_k
+		x = 43
+		y = 3
+		cost = 3
+		prerequisite = { focus = KNF_zy_p_rzad }
+		mutually_exclusive = { focus = KNF_zy_p_rewanz }
+		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_pojednanie
+			add_timed_idea = { idea = TFR_pojednanie days = 730 }
+		}
+	}
+
+	focus = {
+		id = KNF_zy_p_odbudowa
+		icon = GFX_pl2027_081_wyposazenie_2
+		x = 42
+		y = 4
+		cost = 5
+		prerequisite = { focus = KNF_zy_p_rewanz focus = KNF_zy_p_pojednanie }
+		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_odbudowa
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
+			army_experience = 15
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = KNF_tree_gotowosc
+		icon = GFX_pl2027_081_gotowosc_0_nna
+		x = 35
+		y = 5
+		cost = 2
+		prerequisite = { focus = KNF_wybor }
+		prerequisite = { focus = KNF_podatki }
+		prerequisite = { focus = KNF_ochotnicy }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = { factor = 30 }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+			army_experience = 10
+		}
+	}
+}

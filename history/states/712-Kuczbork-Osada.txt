@@ -1,0 +1,21 @@
+state = {
+	id = 712
+	name = "STATE_712"
+	manpower = 4455
+	state_category = rural
+	resources = {
+		steel = 4
+	}
+	history = {
+		owner = PLO
+		add_core_of = PLO
+		victory_points = { 10311 1 }
+		victory_points = { 10308 1 }
+		victory_points = { 10309 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 620 10311 10310 10309 10308 10307 10312 }
+	local_supplies = 0.0
+}

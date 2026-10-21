@@ -1,0 +1,23 @@
+state = {
+	id = 116
+	name = "STATE_116"
+	manpower = 31172
+	state_category = town
+	history = {
+		owner = SWC
+		add_core_of = SWC
+		victory_points = { 7943 5 }
+		victory_points = { 7944 1 }
+		victory_points = { 7950 1 }
+		victory_points = { 7948 1 }
+		victory_points = { 7958 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 924 7958 7959 7951 7948 7952 7947 7944 7949 7950 7943 1543 }
+	local_supplies = 0.0
+}

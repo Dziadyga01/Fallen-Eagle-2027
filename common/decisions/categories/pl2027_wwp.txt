@@ -1,0 +1,6 @@
+WWP_stolica = {
+	icon = generic_operation
+	allowed = { OR = { original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = WOJ original_tag = LEG } }
+	visible = { NOT = { has_global_flag = WWP_koniec } }
+	priority = 88
+}

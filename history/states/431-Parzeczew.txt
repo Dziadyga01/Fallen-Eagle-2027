@@ -1,0 +1,23 @@
+state = {
+	id = 431
+	name = "STATE_431"
+	manpower = 32137
+	state_category = town
+	resources = {
+		steel = 2
+	}
+	history = {
+		owner = LWC
+		add_core_of = LWC
+		victory_points = { 6062 1 }
+		victory_points = { 6054 2 }
+		victory_points = { 6061 1 }
+		victory_points = { 6060 1 }
+		victory_points = { 6053 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 542 1055 6061 6060 6059 6003 6053 6062 6054 }
+	local_supplies = 0.0
+}

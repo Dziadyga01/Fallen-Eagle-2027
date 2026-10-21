@@ -1,0 +1,19 @@
+state = {
+	id = 736
+	name = "STATE_736"
+	manpower = 15000
+	state_category = town
+	history = {
+		owner = LEG
+		add_core_of = LEG
+		victory_points = { 6209 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 6209 }
+	local_supplies = 0.0
+}

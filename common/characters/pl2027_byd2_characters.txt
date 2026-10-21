@@ -1,0 +1,54 @@
+characters = {
+	BYD_rafal_bruski = {
+		name = BYD_rafal_bruski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYD2/BYD_rafal_bruski.dds"
+				small = "gfx/leaders/BYD2/BYD_rafal_bruski_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	BYD_rada_przemyslowa = {
+		name = BYD_rada_przemyslowa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYD2/BYD_rada_przemyslowa.dds"
+				small = "gfx/leaders/BYD2/BYD_rada_przemyslowa_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	BYD_rady_robotnicze = {
+		name = BYD_rady_robotnicze
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYD2/BYD_rady_robotnicze.dds"
+				small = "gfx/leaders/BYD2/BYD_rady_robotnicze_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = labour_syndicalism
+			expire = "2065.1.1.1"
+		}
+	}
+	BYD_wiktor_brdowski = {
+		name = BYD_wiktor_brdowski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYD2/BYD_wiktor_brdowski.dds"
+				small = "gfx/leaders/BYD2/BYD_wiktor_brdowski_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			expire = "2065.1.1.1"
+		}
+	}
+}

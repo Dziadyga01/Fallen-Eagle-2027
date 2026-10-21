@@ -1,0 +1,34 @@
+characters = {
+	KOR_krakowiak = {
+		name = KOR_krakowiak
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOR/KOR_krakowiak.dds"
+				small = "gfx/leaders/KOR/KOR_krakowiak_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	KOR_zawadzka = {
+		name = KOR_zawadzka
+		portraits = {
+			army = {
+				large = "gfx/leaders/KOR/KOR_zawadzka.dds"
+				small = "gfx/leaders/KOR/KOR_zawadzka_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

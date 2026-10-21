@@ -1,0 +1,596 @@
+characters = {
+	LOK_trn_zielinski = {
+		name = LOK_trn_zielinski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_trn_zielinski.dds"
+				small = "gfx/leaders/LOK/LOK_trn_zielinski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer trickster }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LOK_trn_szymanski = {
+		name = LOK_trn_szymanski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_trn_szymanski.dds"
+				small = "gfx/leaders/LOK/LOK_trn_szymanski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_byd_szwedzki = {
+		name = LOK_byd_szwedzki
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_byd_szwedzki.dds"
+				small = "gfx/leaders/LOK/LOK_byd_szwedzki_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_engineer defensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LOK_byd_kujawa = {
+		name = LOK_byd_kujawa
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_byd_kujawa.dds"
+				small = "gfx/leaders/LOK/LOK_byd_kujawa_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_smr_wiejski = {
+		name = LOK_smr_wiejski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_smr_wiejski.dds"
+				small = "gfx/leaders/LOK/LOK_smr_wiejski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { urban_assault_specialist politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LOK_plc_mostowski = {
+		name = LOK_plc_mostowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_plc_mostowski.dds"
+				small = "gfx/leaders/LOK/LOK_plc_mostowski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { urban_assault_specialist harsh_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	LOK_plc_kalina = {
+		name = LOK_plc_kalina
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_plc_kalina.dds"
+				small = "gfx/leaders/LOK/LOK_plc_kalina_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { commando }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LOK_kpr_belwederski = {
+		name = LOK_kpr_belwederski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_kpr_belwederski.dds"
+				small = "gfx/leaders/LOK/LOK_kpr_belwederski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { commando career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LOK_prg_wrobel = {
+		name = LOK_prg_wrobel
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_prg_wrobel.dds"
+				small = "gfx/leaders/LOK/LOK_prg_wrobel_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { urban_assault_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_prg_majewski = {
+		name = LOK_prg_majewski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_prg_majewski.dds"
+				small = "gfx/leaders/LOK/LOK_prg_majewski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { logistics_wizard }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	LOK_leg_zyleta = {
+		name = LOK_leg_zyleta
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_leg_zyleta.dds"
+				small = "gfx/leaders/LOK/LOK_leg_zyleta_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { offensive_doctrine }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_mpr_zegarmistrz = {
+		name = LOK_mpr_zegarmistrz
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_mpr_zegarmistrz.dds"
+				small = "gfx/leaders/LOK/LOK_mpr_zegarmistrz_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { logistics_wizard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	LOK_mpr_szklarz = {
+		name = LOK_mpr_szklarz
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_mpr_szklarz.dds"
+				small = "gfx/leaders/LOK/LOK_mpr_szklarz_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_zkr_nogatowski = {
+		name = LOK_zkr_nogatowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_zkr_nogatowski.dds"
+				small = "gfx/leaders/LOK/LOK_zkr_nogatowski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard defensive_doctrine }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LOK_zkr_zulawski = {
+		name = LOK_zkr_zulawski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_zkr_zulawski.dds"
+				small = "gfx/leaders/LOK/LOK_zkr_zulawski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { swamp_fox }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_wmz_kortowski = {
+		name = LOK_wmz_kortowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_wmz_kortowski.dds"
+				small = "gfx/leaders/LOK/LOK_wmz_kortowski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { ranger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	LOK_wmz_wisniewski = {
+		name = LOK_wmz_wisniewski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_wmz_wisniewski.dds"
+				small = "gfx/leaders/LOK/LOK_wmz_wisniewski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { winter_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_nna_kaszubski = {
+		name = LOK_nna_kaszubski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_nna_kaszubski.dds"
+				small = "gfx/leaders/LOK/LOK_nna_kaszubski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LOK_gdy_oksywski = {
+		name = LOK_gdy_oksywski
+		portraits = {
+			navy = {
+				large = "gfx/leaders/LOK/LOK_gdy_oksywski.dds"
+				small = "gfx/leaders/LOK/LOK_gdy_oksywski_small.dds"
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 2
+		}
+	}
+	LOK_gdy_nowak = {
+		name = LOK_gdy_nowak
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_gdy_nowak.dds"
+				small = "gfx/leaders/LOK/LOK_gdy_nowak_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_wmg_oliwski = {
+		name = LOK_wmg_oliwski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_wmg_oliwski.dds"
+				small = "gfx/leaders/LOK/LOK_wmg_oliwski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { urban_assault_specialist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LOK_wmg_kolodziej = {
+		name = LOK_wmg_kolodziej
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_wmg_kolodziej.dds"
+				small = "gfx/leaders/LOK/LOK_wmg_kolodziej_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { offensive_doctrine }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_spt_nowicki = {
+		name = LOK_spt_nowicki
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_spt_nowicki.dds"
+				small = "gfx/leaders/LOK/LOK_spt_nowicki_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trickster }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	LOK_plo_tumski = {
+		name = LOK_plo_tumski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_plo_tumski.dds"
+				small = "gfx/leaders/LOK/LOK_plo_tumski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_engineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	LOK_wlc_zawislanski = {
+		name = LOK_wlc_zawislanski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_wlc_zawislanski.dds"
+				small = "gfx/leaders/LOK/LOK_wlc_zawislanski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { defensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_gru_ulanski = {
+		name = LOK_gru_ulanski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_gru_ulanski.dds"
+				small = "gfx/leaders/LOK/LOK_gru_ulanski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer old_guard }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LOK_rad_zbrojewski = {
+		name = LOK_rad_zbrojewski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_rad_zbrojewski.dds"
+				small = "gfx/leaders/LOK/LOK_rad_zbrojewski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_engineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	LOK_ktn_wezlowski = {
+		name = LOK_ktn_wezlowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_ktn_wezlowski.dds"
+				small = "gfx/leaders/LOK/LOK_ktn_wezlowski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { logistics_wizard }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	LOK_low_ksiezak = {
+		name = LOK_low_ksiezak
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_low_ksiezak.dds"
+				small = "gfx/leaders/LOK/LOK_low_ksiezak_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_suw_mrozny = {
+		name = LOK_suw_mrozny
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_suw_mrozny.dds"
+				small = "gfx/leaders/LOK/LOK_suw_mrozny_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { winter_specialist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_les_bykowski = {
+		name = LOK_les_bykowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_les_bykowski.dds"
+				small = "gfx/leaders/LOK/LOK_les_bykowski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_kls_kaliski = {
+		name = LOK_kls_kaliski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_kls_kaliski.dds"
+				small = "gfx/leaders/LOK/LOK_kls_kaliski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	LOK_kuj_solanski = {
+		name = LOK_kuj_solanski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_kuj_solanski.dds"
+				small = "gfx/leaders/LOK/LOK_kuj_solanski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_kon_kopalnicki = {
+		name = LOK_kon_kopalnicki
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_kon_kopalnicki.dds"
+				small = "gfx/leaders/LOK/LOK_kon_kopalnicki_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { trait_engineer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	LOK_gnz_grodowski = {
+		name = LOK_gnz_grodowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/LOK/LOK_gnz_grodowski.dds"
+				small = "gfx/leaders/LOK/LOK_gnz_grodowski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

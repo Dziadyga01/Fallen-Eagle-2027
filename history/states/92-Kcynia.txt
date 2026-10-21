@@ -1,0 +1,21 @@
+state = {
+	id = 92
+	name = "STATE_92"
+	manpower = 17075
+	state_category = rural
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = PLK
+		add_core_of = PLK
+		victory_points = { 7925 1 }
+		victory_points = { 7923 1 }
+		victory_points = { 7921 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 7309 7923 7922 7925 7921 1136 }
+	local_supplies = 0.0
+}

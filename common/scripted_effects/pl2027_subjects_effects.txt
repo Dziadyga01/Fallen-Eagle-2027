@@ -1,0 +1,30 @@
+PL2027_zaleznosci_startowe = {
+			# Gmina Nowe Miasto Lubawskie podlega miastu
+			if = {
+				limit = { country_exists = NML country_exists = GNL GNL = { is_subject = no } NOT = { has_global_flag = PL2027_zaleznosc_GNL } }
+				set_global_flag = PL2027_zaleznosc_GNL
+				NML = { puppet = GNL }
+				GNL = { set_politics = { ruling_party = authoritarian_democrat elections_allowed = no } if = { limit = { has_character = GNL_leader } promote_character = GNL_leader } }
+			}
+			# Blok sejmowy: Policja podlega Straży Marszałkowskiej
+			if = {
+				limit = { country_exists = SMR country_exists = PLC PLC = { is_subject = no } NOT = { has_global_flag = PL2027_zaleznosc_PLC } }
+				set_global_flag = PL2027_zaleznosc_PLC
+				SMR = { puppet = PLC }
+				PLC = { set_politics = { ruling_party = authoritarian_democrat elections_allowed = no } if = { limit = { has_character = PLC_leader } promote_character = PLC_leader } }
+			}
+			# Blok prezydencki: Wojsko podlega Kancelarii Prezydenta
+			if = {
+				limit = { country_exists = KPR country_exists = WOJ WOJ = { is_subject = no } NOT = { has_global_flag = PL2027_zaleznosc_WOJ } }
+				set_global_flag = PL2027_zaleznosc_WOJ
+				KPR = { puppet = WOJ }
+				WOJ = { set_politics = { ruling_party = nationalist elections_allowed = no } if = { limit = { has_character = WOJ_leader } promote_character = WOJ_leader } }
+			}
+			# Blok mafijny: Kibice Legii podlegają Mafii Pruszkowskiej
+			if = {
+				limit = { country_exists = MPR country_exists = LEG LEG = { is_subject = no } NOT = { has_global_flag = PL2027_zaleznosc_LEG } }
+				set_global_flag = PL2027_zaleznosc_LEG
+				MPR = { puppet = LEG }
+				LEG = { set_politics = { ruling_party = nationalist elections_allowed = no } if = { limit = { has_character = LEG_leader } promote_character = LEG_leader } }
+			}
+}

@@ -1,0 +1,3 @@
+TPZ_siec_przelicz = {
+	set_variable = { TPZ_mod_pp = TPZ_lokale } divide_variable = { TPZ_mod_pp = 200 } clamp_variable = { var = TPZ_mod_pp min = 0 max = 0.25 } set_variable = { TPZ_mod_kons = TPZ_lokale } divide_variable = { TPZ_mod_kons = -500 } clamp_variable = { var = TPZ_mod_kons min = -0.10 max = 0 } set_variable = { TPZ_mod_bud = TPZ_dostawy } subtract_from_variable = { TPZ_mod_bud = 50 } divide_variable = { TPZ_mod_bud = 500 }
+}

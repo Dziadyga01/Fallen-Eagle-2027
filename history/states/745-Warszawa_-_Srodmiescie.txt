@@ -1,0 +1,20 @@
+state = {
+	id = 745
+	name = "STATE_745"
+	manpower = 80000
+	state_category = large_town
+	history = {
+		owner = POL
+		add_core_of = POL
+		add_core_of = KPR
+		victory_points = { 6201 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 1378 1386 6197 6201 6212 }
+	local_supplies = 0.0
+}

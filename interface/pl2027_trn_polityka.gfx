@@ -1,0 +1,194 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_focus_TRN_po_upadku"
+		texturefile = "gfx/interface/goals/TRN_pol_po_upadku.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_po_upadku_shine"
+		texturefile = "gfx/interface/goals/TRN_pol_po_upadku.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_pol_po_upadku.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_kryzys_administracji"
+		texturefile = "gfx/interface/goals/TRN_pol_kryzys_administracji.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_kryzys_administracji_shine"
+		texturefile = "gfx/interface/goals/TRN_pol_kryzys_administracji.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_pol_kryzys_administracji.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_puste_finanse"
+		texturefile = "gfx/interface/goals/TRN_pol_puste_finanse.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_puste_finanse_shine"
+		texturefile = "gfx/interface/goals/TRN_pol_puste_finanse.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_pol_puste_finanse.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_napiecia_polityczne"
+		texturefile = "gfx/interface/goals/TRN_pol_napiecia_polityczne.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_napiecia_polityczne_shine"
+		texturefile = "gfx/interface/goals/TRN_pol_napiecia_polityczne.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_pol_napiecia_polityczne.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_ostatnie_posiedzenie"
+		texturefile = "gfx/interface/goals/TRN_pol_ostatnie_posiedzenie.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_ostatnie_posiedzenie_shine"
+		texturefile = "gfx/interface/goals/TRN_pol_ostatnie_posiedzenie.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_pol_ostatnie_posiedzenie.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_kto_przejmie"
+		texturefile = "gfx/interface/goals/TRN_pol_kto_przejmie.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_kto_przejmie_shine"
+		texturefile = "gfx/interface/goals/TRN_pol_kto_przejmie.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_pol_kto_przejmie.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_przywrocenie_instytucji"
+		texturefile = "gfx/interface/goals/TRN_pol_przywrocenie_instytucji.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_przywrocenie_instytucji_shine"
+		texturefile = "gfx/interface/goals/TRN_pol_przywrocenie_instytucji.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_pol_przywrocenie_instytucji.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_bezpieczenstwo"
+		texturefile = "gfx/interface/goals/TRN_pol_bezpieczenstwo.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_TRN_bezpieczenstwo_shine"
+		texturefile = "gfx/interface/goals/TRN_pol_bezpieczenstwo.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_pol_bezpieczenstwo.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_podzielone_miasto"
+		texturefile = "gfx/interface/ideas/TRN_pol_podzielone_miasto.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_kryzys_budzetu"
+		texturefile = "gfx/interface/ideas/TRN_pol_kryzys_budzetu.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_dlug_miasta"
+		texturefile = "gfx/interface/ideas/TRN_pol_dlug_miasta.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_dzielnice_mod"
+		texturefile = "gfx/interface/ideas/TRN_pol_dzielnice.dds"
+	}
+}

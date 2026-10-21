@@ -1,0 +1,22 @@
+state = {
+	id = 66
+	name = "STATE_66"
+	manpower = 3948
+	state_category = town
+	history = {
+		owner = GRU
+		add_core_of = GRU
+		victory_points = { 8330 5 }
+		victory_points = { 8340 1 }
+		victory_points = { 8324 1 }
+		victory_points = { 8339 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 592 8314 8316 8330 8340 8339 8324 8322 8323 }
+	local_supplies = 0.0
+}

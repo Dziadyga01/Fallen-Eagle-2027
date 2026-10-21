@@ -1,0 +1,8 @@
+EUR_administracja = {
+	icon = GFX_idea_EUR_administracja
+	enable = { always = yes }
+	production_speed_buildings_factor = EUR_mod_bud
+	consumer_goods_factor = EUR_mod_kons
+	political_power_gain = EUR_mod_pp
+	war_support_factor = EUR_mod_ws
+}

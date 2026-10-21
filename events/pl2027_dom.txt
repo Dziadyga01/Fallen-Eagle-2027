@@ -1,0 +1,97 @@
+add_namespace = blr
+add_namespace = dom
+
+country_event = {
+	id = dom.11
+	hidden = yes
+	trigger = { has_country_flag = PL2027_polska is_subject = yes NOT = { has_game_rule = { rule = PL2027_MARIONETKI option = DOZWOLONE } } NOT = { AND = { tag = PLC SMR = { exists = yes } is_subject_of = SMR } } NOT = { AND = { tag = WOJ KPR = { exists = yes } is_subject_of = KPR } } NOT = { AND = { tag = LEG MPR = { exists = yes } is_subject_of = MPR } } NOT = { AND = { tag = GNL NML = { exists = yes } is_subject_of = NML } } NOT = { AND = { tag = PMN GER = { exists = yes } is_subject_of = GER } } NOT = { AND = { tag = PSN GER = { exists = yes } is_subject_of = GER } } NOT = { AND = { tag = SLS GER = { exists = yes } is_subject_of = GER } } NOT = { is_subject_of = POL } }
+	mean_time_to_happen = { days = 7 }
+	immediate = { random_country = { limit = { ROOT = { is_subject_of = PREV } } annex_country = { target = ROOT transfer_troops = yes } } }
+	option = {
+		name = dom.11.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = dom.13
+	hidden = yes
+	trigger = { tag = ROS has_country_flag = ROS_interwencja has_country_flag = ROS_putin_zyje NOT = { has_country_flag = ROS_los_putina } }
+	mean_time_to_happen = { days = 7 }
+	immediate = { set_variable = { ROS_bilans = ROS_cel_mazury } multiply_variable = { ROS_bilans = -1 } every_state = { limit = { has_state_flag = ROS_cel_mazury is_controlled_by = ROS } ROS = { add_to_variable = { ROS_bilans = 2 } } } if = { limit = { OR = { check_variable = { ROS_bilans > -1 } NOT = { has_country_flag = ROS_wojna_trwa } } } country_event = { id = ros.20 } } }
+	option = {
+		name = dom.13.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = blr.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = blr.1.t
+	desc = blr.1.d
+	picture = GFX_pl2027_ev081_rosja_3
+	is_triggered_only = yes
+	option = {
+		name = blr.1.a
+		ai_chance = { factor = 70 }
+		ROS = { if = { limit = { is_in_faction = no } create_faction = ROS_ZWIAZKOWE } add_to_faction = ROOT } give_military_access = ROS set_country_flag = BLR_wspiera ROS = { country_event = { id = blr.3 } }
+	}
+	option = {
+		name = blr.1.b
+		ai_chance = { factor = 25 }
+		ROS = { add_equipment_to_stockpile = { type = ranged_equipment amount = 2000 } add_equipment_to_stockpile = { type = support_equipment amount = 200 } } give_military_access = ROS
+	}
+	option = {
+		name = blr.1.c
+		ai_chance = { factor = 5 }
+		ROS = { country_event = { id = blr.4 } }
+	}
+}
+
+country_event = {
+	id = blr.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = blr.2.t
+	desc = blr.2.d
+	picture = GFX_pl2027_ev081_granica_1
+	is_triggered_only = yes
+	option = {
+		name = blr.2.a
+		ai_chance = { factor = 80 }
+		every_country = { limit = { has_war_with = ROS has_country_flag = PL2027_polska NOT = { has_war_with = ROOT } any_neighbor_country = { tag = ROOT } } ROOT = { declare_war_on = { target = PREV type = annex_everything } } }
+	}
+	option = {
+		name = blr.2.b
+		ai_chance = { factor = 20 }
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = blr.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = blr.3.t
+	desc = blr.3.d
+	picture = GFX_pl2027_ev081_granica_5
+	is_triggered_only = yes
+	option = {
+		name = blr.3.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = blr.4
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = blr.4.t
+	desc = blr.4.d
+	picture = GFX_pl2027_ev081_granica_2
+	is_triggered_only = yes
+	option = {
+		name = blr.4.a
+		ai_chance = { factor = 1 }
+		add_political_power = -20
+	}
+}

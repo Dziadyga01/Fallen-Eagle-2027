@@ -1,0 +1,284 @@
+TRN_kolejnosc = {
+	set_variable = { TRN_pierwszy = 0 }
+	set_variable = { TRN_drugi = 0 }
+	set_variable = { TRN_max1 = -1 }
+	set_variable = { TRN_max2 = -1 }
+	set_variable = { TRN_rywal = 0 }
+	set_variable = { TRN_rywal_max = -1 }
+	if = { limit = { check_variable = { TRN_frak_gul > TRN_max1 } }
+		set_variable = { TRN_max2 = TRN_max1 } set_variable = { TRN_drugi = TRN_pierwszy }
+		set_variable = { TRN_max1 = TRN_frak_gul } set_variable = { TRN_pierwszy = 1 }
+	}
+	else_if = { limit = { check_variable = { TRN_frak_gul > TRN_max2 } } set_variable = { TRN_max2 = TRN_frak_gul } set_variable = { TRN_drugi = 1 } }
+	if = { limit = { NOT = { check_variable = { TRN_faworyt = 1 } } check_variable = { TRN_frak_gul > TRN_rywal_max } } set_variable = { TRN_rywal_max = TRN_frak_gul } set_variable = { TRN_rywal = 1 } }
+	if = { limit = { check_variable = { TRN_frak_zal > TRN_max1 } }
+		set_variable = { TRN_max2 = TRN_max1 } set_variable = { TRN_drugi = TRN_pierwszy }
+		set_variable = { TRN_max1 = TRN_frak_zal } set_variable = { TRN_pierwszy = 2 }
+	}
+	else_if = { limit = { check_variable = { TRN_frak_zal > TRN_max2 } } set_variable = { TRN_max2 = TRN_frak_zal } set_variable = { TRN_drugi = 2 } }
+	if = { limit = { NOT = { check_variable = { TRN_faworyt = 2 } } check_variable = { TRN_frak_zal > TRN_rywal_max } } set_variable = { TRN_rywal_max = TRN_frak_zal } set_variable = { TRN_rywal = 2 } }
+	if = { limit = { check_variable = { TRN_frak_rom > TRN_max1 } }
+		set_variable = { TRN_max2 = TRN_max1 } set_variable = { TRN_drugi = TRN_pierwszy }
+		set_variable = { TRN_max1 = TRN_frak_rom } set_variable = { TRN_pierwszy = 3 }
+	}
+	else_if = { limit = { check_variable = { TRN_frak_rom > TRN_max2 } } set_variable = { TRN_max2 = TRN_frak_rom } set_variable = { TRN_drugi = 3 } }
+	if = { limit = { NOT = { check_variable = { TRN_faworyt = 3 } } check_variable = { TRN_frak_rom > TRN_rywal_max } } set_variable = { TRN_rywal_max = TRN_frak_rom } set_variable = { TRN_rywal = 3 } }
+	if = { limit = { check_variable = { TRN_frak_kow > TRN_max1 } }
+		set_variable = { TRN_max2 = TRN_max1 } set_variable = { TRN_drugi = TRN_pierwszy }
+		set_variable = { TRN_max1 = TRN_frak_kow } set_variable = { TRN_pierwszy = 4 }
+	}
+	else_if = { limit = { check_variable = { TRN_frak_kow > TRN_max2 } } set_variable = { TRN_max2 = TRN_frak_kow } set_variable = { TRN_drugi = 4 } }
+	if = { limit = { NOT = { check_variable = { TRN_faworyt = 4 } } check_variable = { TRN_frak_kow > TRN_rywal_max } } set_variable = { TRN_rywal_max = TRN_frak_kow } set_variable = { TRN_rywal = 4 } }
+	if = { limit = { check_variable = { TRN_frak_ela > TRN_max1 } }
+		set_variable = { TRN_max2 = TRN_max1 } set_variable = { TRN_drugi = TRN_pierwszy }
+		set_variable = { TRN_max1 = TRN_frak_ela } set_variable = { TRN_pierwszy = 5 }
+	}
+	else_if = { limit = { check_variable = { TRN_frak_ela > TRN_max2 } } set_variable = { TRN_max2 = TRN_frak_ela } set_variable = { TRN_drugi = 5 } }
+	if = { limit = { NOT = { check_variable = { TRN_faworyt = 5 } } check_variable = { TRN_frak_ela > TRN_rywal_max } } set_variable = { TRN_rywal_max = TRN_frak_ela } set_variable = { TRN_rywal = 5 } }
+	if = { limit = { check_variable = { TRN_frak_kre > TRN_max1 } }
+		set_variable = { TRN_max2 = TRN_max1 } set_variable = { TRN_drugi = TRN_pierwszy }
+		set_variable = { TRN_max1 = TRN_frak_kre } set_variable = { TRN_pierwszy = 6 }
+	}
+	else_if = { limit = { check_variable = { TRN_frak_kre > TRN_max2 } } set_variable = { TRN_max2 = TRN_frak_kre } set_variable = { TRN_drugi = 6 } }
+	if = { limit = { NOT = { check_variable = { TRN_faworyt = 6 } } check_variable = { TRN_frak_kre > TRN_rywal_max } } set_variable = { TRN_rywal_max = TRN_frak_kre } set_variable = { TRN_rywal = 6 } }
+	set_variable = { TRN_przewaga = TRN_max1 }
+	subtract_from_variable = { TRN_przewaga = TRN_max2 }
+}
+TRN_przelicz = {
+	clamp_variable = { var = TRN_frak_gul min = 0 max = 100 }
+	clamp_variable = { var = TRN_frak_zal min = 0 max = 100 }
+	clamp_variable = { var = TRN_frak_rom min = 0 max = 100 }
+	clamp_variable = { var = TRN_frak_kow min = 0 max = 100 }
+	clamp_variable = { var = TRN_frak_ela min = 0 max = 100 }
+	clamp_variable = { var = TRN_frak_kre min = 0 max = 100 }
+	clamp_variable = { var = TRN_lok min = 0 max = 100 }
+	set_variable = { TRN_frak_gul_dz = 0 }
+	set_variable = { TRN_frak_zal_dz = 0 }
+	set_variable = { TRN_frak_rom_dz = 0 }
+	set_variable = { TRN_frak_kow_dz = 0 }
+	set_variable = { TRN_frak_ela_dz = 0 }
+	set_variable = { TRN_frak_kre_dz = 0 }
+	if = { limit = { check_variable = { TRN_dz_stare = 1 } } add_to_variable = { TRN_frak_gul_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_stare = 2 } } add_to_variable = { TRN_frak_zal_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_stare = 3 } } add_to_variable = { TRN_frak_rom_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_stare = 4 } } add_to_variable = { TRN_frak_kow_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_stare = 5 } } add_to_variable = { TRN_frak_ela_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_stare = 6 } } add_to_variable = { TRN_frak_kre_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_chelminskie = 1 } } add_to_variable = { TRN_frak_gul_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_chelminskie = 2 } } add_to_variable = { TRN_frak_zal_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_chelminskie = 3 } } add_to_variable = { TRN_frak_rom_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_chelminskie = 4 } } add_to_variable = { TRN_frak_kow_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_chelminskie = 5 } } add_to_variable = { TRN_frak_ela_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_chelminskie = 6 } } add_to_variable = { TRN_frak_kre_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_rubinkowo = 1 } } add_to_variable = { TRN_frak_gul_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_rubinkowo = 2 } } add_to_variable = { TRN_frak_zal_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_rubinkowo = 3 } } add_to_variable = { TRN_frak_rom_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_rubinkowo = 4 } } add_to_variable = { TRN_frak_kow_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_rubinkowo = 5 } } add_to_variable = { TRN_frak_ela_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_rubinkowo = 6 } } add_to_variable = { TRN_frak_kre_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bielany = 1 } } add_to_variable = { TRN_frak_gul_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bielany = 2 } } add_to_variable = { TRN_frak_zal_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bielany = 3 } } add_to_variable = { TRN_frak_rom_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bielany = 4 } } add_to_variable = { TRN_frak_kow_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bielany = 5 } } add_to_variable = { TRN_frak_ela_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bielany = 6 } } add_to_variable = { TRN_frak_kre_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bydgoskie = 1 } } add_to_variable = { TRN_frak_gul_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bydgoskie = 2 } } add_to_variable = { TRN_frak_zal_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bydgoskie = 3 } } add_to_variable = { TRN_frak_rom_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bydgoskie = 4 } } add_to_variable = { TRN_frak_kow_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bydgoskie = 5 } } add_to_variable = { TRN_frak_ela_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_bydgoskie = 6 } } add_to_variable = { TRN_frak_kre_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_skarpa = 1 } } add_to_variable = { TRN_frak_gul_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_skarpa = 2 } } add_to_variable = { TRN_frak_zal_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_skarpa = 3 } } add_to_variable = { TRN_frak_rom_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_skarpa = 4 } } add_to_variable = { TRN_frak_kow_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_skarpa = 5 } } add_to_variable = { TRN_frak_ela_dz = 1 } }
+	if = { limit = { check_variable = { TRN_dz_skarpa = 6 } } add_to_variable = { TRN_frak_kre_dz = 1 } }
+	set_variable = { TRN_dm_stab = 0 }
+	set_variable = { TRN_dm_res = 0 }
+	set_variable = { TRN_dm_ws = 0 }
+	set_variable = { TRN_dm_pp = 0 }
+	if = { limit = { check_variable = { TRN_faworyt > 0 } }
+		if = { limit = { check_variable = { TRN_dz_chelminskie = TRN_faworyt } } set_variable = { TRN_dm_stab = 0.03 } }
+		if = { limit = { check_variable = { TRN_dz_bielany = TRN_faworyt } } set_variable = { TRN_dm_res = 0.05 } }
+		if = { limit = { check_variable = { TRN_dz_bydgoskie = TRN_faworyt } } set_variable = { TRN_dm_ws = 0.05 } }
+		if = { limit = { check_variable = { TRN_dz_skarpa = TRN_faworyt } } set_variable = { TRN_dm_pp = 0.10 } }
+	}
+	force_update_dynamic_modifier = yes
+	TRN_kolejnosc = yes
+}
+TRN_walka_start = {
+	set_country_flag = TRN_walka_o_wladze
+	set_country_flag = { flag = TRN_walka_min days = 75 }
+	add_dynamic_modifier = { modifier = TRN_dzielnice_mod }
+	TRN_przelicz = yes
+	activate_mission = TRN_rozstrzygniecie
+	country_event = { id = trn_pol.1 }
+	country_event = { id = trn_pol.20 days = 7 }
+}
+TRN_takt = {
+	add_to_variable = { TRN_frak_gul = TRN_frak_gul_dz }
+	add_to_variable = { TRN_frak_zal = TRN_frak_zal_dz }
+	add_to_variable = { TRN_frak_rom = TRN_frak_rom_dz }
+	add_to_variable = { TRN_frak_kow = TRN_frak_kow_dz }
+	add_to_variable = { TRN_frak_ela = TRN_frak_ela_dz }
+	add_to_variable = { TRN_frak_kre = TRN_frak_kre_dz }
+if = { limit = { check_variable = { TRN_dz_stare = 1 } } add_to_variable = { TRN_frak_gul = 1 } } if = { limit = { check_variable = { TRN_dz_stare = 2 } } add_to_variable = { TRN_frak_zal = 1 } } if = { limit = { check_variable = { TRN_dz_stare = 3 } } add_to_variable = { TRN_frak_rom = 1 } } if = { limit = { check_variable = { TRN_dz_stare = 4 } } add_to_variable = { TRN_frak_kow = 1 } } if = { limit = { check_variable = { TRN_dz_stare = 5 } } add_to_variable = { TRN_frak_ela = 1 } } if = { limit = { check_variable = { TRN_dz_stare = 6 } } add_to_variable = { TRN_frak_kre = 1 } }
+	add_to_variable = { TRN_lok = 3 }
+	if = { limit = { check_variable = { TRN_faworyt > 0 } check_variable = { TRN_dz_rubinkowo = TRN_faworyt } } add_to_variable = { TRN_lok = 4 } }
+	TRN_kolejnosc = yes
+	if = { limit = { TRN_faworyt_prowadzi = yes }
+		if = { limit = { NOT = { check_variable = { TRN_faworyt = 1 } } } add_to_variable = { TRN_frak_gul = 1 } }
+		if = { limit = { NOT = { check_variable = { TRN_faworyt = 2 } } } add_to_variable = { TRN_frak_zal = 1 } }
+		if = { limit = { NOT = { check_variable = { TRN_faworyt = 3 } } } add_to_variable = { TRN_frak_rom = 1 } }
+		if = { limit = { NOT = { check_variable = { TRN_faworyt = 4 } } } add_to_variable = { TRN_frak_kow = 1 } }
+		if = { limit = { NOT = { check_variable = { TRN_faworyt = 5 } } } add_to_variable = { TRN_frak_ela = 1 } }
+		if = { limit = { NOT = { check_variable = { TRN_faworyt = 6 } } } add_to_variable = { TRN_frak_kre = 1 } }
+		if = { limit = { check_variable = { TRN_rywal = 1 } } add_to_variable = { TRN_frak_gul = 5 } } if = { limit = { check_variable = { TRN_rywal = 2 } } add_to_variable = { TRN_frak_zal = 5 } } if = { limit = { check_variable = { TRN_rywal = 3 } } add_to_variable = { TRN_frak_rom = 5 } } if = { limit = { check_variable = { TRN_rywal = 4 } } add_to_variable = { TRN_frak_kow = 5 } } if = { limit = { check_variable = { TRN_rywal = 5 } } add_to_variable = { TRN_frak_ela = 5 } } if = { limit = { check_variable = { TRN_rywal = 6 } } add_to_variable = { TRN_frak_kre = 5 } }
+		if = { limit = { NOT = { has_country_flag = TRN_kontrakcja_info } } set_country_flag = TRN_kontrakcja_info country_event = { id = trn_pol.29 } }
+	}
+	TRN_przelicz = yes
+}
+TRN_dz_dla_faworyta_stare = {
+	if = { limit = { check_variable = { TRN_dz_stare = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_dz_stare = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_dz_stare = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_dz_stare = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_dz_stare = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_dz_stare = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = 3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = 3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = 3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = 3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = 3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = 3 } }
+	set_variable = { TRN_dz_stare = TRN_faworyt }
+	set_country_flag = { flag = TRN_dz_akcja days = 20 }
+	TRN_przelicz = yes
+}
+TRN_dz_dla_faworyta_chelminskie = {
+	if = { limit = { check_variable = { TRN_dz_chelminskie = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_dz_chelminskie = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_dz_chelminskie = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_dz_chelminskie = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_dz_chelminskie = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_dz_chelminskie = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = 3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = 3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = 3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = 3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = 3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = 3 } }
+	set_variable = { TRN_dz_chelminskie = TRN_faworyt }
+	set_country_flag = { flag = TRN_dz_akcja days = 20 }
+	TRN_przelicz = yes
+}
+TRN_dz_dla_faworyta_rubinkowo = {
+	if = { limit = { check_variable = { TRN_dz_rubinkowo = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_dz_rubinkowo = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_dz_rubinkowo = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_dz_rubinkowo = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_dz_rubinkowo = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_dz_rubinkowo = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = 3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = 3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = 3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = 3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = 3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = 3 } }
+	set_variable = { TRN_dz_rubinkowo = TRN_faworyt }
+	set_country_flag = { flag = TRN_dz_akcja days = 20 }
+	TRN_przelicz = yes
+}
+TRN_dz_dla_faworyta_bielany = {
+	if = { limit = { check_variable = { TRN_dz_bielany = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_dz_bielany = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_dz_bielany = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_dz_bielany = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_dz_bielany = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_dz_bielany = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = 3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = 3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = 3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = 3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = 3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = 3 } }
+	set_variable = { TRN_dz_bielany = TRN_faworyt }
+	set_country_flag = { flag = TRN_dz_akcja days = 20 }
+	TRN_przelicz = yes
+}
+TRN_dz_dla_faworyta_bydgoskie = {
+	if = { limit = { check_variable = { TRN_dz_bydgoskie = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_dz_bydgoskie = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_dz_bydgoskie = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_dz_bydgoskie = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_dz_bydgoskie = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_dz_bydgoskie = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = 3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = 3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = 3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = 3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = 3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = 3 } }
+	set_variable = { TRN_dz_bydgoskie = TRN_faworyt }
+	set_country_flag = { flag = TRN_dz_akcja days = 20 }
+	TRN_przelicz = yes
+}
+TRN_dz_dla_faworyta_skarpa = {
+	if = { limit = { check_variable = { TRN_dz_skarpa = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_dz_skarpa = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_dz_skarpa = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_dz_skarpa = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_dz_skarpa = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_dz_skarpa = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = 3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = 3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = 3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = 3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = 3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = 3 } }
+	set_variable = { TRN_dz_skarpa = TRN_faworyt }
+	set_country_flag = { flag = TRN_dz_akcja days = 20 }
+	TRN_przelicz = yes
+}
+TRN_dz_bunt = {
+	if = { limit = { check_variable = { TRN_dz_stare = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 1 } } }
+		set_variable = { TRN_dz_stare = 1 } add_to_variable = { TRN_frak_gul = 3 } set_variable = { TRN_bunt_dz = 1 }
+		if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	}
+	else_if = { limit = { check_variable = { TRN_dz_chelminskie = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 2 } } }
+		set_variable = { TRN_dz_chelminskie = 2 } add_to_variable = { TRN_frak_zal = 3 } set_variable = { TRN_bunt_dz = 2 }
+		if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	}
+	else_if = { limit = { check_variable = { TRN_dz_rubinkowo = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 3 } } }
+		set_variable = { TRN_dz_rubinkowo = 3 } add_to_variable = { TRN_frak_rom = 3 } set_variable = { TRN_bunt_dz = 3 }
+		if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	}
+	else_if = { limit = { check_variable = { TRN_dz_bielany = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 4 } } }
+		set_variable = { TRN_dz_bielany = 4 } add_to_variable = { TRN_frak_kow = 3 } set_variable = { TRN_bunt_dz = 4 }
+		if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	}
+	else_if = { limit = { check_variable = { TRN_dz_bydgoskie = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 5 } } }
+		set_variable = { TRN_dz_bydgoskie = 5 } add_to_variable = { TRN_frak_ela = 3 } set_variable = { TRN_bunt_dz = 5 }
+		if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	}
+	else_if = { limit = { check_variable = { TRN_dz_skarpa = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 6 } } }
+		set_variable = { TRN_dz_skarpa = 6 } add_to_variable = { TRN_frak_kre = 3 } set_variable = { TRN_bunt_dz = 6 }
+		if = { limit = { check_variable = { TRN_faworyt = 1 } } add_to_variable = { TRN_frak_gul = -3 } } if = { limit = { check_variable = { TRN_faworyt = 2 } } add_to_variable = { TRN_frak_zal = -3 } } if = { limit = { check_variable = { TRN_faworyt = 3 } } add_to_variable = { TRN_frak_rom = -3 } } if = { limit = { check_variable = { TRN_faworyt = 4 } } add_to_variable = { TRN_frak_kow = -3 } } if = { limit = { check_variable = { TRN_faworyt = 5 } } add_to_variable = { TRN_frak_ela = -3 } } if = { limit = { check_variable = { TRN_faworyt = 6 } } add_to_variable = { TRN_frak_kre = -3 } }
+	}
+	TRN_przelicz = yes
+}
+TRN_ustal_zwyciezce = {
+	TRN_kolejnosc = yes
+	set_variable = { TRN_zwyciezca = TRN_pierwszy }
+	clr_country_flag = TRN_noc_w_ratuszu
+	if = { limit = { check_variable = { TRN_przewaga < 15 } check_variable = { TRN_drugi > 0 } }
+		if = { limit = { check_variable = { TRN_przewaga < 5 } } random_list = { 55 = { } 45 = { set_variable = { TRN_zwyciezca = TRN_drugi } set_country_flag = TRN_noc_w_ratuszu } } }
+		else_if = { limit = { check_variable = { TRN_przewaga < 10 } } random_list = { 65 = { } 35 = { set_variable = { TRN_zwyciezca = TRN_drugi } set_country_flag = TRN_noc_w_ratuszu } } }
+		else = { random_list = { 75 = { } 25 = { set_variable = { TRN_zwyciezca = TRN_drugi } set_country_flag = TRN_noc_w_ratuszu } } }
+	}
+}
+TRN_walka_koniec = {
+	clr_country_flag = TRN_walka_o_wladze
+	set_country_flag = TRN_kryzys_rozstrzygniety
+	if = { limit = { has_idea = TRN_podzielone_miasto } remove_ideas = TRN_podzielone_miasto }
+	remove_dynamic_modifier = { modifier = TRN_dzielnice_mod }
+	remove_mission = TRN_rozstrzygniecie
+	add_stability = 0.05
+}
+TRN_przejecie_gulewski = {
+	TRN_walka_koniec = yes
+	set_politics = { ruling_party = social_liberal elections_allowed = yes }
+	add_popularity = { ideology = social_liberal popularity = 0.1 }
+	promote_character = TRN_pawel_gulewski
+	set_country_flag = TRN_lider_gulewski
+}
+TRN_przejecie_zaleski = {
+	TRN_walka_koniec = yes
+	set_politics = { ruling_party = conservative elections_allowed = yes }
+	add_popularity = { ideology = conservative popularity = 0.15 }
+	promote_character = TRN_michal_zaleski
+	set_country_flag = TRN_lider_zaleski
+}
+TRN_przejecie_romanowski = {
+	TRN_walka_koniec = yes
+	if = { limit = { NOT = { has_character = TRN_michal_romanowski_lider } } recruit_character = TRN_michal_romanowski_lider }
+	set_politics = { ruling_party = social_democrat elections_allowed = yes }
+	add_popularity = { ideology = social_democrat popularity = 0.15 }
+	promote_character = TRN_michal_romanowski_lider
+	if = { limit = { has_character = TRN_michal_romanowski } retire_character = TRN_michal_romanowski }
+	set_country_flag = TRN_lider_romanowski
+}
+TRN_przejecie_kowalczyk = {
+	TRN_walka_koniec = yes
+	set_party_name = { ideology = social_liberal long_name = TRN_kow_partia_long name = TRN_kow_partia }
+	set_politics = { ruling_party = social_liberal elections_allowed = yes }
+	add_popularity = { ideology = social_liberal popularity = 0.15 }
+	promote_character = TRN_katarzyna_kowalczyk
+	set_country_flag = TRN_lider_kowalczyk
+}
+TRN_przejecie_elana = {
+	TRN_walka_koniec = yes
+	set_politics = { ruling_party = fascist elections_allowed = yes }
+	add_popularity = { ideology = fascist popularity = 0.2 }
+	promote_character = TRN_przywodca_elany
+	set_country_flag = TRN_lider_elana
+}
+TRN_przejecie_krevienko = {
+	TRN_walka_koniec = yes
+	set_politics = { ruling_party = libertarian_socialist elections_allowed = yes }
+	add_popularity = { ideology = libertarian_socialist popularity = 0.2 }
+	promote_character = TRN_maksim_krevienko
+	set_country_flag = TRN_lider_krevienko
+}
+TRN_admin_kryzys = {
+	country_event = { id = trn_pol.40 days = 2 }
+}
+TRN_finanse_kryzys = {
+	country_event = { id = trn_pol.41 days = 2 }
+}
+TRN_test_raport = {
+	log = "[GetDateText] TRN-TEST wplywy: gul=[?TRN_frak_gul] zal=[?TRN_frak_zal] rom=[?TRN_frak_rom] kow=[?TRN_frak_kow] ela=[?TRN_frak_ela] kre=[?TRN_frak_kre]"
+	log = "[GetDateText] TRN-TEST dzielnice: stare=[?TRN_dz_stare] chel=[?TRN_dz_chelminskie] rub=[?TRN_dz_rubinkowo] biel=[?TRN_dz_bielany] byd=[?TRN_dz_bydgoskie] skarpa=[?TRN_dz_skarpa]"
+	log = "[GetDateText] TRN-TEST faworyt=[?TRN_faworyt] pierwszy=[?TRN_pierwszy] drugi=[?TRN_drugi] przewaga=[?TRN_przewaga] rywal=[?TRN_rywal] lok=[?TRN_lok] dm_stab=[?TRN_dm_stab] dm_res=[?TRN_dm_res] dm_ws=[?TRN_dm_ws] dm_pp=[?TRN_dm_pp]"
+}

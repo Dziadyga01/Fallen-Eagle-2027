@@ -1,0 +1,69 @@
+﻿capital = 858
+oob = "BST_2027"
+set_research_slots = 3
+set_stability = 0.45
+set_war_support = 0.35
+set_technology = {
+	army_uniform = 1
+	basic_fortification_tech = 1
+	basic_machine_tools = 1
+	basic_train = 1
+	construction1 = 1
+	excavation1 = 1
+	infantry_training = 1
+	light_artillery = 1
+	light_artillery1 = 1
+	light_artillery2 = 1
+	light_artillery3 = 1
+	light_artillery_upgrade1 = 1
+	melee_weapons = 1
+	nsb_bicycle = 1
+	nsb_truck_1 = 1
+	nsb_truck_2 = 1
+	nsb_truck_3 = 1
+	nsb_truck_4 = 1
+	post_collapse_assesment = 1
+	ranged_weapons = 1
+	ranged_weapons1 = 1
+	ranged_weapons2 = 1
+	ranged_weapons3 = 1
+	ranged_weapons_upgrade = 1
+	ranged_weapons_upgrade1 = 1
+	ranged_weapons_upgrade2 = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_support = 1
+}
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "2027.10.10"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	totalitarian_socialist = 1
+	communist = 3
+	libertarian_socialist = 2
+	social_democrat = 8
+	market_liberal = 4
+	conservative = 17
+	authoritarian_democrat = 14
+	nationalist = 6
+	fascist = 2
+	social_liberal = 43
+}
+recruit_character = BST_leader
+# --- bst ---
+set_variable = { BST_presja = 30 }
+set_variable = { BST_destab = 15 }
+add_dynamic_modifier = { modifier = BST_granica_mod }
+recruit_character = BST_gen_sobolewski
+# --- gnr ---
+recruit_character = BST_gen_korycki
+# --- dor ---
+recruit_character = BST_dor_sokolska
+recruit_character = BST_dor_lapinski
+recruit_character = BST_dor_kiryluk
+recruit_character = BST_dor_biernacki
+recruit_character = BST_dor_puszczanski
+recruit_character = BST_dor_bielska

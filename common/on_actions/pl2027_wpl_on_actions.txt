@@ -1,0 +1,11 @@
+on_actions = {
+	on_monthly_KOC = {
+		effect = { if = { limit = { has_country_flag = PKP_holding } REG_KOC_miesiac = yes } }
+	}
+	on_monthly_WLC = {
+		effect = { if = { limit = { has_country_flag = TPZ_korporacja } REG_WLC_miesiac = yes } }
+	}
+	on_monthly_BYD = {
+		effect = { if = { limit = { has_country_flag = BYD_mech_wplywy } REG_BYD_miesiac = yes } }
+	}
+}

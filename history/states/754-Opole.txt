@@ -1,0 +1,20 @@
+state = {
+	id = 754
+	name = "STATE_754"
+	manpower = 131376
+	state_category = large_town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = SLS
+		add_core_of = SLS
+		victory_points = { 5103 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	provinces = { 5099 5103 }
+	local_supplies = 0.0
+}

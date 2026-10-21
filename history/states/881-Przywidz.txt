@@ -1,0 +1,20 @@
+state = {
+	id = 881
+	name = "STATE_881"
+	manpower = 5621
+	state_category = rural
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = WMG
+		add_core_of = WMG
+		victory_points = { 8631 1 }
+		victory_points = { 8628 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 8628 8631 8669 8632 8657 }
+	local_supplies = 0.0
+}

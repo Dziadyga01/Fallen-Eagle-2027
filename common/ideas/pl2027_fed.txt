@@ -1,0 +1,222 @@
+ideas = {
+	country = {
+		FED_tozsamosc_warm = {
+			picture = DU_FED_tozsamosc_warm
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		FED_autonomia_maz = {
+			picture = DU_FED_autonomia_maz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				army_defence_factor = 0.05
+			}
+		}
+		FED_obrona_terytorialna = {
+			picture = DU_FED_obrona_terytorialna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		FED_twierdza = {
+			picture = DU_FED_twierdza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		FED_mloda_federacja = {
+			picture = DU_FED_mloda_federacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+			}
+		}
+		FED_skonsolidowana = {
+			picture = DU_FED_skonsolidowana
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		FED_protesty = {
+			picture = DU_FED_protesty
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+			}
+		}
+		FED_radykalizacja = {
+			picture = DU_FED_radykalizacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain = -0.1
+			}
+		}
+		FED_brygady_jeziorne = {
+			picture = DU_FED_brygady_jeziorne
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+		FED_idea_wielka = {
+			picture = DU_FED_idea_wielka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		FED_idea_unia = {
+			picture = DU_FED_idea_unia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		FED_idea_fed_balt = {
+			picture = DU_FED_idea_fed_balt
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		FED_blok_bialostocki = {
+			picture = DU_FED_blok_bialostocki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		FED_neutralnosc = {
+			picture = DU_FED_neutralnosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		FED_rosyjskie_bazy = {
+			picture = DU_FED_rosyjskie_bazy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.1
+				political_power_gain = -0.1
+			}
+		}
+		FED_cyfrowy_sztab = {
+			picture = DU_FED_cyfrowy_sztab
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.25
+				army_org_factor = 0.05
+			}
+		}
+		FED_lider_traba = {
+			picture = DU_FED_lider_traba
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.1
+			}
+		}
+		FED_lider_brakoniecki = {
+			picture = DU_FED_lider_brakoniecki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		FED_lider_wojcikowska = {
+			picture = DU_FED_lider_wojcikowska
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.1
+				conscription_factor = 0.15
+				war_support_factor = 0.1
+			}
+		}
+		FED_lider_malinowski = {
+			picture = DU_FED_lider_malinowski
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		FED_lider_mazur1 = {
+			picture = DU_FED_lider_mazur1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+				political_power_gain = 0.15
+				stability_factor = 0.05
+			}
+		}
+		FED_wolne_mazury = {
+			picture = DU_FED_wolne_mazury
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				army_defence_factor = 0.05
+			}
+		}
+		FED_panstwo_warminskie = {
+			picture = DU_FED_panstwo_warminskie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		FED_idea_republika = {
+			picture = DU_FED_idea_republika
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+				political_power_gain = -0.1
+			}
+		}
+	}
+}

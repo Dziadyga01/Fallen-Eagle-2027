@@ -1,0 +1,17 @@
+state = {
+	id = 613
+	name = "STATE_613"
+	manpower = 5553
+	state_category = rural
+	history = {
+		owner = RAD
+		add_core_of = RAD
+		victory_points = { 10009 1 }
+		victory_points = { 10010 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 10009 10010 10011 10018 }
+	local_supplies = 0.0
+}

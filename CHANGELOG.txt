@@ -1,0 +1,1474 @@
+THE FALLEN EAGLE 2027 – CHANGELOG
+=================================
+Najnowsza wersja na górze. Wersje „testowe” nie były jeszcze sprawdzone w silniku gry.
+
+The Fallen Eagle Alpha 0.8.6 (wersja testowa) – „Godzina Zero”, etap II (finalizacja)
+1. DYNAMICZNY ROZPAD – GRA ZACZYNA SIĘ JAKO JEDNO PAŃSTWO
+- Nowa zasada gry „Scenariusz startowy” (ekran „Zasady gry”):
+  - „Godzina Zero – jedna Rzeczpospolita” – domyślnie;
+  - „Polska już podzielona” – dotychczasowy start z niezależnymi państwami.
+- Nowe państwo: Rzeczpospolita Polska (tag POL).
+  - Rząd w Śródmieściu Warszawy. Kancelaria Prezydenta ma w tym scenariuszu stolicę w Belwederze.
+  - Przywódca: Rada Ministrów jako organ zbiorowy, bez prawdziwych osób.
+  - Własna flaga z godłem, nazwy partii, portret-emblemat i duch narodowy „Rząd Rzeczypospolitej”.
+- 72 państwa regionalne startują jako województwa Rzeczypospolitej:
+  - na mapie mają kolor Rzeczypospolitej;
+  - nie mogą prowadzić wojen ani zawierać sojuszy;
+  - zachowują przywódców, flagi, wojska, drzewka i zdarzenia.
+  - Po podporządkowaniu przywracam ich ustrój, poparcie partii i przywódcę, bo efekt podporządkowania zmienia ustrój na ustrój zwierzchnika.
+- Dwa nowe poziomy zależności:
+  - Województwo Rzeczypospolitej – barwy Rzeczypospolitej;
+  - Autonomia w Rzeczypospolitej – własne barwy, wciąż bez wojen i sojuszy.
+- Każdy region ma skłonność do secesji (0–100). Zależy ona od regionu, ustroju i przypadku, a zmieniają ją decyzje i zdarzenia.
+- Przebieg rozpadu:
+  - Faza II: regiony o dużej skłonności składają żądania autonomii, rozłożone w czasie. Co miesiąc dochodzą kolejne.
+    Rząd może przyznać autonomię, negocjować albo odmówić. Odmowa może skończyć się autonomią bez zgody Warszawy.
+  - Faza III:
+    - Straż Marszałkowska, Kancelaria Prezydenta i Mafia Pruszkowska wypowiadają posłuszeństwo.
+      Policja, Wojsko i Kibice Legii wracają pod ich zwierzchnictwo.
+    - Autonomie decydują o niepodległości.
+    - Każda secesja podnosi skłonność sąsiednich województw (efekt domina).
+  - Faza IV – ostatnia narada rządu:
+    - Rzeczpospolita przetrwa z lojalnymi województwami, jeśli jest rząd jedności narodowej i średnia wskaźników kryzysu wynosi co najmniej 40.
+      Bez rządu jedności średnia musi wynieść co najmniej 50.
+    - W przeciwnym razie rząd przekazuje władzę Pałacowi albo Sejmowi. Gracz grający Rzeczpospolitą przechodzi do wybranego państwa.
+      Pozostałe województwa stają się niepodległe.
+- Zabezpieczenia przed powtarzaniem: flagi państw i flagi globalne. Każde żądanie, pytanie o niepodległość i każda faza zdarzają się tylko raz.
+- Decyzje (panel „Rzeczpospolita i regiony”):
+  - rządu: rozmowy z regionem (decyzja celowana), dobrowolna autonomia (celowana), kurierzy rządowi,
+    przywrócenie administracji w lojalnym województwie po fazie IV;
+  - regionów: żądanie autonomii i ogłoszenie niepodległości (dla gracza).
+- Drzewko „Rzeczpospolita w kryzysie” (26 fokusów fabularnych, razem z gałęziami wspólnymi moda 57):
+  - gałęzie: ciągłość państwa, samorządy, służby i porządek, gospodarka;
+  - do tego odbudowa po przetrwaniu fazy IV: wspólna administracja, przywrócenie porządku, Odrodzona Rzeczpospolita.
+- AI: decyzje i zdarzenia mają wagi zależne od skłonności, lojalności i wskaźników.
+  - Wojny z drzewek omijają województwa, bo biorą pod uwagę tylko państwa niezależne.
+  - Rosja zaczyna interwencję dopiero wtedy, gdy Warmia i Mazury, Mazury albo Suwalszczyzna są niepodległe.
+- Zasada „zakaz marionetek” nie wciela województw Rzeczypospolitej.
+- Rzeczpospolita jest na ekranie wyboru państwa z opisem. Opis wyjaśnia, że jest dostępna tylko w scenariuszu „Godzina Zero”.
+
+2. GRAFIKA (nowa, wygenerowana z danych mapy moda – bez cudzych zdjęć)
+- 5 nowych ekranów ładowania: „Rozpad Polski – faza I–V”. To mapy poglądowe w stylu ekranów moda, a w fazie V z liniami frontu.
+- 12 nowych ilustracji wydarzeń (mapy sztabowe), każda w wersji do zdarzenia i do wiadomości (24 pliki):
+  - jedna Rzeczpospolita, autonomie, secesje, rozpad, nowy porządek;
+  - Rzeczpospolita trwa;
+  - Warszawa podzielona na bloki;
+  - Bałtyk, wschodnia granica, Eurostaaty;
+  - sieć kolejowa;
+  - Zakon.
+  Przypisałem je do 42 zdarzeń: rozpadu, faz, Warszawy, Białorusi, Eurostaatów, Unii Bałtyckiej, PKP i Zakonu.
+- Ekran wyboru scenariusza: nowy obraz – mapa jednej Rzeczypospolitej z datą 11.11.2027.
+- Flagi zakończeń i Federacji Bałtyckiej z godłami (orzeł, gwiazda, koło zębate, kotwica) zamiast samych pasów.
+- Flaga i portret-emblemat Rzeczypospolitej.
+- Nowe postacie (Białoruś) przechodzą przez wspólny styl portretów moda: emblematy instytucji, sylwetka bez zdjęcia.
+
+3. MECHANIKI PAŃSTW
+- Białoruś (nowe drzewko „Białoruś na rozdrożu”, 31 fokusów fabularnych, z gałęziami wspólnymi moda 62):
+  - wskaźniki samodzielności wobec Moskwy i stabilności państwa z modyfikatorem;
+  - trzy ścieżki: Państwo Związkowe, wielowektorowość, ostrożne otwarcie;
+  - gospodarka (potas, rafinerie, MAZ i BiełAZ, Wielki Kamień, tranzyt);
+  - wojsko (wspólne ćwiczenia albo obrona terytorialna, gwarancje neutralności, wsparcie operacji Rosji);
+  - sąsiedztwo z państwami polskimi: oferty paliwa i tranzytu, współpraca graniczna albo przymykanie oczu na przemyt z kosztami.
+  - 5 zdarzeń, m.in. kwestia sukcesji z fikcyjnymi organami kolegialnymi i bazy rosyjskie.
+  - Aleksandr Łukaszenka występuje tylko jako przywódca z publicznym programem.
+- Eurostaaty (Pomorze Zachodnie, Wielkopolska, Śląsk) – po jednym drzewku na każdy Eurostaat (3 drzewka po 22 fokusy fabularne, z gałęziami wspólnymi po 53):
+  - wskaźnik zależności od instytucji europejskich (fundusze kontra władza polityczna i poparcie wojny);
+  - ścieżki: integracja (euroregion) albo samodzielność (wniosek do Berlina, odmowa, jednostronna samodzielność → państwo polskie);
+  - sąsiedzi: komisje graniczne albo twarda granica, handel, spór zbrojny od fazy IV;
+  - 6 zdarzeń (audyt Komisarza, spór graniczny, decyzja Berlina, euroregion).
+- Unia Bałtycka (nowy panel decyzji):
+  - założenie Unii, zaproszenia (decyzja celowana i zdarzenie), wspólna taryfa portowa, straż wybrzeża, bałtycki złoty;
+  - Federacja Bałtycka – pokojowe połączenie za zgodą członków; wystąpienie z Unii.
+  - Spójność Unii (0–100) daje członkom premie. Unia jest sojuszem obronnym.
+- PKP (rozbudowa):
+  - sieć 29 węzłów kolejowych Polski, liczona co miesiąc; premie Holdingu rosną z liczbą węzłów;
+  - kontrakty przewozowe z sąsiadami: stała opłata co miesiąc;
+  - 6 nowych fokusów, m.in. pociągi pancerne, kolej frontowa, węzły jako cel strategiczny, monopol przewozowy.
+- T-Pizza (rozbudowa gospodarki):
+  - sieć lokali i łańcuch dostaw (mąka, ser, paliwo); braki obniżają satysfakcję klientów;
+  - franczyza i kontrakty na mąkę z sąsiadami;
+  - 7 nowych fokusów (centralna kuchnia, flota dostawcza, aplikacja, imperium dostaw).
+- Zakon Krzyżacki (balans): nadmierne rozciągnięcie.
+  - Powyżej 45 regionów, i za każdy region poza rdzeniami, Zakon traci stabilność, władzę polityczną i poparcie wojny.
+  - Przy wielu podbitych ziemiach pojawia się opór w komturiach.
+  - Fokusy integracji zmniejszają kary o połowę.
+- Walka o Warszawę: zakończenia walki o stolicę możliwe dopiero od fazy III, gdy bloki wypowiedzą posłuszeństwo.
+
+4. MAPA, KOLEJ, GOSPODARKA (według audytu mapy)
+- Surowce:
+  - losowe drobne złoża są mniejsze i nie trafiają do miast ani dzielnic Warszawy;
+  - ropa występuje tylko w prawdziwych złożach;
+  - duże wartości mają wyłącznie prawdziwe złoża i zakłady (Bogdanka, Krzemianka, huty, Konin, złoża ropy, Płock).
+- 22 ośrodki przemysłowe z prawdziwymi zakładami dostały fabryki (m.in. Radom, Skarżysko-Kamienna, Stalowa Wola, Kalisz, Puławy, Olsztyn, Elbląg).
+- Minimum przemysłu według ludności: co najmniej 5 fabryk cywilnych i 1,5 zbrojeniowej na milion mieszkańców.
+  Dotyczy to Podlasia, Konfederacji Północnej, Korony, Zjednoczonej Rzeczypospolitej, Radomia i Łodzi.
+- Kolej: do stolic bez torów (Stadion Legii, Bielany, Belweder) dochodzą odcinki do najbliższej linii.
+- Muzyka moda: wyrównana głośność (różnica między utworami spadła z 14 dB do około 1 dB).
+
+5. RADIO
+- Audyt obu stacji: konfiguracja, pliki, GUI, lokalizacja, kodek i głośność – bez błędów.
+- Gotowa struktura nowej stacji (szablon stacja.json, README, budowa z kontrolą licencji). Nowych nagrań nie dodałem.
+
+6. NARZĘDZIA KONTROLI (nowe)
+- audyt_mapy.py: koleje, przeprawy, zaopatrzenie, surowce, teren, punkty strategiczne, gospodarka państw.
+- audyt_wydarzen.py: uruchamianie, opcje, AI, teksty, grafiki, powtarzanie.
+- audyt_radia.py.
+- check_rozpad.py: układ startowy i symulacja rozpadu.
+
+The Fallen Eagle Alpha 0.8.6 (wersja testowa) – „Godzina Zero” – etap I
+
+ROZPAD POLSKI W 5 FAZACH (nowe)
+- Fazy: I kryzys instytucjonalny → II bunty regionalne → III utrata centralnej kontroli → IV secesje i konflikt → V walka o nowy porządek.
+- Przejścia faz zależą od presji rozpadu. Presja rośnie co miesiąc tym szybciej, im słabsze są wskaźniki kryzysu, i ma składnik losowy.
+  Każda faza ma najwcześniejszą i najpóźniejszą datę, więc przebieg się różni, ale nie stanie w miejscu.
+  Symulacja skryptu daje fazę IV między marcem a majem 2028.
+- Każda faza nakłada na państwa polskie własny modyfikator (stabilność, uzasadnianie wojen, poparcie wojny, pobór). Każda ogłaszana jest wiadomością.
+- Wojny z drzewek narodowych państw polskich są dostępne dopiero od fazy IV (wszystkie fokusy z celem wojennym). Drzewka Rosji i obcych państw bez zmian.
+- Wydarzenia rozpadu (25):
+  - „Godzina Zero” na start;
+  - 4 wydarzenia przejść faz z wyborami dla władz w Warszawie i 4 wiadomości o fazach dla wszystkich;
+  - 5 wydarzeń progowych: krach złotego, podział służb, fala protestów, bunt samorządów, promyk nadziei;
+  - bunt w regionie (dwa losowe regiony w fazie II), wybór strony przez Komendę Stołeczną i garnizony (faza III), deklaracje secesji czterech regionów (faza IV): suwerenność albo autonomia;
+  - rząd jedności narodowej.
+PANEL „KRYZYS RZECZYPOSPOLITEJ” (nowe – jako kategoria decyzji)
+- Wskaźniki 0–100 w prawdziwych zmiennych: jedność państwa, lojalność samorządów, kontrola służb, stabilność gospodarcza, zaufanie społeczne.
+  Do tego presja rozpadu i numer fazy. Opis każdego wskaźnika jest w opisie kategorii.
+- Władze centralne (Sejm, Prezydent) mają 7 decyzji:
+  - negocjacje z samorządami,
+  - nadzwyczajne posiedzenie Sejmu,
+  - mobilizacja żandarmerii,
+  - dotacje ratunkowe,
+  - ochrona infrastruktury,
+  - odezwa do narodu,
+  - rząd jedności narodowej (raz na grę).
+  Każda ma koszt i wadę oraz czas odnowienia 30–60 dni.
+- Regiony mają 2 decyzje: deklarację lojalności wobec Warszawy albo przejęcie urzędów państwowych. Wybór AI zależy od ideologii.
+WARSZAWA – WALKA O WPŁYWY (nowe, uzupełnia drzewka WWD)
+- Wpływy Sejmu, Pałacu i Pruszkowa (0–100). Co miesiąc każda kontrolowana dzielnica (22 regiony) daje +1, a utrzymanie wpływów kosztuje −1.
+- 11 decyzji:
+  - Sejm: ustawa o porządku publicznym, śledztwo antymafijne;
+  - Pałac: dekret o bezpieczeństwie stolicy, wojsko na mostach;
+  - Pruszków: ochrona za opłatą, koperty dla urzędników (ryzyko afery), Żyleta na ulicach;
+  - Policja, Wojsko i Legia: wsparcie dla swojego bloku;
+  - wspólny sztab stolicy (gdy jest rząd jedności albo koalicja).
+- 8 wydarzeń:
+  - blackout na Pradze,
+  - strzelanina na Woli,
+  - zablokowany most Łazienkowski,
+  - posłowie wyjeżdżający do Eurostaatu,
+  - Bazar Różyckiego płacący dwa razy,
+  - konwój z lekami,
+  - naloty na hurtownie,
+  - afera kopertowa.
+- 5 zakończeń: rządy prawa (Sejm), stolica pod dekretem (Pałac), ośmiornica (Pruszków – nie wcześniej niż w czerwcu 2028), rząd jedności, podzielona stolica (lipiec 2029).
+TORUŃ
+- Kampania trwa 117–162 dni: cisza wyborcza od 25.03.2028, wybory najpóźniej 4.04.2028, zaprzysiężenie najpóźniej 10.04.2028.
+- 3 nowe wydarzenia kampanii (11 łącznie, co 12 dni): tramwaj na Chełmińskie Przedmieście, pierniki dla wyborców, Bydgoszcz miesza się w kampanię.
+ZAKOŃCZENIA (nowe, od 1.01.2029)
+- Korporacyjne (T-Pizza/PKP), Rzeczpospolita Regionów (federacje, komuny), demokratyczne zjednoczenie, państwo wojskowe – gdy jedno państwo
+  kontroluje co najmniej 500 z 1289 polskich regionów. Protektorat – gdy obce państwo kontroluje 300 regionów. Trwały rozpad – w 2031 r., jeśli nikt nie wygrał.
+- Skutki: nowa nazwa i flaga (tag kosmetyczny), idea zakończenia, rdzenie na wszystkich ziemiach zwycięzcy, wiadomość dla wszystkich. Zakończenie jest tylko jedno.
+WYDARZENIA Z ŻYCIA W KRYZYSIE (nowe, 18)
+- Kraj: kolejka po paliwo, protest pod urzędem, puste półki, bankomaty bez pieniędzy, ostatni komunikat radia publicznego, policja i wojsko na jednej
+  rogatce, szkoły bez ogrzewania, przemówienie lidera, ochotnicy z OSP, leki na kartki.
+- Pogranicze wschodnie: ćwiczenia za granicą, uzbrojeni przemytnicy (porzuceni ludzie jako ofiary), przesmyk.
+- Kolej (PKP): strajk maszynistów, sabotaż na węźle, sprzedaż dostępu do torów.
+- Warmia i Mazury: spór o budżet, bałtycka propozycja.
+- Każde wydarzenie pojawia się raz na państwo, w oknie odpowiedniej fazy, zgodnie z regułą „Codzienność rozpadu”.
+POPRAWKI
+- FED_protektorat i ROS_pok_komisja miały w nagrodzie tylko flagę – dostały realne skutki.
+- Decyzje kryzysu, Warszawy i Torunia zostają prawdziwymi decyzjami (konwersja do fokusów ich nie obejmuje).
+- Deskryptor: „The Fallen Eagle Alpha 0.8.6 Godzina Zero (wersja testowa)”, napis wersji w menu.
+
+The Fallen Eagle Alpha 0.8.5 (wersja testowa) – „Toruń: walka o władzę”
+WYBORY (rozbudowa istniejącego systemu, bez drugiej mechaniki)
+- Termin: cisza wyborcza 19.02.2028 (dzień 100), wybory najpóźniej 29.02 (dzień 110), zaprzysiężenie najpóźniej 6.03 (dzień 116).
+  Fokusy kampanii nie mogą już przesuwać wyborów bez końca.
+- Zwycięzcy nie wybiera się już ręcznie. Liczy się poparcie zarejestrowanych komitetów. Przy remisie wygrywa zwycięzca debaty, a potem kandydat wyżej w sondażu z początku kampanii.
+- Sondaż w procentach w modyfikatorze kampanii, w kategorii decyzji, przy rejestracji i w zdarzeniu z wynikami.
+- Debata: Rada wybiera temat (ogrzewanie, inwestycje, bezpieczeństwo, uczciwość urzędów, dzielnice, region). Temat sprzyja kandydatom z programem w tej sprawie.
+- Rejestracja: najwyżej 2 odrzucone komitety, komitetu z poparciem ≥ 20 nie można odrzucić, każda odmowa kosztuje 3% stabilności.
+- Bardziej wyrównany start: Gulewski 24, Zaleski 21, Romanowski 18, Elana 13, Kowalczyk 12, Krevienko 12.
+- 6 decyzji „Wesprzeć sztab” (25 PP, odnowienie 21 dni, limit 2 na kandydata i 5 łącznie). AI ma losowego faworyta i korzysta z tych samych zasad.
+- 8 nowych wydarzeń kampanii co 12 dni: autobusy MZK, budżet zimowy, służby i listy poparcia, protest na Rubinkowie, warunki UMK, kibice i parafie
+  przy lokalach, sfałszowane nagranie z Podgórza, przedsiębiorcy z Szosy Lubickiej.
+ŻYCIE MIASTA
+- 12 wydarzeń w pierwszym roku: kaloryfery na Skarpie, kolejka na stacji, radio z Bielan, prom zamiast mostu, szpital na Bielanach bez prądu,
+  chleb z Lubicza, zmiany w Elanie, Bydgoskie Przedmieście kontra Starówka, kra na Wiśle, list kierowców MZK, lekarze wyjeżdżający do Bydgoszczy,
+  rocznica rozpadu. Część opcji zależy od wcześniejszych decyzji (ogrzewanie, kartki, rekwizycja autobusów, odcięcie transmisji).
+ZARZĄDZANIE KRYZYSOWE (7 decyzji z kompromisem, czasowe, z odnowieniem)
+- Rekwizycja autobusów, priorytet ogrzewania, szybka mobilizacja, porozumienie z przedsiębiorcami, kartki na paliwo, godzina policyjna, dostawy z gmin.
+  Dwie można zakończyć wcześniej. Inaczej działają u Romanowskiego (zgoda związków), Krevienki (ochotnicy) i Zaleskiego (zobowiązania).
+ŚCIEŻKI PRZYWÓDCÓW
+- Gulewski: reforma administracji 0–100. „Opór aparatu”, presja grup (urzędnicy, związki, radni, przedsiębiorcy), progi 50 i 100.
+- Zaleski: zobowiązania wobec wykonawców 0–100. Szybkie inwestycje na kredyt, „Długi miasta”, spór o podział środków, spłata albo renegocjacja.
+- Romanowski: program mieszkaniowy 0–100 i układ zbiorowy. Mieszkania na Jarze, bilet za złotówkę, wspólna kasa szpitali z gminami.
+- Krevienko: koordynacja federacji 0–100. „Rozproszona koordynacja” armii, zgromadzenia, delegaci wojskowi, wolne dzielnice.
+- Część fokusów przywódców korzysta z tych mechanik i ma progi (np. „Nowa konstytucja” wymaga reformy ≥ 40).
+KONFLIKT REGIONALNY
+- Spór o przeprawę w Solcu z Bydgoszczą przebiega przez żądanie, odpowiedź i eskalację. Pokojowe wyjścia: wspólny zarząd przeprawy albo arbitraż PKP, oba z kosztem.
+- Umowa przewozowa z PKP (Kociewie). Kontrakt na dostawy z T-Pizzą (dług i wpływy, istniejące ultimatum) oraz spłata długu.
+- Wojny z drzewek Torunia wymagają wspólnej granicy. Cel dostaje ostrzeżenie i może się bronić albo przyjąć opiekę.
+  AI wypowiada wojnę dopiero po 14 dniach, przy przewadze sił, w pokoju i przy stabilności powyżej 35%.
+  Drzewka Torunia nie mają już losowej gałęzi „Kampanie wojenne”.
+SKALA
+- Fokusy Torunia dają najwyżej jedną fabrykę i jedną dywizję każdy (wcześniej po dwie). Drzewko przywódcy miało ok. 15 fabryk dla miasta z trzema regionami.
+Zasady, kalendarz i lista testów: TORUN_WALKA_O_WLADZE_0.8.5.md.
+
+The Fallen Eagle Alpha 0.8.4 (wersja testowa) – naprawa wydarzeń, skala pojazdów, doradcy, balans Warszawy, surowce, teren, przywódcy
+WYDARZENIA – NAPRAWA
+- Przyczyna: wydarzenia „Codzienności rozpadu” (18 ogólnych + 27 lokalnych) miały fire_only_once. W HOI4 to blokada GLOBALNA –
+  wystarczyło, że wydarzenie trafiło do dowolnego z ~80 państw AI, i gracz już nigdy go nie dostał. Do tego średni czas 420 dni.
+- Teraz: każde państwo dostaje każde wydarzenie raz (własna flaga państwa), średni czas ok. 2,5 raza krótszy (np. 420 -> 168 dni),
+  start już od 25.11.2027. „Wieści ze świata” (zycie.100–117): 1400 -> 700 dni.
+- Ukryte wydarzenia aneksji marionetek i losu Putina sprawdzane co 7 dni zamiast co 3 (ostrzeżenie „trigger every day” z error.log).
+- Sprawdzone automatycznie: 536 wydarzeń, 31 przestrzeni nazw, brak duplikatów ID, każde wywołanie z fokusu/decyzji/on_action
+  wskazuje istniejące wydarzenie, wszystkie flagi z warunków są gdzieś ustawiane, komplet tytułów, opisów i ilustracji.
+MODELE 3D – SKALA
+- BTR-82 był zapisany w centymetrach (284 jednostki długości zamiast ~6) – w grze był ok. 40 razy za duży. Humvee był 2 razy za duży,
+  Abrams, T-14 i T-90 o 30–70% za duże, K2 i T-15 za małe.
+- Każdy pojazd ma teraz własną skalę liczoną z rzeczywistej długości (0,78 jednostki na metr jak Leopard 2A7, minimum 5,5).
+- Ikony fokusów sprawdzone: wszystkie 2420 mają standardowy rozmiar gry (100×88 i 96×88) – nie wymagały zmian.
+DORADCY (nowe)
+- 78 fikcyjnych doradców: po 6 dla Torunia, Bydgoszczy, Straży Marszałkowskiej, Kancelarii Prezydenta, Mafii Pruszkowskiej, Zakonu,
+  Rosji, Warmii i Mazur, Konfederacji Północnej, Zjednoczonej Rzeczypospolitej, Białegostoku, Gdyni i Gdańska.
+- Skład: 3 doradców politycznych, teoretyk, szef sztabu, dowódca naczelny (Rosja, Gdynia, Gdańsk – szef floty).
+- Każdy ma własną cechę z polską nazwą, opisem postaci i konkretnymi premiami (5–10%), koszt 100–150 PP, część z warunkami
+  (wojna, poparcie wojny, stabilność, data).
+- Portrety: cywile – sylwetki na fiolecie, wojskowi – popiersia 3D na bordo (jak dowódcy z 0.8.3).
+WARSZAWA – BALANS
+- Mafia z Kibicami Legii startowała z ~670 tys. rezerw i 12 regionami, a już po 3 tygodniach mogła zaatakować Sejm (1 region).
+- Mafia: „Bojówki zamiast wojska” na 300 dni (organizacja i atak −15%, planowanie −25%), Legia: „Chuligańska dyscyplina” na 200 dni.
+- Wojny Mafii z Sejmem i Kancelarią dopiero od 1.03.2028, przy dwa razy większej armii i tylko gdy jest wyraźnie silniejsza.
+- Sejm, Kancelaria, Policja i Wojsko: „Gmachy państwowe” (obrona +20%, okopanie +3, szybsze okopywanie).
+- Więcej dywizji na starcie: Wojsko 4, Policja 3, Sejm, Kancelaria, Mafia, Legia, Praga po 2.
+- Koalicja Sejm–Prezydent przeciw Mafii jest dla AI realna (wcześniej prawie nigdy nie powstawała).
+- Śródmiejskie dzielnice Warszawy mają teraz teren miejski (trudniejszy atak).
+SUROWCE
+- Dodane rzeczywiste złoża i ośrodki: Bogdanka (Puchaczów, Cyców), rudy Suwalszczyzny (Krzemianka, Jeleniewo, Udryń), Łęczyca,
+  huty (Warszawa-Bielany, Ostrowiec, Stalowa Wola, Częstochowa), huta aluminium w Koninie, ropa (Władysławowo/B3–B8, Krokowa,
+  Dębno, Międzychód, Drezdenko, Grodzisk Wlkp.), kauczuk syntetyczny i opony (Płock, Włocławek, Olsztyn, Grudziądz, Bydgoszcz,
+  Toruń, Puławy, Police).
+- Drobne zasoby w pozostałych gminach pojawiają się nieco częściej; bez losowego wolframu i chromu (w Polsce ich nie ma –
+  zostają w handlu).
+TEREN
+- 714 prowincji zmienionych wg geografii: Bory Tucholskie i wielkie puszcze -> las, Biebrza, Narew, Polesie, Żuławy, Barycz -> bagno,
+  Kaszuby, Wzgórza Dylewskie, Roztocze, Góry Świętokrzyskie, Jura, Suwalszczyzna -> wzgórza, duże miasta -> teren miejski.
+- „Pustynie” z mapy źródłowej (odkrywki Bełchatów, Konin, Łęknica) -> równiny. Góry tylko w Sudetach.
+- Tekstura podłoża i drzewa w zmienionych prowincjach dopasowane, żeby mapa wyglądała tak, jak działa.
+PRZYWÓDCY REGIONÓW
+- 7 prawdziwych prezydentów miast (wybory 2024) jako przywódcy demokratycznych państw-miast: Gdynia, Konin, Kalisz, Inowrocław,
+  Leszno, Poznań, Olsztyn – tylko z publicznym programem, bez wymyślonych czynów; bez zdjęć (sylwetka), zdjęcie można dodać.
+- 39 fikcyjnych przywódców tam, gdzie był sam tytuł (komitety ocalenia, księstwa, kasztelanie, gminy) – z opisami.
+- Źródła: LIDERZY_0.8.4.md.
+
+The Fallen Eagle Alpha 0.8.3 (wersja testowa) – dowódcy, flagi Warszawy, lokalny koloryt
+DOWÓDCY
+- 35 nowych, fikcyjnych dowódców dla 27 państw, które miały 0–1 generała (Toruń, Bydgoszcz, bloki Warszawy, Praga, Legia, Mafia,
+  Zakon, Warmia i Mazury, Trójmiasto, Płock, Włocławek, Grudziądz, Radom, Kutno, Łowicz, Suwałki, Leszno, Kalisz, Kujawy, Konin,
+  Gniezno, Konfederacja Północna). Nazwiska i pseudonimy nawiązują do lokalnych miejsc i tradycji („Żużlowiec”, „Kanał”, „Żyleta”,
+  komtur Nogatowski, płk Ułański z kawaleryjską tradycją Grudziądza...). Umiejętność 2–3, własne cechy dowódcy.
+- Portrety nowych dowódców: popiersia z modeli 3D moda (fikcyjne twarze), wspólna stylizacja.
+- Wszyscy dowódcy wojskowi mają teraz bordowe tło portretu; przywódcy państw zostają na fiolecie.
+FLAGI (od Michała)
+- Policja (PLC), Wojsko – MON (WOJ), Sejm (SMR), Legia (LEG), Mafia Pruszkowska (MPR) – wszystkie rozmiary i warianty ideologii.
+EKRANY ŁADOWANIA
+- 2 nowe ekrany: ruletka „NOTHING…” i „SOMETHING” (od Michała), całe rysunki w pasie 16:9.
+LOKALNY KOLORYT
+- 27 lokalnych wydarzeń w ramach „Codzienności rozpadu” (raz na kampanię, małe skutki): toruńskie „jo”, pierniki zamiast premii,
+  Motoarena, wojna na nagłówki Toruń–Bydgoszcz, spór o nazwę lotniska, Łuczniczka, szneka z glancem, „słoiki” w Warszawie,
+  Bazar Różyckiego, Żyleta, Pruszków, lotnisko Warszawa-Radom, bilet na molo, derby Trójmiasta, Brama nr 2, pylon stacji w Płocku,
+  tama we Włocławku, Święto Róży i węzeł w Kutnie, procesja w pasiakach, tężnie w Inowrocławiu, konie z Cytadeli, Kortowiada,
+  biegun zimna, Byki z Leszna, najstarsze miasto Kalisz, turyści w Malborku.
+- 2 decyzje: paczki z piernikami na posterunki (Toruń), koncert w Operze Leśnej (Sopot).
+- Źródła odniesień: LOKALNE_ODNIESIENIA_0.8.3.md.
+
+The Fallen Eagle Alpha 0.8.2 (wersja testowa) – poprawki po teście 0.8.1
+ROSJA I PUTIN
+- Błąd: Putin umierał wiosną 2028 jeszcze przed interwencją, a po jego śmierci Rosja nie mogła już rozpocząć wojny na Mazurach.
+  Teraz jego los rozstrzyga się wyłącznie w połowie wojny na Mazurach (gdy Rosja zajmie połowę celów albo po 180 dniach walk) – 90% śmierci.
+- Zabezpieczenie: jeśli prezydent zmarł przed interwencją (np. stary zapis), w drzewku „Kryzys sukcesji” jest fokus
+  „Dokończyć operację mazurską”, który rozpoczyna interwencję.
+MODELE 3D
+- Białe kwadraty na pojazdach: efekty spalin i wystrzału były przypięte do węzłów „exhaust” i „barrel”, których modele nie mają,
+  więc rysowały się na środku pojazdu. Teraz efekty siedzą na prawdziwych wylotach (wydech, lufa) czołgów i BWP;
+  Humvee i BTR-82 mają tylko dźwięki, bez efektów.
+TORUŃ – KAMPANIA WYBORCZA
+- Każda decyzja kampanii (fokusy kampanii, wydarzenia, rejestracja, debata) zmienia też popularność partii kandydata w oknie polityki:
+  0,5% za każdy punkt poparcia (w górę i w dół).
+- Wsparcie kandydata (+3 i więcej) włącza na 90 dni „kurs” jego partii z premiami i karami zgodnymi z programem:
+  Gulewski – ciągłość władzy (stabilność, PP / mniejsze poparcie wojny), Zaleski – gospodarz (budowa, PP / stabilność),
+  Romanowski – miasto dla mieszkańców (stabilność / dobra konsumpcyjne, PP), Kowalczyk – nowy Toruń (badania, PP / poparcie wojny),
+  Elana – porządek (poparcie wojny, pobór / stabilność), Krevienko – wolne dzielnice (poparcie wojny, obrona / PP).
+  Po zaprzysiężeniu zostaje tylko kurs zwycięzcy.
+MENU
+- Tło menu wraca do czerwieni (czerwony styl interfejsu moda); fioletowe zostają portrety.
+
+The Fallen Eagle Alpha 0.8.1 (wersja testowa) – remaster oprawy w stylu The Fire Rises
+Mechanika, ścieżki polityczne, daty, balans, wojny i identyfikatory (fokusy, postacie, wydarzenia, państwa) bez zmian.
+Zmieniono wyłącznie grafikę i jej przypisanie.
+PORTRETY (267)
+- Wspólny standard TFR: postać wycięta ze zdjęcia, fioletowe tło z rozświetleniem z prawej góry, raster, ziarno, winieta,
+  jednakowy kadr (czubek głowy ok. 20 px, szerokość głowy ok. 82 px), lekka obróbka skóry bez wygładzania; rysy i mimika bez zmian.
+- Osoby bez zdjęcia (127): zamiast kolorowych sylwetek z napisami – ciemna postać pod światło (cywil, kobieta, mundur z czapką,
+  mundur, kaptur dla anarchistów i bojówek, duchowny z koloratką); żaden prawdziwy wizerunek nie trafia na postać fikcyjną.
+- Instytucje (42: rady, komitety, związki, władze gmin): biały emblemat na fiolecie zamiast twarzy (kolumnada, ratusz, korona, waga,
+  koło zębate z młotem, koło kolei, krzyż, kłosy, drzewo, kotwica, układ scalony MAZUR-1, orzeł moda).
+- Usunięto zastępcze zdjęcie „narady” używane przez 53 państwa i herbowe tarcze z napisami (67).
+- Małe portrety 65×67 to teraz kadr głowy, a nie ściśnięty cały portret.
+IKONY FOKUSÓW
+- Nowa biblioteka: 103 motywy, 378 kompozycji, motyw wybierany z nazwy, potem z opisu i efektów fokusu (6994 fokusy);
+  typowe fokusy (np. „Pobór powszechny”) mają w każdym państwie tę samą kompozycję.
+- Flaga państwa tylko przy motywach narodowych (wojsko, wojna, granice, sojusze, naród); gospodarka, społeczeństwo, nauka
+  bez flagi – koniec z ikonami różniącymi się wyłącznie kolorem.
+- Współczesny sprzęt z modeli 3D moda: K2, Leopard 2A7, Abrams, Stryker/Rosomak; dla Rosji T-80, T-14, BMP-3, BTR-82, T-15.
+- Fokusy końcowe – złoty wieniec, wybory kluczowe (wzajemne wykluczenie) – flaga i większy motyw.
+- Portrety na fokusach w stylu TFR: wycięta postać przed flagą (przywódcy Torunia przed flagami swoich ruchów).
+- Liczba tekstur ikon spadła z ok. 3500 do ok. 2300 (mniejsza paczka).
+DUCHY NARODOWE (600)
+- Motyw z nazwy, opisu i skutków; ramka wg rodzaju: kryzys (czerwona, ścięta, pęknięcie), wojsko (oliwkowa tarcza),
+  gospodarka (mosiądz), społeczeństwo (stal), instytucja i reforma (srebro), przywilej (złoty okrąg).
+WYDARZENIA
+- 478 wydarzeń dostało ilustracje dobrane do treści (tytuł i opis): 28 kategorii, 156 obrazków z prawdziwymi miejscami
+  (Toruń, Bydgoszcz, Gdańsk, Warszawa, Sejm, Pałac Prezydencki, Malbork, blokowisko, stadiony, Sopot) i motywem z pierwszego planu.
+  Zastępują ~30 obrazków „mapa sztabowa + sylwetka + czerwona poświata”.
+- Super-wydarzenia: zdjęcie miejsca przechodzi w mapę z flagami i strzałkami (Mazury, Wyprawa krzyżowa, Wojna metropolitalna,
+  Bitwa o Warszawę, Orzeł powstaje, Noc bez światła).
+EKRANY ŁADOWANIA I MENU
+- 14 ekranów ze zdjęć: jednolity kadr na cały ekran (bez ramek różnej grubości), wspólne logo i podpis miejsca w pasie 16:9.
+- Tło menu w fiolecie TFR (w 0.8.2 przywrócona czerwień).
+DRZEWKA
+- Kontrola układu wszystkich 98 drzewek (nowy skrypt): brak nakładających się fokusów i pustych przerw; 3 pary fokusów w drzewku Federacji stoją za blisko (ramki nazw się stykają).
+  19 linii wymagań przechodzi przez inny fokus – zostawione, bo poprawa wymaga zmiany układu gałęzi (do decyzji).
+SPRAWDZONE POZA GRĄ (wymaga testu w silniku)
+- Odwołania do grafik, formaty DDS, wymiary, przezroczystość ikon, duplikaty ID, polskie znaki i cyrylica w foncie mapy.
+- Nie było testu w grze: proszę o nowy error.log po uruchomieniu.
+
+The Fallen Eagle Alpha 0.81 – ekran wyboru państwa i zasady gry
+EKRAN WYBORU PAŃSTWA
+- 9 wyróżnionych państw z pełnym opisem: o co toczy się gra, co jest w drzewku i jaka jest trudność – Toruń, Bydgoszcz, trzy bloki
+  Warszawy (Sejm, Prezydent, Mafia), Zakon Krzyżacki, Rosja, Warmia i Mazury, Konfederacja Północna.
+- Ikony duchów narodowych na starcie przy każdym państwie.
+- Wszystkie pozostałe państwa (67) mają opis z danych: stolica, liczba regionów, partia rządząca, rodzaj rozgrywki i trudność
+  (zielona – łatwa, żółta – średnia, czerwona – trudna); lista posortowana od największych.
+ZASADY GRY (grupa „The Fallen Eagle”)
+- Kapitulacja państw polskich: natychmiastowa aneksja (domyślnie) albo zwykła konferencja pokojowa.
+- Marionetki: zakaz (domyślnie) albo dozwolone.
+- Codzienność rozpadu: losowe wydarzenia włączone (domyślnie) albo wyłączone.
+
+The Fallen Eagle Alpha 0.80 – generałowie, nowe modele i rosyjskie wojsko
+GENERAŁOWIE (56, z portretami)
+- Wojsko (WOJ): 12 prawdziwych generałów Wojska Polskiego (m.in. Andrzejczak i Kukuła jako marszałkowie polni, Mika, Błażeusz, Król,
+  Sikora, Gocuł, Surawski, Skrzypczak, Polko, Komornicki) – tylko jako dowódcy armii, bez przypisywania im polityki.
+- 17 fikcyjnych dowódców (wymyślone nazwiska) dla największych państw: Zjednoczona Rzeczpospolita, Konfederacja Północna, Ziemia Białostocka,
+  Korona Polska, Toruń, Bydgoszcz, Warmia i Mazury, Piotrków, Radom, Kalisz, Płock, Suwałki, Republika Socjaldemokratyczna,
+  Republika Wolnościowa; „Kruk” u Mafii i „Brodacz” u Kibiców Legii.
+- Rosja: 12 generałów i admirał (Gierasimow i Surowikin jako marszałkowie polni, Dwornikow, Tiepliński, Łapin, Mordwiczew i inni);
+  Obwód Królewiecki: admirał Floty Bałtyckiej i generał; Białoruś: 4 generałów; Niemcy: 4; Ukraina: 4.
+MODELE 3D – POLSKA
+- Piechota w polskim kamuflażu wz.93 „Pantera” z biało-czerwoną naszywką (większość państw), oddziały specjalne Warszawy w woodlandzie
+  z kominiarkami, milicje i bojówki w zielonym kamuflażu (naszywki przemalowane na biało-czerwone), piechota morska bez zmian.
+- Broń: HK416 w rękach polskich żołnierzy, AK-74 u Rosjan i Białorusinów.
+- Sprzęt według poziomu technologii: Humvee (zmotoryzowane), BWP-1, a później Stryker jako odpowiednik Rosomaka (zmechanizowane),
+  Leopard 2, K2 Black Panther, Abrams M1A2 (czołgi).
+MODELE 3D – ROSJA, OBWODY I BIAŁORUŚ
+- Rosja: piechota w rosyjskiej cyfrowej „flora”, spadochroniarze WDW w niebieskich beretach, specjalsi w Ratniku, piechota morska
+  Floty Bałtyckiej (główna piechota Obwodu Królewieckiego); sprzęt: BTR-82, BMP-3, T-15, Sprut-SD, T-72, T-80UD, T-14 Armata.
+- Białoruś: własna piechota, BWP-1, BTR-82, T-72.
+DŹWIĘK
+- Rosyjskie komendy głosowe oddziałów (48 nagrań: spoczynek, walka, sukces, marsz, odwrót) dla Rosji i obwodów.
+- Nowe dźwięki walki dla wszystkich nowych modeli: strzały karabinów i kaemów, wystrzały czołgów, działko BMP, silniki T-90/Abramsa/BMP,
+  transporterów kołowych i ciężarówek.
+FLAGI OD MICHAŁA
+- Toruń: oficjalna flaga miasta jako flaga wyjściowa i dla Gulewskiego, Zaleskiego i Kowalczyk; róża na biało-błękitnym polu dla
+  socjaldemokratów Romanowskiego; barwy i herb Elany, gdy rządzi Ruch Elany; anioł z czerwono-czarnym polem i „A”, gdy wygra Krevienko.
+- PKP (Kociewie i Polski Holding Kolejowy), Włocławek jako korporacja T-Pizza, Płock jako korporacja paliwowa – flagi z logo.
+EKRANY ŁADOWANIA I DŹWIĘK
+- 7 nowych ekranów ładowania od Michała: Malbork zimą, Motława w Gdańsku, stadion zimą, blokowisko, molo w Sopocie,
+  Pałac Prezydencki, mównica sejmowa (razem 14 grafik + 11 ekranów regionów).
+- INTRO.mp3 jako muzyka menu i ekranu ładowania.
+- Super-wydarzenie „Rosja wkracza na Mazury” gra utwór „Inwazja Rosji na Warmię i Mazury”, a „Wojna metropolitalna” (Toruń kontra Bydgoszcz) –
+  „Inwazja jakaś taka”.
+LOS PUTINA
+- Los Putina rozstrzyga się w połowie wojny na Mazurach: gdy Rosja zajmie połowę ziem Warmii, Mazur i Suwalszczyzny albo po 180 dniach walk
+  (domyślnie 90% szans na śmierć). Bez interwencji – wiosną 2028 jak dotąd.
+PORTRETY
+- Przywrócone fioletowe tło portretów przywódców i generałów (bez przebarwiania na czerwono-białe).
+POPRAWKI Z ERROR.LOG (pierwszy log od Michała: 588 tys. linii)
+- Ok. 99% błędów pochodziło z plików samej gry, które odwołują się do usuniętych ideologii vanilla (fascism, communism, democratic,
+  neutrality) i technologii z lat 30. Cztery grupy vanilla wracają jako „uśpione” (nikt ich nie używa, nie da się ich wzmacniać) –
+  znika ok. 400 tys. błędów modyfikatorów, scorerów, operacji, cech przywódców i postaci.
+- Puste nadpisania strategii AI i decyzji z gry, które codziennie sprawdzały nieistniejące technologie i sprzęt (ok. 270 tys. błędów).
+- Usunięty teren „industrial” z jednostek i technologii (mapa moda go nie ma).
+- Muzyka super-wydarzeń w osobnej, niewybieralnej stacji radiowej – wcześniej gra zgłaszała „Song doesnt exist”.
+- Humvee bez animacji ataku (1140 błędów), zdublowana tekstura gąsienic, błędny modyfikator w duchu Torunia, zbyt częste zdarzenie kontrolne.
+INNE
+- Paczka ma teraz 14 części: nowe części 12 (piechota 3D), 13 (pojazdy 3D) i 14 (rosyjskie głosy i dźwięki walki).
+
+The Fallen Eagle Alpha 0.79 – los Putina
+- Szansa śmierci Putina podniesiona z 55% do 90% (domyślna, losowa zasada gry „Rosja: los Putina”; opcje „Zawsze umiera”
+  i „Zawsze przeżywa” bez zmian).
+- Los rozstrzyga się 45 dni po rozpoczęciu interwencji na Mazurach, a jeśli Rosja do wiosny 2028 nie zaatakuje – ok. 1,5 miesiąca po 1 kwietnia 2028.
+  Rzut odbywa się tylko raz na kampanię. Po śmierci Rosja wchodzi w kryzys sukcesji (drzewko kryzysu, wybory).
+- Teksty wydarzeń o śmierci prezydenta Rosji nie zakładają już, że trwa wojna na Mazurach.
+
+The Fallen Eagle Alpha 0.78 – aneksje, menu i nowoczesne wydarzenia
+ANEKSJE ZAMIAST MARIONETEK
+- Państwo polskie, które skapituluje, jest od razu wcielane przez zwycięzcę razem z wojskiem – bez konferencji pokojowej.
+  Upadek bloku w Warszawie (Sejm, Prezydent, Mafia) oznacza też wcielenie jego zaplecza (Policja, Wojsko, Kibice Legii).
+- Zakaz marionetek: jeśli polskie państwo stanie się czyimkolwiek podmiotem (pokój, fokus, zdarzenie), zwierzchnik od razu je anektuje.
+  Wyjątki to tylko układ startowy: zaplecze bloków Warszawy, gmina Nowe Miasto Lubawskie i Eurostaaty pod zarządem Niemiec.
+MENU GŁÓWNE
+- Gra 1.19 podmieniała tło menu na obrazy z DLC – grafika moda leży teraz nad tłem gry, więc menu zawsze wygląda jak w projekcie
+  (czarny panel z logo i przyciskami, kolaż po prawej).
+- Ukryty pasek ikon DLC po lewej stronie menu i napis PLAY_IN_ENGLISH_TT na środku ekranu.
+- Atlas czcionki nazw na mapie w rozmiarze 512 x 1024 (wcześniej 512 x 912).
+FOKUSY
+- Naprawione niewidoczne ikony fokusów (m.in. kryzys w Toruniu: „Warszawa milczy”, „Debata studencka”, „Trybuna przy Bema”, „Poparcie UMK”,
+  „Koniec rządu tymczasowego”): tekstury DXT miały wymiary 95 x 85, których gra nie wczytuje. Nowy krok budowania dopełnia każdą taką
+  teksturę do wielokrotności 4 px.
+WYDARZENIA – NOWY WYGLĄD I DŹWIĘK
+- Nowe ilustracje wszystkich wydarzeń w jednym stylu: ciemna mapa sztabowa, duża sylwetka, czerwona poświata i etykieta kategorii
+  (FRONT, NARADA, ULICA, POLITYKA, GOSPODARKA, ENERGIA, KOLEJ, MOSKWA…). Narady nie pokazują już rosyjskiej flagi w polskich wydarzeniach.
+- Nowe okno wydarzenia: proste krawędzie, grafitowa rama, jasny papier, czerwony akcent; nowe przyciski opcji; gazeta „Kurier · The Fallen Eagle”.
+- Dźwięki: 8 nowych efektów (meldunek, front, alarm, radio, tłum, teleks, dzwon, uderzenie super-wydarzenia) – każde widoczne wydarzenie
+  gracza gra dźwięk pasujący do swojej kategorii, a super-wydarzenia mają własne mocne uderzenie.
+- 18 nowych zwykłych wydarzeń „codzienności rozpadu” dla wszystkich państw polskich: kolejki po chleb, mróz i puste składy węgla, dezerterzy,
+  uzbrojeni przemytnicy wspierani przez białoruskie służby (ich ofiary trafiają do punktów pomocy), niezależne radio, strajk komunikacji,
+  wybuch w składzie amunicji, powroty z emigracji, szpital bez prądu, zagraniczni dziennikarze, czarny rynek paliwa, zbiórka w parafiach,
+  pierwsza rocznica rozpadu, kibice proponujący „ochronę”, atak na serwery urzędu, blokady rolników, gołębie pocztowe, pociąg z pomocą.
+INNE
+- Projektant dywizji: tekstury elementów listy zostawione jak w grze (w 1.19 mają 2 klatki).
+
+The Fallen Eagle Alpha 0.77 – wojny z drzewek, aneksje i nowy górny pasek
+WOJNY TYLKO Z DRZEWEK
+- Usunięte losowe wojny AI z wersji 0.75 („Dążenie do dominacji”): państwa bez drzewek i małe gminy nie wypowiadają już wojen same z siebie.
+  Wojny wybuchają wyłącznie przez fokusy wojenne w drzewkach narodowych i regionalnych.
+- Ogólne drzewko małych gmin nie ma już fokusów ataku na sąsiadów (zostaje obrona, opieka silniejszego i Liga Małych Ojczyzn).
+- Usunięte startowe strategie podboju Torunia i Bydgoszczy – ekspansja idzie przez ich drzewka.
+- Rosja, fokus „Druga fala”: zamiast stałego wypowiadania wojen daje roszczenia i jeden cel wojenny na polskiego sąsiada (AI od razu wypowiada wojnę).
+WARSZAWA: WOJNA ZAMIAST SOJUSZU
+- AI bloków (Sejm, Prezydent, Mafia) prawie nigdy nie wybiera „koalicji stołecznej” (waga 1, wcześniej wysoka), a wojny między blokami mają wagę 25.
+- Próg armii dla wojny o Warszawę obniżony z 6000 do 1500 żołnierzy (koalicja przeciw Mafii: z 5000 do 2000) – bloki mają małe armie,
+  więc dotąd nie mogły zacząć wojny. Propozycję koalicji AI zwykle odrzuca (60 do 15).
+ANEKSJE
+- Państwo polskie, które skapituluje, zostaje od razu wcielone przez zwycięzcę razem z wojskiem (wcześniej często przeżywało na kilku regionach).
+SUPER-WYDARZENIA – NAPRAWA
+- Super-wydarzenia nie odpalały, bo zależały od zdarzenia „dodanie relacji wojennej”. Teraz ukryte zdarzenia sprawdzają stan wojen codziennie
+  (jak w modzie Super Events): Rosja na Mazurach, Wyprawa krzyżowa, Wojna metropolitalna, Białoruś za Bugiem, Bitwa o Warszawę, Noc bez światła.
+- Okno super-wydarzenia znika dopiero po kliknięciu przycisku (bez flagi czasowej).
+NOWY GÓRNY PASEK
+- Cały górny pasek narysowany od nowa w stylu moda (grafit i czerwień) i dopasowany do układu z gry 1.19:
+  tło paska z polem flagi i tacką przycisków, płyta z datą i napięciem światowym, pigułka daty z czerwonymi pasami pauzy, kroki prędkości,
+  ramki wartości zasobów, 10 przycisków menu (decyzje, wywiad, technologie, dyplomacja, handel, budowa, produkcja, rekrutacja, logistyka,
+  sztab) i okrągłe przyciski armii, floty i lotnictwa.
+- Naprawione ucięte ikony przycisków: w 1.19 przyciski paska mają 2 klatki, a mod podmieniał je jednoklatkowymi teksturami z dawnej wersji gry.
+
+The Fallen Eagle Alpha 0.76 – prawdziwe barwy i super-wydarzenia
+FLAGI WZOROWANE NA PRAWDZIWYCH
+- 46 państw ma flagi wzorowane na prawdziwych flagach miast, gmin i województw (układ pasów, barwy i proporcje jak w oryginale,
+  herb uproszczony do godła w stylu moda), m.in.: Toruń (biel i błękit, brama), Bydgoszcz (biel, czerwień, błękit), Gdańsk (czerwień, korona
+  i dwa krzyże), Gdynia (biel nad turkusem), Sopot (błękit nad złotem, mewa i ryba), Słupsk, Chojnice, Starogard, Białystok, Suwałki (7:1),
+  Łomża (4:1), Lublin (2:1:2), Biała Podlaska (2:1:1:2), Łódź (żółć nad czerwienią, łódź), Olsztyn (złota muszla i fala), Nowe Miasto Lubawskie,
+  Lubawa, Giżycko, Chełmża, Rypin, Żnin, Koronowo, Solec Kujawski, Świecie (19:6:6:19), Tuchola (niebieski krzyż), Lubicz, Łysomice,
+  Dąbrowa Chełmińska, Osielsko, Nowa Wieś Wielka, Zławieś Wielka, Inowrocław, Włocławek, Grudziądz; bloki Warszawy w barwach stolicy
+  (żółć i czerwień); Płock i Kancelaria – mazowiecka czerwień z orłem; Gniezno – barwy Wielkopolski; Kutno, Sieradz, Piotrków – barwy ziemi łódzkiej.
+- Źródła: listy flag gmin województw (Wikipedia) i flagi województw; tam, gdzie nie było pewnych danych, zostały flagi heraldyczne z v0.73.
+SUPER-WYDARZENIA (7 nowych, każde raz na kampanię)
+- Rosja wkracza na Mazury – gdy Rosja wypowiada wojnę polskiemu państwu.
+- Wyprawa krzyżowa – gdy Zakon Krzyżacki wypowiada wojnę polskiemu państwu.
+- Wojna metropolitalna – gdy Toruń i Bydgoszcz idą na wojnę.
+- Białoruś przekracza Bug – gdy Białoruś wypowiada wojnę polskiemu państwu.
+- Bitwa o Warszawę – gdy jeden z bloków (Sejm, Prezydent, Mafia) atakuje rywala w Warszawie.
+- Noc bez światła – pierwsza zima rozpadu (po 10 stycznia 2028).
+- Orzeł powstaje – po fokusie „Rzeczpospolita Odrodzona” w drzewkach regionalnych.
+- Ilustracje: mapa moda w stylu odprawy sztabowej – ciemne tło, strzałki natarcia, łuny i dym, flagi stron.
+
+The Fallen Eagle Alpha 0.75 – „Dążenie do dominacji”
+WOJNY I AI
+- Nowy system „Dążenie do dominacji”: państwa AI same wypowiadają wojny podboju – najpierw najmniejszym słabszym sąsiadom (do 3 regionów),
+  potem średnim (do 12), na końcu każdemu słabszemu. Cel musi być wyraźnie słabszy (siła wojsk co najwyżej 80% naszej), bez sojuszników i podmiotów;
+  po wypowiedzeniu wojny 120 dni przerwy. Najbardziej ambitni (średnio co 45 dni): Toruń, Bydgoszcz, trzy bloki Warszawy, Konfederacja, Warmia, Korona;
+  większe państwa co 120 dni, najmniejsze co 300 dni. Wymagane: brak innej wojny, co najmniej 2000 żołnierzy w dywizjach, stabilność powyżej 25%.
+- Toruń i Bydgoszcz od startu celują w gminy wokół (strategia podboju sąsiadów do 5 regionów).
+- Warszawa: bloki Sejmu, Prezydenta i Mafii Pruszkowskiej (z marionetkami) nie zawierają ze sobą sojuszy – rywalizują i walczą o stolicę;
+  Liga Małych Ojczyzn nie zaprasza bloków warszawskich.
+- Progi armii dla fokusów wojennych obniżone (2/3/5/7/9 tys. zamiast 3/5/10/15/20 tys.; kampanie wojenne 3/5/8 tys.) – blokowały AI
+  (np. „Kampania łomżyńska” wymagała 20 000 żołnierzy).
+ROSJA I BIAŁORUŚ
+- Po zwycięstwie na Mazurach nowa gałąź: „Państwo Związkowe w akcji” (Białoruś może dołączyć do sojuszu, wysłać sprzęt albo odmówić),
+  „Druga fala” (roszczenia do polskich sąsiadów, Rosja zaczyna regularnie atakować słabszych – najpierw najmniejszych),
+  „Uderzenie z dwóch stron” (cel wojenny; Białoruś w sojuszu może uderzyć na Podlasie od wschodu – może odmówić),
+  „Rosja nad Wisłą” (120 stanów: rdzenie na zdobytych ziemiach).
+IKONY FOKUSÓW
+- Czystszy styl: większy i ostrzejszy element, tło – pociągnięcie pędzla w barwach państwa i mały proporzec z flagą zamiast dużej, ciemnej,
+  podartej flagi; słabsza poświata. Każde państwo nadal ma własne wersje ikon.
+INNE
+- Nowa nazwa wydania: The Fallen Eagle Alpha 0.75 (menu, launcher, pliki). Opis moda i krótka historia: OPIS_MODA.txt.
+
+v0.74 (testowa) – nowe ikony fokusów: styl „podarta flaga”
+- Ikony tematyczne fokusów w nowym stylu zamiast tej samej okrągłej ramki z laurem: malowany element na tle podartej, falującej flagi państwa,
+  flagi na drzewcu albo pociągnięcia pędzlem w barwach państwa; dla wojen – wybuch w tle, dla klęsk i buntów – przypalona flaga i ogień.
+- Ta sama ikona tematyczna wygląda inaczej w każdym państwie (barwy i godło jego flagi) – 3078 ikon w barwach państw, od razu widać, czyje to drzewko.
+- 40 tematów, 156 wariantów (wcześniej 81); nowe elementy z paczki Assets (m.in. kościół, kłódka, cegły i łopata, chleb, radio, rolnik,
+  strażak, linie energetyczne, tory, kajdanki, barykada, koktajl Mołotowa); orzeł – własny orzeł moda zamiast amerykańskiego bielika.
+- Fokusów z ikoną tematyczną: 6721 (wcześniej 5818) – ten sam wariant powtarza się w drzewku najwyżej 3 razy.
+- Wspólne zasady jak w dużych modach: światło z lewej-góry, ciemny kontur, cień w prawo-dół, ciemna poświata oddzielająca element od tła.
+- Ikony zapisane w kompresji DXT5 (jak ikony z gry). Mod ma teraz 11 części – ikony fokusów są w częściach 10 i 11.
+
+v0.73 (testowa) – nowe flagi, nowe ikony duchów narodowych, kompromisy w fokusach
+FLAGI
+- Wszystkie flagi państw polskich i ich wariantów (261 projektów) narysowane od nowa: 12 układów heraldycznych (kanton, krzyż skandynawski, klin, bordiura,
+  skos, krzyż św. Andrzeja, tarcza herbowa, ćwiartki, krążek…) i 40 godeł (zamek, brama, korona, krzyż, kotwica, jodła, dąb, kłosy, koło zębate,
+  skrzydlate koło kolejowe, pyrlik i żelazko, waga, łódź, księga, miecze, pochodnia, orzeł…).
+- Godło dobrane do państwa (porty – kotwica, koleje – koło, Bory – jodła, zakony – krzyż, monarchie – korona, Łódź – łódź, Trybunał – waga),
+  barwy zachowane z dotychczasowych flag; zasada tynktur (metal na barwie, barwa na metalu).
+- Każda flaga ma warianty ideologiczne: socjalistyczny (czerwone pole, barwy państwa przy drzewcu, gwiazda), wolnościowy (czerwień/czerń),
+  konserwatywny (złota bordiura), nacjonalistyczny (przyciemniony), autorytarny (czerń z pasem barwy państwa).
+- „Rzeczpospolita Polska” (finał drzewek regionalnych): biało-czerwona z czerwoną tarczą i orłem moda.
+- Flagi Zakonu, Rosji i Królewca bez zmian.
+DUCHY NARODOWE
+- 600 duchów narodowych, które dotąd dzieliły kilkanaście wspólnych obrazków, ma własne ikony w jednym stylu: medalion z metalową obwódką,
+  tło w barwach państwa, motyw zależny od rodzaju (wojsko, przemysł, polityka, społeczeństwo, gospodarka, nauka, morze), godło dobrane do nazwy;
+  duchy z przewagą kar mają czerwony znacznik w rogu. W obrębie jednego państwa godła się nie powtarzają.
+FOKUSY – KOMPROMISY (30 drzewek regionalnych)
+- Gospodarka: „Priorytet odbudowy” (2 fabryki cywilne, +15% budowy przez rok; −20% budowy zbrojeniówki, −5% produkcji wojskowej)
+  albo „Priorytet zbrojeń” (fabryka zbrojeniowa, +10% produkcji wojskowej, +15% budowy zbrojeniówki przez rok; +5% dóbr konsumpcyjnych, −3% stabilności).
+- Wojsko: „Przyspieszona mobilizacja” (+8000 rekrutów, 2 brygady, +25% poboru przez 180 dni; −10% produkcji wojskowej, −10% budowy, −3% stabilności)
+  albo „Armia z kadr” (broń z magazynów, +2000 rekrutów, −15% czasu szkolenia, +5% organizacji przez 180 dni; −5% poboru).
+- Zagranica: „Pomoc z zagranicy” (1000 karabinów, 150 sprzętu wsparcia, fabryka cywilna; przez rok −15% siły politycznej, −3% stabilności)
+  albo „Bez obcych pieniędzy” (+10% siły politycznej, +3% poparcia dla wojny przez rok, +2% stabilności).
+- Przyłączone ziemie (po fokusie regionu): „Centralizacja” (+10% siły politycznej, +5% budowy przez 2 lata; przez 180 dni −8% stabilności, −3% poparcia dla wojny)
+  albo „Porozumienie z samorządami” (+5% stabilności przez rok; −15% zasobów lokalnych, −5% siły politycznej).
+- Zmiana ustroju (czwarty fokus każdej drogi): 120 dni „Okresu przejściowego” (−5% stabilności, −10% siły politycznej).
+- Idee dróg politycznych, które miały same zalety, dostały koszt zależny od ustroju (np. demokracja −5% poparcia dla wojny, nacjonalizm +4% dóbr konsumpcyjnych).
+- Mniej stałych premii: duch sojuszu zastępowany duchem regionu, duch regionu zastępowany „Rzecząpospolitą Odrodzoną”.
+- Opisy fokusów z wyborem mają linijkę „Wybór:” z kosztem i czasem trwania; AI wybiera wg sytuacji (wojna, zagrożenie, stabilność, siła polityczna).
+- „Jaki ustrój?” nie jest już pustym fokusem (+25 siły politycznej, krótszy).
+FOKUSY – WSZYSTKIE DRZEWKA (gałęzie „Siły zbrojne” i „Społeczeństwo”)
+- „Produkcja wojenna” działa przez rok i podnosi zużycie dóbr konsumpcyjnych (+3%); „Pobór powszechny” obniża tempo budowy (−5%);
+  „Armia zawodowa” obniża pobór (−10%); „Media pod opieką władz” −2% stabilności.
+- „Owoce zwycięstwa” działają rok, „Nigdy więcej klęski” i „Pojednanie” – 2 lata (zamiast na stałe).
+DRZEWKO GENERYCZNE
+- „Pod skrzydła silniejszego”: opis mówi, że sąsiad może przyjąć, wcielić albo odmówić; po odmowie gałąź nie jest już ślepa –
+  „Autonomia w unii” daje wtedy ducha „Samorząd bez opiekuna”. „Sami sobie panami” kosztuje 25 siły politycznej i +3% dóbr konsumpcyjnych.
+
+v0.72 (testowa) – serce regionu: Chełmno, Chełmża, Świecie, Tuchola, Mława, Chodzież + droga do zjednoczenia Polski
+- Nowe drzewka regionalne (razem 30): Ziemia Chełmińska (prawo chełmińskie z 1233 r., miasto zakochanych, mury obronne), Wolne Miasto Chełmża (katedra i cukrownia),
+  Świecie (papiernia – drukuje gazety, bony i propagandę dla regionu), Tuchola (Bory Tucholskie, Borowiacy), Ziemia Mławska (Pozycja Mławska z 1939 r., fabryka elektroniki),
+  Ziemia Nadnotecka (porcelana z Chodzieży, granica z dwoma protektoratami).
+- Chełmno i Chełmża mają zdarzenia powiązane ze sporem Torunia i Bydgoszczy o metropolię.
+- Wszystkie 30 drzewek regionalnych dostało zakończenie „Droga do zjednoczenia”: Więcej niż region (roszczenia do sąsiadów) → Droga na Warszawę
+  (cel wojenny przeciw państwu, które trzyma Śródmieście) → Rzeczpospolita Odrodzona (Warszawa + 300 stanów: nazwa „Rzeczpospolita Polska”, rdzenie, silny duch narodowy).
+- Przywódcy nowych rządów (66) mają herbowe portrety w barwach nowego państwa z symbolem ustroju (korona, gwiazda, waga, koło zębate, miecz) zamiast pustych sylwetek;
+  te same herby są ikonami fokusów, które wprowadzają nowy rząd.
+- Drzewko generyczne zostało dla 20 najmniejszych państw i gmin.
+
+v0.71 (testowa) – kolejne 8 drzewek regionalnych i poprawki błędów
+- Nowe drzewka unikalne (po ok. 70 fokusów, 3 drogi polityczne, 3 zdarzenia, sojusz albo ekspansja):
+  Ziemia Dobrzyńska (Rypin – m.in. odrodzony Zakon Braci Dobrzyńskich i zamek w Golubiu), Księstwo Lubawskie (Lubawa, Iława, Ostróda, Kanał Elbląski),
+  Księstwo Pałuckie (Żnin, Biskupin, kolejka wąskotorowa), Republika Krajeńska (Piła, garnizon Wałcz, bunkry Wału Pomorskiego),
+  Księstwo Gnieźnieńskie (pierwsza stolica: ludowcy, Królestwo Piastów albo Gniezno prymasowskie), Ziemia Łęczycko-Kutnowska (węzeł kolejowy, diabeł Boruta, pamięć Bzury),
+  Księstwo Łowickie (pasiaki, mleko i sady, unia z Sochaczewem), Ziemia Zaborska (Chojnice, Bory Tucholskie, Kaszuby Południowe).
+- Razem drzewek regionalnych: 24. Drzewko generyczne zostało dla 26 najmniejszych państw i gmin.
+- 21 nowych przywódców nowych rządów; tytuły zamiast „Przywódca – …” dla kolejnych 8 państw.
+- AI w drzewkach regionalnych częściej wybiera drogę zgodną z obecnym rządem.
+- Poprawka: w pliku kolorów państw dwa zakomentowane wpisy (WGR, DDR) zostawiały otwarte klamry – gra mogła ignorować kolory wszystkich dalszych państw, w tym wszystkich państw moda.
+- Poprawka: drzewka regionalne z v0.70 dawały sprzęt nieistniejących typów (infantry_equipment, artillery_equipment) – teraz broń strzelecka i lekka artyleria moda.
+- Poprawka: technologie z PaF odwoływały się do nieistniejącej ideologii (postpolonism).
+
+v0.70 (testowa) – „Regiony”: 16 nowych drzewek unikalnych i los małych ojczyzn
+- 16 państw, które miały tylko drzewko generyczne, dostało własne drzewka (po ok. 70 fokusów z gałęziami wojska, społeczeństwa i konsekwencji wojny):
+  Zjednoczona Rzeczpospolita (Lublin), Republika Socjaldemokratyczna (Łódź), Korona Polska (Siedlce), Państwo Narodowe (Łomża),
+  Ziemia Piotrkowska, Ziemia Radomska, Ziemia Kaliska, Ziemia Sieradzka, Ziemia Leszczyńska, Suwalszczyzna, Podlasie Nadbużańskie,
+  Republika Wolnościowa (Sochaczew), Republika Pomorska (Słupsk), Republika Kujawska (Inowrocław), Wolne Miasto Grudziądz, Zagłębie Konińskie.
+- Każde drzewko: etap „Pierwsze dni”, trzy wzajemnie wykluczające się drogi polityczne (nowy ustrój, nowa nazwa i flaga państwa, nowy przywódca),
+  gospodarka z lokalnym bogactwem (Bełchatów, Łucznik, Bogdanka i Stalowa Wola, sodownia w Mątwach, huta aluminium w Koninie, terminal w Małaszewiczach, porty w Ustce…),
+  własne wojsko, wybór: sojusz z sąsiadami (zaproszenia, wspólna obrona, propozycja unii) albo ekspansja (wojny z trzema sąsiadami liczonymi z mapy), final regionalny.
+- 48 nowych zdarzeń z wyborami (np. strajk w sodowni, barka z bronią na Wiśle, prąd dla Łodzi, ludzie zostawieni w lesie przez przemytników nad Bugiem, mecz żużlowy w czasie wojny).
+- 33 nowych przywódców nowych rządów (tytuły zamiast nazwisk, np. „Komendant Cytadeli”, „Rada Regencyjna”, „Prezes Łucznika”).
+- Przywódcy bez nazwiska mają tytuły zamiast „Przywódca – …” (np. Prezydent Kalisza, Starosta Trybunalski, Wojewoda Suwalski).
+- Drzewko generyczne (34 mniejsze państwa i gminy): nowa gałąź „Mała ojczyzna” – kronika gminy i wybór: opieka silniejszego sąsiada (prośba o objęcie opieką, autonomia),
+  Liga Małych Ojczyzn (sojusz małych sąsiadów i unia) albo „Sami sobie panami” (straż gminna, gmina-twierdza); 6 nowych zdarzeń.
+- Ikony fokusów: portrety tylko z prawdziwych zdjęć – sylwetki zastępcze nie są już używane jako portret na fokusie.
+
+v0.69 (testowa) – interfejs w grze w stylu menu głównego
+- 363 tekstury interfejsu przebarwione na styl menu: ciemny grafit zamiast brązu, brudna czerwień zamiast złota i miedzi, papierowe wstawki (wydarzenia, raporty, tabele) w złamanej bieli, delikatne linie CRT i ziarno.
+- Ramki okien (wszystkie typy tiled_window, tła, dialogi, podpowiedzi) dostały cienką czerwoną linię wewnętrzną z narożnikami jak panele menu.
+- Pasek górny, przyciski zakładek (dyplomacja, badania, produkcja, budowa, handel, decyzje), przyciski, karty, paski przewijania, suwaki, nagłówki, okna dyplomacji, polityki, decyzji, produkcji, logistyki, bitew i odtwarzacza muzyki.
+- Kolory, które coś znaczą w grze (zielone/niebieskie przyciski, jaskrawe żółte ostrzeżenia, paski postępu, stany fokusów i badań, kolory partii), zostały bez zmian.
+- Układ okien bez zmian: mod nie nadpisuje plików .gui/.gfx, tylko tekstury pod tymi samymi ścieżkami i w tych samych rozmiarach. Tekstury dodane w nowszych DLC mogą zostać w starym kolorze.
+
+v0.68 (testowa) – ikony z szablonów „Ultimate HOI4 GFX”
+- Ikony fokusów składane z szablonów od Michała (ramki HOI4 + elementy graficzne): 40 symboli w 81 wariantach (kolej, port, wiara, wybory, media, pieniądze, paliwo, most, sojusz, wojsko, broń pancerna, twierdza, przemysł, robotnicy, korona, orzeł, mapa, lotnictwo, nauka, wojna, porządek, prawo, energia, technika, żywność, konstytucja, wywiad, budowa, transport, husaria, rycerze, bunt, dyplomacja, szpital, artyleria, Polska, ludzie, gotowość, klęska, zwycięstwo). Kolor wypełnienia ramki zależy od rodzaju fokusu (polityka – bordo, gospodarka – zieleń, wojsko – stal, dyplomacja – granat, wiara – fiolet).
+- Ikonę z szablonu dostało ok. 4000 fokusów: dobór po nazwie fokusu, a gdy nazwa nic nie podpowiada – po rodzaju dotychczasowej ikony z gry. Ten sam wariant maks. 2–3 razy w drzewku (najczęstsza ikona w drzewku: 4 użycia).
+- Portrety przywódców na fokusach (33) w okrągłej ramce z laurami, w sepii jak w TFR.
+- Duchy narodowe moda (52 tekstury) przerobione na tła i elementy z szablonów.
+- Podziękowania dla autorów szablonów: CREDITS_GFX.txt w folderze moda.
+
+v0.67 (testowa) – większe drzewka i „żywy świat”
+- Wszystkie 65 drzewek unikalnych (poza kryzysami wyborczymi Torunia i Bydgoszczy) dostały nowe gałęzie: +1148 fokusów (3539 → 4687 w drzewkach unikalnych).
+- Gałąź „Społeczeństwo” (9 fokusów) w państwach polskich: Głos ulicy (protest – rozmowy / rozpędzenie / obietnica wyborów), Gazeta i radio, Spis mieszkańców, wybór: Kartki na żywność albo Wolny rynek żywności, Szkoły znów otwarte, Czarny rynek (zalegalizować / rozbić / kupić broń), Ochotnicze straże i kuchnie, Wspólnota w czasie rozpadu.
+- Rosja – „Front wewnętrzny” (8): telewizja państwowa, listy od rodzin żołnierzy, oligarchowie płacą, wybór: ratowanie rubla albo drukowanie rubli, cenzura sieci, lojalność regionów, jedność frontu wewnętrznego.
+- Sąsiedzi (Niemcy, Litwa, Ukraina, Czechy) – „Granica z rozbitą Polską” (8): uchodźcy, przemyt, ochotnicy, wybór: pomoc humanitarna albo zamknięta granica, konsulaty, nowa polityka wobec Polski.
+- Etap V – konsekwencje wojny w każdym drzewku: „Owoce zwycięstwa” (po zdobyciu pierwszych ziem: administracja, defilada, opór na nowych ziemiach, owoce zwycięstwa) i „Po klęsce” (po kapitulacji albo ciężkich stratach: liczymy straty, rząd jedności, wybór: rewanż albo pojednanie, odbudowa armii).
+- Żywy świat: 18 losowych wydarzeń dla państw polskich (sroga zima, ciemność w mieście, strajk, afera w urzędach, dezerterzy, handlarze bronią, konwój humanitarny, inflacja, powódź, kradzież paliwa, uciekinierzy z Warszawy, lokalny bohater, mecz jedności, szpieg, bunt w garnizonie, dobre zbiory, zagraniczni dziennikarze, plotka o wojnie) – każde z wyborem i skutkami; średnio kilka wydarzeń rocznie na państwo, to samo nie wcześniej niż po 2 latach.
+- Gałęzie po zmianie drzewka (np. nowy przywódca, następca w Rosji) nie muszą być robione od nowa – ukończone fokusy są automatycznie pomijane.
+
+v0.66 (testowa) – przebudowa wszystkich drzewek unikalnych w stylu The Fire Rises (szczegóły: RAPORT_PRZEBUDOWA_DRZEWEK_v066.md)
+- 67 drzewek unikalnych (3458 → 3539 fokusów), drzewko generyczne bez zmian w strukturze.
+- Jeden korzeń w każdym drzewku (234 „wyspy” podpięte pod fokus startowy), rozgałęzienia zamiast długich kolumn (194 pary równoległe), nowy układ warstwowy: etap = rząd, fokusy łączące pod środkiem, grupy wykluczeń w jednym rzędzie bez linii przez inne fokusy.
+- Etap „Gotowi do działania” (43 drzewka): polityka + gospodarka + wojsko przed pierwszymi wojnami.
+- Czasy 7–70 dni zależnie od znaczenia fokusu (wydarzenia 7, reformy 21, budowy 35, reorganizacje 42, wojny 56, formowanie państw i zmiana drzewka 70).
+- AI: fokusy wojenne rzadziej w czasie wojny i przy niskiej stabilności; wypowiedzenie wojny z fokusu tylko w czasie pokoju (koniec kilku wojen naraz).
+- Ikony: 24 nowe ikony tematyczne i 33 portrety przywódców na fokusach politycznych; powtórzenia ikon z gry rozłożone (maks. 20 → 8 na drzewko). Lista ilustracji do narysowania: BRAKUJACE_IKONY.md (330 fokusów).
+- Toruń: oś kryzysu w trzech etapach par równoległych (nadal ok. 3,7 miesiąca do zaprzysiężenia); każdy przywódca ma własny program sekcji rozbudowy, przemysłu, dyplomacji i wojska.
+- Bydgoszcz: oś kryzysu w parach + kampanie 5 kandydatów z wykluczającym się „Komitet popiera: …”.
+- PKP: nowa gałąź Konsorcjum (Płock, T-Pizza, wspólna logistyka, Rada Korporacji) i zdarzenia pkp.30–32.
+- Zakon Krzyżacki: nowa gałąź religijno-polityczna (7 fokusów, 3 idee).
+
+v0.65 (testowa) – Konfederacja i Trójmiasto
+- Konfederacja Północna (Ciechanów, Sławomir Mentzen): nowe drzewko „Skonfederowana Polska” (42 fokusy + gałąź wojska). Własna siła zbrojna (Straż Narodowa → Gwardia Konfederacji, kolumny zmotoryzowane, artyleria), gospodarka „Polska bez pośredników” i cele narodowe. Trzy drogi:
+  A) Rozmowy z Siedlcami – front z Koroną (Grzegorz Braun): łatwiejsza ekspansja, potem starcie z przywódcą IV RP (albo z blokami Warszawy, jeśli IV RP jeszcze nie ma) i decyzja, czy Korona wejdzie do wspólnego państwa;
+  B) Zjednoczenie Narodowe – sojusz z Kancelarią Prezydenta i Wojskiem: broń z magazynów wojskowych, wspólny sztab, wojna z Sejmem i Pruszkowem o Warszawę, rząd Zjednoczenia;
+  C) Ku lepszemu jutru – „wywracamy stolik”: Rząd Konfederacji, ultimata dla sąsiadów, marsz na Warszawę, rozprawa z Koroną i pełnia władzy.
+  Wszystkie drogi prowadzą do „Skonfederowanej Polski” (nowa nazwa i flaga, rdzenie, roszczenia, konstytucja i armia).
+- Trójmiasto podzielone równiej: Sopot dostaje Oliwę i Przymorze (z Gdańska), Orłowo i Mały Kack (z Gdyni), powiat kartuski i Szemud. Siła ludnościowa: Gdańsk ok. 416 tys., Gdynia ok. 412 tys., Sopot ok. 310 tys. (Sopot nadrabia pieniędzmi z kasyna, najemnikami i twierdzą w lesie). Dwa nowe stany: Gdańsk – Oliwa, Gdynia – Orłowo (ID stanów bez zmian, nowe na końcu).
+- Gdańsk, Gdynia i Sopot: osobne drzewka (po 45 fokusów + gałąź wojska) – własny początek i atuty każdego miasta, gospodarka portowa, obrona wybrzeża i trzy drogi:
+  A) Zjednoczeni przez wojnę – ultimatum, wojna o Zatokę, Hegemon Zatoki (Metropolia Trójmiejska), potem Kaszuby i Kociewie;
+  B) Zjednoczeni przez sojusz – Unia Czteromiasta (Gdańsk, Gdynia, Sopot i Malbork), złoty bałtycki, Akt Unii (dobrowolne połączenie w jedno państwo);
+  C) Koalicja Pomorska – trzy miasta razem po Pomorze: korytarz przez Kociewie, wojna o Malbork, Warmia i Mazury, Królewiec, a na końcu Wielkie Pomorze.
+  Final wszystkich dróg: „Nad Bałtykiem”.
+
+v0.64 (testowa) – poprawki po testach v0.63: zdarzenia z gry, drzewko Torunia, menu główne, ekrany ładowania
+- Usunięte zdarzenia z podstawowej gry (replace_path = "events"): znikają m.in. „Wiosna Toruńska” (political.23) i inne zdarzenia z HOI4, które odpalały się dla naszych państw, nic nie dawały i generowały błędy. Wszystkie zdarzenia moda działają jak wcześniej.
+- Drzewko startowe Torunia: nowy układ – korzeń nad kampaniami, 6 kampanii kandydatów obok siebie (wiersz „Ratusz popiera: …” bez przerw), główna oś fabularna po prawej. Linie wzajemnego wykluczenia nie przechodzą już przez fokusy osi; okienko fokusów ciągłych ląduje w pustym miejscu pod kampaniami.
+- Menu główne przepisane pod HOI4 1.19 (nazwy elementów jak w grze 1.19): własne tło menu (GFX_frontend_bg → gfx/mainmenu.dds) zamiast losowego ekranu z DLC, wyłączony wybór tła z DLC, własne przyciski (brudna czerwień, czcionka z gry), logo i przyciski w czarnym panelu, Paradox w prawym górnym rogu. Tekstura przycisku z gry nie jest już nadpisywana.
+- Ekrany ładowania: usunięte wszystkie ekrany z gry i DLC (replace_path = "gfx/loadingscreens"). Zostaje 7 Twoich grafik + 11 nowych ekranów „Kronika rozpadu” – mapa regionu i jego historia: Orzeł upadł, Warszawa podzielona, Spór o metropolię, Trzy miasta – trzy państwa, Zakon powraca, Północna granica, Ściana wschodnia, Rafineria i tama, Eurostaaty, Czerwona Łódź, Przesmyk.
+- Poprawiona nazwa moda w launcherze (pokazywała starą wersję).
+
+v0.63 (testowa) – ekran ładowania w stylu „archiwalnej transmisji TV” + barwy biało-czerwone
+- Tła ekranu ładowania (7 grafik upadku Polski 2027): nałożony efekt CRT bez zmiany kompozycji – linie skanowania, szum analogowy i ziarno, aberracja chromatyczna, lekko rozmyte krawędzie, zaciemnione rogi, subtelna czerwona poświata przy brzegach, stonowane szarości i ciemne zielenie (czerwienie zachowane).
+- Górna belka: grafitowy panel ze ściętymi rogami i metaliczną ramką, czerwone akcenty; pasek postępu ciemnoczerwony (zamiast niebieskiego), wąski, z podziałką co 10%. Działa dalej silnikowy pasek ładowania.
+- Dolny panel cytatu: czarny, półprzezroczysty, cienka szara ramka, proste rogi, niewielki; biało-czerwony znacznik u góry.
+- Teksty etapów ładowania po polsku („Inicjalizacja kryzysu...”, „Rozpad struktur państwowych...”, „Wyznaczanie nowych granic...”, „Mobilizacja lokalnych oddziałów...”, „Ostatnie dni Rzeczypospolitej...”, „Ładowanie The Fallen Eagle: 2027...” i inne).
+- Nowe cytaty na ekranie ładowania (36): upadek państw, wojna, kryzys polityczny, społeczeństwo, historia Polski; biały tekst, autor w ostatniej linii.
+- Menu główne: fiolet zamieniony na brudną czerwień, złamaną biel, czerń i grafit (mapa, kolaż przywódców, „ogień”, neonowe linie).
+- Pliki load_screen.gui/.gfx zostają z gry (podmienione tylko tekstury), więc logo Paradoxu w prawym dolnym rogu i wszystkie funkcje ekranu ładowania działają jak w grze.
+
+v0.62 – Silniejsza Rosja, naprawa natychmiast przerywanych ataków, zasoby w Polsce (12.10.2026, wersja testowa)
+-----------------------------------------------------------------------------------------------------------
+Rosja
+ - Start: 30 dywizji zamiast 15:
+   * 8 brygad zmechanizowanych, 12 batalionowych grup taktycznych, 4 brygady artylerii;
+   * 3 brygady piechoty morskiej, 3 pułki Rosgwardii.
+ - Zapasy sprzętu na uzupełnienia podwojone.
+ - Tworzenie armii inwazyjnej (drzewko „Operacja Mazurska”):
+   * Przygotowanie ofensywy: +2 brygady zmechanizowane, +1 brygada artylerii;
+   * Mobilizacja rezerw: +4 BGT i +2 brygady zmechanizowane (zamiast 2 BGT), 25 000 ludzi;
+   * Ostatnie rozkazy Kremla: +2 BGT, +2 brygady artylerii;
+   * Rozpoczęcie interwencji: armia inwazyjna 6 BGT, 3 brygad zmechanizowanych i 2 brygad artylerii.
+ - Razem przed wojną i w jej pierwszym dniu dochodzi 25 dywizji, czyli ok. 55 dywizji na Warmię i Mazury.
+
+Ataki przerywane od razu
+ - Prawdopodobna przyczyna: część prowincji miała typy terenu z mapy źródłowej, których gra nie zna:
+   „low_urban” (574 prowincje) i „industrial” (35). Walka o taką prowincję mogła kończyć się natychmiast,
+   więc dywizje ciągle się wycofywały.
+ - Poprawka: low_urban → równiny, industrial → miasto (plains / urban).
+ - W definition.csv nie ma już nieznanych typów terenu dla prowincji lądowych.
+
+Zasoby w Polsce
+ - Nowy skrypt gen_zasoby.py: losowe zasoby w 362 polskich gminach.
+ - Losowanie powtarzalne (stałe ziarno) z wagami według województwa:
+   * Śląsk i Małopolska – stal;
+   * Dolny Śląsk – aluminium;
+   * Podkarpacie – ropa;
+   * okręgi chemiczne (Płock, Włocławek, Police, Oświęcim) – guma;
+   * wolfram i chrom – rzadko w całym kraju.
+ - Suma: stal 729, guma 380, ropa 257, aluminium 123, chrom 18, wolfram 4.
+ - Regiony, które miały już zasoby (ropa Korporacji: Dębno, Międzychód, Kościan, Władysławowo), bez zmian.
+
+Testy (poza silnikiem gry)
+ - Walidacja mapy: 0 błędów.
+ - check_pom, check_events, check_fed, check_ros, check_miasta: 0 błędów.
+ - check_zkr: 1 znany fałszywy alarm (ZKR_leader).
+ - Kontrola odwołań: bez braków.
+
+Do sprawdzenia w grze
+ - Czy atak na wcześniej „nieatakowalne” prowincje działa.
+   Jeśli nie – potrzebna nazwa/numer prowincji i error.log.
+ - Balans: Rosja z ~55 dywizjami kontra Warmia, Mazury i Suwalszczyzna.
+
+v0.61 – Menu główne w układzie The Fire Rises, przywódcy Policji i Wojska (12.10.2026, wersja testowa)
+-----------------------------------------------------------------------------------------------------
+Menu główne
+ - Przyczyna złego wyglądu w grze:
+   * tło menu w grze to kontener 1920×1440, a nasze tło miało 1920×1080, więc było rozciągane w pionie
+     i przycinane;
+   * mod nie miał własnego układu menu, więc przyciski stały w miejscach z gry podstawowej.
+ - Nowe tło 1920×1440: wszystko, co ważne, leży w pasie widocznym na ekranie 16:9.
+ - Szeroki czarny panel po lewej (880 px) z dwiema fioletowymi neonowymi liniami, jak w The Fire Rises.
+ - Po prawej kolaż przywódców w fiolecie i bieli (Czarnek, Załużny, Putin, Tusk, Zandberg) na ciemnej mapie,
+   z fioletowym dymem i liniami skanowania. Usunięte naklejki gazetowe i duży orzeł.
+ - Nowy plik interface/frontendmainview.gui:
+   * logo i kolumna przycisków (Jeden gracz, Wielu graczy, Ustawienia, Profil gracza, Wyjście) wyśrodkowane
+     w czarnym panelu;
+   * podmenu „Jeden gracz” w tym samym miejscu.
+ - Pozycje w GUI liczone automatycznie z szerokości panelu (gen_brand.py).
+
+Przywódcy marionetek
+ - Na starcie Policja (PLC) jest marionetką Sejmu, Wojsko (WOJ) – Kancelarii Prezydenta,
+   Kibice Legii (LEG) – Mafii, a Gmina NML (GNL) – Nowego Miasta Lubawskiego.
+ - Efekt „puppet” w grze narzucał marionetce ustrój zwierzchnika. Jej przywódca (inna ideologia) przestawał
+   się wtedy wyświetlać.
+ - Teraz zaraz po uzależnieniu marionetka wraca do własnego ustroju, a jej przywódca obejmuje władzę.
+   Ustrój marionetki nie musi być taki sam jak zwierzchnika.
+
+Testy (poza silnikiem gry)
+ - check_pom, check_events, check_fed, check_ros, check_miasta: 0 błędów.
+ - check_zkr: 1 znany fałszywy alarm (ZKR_leader).
+ - Kontrola odwołań: bez braków.
+
+Do sprawdzenia w grze
+ - Wygląd menu przy rozdzielczości 1920×1080 i innych.
+ - Czy Policja i Wojsko pokazują przywódcę po starcie gry.
+
+v0.60 – Ekrany ładowania Michała, nowe menu główne, portret Rządu Tymczasowego Rosji (12.10.2026, wersja testowa)
+-------------------------------------------------------------------------------------------------------------
+Ekrany ładowania
+ - 7 ekranów od Michała zastępuje dotychczasowe mapy sztabowe: Bydgoszcz, Stadion Legii Warszawa,
+   Warszawa – bulwar, Gdańsk, Toruń, Sejm oraz stadion bez napisów.
+ - Obraz jest zawsze widoczny w całości (napisy nie są ucinane przy ekranie 16:9). Wolne pasy u góry i u dołu
+   wypełnia rozmyte, przyciemnione tło z tego samego obrazu.
+ - Obraz stadionu w proporcji 4:3 wypełnia cały ekran.
+ - Ekrany ładowania z gry i dodatków DLC są podmienione na te same obrazy.
+ - Źródła leżą w m5/data/loading/. Kolejny ekran wystarczy dodać do tego folderu.
+
+Menu główne (wzorowane na The Fire Rises)
+ - Czarny panel z logo i przyciskami po lewej, obramowany fioletowymi neonowymi liniami.
+ - Po prawej kolaż przywódców w fiolecie i bieli na tle mapy: Putin, Czarnek, Tusk, Zandberg, Załużny.
+ - Na kolażu: miękkie krawędzie zdjęć, raster, linie skanowania, fioletowy „ogień” i dym.
+ - Orzeł zostaje jako delikatny znak wodny.
+ - Mniej naklejonych nagłówków, żeby nie zasłaniały twarzy. Został „SEJM ROZWIĄZANY”, „KTO ZJEDNOCZY KRAJ?”
+   i stempel 11.11.2027.
+
+Portrety
+ - Rosja: Premier – p.o. Prezydenta (Rząd Tymczasowy, ROS_premier) dostaje zdjęcie od Michała.
+
+Testy (poza silnikiem gry)
+ - check_pom, check_events, check_fed, check_ros, check_miasta: 0 błędów.
+ - check_zkr: 1 znany fałszywy alarm (ZKR_leader).
+ - Kontrola odwołań: bez braków.
+
+Do sprawdzenia w grze
+ - Czy przyciski menu (pozycje z gry podstawowej) dobrze leżą na czarnym panelu.
+
+v0.59 – Portrety przywódców (13 zdjęć z podpisami) (12.10.2026, wersja testowa)
+-------------------------------------------------------------------------------
+Przypisanie według numeracji podanej przez Michała.
+
+Polska
+ - Adrian Zandberg – Republika Socjaldemokratyczna (LWC: Łódź, Pabianice, Zgierz i cały region).
+ - Przemysław Czarnek – Zjednoczona Rzeczpospolita (PRW, Lublin – prawica na południowym wschodzie).
+ - Krzysztof Kukucki – pierwszy prezydent Włocławka (WLC), nowe zdjęcie. Później władzę przejmuje Archacki (T-Pizza).
+ - Zbigniew Bombolewski – Gmina Lubicz (LUB). Dotąd „Sołtys Lubicza”, portret bez zmian.
+ - Adam Michalak – Wolne Miasto Solec Kujawski (SLK).
+
+Rosja (portrety przywódców ścieżek)
+ - Władimir Putin, Dmitrij Miedwiediew, Natalia Pokłonska, Lew Szlosberg.
+ - Julia Nawalna – w modzie zostaje imię Julia; zdjęcie podpisane jako „Natalya Navalna”.
+
+Państwa ościenne (nowe postacie, przywódcy od startu)
+ - Gitanas Nausėda – Litwa.
+ - Wałerij Załużny – Ukraina.
+ - Petr Pavel – Czechy. Na liście było „Prezydent Litwy”, ale to prezydent Czech, więc trafia do Czech.
+
+Technicznie
+ - Portrety z modułów: małe zdjęcia 156×210 przyjmowane bez skalowania, duże kadrowane bez zniekształceń.
+
+Testy (poza silnikiem gry)
+ - check_pom, check_events, check_fed, check_ros, check_miasta: 0 błędów.
+ - check_zkr: 1 znany fałszywy alarm (ZKR_leader).
+ - Kontrola odwołań: bez braków.
+
+v0.58 – Każdy kraj z drzewkiem atakuje (12.10.2026, wersja testowa)
+--------------------------------------------------------------------
+Nowy skrypt gen_atak.py (po gen_dec2focus, przed ideo_rename).
+
+1. Istniejące fokusy wojenne (109 fokusów z celem wojennym na konkretne państwo)
+ - AI po ukończeniu fokusu od razu wypowiada wojnę. Nie robi tego, gdy cel jest sojusznikiem, podmiotem,
+   naszym zwierzchnikiem albo jest od nas ponad 1,5 raza silniejszy.
+ - AI dostaje też strategię podboju i wrogości wobec celu.
+ - Waga AI fokusów wojennych podniesiona do co najmniej 15, więc AI wybiera je chętniej.
+ - Gracz nadal dostaje sam cel wojenny i decyduje, kiedy uderzyć.
+
+2. Nowa gałąź „Kampanie wojenne” (6 fokusów) w 22 drzewkach, które dotąd nie miały żadnej wojny:
+   * drzewko generyczne (54 państwa);
+   * Toruń: Gulewski, Kowalczyk, Romanowski;
+   * Bydgoszcz: Bruski, Rada Przemysłowa;
+   * PKP;
+   * siły zbrojne i dzielnice Warszawy: PLC, WOJ, LEG, PRG, TEC, ZIE;
+   * Federacja: drzewka cen, kol, sep;
+   * Zakon: kajdany, rosyjskie Prusy;
+   * Niemcy, Czechy, Ukraina, Litwa.
+ - Fokusy: Plan kampanii → Pierwsza kampania (5 000 żołnierzy) → Druga kampania (10 000) i Integracja zdobyczy
+   → Wielka kampania (15 000) → Dominacja regionalna.
+ - Celem kampanii jest losowy sąsiad, który nie jest od nas silniejszy, nie jest sojusznikiem ani podmiotem.
+   Gracz dostaje cel wojenny (aneksja), a AI od razu wypowiada wojnę.
+ - Kampanię można zacząć tylko w czasie pokoju.
+ - Niemcy, Czechy, Ukraina i Litwa: progi armii ×3 (15 000 / 30 000 / 45 000) i dopiero od 1.1.2028,
+   żeby nie rozjechały polskich miast w pierwszych tygodniach.
+ - Fokus ukończony w jednym drzewku jest pomijany po zmianie drzewka.
+ - Bez gałęzi zostają tylko drzewka startowe kryzysów (wybory w Toruniu i Bydgoszczy) oraz Rosja.
+   Rosja już atakuje własnymi wojnami (Mazury, Suwalszczyzna, Warmia).
+
+Testy (poza silnikiem gry)
+ - check_pom, check_events, check_fed, check_ros, check_miasta: 0 błędów.
+ - check_zkr: 1 znany fałszywy alarm (ZKR_leader).
+ - Kontrola odwołań: 3310 fokusów bez duplikatów i braków, brak nakładających się fokusów.
+
+Do sprawdzenia w grze
+ - Czy AI nie jest zbyt agresywne: dużo wojen naraz w pierwszym roku.
+ - Czy AI buduje armię do progów 5 000 / 10 000 / 15 000.
+
+v0.57 – Kolejność przywódców Włocławka (12.10.2026, wersja testowa)
+-------------------------------------------------------------------
+ - Włocławek (WLC):
+   * 1. przywódca na start – Krzysztof Kukucki, prezydent Włocławka (nowe zdjęcie);
+   * 2. przywódca – Rafał „Archadzio” Archacki, który przejmuje władzę fokusem T-Pizzy.
+     Wraca do niego portret, który wcześniej był przywódcą Włocławka.
+ - Czwarte zdjęcie z poprzedniej paczki (mężczyzna w ciemnym garniturze, czarne włosy) czeka na przypisanie postaci.
+ - Testy: build bez błędów, check_pom / check_events / check_miasta: 0 błędów.
+
+v0.56 – Ziemia Białostocka, kryzys na granicy, odstępy w drzewkach, portrety (12.10.2026, wersja testowa)
+-------------------------------------------------------------------------------------------------------
+Ziemia Białostocka (BST) – własne drzewko BST_tree (38 fokusów + gałąź Siły zbrojne)
+ - Gałąź „Granica” (8 fokusów):
+   * kryzys na granicy, Straż Graniczna Podlasia, zapora, umocnienia nad Bugiem i Narwią;
+   * punkty pomocy humanitarnej, wspólne patrole z Litwą, rozbicie siatek przemytniczych, spokojna granica.
+ - Droga Aleksieja Kaczyńskiego – NIZINA PODLASKA (14 fokusów):
+   * instytucje, przemysł, kolej, rolnictwo, Brygada Podlaska;
+   * oferta albo wojna z Suwalszczyzną (SUW) i Państwem Narodowym (NAR);
+   * integracja i ogłoszenie Niziny Podlaskiej (tag kosmetyczny BST_NIZINA).
+ - Droga Krzysztofa Kononowicza – MLECZNE IMPERIUM (16 fokusów):
+   * „Nieznany Warmiańczyk”, kampania na rynkach, wygrane wybory, Mleczny Ład, mleczarnie, Gwardia Mleczna;
+   * podbój SUW, NAR, Mazur (MAZ) i Republiki Warmińsko-Mazurskiej (WMZ);
+   * Mleczne Imperium (BST_MLECZNE).
+   Drogi Kaczyńskiego i Kononowicza wzajemnie się wykluczają. Wszystkie wojny mają wymóg liczebności armii.
+ - Satyra na Kononowicza dotyczy tylko jego publicznej persony kandydata i mleczarskiego Podlasia,
+   bez wątków prywatnych.
+
+Kryzys na granicy (mechanika)
+ - Zmienne BST_presja (presja na granicy) i BST_destab (destabilizacja), widoczne w modyfikatorze „Kryzys na granicy”.
+ - Co miesiąc rośnie presja (z zaporą wolniej). Przy presji 20+ pojawiają się incydenty na losowym odcinku
+   przygranicznym (16 gmin od Kuźnicy po Mielnik).
+ - Przeciwnikiem są uzbrojone grupy przemytników wspierane przez białoruskie służby. Przeprowadzani przez nich
+   ludzie trafiają do punktów pomocy.
+ - Odpowiedzi na incydent:
+   * wojsko i Straż Graniczna – bazowo 75% zwycięstw;
+   * sama Straż Graniczna – 55%;
+   * dyplomacja i pomoc humanitarna.
+ - Modyfikatory szans: armia powyżej 10 000, zapora, rozbite siatki przemytnicze; słaba armia i niska
+   stabilność obniżają szanse.
+ - Porażka: odcinek na 120 dni „poza kontrolą” (mniej rekrutów, zaopatrzenia i budowy), zniszczona
+   infrastruktura, destabilizacja +8.
+ - Destabilizacja 80+: zdarzenie „Region na krawędzi”. Można jeszcze ratować władzę (150 PP),
+   inaczej przewrót – ENKLAWA PODLASKA.
+
+Enklawa Podlaska
+ - Rosyjski generał Arkadij Riazancew (postać fikcyjna) przejmuje władzę: junta, tag BST_ENKLAWA,
+   nowe drzewko BST_enklawa_tree (16 fokusów + Siły zbrojne).
+ - Treść drzewka: stan wojenny, dostawy z Grodna, garnizony, twierdza, strefa buforowa, przesmyk suwalski,
+   marsz na Łomżę, uderzenie na Mazury, korytarz na północ.
+
+Mapa
+ - Strefa przygraniczna Ziemi Białostockiej ma gęstszą siatkę prowincji: 74 prowincje podzielone, 115 nowych
+   (Białowieża, Dubicze, Hajnówka, Mielnik, Nurzec, Sokółka, Szudziałowo, Milejczyce, Orla, Gródek,
+   Michałowo, Narewka).
+ - Dzięki temu powstało 6 nowych regionów (dawniej scalanych z sąsiadami): Supraśl, Czeremcha,
+   Kleszczele, Krynki, Kuźnica (BST) i Sarnaki (KKR).
+ - Numery wszystkich dotychczasowych regionów bez zmian (stała kolejność w step3), nowe mają numery 1359–1364.
+ - Nowe prowincje mają pozycje jednostek (unitstacks), budynki, nazwy punktów zwycięstwa i regiony strategiczne.
+
+Odstępy w drzewkach
+ - Toruń, start: kolumny kampanii co 3 pola, pień na środku.
+ - Toruń i Bydgoszcz, drzewka przywódców: rozdziały szersze (7 kolumn), pusty wiersz między rozdziałami,
+   sekcje wspólne co 8 kolumn.
+ - Gałąź „Zarząd i sprawy bieżące”: kolumny co 2 pola.
+ - Białystok i Enklawa: szeroki układ od początku.
+
+Portrety (wg kolejności zdjęć podanej przez Michała)
+ - Maciej Maciak – przewodniczący Obwodu Warmińsko-Mazurskiego (OWM).
+ - Rafał Bruski – Republika Bydgoska.
+ - Krzysztof Kukucki – pierwszy przywódca Włocławka (WLC). Później Rafał „Archadzio” Archacki
+   przejmuje władzę fokusem T-Pizzy.
+ - Rafał Archacki – portret prezesa T-Pizzy.
+ - Zdjęcia postaci z modułów kadrowane bez zniekształceń.
+
+Testy (poza silnikiem gry)
+ - Walidacja mapy: 0 błędów (krzyżowania, piksele, rzeki, regiony strategiczne).
+ - check_pom, check_events, check_fed, check_ros: 0 błędów.
+ - check_zkr: 1 znany fałszywy alarm (ZKR_leader).
+ - check_miasta: 0 błędów. Rozszerzony o Białystok: drzewko domyślne, fokusy końcowe, wymogi armii,
+   zdarzenia, ładowanie drzewka Enklawy.
+ - Kontrola odwołań i lokalizacji: bez braków, 3178 fokusów bez duplikatów, brak nakładających się fokusów.
+
+Do sprawdzenia w grze
+ - Jak wygląda nowa siatka prowincji przy granicy i czy jednostki stają poprawnie.
+ - Częstotliwość incydentów i czy 75% jest odczuwalne.
+ - Czy AI Białegostoku nie wpada za łatwo w Enklawę.
+ - Kononowicz i gen. Riazancew mają portrety zastępcze (brak zdjęć).
+
+v0.55 – Wszystkie decyzje w drzewkach, dłuższe drzewko wyboru prezydenta Torunia (12.10.2026, wersja testowa)
+--------------------------------------------------------------------------------------------------------------
+Decyzje -> drzewka
+ - W modzie nie ma już żadnej decyzji. Ostatnie 30 decyzji zamieniono w 346 fokusów w 32 drzewkach.
+   Zostały tylko puste nadpisania vanilla (AFG, BRA, COG, NOR, PRC, resource_prospecting),
+   które wyłączają decyzje państw nieistniejących w scenariuszu.
+ - Nowa gałąź „Zarząd i sprawy bieżące” po prawej stronie drzewek:
+   * T-Pizza – promocja, weekend, punkty lojalnościowe, podwyżka;
+   * PKP – emisja akcji, nalot SOK, wojenny rozkład jazdy;
+   * Korporacyjna Polska – dywidenda, skup i emisja akcji, podwyżka cen, promocja, rezerwa paliwa;
+   * Podgórz – maraton, ankieta, zbiórka;
+   * Zakon – doradcy i dostawy z Rosji, odsunięcie oficerów, wzmocnienie Zakonu, bunt rycerzy;
+   * Federacja Warmii i Mazur – wsparcie Warmii lub Mazur, pojednanie, centralizacja, negocjacje kryzysowe;
+   * Rosja – posiłki, most powietrzny, mobilizacja.
+ - Decyzja powtarzalna = trzy kolejne fokusy (I, II, III), jednorazowa = jeden fokus. Każdy trwa 21 dni.
+   Warunki i koszt w sile politycznej działają jak wcześniej (warunek + odjęcie PP w nagrodzie).
+ - Państwa, które zmieniają drzewko w trakcie gry (Rosja, Zakon, Federacja), mają tę gałąź w każdym drzewku.
+   Fokus ukończony w jednym drzewku jest pomijany w następnym, więc nagrody się nie dublują.
+ - Podpowiedzi „odblokowuje decyzję …” zmienione na „odblokowuje fokus …”.
+
+Toruń
+ - Na początku gry Toruń ma jedno drzewko: „Miasto w cieniu rozpadu” – wybór prezydenta (46 fokusów).
+   * Pień 16 fokusów po 7 dni, tak jak w v0.54: kryzys, rejestracja komitetów, debata, wybory, zaprzysiężenie.
+   * Nowość: 6 gałęzi kampanii (po 5 fokusów) dla Gulewskiego, Zaleskiego, Romanowskiego, Kowalczyk,
+     Elany i Krevienki. Kampania w dzielnicach, program, poparcie środowisk i wiec podnoszą poparcie kandydata.
+   * Ostatni fokus gałęzi, „Ratusz popiera …”, jest wzajemnie wykluczający. Rząd tymczasowy może poprzeć
+     tylko jednego kandydata; ten dostaje +12 poparcia, a jego komitet jest dopuszczony automatycznie.
+   * Kampanie można prowadzić do chwili wyborów. Każda wydłuża okres przed wyborami.
+ - Po wyborze przywódcy ładuje się nowe drzewko z gospodarką: rozdziały przywódcy (30 fokusów),
+   Rozbudowa kraju, Przemysł, Dyplomacja, Wojsko i ekspansja (po 8) oraz gałąź Siły zbrojne.
+
+Testy (poza silnikiem gry)
+ - check_pom, check_events, check_fed, check_ros: 0 błędów.
+ - check_zkr: 1 znany fałszywy alarm (ZKR_leader).
+ - check_miasta: 0 błędów. Nowy test: brak plików decyzji moda; pień Torunia 16 fokusów + 30 fokusów kampanii.
+ - Kontrola odwołań i lokalizacji: bez braków, 3100 fokusów bez duplikatów, brak nakładających się fokusów.
+
+Do sprawdzenia w grze
+ - Czy gałąź „Zarząd” dobrze się mieści w szerokich drzewkach Rosji (18 drzewek).
+ - Czy AI korzysta z fokusów zarządu (wagi AI z decyzji pomnożone ×3).
+
+v0.54 – Ekspansja w drzewkach, wymogi armii, nowy Toruń i nowa Bydgoszcz (11.10.2026, wersja testowa)
+-------------------------------------------------------------------------------------------------------
+RAPORT ZBIORCZY (lista poprawek po testach v0.53 + przebudowa Torunia i Bydgoszczy)
+
+1. Liczby
+ - Drzewek narodowych: 50 -> 62. Fokusów w modzie: 1447 -> 2724 (dodane 1549, usunięte 272).
+ - Decyzji: 183 -> 30. Zostały tylko decyzje wewnętrzne (zarząd firm, studio Podgórza,
+   równowaga Federacji, wpływy rosyjskie w Zakonie, wojna w Rosji). Żadna z nich nie wypowiada wojny,
+   nie uzależnia, nie wciela i nie tworzy sojuszy.
+ - Fokusy z wymogiem armii: 196 (progi 3 000 / 4 000 / 5 000 / 6 000 / 8 000 / 10 000 / 15 000 / 20 000 / 30 000 / 40 000).
+
+2. Nowe drzewka
+ - Niemcy, Czechy, Ukraina, Litwa (ZAG_GER/CZE/UKR/LIT_tree, po 22 fokusy: gospodarka, infrastruktura, wojsko).
+   Drzewka vanilla są zablokowane wagą wyboru add = 1000.
+ - IV RP po zwycięstwie w Warszawie (IVRP_sejm_tree / IVRP_prezydent_tree / IVRP_mafia_tree, po 47 fokusów).
+   Każde ma trzy kierunki: Władza (stabilizacja i likwidacja rywali), Odbudowa i Wojsko, Ekspansja.
+   Ekspansja prowadzi przez region stołeczny i Mazowsze do zjednoczonej Polski (unia, wpływy albo wojna).
+ - Strefy wpływów wokół Warszawy (drzewka bloków WWD): Sejm – Ożarów/Grodzisk/Piaseczno,
+   Prezydent – Otwock/Wołomin/Piaseczno, mafia – Piaseczno/Grodzisk/Ożarów. Łańcuch: umocnienie, rekrutacja,
+   zaplecze, przygotowanie, wojna lub interwencja, region stołeczny.
+ - Gałąź „Siły zbrojne” (12 fokusów) w 35 drzewkach: rejestr poborowych, ochotnicy, fabryka, pobór,
+   bataliony, produkcja, rezerwiści, brygady, zaplecze i zaopatrzenie, kadra oficerska, armia zawodowa.
+   Daje rezerwy ludzi, gotowe dywizje, fabryki zbrojeniowe i idee poboru, więc progi armii są osiągalne
+   także dla małych państw i dla AI.
+
+3. Toruń – nowy system
+ - Usunięte: stary pień kryzysu, misja 60 dni, walka frakcji, decyzje formacji, decyzje testowe,
+   moduły trnrom i trnkrz.
+ - TR2_start_tree: 16 fokusów po 7 dni (112 dni) w czterech etapach: upadek starego porządku,
+   narastający konflikt, walka o przyszłość, wybór przywódcy.
+ - Wybory:
+   * rejestracja komitetów w zdarzeniach (dopuścić albo odrzucić);
+   * odrzucenie wszystkich oznacza dodatkową turę, a w drugiej turze najsilniejszy komitet zostaje
+     zarejestrowany automatycznie;
+   * debata w auli UMK, głosowanie, zaprzysiężenie;
+   * poparcie kandydatów widać w modyfikatorze „Kampania wyborcza”.
+ - Przy stabilności poniżej 15% w czasie kampanii radykałowie (Elana albo Krevienko) mogą przejąć miasto.
+ - Sześć drzewek przywódców po 30 fokusów (5 rozdziałów po 6): Gulewski, Zaleski, Romanowski, Kowalczyk,
+   Ruch Elany, Krevienko. Do tego cztery wspólne sekcje po 8 fokusów: Rozbudowa kraju, Przemysł,
+   Dyplomacja, Wojsko i ekspansja. Demokraci dostają referenda i unie, radykałowie ultimata i wojny.
+ - Daniel Magical zostaje w Podgórzu; w Toruniu pojawia się tylko jako komentator kampanii.
+
+4. Bydgoszcz – nowy system
+ - Usunięte: stare drzewko BYD_tree, decyzje kampanii, decyzje wpływów Bydgoszczy
+   (pomoc administracyjna, misja, finansowanie i referendum są teraz fokusami w sekcji Dyplomacja).
+ - BYD2_start_tree: 16 fokusów po 7 dni i wybory na tych samych zasadach co w Toruniu.
+ - Pięciu kandydatów po 30 fokusów:
+   * Rafał Bruski – Republika;
+   * Rada Przemysłowa – republika przemysłowa;
+   * Rady Robotnicze – syndykalizm;
+   * Junta płk. Fordońskiego;
+   * Wiktor Brdowski – postać fikcyjna, populista „Bydgoszcz Pierwsza”, zastępuje Archackiego,
+     który zostaje tylko w T-Pizzy.
+   Do tego cztery wspólne sekcje po 8 fokusów.
+ - Spór o metropolię: decyzje Torunia i Bydgoszczy zastąpione fokusami (kampanie, inwestycje, referenda,
+   metropolia albo federacja).
+
+5. Interakcje Toruń–Bydgoszcz–Podgórz (fokusy w obu drzewkach)
+ - Gulewski + Bruski: wspólna republika demokratyczna (tr2.76 / byd2.80).
+ - Romanowski + Rady Robotnicze: federacja socjalna (tr2.77 / byd2.81).
+ - Krevienko + Rady Robotnicze: federacja rad i komun z ryzykiem wojny (tr2.79 / byd2.82).
+ - Ruch Elany + Junta: rywalizacja o hegemonię, wzajemne cele wojenne (tr2.78 / byd2.83).
+ - Magical + Rada Przemysłowa: kontrakt sponsorski (byd2.84–86, nowy fokus PDG „Szukamy sponsora”).
+   Satyra dotyczy wyłącznie kultury streamingu.
+
+6. Ekspansja przeniesiona do drzewek
+ - Usunięte decyzje: wojny i ultimata Zakonu, kampanie T-Pizzy przeciw Kujawom, targetowane decyzje
+   Konsorcjum, najazd Podgórza, decyzje mazurskie i polskie Rosji, wpływy PKP/T-Pizzy/Bydgoszczy,
+   metropolia, cały system decyzji Torunia.
+ - Zastąpione fokusami:
+   * PKP – sieć, tranzyt, dworce, szantaż, przejęcia;
+   * T-Pizza – franczyzy, kredyt, wykup, uderzenie na Kujawy, kampanie Solec/Nowa Wieś/Płock;
+   * Korporacja – przygotowanie i przejęcie Kostrzyna, Mławy i Dobrzynia;
+   * Zakon – powtórne ultimata;
+   * Rosja – wybór losu Mazur w drzewku zwycięstwa.
+
+7. Wymogi armii
+ - Liczą się żołnierze w wystawionych dywizjach (has_army_manpower), więc warunek działa także dla AI.
+   Wymóg jest pokazany w tooltipie fokusu („Żołnierze w wystawionych dywizjach: co najmniej …”).
+ - Progi zależą od wielkości celu:
+   * gmina 1 region – 3 000;
+   * do 8 regionów – 5 000;
+   * do 20 regionów – 10 000;
+   * do 40 regionów – 15 000;
+   * większe – 20 000;
+   * Litwa – 25 000;
+   * Rosja / Niemcy / Królewiec – 30 000;
+   * wojny bloków w Warszawie – 5 000–6 000;
+   * zjednoczenie Polski – 40 000.
+ - gen_wojsko dopisuje wymóg każdemu fokusowi z celem wojennym, który go jeszcze nie ma.
+
+8. Zdarzenia – poprawki
+ - Przycisk w zdarzeniach mafii i dominacji Warszawy: superzdarzenie nie wymusza już okna na wierzchu
+   (click_to_front = no) i znika samo po 60 dniach. Zdarzenia sojuszu (wwa.1, wwd.20) najpierw
+   opuszczają starą frakcję, a gdy zapraszający nie ma frakcji, sam ją tworzy.
+ - UWAGA: dokładna przyczyna niedziałającego przycisku NIE została potwierdzona bez error.log z gry.
+   To są poprawki zabezpieczające.
+ - Stare zdarzenia formacji Torunia (nieosiągalne) nie ładują już usuniętych drzewek.
+
+9. Testy (poza silnikiem gry)
+ - check_pom: 0 błędów (124 pliki).
+ - check_events: 0 błędów (315 zdarzeń, 20 przestrzeni nazw).
+ - check_fed, check_ros: 0 błędów.
+ - check_zkr: 1 znany fałszywy alarm (ZKR_leader).
+ - Nowy check_miasta: 0 błędów. Sprawdza 16 fokusów po 7 dni, ≥30 fokusów przywódcy i 32 wspólne,
+   ładowanie drzewek po zaprzysiężeniu, wymogi armii przy wojnach oraz flagi interakcji miast.
+ - Kontrola odwołań: brak brakujących zdarzeń, efektów, idei, fokusów, postaci, tagów kosmetycznych
+   i drzewek; brak zduplikowanych identyfikatorów fokusów (2724).
+ - check_trn wycofany (stary pień Torunia nie istnieje).
+
+10. Do sprawdzenia w grze
+ - Łańcuch rejestracji kandydatów, dodatkowa tura i automatyczna rejestracja (Toruń i Bydgoszcz).
+ - Czy AI dochodzi do progów armii i rzeczywiście atakuje.
+ - Przycisk superzdarzeń w Warszawie (proszę o error.log, jeśli dalej nie działa).
+ - Czy vanilla drzewka GER/CZE/UKR/LIT nie wybierają się mimo add = 1000.
+ - Układ graficzny dużych drzewek (sekcje wspólne obok rozdziałów przywódcy).
+ - Federacje i aneksje między miastami (zmiana tagu kosmetycznego, przejęcie wojsk).
+ - Bruski, Rada Przemysłowa, Rady Robotnicze i Brdowski mają portrety zastępcze.
+   Proszę o podpisane zdjęcia/grafiki, jeśli mają być prawdziwe portrety.
+
+v0.53 – Drzewka Warszawy (11.10.2026, wersja testowa)
+-----------------------------------------------------
+DRZEWKA ZAMIAST DECYZJI
++ Wszystkie 9 państw Warszawy ma własne drzewka (zamiast drzewka ogólnego) – łącznie 144 cele.
+* Dawne decyzje „Walka o Warszawę” (mobilizacja, wojny z rywalami, ultimata dla dzielnic, wcielenie marionetki,
+  proklamacja IV RP) są teraz celami w drzewkach bloków. Zakładka decyzji „Walka o Warszawę” usunięta.
+
+BLOKI (Sejm – Straż Marszałkowska, Kancelaria Prezydenta, Mafia Pruszkowska)
++ Pień: start, mobilizacja (także dla marionetki), poparcie, sztab, propaganda z ideą bloku, odbudowa przemysłu.
++ Marionetka: „wcielenie” albo „partner” (marionetka zostaje i dostaje ideę „Lojalny sojusznik bloku”).
++ Dzielnice niezależne: ultimata dla Pragi, Bielan (Zielonych) i Powiśla (Tęczowej Republiki) jako cele.
++ Cel końcowy „Proklamacja IV Rzeczypospolitej” (te same warunki co dotąd).
++ SEJM I PREZYDENT – „Koalicja przeciw przestępczości”: wspólna frakcja przeciw Mafii, wspólny sztab antymafijny,
+  zamrożenie majątków Pruszkowa, Operacja „Pruszków”, a po rozbiciu mafii „Wspólna Rzeczpospolita” – partner
+  uznaje przywództwo (staje się państwem zależnym) albo koalicja się rozpada i dochodzi do wojny.
+  Alternatywa: „Sami ocalimy państwo” – osobne wojny z rywalami.
++ MAFIA: kupowanie polityków (szansa na aferę łapówkową w koalicji), „Ośmiornica”, obrona Pruszkowa przed koalicją,
+  wojny z Sejmem i Kancelarią, nocna ofensywa.
++ Komputer prowadzi wojny tylko przy przewadze sił.
+
+SIŁY ZBROJNE BLOKÓW (Policja, Wojsko, Kibice Legii) – drzewka rozbudowy armii (po 14 celów)
++ Szkolenie, nabór, zapasy, własne warsztaty zbrojeniowe, doktryna walki w mieście, modernizacja uzbrojenia,
+  formacje elitarne (Oddział Antyterrorystyczny, Brygada Zmechanizowana, Bojówka Szturmowa), nowi dowódcy (postacie fikcyjne),
+  ciężki sprzęt, wsparcie dla patrona i idea końcowa (Stołeczna Gwardia Porządku / Armia Prezydencka / Legion Warszawski).
+
+DZIELNICE NIEZALEŻNE (Praga, Zieloni – Bielany, Tęczowa Republika – Powiśle) – po 11 celów
++ Straż dzielnicowa, zapasy, barykady, ochotnicy, gospodarka; wybór: „Liga Wolnych Dzielnic” (wspólna frakcja)
+  albo „Pod skrzydła patrona” (dzielnica sama wybiera blok, któremu się podporządkuje).
+
+DODATKI RADIOWE
+* Radio 1-800 Oświecenie v1.2 i Radio Kryzys v1.1: pliki stacji przeniesione bezpośrednio do folderu music
+  (gra mogła nie wczytywać stacji z podfolderu) i poprawiony zapis szansy odtwarzania utworów.
+
+v0.52 – Przywódcy IV Rzeczypospolitej (11.10.2026, wersja testowa)
+------------------------------------------------------------------
+* IV Rzeczpospolitą prowadzi teraz przywódca bloku, który wygrał walkę o Warszawę (zamiast postaci fikcyjnych):
+  Republika Sejmowa – Donald Tusk (imię i portret przywódcy Straży Marszałkowskiej),
+  Republika Prezydencka – Karol Nawrocki (portret zastępczy, do podmiany),
+  Rzeczpospolita Rodzin – przywódca Mafii Pruszkowskiej (imię i portret jak dotąd).
+* Teksty proklamacji bez fikcyjnych nazwisk (Lisiecka, Wierzbicki, Malinowski).
+* Lista grafik do przygotowania zaktualizowana do v0.52 (super eventy oznaczone jako gotowe,
+  doszły grafiki Korporacyjnej Polski, wojny o Kujawy i Podgórza).
+
+v0.51 – Etap 7: Wojna o Kujawy i Magiczny Podgórz (11.10.2026, wersja testowa)
+------------------------------------------------------------------------------
+WOJNA O KUJAWY (T-Pizza / Państwo Włocławskie – WLC kontra Republika Kujawska – KUJ)
++ Nowa gałąź w drzewku T-Pizzy (po „Aleksandrów w naszej sieci”): „Spór o drogę krajową 62”.
+  Włocławek graniczy tylko z Kujawami, Koninem, Płockiem i Kutnem – droga do Torunia, Solca,
+  Nowej Wsi Wielkiej i na Pałuki prowadzi wyłącznie przez Kujawy.
++ Kujawy wybierają: korytarz tranzytowy (dostęp wojskowy dla T-Pizzy, ścieżka pokojowa)
+  albo odmowa – wtedy cel „Incydent pod Kruszwicą” daje cel wojenny, roszczenia
+  (Aleksandrów, Gniewkowo, Rojewo, Inowrocław) i mobilizację.
++ Decyzja „Wypowiedzenie wojny Kujawom” – komputer wypowie wojnę tylko, gdy jest wystarczająco silny.
++ „Ofensywa na Inowrocław” w czasie wojny; po zwycięstwie lub ugodzie „Droga na północ otwarta”:
+  rdzenie na zdobytych Kujawach, roszczenia wobec Solca, Nowej Wsi Wielkiej i Żnina,
+  decyzja „Kampania franczyzowa” (cel wojenny wobec kolejnych sąsiadów).
++ Kujawy się bronią: „Obrona Kujaw”, Kujawska Gwardia Obywatelska albo prośba do Torunia o gwarancję.
++ Wiadomość dla regionu po kapitulacji Kujaw.
+
+MAGICZNY PODGÓRZ (PDG) – DANIEL MAGICAL (parodia, za zgodą)
++ Własne drzewko „Magiczny Podgórz” (18 celów) zamiast ogólnego.
++ Mechanika „Widzowie na żywo” (0–100): siła polityczna, stabilność i poparcie wojny zależą
+  od oglądalności; widzowie co miesiąc odpływają; hype powyżej 85, „Transmisja offline” poniżej 10.
++ Nowy ustrój przywódcy: „Streamokracja”.
++ Dwie ścieżki (wykluczające się): „Wybory na żywo” – Daniel Magical przejmuje władzę
+  (Magiczna Republika Podgórza, budżet z donejtów, moderatorzy zamiast ministrów, armia widzów,
+  najazd na czat Torunia, milion widzów, most na prawy brzeg i „Magiczny Toruń”)
+  albo „Minister ds. Rozrywki” – Rada Starszych zostaje, Podgórz staje się miastem festiwali
+  i może dostać gwarancję od Torunia („Most przyjaźni”).
++ Decyzje „Studio na Podgórzu”: maraton na żywo, ankieta na czacie, zbiórka na żywo, najazd na transmisję Torunia.
++ Podgórz rządzony przez Daniela Magicala rzadziej przyjmuje ultimatum Torunia.
+! Portret Daniela Magicala jest zastępczy – do podmiany na zdjęcie od autora moda.
+
+v0.50 – Etap 6: Korporacyjna Polska, Orlen i paliwo (11.10.2026, wersja testowa)
+-------------------------------------------------------------------------------
+KORPORACYJNA POLSKA = KSIĘSTWO PŁOCKIE (PLO)
++ Księstwo Płockie (siedziba Koncernu w Płocku) dostało własne drzewko „Korporacyjna Polska”
+  (26 celów zamiast drzewka ogólnego): pień, gałąź paliwowa, gałąź gospodarki korporacyjnej,
+  gałąź „Konsorcjum” i cel końcowy „Korporacyjna Rzeczpospolita”.
++ Nowy ustrój przywódcy: „Korporacjonizm” (typ w grupie demokracji autorytarnej – bez nowej
+  grupy ideologii). Dostaje go przywódca Płocka po celu „Korporacyjna Polska” oraz Rafał Archacki (T-Pizza).
++ Nazwy kosmetyczne: „Korporacyjna Polska”, potem „Korporacyjna Rzeczpospolita”.
++ Start: idea „Płock w zawieszeniu” (kara do stabilności, siły politycznej i budowy), znika po celu
+  „Rada Nadzorcza przejmuje stery”.
++ Postacie fikcyjne: generałowie Zbigniew Krakowiak (Straż Przemysłowa) i Ewa Zawadzka (Kolumna Cystern).
+  Przywódca Płocka bez zmian (imię i portret jak dotąd).
+
+KURS AKCJI KONCERNU (nowa mechanika)
++ Wartość 0–200 (start 100). Wysoki kurs: szybsze fabryki, więcej siły politycznej i stabilności;
+  niski kurs: kary. Co miesiąc kurs dryfuje do 100, spada w czasie wojny i przy niskiej stabilności,
+  rośnie z petrochemią i Konsorcjum; do tego losowe wahania.
++ Poniżej 50 – zdarzenie „Panika na giełdzie”, powyżej 150 – „Hossa na akcjach Koncernu”.
++ Decyzje Rady Nadzorczej: wypłata dywidendy, skup akcji, emisja akcji (nowa fabryka),
+  podwyżka cen na stacjach, promocja „Tankuj taniej”.
+
+ROPA I PALIWO
++ Ropa na mapie (wcześniej w Polsce nie było jej wcale): Dębno 8 (złoże Barnówko-Mostno-Buszewo),
+  Międzychód 6, Kościan 3, Władysławowo 4 (złoża bałtyckie).
++ Rafinerie: Płock (rafineria i baza paliw od startu, wraz z technologią rafinacji), Gdańsk (rafineria od startu).
++ Cele rafineryjne: rafineria na pełnej mocy, strategiczne zbiorniki, Rurociąg Pomorski (+6 ropy w Płocku,
+  dopóki nie walczymy z właścicielem Gdańska), odwierty na Mazowszu (+3 ropy), druga rafineria,
+  kombinat petrochemiczny, „Paliwowe mocarstwo nad Wisłą”.
++ Idee paliwowe dla armii: mniejsze zużycie paliwa, większe magazyny, więcej paliwa z ropy.
++ Decyzje „Paliwo i dostawy”: sprzedaż paliwa sąsiadom, dostawy dla udziałowców Konsorcjum,
+  interwencyjny zakup ropy, „Wrogie przejęcie” (cel wojenny wobec sąsiada).
+
+KONSORCJUM POLSKICH KORPORACJI (frakcja)
++ Płock zakłada frakcję i wysyła zaproszenia do T-Pizzy (Włocławek) i PKP (Kociewie). Komputer chętniej
+  przyjmuje zaproszenie, gdy państwo jest już korporacją (T-Pizza po „Republice Korporacyjnej”,
+  PKP po „Holdingu kolejowym”), w czasie wojny i przy dobrej opinii o Płocku.
++ Członkowie dostają ideę Konsorcjum (paliwo, budowa), a po integracji – silniejszą
+  (także mniejsze zużycie paliwa armii i obrona).
++ Wspólne decyzje: zaproszenie (ponowne), wspólny projekt inwestycyjny, zamówienie cystern z Płocka,
+  wezwanie pomocy wojskowej Konsorcjum.
++ Nowa ikona idei (ropa) i nowa ilustracja zdarzeń (rafineria nocą).
+
+
+
+v0.49 – Super eventy (10.10.2026, wersja testowa)
+------------------------------------------------
++ Nowy system SUPER EVENTÓW na wzór „Vanilla Super Events Expanded”, z nowoczesnym interfejsem:
+  okno 1000×640 na środku ekranu, ilustracja na całe okno, ciemny gradient od dołu, czerwony akcent,
+  nagłówek, duży tytuł i opis na obrazie, płaski przycisk z własnym tekstem. Widzą je wszyscy gracze;
+  zamyka przycisk. Gotowe pod kolejne super eventy (wystarczy ilustracja i tekst) i pod muzykę.
++ Trzy super eventy „Narodziny IV Rzeczypospolitej” z ilustracjami od autora moda:
+  przejęcie władzy przez rząd (Republika Sejmowa), przez prezydenta (Republika Prezydencka)
+  i przez mafię (Rzeczpospolita Rodzin) – każdy z własnym tekstem i przyciskiem.
+* Usunięte stare okno IV RP z v0.48 i zastępcze ilustracje; zamiast trzech wiadomości (news) – super event.
+
+
+DODATEK: Radio Kryzys v1.0 (10.10.2026, wersja testowa)
+------------------------------------------------------
++ Osobny mod „The Fallen Eagle 2027 – Radio Kryzys” (folder pl2027_radio_kryzys), działa z modem i bez niego.
++ 32 utwory (ok. 91 min): rosyjski i wschodnioeuropejski post-punk, coldwave i doomer – m.in. Kino, Mizzery,
+  Zapad81, Permsky Kray, Kult Odinochestva, Nekuda, egorgez, Otravlenna, Ulitsa Vostok, Warszawianka.
++ Okładka stacji i miniatura z grafiki autora moda („RADIO KRYZYS”).
+* Dźwięk: OGG Vorbis, wyrównana głośność, bez okładek i metadanych z MP3.
+! Tylko do użytku prywatnego – nie publikować bez zgody właścicieli praw do muzyki.
+
+DODATEK: Radio 1-800 Oświecenie v1.1 (10.10.2026)
+------------------------------------------------
+* Nowa okładka stacji i miniatura z logo „1-800 Oświecenie” od autora moda (zamiast zastępczej grafiki).
+* Generator radia obsługuje teraz kilka stacji (wspólny kod dla obu dodatków).
+
+
+v0.48 – Etap 5: Warszawa i IV Rzeczpospolita (10.10.2026, wersja testowa)
+------------------------------------------------------------------------
+TRZY BLOKI (marionetki od pierwszego dnia gry)
++ Blok sejmowy: Straż Marszałkowska (Sejm) + Policja.
++ Blok prezydencki: Kancelaria Prezydenta i SOP + Wojsko.
++ Blok mafijny: Mafia Pruszkowska + Kibice Legii.
+
+WALKA O WARSZAWĘ (zakładka decyzji dla przywódców bloków)
++ Mobilizacja bloku (ludzie i broń dla przywódcy i marionetki).
++ Wojna o Warszawę z każdym z rywalizujących bloków (cel wojenny: aneksja).
++ Ultimata dla niezależnych dzielnic: Praga, Zieloni (Bielany), Tęczowa Republika (Powiśle).
++ Wcielenie własnej marionetki (Policja → Straż Sejmowa, Wojsko → Gwardia Prezydencka, Kibice → „ochrona” Pruszkowa).
++ SI używa decyzji wojennych tylko przy przewadze sił.
+
+IV RZECZPOSPOLITA POLSKA
++ Warunki proklamacji (dla każdego z trzech bloków): kontrola wszystkich 22 dzielnic Warszawy (samodzielnie
+  lub przez marionetki), pokonanie obu rywalizujących bloków, lojalna (albo wcielona) własna marionetka,
+  brak wojny, stabilność 40%+, 150 siły politycznej. Może powstać tylko jedna IV RP.
++ Trzy wersje: Republika Sejmowa (marszałek Ewa Lisiecka, wybory), Republika Prezydencka
+  (prezydent Konrad Wierzbicki, dekrety) i Rzeczpospolita Rodzin (Ryszard „Prezes” Malinowski) – postacie
+  fikcyjne, różne idee, partie, flagi i stolice (Sejm albo Śródmieście).
++ Skutki: nazwa „IV Rzeczpospolita Polska”, nowa flaga, przywódca i ustrój, wcielenie marionetek w Warszawie,
+  krótkie drzewko IV RP (7 fokusów – po dwa dla każdej wersji i wspólny „Polska z Warszawy”; dalsze cele
+  będą dopracowane osobno).
++ SUPER EVENT „NARODZINY IV RZECZYPOSPOLITEJ”: okno 960×600 na środku ekranu z dużą ilustracją
+  (inna dla każdej wersji), nazwą państwa, tekstem i przyciskiem; widzą go wszyscy gracze. Dodatkowo
+  wiadomość (news event) dla wszystkich państw.
+
+
+v0.47 – Etap 4: Rosja (10.10.2026, wersja testowa)
+-------------------------------------------------
+SIŁA ROSJI (po analizie przyczyn)
+  Przyczyny słabości: 10 brygad przeciw 14 jednostkom obrońców (5 + 9 brygad z mobilizacji) w terenie
+  leśno-jeziornym; zapas 250 transporterów na 16 batalionów zmechanizowanych (brak uzupełnień); brak ropy
+  i paliwa dla jednostek zmotoryzowanych; tylko 2 zakłady zbrojeniowe w obwodzie; kary −10% organizacji
+  od startu i −15% ataku / −10% organizacji w kryzysie sukcesji w środku ofensywy.
+* Armia: 15 brygad zamiast 10 (4 zmechanizowane, 6 batalionowych grup taktycznych, 2 nowe brygady
+  artylerii, 2 piechoty morskiej, 1 Rosgwardii).
+* Zapasy na uzupełnienia: 9000 broni strzeleckiej, 700 transporterów, 700 pojazdów, 700 dział,
+  800 wyposażenia wsparcia, 300 broni przeciwpancernej.
+* Paliwo: złoża ropy w Królewcu (12) i 25 000 paliwa na start.
++ Konwoje z Rosji w czasie wojny: co miesiąc broń, transportery, pojazdy, artyleria, paliwo i 2500 rekrutów.
+* „Wyczerpana armia”: −5% organizacji (było −10%); „Chaos w sztabie generalnym”: −8% ataku, −5% organizacji
+  (było −15% / −10%).
+* Obrońcy: 2 ochotnicze brygady na państwo przy mobilizacji (było 3); premia do obrony bez zmian.
+* SI: dodatkowe żądanie przydziału jednostek na front mazurski.
+
+DWIE ŚCIEŻKI PO WOJNIE (gałęzie w każdym drzewku Rosji, widoczne tylko po wyniku wojny)
++ ZWYCIĘSTWO (9 fokusów): Defilada w Królewcu, Wsparcie dla Rady Obwodu, Garnizony nad jeziorami,
+  Kolej Królewiec–Olsztyn, Polityka wobec rozbitej Polski, Przemysł zbrojeniowy obwodu, Strefa wpływów,
+  Strefa buforowa, Rosja nad Wisłą?
++ PORAŻKA (8 fokusów): Gorzka lekcja, Utrzymać to, co zostało, Rozliczenia w sztabie, Gospodarka po wojnie,
+  Rozmowy z Mazurami, Reforma armii, Spokój w obwodzie, Odbudowa potęgi.
+* Gałęzie się wykluczają; postęp nie ginie przy zmianie drzewka w czasie kryzysu sukcesji.
+
+OBWÓD WARMIŃSKO-MAZURSKI (tag OWM)
++ Nowe państwo zależne od Rosji, tworzone po zwycięstwie z zajętych ziem (decyzja „Obwód Warmińsko-Mazurski”,
+  zastępuje dawne „Terytorium zależne”; domyślne rozstrzygnięcie po 120 dniach, z wyjątkiem rządów
+  demokratycznych – pokój – i Szojgu – administracja wojskowa).
++ Przywódca: Maciej Maciak (prawica, przewodniczący Rady Obwodu; portret tymczasowy). Partia „Rada Obwodu”,
+  własna flaga, nazwa, idea „Pod opieką Moskwy”, 3 brygady, broń i rekruci. Wiadomość dla wszystkich państw polskich.
++ „Polityka wobec rozbitej Polski”: decyzje wobec sąsiadów obwodu – „Rosyjskie media” i „Oferta protektoratu”
+  (zgoda = państwo zależne, odmowa = możliwość uzasadnienia interwencji).
+
+CZĘŚCIOWE ZACHOWANIE ZDOBYCZY PO PORAŻCE
++ Regiony państw mazurskich mają wartość strategiczną 1–3 (punkty zwycięstwa, wielkość miasta, węzeł
+  zaopatrzenia). Przy porażce Rosja zachowuje ok. 35% wartości zajętych ziem (maks. 6 pkt), wybierając
+  najcenniejsze regiony STYKAJĄCE SIĘ z jej terytorium (sąsiedztwo liczone po każdym przejęciu – bez
+  odległych enklaw). Przykład: 3 zajęte regiony o wartości 3 → Rosja zatrzymuje 1. Zdarzenie „Linia rozejmu”.
+* HOI4 przekazuje ziemie całymi regionami (stanami), nie prowincjami – mechanika działa na regionach,
+  które na Mazurach są małe (gminy), więc efekt jest podobny do „kilku prowincji”.
+
+POPRAWKI
+* Koniec wojny obejmuje też sojuszników państw mazurskich (wcześniej mogła trwać dalej).
+* Zdarzenie „Moskwa nie może dłużej czekać” nie powtarza się już co tydzień.
+
+
+v0.46 – Etap 3: kryzys Torunia (10.10.2026, wersja testowa)
+----------------------------------------------------------
+„60 DNI DO UPADKU TORUNIA”
++ Misja kryzysowa w zakładce Decyzje od pierwszego dnia gry, z odliczaniem 60 dni.
+  Warunek: ukończyć pień kryzysu aż do fokusu „Kto przejmie Toruń?”.
++ Pień rozbudowany do 8 fokusów (łącznie 50 dni – 10 dni zapasu): nowe „Przywrócenie instytucji”
+  i „Bezpieczeństwo wewnętrzne” (po 5 dni); „Napięcia polityczne” skrócone do 5 dni.
+  Nowe ikony z nowymi identyfikatorami (GFX_focus_TRN_przywrocenie_instytucji, GFX_focus_TRN_bezpieczenstwo);
+  istniejące identyfikatory bez zmian.
++ Idea „Kryzys rządowy” od startu (−5% stabilności, −10% siły politycznej, uzasadnianie wojny 2× dłużej).
++ Ostrzeżenie 15 dni przed końcem terminu.
++ SUKCES: koniec kryzysu, bonus do stabilności i siły politycznej, start walki o władzę.
++ PORAŻKA: „Upadek Torunia” – wojna domowa. Buntownicy (nacjonaliści Elany albo anarchiści Krevienki,
+  zależnie od wpływów) przejmują centrum miasta i 70% wojska, dostają 6 nowych brygad, broń i ideę
+  „Zwycięska rewolta”. Republika Toruńska dostaje na rok ideę „Rozpad Torunia” (ciężkie kary dla armii).
+  Bydgoszcz dostaje zdarzenie „Toruń w ogniu”.
+
+EKSPANSJA DOPIERO PO STABILIZACJI
+* Kolejność: kryzys rządowy → walka o władzę (stabilizacja) → ekspansja → dominacja regionalna.
+* Gałąź regionalna Torunia dostępna dopiero po rozstrzygnięciu walki o władzę. Nowe fokusy:
+  Zabezpieczenie pozycji Torunia, Rozbudowa sił zbrojnych, Przygotowanie do konfliktów regionalnych,
+  Spór o metropolię, Inwestycje podmiejskie, Kampania w gminach, Toruń – serce regionu.
+  Przemianowane: „Dominacja nad okolicą” (dawniej Sąsiedzi Grodu), „Ekspansja w kierunku Bydgoszczy”,
+  „Dalsze zjednoczenie regionu”.
+* Ultimata wobec sąsiadów (decyzje zjednoczenia lokalnego) – dopiero po „Dominacji nad okolicą”.
+* Spór o metropolię po stronie Torunia: decyzje inwestycji i kampanii usunięte (zastąpione fokusami);
+  referenda i rozstrzygnięcie dostępne po fokusie „Spór o metropolię”. Kryzysy napięcia (z groźbą
+  wojny) nie wybuchają, dopóki Toruń nie wejdzie w spór. Bydgoszcz zachowuje swoje decyzje.
+* W czasie walki o władzę uzasadnianie wojny trwa 2× dłużej (idea „Podzielone miasto”).
+
+
+v0.45 – Etap 2: mapa i państwa (10.10.2026, wersja testowa)
+----------------------------------------------------------
+NOWE PAŃSTWO
++ Gmina Nowe Miasto Lubawskie (tag GNL) – osobne państwo na terenie gminy wiejskiej (region „Gmina Nowe
+  Miasto Lubawskie”, stolica: Bratian). Od pierwszego dnia gry jest marionetką Nowego Miasta Lubawskiego
+  (miasto ma też roszczenie do gminy). Własne partie, flaga, przywódca, jednostki i drzewko ogólne.
++ Nowy mechanizm zależności startowych (on_startup) – przygotowany też pod bloki Warszawy (etap 5).
+
+TORUŃ – TRZY CZĘŚCI MIASTA
+* Sprawdzony podział: Toruń (7 prowincji, stolica, Centrum), Dystrykt Rubinkowski (Republika Toruńska)
+  i Podgórz (osobne państwo). Podgórz łączy się z miastem mostami Piłsudskiego i Zawackiej, ma kolej
+  i węzeł zaopatrzenia.
+* Realna ludność części miasta (razem ok. 195 tys.): Toruń 145 tys. (było 169 tys.), Rubinkowo 30 tys.
+  (było 2,5 tys.), Podgórz 20 tys. (było 5 tys.). Toruń zachowuje zabudowę miejską (kategoria „miasto”).
+
+TECHNICZNE
+* Identyfikatory wszystkich 1358 regionów bez zmian (sprawdzone porównaniem przed i po).
+* Kontrola mapy: 0 błędów; kontrole treści: 0 błędów (poza znanym fałszywym alarmem w Zakonie).
+
+
+v0.44 – Etap 1: analiza i naprawy (10.10.2026, wersja testowa)
+--------------------------------------------------------------
+TORUŃ – ŚCIEŻKA ROMANOWSKIEGO
+* Naprawiona ścieżka Michała Romanowskiego: od v0.41 kończyła się na jednym fokusie
+  („Toruń dla mieszkańców”). Teraz ma 22 fokusy – demokratyczna lewica, partia „Toruń dla Mieszkańców”.
+  Wykorzystano dawne pomysły (wspólne kuchnie, informacja zamiast paniki, chłopak z internetu, kadry z UMK,
+  Rubinkowo, Skarpa, wybór roli Kowalczyk) bez dawnej, komunistycznej wersji („Czerwony Toruń” itp.).
++ Wybór roli Kowalczyk (legalna opozycja / szkoły / wyjazd do Niemiec), pierwsze wolne wybory
+  z wynikiem zależnym od poparcia lewicy, finał „Miasto dla mieszkańców” i „Metropolia otwarta”
+  (pokojowe punkty w sporze o metropolię).
++ 3 zdarzenia (Pierwsze sto dni, Chłopak z internetu, Pierwsze wolne wybory) i 4 idee
+  (Tanie mieszkania, Darmowa komunikacja miejska, Straż Obywatelska Torunia, Miasto dla mieszkańców).
+
+NAZWY
+* „U Brata Jana” → „Brat Jan” (nazwa państwa, regionu i punktu zwycięstwa); partie: Czerwona Gwardia
+  Brata Jana, Socjaldemokracja Brata Jana, Czarna Gwardia Brata Jana itd.
+* Poprawiony błąd przymiotników państw z kilku wyrazów (gra pokazywała np. „U brata jana”,
+  „Nowe miasto lubawskie”, „Mafia pruszkowska”, „Kancelaria prezydenta i sop”) – dotyczyło 10 państw.
+
+KONTROLE
++ Nowy skrypt kontroli wszystkich zdarzeń moda (definicje, odwołania, lokalizacja, opcje, obrazy):
+  214 zdarzeń, 0 błędów, brak zdarzeń osieroconych.
+
+ZNANE PROBLEMY
+! Nadal potrzebny świeży logs/error.log, żeby rozliczyć błędy z poprzednich wersji (Zakon, ideologie vanilla).
+
+
+DODATEK: Radio 1-800 Oświecenie v1.0 (10.10.2026, wersja testowa)
+-----------------------------------------------------------------
++ Osobny mod „The Fallen Eagle 2027 – Radio 1-800 Oświecenie” (folder pl2027_radio_1800).
+  Włącz go w launcherze obok moda głównego; działa też bez niego.
++ Nowa stacja w odtwarzaczu muzyki: 26 nagrań Taco Hemingwaya (ok. 50 min) w kolejności albumu,
+  podpisy „Taco Hemingway – tytuł” (polskie znaki przywrócone, np. „#9 – SŁYSZY PAN?”).
++ Własna okładka stacji (nadajnik i fale radiowe; złota ramka po wybraniu stacji).
+* Dźwięk: OGG Vorbis 44,1 kHz, wyrównana głośność (rozmowy radiowe nie są cichsze od piosenek),
+  usunięte okładki i metadane z plików MP3.
+! Tylko do użytku prywatnego – nie publikować bez zgody właścicieli praw do muzyki.
+! W źródłowych plikach brakuje utworu nr 08.
+
+
+v0.43 – „Pomorze i Kujawy” (09.10.2026, wersja testowa)
+-------------------------------------------------------
+NOWE PAŃSTWA I DRZEWKA (172 nowe fokusy)
++ PKP Polski Holding Kolejowy (KOC) – 36 fokusów.
+  - Stolica przenosi się ze Starogardu do Tczewa.
+  - 8 zdarzeń; decyzje: Emisja akcji, Nalot SOK, Wojenny rozkład jazdy.
+  - Postacie (fikcyjne): prezes Jerzy Semaforski, gen. Ryszard Kolasiński, gen. Wanda Mostowska.
+  - Finał: Kolejowa Konfederacja Pomorza albo Imperium Logistyczne PKP.
++ T-Pizza – Republika Korporacyjna (WLC) – 36 fokusów.
+  - Przywódca: Rafał „Archadzio” Archacki (za zgodą), partia „T-Pizza Sp. z o.o.”.
+  - Mechanika satysfakcji klientów (0–100) z bonusami i karami.
+  - Decyzje: Promocja 2+1, Darmowa dostawa w weekend, Wymiana punktów lojalnościowych, Podwyżka cen.
+  - Dług innych państw wobec T-Pizzy i zdarzenie „30 minut albo wojna!”.
+  - 12 zdarzeń; tagi: Republika Korporacyjna T-Pizza, Imperium T-Pizza.
++ Bydgoszcz (BYD) – 100 fokusów.
+  - Pień kryzysu (10) → wybory → trzy drogi po 30 fokusów:
+    Republika (Joanna Młyńska), Junta (płk Tomasz Fordoński), Wolne Dzielnice (Kuba Szwederowski).
+  - Start: Komitet Tymczasowy Bydgoszczy; poparcie frakcji zmienia się decyzjami kampanii i zdarzeniami.
+  - Wolne Dzielnice mogą współpracować z Toruniem Krevienki – frakcja „Federacja Brdy i Wisły”.
+  - Finały: Nowa Republika Kujawsko-Pomorska, Kujawski Okręg Wojskowy, Związek Wolnych Miast.
+  - 21 zdarzeń, 3 generałów.
+
+NOWE MECHANIKI
++ Wpływy regionalne PKP / T-Pizzy / Bydgoszczy (0–100 w każdym państwie docelowym).
+  - Progi: 25 umowy handlowe (+siła polityczna), 50 wspólne projekty (+szybkość budowy), 80 przejęcie.
+  - PKP: połączenia kolejowe, kontrakt tranzytowy, koncesja na dworzec, kolejowy szantaż, wrogie przejęcie.
+  - T-Pizza: franczyza, dostawy na kredyt, wykup państwa.
+  - Bydgoszcz: pomoc administracyjna, misje, finansowanie organizacji, lokalne referendum.
+  - Decyzje odblokowują fokusy każdego z trzech państw.
++ Spór o metropolię Toruń – Bydgoszcz.
+  - 6 obszarów: Solec Kujawski, Zławieś Wielka, Ostromecko, Unisław, Nowa Wieś Wielka, Chełmno.
+  - Decyzje Inwestycja / Kampania / Referendum dla obu miast; napięcie 0–100 z kryzysami przy 50 i 100.
+  - Rozstrzygnięcie: Metropolia Toruńska, Metropolia Bydgoska albo Federacja Bydgosko-Toruńska.
+  - Wojna tylko przy bardzo wysokim napięciu i nigdy między członkami jednej frakcji.
++ Kalendarz krajowy – 10 wydarzeń dla wszystkich polskich państw, każde tylko raz:
+  Ostatnie posiedzenie polskiego rządu, Kryzys na Wiśle, Ostatni wojewodowie składają urzędy,
+  Kryzys polskiej kolei, Wielki blackout, Armia odmawia rozkazu, Wielka ucieczka z Warszawy,
+  Pierwszy Kongres Odbudowy Polski, Upadek wspólnej waluty, Czy Polska powróci?
+
+ZAKON
+* Tempo zgodnie z dokumentem: faza dyplomacji od 01.01.2029, ultimata od 01.09.2029,
+  kampania królewiecka od 01.01.2030.
+* Wojny wymagają stabilności wewnętrznej (fokus „Gotowy na wojnę”, stabilność ≥ 40%).
+* 180 dni przerwy między kolejnymi wojnami.
+* Odmowa ultimatum przed wrześniem 2029 nie daje celu wojennego (zdarzenie „Odmowa – ale jeszcze nie wojna”).
++ Nowa kategoria decyzji „Ponowić ultimatum” (Nowe Miasto Lubawskie, Grudziądz, PKP/Kociewie, Warmia i Mazury).
+
+ZMIANY I POPRAWKI
+* Stare decyzje „Walka o metropolię” wyłączone (zastępuje je spór o metropolię).
+* Bydgoszcz, PKP i T-Pizza nie używają już drzewka generycznego.
+* Generyczny przywódca Bydgoszczy zastąpiony Komitetem Tymczasowym.
+* Paczka: dźwięki przeniesione do części 8 („muzyka_dzwiek_czcionka”), żeby część 1 nie przekraczała 30 MB.
+
+ZNANE PROBLEMY / DO SPRAWDZENIA
+! Archacki ma tymczasowy portret (sylwetka z podpisem) – czeka na zdjęcie.
+! Błędy z error.log (Zakon i ideologie vanilla) – czekam na świeży plik logs/error.log z v0.43.
+! Do sprawdzenia w grze: wydarzenia kalendarza krajowego, wybory w Bydgoszczy, zachowanie SI w sporze o metropolię.
+
+
+v0.42 – Remaster Torunia, etapy 2–4 (09.10.2026, wersja testowa)
+----------------------------------------------------------------
++ Pień kryzysu Torunia skrócony do 42 dni (6 fokusów).
++ Walka o władzę: 6 frakcji, zdarzenia co 10–14 dni, kontrakcje rywali, 5 kryzysów powtarzalnych.
++ „Noc w Ratuszu” – rozstrzygnięcie przy wyrównanej walce.
++ Wpływ lokalny (zasób) i 6 dzielnic z różnymi korzyściami
+  (Stare Miasto, Chełmińskie, Rubinkowo, Bielany, Bydgoskie Przedmieście, Skarpa).
++ Rada Tymczasowa jako władza na start; decyzje: audyt, pełnomocnicy, nieruchomości, zbiórka,
+  ratowanie budżetu, spłata długu.
++ Zdarzenia i decyzje dla fokusów pnia.
+* Krevienko jako anarchista: nowa gałąź i formacja „Federacja Wolnych Komun Kujaw”.
+* Romanowski pozostaje na demokratycznej lewicy (socjaldemokracja).
+* Balans sprawdzony symulacją (wsparcie wybranego lidera: 63–96% zwycięstw zamiast 100%).
+
+
+v0.41 – Menu i cytaty (09.10.2026)
+---------------------------------
++ Nowe menu główne w stylu kolażu TFR i nowy przycisk menu.
++ 28 cytatów polskich postaci na ekranach ładowania.
+* Poprawka (v0.41_poprawka_stany): crash przy starcie spowodowany znacznikiem BOM w plikach stanów.

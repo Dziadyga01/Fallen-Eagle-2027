@@ -1,0 +1,394 @@
+add_namespace = byd
+
+country_event = {
+	id = byd.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = byd.1.t
+	desc = byd.1.d
+	picture = GFX_pl2027_ev081_granica_2
+	is_triggered_only = yes
+	option = {
+		name = byd.1.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_jun_p6 custom_effect_tooltip = BYD_tt_rep_m2 custom_effect_tooltip = BYD_tt_wd_m4 hidden_effect = { add_to_variable = { BYD_pop_jun = 6 } add_to_variable = { BYD_pop_rep = -2 } add_to_variable = { BYD_pop_wd = -4 } BYD_pop_clamp = yes } army_experience = 5
+	}
+	option = {
+		name = byd.1.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_wd_p6 custom_effect_tooltip = BYD_tt_jun_m3 custom_effect_tooltip = BYD_tt_rep_m3 hidden_effect = { add_to_variable = { BYD_pop_wd = 6 } add_to_variable = { BYD_pop_jun = -3 } add_to_variable = { BYD_pop_rep = -3 } BYD_pop_clamp = yes } add_manpower = 800
+	}
+	option = {
+		name = byd.1.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_rep_p5 custom_effect_tooltip = BYD_tt_jun_m2 custom_effect_tooltip = BYD_tt_wd_m3 hidden_effect = { add_to_variable = { BYD_pop_rep = 5 } add_to_variable = { BYD_pop_jun = -2 } add_to_variable = { BYD_pop_wd = -3 } BYD_pop_clamp = yes } add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = byd.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = byd.2.t
+	desc = byd.2.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_2
+	is_triggered_only = yes
+	option = {
+		name = byd.2.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_jun_p6 custom_effect_tooltip = BYD_tt_rep_m3 custom_effect_tooltip = BYD_tt_wd_m3 hidden_effect = { add_to_variable = { BYD_pop_jun = 6 } add_to_variable = { BYD_pop_rep = -3 } add_to_variable = { BYD_pop_wd = -3 } BYD_pop_clamp = yes } add_ideas = BYD_i_kartki
+	}
+	option = {
+		name = byd.2.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_wd_p6 custom_effect_tooltip = BYD_tt_rep_m3 custom_effect_tooltip = BYD_tt_jun_m3 hidden_effect = { add_to_variable = { BYD_pop_wd = 6 } add_to_variable = { BYD_pop_rep = -3 } add_to_variable = { BYD_pop_jun = -3 } BYD_pop_clamp = yes } add_stability = 0.02
+	}
+	option = {
+		name = byd.2.c
+		trigger = { has_political_power > 25 }
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_rep_p6 custom_effect_tooltip = BYD_tt_jun_m3 custom_effect_tooltip = BYD_tt_wd_m3 hidden_effect = { add_to_variable = { BYD_pop_rep = 6 } add_to_variable = { BYD_pop_jun = -3 } add_to_variable = { BYD_pop_wd = -3 } BYD_pop_clamp = yes } add_political_power = -25
+	}
+	option = {
+		name = byd.2.e
+		ai_chance = { factor = 0.3 }
+		custom_effect_tooltip = BYD_tt_rep_p2 hidden_effect = { add_to_variable = { BYD_pop_rep = 2 } BYD_pop_clamp = yes } add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = byd.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = byd.3.t
+	desc = byd.3.d
+	picture = GFX_pl2027_ev081_praca_4
+	is_triggered_only = yes
+	option = {
+		name = byd.3.a
+		trigger = { has_political_power > 40 }
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_rep_p6 custom_effect_tooltip = BYD_tt_wd_m2 custom_effect_tooltip = BYD_tt_jun_m4 hidden_effect = { add_to_variable = { BYD_pop_rep = 6 } add_to_variable = { BYD_pop_wd = -2 } add_to_variable = { BYD_pop_jun = -4 } BYD_pop_clamp = yes } add_political_power = -40
+	}
+	option = {
+		name = byd.3.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_jun_p7 custom_effect_tooltip = BYD_tt_wd_m5 custom_effect_tooltip = BYD_tt_rep_m2 hidden_effect = { add_to_variable = { BYD_pop_jun = 7 } add_to_variable = { BYD_pop_wd = -5 } add_to_variable = { BYD_pop_rep = -2 } BYD_pop_clamp = yes } add_timed_idea = { idea = BYD_i_strajki days = 60 } add_stability = -0.02
+	}
+	option = {
+		name = byd.3.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_wd_p7 custom_effect_tooltip = BYD_tt_rep_m4 custom_effect_tooltip = BYD_tt_jun_m3 hidden_effect = { add_to_variable = { BYD_pop_wd = 7 } add_to_variable = { BYD_pop_rep = -4 } add_to_variable = { BYD_pop_jun = -3 } BYD_pop_clamp = yes } add_timed_idea = { idea = BYD_i_strajki days = 90 }
+	}
+}
+
+country_event = {
+	id = byd.4
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = byd.4.t
+	desc = byd.4.d
+	picture = GFX_pl2027_ev081_porzadek_3
+	is_triggered_only = yes
+	option = {
+		name = byd.4.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_jun_p5 custom_effect_tooltip = BYD_tt_wd_m3 custom_effect_tooltip = BYD_tt_rep_m2 hidden_effect = { add_to_variable = { BYD_pop_jun = 5 } add_to_variable = { BYD_pop_wd = -3 } add_to_variable = { BYD_pop_rep = -2 } BYD_pop_clamp = yes } army_experience = 5
+	}
+	option = {
+		name = byd.4.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_wd_p5 custom_effect_tooltip = BYD_tt_jun_m3 custom_effect_tooltip = BYD_tt_rep_m2 hidden_effect = { add_to_variable = { BYD_pop_wd = 5 } add_to_variable = { BYD_pop_jun = -3 } add_to_variable = { BYD_pop_rep = -2 } BYD_pop_clamp = yes } add_manpower = 600
+	}
+	option = {
+		name = byd.4.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_rep_p5 custom_effect_tooltip = BYD_tt_jun_m2 custom_effect_tooltip = BYD_tt_wd_m3 hidden_effect = { add_to_variable = { BYD_pop_rep = 5 } add_to_variable = { BYD_pop_jun = -2 } add_to_variable = { BYD_pop_wd = -3 } BYD_pop_clamp = yes } add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = byd.5
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = byd.5.t
+	desc = byd.5.d
+	picture = GFX_pl2027_ev081_dyplomacja_1
+	is_triggered_only = yes
+	option = {
+		name = byd.5.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_jun_p5 custom_effect_tooltip = BYD_tt_rep_m3 custom_effect_tooltip = BYD_tt_wd_m2 hidden_effect = { add_to_variable = { BYD_pop_jun = 5 } add_to_variable = { BYD_pop_rep = -3 } add_to_variable = { BYD_pop_wd = -2 } BYD_pop_clamp = yes } add_to_variable = { global.MET_solec_byd = 5 } MET_przelicz = yes add_war_support = 0.02
+	}
+	option = {
+		name = byd.5.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_rep_p5 custom_effect_tooltip = BYD_tt_jun_m3 custom_effect_tooltip = BYD_tt_wd_m2 hidden_effect = { add_to_variable = { BYD_pop_rep = 5 } add_to_variable = { BYD_pop_jun = -3 } add_to_variable = { BYD_pop_wd = -2 } BYD_pop_clamp = yes } if = { limit = { country_exists = SLK } SLK = { add_to_variable = { REG_BYD = 5 } REG_przelicz = yes } }
+	}
+	option = {
+		name = byd.5.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_wd_p5 custom_effect_tooltip = BYD_tt_rep_m2 custom_effect_tooltip = BYD_tt_jun_m3 hidden_effect = { add_to_variable = { BYD_pop_wd = 5 } add_to_variable = { BYD_pop_rep = -2 } add_to_variable = { BYD_pop_jun = -3 } BYD_pop_clamp = yes } add_to_variable = { global.MET_solec_byd = 3 } MET_przelicz = yes
+	}
+}
+
+country_event = {
+	id = byd.6
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = byd.6.t
+	desc = byd.6.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = byd.6.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_rep_p7 custom_effect_tooltip = BYD_tt_jun_m3 custom_effect_tooltip = BYD_tt_wd_m4 hidden_effect = { add_to_variable = { BYD_pop_rep = 7 } add_to_variable = { BYD_pop_jun = -3 } add_to_variable = { BYD_pop_wd = -4 } BYD_pop_clamp = yes }
+	}
+	option = {
+		name = byd.6.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_jun_p7 custom_effect_tooltip = BYD_tt_rep_m4 custom_effect_tooltip = BYD_tt_wd_m3 hidden_effect = { add_to_variable = { BYD_pop_jun = 7 } add_to_variable = { BYD_pop_rep = -4 } add_to_variable = { BYD_pop_wd = -3 } BYD_pop_clamp = yes }
+	}
+	option = {
+		name = byd.6.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = BYD_tt_wd_p7 custom_effect_tooltip = BYD_tt_rep_m3 custom_effect_tooltip = BYD_tt_jun_m4 hidden_effect = { add_to_variable = { BYD_pop_wd = 7 } add_to_variable = { BYD_pop_rep = -3 } add_to_variable = { BYD_pop_jun = -4 } BYD_pop_clamp = yes }
+	}
+}
+
+country_event = {
+	id = byd.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = byd.10.t
+	desc = byd.10.d
+	picture = GFX_pl2027_ev081_wybory_0
+	is_triggered_only = yes
+	option = {
+		name = byd.10.a
+		trigger = { BYD_wygrywa_rep = yes }
+		ai_chance = { factor = 1 }
+		set_politics = { ruling_party = social_liberal elections_allowed = yes } add_popularity = { ideology = social_liberal popularity = 0.15 } recruit_character = BYD_joanna_mlynska promote_character = BYD_joanna_mlynska retire_character = BYD_komitet set_country_flag = BYD_droga_rep set_country_flag = BYD_wybory_odbyte if = { limit = { has_idea = BYD_i_miasto_bez_rzadu } remove_ideas = BYD_i_miasto_bez_rzadu } if = { limit = { has_idea = BYD_i_rzad_tymczasowy } remove_ideas = BYD_i_rzad_tymczasowy } add_ideas = BYD_i_mandat_rep add_stability = 0.03 mark_focus_tree_layout_dirty = yes
+	}
+	option = {
+		name = byd.10.b
+		trigger = { BYD_wygrywa_jun = yes }
+		ai_chance = { factor = 1 }
+		set_politics = { ruling_party = nationalist elections_allowed = no } add_popularity = { ideology = nationalist popularity = 0.3 } recruit_character = BYD_tomasz_fordonski promote_character = BYD_tomasz_fordonski retire_character = BYD_komitet set_country_flag = BYD_droga_jun set_country_flag = BYD_wybory_odbyte if = { limit = { has_idea = BYD_i_miasto_bez_rzadu } remove_ideas = BYD_i_miasto_bez_rzadu } if = { limit = { has_idea = BYD_i_rzad_tymczasowy } remove_ideas = BYD_i_rzad_tymczasowy } add_ideas = BYD_i_mandat_jun set_party_name = { ideology = nationalist long_name = BYD_party_jun_long name = BYD_party_jun } add_war_support = 0.05 mark_focus_tree_layout_dirty = yes
+	}
+	option = {
+		name = byd.10.c
+		trigger = { BYD_wygrywa_wd = yes }
+		ai_chance = { factor = 1 }
+		set_politics = { ruling_party = libertarian_socialist elections_allowed = no } add_popularity = { ideology = libertarian_socialist popularity = 0.3 } recruit_character = BYD_kuba_szwederowski promote_character = BYD_kuba_szwederowski retire_character = BYD_komitet set_country_flag = BYD_droga_wd set_country_flag = BYD_wybory_odbyte if = { limit = { has_idea = BYD_i_miasto_bez_rzadu } remove_ideas = BYD_i_miasto_bez_rzadu } if = { limit = { has_idea = BYD_i_rzad_tymczasowy } remove_ideas = BYD_i_rzad_tymczasowy } add_ideas = BYD_i_mandat_wd set_party_name = { ideology = libertarian_socialist long_name = BYD_party_wd_long name = BYD_party_wd } add_manpower = 1500 mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = {
+	id = byd.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = byd.11.t
+	desc = byd.11.d
+	picture = GFX_pl2027_ev081_media_5
+	is_triggered_only = yes
+	option = {
+		name = byd.11.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.03 add_political_power = -20
+	}
+	option = {
+		name = byd.11.b
+		ai_chance = { factor = 0.5 }
+		add_political_power = 30 add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = byd.12
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = byd.12.t
+	desc = byd.12.d
+	picture = GFX_pl2027_ev081_ulica_4
+	is_triggered_only = yes
+	option = {
+		name = byd.12.a
+		ai_chance = { factor = 1 }
+		set_country_flag = BYD_chce_federacji if = { limit = { country_exists = TRN } TRN = { add_to_variable = { REG_BYD = 10 } REG_przelicz = yes } } REG_BYD_wszyscy_plus_5 = yes add_stability = 0.03
+	}
+	option = {
+		name = byd.12.b
+		ai_chance = { factor = 1 }
+		set_country_flag = BYD_samodzielnosc clr_country_flag = BYD_chce_federacji add_ideas = BYD_i_samodzielnosc add_political_power = 50
+	}
+}
+
+country_event = {
+	id = byd.13
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = byd.13.t
+	desc = byd.13.d
+	picture = GFX_pl2027_ev081_ulica_4
+	is_triggered_only = yes
+	option = {
+		name = byd.13.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.03 add_political_power = 40
+	}
+	option = {
+		name = byd.13.b
+		trigger = { has_political_power > 25 }
+		ai_chance = { factor = 1 }
+		add_stability = 0.03 add_political_power = -25
+	}
+}
+
+country_event = {
+	id = byd.14
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = byd.14.t
+	desc = byd.14.d
+	picture = GFX_pl2027_ev081_porzadek_5
+	is_triggered_only = yes
+	option = {
+		name = byd.14.a
+		ai_chance = { factor = 2 modifier = { factor = 3 has_government = libertarian_socialist } }
+		set_country_flag = TRN_wspolpraca_byd FROM = { set_country_flag = BYD_trn_wspolpraca country_event = { id = byd.15 } }
+	}
+	option = {
+		name = byd.14.b
+		ai_chance = { factor = 1 }
+		FROM = { set_country_flag = BYD_trn_odmowa country_event = { id = byd.16 } }
+	}
+}
+
+country_event = {
+	id = byd.15
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = byd.15.t
+	desc = byd.15.d
+	picture = GFX_pl2027_ev081_ulica_2
+	is_triggered_only = yes
+	option = {
+		name = byd.15.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.03 if = { limit = { country_exists = TRN } TRN = { add_to_variable = { REG_BYD = 10 } REG_przelicz = yes } }
+	}
+}
+
+country_event = {
+	id = byd.16
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = byd.16.t
+	desc = byd.16.d
+	picture = GFX_pl2027_ev081_narada_4
+	is_triggered_only = yes
+	option = {
+		name = byd.16.a
+		ai_chance = { factor = 1 }
+		add_political_power = 30 add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = byd.17
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = byd.17.t
+	desc = byd.17.d
+	picture = GFX_pl2027_ev081_wisla_2
+	is_triggered_only = yes
+	option = {
+		name = byd.17.a
+		trigger = { has_political_power > 50 }
+		ai_chance = { factor = 1 }
+		add_political_power = -50 add_stability = 0.02
+	}
+	option = {
+		name = byd.17.b
+		ai_chance = { factor = 1 }
+		if = { limit = { country_exists = TRN TRN = { is_in_faction_with = ROOT } } TRN = { leave_faction = yes } } add_stability = -0.03 if = { limit = { country_exists = TRN } TRN = { add_to_variable = { REG_BYD = -10 } REG_przelicz = yes } }
+	}
+	option = {
+		name = byd.17.c
+		ai_chance = { factor = 0.5 }
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = byd.18
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = byd.18.t
+	desc = byd.18.d
+	picture = GFX_pl2027_ev081_ulica_0
+	is_triggered_only = yes
+	option = {
+		name = byd.18.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.03 add_popularity = { ideology = libertarian_socialist popularity = 0.05 }
+	}
+	option = {
+		name = byd.18.b
+		ai_chance = { factor = 1 }
+		add_political_power = 40 add_stability = -0.02 add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = byd.19
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = byd.19.t
+	desc = byd.19.d
+	picture = GFX_pl2027_ev081_granica_5
+	is_triggered_only = yes
+	option = {
+		name = byd.19.a
+		ai_chance = { factor = 1 modifier = { factor = 2 FROM = { has_war = no } } }
+		FROM = { puppet = ROOT country_event = { id = byd.21 } }
+	}
+	option = {
+		name = byd.19.b
+		ai_chance = { factor = 1 }
+		FROM = { if = { limit = { NOT = { has_war_with = ROOT } } create_wargoal = { type = annex_everything target = ROOT } } country_event = { id = byd.22 } }
+	}
+}
+
+country_event = {
+	id = byd.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = byd.21.t
+	desc = byd.21.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_2
+	is_triggered_only = yes
+	option = {
+		name = byd.21.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25 add_to_variable = { global.MET_zlawies_byd = 5 } MET_przelicz = yes
+	}
+}
+
+country_event = {
+	id = byd.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = byd.22.t
+	desc = byd.22.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = byd.22.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = byd.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = byd.20.t
+	desc = byd.20.d
+	picture = GFX_pl2027_ev081_wisla_3
+	is_triggered_only = yes
+	option = {
+		name = byd.20.a
+		ai_chance = { factor = 1 }
+		diplomatic_relation = { country = FROM relation = non_aggression_pact active = yes } FROM = { set_country_flag = BYD_gru_pakt add_political_power = 25 }
+	}
+	option = {
+		name = byd.20.b
+		ai_chance = { factor = 1 }
+		FROM = { add_war_support = 0.02 }
+	}
+}

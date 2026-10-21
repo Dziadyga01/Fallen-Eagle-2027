@@ -1,0 +1,19 @@
+on_actions = {
+	on_monthly_PDG = {
+		effect = { if = { limit = { has_country_flag = PDG_mech }
+		add_to_variable = { PDG_widzowie = -3 }
+		if = { limit = { has_idea = PDG_panstwo_na_zywo } add_to_variable = { PDG_widzowie = 1 } }
+		if = { limit = { has_idea = PDG_panstwo_na_zywo2 } add_to_variable = { PDG_widzowie = 2 } }
+		if = { limit = { has_idea = PDG_festiwal } add_to_variable = { PDG_widzowie = 1 } }
+		if = { limit = { has_war = yes } add_to_variable = { PDG_widzowie = 2 } }
+		random_list = { 50 = { } 25 = { add_to_variable = { PDG_widzowie = 3 } } 25 = { add_to_variable = { PDG_widzowie = -2 } } }
+		PDG_przelicz = yes
+		if = { limit = { check_variable = { PDG_widzowie > 85 } NOT = { has_country_flag = PDG_hype_cd } }
+			set_country_flag = { flag = PDG_hype_cd days = 150 } country_event = { id = pdg.30 }
+		}
+		else_if = { limit = { check_variable = { PDG_widzowie < 10 } NOT = { has_country_flag = PDG_offline_cd } }
+			set_country_flag = { flag = PDG_offline_cd days = 120 } country_event = { id = pdg.31 }
+		}
+	} }
+	}
+}

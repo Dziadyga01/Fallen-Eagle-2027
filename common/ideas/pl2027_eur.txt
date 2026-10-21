@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		EUR_wlasne_panstwo = {
+			picture = DU_EUR_wlasne_panstwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = -0.05
+				war_support_factor = 0.1
+			}
+		}
+		EUR_rozczarowanie = {
+			picture = DU_EUR_rozczarowanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.05
+			}
+		}
+		EUR_fundusze = {
+			picture = DU_EUR_fundusze
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		EUR_euroregion_idea = {
+			picture = DU_EUR_euroregion_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				conscription_factor = -0.2
+			}
+		}
+		EUR_straz = {
+			picture = DU_EUR_straz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.02
+			}
+		}
+	}
+}

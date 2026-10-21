@@ -1,0 +1,28 @@
+state = {
+	id = 924
+	name = "STATE_924"
+	manpower = 38599
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = GDY
+		add_core_of = GDY
+		victory_points = { 8860 1 }
+		victory_points = { 8851 1 }
+		victory_points = { 1068 1 }
+		victory_points = { 8829 1 }
+		victory_points = { 8854 1 }
+		victory_points = { 8862 1 }
+		victory_points = { 8881 1 }
+		victory_points = { 8853 1 }
+		victory_points = { 8887 1 }
+		buildings = {
+			infrastructure = 3
+			8861 = { naval_base = 1 }
+		}
+	}
+	provinces = { 999 8862 1068 8861 6156 8867 8859 8858 8851 8853 8854 8881 8882 1483 8869 8873 8868 7227 8827 8829 8887 8886 8911 8857 8860 }
+	local_supplies = 0.0
+}

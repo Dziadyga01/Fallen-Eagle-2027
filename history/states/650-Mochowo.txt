@@ -1,0 +1,22 @@
+state = {
+	id = 650
+	name = "STATE_650"
+	manpower = 8403
+	state_category = rural
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = PLO
+		add_core_of = PLO
+		add_claim_by = NNA
+		victory_points = { 9981 1 }
+		victory_points = { 9987 1 }
+		victory_points = { 9985 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1053 9982 9983 9987 9981 9986 9985 }
+	local_supplies = 0.0
+}

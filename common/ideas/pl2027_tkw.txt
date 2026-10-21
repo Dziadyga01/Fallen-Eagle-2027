@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		TKW_mobilizacja = {
+			picture = DU_TKW_mobilizacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.1
+				war_support_factor = 0.08
+				army_org_factor = 0.05
+			}
+		}
+		TKW_ofensywa = {
+			picture = DU_TKW_ofensywa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				army_core_attack_factor = 0.05
+			}
+		}
+		TKW_korytarz = {
+			picture = DU_TKW_korytarz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+		TKW_obrona_kujaw = {
+			picture = DU_TKW_obrona_kujaw
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.15
+				war_support_factor = 0.1
+				stability_factor = 0.03
+			}
+		}
+	}
+}

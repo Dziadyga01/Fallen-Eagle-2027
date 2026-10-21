@@ -1,0 +1,23 @@
+state = {
+	id = 984
+	name = "STATE_984"
+	manpower = 253394
+	state_category = city
+	resources = {
+		steel = 8
+	}
+	history = {
+		owner = LWC
+		add_core_of = LWC
+		victory_points = { 4693 1 }
+		victory_points = { 4692 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 4688 4693 4692 }
+	local_supplies = 0.0
+}

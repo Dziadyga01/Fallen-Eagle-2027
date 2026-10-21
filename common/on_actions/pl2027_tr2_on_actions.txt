@@ -1,0 +1,5 @@
+on_actions = {
+	on_monthly_TRN = {
+		effect = { if = { limit = { has_country_flag = TR2_kampania has_stability < 0.15 NOT = { has_country_flag = TR2_pucz_cd } } set_country_flag = { flag = TR2_pucz_cd days = 120 } country_event = { id = tr2.60 } } }
+	}
+}

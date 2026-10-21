@@ -1,0 +1,236 @@
+ideas = {
+	country = {
+		WWD_sejm_trwa = {
+			picture = DU_WWD_sejm_trwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		WWD_dekrety = {
+			picture = DU_WWD_dekrety
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		WWD_rodzina = {
+			picture = DU_WWD_rodzina
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.03
+				stability_factor = 0.02
+			}
+		}
+		WWD_koalicja = {
+			picture = DU_WWD_koalicja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				stability_factor = 0.03
+				war_support_factor = 0.05
+			}
+		}
+		WWD_zamrozone = {
+			picture = DU_WWD_zamrozone
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.2
+				production_speed_buildings_factor = -0.1
+				stability_factor = -0.03
+			}
+		}
+		WWD_ofensywa = {
+			picture = DU_WWD_ofensywa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		WWD_osmiornica = {
+			picture = DU_WWD_osmiornica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.03
+			}
+		}
+		WWD_obrona_pruszkowa = {
+			picture = DU_WWD_obrona_pruszkowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.15
+				war_support_factor = 0.1
+			}
+		}
+		WWD_sojusznik = {
+			picture = DU_WWD_sojusznik
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		WWD_dzielnica_twierdza = {
+			picture = DU_WWD_dzielnica_twierdza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.15
+				stability_factor = 0.03
+			}
+		}
+		WWD_region_stoleczny = {
+			picture = DU_WWD_region_stoleczny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.08
+				conscription_factor = 0.15
+			}
+		}
+		WWD_wolna_dzielnica = {
+			picture = DU_WWD_wolna_dzielnica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.08
+				army_defence_factor = 0.05
+			}
+		}
+		WWD_bojowki = {
+			picture = DU_WWD_bojowki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = -0.15
+				planning_speed = -0.25
+			}
+		}
+		WWD_kibole = {
+			picture = DU_WWD_kibole
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.1
+				army_attack_factor = -0.05
+			}
+		}
+		WWD_gmachy = {
+			picture = DU_WWD_gmachy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.2
+				max_dig_in = 3
+				dig_in_speed_factor = 0.5
+			}
+		}
+		WWD_plc_idea_szkolenie = {
+			picture = DU_WWD_plc_idea_szkolenie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.03
+			}
+		}
+		WWD_plc_idea_doktryna = {
+			picture = DU_WWD_plc_idea_doktryna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		WWD_plc_idea_elita = {
+			picture = DU_WWD_plc_idea_elita
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				army_attack_factor = 0.08
+				army_defence_factor = 0.08
+				army_morale_factor = 0.1
+			}
+		}
+		WWD_woj_idea_szkolenie = {
+			picture = DU_WWD_woj_idea_szkolenie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.03
+			}
+		}
+		WWD_woj_idea_doktryna = {
+			picture = DU_WWD_woj_idea_doktryna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		WWD_woj_idea_elita = {
+			picture = DU_WWD_woj_idea_elita
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				army_attack_factor = 0.08
+				army_defence_factor = 0.08
+				army_morale_factor = 0.1
+			}
+		}
+		WWD_leg_idea_szkolenie = {
+			picture = DU_WWD_leg_idea_szkolenie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.03
+			}
+		}
+		WWD_leg_idea_doktryna = {
+			picture = DU_WWD_leg_idea_doktryna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		WWD_leg_idea_elita = {
+			picture = DU_WWD_leg_idea_elita
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				army_attack_factor = 0.08
+				army_defence_factor = 0.08
+				army_morale_factor = 0.1
+			}
+		}
+	}
+}

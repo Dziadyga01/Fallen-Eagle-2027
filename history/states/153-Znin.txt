@@ -1,0 +1,21 @@
+state = {
+	id = 153
+	name = "STATE_153"
+	manpower = 20719
+	state_category = town
+	history = {
+		owner = PLK
+		add_core_of = PLK
+		victory_points = { 8046 5 }
+		victory_points = { 8045 1 }
+		victory_points = { 8062 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 8045 8059 8062 8046 8061 8060 }
+	local_supplies = 0.0
+}

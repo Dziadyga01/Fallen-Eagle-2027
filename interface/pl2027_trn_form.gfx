@@ -1,0 +1,348 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_TRN_form_flaga"
+		texturefile = "gfx/interface/goals/TRN_form_flaga.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_flaga_shine"
+		texturefile = "gfx/interface/goals/TRN_form_flaga.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_flaga.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_flaga"
+		texturefile = "gfx/interface/decisions/TRN_form_flaga.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_korona"
+		texturefile = "gfx/interface/goals/TRN_form_korona.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_korona_shine"
+		texturefile = "gfx/interface/goals/TRN_form_korona.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_korona.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_korona"
+		texturefile = "gfx/interface/decisions/TRN_form_korona.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_mlot"
+		texturefile = "gfx/interface/goals/TRN_form_mlot.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_mlot_shine"
+		texturefile = "gfx/interface/goals/TRN_form_mlot.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_mlot.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_mlot"
+		texturefile = "gfx/interface/decisions/TRN_form_mlot.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_klos"
+		texturefile = "gfx/interface/goals/TRN_form_klos.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_klos_shine"
+		texturefile = "gfx/interface/goals/TRN_form_klos.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_klos.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_klos"
+		texturefile = "gfx/interface/decisions/TRN_form_klos.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_tarcza"
+		texturefile = "gfx/interface/goals/TRN_form_tarcza.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_tarcza_shine"
+		texturefile = "gfx/interface/goals/TRN_form_tarcza.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_tarcza.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_tarcza"
+		texturefile = "gfx/interface/decisions/TRN_form_tarcza.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_mapa"
+		texturefile = "gfx/interface/goals/TRN_form_mapa.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_mapa_shine"
+		texturefile = "gfx/interface/goals/TRN_form_mapa.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_mapa.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_mapa"
+		texturefile = "gfx/interface/decisions/TRN_form_mapa.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_zwoj"
+		texturefile = "gfx/interface/goals/TRN_form_zwoj.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_zwoj_shine"
+		texturefile = "gfx/interface/goals/TRN_form_zwoj.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_zwoj.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_zwoj"
+		texturefile = "gfx/interface/decisions/TRN_form_zwoj.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_rzeka"
+		texturefile = "gfx/interface/goals/TRN_form_rzeka.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_rzeka_shine"
+		texturefile = "gfx/interface/goals/TRN_form_rzeka.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_rzeka.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_rzeka"
+		texturefile = "gfx/interface/decisions/TRN_form_rzeka.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_dwie"
+		texturefile = "gfx/interface/goals/TRN_form_dwie.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_dwie_shine"
+		texturefile = "gfx/interface/goals/TRN_form_dwie.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_dwie.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_dwie"
+		texturefile = "gfx/interface/decisions/TRN_form_dwie.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_kolumny"
+		texturefile = "gfx/interface/goals/TRN_form_kolumny.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_kolumny_shine"
+		texturefile = "gfx/interface/goals/TRN_form_kolumny.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_kolumny.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_kolumny"
+		texturefile = "gfx/interface/decisions/TRN_form_kolumny.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_teleskop"
+		texturefile = "gfx/interface/goals/TRN_form_teleskop.dds"
+	}
+	SpriteType = {
+		name = "GFX_TRN_form_teleskop_shine"
+		texturefile = "gfx/interface/goals/TRN_form_teleskop.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/TRN_form_teleskop.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_decision_TRN_form_teleskop"
+		texturefile = "gfx/interface/decisions/TRN_form_teleskop.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_wolne_komuny"
+		texturefile = "gfx/interface/ideas/trn_idea_star.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_wielkie_panstwo"
+		texturefile = "gfx/interface/ideas/trn_idea_sword.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_zjednoczona_republika"
+		texturefile = "gfx/interface/ideas/trn_idea_ballot.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_panstwo_nauki"
+		texturefile = "gfx/interface/ideas/trn_idea_radio.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_zjednoczone_kujawy"
+		texturefile = "gfx/interface/ideas/trn_idea_star.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_sekretne_zakonczenie"
+		texturefile = "gfx/interface/ideas/trn_idea_star.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_militaryzacja"
+		texturefile = "gfx/interface/ideas/trn_idea_army.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_ofensywa"
+		texturefile = "gfx/interface/ideas/trn_idea_sword.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_twierdza"
+		texturefile = "gfx/interface/ideas/trn_idea_shield.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_protesty_nauka"
+		texturefile = "gfx/interface/ideas/trn_idea_crowd.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_kryzys_stolic"
+		texturefile = "gfx/interface/ideas/trn_idea_crowd.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_leg_mod"
+		texturefile = "gfx/interface/ideas/trn_idea_star.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_rad_mod"
+		texturefile = "gfx/interface/ideas/trn_idea_sword.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_stolice_mod"
+		texturefile = "gfx/interface/ideas/trn_idea_ballot.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_TRN_nauka_mod"
+		texturefile = "gfx/interface/ideas/trn_idea_radio.dds"
+	}
+}

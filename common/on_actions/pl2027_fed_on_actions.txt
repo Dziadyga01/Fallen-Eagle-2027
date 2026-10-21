@@ -1,0 +1,12 @@
+on_actions = {
+	on_monthly_WMZ = { effect = { FED_miesiecznie = yes } }
+	on_monthly_MAZ = { effect = { FED_miesiecznie = yes } }
+	on_civil_war_end = {
+		effect = {
+			if = { limit = { has_country_flag = FED_rebel_sep } country_event = { id = fed.71 } }
+			else_if = { limit = { has_country_flag = FED_rebel_cen } country_event = { id = fed.72 } }
+			else_if = { limit = { has_country_flag = FED_rebel_kol } country_event = { id = fed.73 } }
+			else_if = { limit = { has_country_flag = FED_federacja has_country_flag = FED_wojna_domowa } country_event = { id = fed.70 } }
+		}
+	}
+}

@@ -1,0 +1,605 @@
+add_namespace = zycie
+
+country_event = {
+	id = zycie.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = zycie.1.t
+	desc = zycie.1.d
+	picture = GFX_pl2027_ev081_ulica_5
+	is_triggered_only = yes
+	option = {
+		name = zycie.1.a
+		ai_chance = { factor = 2 }
+		add_political_power = -25 add_stability = 0.04
+	}
+	option = {
+		name = zycie.1.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.03 add_war_support = 0.03 add_political_power = 15
+	}
+	option = {
+		name = zycie.1.c
+		ai_chance = { factor = 1 }
+		add_stability = 0.02 add_political_power = -10
+	}
+}
+
+country_event = {
+	id = zycie.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = zycie.2.t
+	desc = zycie.2.d
+	picture = GFX_pl2027_ev081_gospodarka_2
+	is_triggered_only = yes
+	option = {
+		name = zycie.2.a
+		ai_chance = { factor = 2 }
+		add_political_power = 40 add_stability = -0.02
+	}
+	option = {
+		name = zycie.2.b
+		ai_chance = { factor = 2 }
+		add_stability = 0.03 add_political_power = -20 add_equipment_to_stockpile = { type = ranged_equipment amount = 150 }
+	}
+	option = {
+		name = zycie.2.c
+		ai_chance = { factor = 1 }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 400 } add_equipment_to_stockpile = { type = support_equipment amount = 40 } add_political_power = -30
+	}
+}
+
+country_event = {
+	id = zycie.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = zycie.3.t
+	desc = zycie.3.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = zycie.3.a
+		ai_chance = { factor = 2 }
+		add_manpower = 4000 add_stability = -0.01
+	}
+	option = {
+		name = zycie.3.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.03 add_manpower = 1000
+	}
+}
+
+country_event = {
+	id = zycie.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = zycie.10.t
+	desc = zycie.10.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_3
+	is_triggered_only = yes
+	option = {
+		name = zycie.10.a
+		ai_chance = { factor = 2 }
+		add_stability = 0.03 add_political_power = -30
+	}
+	option = {
+		name = zycie.10.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.02 add_war_support = 0.03 army_experience = 10
+	}
+	option = {
+		name = zycie.10.c
+		ai_chance = { factor = 1 }
+		add_stability = 0.05 add_political_power = -50
+	}
+}
+
+country_event = {
+	id = zycie.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = zycie.11.t
+	desc = zycie.11.d
+	picture = GFX_pl2027_ev081_zaloba_2
+	is_triggered_only = yes
+	option = {
+		name = zycie.11.a
+		ai_chance = { factor = 2 }
+		add_stability = 0.03 add_political_power = -25
+	}
+	option = {
+		name = zycie.11.b
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05 add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = zycie.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = zycie.20.t
+	desc = zycie.20.d
+	picture = GFX_pl2027_ev081_front_ros_2
+	is_triggered_only = yes
+	option = {
+		name = zycie.20.a
+		ai_chance = { factor = 2 }
+		add_political_power = -40 add_stability = 0.04
+	}
+	option = {
+		name = zycie.20.b
+		ai_chance = { factor = 1 }
+		add_war_support = 0.04 add_stability = -0.02
+	}
+	option = {
+		name = zycie.20.c
+		ai_chance = { factor = 1 }
+		add_stability = -0.03 add_political_power = 20
+	}
+}
+
+country_event = {
+	id = zycie.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = zycie.21.t
+	desc = zycie.21.d
+	picture = GFX_pl2027_ev081_rosja_3
+	is_triggered_only = yes
+	option = {
+		name = zycie.21.a
+		ai_chance = { factor = 2 }
+		add_political_power = 60 add_stability = -0.01
+	}
+	option = {
+		name = zycie.21.b
+		ai_chance = { factor = 2 }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 600 } add_equipment_to_stockpile = { type = support_equipment amount = 60 }
+	}
+}
+
+country_event = {
+	id = zycie.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
+	title = zycie.30.t
+	desc = zycie.30.d
+	picture = GFX_pl2027_ev081_uchodzcy_0
+	is_triggered_only = yes
+	option = {
+		name = zycie.30.a
+		ai_chance = { factor = 2 }
+		add_political_power = -30 add_stability = 0.02 add_manpower = 2000
+	}
+	option = {
+		name = zycie.30.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = zycie.31
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = zycie.31.t
+	desc = zycie.31.d
+	picture = GFX_pl2027_ev081_front_ros_5
+	is_triggered_only = yes
+	option = {
+		name = zycie.31.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.02
+	}
+	option = {
+		name = zycie.31.b
+		ai_chance = { factor = 2 }
+		army_experience = 15 add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = zycie.32
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = zycie.32.t
+	desc = zycie.32.d
+	picture = GFX_pl2027_ev081_granica_4
+	is_triggered_only = yes
+	option = {
+		name = zycie.32.a
+		ai_chance = { factor = 2 }
+		add_political_power = -20 add_stability = 0.03 army_experience = 5
+	}
+	option = {
+		name = zycie.32.b
+		ai_chance = { factor = 1 }
+		add_political_power = 40 add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = zycie.90
+	hidden = yes
+	trigger = { NOT = { has_country_flag = TFR_zwyciestwo } any_owned_state = { NOT = { is_core_of = ROOT } } }
+	mean_time_to_happen = { days = 10 }
+	option = {
+		name = zycie.90.a
+		ai_chance = { factor = 1 }
+		set_country_flag = TFR_zwyciestwo
+	}
+}
+
+country_event = {
+	id = zycie.91
+	hidden = yes
+	trigger = { NOT = { has_country_flag = TFR_kleska } has_war = yes surrender_progress > 0.35 }
+	mean_time_to_happen = { days = 7 }
+	option = {
+		name = zycie.91.a
+		ai_chance = { factor = 1 }
+		set_country_flag = TFR_kleska
+	}
+}
+
+country_event = {
+	id = zycie.100
+	title = zycie.100.t
+	desc = zycie.100.d
+	picture = GFX_pl2027_ev081_zima_1
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_0 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = { flag = TFR_swiat_0 days = 720 } }
+	option = {
+		name = zycie.100.a
+		ai_chance = { factor = 2 }
+		add_political_power = -50
+	}
+	option = {
+		name = zycie.100.b
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = TFR_zima days = 60 }
+	}
+	option = {
+		name = zycie.100.c
+		ai_chance = { factor = 1 }
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = zycie.101
+	title = zycie.101.t
+	desc = zycie.101.d
+	picture = GFX_pl2027_ev081_blackout_5
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_1 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = { flag = TFR_swiat_1 days = 720 } }
+	option = {
+		name = zycie.101.a
+		ai_chance = { factor = 2 }
+		add_political_power = -40
+	}
+	option = {
+		name = zycie.101.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = TFR_blackout days = 45 } add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = zycie.102
+	title = zycie.102.t
+	desc = zycie.102.d
+	picture = GFX_pl2027_ev081_praca_5
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_2 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = { flag = TFR_swiat_2 days = 720 } }
+	option = {
+		name = zycie.102.a
+		ai_chance = { factor = 2 }
+		add_political_power = -35 add_stability = 0.02
+	}
+	option = {
+		name = zycie.102.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = TFR_strajk days = 30 }
+	}
+	option = {
+		name = zycie.102.c
+		ai_chance = { factor = 1 }
+		add_stability = -0.04 add_political_power = 10
+	}
+}
+
+country_event = {
+	id = zycie.103
+	title = zycie.103.t
+	desc = zycie.103.d
+	picture = GFX_pl2027_ev081_miasto_5
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_3 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = { flag = TFR_swiat_3 days = 720 } }
+	option = {
+		name = zycie.103.a
+		ai_chance = { factor = 2 }
+		add_political_power = -30 add_stability = 0.03
+	}
+	option = {
+		name = zycie.103.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = TFR_afera days = 90 }
+	}
+}
+
+country_event = {
+	id = zycie.104
+	title = zycie.104.t
+	desc = zycie.104.d
+	picture = GFX_pl2027_ev081_front_ros_3
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_4 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = { flag = TFR_swiat_4 days = 720 } }
+	option = {
+		name = zycie.104.a
+		ai_chance = { factor = 2 }
+		add_manpower = 800 add_equipment_to_stockpile = { type = ranged_equipment amount = 120 } army_experience = 5
+	}
+	option = {
+		name = zycie.104.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = zycie.105
+	title = zycie.105.t
+	desc = zycie.105.d
+	picture = GFX_pl2027_ev081_granica_3
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_5 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = { flag = TFR_swiat_5 days = 720 } }
+	option = {
+		name = zycie.105.a
+		ai_chance = { factor = 2 }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 500 } add_equipment_to_stockpile = { type = support_equipment amount = 50 } add_political_power = -40
+	}
+	option = {
+		name = zycie.105.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.02 add_equipment_to_stockpile = { type = ranged_equipment amount = 150 }
+	}
+}
+
+country_event = {
+	id = zycie.106
+	title = zycie.106.t
+	desc = zycie.106.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_5
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_6 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = { flag = TFR_swiat_6 days = 720 } }
+	option = {
+		name = zycie.106.a
+		ai_chance = { factor = 2 }
+		add_stability = 0.04
+	}
+	option = {
+		name = zycie.106.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.01 add_manpower = 1000 add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = zycie.107
+	title = zycie.107.t
+	desc = zycie.107.d
+	picture = GFX_pl2027_ev081_gospodarka_2
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_7 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = { flag = TFR_swiat_7 days = 720 } }
+	option = {
+		name = zycie.107.a
+		ai_chance = { factor = 2 }
+		add_political_power = -30 add_stability = 0.01
+	}
+	option = {
+		name = zycie.107.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = TFR_inflacja days = 90 } add_political_power = 20
+	}
+}
+
+country_event = {
+	id = zycie.108
+	title = zycie.108.t
+	desc = zycie.108.d
+	picture = GFX_pl2027_ev081_wisla_2
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_8 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = { flag = TFR_swiat_8 days = 720 } }
+	option = {
+		name = zycie.108.a
+		ai_chance = { factor = 2 }
+		add_political_power = -25 add_stability = 0.02
+	}
+	option = {
+		name = zycie.108.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = TFR_powodz days = 60 }
+	}
+}
+
+country_event = {
+	id = zycie.109
+	title = zycie.109.t
+	desc = zycie.109.d
+	picture = GFX_pl2027_ev081_paliwo_0
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_9 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = { flag = TFR_swiat_9 days = 720 } }
+	option = {
+		name = zycie.109.a
+		ai_chance = { factor = 2 }
+		add_political_power = -20 add_stability = 0.02
+	}
+	option = {
+		name = zycie.109.b
+		ai_chance = { factor = 1 }
+		add_political_power = -30
+	}
+}
+
+country_event = {
+	id = zycie.110
+	title = zycie.110.t
+	desc = zycie.110.d
+	picture = GFX_pl2027_ev081_uchodzcy_1
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_10 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = { flag = TFR_swiat_10 days = 720 } }
+	option = {
+		name = zycie.110.a
+		ai_chance = { factor = 2 }
+		add_manpower = 3000 add_stability = -0.02
+	}
+	option = {
+		name = zycie.110.b
+		ai_chance = { factor = 1 }
+		add_manpower = 1200 add_political_power = 20
+	}
+}
+
+country_event = {
+	id = zycie.111
+	title = zycie.111.t
+	desc = zycie.111.d
+	picture = GFX_pl2027_ev081_miasto_4
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_11 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = { flag = TFR_swiat_11 days = 720 } }
+	option = {
+		name = zycie.111.a
+		ai_chance = { factor = 2 }
+		add_stability = 0.03 add_war_support = 0.02
+	}
+	option = {
+		name = zycie.111.b
+		ai_chance = { factor = 1 }
+		add_manpower = 1500 add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = zycie.112
+	title = zycie.112.t
+	desc = zycie.112.d
+	picture = GFX_pl2027_ev081_kibice_2
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_12 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = { flag = TFR_swiat_12 days = 720 } }
+	option = {
+		name = zycie.112.a
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = TFR_jednosc days = 120 }
+	}
+	option = {
+		name = zycie.112.b
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03 add_equipment_to_stockpile = { type = support_equipment amount = 30 }
+	}
+}
+
+country_event = {
+	id = zycie.113
+	title = zycie.113.t
+	desc = zycie.113.d
+	picture = GFX_pl2027_ev081_gospodarka_5
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_13 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } set_country_flag = { flag = TFR_swiat_13 days = 720 } }
+	option = {
+		name = zycie.113.a
+		ai_chance = { factor = 2 }
+		add_war_support = 0.03 add_political_power = 15
+	}
+	option = {
+		name = zycie.113.b
+		ai_chance = { factor = 1 }
+		add_political_power = 40
+	}
+}
+
+country_event = {
+	id = zycie.114
+	title = zycie.114.t
+	desc = zycie.114.d
+	picture = GFX_pl2027_ev081_dyplomacja_0
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_14 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } set_country_flag = { flag = TFR_swiat_14 days = 720 } }
+	option = {
+		name = zycie.114.a
+		ai_chance = { factor = 2 }
+		add_political_power = -40 army_experience = 5
+	}
+	option = {
+		name = zycie.114.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.02 army_experience = 10
+	}
+}
+
+country_event = {
+	id = zycie.115
+	title = zycie.115.t
+	desc = zycie.115.d
+	picture = GFX_pl2027_ev081_miasto_2
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_15 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = { flag = TFR_swiat_15 days = 720 } }
+	option = {
+		name = zycie.115.a
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = TFR_zniwa days = 180 }
+	}
+	option = {
+		name = zycie.115.b
+		ai_chance = { factor = 1 }
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = zycie.116
+	title = zycie.116.t
+	desc = zycie.116.d
+	picture = GFX_pl2027_ev081_media_4
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_16 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = { flag = TFR_swiat_16 days = 720 } }
+	option = {
+		name = zycie.116.a
+		ai_chance = { factor = 2 }
+		add_political_power = 30 add_stability = 0.01
+	}
+	option = {
+		name = zycie.116.b
+		ai_chance = { factor = 1 }
+		add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = zycie.117
+	title = zycie.117.t
+	desc = zycie.117.d
+	picture = GFX_pl2027_ev081_front_ros_3
+	trigger = { has_country_flag = PL2027_polska NOT = { has_country_flag = TFR_swiat_17 } }
+	mean_time_to_happen = { days = 700 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = { flag = TFR_swiat_17 days = 720 } }
+	option = {
+		name = zycie.117.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.02 add_political_power = -15
+	}
+	option = {
+		name = zycie.117.b
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = TFR_panika days = 90 } add_manpower = 2000
+	}
+}

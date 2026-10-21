@@ -1,0 +1,19 @@
+﻿capital = 1346
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.3
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "2025.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	social_liberal = 70
+	authoritarian_democrat = 10
+	communist = 10
+	fascist = 10
+}
+# --- zag ---
+recruit_character = LIT_nauseda
+promote_character = LIT_nauseda

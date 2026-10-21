@@ -1,0 +1,27 @@
+﻿capital = 1288
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.3
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "2025.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	social_liberal = 10
+	authoritarian_democrat = 70
+	communist = 10
+	fascist = 10
+}
+# --- gnr ---
+recruit_character = BLR_gen_chrenin
+recruit_character = BLR_gen_wolfowicz
+recruit_character = BLR_gen_hulewicz
+recruit_character = BLR_gen_bielokoniew
+# --- blr ---
+recruit_character = BLR_lukaszenka
+promote_character = BLR_lukaszenka
+set_variable = { BLR_niezaleznosc = 35 }
+set_variable = { BLR_stabilnosc = 60 }
+add_ideas = BLR_panstwo_zwiazkowe

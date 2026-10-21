@@ -1,0 +1,24 @@
+state = {
+	id = 91
+	name = "STATE_91"
+	manpower = 16413
+	state_category = rural
+	resources = {
+		steel = 4
+	}
+	history = {
+		owner = KUJ
+		add_core_of = KUJ
+		victory_points = { 429 1 }
+		victory_points = { 8280 2 }
+		victory_points = { 8279 1 }
+		victory_points = { 8312 1 }
+		victory_points = { 8301 1 }
+		victory_points = { 8304 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 429 8312 8305 8304 8303 8302 8311 8301 186 8280 8279 8281 8284 8285 }
+	local_supplies = 0.0
+}

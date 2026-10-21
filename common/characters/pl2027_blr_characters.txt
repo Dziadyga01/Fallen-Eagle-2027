@@ -1,0 +1,41 @@
+characters = {
+	BLR_lukaszenka = {
+		name = BLR_lukaszenka
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLR/BLR_lukaszenka.dds"
+				small = "gfx/leaders/BLR/BLR_lukaszenka_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	BLR_rada_bezpieczenstwa = {
+		name = BLR_rada_bezpieczenstwa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLR/BLR_rada_bezpieczenstwa.dds"
+				small = "gfx/leaders/BLR/BLR_rada_bezpieczenstwa_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	BLR_rada_narodowa = {
+		name = BLR_rada_narodowa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLR/BLR_rada_narodowa.dds"
+				small = "gfx/leaders/BLR/BLR_rada_narodowa_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+}

@@ -1,0 +1,23 @@
+state = {
+	id = 1083
+	name = "STATE_1083"
+	manpower = 21647
+	state_category = rural
+	resources = {
+		rubber = 2
+		steel = 3
+	}
+	history = {
+		owner = SUW
+		add_core_of = SUW
+		victory_points = { 5 1 }
+		victory_points = { 3229 1 }
+		victory_points = { 2076 1 }
+		victory_points = { 3364 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 5 2076 1239 790 6684 6676 9869 3229 9868 6679 3364 }
+	local_supplies = 0.0
+}

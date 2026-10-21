@@ -1,0 +1,53 @@
+TR2_kurs_gulewski = {
+	icon = GFX_idea_TR2_kurs_gulewski
+	enable = { has_country_flag = TR2_kurs_gulewski }
+	remove_trigger = { NOT = { has_country_flag = TR2_kurs_gulewski } }
+	stability_factor = 0.03
+	political_power_gain = 0.05
+	war_support_factor = -0.03
+}
+TR2_kurs_zaleski = {
+	icon = GFX_idea_TR2_kurs_zaleski
+	enable = { has_country_flag = TR2_kurs_zaleski }
+	remove_trigger = { NOT = { has_country_flag = TR2_kurs_zaleski } }
+	production_speed_buildings_factor = 0.05
+	political_power_gain = 0.05
+	stability_factor = -0.02
+}
+TR2_kurs_romanowski = {
+	icon = GFX_idea_TR2_kurs_romanowski
+	enable = { has_country_flag = TR2_kurs_romanowski }
+	remove_trigger = { NOT = { has_country_flag = TR2_kurs_romanowski } }
+	stability_factor = 0.04
+	consumer_goods_factor = 0.02
+	political_power_gain = -0.03
+}
+TR2_kurs_kowalczyk = {
+	icon = GFX_idea_TR2_kurs_kowalczyk
+	enable = { has_country_flag = TR2_kurs_kowalczyk }
+	remove_trigger = { NOT = { has_country_flag = TR2_kurs_kowalczyk } }
+	research_speed_factor = 0.05
+	political_power_gain = 0.03
+	war_support_factor = -0.04
+}
+TR2_kurs_elana = {
+	icon = GFX_idea_TR2_kurs_elana
+	enable = { has_country_flag = TR2_kurs_elana }
+	remove_trigger = { NOT = { has_country_flag = TR2_kurs_elana } }
+	war_support_factor = 0.05
+	conscription_factor = 0.1
+	stability_factor = -0.04
+}
+TR2_kurs_krevienko = {
+	icon = GFX_idea_TR2_kurs_krevienko
+	enable = { has_country_flag = TR2_kurs_krevienko }
+	remove_trigger = { NOT = { has_country_flag = TR2_kurs_krevienko } }
+	war_support_factor = 0.03
+	army_defence_factor = 0.05
+	political_power_gain = -0.1
+}
+TR2_kampania_mod = {
+	icon = GFX_idea_TR2_kampania_mod
+	enable = { has_country_flag = TR2_kampania }
+	remove_trigger = { NOT = { has_country_flag = TR2_kampania } }
+}

@@ -1,0 +1,26 @@
+state = {
+	id = 118
+	name = "STATE_118"
+	manpower = 22114
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = CHZ
+		add_core_of = CHZ
+		add_claim_by = TRN
+		victory_points = { 8084 5 }
+		victory_points = { 8103 1 }
+		victory_points = { 8102 1 }
+		victory_points = { 8096 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 215 8103 395 8102 8101 8100 8084 8096 1261 8097 }
+	local_supplies = 0.0
+}

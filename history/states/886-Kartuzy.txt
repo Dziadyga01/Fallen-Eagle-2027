@@ -1,0 +1,21 @@
+state = {
+	id = 886
+	name = "STATE_886"
+	manpower = 20727
+	state_category = rural
+	resources = {
+		steel = 2
+	}
+	history = {
+		owner = SPT
+		add_core_of = SPT
+		victory_points = { 8672 1 }
+		victory_points = { 8702 1 }
+		victory_points = { 947 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 776 8702 947 8677 8692 8680 8672 8667 }
+	local_supplies = 0.0
+}

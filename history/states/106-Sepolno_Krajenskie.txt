@@ -1,0 +1,19 @@
+state = {
+	id = 106
+	name = "STATE_106"
+	manpower = 23204
+	state_category = rural
+	history = {
+		owner = KRJ
+		add_core_of = KRJ
+		victory_points = { 7940 1 }
+		victory_points = { 7941 2 }
+		victory_points = { 7936 1 }
+		victory_points = { 7933 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 7933 7940 7937 7938 7935 7936 7941 8984 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,92 @@
+add_namespace = ubt
+
+news_event = {
+	id = ubt.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ubt.1.t
+	desc = ubt.1.d
+	picture = GFX_tfe_mapa_baltyk_news
+	is_triggered_only = yes
+	option = {
+		name = ubt.1.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = ubt.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ubt.2.t
+	desc = ubt.2.d
+	picture = GFX_tfe_mapa_baltyk
+	is_triggered_only = yes
+	option = {
+		name = ubt.2.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 10 } } modifier = { factor = 0.3 has_war = yes } modifier = { factor = 0.2 original_tag = ZKR } }
+		UBT_dolacz = yes custom_effect_tooltip = UBT_tt_sp8 hidden_effect = { add_to_variable = { global.UBT_spojnosc = 8 } clamp_variable = { var = global.UBT_spojnosc min = 0 max = 100 } } add_opinion_modifier = { target = FROM modifier = UBT_partner } FROM = { add_opinion_modifier = { target = ROOT modifier = UBT_partner } country_event = { id = ubt.3 days = 1 } }
+	}
+	option = {
+		name = ubt.2.b
+		ai_chance = { factor = 6 modifier = { factor = 2 has_opinion = { target = FROM value < 0 } } }
+		FROM = { add_opinion_modifier = { target = ROOT modifier = UBT_odmowa } country_event = { id = ubt.4 days = 1 } }
+	}
+}
+
+country_event = {
+	id = ubt.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ubt.3.t
+	desc = ubt.3.d
+	picture = GFX_tfe_mapa_baltyk
+	is_triggered_only = yes
+	option = {
+		name = ubt.3.a
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = ubt.4
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ubt.4.t
+	desc = ubt.4.d
+	picture = GFX_tfe_mapa_baltyk
+	is_triggered_only = yes
+	option = {
+		name = ubt.4.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = ubt.5
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ubt.5.t
+	desc = ubt.5.d
+	picture = GFX_tfe_mapa_baltyk
+	is_triggered_only = yes
+	option = {
+		name = ubt.5.a
+		ai_chance = { factor = 10 modifier = { factor = 2 check_variable = { global.UBT_spojnosc > 89 } } modifier = { factor = 0.5 num_of_controlled_states > 15 } }
+		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = ubt.5.b
+		ai_chance = { factor = 6 }
+		custom_effect_tooltip = UBT_tt_sm10 hidden_effect = { add_to_variable = { global.UBT_spojnosc = -10 } clamp_variable = { var = global.UBT_spojnosc min = 0 max = 100 } }
+	}
+}
+
+news_event = {
+	id = ubt.6
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ubt.6.t
+	desc = ubt.6.d
+	picture = GFX_tfe_mapa_baltyk_news
+	is_triggered_only = yes
+	option = {
+		name = ubt.6.a
+		ai_chance = { factor = 1 }
+	}
+}

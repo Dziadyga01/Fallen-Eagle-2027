@@ -1,0 +1,145 @@
+ideas = {
+	country = {
+		TRM_spor = {
+			picture = DU_TRM_spor
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		TRM_wojna = {
+			picture = DU_TRM_wojna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.08
+				conscription_factor = 0.1
+			}
+		}
+		TRM_metro = {
+			picture = DU_TRM_metro
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+		TRM_zloty = {
+			picture = DU_TRM_zloty
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.05
+				stability_factor = 0.03
+			}
+		}
+		TRM_rada = {
+			picture = DU_TRM_rada
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.08
+			}
+		}
+		TRM_koalicja = {
+			picture = DU_TRM_koalicja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				war_support_factor = 0.08
+			}
+		}
+		TRM_pomorze = {
+			picture = DU_TRM_pomorze
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.1
+				army_defence_factor = 0.05
+			}
+		}
+		TRM_port = {
+			picture = DU_TRM_port
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_gain = 0.05
+			}
+		}
+		TRM_port2 = {
+			picture = DU_TRM_port2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.06
+				political_power_gain = 0.08
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		TRM_obrona = {
+			picture = DU_TRM_obrona
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				naval_defense_factor = 0.1
+			}
+		}
+		TRM_baltyk = {
+			picture = DU_TRM_baltyk
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.05
+				army_org_factor = 0.05
+			}
+		}
+		TRM_WMG_sierpien = {
+			picture = DU_TRM_WMG_sierpien
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				war_support_factor = 0.05
+			}
+		}
+		TRM_GDY_morze = {
+			picture = DU_TRM_GDY_morze
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				conscription_factor = 0.08
+			}
+		}
+		TRM_SPT_kasyno = {
+			picture = DU_TRM_SPT_kasyno
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				conscription_factor = 0.15
+				consumer_goods_factor = -0.04
+			}
+		}
+		TRM_SPT_las = {
+			picture = DU_TRM_SPT_las
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.15
+			}
+		}
+	}
+}

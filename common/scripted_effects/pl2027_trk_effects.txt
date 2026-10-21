@@ -1,0 +1,183 @@
+TR2_sondaz = {
+	set_variable = { TR2_suma = 0 } add_to_variable = { TR2_suma = TR2_pop_gulewski } add_to_variable = { TR2_suma = TR2_pop_zaleski } add_to_variable = { TR2_suma = TR2_pop_romanowski } add_to_variable = { TR2_suma = TR2_pop_kowalczyk } add_to_variable = { TR2_suma = TR2_pop_elana } add_to_variable = { TR2_suma = TR2_pop_krevienko } if = { limit = { check_variable = { TR2_suma > 0 } } set_variable = { TR2_udzial_gulewski = TR2_pop_gulewski } multiply_variable = { TR2_udzial_gulewski = 100 } divide_variable = { TR2_udzial_gulewski = TR2_suma } round_variable = TR2_udzial_gulewski set_variable = { TR2_udzial_zaleski = TR2_pop_zaleski } multiply_variable = { TR2_udzial_zaleski = 100 } divide_variable = { TR2_udzial_zaleski = TR2_suma } round_variable = TR2_udzial_zaleski set_variable = { TR2_udzial_romanowski = TR2_pop_romanowski } multiply_variable = { TR2_udzial_romanowski = 100 } divide_variable = { TR2_udzial_romanowski = TR2_suma } round_variable = TR2_udzial_romanowski set_variable = { TR2_udzial_kowalczyk = TR2_pop_kowalczyk } multiply_variable = { TR2_udzial_kowalczyk = 100 } divide_variable = { TR2_udzial_kowalczyk = TR2_suma } round_variable = TR2_udzial_kowalczyk set_variable = { TR2_udzial_elana = TR2_pop_elana } multiply_variable = { TR2_udzial_elana = 100 } divide_variable = { TR2_udzial_elana = TR2_suma } round_variable = TR2_udzial_elana set_variable = { TR2_udzial_krevienko = TR2_pop_krevienko } multiply_variable = { TR2_udzial_krevienko = 100 } divide_variable = { TR2_udzial_krevienko = TR2_suma } round_variable = TR2_udzial_krevienko }
+}
+TRK_wymus_rejestracje = {
+	if = { limit = { NOT = { has_country_flag = TR2_listy_zamkniete } } if = { limit = { check_variable = { TR2_pop_gulewski > 9 } } set_country_flag = TR2_kand_gulewski } if = { limit = { check_variable = { TR2_pop_zaleski > 9 } } set_country_flag = TR2_kand_zaleski } if = { limit = { check_variable = { TR2_pop_romanowski > 9 } } set_country_flag = TR2_kand_romanowski } if = { limit = { check_variable = { TR2_pop_kowalczyk > 9 } } set_country_flag = TR2_kand_kowalczyk } if = { limit = { check_variable = { TR2_pop_elana > 9 } } set_country_flag = TR2_kand_elana } if = { limit = { check_variable = { TR2_pop_krevienko > 9 } } set_country_flag = TR2_kand_krevienko } if = { limit = { NOT = { TR2_jest_kandydat = yes } } set_country_flag = TR2_kand_gulewski set_country_flag = TR2_kand_zaleski } set_country_flag = TR2_listy_zamkniete }
+}
+TR2_policz_wybory = {
+	TRK_wymus_rejestracje = yes set_country_flag = TR2_wybory_odbyte TR2_sondaz = yes set_variable = { TR2_suma_r = 0 } if = { limit = { has_country_flag = TR2_kand_gulewski } add_to_variable = { TR2_suma_r = TR2_pop_gulewski } } if = { limit = { has_country_flag = TR2_kand_zaleski } add_to_variable = { TR2_suma_r = TR2_pop_zaleski } } if = { limit = { has_country_flag = TR2_kand_romanowski } add_to_variable = { TR2_suma_r = TR2_pop_romanowski } } if = { limit = { has_country_flag = TR2_kand_kowalczyk } add_to_variable = { TR2_suma_r = TR2_pop_kowalczyk } } if = { limit = { has_country_flag = TR2_kand_elana } add_to_variable = { TR2_suma_r = TR2_pop_elana } } if = { limit = { has_country_flag = TR2_kand_krevienko } add_to_variable = { TR2_suma_r = TR2_pop_krevienko } } set_variable = { TR2_wynik_gulewski = 0 } if = { limit = { has_country_flag = TR2_kand_gulewski check_variable = { TR2_suma_r > 0 } } set_variable = { TR2_wynik_gulewski = TR2_pop_gulewski } multiply_variable = { TR2_wynik_gulewski = 100 } divide_variable = { TR2_wynik_gulewski = TR2_suma_r } round_variable = TR2_wynik_gulewski } set_variable = { TR2_wynik_zaleski = 0 } if = { limit = { has_country_flag = TR2_kand_zaleski check_variable = { TR2_suma_r > 0 } } set_variable = { TR2_wynik_zaleski = TR2_pop_zaleski } multiply_variable = { TR2_wynik_zaleski = 100 } divide_variable = { TR2_wynik_zaleski = TR2_suma_r } round_variable = TR2_wynik_zaleski } set_variable = { TR2_wynik_romanowski = 0 } if = { limit = { has_country_flag = TR2_kand_romanowski check_variable = { TR2_suma_r > 0 } } set_variable = { TR2_wynik_romanowski = TR2_pop_romanowski } multiply_variable = { TR2_wynik_romanowski = 100 } divide_variable = { TR2_wynik_romanowski = TR2_suma_r } round_variable = TR2_wynik_romanowski } set_variable = { TR2_wynik_kowalczyk = 0 } if = { limit = { has_country_flag = TR2_kand_kowalczyk check_variable = { TR2_suma_r > 0 } } set_variable = { TR2_wynik_kowalczyk = TR2_pop_kowalczyk } multiply_variable = { TR2_wynik_kowalczyk = 100 } divide_variable = { TR2_wynik_kowalczyk = TR2_suma_r } round_variable = TR2_wynik_kowalczyk } set_variable = { TR2_wynik_elana = 0 } if = { limit = { has_country_flag = TR2_kand_elana check_variable = { TR2_suma_r > 0 } } set_variable = { TR2_wynik_elana = TR2_pop_elana } multiply_variable = { TR2_wynik_elana = 100 } divide_variable = { TR2_wynik_elana = TR2_suma_r } round_variable = TR2_wynik_elana } set_variable = { TR2_wynik_krevienko = 0 } if = { limit = { has_country_flag = TR2_kand_krevienko check_variable = { TR2_suma_r > 0 } } set_variable = { TR2_wynik_krevienko = TR2_pop_krevienko } multiply_variable = { TR2_wynik_krevienko = 100 } divide_variable = { TR2_wynik_krevienko = TR2_suma_r } round_variable = TR2_wynik_krevienko } clr_country_flag = TRK_zwyciezca_znany if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_gulewski OR = { NOT = { has_country_flag = TR2_kand_zaleski } check_variable = { TR2_pop_gulewski > TR2_pop_zaleski } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } check_variable = { TR2_pop_gulewski > TR2_pop_romanowski } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } check_variable = { TR2_pop_gulewski > TR2_pop_kowalczyk } } OR = { NOT = { has_country_flag = TR2_kand_elana } check_variable = { TR2_pop_gulewski > TR2_pop_elana } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } check_variable = { TR2_pop_gulewski > TR2_pop_krevienko } } } set_country_flag = TR2_wybrany_gulewski set_country_flag = TRK_zwyciezca_znany } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_zaleski OR = { NOT = { has_country_flag = TR2_kand_gulewski } check_variable = { TR2_pop_zaleski > TR2_pop_gulewski } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } check_variable = { TR2_pop_zaleski > TR2_pop_romanowski } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } check_variable = { TR2_pop_zaleski > TR2_pop_kowalczyk } } OR = { NOT = { has_country_flag = TR2_kand_elana } check_variable = { TR2_pop_zaleski > TR2_pop_elana } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } check_variable = { TR2_pop_zaleski > TR2_pop_krevienko } } } set_country_flag = TR2_wybrany_zaleski set_country_flag = TRK_zwyciezca_znany } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_romanowski OR = { NOT = { has_country_flag = TR2_kand_gulewski } check_variable = { TR2_pop_romanowski > TR2_pop_gulewski } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } check_variable = { TR2_pop_romanowski > TR2_pop_zaleski } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } check_variable = { TR2_pop_romanowski > TR2_pop_kowalczyk } } OR = { NOT = { has_country_flag = TR2_kand_elana } check_variable = { TR2_pop_romanowski > TR2_pop_elana } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } check_variable = { TR2_pop_romanowski > TR2_pop_krevienko } } } set_country_flag = TR2_wybrany_romanowski set_country_flag = TRK_zwyciezca_znany } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_kowalczyk OR = { NOT = { has_country_flag = TR2_kand_gulewski } check_variable = { TR2_pop_kowalczyk > TR2_pop_gulewski } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } check_variable = { TR2_pop_kowalczyk > TR2_pop_zaleski } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } check_variable = { TR2_pop_kowalczyk > TR2_pop_romanowski } } OR = { NOT = { has_country_flag = TR2_kand_elana } check_variable = { TR2_pop_kowalczyk > TR2_pop_elana } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } check_variable = { TR2_pop_kowalczyk > TR2_pop_krevienko } } } set_country_flag = TR2_wybrany_kowalczyk set_country_flag = TRK_zwyciezca_znany } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_elana OR = { NOT = { has_country_flag = TR2_kand_gulewski } check_variable = { TR2_pop_elana > TR2_pop_gulewski } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } check_variable = { TR2_pop_elana > TR2_pop_zaleski } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } check_variable = { TR2_pop_elana > TR2_pop_romanowski } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } check_variable = { TR2_pop_elana > TR2_pop_kowalczyk } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } check_variable = { TR2_pop_elana > TR2_pop_krevienko } } } set_country_flag = TR2_wybrany_elana set_country_flag = TRK_zwyciezca_znany } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_krevienko OR = { NOT = { has_country_flag = TR2_kand_gulewski } check_variable = { TR2_pop_krevienko > TR2_pop_gulewski } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } check_variable = { TR2_pop_krevienko > TR2_pop_zaleski } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } check_variable = { TR2_pop_krevienko > TR2_pop_romanowski } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } check_variable = { TR2_pop_krevienko > TR2_pop_kowalczyk } } OR = { NOT = { has_country_flag = TR2_kand_elana } check_variable = { TR2_pop_krevienko > TR2_pop_elana } } } set_country_flag = TR2_wybrany_krevienko set_country_flag = TRK_zwyciezca_znany } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_gulewski has_country_flag = TR2_debata_gulewski OR = { NOT = { has_country_flag = TR2_kand_zaleski } NOT = { check_variable = { TR2_pop_gulewski < TR2_pop_zaleski } } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } NOT = { check_variable = { TR2_pop_gulewski < TR2_pop_romanowski } } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } NOT = { check_variable = { TR2_pop_gulewski < TR2_pop_kowalczyk } } } OR = { NOT = { has_country_flag = TR2_kand_elana } NOT = { check_variable = { TR2_pop_gulewski < TR2_pop_elana } } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } NOT = { check_variable = { TR2_pop_gulewski < TR2_pop_krevienko } } } } set_country_flag = TR2_wybrany_gulewski set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_zaleski has_country_flag = TR2_debata_zaleski OR = { NOT = { has_country_flag = TR2_kand_gulewski } NOT = { check_variable = { TR2_pop_zaleski < TR2_pop_gulewski } } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } NOT = { check_variable = { TR2_pop_zaleski < TR2_pop_romanowski } } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } NOT = { check_variable = { TR2_pop_zaleski < TR2_pop_kowalczyk } } } OR = { NOT = { has_country_flag = TR2_kand_elana } NOT = { check_variable = { TR2_pop_zaleski < TR2_pop_elana } } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } NOT = { check_variable = { TR2_pop_zaleski < TR2_pop_krevienko } } } } set_country_flag = TR2_wybrany_zaleski set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_romanowski has_country_flag = TR2_debata_romanowski OR = { NOT = { has_country_flag = TR2_kand_gulewski } NOT = { check_variable = { TR2_pop_romanowski < TR2_pop_gulewski } } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } NOT = { check_variable = { TR2_pop_romanowski < TR2_pop_zaleski } } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } NOT = { check_variable = { TR2_pop_romanowski < TR2_pop_kowalczyk } } } OR = { NOT = { has_country_flag = TR2_kand_elana } NOT = { check_variable = { TR2_pop_romanowski < TR2_pop_elana } } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } NOT = { check_variable = { TR2_pop_romanowski < TR2_pop_krevienko } } } } set_country_flag = TR2_wybrany_romanowski set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_kowalczyk has_country_flag = TR2_debata_kowalczyk OR = { NOT = { has_country_flag = TR2_kand_gulewski } NOT = { check_variable = { TR2_pop_kowalczyk < TR2_pop_gulewski } } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } NOT = { check_variable = { TR2_pop_kowalczyk < TR2_pop_zaleski } } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } NOT = { check_variable = { TR2_pop_kowalczyk < TR2_pop_romanowski } } } OR = { NOT = { has_country_flag = TR2_kand_elana } NOT = { check_variable = { TR2_pop_kowalczyk < TR2_pop_elana } } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } NOT = { check_variable = { TR2_pop_kowalczyk < TR2_pop_krevienko } } } } set_country_flag = TR2_wybrany_kowalczyk set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_elana has_country_flag = TR2_debata_elana OR = { NOT = { has_country_flag = TR2_kand_gulewski } NOT = { check_variable = { TR2_pop_elana < TR2_pop_gulewski } } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } NOT = { check_variable = { TR2_pop_elana < TR2_pop_zaleski } } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } NOT = { check_variable = { TR2_pop_elana < TR2_pop_romanowski } } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } NOT = { check_variable = { TR2_pop_elana < TR2_pop_kowalczyk } } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } NOT = { check_variable = { TR2_pop_elana < TR2_pop_krevienko } } } } set_country_flag = TR2_wybrany_elana set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_krevienko has_country_flag = TR2_debata_krevienko OR = { NOT = { has_country_flag = TR2_kand_gulewski } NOT = { check_variable = { TR2_pop_krevienko < TR2_pop_gulewski } } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } NOT = { check_variable = { TR2_pop_krevienko < TR2_pop_zaleski } } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } NOT = { check_variable = { TR2_pop_krevienko < TR2_pop_romanowski } } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } NOT = { check_variable = { TR2_pop_krevienko < TR2_pop_kowalczyk } } } OR = { NOT = { has_country_flag = TR2_kand_elana } NOT = { check_variable = { TR2_pop_krevienko < TR2_pop_elana } } } } set_country_flag = TR2_wybrany_krevienko set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_gulewski OR = { NOT = { has_country_flag = TR2_kand_zaleski } NOT = { check_variable = { TR2_pop_gulewski < TR2_pop_zaleski } } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } NOT = { check_variable = { TR2_pop_gulewski < TR2_pop_romanowski } } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } NOT = { check_variable = { TR2_pop_gulewski < TR2_pop_kowalczyk } } } OR = { NOT = { has_country_flag = TR2_kand_elana } NOT = { check_variable = { TR2_pop_gulewski < TR2_pop_elana } } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } NOT = { check_variable = { TR2_pop_gulewski < TR2_pop_krevienko } } } } set_country_flag = TR2_wybrany_gulewski set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_zaleski OR = { NOT = { has_country_flag = TR2_kand_gulewski } NOT = { check_variable = { TR2_pop_zaleski < TR2_pop_gulewski } } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } NOT = { check_variable = { TR2_pop_zaleski < TR2_pop_romanowski } } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } NOT = { check_variable = { TR2_pop_zaleski < TR2_pop_kowalczyk } } } OR = { NOT = { has_country_flag = TR2_kand_elana } NOT = { check_variable = { TR2_pop_zaleski < TR2_pop_elana } } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } NOT = { check_variable = { TR2_pop_zaleski < TR2_pop_krevienko } } } } set_country_flag = TR2_wybrany_zaleski set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_romanowski OR = { NOT = { has_country_flag = TR2_kand_gulewski } NOT = { check_variable = { TR2_pop_romanowski < TR2_pop_gulewski } } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } NOT = { check_variable = { TR2_pop_romanowski < TR2_pop_zaleski } } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } NOT = { check_variable = { TR2_pop_romanowski < TR2_pop_kowalczyk } } } OR = { NOT = { has_country_flag = TR2_kand_elana } NOT = { check_variable = { TR2_pop_romanowski < TR2_pop_elana } } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } NOT = { check_variable = { TR2_pop_romanowski < TR2_pop_krevienko } } } } set_country_flag = TR2_wybrany_romanowski set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_elana OR = { NOT = { has_country_flag = TR2_kand_gulewski } NOT = { check_variable = { TR2_pop_elana < TR2_pop_gulewski } } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } NOT = { check_variable = { TR2_pop_elana < TR2_pop_zaleski } } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } NOT = { check_variable = { TR2_pop_elana < TR2_pop_romanowski } } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } NOT = { check_variable = { TR2_pop_elana < TR2_pop_kowalczyk } } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } NOT = { check_variable = { TR2_pop_elana < TR2_pop_krevienko } } } } set_country_flag = TR2_wybrany_elana set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_kowalczyk OR = { NOT = { has_country_flag = TR2_kand_gulewski } NOT = { check_variable = { TR2_pop_kowalczyk < TR2_pop_gulewski } } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } NOT = { check_variable = { TR2_pop_kowalczyk < TR2_pop_zaleski } } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } NOT = { check_variable = { TR2_pop_kowalczyk < TR2_pop_romanowski } } } OR = { NOT = { has_country_flag = TR2_kand_elana } NOT = { check_variable = { TR2_pop_kowalczyk < TR2_pop_elana } } } OR = { NOT = { has_country_flag = TR2_kand_krevienko } NOT = { check_variable = { TR2_pop_kowalczyk < TR2_pop_krevienko } } } } set_country_flag = TR2_wybrany_kowalczyk set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis } if = { limit = { NOT = { has_country_flag = TRK_zwyciezca_znany } has_country_flag = TR2_kand_krevienko OR = { NOT = { has_country_flag = TR2_kand_gulewski } NOT = { check_variable = { TR2_pop_krevienko < TR2_pop_gulewski } } } OR = { NOT = { has_country_flag = TR2_kand_zaleski } NOT = { check_variable = { TR2_pop_krevienko < TR2_pop_zaleski } } } OR = { NOT = { has_country_flag = TR2_kand_romanowski } NOT = { check_variable = { TR2_pop_krevienko < TR2_pop_romanowski } } } OR = { NOT = { has_country_flag = TR2_kand_kowalczyk } NOT = { check_variable = { TR2_pop_krevienko < TR2_pop_kowalczyk } } } OR = { NOT = { has_country_flag = TR2_kand_elana } NOT = { check_variable = { TR2_pop_krevienko < TR2_pop_elana } } } } set_country_flag = TR2_wybrany_krevienko set_country_flag = TRK_zwyciezca_znany set_country_flag = TRK_remis }  country_event = { id = trk.12 days = 1 } country_event = { id = trk.11 days = 6 }
+}
+TRK_reforma_p5 = {
+	custom_effect_tooltip = TRK_reforma_tt_p5 hidden_effect = { add_to_variable = { TRK_reforma = 5 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_m5 = {
+	custom_effect_tooltip = TRK_reforma_tt_m5 hidden_effect = { add_to_variable = { TRK_reforma = -5 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_p10 = {
+	custom_effect_tooltip = TRK_reforma_tt_p10 hidden_effect = { add_to_variable = { TRK_reforma = 10 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_m10 = {
+	custom_effect_tooltip = TRK_reforma_tt_m10 hidden_effect = { add_to_variable = { TRK_reforma = -10 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_p15 = {
+	custom_effect_tooltip = TRK_reforma_tt_p15 hidden_effect = { add_to_variable = { TRK_reforma = 15 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_m15 = {
+	custom_effect_tooltip = TRK_reforma_tt_m15 hidden_effect = { add_to_variable = { TRK_reforma = -15 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_p20 = {
+	custom_effect_tooltip = TRK_reforma_tt_p20 hidden_effect = { add_to_variable = { TRK_reforma = 20 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_m20 = {
+	custom_effect_tooltip = TRK_reforma_tt_m20 hidden_effect = { add_to_variable = { TRK_reforma = -20 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_p25 = {
+	custom_effect_tooltip = TRK_reforma_tt_p25 hidden_effect = { add_to_variable = { TRK_reforma = 25 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_m25 = {
+	custom_effect_tooltip = TRK_reforma_tt_m25 hidden_effect = { add_to_variable = { TRK_reforma = -25 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_p30 = {
+	custom_effect_tooltip = TRK_reforma_tt_p30 hidden_effect = { add_to_variable = { TRK_reforma = 30 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_m30 = {
+	custom_effect_tooltip = TRK_reforma_tt_m30 hidden_effect = { add_to_variable = { TRK_reforma = -30 } clamp_variable = { var = TRK_reforma min = 0 max = 100 } TRK_reforma_przelicz = yes }
+}
+TRK_reforma_przelicz = {
+	if = { limit = { check_variable = { TRK_reforma > 99 } NOT = { has_country_flag = TRK_reforma_koniec } } set_country_flag = TRK_reforma_koniec country_event = { id = trk.44 days = 1 } }
+}
+TRK_start_gulewski = {
+	set_variable = { TRK_reforma = 10 } set_country_flag = TRK_mech_gulewski add_dynamic_modifier = { modifier = TRK_opor_aparatu } add_dynamic_modifier = { modifier = TRK_sprawne_urzedy } add_dynamic_modifier = { modifier = TRK_panstwo_dziala }
+}
+TRK_zob_p5 = {
+	custom_effect_tooltip = TRK_zob_tt_p5 hidden_effect = { add_to_variable = { TRK_zob = 5 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_m5 = {
+	custom_effect_tooltip = TRK_zob_tt_m5 hidden_effect = { add_to_variable = { TRK_zob = -5 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_p10 = {
+	custom_effect_tooltip = TRK_zob_tt_p10 hidden_effect = { add_to_variable = { TRK_zob = 10 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_m10 = {
+	custom_effect_tooltip = TRK_zob_tt_m10 hidden_effect = { add_to_variable = { TRK_zob = -10 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_p15 = {
+	custom_effect_tooltip = TRK_zob_tt_p15 hidden_effect = { add_to_variable = { TRK_zob = 15 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_m15 = {
+	custom_effect_tooltip = TRK_zob_tt_m15 hidden_effect = { add_to_variable = { TRK_zob = -15 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_p20 = {
+	custom_effect_tooltip = TRK_zob_tt_p20 hidden_effect = { add_to_variable = { TRK_zob = 20 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_m20 = {
+	custom_effect_tooltip = TRK_zob_tt_m20 hidden_effect = { add_to_variable = { TRK_zob = -20 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_p25 = {
+	custom_effect_tooltip = TRK_zob_tt_p25 hidden_effect = { add_to_variable = { TRK_zob = 25 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_m25 = {
+	custom_effect_tooltip = TRK_zob_tt_m25 hidden_effect = { add_to_variable = { TRK_zob = -25 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_p30 = {
+	custom_effect_tooltip = TRK_zob_tt_p30 hidden_effect = { add_to_variable = { TRK_zob = 30 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_m30 = {
+	custom_effect_tooltip = TRK_zob_tt_m30 hidden_effect = { add_to_variable = { TRK_zob = -30 } clamp_variable = { var = TRK_zob min = 0 max = 100 } TRK_zob_przelicz = yes }
+}
+TRK_zob_przelicz = {
+	if = { limit = { check_variable = { TRK_zob > 79 } NOT = { has_country_flag = TRK_spor_srodki_cd } } set_country_flag = { flag = TRK_spor_srodki_cd days = 120 } country_event = { id = trk.51 days = 3 } }
+}
+TRK_start_zaleski = {
+	set_variable = { TRK_zob = 10 } set_country_flag = TRK_mech_zaleski add_dynamic_modifier = { modifier = TRK_dlugi_miasta }
+}
+TRK_mieszk_p5 = {
+	custom_effect_tooltip = TRK_mieszk_tt_p5 hidden_effect = { add_to_variable = { TRK_mieszk = 5 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_m5 = {
+	custom_effect_tooltip = TRK_mieszk_tt_m5 hidden_effect = { add_to_variable = { TRK_mieszk = -5 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_p10 = {
+	custom_effect_tooltip = TRK_mieszk_tt_p10 hidden_effect = { add_to_variable = { TRK_mieszk = 10 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_m10 = {
+	custom_effect_tooltip = TRK_mieszk_tt_m10 hidden_effect = { add_to_variable = { TRK_mieszk = -10 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_p15 = {
+	custom_effect_tooltip = TRK_mieszk_tt_p15 hidden_effect = { add_to_variable = { TRK_mieszk = 15 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_m15 = {
+	custom_effect_tooltip = TRK_mieszk_tt_m15 hidden_effect = { add_to_variable = { TRK_mieszk = -15 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_p20 = {
+	custom_effect_tooltip = TRK_mieszk_tt_p20 hidden_effect = { add_to_variable = { TRK_mieszk = 20 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_m20 = {
+	custom_effect_tooltip = TRK_mieszk_tt_m20 hidden_effect = { add_to_variable = { TRK_mieszk = -20 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_p25 = {
+	custom_effect_tooltip = TRK_mieszk_tt_p25 hidden_effect = { add_to_variable = { TRK_mieszk = 25 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_m25 = {
+	custom_effect_tooltip = TRK_mieszk_tt_m25 hidden_effect = { add_to_variable = { TRK_mieszk = -25 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_p30 = {
+	custom_effect_tooltip = TRK_mieszk_tt_p30 hidden_effect = { add_to_variable = { TRK_mieszk = 30 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_m30 = {
+	custom_effect_tooltip = TRK_mieszk_tt_m30 hidden_effect = { add_to_variable = { TRK_mieszk = -30 } clamp_variable = { var = TRK_mieszk min = 0 max = 100 } TRK_mieszk_przelicz = yes }
+}
+TRK_mieszk_przelicz = {
+	
+}
+TRK_start_romanowski = {
+	set_variable = { TRK_mieszk = 10 } set_country_flag = TRK_mech_romanowski add_dynamic_modifier = { modifier = TRK_kolejki_mieszkania } add_dynamic_modifier = { modifier = TRK_dom_dla_kazdego }
+}
+TRK_start_kowalczyk = {
+	set_country_flag = TRK_mech_kowalczyk
+}
+TRK_start_elana = {
+	set_country_flag = TRK_mech_elana
+}
+TRK_koord_p5 = {
+	custom_effect_tooltip = TRK_koord_tt_p5 hidden_effect = { add_to_variable = { TRK_koord = 5 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_m5 = {
+	custom_effect_tooltip = TRK_koord_tt_m5 hidden_effect = { add_to_variable = { TRK_koord = -5 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_p10 = {
+	custom_effect_tooltip = TRK_koord_tt_p10 hidden_effect = { add_to_variable = { TRK_koord = 10 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_m10 = {
+	custom_effect_tooltip = TRK_koord_tt_m10 hidden_effect = { add_to_variable = { TRK_koord = -10 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_p15 = {
+	custom_effect_tooltip = TRK_koord_tt_p15 hidden_effect = { add_to_variable = { TRK_koord = 15 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_m15 = {
+	custom_effect_tooltip = TRK_koord_tt_m15 hidden_effect = { add_to_variable = { TRK_koord = -15 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_p20 = {
+	custom_effect_tooltip = TRK_koord_tt_p20 hidden_effect = { add_to_variable = { TRK_koord = 20 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_m20 = {
+	custom_effect_tooltip = TRK_koord_tt_m20 hidden_effect = { add_to_variable = { TRK_koord = -20 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_p25 = {
+	custom_effect_tooltip = TRK_koord_tt_p25 hidden_effect = { add_to_variable = { TRK_koord = 25 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_m25 = {
+	custom_effect_tooltip = TRK_koord_tt_m25 hidden_effect = { add_to_variable = { TRK_koord = -25 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_p30 = {
+	custom_effect_tooltip = TRK_koord_tt_p30 hidden_effect = { add_to_variable = { TRK_koord = 30 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_m30 = {
+	custom_effect_tooltip = TRK_koord_tt_m30 hidden_effect = { add_to_variable = { TRK_koord = -30 } clamp_variable = { var = TRK_koord min = 0 max = 100 } TRK_koord_przelicz = yes }
+}
+TRK_koord_przelicz = {
+	
+}
+TRK_start_krevienko = {
+	set_variable = { TRK_koord = 20 } set_country_flag = TRK_mech_krevienko add_dynamic_modifier = { modifier = TRK_rozproszenie } add_dynamic_modifier = { modifier = TRK_federacja_dziala }
+}

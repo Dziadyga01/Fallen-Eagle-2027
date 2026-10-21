@@ -1,0 +1,566 @@
+add_namespace = lok
+
+country_event = {
+	id = lok.1
+	title = lok.1.t
+	desc = lok.1.d
+	picture = GFX_pl2027_ev081_miasto_5
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_1 } OR = { tag = TRN } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_1  }
+	option = {
+		name = lok.1.a
+		ai_chance = { factor = 60 }
+		add_stability = 0.01 add_political_power = 10
+	}
+	option = {
+		name = lok.1.b
+		ai_chance = { factor = 15 }
+		add_political_power = -10 add_stability = -0.01
+	}
+	option = {
+		name = lok.1.c
+		ai_chance = { factor = 25 }
+		add_political_power = -5 add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = lok.2
+	title = lok.2.t
+	desc = lok.2.d
+	picture = GFX_pl2027_ev081_praca_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_2 } OR = { tag = TRN } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_2  }
+	option = {
+		name = lok.2.a
+		ai_chance = { factor = 35 }
+		add_political_power = 20 add_stability = -0.02
+	}
+	option = {
+		name = lok.2.b
+		ai_chance = { factor = 40 }
+		add_war_support = 0.02 add_political_power = -10
+	}
+	option = {
+		name = lok.2.c
+		ai_chance = { factor = 25 }
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = lok.3
+	title = lok.3.t
+	desc = lok.3.d
+	picture = GFX_pl2027_ev081_paliwo_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_3 } OR = { tag = TRN } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_war = no }
+	mean_time_to_happen = { days = 200 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_lok_3  }
+	option = {
+		name = lok.3.a
+		ai_chance = { factor = 55 }
+		add_stability = 0.03 add_political_power = -15
+	}
+	option = {
+		name = lok.3.b
+		ai_chance = { factor = 45 }
+		add_war_support = 0.02 add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = lok.4
+	title = lok.4.t
+	desc = lok.4.d
+	picture = GFX_pl2027_ev081_wisla_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_4 } OR = { tag = TRN tag = BYD } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } OR = { AND = { tag = TRN country_exists = BYD } AND = { tag = BYD country_exists = TRN } } }
+	mean_time_to_happen = { days = 160 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_lok_4  }
+	option = {
+		name = lok.4.a
+		ai_chance = { factor = 50 }
+		add_political_power = 10 add_war_support = 0.01
+	}
+	option = {
+		name = lok.4.b
+		ai_chance = { factor = 30 }
+		add_stability = 0.01
+	}
+	option = {
+		name = lok.4.c
+		ai_chance = { factor = 20 }
+		add_political_power = 5 add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = lok.5
+	title = lok.5.t
+	desc = lok.5.d
+	picture = GFX_pl2027_ev081_paliwo_0
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_5 } OR = { tag = BYD } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } country_exists = TRN }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } set_country_flag = PL2027_ev_lok_5  }
+	option = {
+		name = lok.5.a
+		ai_chance = { factor = 50 }
+		add_war_support = 0.02 add_political_power = 10
+	}
+	option = {
+		name = lok.5.b
+		ai_chance = { factor = 30 }
+		add_political_power = 25 add_stability = -0.02
+	}
+	option = {
+		name = lok.5.c
+		ai_chance = { factor = 20 }
+		add_political_power = -5
+	}
+}
+
+country_event = {
+	id = lok.6
+	title = lok.6.t
+	desc = lok.6.d
+	picture = GFX_pl2027_ev081_narada_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_6 } OR = { tag = BYD } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 200 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_6  }
+	option = {
+		name = lok.6.a
+		ai_chance = { factor = 60 }
+		add_stability = 0.02 add_political_power = -10
+	}
+	option = {
+		name = lok.6.b
+		ai_chance = { factor = 40 }
+		add_war_support = 0.01
+	}
+}
+
+country_event = {
+	id = lok.7
+	title = lok.7.t
+	desc = lok.7.d
+	picture = GFX_pl2027_ev081_front_2
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_7 } OR = { tag = BYD } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_7  }
+	option = {
+		name = lok.7.a
+		ai_chance = { factor = 50 }
+		add_stability = 0.02 add_political_power = -15
+	}
+	option = {
+		name = lok.7.b
+		ai_chance = { factor = 50 }
+		add_war_support = 0.01 add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = lok.8
+	title = lok.8.t
+	desc = lok.8.d
+	picture = GFX_pl2027_ev081_ulica_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_8 } OR = { tag = SMR tag = PLC tag = WOJ tag = KPR } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 144 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_lok_8  }
+	option = {
+		name = lok.8.a
+		ai_chance = { factor = 60 }
+		add_stability = 0.01 add_manpower = -400
+	}
+	option = {
+		name = lok.8.b
+		ai_chance = { factor = 40 }
+		add_manpower = 400 add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = lok.9
+	title = lok.9.t
+	desc = lok.9.d
+	picture = GFX_pl2027_ev081_paliwo_1
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_9 } OR = { tag = PRG } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_9  }
+	option = {
+		name = lok.9.a
+		ai_chance = { factor = 45 }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 300 } add_stability = -0.02
+	}
+	option = {
+		name = lok.9.b
+		ai_chance = { factor = 55 }
+		add_stability = 0.02 add_political_power = -10
+	}
+}
+
+country_event = {
+	id = lok.10
+	title = lok.10.t
+	desc = lok.10.d
+	picture = GFX_pl2027_ev081_kibice_2
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_10 } OR = { tag = LEG } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_war = yes }
+	mean_time_to_happen = { days = 80 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_lok_10  }
+	option = {
+		name = lok.10.a
+		ai_chance = { factor = 60 }
+		add_war_support = 0.03 add_stability = -0.01
+	}
+	option = {
+		name = lok.10.b
+		ai_chance = { factor = 40 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = lok.11
+	title = lok.11.t
+	desc = lok.11.d
+	picture = GFX_pl2027_ev081_narada_0
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_11 } OR = { tag = MPR } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_11  }
+	option = {
+		name = lok.11.a
+		ai_chance = { factor = 50 }
+		add_political_power = 30 add_stability = -0.03
+	}
+	option = {
+		name = lok.11.b
+		ai_chance = { factor = 50 }
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = lok.12
+	title = lok.12.t
+	desc = lok.12.d
+	picture = GFX_pl2027_ev081_wisla_5
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_12 } OR = { tag = RAD } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 160 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_12  }
+	option = {
+		name = lok.12.a
+		ai_chance = { factor = 60 }
+		add_political_power = -20 capital_scope = { add_building_construction = { type = air_base level = 2 instant_build = yes } }
+	}
+	option = {
+		name = lok.12.b
+		ai_chance = { factor = 40 }
+		add_political_power = 15 add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = lok.13
+	title = lok.13.t
+	desc = lok.13.d
+	picture = GFX_pl2027_ev081_miasto_2
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_13 } OR = { tag = SPT } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_13  }
+	option = {
+		name = lok.13.a
+		ai_chance = { factor = 40 }
+		add_political_power = 25 add_stability = -0.01
+	}
+	option = {
+		name = lok.13.b
+		ai_chance = { factor = 60 }
+		add_stability = 0.02 add_political_power = -10
+	}
+}
+
+country_event = {
+	id = lok.14
+	title = lok.14.t
+	desc = lok.14.d
+	picture = GFX_pl2027_ev081_szpital_0
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_14 } OR = { tag = GDY tag = WMG } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } OR = { AND = { tag = GDY country_exists = WMG } AND = { tag = WMG country_exists = GDY } } }
+	mean_time_to_happen = { days = 180 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_lok_14  }
+	option = {
+		name = lok.14.a
+		ai_chance = { factor = 45 }
+		add_stability = 0.02 add_political_power = -10
+	}
+	option = {
+		name = lok.14.b
+		ai_chance = { factor = 35 }
+		add_stability = 0.01
+	}
+	option = {
+		name = lok.14.c
+		ai_chance = { factor = 20 }
+		add_political_power = 10 add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = lok.15
+	title = lok.15.t
+	desc = lok.15.d
+	picture = GFX_pl2027_ev081_praca_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_15 } OR = { tag = WMG } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_lok_15  }
+	option = {
+		name = lok.15.a
+		ai_chance = { factor = 55 }
+		add_political_power = -20 add_stability = 0.03
+	}
+	option = {
+		name = lok.15.b
+		ai_chance = { factor = 45 }
+		add_war_support = 0.02 add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = lok.16
+	title = lok.16.t
+	desc = lok.16.d
+	picture = GFX_pl2027_ev081_paliwo_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_16 } OR = { tag = PLO } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_16  }
+	option = {
+		name = lok.16.a
+		ai_chance = { factor = 50 }
+		add_stability = 0.03 add_political_power = -20
+	}
+	option = {
+		name = lok.16.b
+		ai_chance = { factor = 50 }
+		add_political_power = 20 add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = lok.17
+	title = lok.17.t
+	desc = lok.17.d
+	picture = GFX_pl2027_ev081_granica_2
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_17 } OR = { tag = WLC } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_17  }
+	option = {
+		name = lok.17.a
+		ai_chance = { factor = 60 }
+		add_political_power = -30 add_stability = 0.02
+	}
+	option = {
+		name = lok.17.b
+		ai_chance = { factor = 40 }
+		add_war_support = 0.01 add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = lok.18
+	title = lok.18.t
+	desc = lok.18.d
+	picture = GFX_pl2027_ev081_gospodarka_0
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_18 } OR = { tag = KTN } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_18  }
+	option = {
+		name = lok.18.a
+		ai_chance = { factor = 60 }
+		add_stability = 0.02 add_political_power = -10
+	}
+	option = {
+		name = lok.18.b
+		ai_chance = { factor = 40 }
+		add_political_power = 5
+	}
+}
+
+country_event = {
+	id = lok.19
+	title = lok.19.t
+	desc = lok.19.d
+	picture = GFX_pl2027_ev081_kolej_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_19 } OR = { tag = KTN } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_19  }
+	option = {
+		name = lok.19.a
+		ai_chance = { factor = 50 }
+		add_political_power = 25 add_stability = -0.01
+	}
+	option = {
+		name = lok.19.b
+		ai_chance = { factor = 50 }
+		add_war_support = 0.01 add_political_power = 5
+	}
+}
+
+country_event = {
+	id = lok.20
+	title = lok.20.t
+	desc = lok.20.d
+	picture = GFX_pl2027_ev081_granica_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_20 } OR = { tag = LOW } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_lok_20  }
+	option = {
+		name = lok.20.a
+		ai_chance = { factor = 70 }
+		add_stability = 0.03
+	}
+	option = {
+		name = lok.20.b
+		ai_chance = { factor = 30 }
+		add_war_support = 0.01 add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = lok.21
+	title = lok.21.t
+	desc = lok.21.d
+	picture = GFX_pl2027_ev081_szpital_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_21 } OR = { tag = KUJ } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_war = yes }
+	mean_time_to_happen = { days = 120 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } set_country_flag = PL2027_ev_lok_21  }
+	option = {
+		name = lok.21.a
+		ai_chance = { factor = 60 }
+		add_manpower = 400 add_political_power = -15
+	}
+	option = {
+		name = lok.21.b
+		ai_chance = { factor = 40 }
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = lok.22
+	title = lok.22.t
+	desc = lok.22.d
+	picture = GFX_pl2027_ev081_wisla_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_22 } OR = { tag = GRU } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = PL2027_ev_lok_22  }
+	option = {
+		name = lok.22.a
+		ai_chance = { factor = 60 }
+		add_manpower = 300 army_experience = 5
+	}
+	option = {
+		name = lok.22.b
+		ai_chance = { factor = 40 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = lok.23
+	title = lok.23.t
+	desc = lok.23.d
+	picture = GFX_pl2027_ev081_front_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_23 } OR = { tag = WMZ } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_lok_23  }
+	option = {
+		name = lok.23.a
+		ai_chance = { factor = 55 }
+		add_stability = 0.02 add_political_power = -10
+	}
+	option = {
+		name = lok.23.b
+		ai_chance = { factor = 45 }
+		add_political_power = 10 add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = lok.24
+	title = lok.24.t
+	desc = lok.24.d
+	picture = GFX_pl2027_ev081_granica_5
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_24 } OR = { tag = SUW } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } date < 2028.3.20 }
+	mean_time_to_happen = { days = 40 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_lok_24  }
+	option = {
+		name = lok.24.a
+		ai_chance = { factor = 55 }
+		add_political_power = -15 add_stability = 0.02
+	}
+	option = {
+		name = lok.24.b
+		ai_chance = { factor = 45 }
+		add_war_support = 0.02 add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = lok.25
+	title = lok.25.t
+	desc = lok.25.d
+	picture = GFX_pl2027_ev081_kibice_1
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_25 } OR = { tag = LES } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 200 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_lok_25  }
+	option = {
+		name = lok.25.a
+		ai_chance = { factor = 60 }
+		add_stability = 0.02 add_political_power = -10
+	}
+	option = {
+		name = lok.25.b
+		ai_chance = { factor = 40 }
+		add_war_support = 0.02 add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = lok.26
+	title = lok.26.t
+	desc = lok.26.d
+	picture = GFX_pl2027_ev081_miasto_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_26 } OR = { tag = KLS } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_lok_26  }
+	option = {
+		name = lok.26.a
+		ai_chance = { factor = 60 }
+		add_political_power = 15 add_stability = 0.01
+	}
+	option = {
+		name = lok.26.b
+		ai_chance = { factor = 40 }
+		add_political_power = 5
+	}
+}
+
+country_event = {
+	id = lok.27
+	title = lok.27.t
+	desc = lok.27.d
+	picture = GFX_pl2027_ev081_zakon_2
+	trigger = { NOT = { has_country_flag = PL2027_ev_lok_27 } OR = { tag = ZKR } date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_lok_27  }
+	option = {
+		name = lok.27.a
+		ai_chance = { factor = 60 }
+		add_political_power = 20
+	}
+	option = {
+		name = lok.27.b
+		ai_chance = { factor = 40 }
+		add_war_support = 0.01 add_stability = 0.01
+	}
+}

@@ -1,0 +1,27 @@
+state = {
+	id = 125
+	name = "STATE_125"
+	manpower = 4235
+	state_category = town
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = ROZ
+		add_core_of = ROZ
+		add_claim_by = BYD
+		add_claim_by = TRN
+		victory_points = { 8082 5 }
+		victory_points = { 8090 1 }
+		victory_points = { 8089 1 }
+		victory_points = { 8081 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 143 8089 8090 7789 8081 8088 8085 8086 8083 8082 }
+	local_supplies = 0.0
+}

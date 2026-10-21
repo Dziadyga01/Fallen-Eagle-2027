@@ -1,0 +1,19 @@
+state = {
+	id = 907
+	name = "STATE_907"
+	manpower = 41889
+	state_category = town
+	history = {
+		owner = KPM
+		add_core_of = KPM
+		victory_points = { 8709 1 }
+		victory_points = { 8708 2 }
+		victory_points = { 8930 1 }
+		victory_points = { 8915 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 784 8709 8915 8715 8708 8931 8930 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,41 @@
+ideas = {
+	country = {
+		UBT_federacja_idea = {
+			picture = DU_UBT_federacja_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+		UBT_taryfa = {
+			picture = DU_UBT_taryfa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				political_power_gain = 0.05
+			}
+		}
+		UBT_straz_idea = {
+			picture = DU_UBT_straz_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				naval_speed_factor = 0.05
+			}
+		}
+		UBT_zloty = {
+			picture = DU_UBT_zloty
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.03
+			}
+		}
+	}
+}

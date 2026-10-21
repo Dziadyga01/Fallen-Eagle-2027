@@ -1,0 +1,21 @@
+state = {
+	id = 1093
+	name = "STATE_1093"
+	manpower = 2171
+	state_category = rural
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = WMZ
+		add_core_of = WMZ
+		victory_points = { 4166 1 }
+		victory_points = { 1247 1 }
+		victory_points = { 1513 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1247 4205 4215 4191 4167 1513 4166 }
+	local_supplies = 0.0
+}

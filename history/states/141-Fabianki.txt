@@ -1,0 +1,18 @@
+state = {
+	id = 141
+	name = "STATE_141"
+	manpower = 3028
+	state_category = rural
+	history = {
+		owner = DOB
+		add_core_of = DOB
+		add_claim_by = WLC
+		victory_points = { 8401 1 }
+		victory_points = { 7975 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1172 8401 8400 7975 }
+	local_supplies = 0.0
+}

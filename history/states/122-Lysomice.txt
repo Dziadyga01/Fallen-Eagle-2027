@@ -1,0 +1,25 @@
+state = {
+	id = 122
+	name = "STATE_122"
+	manpower = 4258
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = LYS
+		add_core_of = LYS
+		add_claim_by = TRN
+		victory_points = { 8093 5 }
+		victory_points = { 8092 1 }
+		victory_points = { 1567 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 1567 8093 8092 8099 8087 8098 }
+	local_supplies = 0.0
+}

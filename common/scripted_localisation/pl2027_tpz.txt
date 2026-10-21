@@ -1,0 +1,8 @@
+defined_text = {
+	name = GetTPZSatPoziom
+	text = { trigger = { check_variable = { TPZ_satysfakcja > 70 } } localization_key = TPZ_sat_poziom_wys }
+	text = { trigger = { check_variable = { TPZ_satysfakcja > 59 } } localization_key = TPZ_sat_poziom_dob }
+	text = { trigger = { check_variable = { TPZ_satysfakcja > 29 } } localization_key = TPZ_sat_poziom_sr }
+	text = { trigger = { check_variable = { TPZ_satysfakcja > 14 } } localization_key = TPZ_sat_poziom_nis }
+	text = { localization_key = TPZ_sat_poziom_kryt }
+}

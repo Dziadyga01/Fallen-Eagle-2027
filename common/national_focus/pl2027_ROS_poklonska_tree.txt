@@ -1,0 +1,1062 @@
+# The Fallen Eagle 2027 – Rosja, etap IV: Rząd tymczasowy Pokłonskiej
+focus_tree = {
+	id = ROS_poklonska_tree
+	country = {
+		factor = 0
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1300 }
+	initial_show_position = { focus = ROS_pok_administracja }
+
+	focus = {
+		id = ROS_pok_administracja
+		icon = GFX_pl2027_081_administracja_0
+		x = 16
+		y = 0
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			ROS_wladza_poklonskiej = yes
+		}
+	}
+
+	focus = {
+		id = ROS_pok_krym
+		icon = GFX_pl2027_081_ludzie_0
+		x = 0
+		y = 1
+		cost = 2
+		prerequisite = { focus = ROS_pok_administracja }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = ROS_pok_rozmowy
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 6
+		y = 1
+		cost = 2
+		prerequisite = { focus = ROS_pok_administracja }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = { ideology = social_liberal popularity = 0.04 }
+			add_popularity = { ideology = social_democrat popularity = 0.03 }
+			add_to_variable = { ROS_glos_szl = 8 }
+			add_to_variable = { ROS_glos_naw = 8 }
+		}
+	}
+
+	focus = {
+		id = ROS_pok_prokuratura
+		icon = GFX_pl2027_081_korupcja_0
+		x = 8
+		y = 1
+		cost = 2
+		prerequisite = { focus = ROS_pok_administracja }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { has_idea = ROS_kryzys_elit } remove_ideas = ROS_kryzys_elit }
+			add_political_power = 40
+			add_to_variable = { ROS_glos_naw = 5 }
+		}
+	}
+
+	focus = {
+		id = ROS_pok_sztab
+		icon = GFX_pl2027_081_sztab_0
+		x = 0
+		y = 2
+		cost = 2
+		prerequisite = { focus = ROS_pok_krym }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { has_idea = ROS_chaos_sztab } remove_ideas = ROS_chaos_sztab }
+			add_to_variable = { ROS_glos_szo = 5 }
+		}
+	}
+
+	focus = {
+		id = ROS_pok_amnestia
+		icon = GFX_pl2027_081_wybory_0
+		x = 6
+		y = 2
+		cost = 2
+		prerequisite = { focus = ROS_pok_rozmowy }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_to_variable = { ROS_glos_naw = 15 }
+			add_popularity = { ideology = social_liberal popularity = 0.05 }
+			add_stability = -0.03
+		}
+	}
+
+	focus = {
+		id = ROS_pok_okragly_stol
+		icon = GFX_pl2027_081_rosja_0
+		x = 8
+		y = 2
+		cost = 2
+		prerequisite = { focus = ROS_pok_prokuratura }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_to_variable = { ROS_glos_szl = 12 }
+			add_to_variable = { ROS_glos_cho = 10 }
+			add_to_variable = { ROS_glos_mie = 8 }
+		}
+	}
+
+	focus = {
+		id = ROS_pok_komisja
+		icon = GFX_pl2027_081_wybory_1
+		x = 6
+		y = 3
+		cost = 2
+		prerequisite = { focus = ROS_pok_amnestia }
+		prerequisite = { focus = ROS_pok_okragly_stol }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_country_flag = ROS_wybory_wolne
+			add_stability = 0.03
+			add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = ROS_pok_wybory
+		icon = GFX_pl2027_081_wybory_2
+		x = 3
+		y = 4
+		cost = 10
+		prerequisite = { focus = ROS_pok_komisja }
+		prerequisite = { focus = ROS_pok_sztab }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			load_focus_tree = { tree = ROS_wybory_tree keep_completed = no }
+		}
+	}
+
+	focus = {
+		id = ROS_zw_triumf_poklonska
+		icon = GFX_pl2027_081_defilada_0
+		x = 12
+		y = 1
+		cost = 2
+		prerequisite = { focus = ROS_pok_administracja }
+		allow_branch = { has_country_flag = ROS_zwyciestwo }
+		available = { has_country_flag = ROS_wojna_rozstrzygnieta }
+		bypass = { has_country_flag = ROS_wyn_zw_triumf }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+			set_country_flag = ROS_wyn_zw_triumf
+		}
+	}
+
+	focus = {
+		id = ROS_zw_obwod_poklonska
+		icon = GFX_pl2027_081_rada_2
+		x = 10
+		y = 2
+		cost = 2
+		prerequisite = { focus = ROS_zw_triumf_poklonska }
+		available = { country_exists = OWM }
+		bypass = { OR = { has_country_flag = ROS_wyn_zw_obwod NOT = { country_exists = OWM } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			ROSW_wsparcie_obwodu = yes
+			add_political_power = 25
+			set_country_flag = ROS_wyn_zw_obwod
+		}
+	}
+
+	focus = {
+		id = ROS_zw_garnizony_poklonska
+		icon = GFX_pl2027_081_wojsko_0
+		x = 12
+		y = 2
+		cost = 6
+		prerequisite = { focus = ROS_zw_triumf_poklonska }
+		bypass = { has_country_flag = ROS_wyn_zw_garnizony }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			army_experience = 20
+			capital_scope = { create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.3" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.3" owner = ROS } }
+			set_country_flag = ROS_wyn_zw_garnizony
+		}
+	}
+
+	focus = {
+		id = ROS_zw_kolej_poklonska
+		icon = GFX_pl2027_081_kolej_1
+		x = 14
+		y = 2
+		cost = 6
+		prerequisite = { focus = ROS_zw_triumf_poklonska }
+		bypass = { has_country_flag = ROS_wyn_zw_kolej }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_political_power = 25
+			set_country_flag = ROS_wyn_zw_kolej
+		}
+	}
+
+	focus = {
+		id = ROS_zw_polityka_poklonska
+		icon = GFX_pl2027_081_pancerne_1
+		x = 10
+		y = 3
+		cost = 2
+		prerequisite = { focus = ROS_zw_obwod_poklonska focus = ROS_zw_garnizony_poklonska }
+		bypass = { has_country_flag = ROS_wyn_zw_polityka }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_country_flag = ROS_polityka_polska
+			add_political_power = 50
+			set_country_flag = ROS_wyn_zw_polityka
+		}
+	}
+
+	focus = {
+		id = ROS_zw_media_poklonska
+		icon = GFX_pl2027_081_media_2
+		x = 8
+		y = 4
+		cost = 2
+		prerequisite = { focus = ROS_zw_polityka_poklonska }
+		bypass = { has_country_flag = ROS_wyn_zw_media }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { OR = { tag = ROOT tag = OWM tag = KRL tag = LIT tag = BLR tag = UKR tag = GER } } any_owned_state = { any_neighbor_state = { OR = { is_owned_by = ROOT is_owned_by = OWM } } } } add_stability = -0.03 add_popularity = { ideology = nationalist popularity = 0.03 } }
+			add_political_power = 20
+			set_country_flag = ROS_wyn_zw_media
+		}
+	}
+
+	focus = {
+		id = ROS_zw_protektorat_poklonska
+		icon = GFX_pl2027_081_paliwo_3
+		x = 8
+		y = 5
+		cost = 1
+		prerequisite = { focus = ROS_zw_media_poklonska }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_15000 has_army_manpower = { size > 14999 } } }
+		bypass = { has_country_flag = ROS_wyn_zw_protektorat }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } num_of_controlled_states < 8 NOT = { OR = { tag = ROOT tag = OWM tag = KRL tag = LIT tag = BLR tag = UKR tag = GER } } any_owned_state = { any_neighbor_state = { OR = { is_owned_by = ROOT is_owned_by = OWM } } } } country_event = { id = rosw.10 } }
+			add_political_power = 25
+			set_country_flag = ROS_wyn_zw_protektorat
+		}
+	}
+
+	focus = {
+		id = ROS_zw_przemysl_poklonska
+		icon = GFX_pl2027_081_fabryka_broni_1
+		x = 14
+		y = 3
+		cost = 6
+		prerequisite = { focus = ROS_zw_kolej_poklonska }
+		bypass = { has_country_flag = ROS_wyn_zw_przemysl }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			set_country_flag = ROS_wyn_zw_przemysl
+		}
+	}
+
+	focus = {
+		id = ROS_zw_strefa_poklonska
+		icon = GFX_pl2027_081_korona_2
+		x = 10
+		y = 4
+		cost = 3
+		prerequisite = { focus = ROS_zw_polityka_poklonska }
+		bypass = { has_country_flag = ROS_wyn_zw_strefa }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = ROSW_strefa_wplywow
+			set_country_flag = ROS_wyn_zw_strefa
+		}
+	}
+
+	focus = {
+		id = ROS_zw_bufor_poklonska
+		icon = GFX_pl2027_081_granica_2
+		x = 12
+		y = 4
+		cost = 3
+		prerequisite = { focus = ROS_zw_polityka_poklonska }
+		prerequisite = { focus = ROS_zw_przemysl_poklonska }
+		bypass = { has_country_flag = ROS_wyn_zw_bufor }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_timed_idea = { idea = ROS_twierdza_krolewiec days = 730 }
+			add_stability = 0.03
+			set_country_flag = ROS_wyn_zw_bufor
+		}
+	}
+
+	focus = {
+		id = ROS_zw_final_poklonska
+		icon = GFX_pl2027_081_rosja_0
+		x = 10
+		y = 5
+		cost = 2
+		prerequisite = { focus = ROS_zw_strefa_poklonska }
+		prerequisite = { focus = ROS_zw_bufor_poklonska }
+		bypass = { has_country_flag = ROS_wyn_zw_final }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_country_flag = ROS_zw_koniec
+			add_political_power = 100
+			add_stability = 0.05
+			set_country_flag = ROS_wyn_zw_final
+		}
+	}
+
+	focus = {
+		id = ROS_zw_zwiazkowe_poklonska
+		icon = GFX_pl2027_081_rosja_1
+		x = 9
+		y = 6
+		cost = 1
+		prerequisite = { focus = ROS_zw_final_poklonska }
+		available = { country_exists = BLR }
+		bypass = { OR = { has_country_flag = ROS_wyn_zw_zwiazkowe NOT = { country_exists = BLR } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { country_exists = BLR } BLR = { country_event = { id = blr.1 days = 2 } } }
+			custom_effect_tooltip = ROSW_tt_blr
+			set_country_flag = ROS_wyn_zw_zwiazkowe
+		}
+	}
+
+	focus = {
+		id = ROS_zw_druga_fala_poklonska
+		icon = GFX_pl2027_081_wojna_2
+		x = 12
+		y = 6
+		cost = 8
+		prerequisite = { focus = ROS_zw_final_poklonska }
+		prerequisite = { focus = ROS_poklonska_tree_gotowosc }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
+		bypass = { has_country_flag = ROS_wyn_zw_druga_fala }
+		ai_will_do = { factor = 10 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			every_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no NOT = { is_subject_of = ROOT } } every_owned_state = { add_claim_by = ROOT } }
+			random_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } } ROOT = { create_wargoal = { type = annex_everything target = PREV } if = { limit = { is_ai = yes has_war = no } declare_war_on = { target = PREV type = annex_everything } } } }
+			custom_effect_tooltip = ROSW_tt_fala
+			add_war_support = 0.05
+			set_country_flag = ROS_wyn_zw_druga_fala
+		}
+	}
+
+	focus = {
+		id = ROS_zw_podlasie_poklonska
+		icon = GFX_pl2027_081_ofensywa_1
+		x = 9
+		y = 7
+		cost = 8
+		prerequisite = { focus = ROS_zw_zwiazkowe_poklonska focus = ROS_zw_druga_fala_poklonska }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
+		bypass = { has_country_flag = ROS_wyn_zw_podlasie }
+		ai_will_do = { factor = 10 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			random_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no NOT = { has_war_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.8 } } } ROOT = { create_wargoal = { type = annex_everything target = PREV } if = { limit = { is_ai = yes has_war = no } declare_war_on = { target = PREV type = annex_everything } } } }
+			if = { limit = { country_exists = BLR BLR = { has_country_flag = BLR_wspiera } } BLR = { country_event = { id = blr.2 days = 5 } } }
+			custom_effect_tooltip = ROSW_tt_podlasie
+			set_country_flag = ROS_wyn_zw_podlasie
+		}
+	}
+
+	focus = {
+		id = ROS_zw_wisla_poklonska
+		icon = GFX_pl2027_081_rosja_0_f
+		x = 9
+		y = 8
+		cost = 2
+		prerequisite = { focus = ROS_zw_podlasie_poklonska }
+		available = { custom_trigger_tooltip = { tooltip = ROSW_tt_wisla num_of_controlled_states > 120 } }
+		bypass = { has_country_flag = ROS_wyn_zw_wisla }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_owned_state = { limit = { NOT = { is_core_of = ROOT } } add_core_of = ROOT }
+			add_political_power = 100
+			add_stability = -0.05
+			add_war_support = 0.05
+			set_country_flag = ROS_wyn_zw_wisla
+		}
+	}
+
+	focus = {
+		id = ROS_kl_lekcja_poklonska
+		icon = GFX_pl2027_081_straty_1
+		x = 18
+		y = 1
+		cost = 2
+		prerequisite = { focus = ROS_pok_administracja }
+		allow_branch = { has_country_flag = ROS_kleska }
+		available = { has_country_flag = ROS_wojna_rozstrzygnieta }
+		bypass = { has_country_flag = ROS_wyn_kl_lekcja }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 25
+			set_country_flag = ROS_wyn_kl_lekcja
+		}
+	}
+
+	focus = {
+		id = ROS_kl_zdobycze_poklonska
+		icon = GFX_pl2027_081_twierdza_2
+		x = 16
+		y = 2
+		cost = 2
+		prerequisite = { focus = ROS_kl_lekcja_poklonska }
+		available = { any_owned_state = { has_state_flag = ROS_zatrzymany } }
+		bypass = { OR = { has_country_flag = ROS_wyn_kl_zdobycze NOT = { any_owned_state = { has_state_flag = ROS_zatrzymany } } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			ROSW_umocnij_zdobycze = yes
+			set_country_flag = ROS_wyn_kl_zdobycze
+		}
+	}
+
+	focus = {
+		id = ROS_kl_rozliczenia_poklonska
+		icon = GFX_pl2027_081_sztab_2
+		x = 18
+		y = 2
+		cost = 2
+		prerequisite = { focus = ROS_kl_lekcja_poklonska }
+		bypass = { has_country_flag = ROS_wyn_kl_rozliczenia }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { has_idea = ROS_chaos_sztab } remove_ideas = ROS_chaos_sztab }
+			add_political_power = 50
+			add_stability = 0.02
+			set_country_flag = ROS_wyn_kl_rozliczenia
+		}
+	}
+
+	focus = {
+		id = ROS_kl_gospodarka_poklonska
+		icon = GFX_pl2027_081_pieniadze_1
+		x = 20
+		y = 2
+		cost = 5
+		prerequisite = { focus = ROS_kl_lekcja_poklonska }
+		bypass = { has_country_flag = ROS_wyn_kl_gospodarka }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { has_idea = ROS_koszty_wojny } remove_ideas = ROS_koszty_wojny }
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			set_country_flag = ROS_wyn_kl_gospodarka
+		}
+	}
+
+	focus = {
+		id = ROS_kl_rozmowy_poklonska
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 16
+		y = 3
+		cost = 2
+		prerequisite = { focus = ROS_kl_zdobycze_poklonska }
+		bypass = { has_country_flag = ROS_wyn_kl_rozmowy }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = -0.05
+			set_country_flag = ROS_wyn_kl_rozmowy
+		}
+	}
+
+	focus = {
+		id = ROS_kl_reforma_poklonska
+		icon = GFX_pl2027_081_wyposazenie_1
+		x = 18
+		y = 3
+		cost = 3
+		prerequisite = { focus = ROS_kl_rozliczenia_poklonska }
+		bypass = { has_country_flag = ROS_wyn_kl_reforma }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { has_idea = ROS_wyczerpana_armia } remove_ideas = ROS_wyczerpana_armia }
+			army_experience = 25
+			set_country_flag = ROS_wyn_kl_reforma
+		}
+	}
+
+	focus = {
+		id = ROS_kl_spokoj_poklonska
+		icon = GFX_pl2027_081_telewizja_1
+		x = 20
+		y = 3
+		cost = 2
+		prerequisite = { focus = ROS_kl_gospodarka_poklonska }
+		bypass = { has_country_flag = ROS_wyn_kl_spokoj }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { has_idea = ROS_niezadowolenie } remove_ideas = ROS_niezadowolenie }
+			add_stability = 0.05
+			set_country_flag = ROS_wyn_kl_spokoj
+		}
+	}
+
+	focus = {
+		id = ROS_kl_odbudowa_poklonska
+		icon = GFX_pl2027_081_budowa_4
+		x = 19
+		y = 4
+		cost = 3
+		prerequisite = { focus = ROS_kl_reforma_poklonska }
+		prerequisite = { focus = ROS_kl_spokoj_poklonska }
+		bypass = { has_country_flag = ROS_wyn_kl_odbudowa }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = ROSW_odbudowa
+			set_country_flag = ROS_kl_koniec
+			set_country_flag = ROS_wyn_kl_odbudowa
+		}
+	}
+
+	focus = {
+		id = ROS_zw_aneksja_poklonska
+		icon = GFX_pl2027_081_ultimatum_1
+		x = 0
+		y = 0
+		cost = 1
+		mutually_exclusive = { focus = ROS_zw_administracja_poklonska focus = ROS_zw_obwod_wm_poklonska focus = ROS_zw_pokoj_poklonska }
+		allow_branch = { has_country_flag = ROS_zwyciestwo }
+		available = { has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } NOT = { has_country_flag = ROS_lider_szl } NOT = { has_country_flag = ROS_lider_naw } }
+		bypass = { OR = { has_country_flag = ROS_wojna_rozstrzygnieta has_country_flag = ROS_wyn_zw_aneksja has_country_flag = ROS_wyn_zw_administracja has_country_flag = ROS_wyn_zw_obwod_wm has_country_flag = ROS_wyn_zw_pokoj } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			ROS_aneksja_mazur = yes
+			set_country_flag = ROS_wyn_zw_aneksja
+		}
+	}
+
+	focus = {
+		id = ROS_zw_administracja_poklonska
+		icon = GFX_pl2027_081_administracja_1
+		x = 2
+		y = 0
+		cost = 1
+		mutually_exclusive = { focus = ROS_zw_aneksja_poklonska focus = ROS_zw_obwod_wm_poklonska focus = ROS_zw_pokoj_poklonska }
+		allow_branch = { has_country_flag = ROS_zwyciestwo }
+		available = { has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } NOT = { has_country_flag = ROS_lider_szl } NOT = { has_country_flag = ROS_lider_naw } }
+		bypass = { OR = { has_country_flag = ROS_wojna_rozstrzygnieta has_country_flag = ROS_wyn_zw_aneksja has_country_flag = ROS_wyn_zw_administracja has_country_flag = ROS_wyn_zw_obwod_wm has_country_flag = ROS_wyn_zw_pokoj } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			ROS_administracja_mazur = yes
+			set_country_flag = ROS_wyn_zw_administracja
+		}
+	}
+
+	focus = {
+		id = ROS_zw_obwod_wm_poklonska
+		icon = GFX_pl2027_081_mapa_3
+		x = 4
+		y = 0
+		cost = 1
+		mutually_exclusive = { focus = ROS_zw_aneksja_poklonska focus = ROS_zw_administracja_poklonska focus = ROS_zw_pokoj_poklonska }
+		allow_branch = { has_country_flag = ROS_zwyciestwo }
+		available = { has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } }
+		bypass = { OR = { has_country_flag = ROS_wojna_rozstrzygnieta has_country_flag = ROS_wyn_zw_aneksja has_country_flag = ROS_wyn_zw_administracja has_country_flag = ROS_wyn_zw_obwod_wm has_country_flag = ROS_wyn_zw_pokoj } }
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			ROS_obwod_wm = yes
+			set_country_flag = ROS_wyn_zw_obwod_wm
+		}
+	}
+
+	focus = {
+		id = ROS_zw_pokoj_poklonska
+		icon = GFX_pl2027_081_pojednanie_2
+		x = 6
+		y = 0
+		cost = 1
+		mutually_exclusive = { focus = ROS_zw_aneksja_poklonska focus = ROS_zw_administracja_poklonska focus = ROS_zw_obwod_wm_poklonska }
+		allow_branch = { has_country_flag = ROS_zwyciestwo }
+		available = { has_country_flag = ROS_zwyciestwo NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } }
+		bypass = { OR = { has_country_flag = ROS_wojna_rozstrzygnieta has_country_flag = ROS_wyn_zw_aneksja has_country_flag = ROS_wyn_zw_administracja has_country_flag = ROS_wyn_zw_obwod_wm has_country_flag = ROS_wyn_zw_pokoj } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			ROS_pokoj_negocjowany = yes
+			set_country_flag = ROS_wyn_zw_pokoj
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_ROS_dec_posilki_f1
+		icon = GFX_pl2027_081_rosja_0
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = ROS_pok_administracja }
+		available = { original_tag = ROS ROS_przy_wojnie = yes has_political_power > 59 }
+		bypass = { has_country_flag = DZ_ROS_dec_posilki_1 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			set_country_flag = DZ_ROS_dec_posilki_1
+			add_political_power = -60 capital_scope = { create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.3" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.3" owner = ROS } }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_ROS_dec_posilki_f2
+		icon = GFX_pl2027_081_rosja_0
+		x = 2
+		y = 2
+		cost = 6
+		prerequisite = { focus = ROS_poklonska_ROS_dec_posilki_f1 }
+		available = { original_tag = ROS ROS_przy_wojnie = yes has_political_power > 59 }
+		bypass = { has_country_flag = DZ_ROS_dec_posilki_2 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			set_country_flag = DZ_ROS_dec_posilki_2
+			add_political_power = -60 capital_scope = { create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.3" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.3" owner = ROS } }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_ROS_dec_posilki_f3
+		icon = GFX_pl2027_081_rosja_0
+		x = 2
+		y = 3
+		cost = 6
+		prerequisite = { focus = ROS_poklonska_ROS_dec_posilki_f2 }
+		available = { original_tag = ROS ROS_przy_wojnie = yes has_political_power > 59 }
+		bypass = { has_country_flag = DZ_ROS_dec_posilki_3 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 15 }
+		completion_reward = {
+			set_country_flag = DZ_ROS_dec_posilki_3
+			add_political_power = -60 capital_scope = { create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.3" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.3" owner = ROS } }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_ROS_dec_most_f1
+		icon = GFX_pl2027_081_most_powietrzny_1
+		x = 4
+		y = 1
+		cost = 5
+		prerequisite = { focus = ROS_pok_administracja }
+		available = { original_tag = ROS has_political_power > 29 }
+		bypass = { has_country_flag = DZ_ROS_dec_most_1 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 9 }
+		completion_reward = {
+			set_country_flag = DZ_ROS_dec_most_1
+			add_political_power = -30 add_equipment_to_stockpile = { type = ranged_equipment amount = 1200 producer = ROS } add_equipment_to_stockpile = { type = support_equipment amount = 120 producer = ROS } add_equipment_to_stockpile = { type = light_artillery_equipment amount = 60 producer = ROS }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_ROS_dec_most_f2
+		icon = GFX_pl2027_081_most_powietrzny_1
+		x = 4
+		y = 2
+		cost = 5
+		prerequisite = { focus = ROS_poklonska_ROS_dec_most_f1 }
+		available = { original_tag = ROS has_political_power > 29 }
+		bypass = { has_country_flag = DZ_ROS_dec_most_2 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 9 }
+		completion_reward = {
+			set_country_flag = DZ_ROS_dec_most_2
+			add_political_power = -30 add_equipment_to_stockpile = { type = ranged_equipment amount = 1200 producer = ROS } add_equipment_to_stockpile = { type = support_equipment amount = 120 producer = ROS } add_equipment_to_stockpile = { type = light_artillery_equipment amount = 60 producer = ROS }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_ROS_dec_most_f3
+		icon = GFX_pl2027_081_most_powietrzny_1
+		x = 4
+		y = 3
+		cost = 5
+		prerequisite = { focus = ROS_poklonska_ROS_dec_most_f2 }
+		available = { original_tag = ROS has_political_power > 29 }
+		bypass = { has_country_flag = DZ_ROS_dec_most_3 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 9 }
+		completion_reward = {
+			set_country_flag = DZ_ROS_dec_most_3
+			add_political_power = -30 add_equipment_to_stockpile = { type = ranged_equipment amount = 1200 producer = ROS } add_equipment_to_stockpile = { type = support_equipment amount = 120 producer = ROS } add_equipment_to_stockpile = { type = light_artillery_equipment amount = 60 producer = ROS }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_ROS_dec_mobilizacja_f1
+		icon = GFX_pl2027_081_pobor_2
+		x = 22
+		y = 1
+		cost = 3
+		prerequisite = { focus = ROS_pok_administracja }
+		available = { original_tag = ROS has_political_power > 39 }
+		bypass = { has_country_flag = DZ_ROS_dec_mobilizacja_1 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 6 }
+		completion_reward = {
+			set_country_flag = DZ_ROS_dec_mobilizacja_1
+			add_political_power = -40 add_manpower = 10000 add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_ROS_dec_mobilizacja_f2
+		icon = GFX_pl2027_081_pobor_2
+		x = 22
+		y = 2
+		cost = 3
+		prerequisite = { focus = ROS_poklonska_ROS_dec_mobilizacja_f1 }
+		available = { original_tag = ROS has_political_power > 39 }
+		bypass = { has_country_flag = DZ_ROS_dec_mobilizacja_2 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 6 }
+		completion_reward = {
+			set_country_flag = DZ_ROS_dec_mobilizacja_2
+			add_political_power = -40 add_manpower = 10000 add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_ROS_dec_mobilizacja_f3
+		icon = GFX_pl2027_081_pobor_2
+		x = 22
+		y = 3
+		cost = 3
+		prerequisite = { focus = ROS_poklonska_ROS_dec_mobilizacja_f2 }
+		available = { original_tag = ROS has_political_power > 39 }
+		bypass = { has_country_flag = DZ_ROS_dec_mobilizacja_3 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 6 }
+		completion_reward = {
+			set_country_flag = DZ_ROS_dec_mobilizacja_3
+			add_political_power = -40 add_manpower = 10000 add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_r_tv
+		icon = GFX_pl2027_081_telewizja_0
+		x = 26
+		y = 1
+		cost = 3
+		prerequisite = { focus = ROS_pok_administracja }
+		bypass = { has_country_flag = TFR_zy_ros_r_tv }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_ros_r_tv
+			add_ideas = TFR_ros_tv
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_r_listy
+		icon = GFX_pl2027_081_dyplomacja_1
+		x = 25
+		y = 2
+		cost = 1
+		prerequisite = { focus = ROS_poklonska_zy_r_tv }
+		bypass = { has_country_flag = TFR_zy_ros_r_listy }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_ros_r_listy
+			country_event = { id = zycie.20 }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_r_oligarchowie
+		icon = GFX_pl2027_081_oligarchia_0
+		x = 27
+		y = 2
+		cost = 1
+		prerequisite = { focus = ROS_poklonska_zy_r_tv }
+		bypass = { has_country_flag = TFR_zy_ros_r_oligarchowie }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_ros_r_oligarchowie
+			country_event = { id = zycie.21 }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_r_rubel
+		icon = GFX_pl2027_081_kryzys_gosp_3
+		x = 24
+		y = 3
+		cost = 3
+		prerequisite = { focus = ROS_poklonska_zy_r_listy }
+		prerequisite = { focus = ROS_poklonska_zy_r_oligarchowie }
+		mutually_exclusive = { focus = ROS_poklonska_zy_r_druk }
+		bypass = { has_country_flag = TFR_zy_ros_r_rubel }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_ros_r_rubel
+			add_ideas = TFR_ros_rubel
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_r_druk
+		icon = GFX_pl2027_081_kryzys_gosp_0
+		x = 26
+		y = 3
+		cost = 3
+		prerequisite = { focus = ROS_poklonska_zy_r_listy }
+		prerequisite = { focus = ROS_poklonska_zy_r_oligarchowie }
+		mutually_exclusive = { focus = ROS_poklonska_zy_r_rubel }
+		bypass = { has_country_flag = TFR_zy_ros_r_druk }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_ros_r_druk
+			add_ideas = TFR_ros_druk
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_r_cenzura
+		icon = GFX_pl2027_081_cenzura_2
+		x = 23
+		y = 4
+		cost = 2
+		prerequisite = { focus = ROS_poklonska_zy_r_rubel focus = ROS_poklonska_zy_r_druk }
+		bypass = { has_country_flag = TFR_zy_ros_r_cenzura }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_ros_r_cenzura
+			add_stability = 0.03
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_r_regiony
+		icon = GFX_pl2027_081_mapa_0
+		x = 25
+		y = 4
+		cost = 3
+		prerequisite = { focus = ROS_poklonska_zy_r_rubel focus = ROS_poklonska_zy_r_druk }
+		bypass = { has_country_flag = TFR_zy_ros_r_regiony }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_ros_r_regiony
+			add_manpower = 15000
+			add_stability = -0.01
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_r_jednosc
+		icon = GFX_pl2027_081_wojna_1
+		x = 24
+		y = 5
+		cost = 6
+		prerequisite = { focus = ROS_poklonska_zy_r_cenzura }
+		prerequisite = { focus = ROS_poklonska_zy_r_regiony }
+		bypass = { has_country_flag = TFR_zy_ros_r_jednosc }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_ros_r_jednosc
+			if = { limit = { has_idea = TFR_ros_tv } remove_ideas = TFR_ros_tv }
+			add_ideas = TFR_ros_jednosc
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_k_admin
+		icon = GFX_pl2027_081_administracja_1
+		x = 30
+		y = 1
+		cost = 5
+		prerequisite = { focus = ROS_pok_administracja }
+		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
+		bypass = { has_country_flag = TFR_zy_k_k_admin }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_admin
+			add_political_power = 40
+			random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_k_defilada
+		icon = GFX_pl2027_081_defilada_1
+		x = 29
+		y = 2
+		cost = 2
+		prerequisite = { focus = ROS_poklonska_zy_k_admin }
+		bypass = { has_country_flag = TFR_zy_k_k_defilada }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_defilada
+			add_war_support = 0.05
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_k_opor
+		icon = GFX_pl2027_081_bunt_3
+		x = 31
+		y = 2
+		cost = 1
+		prerequisite = { focus = ROS_poklonska_zy_k_admin }
+		bypass = { has_country_flag = TFR_zy_k_k_opor }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_opor
+			country_event = { id = zycie.10 }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_k_owoce
+		icon = GFX_pl2027_081_integracja_2
+		x = 30
+		y = 3
+		cost = 3
+		prerequisite = { focus = ROS_poklonska_zy_k_defilada }
+		prerequisite = { focus = ROS_poklonska_zy_k_opor }
+		bypass = { has_country_flag = TFR_zy_k_k_owoce }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_owoce
+			add_timed_idea = { idea = TFR_owoce days = 365 }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_p_straty
+		icon = GFX_pl2027_081_straty_0
+		x = 33
+		y = 1
+		cost = 3
+		prerequisite = { focus = ROS_pok_administracja }
+		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
+		bypass = { has_country_flag = TFR_zy_p_p_straty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_straty
+			country_event = { id = zycie.11 }
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_p_rzad
+		icon = GFX_pl2027_081_rada_0
+		x = 33
+		y = 2
+		cost = 2
+		prerequisite = { focus = ROS_poklonska_zy_p_straty }
+		bypass = { has_country_flag = TFR_zy_p_p_rzad }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_rzad
+			add_stability = 0.05
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_p_rewanz
+		icon = GFX_pl2027_081_gotowosc_1
+		x = 32
+		y = 3
+		cost = 3
+		prerequisite = { focus = ROS_poklonska_zy_p_rzad }
+		mutually_exclusive = { focus = ROS_poklonska_zy_p_pojednanie }
+		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_rewanz
+			add_timed_idea = { idea = TFR_rewanz days = 730 }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_p_pojednanie
+		icon = GFX_pl2027_081_pojednanie_3
+		x = 34
+		y = 3
+		cost = 3
+		prerequisite = { focus = ROS_poklonska_zy_p_rzad }
+		mutually_exclusive = { focus = ROS_poklonska_zy_p_rewanz }
+		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_pojednanie
+			add_timed_idea = { idea = TFR_pojednanie days = 730 }
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_zy_p_odbudowa
+		icon = GFX_pl2027_081_wyposazenie_2
+		x = 33
+		y = 4
+		cost = 5
+		prerequisite = { focus = ROS_poklonska_zy_p_rewanz focus = ROS_poklonska_zy_p_pojednanie }
+		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_odbudowa
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
+			army_experience = 15
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = ROS_poklonska_tree_gotowosc
+		icon = GFX_pl2027_081_gotowosc_0
+		x = 14
+		y = 4
+		cost = 2
+		prerequisite = { focus = ROS_pok_komisja }
+		prerequisite = { focus = ROS_zw_przemysl_poklonska }
+		prerequisite = { focus = ROS_kl_reforma_poklonska }
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+		ai_will_do = { factor = 30 }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+			army_experience = 10
+		}
+	}
+}

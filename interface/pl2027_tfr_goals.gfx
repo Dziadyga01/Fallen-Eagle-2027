@@ -1,0 +1,662 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_bst_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_bst_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_bst_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_bst_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_bst_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_byd_rafal_bruski"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_byd_rafal_bruski.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_byd_rafal_bruski_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_byd_rafal_bruski.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_byd_rafal_bruski.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_ivrp_lider_mafia"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_ivrp_lider_mafia.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_ivrp_lider_mafia_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_ivrp_lider_mafia.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_ivrp_lider_mafia.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_ivrp_lider_sejm"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_ivrp_lider_sejm.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_ivrp_lider_sejm_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_ivrp_lider_sejm.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_ivrp_lider_sejm.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_nna_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_nna_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_nna_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_nna_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_nna_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_kkr_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_kkr_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_kkr_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_kkr_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_kkr_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_kpr_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_kpr_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_kpr_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_kpr_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_kpr_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_woj_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_woj_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_woj_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_woj_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_woj_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_plo_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_plo_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_plo_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_plo_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_plo_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_lwc_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_lwc_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_lwc_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_lwc_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_lwc_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_prw_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_prw_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_prw_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_prw_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_prw_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_ros_miedwiediew"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_ros_miedwiediew.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_ros_miedwiediew_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_ros_miedwiediew.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_ros_miedwiediew.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_ros_nawalna"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_ros_nawalna.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_ros_nawalna_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_ros_nawalna.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_ros_nawalna.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_ros_szlosberg"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_ros_szlosberg.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_ros_szlosberg_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_ros_szlosberg.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_ros_szlosberg.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_wlc_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_wlc_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_wlc_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_wlc_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_wlc_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_tpz_archacki"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_tpz_archacki.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_tpz_archacki_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_tpz_archacki.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_tpz_archacki.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_trn_pawel_gulewski"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_trn_pawel_gulewski.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_trn_pawel_gulewski_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_trn_pawel_gulewski.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_trn_pawel_gulewski.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_trn_katarzyna_kowalczyk"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_trn_katarzyna_kowalczyk.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_trn_katarzyna_kowalczyk_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_trn_katarzyna_kowalczyk.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_trn_katarzyna_kowalczyk.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_trn_maksim_krevienko"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_trn_maksim_krevienko.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_trn_maksim_krevienko_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_trn_maksim_krevienko.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_trn_maksim_krevienko.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_trn_michal_romanowski_lider"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_trn_michal_romanowski_lider.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_trn_michal_romanowski_lider_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_trn_michal_romanowski_lider.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_trn_michal_romanowski_lider.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_trn_michal_zaleski"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_trn_michal_zaleski.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_trn_michal_zaleski_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_trn_michal_zaleski.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_trn_michal_zaleski.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_spt_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_spt_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_spt_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_spt_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_spt_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_wmg_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_wmg_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_wmg_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_wmg_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_wmg_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_leg_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_leg_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_leg_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_leg_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_leg_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_mpr_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_mpr_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_mpr_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_mpr_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_mpr_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_plc_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_plc_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_plc_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_plc_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_plc_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_prg_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_prg_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_prg_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_prg_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_prg_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_smr_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_smr_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_smr_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_smr_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_smr_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_tec_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_tec_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_tec_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_tec_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_tec_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_zkr_leader"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_zkr_leader.dds"
+	}
+	SpriteType = {
+		name = "GFX_pl2027_tfr_portret_zkr_leader_shine"
+		texturefile = "gfx/interface/goals/pl2027_tfr/portret_zkr_leader.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/pl2027_tfr/portret_zkr_leader.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+}

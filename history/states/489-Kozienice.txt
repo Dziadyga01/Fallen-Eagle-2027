@@ -1,0 +1,19 @@
+state = {
+	id = 489
+	name = "STATE_489"
+	manpower = 25783
+	state_category = town
+	history = {
+		owner = RAD
+		add_core_of = RAD
+		victory_points = { 3807 1 }
+		victory_points = { 3830 1 }
+		victory_points = { 3205 1 }
+		victory_points = { 3866 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 214 3830 3866 3807 2543 1829 3459 3205 2760 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,28 @@
+on_actions = {
+	on_startup = {
+		effect = { if = { limit = { NOT = { has_global_flag = KOR_start } } set_global_flag = KOR_start 964 = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes } } } }
+	}
+	on_monthly_PLO = {
+		effect = { if = { limit = { has_country_flag = KOR_mech_kurs }
+		if = { limit = { check_variable = { KOR_kurs > 105 } } add_to_variable = { KOR_kurs = -1 } }
+		else_if = { limit = { check_variable = { KOR_kurs < 95 } } add_to_variable = { KOR_kurs = 1 } }
+		if = { limit = { has_war = yes } add_to_variable = { KOR_kurs = -2 } }
+		if = { limit = { has_stability > 0.6 } add_to_variable = { KOR_kurs = 1 } }
+		if = { limit = { has_stability < 0.3 } add_to_variable = { KOR_kurs = -1 } }
+		if = { limit = { OR = { has_idea = KOR_petrochemia has_idea = KOR_petrochemia2 } } add_to_variable = { KOR_kurs = 1 } }
+		if = { limit = { has_country_flag = KOR_konsorcjum any_country = { has_idea = KOR_czlonek_konsorcjum2 } } add_to_variable = { KOR_kurs = 1 } }
+		if = { limit = { fuel_ratio < 0.15 } add_to_variable = { KOR_kurs = -1 } }
+		random_list = { 40 = { } 30 = { add_to_variable = { KOR_kurs = 2 } } 30 = { add_to_variable = { KOR_kurs = -2 } } }
+		KOR_przelicz = yes
+		if = { limit = { check_variable = { KOR_kurs < 50 } NOT = { has_country_flag = KOR_panika_cd } }
+			set_country_flag = { flag = KOR_panika_cd days = 180 } country_event = { id = kor.30 }
+		}
+		else_if = { limit = { check_variable = { KOR_kurs > 150 } NOT = { has_country_flag = KOR_hossa_cd } }
+			set_country_flag = { flag = KOR_hossa_cd days = 180 } country_event = { id = kor.31 }
+		}
+	} }
+	}
+	on_monthly = {
+		effect = { if = { limit = { has_global_flag = KOR_konsorcjum_istnieje OR = { KOR_w_konsorcjum = yes has_idea = KOR_czlonek_konsorcjum has_idea = KOR_czlonek_konsorcjum2 } } KOR_odswiez_czlonka = yes } }
+	}
+}

@@ -1,0 +1,92 @@
+ideas = {
+	country = {
+		PDG_panstwo_na_zywo = {
+			picture = DU_PDG_panstwo_na_zywo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.03
+				war_support_factor = 0.05
+			}
+		}
+		PDG_panstwo_na_zywo2 = {
+			picture = DU_PDG_panstwo_na_zywo2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		PDG_magiczny_torun = {
+			picture = DU_PDG_magiczny_torun
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.2
+				stability_factor = 0.07
+				research_speed_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+		PDG_minister_rozrywki = {
+			picture = DU_PDG_minister_rozrywki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		PDG_donejty = {
+			picture = DU_PDG_donejty
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		PDG_moderatorzy = {
+			picture = DU_PDG_moderatorzy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				war_support_factor = 0.03
+			}
+		}
+		PDG_festiwal = {
+			picture = DU_PDG_festiwal
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				consumer_goods_factor = -0.02
+				political_power_gain = 0.05
+			}
+		}
+		PDG_hype = {
+			picture = DU_PDG_hype
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.15
+				army_org_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		PDG_offline = {
+			picture = DU_PDG_offline
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.15
+			}
+		}
+	}
+}

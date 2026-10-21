@@ -1,0 +1,64 @@
+ideas = {
+	country = {
+		MIL_pobor_1 = {
+			picture = DU_MIL_pobor_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.3
+				conscription = 0.005
+			}
+		}
+		MIL_pobor_2 = {
+			picture = DU_MIL_pobor_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.6
+				conscription = 0.015
+				stability_factor = -0.02
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		MIL_produkcja = {
+			picture = DU_MIL_produkcja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+		MIL_zaopatrzenie = {
+			picture = DU_MIL_zaopatrzenie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_org_factor = 0.03
+			}
+		}
+		MIL_kadra = {
+			picture = DU_MIL_kadra
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		MIL_zawodowa = {
+			picture = DU_MIL_zawodowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
+				army_morale_factor = 0.05
+				conscription_factor = -0.1
+			}
+		}
+	}
+}

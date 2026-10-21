@@ -1,0 +1,14 @@
+TPZ_przelicz = {
+	clamp_variable = { var = TPZ_satysfakcja min = 0 max = 100 }
+	set_variable = { TPZ_sat_stab = TPZ_satysfakcja }
+	subtract_from_variable = { TPZ_sat_stab = 50 }
+	multiply_variable = { TPZ_sat_stab = 0.002 }
+	set_variable = { TPZ_sat_pp = TPZ_satysfakcja }
+	subtract_from_variable = { TPZ_sat_pp = 50 }
+	multiply_variable = { TPZ_sat_pp = 0.004 }
+	set_variable = { TPZ_sat_cg = 0 }
+	if = { limit = { check_variable = { TPZ_satysfakcja > 70 } } set_variable = { TPZ_sat_cg = -0.05 } set_country_flag = TPZ_klienci_zachwyceni }
+	else = { clr_country_flag = TPZ_klienci_zachwyceni }
+	clamp_variable = { var = TPZ_punkty min = 0 max = 100 }
+	force_update_dynamic_modifier=yes
+}

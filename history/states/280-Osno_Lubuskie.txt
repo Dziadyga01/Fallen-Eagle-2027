@@ -1,0 +1,22 @@
+state = {
+	id = 280
+	name = "STATE_280"
+	manpower = 40407
+	state_category = town
+	history = {
+		owner = PMN
+		add_core_of = PMN
+		victory_points = { 9328 1 }
+		victory_points = { 9307 2 }
+		victory_points = { 9312 2 }
+		victory_points = { 9315 1 }
+		victory_points = { 1126 1 }
+		victory_points = { 9311 1 }
+		victory_points = { 9319 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1126 1246 9315 9313 9310 9311 9307 9312 9328 9320 9319 9376 }
+	local_supplies = 0.0
+}

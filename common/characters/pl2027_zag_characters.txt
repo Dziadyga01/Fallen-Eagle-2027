@@ -1,0 +1,41 @@
+characters = {
+	LIT_nauseda = {
+		name = LIT_nauseda
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZAG/LIT_nauseda.dds"
+				small = "gfx/leaders/ZAG/LIT_nauseda_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	UKR_zaluzny = {
+		name = UKR_zaluzny
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZAG/UKR_zaluzny.dds"
+				small = "gfx/leaders/ZAG/UKR_zaluzny_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = centrist
+			expire = "2065.1.1.1"
+		}
+	}
+	CZE_pavel = {
+		name = CZE_pavel
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ZAG/CZE_pavel.dds"
+				small = "gfx/leaders/ZAG/CZE_pavel_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+}

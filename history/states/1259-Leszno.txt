@@ -1,0 +1,23 @@
+state = {
+	id = 1259
+	name = "STATE_1259"
+	manpower = 63762
+	state_category = large_town
+	resources = {
+		rubber = 1
+		steel = 1
+	}
+	history = {
+		owner = LES
+		add_core_of = LES
+		victory_points = { 7741 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 7741 }
+	local_supplies = 0.0
+}

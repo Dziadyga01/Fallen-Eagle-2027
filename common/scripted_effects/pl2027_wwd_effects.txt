@@ -1,0 +1,21 @@
+WWD_koalicja_start_smr = {
+	if = { limit = { has_global_flag = WWD_koalicja_zawarta } add_political_power = 25 }
+	else_if = { limit = { country_exists = KPR NOT = { has_war_with = KPR } }
+		if = { limit = { is_in_faction = no } create_faction = WWD_KOALICJA }
+		set_country_flag = WWD_koalicja_inicjator
+		KPR = { country_event = { id = wwd.20 days = 1 } }
+	}
+}
+WWD_koalicja_start_kpr = {
+	if = { limit = { has_global_flag = WWD_koalicja_zawarta } add_political_power = 25 }
+	else_if = { limit = { country_exists = SMR NOT = { has_war_with = SMR } }
+		if = { limit = { is_in_faction = no } create_faction = WWD_KOALICJA }
+		set_country_flag = WWD_koalicja_inicjator
+		SMR = { country_event = { id = wwd.20 days = 1 } }
+	}
+}
+WWD_liga_start = {
+	if = { limit = { is_in_faction = no } create_faction = WWD_LIGA }
+	set_country_flag = WWD_liga
+	if = { limit = { NOT = { tag = PRG } country_exists = PRG PRG = { is_in_faction = no is_subject = no NOT = { has_war_with = ROOT } } ROOT = { is_faction_leader = yes } } PRG = { country_event = { id = wwd.30 days = 1 } } } if = { limit = { NOT = { tag = ZIE } country_exists = ZIE ZIE = { is_in_faction = no is_subject = no NOT = { has_war_with = ROOT } } ROOT = { is_faction_leader = yes } } ZIE = { country_event = { id = wwd.30 days = 1 } } } if = { limit = { NOT = { tag = TEC } country_exists = TEC TEC = { is_in_faction = no is_subject = no NOT = { has_war_with = ROOT } } ROOT = { is_faction_leader = yes } } TEC = { country_event = { id = wwd.30 days = 1 } } }
+}

@@ -1,0 +1,44 @@
+TRN_frak_max_gulewski = {
+	NOT = { check_variable = { TRN_frak_gul < TRN_frak_zal } } NOT = { check_variable = { TRN_frak_gul < TRN_frak_rom } } NOT = { check_variable = { TRN_frak_gul < TRN_frak_kow } } NOT = { check_variable = { TRN_frak_gul < TRN_frak_ela } } NOT = { check_variable = { TRN_frak_gul < TRN_frak_kre } }
+}
+TRN_frak_max_zaleski = {
+	NOT = { check_variable = { TRN_frak_zal < TRN_frak_gul } } NOT = { check_variable = { TRN_frak_zal < TRN_frak_rom } } NOT = { check_variable = { TRN_frak_zal < TRN_frak_kow } } NOT = { check_variable = { TRN_frak_zal < TRN_frak_ela } } NOT = { check_variable = { TRN_frak_zal < TRN_frak_kre } }
+}
+TRN_frak_max_romanowski = {
+	NOT = { check_variable = { TRN_frak_rom < TRN_frak_gul } } NOT = { check_variable = { TRN_frak_rom < TRN_frak_zal } } NOT = { check_variable = { TRN_frak_rom < TRN_frak_kow } } NOT = { check_variable = { TRN_frak_rom < TRN_frak_ela } } NOT = { check_variable = { TRN_frak_rom < TRN_frak_kre } }
+}
+TRN_frak_max_kowalczyk = {
+	NOT = { check_variable = { TRN_frak_kow < TRN_frak_gul } } NOT = { check_variable = { TRN_frak_kow < TRN_frak_zal } } NOT = { check_variable = { TRN_frak_kow < TRN_frak_rom } } NOT = { check_variable = { TRN_frak_kow < TRN_frak_ela } } NOT = { check_variable = { TRN_frak_kow < TRN_frak_kre } }
+}
+TRN_frak_max_elana = {
+	NOT = { check_variable = { TRN_frak_ela < TRN_frak_gul } } NOT = { check_variable = { TRN_frak_ela < TRN_frak_zal } } NOT = { check_variable = { TRN_frak_ela < TRN_frak_rom } } NOT = { check_variable = { TRN_frak_ela < TRN_frak_kow } } NOT = { check_variable = { TRN_frak_ela < TRN_frak_kre } }
+}
+TRN_frak_max_krevienko = {
+	NOT = { check_variable = { TRN_frak_kre < TRN_frak_gul } } NOT = { check_variable = { TRN_frak_kre < TRN_frak_zal } } NOT = { check_variable = { TRN_frak_kre < TRN_frak_rom } } NOT = { check_variable = { TRN_frak_kre < TRN_frak_kow } } NOT = { check_variable = { TRN_frak_kre < TRN_frak_ela } }
+}
+TRN_frak_przewaga = {
+	OR = { check_variable = { TRN_frak_gul > 79 } check_variable = { TRN_frak_zal > 79 } check_variable = { TRN_frak_rom > 79 } check_variable = { TRN_frak_kow > 79 } check_variable = { TRN_frak_ela > 79 } check_variable = { TRN_frak_kre > 79 } }
+}
+TRN_faworyt_prowadzi = {
+	OR = {
+		AND = { check_variable = { TRN_faworyt = 1 } NOT = { check_variable = { TRN_frak_gul < TRN_max1 } } }
+		AND = { check_variable = { TRN_faworyt = 2 } NOT = { check_variable = { TRN_frak_zal < TRN_max1 } } }
+		AND = { check_variable = { TRN_faworyt = 3 } NOT = { check_variable = { TRN_frak_rom < TRN_max1 } } }
+		AND = { check_variable = { TRN_faworyt = 4 } NOT = { check_variable = { TRN_frak_kow < TRN_max1 } } }
+		AND = { check_variable = { TRN_faworyt = 5 } NOT = { check_variable = { TRN_frak_ela < TRN_max1 } } }
+		AND = { check_variable = { TRN_faworyt = 6 } NOT = { check_variable = { TRN_frak_kre < TRN_max1 } } }
+	}
+}
+TRN_faworyt_radykal = {
+	OR = { check_variable = { TRN_faworyt = 5 } check_variable = { TRN_faworyt = 6 } }
+}
+TRN_faworyt_przejal_dzielnice = {
+	OR = {
+		AND = { check_variable = { TRN_dz_stare = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 1 } } }
+		AND = { check_variable = { TRN_dz_chelminskie = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 2 } } }
+		AND = { check_variable = { TRN_dz_rubinkowo = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 3 } } }
+		AND = { check_variable = { TRN_dz_bielany = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 4 } } }
+		AND = { check_variable = { TRN_dz_bydgoskie = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 5 } } }
+		AND = { check_variable = { TRN_dz_skarpa = TRN_faworyt } NOT = { check_variable = { TRN_faworyt = 6 } } }
+	}
+}

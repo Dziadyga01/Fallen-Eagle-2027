@@ -1,0 +1,81 @@
+TR2_auto_rejestracja = {
+	set_country_flag = TR2_tmp_gulewski set_country_flag = TR2_tmp_zaleski set_country_flag = TR2_tmp_romanowski set_country_flag = TR2_tmp_kowalczyk set_country_flag = TR2_tmp_elana set_country_flag = TR2_tmp_krevienko clr_country_flag = TR2_ai_wybor if = { limit = { NOT = { has_country_flag = TR2_ai_wybor } has_country_flag = TR2_tmp_gulewski OR = { NOT = { has_country_flag = TR2_tmp_zaleski } check_variable = { TR2_pop_gulewski > TR2_pop_zaleski } } OR = { NOT = { has_country_flag = TR2_tmp_romanowski } check_variable = { TR2_pop_gulewski > TR2_pop_romanowski } } OR = { NOT = { has_country_flag = TR2_tmp_kowalczyk } check_variable = { TR2_pop_gulewski > TR2_pop_kowalczyk } } OR = { NOT = { has_country_flag = TR2_tmp_elana } check_variable = { TR2_pop_gulewski > TR2_pop_elana } } OR = { NOT = { has_country_flag = TR2_tmp_krevienko } check_variable = { TR2_pop_gulewski > TR2_pop_krevienko } } } set_country_flag = TR2_kand_gulewski set_country_flag = TR2_kand_wybor } if = { limit = { NOT = { has_country_flag = TR2_ai_wybor } has_country_flag = TR2_tmp_zaleski OR = { NOT = { has_country_flag = TR2_tmp_gulewski } check_variable = { TR2_pop_zaleski > TR2_pop_gulewski } } OR = { NOT = { has_country_flag = TR2_tmp_romanowski } check_variable = { TR2_pop_zaleski > TR2_pop_romanowski } } OR = { NOT = { has_country_flag = TR2_tmp_kowalczyk } check_variable = { TR2_pop_zaleski > TR2_pop_kowalczyk } } OR = { NOT = { has_country_flag = TR2_tmp_elana } check_variable = { TR2_pop_zaleski > TR2_pop_elana } } OR = { NOT = { has_country_flag = TR2_tmp_krevienko } check_variable = { TR2_pop_zaleski > TR2_pop_krevienko } } } set_country_flag = TR2_kand_zaleski set_country_flag = TR2_kand_wybor } if = { limit = { NOT = { has_country_flag = TR2_ai_wybor } has_country_flag = TR2_tmp_romanowski OR = { NOT = { has_country_flag = TR2_tmp_gulewski } check_variable = { TR2_pop_romanowski > TR2_pop_gulewski } } OR = { NOT = { has_country_flag = TR2_tmp_zaleski } check_variable = { TR2_pop_romanowski > TR2_pop_zaleski } } OR = { NOT = { has_country_flag = TR2_tmp_kowalczyk } check_variable = { TR2_pop_romanowski > TR2_pop_kowalczyk } } OR = { NOT = { has_country_flag = TR2_tmp_elana } check_variable = { TR2_pop_romanowski > TR2_pop_elana } } OR = { NOT = { has_country_flag = TR2_tmp_krevienko } check_variable = { TR2_pop_romanowski > TR2_pop_krevienko } } } set_country_flag = TR2_kand_romanowski set_country_flag = TR2_kand_wybor } if = { limit = { NOT = { has_country_flag = TR2_ai_wybor } has_country_flag = TR2_tmp_kowalczyk OR = { NOT = { has_country_flag = TR2_tmp_gulewski } check_variable = { TR2_pop_kowalczyk > TR2_pop_gulewski } } OR = { NOT = { has_country_flag = TR2_tmp_zaleski } check_variable = { TR2_pop_kowalczyk > TR2_pop_zaleski } } OR = { NOT = { has_country_flag = TR2_tmp_romanowski } check_variable = { TR2_pop_kowalczyk > TR2_pop_romanowski } } OR = { NOT = { has_country_flag = TR2_tmp_elana } check_variable = { TR2_pop_kowalczyk > TR2_pop_elana } } OR = { NOT = { has_country_flag = TR2_tmp_krevienko } check_variable = { TR2_pop_kowalczyk > TR2_pop_krevienko } } } set_country_flag = TR2_kand_kowalczyk set_country_flag = TR2_kand_wybor } if = { limit = { NOT = { has_country_flag = TR2_ai_wybor } has_country_flag = TR2_tmp_elana OR = { NOT = { has_country_flag = TR2_tmp_gulewski } check_variable = { TR2_pop_elana > TR2_pop_gulewski } } OR = { NOT = { has_country_flag = TR2_tmp_zaleski } check_variable = { TR2_pop_elana > TR2_pop_zaleski } } OR = { NOT = { has_country_flag = TR2_tmp_romanowski } check_variable = { TR2_pop_elana > TR2_pop_romanowski } } OR = { NOT = { has_country_flag = TR2_tmp_kowalczyk } check_variable = { TR2_pop_elana > TR2_pop_kowalczyk } } OR = { NOT = { has_country_flag = TR2_tmp_krevienko } check_variable = { TR2_pop_elana > TR2_pop_krevienko } } } set_country_flag = TR2_kand_elana set_country_flag = TR2_kand_wybor } if = { limit = { NOT = { has_country_flag = TR2_ai_wybor } has_country_flag = TR2_tmp_krevienko OR = { NOT = { has_country_flag = TR2_tmp_gulewski } check_variable = { TR2_pop_krevienko > TR2_pop_gulewski } } OR = { NOT = { has_country_flag = TR2_tmp_zaleski } check_variable = { TR2_pop_krevienko > TR2_pop_zaleski } } OR = { NOT = { has_country_flag = TR2_tmp_romanowski } check_variable = { TR2_pop_krevienko > TR2_pop_romanowski } } OR = { NOT = { has_country_flag = TR2_tmp_kowalczyk } check_variable = { TR2_pop_krevienko > TR2_pop_kowalczyk } } OR = { NOT = { has_country_flag = TR2_tmp_elana } check_variable = { TR2_pop_krevienko > TR2_pop_elana } } } set_country_flag = TR2_kand_krevienko set_country_flag = TR2_kand_wybor }  clr_country_flag = TR2_tmp_gulewski clr_country_flag = TR2_tmp_zaleski clr_country_flag = TR2_tmp_romanowski clr_country_flag = TR2_tmp_kowalczyk clr_country_flag = TR2_tmp_elana clr_country_flag = TR2_tmp_krevienko if = { limit = { NOT = { has_country_flag = TR2_ai_wybor } } set_country_flag = TR2_kand_gulewski } clr_country_flag = TR2_ai_wybor
+}
+TR2_przejecie_gulewski = {
+	set_country_flag = TR2_zwyciezca_gulewski set_country_flag = TRN_lider_gulewski set_country_flag = TR2_rzad_zaprzysiezony set_country_flag = TRN_kryzys_rozstrzygniety
+	clr_country_flag = TR2_kampania remove_ideas = TR2_rzad_tymczasowy clr_country_flag = TR2_kurs_zaleski clr_country_flag = TR2_kurs_romanowski clr_country_flag = TR2_kurs_kowalczyk clr_country_flag = TR2_kurs_elana clr_country_flag = TR2_kurs_krevienko
+	set_party_name = { ideology = social_liberal long_name = TR2_partia_gulewski name = TR2_partia_gulewski }
+	set_politics = { ruling_party = social_liberal elections_allowed = yes }
+	add_popularity = { ideology = social_liberal popularity = 0.20 }
+	if = { limit = { NOT = { has_character = TRN_pawel_gulewski } } recruit_character = TRN_pawel_gulewski }
+	promote_character = TRN_pawel_gulewski
+	set_cosmetic_tag = TR2_GULEWSKI
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { TR2_pop_gulewski < 20 } } add_timed_idea = { idea = TR2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = TR2_gulewski_tree keep_completed = no } TRK_start_gulewski = yes
+}
+TR2_przejecie_zaleski = {
+	set_country_flag = TR2_zwyciezca_zaleski set_country_flag = TRN_lider_zaleski set_country_flag = TR2_rzad_zaprzysiezony set_country_flag = TRN_kryzys_rozstrzygniety
+	clr_country_flag = TR2_kampania remove_ideas = TR2_rzad_tymczasowy clr_country_flag = TR2_kurs_gulewski clr_country_flag = TR2_kurs_romanowski clr_country_flag = TR2_kurs_kowalczyk clr_country_flag = TR2_kurs_elana clr_country_flag = TR2_kurs_krevienko
+	set_party_name = { ideology = conservative long_name = TR2_partia_zaleski name = TR2_partia_zaleski }
+	set_politics = { ruling_party = conservative elections_allowed = yes }
+	add_popularity = { ideology = conservative popularity = 0.20 }
+	if = { limit = { NOT = { has_character = TRN_michal_zaleski } } recruit_character = TRN_michal_zaleski }
+	promote_character = TRN_michal_zaleski
+	set_cosmetic_tag = TR2_ZALESKI
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { TR2_pop_zaleski < 20 } } add_timed_idea = { idea = TR2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = TR2_zaleski_tree keep_completed = no } TRK_start_zaleski = yes
+}
+TR2_przejecie_romanowski = {
+	set_country_flag = TR2_zwyciezca_romanowski set_country_flag = TRN_lider_romanowski set_country_flag = TR2_rzad_zaprzysiezony set_country_flag = TRN_kryzys_rozstrzygniety
+	clr_country_flag = TR2_kampania remove_ideas = TR2_rzad_tymczasowy clr_country_flag = TR2_kurs_gulewski clr_country_flag = TR2_kurs_zaleski clr_country_flag = TR2_kurs_kowalczyk clr_country_flag = TR2_kurs_elana clr_country_flag = TR2_kurs_krevienko
+	set_party_name = { ideology = social_democrat long_name = TR2_partia_romanowski name = TR2_partia_romanowski }
+	set_politics = { ruling_party = social_democrat elections_allowed = yes }
+	add_popularity = { ideology = social_democrat popularity = 0.20 }
+	if = { limit = { NOT = { has_character = TRN_michal_romanowski_lider } } recruit_character = TRN_michal_romanowski_lider }
+	promote_character = TRN_michal_romanowski_lider
+	set_cosmetic_tag = TR2_ROMANOWSKI
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { TR2_pop_romanowski < 20 } } add_timed_idea = { idea = TR2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = TR2_romanowski_tree keep_completed = no } TRK_start_romanowski = yes
+}
+TR2_przejecie_kowalczyk = {
+	set_country_flag = TR2_zwyciezca_kowalczyk set_country_flag = TRN_lider_kowalczyk set_country_flag = TR2_rzad_zaprzysiezony set_country_flag = TRN_kryzys_rozstrzygniety
+	clr_country_flag = TR2_kampania remove_ideas = TR2_rzad_tymczasowy clr_country_flag = TR2_kurs_gulewski clr_country_flag = TR2_kurs_zaleski clr_country_flag = TR2_kurs_romanowski clr_country_flag = TR2_kurs_elana clr_country_flag = TR2_kurs_krevienko
+	set_party_name = { ideology = social_liberal long_name = TR2_partia_kowalczyk name = TR2_partia_kowalczyk }
+	set_politics = { ruling_party = social_liberal elections_allowed = yes }
+	add_popularity = { ideology = social_liberal popularity = 0.20 }
+	if = { limit = { NOT = { has_character = TRN_katarzyna_kowalczyk } } recruit_character = TRN_katarzyna_kowalczyk }
+	promote_character = TRN_katarzyna_kowalczyk
+	set_cosmetic_tag = TR2_KOWALCZYK
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { TR2_pop_kowalczyk < 20 } } add_timed_idea = { idea = TR2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = TR2_kowalczyk_tree keep_completed = no } TRK_start_kowalczyk = yes
+}
+TR2_przejecie_elana = {
+	set_country_flag = TR2_zwyciezca_elana set_country_flag = TRN_lider_elana set_country_flag = TR2_rzad_zaprzysiezony set_country_flag = TRN_kryzys_rozstrzygniety
+	clr_country_flag = TR2_kampania remove_ideas = TR2_rzad_tymczasowy clr_country_flag = TR2_kurs_gulewski clr_country_flag = TR2_kurs_zaleski clr_country_flag = TR2_kurs_romanowski clr_country_flag = TR2_kurs_kowalczyk clr_country_flag = TR2_kurs_krevienko
+	set_party_name = { ideology = fascist long_name = TR2_partia_elana name = TR2_partia_elana }
+	set_politics = { ruling_party = fascist elections_allowed = no }
+	add_popularity = { ideology = fascist popularity = 0.20 }
+	if = { limit = { NOT = { has_character = TRN_przywodca_elany } } recruit_character = TRN_przywodca_elany }
+	promote_character = TRN_przywodca_elany
+	set_cosmetic_tag = TR2_ELANA
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { TR2_pop_elana < 20 } } add_timed_idea = { idea = TR2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = TR2_elana_tree keep_completed = no } TRK_start_elana = yes
+}
+TR2_przejecie_krevienko = {
+	set_country_flag = TR2_zwyciezca_krevienko set_country_flag = TRN_lider_krevienko set_country_flag = TR2_rzad_zaprzysiezony set_country_flag = TRN_kryzys_rozstrzygniety
+	clr_country_flag = TR2_kampania remove_ideas = TR2_rzad_tymczasowy clr_country_flag = TR2_kurs_gulewski clr_country_flag = TR2_kurs_zaleski clr_country_flag = TR2_kurs_romanowski clr_country_flag = TR2_kurs_kowalczyk clr_country_flag = TR2_kurs_elana
+	set_party_name = { ideology = libertarian_socialist long_name = TR2_partia_krevienko name = TR2_partia_krevienko }
+	set_politics = { ruling_party = libertarian_socialist elections_allowed = no }
+	add_popularity = { ideology = libertarian_socialist popularity = 0.20 }
+	if = { limit = { NOT = { has_character = TRN_maksim_krevienko } } recruit_character = TRN_maksim_krevienko }
+	promote_character = TRN_maksim_krevienko
+	set_cosmetic_tag = TR2_KREVIENKO
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { TR2_pop_krevienko < 20 } } add_timed_idea = { idea = TR2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = TR2_krevienko_tree keep_completed = no } set_country_flag = TRN_wolna_komuna TRK_start_krevienko = yes
+}

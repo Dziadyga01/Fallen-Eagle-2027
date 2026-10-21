@@ -1,0 +1,18 @@
+state = {
+	id = 400
+	name = "STATE_400"
+	manpower = 67986
+	state_category = large_town
+	history = {
+		owner = PTK
+		add_core_of = PTK
+		victory_points = { 4482 1 }
+		victory_points = { 1217 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	provinces = { 1217 4482 6784 }
+	local_supplies = 0.0
+}

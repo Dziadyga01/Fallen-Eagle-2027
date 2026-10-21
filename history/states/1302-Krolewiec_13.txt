@@ -1,0 +1,22 @@
+state = {
+	id = 1302
+	name = "STATE_1302"
+	manpower = 490000
+	resources = {
+		oil = 12
+	}
+	state_category = large_city
+	history = {
+		owner = ROS
+		add_core_of = ROS
+		victory_points = { 4229 12 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 2
+		}
+	}
+	provinces = { 94 3966 4444 2443 4075 3623 4229 4396 2818 }
+	local_supplies = 0.0
+}

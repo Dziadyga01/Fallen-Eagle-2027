@@ -1,0 +1,164 @@
+add_namespace = met
+
+country_event = {
+	id = met.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = met.10.t
+	desc = met.10.d
+	picture = GFX_pl2027_ev081_kibice_3
+	is_triggered_only = yes
+	option = {
+		name = met.10.a
+		trigger = { has_political_power > 50 }
+		ai_chance = { factor = 60 }
+		add_political_power = -50 custom_effect_tooltip = MET_tt_1 hidden_effect = { add_to_variable = { global.MET_napiecie = -15 } MET_przelicz = yes }
+	}
+	option = {
+		name = met.10.b
+		ai_chance = { factor = 40 }
+		add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = met.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = met.11.t
+	desc = met.11.d
+	picture = GFX_pl2027_ev081_miasto_2
+	is_triggered_only = yes
+	trigger = { check_variable = { global.MET_napiecie > 79 } NOT = { AND = { tag = BYD has_war_with = TRN } } NOT = { AND = { tag = TRN has_war_with = BYD } } }
+	option = {
+		name = met.11.a
+		trigger = { has_political_power > 150 }
+		ai_chance = { factor = 70 }
+		add_political_power = -150 add_stability = -0.03 custom_effect_tooltip = MET_tt_2 hidden_effect = { add_to_variable = { global.MET_napiecie = -40 } MET_przelicz = yes }
+	}
+	option = {
+		name = met.11.b
+		ai_chance = { factor = 30 }
+		add_war_support = 0.05 if = { limit = { tag = TRN } if = { limit = { country_exists = BYD NOT = { has_war_with = BYD } NOT = { is_in_faction_with = BYD } check_variable = { global.MET_napiecie > 79 } NOT = { BYD = { is_subject_of = ROOT } } NOT = { is_subject_of = BYD } } declare_war_on = { target = BYD type = annex_everything } } else = { add_political_power = 25 } } if = { limit = { tag = BYD } if = { limit = { country_exists = TRN NOT = { has_war_with = TRN } NOT = { is_in_faction_with = TRN } check_variable = { global.MET_napiecie > 79 } NOT = { TRN = { is_subject_of = ROOT } } NOT = { is_subject_of = TRN } } declare_war_on = { target = TRN type = annex_everything } } else = { add_political_power = 25 } }
+	}
+}
+
+country_event = {
+	id = met.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = met.20.t
+	desc = met.20.d
+	picture = GFX_pl2027_ev081_wybory_1
+	is_triggered_only = yes
+	option = {
+		name = met.20.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = met.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = met.21.t
+	desc = met.21.d
+	picture = GFX_pl2027_ev081_wybory_1
+	is_triggered_only = yes
+	option = {
+		name = met.21.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = met.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = met.22.t
+	desc = met.22.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	option = {
+		name = met.22.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = met.50
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = met.50.t
+	desc = met.50.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = met.50.a
+		ai_chance = { factor = 15 modifier = { factor = 3 check_variable = { global.MET_napiecie > 79 } } modifier = { factor = 2 has_stability < 0.35 } }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } } FROM = { puppet = ROOT } } FROM = { country_event = { id = met.51 } }
+	}
+	option = {
+		name = met.50.b
+		ai_chance = { factor = 85 }
+		add_war_support = 0.05 FROM = { if = { limit = { exists = yes NOT = { has_war_with = ROOT } NOT = { ROOT = { is_subject_of = PREV } } } create_wargoal = { type = puppet_wargoal_focus target = ROOT } } else = { add_political_power = 50 } } FROM = { country_event = { id = met.52 } }
+	}
+}
+
+country_event = {
+	id = met.51
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = met.51.t
+	desc = met.51.d
+	picture = GFX_pl2027_ev081_polityka_5
+	is_triggered_only = yes
+	option = {
+		name = met.51.a
+		ai_chance = { factor = 1 }
+		add_political_power = 50 add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = met.52
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = met.52.t
+	desc = met.52.d
+	picture = GFX_pl2027_ev081_polityka_0
+	is_triggered_only = yes
+	option = {
+		name = met.52.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = met.55
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = met.55.t
+	desc = met.55.d
+	picture = GFX_pl2027_ev081_gospodarka_1
+	is_triggered_only = yes
+	option = {
+		name = met.55.a
+		ai_chance = { factor = 40 modifier = { factor = 2 check_variable = { global.MET_napiecie < 15 } } }
+		custom_effect_tooltip = MET_tt_3 hidden_effect = { set_global_flag = MET_rozstrzygniete if = { limit = { country_exists = TRN country_exists = BYD check_variable = { global.MET_trn_obszary > global.MET_byd_obszary } } TRN = { annex_country = { target = BYD transfer_troops = yes } set_cosmetic_tag = MET_FEDERACJA } } else_if = { limit = { country_exists = TRN country_exists = BYD check_variable = { global.MET_byd_obszary > global.MET_trn_obszary } } BYD = { annex_country = { target = TRN transfer_troops = yes } set_cosmetic_tag = MET_FEDERACJA } } else_if = { limit = { FROM = { exists = yes } } FROM = { annex_country = { target = ROOT transfer_troops = yes } set_cosmetic_tag = MET_FEDERACJA } } }
+	}
+	option = {
+		name = met.55.b
+		ai_chance = { factor = 60 }
+		clr_global_flag = MET_fed_oczekuje custom_effect_tooltip = MET_tt_4 hidden_effect = { add_to_variable = { global.MET_napiecie = 20 } MET_przelicz = yes } FROM = { country_event = { id = met.57 } }
+	}
+}
+
+country_event = {
+	id = met.57
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = met.57.t
+	desc = met.57.d
+	picture = GFX_pl2027_ev081_wisla_3
+	is_triggered_only = yes
+	option = {
+		name = met.57.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.02
+	}
+}

@@ -1,0 +1,25 @@
+state = {
+	id = 1261
+	name = "STATE_1261"
+	manpower = 47804
+	state_category = town
+	resources = {
+		steel = 4
+	}
+	history = {
+		owner = PMN
+		add_core_of = PMN
+		victory_points = { 477 1 }
+		victory_points = { 9143 2 }
+		victory_points = { 9134 2 }
+		victory_points = { 9141 1 }
+		victory_points = { 9204 1 }
+		victory_points = { 9133 1 }
+		victory_points = { 9147 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 477 9142 9147 9203 9143 9141 9204 9139 9206 9134 9133 9138 9140 }
+	local_supplies = 0.0
+}

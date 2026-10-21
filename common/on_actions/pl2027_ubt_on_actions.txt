@@ -1,0 +1,8 @@
+on_actions = {
+	on_startup = {
+		effect = { set_variable = { global.UBT_spojnosc = 0 } set_variable = { global.UBT_liczba = 0 } UBT_przelicz = yes }
+	}
+	on_monthly_GER = {
+		effect = { if = { limit = { has_global_flag = UBT_istnieje } add_to_variable = { global.UBT_spojnosc = -1 } clamp_variable = { var = global.UBT_spojnosc min = 0 max = 100 } UBT_przelicz = yes every_country = { limit = { has_country_flag = UBT_czlonek OR = { is_subject = yes NOT = { any_owned_state = { is_coastal = yes } } } } UBT_odejdz = yes } } }
+	}
+}

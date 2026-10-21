@@ -1,0 +1,20 @@
+state = {
+	id = 309
+	name = "STATE_309"
+	manpower = 27657
+	state_category = town
+	history = {
+		owner = SRD
+		add_core_of = SRD
+		victory_points = { 5812 1 }
+		victory_points = { 5939 1 }
+		victory_points = { 5928 1 }
+		victory_points = { 5931 1 }
+		victory_points = { 5937 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1192 5939 5936 5812 5931 5932 5929 5928 5934 5933 5937 5935 5930 }
+	local_supplies = 0.0
+}

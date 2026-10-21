@@ -1,0 +1,1210 @@
+# The Fallen Eagle 2027 – Dwa regiony, jedna przyszłość
+focus_tree = {
+	id = MAZ_start_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MAZ
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1170 }
+	initial_show_position = { focus = MAZ_dwa_regiony }
+
+	focus = {
+		id = MAZ_dwa_regiony
+		icon = GFX_pl2027_081_mapa_0_maz
+		x = 28
+		y = 0
+		cost = 2
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = MAZ_autonomia
+		icon = GFX_pl2027_081_anarchia_0
+		x = 33
+		y = 1
+		cost = 3
+		prerequisite = { focus = MAZ_dwa_regiony }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = FED_autonomia_maz
+		}
+	}
+
+	focus = {
+		id = MAZ_odbudowa_przemyslu
+		icon = GFX_pl2027_081_budowa_2
+		x = 31
+		y = 2
+		cost = 5
+		prerequisite = { focus = MAZ_autonomia }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = MAZ_rozbudowa_wojska
+		icon = GFX_pl2027_081_budowa_0
+		x = 32
+		y = 3
+		cost = 5
+		prerequisite = { focus = MAZ_odbudowa_przemyslu }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 600 }
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = MAZ_wspolna_armia
+		icon = GFX_pl2027_081_wojsko_0_maz
+		x = 31
+		y = 4
+		cost = 3
+		prerequisite = { focus = MAZ_rozbudowa_wojska }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_to_variable = { FED_postep = 15 } FED_przelicz = yes
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = MAZ_wielkie_jeziora
+		icon = GFX_pl2027_081_pieniadze_0
+		x = 33
+		y = 2
+		cost = 2
+		prerequisite = { focus = MAZ_autonomia }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = MAZ_boyen
+		icon = GFX_pl2027_081_twierdza_0_maz
+		x = 35
+		y = 2
+		cost = 3
+		prerequisite = { focus = MAZ_autonomia }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_timed_idea = { idea = FED_twierdza days = 365 }
+		}
+	}
+
+	focus = {
+		id = MAZ_tozsamosc_maz
+		icon = GFX_pl2027_081_mapa_1_maz
+		x = 29
+		y = 3
+		cost = 2
+		prerequisite = { focus = MAZ_odbudowa_przemyslu }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = MAZ_zegluga
+		icon = GFX_pl2027_081_mapa_2_maz
+		x = 33
+		y = 4
+		cost = 6
+		prerequisite = { focus = MAZ_boyen }
+		prerequisite = { focus = MAZ_rozbudowa_wojska }
+		prerequisite = { focus = MAZ_wielkie_jeziora }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = MAZ_infrastruktura
+		icon = GFX_pl2027_081_budowa_1
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = MAZ_dwa_regiony }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = MAZ_fabryki_cywilne
+		icon = GFX_pl2027_081_przemysl_0
+		x = 1
+		y = 2
+		cost = 5
+		prerequisite = { focus = MAZ_infrastruktura }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = MAZ_koleje
+		icon = GFX_pl2027_081_kolej_2
+		x = 3
+		y = 2
+		cost = 5
+		prerequisite = { focus = MAZ_infrastruktura }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = MAZ_rolnictwo
+		icon = GFX_pl2027_081_zywnosc_0
+		x = 0
+		y = 3
+		cost = 2
+		prerequisite = { focus = MAZ_fabryki_cywilne }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.04
+		}
+	}
+
+	focus = {
+		id = MAZ_fabryki_wojskowe
+		icon = GFX_pl2027_081_przemysl_1
+		x = 2
+		y = 3
+		cost = 5
+		prerequisite = { focus = MAZ_koleje }
+		prerequisite = { focus = MAZ_fabryki_cywilne }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = MAZ_administracja
+		icon = GFX_pl2027_081_administracja_0
+		x = 1
+		y = 4
+		cost = 2
+		prerequisite = { focus = MAZ_rolnictwo }
+		prerequisite = { focus = MAZ_fabryki_wojskowe }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = MAZ_obrona_terytorialna
+		icon = GFX_pl2027_081_obrona_terytorialna_0_maz
+		x = 7
+		y = 1
+		cost = 3
+		prerequisite = { focus = MAZ_dwa_regiony }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = FED_obrona_terytorialna
+		}
+	}
+
+	focus = {
+		id = MAZ_szkolenie
+		icon = GFX_pl2027_081_pobor_0_maz
+		x = 5
+		y = 2
+		cost = 3
+		prerequisite = { focus = MAZ_obrona_terytorialna }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 4000
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = MAZ_artyleria
+		icon = GFX_pl2027_081_artyleria_0_maz
+		x = 9
+		y = 2
+		cost = 5
+		prerequisite = { focus = MAZ_obrona_terytorialna }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = light_artillery_equipment amount = 40 }
+			add_tech_bonus = { name = FED_art_tb bonus = 1.0 uses = 1 category = artillery }
+		}
+	}
+
+	focus = {
+		id = MAZ_fortyfikacje
+		icon = GFX_pl2027_081_granica_0_maz
+		x = 7
+		y = 2
+		cost = 3
+		prerequisite = { focus = MAZ_obrona_terytorialna }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_timed_idea = { idea = FED_twierdza days = 365 }
+		}
+	}
+
+	focus = {
+		id = MAZ_zmotoryzowanie
+		icon = GFX_pl2027_081_zmotoryzowane_0_maz
+		x = 9
+		y = 3
+		cost = 5
+		prerequisite = { focus = MAZ_artyleria }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = motorized_equipment amount = 50 }
+		}
+	}
+
+	focus = {
+		id = MAZ_sztab
+		icon = GFX_pl2027_081_sztab_0_maz
+		x = 7
+		y = 4
+		cost = 6
+		prerequisite = { focus = MAZ_fortyfikacje }
+		prerequisite = { focus = MAZ_zmotoryzowanie }
+		prerequisite = { focus = MAZ_szkolenie }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { NOT = { has_template = "Brygada Jeziorna" } } division_template = { name = "Brygada Jeziorna" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } artillery_brigade = { x = 1 y = 1 } } support = { engineer = { x = 0 y = 0 } recon = { x = 0 y = 1 } } } } capital_scope = { create_unit = { division = "division_template = \"Brygada Jeziorna\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Jeziorna\" start_experience_factor = 0.2" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = MAZ_rozmowy
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 38
+		y = 1
+		cost = 2
+		prerequisite = { focus = MAZ_dwa_regiony }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_to_variable = { FED_postep = 15 } FED_przelicz = yes
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = MAZ_waluta
+		icon = GFX_pl2027_081_pieniadze_6
+		x = 37
+		y = 2
+		cost = 2
+		prerequisite = { focus = MAZ_rozmowy }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_to_variable = { FED_postep = 10 } FED_przelicz = yes
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = MAZ_rynek
+		icon = GFX_pl2027_081_handel_2
+		x = 39
+		y = 2
+		cost = 5
+		prerequisite = { focus = MAZ_rozmowy }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_to_variable = { FED_postep = 10 } FED_przelicz = yes
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = MAZ_komisja
+		icon = GFX_pl2027_081_sojusz_0_maz
+		x = 37
+		y = 3
+		cost = 2
+		prerequisite = { focus = MAZ_waluta }
+		prerequisite = { focus = MAZ_rynek }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_to_variable = { FED_postep = 15 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_obchody
+		icon = GFX_pl2027_081_ludzie_0
+		x = 37
+		y = 4
+		cost = 2
+		prerequisite = { focus = MAZ_komisja }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_to_variable = { FED_postep = 10 } FED_przelicz = yes
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = MAZ_kongres
+		icon = GFX_pl2027_081_rada_0
+		x = 31
+		y = 5
+		cost = 2
+		prerequisite = { focus = MAZ_wspolna_armia }
+		prerequisite = { focus = MAZ_obchody }
+		available = { OR = { NOT = { country_exists = WMZ } WMZ = { has_completed_focus = WMZ_wspolny_parlament } WMZ = { is_subject_of = ROOT } check_variable = { FED_postep > 79 } } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_political_power = 50
+			set_country_flag = FED_kongres
+		}
+	}
+
+	focus = {
+		id = MAZ_pokojowa
+		icon = GFX_pl2027_081_sojusz_1_maz_k
+		x = 29
+		y = 6
+		cost = 1
+		prerequisite = { focus = MAZ_kongres }
+		mutually_exclusive = { focus = MAZ_militarne focus = MAZ_patronat }
+		available = { check_variable = { FED_postep > 59 } is_subject = no NOT = { has_war_with = WMZ } }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			if = { limit = { country_exists = WMZ } WMZ = { country_event = { id = fed.10 } } }
+			else = { set_country_flag = FED_metoda_pokoj FED_utworz_federacje = yes }
+		}
+	}
+
+	focus = {
+		id = MAZ_militarne
+		icon = GFX_pl2027_081_sojusz_2_maz_k
+		x = 31
+		y = 6
+		cost = 8
+		prerequisite = { focus = MAZ_kongres }
+		mutually_exclusive = { focus = MAZ_pokojowa focus = MAZ_patronat }
+		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } }  is_subject = no }
+		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			if = { limit = { country_exists = WMZ NOT = { has_war_with = WMZ } } create_wargoal = { type = annex_everything target = WMZ } }
+			add_ai_strategy = { type = conquer id = WMZ value = 150 }
+			add_war_support = 0.05
+		 # PL2027_AI_ATAK
+			if = { limit = { is_ai = yes has_war = no country_exists = WMZ NOT = { has_war_with = WMZ } NOT = { is_in_faction_with = WMZ } NOT = { WMZ = { is_subject_of = ROOT } } NOT = { is_subject_of = WMZ } NOT = { WMZ = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = WMZ type = annex_everything } } if = { limit = { is_ai = yes country_exists = WMZ } add_ai_strategy = { type = conquer id = WMZ value = 150 } add_ai_strategy = { type = antagonize id = WMZ value = 100 } }
+		}
+	}
+
+	focus = {
+		id = MAZ_patronat
+		icon = GFX_pl2027_081_rosja_0_maz_f_k
+		x = 33
+		y = 6
+		cost = 2
+		prerequisite = { focus = MAZ_kongres }
+		mutually_exclusive = { focus = MAZ_pokojowa focus = MAZ_militarne }
+		available = { country_exists = ROS }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			FED_patronat_rosyjski = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_zjednoczenie_dokonane
+		icon = GFX_pl2027_081_sojusz_3_maz_f
+		x = 30
+		y = 7
+		cost = 2
+		prerequisite = { focus = MAZ_militarne focus = MAZ_pokojowa }
+		available = { NOT = { country_exists = WMZ } 1124 = { is_controlled_by = ROOT } NOT = { has_country_flag = FED_federacja } OR = { has_completed_focus = MAZ_militarne has_country_flag = FED_metoda_militarne } }
+		ai_will_do = { factor = 50 }
+		completion_reward = {
+			set_country_flag = FED_metoda_militarne
+			FED_utworz_federacje = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_start
+		icon = GFX_pl2027_081_sztab_1_maz
+		x = 16
+		y = 1
+		cost = 3
+		prerequisite = { focus = MAZ_dwa_regiony }
+		bypass = { has_country_flag = MIL_start }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_start
+			army_experience = 5
+			add_manpower = 1000
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_rejestr
+		icon = GFX_pl2027_081_pobor_1_maz
+		x = 12
+		y = 2
+		cost = 3
+		prerequisite = { focus = MAZ_start_mil_start }
+		bypass = { has_country_flag = MIL_rejestr }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_rejestr
+			add_ideas = MIL_pobor_1
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_ochotnicy
+		icon = GFX_pl2027_081_pobor_3_maz
+		x = 16
+		y = 2
+		cost = 3
+		prerequisite = { focus = MAZ_start_mil_start }
+		bypass = { has_country_flag = MIL_ochotnicy }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_ochotnicy
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_fabryka
+		icon = GFX_pl2027_081_fabryka_broni_1
+		x = 20
+		y = 2
+		cost = 3
+		prerequisite = { focus = MAZ_start_mil_start }
+		bypass = { has_country_flag = MIL_fabryka }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_fabryka
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_pobor
+		icon = GFX_pl2027_081_pobor_2_maz
+		x = 11
+		y = 3
+		cost = 3
+		prerequisite = { focus = MAZ_start_mil_rejestr }
+		bypass = { has_country_flag = MIL_pobor }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_pobor
+			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_bataliony
+		icon = GFX_pl2027_081_wojsko_4_maz
+		x = 15
+		y = 3
+		cost = 6
+		prerequisite = { focus = MAZ_start_mil_ochotnicy }
+		bypass = { has_country_flag = MIL_bataliony }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_bataliony
+			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_produkcja
+		icon = GFX_pl2027_081_przemysl_4
+		x = 19
+		y = 3
+		cost = 5
+		prerequisite = { focus = MAZ_start_mil_fabryka }
+		bypass = { has_country_flag = MIL_produkcja }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_produkcja
+			add_timed_idea = { idea = MIL_produkcja days = 365 }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 50 }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_rezerwisci
+		icon = GFX_pl2027_081_pobor_3_maz
+		x = 13
+		y = 3
+		cost = 3
+		prerequisite = { focus = MAZ_start_mil_rejestr }
+		bypass = { has_country_flag = MIL_rezerwisci }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_rezerwisci
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_brygady
+		icon = GFX_pl2027_081_obrona_terytorialna_1_maz
+		x = 17
+		y = 3
+		cost = 6
+		prerequisite = { focus = MAZ_start_mil_ochotnicy }
+		bypass = { has_country_flag = MIL_brygady }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_brygady
+			if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 40 }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_zaplecze
+		icon = GFX_pl2027_081_logistyka_0
+		x = 21
+		y = 3
+		cost = 3
+		prerequisite = { focus = MAZ_start_mil_fabryka }
+		bypass = { has_country_flag = MIL_zaplecze }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_zaplecze
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_ideas = MIL_zaopatrzenie
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_kadra
+		icon = GFX_pl2027_081_oficer_1_maz
+		x = 11
+		y = 4
+		cost = 3
+		prerequisite = { focus = MAZ_start_mil_rezerwisci }
+		prerequisite = { focus = MAZ_start_mil_brygady }
+		prerequisite = { focus = MAZ_start_mil_pobor }
+		prerequisite = { focus = MAZ_start_mil_bataliony }
+		bypass = { has_country_flag = MIL_kadra }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_kadra
+			army_experience = 25
+			add_ideas = MIL_kadra
+		}
+	}
+
+	focus = {
+		id = MAZ_start_mil_zawodowa
+		icon = GFX_pl2027_081_zawodowa_1_maz_f
+		x = 17
+		y = 5
+		cost = 6
+		prerequisite = { focus = MAZ_start_mil_kadra }
+		prerequisite = { focus = MAZ_start_mil_zaplecze }
+		prerequisite = { focus = MAZ_start_mil_produkcja }
+		bypass = { has_country_flag = MIL_zawodowa }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_zawodowa
+			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_warmia_f1
+		icon = GFX_pl2027_081_mapa_0_maz
+		x = 23
+		y = 1
+		cost = 2
+		prerequisite = { focus = MAZ_dwa_regiony }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 29 }
+		bypass = { has_country_flag = DZ_FED_dec_warmia_1 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 3 modifier = { factor = 5 check_variable = { FED_niez_w > 49 } } modifier = { factor = 0 check_variable = { FED_niez_m > 64 } } }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_warmia_1
+			add_political_power = -30 add_to_variable = { FED_niez_w = -10 } add_to_variable = { FED_niez_m = 5 } add_to_variable = { FED_postep = 2 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_warmia_f2
+		icon = GFX_pl2027_081_mapa_0_maz
+		x = 23
+		y = 2
+		cost = 2
+		prerequisite = { focus = MAZ_start_FED_dec_warmia_f1 }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 29 }
+		bypass = { has_country_flag = DZ_FED_dec_warmia_2 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 3 modifier = { factor = 5 check_variable = { FED_niez_w > 49 } } modifier = { factor = 0 check_variable = { FED_niez_m > 64 } } }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_warmia_2
+			add_political_power = -30 add_to_variable = { FED_niez_w = -10 } add_to_variable = { FED_niez_m = 5 } add_to_variable = { FED_postep = 2 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_warmia_f3
+		icon = GFX_pl2027_081_mapa_0_maz
+		x = 23
+		y = 3
+		cost = 2
+		prerequisite = { focus = MAZ_start_FED_dec_warmia_f2 }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 29 }
+		bypass = { has_country_flag = DZ_FED_dec_warmia_3 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 3 modifier = { factor = 5 check_variable = { FED_niez_w > 49 } } modifier = { factor = 0 check_variable = { FED_niez_m > 64 } } }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_warmia_3
+			add_political_power = -30 add_to_variable = { FED_niez_w = -10 } add_to_variable = { FED_niez_m = 5 } add_to_variable = { FED_postep = 2 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_mazury_f1
+		icon = GFX_pl2027_081_mapa_0_maz
+		x = 25
+		y = 1
+		cost = 2
+		prerequisite = { focus = MAZ_dwa_regiony }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 29 }
+		bypass = { has_country_flag = DZ_FED_dec_mazury_1 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 3 modifier = { factor = 5 check_variable = { FED_niez_m > 49 } } modifier = { factor = 0 check_variable = { FED_niez_w > 64 } } }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_mazury_1
+			add_political_power = -30 add_to_variable = { FED_niez_m = -10 } add_to_variable = { FED_niez_w = 5 } add_to_variable = { FED_postep = 2 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_mazury_f2
+		icon = GFX_pl2027_081_mapa_0_maz
+		x = 25
+		y = 2
+		cost = 2
+		prerequisite = { focus = MAZ_start_FED_dec_mazury_f1 }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 29 }
+		bypass = { has_country_flag = DZ_FED_dec_mazury_2 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 3 modifier = { factor = 5 check_variable = { FED_niez_m > 49 } } modifier = { factor = 0 check_variable = { FED_niez_w > 64 } } }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_mazury_2
+			add_political_power = -30 add_to_variable = { FED_niez_m = -10 } add_to_variable = { FED_niez_w = 5 } add_to_variable = { FED_postep = 2 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_mazury_f3
+		icon = GFX_pl2027_081_mapa_0_maz
+		x = 25
+		y = 3
+		cost = 2
+		prerequisite = { focus = MAZ_start_FED_dec_mazury_f2 }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 29 }
+		bypass = { has_country_flag = DZ_FED_dec_mazury_3 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 3 modifier = { factor = 5 check_variable = { FED_niez_m > 49 } } modifier = { factor = 0 check_variable = { FED_niez_w > 64 } } }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_mazury_3
+			add_political_power = -30 add_to_variable = { FED_niez_m = -10 } add_to_variable = { FED_niez_w = 5 } add_to_variable = { FED_postep = 2 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_pojednanie_f1
+		icon = GFX_pl2027_081_pojednanie_0
+		x = 27
+		y = 1
+		cost = 2
+		prerequisite = { focus = MAZ_dwa_regiony }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 79 }
+		bypass = { has_country_flag = DZ_FED_dec_pojednanie_1 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 9 }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_pojednanie_1
+			add_political_power = -80 add_to_variable = { FED_niez_w = -8 } add_to_variable = { FED_niez_m = -8 } add_to_variable = { FED_postep = 5 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_pojednanie_f2
+		icon = GFX_pl2027_081_pojednanie_0
+		x = 27
+		y = 2
+		cost = 2
+		prerequisite = { focus = MAZ_start_FED_dec_pojednanie_f1 }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 79 }
+		bypass = { has_country_flag = DZ_FED_dec_pojednanie_2 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 9 }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_pojednanie_2
+			add_political_power = -80 add_to_variable = { FED_niez_w = -8 } add_to_variable = { FED_niez_m = -8 } add_to_variable = { FED_postep = 5 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_pojednanie_f3
+		icon = GFX_pl2027_081_pojednanie_0
+		x = 27
+		y = 3
+		cost = 2
+		prerequisite = { focus = MAZ_start_FED_dec_pojednanie_f2 }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 79 }
+		bypass = { has_country_flag = DZ_FED_dec_pojednanie_3 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 9 }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_pojednanie_3
+			add_political_power = -80 add_to_variable = { FED_niez_w = -8 } add_to_variable = { FED_niez_m = -8 } add_to_variable = { FED_postep = 5 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_centralizacja_f1
+		icon = GFX_pl2027_081_centralizacja_1_maz
+		x = 41
+		y = 1
+		cost = 2
+		prerequisite = { focus = MAZ_dwa_regiony }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 49 }
+		bypass = { has_country_flag = DZ_FED_dec_centralizacja_1 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 6 modifier = { factor = 0 OR = { check_variable = { FED_niez_w > 54 } check_variable = { FED_niez_m > 54 } } } }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_centralizacja_1
+			add_political_power = -50 add_to_variable = { FED_postep = 12 } add_to_variable = { FED_niez_w = 6 } add_to_variable = { FED_niez_m = 6 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_centralizacja_f2
+		icon = GFX_pl2027_081_centralizacja_1_maz
+		x = 41
+		y = 2
+		cost = 2
+		prerequisite = { focus = MAZ_start_FED_dec_centralizacja_f1 }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 49 }
+		bypass = { has_country_flag = DZ_FED_dec_centralizacja_2 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 6 modifier = { factor = 0 OR = { check_variable = { FED_niez_w > 54 } check_variable = { FED_niez_m > 54 } } } }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_centralizacja_2
+			add_political_power = -50 add_to_variable = { FED_postep = 12 } add_to_variable = { FED_niez_w = 6 } add_to_variable = { FED_niez_m = 6 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_centralizacja_f3
+		icon = GFX_pl2027_081_centralizacja_1_maz
+		x = 41
+		y = 3
+		cost = 2
+		prerequisite = { focus = MAZ_start_FED_dec_centralizacja_f2 }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_political_power > 49 }
+		bypass = { has_country_flag = DZ_FED_dec_centralizacja_3 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 6 modifier = { factor = 0 OR = { check_variable = { FED_niez_w > 54 } check_variable = { FED_niez_m > 54 } } } }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_centralizacja_3
+			add_political_power = -50 add_to_variable = { FED_postep = 12 } add_to_variable = { FED_niez_w = 6 } add_to_variable = { FED_niez_m = 6 } FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_negocjacje_w_f
+		icon = GFX_pl2027_081_dyplomacja_4
+		x = 43
+		y = 1
+		cost = 2
+		prerequisite = { focus = MAZ_dwa_regiony }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_country_flag = FED_kryzys_w has_political_power > 99 }
+		bypass = { has_country_flag = DZ_FED_dec_negocjacje_w_1 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 60 }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_negocjacje_w_1
+			add_political_power = -100 add_to_variable = { FED_niez_w = -25 } clr_country_flag = FED_kryzys_w FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_FED_dec_negocjacje_m_f
+		icon = GFX_pl2027_081_dyplomacja_5
+		x = 45
+		y = 1
+		cost = 2
+		prerequisite = { focus = MAZ_dwa_regiony }
+		available = { OR = { original_tag = WMZ original_tag = MAZ } has_country_flag = FED_kryzys_m has_political_power > 99 }
+		bypass = { has_country_flag = DZ_FED_dec_negocjacje_m_1 }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 60 }
+		completion_reward = {
+			set_country_flag = DZ_FED_dec_negocjacje_m_1
+			add_political_power = -100 add_to_variable = { FED_niez_m = -25 } clr_country_flag = FED_kryzys_m FED_przelicz = yes
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_s_ulica
+		icon = GFX_pl2027_081_media_0
+		x = 47
+		y = 1
+		cost = 1
+		prerequisite = { focus = MAZ_dwa_regiony }
+		bypass = { has_country_flag = TFR_zy_pl_s_ulica }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_ulica
+			country_event = { id = zycie.1 }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_s_media
+		icon = GFX_pl2027_081_media_1
+		x = 46
+		y = 2
+		cost = 3
+		prerequisite = { focus = MAZ_start_zy_s_ulica }
+		bypass = { has_country_flag = TFR_zy_pl_s_media }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_media
+			add_ideas = TFR_media
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_s_spis
+		icon = GFX_pl2027_081_spis_0
+		x = 48
+		y = 2
+		cost = 1
+		prerequisite = { focus = MAZ_start_zy_s_ulica }
+		bypass = { has_country_flag = TFR_zy_pl_s_spis }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_spis
+			country_event = { id = zycie.3 }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_s_kartki
+		icon = GFX_pl2027_081_kartki_0_maz_k
+		x = 47
+		y = 3
+		cost = 3
+		prerequisite = { focus = MAZ_start_zy_s_media }
+		prerequisite = { focus = MAZ_start_zy_s_spis }
+		mutually_exclusive = { focus = MAZ_start_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_kartki }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_kartki
+			add_ideas = TFR_kartki
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_s_rynek
+		icon = GFX_pl2027_081_handel_1_maz_k
+		x = 49
+		y = 3
+		cost = 3
+		prerequisite = { focus = MAZ_start_zy_s_media }
+		prerequisite = { focus = MAZ_start_zy_s_spis }
+		mutually_exclusive = { focus = MAZ_start_zy_s_kartki }
+		bypass = { has_country_flag = TFR_zy_pl_s_rynek }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_rynek
+			add_ideas = TFR_wolny_rynek
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_s_szkoly
+		icon = GFX_pl2027_081_szkola_0
+		x = 47
+		y = 4
+		cost = 2
+		prerequisite = { focus = MAZ_start_zy_s_kartki focus = MAZ_start_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_szkoly
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_s_czarny
+		icon = GFX_pl2027_081_czarny_rynek_1
+		x = 49
+		y = 4
+		cost = 1
+		prerequisite = { focus = MAZ_start_zy_s_kartki focus = MAZ_start_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_czarny }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_czarny
+			country_event = { id = zycie.2 }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_s_straze
+		icon = GFX_pl2027_081_straz_1
+		x = 51
+		y = 4
+		cost = 3
+		prerequisite = { focus = MAZ_start_zy_s_kartki focus = MAZ_start_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_straze }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_straze
+			add_manpower = 2500
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_s_wspolnota
+		icon = GFX_pl2027_081_wspolnota_1_f
+		x = 49
+		y = 5
+		cost = 6
+		prerequisite = { focus = MAZ_start_zy_s_szkoly }
+		prerequisite = { focus = MAZ_start_zy_s_czarny }
+		prerequisite = { focus = MAZ_start_zy_s_straze }
+		bypass = { has_country_flag = TFR_zy_pl_s_wspolnota }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_wspolnota
+			if = { limit = { has_idea = TFR_kartki } remove_ideas = TFR_kartki }
+			if = { limit = { has_idea = TFR_wolny_rynek } remove_ideas = TFR_wolny_rynek }
+			add_ideas = TFR_spoleczenstwo
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_k_admin
+		icon = GFX_pl2027_081_administracja_1
+		x = 52
+		y = 1
+		cost = 5
+		prerequisite = { focus = MAZ_dwa_regiony }
+		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
+		bypass = { has_country_flag = TFR_zy_k_k_admin }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_admin
+			add_political_power = 40
+			random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_k_defilada
+		icon = GFX_pl2027_081_defilada_1_maz
+		x = 51
+		y = 2
+		cost = 2
+		prerequisite = { focus = MAZ_start_zy_k_admin }
+		bypass = { has_country_flag = TFR_zy_k_k_defilada }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_defilada
+			add_war_support = 0.05
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_k_opor
+		icon = GFX_pl2027_081_bunt_3
+		x = 53
+		y = 2
+		cost = 1
+		prerequisite = { focus = MAZ_start_zy_k_admin }
+		bypass = { has_country_flag = TFR_zy_k_k_opor }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_opor
+			country_event = { id = zycie.10 }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_k_owoce
+		icon = GFX_pl2027_081_integracja_2_maz
+		x = 52
+		y = 3
+		cost = 3
+		prerequisite = { focus = MAZ_start_zy_k_defilada }
+		prerequisite = { focus = MAZ_start_zy_k_opor }
+		bypass = { has_country_flag = TFR_zy_k_k_owoce }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_owoce
+			add_timed_idea = { idea = TFR_owoce days = 365 }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_p_straty
+		icon = GFX_pl2027_081_straty_0
+		x = 55
+		y = 1
+		cost = 3
+		prerequisite = { focus = MAZ_dwa_regiony }
+		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
+		bypass = { has_country_flag = TFR_zy_p_p_straty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_straty
+			country_event = { id = zycie.11 }
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_p_rzad
+		icon = GFX_pl2027_081_rada_0
+		x = 55
+		y = 2
+		cost = 2
+		prerequisite = { focus = MAZ_start_zy_p_straty }
+		bypass = { has_country_flag = TFR_zy_p_p_rzad }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_rzad
+			add_stability = 0.05
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_p_rewanz
+		icon = GFX_pl2027_081_gotowosc_1_maz_k
+		x = 54
+		y = 3
+		cost = 3
+		prerequisite = { focus = MAZ_start_zy_p_rzad }
+		mutually_exclusive = { focus = MAZ_start_zy_p_pojednanie }
+		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_rewanz
+			add_timed_idea = { idea = TFR_rewanz days = 730 }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_p_pojednanie
+		icon = GFX_pl2027_081_pojednanie_3_maz_k
+		x = 56
+		y = 3
+		cost = 3
+		prerequisite = { focus = MAZ_start_zy_p_rzad }
+		mutually_exclusive = { focus = MAZ_start_zy_p_rewanz }
+		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_pojednanie
+			add_timed_idea = { idea = TFR_pojednanie days = 730 }
+		}
+	}
+
+	focus = {
+		id = MAZ_start_zy_p_odbudowa
+		icon = GFX_pl2027_081_wyposazenie_2
+		x = 55
+		y = 4
+		cost = 5
+		prerequisite = { focus = MAZ_start_zy_p_rewanz focus = MAZ_start_zy_p_pojednanie }
+		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_odbudowa
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
+			army_experience = 15
+			add_manpower = 5000
+		}
+	}
+}

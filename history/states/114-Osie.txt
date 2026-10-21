@@ -1,0 +1,22 @@
+state = {
+	id = 114
+	name = "STATE_114"
+	manpower = 6073
+	state_category = rural
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = KOC
+		add_core_of = KOC
+		victory_points = { 64 1 }
+		victory_points = { 8017 1 }
+		victory_points = { 7984 1 }
+		victory_points = { 8018 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 64 7990 7988 7983 7982 8018 8017 7986 7985 7984 }
+	local_supplies = 0.0
+}

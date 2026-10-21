@@ -1,0 +1,178 @@
+add_namespace = wwd
+
+country_event = {
+	id = wwd.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = wwd.20.t
+	desc = wwd.20.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = wwd.20.a
+		ai_chance = { factor = 25 modifier = { factor = 0.3 has_war_with = FROM } modifier = { factor = 0.5 strength_ratio = { tag = FROM ratio > 1.5 } } modifier = { factor = 2 MPR = { strength_ratio = { tag = ROOT ratio > 1.2 } } } }
+		if = { limit = { is_in_faction = yes is_faction_leader = no } leave_faction = yes } FROM = { if = { limit = { is_in_faction = no } create_faction = WWD_KOALICJA } if = { limit = { is_faction_leader = yes } add_to_faction = PREV } } set_global_flag = WWD_koalicja_zawarta FROM = { country_event = { id = wwd.21 } } news_event = { id = wwd.25 }
+	}
+	option = {
+		name = wwd.20.b
+		ai_chance = { factor = 60 }
+		set_global_flag = WWD_koalicja_odrzucona FROM = { country_event = { id = wwd.22 } }
+	}
+}
+
+country_event = {
+	id = wwd.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = wwd.21.t
+	desc = wwd.21.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	option = {
+		name = wwd.21.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = wwd.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = wwd.22.t
+	desc = wwd.22.d
+	picture = GFX_pl2027_ev081_polityka_5
+	is_triggered_only = yes
+	option = {
+		name = wwd.22.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03
+	}
+}
+
+news_event = {
+	id = wwd.25
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = wwd.25.t
+	desc = wwd.25.d
+	picture = GFX_pl2027_ev081_polityka_1_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = wwd.25.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = wwd.23
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = wwd.23.t
+	desc = wwd.23.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	option = {
+		name = wwd.23.a
+		ai_chance = { factor = 30 modifier = { factor = 3 strength_ratio = { tag = FROM ratio < 0.8 } } modifier = { factor = 0.3 strength_ratio = { tag = FROM ratio > 1.2 } } }
+		leave_faction = yes every_country = { limit = { is_subject_of = ROOT } FROM = { puppet = PREV } } FROM = { puppet = ROOT country_event = { id = wwd.24 } }
+	}
+	option = {
+		name = wwd.23.b
+		ai_chance = { factor = 20 }
+		leave_faction = yes set_global_flag = WWD_koalicja_zerwana FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = wwd.26 } }
+	}
+}
+
+country_event = {
+	id = wwd.24
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = wwd.24.t
+	desc = wwd.24.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	option = {
+		name = wwd.24.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = wwd.26
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = wwd.26.t
+	desc = wwd.26.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = wwd.26.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = wwd.40
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwd.40.t
+	desc = wwd.40.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = wwd.40.a
+		ai_chance = { factor = 1 }
+		add_political_power = -40 add_stability = 0.02
+	}
+	option = {
+		name = wwd.40.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = wwd.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = wwd.30.t
+	desc = wwd.30.d
+	picture = GFX_pl2027_ev081_ulica_1
+	is_triggered_only = yes
+	option = {
+		name = wwd.30.a
+		ai_chance = { factor = 60 }
+		if = { limit = { FROM = { is_faction_leader = yes } is_in_faction = no is_subject = no } FROM = { add_to_faction = ROOT } set_country_flag = WWD_liga }
+	}
+	option = {
+		name = wwd.30.b
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = {
+	id = wwd.31
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = wwd.31.t
+	desc = wwd.31.d
+	picture = GFX_pl2027_ev081_polityka_5
+	is_triggered_only = yes
+	option = {
+		name = wwd.31.a
+		trigger = { country_exists = SMR SMR = { is_subject = no } NOT = { has_war_with = SMR } }
+		ai_chance = { factor = 3 }
+		SMR = { puppet = ROOT } set_country_flag = WWD_patron
+	}
+	option = {
+		name = wwd.31.b
+		trigger = { country_exists = KPR KPR = { is_subject = no } NOT = { has_war_with = KPR } }
+		ai_chance = { factor = 3 }
+		KPR = { puppet = ROOT } set_country_flag = WWD_patron
+	}
+	option = {
+		name = wwd.31.c
+		trigger = { country_exists = MPR MPR = { is_subject = no } NOT = { has_war_with = MPR } }
+		ai_chance = { factor = 1 }
+		MPR = { puppet = ROOT } set_country_flag = WWD_patron
+	}
+	option = {
+		name = wwd.31.e
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+	}
+}

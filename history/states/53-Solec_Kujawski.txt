@@ -1,0 +1,25 @@
+state = {
+	id = 53
+	name = "STATE_53"
+	manpower = 16506
+	state_category = town
+	history = {
+		owner = SLK
+		add_core_of = SLK
+		add_claim_by = BYD
+		add_claim_by = TRN
+		victory_points = { 7800 5 }
+		victory_points = { 7816 1 }
+		victory_points = { 7813 1 }
+		victory_points = { 7801 1 }
+		victory_points = { 7809 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 43 7807 7801 7800 892 7816 7814 7809 7815 291 7460 7802 7813 7461 }
+	local_supplies = 0.0
+}

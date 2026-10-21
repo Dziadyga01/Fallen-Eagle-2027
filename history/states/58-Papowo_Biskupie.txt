@@ -1,0 +1,21 @@
+state = {
+	id = 58
+	name = "STATE_58"
+	manpower = 2566
+	state_category = rural
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = CHZ
+		add_core_of = CHZ
+		add_claim_by = TRN
+		victory_points = { 8079 1 }
+		victory_points = { 8072 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1552 8079 8072 }
+	local_supplies = 0.0
+}

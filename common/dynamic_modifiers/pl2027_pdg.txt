@@ -1,0 +1,7 @@
+PDG_widzowie_mod = {
+	icon = GFX_idea_PDG_widzowie_mod
+	enable = { always = yes }
+	political_power_gain = PDG_dm_pp
+	stability_factor = PDG_dm_stab
+	war_support_factor = PDG_dm_ws
+}

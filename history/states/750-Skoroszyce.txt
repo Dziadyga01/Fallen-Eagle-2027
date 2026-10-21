@@ -1,0 +1,20 @@
+state = {
+	id = 750
+	name = "STATE_750"
+	manpower = 8808
+	state_category = rural
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = SLS
+		add_core_of = SLS
+		victory_points = { 828 1 }
+		victory_points = { 5072 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 828 5073 5074 5072 }
+	local_supplies = 0.0
+}

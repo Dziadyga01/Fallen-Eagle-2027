@@ -1,0 +1,22 @@
+state = {
+	id = 761
+	name = "STATE_761"
+	manpower = 37055
+	state_category = town
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = SUW
+		add_core_of = SUW
+		victory_points = { 6617 1 }
+		victory_points = { 6618 1 }
+		victory_points = { 6611 1 }
+		victory_points = { 6616 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 302 6616 6618 6617 6615 6611 6609 1061 6607 6606 6605 }
+	local_supplies = 0.0
+}

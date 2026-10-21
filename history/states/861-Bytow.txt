@@ -1,0 +1,21 @@
+state = {
+	id = 861
+	name = "STATE_861"
+	manpower = 25665
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = KPM
+		add_core_of = KPM
+		victory_points = { 8952 1 }
+		victory_points = { 8962 1 }
+		victory_points = { 8956 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1375 8954 8953 8952 8956 8960 8962 8964 }
+	local_supplies = 0.0
+}

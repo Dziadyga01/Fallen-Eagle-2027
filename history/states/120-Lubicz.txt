@@ -1,0 +1,21 @@
+state = {
+	id = 120
+	name = "STATE_120"
+	manpower = 8588
+	state_category = town
+	history = {
+		owner = LUB
+		add_core_of = LUB
+		add_claim_by = TRN
+		victory_points = { 8104 5 }
+		victory_points = { 1038 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 1038 8106 8105 8104 }
+	local_supplies = 0.0
+}

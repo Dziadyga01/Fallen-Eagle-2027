@@ -1,0 +1,7 @@
+PKP_siec_mod = {
+	icon = GFX_idea_PKP_siec_mod
+	enable = { always = yes }
+	production_speed_buildings_factor = PKP_mod_bud
+	political_power_gain = PKP_mod_pp
+	supply_consumption_factor = PKP_mod_sup
+}

@@ -1,0 +1,5 @@
+on_actions = {
+	on_capitulation = {
+		effect = { if = { limit = { tag = KUJ FROM = { tag = WLC } NOT = { has_global_flag = TKW_kapitulacja } } set_global_flag = TKW_kapitulacja every_country = { limit = { OR = { tag = WLC tag = TRN tag = BYD tag = PLO tag = KOC } } news_event = { id = tkw.21 } } } }
+	}
+}

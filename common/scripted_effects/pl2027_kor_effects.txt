@@ -1,0 +1,30 @@
+KOR_przelicz = {
+	clamp_variable = { var = KOR_kurs min = 0 max = 200 }
+	set_variable = { KOR_dm_prod = KOR_kurs }
+	subtract_from_variable = { KOR_dm_prod = 100 }
+	set_variable = { KOR_dm_pp = KOR_dm_prod }
+	set_variable = { KOR_dm_stab = KOR_dm_prod }
+	multiply_variable = { KOR_dm_prod = 0.001 }
+	multiply_variable = { KOR_dm_pp = 0.002 }
+	multiply_variable = { KOR_dm_stab = 0.0005 }
+	force_update_dynamic_modifier = yes
+}
+KOR_uruchom_kurs = {
+	set_country_flag = KOR_mech_kurs
+	if = { limit = { NOT = { has_variable = KOR_kurs } } set_variable = { KOR_kurs = 100 } }
+	KOR_przelicz = yes
+	add_dynamic_modifier = { modifier = KOR_kurs_mod }
+}
+KOR_odswiez_czlonka = {
+	if = { limit = { KOR_w_konsorcjum = yes }
+		if = { limit = { has_global_flag = KOR_konsorcjum_zintegrowane }
+			if = { limit = { has_idea = KOR_czlonek_konsorcjum } remove_ideas = KOR_czlonek_konsorcjum }
+			if = { limit = { NOT = { has_idea = KOR_czlonek_konsorcjum2 } } add_ideas = KOR_czlonek_konsorcjum2 }
+		}
+		else = { if = { limit = { NOT = { has_idea = KOR_czlonek_konsorcjum } } add_ideas = KOR_czlonek_konsorcjum } }
+	}
+	else = {
+		if = { limit = { has_idea = KOR_czlonek_konsorcjum } remove_ideas = KOR_czlonek_konsorcjum }
+		if = { limit = { has_idea = KOR_czlonek_konsorcjum2 } remove_ideas = KOR_czlonek_konsorcjum2 }
+	}
+}

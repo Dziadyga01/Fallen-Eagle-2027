@@ -1,0 +1,21 @@
+state = {
+	id = 265
+	name = "STATE_265"
+	manpower = 2763
+	state_category = rural
+	resources = {
+		steel = 3
+	}
+	history = {
+		owner = PDL
+		add_core_of = PDL
+		victory_points = { 4993 1 }
+		victory_points = { 4991 1 }
+		victory_points = { 5004 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1646 5004 4993 4991 4992 5003 }
+	local_supplies = 0.0
+}

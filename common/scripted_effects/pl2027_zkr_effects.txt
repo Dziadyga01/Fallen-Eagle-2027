@@ -1,0 +1,66 @@
+ZKR_wplywy_przelicz = {
+	clamp_variable = { var = ZKR_wplywy min = 0 max = 100 }
+	set_variable = { ZKR_wplywy_prod = ZKR_wplywy }
+	multiply_variable = { ZKR_wplywy_prod = 0.002 }
+	set_variable = { ZKR_wplywy_pp = ZKR_wplywy }
+	multiply_variable = { ZKR_wplywy_pp = -0.003 }
+	set_variable = { ZKR_wplywy_stab = ZKR_wplywy }
+	multiply_variable = { ZKR_wplywy_stab = -0.001 }
+	force_update_dynamic_modifier = yes
+	if = {
+		limit = { check_variable = { ZKR_wplywy > 99 } NOT = { has_country_flag = ZKR_protektorat } NOT = { has_country_flag = ZKR_wojna_domowa } NOT = { has_country_flag = ZKR_kryzys_100 } }
+		set_country_flag = ZKR_kryzys_100
+		country_event = { id = zkr.52 }
+	}
+}
+ZKR_ideologia_namiestnika = {
+	if = {
+		limit = { country_exists = ROS ROS = { has_country_flag = ROS_lider_szo } }
+		if = { limit = { NOT = { has_character = ZKR_radecki_w } } recruit_character = ZKR_radecki_w }
+		set_politics = { ruling_party = nationalist elections_allowed = no }
+		promote_character = ZKR_radecki_w
+	}
+}
+ZKR_protektorat = {
+	set_country_flag = ZKR_protektorat
+	if = { limit = { country_exists = ROS } ROS = { puppet = ROOT } }
+	if = { limit = { NOT = { has_character = ZKR_radecki } } recruit_character = ZKR_radecki }
+	set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+	promote_character = ZKR_radecki
+	ZKR_ideologia_namiestnika = yes
+	set_cosmetic_tag = ZKR_NAMIESTNICTWO
+	remove_dynamic_modifier = { modifier = ZKR_wplywy_mod }
+	add_ideas = ZKR_namiestnictwo
+	load_focus_tree = { tree = ZKR_rosyjskie_prusy_tree keep_completed = no }
+}
+ZKR_wojna_domowa = {
+	set_country_flag = ZKR_wojna_domowa
+	remove_dynamic_modifier = { modifier = ZKR_wplywy_mod }
+	start_civil_war = { ideology = authoritarian_democrat size = 0.45 }
+	random_country = {
+		limit = { original_tag = ZKR NOT = { tag = ZKR } }
+		set_country_flag = ZKR_rzad_tymczasowy
+		set_cosmetic_tag = ZKR_RZAD_TYMCZASOWY
+		recruit_character = ZKR_radecki
+		promote_character = ZKR_radecki
+		add_ideas = ZKR_wsparcie_rosji
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 2000 }
+		if = { limit = { country_exists = ROS } ROS = { give_guarantee = PREV } }
+		country_event = { id = zkr.71 }
+	}
+	country_event = { id = zkr.70 }
+}
+ZKR_tarcza_zaproszenia = {
+	if = { limit = { is_in_faction = no } create_faction = ZKR_TARCZA_BALTYKU }
+	if = { limit = { is_faction_leader = yes country_exists = KOC KOC = { is_in_faction = no } NOT = { KOC = { is_subject_of = ZKR } } NOT = { has_war_with = KOC } } KOC = { country_event = { id = zkr.30 } } }
+	if = { limit = { is_faction_leader = yes country_exists = GRU GRU = { is_in_faction = no } NOT = { GRU = { is_subject_of = ZKR } } NOT = { has_war_with = GRU } } GRU = { country_event = { id = zkr.30 } } }
+	if = { limit = { is_faction_leader = yes country_exists = WMZ WMZ = { is_in_faction = no } NOT = { WMZ = { is_subject_of = ZKR } } NOT = { has_war_with = WMZ } } WMZ = { country_event = { id = zkr.30 } } }
+	if = { limit = { is_faction_leader = yes country_exists = MAZ MAZ = { is_in_faction = no } NOT = { MAZ = { is_subject_of = ZKR } } NOT = { has_war_with = MAZ } } MAZ = { country_event = { id = zkr.30 } } }
+	if = { limit = { is_faction_leader = yes country_exists = SUW SUW = { is_in_faction = no } NOT = { SUW = { is_subject_of = ZKR } } NOT = { has_war_with = SUW } } SUW = { country_event = { id = zkr.30 } } }
+	if = { limit = { is_faction_leader = yes country_exists = NML NML = { is_in_faction = no } NOT = { NML = { is_subject_of = ZKR } } NOT = { has_war_with = NML } } NML = { country_event = { id = zkr.30 } } }
+	if = { limit = { is_faction_leader = yes country_exists = LBW LBW = { is_in_faction = no } NOT = { LBW = { is_subject_of = ZKR } } NOT = { has_war_with = LBW } } LBW = { country_event = { id = zkr.30 } } }
+	if = { limit = { is_faction_leader = yes country_exists = KPM KPM = { is_in_faction = no } NOT = { KPM = { is_subject_of = ZKR } } NOT = { has_war_with = KPM } } KPM = { country_event = { id = zkr.30 } } }
+	if = { limit = { is_faction_leader = yes country_exists = GDY GDY = { is_in_faction = no } NOT = { GDY = { is_subject_of = ZKR } } NOT = { has_war_with = GDY } } GDY = { country_event = { id = zkr.30 } } }
+	if = { limit = { is_faction_leader = yes country_exists = WMG WMG = { is_in_faction = no } NOT = { WMG = { is_subject_of = ZKR } } NOT = { has_war_with = WMG } } WMG = { country_event = { id = zkr.30 } } }
+	if = { limit = { is_faction_leader = yes country_exists = LIT LIT = { is_in_faction = no } NOT = { LIT = { is_subject_of = ZKR } } NOT = { has_war_with = LIT } } LIT = { country_event = { id = zkr.30 } } }
+}

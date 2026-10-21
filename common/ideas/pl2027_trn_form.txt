@@ -1,0 +1,102 @@
+ideas = {
+	country = {
+		TRN_wolne_komuny = {
+			picture = DU_TRN_wolne_komuny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				conscription_factor = 0.1
+			}
+		}
+		TRN_wielkie_panstwo = {
+			picture = DU_TRN_wielkie_panstwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		TRN_zjednoczona_republika = {
+			picture = DU_TRN_zjednoczona_republika
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		TRN_panstwo_nauki = {
+			picture = DU_TRN_panstwo_nauki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+				stability_factor = 0.05
+			}
+		}
+		TRN_zjednoczone_kujawy = {
+			picture = DU_TRN_zjednoczone_kujawy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		TRN_sekretne_zakonczenie = {
+			picture = DU_TRN_sekretne_zakonczenie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+		TRN_militaryzacja = {
+			picture = DU_TRN_militaryzacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.25
+				consumer_goods_factor = 0.05
+			}
+		}
+		TRN_ofensywa = {
+			picture = DU_TRN_ofensywa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		TRN_twierdza = {
+			picture = DU_TRN_twierdza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		TRN_protesty_nauka = {
+			picture = DU_TRN_protesty_nauka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		TRN_kryzys_stolic = {
+			picture = DU_TRN_kryzys_stolic
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain = -0.1
+			}
+		}
+	}
+}

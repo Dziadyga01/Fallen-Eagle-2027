@@ -1,0 +1,17 @@
+state = {
+	id = 99
+	name = "STATE_99"
+	manpower = 8147
+	state_category = rural
+	history = {
+		owner = WLC
+		add_core_of = WLC
+		victory_points = { 8270 1 }
+		victory_points = { 8271 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 8269 8270 8271 }
+	local_supplies = 0.0
+}

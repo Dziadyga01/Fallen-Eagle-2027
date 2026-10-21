@@ -1,0 +1,19 @@
+state = {
+	id = 24
+	name = "STATE_24"
+	manpower = 46383
+	state_category = town
+	history = {
+		owner = SLS
+		add_core_of = SLS
+		victory_points = { 18 1 }
+		victory_points = { 6914 2 }
+		victory_points = { 6911 1 }
+		victory_points = { 6913 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 18 6911 6913 6914 1856 6912 6900 6915 }
+	local_supplies = 0.0
+}

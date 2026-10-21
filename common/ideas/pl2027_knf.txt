@@ -1,0 +1,101 @@
+ideas = {
+	country = {
+		KNF_ruch = {
+			picture = DU_KNF_ruch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		KNF_wolny_rynek = {
+			picture = DU_KNF_wolny_rynek
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		KNF_wolny_rynek2 = {
+			picture = DU_KNF_wolny_rynek2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.08
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		KNF_straz = {
+			picture = DU_KNF_straz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.15
+				army_morale_factor = 0.05
+			}
+		}
+		KNF_gwardia = {
+			picture = DU_KNF_gwardia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.15
+				army_morale_factor = 0.08
+				army_org_factor = 0.05
+			}
+		}
+		KNF_front_prawicy = {
+			picture = DU_KNF_front_prawicy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		KNF_sztab_zn = {
+			picture = DU_KNF_sztab_zn
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+		KNF_stolik = {
+			picture = DU_KNF_stolik
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				war_support_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		KNF_pelnia = {
+			picture = DU_KNF_pelnia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		KNF_konstytucja = {
+			picture = DU_KNF_konstytucja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+}

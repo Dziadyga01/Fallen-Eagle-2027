@@ -1,0 +1,20 @@
+state = {
+	id = 1142
+	name = "STATE_1142"
+	manpower = 22173
+	state_category = rural
+	resources = {
+		oil = 1
+	}
+	history = {
+		owner = LES
+		add_core_of = LES
+		victory_points = { 7905 1 }
+		victory_points = { 7134 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 7905 7907 7906 7134 }
+	local_supplies = 0.0
+}

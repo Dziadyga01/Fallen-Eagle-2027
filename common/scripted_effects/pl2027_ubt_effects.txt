@@ -1,0 +1,9 @@
+UBT_przelicz = {
+	set_variable = { global.UBT_mod_bud = global.UBT_spojnosc } divide_variable = { global.UBT_mod_bud = 1000 } set_variable = { global.UBT_mod_kons = global.UBT_spojnosc } divide_variable = { global.UBT_mod_kons = -1500 } set_variable = { global.UBT_mod_stab = global.UBT_spojnosc } divide_variable = { global.UBT_mod_stab = 2000 }
+}
+UBT_dolacz = {
+	set_country_flag = UBT_czlonek add_dynamic_modifier = { modifier = UBT_czlonek_mod } add_to_variable = { global.UBT_liczba = 1 } if = { limit = { is_in_faction = no } random_country = { limit = { has_country_flag = UBT_zalozyciel is_faction_leader = yes } add_to_faction = ROOT } }
+}
+UBT_odejdz = {
+	clr_country_flag = UBT_czlonek remove_dynamic_modifier = { modifier = UBT_czlonek_mod } add_to_variable = { global.UBT_liczba = -1 } if = { limit = { is_in_faction = yes NOT = { has_country_flag = UBT_zalozyciel } } leave_faction = yes }
+}

@@ -1,0 +1,109 @@
+add_namespace = blr
+
+country_event = {
+	id = blr.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = blr.10.t
+	desc = blr.10.d
+	picture = GFX_tfe_mapa_wschod
+	is_triggered_only = yes
+	option = {
+		name = blr.10.a
+		trigger = { NOT = { has_idea = BLR_otwarcie } }
+		ai_chance = { factor = 10 modifier = { factor = 3 check_variable = { BLR_stabilnosc > 49 } } }
+		custom_effect_tooltip = BLR_tt_stp5 hidden_effect = { add_to_variable = { BLR_stabilnosc = 5 } clamp_variable = { var = BLR_stabilnosc min = 0 max = 100 } } add_political_power = 50
+	}
+	option = {
+		name = blr.10.b
+		ai_chance = { factor = 5 modifier = { factor = 3 has_idea = BLR_integracja } }
+		if = { limit = { NOT = { has_character = BLR_rada_bezpieczenstwa } } recruit_character = BLR_rada_bezpieczenstwa } set_politics = { ruling_party = authoritarian_democrat elections_allowed = no } promote_character = BLR_rada_bezpieczenstwa custom_effect_tooltip = BLR_tt_nzm10 hidden_effect = { add_to_variable = { BLR_niezaleznosc = -10 } clamp_variable = { var = BLR_niezaleznosc min = 0 max = 100 } } custom_effect_tooltip = BLR_tt_stp10 hidden_effect = { add_to_variable = { BLR_stabilnosc = 10 } clamp_variable = { var = BLR_stabilnosc min = 0 max = 100 } }
+	}
+	option = {
+		name = blr.10.c
+		trigger = { check_variable = { BLR_niezaleznosc > 49 } }
+		ai_chance = { factor = 5 modifier = { factor = 4 has_idea = BLR_otwarcie } }
+		if = { limit = { NOT = { has_character = BLR_rada_narodowa } } recruit_character = BLR_rada_narodowa } set_politics = { ruling_party = social_liberal elections_allowed = yes } promote_character = BLR_rada_narodowa add_ideas = BLR_rada_przejsciowa custom_effect_tooltip = BLR_tt_nzp20 hidden_effect = { add_to_variable = { BLR_niezaleznosc = 20 } clamp_variable = { var = BLR_niezaleznosc min = 0 max = 100 } } custom_effect_tooltip = BLR_tt_stm10 hidden_effect = { add_to_variable = { BLR_stabilnosc = -10 } clamp_variable = { var = BLR_stabilnosc min = 0 max = 100 } } if = { limit = { country_exists = BST } BST = { add_opinion_modifier = { target = ROOT modifier = BLR_dobry_sasiad } } } if = { limit = { country_exists = PDL } PDL = { add_opinion_modifier = { target = ROOT modifier = BLR_dobry_sasiad } } } if = { limit = { country_exists = SUW } SUW = { add_opinion_modifier = { target = ROOT modifier = BLR_dobry_sasiad } } } if = { limit = { country_exists = NAR } NAR = { add_opinion_modifier = { target = ROOT modifier = BLR_dobry_sasiad } } } if = { limit = { country_exists = LIT } LIT = { add_opinion_modifier = { target = ROOT modifier = BLR_dobry_sasiad } } }
+	}
+}
+
+country_event = {
+	id = blr.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = blr.11.t
+	desc = blr.11.d
+	picture = GFX_pl2027_ev081_paliwo_3
+	is_triggered_only = yes
+	option = {
+		name = blr.11.a
+		trigger = { has_political_power > 49 }
+		ai_chance = { factor = 10 modifier = { factor = 2 has_war = yes } }
+		add_political_power = -50 add_fuel = 4000 FROM = { add_political_power = 40 } add_opinion_modifier = { target = FROM modifier = BLR_dobry_sasiad }
+	}
+	option = {
+		name = blr.11.b
+		ai_chance = { factor = 5 }
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = blr.12
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
+	title = blr.12.t
+	desc = blr.12.d
+	picture = GFX_pl2027_ev081_granica_0
+	is_triggered_only = yes
+	option = {
+		name = blr.12.a
+		ai_chance = { factor = 10 modifier = { factor = 3 has_idea = BLR_otwarcie } }
+		add_political_power = -30 custom_effect_tooltip = BLR_tt_nzp5 hidden_effect = { add_to_variable = { BLR_niezaleznosc = 5 } clamp_variable = { var = BLR_niezaleznosc min = 0 max = 100 } } if = { limit = { country_exists = BST } BST = { add_opinion_modifier = { target = ROOT modifier = BLR_dobry_sasiad } } } if = { limit = { country_exists = PDL } PDL = { add_opinion_modifier = { target = ROOT modifier = BLR_dobry_sasiad } } } if = { limit = { country_exists = SUW } SUW = { add_opinion_modifier = { target = ROOT modifier = BLR_dobry_sasiad } } } if = { limit = { country_exists = NAR } NAR = { add_opinion_modifier = { target = ROOT modifier = BLR_dobry_sasiad } } }
+	}
+	option = {
+		name = blr.12.b
+		ai_chance = { factor = 10 modifier = { factor = 2 has_idea = BLR_integracja } }
+		add_political_power = 20 if = { limit = { country_exists = BST } BST = { add_opinion_modifier = { target = ROOT modifier = BLR_presja_graniczna } } } if = { limit = { country_exists = PDL } PDL = { add_opinion_modifier = { target = ROOT modifier = BLR_presja_graniczna } } } if = { limit = { country_exists = SUW } SUW = { add_opinion_modifier = { target = ROOT modifier = BLR_presja_graniczna } } } if = { limit = { country_exists = NAR } NAR = { add_opinion_modifier = { target = ROOT modifier = BLR_presja_graniczna } } } custom_effect_tooltip = BLR_tt_stm3 hidden_effect = { add_to_variable = { BLR_stabilnosc = -3 } clamp_variable = { var = BLR_stabilnosc min = 0 max = 100 } }
+	}
+}
+
+country_event = {
+	id = blr.13
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = blr.13.t
+	desc = blr.13.d
+	picture = GFX_tfe_mapa_wschod
+	is_triggered_only = yes
+	option = {
+		name = blr.13.a
+		ai_chance = { factor = 10 modifier = { factor = 3 has_idea = BLR_integracja } }
+		custom_effect_tooltip = BLR_tt_nzm15 hidden_effect = { add_to_variable = { BLR_niezaleznosc = -15 } clamp_variable = { var = BLR_niezaleznosc min = 0 max = 100 } } custom_effect_tooltip = BLR_tt_stp5 hidden_effect = { add_to_variable = { BLR_stabilnosc = 5 } clamp_variable = { var = BLR_stabilnosc min = 0 max = 100 } } add_political_power = 50 if = { limit = { country_exists = ROS } ROS = { add_opinion_modifier = { target = ROOT modifier = BLR_lojalny_sojusznik } } } if = { limit = { country_exists = ROS } give_military_access = ROS }
+	}
+	option = {
+		name = blr.13.b
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = BLR_tt_nzm5 hidden_effect = { add_to_variable = { BLR_niezaleznosc = -5 } clamp_variable = { var = BLR_niezaleznosc min = 0 max = 100 } } add_political_power = 20
+	}
+	option = {
+		name = blr.13.c
+		ai_chance = { factor = 3 modifier = { factor = 4 has_idea = BLR_wielowektorowosc } }
+		custom_effect_tooltip = BLR_tt_nzp10 hidden_effect = { add_to_variable = { BLR_niezaleznosc = 10 } clamp_variable = { var = BLR_niezaleznosc min = 0 max = 100 } } custom_effect_tooltip = BLR_tt_stm4 hidden_effect = { add_to_variable = { BLR_stabilnosc = -4 } clamp_variable = { var = BLR_stabilnosc min = 0 max = 100 } } if = { limit = { country_exists = ROS } ROS = { add_opinion_modifier = { target = ROOT modifier = BLR_nielojalnosc } } }
+	}
+}
+
+country_event = {
+	id = blr.14
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = blr.14.t
+	desc = blr.14.d
+	picture = GFX_tfe_mapa_kolej
+	is_triggered_only = yes
+	option = {
+		name = blr.14.a
+		ai_chance = { factor = 10 }
+		add_political_power = 30 add_opinion_modifier = { target = FROM modifier = BLR_dobry_sasiad } FROM = { add_political_power = 20 } add_timed_idea = { idea = BLR_tranzyt_odbiorca days = 365 }
+	}
+	option = {
+		name = blr.14.b
+		ai_chance = { factor = 3 }
+		add_stability = 0.01
+	}
+}

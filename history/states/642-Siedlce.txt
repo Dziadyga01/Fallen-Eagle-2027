@@ -1,0 +1,26 @@
+state = {
+	id = 642
+	name = "STATE_642"
+	manpower = 86068
+	state_category = large_town
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = KKR
+		add_core_of = KKR
+		victory_points = { 1633 5 }
+		victory_points = { 3524 1 }
+		victory_points = { 2792 1 }
+		victory_points = { 1333 1 }
+		victory_points = { 2038 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 1275 3599 3524 2038 2712 2792 3157 1333 1857 1633 2723 2208 }
+	local_supplies = 0.0
+}

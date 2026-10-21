@@ -1,0 +1,21 @@
+state = {
+	id = 699
+	name = "STATE_699"
+	manpower = 43055
+	state_category = town
+	history = {
+		owner = WLM
+		add_core_of = WLM
+		victory_points = { 3289 5 }
+		victory_points = { 258 1 }
+		victory_points = { 1903 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 161 3289 1903 258 2113 3395 }
+	local_supplies = 0.0
+}

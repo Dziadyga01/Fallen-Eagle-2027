@@ -1,0 +1,114 @@
+ideas = {
+	country = {
+		IVRP2_odbudowa = {
+			picture = DU_IVRP2_odbudowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		IVRP2_gospodarka = {
+			picture = DU_IVRP2_gospodarka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		IVRP2_pobor = {
+			picture = DU_IVRP2_pobor
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.5
+				conscription = 0.01
+			}
+		}
+		IVRP2_kadra = {
+			picture = DU_IVRP2_kadra
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		IVRP2_armia = {
+			picture = DU_IVRP2_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.1
+				army_attack_factor = 0.08
+				army_defence_factor = 0.08
+				army_morale_factor = 0.05
+			}
+		}
+		IVRP2_region = {
+			picture = DU_IVRP2_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				conscription_factor = 0.1
+			}
+		}
+		IVRP2_mazowsze = {
+			picture = DU_IVRP2_mazowsze
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				conscription_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		IVRP2_zjednoczona = {
+			picture = DU_IVRP2_zjednoczona
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.15
+				industrial_capacity_factory = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		IVRP2_s_prawo = {
+			picture = DU_IVRP2_s_prawo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		IVRP2_p_wladza = {
+			picture = DU_IVRP2_p_wladza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		IVRP2_m_rodzina = {
+			picture = DU_IVRP2_m_rodzina
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+	}
+}

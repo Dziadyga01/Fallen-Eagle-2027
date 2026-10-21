@@ -1,0 +1,87 @@
+add_namespace = rosw
+
+country_event = {
+	id = rosw.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = rosw.1.t
+	desc = rosw.1.d
+	picture = GFX_pl2027_ev081_pokoj_2
+	is_triggered_only = yes
+	option = {
+		name = rosw.1.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03
+	}
+}
+
+news_event = {
+	id = rosw.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = rosw.2.t
+	desc = rosw.2.d
+	picture = GFX_pl2027_ev081_mazury_0_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = rosw.2.a
+		trigger = { tag = ROS }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = rosw.2.b
+		trigger = { NOT = { tag = ROS } }
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = rosw.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = rosw.10.t
+	desc = rosw.10.d
+	picture = GFX_pl2027_ev081_paliwo_4
+	is_triggered_only = yes
+	option = {
+		name = rosw.10.a
+		ai_chance = { factor = 1 modifier = { factor = 3 has_stability < 0.35 } modifier = { factor = 2 has_war = yes } modifier = { factor = 0.3 has_government = social_liberal } }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } } FROM = { puppet = ROOT } } FROM = { country_event = { id = rosw.11 } }
+	}
+	option = {
+		name = rosw.10.b
+		ai_chance = { factor = 3 }
+		FROM = { add_opinion_modifier = { target = ROOT modifier = ROSW_odmowa_protektoratu } country_event = { id = rosw.12 } }
+	}
+}
+
+country_event = {
+	id = rosw.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = rosw.11.t
+	desc = rosw.11.d
+	picture = GFX_pl2027_ev081_rosja_2
+	is_triggered_only = yes
+	option = {
+		name = rosw.11.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = rosw.12
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = rosw.12.t
+	desc = rosw.12.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	option = {
+		name = rosw.12.a
+		ai_chance = { factor = 1 }
+		set_country_flag = { flag = ROSW_protektorat_cd days = 180 } if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } NOT = { FROM = { is_subject_of = ROOT } } } create_wargoal = { type = puppet_wargoal_focus target = FROM } } else = { add_political_power = 25 }
+	}
+	option = {
+		name = rosw.12.b
+		ai_chance = { factor = 2 }
+		add_political_power = 25 set_country_flag = { flag = ROSW_protektorat_cd days = 90 }
+	}
+}

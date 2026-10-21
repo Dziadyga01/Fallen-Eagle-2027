@@ -1,0 +1,24 @@
+state = {
+	id = 1227
+	name = "STATE_1227"
+	manpower = 24543
+	state_category = rural
+	resources = {
+		aluminium = 2
+		rubber = 2
+	}
+	history = {
+		owner = GNZ
+		add_core_of = GNZ
+		victory_points = { 7426 1 }
+		victory_points = { 7429 1 }
+		victory_points = { 7425 1 }
+		victory_points = { 490 1 }
+		victory_points = { 7408 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 490 7388 1628 7390 7379 7408 7424 7425 7387 7429 7427 7426 }
+	local_supplies = 0.0
+}

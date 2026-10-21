@@ -1,0 +1,22 @@
+state = {
+	id = 867
+	name = "STATE_867"
+	manpower = 39604
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = CHJ
+		add_core_of = CHJ
+		victory_points = { 8990 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 8990 }
+	local_supplies = 0.0
+}

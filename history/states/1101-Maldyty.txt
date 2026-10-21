@@ -1,0 +1,21 @@
+state = {
+	id = 1101
+	name = "STATE_1101"
+	manpower = 1974
+	state_category = rural
+	resources = {
+		steel = 2
+	}
+	history = {
+		owner = ZKR
+		add_core_of = ZKR
+		add_claim_by = LBW
+		victory_points = { 4134 1 }
+		victory_points = { 3998 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 3117 3998 3372 3407 4134 }
+	local_supplies = 0.0
+}

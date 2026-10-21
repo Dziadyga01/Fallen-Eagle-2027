@@ -1,0 +1,19 @@
+state = {
+	id = 31
+	name = "STATE_31"
+	manpower = 30228
+	state_category = town
+	history = {
+		owner = KUJ
+		add_core_of = KUJ
+		victory_points = { 8232 1 }
+		victory_points = { 8108 2 }
+		victory_points = { 8229 1 }
+		victory_points = { 8233 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 8107 8109 8233 8231 8229 8230 8108 8232 }
+	local_supplies = 0.0
+}

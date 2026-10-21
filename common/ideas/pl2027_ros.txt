@@ -1,0 +1,381 @@
+ideas = {
+	country = {
+		ROS_wyczerpana_armia = {
+			picture = DU_ROS_wyczerpana_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.05
+			}
+		}
+		ROS_koszty_wojny = {
+			picture = DU_ROS_koszty_wojny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		ROS_niezadowolenie = {
+			picture = DU_ROS_niezadowolenie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		ROS_kryzys_elit = {
+			picture = DU_ROS_kryzys_elit
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.15
+			}
+		}
+		ROS_front_ukrainski = {
+			picture = DU_ROS_front_ukrainski
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.15
+				war_support_factor = 0.05
+			}
+		}
+		ROS_zaplecze_imperium = {
+			picture = DU_ROS_zaplecze_imperium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.25
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.1
+			}
+		}
+		ROS_iskander = {
+			picture = DU_ROS_iskander
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+			}
+		}
+		ROS_planowanie = {
+			picture = DU_ROS_planowanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.25
+				max_planning = 0.1
+			}
+		}
+		ROS_przewaga_powietrzna = {
+			picture = DU_ROS_przewaga_powietrzna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.03
+				air_attack_factor = 0.1
+			}
+		}
+		ROS_szturm = {
+			picture = DU_ROS_szturm
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		ROS_przesmyk = {
+			picture = DU_ROS_przesmyk
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.1
+			}
+		}
+		ROS_zaklocanie = {
+			picture = DU_ROS_zaklocanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_attack_factor = 0.03
+			}
+		}
+		ROS_kociol = {
+			picture = DU_ROS_kociol
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				breakthrough_factor = 0.1
+			}
+		}
+		ROS_obrona_pozycji = {
+			picture = DU_ROS_obrona_pozycji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.15
+			}
+		}
+		ROS_ani_kroku = {
+			picture = DU_ROS_ani_kroku
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		ROS_twierdza_krolewiec = {
+			picture = DU_ROS_twierdza_krolewiec
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		ROS_zwyciestwo_za_wszelka_cene = {
+			picture = DU_ROS_zwyciestwo_za_wszelka_cene
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.12
+				army_org_factor = -0.05
+			}
+		}
+		ROS_proznia_wladzy = {
+			picture = DU_ROS_proznia_wladzy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = -0.1
+			}
+		}
+		ROS_chaos_sztab = {
+			picture = DU_ROS_chaos_sztab
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.08
+				army_org_factor = -0.05
+				planning_speed = -0.2
+			}
+		}
+		ROS_niepewna_przyszlosc = {
+			picture = DU_ROS_niepewna_przyszlosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		ROS_putin_umocniony = {
+			picture = DU_ROS_putin_umocniony
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		ROS_administracja_kryzysowa = {
+			picture = DU_ROS_administracja_kryzysowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+		ROS_stan_wyjatkowy = {
+			picture = DU_ROS_stan_wyjatkowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		ROS_mie_putinizm = {
+			picture = DU_ROS_mie_putinizm
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+			}
+		}
+		ROS_szo_junta = {
+			picture = DU_ROS_szo_junta
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				war_support_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		ROS_cho_oligarchia = {
+			picture = DU_ROS_cho_oligarchia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				political_power_gain = 0.1
+			}
+		}
+		ROS_szl_parlament = {
+			picture = DU_ROS_szl_parlament
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = -0.1
+			}
+		}
+		ROS_naw_antykorupcja = {
+			picture = DU_ROS_naw_antykorupcja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+				war_support_factor = -0.1
+			}
+		}
+		ROS_triumf_mazurski = {
+			picture = DU_ROS_triumf_mazurski
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		ROS_administracja_mazur = {
+			picture = DU_ROS_administracja_mazur
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				army_defence_factor = 0.05
+			}
+		}
+		ROS_kryzys_rzadowy = {
+			picture = DU_ROS_kryzys_rzadowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.2
+			}
+		}
+		ROS_pokoj_negocjowany = {
+			picture = DU_ROS_pokoj_negocjowany
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		ROS_wieczna_rosja = {
+			picture = DU_ROS_wieczna_rosja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		ROS_jesien_patriarchy = {
+			picture = DU_ROS_jesien_patriarchy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.15
+			}
+		}
+		ROS_drugie_imperium = {
+			picture = DU_ROS_drugie_imperium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ROS_panstwo_koszary = {
+			picture = DU_ROS_panstwo_koszary
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.1
+				conscription_factor = 0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+		ROS_rosja_sa = {
+			picture = DU_ROS_rosja_sa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				stability_factor = -0.03
+			}
+		}
+		ROS_federacja = {
+			picture = DU_ROS_federacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		ROS_nowa_demokracja = {
+			picture = DU_ROS_nowa_demokracja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		PL2027_mobilizacja_mazurska = {
+			picture = DU_PL2027_mobilizacja_mazurska
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.15
+				war_support_factor = 0.15
+				army_defence_factor = 0.1
+			}
+		}
+		PL2027_chaos_w_moskwie = {
+			picture = DU_PL2027_chaos_w_moskwie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		PL2027_republika_baltycka = {
+			picture = DU_PL2027_republika_baltycka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+	}
+}

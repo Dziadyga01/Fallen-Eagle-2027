@@ -1,0 +1,20 @@
+state = {
+	id = 510
+	name = "STATE_510"
+	manpower = 4145
+	state_category = rural
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = NNA
+		add_core_of = NNA
+		victory_points = { 1926 1 }
+		victory_points = { 591 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 591 3723 3498 1926 }
+	local_supplies = 0.0
+}

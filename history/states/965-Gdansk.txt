@@ -1,0 +1,18 @@
+state = {
+	id = 965
+	name = "STATE_965"
+	manpower = 7500
+	state_category = rural
+	history = {
+		owner = WMG
+		add_core_of = WMG
+		victory_points = { 6135 12 }
+		buildings = {
+			infrastructure = 3
+			6123 = { naval_base = 5 }
+			dockyard = 2
+		}
+	}
+	provinces = { 6123 6134 6135 }
+	local_supplies = 0.0
+}

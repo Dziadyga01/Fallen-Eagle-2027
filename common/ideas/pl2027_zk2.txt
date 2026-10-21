@@ -1,0 +1,13 @@
+ideas = {
+	country = {
+		ZKR_garnizony_komturii = {
+			picture = DU_ZKR_garnizony_komturii
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.05
+				stability_factor = 0.03
+			}
+		}
+	}
+}

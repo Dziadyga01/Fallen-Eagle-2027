@@ -1,0 +1,22 @@
+state = {
+	id = 522
+	name = "STATE_522"
+	manpower = 30385
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = MLA
+		add_core_of = MLA
+		victory_points = { 9873 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 1064 9873 }
+	local_supplies = 0.0
+}

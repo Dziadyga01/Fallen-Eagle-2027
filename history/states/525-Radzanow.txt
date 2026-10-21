@@ -1,0 +1,20 @@
+state = {
+	id = 525
+	name = "STATE_525"
+	manpower = 3693
+	state_category = rural
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = MLA
+		add_core_of = MLA
+		victory_points = { 10261 1 }
+		victory_points = { 10260 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 10260 10265 10266 10262 10261 }
+	local_supplies = 0.0
+}

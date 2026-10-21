@@ -1,0 +1,19 @@
+state = {
+	id = 784
+	name = "STATE_784"
+	manpower = 11844
+	state_category = rural
+	history = {
+		owner = BST
+		add_core_of = BST
+		victory_points = { 5200 1 }
+		victory_points = { 5202 1 }
+		victory_points = { 5199 1 }
+		victory_points = { 5201 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 5157 5201 5202 5329 5199 5200 5280 5286 5325 5328 }
+	local_supplies = 0.0
+}

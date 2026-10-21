@@ -1,0 +1,19 @@
+state = {
+	id = 320
+	name = "STATE_320"
+	manpower = 30203
+	state_category = town
+	history = {
+		owner = LOW
+		add_core_of = LOW
+		victory_points = { 4475 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 4475 }
+	local_supplies = 0.0
+}

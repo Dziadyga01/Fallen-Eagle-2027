@@ -1,0 +1,168 @@
+ideas = {
+	country = {
+		TRK_autobusy = {
+			picture = DU_TRK_autobusy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_speed_factor = 0.05
+				stability_factor = -0.03
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		TRK_ogrzewanie = {
+			picture = DU_TRK_ogrzewanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				industrial_capacity_factory = -0.1
+			}
+		}
+		TRK_mobilizacja = {
+			picture = DU_TRK_mobilizacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.05
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+			}
+		}
+		TRK_przedsiebiorcy = {
+			picture = DU_TRK_przedsiebiorcy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				political_power_gain = -0.1
+			}
+		}
+		TRK_paliwo = {
+			picture = DU_TRK_paliwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = 0.02
+			}
+		}
+		TRK_godzina = {
+			picture = DU_TRK_godzina
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.05
+				war_support_factor = -0.02
+			}
+		}
+		TRK_dostawy_gmin = {
+			picture = DU_TRK_dostawy_gmin
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				consumer_goods_factor = 0.03
+			}
+		}
+		TRK_praca = {
+			picture = DU_TRK_praca
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.01
+			}
+		}
+		TRK_lekarze_umk = {
+			picture = DU_TRK_lekarze_umk
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.05
+			}
+		}
+		TRK_inwestycje_stop = {
+			picture = DU_TRK_inwestycje_stop
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				stability_factor = 0.02
+			}
+		}
+		TRK_budowa_mieszkan = {
+			picture = DU_TRK_budowa_mieszkan
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = -0.1
+				stability_factor = 0.02
+			}
+		}
+		TRK_bilet = {
+			picture = DU_TRK_bilet
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = -0.05
+			}
+		}
+		TRK_oplaty_przeprawa = {
+			picture = DU_TRK_oplaty_przeprawa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.03
+			}
+		}
+		TRK_wspolna_przeprawa = {
+			picture = DU_TRK_wspolna_przeprawa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+				consumer_goods_factor = -0.02
+			}
+		}
+		TRK_blokada = {
+			picture = DU_TRK_blokada
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				war_support_factor = 0.03
+			}
+		}
+		TRK_umowa_pkp = {
+			picture = DU_TRK_umowa_pkp
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				industrial_capacity_factory = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		TRK_dostawy_tpz = {
+			picture = DU_TRK_dostawy_tpz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+			}
+		}
+		TRK_obrona_alarm = {
+			picture = DU_TRK_obrona_alarm
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_core_defence_factor = 0.05
+			}
+		}
+	}
+}

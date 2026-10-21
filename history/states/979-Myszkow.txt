@@ -1,0 +1,18 @@
+state = {
+	id = 979
+	name = "STATE_979"
+	manpower = 42868
+	state_category = town
+	history = {
+		owner = LWC
+		add_core_of = LWC
+		victory_points = { 4720 1 }
+		victory_points = { 4722 2 }
+		victory_points = { 4719 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 4720 4719 4722 4723 }
+	local_supplies = 0.0
+}

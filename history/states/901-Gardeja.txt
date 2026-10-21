@@ -1,0 +1,19 @@
+state = {
+	id = 901
+	name = "STATE_901"
+	manpower = 5263
+	state_category = rural
+	history = {
+		owner = GRU
+		add_core_of = GRU
+		add_claim_by = ZKR
+		victory_points = { 8533 1 }
+		victory_points = { 915 1 }
+		victory_points = { 8536 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 915 8536 8535 8534 8533 8528 }
+	local_supplies = 0.0
+}

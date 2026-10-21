@@ -1,0 +1,67 @@
+UBT_unia = {
+	UBT_d_zaloz = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		available = { NOT = { has_global_flag = UBT_istnieje } has_country_flag = PL2027_polska is_subject = no any_owned_state = { is_coastal = yes } has_global_flag = TFE_faza_2 }
+		cost = 50
+		fire_only_once = yes
+		complete_effect = { set_global_flag = UBT_istnieje set_country_flag = UBT_zalozyciel custom_effect_tooltip = UBT_tt_sp30 hidden_effect = { add_to_variable = { global.UBT_spojnosc = 30 } clamp_variable = { var = global.UBT_spojnosc min = 0 max = 100 } } if = { limit = { is_in_faction = no } create_faction = UBT_frakcja } UBT_dolacz = yes UBT_przelicz = yes every_country = { limit = { has_country_flag = PL2027_polska } news_event = { id = ubt.1 days = 1 } } }
+		ai_will_do = { factor = 1 modifier = { factor = 0 original_tag = ZKR } }
+	}
+	UBT_d_zapros = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		targets = { GDY WMG SPT KPM CHJ WMZ NNA KOC ZKR PMN PSN SLS POL KRJ SWC TUC LBW }
+		target_non_existing = no
+		target_trigger = { FROM = { has_country_flag = PL2027_polska is_subject = no any_owned_state = { is_coastal = yes } NOT = { has_country_flag = UBT_czlonek } NOT = { has_war_with = ROOT } } }
+		available = { has_country_flag = UBT_zalozyciel }
+		cost = 20
+		days_re_enable = 60
+		complete_effect = { FROM = { country_event = { id = ubt.2 days = 1 } } }
+		ai_will_do = { factor = 1 modifier = { factor = 0 FROM = { has_opinion = { target = ROOT value < -20 } } } }
+	}
+	UBT_d_taryfa = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		available = { has_country_flag = UBT_czlonek NOT = { has_idea = UBT_taryfa } }
+		cost = 25
+		days_re_enable = 120
+		complete_effect = { custom_effect_tooltip = UBT_tt_sp6 hidden_effect = { add_to_variable = { global.UBT_spojnosc = 6 } clamp_variable = { var = global.UBT_spojnosc min = 0 max = 100 } } add_timed_idea = { idea = UBT_taryfa days = 120 } UBT_przelicz = yes }
+		ai_will_do = { factor = 2 }
+	}
+	UBT_d_straz = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		available = { has_country_flag = UBT_czlonek NOT = { has_idea = UBT_straz_idea } }
+		cost = 40
+		days_re_enable = 180
+		complete_effect = { custom_effect_tooltip = UBT_tt_sp5 hidden_effect = { add_to_variable = { global.UBT_spojnosc = 5 } clamp_variable = { var = global.UBT_spojnosc min = 0 max = 100 } } add_timed_idea = { idea = UBT_straz_idea days = 180 } UBT_przelicz = yes }
+		ai_will_do = { factor = 1 }
+	}
+	UBT_d_waluta = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		available = { has_country_flag = UBT_zalozyciel check_variable = { global.UBT_spojnosc > 59 } check_variable = { global.UBT_liczba > 1 } }
+		cost = 75
+		fire_only_once = yes
+		complete_effect = { custom_effect_tooltip = UBT_tt_sp10 hidden_effect = { add_to_variable = { global.UBT_spojnosc = 10 } clamp_variable = { var = global.UBT_spojnosc min = 0 max = 100 } } every_country = { limit = { has_country_flag = UBT_czlonek } add_ideas = UBT_zloty } UBT_przelicz = yes }
+		ai_will_do = { factor = 3 }
+	}
+	UBT_d_federacja = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		available = { has_country_flag = UBT_zalozyciel check_variable = { global.UBT_spojnosc > 79 } check_variable = { global.UBT_liczba > 2 } }
+		cost = 100
+		fire_only_once = yes
+		complete_effect = { every_country = { limit = { has_country_flag = UBT_czlonek NOT = { tag = ROOT } } country_event = { id = ubt.5 days = 2 } } set_cosmetic_tag = UBT_FEDERACJA add_ideas = UBT_federacja_idea every_country = { limit = { has_country_flag = PL2027_polska } news_event = { id = ubt.6 days = 5 } } }
+		ai_will_do = { factor = 5 }
+	}
+	UBT_d_wystap = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		available = { has_country_flag = UBT_czlonek NOT = { has_country_flag = UBT_zalozyciel } }
+		cost = 0
+		complete_effect = { UBT_odejdz = yes custom_effect_tooltip = UBT_tt_sm15 hidden_effect = { add_to_variable = { global.UBT_spojnosc = -15 } clamp_variable = { var = global.UBT_spojnosc min = 0 max = 100 } } }
+		ai_will_do = { factor = 0 }
+	}
+}

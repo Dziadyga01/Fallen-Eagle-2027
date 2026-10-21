@@ -1,0 +1,21 @@
+state = {
+	id = 150
+	name = "STATE_150"
+	manpower = 4145
+	state_category = rural
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = PLK
+		add_core_of = PLK
+		victory_points = { 8047 1 }
+		victory_points = { 8048 1 }
+		victory_points = { 8044 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 382 8048 8047 7928 8044 8042 8043 }
+	local_supplies = 0.0
+}

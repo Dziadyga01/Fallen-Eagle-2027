@@ -1,0 +1,7 @@
+TPZ_satysfakcja_mod = {
+	icon = GFX_idea_TPZ_satysfakcja_mod
+	enable = { always = yes }
+	stability_factor = TPZ_sat_stab
+	political_power_gain = TPZ_sat_pp
+	consumer_goods_factor = TPZ_sat_cg
+}

@@ -1,0 +1,6 @@
+ROZ_kandydat_autonomii = {
+	has_global_flag = TFE_jedna_polska is_subject_of = POL has_country_flag = ROZ_wojewodztwo NOT = { has_country_flag = ROZ_zadanie } NOT = { has_country_flag = ROZ_warszawa } check_variable = { ROZ_sklonnosc > 34 }
+}
+ROZ_kandydat_secesji = {
+	has_global_flag = TFE_jedna_polska is_subject_of = POL has_country_flag = ROZ_autonomia NOT = { has_country_flag = ROZ_secesja_pytanie } NOT = { has_country_flag = ROZ_lojalny }
+}

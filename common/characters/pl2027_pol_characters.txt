@@ -1,0 +1,15 @@
+characters = {
+	POL_rada_ministrow = {
+		name = POL_rada_ministrow
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POL/POL_rada_ministrow.dds"
+				small = "gfx/leaders/POL/POL_rada_ministrow_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+}

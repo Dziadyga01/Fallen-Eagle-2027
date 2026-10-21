@@ -1,0 +1,447 @@
+leader_traits = {
+	PL2027_dor_TRN_grabowska = {
+		random = no
+		political_power_gain = 0.08
+		research_speed_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_TRN_pierzchala = {
+		random = no
+		consumer_goods_factor = -0.05
+		stability_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_TRN_wislanska = {
+		random = no
+		production_speed_infrastructure_factor = 0.15
+		production_speed_buildings_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_TRN_lisowski = {
+		random = no
+		army_defence_factor = 0.05
+		max_dig_in = 2
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_TRN_podgorski = {
+		random = no
+		army_artillery_attack_factor = 0.1
+		army_artillery_defence_factor = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_TRN_barska = {
+		random = no
+		army_core_defence_factor = 0.1
+		conscription_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BYD_brdowska = {
+		random = no
+		consumer_goods_factor = -0.05
+		production_speed_industrial_complex_factor = 0.08
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BYD_sielski = {
+		random = no
+		production_speed_infrastructure_factor = 0.1
+		industrial_capacity_factory = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BYD_fordonska = {
+		random = no
+		stability_factor = 0.05
+		political_power_gain = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BYD_nowosielski = {
+		random = no
+		planning_speed = 0.1
+		max_planning = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BYD_kolasa = {
+		random = no
+		supply_consumption_factor = -0.1
+		army_org_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BYD_bielawski = {
+		random = no
+		dig_in_speed_factor = 0.25
+		production_speed_bunker_factor = 0.2
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_SMR_konopka = {
+		random = no
+		political_power_gain = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_SMR_hoza = {
+		random = no
+		consumer_goods_factor = -0.05
+		production_speed_buildings_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_SMR_szuch = {
+		random = no
+		war_support_factor = 0.05
+		stability_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_SMR_lesinski = {
+		random = no
+		stability_factor = 0.04
+		research_speed_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_SMR_ostrowski = {
+		random = no
+		army_defence_factor = 0.08
+		army_org_factor = 0.04
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_SMR_rybak = {
+		random = no
+		army_core_defence_factor = 0.1
+		max_dig_in = 2
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_KPR_krupinski = {
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.02
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_KPR_zbikowska = {
+		random = no
+		war_support_factor = 0.05
+		justify_war_goal_time = -0.15
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_KPR_rogowski = {
+		random = no
+		trade_opinion_factor = 0.2
+		political_power_gain = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_KPR_sowinski = {
+		random = no
+		planning_speed = 0.15
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_KPR_zolnowski = {
+		random = no
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_KPR_grot = {
+		random = no
+		experience_gain_army_factor = 0.1
+		army_org_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_MPR_ksiegowy = {
+		random = no
+		political_power_gain = 0.08
+		consumer_goods_factor = -0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_MPR_doktor = {
+		random = no
+		stability_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_MPR_kantor = {
+		random = no
+		production_speed_buildings_factor = 0.08
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_MPR_profesor = {
+		random = no
+		planning_speed = 0.1
+		experience_gain_army_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_MPR_kierowca = {
+		random = no
+		army_speed_factor = 0.05
+		army_attack_factor = 0.04
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_MPR_kwatermistrz = {
+		random = no
+		supply_consumption_factor = -0.08
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ZKR_baumann = {
+		random = no
+		consumer_goods_factor = -0.05
+		production_speed_buildings_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ZKR_kessler = {
+		random = no
+		stability_factor = 0.05
+		conscription_factor = 0.04
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ZKR_vogel = {
+		random = no
+		political_power_gain = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ZKR_reinholt = {
+		random = no
+		army_morale_factor = 0.05
+		war_support_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ZKR_falk = {
+		random = no
+		army_attack_factor = 0.07
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ZKR_lindner = {
+		random = no
+		army_defence_factor = 0.07
+		max_dig_in = 2
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ROS_sokolow = {
+		random = no
+		political_power_gain = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ROS_bielajew = {
+		random = no
+		consumer_goods_factor = -0.05
+		stability_factor = -0.01
+		production_speed_arms_factory_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ROS_morozowa = {
+		random = no
+		war_support_factor = 0.05
+		stability_factor = 0.02
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ROS_rybin = {
+		random = no
+		planning_speed = 0.1
+		experience_gain_army_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ROS_tarasow = {
+		random = no
+		army_attack_factor = 0.05
+		army_org_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_ROS_siemionow = {
+		random = no
+		navy_org_factor = 0.05
+		naval_speed_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMZ_lidzbarska = {
+		random = no
+		stability_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMZ_jezioranski = {
+		random = no
+		production_speed_buildings_factor = 0.05
+		consumer_goods_factor = -0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMZ_reszelski = {
+		random = no
+		political_power_gain = 0.08
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMZ_sowka = {
+		random = no
+		army_defence_factor = 0.04
+		experience_gain_army_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMZ_borowiecki = {
+		random = no
+		army_core_defence_factor = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMZ_mikolajski = {
+		random = no
+		army_speed_factor = 0.05
+		army_org_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_NNA_ciechanski = {
+		random = no
+		trade_opinion_factor = 0.2
+		political_power_gain = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_NNA_opinska = {
+		random = no
+		consumer_goods_factor = -0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_NNA_nasielski = {
+		random = no
+		stability_factor = 0.03
+		political_power_gain = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_NNA_wolski = {
+		random = no
+		production_speed_industrial_complex_factor = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_NNA_grabowiecki = {
+		random = no
+		army_org_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_NNA_krajewska = {
+		random = no
+		army_speed_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_PRW_chelminski = {
+		random = no
+		political_power_gain = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_PRW_rudnicka = {
+		random = no
+		consumer_goods_factor = -0.05
+		stability_factor = 0.02
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_PRW_wierzbicki = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.02
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_PRW_wojtowicz = {
+		random = no
+		experience_gain_army_factor = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_PRW_kozak = {
+		random = no
+		army_attack_factor = 0.05
+		army_defence_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_PRW_bugaj = {
+		random = no
+		army_core_defence_factor = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BST_sokolska = {
+		random = no
+		war_support_factor = 0.05
+		stability_factor = 0.02
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BST_lapinski = {
+		random = no
+		production_speed_buildings_factor = 0.05
+		industrial_capacity_factory = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BST_kiryluk = {
+		random = no
+		stability_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BST_biernacki = {
+		random = no
+		planning_speed = 0.1
+		army_defence_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BST_puszczanski = {
+		random = no
+		army_defence_factor = 0.07
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_BST_bielska = {
+		random = no
+		experience_gain_army_factor = 0.1
+		army_org_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_GDY_orlowska = {
+		random = no
+		production_speed_dockyard_factor = 0.1
+		trade_opinion_factor = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_GDY_ruminski = {
+		random = no
+		stability_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_GDY_puzdrowska = {
+		random = no
+		trade_opinion_factor = 0.2
+		political_power_gain = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_GDY_wronski = {
+		random = no
+		navy_org_factor = 0.05
+		experience_gain_navy_factor = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_GDY_kaszubowski = {
+		random = no
+		army_defence_factor = 0.07
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_GDY_gajewski = {
+		random = no
+		navy_org_factor = 0.05
+		naval_speed_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMG_szadkowska = {
+		random = no
+		consumer_goods_factor = -0.05
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMG_palaszewski = {
+		random = no
+		stability_factor = 0.05
+		war_support_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMG_brzeznicka = {
+		random = no
+		production_speed_dockyard_factor = 0.1
+		trade_opinion_factor = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMG_zielinski = {
+		random = no
+		political_power_gain = 0.05
+		stability_factor = 0.02
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMG_sobieszewski = {
+		random = no
+		army_core_defence_factor = 0.1
+		ai_will_do = { factor = 1 }
+	}
+	PL2027_dor_WMG_bielecki = {
+		random = no
+		navy_org_factor = 0.05
+		naval_speed_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+}

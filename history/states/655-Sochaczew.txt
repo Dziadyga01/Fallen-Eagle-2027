@@ -1,0 +1,22 @@
+state = {
+	id = 655
+	name = "STATE_655"
+	manpower = 38267
+	state_category = town
+	resources = {
+		aluminium = 3
+	}
+	history = {
+		owner = WOL
+		add_core_of = WOL
+		victory_points = { 4440 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 4440 }
+	local_supplies = 0.0
+}

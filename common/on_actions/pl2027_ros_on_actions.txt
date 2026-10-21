@@ -1,0 +1,32 @@
+on_actions = {
+	on_weekly_ROS = {
+		effect = {
+			if = {
+				limit = { has_country_flag = ROS_operacja_start NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } }
+				add_to_variable = { ROS_dni_wojny = 7 }
+				if = { limit = { NOT = { has_country_flag = ROS_zwyciestwo } ROS_warunek_zwyciestwa = yes } country_event = { id = ros.300 } }
+				else_if = { limit = { NOT = { has_country_flag = ROS_zwyciestwo } ROS_warunek_kleski = yes } country_event = { id = ros.310 } }
+				if = { limit = { has_country_flag = ROS_zwyciestwo } add_to_variable = { ROS_dni_po_zwyciestwie = 7 } if = { limit = { check_variable = { ROS_dni_po_zwyciestwie > 119 } NOT = { has_country_flag = ROS_302_wyslane } } country_event = { id = ros.302 } } }
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			if = { limit = { country_exists = ROS NOT = { has_global_flag = ROS_paliwo_startowe } } set_global_flag = ROS_paliwo_startowe ROS = { add_fuel = 25000 } }
+		}
+	}
+	on_monthly_ROS = {
+		effect = {
+			if = {
+				limit = { has_country_flag = ROS_operacja_start NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } ROS_przy_wojnie = yes }
+				add_equipment_to_stockpile = { type = ranged_equipment amount = 600 producer = ROS }
+				add_equipment_to_stockpile = { type = support_equipment amount = 50 producer = ROS }
+				add_equipment_to_stockpile = { type = apc_equipment amount = 40 producer = ROS }
+				add_equipment_to_stockpile = { type = motorized_equipment amount = 40 producer = ROS }
+				add_equipment_to_stockpile = { type = light_artillery_equipment amount = 30 producer = ROS }
+				add_fuel = 3000
+				add_manpower = 2500
+			}
+		}
+	}
+}

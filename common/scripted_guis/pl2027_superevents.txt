@@ -1,0 +1,34 @@
+scripted_gui = {
+	pl2027_se_window = {
+		window_name = "pl2027_se_window"
+		context_type = player_context
+		visible = { has_global_flag = PL2027_SE_widoczny }
+		triggers = {
+			pl2027_se_obraz_ivrp_sejm_visible = { has_global_flag = PL2027_SE_ivrp_sejm }
+			pl2027_se_obraz_ivrp_prezydent_visible = { has_global_flag = PL2027_SE_ivrp_prezydent }
+			pl2027_se_obraz_ivrp_mafia_visible = { has_global_flag = PL2027_SE_ivrp_mafia }
+			pl2027_se_obraz_inwazja_rosji_visible = { has_global_flag = PL2027_SE_inwazja_rosji }
+			pl2027_se_obraz_krucjata_visible = { has_global_flag = PL2027_SE_krucjata }
+			pl2027_se_obraz_wojna_metropolitalna_visible = { has_global_flag = PL2027_SE_wojna_metropolitalna }
+			pl2027_se_obraz_bialorus_visible = { has_global_flag = PL2027_SE_bialorus }
+			pl2027_se_obraz_bitwa_o_warszawe_visible = { has_global_flag = PL2027_SE_bitwa_o_warszawe }
+			pl2027_se_obraz_odrodzona_visible = { has_global_flag = PL2027_SE_odrodzona }
+			pl2027_se_obraz_zima_visible = { has_global_flag = PL2027_SE_zima }
+		}
+		effects = {
+			pl2027_se_zamknij_click = {
+				clr_global_flag = PL2027_SE_widoczny
+				clr_global_flag = PL2027_SE_ivrp_sejm
+				clr_global_flag = PL2027_SE_ivrp_prezydent
+				clr_global_flag = PL2027_SE_ivrp_mafia
+				clr_global_flag = PL2027_SE_inwazja_rosji
+				clr_global_flag = PL2027_SE_krucjata
+				clr_global_flag = PL2027_SE_wojna_metropolitalna
+				clr_global_flag = PL2027_SE_bialorus
+				clr_global_flag = PL2027_SE_bitwa_o_warszawe
+				clr_global_flag = PL2027_SE_odrodzona
+				clr_global_flag = PL2027_SE_zima
+			}
+		}
+	}
+}

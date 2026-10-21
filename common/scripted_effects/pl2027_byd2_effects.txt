@@ -1,0 +1,66 @@
+BYD2_wskaz_faworyta = {
+	clr_country_flag = BYD2_ai_bruski clr_country_flag = BYD2_ai_przemysl clr_country_flag = BYD2_ai_rady clr_country_flag = BYD2_ai_junta clr_country_flag = BYD2_ai_brdowski clr_country_flag = BYD2_ai_wybor if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } has_country_flag = BYD2_kand_bruski OR = { NOT = { has_country_flag = BYD2_kand_przemysl } check_variable = { BYD2_pop_bruski > BYD2_pop_przemysl } } OR = { NOT = { has_country_flag = BYD2_kand_rady } check_variable = { BYD2_pop_bruski > BYD2_pop_rady } } OR = { NOT = { has_country_flag = BYD2_kand_junta } check_variable = { BYD2_pop_bruski > BYD2_pop_junta } } OR = { NOT = { has_country_flag = BYD2_kand_brdowski } check_variable = { BYD2_pop_bruski > BYD2_pop_brdowski } } } set_country_flag = BYD2_ai_bruski set_country_flag = BYD2_ai_wybor } if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } has_country_flag = BYD2_kand_przemysl OR = { NOT = { has_country_flag = BYD2_kand_bruski } check_variable = { BYD2_pop_przemysl > BYD2_pop_bruski } } OR = { NOT = { has_country_flag = BYD2_kand_rady } check_variable = { BYD2_pop_przemysl > BYD2_pop_rady } } OR = { NOT = { has_country_flag = BYD2_kand_junta } check_variable = { BYD2_pop_przemysl > BYD2_pop_junta } } OR = { NOT = { has_country_flag = BYD2_kand_brdowski } check_variable = { BYD2_pop_przemysl > BYD2_pop_brdowski } } } set_country_flag = BYD2_ai_przemysl set_country_flag = BYD2_ai_wybor } if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } has_country_flag = BYD2_kand_rady OR = { NOT = { has_country_flag = BYD2_kand_bruski } check_variable = { BYD2_pop_rady > BYD2_pop_bruski } } OR = { NOT = { has_country_flag = BYD2_kand_przemysl } check_variable = { BYD2_pop_rady > BYD2_pop_przemysl } } OR = { NOT = { has_country_flag = BYD2_kand_junta } check_variable = { BYD2_pop_rady > BYD2_pop_junta } } OR = { NOT = { has_country_flag = BYD2_kand_brdowski } check_variable = { BYD2_pop_rady > BYD2_pop_brdowski } } } set_country_flag = BYD2_ai_rady set_country_flag = BYD2_ai_wybor } if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } has_country_flag = BYD2_kand_junta OR = { NOT = { has_country_flag = BYD2_kand_bruski } check_variable = { BYD2_pop_junta > BYD2_pop_bruski } } OR = { NOT = { has_country_flag = BYD2_kand_przemysl } check_variable = { BYD2_pop_junta > BYD2_pop_przemysl } } OR = { NOT = { has_country_flag = BYD2_kand_rady } check_variable = { BYD2_pop_junta > BYD2_pop_rady } } OR = { NOT = { has_country_flag = BYD2_kand_brdowski } check_variable = { BYD2_pop_junta > BYD2_pop_brdowski } } } set_country_flag = BYD2_ai_junta set_country_flag = BYD2_ai_wybor } if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } has_country_flag = BYD2_kand_brdowski OR = { NOT = { has_country_flag = BYD2_kand_bruski } check_variable = { BYD2_pop_brdowski > BYD2_pop_bruski } } OR = { NOT = { has_country_flag = BYD2_kand_przemysl } check_variable = { BYD2_pop_brdowski > BYD2_pop_przemysl } } OR = { NOT = { has_country_flag = BYD2_kand_rady } check_variable = { BYD2_pop_brdowski > BYD2_pop_rady } } OR = { NOT = { has_country_flag = BYD2_kand_junta } check_variable = { BYD2_pop_brdowski > BYD2_pop_junta } } } set_country_flag = BYD2_ai_brdowski set_country_flag = BYD2_ai_wybor } if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } } set_country_flag = BYD2_ai_bruski set_country_flag = BYD2_kand_bruski }
+}
+BYD2_auto_rejestracja = {
+	set_country_flag = BYD2_tmp_bruski set_country_flag = BYD2_tmp_przemysl set_country_flag = BYD2_tmp_rady set_country_flag = BYD2_tmp_junta set_country_flag = BYD2_tmp_brdowski clr_country_flag = BYD2_ai_wybor if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } has_country_flag = BYD2_tmp_bruski OR = { NOT = { has_country_flag = BYD2_tmp_przemysl } check_variable = { BYD2_pop_bruski > BYD2_pop_przemysl } } OR = { NOT = { has_country_flag = BYD2_tmp_rady } check_variable = { BYD2_pop_bruski > BYD2_pop_rady } } OR = { NOT = { has_country_flag = BYD2_tmp_junta } check_variable = { BYD2_pop_bruski > BYD2_pop_junta } } OR = { NOT = { has_country_flag = BYD2_tmp_brdowski } check_variable = { BYD2_pop_bruski > BYD2_pop_brdowski } } } set_country_flag = BYD2_kand_bruski set_country_flag = BYD2_kand_wybor } if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } has_country_flag = BYD2_tmp_przemysl OR = { NOT = { has_country_flag = BYD2_tmp_bruski } check_variable = { BYD2_pop_przemysl > BYD2_pop_bruski } } OR = { NOT = { has_country_flag = BYD2_tmp_rady } check_variable = { BYD2_pop_przemysl > BYD2_pop_rady } } OR = { NOT = { has_country_flag = BYD2_tmp_junta } check_variable = { BYD2_pop_przemysl > BYD2_pop_junta } } OR = { NOT = { has_country_flag = BYD2_tmp_brdowski } check_variable = { BYD2_pop_przemysl > BYD2_pop_brdowski } } } set_country_flag = BYD2_kand_przemysl set_country_flag = BYD2_kand_wybor } if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } has_country_flag = BYD2_tmp_rady OR = { NOT = { has_country_flag = BYD2_tmp_bruski } check_variable = { BYD2_pop_rady > BYD2_pop_bruski } } OR = { NOT = { has_country_flag = BYD2_tmp_przemysl } check_variable = { BYD2_pop_rady > BYD2_pop_przemysl } } OR = { NOT = { has_country_flag = BYD2_tmp_junta } check_variable = { BYD2_pop_rady > BYD2_pop_junta } } OR = { NOT = { has_country_flag = BYD2_tmp_brdowski } check_variable = { BYD2_pop_rady > BYD2_pop_brdowski } } } set_country_flag = BYD2_kand_rady set_country_flag = BYD2_kand_wybor } if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } has_country_flag = BYD2_tmp_junta OR = { NOT = { has_country_flag = BYD2_tmp_bruski } check_variable = { BYD2_pop_junta > BYD2_pop_bruski } } OR = { NOT = { has_country_flag = BYD2_tmp_przemysl } check_variable = { BYD2_pop_junta > BYD2_pop_przemysl } } OR = { NOT = { has_country_flag = BYD2_tmp_rady } check_variable = { BYD2_pop_junta > BYD2_pop_rady } } OR = { NOT = { has_country_flag = BYD2_tmp_brdowski } check_variable = { BYD2_pop_junta > BYD2_pop_brdowski } } } set_country_flag = BYD2_kand_junta set_country_flag = BYD2_kand_wybor } if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } has_country_flag = BYD2_tmp_brdowski OR = { NOT = { has_country_flag = BYD2_tmp_bruski } check_variable = { BYD2_pop_brdowski > BYD2_pop_bruski } } OR = { NOT = { has_country_flag = BYD2_tmp_przemysl } check_variable = { BYD2_pop_brdowski > BYD2_pop_przemysl } } OR = { NOT = { has_country_flag = BYD2_tmp_rady } check_variable = { BYD2_pop_brdowski > BYD2_pop_rady } } OR = { NOT = { has_country_flag = BYD2_tmp_junta } check_variable = { BYD2_pop_brdowski > BYD2_pop_junta } } } set_country_flag = BYD2_kand_brdowski set_country_flag = BYD2_kand_wybor }  clr_country_flag = BYD2_tmp_bruski clr_country_flag = BYD2_tmp_przemysl clr_country_flag = BYD2_tmp_rady clr_country_flag = BYD2_tmp_junta clr_country_flag = BYD2_tmp_brdowski if = { limit = { NOT = { has_country_flag = BYD2_ai_wybor } } set_country_flag = BYD2_kand_bruski } clr_country_flag = BYD2_ai_wybor
+}
+BYD2_przejecie_bruski = {
+	set_country_flag = BYD_lider_bruski set_country_flag = BYD_wybory_odbyte set_country_flag = BYD2_rzad_zaprzysiezony
+	clr_country_flag = BYD2_kampania remove_ideas = BYD_i_miasto_bez_rzadu remove_ideas = BYD_i_rzad_tymczasowy
+	set_party_name = { ideology = social_liberal long_name = BYD2_partia_bruski name = BYD2_partia_bruski }
+	set_politics = { ruling_party = social_liberal elections_allowed = yes }
+	add_popularity = { ideology = social_liberal popularity = 0.20 }
+	if = { limit = { NOT = { has_character = BYD_rafal_bruski } } recruit_character = BYD_rafal_bruski } promote_character = BYD_rafal_bruski
+	set_cosmetic_tag = BYD2_BRUSKI
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { BYD2_pop_bruski < 20 } } add_timed_idea = { idea = BYD2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = BYD2_bruski_tree keep_completed = no }
+}
+BYD2_przejecie_przemysl = {
+	set_country_flag = BYD_lider_przemysl set_country_flag = BYD_wybory_odbyte set_country_flag = BYD2_rzad_zaprzysiezony
+	clr_country_flag = BYD2_kampania remove_ideas = BYD_i_miasto_bez_rzadu remove_ideas = BYD_i_rzad_tymczasowy
+	set_party_name = { ideology = market_liberal long_name = BYD2_partia_przemysl name = BYD2_partia_przemysl }
+	set_politics = { ruling_party = market_liberal elections_allowed = yes }
+	add_popularity = { ideology = market_liberal popularity = 0.20 }
+	if = { limit = { NOT = { has_character = BYD_rada_przemyslowa } } recruit_character = BYD_rada_przemyslowa } promote_character = BYD_rada_przemyslowa
+	set_cosmetic_tag = BYD2_PRZEMYSL
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { BYD2_pop_przemysl < 20 } } add_timed_idea = { idea = BYD2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = BYD2_przemysl_tree keep_completed = no }
+}
+BYD2_przejecie_rady = {
+	set_country_flag = BYD_lider_rady set_country_flag = BYD_wybory_odbyte set_country_flag = BYD2_rzad_zaprzysiezony
+	clr_country_flag = BYD2_kampania remove_ideas = BYD_i_miasto_bez_rzadu remove_ideas = BYD_i_rzad_tymczasowy
+	set_party_name = { ideology = libertarian_socialist long_name = BYD2_partia_rady name = BYD2_partia_rady }
+	set_politics = { ruling_party = libertarian_socialist elections_allowed = no }
+	add_popularity = { ideology = libertarian_socialist popularity = 0.20 }
+	if = { limit = { NOT = { has_character = BYD_rady_robotnicze } } recruit_character = BYD_rady_robotnicze } promote_character = BYD_rady_robotnicze
+	set_cosmetic_tag = BYD2_RADY
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { BYD2_pop_rady < 20 } } add_timed_idea = { idea = BYD2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = BYD2_rady_tree keep_completed = no }
+}
+BYD2_przejecie_junta = {
+	set_country_flag = BYD_lider_junta set_country_flag = BYD_wybory_odbyte set_country_flag = BYD2_rzad_zaprzysiezony
+	clr_country_flag = BYD2_kampania remove_ideas = BYD_i_miasto_bez_rzadu remove_ideas = BYD_i_rzad_tymczasowy
+	set_party_name = { ideology = nationalist long_name = BYD2_partia_junta name = BYD2_partia_junta }
+	set_politics = { ruling_party = nationalist elections_allowed = no }
+	add_popularity = { ideology = nationalist popularity = 0.20 }
+	if = { limit = { NOT = { has_character = BYD_tomasz_fordonski } } recruit_character = BYD_tomasz_fordonski } promote_character = BYD_tomasz_fordonski
+	set_cosmetic_tag = BYD2_JUNTA
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { BYD2_pop_junta < 20 } } add_timed_idea = { idea = BYD2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = BYD2_junta_tree keep_completed = no }
+}
+BYD2_przejecie_brdowski = {
+	set_country_flag = BYD_lider_brdowski set_country_flag = BYD_wybory_odbyte set_country_flag = BYD2_rzad_zaprzysiezony
+	clr_country_flag = BYD2_kampania remove_ideas = BYD_i_miasto_bez_rzadu remove_ideas = BYD_i_rzad_tymczasowy
+	set_party_name = { ideology = conservative long_name = BYD2_partia_brdowski name = BYD2_partia_brdowski }
+	set_politics = { ruling_party = conservative elections_allowed = yes }
+	add_popularity = { ideology = conservative popularity = 0.20 }
+	if = { limit = { NOT = { has_character = BYD_wiktor_brdowski } } recruit_character = BYD_wiktor_brdowski } promote_character = BYD_wiktor_brdowski
+	set_cosmetic_tag = BYD2_BRDOWSKI
+	add_stability = 0.10 add_political_power = 100
+	if = { limit = { check_variable = { BYD2_pop_brdowski < 20 } } add_timed_idea = { idea = BYD2_kontrowersyjny days = 180 } }
+	load_focus_tree = { tree = BYD2_brdowski_tree keep_completed = no }
+}

@@ -1,0 +1,3 @@
+EUR_przelicz = {
+	set_variable = { EUR_mod_bud = EUR_zaleznosc } divide_variable = { EUR_mod_bud = 400 } set_variable = { EUR_mod_kons = EUR_zaleznosc } divide_variable = { EUR_mod_kons = -1000 } set_variable = { EUR_mod_pp = EUR_zaleznosc } divide_variable = { EUR_mod_pp = -400 } set_variable = { EUR_mod_ws = EUR_zaleznosc } divide_variable = { EUR_mod_ws = -500 }
+}

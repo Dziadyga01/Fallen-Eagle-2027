@@ -1,0 +1,441 @@
+add_namespace = zw2
+
+country_event = {
+	id = zw2.1
+	title = zw2.1.t
+	desc = zw2.1.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_0
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_1 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_stability < 0.7 }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_1  }
+	option = {
+		name = zw2.1.a
+		ai_chance = { factor = 50 }
+		add_stability = 0.03 add_political_power = -25
+	}
+	option = {
+		name = zw2.1.b
+		ai_chance = { factor = 20 }
+		add_political_power = -45 add_stability = 0.05
+	}
+	option = {
+		name = zw2.1.c
+		ai_chance = { factor = 30 }
+		add_stability = -0.04 add_political_power = 20
+	}
+}
+
+country_event = {
+	id = zw2.2
+	title = zw2.2.t
+	desc = zw2.2.d
+	picture = GFX_pl2027_ev081_zima_0
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_2 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } date < 2028.3.15 }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_zw2_2  }
+	option = {
+		name = zw2.2.a
+		ai_chance = { factor = 40 }
+		add_stability = 0.04 add_war_support = -0.03
+	}
+	option = {
+		name = zw2.2.b
+		ai_chance = { factor = 40 }
+		add_political_power = -30 add_stability = 0.02
+	}
+	option = {
+		name = zw2.2.c
+		ai_chance = { factor = 20 }
+		add_stability = -0.06 add_political_power = 15
+	}
+}
+
+country_event = {
+	id = zw2.3
+	title = zw2.3.t
+	desc = zw2.3.d
+	picture = GFX_pl2027_ev081_front_ros_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_3 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_war = yes }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = PL2027_ev_zw2_3  }
+	option = {
+		name = zw2.3.a
+		ai_chance = { factor = 55 }
+		add_manpower = 800 add_stability = -0.02
+	}
+	option = {
+		name = zw2.3.b
+		ai_chance = { factor = 30 }
+		add_political_power = 15 add_stability = 0.01
+	}
+	option = {
+		name = zw2.3.c
+		ai_chance = { factor = 15 }
+		add_war_support = 0.02 add_political_power = -5
+	}
+}
+
+country_event = {
+	id = zw2.4
+	title = zw2.4.t
+	desc = zw2.4.d
+	picture = GFX_pl2027_ev081_granica_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_4 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } any_neighbor_country = { tag = BLR } }
+	mean_time_to_happen = { days = 120 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = PL2027_ev_zw2_4  }
+	option = {
+		name = zw2.4.a
+		ai_chance = { factor = 50 }
+		add_war_support = 0.03 add_stability = 0.02 add_manpower = -300
+	}
+	option = {
+		name = zw2.4.b
+		ai_chance = { factor = 30 }
+		add_political_power = -20 add_stability = 0.03
+	}
+	option = {
+		name = zw2.4.c
+		ai_chance = { factor = 20 }
+		add_political_power = -30 add_war_support = 0.02 add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = zw2.5
+	title = zw2.5.t
+	desc = zw2.5.d
+	picture = GFX_pl2027_ev081_media_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_5 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_zw2_5  }
+	option = {
+		name = zw2.5.a
+		ai_chance = { factor = 35 }
+		add_political_power = 25 add_stability = -0.03
+	}
+	option = {
+		name = zw2.5.b
+		ai_chance = { factor = 45 }
+		add_political_power = -10 add_stability = 0.03
+	}
+	option = {
+		name = zw2.5.c
+		ai_chance = { factor = 20 }
+		add_war_support = 0.02 add_political_power = -5
+	}
+}
+
+country_event = {
+	id = zw2.6
+	title = zw2.6.t
+	desc = zw2.6.d
+	picture = GFX_pl2027_ev081_praca_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_6 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_6  }
+	option = {
+		name = zw2.6.a
+		ai_chance = { factor = 35 }
+		add_political_power = -35 add_stability = 0.04 add_war_support = -0.01
+	}
+	option = {
+		name = zw2.6.b
+		ai_chance = { factor = 25 }
+		add_stability = -0.05 add_political_power = 10
+	}
+	option = {
+		name = zw2.6.c
+		ai_chance = { factor = 40 }
+		add_political_power = -15 add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = zw2.7
+	title = zw2.7.t
+	desc = zw2.7.d
+	picture = GFX_pl2027_ev081_front_ros_2
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_7 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_war = yes }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = PL2027_ev_zw2_7  }
+	option = {
+		name = zw2.7.a
+		ai_chance = { factor = 40 }
+		add_political_power = -15 add_stability = 0.02
+	}
+	option = {
+		name = zw2.7.b
+		ai_chance = { factor = 40 }
+		add_war_support = 0.04 add_stability = -0.01
+	}
+	option = {
+		name = zw2.7.c
+		ai_chance = { factor = 20 }
+		add_political_power = 10 add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = zw2.8
+	title = zw2.8.t
+	desc = zw2.8.d
+	picture = GFX_pl2027_ev081_miasto_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_8 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 200 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_zw2_8  }
+	option = {
+		name = zw2.8.a
+		ai_chance = { factor = 45 }
+		add_manpower = 1500 add_war_support = 0.02
+	}
+	option = {
+		name = zw2.8.b
+		ai_chance = { factor = 45 }
+		add_stability = 0.03 add_political_power = 20
+	}
+	option = {
+		name = zw2.8.c
+		ai_chance = { factor = 10 }
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = zw2.9
+	title = zw2.9.t
+	desc = zw2.9.d
+	picture = GFX_pl2027_ev081_blackout_0
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_9 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_zw2_9  }
+	option = {
+		name = zw2.9.a
+		ai_chance = { factor = 50 }
+		add_stability = 0.03 add_war_support = -0.02
+	}
+	option = {
+		name = zw2.9.b
+		ai_chance = { factor = 30 }
+		add_political_power = -25 add_stability = 0.02
+	}
+	option = {
+		name = zw2.9.c
+		ai_chance = { factor = 20 }
+		add_stability = -0.03 add_political_power = 5
+	}
+}
+
+country_event = {
+	id = zw2.10
+	title = zw2.10.t
+	desc = zw2.10.d
+	picture = GFX_pl2027_ev081_media_0
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_10 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 200 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_10  }
+	option = {
+		name = zw2.10.a
+		ai_chance = { factor = 50 }
+		add_political_power = 20 add_stability = 0.01
+	}
+	option = {
+		name = zw2.10.b
+		ai_chance = { factor = 30 }
+		add_stability = 0.02 add_political_power = -10
+	}
+	option = {
+		name = zw2.10.c
+		ai_chance = { factor = 20 }
+		add_war_support = 0.02 add_political_power = -5
+	}
+}
+
+country_event = {
+	id = zw2.11
+	title = zw2.11.t
+	desc = zw2.11.d
+	picture = GFX_pl2027_ev081_paliwo_0
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_11 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_11  }
+	option = {
+		name = zw2.11.a
+		ai_chance = { factor = 35 }
+		add_political_power = 40 add_stability = -0.02
+	}
+	option = {
+		name = zw2.11.b
+		ai_chance = { factor = 40 }
+		add_stability = 0.02 add_political_power = -20
+	}
+	option = {
+		name = zw2.11.c
+		ai_chance = { factor = 25 }
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = zw2.12
+	title = zw2.12.t
+	desc = zw2.12.d
+	picture = GFX_pl2027_ev081_szpital_2
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_12 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } set_country_flag = PL2027_ev_zw2_12  }
+	option = {
+		name = zw2.12.a
+		ai_chance = { factor = 60 }
+		add_political_power = -15 add_stability = 0.04
+	}
+	option = {
+		name = zw2.12.b
+		ai_chance = { factor = 40 }
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = zw2.13
+	title = zw2.13.t
+	desc = zw2.13.d
+	picture = GFX_pl2027_ev081_ulica_1
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_13 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } date > 2028.11.10 date < 2028.11.25 }
+	mean_time_to_happen = { days = 2 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_zw2_13  }
+	option = {
+		name = zw2.13.a
+		ai_chance = { factor = 40 }
+		add_war_support = 0.04 add_political_power = -10
+	}
+	option = {
+		name = zw2.13.b
+		ai_chance = { factor = 40 }
+		add_stability = 0.04
+	}
+	option = {
+		name = zw2.13.c
+		ai_chance = { factor = 20 }
+		add_political_power = 30 add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = zw2.14
+	title = zw2.14.t
+	desc = zw2.14.d
+	picture = GFX_pl2027_ev081_kibice_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_14 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_zw2_14  }
+	option = {
+		name = zw2.14.a
+		ai_chance = { factor = 35 }
+		add_war_support = 0.03 add_stability = -0.03 add_manpower = 300
+	}
+	option = {
+		name = zw2.14.b
+		ai_chance = { factor = 45 }
+		add_stability = 0.02 add_political_power = -10
+	}
+	option = {
+		name = zw2.14.c
+		ai_chance = { factor = 20 }
+		add_political_power = -20 add_stability = 0.01 add_manpower = 200
+	}
+}
+
+country_event = {
+	id = zw2.15
+	title = zw2.15.t
+	desc = zw2.15.d
+	picture = GFX_pl2027_ev081_front_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_15 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 200 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_15  }
+	option = {
+		name = zw2.15.a
+		ai_chance = { factor = 25 }
+		add_political_power = -40 add_stability = 0.01
+	}
+	option = {
+		name = zw2.15.b
+		ai_chance = { factor = 50 }
+		add_political_power = -15 add_stability = -0.02
+	}
+	option = {
+		name = zw2.15.c
+		ai_chance = { factor = 25 }
+		add_war_support = 0.03 add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = zw2.16
+	title = zw2.16.t
+	desc = zw2.16.d
+	picture = GFX_pl2027_ev081_miasto_3
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_16 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 168 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_16  }
+	option = {
+		name = zw2.16.a
+		ai_chance = { factor = 45 }
+		add_political_power = -30 add_stability = 0.03
+	}
+	option = {
+		name = zw2.16.b
+		ai_chance = { factor = 20 }
+		add_stability = -0.04 add_war_support = 0.01
+	}
+	option = {
+		name = zw2.16.c
+		ai_chance = { factor = 35 }
+		add_political_power = -10 add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = zw2.17
+	title = zw2.17.t
+	desc = zw2.17.d
+	picture = GFX_pl2027_ev081_front_ros_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_17 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 240 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } set_country_flag = PL2027_ev_zw2_17  }
+	option = {
+		name = zw2.17.a
+		ai_chance = { factor = 50 }
+		add_war_support = 0.02 add_stability = 0.01
+	}
+	option = {
+		name = zw2.17.b
+		ai_chance = { factor = 50 }
+		add_political_power = -5 add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = zw2.18
+	title = zw2.18.t
+	desc = zw2.18.d
+	picture = GFX_pl2027_ev081_kolej_4
+	trigger = { NOT = { has_country_flag = PL2027_ev_zw2_18 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
+	mean_time_to_happen = { days = 200 }
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_18  }
+	option = {
+		name = zw2.18.a
+		ai_chance = { factor = 55 }
+		add_political_power = 15 add_stability = 0.02
+	}
+	option = {
+		name = zw2.18.b
+		ai_chance = { factor = 30 }
+		add_stability = 0.03 add_political_power = -5
+	}
+	option = {
+		name = zw2.18.c
+		ai_chance = { factor = 15 }
+		add_war_support = 0.02
+	}
+}

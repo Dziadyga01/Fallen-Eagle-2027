@@ -1,0 +1,13 @@
+KOR_kurs_mod = {
+	icon = GFX_idea_KOR_kurs_mod
+	enable = { always = yes }
+	industrial_capacity_factory = KOR_dm_prod
+	political_power_gain = KOR_dm_pp
+	stability_factor = KOR_dm_stab
+}
+KOR_rurociag = {
+	icon = GFX_idea_KOR_rurociag
+	enable = { owner = { NOT = { any_country = { has_war_with = PREV owns_state = 964 } } } }
+	remove_trigger = { NOT = { owner = { original_tag = PLO } } }
+	state_resource_oil = 6
+}

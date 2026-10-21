@@ -1,0 +1,131 @@
+﻿capital = 156
+oob = "TRN_2027"
+set_research_slots = 3
+set_stability = 0.45
+set_war_support = 0.35
+set_technology = {
+	army_uniform = 1
+	basic_fortification_tech = 1
+	basic_machine_tools = 1
+	basic_train = 1
+	construction1 = 1
+	excavation1 = 1
+	infantry_training = 1
+	light_artillery = 1
+	light_artillery1 = 1
+	light_artillery2 = 1
+	light_artillery3 = 1
+	light_artillery_upgrade1 = 1
+	melee_weapons = 1
+	nsb_bicycle = 1
+	nsb_truck_1 = 1
+	nsb_truck_2 = 1
+	nsb_truck_3 = 1
+	nsb_truck_4 = 1
+	post_collapse_assesment = 1
+	ranged_weapons = 1
+	ranged_weapons1 = 1
+	ranged_weapons2 = 1
+	ranged_weapons3 = 1
+	ranged_weapons_upgrade = 1
+	ranged_weapons_upgrade1 = 1
+	ranged_weapons_upgrade2 = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_support = 1
+}
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "2027.10.10"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	totalitarian_socialist = 1
+	communist = 6
+	libertarian_socialist = 7
+	social_democrat = 15
+	social_liberal = 32
+	market_liberal = 4
+	conservative = 15
+	authoritarian_democrat = 6
+	nationalist = 5
+	fascist = 9
+}
+recruit_character = TRN_rada_tymczasowa
+recruit_character = TRN_pawel_gulewski
+recruit_character = TRN_michal_zaleski
+recruit_character = TRN_michal_romanowski
+recruit_character = TRN_katarzyna_kowalczyk
+recruit_character = TRN_przywodca_elany
+recruit_character = TRN_maksim_krevienko
+promote_character = TRN_rada_tymczasowa
+set_variable = { TRN_leg_szl = 50 }
+set_variable = { TRN_leg_arm = 50 }
+set_variable = { TRN_leg_lud = 50 }
+set_variable = { TRN_leg = 50 }
+set_variable = { TRN_rad = 40 }
+set_variable = { TRN_wpl_tor = 50 }
+set_variable = { TRN_wpl_byd = 50 }
+set_variable = { TRN_napiecie = 0 }
+set_variable = { TRN_autorytet = 40 }
+set_variable = { TRN_zaniedbanie = 20 }
+set_variable = { TRN_frak_gul = 30 }
+set_variable = { TRN_frak_zal = 22 }
+set_variable = { TRN_frak_rom = 18 }
+set_variable = { TRN_frak_kow = 16 }
+set_variable = { TRN_frak_ela = 12 }
+set_variable = { TRN_frak_kre = 8 }
+set_variable = { TRN_dz_stare = 1 }
+set_variable = { TRN_dz_chelminskie = 2 }
+set_variable = { TRN_dz_rubinkowo = 3 }
+set_variable = { TRN_dz_bielany = 4 }
+set_variable = { TRN_dz_bydgoskie = 5 }
+set_variable = { TRN_dz_skarpa = 6 }
+set_variable = { TRN_lok = 20 }
+set_variable = { TRN_faworyt = 0 }
+# --- met ---
+set_variable = { global.MET_solec_trn = 25 }
+set_variable = { global.MET_solec_byd = 40 }
+set_variable = { global.MET_solec_przewaga = -15 }
+set_variable = { global.MET_zlawies_trn = 40 }
+set_variable = { global.MET_zlawies_byd = 25 }
+set_variable = { global.MET_zlawies_przewaga = 15 }
+set_variable = { global.MET_ostromecko_trn = 30 }
+set_variable = { global.MET_ostromecko_byd = 35 }
+set_variable = { global.MET_ostromecko_przewaga = -5 }
+set_variable = { global.MET_unislaw_trn = 35 }
+set_variable = { global.MET_unislaw_byd = 30 }
+set_variable = { global.MET_unislaw_przewaga = 5 }
+set_variable = { global.MET_nowawies_trn = 25 }
+set_variable = { global.MET_nowawies_byd = 40 }
+set_variable = { global.MET_nowawies_przewaga = -15 }
+set_variable = { global.MET_chelmno_trn = 40 }
+set_variable = { global.MET_chelmno_byd = 25 }
+set_variable = { global.MET_chelmno_przewaga = 15 }
+set_variable = { global.MET_napiecie = 10 }
+set_variable = { global.MET_trn_obszary = 0 }
+set_variable = { global.MET_byd_obszary = 0 }
+# --- tr2 ---
+set_variable = { TR2_pop_gulewski = 24 }
+set_variable = { TR2_pop_zaleski = 21 }
+set_variable = { TR2_pop_romanowski = 18 }
+set_variable = { TR2_pop_kowalczyk = 12 }
+set_variable = { TR2_pop_elana = 13 }
+set_variable = { TR2_pop_krevienko = 12 }
+promote_character = TRN_pawel_gulewski
+add_ideas = TR2_rzad_tymczasowy
+set_country_flag = TR2_kampania
+add_dynamic_modifier = { modifier = TR2_kampania_mod }
+# --- gnr ---
+recruit_character = TRN_gen_wierzbicki
+# --- lok ---
+recruit_character = LOK_trn_zielinski
+recruit_character = LOK_trn_szymanski
+# --- dor ---
+recruit_character = TRN_dor_grabowska
+recruit_character = TRN_dor_pierzchala
+recruit_character = TRN_dor_wislanska
+recruit_character = TRN_dor_lisowski
+recruit_character = TRN_dor_podgorski
+recruit_character = TRN_dor_barska

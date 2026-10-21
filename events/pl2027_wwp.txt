@@ -1,0 +1,213 @@
+add_namespace = wwp
+
+country_event = {
+	id = wwp.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
+	title = wwp.1.t
+	desc = wwp.1.d
+	picture = GFX_pl2027_ev081_blackout_0
+	is_triggered_only = yes
+	option = {
+		name = wwp.1.a
+		ai_chance = { factor = 1 }
+		add_political_power = -30 if = { limit = { OR = { tag = SMR tag = PLC } } custom_effect_tooltip = WWP_tt_21 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 5 } WWP_clamp = yes } } if = { limit = { OR = { tag = KPR tag = WOJ } } custom_effect_tooltip = WWP_tt_22 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 5 } WWP_clamp = yes } } if = { limit = { OR = { tag = MPR tag = LEG } } custom_effect_tooltip = WWP_tt_5 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 5 } WWP_clamp = yes } }
+	}
+	option = {
+		name = wwp.1.b
+		ai_chance = { factor = 1 }
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = wwp.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = wwp.2.t
+	desc = wwp.2.d
+	picture = GFX_pl2027_ev081_media_0
+	is_triggered_only = yes
+	option = {
+		name = wwp.2.a
+		ai_chance = { factor = 1 }
+		add_manpower = -500 if = { limit = { OR = { tag = SMR tag = PLC } } custom_effect_tooltip = WWP_tt_18 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 4 } WWP_clamp = yes } } if = { limit = { OR = { tag = KPR tag = WOJ } } custom_effect_tooltip = WWP_tt_19 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 4 } WWP_clamp = yes } } if = { limit = { OR = { tag = MPR tag = LEG } } custom_effect_tooltip = WWP_tt_20 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 4 } WWP_clamp = yes } }
+	}
+	option = {
+		name = wwp.2.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.01 if = { limit = { OR = { tag = SMR tag = PLC } } custom_effect_tooltip = WWP_tt_15 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 2 } WWP_clamp = yes } } if = { limit = { OR = { tag = KPR tag = WOJ } } custom_effect_tooltip = WWP_tt_16 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 2 } WWP_clamp = yes } } if = { limit = { OR = { tag = MPR tag = LEG } } custom_effect_tooltip = WWP_tt_17 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 2 } WWP_clamp = yes } }
+	}
+}
+
+country_event = {
+	id = wwp.5
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwp.5.t
+	desc = wwp.5.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_0
+	is_triggered_only = yes
+	option = {
+		name = wwp.5.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.02 if = { limit = { OR = { tag = SMR tag = PLC } } custom_effect_tooltip = WWP_tt_8 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 3 } WWP_clamp = yes } } if = { limit = { OR = { tag = KPR tag = WOJ } } custom_effect_tooltip = WWP_tt_9 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 3 } WWP_clamp = yes } } if = { limit = { OR = { tag = MPR tag = LEG } } custom_effect_tooltip = WWP_tt_10 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 3 } WWP_clamp = yes } }
+	}
+	option = {
+		name = wwp.5.b
+		ai_chance = { factor = 1 }
+		add_political_power = -20 if = { limit = { OR = { tag = SMR tag = PLC } } custom_effect_tooltip = WWP_tt_15 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 2 } WWP_clamp = yes } } if = { limit = { OR = { tag = KPR tag = WOJ } } custom_effect_tooltip = WWP_tt_16 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 2 } WWP_clamp = yes } } if = { limit = { OR = { tag = MPR tag = LEG } } custom_effect_tooltip = WWP_tt_17 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 2 } WWP_clamp = yes } }
+	}
+}
+
+country_event = {
+	id = wwp.6
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = wwp.6.t
+	desc = wwp.6.d
+	picture = GFX_pl2027_ev081_polityka_0
+	is_triggered_only = yes
+	option = {
+		name = wwp.6.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03 add_stability = -0.01
+	}
+	option = {
+		name = wwp.6.b
+		ai_chance = { factor = 1 }
+		add_political_power = -25 if = { limit = { OR = { tag = SMR tag = PLC } } custom_effect_tooltip = WWP_tt_8 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 3 } WWP_clamp = yes } } if = { limit = { OR = { tag = KPR tag = WOJ } } custom_effect_tooltip = WWP_tt_9 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 3 } WWP_clamp = yes } } if = { limit = { OR = { tag = MPR tag = LEG } } custom_effect_tooltip = WWP_tt_10 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 3 } WWP_clamp = yes } }
+	}
+}
+
+country_event = {
+	id = wwp.7
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwp.7.t
+	desc = wwp.7.d
+	picture = GFX_pl2027_ev081_gospodarka_0
+	is_triggered_only = yes
+	option = {
+		name = wwp.7.a
+		ai_chance = { factor = 1 }
+		add_political_power = -20 if = { limit = { OR = { tag = SMR tag = PLC } } custom_effect_tooltip = WWP_tt_18 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 4 } WWP_clamp = yes } } if = { limit = { OR = { tag = KPR tag = WOJ } } custom_effect_tooltip = WWP_tt_19 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 4 } WWP_clamp = yes } } if = { limit = { OR = { tag = MPR tag = LEG } } custom_effect_tooltip = WWP_tt_20 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 4 } WWP_clamp = yes } }
+	}
+	option = {
+		name = wwp.7.b
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = wwp.8
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwp.8.t
+	desc = wwp.8.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_1
+	is_triggered_only = yes
+	option = {
+		name = wwp.8.a
+		ai_chance = { factor = 1 }
+		add_manpower = -300 if = { limit = { OR = { tag = SMR tag = PLC } } custom_effect_tooltip = WWP_tt_21 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 5 } WWP_clamp = yes } } if = { limit = { OR = { tag = KPR tag = WOJ } } custom_effect_tooltip = WWP_tt_22 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 5 } WWP_clamp = yes } } if = { limit = { OR = { tag = MPR tag = LEG } } custom_effect_tooltip = WWP_tt_5 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 5 } WWP_clamp = yes } }
+	}
+	option = {
+		name = wwp.8.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.02 if = { limit = { OR = { tag = SMR tag = PLC } } custom_effect_tooltip = WWP_tt_12 hidden_effect = { add_to_variable = { global.TFE_wwa_smr = 1 } WWP_clamp = yes } } if = { limit = { OR = { tag = KPR tag = WOJ } } custom_effect_tooltip = WWP_tt_13 hidden_effect = { add_to_variable = { global.TFE_wwa_kpr = 1 } WWP_clamp = yes } } if = { limit = { OR = { tag = MPR tag = LEG } } custom_effect_tooltip = WWP_tt_14 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 1 } WWP_clamp = yes } }
+	}
+}
+
+country_event = {
+	id = wwp.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwp.3.t
+	desc = wwp.3.d
+	picture = GFX_pl2027_ev081_porzadek_1
+	is_triggered_only = yes
+	option = {
+		name = wwp.3.a
+		ai_chance = { factor = 1 }
+		add_political_power = -40 custom_effect_tooltip = WWP_tt_20 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = 4 } WWP_clamp = yes }
+	}
+	option = {
+		name = wwp.3.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = wwp.4
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwp.4.t
+	desc = wwp.4.d
+	picture = GFX_pl2027_ev081_media_1
+	is_triggered_only = yes
+	option = {
+		name = wwp.4.a
+		ai_chance = { factor = 1 }
+		add_political_power = -20 custom_effect_tooltip = WWP_tt_23 hidden_effect = { add_to_variable = { global.TFE_wwa_mpr = -6 } add_to_variable = { global.TFE_wwa_smr = 2 } add_to_variable = { global.TFE_wwa_kpr = 2 } WWP_clamp = yes }
+	}
+}
+
+news_event = {
+	id = wwp.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwp.20.t
+	desc = wwp.20.d
+	picture = GFX_tfe_mapa_warszawa_news
+	is_triggered_only = yes
+	option = {
+		name = wwp.20.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = wwp.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwp.21.t
+	desc = wwp.21.d
+	picture = GFX_tfe_mapa_warszawa_news
+	is_triggered_only = yes
+	option = {
+		name = wwp.21.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = wwp.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwp.22.t
+	desc = wwp.22.d
+	picture = GFX_tfe_mapa_warszawa_news
+	is_triggered_only = yes
+	option = {
+		name = wwp.22.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = wwp.23
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwp.23.t
+	desc = wwp.23.d
+	picture = GFX_tfe_mapa_warszawa_news
+	is_triggered_only = yes
+	option = {
+		name = wwp.23.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = wwp.24
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = wwp.24.t
+	desc = wwp.24.d
+	picture = GFX_tfe_mapa_warszawa_news
+	is_triggered_only = yes
+	option = {
+		name = wwp.24.a
+		ai_chance = { factor = 1 }
+	}
+}

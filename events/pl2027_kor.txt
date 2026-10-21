@@ -1,0 +1,115 @@
+add_namespace = kor
+
+country_event = {
+	id = kor.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kor.1.t
+	desc = kor.1.d
+	picture = GFX_pl2027_ev081_paliwo_1
+	is_triggered_only = yes
+	option = {
+		name = kor.1.a
+		ai_chance = { factor = 1 }
+		add_political_power = 25
+	}
+}
+
+country_event = {
+	id = kor.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kor.2.t
+	desc = kor.2.d
+	picture = GFX_pl2027_ev081_paliwo_3
+	is_triggered_only = yes
+	option = {
+		name = kor.2.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = kor.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kor.20.t
+	desc = kor.20.d
+	picture = GFX_pl2027_ev081_paliwo_0
+	is_triggered_only = yes
+	option = {
+		name = kor.20.a
+		ai_chance = { factor = 8 modifier = { factor = 3 has_country_flag = TPZ_korporacja } modifier = { factor = 3 has_country_flag = PKP_holding } modifier = { factor = 2 has_war = yes } modifier = { factor = 0.5 has_opinion = { target = FROM value < 0 } } modifier = { factor = 2 has_opinion = { target = FROM value > 19 } } }
+		if = { limit = { is_in_faction = no FROM = { is_faction_leader = yes } } FROM = { add_to_faction = ROOT } } if = { limit = { is_in_faction_with = FROM } add_fuel = 2000 KOR_odswiez_czlonka = yes FROM = { country_event = { id = kor.21 } } }
+	}
+	option = {
+		name = kor.20.b
+		ai_chance = { factor = 10 }
+		FROM = { country_event = { id = kor.22 } }
+	}
+}
+
+country_event = {
+	id = kor.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kor.21.t
+	desc = kor.21.d
+	picture = GFX_pl2027_ev081_gospodarka_1
+	is_triggered_only = yes
+	option = {
+		name = kor.21.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = KOR_kurs_tt_p5 hidden_effect = { add_to_variable = { KOR_kurs = 5 } KOR_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = kor.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kor.22.t
+	desc = kor.22.d
+	picture = GFX_pl2027_ev081_miasto_4
+	is_triggered_only = yes
+	option = {
+		name = kor.22.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = KOR_kurs_tt_m3 hidden_effect = { add_to_variable = { KOR_kurs = -3 } KOR_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = kor.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kor.30.t
+	desc = kor.30.d
+	picture = GFX_pl2027_ev081_granica_0
+	is_triggered_only = yes
+	option = {
+		name = kor.30.a
+		trigger = { has_political_power > 59 }
+		ai_chance = { factor = 2 }
+		add_political_power = -60 custom_effect_tooltip = KOR_kurs_tt_p15 hidden_effect = { add_to_variable = { KOR_kurs = 15 } KOR_przelicz = yes }
+	}
+	option = {
+		name = kor.30.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = KOR_panika days = 90 }
+	}
+}
+
+country_event = {
+	id = kor.31
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = kor.31.t
+	desc = kor.31.d
+	picture = GFX_pl2027_ev081_kolej_5
+	is_triggered_only = yes
+	option = {
+		name = kor.31.a
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = KOR_hossa days = 120 } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } custom_effect_tooltip = KOR_kurs_tt_m10 hidden_effect = { add_to_variable = { KOR_kurs = -10 } KOR_przelicz = yes }
+	}
+	option = {
+		name = kor.31.b
+		ai_chance = { factor = 1 }
+		add_political_power = 80 custom_effect_tooltip = KOR_kurs_tt_m5 hidden_effect = { add_to_variable = { KOR_kurs = -5 } KOR_przelicz = yes }
+	}
+}

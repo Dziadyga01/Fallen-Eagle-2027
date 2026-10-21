@@ -1,0 +1,27 @@
+state = {
+	id = 154
+	name = "STATE_154"
+	manpower = 436846
+	state_category = large_city
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = BYD
+		add_core_of = BYD
+		victory_points = { 7446 2 }
+		victory_points = { 7447 15 }
+		victory_points = { 7462 2 }
+		victory_points = { 7463 4 }
+		victory_points = { 7759 2 }
+		victory_points = { 7805 2 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 3
+			air_base = 2
+		}
+	}
+	provinces = { 7446 7447 7462 7463 7759 7805 }
+	local_supplies = 0.0
+}

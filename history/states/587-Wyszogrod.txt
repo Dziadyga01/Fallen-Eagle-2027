@@ -1,0 +1,21 @@
+state = {
+	id = 587
+	name = "STATE_587"
+	manpower = 5740
+	state_category = rural
+	resources = {
+		aluminium = 1
+		rubber = 1
+	}
+	history = {
+		owner = PLO
+		add_core_of = PLO
+		victory_points = { 413 1 }
+		victory_points = { 9888 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 413 9891 9890 9889 9888 }
+	local_supplies = 0.0
+}

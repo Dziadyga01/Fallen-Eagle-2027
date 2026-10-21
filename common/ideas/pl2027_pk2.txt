@@ -1,0 +1,33 @@
+ideas = {
+	country = {
+		PKP_kontrakt_idea = {
+			picture = DU_PKP_kontrakt_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+		PKP_siec_frontowa_idea = {
+			picture = DU_PKP_siec_frontowa_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.1
+				army_org_factor = 0.03
+				consumer_goods_factor = 0.03
+			}
+		}
+		PKP_siec_monopol_idea = {
+			picture = DU_PKP_siec_monopol_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.03
+			}
+		}
+	}
+}

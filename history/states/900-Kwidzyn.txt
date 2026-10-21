@@ -1,0 +1,20 @@
+state = {
+	id = 900
+	name = "STATE_900"
+	manpower = 37798
+	state_category = town
+	resources = {
+		rubber = 2
+		steel = 1
+	}
+	history = {
+		owner = ZKR
+		add_core_of = ZKR
+		victory_points = { 1522 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1522 }
+	local_supplies = 0.0
+}

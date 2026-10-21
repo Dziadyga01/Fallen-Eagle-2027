@@ -1,0 +1,276 @@
+objectTypes = {
+	pdxmesh = {
+		name = "PL2027v2_POL_Infantry_mesh"
+		file = "gfx/models/units/pl2027v2/POL_Infantry/POL_Infantry.mesh"
+		animation = { id = "idle" type = "GER_infantry_mg_idle_animation" }
+		animation = { id = "attack" type = "GER_infantry_mg_attack_animation" }
+		animation = { id = "support_attack" type = "GER_infantry_mg_support_attack_animation" }
+		animation = { id = "move" type = "GER_infantry_mg_moving_animation" }
+		animation = { id = "march_move" type = "GER_infantry_mg_march_animation" }
+		animation = { id = "retreat" type = "GER_infantry_mg_retreat_animation" }
+		animation = { id = "death" type = "GER_infantry_mg_death_animation" }
+		animation = { id = "long_idle01" type = "GER_infantry_mg_long_idle_01_animation" }
+		animation = { id = "long_idle02" type = "GER_infantry_mg_long_idle_02_animation" }
+		animation = { id = "long_idle03" type = "GER_infantry_mg_long_idle_03_animation" }
+		animation = { id = "long_idle04" type = "GER_infantry_mg_long_idle_04_animation" }
+		animation = { id = "long_idle05" type = "GER_infantry_mg_long_idle_05_animation" }
+		animation = { id = "training" type = "GER_infantry_idle_training_animation" }
+		animation = { id = "jumping_jacks" type = "GER_infantry_jumping_jacks_animation" }
+		animation = { id = "pushup" type = "GER_infantry_pushup_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_western_european_infantry_mesh"
+		file = "gfx/models/units/pl2027v2/western_european_infantry/western_european_infantry.mesh"
+		animation = { id = "idle" type = "GER_infantry_mg_idle_animation" }
+		animation = { id = "attack" type = "GER_infantry_mg_attack_animation" }
+		animation = { id = "support_attack" type = "GER_infantry_mg_support_attack_animation" }
+		animation = { id = "move" type = "GER_infantry_mg_moving_animation" }
+		animation = { id = "march_move" type = "GER_infantry_mg_march_animation" }
+		animation = { id = "retreat" type = "GER_infantry_mg_retreat_animation" }
+		animation = { id = "death" type = "GER_infantry_mg_death_animation" }
+		animation = { id = "long_idle01" type = "GER_infantry_mg_long_idle_01_animation" }
+		animation = { id = "long_idle02" type = "GER_infantry_mg_long_idle_02_animation" }
+		animation = { id = "long_idle03" type = "GER_infantry_mg_long_idle_03_animation" }
+		animation = { id = "long_idle04" type = "GER_infantry_mg_long_idle_04_animation" }
+		animation = { id = "long_idle05" type = "GER_infantry_mg_long_idle_05_animation" }
+		animation = { id = "training" type = "GER_infantry_idle_training_animation" }
+		animation = { id = "jumping_jacks" type = "GER_infantry_jumping_jacks_animation" }
+		animation = { id = "pushup" type = "GER_infantry_pushup_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_eastern_european_infantry_mesh"
+		file = "gfx/models/units/pl2027v2/eastern_european_infantry/eastern_european_infantry.mesh"
+		animation = { id = "idle" type = "GER_infantry_mg_idle_animation" }
+		animation = { id = "attack" type = "GER_infantry_mg_attack_animation" }
+		animation = { id = "support_attack" type = "GER_infantry_mg_support_attack_animation" }
+		animation = { id = "move" type = "GER_infantry_mg_moving_animation" }
+		animation = { id = "march_move" type = "GER_infantry_mg_march_animation" }
+		animation = { id = "retreat" type = "GER_infantry_mg_retreat_animation" }
+		animation = { id = "death" type = "GER_infantry_mg_death_animation" }
+		animation = { id = "long_idle01" type = "GER_infantry_mg_long_idle_01_animation" }
+		animation = { id = "long_idle02" type = "GER_infantry_mg_long_idle_02_animation" }
+		animation = { id = "long_idle03" type = "GER_infantry_mg_long_idle_03_animation" }
+		animation = { id = "long_idle04" type = "GER_infantry_mg_long_idle_04_animation" }
+		animation = { id = "long_idle05" type = "GER_infantry_mg_long_idle_05_animation" }
+		animation = { id = "training" type = "GER_infantry_idle_training_animation" }
+		animation = { id = "jumping_jacks" type = "GER_infantry_jumping_jacks_animation" }
+		animation = { id = "pushup" type = "GER_infantry_pushup_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_SOV_infantry22_mesh"
+		file = "gfx/models/units/pl2027v2/SOV_infantry22/SOV_infantry22.mesh"
+		animation = { id = "idle" type = "GER_infantry_mg_idle_animation" }
+		animation = { id = "attack" type = "GER_infantry_mg_attack_animation" }
+		animation = { id = "support_attack" type = "GER_infantry_mg_support_attack_animation" }
+		animation = { id = "move" type = "GER_infantry_mg_moving_animation" }
+		animation = { id = "march_move" type = "GER_infantry_mg_march_animation" }
+		animation = { id = "retreat" type = "GER_infantry_mg_retreat_animation" }
+		animation = { id = "death" type = "GER_infantry_mg_death_animation" }
+		animation = { id = "long_idle01" type = "GER_infantry_mg_long_idle_01_animation" }
+		animation = { id = "long_idle02" type = "GER_infantry_mg_long_idle_02_animation" }
+		animation = { id = "long_idle03" type = "GER_infantry_mg_long_idle_03_animation" }
+		animation = { id = "long_idle04" type = "GER_infantry_mg_long_idle_04_animation" }
+		animation = { id = "long_idle05" type = "GER_infantry_mg_long_idle_05_animation" }
+		animation = { id = "training" type = "GER_infantry_idle_training_animation" }
+		animation = { id = "jumping_jacks" type = "GER_infantry_jumping_jacks_animation" }
+		animation = { id = "pushup" type = "GER_infantry_pushup_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_RUS_mesh"
+		file = "gfx/models/units/pl2027v2/RUS/RUS.mesh"
+		animation = { id = "idle" type = "GER_infantry_mg_idle_animation" }
+		animation = { id = "attack" type = "GER_infantry_mg_attack_animation" }
+		animation = { id = "support_attack" type = "GER_infantry_mg_support_attack_animation" }
+		animation = { id = "move" type = "GER_infantry_mg_moving_animation" }
+		animation = { id = "march_move" type = "GER_infantry_mg_march_animation" }
+		animation = { id = "retreat" type = "GER_infantry_mg_retreat_animation" }
+		animation = { id = "death" type = "GER_infantry_mg_death_animation" }
+		animation = { id = "long_idle01" type = "GER_infantry_mg_long_idle_01_animation" }
+		animation = { id = "long_idle02" type = "GER_infantry_mg_long_idle_02_animation" }
+		animation = { id = "long_idle03" type = "GER_infantry_mg_long_idle_03_animation" }
+		animation = { id = "long_idle04" type = "GER_infantry_mg_long_idle_04_animation" }
+		animation = { id = "long_idle05" type = "GER_infantry_mg_long_idle_05_animation" }
+		animation = { id = "training" type = "GER_infantry_idle_training_animation" }
+		animation = { id = "jumping_jacks" type = "GER_infantry_jumping_jacks_animation" }
+		animation = { id = "pushup" type = "GER_infantry_pushup_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_RUS_spez_mesh"
+		file = "gfx/models/units/pl2027v2/RUS_spez/RUS_spez.mesh"
+		animation = { id = "idle" type = "GER_infantry_mg_idle_animation" }
+		animation = { id = "attack" type = "GER_infantry_mg_attack_animation" }
+		animation = { id = "support_attack" type = "GER_infantry_mg_support_attack_animation" }
+		animation = { id = "move" type = "GER_infantry_mg_moving_animation" }
+		animation = { id = "march_move" type = "GER_infantry_mg_march_animation" }
+		animation = { id = "retreat" type = "GER_infantry_mg_retreat_animation" }
+		animation = { id = "death" type = "GER_infantry_mg_death_animation" }
+		animation = { id = "long_idle01" type = "GER_infantry_mg_long_idle_01_animation" }
+		animation = { id = "long_idle02" type = "GER_infantry_mg_long_idle_02_animation" }
+		animation = { id = "long_idle03" type = "GER_infantry_mg_long_idle_03_animation" }
+		animation = { id = "long_idle04" type = "GER_infantry_mg_long_idle_04_animation" }
+		animation = { id = "long_idle05" type = "GER_infantry_mg_long_idle_05_animation" }
+		animation = { id = "training" type = "GER_infantry_idle_training_animation" }
+		animation = { id = "jumping_jacks" type = "GER_infantry_jumping_jacks_animation" }
+		animation = { id = "pushup" type = "GER_infantry_pushup_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_SOV_L_Marine_Bat_mesh"
+		file = "gfx/models/units/pl2027v2/SOV_L_Marine_Bat/SOV_L_Marine_Bat.mesh"
+		animation = { id = "idle" type = "GER_infantry_mg_idle_animation" }
+		animation = { id = "attack" type = "GER_infantry_mg_attack_animation" }
+		animation = { id = "support_attack" type = "GER_infantry_mg_support_attack_animation" }
+		animation = { id = "move" type = "GER_infantry_mg_moving_animation" }
+		animation = { id = "march_move" type = "GER_infantry_mg_march_animation" }
+		animation = { id = "retreat" type = "GER_infantry_mg_retreat_animation" }
+		animation = { id = "death" type = "GER_infantry_mg_death_animation" }
+		animation = { id = "long_idle01" type = "GER_infantry_mg_long_idle_01_animation" }
+		animation = { id = "long_idle02" type = "GER_infantry_mg_long_idle_02_animation" }
+		animation = { id = "long_idle03" type = "GER_infantry_mg_long_idle_03_animation" }
+		animation = { id = "long_idle04" type = "GER_infantry_mg_long_idle_04_animation" }
+		animation = { id = "long_idle05" type = "GER_infantry_mg_long_idle_05_animation" }
+		animation = { id = "training" type = "GER_infantry_idle_training_animation" }
+		animation = { id = "jumping_jacks" type = "GER_infantry_jumping_jacks_animation" }
+		animation = { id = "pushup" type = "GER_infantry_pushup_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_BLR_infantry_mesh"
+		file = "gfx/models/units/pl2027v2/BLR_infantry/BLR_infantry.mesh"
+		animation = { id = "idle" type = "GER_infantry_mg_idle_animation" }
+		animation = { id = "attack" type = "GER_infantry_mg_attack_animation" }
+		animation = { id = "support_attack" type = "GER_infantry_mg_support_attack_animation" }
+		animation = { id = "move" type = "GER_infantry_mg_moving_animation" }
+		animation = { id = "march_move" type = "GER_infantry_mg_march_animation" }
+		animation = { id = "retreat" type = "GER_infantry_mg_retreat_animation" }
+		animation = { id = "death" type = "GER_infantry_mg_death_animation" }
+		animation = { id = "long_idle01" type = "GER_infantry_mg_long_idle_01_animation" }
+		animation = { id = "long_idle02" type = "GER_infantry_mg_long_idle_02_animation" }
+		animation = { id = "long_idle03" type = "GER_infantry_mg_long_idle_03_animation" }
+		animation = { id = "long_idle04" type = "GER_infantry_mg_long_idle_04_animation" }
+		animation = { id = "long_idle05" type = "GER_infantry_mg_long_idle_05_animation" }
+		animation = { id = "training" type = "GER_infantry_idle_training_animation" }
+		animation = { id = "jumping_jacks" type = "GER_infantry_jumping_jacks_animation" }
+		animation = { id = "pushup" type = "GER_infantry_pushup_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_GER_medium_tank_Leopard_2A7_mesh"
+		file = "gfx/models/units/pl2027v2/GER_medium_tank_Leopard_2A7/GER_medium_tank_Leopard_2A7.mesh"
+		animation = { id = "idle" type = "PL2027v2_GER_medium_tank_Leopard_2A7_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_GER_medium_tank_Leopard_2A7_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_GER_medium_tank_Leopard_2A7_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_KOR_medium_tank_K2_Black_Panther_mesh"
+		file = "gfx/models/units/pl2027v2/KOR_medium_tank_K2_Black_Panther/KOR_medium_tank_K2_Black_Panther.mesh"
+		animation = { id = "idle" type = "PL2027v2_KOR_medium_tank_K2_Black_Panther_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_KOR_medium_tank_K2_Black_Panther_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_KOR_medium_tank_K2_Black_Panther_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_USA_medium_tank_Abrams_M1A2_mesh"
+		file = "gfx/models/units/pl2027v2/USA_medium_tank_Abrams_M1A2/USA_medium_tank_Abrams_M1A2.mesh"
+		animation = { id = "idle" type = "PL2027v2_USA_medium_tank_Abrams_M1A2_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_USA_medium_tank_Abrams_M1A2_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_USA_medium_tank_Abrams_M1A2_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_CZE_light_tank_01_BVP1_mesh"
+		file = "gfx/models/units/pl2027v2/CZE_light_tank_01_BVP1/CZE_light_tank_01_BVP1.mesh"
+		animation = { id = "idle" type = "PL2027v2_CZE_light_tank_01_BVP1_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_CZE_light_tank_01_BVP1_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_CZE_light_tank_01_BVP1_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_USA_APC_Stryker_mesh"
+		file = "gfx/models/units/pl2027v2/USA_APC_Stryker/USA_APC_Stryker.mesh"
+		animation = { id = "idle" type = "PL2027v2_USA_APC_Stryker_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_USA_APC_Stryker_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_USA_APC_Stryker_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_US_motorized_01_mesh"
+		file = "gfx/models/units/pl2027v2/US_motorized_01/US_motorized_01.mesh"
+		animation = { id = "idle" type = "PL2027v2_US_motorized_01_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_US_motorized_01_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_US_motorized_01_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_SOV_tank_medium_mesh"
+		file = "gfx/models/units/pl2027v2/SOV_tank_medium/SOV_tank_medium.mesh"
+		animation = { id = "idle" type = "PL2027v2_SOV_tank_medium_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_SOV_tank_medium_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_SOV_tank_medium_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_SOV_medium_tank_T_80UD_mesh"
+		file = "gfx/models/units/pl2027v2/SOV_medium_tank_T_80UD/SOV_medium_tank_T_80UD.mesh"
+		animation = { id = "idle" type = "PL2027v2_SOV_medium_tank_T_80UD_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_SOV_medium_tank_T_80UD_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_SOV_medium_tank_T_80UD_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_TFR_T14_mesh"
+		file = "gfx/models/units/pl2027v2/TFR_T14/TFR_T14.mesh"
+		animation = { id = "idle" type = "PL2027v2_TFR_T14_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_TFR_T14_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_TFR_T14_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_SOV_IFV_BMP_3_mesh"
+		file = "gfx/models/units/pl2027v2/SOV_IFV_BMP_3/SOV_IFV_BMP_3.mesh"
+		animation = { id = "idle" type = "PL2027v2_SOV_IFV_BMP_3_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_SOV_IFV_BMP_3_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_SOV_IFV_BMP_3_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_btr82_mesh"
+		file = "gfx/models/units/pl2027v2/btr82/btr82.mesh"
+		animation = { id = "idle" type = "PL2027v2_btr82_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_btr82_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_btr82_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_SOV_IFV_T_15_Armata_mesh"
+		file = "gfx/models/units/pl2027v2/SOV_IFV_T_15_Armata/SOV_IFV_T_15_Armata.mesh"
+		animation = { id = "idle" type = "PL2027v2_SOV_IFV_T_15_Armata_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_SOV_IFV_T_15_Armata_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_SOV_IFV_T_15_Armata_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_SOV_light_tank_Sprut_SD_mesh"
+		file = "gfx/models/units/pl2027v2/SOV_light_tank_Sprut_SD/SOV_light_tank_Sprut_SD.mesh"
+		animation = { id = "idle" type = "PL2027v2_SOV_light_tank_Sprut_SD_idle_animation" }
+		animation = { id = "move" type = "PL2027v2_SOV_light_tank_Sprut_SD_move_animation" }
+		animation = { id = "attack" type = "PL2027v2_SOV_light_tank_Sprut_SD_attack_animation" }
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_SOV_AK_74_mesh"
+		file = "gfx/models/units/pl2027v2/SOV_AK_74/SOV_AK_74.mesh"
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "PL2027v2_GER_HK416_mesh"
+		file = "gfx/models/units/pl2027v2/GER_HK416/GER_HK416.mesh"
+		scale = 1.0
+	}
+}

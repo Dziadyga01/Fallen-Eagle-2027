@@ -1,0 +1,18 @@
+ROS_przy_wojnie = {
+	OR = { has_war_with = WMZ has_war_with = MAZ has_war_with = SUW }
+}
+ROS_warunek_zwyciestwa = {
+	OR = {
+		all_state = { OR = { NOT = { has_state_flag = ROS_kluczowy } is_controlled_by = ROS } }
+		NOT = { any_country = { OR = { tag = WMZ tag = MAZ tag = SUW } has_war_with = ROS } }
+	}
+	any_state = { has_state_flag = ROS_cel_mazury is_controlled_by = ROS }
+}
+ROS_warunek_kleski = {
+	OR = {
+		capital_scope = { NOT = { is_controlled_by = ROS } }
+		AND = { check_variable = { ROS_dni_wojny > 455 } NOT = { any_state = { has_state_flag = ROS_kluczowy is_controlled_by = ROS } } }
+		has_war_support < 0.05
+		AND = { NOT = { any_state = { has_state_flag = ROS_cel_mazury is_controlled_by = ROS } } NOT = { ROS_przy_wojnie = yes } }
+	}
+}

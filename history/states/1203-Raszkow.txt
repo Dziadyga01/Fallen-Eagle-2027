@@ -1,0 +1,20 @@
+state = {
+	id = 1203
+	name = "STATE_1203"
+	manpower = 10669
+	state_category = rural
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = KLS
+		add_core_of = KLS
+		victory_points = { 7650 1 }
+		victory_points = { 1679 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1203 7651 7648 7650 1679 }
+	local_supplies = 0.0
+}

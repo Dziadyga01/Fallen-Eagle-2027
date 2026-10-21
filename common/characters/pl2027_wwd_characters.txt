@@ -1,0 +1,50 @@
+characters = {
+	WWD_plc_gen = {
+		name = WWD_plc_gen
+		portraits = {
+			army = {
+				large = "gfx/leaders/WWD/WWD_plc_gen.dds"
+				small = "gfx/leaders/WWD/WWD_plc_gen_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WWD_woj_gen = {
+		name = WWD_woj_gen
+		portraits = {
+			army = {
+				large = "gfx/leaders/WWD/WWD_woj_gen.dds"
+				small = "gfx/leaders/WWD/WWD_woj_gen_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	WWD_leg_gen = {
+		name = WWD_leg_gen
+		portraits = {
+			army = {
+				large = "gfx/leaders/WWD/WWD_leg_gen.dds"
+				small = "gfx/leaders/WWD/WWD_leg_gen_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

@@ -1,0 +1,231 @@
+add_namespace = pkp
+
+country_event = {
+	id = pkp.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.1.t
+	desc = pkp.1.d
+	picture = GFX_pl2027_ev081_kolej_3
+	is_triggered_only = yes
+	option = {
+		name = pkp.1.a
+		ai_chance = { factor = 3 }
+		add_political_power = 50 add_stability = -0.03 add_popularity = { ideology = market_liberal popularity = 0.05 }
+	}
+	option = {
+		name = pkp.1.b
+		trigger = { has_political_power > 25 }
+		ai_chance = { factor = 1 }
+		add_stability = 0.02 add_political_power = -25
+	}
+}
+
+country_event = {
+	id = pkp.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.2.t
+	desc = pkp.2.d
+	picture = GFX_pl2027_ev081_praca_1
+	is_triggered_only = yes
+	option = {
+		name = pkp.2.a
+		trigger = { has_political_power > 60 }
+		ai_chance = { factor = 2 }
+		add_political_power = -60 add_stability = 0.03
+	}
+	option = {
+		name = pkp.2.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.05 add_war_support = 0.03 add_timed_idea = { idea = PKP_strajk days = 60 }
+	}
+	option = {
+		name = pkp.2.c
+		trigger = { has_political_power > 30 }
+		ai_chance = { factor = 2 }
+		add_political_power = -30 add_ideas = PKP_maszynisci
+	}
+}
+
+country_event = {
+	id = pkp.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.3.t
+	desc = pkp.3.d
+	picture = GFX_pl2027_ev081_praca_4
+	is_triggered_only = yes
+	option = {
+		name = pkp.3.a
+		trigger = { has_political_power > 75 }
+		ai_chance = { factor = 2 }
+		add_political_power = -75 add_stability = 0.05 REG_KOC_wszyscy_plus_3 = yes
+	}
+	option = {
+		name = pkp.3.b
+		ai_chance = { factor = 1 }
+		add_political_power = 50 add_stability = -0.05 add_war_support = 0.02
+	}
+	option = {
+		name = pkp.3.c
+		trigger = { has_political_power > 20 }
+		ai_chance = { factor = 1 }
+		add_stability = 0.02 add_popularity = { ideology = social_liberal popularity = 0.05 } add_political_power = -20
+	}
+}
+
+country_event = {
+	id = pkp.4
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.4.t
+	desc = pkp.4.d
+	picture = GFX_pl2027_ev081_kolej_3
+	is_triggered_only = yes
+	option = {
+		name = pkp.4.a
+		trigger = { has_political_power > 30 }
+		ai_chance = { factor = 1 }
+		add_stability = 0.04 add_political_power = -30
+	}
+	option = {
+		name = pkp.4.b
+		ai_chance = { factor = 2 }
+		add_political_power = 60 add_stability = -0.04
+	}
+	option = {
+		name = pkp.4.c
+		ai_chance = { factor = 1 }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } add_manpower = 1500 add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = pkp.5
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.5.t
+	desc = pkp.5.d
+	picture = GFX_pl2027_ev081_zima_5
+	is_triggered_only = yes
+	option = {
+		name = pkp.5.a
+		trigger = { has_political_power > 40 }
+		ai_chance = { factor = 2 }
+		add_political_power = -40 add_timed_idea = { idea = PKP_wegiel days = 365 }
+	}
+	option = {
+		name = pkp.5.b
+		ai_chance = { factor = 2 }
+		add_political_power = 30 if = { limit = { country_exists = WMG } WMG = { add_to_variable = { REG_KOC = 5 } REG_przelicz = yes } }
+	}
+	option = {
+		name = pkp.5.c
+		ai_chance = { factor = 1 }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_stability = -0.03 REG_KOC_wszyscy_minus_3 = yes
+	}
+}
+
+country_event = {
+	id = pkp.6
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.6.t
+	desc = pkp.6.d
+	picture = GFX_pl2027_ev081_kolej_2
+	is_triggered_only = yes
+	option = {
+		name = pkp.6.a
+		ai_chance = { factor = 3 }
+		add_political_power = 40 add_stability = 0.02 if = { limit = { country_exists = WMG } WMG = { add_to_variable = { REG_KOC = 10 } REG_przelicz = yes } } FROM = { add_timed_idea = { idea = PKP_port_gdanski days = 730 } }
+	}
+	option = {
+		name = pkp.6.b
+		ai_chance = { factor = 1 }
+		add_political_power = 20 FROM = { country_event = { id = pkp.7 } }
+	}
+}
+
+country_event = {
+	id = pkp.7
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.7.t
+	desc = pkp.7.d
+	picture = GFX_pl2027_ev081_wisla_5
+	is_triggered_only = yes
+	option = {
+		name = pkp.7.a
+		ai_chance = { factor = 2 }
+		if = { limit = { country_exists = GDY } GDY = { add_to_variable = { REG_KOC = 10 } REG_przelicz = yes } } add_political_power = 20
+	}
+	option = {
+		name = pkp.7.b
+		ai_chance = { factor = 1 }
+		if = { limit = { country_exists = WMG } WMG = { add_to_variable = { REG_KOC = 5 } REG_przelicz = yes } } add_stability = -0.02 add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = pkp.8
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.8.t
+	desc = pkp.8.d
+	picture = GFX_pl2027_ev081_kolej_1
+	is_triggered_only = yes
+	option = {
+		name = pkp.8.a
+		ai_chance = { factor = 2 }
+		set_cosmetic_tag = PKP_KONFEDERACJA add_ideas = PKP_konfederacja add_stability = 0.05 REG_KOC_wszyscy_plus_10 = yes if = { limit = { is_in_faction = no } create_faction = PKP_frakcja } if = { limit = { is_faction_leader = yes } if = { limit = { country_exists = WMG WMG = { is_in_faction = no NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT check_variable = { REG_KOC > 49 } } } } add_to_faction = WMG } if = { limit = { country_exists = GDY GDY = { is_in_faction = no NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT check_variable = { REG_KOC > 49 } } } } add_to_faction = GDY } if = { limit = { country_exists = SWC SWC = { is_in_faction = no NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT check_variable = { REG_KOC > 49 } } } } add_to_faction = SWC } if = { limit = { country_exists = GRU GRU = { is_in_faction = no NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT check_variable = { REG_KOC > 49 } } } } add_to_faction = GRU } if = { limit = { country_exists = TUC TUC = { is_in_faction = no NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT check_variable = { REG_KOC > 49 } } } } add_to_faction = TUC } if = { limit = { country_exists = CHE CHE = { is_in_faction = no NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT check_variable = { REG_KOC > 49 } } } } add_to_faction = CHE } if = { limit = { country_exists = BYD BYD = { is_in_faction = no NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT check_variable = { REG_KOC > 49 } } } } add_to_faction = BYD } if = { limit = { country_exists = TRN TRN = { is_in_faction = no NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT check_variable = { REG_KOC > 49 } } } } add_to_faction = TRN } } set_country_flag = PKP_konfederacja
+	}
+	option = {
+		name = pkp.8.b
+		ai_chance = { factor = 1 }
+		set_cosmetic_tag = PKP_IMPERIUM add_ideas = PKP_imperium add_war_support = 0.1 116 = { add_claim_by = ROOT } 155 = { add_claim_by = ROOT } 66 = { add_claim_by = ROOT } 130 = { add_claim_by = ROOT } 964 = { add_claim_by = ROOT } if = { limit = { country_exists = SWC NOT = { has_war_with = SWC } NOT = { SWC = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = SWC } } else = { add_political_power = 25 } if = { limit = { country_exists = GRU NOT = { has_war_with = GRU } NOT = { GRU = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = GRU } } else = { add_political_power = 25 } if = { limit = { country_exists = TUC NOT = { has_war_with = TUC } NOT = { TUC = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = TUC } } else = { add_political_power = 25 } if = { limit = { country_exists = WMG NOT = { has_war_with = WMG } NOT = { WMG = { is_subject_of = ROOT } } } create_wargoal = { type = annex_everything target = WMG } } else = { add_political_power = 25 } set_country_flag = PKP_imperium
+	}
+}
+
+country_event = {
+	id = pkp.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.30.t
+	desc = pkp.30.d
+	picture = GFX_pl2027_ev081_kolej_4
+	is_triggered_only = yes
+	option = {
+		name = pkp.30.a
+		trigger = { OR = { is_in_faction = no is_faction_leader = yes } }
+		ai_chance = { factor = 60 modifier = { factor = 0.1 has_war_with = FROM } }
+		if = { limit = { is_in_faction = no } create_faction = KOR_KONSORCJUM } if = { limit = { is_faction_leader = yes } add_to_faction = FROM } FROM = { country_event = { id = pkp.31 } }
+	}
+	option = {
+		name = pkp.30.b
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = pkp.31
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.31.t
+	desc = pkp.31.d
+	picture = GFX_pl2027_ev081_kolej_4
+	is_triggered_only = yes
+	option = {
+		name = pkp.31.a
+		ai_chance = { factor = 1 }
+		add_political_power = 40
+	}
+}
+
+country_event = {
+	id = pkp.32
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = pkp.32.t
+	desc = pkp.32.d
+	picture = GFX_pl2027_ev081_kolej_4
+	is_triggered_only = yes
+	option = {
+		name = pkp.32.a
+		ai_chance = { factor = 60 }
+		add_political_power = 30 FROM = { add_political_power = 30 } if = { limit = { FROM = { is_faction_leader = yes } is_in_faction = no } FROM = { add_to_faction = ROOT } }
+	}
+	option = {
+		name = pkp.32.b
+		ai_chance = { factor = 25 }
+	}
+}

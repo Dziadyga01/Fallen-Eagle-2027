@@ -1,0 +1,108 @@
+REG_przelicz = {
+	clamp_variable = { var = REG_KOC min = 0 max = 100 } clamp_variable = { var = REG_WLC min = 0 max = 100 } clamp_variable = { var = REG_BYD min = 0 max = 100 }
+}
+REG_KOC_wszyscy_plus_3 = {
+	every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_KOC = 3 } REG_przelicz = yes }
+}
+REG_KOC_wszyscy_minus_3 = {
+	every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_KOC = -3 } REG_przelicz = yes }
+}
+REG_KOC_wszyscy_plus_5 = {
+	every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_KOC = 5 } REG_przelicz = yes }
+}
+REG_KOC_wszyscy_minus_5 = {
+	every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_KOC = -5 } REG_przelicz = yes }
+}
+REG_KOC_wszyscy_plus_8 = {
+	every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_KOC = 8 } REG_przelicz = yes }
+}
+REG_KOC_wszyscy_minus_8 = {
+	every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_KOC = -8 } REG_przelicz = yes }
+}
+REG_KOC_wszyscy_plus_10 = {
+	every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_KOC = 10 } REG_przelicz = yes }
+}
+REG_KOC_wszyscy_minus_10 = {
+	every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_KOC = -10 } REG_przelicz = yes }
+}
+REG_KOC_wszyscy_plus_15 = {
+	every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_KOC = 15 } REG_przelicz = yes }
+}
+REG_KOC_wszyscy_minus_15 = {
+	every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_KOC = -15 } REG_przelicz = yes }
+}
+REG_WLC_wszyscy_plus_3 = {
+	every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_WLC = 3 } REG_przelicz = yes }
+}
+REG_WLC_wszyscy_minus_3 = {
+	every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_WLC = -3 } REG_przelicz = yes }
+}
+REG_WLC_wszyscy_plus_5 = {
+	every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_WLC = 5 } REG_przelicz = yes }
+}
+REG_WLC_wszyscy_minus_5 = {
+	every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_WLC = -5 } REG_przelicz = yes }
+}
+REG_WLC_wszyscy_plus_8 = {
+	every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_WLC = 8 } REG_przelicz = yes }
+}
+REG_WLC_wszyscy_minus_8 = {
+	every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_WLC = -8 } REG_przelicz = yes }
+}
+REG_WLC_wszyscy_plus_10 = {
+	every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_WLC = 10 } REG_przelicz = yes }
+}
+REG_WLC_wszyscy_minus_10 = {
+	every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_WLC = -10 } REG_przelicz = yes }
+}
+REG_WLC_wszyscy_plus_15 = {
+	every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_WLC = 15 } REG_przelicz = yes }
+}
+REG_WLC_wszyscy_minus_15 = {
+	every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_WLC = -15 } REG_przelicz = yes }
+}
+REG_BYD_wszyscy_plus_3 = {
+	every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_BYD = 3 } REG_przelicz = yes }
+}
+REG_BYD_wszyscy_minus_3 = {
+	every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_BYD = -3 } REG_przelicz = yes }
+}
+REG_BYD_wszyscy_plus_5 = {
+	every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_BYD = 5 } REG_przelicz = yes }
+}
+REG_BYD_wszyscy_minus_5 = {
+	every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_BYD = -5 } REG_przelicz = yes }
+}
+REG_BYD_wszyscy_plus_8 = {
+	every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_BYD = 8 } REG_przelicz = yes }
+}
+REG_BYD_wszyscy_minus_8 = {
+	every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_BYD = -8 } REG_przelicz = yes }
+}
+REG_BYD_wszyscy_plus_10 = {
+	every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_BYD = 10 } REG_przelicz = yes }
+}
+REG_BYD_wszyscy_minus_10 = {
+	every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_BYD = -10 } REG_przelicz = yes }
+}
+REG_BYD_wszyscy_plus_15 = {
+	every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_BYD = 15 } REG_przelicz = yes }
+}
+REG_BYD_wszyscy_minus_15 = {
+	every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = PREV } NOT = { is_subject_of = PREV } NOT = { has_war_with = PREV } } add_to_variable = { REG_BYD = -15 } REG_przelicz = yes }
+}
+REG_KOC_miesiac = {
+	set_variable = { REG_partnerzy = 0 } set_variable = { REG_projekty = 0 } set_variable = { REG_mies_pp = 0 } every_country = { limit = { OR = { tag = WMG tag = GDY tag = SWC tag = GRU tag = TUC tag = CHE tag = BYD tag = TRN tag = ZKR } NOT = { tag = ROOT } NOT = { has_war_with = ROOT } } if = { limit = { check_variable = { REG_KOC > 24 } } ROOT = { add_to_variable = { REG_partnerzy = 1 } } } if = { limit = { check_variable = { REG_KOC > 49 } } ROOT = { add_to_variable = { REG_projekty = 1 } } } if = { limit = { has_country_flag = REG_link_KOC ROOT = { has_country_flag = PKP_mech_szlaki } } add_to_variable = { REG_KOC = 1 } REG_przelicz = yes ROOT = { add_to_variable = { REG_mies_pp = 2 } } } if = { limit = { has_country_flag = REG_dworzec_KOC } ROOT = { add_to_variable = { REG_mies_pp = 2 } } } if = { limit = { has_idea = WPL_spolka_zalezna NOT = { is_subject_of = ROOT } } remove_ideas = WPL_spolka_zalezna } } clamp_variable = { var = REG_mies_pp min = 0 max = 12 } if = { limit = { check_variable = { REG_mies_pp > 0 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 1 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 2 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 3 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 4 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 5 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 6 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 7 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 8 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 9 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 10 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 11 } } add_political_power = 1 } set_variable = { REG_siec_pp = REG_partnerzy } multiply_variable = { REG_siec_pp = 0.02 } clamp_variable = { var = REG_siec_pp min = 0 max = 0.10 } set_variable = { REG_siec_bud = REG_projekty } multiply_variable = { REG_siec_bud = 0.02 } clamp_variable = { var = REG_siec_bud min = 0 max = 0.10 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = WPL_siec_wplywow } } } add_dynamic_modifier = { modifier = WPL_siec_wplywow } } 
+}
+REG_WLC_miesiac = {
+	set_variable = { REG_partnerzy = 0 } set_variable = { REG_projekty = 0 } set_variable = { REG_mies_pp = 0 } every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = ROOT } NOT = { has_war_with = ROOT } } if = { limit = { check_variable = { REG_WLC > 24 } } ROOT = { add_to_variable = { REG_partnerzy = 1 } } } if = { limit = { check_variable = { REG_WLC > 49 } } ROOT = { add_to_variable = { REG_projekty = 1 } } } if = { limit = { has_country_flag = REG_franczyza_WLC } add_to_variable = { REG_WLC = 1 } REG_przelicz = yes ROOT = { add_to_variable = { REG_mies_pp = 2 } } } if = { limit = { ROOT = { has_country_flag = TPZ_mech_monopol } check_variable = { REG_WLC > 49 } } add_to_variable = { REG_WLC = 1 } REG_przelicz = yes } } clamp_variable = { var = REG_mies_pp min = 0 max = 12 } if = { limit = { check_variable = { REG_mies_pp > 0 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 1 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 2 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 3 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 4 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 5 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 6 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 7 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 8 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 9 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 10 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 11 } } add_political_power = 1 } set_variable = { REG_siec_pp = REG_partnerzy } multiply_variable = { REG_siec_pp = 0.02 } clamp_variable = { var = REG_siec_pp min = 0 max = 0.10 } set_variable = { REG_siec_bud = REG_projekty } multiply_variable = { REG_siec_bud = 0.02 } clamp_variable = { var = REG_siec_bud min = 0 max = 0.10 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = WPL_siec_wplywow } } } add_dynamic_modifier = { modifier = WPL_siec_wplywow } } every_country = { limit = { OR = { tag = DOB tag = KUJ tag = TRN tag = BYD tag = PLO } NOT = { tag = ROOT } check_variable = { TPZ_dlug > 49 } NOT = { has_country_flag = REG_dlug_cd_WLC } } set_country_flag = { flag = REG_dlug_cd_WLC days = 120 } country_event = { id = tpz.31 } }
+}
+REG_BYD_miesiac = {
+	set_variable = { REG_partnerzy = 0 } set_variable = { REG_projekty = 0 } set_variable = { REG_mies_pp = 0 } every_country = { limit = { OR = { tag = SLK tag = DAB tag = ROZ tag = KRW tag = OSD tag = NWW tag = SCK tag = SWC tag = CHE tag = TUC tag = KUJ tag = TRN } NOT = { tag = ROOT } NOT = { has_war_with = ROOT } } if = { limit = { check_variable = { REG_BYD > 24 } } ROOT = { add_to_variable = { REG_partnerzy = 1 } } } if = { limit = { check_variable = { REG_BYD > 49 } } ROOT = { add_to_variable = { REG_projekty = 1 } } } if = { limit = { has_country_flag = REG_urzad_BYD } add_to_variable = { REG_BYD = 1 } REG_przelicz = yes } } clamp_variable = { var = REG_mies_pp min = 0 max = 12 } if = { limit = { check_variable = { REG_mies_pp > 0 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 1 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 2 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 3 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 4 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 5 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 6 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 7 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 8 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 9 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 10 } } add_political_power = 1 } if = { limit = { check_variable = { REG_mies_pp > 11 } } add_political_power = 1 } set_variable = { REG_siec_pp = REG_partnerzy } multiply_variable = { REG_siec_pp = 0.02 } clamp_variable = { var = REG_siec_pp min = 0 max = 0.10 } set_variable = { REG_siec_bud = REG_projekty } multiply_variable = { REG_siec_bud = 0.02 } clamp_variable = { var = REG_siec_bud min = 0 max = 0.10 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = WPL_siec_wplywow } } } add_dynamic_modifier = { modifier = WPL_siec_wplywow } } 
+}
+WPL_ref_sukces = {
+	FROM = { save_global_event_target_as = WPL_ref_cel } if = { limit = { FROM = { exists = yes num_of_controlled_states < 4 } NOT = { has_war_with = FROM } } annex_country = { target = FROM transfer_troops = yes } set_country_flag = WPL_ref_aneksja } else_if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } } puppet = FROM clr_country_flag = WPL_ref_aneksja } country_event = { id = wpl.20 }
+}
+WPL_ref_porazka = {
+	FROM = { save_global_event_target_as = WPL_ref_cel add_to_variable = { REG_BYD = -20 } REG_przelicz = yes add_opinion_modifier = { target = ROOT modifier = PL2027_nieudane_referendum } } country_event = { id = wpl.21 }
+}

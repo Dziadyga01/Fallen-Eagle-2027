@@ -1,0 +1,20 @@
+state = {
+	id = 112
+	name = "STATE_112"
+	manpower = 1974
+	state_category = rural
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = SWC
+		add_core_of = SWC
+		victory_points = { 7999 1 }
+		victory_points = { 8011 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 7999 8011 8002 }
+	local_supplies = 0.0
+}

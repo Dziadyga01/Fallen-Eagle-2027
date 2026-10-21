@@ -1,0 +1,27 @@
+defined_text = {
+	name = MET_GetObszar
+	text = {
+		trigger = { check_variable = { global.MET_ref_obszar > 0 } check_variable = { global.MET_ref_obszar < 2 } }
+		localization_key = MET_obszar_1
+	}
+	text = {
+		trigger = { check_variable = { global.MET_ref_obszar > 1 } check_variable = { global.MET_ref_obszar < 3 } }
+		localization_key = MET_obszar_2
+	}
+	text = {
+		trigger = { check_variable = { global.MET_ref_obszar > 2 } check_variable = { global.MET_ref_obszar < 4 } }
+		localization_key = MET_obszar_3
+	}
+	text = {
+		trigger = { check_variable = { global.MET_ref_obszar > 3 } check_variable = { global.MET_ref_obszar < 5 } }
+		localization_key = MET_obszar_4
+	}
+	text = {
+		trigger = { check_variable = { global.MET_ref_obszar > 4 } check_variable = { global.MET_ref_obszar < 6 } }
+		localization_key = MET_obszar_5
+	}
+	text = {
+		trigger = { check_variable = { global.MET_ref_obszar > 5 } check_variable = { global.MET_ref_obszar < 7 } }
+		localization_key = MET_obszar_6
+	}
+}

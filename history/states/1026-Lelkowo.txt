@@ -1,0 +1,18 @@
+state = {
+	id = 1026
+	name = "STATE_1026"
+	manpower = 4435
+	state_category = rural
+	history = {
+		owner = ROS
+		add_core_of = KRL
+		victory_points = { 2046 1 }
+		victory_points = { 2585 1 }
+		victory_points = { 2879 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 736 2046 2879 2585 2625 3022 4194 }
+	local_supplies = 0.0
+}

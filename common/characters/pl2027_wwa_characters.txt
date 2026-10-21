@@ -1,0 +1,41 @@
+characters = {
+	IVRP_lider_sejm = {
+		name = IVRP_lider_sejm
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WWA/IVRP_lider_sejm.dds"
+				small = "gfx/leaders/WWA/IVRP_lider_sejm_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	IVRP_lider_prezydent = {
+		name = IVRP_lider_prezydent
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WWA/IVRP_lider_prezydent.dds"
+				small = "gfx/leaders/WWA/IVRP_lider_prezydent_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	IVRP_lider_mafia = {
+		name = IVRP_lider_mafia
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/WWA/IVRP_lider_mafia.dds"
+				small = "gfx/leaders/WWA/IVRP_lider_mafia_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = mafia_state
+			expire = "2065.1.1.1"
+		}
+	}
+}

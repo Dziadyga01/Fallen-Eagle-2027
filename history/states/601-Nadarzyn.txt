@@ -1,0 +1,19 @@
+state = {
+	id = 601
+	name = "STATE_601"
+	manpower = 12447
+	state_category = rural
+	history = {
+		owner = MPR
+		add_core_of = MPR
+		victory_points = { 3559 1 }
+		victory_points = { 816 1 }
+		victory_points = { 2245 1 }
+		victory_points = { 3594 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 816 3150 1978 3594 3559 3745 3590 2350 2245 3588 }
+	local_supplies = 0.0
+}

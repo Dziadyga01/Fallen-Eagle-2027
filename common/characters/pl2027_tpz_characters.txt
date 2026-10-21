@@ -1,0 +1,47 @@
+characters = {
+	TPZ_archacki = {
+		name = TPZ_archacki
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TPZ/TPZ_archacki.dds"
+				small = "gfx/leaders/TPZ/TPZ_archacki_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = corporatism
+			expire = "2065.1.1.1"
+		}
+	}
+	TPZ_sobczak = {
+		name = TPZ_sobczak
+		portraits = {
+			army = {
+				large = "gfx/leaders/TPZ/TPZ_sobczak.dds"
+				small = "gfx/leaders/TPZ/TPZ_sobczak_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	TPZ_wroblewska = {
+		name = TPZ_wroblewska
+		portraits = {
+			army = {
+				large = "gfx/leaders/TPZ/TPZ_wroblewska.dds"
+				small = "gfx/leaders/TPZ/TPZ_wroblewska_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+}

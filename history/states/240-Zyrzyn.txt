@@ -1,0 +1,18 @@
+state = {
+	id = 240
+	name = "STATE_240"
+	manpower = 8506
+	state_category = rural
+	history = {
+		owner = PRW
+		add_core_of = PRW
+		victory_points = { 4864 1 }
+		victory_points = { 4869 1 }
+		victory_points = { 1688 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 4856 4864 4869 1001 4868 4175 1688 4860 }
+	local_supplies = 0.0
+}

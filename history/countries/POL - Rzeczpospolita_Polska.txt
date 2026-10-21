@@ -1,0 +1,57 @@
+﻿# The Fallen Eagle 0.8.6 – Rzeczpospolita Polska (scenariusz „Godzina Zero”: rzad w Srodmiesciu, regiony jako wojewodztwa)
+capital = 745
+set_research_slots = 3
+set_stability = 0.40
+set_war_support = 0.20
+set_technology = {
+	army_uniform = 1
+	basic_fortification_tech = 1
+	basic_machine_tools = 1
+	basic_train = 1
+	construction1 = 1
+	excavation1 = 1
+	infantry_training = 1
+	light_artillery = 1
+	light_artillery1 = 1
+	light_artillery2 = 1
+	light_artillery3 = 1
+	light_artillery_upgrade1 = 1
+	melee_weapons = 1
+	nsb_bicycle = 1
+	nsb_truck_1 = 1
+	nsb_truck_2 = 1
+	nsb_truck_3 = 1
+	nsb_truck_4 = 1
+	post_collapse_assesment = 1
+	ranged_weapons = 1
+	ranged_weapons1 = 1
+	ranged_weapons2 = 1
+	ranged_weapons3 = 1
+	ranged_weapons_upgrade = 1
+	ranged_weapons_upgrade1 = 1
+	ranged_weapons_upgrade2 = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_support = 1
+}
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "2027.10.10"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalitarian_socialist = 1
+	communist = 4
+	libertarian_socialist = 4
+	social_democrat = 16
+	social_liberal = 30
+	market_liberal = 6
+	conservative = 20
+	authoritarian_democrat = 8
+	nationalist = 7
+	fascist = 4
+}
+recruit_character = POL_rada_ministrow
+add_ideas = ROZ_rzad_rp
+set_country_flag = TFE_centrum

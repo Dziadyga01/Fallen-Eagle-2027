@@ -1,0 +1,5 @@
+on_actions = {
+	on_monthly_BYD = {
+		effect = { if = { limit = { has_country_flag = BYD2_kampania has_stability < 0.15 NOT = { has_country_flag = BYD2_pucz_cd } } set_country_flag = { flag = BYD2_pucz_cd days = 120 } country_event = { id = byd2.60 } } }
+	}
+}

@@ -1,0 +1,70 @@
+ideas = {
+	country = {
+		BYD2_kontrowersyjny = {
+			picture = DU_BYD2_kontrowersyjny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+			}
+		}
+		BYD2_przemysl_1 = {
+			picture = DU_BYD2_przemysl_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		BYD2_przemysl_2 = {
+			picture = DU_BYD2_przemysl_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		BYD2_rady_1 = {
+			picture = DU_BYD2_rady_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		BYD2_rady_2 = {
+			picture = DU_BYD2_rady_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				industrial_capacity_factory = 0.08
+				conscription_factor = 0.1
+			}
+		}
+		BYD2_brdowski_1 = {
+			picture = DU_BYD2_brdowski_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		BYD2_brdowski_2 = {
+			picture = DU_BYD2_brdowski_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+}

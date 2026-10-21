@@ -1,0 +1,25 @@
+state = {
+	id = 942
+	name = "STATE_942"
+	manpower = 53531
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = KOC
+		add_core_of = KOC
+		victory_points = { 44 5 }
+		victory_points = { 8477 1 }
+		victory_points = { 8473 1 }
+		victory_points = { 8472 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 44 8477 8476 768 8475 8470 8474 8473 8488 8472 8471 }
+	local_supplies = 0.0
+}

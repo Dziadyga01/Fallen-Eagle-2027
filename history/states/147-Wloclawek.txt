@@ -1,0 +1,23 @@
+state = {
+	id = 147
+	name = "STATE_147"
+	manpower = 6514
+	state_category = town
+	history = {
+		owner = WLC
+		add_core_of = WLC
+		victory_points = { 8161 5 }
+		victory_points = { 8162 1 }
+		victory_points = { 8159 1 }
+		victory_points = { 8203 1 }
+		victory_points = { 8208 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 8158 8159 8163 8164 8162 8161 8207 8208 8204 8211 8203 8206 }
+	local_supplies = 0.0
+}

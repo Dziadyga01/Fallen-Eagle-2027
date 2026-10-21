@@ -1,0 +1,47 @@
+ZKR_cel_NML = {
+	OR = {
+		NOT = { country_exists = NML }
+		NML = { is_subject_of = ROOT }
+		1076 = { is_controlled_by = ROOT }
+	}
+}
+ZKR_cel_GRU = {
+	OR = {
+		NOT = { country_exists = GRU }
+		GRU = { is_subject_of = ROOT }
+		66 = { is_controlled_by = ROOT }
+	}
+}
+ZKR_cel_KOC = {
+	OR = {
+		NOT = { country_exists = KOC }
+		KOC = { is_subject_of = ROOT }
+		942 = { is_controlled_by = ROOT }
+	}
+}
+ZKR_cel_WMZ = {
+	OR = {
+		NOT = { country_exists = WMZ }
+		WMZ = { is_subject_of = ROOT }
+		1124 = { is_controlled_by = ROOT }
+	}
+}
+ZKR_warunek_prus = {
+	909 = { is_controlled_by = ROOT }
+	OR = { 66 = { is_controlled_by = ROOT } GRU = { is_subject_of = ROOT } }
+	OR = { 1124 = { is_controlled_by = ROOT } WMZ = { is_subject_of = ROOT } }
+}
+ZKR_faza_dyplomacji = {
+	date > 2029.1.1
+}
+ZKR_moze_ultimatum = {
+	date > 2029.9.1
+	has_war = no
+	NOT = { has_country_flag = ZKR_WAR_COOLDOWN }
+	has_country_flag = ZKR_INTERNAL_STABILITY
+	has_stability > 0.39
+}
+ZKR_moze_kampania = {
+	date > 2030.1.1
+	ZKR_moze_ultimatum = yes
+}

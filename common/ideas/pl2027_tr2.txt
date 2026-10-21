@@ -1,0 +1,138 @@
+ideas = {
+	country = {
+		TR2_rzad_tymczasowy = {
+			picture = DU_TR2_rzad_tymczasowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+				justify_war_goal_time = 1.0
+			}
+		}
+		TR2_kontrowersyjny = {
+			picture = DU_TR2_kontrowersyjny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+			}
+		}
+		TR2_gulewski_1 = {
+			picture = DU_TR2_gulewski_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		TR2_gulewski_2 = {
+			picture = DU_TR2_gulewski_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		TR2_zaleski_1 = {
+			picture = DU_TR2_zaleski_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.03
+			}
+		}
+		TR2_zaleski_2 = {
+			picture = DU_TR2_zaleski_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				production_speed_infrastructure_factor = 0.2
+				industrial_capacity_factory = 0.05
+			}
+		}
+		TR2_romanowski_1 = {
+			picture = DU_TR2_romanowski_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+		TR2_romanowski_2 = {
+			picture = DU_TR2_romanowski_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.08
+				consumer_goods_factor = -0.03
+			}
+		}
+		TR2_kowalczyk_1 = {
+			picture = DU_TR2_kowalczyk_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		TR2_kowalczyk_2 = {
+			picture = DU_TR2_kowalczyk_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		TR2_elana_1 = {
+			picture = DU_TR2_elana_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				conscription_factor = 0.2
+				stability_factor = -0.02
+			}
+		}
+		TR2_elana_2 = {
+			picture = DU_TR2_elana_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				war_support_factor = 0.1
+				conscription_factor = 0.2
+			}
+		}
+		TR2_krevienko_1 = {
+			picture = DU_TR2_krevienko_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = -0.05
+				war_support_factor = 0.05
+			}
+		}
+		TR2_krevienko_2 = {
+			picture = DU_TR2_krevienko_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				army_defence_factor = 0.1
+				production_speed_buildings_factor = 0.08
+			}
+		}
+	}
+}

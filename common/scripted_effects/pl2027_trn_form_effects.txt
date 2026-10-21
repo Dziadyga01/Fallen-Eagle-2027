@@ -1,0 +1,60 @@
+TRN_przelicz = {
+	clamp_variable = { var = TRN_leg_szl min = 0 max = 100 }
+	clamp_variable = { var = TRN_leg_arm min = 0 max = 100 }
+	clamp_variable = { var = TRN_leg_lud min = 0 max = 100 }
+	clamp_variable = { var = TRN_rad min = 0 max = 100 }
+	clamp_variable = { var = TRN_wpl_tor min = 0 max = 100 }
+	clamp_variable = { var = TRN_wpl_byd min = 0 max = 100 }
+	clamp_variable = { var = TRN_autorytet min = 0 max = 100 }
+	clamp_variable = { var = TRN_zaniedbanie min = 0 max = 100 }
+	clamp_variable = { var = TRN_napiecie min = 0 max = 100 }
+	# B
+	set_variable = { TRN_leg = TRN_leg_szl }
+	add_to_variable = { TRN_leg = TRN_leg_arm }
+	add_to_variable = { TRN_leg = TRN_leg_lud }
+	divide_variable = { TRN_leg = 3 }
+	set_variable = { TRN_dm_b1 = TRN_leg }
+	subtract_from_variable = { TRN_dm_b1 = 50 }
+	multiply_variable = { TRN_dm_b1 = 0.003 }
+	set_variable = { TRN_dm_b2 = TRN_dm_b1 }
+	# C
+	set_variable = { TRN_dm_c1 = TRN_rad }
+	multiply_variable = { TRN_dm_c1 = 0.002 }
+	set_variable = { TRN_dm_c2 = TRN_rad }
+	multiply_variable = { TRN_dm_c2 = -15 }
+	divide_variable = { TRN_dm_c2 = 10000 }
+	# D
+	set_variable = { TRN_napiecie = TRN_wpl_tor }
+	subtract_from_variable = { TRN_napiecie = TRN_wpl_byd }
+	if = { limit = { check_variable = { TRN_napiecie < 0 } } multiply_variable = { TRN_napiecie = -1 } }
+	multiply_variable = { TRN_napiecie = 2 }
+	clamp_variable = { var = TRN_napiecie min = 0 max = 100 }
+	set_variable = { TRN_dm_d1 = TRN_napiecie }
+	multiply_variable = { TRN_dm_d1 = -0.002 }
+	# E
+	set_variable = { TRN_dm_e1 = TRN_autorytet }
+	multiply_variable = { TRN_dm_e1 = 0.002 }
+	set_variable = { TRN_dm_e2 = TRN_zaniedbanie }
+	multiply_variable = { TRN_dm_e2 = -0.002 }
+	force_update_dynamic_modifier = yes
+	if = { limit = { check_variable = { TRN_leg > 40 } } clr_country_flag = TRN_kryzys_korony }
+	if = { limit = { check_variable = { TRN_napiecie < 50 } } clr_country_flag = TRN_kryzys_stolic }
+	if = { limit = { has_country_flag = TRN_linia_B check_variable = { TRN_leg < 30 } NOT = { has_country_flag = TRN_kryzys_korony } NOT = { has_country_flag = TRN_wojna_domowa } } set_country_flag = TRN_kryzys_korony country_event = { id = trn.70 } }
+	if = { limit = { has_country_flag = TRN_linia_C NOT = { has_country_flag = TRN_przewrot } }
+		if = { limit = { check_variable = { TRN_rad > 80 } } set_country_flag = TRN_przewrot country_event = { id = trn.80 } }
+		else_if = { limit = { check_variable = { TRN_rad < 15 } } set_country_flag = TRN_przewrot country_event = { id = trn.81 } }
+	}
+	if = { limit = { has_country_flag = TRN_linia_D check_variable = { TRN_napiecie > 74 } NOT = { has_country_flag = TRN_kryzys_stolic } NOT = { has_country_flag = TRN_wojna_domowa } } set_country_flag = TRN_kryzys_stolic country_event = { id = trn.90 } }
+	if = { limit = { has_country_flag = TRN_linia_E }
+		if = { limit = { check_variable = { TRN_zaniedbanie > 89 } NOT = { has_country_flag = TRN_rewolta_nauka } NOT = { has_country_flag = TRN_wojna_domowa } } set_country_flag = TRN_rewolta_nauka country_event = { id = trn.101 } }
+		else_if = { limit = { check_variable = { TRN_zaniedbanie > 69 } NOT = { has_country_flag = TRN_prog_protesty } } set_country_flag = TRN_prog_protesty country_event = { id = trn.100 } }
+		if = { limit = { check_variable = { TRN_zaniedbanie < 50 } } clr_country_flag = TRN_prog_protesty }
+	}
+}
+TRN_miesiecznie = {
+	if = { limit = { has_country_flag = TRN_linia_B } add_to_variable = { TRN_leg_szl = -1 } add_to_variable = { TRN_leg_arm = -1 } add_to_variable = { TRN_leg_lud = -1 } }
+	if = { limit = { has_country_flag = TRN_linia_C } add_to_variable = { TRN_rad = 1 } }
+	if = { limit = { has_country_flag = TRN_linia_D } add_to_variable = { TRN_wpl_tor = 1 } }
+	if = { limit = { has_country_flag = TRN_linia_E } add_to_variable = { TRN_zaniedbanie = 1 } }
+	if = { limit = { OR = { has_country_flag = TRN_linia_B has_country_flag = TRN_linia_C has_country_flag = TRN_linia_D has_country_flag = TRN_linia_E } } TRN_przelicz = yes }
+}

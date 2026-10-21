@@ -1,0 +1,20 @@
+state = {
+	id = 163
+	name = "STATE_163"
+	manpower = 4663
+	state_category = rural
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = PDL
+		add_core_of = PDL
+		victory_points = { 4976 1 }
+		victory_points = { 4977 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 4947 4976 4977 }
+	local_supplies = 0.0
+}

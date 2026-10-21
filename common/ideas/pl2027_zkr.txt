@@ -1,0 +1,166 @@
+ideas = {
+	country = {
+		ZKR_mury_malborka = {
+			picture = DU_ZKR_mury_malborka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		ZKR_wspolny_sztab = {
+			picture = DU_ZKR_wspolny_sztab
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.2
+				army_org_factor = 0.05
+			}
+		}
+		ZKR_linia_pasleki = {
+			picture = DU_ZKR_linia_pasleki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		ZKR_kampania_pruska = {
+			picture = DU_ZKR_kampania_pruska
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+			}
+		}
+		ZKR_tarcza_baltyku = {
+			picture = DU_ZKR_tarcza_baltyku
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		ZKR_wolne_prusy = {
+			picture = DU_ZKR_wolne_prusy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		ZKR_militaryzacja = {
+			picture = DU_ZKR_militaryzacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.25
+				consumer_goods_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		ZKR_wsparcie_rosji = {
+			picture = DU_ZKR_wsparcie_rosji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.1
+			}
+		}
+		ZKR_namiestnictwo = {
+			picture = DU_ZKR_namiestnictwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				political_power_gain = -0.1
+			}
+		}
+		ZKR_wierny_kremlowi = {
+			picture = DU_ZKR_wierny_kremlowi
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+		ZKR_izolacja = {
+			picture = DU_ZKR_izolacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		ZKR_wolny_zakon = {
+			picture = DU_ZKR_wolny_zakon
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		ZKR_ordensstaat = {
+			picture = DU_ZKR_ordensstaat
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		ZKR_wielkie_prusy = {
+			picture = DU_ZKR_wielkie_prusy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		ZKR_maryja = {
+			picture = DU_ZKR_maryja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				war_support_factor = 0.03
+			}
+		}
+		ZKR_regula = {
+			picture = DU_ZKR_regula
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		ZKR_wiara_miecz = {
+			picture = DU_ZKR_wiara_miecz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				army_morale_factor = 0.1
+				conscription_factor = 0.1
+			}
+		}
+		ZKR_ksiestwo = {
+			picture = DU_ZKR_ksiestwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				research_speed_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+	}
+}

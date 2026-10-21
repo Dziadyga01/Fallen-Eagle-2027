@@ -1,0 +1,8 @@
+UBT_czlonek_mod = {
+	icon = GFX_idea_UBT_czlonek_mod
+	enable = { has_country_flag = UBT_czlonek }
+	remove_trigger = { NOT = { has_country_flag = UBT_czlonek } }
+	production_speed_buildings_factor = global.UBT_mod_bud
+	consumer_goods_factor = global.UBT_mod_kons
+	stability_factor = global.UBT_mod_stab
+}

@@ -1,0 +1,102 @@
+characters = {
+	BYD_komitet = {
+		name = BYD_komitet
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYD/BYD_komitet.dds"
+				small = "gfx/leaders/BYD/BYD_komitet_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = centrist
+			expire = "2065.1.1.1"
+		}
+	}
+	BYD_joanna_mlynska = {
+		name = BYD_joanna_mlynska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYD/BYD_joanna_mlynska.dds"
+				small = "gfx/leaders/BYD/BYD_joanna_mlynska_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	BYD_tomasz_fordonski = {
+		name = BYD_tomasz_fordonski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYD/BYD_tomasz_fordonski.dds"
+				small = "gfx/leaders/BYD/BYD_tomasz_fordonski_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			expire = "2065.1.1.1"
+		}
+	}
+	BYD_kuba_szwederowski = {
+		name = BYD_kuba_szwederowski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BYD/BYD_kuba_szwederowski.dds"
+				small = "gfx/leaders/BYD/BYD_kuba_szwederowski_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = left_anarchist
+			expire = "2065.1.1.1"
+		}
+	}
+	BYD_gen_bartodziej = {
+		name = BYD_gen_bartodziej
+		portraits = {
+			army = {
+				large = "gfx/leaders/BYD/BYD_gen_bartodziej.dds"
+				small = "gfx/leaders/BYD/BYD_gen_bartodziej_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	BYD_gen_kapuscinska = {
+		name = BYD_gen_kapuscinska
+		portraits = {
+			army = {
+				large = "gfx/leaders/BYD/BYD_gen_kapuscinska.dds"
+				small = "gfx/leaders/BYD/BYD_gen_kapuscinska_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	BYD_gen_glinkowski = {
+		name = BYD_gen_glinkowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/BYD/BYD_gen_glinkowski.dds"
+				small = "gfx/leaders/BYD/BYD_gen_glinkowski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

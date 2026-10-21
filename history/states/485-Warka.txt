@@ -1,0 +1,19 @@
+state = {
+	id = 485
+	name = "STATE_485"
+	manpower = 21312
+	state_category = rural
+	history = {
+		owner = WOL
+		add_core_of = WOL
+		victory_points = { 492 1 }
+		victory_points = { 10181 1 }
+		victory_points = { 10182 1 }
+		victory_points = { 10180 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 492 10180 10182 10181 10178 10158 10176 10179 10177 }
+	local_supplies = 0.0
+}

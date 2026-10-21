@@ -1,0 +1,105 @@
+characters = {
+	TRN_rafal_bruski = {
+		name = TRN_rafal_bruski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/TRN_rafal_bruski.dds"
+				small = "gfx/leaders/TRN/TRN_rafal_bruski_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	TRN_prof_rejewska = {
+		name = TRN_prof_rejewska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/TRN_prof_rejewska.dds"
+				small = "gfx/leaders/TRN/TRN_prof_rejewska_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = centrist
+			expire = "2065.1.1.1"
+		}
+	}
+	TRN_radykal_elanski = {
+		name = TRN_radykal_elanski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/TRN_radykal_elanski.dds"
+				small = "gfx/leaders/TRN/TRN_radykal_elanski_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = neonazism
+			expire = "2065.1.1.1"
+		}
+	}
+	TRN_gen_kujawski = {
+		name = TRN_gen_kujawski
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRN/TRN_gen_kujawski.dds"
+				small = "gfx/leaders/TRN/TRN_gen_kujawski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	TRN_gen_elanski = {
+		name = TRN_gen_elanski
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRN/TRN_gen_elanski.dds"
+				small = "gfx/leaders/TRN/TRN_gen_elanski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	TRN_gen_brdowska = {
+		name = TRN_gen_brdowska
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRN/TRN_gen_brdowska.dds"
+				small = "gfx/leaders/TRN/TRN_gen_brdowska_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	TRN_gen_dronowski = {
+		name = TRN_gen_dronowski
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRN/TRN_gen_dronowski.dds"
+				small = "gfx/leaders/TRN/TRN_gen_dronowski_small.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

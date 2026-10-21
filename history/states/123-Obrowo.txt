@@ -1,0 +1,20 @@
+state = {
+	id = 123
+	name = "STATE_123"
+	manpower = 10950
+	state_category = rural
+	history = {
+		owner = LUB
+		add_core_of = LUB
+		add_claim_by = TRN
+		victory_points = { 1581 1 }
+		victory_points = { 130 1 }
+		victory_points = { 8119 1 }
+		victory_points = { 8118 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 130 8119 8121 8117 8116 8118 548 1581 8115 }
+	local_supplies = 0.0
+}

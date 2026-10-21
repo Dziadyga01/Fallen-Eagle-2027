@@ -1,0 +1,24 @@
+state = {
+	id = 964
+	name = "STATE_964"
+	manpower = 342457
+	state_category = city
+	history = {
+		owner = WMG
+		add_core_of = WMG
+		victory_points = { 2103 12 }
+		victory_points = { 6129 1 }
+		victory_points = { 8658 1 }
+		victory_points = { 860 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+			3612 = { naval_base = 5 }
+			dockyard = 2
+		}
+	}
+	provinces = { 860 4467 2975 6130 2384 6132 3612 3597 6133 6124 1828 6122 6126 3562 6127 2103 2801 6128 6129 8658 1489 }
+	local_supplies = 0.0
+}

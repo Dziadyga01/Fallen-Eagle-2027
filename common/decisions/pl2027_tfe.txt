@@ -1,0 +1,78 @@
+TFE_kryzys = {
+	TFE_d_samorzady = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = POL original_tag = SMR original_tag = KPR } }
+		cost = 50
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = TFE_tt_27 hidden_effect = { add_to_variable = { global.TFE_samorzady = 8 } add_to_variable = { global.TFE_jednosc = 3 } add_to_variable = { global.TFE_presja = -4 } add_to_variable = { global.TFE_gospodarka = -2 } TFE_clamp = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 check_variable = { global.TFE_presja > 50 } } }
+	}
+	TFE_d_sejm = {
+		icon = generic_political_discourse
+		allowed = { original_tag = SMR }
+		cost = 40
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = TFE_tt_28 hidden_effect = { add_to_variable = { global.TFE_jednosc = 6 } add_to_variable = { global.TFE_zaufanie = 4 } add_to_variable = { global.TFE_presja = -3 } TFE_clamp = yes } add_stability = -0.02 }
+		ai_will_do = { factor = 3 modifier = { factor = 2 check_variable = { global.TFE_presja > 50 } } }
+	}
+	TFE_d_zandarmeria = {
+		icon = generic_political_discourse
+		allowed = { original_tag = KPR }
+		available = { has_manpower > 1999 }
+		cost = 30
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = TFE_tt_29 hidden_effect = { add_to_variable = { global.TFE_sluzby = 10 } add_to_variable = { global.TFE_zaufanie = -4 } add_to_variable = { global.TFE_presja = -2 } TFE_clamp = yes } add_manpower = -1500 }
+		ai_will_do = { factor = 3 modifier = { factor = 2 check_variable = { global.TFE_presja > 50 } } }
+	}
+	TFE_d_dotacje = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = POL original_tag = SMR original_tag = KPR } }
+		available = { NOT = { has_idea = TFE_dotacje } }
+		cost = 40
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = TFE_tt_30 hidden_effect = { add_to_variable = { global.TFE_gospodarka = 8 } add_to_variable = { global.TFE_zaufanie = 2 } add_to_variable = { global.TFE_presja = -2 } TFE_clamp = yes } add_timed_idea = { idea = TFE_dotacje days = 90 } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 check_variable = { global.TFE_presja > 50 } } }
+	}
+	TFE_d_infrastruktura = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = POL original_tag = SMR original_tag = KPR } }
+		available = { NOT = { has_idea = TFE_ochrona_infra } }
+		cost = 25
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = TFE_tt_31 hidden_effect = { add_to_variable = { global.TFE_gospodarka = 4 } add_to_variable = { global.TFE_sluzby = 4 } add_to_variable = { global.TFE_presja = -2 } TFE_clamp = yes } add_timed_idea = { idea = TFE_ochrona_infra days = 60 } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 check_variable = { global.TFE_presja > 50 } } }
+	}
+	TFE_d_odezwa = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = POL original_tag = SMR original_tag = KPR } }
+		cost = 20
+		days_re_enable = 30
+		complete_effect = { custom_effect_tooltip = TFE_tt_32 hidden_effect = { add_to_variable = { global.TFE_zaufanie = 5 } add_to_variable = { global.TFE_presja = -2 } TFE_clamp = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 check_variable = { global.TFE_presja > 50 } } }
+	}
+	TFE_d_rzad_jednosci = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = POL original_tag = SMR original_tag = KPR } }
+		available = { NOT = { has_global_flag = TFE_rzad_jednosci } custom_trigger_tooltip = { tooltip = TFE_req_obie country_exists = SMR country_exists = KPR NOT = { SMR = { has_war_with = KPR } } check_variable = { global.TFE_jednosc > 29 } } }
+		cost = 100
+		fire_only_once = yes
+		complete_effect = { custom_effect_tooltip = TFE_tt_33 hidden_effect = { add_to_variable = { global.TFE_jednosc = 15 } add_to_variable = { global.TFE_zaufanie = 10 } add_to_variable = { global.TFE_samorzady = 5 } add_to_variable = { global.TFE_presja = -15 } TFE_clamp = yes } set_global_flag = TFE_rzad_jednosci every_country = { limit = { OR = { tag = SMR tag = KPR } NOT = { tag = ROOT } } add_political_power = -100 country_event = { id = tfe.25 days = 1 } } }
+		ai_will_do = { factor = 2 modifier = { factor = 0 has_war = yes } }
+	}
+	TFE_d_lojalnosc = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOB original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRP original_tag = KRW original_tag = KST original_tag = KSZ original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LUD original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MOD original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = WWA original_tag = ZIE original_tag = ZKR original_tag = ZMD original_tag = POL } NOT = { original_tag = SMR } NOT = { original_tag = KPR } NOT = { original_tag = POL } }
+		cost = 25
+		days_re_enable = 120
+		complete_effect = { custom_effect_tooltip = TFE_tt_34 hidden_effect = { add_to_variable = { global.TFE_samorzady = 4 } add_to_variable = { global.TFE_presja = -3 } TFE_clamp = yes } add_stability = 0.02 add_to_variable = { ROZ_sklonnosc = -15 } clamp_variable = { var = ROZ_sklonnosc min = 0 max = 100 } set_country_flag = ROZ_lojalny }
+		ai_will_do = { factor = 1 modifier = { factor = 3 OR = { has_government = social_liberal has_government = conservative has_government = market_liberal } } }
+	}
+	TFE_d_przejecie = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOB original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRP original_tag = KRW original_tag = KST original_tag = KSZ original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LUD original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MOD original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = WWA original_tag = ZIE original_tag = ZKR original_tag = ZMD original_tag = POL } NOT = { original_tag = SMR } NOT = { original_tag = KPR } NOT = { original_tag = POL } }
+		cost = 0
+		days_re_enable = 90
+		complete_effect = { add_political_power = 40 add_stability = 0.02 add_to_variable = { ROZ_sklonnosc = 15 } clamp_variable = { var = ROZ_sklonnosc min = 0 max = 100 } clr_country_flag = ROZ_lojalny custom_effect_tooltip = TFE_tt_35 hidden_effect = { add_to_variable = { global.TFE_samorzady = -3 } add_to_variable = { global.TFE_jednosc = -2 } add_to_variable = { global.TFE_presja = 3 } TFE_clamp = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 OR = { has_government = nationalist has_government = authoritarian_democrat has_government = fascist } } }
+	}
+}

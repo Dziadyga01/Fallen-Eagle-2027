@@ -1,0 +1,26 @@
+state = {
+	id = 842
+	name = "STATE_842"
+	manpower = 9475
+	state_category = town
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = SUW
+		add_core_of = SUW
+		victory_points = { 6631 5 }
+		victory_points = { 6696 1 }
+		victory_points = { 6620 1 }
+		victory_points = { 6633 1 }
+		victory_points = { 6630 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 6620 6639 6631 6633 6714 6648 6649 6650 6662 6696 6632 6628 6630 6629 }
+	local_supplies = 0.0
+}

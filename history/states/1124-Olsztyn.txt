@@ -1,0 +1,24 @@
+state = {
+	id = 1124
+	name = "STATE_1124"
+	manpower = 176160
+	state_category = city
+	resources = {
+		rubber = 4
+	}
+	history = {
+		owner = WMZ
+		add_core_of = WMZ
+		victory_points = { 9493 5 }
+		victory_points = { 9601 1 }
+		victory_points = { 4211 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 4211 9492 9493 9494 9495 9490 9499 9500 9491 9601 }
+	local_supplies = 0.0
+}

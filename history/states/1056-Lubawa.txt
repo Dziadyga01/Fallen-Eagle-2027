@@ -1,0 +1,25 @@
+state = {
+	id = 1056
+	name = "STATE_1056"
+	manpower = 15224
+	state_category = town
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = LBW
+		add_core_of = LBW
+		victory_points = { 504 5 }
+		victory_points = { 2043 1 }
+		victory_points = { 2926 1 }
+		victory_points = { 2595 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 357 2043 3299 3895 2595 3580 2926 2424 3556 504 }
+	local_supplies = 0.0
+}

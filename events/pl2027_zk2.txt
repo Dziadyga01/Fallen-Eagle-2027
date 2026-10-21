@@ -1,0 +1,26 @@
+add_namespace = zk2
+
+country_event = {
+	id = zk2.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = zk2.1.t
+	desc = zk2.1.d
+	picture = GFX_tfe_mapa_zakon
+	is_triggered_only = yes
+	option = {
+		name = zk2.1.a
+		ai_chance = { factor = 10 }
+		add_timed_idea = { idea = ZKR_garnizony_komturii days = 120 }
+	}
+	option = {
+		name = zk2.1.b
+		trigger = { has_political_power > 39 }
+		ai_chance = { factor = 6 }
+		add_political_power = -40 add_stability = 0.02
+	}
+	option = {
+		name = zk2.1.c
+		ai_chance = { factor = 3 }
+		add_stability = -0.04 add_war_support = 0.02
+	}
+}

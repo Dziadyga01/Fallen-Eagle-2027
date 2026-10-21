@@ -1,0 +1,20 @@
+state = {
+	id = 403
+	name = "STATE_403"
+	manpower = 2769
+	state_category = rural
+	resources = {
+		aluminium = 1
+	}
+	history = {
+		owner = PTK
+		add_core_of = PTK
+		victory_points = { 1691 1 }
+		victory_points = { 6787 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 407 1691 6789 6787 }
+	local_supplies = 0.0
+}

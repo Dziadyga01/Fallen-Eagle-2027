@@ -1,0 +1,96 @@
+ideas = {
+	country = {
+		TFE_suwerennosc = {
+			picture = DU_TFE_suwerennosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		TFE_autonomia = {
+			picture = DU_TFE_autonomia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = -0.05
+			}
+		}
+		TFE_dotacje = {
+			picture = DU_TFE_dotacje
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		TFE_ochrona_infra = {
+			picture = DU_TFE_ochrona_infra
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+		}
+		TFE_koniec_korporacja = {
+			picture = DU_TFE_koniec_korporacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.05
+				stability_factor = -0.05
+			}
+		}
+		TFE_koniec_regiony = {
+			picture = DU_TFE_koniec_regiony
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = -0.05
+				army_defence_factor = 0.05
+			}
+		}
+		TFE_koniec_demokracja = {
+			picture = DU_TFE_koniec_demokracja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		TFE_koniec_wojsko = {
+			picture = DU_TFE_koniec_wojsko
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				army_org_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		TFE_koniec_protektorat = {
+			picture = DU_TFE_koniec_protektorat
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.05
+			}
+		}
+		TFE_koniec_rozpad = {
+			picture = DU_TFE_koniec_rozpad
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				war_support_factor = -0.05
+			}
+		}
+	}
+}

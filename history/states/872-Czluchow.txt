@@ -1,0 +1,22 @@
+state = {
+	id = 872
+	name = "STATE_872"
+	manpower = 18707
+	state_category = rural
+	resources = {
+		rubber = 1
+		steel = 1
+	}
+	history = {
+		owner = CHJ
+		add_core_of = CHJ
+		victory_points = { 8983 1 }
+		victory_points = { 8986 1 }
+		victory_points = { 748 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 748 8988 8986 8983 8982 8976 }
+	local_supplies = 0.0
+}

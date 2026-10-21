@@ -1,0 +1,23 @@
+state = {
+	id = 366
+	name = "STATE_366"
+	manpower = 24619
+	state_category = rural
+	resources = {
+		steel = 3
+	}
+	history = {
+		owner = KTN
+		add_core_of = KTN
+		victory_points = { 6023 1 }
+		victory_points = { 6048 1 }
+		victory_points = { 6051 1 }
+		victory_points = { 449 1 }
+		victory_points = { 6008 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 449 6008 6025 6023 6010 6051 1087 6049 6022 6016 6019 6017 6048 }
+	local_supplies = 0.0
+}

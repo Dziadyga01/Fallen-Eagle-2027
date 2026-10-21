@@ -1,0 +1,41 @@
+ideas = {
+	country = {
+		ROSW_strefa_wplywow = {
+			picture = DU_ROSW_strefa_wplywow
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		ROSW_linia_rozejmu = {
+			picture = DU_ROSW_linia_rozejmu
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.15
+			}
+		}
+		ROSW_odbudowa = {
+			picture = DU_ROSW_odbudowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.03
+			}
+		}
+		OWM_pod_opieka = {
+			picture = DU_OWM_pod_opieka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.1
+				army_defence_factor = 0.05
+			}
+		}
+	}
+}

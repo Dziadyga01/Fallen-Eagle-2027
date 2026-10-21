@@ -1,0 +1,25 @@
+state = {
+	id = 968
+	name = "STATE_968"
+	manpower = 40142
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = SPT
+		add_core_of = SPT
+		add_claim_by = GDY
+		add_claim_by = WMG
+		victory_points = { 4465 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+			2111 = { naval_base = 1 }
+		}
+	}
+	provinces = { 2111 3564 4465 4470 }
+	local_supplies = 0.0
+}

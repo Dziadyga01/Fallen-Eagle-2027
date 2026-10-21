@@ -1,0 +1,21 @@
+state = {
+	id = 1211
+	name = "STATE_1211"
+	manpower = 3016
+	state_category = rural
+	resources = {
+		steel = 2
+	}
+	history = {
+		owner = KLS
+		add_core_of = KLS
+		victory_points = { 7696 1 }
+		victory_points = { 1150 1 }
+		victory_points = { 40 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 40 1150 7696 7695 7700 7697 }
+	local_supplies = 0.0
+}

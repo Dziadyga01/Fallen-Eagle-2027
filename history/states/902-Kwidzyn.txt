@@ -1,0 +1,21 @@
+state = {
+	id = 902
+	name = "STATE_902"
+	manpower = 3553
+	state_category = rural
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = ZKR
+		add_core_of = ZKR
+		victory_points = { 8542 1 }
+		victory_points = { 1523 1 }
+		victory_points = { 8543 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1421 8538 8543 1523 8542 8532 }
+	local_supplies = 0.0
+}

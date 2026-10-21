@@ -1,0 +1,19 @@
+state = {
+	id = 175
+	name = "STATE_175"
+	manpower = 44505
+	state_category = town
+	history = {
+		owner = PRW
+		add_core_of = PRW
+		victory_points = { 920 1 }
+		victory_points = { 1420 1 }
+		victory_points = { 4886 1 }
+		victory_points = { 1377 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 920 1744 1420 928 1377 1743 6877 4886 5046 4888 5048 }
+	local_supplies = 0.0
+}

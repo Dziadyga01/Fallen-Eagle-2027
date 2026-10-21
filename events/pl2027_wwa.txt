@@ -1,0 +1,20 @@
+add_namespace = wwa
+
+country_event = {
+	id = wwa.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = wwa.1.t
+	desc = wwa.1.d
+	picture = GFX_pl2027_ev081_dyplomacja_3
+	is_triggered_only = yes
+	option = {
+		name = wwa.1.a
+		ai_chance = { factor = 1 modifier = { factor = 3 strength_ratio = { tag = FROM ratio < 0.5 } } modifier = { factor = 0.3 strength_ratio = { tag = FROM ratio > 0.9 } } }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } } if = { limit = { is_in_faction = yes } leave_faction = yes } FROM = { puppet = ROOT } set_country_flag = WWA_podporzadkowana } else = { add_political_power = 25 }
+	}
+	option = {
+		name = wwa.1.b
+		ai_chance = { factor = 2 }
+		FROM = { if = { limit = { NOT = { has_war_with = ROOT } } create_wargoal = { type = annex_everything target = ROOT } } }
+	}
+}

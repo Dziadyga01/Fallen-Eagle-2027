@@ -1,0 +1,17 @@
+PDG_przelicz = {
+	clamp_variable = { var = PDG_widzowie min = 0 max = 100 }
+	set_variable = { PDG_dm_pp = PDG_widzowie }
+	subtract_from_variable = { PDG_dm_pp = 50 }
+	set_variable = { PDG_dm_stab = PDG_dm_pp }
+	multiply_variable = { PDG_dm_pp = 0.004 }
+	multiply_variable = { PDG_dm_stab = 0.001 }
+	set_variable = { PDG_dm_ws = PDG_widzowie }
+	multiply_variable = { PDG_dm_ws = 0.001 }
+	force_update_dynamic_modifier = yes
+}
+PDG_uruchom = {
+	set_country_flag = PDG_mech
+	set_variable = { PDG_widzowie = 25 }
+	PDG_przelicz = yes
+	add_dynamic_modifier = { modifier = PDG_widzowie_mod }
+}

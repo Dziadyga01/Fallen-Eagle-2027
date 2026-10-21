@@ -1,0 +1,886 @@
+characters = {
+	RKUJ_b_lider = {
+		name = RKUJ_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKUJ_b_lider.dds"
+				small = "gfx/leaders/REG/RKUJ_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RKUJ_c_lider = {
+		name = RKUJ_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKUJ_c_lider.dds"
+				small = "gfx/leaders/REG/RKUJ_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RGRU_b_lider = {
+		name = RGRU_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RGRU_b_lider.dds"
+				small = "gfx/leaders/REG/RGRU_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			expire = "2065.1.1.1"
+		}
+	}
+	RGRU_c_lider = {
+		name = RGRU_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RGRU_c_lider.dds"
+				small = "gfx/leaders/REG/RGRU_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RKPM_b_lider = {
+		name = RKPM_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKPM_b_lider.dds"
+				small = "gfx/leaders/REG/RKPM_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RKPM_c_lider = {
+		name = RKPM_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKPM_c_lider.dds"
+				small = "gfx/leaders/REG/RKPM_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RKON_b_lider = {
+		name = RKON_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKON_b_lider.dds"
+				small = "gfx/leaders/REG/RKON_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RKON_c_lider = {
+		name = RKON_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKON_c_lider.dds"
+				small = "gfx/leaders/REG/RKON_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RPRW_b_lider = {
+		name = RPRW_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RPRW_b_lider.dds"
+				small = "gfx/leaders/REG/RPRW_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RPRW_c_lider = {
+		name = RPRW_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RPRW_c_lider.dds"
+				small = "gfx/leaders/REG/RPRW_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			expire = "2065.1.1.1"
+		}
+	}
+	RLWC_b_lider = {
+		name = RLWC_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RLWC_b_lider.dds"
+				small = "gfx/leaders/REG/RLWC_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = labour_syndicalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RLWC_c_lider = {
+		name = RLWC_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RLWC_c_lider.dds"
+				small = "gfx/leaders/REG/RLWC_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RKKR_a_lider = {
+		name = RKKR_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKKR_a_lider.dds"
+				small = "gfx/leaders/REG/RKKR_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+			expire = "2065.1.1.1"
+		}
+	}
+	RKKR_c_lider = {
+		name = RKKR_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKKR_c_lider.dds"
+				small = "gfx/leaders/REG/RKKR_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RNAR_b_lider = {
+		name = RNAR_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RNAR_b_lider.dds"
+				small = "gfx/leaders/REG/RNAR_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RNAR_c_lider = {
+		name = RNAR_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RNAR_c_lider.dds"
+				small = "gfx/leaders/REG/RNAR_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RPTK_a_lider = {
+		name = RPTK_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RPTK_a_lider.dds"
+				small = "gfx/leaders/REG/RPTK_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RPTK_b_lider = {
+		name = RPTK_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RPTK_b_lider.dds"
+				small = "gfx/leaders/REG/RPTK_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RRAD_a_lider = {
+		name = RRAD_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RRAD_a_lider.dds"
+				small = "gfx/leaders/REG/RRAD_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RRAD_b_lider = {
+		name = RRAD_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RRAD_b_lider.dds"
+				small = "gfx/leaders/REG/RRAD_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RKLS_b_lider = {
+		name = RKLS_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKLS_b_lider.dds"
+				small = "gfx/leaders/REG/RKLS_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RKLS_c_lider = {
+		name = RKLS_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKLS_c_lider.dds"
+				small = "gfx/leaders/REG/RKLS_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = national_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RSRD_b_lider = {
+		name = RSRD_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RSRD_b_lider.dds"
+				small = "gfx/leaders/REG/RSRD_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RSRD_c_lider = {
+		name = RSRD_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RSRD_c_lider.dds"
+				small = "gfx/leaders/REG/RSRD_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RLES_b_lider = {
+		name = RLES_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RLES_b_lider.dds"
+				small = "gfx/leaders/REG/RLES_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RLES_c_lider = {
+		name = RLES_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RLES_c_lider.dds"
+				small = "gfx/leaders/REG/RLES_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RSUW_a_lider = {
+		name = RSUW_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RSUW_a_lider.dds"
+				small = "gfx/leaders/REG/RSUW_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RSUW_b_lider = {
+		name = RSUW_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RSUW_b_lider.dds"
+				small = "gfx/leaders/REG/RSUW_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RSUW_c_lider = {
+		name = RSUW_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RSUW_c_lider.dds"
+				small = "gfx/leaders/REG/RSUW_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			expire = "2065.1.1.1"
+		}
+	}
+	RPDL_a_lider = {
+		name = RPDL_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RPDL_a_lider.dds"
+				small = "gfx/leaders/REG/RPDL_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RPDL_b_lider = {
+		name = RPDL_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RPDL_b_lider.dds"
+				small = "gfx/leaders/REG/RPDL_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			expire = "2065.1.1.1"
+		}
+	}
+	RPDL_c_lider = {
+		name = RPDL_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RPDL_c_lider.dds"
+				small = "gfx/leaders/REG/RPDL_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RWOL_a_lider = {
+		name = RWOL_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RWOL_a_lider.dds"
+				small = "gfx/leaders/REG/RWOL_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RDOB_a_lider = {
+		name = RDOB_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RDOB_a_lider.dds"
+				small = "gfx/leaders/REG/RDOB_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RDOB_b_lider = {
+		name = RDOB_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RDOB_b_lider.dds"
+				small = "gfx/leaders/REG/RDOB_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RDOB_c_lider = {
+		name = RDOB_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RDOB_c_lider.dds"
+				small = "gfx/leaders/REG/RDOB_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RLBW_a_lider = {
+		name = RLBW_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RLBW_a_lider.dds"
+				small = "gfx/leaders/REG/RLBW_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RLBW_b_lider = {
+		name = RLBW_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RLBW_b_lider.dds"
+				small = "gfx/leaders/REG/RLBW_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = christian_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RLBW_c_lider = {
+		name = RLBW_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RLBW_c_lider.dds"
+				small = "gfx/leaders/REG/RLBW_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RPLK_a_lider = {
+		name = RPLK_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RPLK_a_lider.dds"
+				small = "gfx/leaders/REG/RPLK_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RPLK_b_lider = {
+		name = RPLK_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RPLK_b_lider.dds"
+				small = "gfx/leaders/REG/RPLK_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RPLK_c_lider = {
+		name = RPLK_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RPLK_c_lider.dds"
+				small = "gfx/leaders/REG/RPLK_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RKRJ_a_lider = {
+		name = RKRJ_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKRJ_a_lider.dds"
+				small = "gfx/leaders/REG/RKRJ_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RKRJ_b_lider = {
+		name = RKRJ_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKRJ_b_lider.dds"
+				small = "gfx/leaders/REG/RKRJ_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			expire = "2065.1.1.1"
+		}
+	}
+	RKRJ_c_lider = {
+		name = RKRJ_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKRJ_c_lider.dds"
+				small = "gfx/leaders/REG/RKRJ_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RGNZ_a_lider = {
+		name = RGNZ_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RGNZ_a_lider.dds"
+				small = "gfx/leaders/REG/RGNZ_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RGNZ_b_lider = {
+		name = RGNZ_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RGNZ_b_lider.dds"
+				small = "gfx/leaders/REG/RGNZ_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RKTN_b_lider = {
+		name = RKTN_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKTN_b_lider.dds"
+				small = "gfx/leaders/REG/RKTN_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RKTN_c_lider = {
+		name = RKTN_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RKTN_c_lider.dds"
+				small = "gfx/leaders/REG/RKTN_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RLOW_b_lider = {
+		name = RLOW_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RLOW_b_lider.dds"
+				small = "gfx/leaders/REG/RLOW_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = christian_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RLOW_c_lider = {
+		name = RLOW_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RLOW_c_lider.dds"
+				small = "gfx/leaders/REG/RLOW_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RCHJ_a_lider = {
+		name = RCHJ_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RCHJ_a_lider.dds"
+				small = "gfx/leaders/REG/RCHJ_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RCHJ_b_lider = {
+		name = RCHJ_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RCHJ_b_lider.dds"
+				small = "gfx/leaders/REG/RCHJ_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RCHJ_c_lider = {
+		name = RCHJ_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RCHJ_c_lider.dds"
+				small = "gfx/leaders/REG/RCHJ_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RCHE_a_lider = {
+		name = RCHE_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RCHE_a_lider.dds"
+				small = "gfx/leaders/REG/RCHE_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RCHE_b_lider = {
+		name = RCHE_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RCHE_b_lider.dds"
+				small = "gfx/leaders/REG/RCHE_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RCHE_c_lider = {
+		name = RCHE_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RCHE_c_lider.dds"
+				small = "gfx/leaders/REG/RCHE_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RCHZ_b_lider = {
+		name = RCHZ_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RCHZ_b_lider.dds"
+				small = "gfx/leaders/REG/RCHZ_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = christian_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RCHZ_c_lider = {
+		name = RCHZ_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RCHZ_c_lider.dds"
+				small = "gfx/leaders/REG/RCHZ_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RSWC_b_lider = {
+		name = RSWC_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RSWC_b_lider.dds"
+				small = "gfx/leaders/REG/RSWC_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RSWC_c_lider = {
+		name = RSWC_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RSWC_c_lider.dds"
+				small = "gfx/leaders/REG/RSWC_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = authoritarian_democracy
+			expire = "2065.1.1.1"
+		}
+	}
+	RTUC_b_lider = {
+		name = RTUC_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RTUC_b_lider.dds"
+				small = "gfx/leaders/REG/RTUC_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RTUC_c_lider = {
+		name = RTUC_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RTUC_c_lider.dds"
+				small = "gfx/leaders/REG/RTUC_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			expire = "2065.1.1.1"
+		}
+	}
+	RMLA_a_lider = {
+		name = RMLA_a_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RMLA_a_lider.dds"
+				small = "gfx/leaders/REG/RMLA_a_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = social_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RMLA_b_lider = {
+		name = RMLA_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RMLA_b_lider.dds"
+				small = "gfx/leaders/REG/RMLA_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	RMLA_c_lider = {
+		name = RMLA_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RMLA_c_lider.dds"
+				small = "gfx/leaders/REG/RMLA_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+			expire = "2065.1.1.1"
+		}
+	}
+	RNOT_b_lider = {
+		name = RNOT_b_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RNOT_b_lider.dds"
+				small = "gfx/leaders/REG/RNOT_b_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_conservatism
+			expire = "2065.1.1.1"
+		}
+	}
+	RNOT_c_lider = {
+		name = RNOT_c_lider
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/REG/RNOT_c_lider.dds"
+				small = "gfx/leaders/REG/RNOT_c_lider_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+}

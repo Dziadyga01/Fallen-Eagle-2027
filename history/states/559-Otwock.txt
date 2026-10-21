@@ -1,0 +1,23 @@
+state = {
+	id = 559
+	name = "STATE_559"
+	manpower = 43782
+	state_category = town
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = OTW
+		add_core_of = OTW
+		victory_points = { 9772 5 }
+		victory_points = { 9739 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 1645 9772 9775 9776 9739 9771 }
+	local_supplies = 0.0
+}

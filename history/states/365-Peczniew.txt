@@ -1,0 +1,19 @@
+state = {
+	id = 365
+	name = "STATE_365"
+	manpower = 10780
+	state_category = rural
+	history = {
+		owner = KTN
+		add_core_of = KTN
+		victory_points = { 6034 1 }
+		victory_points = { 6035 1 }
+		victory_points = { 6031 1 }
+		victory_points = { 6037 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1089 6037 6036 6033 6031 6030 6028 6034 6052 6035 }
+	local_supplies = 0.0
+}

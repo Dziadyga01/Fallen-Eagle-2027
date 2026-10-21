@@ -1,0 +1,28 @@
+state = {
+	id = 1272
+	name = "STATE_1272"
+	manpower = 456041
+	state_category = large_city
+	resources = {
+		rubber = 3
+	}
+	history = {
+		owner = PMN
+		add_core_of = PMN
+		victory_points = { 8655 1 }
+		victory_points = { 9282 2 }
+		victory_points = { 9260 2 }
+		victory_points = { 3922 1 }
+		victory_points = { 9257 1 }
+		victory_points = { 9254 1 }
+		victory_points = { 9259 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 5
+			arms_factory = 2
+			air_base = 2
+		}
+	}
+	provinces = { 3922 9259 9257 9256 9255 1027 9258 9282 9254 1303 8655 9260 1542 }
+	local_supplies = 0.0
+}

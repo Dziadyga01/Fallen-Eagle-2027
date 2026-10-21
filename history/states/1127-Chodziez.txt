@@ -1,0 +1,23 @@
+state = {
+	id = 1127
+	name = "STATE_1127"
+	manpower = 8804
+	state_category = rural
+	resources = {
+		aluminium = 1
+		steel = 1
+	}
+	history = {
+		owner = NOT
+		add_core_of = NOT
+		victory_points = { 7876 1 }
+		victory_points = { 7324 2 }
+		victory_points = { 7323 1 }
+		victory_points = { 7320 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 7310 7323 7320 7317 7322 7324 7876 }
+	local_supplies = 0.0
+}

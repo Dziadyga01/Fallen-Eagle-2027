@@ -1,0 +1,21 @@
+state = {
+	id = 155
+	name = "STATE_155"
+	manpower = 100078
+	state_category = large_town
+	resources = {
+		rubber = 3
+	}
+	history = {
+		owner = GRU
+		add_core_of = GRU
+		victory_points = { 8313 2 }
+		victory_points = { 8317 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	provinces = { 1394 8317 8315 8313 }
+	local_supplies = 0.0
+}

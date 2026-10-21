@@ -1,0 +1,21 @@
+state = {
+	id = 377
+	name = "STATE_377"
+	manpower = 8249
+	state_category = rural
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = LOW
+		add_core_of = LOW
+		victory_points = { 6440 1 }
+		victory_points = { 6443 1 }
+		victory_points = { 559 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 559 6442 6441 6439 6440 6430 6443 }
+	local_supplies = 0.0
+}

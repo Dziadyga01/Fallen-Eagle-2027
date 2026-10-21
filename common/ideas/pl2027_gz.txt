@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		GZ_opal_szkoly = {
+			picture = DU_GZ_opal_szkoly
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.03
+				stability_factor = 0.02
+			}
+		}
+		GZ_gotowosc = {
+			picture = DU_GZ_gotowosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+state = {
+	id = 415
+	name = "STATE_415"
+	manpower = 34398
+	state_category = town
+	resources = {
+		steel = 2
+	}
+	history = {
+		owner = SRD
+		add_core_of = SRD
+		victory_points = { 4566 1 }
+		victory_points = { 4575 1 }
+		victory_points = { 4541 1 }
+		victory_points = { 4564 1 }
+		victory_points = { 4545 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 4488 4559 4558 4556 4541 4543 4560 4549 4545 4566 4557 4564 4575 }
+	local_supplies = 0.0
+}

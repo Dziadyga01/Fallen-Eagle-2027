@@ -1,0 +1,21 @@
+state = {
+	id = 1185
+	name = "STATE_1185"
+	manpower = 32271
+	state_category = town
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = LES
+		add_core_of = LES
+		victory_points = { 7182 1 }
+		victory_points = { 7269 2 }
+		victory_points = { 7180 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 7180 7182 7181 7269 7270 }
+	local_supplies = 0.0
+}

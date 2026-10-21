@@ -1,0 +1,29 @@
+state = {
+	id = 49
+	name = "STATE_49"
+	manpower = 18268
+	state_category = town
+	resources = {
+		steel = 3
+	}
+	history = {
+		owner = KRW
+		add_core_of = KRW
+		add_claim_by = BYD
+		victory_points = { 7830 5 }
+		victory_points = { 479 1 }
+		victory_points = { 1555 1 }
+		victory_points = { 7777 1 }
+		victory_points = { 7778 1 }
+		victory_points = { 7831 1 }
+		victory_points = { 7835 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 63 479 7778 7831 155 7830 7825 7828 1555 7833 7822 7829 7771 7832 7777 7837 7836 7835 }
+	local_supplies = 0.0
+}

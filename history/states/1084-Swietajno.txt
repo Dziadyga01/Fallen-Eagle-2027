@@ -1,0 +1,21 @@
+state = {
+	id = 1084
+	name = "STATE_1084"
+	manpower = 6929
+	state_category = rural
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = SUW
+		add_core_of = SUW
+		victory_points = { 2852 1 }
+		victory_points = { 2751 1 }
+		victory_points = { 1081 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1081 2751 3919 1884 1204 2341 2852 1792 }
+	local_supplies = 0.0
+}

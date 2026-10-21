@@ -1,0 +1,474 @@
+# The Fallen Eagle 2027: wylacznie grupy ideologii w stylu TFR (zastepuje plik vanilla – brak podstawowych ideologii)
+ideologies = {
+	totalitarian_socialist = {
+		types = {
+			totalism = {
+			}
+			maoism = {
+			}
+			left_wing_junta = {
+			}
+			neo_stalinism = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_TOTALITARIAN_SOCIALIST_1"
+			"PL2027_FACTION_TOTALITARIAN_SOCIALIST_2"
+			"PL2027_FACTION_TOTALITARIAN_SOCIALIST_3"
+		}
+		color = { 100 0 0 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_communist = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	communist = {
+		types = {
+			marxism_leninism = {
+			}
+			eurocommunism = {
+			}
+			trotskyism = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_COMMUNIST_1"
+			"PL2027_FACTION_COMMUNIST_2"
+			"PL2027_FACTION_COMMUNIST_3"
+		}
+		color = { 160 0 0 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_communist = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	libertarian_socialist = {
+		types = {
+			reformist_socialism = {
+			}
+			left_anarchist = {
+			}
+			eco_socialism = {
+			}
+			labour_syndicalism = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_LIBERTARIAN_SOCIALIST_1"
+			"PL2027_FACTION_LIBERTARIAN_SOCIALIST_2"
+			"PL2027_FACTION_LIBERTARIAN_SOCIALIST_3"
+		}
+		color = { 189 54 67 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_communist = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	social_democrat = {
+		types = {
+			social_democracy = {
+			}
+			progressivism = {
+			}
+			green_politics = {
+			}
+			left_populism = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_SOCIAL_DEMOCRAT_1"
+			"PL2027_FACTION_SOCIAL_DEMOCRAT_2"
+			"PL2027_FACTION_SOCIAL_DEMOCRAT_3"
+		}
+		color = { 255 10 102 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_democratic = yes
+		can_host_government_in_exile = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	social_liberal = {
+		types = {
+			social_liberalism = {
+			}
+			centrist = {
+			}
+			green_liberalism = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_SOCIAL_LIBERAL_1"
+			"PL2027_FACTION_SOCIAL_LIBERAL_2"
+			"PL2027_FACTION_SOCIAL_LIBERAL_3"
+		}
+		color = { 232 140 30 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_democratic = yes
+		can_host_government_in_exile = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	market_liberal = {
+		types = {
+			classical_liberalism = {
+			}
+			right_libertarianism = {
+			}
+			civic_nationalism = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_MARKET_LIBERAL_1"
+			"PL2027_FACTION_MARKET_LIBERAL_2"
+			"PL2027_FACTION_MARKET_LIBERAL_3"
+		}
+		color = { 225 215 0 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_democratic = yes
+		can_host_government_in_exile = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	conservative = {
+		types = {
+			classical_conservatism = {
+			}
+			christian_conservatism = {
+			}
+			right_populism = {
+			}
+			national_conservatism = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_CONSERVATIVE_1"
+			"PL2027_FACTION_CONSERVATIVE_2"
+			"PL2027_FACTION_CONSERVATIVE_3"
+		}
+		color = { 10 15 255 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_democratic = yes
+		can_host_government_in_exile = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	authoritarian_democrat = {
+		types = {
+			authoritarian_democracy = {
+			}
+			oligarchist = {
+			}
+			military_democracy = {
+			}
+			corporatism = {
+			}
+			streamocracy = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_AUTHORITARIAN_DEMOCRAT_1"
+			"PL2027_FACTION_AUTHORITARIAN_DEMOCRAT_2"
+			"PL2027_FACTION_AUTHORITARIAN_DEMOCRAT_3"
+		}
+		color = { 110 104 96 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_neutral = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	nationalist = {
+		types = {
+			autocrat = {
+			}
+			absolute_monarchist = {
+			}
+			military_junta = {
+			}
+			mafia_state = {
+			}
+			theocracy = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_NATIONALIST_1"
+			"PL2027_FACTION_NATIONALIST_2"
+			"PL2027_FACTION_NATIONALIST_3"
+		}
+		color = { 40 40 40 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_neutral = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	fascist = {
+		types = {
+			neofascism = {
+			}
+			clerofascism = {
+			}
+			falangism = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_FASCIST_1"
+			"PL2027_FACTION_FASCIST_2"
+			"PL2027_FACTION_FASCIST_3"
+		}
+		color = { 110 70 40 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_fascist = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	national_socialist = {
+		types = {
+			neonazism = {
+			}
+			national_bolshevism = {
+			}
+		}
+		dynamic_faction_names = {
+			"PL2027_FACTION_NATIONAL_SOCIALIST_1"
+			"PL2027_FACTION_NATIONAL_SOCIALIST_2"
+			"PL2027_FACTION_NATIONAL_SOCIALIST_3"
+		}
+		color = { 78 57 57 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		ai_fascist = yes
+		rules = {
+			can_guarantee_other_ideologies = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_join_factions = yes
+			can_force_government = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	# Alpha 0.80: uspiona grupa vanilla (tylko dla zgodnosci plikow gry)
+	democratic = {
+		types = {
+			conservatism = {
+				can_be_randomly_selected = no
+			}
+			liberalism = {
+				can_be_randomly_selected = no
+			}
+			socialism = {
+				can_be_randomly_selected = no
+			}
+		}
+		color = { 232 140 30 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		can_be_boosted = no
+		can_collaborate = no
+		ai_democratic = yes
+		rules = {
+			can_join_factions = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	# Alpha 0.80: uspiona grupa vanilla (tylko dla zgodnosci plikow gry)
+	neutrality = {
+		types = {
+			despotism = {
+				can_be_randomly_selected = no
+			}
+			oligarchism = {
+				can_be_randomly_selected = no
+			}
+			anarchism = {
+				can_be_randomly_selected = no
+			}
+			moderatism = {
+				can_be_randomly_selected = no
+			}
+			centrism = {
+				can_be_randomly_selected = no
+			}
+		}
+		color = { 110 104 96 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		can_be_boosted = no
+		can_collaborate = no
+		ai_neutral = yes
+		rules = {
+			can_join_factions = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	# Alpha 0.80: uspiona grupa vanilla (tylko dla zgodnosci plikow gry)
+	communism = {
+		types = {
+			marxism = {
+				can_be_randomly_selected = no
+			}
+			leninism = {
+				can_be_randomly_selected = no
+			}
+			stalinism = {
+				can_be_randomly_selected = no
+			}
+			anti_revisionism = {
+				can_be_randomly_selected = no
+			}
+			anarchist_communism = {
+				can_be_randomly_selected = no
+			}
+		}
+		color = { 160 0 0 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		can_be_boosted = no
+		can_collaborate = no
+		ai_communist = yes
+		rules = {
+			can_join_factions = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+	# Alpha 0.80: uspiona grupa vanilla (tylko dla zgodnosci plikow gry)
+	fascism = {
+		types = {
+			nazism = {
+				can_be_randomly_selected = no
+			}
+			gen_nazism = {
+				can_be_randomly_selected = no
+			}
+			fascism_ideology = {
+				can_be_randomly_selected = no
+			}
+			rexism = {
+				can_be_randomly_selected = no
+			}
+		}
+		color = { 90 60 40 }
+		war_impact_on_world_tension = 1
+		faction_impact_on_world_tension = 1
+		can_be_boosted = no
+		can_collaborate = no
+		ai_fascist = yes
+		rules = {
+			can_join_factions = yes
+		}
+		modifiers = {
+		}
+		faction_modifiers = {
+		}
+	}
+}

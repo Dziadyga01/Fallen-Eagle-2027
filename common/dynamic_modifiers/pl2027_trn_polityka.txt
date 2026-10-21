@@ -1,0 +1,9 @@
+TRN_dzielnice_mod = {
+	icon = GFX_idea_TRN_dzielnice_mod
+	enable = { always = yes }
+	remove_trigger = { NOT = { has_country_flag = TRN_walka_o_wladze } }
+	stability_factor = TRN_dm_stab
+	research_speed_factor = TRN_dm_res
+	war_support_factor = TRN_dm_ws
+	political_power_gain = TRN_dm_pp
+}

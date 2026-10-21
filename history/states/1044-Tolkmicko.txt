@@ -1,0 +1,18 @@
+state = {
+	id = 1044
+	name = "STATE_1044"
+	manpower = 2700
+	state_category = rural
+	history = {
+		owner = ZKR
+		add_core_of = ZKR
+		victory_points = { 2779 1 }
+		victory_points = { 3055 1 }
+		buildings = {
+			infrastructure = 3
+			946 = { naval_base = 1 }
+		}
+	}
+	provinces = { 946 2779 2253 3055 }
+	local_supplies = 0.0
+}

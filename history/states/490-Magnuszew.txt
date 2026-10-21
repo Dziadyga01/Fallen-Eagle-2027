@@ -1,0 +1,20 @@
+state = {
+	id = 490
+	name = "STATE_490"
+	manpower = 7616
+	state_category = rural
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = RAD
+		add_core_of = RAD
+		victory_points = { 1813 1 }
+		victory_points = { 2571 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 599 2571 1813 3838 3269 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,21 @@
+state = {
+	id = 1251
+	name = "STATE_1251"
+	manpower = 13618
+	state_category = rural
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = KRJ
+		add_core_of = KRJ
+		victory_points = { 7375 1 }
+		victory_points = { 9253 1 }
+		victory_points = { 9250 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1163 7375 7374 9253 7372 9250 842 7349 }
+	local_supplies = 0.0
+}

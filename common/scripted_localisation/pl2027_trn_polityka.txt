@@ -1,0 +1,390 @@
+defined_text = {
+	name = GetTRNDz_stare
+	text = {
+		trigger = { check_variable = { TRN_dz_stare = 1 } }
+		localization_key = TRN_frak_nazwa_1_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_stare = 2 } }
+		localization_key = TRN_frak_nazwa_2_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_stare = 3 } }
+		localization_key = TRN_frak_nazwa_3_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_stare = 4 } }
+		localization_key = TRN_frak_nazwa_4_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_stare = 5 } }
+		localization_key = TRN_frak_nazwa_5_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_stare = 6 } }
+		localization_key = TRN_frak_nazwa_6_short
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0_short
+	}
+}
+defined_text = {
+	name = GetTRNDz_chelminskie
+	text = {
+		trigger = { check_variable = { TRN_dz_chelminskie = 1 } }
+		localization_key = TRN_frak_nazwa_1_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_chelminskie = 2 } }
+		localization_key = TRN_frak_nazwa_2_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_chelminskie = 3 } }
+		localization_key = TRN_frak_nazwa_3_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_chelminskie = 4 } }
+		localization_key = TRN_frak_nazwa_4_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_chelminskie = 5 } }
+		localization_key = TRN_frak_nazwa_5_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_chelminskie = 6 } }
+		localization_key = TRN_frak_nazwa_6_short
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0_short
+	}
+}
+defined_text = {
+	name = GetTRNDz_rubinkowo
+	text = {
+		trigger = { check_variable = { TRN_dz_rubinkowo = 1 } }
+		localization_key = TRN_frak_nazwa_1_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_rubinkowo = 2 } }
+		localization_key = TRN_frak_nazwa_2_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_rubinkowo = 3 } }
+		localization_key = TRN_frak_nazwa_3_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_rubinkowo = 4 } }
+		localization_key = TRN_frak_nazwa_4_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_rubinkowo = 5 } }
+		localization_key = TRN_frak_nazwa_5_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_rubinkowo = 6 } }
+		localization_key = TRN_frak_nazwa_6_short
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0_short
+	}
+}
+defined_text = {
+	name = GetTRNDz_bielany
+	text = {
+		trigger = { check_variable = { TRN_dz_bielany = 1 } }
+		localization_key = TRN_frak_nazwa_1_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_bielany = 2 } }
+		localization_key = TRN_frak_nazwa_2_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_bielany = 3 } }
+		localization_key = TRN_frak_nazwa_3_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_bielany = 4 } }
+		localization_key = TRN_frak_nazwa_4_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_bielany = 5 } }
+		localization_key = TRN_frak_nazwa_5_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_bielany = 6 } }
+		localization_key = TRN_frak_nazwa_6_short
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0_short
+	}
+}
+defined_text = {
+	name = GetTRNDz_bydgoskie
+	text = {
+		trigger = { check_variable = { TRN_dz_bydgoskie = 1 } }
+		localization_key = TRN_frak_nazwa_1_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_bydgoskie = 2 } }
+		localization_key = TRN_frak_nazwa_2_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_bydgoskie = 3 } }
+		localization_key = TRN_frak_nazwa_3_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_bydgoskie = 4 } }
+		localization_key = TRN_frak_nazwa_4_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_bydgoskie = 5 } }
+		localization_key = TRN_frak_nazwa_5_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_bydgoskie = 6 } }
+		localization_key = TRN_frak_nazwa_6_short
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0_short
+	}
+}
+defined_text = {
+	name = GetTRNDz_skarpa
+	text = {
+		trigger = { check_variable = { TRN_dz_skarpa = 1 } }
+		localization_key = TRN_frak_nazwa_1_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_skarpa = 2 } }
+		localization_key = TRN_frak_nazwa_2_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_skarpa = 3 } }
+		localization_key = TRN_frak_nazwa_3_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_skarpa = 4 } }
+		localization_key = TRN_frak_nazwa_4_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_skarpa = 5 } }
+		localization_key = TRN_frak_nazwa_5_short
+	}
+	text = {
+		trigger = { check_variable = { TRN_dz_skarpa = 6 } }
+		localization_key = TRN_frak_nazwa_6_short
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0_short
+	}
+}
+defined_text = {
+	name = GetTRNPrzegrany
+	text = {
+		trigger = { check_variable = { TRN_przegrany = 1 } }
+		localization_key = TRN_frak_nazwa_1
+	}
+	text = {
+		trigger = { check_variable = { TRN_przegrany = 2 } }
+		localization_key = TRN_frak_nazwa_2
+	}
+	text = {
+		trigger = { check_variable = { TRN_przegrany = 3 } }
+		localization_key = TRN_frak_nazwa_3
+	}
+	text = {
+		trigger = { check_variable = { TRN_przegrany = 4 } }
+		localization_key = TRN_frak_nazwa_4
+	}
+	text = {
+		trigger = { check_variable = { TRN_przegrany = 5 } }
+		localization_key = TRN_frak_nazwa_5
+	}
+	text = {
+		trigger = { check_variable = { TRN_przegrany = 6 } }
+		localization_key = TRN_frak_nazwa_6
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0
+	}
+}
+defined_text = {
+	name = GetTRNFaworyt
+	text = {
+		trigger = { check_variable = { TRN_faworyt = 1 } }
+		localization_key = TRN_frak_nazwa_1
+	}
+	text = {
+		trigger = { check_variable = { TRN_faworyt = 2 } }
+		localization_key = TRN_frak_nazwa_2
+	}
+	text = {
+		trigger = { check_variable = { TRN_faworyt = 3 } }
+		localization_key = TRN_frak_nazwa_3
+	}
+	text = {
+		trigger = { check_variable = { TRN_faworyt = 4 } }
+		localization_key = TRN_frak_nazwa_4
+	}
+	text = {
+		trigger = { check_variable = { TRN_faworyt = 5 } }
+		localization_key = TRN_frak_nazwa_5
+	}
+	text = {
+		trigger = { check_variable = { TRN_faworyt = 6 } }
+		localization_key = TRN_frak_nazwa_6
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0
+	}
+}
+defined_text = {
+	name = GetTRNRywal
+	text = {
+		trigger = { check_variable = { TRN_rywal = 1 } }
+		localization_key = TRN_frak_nazwa_1
+	}
+	text = {
+		trigger = { check_variable = { TRN_rywal = 2 } }
+		localization_key = TRN_frak_nazwa_2
+	}
+	text = {
+		trigger = { check_variable = { TRN_rywal = 3 } }
+		localization_key = TRN_frak_nazwa_3
+	}
+	text = {
+		trigger = { check_variable = { TRN_rywal = 4 } }
+		localization_key = TRN_frak_nazwa_4
+	}
+	text = {
+		trigger = { check_variable = { TRN_rywal = 5 } }
+		localization_key = TRN_frak_nazwa_5
+	}
+	text = {
+		trigger = { check_variable = { TRN_rywal = 6 } }
+		localization_key = TRN_frak_nazwa_6
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0
+	}
+}
+defined_text = {
+	name = GetTRNPierwszy
+	text = {
+		trigger = { check_variable = { TRN_pierwszy = 1 } }
+		localization_key = TRN_frak_nazwa_1
+	}
+	text = {
+		trigger = { check_variable = { TRN_pierwszy = 2 } }
+		localization_key = TRN_frak_nazwa_2
+	}
+	text = {
+		trigger = { check_variable = { TRN_pierwszy = 3 } }
+		localization_key = TRN_frak_nazwa_3
+	}
+	text = {
+		trigger = { check_variable = { TRN_pierwszy = 4 } }
+		localization_key = TRN_frak_nazwa_4
+	}
+	text = {
+		trigger = { check_variable = { TRN_pierwszy = 5 } }
+		localization_key = TRN_frak_nazwa_5
+	}
+	text = {
+		trigger = { check_variable = { TRN_pierwszy = 6 } }
+		localization_key = TRN_frak_nazwa_6
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0
+	}
+}
+defined_text = {
+	name = GetTRNDrugi
+	text = {
+		trigger = { check_variable = { TRN_drugi = 1 } }
+		localization_key = TRN_frak_nazwa_1
+	}
+	text = {
+		trigger = { check_variable = { TRN_drugi = 2 } }
+		localization_key = TRN_frak_nazwa_2
+	}
+	text = {
+		trigger = { check_variable = { TRN_drugi = 3 } }
+		localization_key = TRN_frak_nazwa_3
+	}
+	text = {
+		trigger = { check_variable = { TRN_drugi = 4 } }
+		localization_key = TRN_frak_nazwa_4
+	}
+	text = {
+		trigger = { check_variable = { TRN_drugi = 5 } }
+		localization_key = TRN_frak_nazwa_5
+	}
+	text = {
+		trigger = { check_variable = { TRN_drugi = 6 } }
+		localization_key = TRN_frak_nazwa_6
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0
+	}
+}
+defined_text = {
+	name = GetTRNZwyciezca
+	text = {
+		trigger = { check_variable = { TRN_zwyciezca = 1 } }
+		localization_key = TRN_frak_nazwa_1
+	}
+	text = {
+		trigger = { check_variable = { TRN_zwyciezca = 2 } }
+		localization_key = TRN_frak_nazwa_2
+	}
+	text = {
+		trigger = { check_variable = { TRN_zwyciezca = 3 } }
+		localization_key = TRN_frak_nazwa_3
+	}
+	text = {
+		trigger = { check_variable = { TRN_zwyciezca = 4 } }
+		localization_key = TRN_frak_nazwa_4
+	}
+	text = {
+		trigger = { check_variable = { TRN_zwyciezca = 5 } }
+		localization_key = TRN_frak_nazwa_5
+	}
+	text = {
+		trigger = { check_variable = { TRN_zwyciezca = 6 } }
+		localization_key = TRN_frak_nazwa_6
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0
+	}
+}
+defined_text = {
+	name = GetTRNBuntDz
+	text = {
+		trigger = { check_variable = { TRN_bunt_dz = 1 } }
+		localization_key = TRN_dz_nazwa_stare
+	}
+	text = {
+		trigger = { check_variable = { TRN_bunt_dz = 2 } }
+		localization_key = TRN_dz_nazwa_chelminskie
+	}
+	text = {
+		trigger = { check_variable = { TRN_bunt_dz = 3 } }
+		localization_key = TRN_dz_nazwa_rubinkowo
+	}
+	text = {
+		trigger = { check_variable = { TRN_bunt_dz = 4 } }
+		localization_key = TRN_dz_nazwa_bielany
+	}
+	text = {
+		trigger = { check_variable = { TRN_bunt_dz = 5 } }
+		localization_key = TRN_dz_nazwa_bydgoskie
+	}
+	text = {
+		trigger = { check_variable = { TRN_bunt_dz = 6 } }
+		localization_key = TRN_dz_nazwa_skarpa
+	}
+	text = {
+		localization_key = TRN_frak_nazwa_0_short
+	}
+}

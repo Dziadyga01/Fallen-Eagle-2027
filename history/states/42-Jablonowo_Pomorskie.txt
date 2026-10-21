@@ -1,0 +1,18 @@
+state = {
+	id = 42
+	name = "STATE_42"
+	manpower = 7211
+	state_category = rural
+	history = {
+		owner = GRU
+		add_core_of = GRU
+		victory_points = { 8391 1 }
+		victory_points = { 8396 1 }
+		victory_points = { 8395 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 8390 8396 8395 8393 8392 8394 8391 }
+	local_supplies = 0.0
+}

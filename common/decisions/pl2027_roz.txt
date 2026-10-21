@@ -1,0 +1,64 @@
+ROZ_rzeczpospolita = {
+	ROZ_d_rozmowy = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		targets = { BST BYD CHE CHJ CHZ DAB DOB GDY GNL GNZ GRD GRU KKR KLS KOC KON KPM KPR KRJ KRW KST KTN KUJ LBW LEG LES LOW LUB LWC LYS MAZ MLA MPR NAR NML NNA NOT NWW OSD OTW OZM PDG PDL PLC PLK PLO PRG PRW PSC PTK RAD ROZ SCK SLK SMR SPT SRD SUW SWC TEC TRN TUC UBJ WLC WLM WMG WMP WMZ WOJ WOL ZIE ZKR }
+		target_non_existing = no
+		target_trigger = { FROM = { is_subject_of = POL } FROM = { NOT = { has_country_flag = ROZ_lojalny } } }
+		available = { has_political_power > 24 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = { FROM = { add_to_variable = { ROZ_sklonnosc = -20 } clamp_variable = { var = ROZ_sklonnosc min = 0 max = 100 } if = { limit = { check_variable = { ROZ_sklonnosc < 30 } } set_country_flag = ROZ_lojalny } } custom_effect_tooltip = ROZ_tt_1 hidden_effect = { add_to_variable = { global.TFE_samorzady = 2 } TFE_clamp = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 FROM = { check_variable = { ROZ_sklonnosc > 54 } } } modifier = { factor = 0 FROM = { check_variable = { ROZ_sklonnosc < 35 } } } }
+	}
+	ROZ_d_autonomia = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		targets = { BST BYD CHE CHJ CHZ DAB DOB GDY GNL GNZ GRD GRU KKR KLS KOC KON KPM KPR KRJ KRW KST KTN KUJ LBW LEG LES LOW LUB LWC LYS MAZ MLA MPR NAR NML NNA NOT NWW OSD OTW OZM PDG PDL PLC PLK PLO PRG PRW PSC PTK RAD ROZ SCK SLK SMR SPT SRD SUW SWC TEC TRN TUC UBJ WLC WLM WMG WMP WMZ WOJ WOL ZIE ZKR }
+		target_non_existing = no
+		target_trigger = { FROM = { is_subject_of = POL } FROM = { has_country_flag = ROZ_wojewodztwo NOT = { has_country_flag = ROZ_warszawa } } }
+		cost = 15
+		days_re_enable = 30
+		complete_effect = { FROM = { ROZ_nadaj_autonomie = yes set_country_flag = ROZ_lojalny add_to_variable = { ROZ_sklonnosc = -25 } clamp_variable = { var = ROZ_sklonnosc min = 0 max = 100 } } custom_effect_tooltip = ROZ_tt_9 hidden_effect = { add_to_variable = { global.TFE_presja = -3 } add_to_variable = { global.TFE_samorzady = 3 } add_to_variable = { global.TFE_jednosc = -2 } TFE_clamp = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 4 FROM = { check_variable = { ROZ_sklonnosc > 64 } } } modifier = { factor = 0 FROM = { check_variable = { ROZ_sklonnosc < 50 } } } }
+	}
+	ROZ_d_integracja = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		targets = { BST BYD CHE CHJ CHZ DAB DOB GDY GNL GNZ GRD GRU KKR KLS KOC KON KPM KPR KRJ KRW KST KTN KUJ LBW LEG LES LOW LUB LWC LYS MAZ MLA MPR NAR NML NNA NOT NWW OSD OTW OZM PDG PDL PLC PLK PLO PRG PRW PSC PTK RAD ROZ SCK SLK SMR SPT SRD SUW SWC TEC TRN TUC UBJ WLC WLM WMG WMP WMZ WOJ WOL ZIE ZKR }
+		target_non_existing = no
+		target_trigger = { FROM = { is_subject_of = POL } FROM = { has_country_flag = ROZ_lojalny } }
+		available = { has_global_flag = ROZ_rp_trwa }
+		cost = 100
+		days_re_enable = 30
+		complete_effect = { annex_country = { target = FROM transfer_troops = yes } custom_effect_tooltip = ROZ_tt_10 hidden_effect = { add_to_variable = { global.TFE_jednosc = 4 } TFE_clamp = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	ROZ_d_kurier = {
+		icon = generic_political_discourse
+		allowed = { original_tag = POL }
+		cost = 40
+		days_re_enable = 60
+		complete_effect = { every_country = { limit = { is_subject_of = POL } add_to_variable = { ROZ_sklonnosc = -5 } clamp_variable = { var = ROZ_sklonnosc min = 0 max = 100 } } custom_effect_tooltip = ROZ_tt_11 hidden_effect = { add_to_variable = { global.TFE_jednosc = 3 } TFE_clamp = yes } }
+		ai_will_do = { factor = 2 }
+	}
+}
+ROZ_region = {
+	ROZ_d_zadanie = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRW original_tag = KST original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = ZIE original_tag = ZKR } }
+		available = { has_global_flag = TFE_faza_2 has_country_flag = ROZ_wojewodztwo NOT = { has_country_flag = ROZ_zadanie } NOT = { has_country_flag = ROZ_warszawa } }
+		cost = 30
+		days_re_enable = 90
+		complete_effect = { set_country_flag = ROZ_zadanie POL = { country_event = { id = roz.11 days = 1 } } }
+		ai_will_do = { factor = 0 }
+	}
+	ROZ_d_niepodleglosc = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = BST original_tag = BYD original_tag = CHE original_tag = CHJ original_tag = CHZ original_tag = DAB original_tag = DOB original_tag = GDY original_tag = GNL original_tag = GNZ original_tag = GRD original_tag = GRU original_tag = KKR original_tag = KLS original_tag = KOC original_tag = KON original_tag = KPM original_tag = KPR original_tag = KRJ original_tag = KRW original_tag = KST original_tag = KTN original_tag = KUJ original_tag = LBW original_tag = LEG original_tag = LES original_tag = LOW original_tag = LUB original_tag = LWC original_tag = LYS original_tag = MAZ original_tag = MLA original_tag = MPR original_tag = NAR original_tag = NML original_tag = NNA original_tag = NOT original_tag = NWW original_tag = OSD original_tag = OTW original_tag = OZM original_tag = PDG original_tag = PDL original_tag = PLC original_tag = PLK original_tag = PLO original_tag = PRG original_tag = PRW original_tag = PSC original_tag = PTK original_tag = RAD original_tag = ROZ original_tag = SCK original_tag = SLK original_tag = SMR original_tag = SPT original_tag = SRD original_tag = SUW original_tag = SWC original_tag = TEC original_tag = TRN original_tag = TUC original_tag = UBJ original_tag = WLC original_tag = WLM original_tag = WMG original_tag = WMP original_tag = WMZ original_tag = WOJ original_tag = WOL original_tag = ZIE original_tag = ZKR } }
+		available = { OR = { has_global_flag = TFE_faza_3 AND = { has_global_flag = TFE_faza_2 has_country_flag = ROZ_autonomia } } }
+		cost = 50
+		complete_effect = { ROZ_niepodleglosc = yes custom_effect_tooltip = ROZ_tt_5 hidden_effect = { add_to_variable = { global.TFE_jednosc = -4 } add_to_variable = { global.TFE_presja = 4 } TFE_clamp = yes } POL = { country_event = { id = roz.31 days = 1 } } }
+		ai_will_do = { factor = 0 }
+	}
+}

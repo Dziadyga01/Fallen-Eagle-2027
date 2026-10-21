@@ -1,0 +1,21 @@
+state = {
+	id = 678
+	name = "STATE_678"
+	manpower = 8780
+	state_category = rural
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = OZM
+		add_core_of = OZM
+		victory_points = { 9712 1 }
+		victory_points = { 9711 1 }
+		victory_points = { 9714 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 9706 9711 9712 9714 9708 9709 9710 }
+	local_supplies = 0.0
+}

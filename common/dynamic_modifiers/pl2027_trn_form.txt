@@ -1,0 +1,23 @@
+TRN_leg_mod = {
+	icon = GFX_idea_TRN_leg_mod
+	enable = { has_country_flag = TRN_linia_B }
+	stability_factor = TRN_dm_b1
+	political_power_gain = TRN_dm_b2
+}
+TRN_rad_mod = {
+	icon = GFX_idea_TRN_rad_mod
+	enable = { has_country_flag = TRN_linia_C }
+	army_attack_factor = TRN_dm_c1
+	stability_factor = TRN_dm_c2
+}
+TRN_stolice_mod = {
+	icon = GFX_idea_TRN_stolice_mod
+	enable = { has_country_flag = TRN_linia_D }
+	stability_factor = TRN_dm_d1
+}
+TRN_nauka_mod = {
+	icon = GFX_idea_TRN_nauka_mod
+	enable = { has_country_flag = TRN_linia_E }
+	research_speed_factor = TRN_dm_e1
+	stability_factor = TRN_dm_e2
+}

@@ -1,0 +1,254 @@
+division_template = {
+	name = "Brygada Zmechanizowana"
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		armored_car = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Batalionowa Grupa Taktyczna"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		armored_car = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brygada Piechoty Morskiej"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Pułk Rosgwardii"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Brygada Artylerii"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		anti_tank_brigade = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		name = "79. Gwardyjska Brygada Zmechanizowana"
+		location = 1258
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "81. Gwardyjska Brygada Zmechanizowana"
+		location = 4439
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.48
+	}
+	division = {
+		name = "83. Gwardyjska Brygada Zmechanizowana"
+		location = 9798
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "85. Gwardyjska Brygada Zmechanizowana"
+		location = 83
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.37
+	}
+	division = {
+		name = "87. Gwardyjska Brygada Zmechanizowana"
+		location = 4177
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.50
+	}
+	division = {
+		name = "89. Gwardyjska Brygada Zmechanizowana"
+		location = 2942
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.44
+	}
+	division = {
+		name = "91. Gwardyjska Brygada Zmechanizowana"
+		location = 3135
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.55
+	}
+	division = {
+		name = "93. Gwardyjska Brygada Zmechanizowana"
+		location = 5687
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.52
+	}
+	division = {
+		name = "1. Batalionowa Grupa Taktyczna"
+		location = 9678
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.32
+	}
+	division = {
+		name = "2. Batalionowa Grupa Taktyczna"
+		location = 4216
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.37
+	}
+	division = {
+		name = "3. Batalionowa Grupa Taktyczna"
+		location = 6681
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.32
+	}
+	division = {
+		name = "4. Batalionowa Grupa Taktyczna"
+		location = 4126
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.56
+	}
+	division = {
+		name = "5. Batalionowa Grupa Taktyczna"
+		location = 3294
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.56
+	}
+	division = {
+		name = "6. Batalionowa Grupa Taktyczna"
+		location = 1501
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "7. Batalionowa Grupa Taktyczna"
+		location = 2783
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.52
+	}
+	division = {
+		name = "8. Batalionowa Grupa Taktyczna"
+		location = 3259
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.31
+	}
+	division = {
+		name = "9. Batalionowa Grupa Taktyczna"
+		location = 3178
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.32
+	}
+	division = {
+		name = "10. Batalionowa Grupa Taktyczna"
+		location = 6681
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.46
+	}
+	division = {
+		name = "11. Batalionowa Grupa Taktyczna"
+		location = 1258
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.48
+	}
+	division = {
+		name = "12. Batalionowa Grupa Taktyczna"
+		location = 3259
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.33
+	}
+	division = {
+		name = "152. Gwardyjska Brygada Artylerii"
+		location = 2942
+		division_template = "Brygada Artylerii"
+		start_experience_factor = 0.37
+	}
+	division = {
+		name = "153. Gwardyjska Brygada Artylerii"
+		location = 3259
+		division_template = "Brygada Artylerii"
+		start_experience_factor = 0.36
+	}
+	division = {
+		name = "154. Gwardyjska Brygada Artylerii"
+		location = 6681
+		division_template = "Brygada Artylerii"
+		start_experience_factor = 0.38
+	}
+	division = {
+		name = "155. Gwardyjska Brygada Artylerii"
+		location = 1491
+		division_template = "Brygada Artylerii"
+		start_experience_factor = 0.51
+	}
+	division = {
+		name = "336. Brygada Piechoty Morskiej Floty Bałtyckiej"
+		location = 3225
+		division_template = "Brygada Piechoty Morskiej"
+		start_experience_factor = 0.51
+	}
+	division = {
+		name = "337. Brygada Piechoty Morskiej Floty Bałtyckiej"
+		location = 2443
+		division_template = "Brygada Piechoty Morskiej"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "338. Brygada Piechoty Morskiej Floty Bałtyckiej"
+		location = 1778
+		division_template = "Brygada Piechoty Morskiej"
+		start_experience_factor = 0.31
+	}
+	division = {
+		name = "1. Pułk Rosgwardii"
+		location = 94
+		division_template = "Pułk Rosgwardii"
+		start_experience_factor = 0.41
+	}
+	division = {
+		name = "2. Pułk Rosgwardii"
+		location = 3966
+		division_template = "Pułk Rosgwardii"
+		start_experience_factor = 0.39
+	}
+	division = {
+		name = "3. Pułk Rosgwardii"
+		location = 4444
+		division_template = "Pułk Rosgwardii"
+		start_experience_factor = 0.33
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = { type = ranged_equipment amount = 18000 producer = ROS }
+	add_equipment_to_stockpile = { type = motorized_equipment amount = 1400 producer = ROS }
+	add_equipment_to_stockpile = { type = apc_equipment amount = 1400 producer = ROS }
+	add_equipment_to_stockpile = { type = armored_car_equipment amount = 520 producer = ROS }
+	add_equipment_to_stockpile = { type = light_artillery_equipment amount = 1400 producer = ROS }
+	add_equipment_to_stockpile = { type = support_equipment amount = 1600 producer = ROS }
+	add_equipment_to_stockpile = { type = inf_anti_tank_equipment amount = 600 producer = ROS }
+}

@@ -1,0 +1,12 @@
+BYD_moj_stan = {
+	OR = { is_controlled_by = ROOT controller = { is_subject_of = ROOT } }
+}
+BYD_wygrywa_rep = {
+	check_variable = { var = BYD_pop_rep value = BYD_pop_jun compare = greater_than_or_equals } check_variable = { var = BYD_pop_rep value = BYD_pop_wd compare = greater_than_or_equals }
+}
+BYD_wygrywa_jun = {
+	check_variable = { var = BYD_pop_jun value = BYD_pop_rep compare = greater_than_or_equals } check_variable = { var = BYD_pop_jun value = BYD_pop_wd compare = greater_than_or_equals }
+}
+BYD_wygrywa_wd = {
+	check_variable = { var = BYD_pop_wd value = BYD_pop_rep compare = greater_than_or_equals } check_variable = { var = BYD_pop_wd value = BYD_pop_jun compare = greater_than_or_equals }
+}

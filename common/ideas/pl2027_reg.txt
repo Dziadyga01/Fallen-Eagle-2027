@@ -1,0 +1,2451 @@
+ideas = {
+	country = {
+		PLG_autonomia = {
+			picture = DU_PLG_autonomia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		PLG_liga = {
+			picture = DU_PLG_liga
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				stability_factor = 0.03
+			}
+		}
+		PLG_samorzad = {
+			picture = DU_PLG_samorzad
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.03
+				war_support_factor = -0.02
+			}
+		}
+		PLG_twierdza = {
+			picture = DU_PLG_twierdza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				war_support_factor = 0.05
+				conscription_factor = 0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+		REG_t_cywilna = {
+			picture = DU_REG_t_cywilna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.03
+				production_speed_arms_factory_factor = -0.2
+				industrial_capacity_factory = -0.05
+			}
+		}
+		REG_t_wojenna = {
+			picture = DU_REG_t_wojenna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.15
+				consumer_goods_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		REG_t_mobilizacja = {
+			picture = DU_REG_t_mobilizacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.25
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		REG_t_kadry = {
+			picture = DU_REG_t_kadry
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				training_time_army_factor = -0.15
+				army_org_factor = 0.05
+				conscription_factor = -0.05
+			}
+		}
+		REG_t_ustepstwa = {
+			picture = DU_REG_t_ustepstwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.03
+			}
+		}
+		REG_t_samodzielnosc = {
+			picture = DU_REG_t_samodzielnosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				war_support_factor = 0.03
+			}
+		}
+		REG_t_centralizacja = {
+			picture = DU_REG_t_centralizacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		REG_t_niezadowolenie = {
+			picture = DU_REG_t_niezadowolenie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+				war_support_factor = -0.03
+			}
+		}
+		REG_t_porozumienie = {
+			picture = DU_REG_t_porozumienie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				local_resources_factor = -0.15
+				political_power_gain = -0.05
+			}
+		}
+		REG_t_przejscie = {
+			picture = DU_REG_t_przejscie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+			}
+		}
+		REG_rzeczpospolita = {
+			picture = DU_REG_rzeczpospolita
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.08
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		RKUJ_duch = {
+			picture = DU_RKUJ_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = 0.05
+			}
+		}
+		RKUJ_duch2 = {
+			picture = DU_RKUJ_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		RKUJ_armia = {
+			picture = DU_RKUJ_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		RKUJ_sojusz = {
+			picture = DU_RKUJ_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RKUJ_region = {
+			picture = DU_RKUJ_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RKUJ_a_idea = {
+			picture = DU_RKUJ_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		RKUJ_b_idea = {
+			picture = DU_RKUJ_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.08
+				political_power_gain = 0.08
+				stability_factor = -0.02
+			}
+		}
+		RKUJ_c_idea = {
+			picture = DU_RKUJ_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				conscription_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RKUJ_sanatoria = {
+			picture = DU_RKUJ_sanatoria
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+				conscription_factor = 0.05
+			}
+		}
+		RGRU_duch = {
+			picture = DU_RGRU_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				stability_factor = 0.02
+			}
+		}
+		RGRU_duch2 = {
+			picture = DU_RGRU_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.03
+				political_power_gain = 0.05
+			}
+		}
+		RGRU_armia = {
+			picture = DU_RGRU_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		RGRU_sojusz = {
+			picture = DU_RGRU_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RGRU_region = {
+			picture = DU_RGRU_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RGRU_a_idea = {
+			picture = DU_RGRU_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		RGRU_b_idea = {
+			picture = DU_RGRU_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RGRU_c_idea = {
+			picture = DU_RGRU_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.05
+				stability_factor = -0.03
+			}
+		}
+		RGRU_port_tymczasowy = {
+			picture = DU_RGRU_port_tymczasowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.03
+			}
+		}
+		RKPM_duch = {
+			picture = DU_RKPM_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.03
+			}
+		}
+		RKPM_duch2 = {
+			picture = DU_RKPM_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.03
+				stability_factor = 0.02
+			}
+		}
+		RKPM_armia = {
+			picture = DU_RKPM_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				conscription_factor = 0.05
+			}
+		}
+		RKPM_sojusz = {
+			picture = DU_RKPM_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RKPM_region = {
+			picture = DU_RKPM_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RKPM_a_idea = {
+			picture = DU_RKPM_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		RKPM_b_idea = {
+			picture = DU_RKPM_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				war_support_factor = 0.04
+				political_power_gain = -0.05
+			}
+		}
+		RKPM_c_idea = {
+			picture = DU_RKPM_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				political_power_gain = 0.05
+				stability_factor = -0.03
+			}
+		}
+		RKON_duch = {
+			picture = DU_RKON_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = 0.02
+			}
+		}
+		RKON_duch2 = {
+			picture = DU_RKON_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+		RKON_armia = {
+			picture = DU_RKON_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		RKON_sojusz = {
+			picture = DU_RKON_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RKON_region = {
+			picture = DU_RKON_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RKON_a_idea = {
+			picture = DU_RKON_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		RKON_b_idea = {
+			picture = DU_RKON_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				conscription_factor = 0.08
+				stability_factor = -0.02
+			}
+		}
+		RKON_c_idea = {
+			picture = DU_RKON_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+				stability_factor = -0.02
+			}
+		}
+		RPRW_duch = {
+			picture = DU_RPRW_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = 0.02
+				consumer_goods_factor = 0.03
+			}
+		}
+		RPRW_duch2 = {
+			picture = DU_RPRW_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		RPRW_armia = {
+			picture = DU_RPRW_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		RPRW_sojusz = {
+			picture = DU_RPRW_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		RPRW_region = {
+			picture = DU_RPRW_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.12
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		RPRW_a_idea = {
+			picture = DU_RPRW_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.0
+			}
+		}
+		RPRW_b_idea = {
+			picture = DU_RPRW_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = -0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RPRW_c_idea = {
+			picture = DU_RPRW_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.08
+				conscription_factor = 0.1
+				stability_factor = -0.03
+			}
+		}
+		RLWC_duch = {
+			picture = DU_RLWC_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.02
+			}
+		}
+		RLWC_duch2 = {
+			picture = DU_RLWC_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		RLWC_armia = {
+			picture = DU_RLWC_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				army_morale_factor = 0.05
+				army_defence_factor = 0.05
+			}
+		}
+		RLWC_sojusz = {
+			picture = DU_RLWC_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				army_defence_factor = 0.05
+			}
+		}
+		RLWC_region = {
+			picture = DU_RLWC_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.06
+			}
+		}
+		RLWC_a_idea = {
+			picture = DU_RLWC_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				consumer_goods_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		RLWC_b_idea = {
+			picture = DU_RLWC_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				conscription_factor = 0.08
+				stability_factor = -0.03
+			}
+		}
+		RLWC_c_idea = {
+			picture = DU_RLWC_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.03
+				war_support_factor = -0.05
+			}
+		}
+		RKKR_duch = {
+			picture = DU_RKKR_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.03
+				political_power_gain = 0.03
+			}
+		}
+		RKKR_duch2 = {
+			picture = DU_RKKR_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.04
+			}
+		}
+		RKKR_armia = {
+			picture = DU_RKKR_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.08
+				conscription_factor = 0.05
+			}
+		}
+		RKKR_sojusz = {
+			picture = DU_RKKR_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				war_support_factor = 0.03
+			}
+		}
+		RKKR_region = {
+			picture = DU_RKKR_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RKKR_a_idea = {
+			picture = DU_RKKR_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+				consumer_goods_factor = 0.04
+			}
+		}
+		RKKR_b_idea = {
+			picture = DU_RKKR_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				political_power_gain = 0.0
+				war_support_factor = 0.05
+			}
+		}
+		RKKR_c_idea = {
+			picture = DU_RKKR_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = -0.03
+				army_defence_factor = 0.05
+			}
+		}
+		RNAR_duch = {
+			picture = DU_RNAR_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.08
+				stability_factor = -0.02
+				political_power_gain = 0.05
+			}
+		}
+		RNAR_duch2 = {
+			picture = DU_RNAR_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				production_speed_buildings_factor = 0.08
+				consumer_goods_factor = -0.03
+			}
+		}
+		RNAR_armia = {
+			picture = DU_RNAR_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.05
+			}
+		}
+		RNAR_sojusz = {
+			picture = DU_RNAR_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RNAR_region = {
+			picture = DU_RNAR_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RNAR_a_idea = {
+			picture = DU_RNAR_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.08
+				stability_factor = 0.03
+				political_power_gain = 0.05
+				consumer_goods_factor = 0.04
+			}
+		}
+		RNAR_b_idea = {
+			picture = DU_RNAR_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				army_defence_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		RNAR_c_idea = {
+			picture = DU_RNAR_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RNAR_puszcza = {
+			picture = DU_RNAR_puszcza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+		RPTK_duch = {
+			picture = DU_RPTK_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				industrial_capacity_factory = 0.03
+			}
+		}
+		RPTK_duch2 = {
+			picture = DU_RPTK_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+		RPTK_armia = {
+			picture = DU_RPTK_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				army_org_factor = 0.05
+			}
+		}
+		RPTK_sojusz = {
+			picture = DU_RPTK_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				army_defence_factor = 0.05
+			}
+		}
+		RPTK_region = {
+			picture = DU_RPTK_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RPTK_a_idea = {
+			picture = DU_RPTK_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.07
+				political_power_gain = 0.03
+				war_support_factor = -0.05
+			}
+		}
+		RPTK_b_idea = {
+			picture = DU_RPTK_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RPTK_c_idea = {
+			picture = DU_RPTK_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RRAD_duch = {
+			picture = DU_RRAD_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+				stability_factor = 0.02
+			}
+		}
+		RRAD_duch2 = {
+			picture = DU_RRAD_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.08
+				political_power_gain = 0.05
+			}
+		}
+		RRAD_armia = {
+			picture = DU_RRAD_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.08
+				army_org_factor = 0.05
+			}
+		}
+		RRAD_sojusz = {
+			picture = DU_RRAD_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RRAD_region = {
+			picture = DU_RRAD_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RRAD_a_idea = {
+			picture = DU_RRAD_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.03
+				conscription_factor = 0.05
+				consumer_goods_factor = 0.04
+			}
+		}
+		RRAD_b_idea = {
+			picture = DU_RRAD_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				consumer_goods_factor = -0.05
+				stability_factor = -0.02
+			}
+		}
+		RRAD_c_idea = {
+			picture = DU_RRAD_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				war_support_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		RKLS_duch = {
+			picture = DU_RKLS_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.04
+			}
+		}
+		RKLS_duch2 = {
+			picture = DU_RKLS_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RKLS_armia = {
+			picture = DU_RKLS_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.08
+			}
+		}
+		RKLS_sojusz = {
+			picture = DU_RKLS_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				army_defence_factor = 0.05
+			}
+		}
+		RKLS_region = {
+			picture = DU_RKLS_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RKLS_a_idea = {
+			picture = DU_RKLS_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RKLS_b_idea = {
+			picture = DU_RKLS_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.04
+				stability_factor = -0.03
+			}
+		}
+		RKLS_c_idea = {
+			picture = DU_RKLS_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				war_support_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		RSRD_duch = {
+			picture = DU_RSRD_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = -0.03
+			}
+		}
+		RSRD_duch2 = {
+			picture = DU_RSRD_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.08
+				political_power_gain = 0.05
+			}
+		}
+		RSRD_armia = {
+			picture = DU_RSRD_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				conscription_factor = 0.05
+			}
+		}
+		RSRD_sojusz = {
+			picture = DU_RSRD_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.04
+			}
+		}
+		RSRD_region = {
+			picture = DU_RSRD_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RSRD_a_idea = {
+			picture = DU_RSRD_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.03
+				war_support_factor = -0.05
+			}
+		}
+		RSRD_b_idea = {
+			picture = DU_RSRD_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.03
+				consumer_goods_factor = 0.04
+			}
+		}
+		RSRD_c_idea = {
+			picture = DU_RSRD_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				war_support_factor = -0.02
+			}
+		}
+		RLES_duch = {
+			picture = DU_RLES_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RLES_duch2 = {
+			picture = DU_RLES_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.04
+				stability_factor = 0.02
+			}
+		}
+		RLES_armia = {
+			picture = DU_RLES_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				air_attack_factor = 0.05
+			}
+		}
+		RLES_sojusz = {
+			picture = DU_RLES_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				stability_factor = 0.03
+			}
+		}
+		RLES_region = {
+			picture = DU_RLES_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RLES_a_idea = {
+			picture = DU_RLES_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RLES_b_idea = {
+			picture = DU_RLES_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.06
+				political_power_gain = 0.009999999999999995
+			}
+		}
+		RLES_c_idea = {
+			picture = DU_RLES_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.08
+				army_morale_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RSUW_duch = {
+			picture = DU_RSUW_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RSUW_duch2 = {
+			picture = DU_RSUW_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.04
+			}
+		}
+		RSUW_armia = {
+			picture = DU_RSUW_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		RSUW_sojusz = {
+			picture = DU_RSUW_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				stability_factor = 0.03
+			}
+		}
+		RSUW_region = {
+			picture = DU_RSUW_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RSUW_a_idea = {
+			picture = DU_RSUW_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RSUW_b_idea = {
+			picture = DU_RSUW_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		RSUW_c_idea = {
+			picture = DU_RSUW_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				conscription_factor = 0.1
+				stability_factor = -0.03
+			}
+		}
+		RPDL_duch = {
+			picture = DU_RPDL_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				political_power_gain = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RPDL_duch2 = {
+			picture = DU_RPDL_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+		RPDL_armia = {
+			picture = DU_RPDL_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				conscription_factor = 0.05
+			}
+		}
+		RPDL_sojusz = {
+			picture = DU_RPDL_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				stability_factor = 0.03
+			}
+		}
+		RPDL_region = {
+			picture = DU_RPDL_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RPDL_a_idea = {
+			picture = DU_RPDL_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RPDL_b_idea = {
+			picture = DU_RPDL_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RPDL_c_idea = {
+			picture = DU_RPDL_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				consumer_goods_factor = -0.05
+				stability_factor = -0.03
+			}
+		}
+		RWOL_duch = {
+			picture = DU_RWOL_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				stability_factor = -0.03
+				consumer_goods_factor = -0.05
+			}
+		}
+		RWOL_duch2 = {
+			picture = DU_RWOL_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.12
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		RWOL_armia = {
+			picture = DU_RWOL_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.08
+				conscription_factor = 0.05
+			}
+		}
+		RWOL_sojusz = {
+			picture = DU_RWOL_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RWOL_region = {
+			picture = DU_RWOL_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RWOL_a_idea = {
+			picture = DU_RWOL_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RWOL_b_idea = {
+			picture = DU_RWOL_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.020000000000000004
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RWOL_c_idea = {
+			picture = DU_RWOL_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				stability_factor = -0.03
+				political_power_gain = 0.05
+			}
+		}
+		RDOB_duch = {
+			picture = DU_RDOB_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				army_defence_factor = 0.05
+			}
+		}
+		RDOB_duch2 = {
+			picture = DU_RDOB_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				production_speed_buildings_factor = 0.08
+				political_power_gain = 0.04
+			}
+		}
+		RDOB_armia = {
+			picture = DU_RDOB_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				army_morale_factor = 0.05
+			}
+		}
+		RDOB_sojusz = {
+			picture = DU_RDOB_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RDOB_region = {
+			picture = DU_RDOB_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RDOB_a_idea = {
+			picture = DU_RDOB_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.03
+				war_support_factor = -0.05
+			}
+		}
+		RDOB_b_idea = {
+			picture = DU_RDOB_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.08
+				war_support_factor = 0.06
+				stability_factor = -0.02
+			}
+		}
+		RDOB_c_idea = {
+			picture = DU_RDOB_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				political_power_gain = 0.04
+				stability_factor = -0.03
+			}
+		}
+		RLBW_duch = {
+			picture = DU_RLBW_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.03
+			}
+		}
+		RLBW_duch2 = {
+			picture = DU_RLBW_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.04
+			}
+		}
+		RLBW_armia = {
+			picture = DU_RLBW_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				army_org_factor = 0.05
+			}
+		}
+		RLBW_sojusz = {
+			picture = DU_RLBW_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RLBW_region = {
+			picture = DU_RLBW_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RLBW_a_idea = {
+			picture = DU_RLBW_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RLBW_b_idea = {
+			picture = DU_RLBW_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.04
+				political_power_gain = -0.05
+			}
+		}
+		RLBW_c_idea = {
+			picture = DU_RLBW_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				army_defence_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		RPLK_duch = {
+			picture = DU_RPLK_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				army_defence_factor = 0.05
+			}
+		}
+		RPLK_duch2 = {
+			picture = DU_RPLK_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				production_speed_buildings_factor = 0.08
+			}
+		}
+		RPLK_armia = {
+			picture = DU_RPLK_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				conscription_factor = 0.05
+			}
+		}
+		RPLK_sojusz = {
+			picture = DU_RPLK_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RPLK_region = {
+			picture = DU_RPLK_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RPLK_a_idea = {
+			picture = DU_RPLK_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RPLK_b_idea = {
+			picture = DU_RPLK_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.009999999999999995
+			}
+		}
+		RPLK_c_idea = {
+			picture = DU_RPLK_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.03
+				consumer_goods_factor = 0.04
+			}
+		}
+		RKRJ_duch = {
+			picture = DU_RKRJ_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				war_support_factor = 0.04
+			}
+		}
+		RKRJ_duch2 = {
+			picture = DU_RKRJ_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.04
+			}
+		}
+		RKRJ_armia = {
+			picture = DU_RKRJ_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				army_org_factor = 0.05
+			}
+		}
+		RKRJ_sojusz = {
+			picture = DU_RKRJ_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				stability_factor = 0.03
+			}
+		}
+		RKRJ_region = {
+			picture = DU_RKRJ_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RKRJ_a_idea = {
+			picture = DU_RKRJ_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RKRJ_b_idea = {
+			picture = DU_RKRJ_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RKRJ_c_idea = {
+			picture = DU_RKRJ_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.03
+				consumer_goods_factor = 0.04
+			}
+		}
+		RGNZ_duch = {
+			picture = DU_RGNZ_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.06
+				stability_factor = 0.03
+			}
+		}
+		RGNZ_duch2 = {
+			picture = DU_RGNZ_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.04
+			}
+		}
+		RGNZ_armia = {
+			picture = DU_RGNZ_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.08
+				army_defence_factor = 0.05
+			}
+		}
+		RGNZ_sojusz = {
+			picture = DU_RGNZ_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				political_power_gain = 0.04
+			}
+		}
+		RGNZ_region = {
+			picture = DU_RGNZ_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RGNZ_a_idea = {
+			picture = DU_RGNZ_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				production_speed_buildings_factor = 0.05
+				war_support_factor = -0.05
+			}
+		}
+		RGNZ_b_idea = {
+			picture = DU_RGNZ_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.06
+				political_power_gain = 0.009999999999999995
+			}
+		}
+		RGNZ_c_idea = {
+			picture = DU_RGNZ_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04000000000000001
+				war_support_factor = 0.03
+			}
+		}
+		RKTN_duch = {
+			picture = DU_RKTN_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.06
+				political_power_gain = 0.04
+			}
+		}
+		RKTN_duch2 = {
+			picture = DU_RKTN_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.04
+			}
+		}
+		RKTN_armia = {
+			picture = DU_RKTN_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
+			}
+		}
+		RKTN_sojusz = {
+			picture = DU_RKTN_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RKTN_region = {
+			picture = DU_RKTN_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RKTN_a_idea = {
+			picture = DU_RKTN_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RKTN_b_idea = {
+			picture = DU_RKTN_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				political_power_gain = 0.04
+				stability_factor = -0.03
+			}
+		}
+		RKTN_c_idea = {
+			picture = DU_RKTN_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.04
+				political_power_gain = -0.05
+			}
+		}
+		RLOW_duch = {
+			picture = DU_RLOW_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.03
+			}
+		}
+		RLOW_duch2 = {
+			picture = DU_RLOW_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				production_speed_buildings_factor = 0.08
+			}
+		}
+		RLOW_armia = {
+			picture = DU_RLOW_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.08
+				army_defence_factor = 0.05
+			}
+		}
+		RLOW_sojusz = {
+			picture = DU_RLOW_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RLOW_region = {
+			picture = DU_RLOW_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RLOW_a_idea = {
+			picture = DU_RLOW_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = 0.04
+			}
+		}
+		RLOW_b_idea = {
+			picture = DU_RLOW_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				war_support_factor = 0.03
+				political_power_gain = -0.05
+			}
+		}
+		RLOW_c_idea = {
+			picture = DU_RLOW_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				consumer_goods_factor = -0.04
+				stability_factor = -0.03
+			}
+		}
+		RCHJ_duch = {
+			picture = DU_RCHJ_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				army_defence_factor = 0.05
+			}
+		}
+		RCHJ_duch2 = {
+			picture = DU_RCHJ_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.03
+			}
+		}
+		RCHJ_armia = {
+			picture = DU_RCHJ_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				army_attack_factor = 0.04
+			}
+		}
+		RCHJ_sojusz = {
+			picture = DU_RCHJ_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				stability_factor = 0.03
+			}
+		}
+		RCHJ_region = {
+			picture = DU_RCHJ_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RCHJ_a_idea = {
+			picture = DU_RCHJ_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RCHJ_b_idea = {
+			picture = DU_RCHJ_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.04
+				political_power_gain = -0.05
+			}
+		}
+		RCHJ_c_idea = {
+			picture = DU_RCHJ_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.06
+				army_defence_factor = 0.04
+				stability_factor = -0.03
+			}
+		}
+		RCHE_duch = {
+			picture = DU_RCHE_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.03
+			}
+		}
+		RCHE_duch2 = {
+			picture = DU_RCHE_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				production_speed_buildings_factor = 0.07
+			}
+		}
+		RCHE_armia = {
+			picture = DU_RCHE_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_org_factor = 0.03
+			}
+		}
+		RCHE_sojusz = {
+			picture = DU_RCHE_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				army_defence_factor = 0.05
+			}
+		}
+		RCHE_region = {
+			picture = DU_RCHE_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RCHE_a_idea = {
+			picture = DU_RCHE_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.07
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RCHE_b_idea = {
+			picture = DU_RCHE_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.04
+				political_power_gain = -0.05
+			}
+		}
+		RCHE_c_idea = {
+			picture = DU_RCHE_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.020000000000000004
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		RCHZ_duch = {
+			picture = DU_RCHZ_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.03
+			}
+		}
+		RCHZ_duch2 = {
+			picture = DU_RCHZ_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = 0.03
+			}
+		}
+		RCHZ_armia = {
+			picture = DU_RCHZ_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				conscription_factor = 0.05
+			}
+		}
+		RCHZ_sojusz = {
+			picture = DU_RCHZ_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RCHZ_region = {
+			picture = DU_RCHZ_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RCHZ_a_idea = {
+			picture = DU_RCHZ_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RCHZ_b_idea = {
+			picture = DU_RCHZ_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				war_support_factor = 0.03
+				political_power_gain = -0.05
+			}
+		}
+		RCHZ_c_idea = {
+			picture = DU_RCHZ_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				conscription_factor = 0.05
+				consumer_goods_factor = 0.04
+			}
+		}
+		RSWC_duch = {
+			picture = DU_RSWC_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.06
+				political_power_gain = 0.04
+			}
+		}
+		RSWC_duch2 = {
+			picture = DU_RSWC_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+		RSWC_armia = {
+			picture = DU_RSWC_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				conscription_factor = 0.05
+			}
+		}
+		RSWC_sojusz = {
+			picture = DU_RSWC_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RSWC_region = {
+			picture = DU_RSWC_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RSWC_a_idea = {
+			picture = DU_RSWC_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RSWC_b_idea = {
+			picture = DU_RSWC_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				conscription_factor = 0.05
+				consumer_goods_factor = 0.04
+			}
+		}
+		RSWC_c_idea = {
+			picture = DU_RSWC_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				war_support_factor = 0.04
+				stability_factor = -0.03
+			}
+		}
+		RTUC_duch = {
+			picture = DU_RTUC_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				stability_factor = 0.03
+			}
+		}
+		RTUC_duch2 = {
+			picture = DU_RTUC_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.07
+				stability_factor = 0.04
+			}
+		}
+		RTUC_armia = {
+			picture = DU_RTUC_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_attack_factor = 0.03
+			}
+		}
+		RTUC_sojusz = {
+			picture = DU_RTUC_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				stability_factor = 0.03
+			}
+		}
+		RTUC_region = {
+			picture = DU_RTUC_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RTUC_a_idea = {
+			picture = DU_RTUC_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = 0.04
+			}
+		}
+		RTUC_b_idea = {
+			picture = DU_RTUC_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		RTUC_c_idea = {
+			picture = DU_RTUC_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RMLA_duch = {
+			picture = DU_RMLA_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				war_support_factor = 0.04
+			}
+		}
+		RMLA_duch2 = {
+			picture = DU_RMLA_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.04
+			}
+		}
+		RMLA_armia = {
+			picture = DU_RMLA_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				army_org_factor = 0.04
+			}
+		}
+		RMLA_sojusz = {
+			picture = DU_RMLA_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		RMLA_region = {
+			picture = DU_RMLA_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RMLA_a_idea = {
+			picture = DU_RMLA_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.04
+				war_support_factor = -0.05
+			}
+		}
+		RMLA_b_idea = {
+			picture = DU_RMLA_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.06
+				army_attack_factor = 0.04
+				stability_factor = -0.03
+			}
+		}
+		RMLA_c_idea = {
+			picture = DU_RMLA_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				war_support_factor = 0.05
+				stability_factor = -0.02
+			}
+		}
+		RNOT_duch = {
+			picture = DU_RNOT_duch
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				war_support_factor = 0.04
+			}
+		}
+		RNOT_duch2 = {
+			picture = DU_RNOT_duch2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				political_power_gain = 0.04
+			}
+		}
+		RNOT_armia = {
+			picture = DU_RNOT_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				conscription_factor = 0.04
+			}
+		}
+		RNOT_sojusz = {
+			picture = DU_RNOT_sojusz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				stability_factor = 0.03
+			}
+		}
+		RNOT_region = {
+			picture = DU_RNOT_region
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		RNOT_a_idea = {
+			picture = DU_RNOT_a_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = 0.04
+			}
+		}
+		RNOT_b_idea = {
+			picture = DU_RNOT_b_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		RNOT_c_idea = {
+			picture = DU_RNOT_c_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				stability_factor = -0.02
+			}
+		}
+	}
+}

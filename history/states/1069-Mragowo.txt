@@ -1,0 +1,22 @@
+state = {
+	id = 1069
+	name = "STATE_1069"
+	manpower = 27294
+	state_category = town
+	resources = {
+		rubber = 1
+	}
+	history = {
+		owner = MAZ
+		add_core_of = MAZ
+		victory_points = { 1388 1 }
+		victory_points = { 4124 1 }
+		victory_points = { 2949 1 }
+		victory_points = { 2807 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 446 2807 4445 1248 2949 4124 1388 2560 3622 }
+	local_supplies = 0.0
+}

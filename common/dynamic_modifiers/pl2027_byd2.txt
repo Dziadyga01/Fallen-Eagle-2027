@@ -1,0 +1,5 @@
+BYD2_kampania_mod = {
+	icon = GFX_idea_BYD2_kampania_mod
+	enable = { has_country_flag = BYD2_kampania }
+	remove_trigger = { NOT = { has_country_flag = BYD2_kampania } }
+}

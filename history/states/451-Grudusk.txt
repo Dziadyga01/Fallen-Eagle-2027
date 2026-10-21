@@ -1,0 +1,22 @@
+state = {
+	id = 451
+	name = "STATE_451"
+	manpower = 7027
+	state_category = rural
+	resources = {
+		aluminium = 2
+		steel = 2
+	}
+	history = {
+		owner = NNA
+		add_core_of = NNA
+		victory_points = { 10331 1 }
+		victory_points = { 10329 1 }
+		victory_points = { 10328 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 442 10331 10328 10349 580 10329 }
+	local_supplies = 0.0
+}

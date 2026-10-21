@@ -1,0 +1,244 @@
+add_namespace = tpz
+
+country_event = {
+	id = tpz.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tpz.1.t
+	desc = tpz.1.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	option = {
+		name = tpz.1.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = TPZ_sat_tt_p10 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 10 } TPZ_przelicz = yes } add_stability = 0.02
+	}
+	option = {
+		name = tpz.1.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = TPZ_sat_tt_p5 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 5 } TPZ_przelicz = yes } add_political_power = 30
+	}
+}
+
+country_event = {
+	id = tpz.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = tpz.10.t
+	desc = tpz.10.d
+	picture = GFX_pl2027_ev081_wybory_4
+	is_triggered_only = yes
+	option = {
+		name = tpz.10.a
+		trigger = { check_variable = { TPZ_satysfakcja > 59 } }
+		ai_chance = { factor = 10 }
+		add_stability = 0.08 add_political_power = 75 add_popularity = { ideology = authoritarian_democrat popularity = 0.1 } REG_WLC_wszyscy_plus_5 = yes set_country_flag = TPZ_referendum_ok
+	}
+	option = {
+		name = tpz.10.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.02 add_political_power = 40 custom_effect_tooltip = TPZ_sat_tt_m8 hidden_effect = { add_to_variable = { TPZ_satysfakcja = -8 } TPZ_przelicz = yes } set_country_flag = TPZ_referendum_ok
+	}
+}
+
+country_event = {
+	id = tpz.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tpz.20.t
+	desc = tpz.20.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_3
+	is_triggered_only = yes
+	option = {
+		name = tpz.20.a
+		trigger = { has_country_flag = TPZ_maka_kontrola }
+		ai_chance = { factor = 10 }
+		custom_effect_tooltip = TPZ_sat_tt_p2 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 2 } TPZ_przelicz = yes } add_stability = 0.01
+	}
+	option = {
+		name = tpz.20.b
+		trigger = { has_political_power > 40 }
+		ai_chance = { factor = 3 }
+		add_political_power = -40
+	}
+	option = {
+		name = tpz.20.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = TPZ_sat_tt_m6 hidden_effect = { add_to_variable = { TPZ_satysfakcja = -6 } TPZ_przelicz = yes } add_timed_idea = { idea = TPZ_duch_brak_maki days = 60 }
+	}
+}
+
+country_event = {
+	id = tpz.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tpz.21.t
+	desc = tpz.21.d
+	picture = GFX_pl2027_ev081_miasto_5
+	is_triggered_only = yes
+	option = {
+		name = tpz.21.a
+		trigger = { has_political_power > 50 }
+		ai_chance = { factor = 2 }
+		add_political_power = -50 custom_effect_tooltip = TPZ_sat_tt_p3 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 3 } TPZ_przelicz = yes } add_stability = 0.02
+	}
+	option = {
+		name = tpz.21.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = TPZ_sat_tt_p5 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 5 } TPZ_przelicz = yes } add_political_power = -10
+	}
+	option = {
+		name = tpz.21.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = TPZ_sat_tt_m5 hidden_effect = { add_to_variable = { TPZ_satysfakcja = -5 } TPZ_przelicz = yes } add_political_power = 30
+	}
+}
+
+country_event = {
+	id = tpz.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tpz.22.t
+	desc = tpz.22.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_1
+	is_triggered_only = yes
+	option = {
+		name = tpz.22.a
+		trigger = { has_political_power > 25 }
+		ai_chance = { factor = 3 }
+		add_political_power = -25 custom_effect_tooltip = TPZ_sat_tt_p6 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 6 } TPZ_przelicz = yes }
+	}
+	option = {
+		name = tpz.22.b
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = TPZ_sat_tt_p4 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 4 } TPZ_przelicz = yes } add_stability = 0.01
+	}
+	option = {
+		name = tpz.22.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = TPZ_sat_tt_m4 hidden_effect = { add_to_variable = { TPZ_satysfakcja = -4 } TPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = tpz.23
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tpz.23.t
+	desc = tpz.23.d
+	picture = GFX_pl2027_ev081_miasto_5
+	is_triggered_only = yes
+	option = {
+		name = tpz.23.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.02 custom_effect_tooltip = TPZ_sat_tt_m3 hidden_effect = { add_to_variable = { TPZ_satysfakcja = -3 } TPZ_przelicz = yes } add_political_power = -20
+	}
+	option = {
+		name = tpz.23.b
+		ai_chance = { factor = 1 }
+		add_political_power = 40 custom_effect_tooltip = TPZ_sat_tt_p2 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 2 } TPZ_przelicz = yes } add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = tpz.24
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tpz.24.t
+	desc = tpz.24.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_2
+	is_triggered_only = yes
+	option = {
+		name = tpz.24.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = TPZ_sat_tt_p6 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 6 } TPZ_przelicz = yes } add_war_support = 0.03
+	}
+	option = {
+		name = tpz.24.b
+		ai_chance = { factor = 1 }
+		add_political_power = 30
+	}
+}
+
+country_event = {
+	id = tpz.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tpz.30.t
+	desc = tpz.30.d
+	picture = GFX_pl2027_ev081_paliwo_4
+	is_triggered_only = yes
+	option = {
+		name = tpz.30.a
+		ai_chance = { factor = 2 }
+		add_political_power = 40 FROM = { add_opinion_modifier = { target = ROOT modifier = TPZ_odsetki } add_to_variable = { TPZ_dlug = 10 } clamp_variable = { var = TPZ_dlug min = 0 max = 100 } }
+	}
+	option = {
+		name = tpz.30.b
+		ai_chance = { factor = 2 }
+		FROM = { add_to_variable = { REG_WLC = 10 } REG_przelicz = yes add_to_variable = { TPZ_dlug = -15 } clamp_variable = { var = TPZ_dlug min = 0 max = 100 } }
+	}
+	option = {
+		name = tpz.30.c
+		ai_chance = { factor = 1 }
+		FROM = { add_timed_idea = { idea = TPZ_duch_embargo days = 120 } set_variable = { TPZ_dlug = 0 } add_opinion_modifier = { target = ROOT modifier = TPZ_embargo_op } } custom_effect_tooltip = TPZ_sat_tt_m3 hidden_effect = { add_to_variable = { TPZ_satysfakcja = -3 } TPZ_przelicz = yes } random_list = { 40 = { add_war_support = 0.03 FROM = { if = { limit = { NOT = { has_war_with = ROOT } NOT = { is_subject_of = ROOT } } create_wargoal = { type = annex_everything target = ROOT } } else = { add_stability = -0.05 } } } 60 = { add_political_power = 20 FROM = { add_stability = -0.05 } } }
+	}
+}
+
+country_event = {
+	id = tpz.31
+	hidden = yes
+	is_triggered_only = yes
+	immediate = { FROM = { country_event = { id = tpz.30 } } }
+}
+
+country_event = {
+	id = tpz.41
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = tpz.41.t
+	desc = tpz.41.d
+	picture = GFX_pl2027_ev081_praca_3
+	is_triggered_only = yes
+	option = {
+		name = tpz.41.a
+		trigger = { has_political_power > 40 }
+		ai_chance = { factor = 3 }
+		add_political_power = -40 custom_effect_tooltip = TPZ_sat_tt_p10 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 10 } TPZ_przelicz = yes }
+	}
+	option = {
+		name = tpz.41.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = TPZ_duch_strajk days = 60 } custom_effect_tooltip = TPZ_sat_tt_m3 hidden_effect = { add_to_variable = { TPZ_satysfakcja = -3 } TPZ_przelicz = yes } add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = tpz.42
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = tpz.42.t
+	desc = tpz.42.d
+	picture = GFX_pl2027_ev081_ulica_5
+	is_triggered_only = yes
+	option = {
+		name = tpz.42.a
+		trigger = { has_political_power > 75 }
+		ai_chance = { factor = 5 }
+		add_political_power = -75 custom_effect_tooltip = TPZ_sat_tt_p20 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 20 } TPZ_przelicz = yes } add_stability = -0.03
+	}
+	option = {
+		name = tpz.42.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = TPZ_sat_tt_p5 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 5 } TPZ_przelicz = yes } random_list = { 35 = { if = { limit = { has_government = authoritarian_democrat has_civil_war = no } start_civil_war = { ideology = social_liberal size = 0.3 } } else = { add_stability = -0.15 } } 65 = { add_stability = -0.12 } }
+	}
+}
+
+country_event = {
+	id = tpz.43
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tpz.43.t
+	desc = tpz.43.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tpz.43.a
+		ai_chance = { factor = 2 }
+		REG_WLC_wszyscy_plus_3 = yes add_political_power = 30
+	}
+	option = {
+		name = tpz.43.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.03 custom_effect_tooltip = TPZ_sat_tt_p3 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 3 } TPZ_przelicz = yes }
+	}
+}

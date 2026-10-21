@@ -1,0 +1,32 @@
+ideas = {
+	country = {
+		TRN_podzielone_miasto = {
+			picture = TRN_podzielone_miasto
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.15
+				justify_war_goal_time = 1.0
+			}
+		}
+		TRN_kryzys_budzetu = {
+			picture = TRN_kryzys_budzetu
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		TRN_dlug_miasta = {
+			picture = TRN_dlug_miasta
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+	}
+}

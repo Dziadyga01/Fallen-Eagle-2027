@@ -1,0 +1,19 @@
+state = {
+	id = 1052
+	name = "STATE_1052"
+	manpower = 6545
+	state_category = rural
+	history = {
+		owner = MAZ
+		add_core_of = MAZ
+		victory_points = { 2223 1 }
+		victory_points = { 2587 1 }
+		victory_points = { 2078 1 }
+		victory_points = { 2484 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1155 2484 1881 2659 2587 2223 2078 2553 2151 }
+	local_supplies = 0.0
+}

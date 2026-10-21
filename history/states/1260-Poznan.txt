@@ -1,0 +1,23 @@
+state = {
+	id = 1260
+	name = "STATE_1260"
+	manpower = 2014
+	state_category = town
+	resources = {
+		steel = 1
+	}
+	history = {
+		owner = WMP
+		add_core_of = WMP
+		victory_points = { 7190 13 }
+		victory_points = { 7126 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 7123 7125 7126 7190 }
+	local_supplies = 0.0
+}

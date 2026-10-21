@@ -1,0 +1,21 @@
+state = {
+	id = 1244
+	name = "STATE_1244"
+	manpower = 39167
+	state_category = town
+	resources = {
+		aluminium = 1
+	}
+	history = {
+		owner = PLK
+		add_core_of = PLK
+		victory_points = { 7296 1 }
+		victory_points = { 7295 1 }
+		victory_points = { 7300 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 7290 7304 7295 7302 7296 7303 7300 7301 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,33 @@
+ROS_PUTIN_FATE = {
+	name = "ROS_PUTIN_FATE"
+	group = "RULE_GROUP_GENERAL"
+	default = {
+		name = RANDOM
+		text = "ROS_PUTIN_FATE_RANDOM"
+		desc = "ROS_PUTIN_FATE_RANDOM_DESC"
+	}
+	option = {
+		name = DIES
+		text = "ROS_PUTIN_FATE_DIES"
+		desc = "ROS_PUTIN_FATE_DIES_DESC"
+	}
+	option = {
+		name = SURVIVES
+		text = "ROS_PUTIN_FATE_SURVIVES"
+		desc = "ROS_PUTIN_FATE_SURVIVES_DESC"
+	}
+}
+ROS_ELECTIONS = {
+	name = "ROS_ELECTIONS"
+	group = "RULE_GROUP_GENERAL"
+	default = {
+		name = WEIGHTED
+		text = "ROS_ELECTIONS_WEIGHTED"
+		desc = "ROS_ELECTIONS_WEIGHTED_DESC"
+	}
+	option = {
+		name = PLAYER
+		text = "ROS_ELECTIONS_PLAYER"
+		desc = "ROS_ELECTIONS_PLAYER_DESC"
+	}
+}

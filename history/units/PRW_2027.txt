@@ -1,0 +1,76 @@
+division_template = {
+	name = "Brygada Obrony Terytorialnej"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Grupa Artyleryjska"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Batalion Piechoty"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+units = {
+	division = {
+		division_name = { is_name_ordered = yes name_order = 1 }
+		location = 4740
+		division_template = "Grupa Artyleryjska"
+		start_experience_factor = 0.16
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 2 }
+		location = 4756
+		division_template = "Batalion Piechoty"
+		start_experience_factor = 0.48
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 3 }
+		location = 330
+		division_template = "Grupa Artyleryjska"
+		start_experience_factor = 0.25
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 4 }
+		location = 4741
+		division_template = "Grupa Artyleryjska"
+		start_experience_factor = 0.33
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 5 }
+		location = 9046
+		division_template = "Batalion Piechoty"
+		start_experience_factor = 0.41
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 6 }
+		location = 9070
+		division_template = "Grupa Artyleryjska"
+		start_experience_factor = 0.23
+	}
+}

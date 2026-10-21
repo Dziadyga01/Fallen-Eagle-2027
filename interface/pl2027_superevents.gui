@@ -1,0 +1,123 @@
+guiTypes = {
+	containerWindowType = {
+		name = "pl2027_se_window"
+		position = { x = 0 y = 0 }
+		size = { width = 1000 height = 640 }
+		orientation = center
+		origo = center
+		moveable = no
+		click_to_front = no
+		clipping = no
+		background = {
+			name = "pl2027_se_tlo"
+			spriteType = "GFX_pl2027_se_tlo"
+		}
+		iconType = {
+			name = "pl2027_se_obraz_ivrp_sejm"
+			spriteType = "GFX_pl2027_se_ivrp_sejm"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pl2027_se_obraz_ivrp_prezydent"
+			spriteType = "GFX_pl2027_se_ivrp_prezydent"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pl2027_se_obraz_ivrp_mafia"
+			spriteType = "GFX_pl2027_se_ivrp_mafia"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pl2027_se_obraz_inwazja_rosji"
+			spriteType = "GFX_pl2027_se_inwazja_rosji"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pl2027_se_obraz_krucjata"
+			spriteType = "GFX_pl2027_se_krucjata"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pl2027_se_obraz_wojna_metropolitalna"
+			spriteType = "GFX_pl2027_se_wojna_metropolitalna"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pl2027_se_obraz_bialorus"
+			spriteType = "GFX_pl2027_se_bialorus"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pl2027_se_obraz_bitwa_o_warszawe"
+			spriteType = "GFX_pl2027_se_bitwa_o_warszawe"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pl2027_se_obraz_odrodzona"
+			spriteType = "GFX_pl2027_se_odrodzona"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pl2027_se_obraz_zima"
+			spriteType = "GFX_pl2027_se_zima"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "pl2027_se_nakladka"
+			spriteType = "GFX_pl2027_se_nakladka"
+			position = { x = 0 y = 0 }
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "pl2027_se_naglowek"
+			position = { x = 40 y = 26 }
+			font = "hoi_18mbs"
+			text = "[PL2027_SE_Get_naglowek]"
+			maxWidth = 920
+			maxHeight = 24
+			fixedsize = yes
+			format = left
+			borderSize = { x = 0 y = 0 }
+		}
+		instantTextBoxType = {
+			name = "pl2027_se_tytul"
+			position = { x = 40 y = 448 }
+			font = "hoi_36header"
+			text = "[PL2027_SE_Get_tytul]"
+			maxWidth = 920
+			maxHeight = 52
+			fixedsize = yes
+			format = left
+			borderSize = { x = 0 y = 0 }
+		}
+		instantTextBoxType = {
+			name = "pl2027_se_opis"
+			position = { x = 40 y = 506 }
+			font = "hoi_16mbs"
+			text = "[PL2027_SE_Get_opis]"
+			maxWidth = 680
+			maxHeight = 110
+			fixedsize = yes
+			format = left
+			borderSize = { x = 0 y = 0 }
+		}
+		buttonType = {
+			name = "pl2027_se_zamknij"
+			position = { x = 740 y = 572 }
+			spriteType = "GFX_pl2027_se_przycisk"
+			buttonText = "[PL2027_SE_Get_przycisk]"
+			buttonFont = "hoi_18mbs"
+			clicksound = click_close
+		}
+	}
+}

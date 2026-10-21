@@ -1,0 +1,23 @@
+state = {
+	id = 47
+	name = "STATE_47"
+	manpower = 4163
+	state_category = town
+	history = {
+		owner = DAB
+		add_core_of = DAB
+		add_claim_by = BYD
+		add_claim_by = TRN
+		victory_points = { 7792 5 }
+		victory_points = { 7793 1 }
+		victory_points = { 7790 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 1564 7792 7793 7791 7790 7787 7788 7786 }
+	local_supplies = 0.0
+}

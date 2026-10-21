@@ -1,0 +1,48 @@
+ideas = {
+	country = {
+		WWP_rzady_prawa = {
+			picture = DU_WWP_rzady_prawa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.1
+			}
+		}
+		WWP_dekret = {
+			picture = DU_WWP_dekret
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		WWP_osmiornica = {
+			picture = DU_WWP_osmiornica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = -0.05
+			}
+		}
+		WWP_jednosc = {
+			picture = DU_WWP_jednosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		WWP_podzial = {
+			picture = DU_WWP_podzial
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = 0.03
+			}
+		}
+	}
+}

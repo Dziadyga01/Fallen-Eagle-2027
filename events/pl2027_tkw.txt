@@ -1,0 +1,113 @@
+add_namespace = tkw
+
+country_event = {
+	id = tkw.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tkw.1.t
+	desc = tkw.1.d
+	picture = GFX_pl2027_ev081_granica_0
+	is_triggered_only = yes
+	option = {
+		name = tkw.1.a
+		ai_chance = { factor = 30 modifier = { factor = 2 check_variable = { REG_WLC > 49 } } modifier = { factor = 2 strength_ratio = { tag = WLC ratio < 0.7 } } modifier = { factor = 0.5 strength_ratio = { tag = WLC ratio > 1.2 } } }
+		give_military_access = FROM FROM = { set_country_flag = TPZ_kuj_korytarz country_event = { id = tkw.2 } } add_stability = -0.03 add_political_power = 30
+	}
+	option = {
+		name = tkw.1.b
+		ai_chance = { factor = 40 }
+		FROM = { set_country_flag = TPZ_kuj_odmowa country_event = { id = tkw.3 } } add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = tkw.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tkw.2.t
+	desc = tkw.2.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_1
+	is_triggered_only = yes
+	option = {
+		name = tkw.2.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = TPZ_sat_tt_p3 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 3 } TPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = tkw.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tkw.3.t
+	desc = tkw.3.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = tkw.3.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = tkw.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = tkw.10.t
+	desc = tkw.10.d
+	picture = GFX_pl2027_ev081_front_5
+	is_triggered_only = yes
+	option = {
+		name = tkw.10.a
+		ai_chance = { factor = 3 }
+		add_timed_idea = { idea = TKW_obrona_kujaw days = 365 } if = { limit = { NOT = { has_template = "Kujawska Gwardia Obywatelska" } } division_template = { name = "Kujawska Gwardia Obywatelska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } } support = { engineer = { x = 0 y = 0 } } } } capital_scope = { create_unit = { division = "division_template = \"Kujawska Gwardia Obywatelska\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Kujawska Gwardia Obywatelska\" start_experience_factor = 0.3" owner = ROOT } } add_manpower = 3000
+	}
+	option = {
+		name = tkw.10.b
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = TKW_obrona_kujaw days = 365 } if = { limit = { country_exists = TRN NOT = { TRN = { has_war_with = ROOT } } } TRN = { country_event = { id = tkw.11 } } }
+	}
+}
+
+country_event = {
+	id = tkw.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = tkw.11.t
+	desc = tkw.11.d
+	picture = GFX_pl2027_ev081_kolej_0
+	is_triggered_only = yes
+	option = {
+		name = tkw.11.a
+		ai_chance = { factor = 2 modifier = { factor = 0 has_war = yes } modifier = { factor = 0.3 has_country_flag = TRN_walka_o_wladze } }
+		give_guarantee = FROM
+	}
+	option = {
+		name = tkw.11.b
+		ai_chance = { factor = 3 }
+	}
+}
+
+country_event = {
+	id = tkw.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tkw.20.t
+	desc = tkw.20.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_2
+	is_triggered_only = yes
+	option = {
+		name = tkw.20.a
+		ai_chance = { factor = 1 }
+		add_political_power = 50
+	}
+}
+
+news_event = {
+	id = tkw.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = tkw.21.t
+	desc = tkw.21.d
+	picture = GFX_pl2027_ev081_miasto_5_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = tkw.21.a
+		ai_chance = { factor = 1 }
+	}
+}

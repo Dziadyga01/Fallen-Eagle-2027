@@ -1,0 +1,20 @@
+state = {
+	id = 1237
+	name = "STATE_1237"
+	manpower = 4765
+	state_category = rural
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = KON
+		add_core_of = KON
+		victory_points = { 7553 1 }
+		victory_points = { 7555 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 7551 7553 7555 7554 }
+	local_supplies = 0.0
+}

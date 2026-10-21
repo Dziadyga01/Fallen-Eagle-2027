@@ -1,0 +1,171 @@
+ideas = {
+	country = {
+		TPZ_duch_magazyny = {
+			picture = DU_TPZ_duch_magazyny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				consumer_goods_factor = -0.02
+			}
+		}
+		TPZ_duch_panstwo_firma = {
+			picture = DU_TPZ_duch_panstwo_firma
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		TPZ_duch_porzadek = {
+			picture = DU_TPZ_duch_porzadek
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.08
+				production_speed_buildings_factor = 0.08
+			}
+		}
+		TPZ_duch_imperium = {
+			picture = DU_TPZ_duch_imperium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		TPZ_duch_piece = {
+			picture = DU_TPZ_duch_piece
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
+		TPZ_duch_monopol = {
+			picture = DU_TPZ_duch_monopol
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.08
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		TPZ_duch_franczyza = {
+			picture = DU_TPZ_duch_franczyza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+			}
+		}
+		TPZ_duch_podatek = {
+			picture = DU_TPZ_duch_podatek
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.07
+				consumer_goods_factor = -0.02
+			}
+		}
+		TPZ_duch_kupony = {
+			picture = DU_TPZ_duch_kupony
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				consumer_goods_factor = 0.02
+			}
+		}
+		TPZ_duch_premium = {
+			picture = DU_TPZ_duch_premium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = -0.02
+			}
+		}
+		TPZ_duch_marketing = {
+			picture = DU_TPZ_duch_marketing
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		TPZ_duch_jedna_firma = {
+			picture = DU_TPZ_duch_jedna_firma
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				war_support_factor = 0.06
+				political_power_gain = 0.05
+			}
+		}
+		TPZ_duch_straz = {
+			picture = DU_TPZ_duch_straz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				army_defence_factor = 0.05
+			}
+		}
+		TPZ_duch_armia = {
+			picture = DU_TPZ_duch_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.03
+			}
+		}
+		TPZ_duch_weekend = {
+			picture = DU_TPZ_duch_weekend
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.02
+			}
+		}
+		TPZ_duch_strajk = {
+			picture = DU_TPZ_duch_strajk
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				political_power_gain = -0.1
+			}
+		}
+		TPZ_duch_brak_maki = {
+			picture = DU_TPZ_duch_brak_maki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.04
+				consumer_goods_factor = 0.02
+			}
+		}
+		TPZ_duch_embargo = {
+			picture = DU_TPZ_duch_embargo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+}

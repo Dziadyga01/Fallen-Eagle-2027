@@ -1,0 +1,20 @@
+state = {
+	id = 329
+	name = "STATE_329"
+	manpower = 3740
+	state_category = rural
+	resources = {
+		aluminium = 2
+	}
+	history = {
+		owner = LWC
+		add_core_of = LWC
+		victory_points = { 5926 1 }
+		victory_points = { 6722 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1348 5926 7868 5925 6722 }
+	local_supplies = 0.0
+}

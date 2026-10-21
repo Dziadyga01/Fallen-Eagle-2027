@@ -1,0 +1,37 @@
+TFE_faza_mod_1 = {
+	icon = GFX_idea_TFE_faza_mod_1
+	enable = { has_global_flag = TFE_faza_1 NOT = { has_global_flag = TFE_faza_2 } }
+	remove_trigger = { NOT = { has_global_flag = TFE_faza_1 } OR = { has_global_flag = TFE_faza_2 } }
+	stability_factor = -0.03
+	justify_war_goal_time = 1.0
+}
+TFE_faza_mod_2 = {
+	icon = GFX_idea_TFE_faza_mod_2
+	enable = { has_global_flag = TFE_faza_2 NOT = { has_global_flag = TFE_faza_3 } }
+	remove_trigger = { NOT = { has_global_flag = TFE_faza_2 } OR = { has_global_flag = TFE_faza_3 } }
+	stability_factor = -0.04
+	political_power_gain = 0.05
+	justify_war_goal_time = 0.5
+}
+TFE_faza_mod_3 = {
+	icon = GFX_idea_TFE_faza_mod_3
+	enable = { has_global_flag = TFE_faza_3 NOT = { has_global_flag = TFE_faza_4 } }
+	remove_trigger = { NOT = { has_global_flag = TFE_faza_3 } OR = { has_global_flag = TFE_faza_4 } }
+	stability_factor = -0.05
+	war_support_factor = 0.05
+	conscription_factor = 0.05
+}
+TFE_faza_mod_4 = {
+	icon = GFX_idea_TFE_faza_mod_4
+	enable = { has_global_flag = TFE_faza_4 NOT = { has_global_flag = TFE_faza_5 } }
+	remove_trigger = { NOT = { has_global_flag = TFE_faza_4 } OR = { has_global_flag = TFE_faza_5 } }
+	war_support_factor = 0.08
+	justify_war_goal_time = -0.25
+}
+TFE_faza_mod_5 = {
+	icon = GFX_idea_TFE_faza_mod_5
+	enable = { has_global_flag = TFE_faza_5 }
+	remove_trigger = { NOT = { has_global_flag = TFE_faza_5 } }
+	war_support_factor = 0.05
+	stability_factor = 0.03
+}

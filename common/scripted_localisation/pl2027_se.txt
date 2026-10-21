@@ -1,0 +1,172 @@
+defined_text = {
+	name = PL2027_SE_Get_naglowek
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_sejm }
+		localization_key = PL2027_SE_naglowek_ivrp_sejm
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_prezydent }
+		localization_key = PL2027_SE_naglowek_ivrp_prezydent
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_mafia }
+		localization_key = PL2027_SE_naglowek_ivrp_mafia
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_inwazja_rosji }
+		localization_key = PL2027_SE_naglowek_inwazja_rosji
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_krucjata }
+		localization_key = PL2027_SE_naglowek_krucjata
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_wojna_metropolitalna }
+		localization_key = PL2027_SE_naglowek_wojna_metropolitalna
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_bialorus }
+		localization_key = PL2027_SE_naglowek_bialorus
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_bitwa_o_warszawe }
+		localization_key = PL2027_SE_naglowek_bitwa_o_warszawe
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_odrodzona }
+		localization_key = PL2027_SE_naglowek_odrodzona
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_zima }
+		localization_key = PL2027_SE_naglowek_zima
+	}
+}
+defined_text = {
+	name = PL2027_SE_Get_tytul
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_sejm }
+		localization_key = PL2027_SE_tytul_ivrp_sejm
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_prezydent }
+		localization_key = PL2027_SE_tytul_ivrp_prezydent
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_mafia }
+		localization_key = PL2027_SE_tytul_ivrp_mafia
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_inwazja_rosji }
+		localization_key = PL2027_SE_tytul_inwazja_rosji
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_krucjata }
+		localization_key = PL2027_SE_tytul_krucjata
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_wojna_metropolitalna }
+		localization_key = PL2027_SE_tytul_wojna_metropolitalna
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_bialorus }
+		localization_key = PL2027_SE_tytul_bialorus
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_bitwa_o_warszawe }
+		localization_key = PL2027_SE_tytul_bitwa_o_warszawe
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_odrodzona }
+		localization_key = PL2027_SE_tytul_odrodzona
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_zima }
+		localization_key = PL2027_SE_tytul_zima
+	}
+}
+defined_text = {
+	name = PL2027_SE_Get_opis
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_sejm }
+		localization_key = PL2027_SE_opis_ivrp_sejm
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_prezydent }
+		localization_key = PL2027_SE_opis_ivrp_prezydent
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_mafia }
+		localization_key = PL2027_SE_opis_ivrp_mafia
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_inwazja_rosji }
+		localization_key = PL2027_SE_opis_inwazja_rosji
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_krucjata }
+		localization_key = PL2027_SE_opis_krucjata
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_wojna_metropolitalna }
+		localization_key = PL2027_SE_opis_wojna_metropolitalna
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_bialorus }
+		localization_key = PL2027_SE_opis_bialorus
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_bitwa_o_warszawe }
+		localization_key = PL2027_SE_opis_bitwa_o_warszawe
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_odrodzona }
+		localization_key = PL2027_SE_opis_odrodzona
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_zima }
+		localization_key = PL2027_SE_opis_zima
+	}
+}
+defined_text = {
+	name = PL2027_SE_Get_przycisk
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_sejm }
+		localization_key = PL2027_SE_przycisk_ivrp_sejm
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_prezydent }
+		localization_key = PL2027_SE_przycisk_ivrp_prezydent
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_ivrp_mafia }
+		localization_key = PL2027_SE_przycisk_ivrp_mafia
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_inwazja_rosji }
+		localization_key = PL2027_SE_przycisk_inwazja_rosji
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_krucjata }
+		localization_key = PL2027_SE_przycisk_krucjata
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_wojna_metropolitalna }
+		localization_key = PL2027_SE_przycisk_wojna_metropolitalna
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_bialorus }
+		localization_key = PL2027_SE_przycisk_bialorus
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_bitwa_o_warszawe }
+		localization_key = PL2027_SE_przycisk_bitwa_o_warszawe
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_odrodzona }
+		localization_key = PL2027_SE_przycisk_odrodzona
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_zima }
+		localization_key = PL2027_SE_przycisk_zima
+	}
+}

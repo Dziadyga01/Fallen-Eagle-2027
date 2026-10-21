@@ -1,0 +1,24 @@
+state = {
+	id = 293
+	name = "STATE_293"
+	manpower = 9150
+	state_category = rural
+	resources = {
+		steel = 2
+	}
+	history = {
+		owner = PTK
+		add_core_of = PTK
+		victory_points = { 5825 1 }
+		victory_points = { 4501 1 }
+		victory_points = { 4505 1 }
+		victory_points = { 5827 1 }
+		victory_points = { 5829 1 }
+		victory_points = { 5826 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 307 5821 5816 5826 5827 5829 5815 4505 5825 5824 5820 5817 5810 5828 4501 }
+	local_supplies = 0.0
+}

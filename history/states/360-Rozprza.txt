@@ -1,0 +1,19 @@
+state = {
+	id = 360
+	name = "STATE_360"
+	manpower = 9344
+	state_category = rural
+	history = {
+		owner = PTK
+		add_core_of = PTK
+		victory_points = { 6808 1 }
+		victory_points = { 6798 1 }
+		victory_points = { 6804 1 }
+		victory_points = { 6816 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 6798 6809 6822 6804 6821 6820 6816 6811 6808 6806 }
+	local_supplies = 0.0
+}

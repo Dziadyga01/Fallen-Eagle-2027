@@ -1,0 +1,18 @@
+state = {
+	id = 80
+	name = "STATE_80"
+	manpower = 7729
+	state_category = rural
+	history = {
+		owner = KUJ
+		add_core_of = KUJ
+		victory_points = { 1076 1 }
+		victory_points = { 8258 1 }
+		victory_points = { 8262 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 1076 8262 8260 8259 8261 8258 }
+	local_supplies = 0.0
+}

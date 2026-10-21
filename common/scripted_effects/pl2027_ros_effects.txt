@@ -1,0 +1,251 @@
+ROS_lider_putin = {
+	clr_country_flag = ROS_lider_pre
+	clr_country_flag = ROS_lider_pok
+	clr_country_flag = ROS_lider_mie
+	clr_country_flag = ROS_lider_szo
+	clr_country_flag = ROS_lider_cho
+	clr_country_flag = ROS_lider_szl
+	clr_country_flag = ROS_lider_naw
+	set_country_flag = ROS_lider_putin
+}
+ROS_lider_pre = {
+	clr_country_flag = ROS_lider_putin
+	clr_country_flag = ROS_lider_pok
+	clr_country_flag = ROS_lider_mie
+	clr_country_flag = ROS_lider_szo
+	clr_country_flag = ROS_lider_cho
+	clr_country_flag = ROS_lider_szl
+	clr_country_flag = ROS_lider_naw
+	set_country_flag = ROS_lider_pre
+}
+ROS_lider_pok = {
+	clr_country_flag = ROS_lider_putin
+	clr_country_flag = ROS_lider_pre
+	clr_country_flag = ROS_lider_mie
+	clr_country_flag = ROS_lider_szo
+	clr_country_flag = ROS_lider_cho
+	clr_country_flag = ROS_lider_szl
+	clr_country_flag = ROS_lider_naw
+	set_country_flag = ROS_lider_pok
+}
+ROS_lider_mie = {
+	clr_country_flag = ROS_lider_putin
+	clr_country_flag = ROS_lider_pre
+	clr_country_flag = ROS_lider_pok
+	clr_country_flag = ROS_lider_szo
+	clr_country_flag = ROS_lider_cho
+	clr_country_flag = ROS_lider_szl
+	clr_country_flag = ROS_lider_naw
+	set_country_flag = ROS_lider_mie
+}
+ROS_lider_szo = {
+	clr_country_flag = ROS_lider_putin
+	clr_country_flag = ROS_lider_pre
+	clr_country_flag = ROS_lider_pok
+	clr_country_flag = ROS_lider_mie
+	clr_country_flag = ROS_lider_cho
+	clr_country_flag = ROS_lider_szl
+	clr_country_flag = ROS_lider_naw
+	set_country_flag = ROS_lider_szo
+}
+ROS_lider_cho = {
+	clr_country_flag = ROS_lider_putin
+	clr_country_flag = ROS_lider_pre
+	clr_country_flag = ROS_lider_pok
+	clr_country_flag = ROS_lider_mie
+	clr_country_flag = ROS_lider_szo
+	clr_country_flag = ROS_lider_szl
+	clr_country_flag = ROS_lider_naw
+	set_country_flag = ROS_lider_cho
+}
+ROS_lider_szl = {
+	clr_country_flag = ROS_lider_putin
+	clr_country_flag = ROS_lider_pre
+	clr_country_flag = ROS_lider_pok
+	clr_country_flag = ROS_lider_mie
+	clr_country_flag = ROS_lider_szo
+	clr_country_flag = ROS_lider_cho
+	clr_country_flag = ROS_lider_naw
+	set_country_flag = ROS_lider_szl
+}
+ROS_lider_naw = {
+	clr_country_flag = ROS_lider_putin
+	clr_country_flag = ROS_lider_pre
+	clr_country_flag = ROS_lider_pok
+	clr_country_flag = ROS_lider_mie
+	clr_country_flag = ROS_lider_szo
+	clr_country_flag = ROS_lider_cho
+	clr_country_flag = ROS_lider_szl
+	set_country_flag = ROS_lider_naw
+}
+ROS_start_wojny = {
+	set_country_flag = ROS_operacja_start
+	set_global_flag = ROS_wojna_mazurska
+	set_variable = { ROS_dni_wojny = 0 }
+	every_state = { limit = { OR = { is_owned_by = WMZ is_owned_by = MAZ is_owned_by = SUW } } set_state_flag = ROS_cel_mazury }
+	if = { limit = { country_exists = WMZ } WMZ = { capital_scope = { set_state_flag = ROS_kluczowy } } }
+	if = { limit = { country_exists = MAZ } MAZ = { capital_scope = { set_state_flag = ROS_kluczowy } } }
+	if = { limit = { country_exists = SUW } SUW = { capital_scope = { set_state_flag = ROS_kluczowy } } }
+	if = { limit = { country_exists = WMZ WMZ = { is_subject = no } NOT = { has_war_with = WMZ } } declare_war_on = { target = WMZ type = annex_everything } }
+	if = { limit = { country_exists = MAZ MAZ = { is_subject = no } NOT = { has_war_with = MAZ } } declare_war_on = { target = MAZ type = annex_everything } }
+	if = { limit = { country_exists = SUW SUW = { is_subject = no } NOT = { has_war_with = SUW } } declare_war_on = { target = SUW type = annex_everything } }
+	add_ai_strategy = { type = conquer id = WMZ value = 200 }
+	add_ai_strategy = { type = front_unit_request tag = WMZ value = 80 }
+	add_ai_strategy = { type = conquer id = MAZ value = 200 }
+	add_ai_strategy = { type = front_unit_request tag = MAZ value = 80 }
+	add_ai_strategy = { type = conquer id = SUW value = 200 }
+	add_ai_strategy = { type = front_unit_request tag = SUW value = 80 }
+	ROS_oznacz_wartosc = yes
+	capital_scope = { create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Brygada Zmechanizowana\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Brygada Zmechanizowana\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Brygada Zmechanizowana\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Brygada Artylerii\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Brygada Artylerii\" start_experience_factor = 0.4" owner = ROS } }
+	if = { limit = { country_exists = BLR } BLR = { give_military_access = ROS } }
+	ROS_sojusz_mazurski = yes
+	every_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW } exists = yes } country_event = { id = ros.1 } }
+	news_event = { id = ros.2 }
+	if = { limit = { country_exists = ZKR } ZKR = { country_event = { id = zkr.10 days = 2 } } }
+	ROS = { set_country_flag = ROS_interwencja set_country_flag = { flag = ROS_wojna_trwa days = 180 } set_variable = { ROS_cel_mazury = 0 } }
+	every_state = { limit = { OR = { is_owned_by = WMZ is_owned_by = MAZ is_owned_by = SUW } } set_state_flag = ROS_cel_mazury ROS = { add_to_variable = { ROS_cel_mazury = 1 } } }
+}
+ROS_sojusz_mazurski = {
+	if = { limit = { country_exists = WMZ }
+		WMZ = {
+			if = { limit = { is_in_faction = no } create_faction = PL2027_SOJUSZ_MAZURSKI }
+			if = { limit = { country_exists = MAZ MAZ = { is_in_faction = no } is_faction_leader = yes } add_to_faction = MAZ }
+			if = { limit = { country_exists = SUW SUW = { is_in_faction = no } is_faction_leader = yes } add_to_faction = SUW }
+		}
+	}
+	else_if = { limit = { country_exists = SUW }
+		SUW = {
+			if = { limit = { is_in_faction = no } create_faction = PL2027_SOJUSZ_MAZURSKI }
+			if = { limit = { country_exists = MAZ MAZ = { is_in_faction = no } is_faction_leader = yes } add_to_faction = MAZ }
+		}
+	}
+}
+ROS_koniec_wojny = {
+	if = { limit = { has_war_with = WMZ } white_peace = WMZ }
+	if = { limit = { has_war_with = MAZ } white_peace = MAZ }
+	if = { limit = { has_war_with = SUW } white_peace = SUW }
+	every_country = { limit = { has_war_with = ROOT country_exists = WMZ is_in_faction_with = WMZ } ROOT = { white_peace = PREV } }
+	every_country = { limit = { has_war_with = ROOT country_exists = MAZ is_in_faction_with = MAZ } ROOT = { white_peace = PREV } }
+	every_country = { limit = { has_war_with = ROOT country_exists = SUW is_in_faction_with = SUW } ROOT = { white_peace = PREV } }
+	set_country_flag = ROS_wojna_rozstrzygnieta
+	clr_global_flag = ROS_wojna_mazurska
+	mark_focus_tree_layout_dirty = yes
+}
+ROS_pokoj_negocjowany = {
+	ROS_koniec_wojny = yes
+	set_country_flag = ROS_pokoj
+	add_ideas = ROS_pokoj_negocjowany
+	every_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW tag = NNA tag = NAR tag = BST tag = PDL tag = LIT tag = BLR } exists = yes } country_event = { id = ros.330 } }
+	news_event = { id = ros.331 }
+}
+ROS_aneksja_mazur = {
+	every_state = { limit = { has_state_flag = ROS_cel_mazury is_controlled_by = ROS NOT = { is_owned_by = ROS } } ROS = { transfer_state = PREV } }
+	every_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW } exists = yes has_war_with = ROS } ROS = { annex_country = { target = PREV transfer_troops = no } } }
+	ROS_koniec_wojny = yes
+	set_country_flag = ROS_mazury_rosyjskie
+}
+ROS_administracja_mazur = {
+	every_state = { limit = { has_state_flag = ROS_cel_mazury is_controlled_by = ROS NOT = { is_owned_by = ROS } } ROS = { transfer_state = PREV } }
+	ROS_koniec_wojny = yes
+	add_ideas = ROS_administracja_mazur
+	set_country_flag = ROS_mazury_okupowane
+}
+ROS_terytorium_zalezne = {
+	every_state = { limit = { has_state_flag = ROS_cel_mazury is_controlled_by = ROS NOT = { is_owned_by = ROS } } ROS = { transfer_state = PREV } }
+	ROS_koniec_wojny = yes
+	if = { limit = { country_exists = WMZ } puppet = WMZ }
+	else = { release_puppet = WMZ }
+	every_state = { limit = { has_state_flag = ROS_cel_mazury is_owned_by = ROS } WMZ = { transfer_state = PREV } }
+	set_country_flag = ROS_mazury_zalezne
+}
+ROS_wladza_poklonskiej = {
+	set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+	add_popularity = { ideology = authoritarian_democrat popularity = 0.15 }
+	if = { limit = { NOT = { has_character = ROS_poklonska } } recruit_character = ROS_poklonska }
+	promote_character = ROS_poklonska
+	ROS_lider_pok = yes
+	if = { limit = { has_idea = ROS_proznia_wladzy } remove_ideas = ROS_proznia_wladzy }
+	if = { limit = { has_idea = ROS_stan_wyjatkowy } remove_ideas = ROS_stan_wyjatkowy }
+	if = { limit = { has_idea = ROS_administracja_kryzysowa } remove_ideas = ROS_administracja_kryzysowa }
+	add_ideas = ROS_administracja_kryzysowa
+}
+ROS_wladza_szojgu = {
+	set_politics = { ruling_party = nationalist elections_allowed = no }
+	add_popularity = { ideology = nationalist popularity = 0.15 }
+	if = { limit = { NOT = { has_character = ROS_szojgu } } recruit_character = ROS_szojgu }
+	promote_character = ROS_szojgu
+	ROS_lider_szo = yes
+	if = { limit = { has_idea = ROS_proznia_wladzy } remove_ideas = ROS_proznia_wladzy }
+	if = { limit = { has_idea = ROS_stan_wyjatkowy } remove_ideas = ROS_stan_wyjatkowy }
+	if = { limit = { has_idea = ROS_administracja_kryzysowa } remove_ideas = ROS_administracja_kryzysowa }
+	add_ideas = ROS_stan_wyjatkowy
+}
+ROS_wladza_mie = {
+	set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+	add_popularity = { ideology = authoritarian_democrat popularity = 0.15 }
+	if = { limit = { NOT = { has_character = ROS_miedwiediew } } recruit_character = ROS_miedwiediew }
+	promote_character = ROS_miedwiediew
+	ROS_lider_mie = yes
+	if = { limit = { has_idea = ROS_proznia_wladzy } remove_ideas = ROS_proznia_wladzy }
+	if = { limit = { has_idea = ROS_stan_wyjatkowy } remove_ideas = ROS_stan_wyjatkowy }
+	if = { limit = { has_idea = ROS_administracja_kryzysowa } remove_ideas = ROS_administracja_kryzysowa }
+	add_ideas = ROS_mie_putinizm
+	load_focus_tree = { tree = ROS_mie_tree keep_completed = no }
+	every_country = { limit = { original_tag = ZKR has_country_flag = ZKR_protektorat } country_event = { id = zkr.40 days = 7 } }
+}
+ROS_wladza_szo = {
+	set_politics = { ruling_party = nationalist elections_allowed = no }
+	add_popularity = { ideology = nationalist popularity = 0.15 }
+	if = { limit = { NOT = { has_character = ROS_szojgu } } recruit_character = ROS_szojgu }
+	promote_character = ROS_szojgu
+	ROS_lider_szo = yes
+	if = { limit = { has_idea = ROS_proznia_wladzy } remove_ideas = ROS_proznia_wladzy }
+	if = { limit = { has_idea = ROS_stan_wyjatkowy } remove_ideas = ROS_stan_wyjatkowy }
+	if = { limit = { has_idea = ROS_administracja_kryzysowa } remove_ideas = ROS_administracja_kryzysowa }
+	add_ideas = ROS_szo_junta
+	load_focus_tree = { tree = ROS_szo_tree keep_completed = no }
+	every_country = { limit = { original_tag = ZKR has_country_flag = ZKR_protektorat } country_event = { id = zkr.40 days = 7 } }
+}
+ROS_wladza_cho = {
+	set_politics = { ruling_party = market_liberal elections_allowed = yes }
+	add_popularity = { ideology = market_liberal popularity = 0.15 }
+	if = { limit = { NOT = { has_character = ROS_chodorkowski } } recruit_character = ROS_chodorkowski }
+	promote_character = ROS_chodorkowski
+	ROS_lider_cho = yes
+	if = { limit = { has_idea = ROS_proznia_wladzy } remove_ideas = ROS_proznia_wladzy }
+	if = { limit = { has_idea = ROS_stan_wyjatkowy } remove_ideas = ROS_stan_wyjatkowy }
+	if = { limit = { has_idea = ROS_administracja_kryzysowa } remove_ideas = ROS_administracja_kryzysowa }
+	add_ideas = ROS_cho_oligarchia
+	load_focus_tree = { tree = ROS_cho_tree keep_completed = no }
+	every_country = { limit = { original_tag = ZKR has_country_flag = ZKR_protektorat } country_event = { id = zkr.40 days = 7 } }
+}
+ROS_wladza_szl = {
+	set_politics = { ruling_party = social_democrat elections_allowed = yes }
+	add_popularity = { ideology = social_democrat popularity = 0.15 }
+	if = { limit = { NOT = { has_character = ROS_szlosberg } } recruit_character = ROS_szlosberg }
+	promote_character = ROS_szlosberg
+	ROS_lider_szl = yes
+	if = { limit = { has_idea = ROS_proznia_wladzy } remove_ideas = ROS_proznia_wladzy }
+	if = { limit = { has_idea = ROS_stan_wyjatkowy } remove_ideas = ROS_stan_wyjatkowy }
+	if = { limit = { has_idea = ROS_administracja_kryzysowa } remove_ideas = ROS_administracja_kryzysowa }
+	add_ideas = ROS_szl_parlament
+	load_focus_tree = { tree = ROS_szl_tree keep_completed = no }
+	every_country = { limit = { original_tag = ZKR has_country_flag = ZKR_protektorat } country_event = { id = zkr.40 days = 7 } }
+}
+ROS_wladza_naw = {
+	set_politics = { ruling_party = social_liberal elections_allowed = yes }
+	add_popularity = { ideology = social_liberal popularity = 0.15 }
+	if = { limit = { NOT = { has_character = ROS_nawalna } } recruit_character = ROS_nawalna }
+	promote_character = ROS_nawalna
+	ROS_lider_naw = yes
+	if = { limit = { has_idea = ROS_proznia_wladzy } remove_ideas = ROS_proznia_wladzy }
+	if = { limit = { has_idea = ROS_stan_wyjatkowy } remove_ideas = ROS_stan_wyjatkowy }
+	if = { limit = { has_idea = ROS_administracja_kryzysowa } remove_ideas = ROS_administracja_kryzysowa }
+	add_ideas = ROS_naw_antykorupcja
+	load_focus_tree = { tree = ROS_naw_tree keep_completed = no }
+	every_country = { limit = { original_tag = ZKR has_country_flag = ZKR_protektorat } country_event = { id = zkr.40 days = 7 } }
+}
+ROS_wybory = {
+	if = { limit = { is_ai = no has_game_rule = { rule = ROS_ELECTIONS option = PLAYER } } country_event = { id = ros.199 } }
+	else = { country_event = { id = ros.200 } }
+}

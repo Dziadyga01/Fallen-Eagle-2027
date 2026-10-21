@@ -1,0 +1,26 @@
+state = {
+	id = 20
+	name = "STATE_20"
+	manpower = 78191
+	state_category = large_town
+	history = {
+		owner = SLS
+		add_core_of = SLS
+		victory_points = { 2616 1 }
+		victory_points = { 6967 2 }
+		victory_points = { 6973 2 }
+		victory_points = { 6987 2 }
+		victory_points = { 6924 1 }
+		victory_points = { 6971 1 }
+		victory_points = { 6986 1 }
+		victory_points = { 277 1 }
+		victory_points = { 1711 1 }
+		victory_points = { 6925 1 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+	provinces = { 277 6971 831 6968 6986 6967 1711 326 6969 1435 6973 6970 2616 6987 6984 6923 6925 6924 6946 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,10 @@
+BST_przejecie_enklawy = {
+	set_country_flag = BST_enklawa
+	set_politics = { ruling_party = nationalist elections_allowed = no }
+	set_party_name = { ideology = nationalist long_name = BST_party_enklawa name = BST_party_enklawa }
+	add_popularity = { ideology = nationalist popularity = 0.30 }
+	if = { limit = { NOT = { has_character = BST_gen_riazancew } } recruit_character = BST_gen_riazancew } promote_character = BST_gen_riazancew
+	set_cosmetic_tag = BST_ENKLAWA add_ideas = BST_enklawa_1 add_stability = 0.10
+	load_focus_tree = { tree = BST_enklawa_tree keep_completed = no }
+	every_other_country = { limit = { OR = { tag = NAR tag = SUW tag = WMZ tag = MAZ tag = LIT } } country_event = { id = bst.41 } }
+}

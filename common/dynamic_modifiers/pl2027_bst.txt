@@ -1,0 +1,11 @@
+BST_granica_mod = {
+	icon = GFX_idea_BST_granica_mod
+	enable = { NOT = { has_country_flag = BST_enklawa } }
+}
+BST_odcinek_utracony = {
+	icon = GFX_idea_BST_odcinek_utracony
+	enable = { always = yes }
+	local_manpower = -0.5
+	local_supplies = -0.3
+	state_production_speed_buildings_factor = -0.3
+}

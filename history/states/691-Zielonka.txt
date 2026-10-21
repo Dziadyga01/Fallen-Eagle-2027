@@ -1,0 +1,21 @@
+state = {
+	id = 691
+	name = "STATE_691"
+	manpower = 18899
+	state_category = rural
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = WLM
+		add_core_of = WLM
+		victory_points = { 3291 1 }
+		victory_points = { 2311 1 }
+		victory_points = { 2222 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 2222 2311 4317 3682 3291 2336 3618 3337 }
+	local_supplies = 0.0
+}

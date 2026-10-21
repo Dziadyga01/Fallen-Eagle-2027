@@ -1,0 +1,62 @@
+division_template = {
+	name = "Brygada Obrony Terytorialnej"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Pułk Zmotoryzowany"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Batalion Piechoty"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+units = {
+	division = {
+		division_name = { is_name_ordered = yes name_order = 1 }
+		location = 1633
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.24
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 2 }
+		location = 4454
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.47
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 3 }
+		location = 1334
+		division_template = "Pułk Zmotoryzowany"
+		start_experience_factor = 0.11
+	}
+	division = {
+		division_name = { is_name_ordered = yes name_order = 4 }
+		location = 2626
+		division_template = "Batalion Piechoty"
+		start_experience_factor = 0.47
+	}
+}

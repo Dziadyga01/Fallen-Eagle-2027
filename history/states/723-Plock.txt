@@ -1,0 +1,25 @@
+state = {
+	id = 723
+	name = "STATE_723"
+	manpower = 127671
+	state_category = large_town
+	resources = {
+		rubber = 6
+	}
+	history = {
+		owner = PLO
+		add_core_of = PLO
+		victory_points = { 626 5 }
+		victory_points = { 4041 1 }
+		buildings = {
+			fuel_silo = 1
+			synthetic_refinery = 1
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 549 4054 626 2894 3370 4036 2356 4041 }
+	local_supplies = 0.0
+}

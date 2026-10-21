@@ -1,0 +1,24 @@
+state = {
+	id = 1357
+	name = "STATE_1357"
+	manpower = 180328
+	state_category = city
+	history = {
+		owner = CZE
+		add_core_of = CZE
+		victory_points = { 565 1 }
+		victory_points = { 652 1 }
+		victory_points = { 73 1 }
+		victory_points = { 310 1 }
+		victory_points = { 254 1 }
+		victory_points = { 1181 1 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 73 1181 310 254 565 652 }
+	local_supplies = 0.0
+}

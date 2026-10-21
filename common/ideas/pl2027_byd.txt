@@ -1,0 +1,313 @@
+ideas = {
+	country = {
+		BYD_i_miasto_bez_rzadu = {
+			picture = DU_BYD_i_miasto_bez_rzadu
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.15
+			}
+		}
+		BYD_i_rzad_tymczasowy = {
+			picture = DU_BYD_i_rzad_tymczasowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.04
+				political_power_gain = -0.05
+			}
+		}
+		BYD_i_straz_obywatelska = {
+			picture = DU_BYD_i_straz_obywatelska
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				army_defence_factor = 0.05
+			}
+		}
+		BYD_i_mosty_pod_kontrola = {
+			picture = DU_BYD_i_mosty_pod_kontrola
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.06
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		BYD_i_strajki = {
+			picture = DU_BYD_i_strajki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.03
+			}
+		}
+		BYD_i_kartki = {
+			picture = DU_BYD_i_kartki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+				consumer_goods_factor = 0.03
+			}
+		}
+		BYD_i_mandat_rep = {
+			picture = DU_BYD_i_mandat_rep
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.03
+			}
+		}
+		BYD_i_rep_demokracja_1 = {
+			picture = DU_BYD_i_rep_demokracja_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.07
+				stability_factor = 0.05
+			}
+		}
+		BYD_i_rep_demokracja_2 = {
+			picture = DU_BYD_i_rep_demokracja_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = 0.08
+				war_support_factor = -0.03
+			}
+		}
+		BYD_i_rep_demokracja_3 = {
+			picture = DU_BYD_i_rep_demokracja_3
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.1
+				research_speed_factor = 0.04
+			}
+		}
+		BYD_i_pesa_1 = {
+			picture = DU_BYD_i_pesa_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		BYD_i_pesa_2 = {
+			picture = DU_BYD_i_pesa_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		BYD_i_przeprawy = {
+			picture = DU_BYD_i_przeprawy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+			}
+		}
+		BYD_i_bezpieczna_brda = {
+			picture = DU_BYD_i_bezpieczna_brda
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.12
+				army_org_factor = 0.05
+			}
+		}
+		BYD_i_sejm_kujawski = {
+			picture = DU_BYD_i_sejm_kujawski
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.03
+			}
+		}
+		BYD_i_samodzielnosc = {
+			picture = DU_BYD_i_samodzielnosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				war_support_factor = 0.03
+			}
+		}
+		BYD_i_mandat_jun = {
+			picture = DU_BYD_i_mandat_jun
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				conscription_factor = 0.05
+				political_power_gain = 0.03
+			}
+		}
+		BYD_i_stan_wyjatkowy = {
+			picture = DU_BYD_i_stan_wyjatkowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = -0.03
+			}
+		}
+		BYD_i_porzadek = {
+			picture = DU_BYD_i_porzadek
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.08
+				political_power_gain = 0.05
+			}
+		}
+		BYD_i_gosp_wojenna = {
+			picture = DU_BYD_i_gosp_wojenna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		BYD_i_mobilizacja_fabryk = {
+			picture = DU_BYD_i_mobilizacja_fabryk
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		BYD_i_armia_regionalna = {
+			picture = DU_BYD_i_armia_regionalna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = 0.08
+				army_org_factor = 0.05
+				max_command_power = 10
+			}
+		}
+		BYD_i_twierdza_bydgoszcz = {
+			picture = DU_BYD_i_twierdza_bydgoszcz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		BYD_i_nowy_porzadek = {
+			picture = DU_BYD_i_nowy_porzadek
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_attack_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		BYD_i_mandat_wd = {
+			picture = DU_BYD_i_mandat_wd
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = 0.03
+			}
+		}
+		BYD_i_rady_dzielnic = {
+			picture = DU_BYD_i_rady_dzielnic
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.03
+			}
+		}
+		BYD_i_wolna_bydgoszcz = {
+			picture = DU_BYD_i_wolna_bydgoszcz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		BYD_i_spoldzielnie = {
+			picture = DU_BYD_i_spoldzielnie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		BYD_i_gosp_wspolnotowa = {
+			picture = DU_BYD_i_gosp_wspolnotowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.05
+			}
+		}
+		BYD_i_milicje = {
+			picture = DU_BYD_i_milicje
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+		BYD_i_mobilizacja_obyw = {
+			picture = DU_BYD_i_mobilizacja_obyw
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				conscription_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+		BYD_i_autonomia = {
+			picture = DU_BYD_i_autonomia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.03
+				political_power_gain = 0.03
+			}
+		}
+		BYD_i_samodzielne_rady = {
+			picture = DU_BYD_i_samodzielne_rady
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.03
+			}
+		}
+	}
+}

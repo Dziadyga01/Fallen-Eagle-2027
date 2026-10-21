@@ -1,0 +1,39 @@
+ideas = {
+	country = {
+		WPL_blokada_kolejowa = {
+			picture = DU_WPL_blokada_kolejowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.03
+			}
+		}
+		WPL_straty_przewozowe = {
+			picture = DU_WPL_straty_przewozowe
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+			}
+		}
+		WPL_dostawy_wloclawek = {
+			picture = DU_WPL_dostawy_wloclawek
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+				consumer_goods_factor = -0.02
+			}
+		}
+		WPL_spolka_zalezna = {
+			picture = DU_WPL_spolka_zalezna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_factor = -0.05
+			}
+		}
+	}
+}

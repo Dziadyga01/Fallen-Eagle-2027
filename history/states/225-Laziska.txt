@@ -1,0 +1,17 @@
+state = {
+	id = 225
+	name = "STATE_225"
+	manpower = 3085
+	state_category = rural
+	history = {
+		owner = PRW
+		add_core_of = PRW
+		victory_points = { 475 1 }
+		victory_points = { 925 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 475 925 4803 }
+	local_supplies = 0.0
+}

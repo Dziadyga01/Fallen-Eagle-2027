@@ -1,0 +1,20 @@
+state = {
+	id = 1030
+	name = "STATE_1030"
+	manpower = 27246
+	state_category = town
+	history = {
+		owner = LBW
+		add_core_of = LBW
+		victory_points = { 524 1 }
+		victory_points = { 3602 1 }
+		victory_points = { 2196 1 }
+		victory_points = { 1406 1 }
+		victory_points = { 3249 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 524 1406 3602 2196 3249 3561 2053 1547 2163 894 4293 4380 4384 }
+	local_supplies = 0.0
+}

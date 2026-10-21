@@ -1,0 +1,500 @@
+add_namespace = fed
+
+country_event = {
+	id = fed.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = fed.10.t
+	desc = fed.10.d
+	picture = GFX_pl2027_ev081_mazury_1
+	is_triggered_only = yes
+	trigger = { FROM = { exists = yes } NOT = { has_country_flag = FED_federacja } }
+	option = {
+		name = fed.10.a
+		ai_chance = { factor = 40 modifier = { factor = 2 check_variable = { FED_postep > 49 } } modifier = { factor = 2 has_war_with = ROS } modifier = { factor = 0.2 has_war_with = FROM } }
+		FROM = { annex_country = { target = ROOT transfer_troops = yes } set_country_flag = FED_metoda_pokoj FED_utworz_federacje = yes }
+	}
+	option = {
+		name = fed.10.b
+		ai_chance = { factor = 40 }
+		FROM = { country_event = { id = fed.12 } }
+	}
+}
+
+news_event = {
+	id = fed.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = fed.11.t
+	desc = fed.11.d
+	picture = GFX_pl2027_ev081_mazury_4_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = fed.11.a
+	}
+}
+
+country_event = {
+	id = fed.12
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = fed.12.t
+	desc = fed.12.d
+	picture = GFX_pl2027_ev081_dyplomacja_2
+	is_triggered_only = yes
+	option = {
+		name = fed.12.a
+		ai_chance = { factor = 2 }
+		country_event = { id = fed.13 days = 60 }
+	}
+	option = {
+		name = fed.12.b
+		ai_chance = { factor = 1 }
+		set_country_flag = FED_metoda_militarne
+		create_wargoal = { type = annex_everything target = FROM }
+	}
+}
+
+country_event = {
+	id = fed.13
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = FED_federacja } }
+	immediate = {
+		if = { limit = { tag = WMZ country_exists = MAZ NOT = { has_war_with = MAZ } } MAZ = { country_event = { id = fed.10 } } }
+		else_if = { limit = { tag = MAZ country_exists = WMZ NOT = { has_war_with = WMZ } } WMZ = { country_event = { id = fed.10 } } }
+	}
+	option = {
+		name = fed.13.a
+	}
+}
+
+country_event = {
+	id = fed.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = fed.20.t
+	desc = fed.20.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = fed.20.a
+		ai_chance = { factor = 20 modifier = { factor = 2 FROM = { has_army_size = { size > 8 } } } }
+		FROM = { puppet = ROOT country_event = { id = fed.22 } }
+	}
+	option = {
+		name = fed.20.b
+		ai_chance = { factor = 30 }
+		FROM = { puppet = ROOT add_political_power = -50 country_event = { id = fed.22 } }
+		add_political_power = 50
+		add_stability = 0.05
+	}
+	option = {
+		name = fed.20.c
+		ai_chance = { factor = 50 }
+		FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = fed.21 } }
+	}
+}
+
+country_event = {
+	id = fed.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = fed.21.t
+	desc = fed.21.d
+	picture = GFX_pl2027_ev081_front_ros_2
+	is_triggered_only = yes
+	option = {
+		name = fed.21.a
+		ai_chance = { factor = 3 }
+		declare_war_on = { target = FROM type = annex_everything }
+	}
+	option = {
+		name = fed.21.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = fed.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = fed.22.t
+	desc = fed.22.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = fed.22.a
+	}
+}
+
+country_event = {
+	id = fed.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = fed.30.t
+	desc = fed.30.d
+	picture = GFX_pl2027_ev081_pokoj_1
+	is_triggered_only = yes
+	option = {
+		name = fed.30.a
+		ai_chance = { factor = 60 modifier = { factor = 0 has_war_with = FROM } modifier = { factor = 2 has_war_with = ROS } }
+		set_country_flag = FED_pakt_z_federacja
+		FROM = { add_to_variable = { FED_pakty = 1 } country_event = { id = fed.31 } }
+	}
+	option = {
+		name = fed.30.b
+		ai_chance = { factor = 30 }
+		FROM = { country_event = { id = fed.32 } }
+	}
+}
+
+country_event = {
+	id = fed.31
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = fed.31.t
+	desc = fed.31.d
+	picture = GFX_pl2027_ev081_pokoj_3
+	is_triggered_only = yes
+	option = {
+		name = fed.31.a
+	}
+}
+
+country_event = {
+	id = fed.32
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = fed.32.t
+	desc = fed.32.d
+	picture = GFX_pl2027_ev081_narada_4
+	is_triggered_only = yes
+	option = {
+		name = fed.32.a
+	}
+}
+
+country_event = {
+	id = fed.35
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = fed.35.t
+	desc = fed.35.d
+	picture = GFX_pl2027_ev081_wybory_0
+	is_triggered_only = yes
+	option = {
+		name = fed.35.a
+		ai_chance = { factor = 30 }
+		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = fed.35.b
+		ai_chance = { factor = 70 }
+		if = { limit = { is_in_faction = no FROM = { is_faction_leader = yes } } FROM = { add_to_faction = ROOT } }
+	}
+}
+
+country_event = {
+	id = fed.36
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = fed.36.t
+	desc = fed.36.d
+	picture = GFX_pl2027_ev081_pokoj_3
+	is_triggered_only = yes
+	option = {
+		name = fed.36.a
+		ai_chance = { factor = 40 modifier = { factor = 3 has_war_with = ROS } }
+		if = { limit = { is_in_faction = no FROM = { is_faction_leader = yes } } FROM = { add_to_faction = ROOT } }
+	}
+	option = {
+		name = fed.36.b
+		ai_chance = { factor = 60 }
+	}
+}
+
+country_event = {
+	id = fed.40
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = fed.40.t
+	desc = fed.40.d
+	picture = GFX_pl2027_ev081_mazury_5
+	is_triggered_only = yes
+	option = {
+		name = fed.40.a
+		trigger = { is_in_faction = no }
+		ai_chance = { factor = 50 modifier = { factor = 2 has_war_with = ROS } }
+		FROM = { if = { limit = { is_in_faction = no } create_faction = FED_BLOK_WSCHODNI } if = { limit = { is_faction_leader = yes } add_to_faction = ROOT } }
+	}
+	option = {
+		name = fed.40.b
+		ai_chance = { factor = 40 }
+	}
+}
+
+country_event = {
+	id = fed.50
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = fed.50.t
+	desc = fed.50.d
+	picture = GFX_pl2027_ev081_mazury_5
+	is_triggered_only = yes
+	option = {
+		name = fed.50.a
+		add_timed_idea = { idea = FED_protesty days = 90 }
+	}
+}
+
+country_event = {
+	id = fed.51
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = fed.51.t
+	desc = fed.51.d
+	picture = GFX_pl2027_ev081_mazury_4
+	is_triggered_only = yes
+	option = {
+		name = fed.51.a
+		add_timed_idea = { idea = FED_radykalizacja days = 120 }
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = fed.52
+	title = fed.52.t
+	desc = fed.52.d
+	picture = GFX_pl2027_ev081_mazury_4
+	is_triggered_only = yes
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front }
+		country_event = { id = fed.53 days = 30 }
+	}
+	option = {
+		name = fed.52.a
+	}
+}
+
+country_event = {
+	id = fed.53
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { has_country_flag = FED_kryzys_w NOT = { has_country_flag = FED_wojna_domowa } }
+	immediate = {
+		FED_wojna_domowa_w = yes
+	}
+	option = {
+		name = fed.53.a
+	}
+}
+
+country_event = {
+	id = fed.55
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = fed.55.t
+	desc = fed.55.d
+	picture = GFX_pl2027_ev081_mazury_0
+	is_triggered_only = yes
+	option = {
+		name = fed.55.a
+		add_timed_idea = { idea = FED_protesty days = 90 }
+	}
+}
+
+country_event = {
+	id = fed.56
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = fed.56.t
+	desc = fed.56.d
+	picture = GFX_pl2027_ev081_mazury_4
+	is_triggered_only = yes
+	option = {
+		name = fed.56.a
+		add_timed_idea = { idea = FED_radykalizacja days = 120 }
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = fed.57
+	title = fed.57.t
+	desc = fed.57.d
+	picture = GFX_pl2027_ev081_mazury_2
+	is_triggered_only = yes
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front }
+		country_event = { id = fed.58 days = 30 }
+	}
+	option = {
+		name = fed.57.a
+	}
+}
+
+country_event = {
+	id = fed.58
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { has_country_flag = FED_kryzys_m NOT = { has_country_flag = FED_wojna_domowa } }
+	immediate = {
+		FED_wojna_domowa_m = yes
+	}
+	option = {
+		name = fed.58.a
+	}
+}
+
+country_event = {
+	id = fed.54
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = fed.54.t
+	desc = fed.54.d
+	picture = GFX_pl2027_ev081_dyplomacja_0
+	is_triggered_only = yes
+	option = {
+		name = fed.54.a
+	}
+}
+
+country_event = {
+	id = fed.59
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = fed.59.t
+	desc = fed.59.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = fed.59.a
+	}
+}
+
+country_event = {
+	id = fed.60
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = fed.60.t
+	desc = fed.60.d
+	picture = GFX_pl2027_ev081_mazury_3
+	is_triggered_only = yes
+	option = {
+		name = fed.60.a
+		ai_chance = { factor = 1 }
+		if = { limit = { NOT = { has_war_with = FROM } } create_wargoal = { type = annex_everything target = FROM } }
+	}
+	option = {
+		name = fed.60.b
+		ai_chance = { factor = 2 }
+	}
+}
+
+country_event = {
+	id = fed.61
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = fed.61.t
+	desc = fed.61.d
+	picture = GFX_pl2027_ev081_mazury_3
+	is_triggered_only = yes
+	option = {
+		name = fed.61.a
+		ai_chance = { factor = 2 modifier = { factor = 0 OR = { has_country_flag = ROS_lider_szl has_country_flag = ROS_lider_naw } } modifier = { factor = 0 FROM = { is_subject_of = ROOT } } }
+		every_country = { limit = { has_country_flag = FED_rebel_aktywny } ROOT = { give_guarantee = PREV } add_equipment_to_stockpile = { type = ranged_equipment amount = 1500 } }
+	}
+	option = {
+		name = fed.61.b
+		ai_chance = { factor = 1 modifier = { factor = 3 FROM = { has_country_flag = FED_wplyw_rosji } } }
+		give_guarantee = FROM
+	}
+	option = {
+		name = fed.61.c
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = fed.70
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = fed.70.t
+	desc = fed.70.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	option = {
+		name = fed.70.a
+		set_variable = { FED_niez_w = 25 }
+		set_variable = { FED_niez_m = 25 }
+		clr_country_flag = FED_wojna_domowa
+		clr_country_flag = FED_typ_kol
+		clr_country_flag = FED_typ_cen
+		clr_country_flag = FED_typ_sep
+		clr_country_flag = FED_kryzys_w
+		clr_country_flag = FED_kryzys_m
+		add_to_variable = { FED_postep = 15 }
+		FED_przelicz = yes
+	}
+}
+
+country_event = {
+	id = fed.71
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = fed.71.t
+	desc = fed.71.d
+	picture = GFX_pl2027_ev081_mazury_1
+	is_triggered_only = yes
+	option = {
+		name = fed.71.a
+		clr_country_flag = FED_rebel_aktywny
+		load_focus_tree = { tree = FED_sep_tree keep_completed = no }
+	}
+}
+
+country_event = {
+	id = fed.72
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = fed.72.t
+	desc = fed.72.d
+	picture = GFX_pl2027_ev081_mazury_2
+	is_triggered_only = yes
+	option = {
+		name = fed.72.a
+		clr_country_flag = FED_rebel_aktywny
+		load_focus_tree = { tree = FED_cen_tree keep_completed = no }
+	}
+}
+
+country_event = {
+	id = fed.73
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = fed.73.t
+	desc = fed.73.d
+	picture = GFX_pl2027_ev081_rosja_5
+	is_triggered_only = yes
+	option = {
+		name = fed.73.a
+		clr_country_flag = FED_rebel_aktywny
+		load_focus_tree = { tree = FED_kol_tree keep_completed = no }
+	}
+}
+
+news_event = {
+	id = fed.80
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = fed.80.t
+	desc = fed.80.d
+	picture = GFX_pl2027_ev081_mazury_4_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = fed.80.a
+	}
+}
+
+news_event = {
+	id = fed.81
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = fed.81.t
+	desc = fed.81.d
+	picture = GFX_pl2027_ev081_mazury_5_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = fed.81.a
+	}
+}
+
+news_event = {
+	id = fed.82
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
+	title = fed.82.t
+	desc = fed.82.d
+	picture = GFX_pl2027_ev081_pokoj_4_news
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = fed.82.a
+	}
+}

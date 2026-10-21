@@ -1,0 +1,22 @@
+state = {
+	id = 778
+	name = "STATE_778"
+	manpower = 4145
+	state_category = rural
+	resources = {
+		rubber = 2
+		steel = 3
+	}
+	history = {
+		owner = BST
+		add_core_of = BST
+		victory_points = { 5419 1 }
+		victory_points = { 5795 1 }
+		victory_points = { 5796 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 5419 5420 5425 5795 5422 5796 }
+	local_supplies = 0.0
+}

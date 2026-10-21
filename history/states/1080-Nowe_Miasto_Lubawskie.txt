@@ -1,0 +1,23 @@
+state = {
+	id = 1080
+	name = "STATE_1080"
+	manpower = 2763
+	state_category = town
+	resources = {
+		rubber = 2
+	}
+	history = {
+		owner = GNL
+		add_core_of = GNL
+		add_claim_by = NML
+		victory_points = { 1895 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 637 876 1895 1964 2775 3697 }
+	local_supplies = 0.0
+}

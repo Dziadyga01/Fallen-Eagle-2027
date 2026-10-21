@@ -1,0 +1,18 @@
+state = {
+	id = 318
+	name = "STATE_318"
+	manpower = 10815
+	state_category = rural
+	history = {
+		owner = KTN
+		add_core_of = KTN
+		victory_points = { 6067 1 }
+		victory_points = { 6070 1 }
+		victory_points = { 6063 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 6063 6067 6070 6071 6069 6065 6064 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,3 @@
+PKP_policz_wezly = {
+	set_variable = { PKP_wezly = 0 } every_controlled_state = { limit = { has_state_flag = PKP_wezel } ROOT = { add_to_variable = { PKP_wezly = 1 } } } set_variable = { PKP_mod_bud = PKP_wezly } divide_variable = { PKP_mod_bud = 100 } clamp_variable = { var = PKP_mod_bud min = 0 max = 0.2 } set_variable = { PKP_mod_pp = PKP_wezly } divide_variable = { PKP_mod_pp = 80 } clamp_variable = { var = PKP_mod_pp min = 0 max = 0.25 } set_variable = { PKP_mod_sup = PKP_wezly } divide_variable = { PKP_mod_sup = -100 } clamp_variable = { var = PKP_mod_sup min = -0.15 max = 0 }
+}

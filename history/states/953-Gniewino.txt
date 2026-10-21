@@ -1,0 +1,23 @@
+state = {
+	id = 953
+	name = "STATE_953"
+	manpower = 5690
+	state_category = rural
+	resources = {
+		rubber = 1
+		steel = 1
+	}
+	history = {
+		owner = GDY
+		add_core_of = GDY
+		victory_points = { 8824 1 }
+		victory_points = { 8830 1 }
+		victory_points = { 8828 1 }
+		victory_points = { 8833 1 }
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	provinces = { 8824 8830 8828 8826 8891 8894 8892 8893 8825 8833 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,42 @@
+TRK_kampania = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TR2_kampania }
+	priority = 90
+}
+TRK_kryzys = {
+	icon = generic_civil_support
+	allowed = { original_tag = TRN }
+	visible = { always = yes }
+	priority = 80
+}
+TRK_gulewski = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TRK_mech_gulewski }
+	priority = 85
+}
+TRK_zaleski = {
+	icon = generic_construction
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TRK_mech_zaleski }
+	priority = 85
+}
+TRK_romanowski = {
+	icon = generic_civil_support
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TRK_mech_romanowski }
+	priority = 85
+}
+TRK_krevienko = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TRK_mech_krevienko }
+	priority = 85
+}
+TRK_region = {
+	icon = generic_operation
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TR2_rzad_zaprzysiezony }
+	priority = 70
+}

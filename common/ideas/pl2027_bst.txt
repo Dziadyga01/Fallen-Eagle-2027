@@ -1,0 +1,79 @@
+ideas = {
+	country = {
+		BST_zapora = {
+			picture = DU_BST_zapora
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+			}
+		}
+		BST_spokojna_granica = {
+			picture = DU_BST_spokojna_granica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		BST_nizina_1 = {
+			picture = DU_BST_nizina_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = 0.03
+			}
+		}
+		BST_nizina_2 = {
+			picture = DU_BST_nizina_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.06
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		BST_mleko_1 = {
+			picture = DU_BST_mleko_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		BST_mleko_2 = {
+			picture = DU_BST_mleko_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				industrial_capacity_factory = 0.08
+				war_support_factor = 0.05
+			}
+		}
+		BST_enklawa_1 = {
+			picture = DU_BST_enklawa_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				political_power_gain = -0.05
+			}
+		}
+		BST_enklawa_2 = {
+			picture = DU_BST_enklawa_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.1
+				war_support_factor = 0.1
+				conscription_factor = 0.2
+			}
+		}
+	}
+}

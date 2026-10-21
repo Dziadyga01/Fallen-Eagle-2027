@@ -1,0 +1,19 @@
+state = {
+	id = 1290
+	name = "STATE_1290"
+	manpower = 15000
+	state_category = town
+	history = {
+		owner = DEN
+		add_core_of = DEN
+		victory_points = { 593 5 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+	}
+	provinces = { 593 2406 1982 1757 1754 2088 }
+	local_supplies = 0.0
+}

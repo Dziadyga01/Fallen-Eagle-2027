@@ -1,0 +1,188 @@
+ideas = {
+	country = {
+		KAL_przejecie_administracji = {
+			picture = DU_KAL_przejecie_administracji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.03
+			}
+		}
+		KAL_straz_regionalna = {
+			picture = DU_KAL_straz_regionalna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				conscription_factor = 0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+		KAL_myto_wislane = {
+			picture = DU_KAL_myto_wislane
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.03
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		KAL_oplaty_mostowe = {
+			picture = DU_KAL_oplaty_mostowe
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = -0.02
+			}
+		}
+		KAL_kanal_bydgoski = {
+			picture = DU_KAL_kanal_bydgoski
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.02
+			}
+		}
+		KAL_archiwa_wojewodzkie = {
+			picture = DU_KAL_archiwa_wojewodzkie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				research_speed_factor = 0.03
+			}
+		}
+		KAL_przewoznik_regionalny = {
+			picture = DU_KAL_przewoznik_regionalny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.03
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		KAL_kolejowy_paraliz = {
+			picture = DU_KAL_kolejowy_paraliz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		KAL_blackout = {
+			picture = DU_KAL_blackout
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.1
+				stability_factor = -0.03
+			}
+		}
+		KAL_blackout_wspolpraca = {
+			picture = DU_KAL_blackout_wspolpraca
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				stability_factor = 0.02
+			}
+		}
+		KAL_eksport_pradu = {
+			picture = DU_KAL_eksport_pradu
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = -0.03
+			}
+		}
+		KAL_garnizony_neutralne = {
+			picture = DU_KAL_garnizony_neutralne
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.05
+				stability_factor = 0.03
+			}
+		}
+		KAL_uchodzcy_pomoc = {
+			picture = DU_KAL_uchodzcy_pomoc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = -0.02
+				research_speed_factor = 0.03
+			}
+		}
+		KAL_robotnicy_z_warszawy = {
+			picture = DU_KAL_robotnicy_z_warszawy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.03
+			}
+		}
+		KAL_pusta_stolica = {
+			picture = DU_KAL_pusta_stolica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				war_support_factor = 0.05
+			}
+		}
+		KAL_konfederacja = {
+			picture = DU_KAL_konfederacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.03
+			}
+		}
+		KAL_wlasna_waluta = {
+			picture = DU_KAL_wlasna_waluta
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.04
+				political_power_gain = 0.05
+			}
+		}
+		KAL_zloty_bez_banku = {
+			picture = DU_KAL_zloty_bez_banku
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.04
+				stability_factor = 0.02
+			}
+		}
+		KAL_bony = {
+			picture = DU_KAL_bony
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				political_power_gain = 0.08
+			}
+		}
+		KAL_odbudowa = {
+			picture = DU_KAL_odbudowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.03
+				war_support_factor = 0.03
+			}
+		}
+	}
+}

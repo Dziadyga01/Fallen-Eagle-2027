@@ -1,0 +1,148 @@
+ideas = {
+	country = {
+		KOR_niepewnosc = {
+			picture = DU_KOR_niepewnosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.15
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		KOR_straz = {
+			picture = DU_KOR_straz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				army_defence_factor = 0.05
+			}
+		}
+		KOR_panstwo_koncern = {
+			picture = DU_KOR_panstwo_koncern
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.02
+				stability_factor = 0.03
+			}
+		}
+		KOR_panstwo_koncern2 = {
+			picture = DU_KOR_panstwo_koncern2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.04
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		KOR_panstwo_koncern3 = {
+			picture = DU_KOR_panstwo_koncern3
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.2
+				industrial_capacity_factory = 0.15
+				consumer_goods_factor = -0.05
+				stability_factor = 0.07
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.05
+			}
+		}
+		KOR_karta_lojalnosci = {
+			picture = DU_KOR_karta_lojalnosci
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				war_support_factor = 0.03
+			}
+		}
+		KOR_stacje_urzedy = {
+			picture = DU_KOR_stacje_urzedy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		KOR_paliwo_armii = {
+			picture = DU_KOR_paliwo_armii
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_fuel_consumption_factor = -0.15
+				max_fuel_factor = 0.5
+				fuel_gain_factor = 0.1
+			}
+		}
+		KOR_petrochemia = {
+			picture = DU_KOR_petrochemia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.2
+				industrial_capacity_factory = 0.03
+				max_fuel_factor = 0.25
+			}
+		}
+		KOR_petrochemia2 = {
+			picture = DU_KOR_petrochemia2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.35
+				industrial_capacity_factory = 0.06
+				max_fuel_factor = 0.5
+				army_fuel_consumption_factor = -0.05
+			}
+		}
+		KOR_panika = {
+			picture = DU_KOR_panika
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.15
+			}
+		}
+		KOR_hossa = {
+			picture = DU_KOR_hossa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		KOR_czlonek_konsorcjum = {
+			picture = DU_KOR_czlonek_konsorcjum
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.1
+				consumer_goods_factor = -0.02
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		KOR_czlonek_konsorcjum2 = {
+			picture = DU_KOR_czlonek_konsorcjum2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.15
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.07
+				army_fuel_consumption_factor = -0.1
+				army_defence_factor = 0.05
+			}
+		}
+	}
+}

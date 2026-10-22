@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_start
 		icon = GFX_pl2027_081_mapa_0_not
-		x = 24
+		x = 23
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_porzadek
 		icon = GFX_pl2027_081_porzadek_0
-		x = 31
+		x = 29
 		y = 1
 		cost = 1
 		prerequisite = { focus = RNOT_start }
@@ -44,7 +44,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_zaopatrzenie
 		icon = GFX_pl2027_081_przemysl_0
-		x = 33
+		x = 31
 		y = 1
 		cost = 5
 		prerequisite = { focus = RNOT_start }
@@ -58,7 +58,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_wladza
 		icon = GFX_pl2027_081_rada_2
-		x = 31
+		x = 29
 		y = 2
 		cost = 5
 		prerequisite = { focus = RNOT_porzadek }
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_wybor
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 22
+		x = 20
 		y = 3
 		cost = 5
 		prerequisite = { focus = RNOT_wladza }
@@ -88,7 +88,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_a1
 		icon = GFX_pl2027_081_rada_0_not_k
-		x = 18
+		x = 16
 		y = 4
 		cost = 5
 		prerequisite = { focus = RNOT_wybor }
@@ -103,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_a2
 		icon = GFX_pl2027_081_ulica_0
-		x = 17
+		x = 15
 		y = 5
 		cost = 5
 		prerequisite = { focus = RNOT_a1 }
@@ -117,7 +117,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_a3
 		icon = GFX_pl2027_081_konstytucja_3
-		x = 19
+		x = 17
 		y = 5
 		cost = 5
 		prerequisite = { focus = RNOT_a1 }
@@ -130,7 +130,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_a4
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 18
+		x = 16
 		y = 6
 		cost = 10
 		prerequisite = { focus = RNOT_a2 }
@@ -148,7 +148,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_b1
 		icon = GFX_pl2027_081_dyplomacja_0_not_k
-		x = 22
+		x = 20
 		y = 4
 		cost = 5
 		prerequisite = { focus = RNOT_wybor }
@@ -163,7 +163,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_b2
 		icon = GFX_pl2027_081_sojusz_2_not
-		x = 21
+		x = 19
 		y = 5
 		cost = 5
 		prerequisite = { focus = RNOT_b1 }
@@ -177,7 +177,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_b3
 		icon = GFX_pl2027_081_handel_2
-		x = 23
+		x = 21
 		y = 5
 		cost = 5
 		prerequisite = { focus = RNOT_b1 }
@@ -190,7 +190,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_b4
 		icon = GFX_pl2027_081_wybory_0
-		x = 22
+		x = 20
 		y = 6
 		cost = 10
 		prerequisite = { focus = RNOT_b2 }
@@ -209,7 +209,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_c1
 		icon = GFX_pl2027_081_handel_0_not_k
-		x = 26
+		x = 24
 		y = 4
 		cost = 5
 		prerequisite = { focus = RNOT_wybor }
@@ -224,7 +224,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_c2
 		icon = GFX_pl2027_081_paliwo_0
-		x = 25
+		x = 23
 		y = 5
 		cost = 5
 		prerequisite = { focus = RNOT_c1 }
@@ -238,7 +238,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_c3
 		icon = GFX_pl2027_081_handel_1
-		x = 27
+		x = 25
 		y = 5
 		cost = 5
 		prerequisite = { focus = RNOT_c1 }
@@ -251,7 +251,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_c4
 		icon = GFX_pl2027_081_handel_3
-		x = 26
+		x = 24
 		y = 6
 		cost = 10
 		prerequisite = { focus = RNOT_c2 }
@@ -270,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_e1
 		icon = GFX_pl2027_081_energia_0
-		x = 31
+		x = 29
 		y = 3
 		cost = 6
 		prerequisite = { focus = RNOT_wladza }
@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_e2
 		icon = GFX_pl2027_081_przemysl_1
-		x = 30
+		x = 28
 		y = 4
 		cost = 7
 		prerequisite = { focus = RNOT_e1 }
@@ -297,7 +297,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_e3
 		icon = GFX_pl2027_081_przemysl_2
-		x = 32
+		x = 30
 		y = 4
 		cost = 6
 		prerequisite = { focus = RNOT_e1 }
@@ -312,7 +312,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_e4
 		icon = GFX_pl2027_081_droga_0_not_k
-		x = 29
+		x = 27
 		y = 5
 		cost = 7
 		prerequisite = { focus = RNOT_e2 }
@@ -330,7 +330,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_e5
 		icon = GFX_pl2027_081_przemysl_3_not_k
-		x = 31
+		x = 29
 		y = 5
 		cost = 6
 		prerequisite = { focus = RNOT_e2 }
@@ -346,7 +346,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_e6
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 30
+		x = 28
 		y = 6
 		cost = 7
 		prerequisite = { focus = RNOT_e4 focus = RNOT_e5 }
@@ -361,7 +361,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_m1
 		icon = GFX_pl2027_081_porzadek_1
-		x = 36
+		x = 34
 		y = 3
 		cost = 7
 		prerequisite = { focus = RNOT_wladza }
@@ -376,7 +376,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_m2
 		icon = GFX_pl2027_081_pobor_1_not_k
-		x = 35
+		x = 33
 		y = 4
 		cost = 7
 		prerequisite = { focus = RNOT_m1 }
@@ -394,7 +394,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_m3
 		icon = GFX_pl2027_081_wyposazenie_2_not_k
-		x = 37
+		x = 35
 		y = 4
 		cost = 6
 		prerequisite = { focus = RNOT_m1 }
@@ -411,7 +411,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_m4
 		icon = GFX_pl2027_081_porzadek_2
-		x = 35
+		x = 33
 		y = 5
 		cost = 7
 		prerequisite = { focus = RNOT_m2 focus = RNOT_m3 }
@@ -426,7 +426,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_m5
 		icon = GFX_pl2027_081_porzadek_3
-		x = 35
+		x = 33
 		y = 6
 		cost = 5
 		prerequisite = { focus = RNOT_m4 }
@@ -440,7 +440,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_d0
 		icon = GFX_pl2027_081_administracja_0
-		x = 40
+		x = 38
 		y = 3
 		cost = 5
 		prerequisite = { focus = RNOT_wladza }
@@ -453,7 +453,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_s1
 		icon = GFX_pl2027_081_twierdza_0_not_k
-		x = 39
+		x = 37
 		y = 5
 		cost = 5
 		prerequisite = { focus = RNOT_d0 }
@@ -470,7 +470,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_s2
 		icon = GFX_pl2027_081_sojusz_2_not
-		x = 39
+		x = 37
 		y = 6
 		cost = 5
 		prerequisite = { focus = RNOT_s1 }
@@ -484,7 +484,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_pomoc
 		icon = GFX_pl2027_081_pomoc_2_not_k
-		x = 39
+		x = 37
 		y = 4
 		cost = 6
 		prerequisite = { focus = RNOT_d0 }
@@ -501,7 +501,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_samodzielnosc
 		icon = GFX_pl2027_081_orzel_0_not_k
-		x = 41
+		x = 39
 		y = 4
 		cost = 5
 		prerequisite = { focus = RNOT_d0 }
@@ -516,7 +516,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_s3
 		icon = GFX_pl2027_081_mapa_1_not
-		x = 39
+		x = 37
 		y = 7
 		cost = 1
 		prerequisite = { focus = RNOT_s2 }
@@ -531,7 +531,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_w1
 		icon = GFX_pl2027_081_wojna_2_not_k
-		x = 33
+		x = 31
 		y = 6
 		cost = 8
 		prerequisite = { focus = RNOT_d0 }
@@ -550,7 +550,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_w2
 		icon = GFX_pl2027_081_wojna_0_not
-		x = 33
+		x = 31
 		y = 7
 		cost = 8
 		prerequisite = { focus = RNOT_w1 }
@@ -566,7 +566,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_w3
 		icon = GFX_pl2027_081_wojna_1_not
-		x = 33
+		x = 31
 		y = 8
 		cost = 8
 		prerequisite = { focus = RNOT_w2 }
@@ -582,7 +582,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_region
 		icon = GFX_pl2027_081_mapa_2_not
-		x = 33
+		x = 31
 		y = 9
 		cost = 7
 		prerequisite = { focus = RNOT_s3 focus = RNOT_w3 }
@@ -601,7 +601,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_centralizacja
 		icon = GFX_pl2027_081_centralizacja_0_not_k
-		x = 32
+		x = 30
 		y = 10
 		cost = 5
 		prerequisite = { focus = RNOT_region }
@@ -616,7 +616,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_porozumienie
 		icon = GFX_pl2027_081_administracja_0_not_k
-		x = 34
+		x = 32
 		y = 10
 		cost = 5
 		prerequisite = { focus = RNOT_region }
@@ -630,7 +630,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_pl1
 		icon = GFX_pl2027_081_korona_3_not
-		x = 32
+		x = 30
 		y = 11
 		cost = 5
 		prerequisite = { focus = RNOT_region }
@@ -645,7 +645,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_pl2
 		icon = GFX_pl2027_081_ofensywa_2_not
-		x = 32
+		x = 30
 		y = 12
 		cost = 8
 		prerequisite = { focus = RNOT_pl1 }
@@ -661,7 +661,7 @@ focus_tree = {
 	focus = {
 		id = RNOT_pl3
 		icon = GFX_pl2027_081_polska_2_not_f
-		x = 32
+		x = 30
 		y = 13
 		cost = 10
 		prerequisite = { focus = RNOT_pl2 }
@@ -851,7 +851,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_not
-		x = 0
+		x = 2
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_NOT_mil_rezerwisci }
@@ -871,7 +871,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_not
-		x = 6
+		x = 7
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_NOT_mil_kadra }
@@ -891,7 +891,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 12
+		x = 14
 		y = 1
 		cost = 1
 		prerequisite = { focus = RNOT_start }
@@ -907,7 +907,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 11
+		x = 13
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_NOT_zy_s_ulica }
@@ -923,7 +923,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 13
+		x = 15
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_NOT_zy_s_ulica }
@@ -975,7 +975,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 12
+		x = 10
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_NOT_zy_s_kartki focus = REG_NOT_zy_s_rynek }
@@ -992,7 +992,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 14
+		x = 12
 		y = 4
 		cost = 1
 		prerequisite = { focus = REG_NOT_zy_s_kartki focus = REG_NOT_zy_s_rynek }
@@ -1008,7 +1008,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 16
+		x = 14
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_NOT_zy_s_kartki focus = REG_NOT_zy_s_rynek }
@@ -1025,7 +1025,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 14
+		x = 12
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_NOT_zy_s_szkoly }
@@ -1096,7 +1096,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_not
-		x = 34
+		x = 36
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_NOT_zy_k_defilada }
@@ -1113,7 +1113,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 43
+		x = 41
 		y = 1
 		cost = 5
 		prerequisite = { focus = RNOT_start }
@@ -1131,7 +1131,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 43
+		x = 41
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_NOT_zy_p_straty }
@@ -1148,7 +1148,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_not_k
-		x = 42
+		x = 40
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_NOT_zy_p_rzad }
@@ -1165,7 +1165,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_not_k
-		x = 44
+		x = 42
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_NOT_zy_p_rzad }
@@ -1182,7 +1182,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 43
+		x = 41
 		y = 4
 		cost = 6
 		prerequisite = { focus = REG_NOT_zy_p_rewanz focus = REG_NOT_zy_p_pojednanie }
@@ -1201,7 +1201,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_not
-		x = 33
+		x = 31
 		y = 5
 		cost = 5
 		prerequisite = { focus = RNOT_wybor }

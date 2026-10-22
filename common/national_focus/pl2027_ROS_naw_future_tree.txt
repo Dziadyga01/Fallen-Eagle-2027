@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = ROS_naw_f_start
 		icon = GFX_pl2027_081_wybory_0
-		x = 17
+		x = 16
 		y = 0
 		cost = 2
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -857,7 +857,7 @@ focus_tree = {
 	focus = {
 		id = ROS_naw_future_zy_r_cenzura
 		icon = GFX_pl2027_081_cenzura_2
-		x = 25
+		x = 23
 		y = 4
 		cost = 2
 		prerequisite = { focus = ROS_naw_future_zy_r_rubel focus = ROS_naw_future_zy_r_druk }
@@ -874,7 +874,7 @@ focus_tree = {
 	focus = {
 		id = ROS_naw_future_zy_r_regiony
 		icon = GFX_pl2027_081_mapa_0
-		x = 27
+		x = 25
 		y = 4
 		cost = 3
 		prerequisite = { focus = ROS_naw_future_zy_r_rubel focus = ROS_naw_future_zy_r_druk }
@@ -891,7 +891,7 @@ focus_tree = {
 	focus = {
 		id = ROS_naw_future_zy_r_jednosc
 		icon = GFX_pl2027_081_wojna_1
-		x = 26
+		x = 24
 		y = 5
 		cost = 6
 		prerequisite = { focus = ROS_naw_future_zy_r_cenzura }
@@ -977,7 +977,7 @@ focus_tree = {
 	focus = {
 		id = ROS_naw_future_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 34
+		x = 33
 		y = 1
 		cost = 3
 		prerequisite = { focus = ROS_naw_f_start }
@@ -995,7 +995,7 @@ focus_tree = {
 	focus = {
 		id = ROS_naw_future_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 34
+		x = 33
 		y = 2
 		cost = 2
 		prerequisite = { focus = ROS_naw_future_zy_p_straty }
@@ -1012,7 +1012,7 @@ focus_tree = {
 	focus = {
 		id = ROS_naw_future_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1
-		x = 33
+		x = 32
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_naw_future_zy_p_rzad }
@@ -1029,7 +1029,7 @@ focus_tree = {
 	focus = {
 		id = ROS_naw_future_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3
-		x = 35
+		x = 34
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_naw_future_zy_p_rzad }
@@ -1046,7 +1046,7 @@ focus_tree = {
 	focus = {
 		id = ROS_naw_future_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 34
+		x = 33
 		y = 4
 		cost = 5
 		prerequisite = { focus = ROS_naw_future_zy_p_rewanz focus = ROS_naw_future_zy_p_pojednanie }

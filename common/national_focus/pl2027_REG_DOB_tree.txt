@@ -866,7 +866,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_dob
-		x = 0
+		x = 2
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_DOB_mil_rezerwisci }
@@ -886,7 +886,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_dob
-		x = 6
+		x = 7
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_DOB_mil_kadra }
@@ -1060,7 +1060,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 36
+		x = 33
 		y = 1
 		cost = 6
 		prerequisite = { focus = RDOB_start }
@@ -1078,7 +1078,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_dob
-		x = 35
+		x = 32
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_DOB_zy_k_admin }
@@ -1095,7 +1095,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 37
+		x = 34
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_DOB_zy_k_admin }
@@ -1111,7 +1111,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_dob
-		x = 37
+		x = 33
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_DOB_zy_k_defilada }
@@ -1128,7 +1128,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 42
+		x = 43
 		y = 1
 		cost = 5
 		prerequisite = { focus = RDOB_start }
@@ -1146,7 +1146,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 42
+		x = 43
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_DOB_zy_p_straty }
@@ -1163,7 +1163,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_dob_k
-		x = 41
+		x = 42
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_DOB_zy_p_rzad }
@@ -1180,7 +1180,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_dob_k
-		x = 43
+		x = 44
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_DOB_zy_p_rzad }
@@ -1197,7 +1197,7 @@ focus_tree = {
 	focus = {
 		id = REG_DOB_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 42
+		x = 43
 		y = 4
 		cost = 6
 		prerequisite = { focus = REG_DOB_zy_p_rewanz focus = REG_DOB_zy_p_pojednanie }

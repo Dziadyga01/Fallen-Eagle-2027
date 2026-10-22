@@ -1140,7 +1140,7 @@ focus_tree = {
 	focus = {
 		id = REG_KLS_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 46
+		x = 47
 		y = 1
 		cost = 5
 		prerequisite = { focus = RKLS_start }
@@ -1158,7 +1158,7 @@ focus_tree = {
 	focus = {
 		id = REG_KLS_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 46
+		x = 47
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_KLS_zy_p_straty }
@@ -1175,7 +1175,7 @@ focus_tree = {
 	focus = {
 		id = REG_KLS_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_kls_k
-		x = 45
+		x = 46
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_KLS_zy_p_rzad }
@@ -1192,7 +1192,7 @@ focus_tree = {
 	focus = {
 		id = REG_KLS_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_kls_k
-		x = 47
+		x = 48
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_KLS_zy_p_rzad }
@@ -1209,7 +1209,7 @@ focus_tree = {
 	focus = {
 		id = REG_KLS_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 46
+		x = 47
 		y = 4
 		cost = 6
 		prerequisite = { focus = REG_KLS_zy_p_rewanz focus = REG_KLS_zy_p_pojednanie }

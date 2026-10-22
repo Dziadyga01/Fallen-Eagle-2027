@@ -46,7 +46,16 @@ Zmienia się tylko numer wersji (0.8.6 → 0.8.8). Wersja 0.8.8 = repozytorium r
 - Podstawa użycia: oświadczenie autora moda (22.10.2026), że ma prawa do nagrań i logotypów.
 - Pominięty 1 plik: „Honor – Narodowy Socjalizm” (utwór zespołu RAC gloryfikujący nazizm) – nie trafia do moda niezależnie od praw.
 
-4. TECHNICZNE
+4. BIAŁORUŚ – SIŁY ZBROJNE I ZAPLECZE POZA MAPĄ (poprawka z 22.10)
+- Dotąd Białoruś nie mogła zbudować armii: na mapie ma tylko obwody brzeski i grodzieński (3 fabryki), bez technologii, szablonów i jednostek.
+- Fabryki poza mapą (jak u rządu na emigracji): 5 cywilnych i 4 wojskowe – przemysł Mińska, Homla, Mohylewa i Witebska.
+- Duch „Kraj poza mapą” (+10% poboru), 30 tys. rekrutów na start.
+- Nowe fokusy w drzewku Białorusi (gałąź „Zarząd i sprawy bieżące” – w tym modzie decyzje są fokusami), każdy 3 razy (I–III):
+  - „Pobór w obwodach wschodnich” – 25 PP, +15 000 ludzi (AI bierze je głównie w czasie wojny i przy małej puli rekrutów);
+  - „Zamówienia w zakładach MAZ i BiełAZ” – 30 PP, 60 ciężarówek i 100 sprzętu wsparcia.
+- Technologie startowe jak u państw polskich, szablony „Brygada Zmechanizowana BY” i „Brygada Piechoty BY”, 5 brygad na start (Brześć, Grodno).
+
+5. TECHNICZNE
 - Nowe kroki budowy: gen_liderzy_088.py (portrety, po remaster/portrety.py), gen_feweks_088.py (zmiany Filikowskiego,
   po loc_mirror, przed gen_rozpad), radio_nowe_088.py + gen_radio.py nowa:<id> (stacje).
 - gen_radio.py: dla nowych stacji można ustawić dopasowanie okładki (logo na białym tle), jakość Vorbis i licencję w README.

@@ -1015,7 +1015,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 51
+		x = 50
 		y = 2
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_s_ulica }
@@ -1047,7 +1047,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_wmz_k
-		x = 50
+		x = 52
 		y = 3
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_s_media }
@@ -1065,7 +1065,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_wmz_k
-		x = 52
+		x = 54
 		y = 3
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_s_media }
@@ -1153,7 +1153,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 56
+		x = 57
 		y = 1
 		cost = 6
 		prerequisite = { focus = WMZ_dwa_regiony }
@@ -1171,7 +1171,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_wmz
-		x = 55
+		x = 56
 		y = 2
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_k_admin }
@@ -1188,7 +1188,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 57
+		x = 58
 		y = 2
 		cost = 1
 		prerequisite = { focus = WMZ_start_zy_k_admin }
@@ -1204,7 +1204,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_wmz
-		x = 56
+		x = 57
 		y = 3
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_k_defilada }

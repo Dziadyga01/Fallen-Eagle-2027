@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_os_panstwo
 		icon = GFX_pl2027_081_wiara_0
-		x = 21
+		x = 20
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -607,7 +607,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 30
+		x = 28
 		y = 1
 		cost = 1
 		prerequisite = { focus = ZKR_os_panstwo }
@@ -623,7 +623,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 29
+		x = 26
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_s_ulica }
@@ -639,7 +639,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 31
+		x = 29
 		y = 2
 		cost = 1
 		prerequisite = { focus = ZKR_ordensstaat_zy_s_ulica }
@@ -761,7 +761,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 34
+		x = 32
 		y = 1
 		cost = 6
 		prerequisite = { focus = ZKR_os_panstwo }
@@ -779,7 +779,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1
-		x = 33
+		x = 31
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_k_admin }
@@ -796,7 +796,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 35
+		x = 33
 		y = 2
 		cost = 1
 		prerequisite = { focus = ZKR_ordensstaat_zy_k_admin }
@@ -812,7 +812,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2
-		x = 34
+		x = 32
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_k_defilada }
@@ -829,7 +829,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 37
+		x = 36
 		y = 1
 		cost = 5
 		prerequisite = { focus = ZKR_os_panstwo }
@@ -847,7 +847,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 37
+		x = 36
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_p_straty }
@@ -864,7 +864,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1
-		x = 36
+		x = 35
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_p_rzad }
@@ -881,7 +881,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3
-		x = 38
+		x = 37
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_p_rzad }
@@ -898,7 +898,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2_f
-		x = 37
+		x = 36
 		y = 4
 		cost = 6
 		prerequisite = { focus = ZKR_ordensstaat_zy_p_rewanz focus = ZKR_ordensstaat_zy_p_pojednanie }

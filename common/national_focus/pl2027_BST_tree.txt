@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = BST_podlasie
 		icon = GFX_pl2027_tfr_portret_bst_leader
-		x = 24
+		x = 23
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -869,7 +869,7 @@ focus_tree = {
 	focus = {
 		id = BST_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_bst
-		x = 2
+		x = 0
 		y = 4
 		cost = 5
 		prerequisite = { focus = BST_mil_rezerwisci }
@@ -889,7 +889,7 @@ focus_tree = {
 	focus = {
 		id = BST_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_bst
-		x = 7
+		x = 6
 		y = 5
 		cost = 7
 		prerequisite = { focus = BST_mil_kadra }
@@ -1131,7 +1131,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 42
+		x = 41
 		y = 1
 		cost = 5
 		prerequisite = { focus = BST_podlasie }
@@ -1149,7 +1149,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 42
+		x = 41
 		y = 2
 		cost = 5
 		prerequisite = { focus = BST_zy_p_straty }
@@ -1166,7 +1166,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_bst_k
-		x = 41
+		x = 40
 		y = 3
 		cost = 5
 		prerequisite = { focus = BST_zy_p_rzad }
@@ -1183,7 +1183,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_bst_k
-		x = 43
+		x = 42
 		y = 3
 		cost = 5
 		prerequisite = { focus = BST_zy_p_rzad }
@@ -1200,7 +1200,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 42
+		x = 41
 		y = 4
 		cost = 6
 		prerequisite = { focus = BST_zy_p_rewanz focus = BST_zy_p_pojednanie }

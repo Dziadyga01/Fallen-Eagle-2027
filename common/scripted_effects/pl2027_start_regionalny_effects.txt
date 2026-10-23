@@ -20,5 +20,7 @@ PL2027_start_regionalny = {
 	if = { limit = { country_exists = MPR } MPR = { add_timed_idea = { idea = WWD_bojowki days = 300 } } } if = { limit = { country_exists = LEG } LEG = { add_timed_idea = { idea = WWD_kibole days = 200 } } }
 	# --- wwp ---
 	set_variable = { global.TFE_wwa_smr = 30 } set_variable = { global.TFE_wwa_kpr = 30 } set_variable = { global.TFE_wwa_mpr = 30 }
+	# --- ozm ---
+	if = { limit = { country_exists = OZM } OZM = { set_variable = { OZM_legit = 55 } set_variable = { OZM_zasiegi = 10 } set_variable = { OZM_sygnal = 0 } set_variable = { OZM_dostawy = 60 } add_dynamic_modifier = { modifier = OZM_panel_mod } OZM_przelicz = yes } }
 	ZPP_start = yes
 }

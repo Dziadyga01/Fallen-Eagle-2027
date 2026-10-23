@@ -1,0 +1,1611 @@
+# The Fallen Eagle 2027 – Ożarów Mazowiecki: urząd i studio
+focus_tree = {
+	id = OZM_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OZM
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1300 }
+	initial_show_position = { focus = OZM_01_godzina_zero }
+
+	focus = {
+		id = OZM_01_godzina_zero
+		icon = GFX_pl2027_081_droga_0
+		x = 16
+		y = 0
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
+		ai_will_do = { factor = 50 }
+		completion_reward = {
+			set_country_flag = OZM_panel
+			add_political_power = 20
+			country_event = { id = ozm.1 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_02_urzad
+		icon = GFX_pl2027_081_ludzie_0
+		x = 16
+		y = 1
+		cost = 5
+		prerequisite = { focus = OZM_01_godzina_zero }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_urzad_tymczasowy
+			add_stability = 0.03
+			custom_effect_tooltip = OZM_tt_legit3 hidden_effect = { add_to_variable = { OZM_legit = 3 } OZM_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = OZM_03_kablownia
+		icon = GFX_pl2027_081_przemysl_0
+		x = 14
+		y = 2
+		cost = 5
+		prerequisite = { focus = OZM_02_urzad }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.35 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_04_dk92
+		icon = GFX_pl2027_081_droga_1
+		x = 16
+		y = 2
+		cost = 5
+		prerequisite = { focus = OZM_02_urzad }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_country_flag = OZM_patrole_drogi
+			custom_effect_tooltip = OZM_tt_dostawy5 hidden_effect = { add_to_variable = { OZM_dostawy = 5 } OZM_przelicz = yes }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = OZM_05_bronisze
+		icon = GFX_pl2027_081_handel_0
+		x = 18
+		y = 2
+		cost = 5
+		prerequisite = { focus = OZM_02_urzad }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_country_flag = OZM_misja_bronisze
+			custom_effect_tooltip = OZM_tt_5 
+		}
+	}
+
+	focus = {
+		id = OZM_06_echo
+		icon = GFX_pl2027_081_polska_0_ozm
+		x = 15
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_03_kablownia focus = OZM_04_dk92 }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.36 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_07_kryzys
+		icon = GFX_pl2027_081_ludzie_1
+		x = 17
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_04_dk92 focus = OZM_05_bronisze }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = -0.03
+			custom_effect_tooltip = OZM_tt_zasiegi5 hidden_effect = { add_to_variable = { OZM_zasiegi = 5 } OZM_przelicz = yes }
+			set_country_flag = OZM_records_ruch
+		}
+	}
+
+	focus = {
+		id = OZM_08_glosy
+		icon = GFX_pl2027_081_wybory_0
+		x = 16
+		y = 4
+		cost = 5
+		prerequisite = { focus = OZM_06_echo }
+		prerequisite = { focus = OZM_07_kryzys }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.37 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_09_wieczor
+		icon = GFX_pl2027_081_ulica_0
+		x = 16
+		y = 5
+		cost = 5
+		prerequisite = { focus = OZM_08_glosy }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = OZM_10_nie_oddamy
+		icon = GFX_pl2027_081_administracja_0_ozm_k
+		x = 7
+		y = 6
+		cost = 5
+		prerequisite = { focus = OZM_09_wieczor }
+		mutually_exclusive = { focus = OZM_32_studio }
+		ai_will_do = { factor = 60 }
+		completion_reward = {
+			set_country_flag = OZM_droga_republika
+			if = { limit = { has_idea = OZM_paraliz } remove_ideas = OZM_paraliz }
+			custom_effect_tooltip = OZM_tt_legit5_zasiegim5 hidden_effect = { add_to_variable = { OZM_legit = 5 } add_to_variable = { OZM_zasiegi = -5 } OZM_przelicz = yes }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = OZM_11_rada
+		icon = GFX_pl2027_081_rada_0
+		x = 5
+		y = 7
+		cost = 5
+		prerequisite = { focus = OZM_10_nie_oddamy }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = OZM_tt_legit5 hidden_effect = { add_to_variable = { OZM_legit = 5 } OZM_przelicz = yes }
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = OZM_12_mieszkancy
+		icon = GFX_pl2027_081_ludzie_2
+		x = 7
+		y = 7
+		cost = 5
+		prerequisite = { focus = OZM_10_nie_oddamy }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.38 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_13_budzet
+		icon = GFX_pl2027_081_pieniadze_0
+		x = 9
+		y = 7
+		cost = 5
+		prerequisite = { focus = OZM_10_nie_oddamy }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 30
+			custom_effect_tooltip = OZM_tt_dostawy10 hidden_effect = { add_to_variable = { OZM_dostawy = 10 } OZM_przelicz = yes }
+			add_timed_idea = { idea = OZM_budzet_kryzysowy days = 90 }
+		}
+	}
+
+	focus = {
+		id = OZM_14_sluzby
+		icon = GFX_pl2027_081_porzadek_0
+		x = 5
+		y = 8
+		cost = 5
+		prerequisite = { focus = OZM_11_rada }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_sluzby
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = OZM_15_kontrakty
+		icon = GFX_pl2027_081_pieniadze_1
+		x = 9
+		y = 8
+		cost = 5
+		prerequisite = { focus = OZM_13_budzet }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_country_flag = OZM_kontrakty
+			custom_effect_tooltip = OZM_tt_dostawy10 hidden_effect = { add_to_variable = { OZM_dostawy = 10 } OZM_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = OZM_16_pakt
+		icon = GFX_pl2027_081_sojusz_0_ozm
+		x = 7
+		y = 8
+		cost = 5
+		prerequisite = { focus = OZM_12_mieszkancy }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			every_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no  } add_opinion_modifier = { target = ROOT modifier = OZM_dobry_sasiad } }
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = OZM_17_sejm
+		icon = GFX_pl2027_081_parlament_0_ozm_k
+		x = 5
+		y = 9
+		cost = 5
+		prerequisite = { focus = OZM_16_pakt }
+		mutually_exclusive = { focus = OZM_18_palac focus = OZM_19_neutralnosc }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_6 country_exists = SMR } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { country_exists = SMR } SMR = { add_opinion_modifier = { target = ROOT modifier = OZM_kanal } } ROOT = { add_opinion_modifier = { target = SMR modifier = OZM_kanal } } } set_country_flag = OZM_strona_sejm
+			custom_effect_tooltip = OZM_tt_legit4 hidden_effect = { add_to_variable = { OZM_legit = 4 } OZM_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = OZM_18_palac
+		icon = GFX_pl2027_081_port_0_ozm_k
+		x = 7
+		y = 9
+		cost = 5
+		prerequisite = { focus = OZM_16_pakt }
+		mutually_exclusive = { focus = OZM_17_sejm focus = OZM_19_neutralnosc }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_7 country_exists = KPR } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { country_exists = KPR } KPR = { add_opinion_modifier = { target = ROOT modifier = OZM_kanal } } ROOT = { add_opinion_modifier = { target = KPR modifier = OZM_kanal } } } set_country_flag = OZM_strona_palac
+			custom_effect_tooltip = OZM_tt_legit4 hidden_effect = { add_to_variable = { OZM_legit = 4 } OZM_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = OZM_19_neutralnosc
+		icon = GFX_pl2027_081_dyplomacja_0_ozm_k
+		x = 9
+		y = 9
+		cost = 5
+		prerequisite = { focus = OZM_16_pakt }
+		mutually_exclusive = { focus = OZM_17_sejm focus = OZM_18_palac }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_neutralnosc
+			set_country_flag = OZM_strona_neutralna
+		}
+	}
+
+	focus = {
+		id = OZM_20_konstytucja
+		icon = GFX_pl2027_081_konstytucja_0
+		x = 7
+		y = 10
+		cost = 7
+		prerequisite = { focus = OZM_17_sejm focus = OZM_18_palac focus = OZM_19_neutralnosc }
+		prerequisite = { focus = OZM_11_rada }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_cosmetic_tag = OZM_REPUBLIKA
+			if = { limit = { has_idea = OZM_urzad_tymczasowy } remove_ideas = OZM_urzad_tymczasowy }
+			custom_effect_tooltip = OZM_tt_legit8 hidden_effect = { add_to_variable = { OZM_legit = 8 } OZM_przelicz = yes }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = OZM_21_sady
+		icon = GFX_pl2027_081_sad_0
+		x = 5
+		y = 11
+		cost = 5
+		prerequisite = { focus = OZM_20_konstytucja }
+		prerequisite = { focus = OZM_14_sluzby }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.03
+			custom_effect_tooltip = OZM_tt_legit3 hidden_effect = { add_to_variable = { OZM_legit = 3 } OZM_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = OZM_22_referendum
+		icon = GFX_pl2027_081_wybory_1
+		x = 7
+		y = 11
+		cost = 5
+		prerequisite = { focus = OZM_20_konstytucja }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.39 days = 2 }
+		}
+	}
+
+	focus = {
+		id = OZM_23_samorzad
+		icon = GFX_pl2027_081_chaos_0
+		x = 9
+		y = 11
+		cost = 5
+		prerequisite = { focus = OZM_20_konstytucja }
+		prerequisite = { focus = OZM_15_kontrakty }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_samorzad
+		}
+	}
+
+	focus = {
+		id = OZM_24_brama
+		icon = GFX_pl2027_081_ludzie_3
+		x = 4
+		y = 12
+		cost = 5
+		prerequisite = { focus = OZM_21_sady }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_brama
+		}
+	}
+
+	focus = {
+		id = OZM_25_bemowo
+		icon = GFX_pl2027_081_wywiad_0
+		x = 6
+		y = 12
+		cost = 5
+		prerequisite = { focus = OZM_22_referendum }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.40 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_26_twierdza
+		icon = GFX_pl2027_081_twierdza_0_ozm
+		x = 8
+		y = 12
+		cost = 5
+		prerequisite = { focus = OZM_22_referendum }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = OZM_tt_8 
+			capital_scope = { add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = OZM_27_tranzyt
+		icon = GFX_pl2027_081_dyplomacja_1
+		x = 10
+		y = 12
+		cost = 5
+		prerequisite = { focus = OZM_23_samorzad }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_9 any_neighbor_country = { has_country_flag = PL2027_polska is_subject = no has_opinion = { target = ROOT value > 19 } } } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no has_opinion = { target = ROOT value > 19 } } add_opinion_modifier = { target = ROOT modifier = OZM_porozumienie } ROOT = { add_timed_idea = { idea = OZM_tranzyt days = 365 } } }
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = OZM_28_straz
+		icon = GFX_pl2027_081_porzadek_1
+		x = 5
+		y = 13
+		cost = 5
+		prerequisite = { focus = OZM_24_brama focus = OZM_25_bemowo }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_straz
+			if = { limit = { NOT = { has_template = "Straż Obywatelska Ożarowa" } } division_template = { name = "Straż Obywatelska Ożarowa" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } support = { engineer = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Straż Obywatelska Ożarowa\" start_experience_factor = 0.1" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = OZM_29_naczelnik
+		icon = GFX_pl2027_081_wybory_2
+		x = 7
+		y = 13
+		cost = 5
+		prerequisite = { focus = OZM_25_bemowo }
+		prerequisite = { focus = OZM_26_twierdza }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.41 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_30_konferencja
+		icon = GFX_pl2027_081_sojusz_1_ozm
+		x = 9
+		y = 13
+		cost = 5
+		prerequisite = { focus = OZM_27_tranzyt }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { is_in_faction = no } create_faction = OZM_konferencja }
+			every_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = ozm.42 days = 2 } }
+		}
+	}
+
+	focus = {
+		id = OZM_31_republika
+		icon = GFX_pl2027_081_parlament_1_ozm
+		x = 7
+		y = 14
+		cost = 8
+		prerequisite = { focus = OZM_28_straz focus = OZM_29_naczelnik }
+		prerequisite = { focus = OZM_30_konferencja }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_republika
+			add_stability = 0.05
+			custom_effect_tooltip = OZM_tt_legit10 hidden_effect = { add_to_variable = { OZM_legit = 10 } OZM_przelicz = yes }
+			news_event = { id = ozm.14 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_32_studio
+		icon = GFX_pl2027_081_pieniadze_2_ozm_k
+		x = 23
+		y = 6
+		cost = 5
+		prerequisite = { focus = OZM_09_wieczor }
+		mutually_exclusive = { focus = OZM_10_nie_oddamy }
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			set_country_flag = OZM_droga_records
+			custom_effect_tooltip = OZM_tt_zasiegi8 hidden_effect = { add_to_variable = { OZM_zasiegi = 8 } OZM_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = OZM_33_archiwum
+		icon = GFX_pl2027_081_pieniadze_3
+		x = 21
+		y = 7
+		cost = 5
+		prerequisite = { focus = OZM_32_studio }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.16 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_34_telefon
+		icon = GFX_pl2027_081_dyplomacja_2
+		x = 23
+		y = 7
+		cost = 5
+		prerequisite = { focus = OZM_32_studio }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.4 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_35_serwer
+		icon = GFX_pl2027_081_port_1
+		x = 25
+		y = 7
+		cost = 5
+		prerequisite = { focus = OZM_32_studio }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_country_flag = OZM_serwer
+			custom_effect_tooltip = OZM_tt_zasiegi5 hidden_effect = { add_to_variable = { OZM_zasiegi = 5 } OZM_przelicz = yes }
+			custom_effect_tooltip = OZM_tt_10 
+		}
+	}
+
+	focus = {
+		id = OZM_36_kawka
+		icon = GFX_pl2027_081_wybory_3
+		x = 21
+		y = 8
+		cost = 5
+		prerequisite = { focus = OZM_33_archiwum }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = OZM_tt_zasiegi4 hidden_effect = { add_to_variable = { OZM_zasiegi = 4 } OZM_przelicz = yes }
+			random_list = { 70 = { add_stability = 0.01 } 30 = { } }
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.03 }
+		}
+	}
+
+	focus = {
+		id = OZM_37_nie_gadaj
+		icon = GFX_pl2027_081_dyplomacja_3
+		x = 23
+		y = 8
+		cost = 5
+		prerequisite = { focus = OZM_34_telefon }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = OZM_tt_zasiegi10_legitm5 hidden_effect = { add_to_variable = { OZM_zasiegi = 10 } add_to_variable = { OZM_legit = -5 } OZM_przelicz = yes }
+			country_event = { id = ozm.3 days = 3 }
+		}
+	}
+
+	focus = {
+		id = OZM_38_moja_tura
+		icon = GFX_pl2027_081_wybory_0
+		x = 25
+		y = 8
+		cost = 5
+		prerequisite = { focus = OZM_35_serwer }
+		prerequisite = { focus = OZM_34_telefon }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_country_flag = OZM_records_partia
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.1 }
+		}
+	}
+
+	focus = {
+		id = OZM_39_topka
+		icon = GFX_pl2027_081_pobor_0_ozm
+		x = 22
+		y = 9
+		cost = 5
+		prerequisite = { focus = OZM_36_kawka focus = OZM_37_nie_gadaj }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_11 check_variable = { OZM_zasiegi > 39 } } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_timed_idea = { idea = OZM_topka_ochotnicy days = 180 }
+			add_manpower = 1500
+		}
+	}
+
+	focus = {
+		id = OZM_40_koncert
+		icon = GFX_pl2027_081_droga_2
+		x = 24
+		y = 9
+		cost = 5
+		prerequisite = { focus = OZM_38_moja_tura }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.6 days = 2 }
+		}
+	}
+
+	focus = {
+		id = OZM_41_diss
+		icon = GFX_pl2027_081_robotnicy_0
+		x = 22
+		y = 10
+		cost = 5
+		prerequisite = { focus = OZM_39_topka }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.7 days = 2 }
+		}
+	}
+
+	focus = {
+		id = OZM_42_komentarze
+		icon = GFX_pl2027_081_wojna_0_ozm
+		x = 24
+		y = 10
+		cost = 5
+		prerequisite = { focus = OZM_40_koncert }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_country_flag = OZM_komentarze
+			custom_effect_tooltip = OZM_tt_12 
+		}
+	}
+
+	focus = {
+		id = OZM_43_ref_serwer
+		icon = GFX_pl2027_081_wybory_1
+		x = 23
+		y = 11
+		cost = 7
+		prerequisite = { focus = OZM_41_diss }
+		prerequisite = { focus = OZM_42_komentarze }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.8 days = 2 }
+		}
+	}
+
+	focus = {
+		id = OZM_44_mikrofon
+		icon = GFX_pl2027_081_wybory_2
+		x = 23
+		y = 12
+		cost = 7
+		prerequisite = { focus = OZM_43_ref_serwer }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_13 has_country_flag = OZM_referendum_wygrane } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_cosmetic_tag = OZM_RECORDS
+			set_country_flag = OZM_rzad_records
+			set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+			add_popularity = { ideology = authoritarian_democrat popularity = 0.15 }
+			if = { limit = { NOT = { has_character = OZM_yungwazon } } recruit_character = OZM_yungwazon } promote_character = OZM_yungwazon
+			if = { limit = { has_idea = OZM_urzad_tymczasowy } remove_ideas = OZM_urzad_tymczasowy }
+			custom_effect_tooltip = OZM_tt_legit10 hidden_effect = { add_to_variable = { OZM_legit = 10 } OZM_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = OZM_45_rzad_wazona
+		icon = GFX_pl2027_081_administracja_1_ozm_k
+		x = 20
+		y = 13
+		cost = 5
+		prerequisite = { focus = OZM_44_mikrofon }
+		mutually_exclusive = { focus = OZM_52_slady }
+		ai_will_do = { factor = 60 }
+		completion_reward = {
+			custom_effect_tooltip = OZM_tt_legit8 hidden_effect = { add_to_variable = { OZM_legit = 8 } OZM_przelicz = yes }
+			add_stability = 0.03
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = OZM_46_minister
+		icon = GFX_pl2027_081_wywiad_1
+		x = 19
+		y = 14
+		cost = 5
+		prerequisite = { focus = OZM_45_rzad_wazona }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_minister_kultury
+		}
+	}
+
+	focus = {
+		id = OZM_47_nie_chicago
+		icon = GFX_pl2027_081_polska_1_ozm
+		x = 21
+		y = 14
+		cost = 5
+		prerequisite = { focus = OZM_45_rzad_wazona }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_nie_chicago
+		}
+	}
+
+	focus = {
+		id = OZM_48_nigdy_wiecej
+		icon = GFX_pl2027_081_polska_2_ozm
+		x = 19
+		y = 15
+		cost = 5
+		prerequisite = { focus = OZM_46_minister }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_nigdy_wiecej
+			custom_effect_tooltip = OZM_tt_zasiegim5 hidden_effect = { add_to_variable = { OZM_zasiegi = -5 } OZM_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = OZM_49_tlen
+		icon = GFX_pl2027_081_energia_0
+		x = 21
+		y = 15
+		cost = 5
+		prerequisite = { focus = OZM_47_nie_chicago }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_timed_idea = { idea = OZM_toksyczny_smog days = 60 }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = OZM_50_kraj_serwer
+		icon = GFX_pl2027_081_port_2
+		x = 20
+		y = 16
+		cost = 5
+		prerequisite = { focus = OZM_48_nigdy_wiecej }
+		prerequisite = { focus = OZM_49_tlen }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_serwer_kraj
+			set_country_flag = OZM_serwer
+		}
+	}
+
+	focus = {
+		id = OZM_51_topka_final
+		icon = GFX_pl2027_081_polska_0_ozm
+		x = 20
+		y = 17
+		cost = 8
+		prerequisite = { focus = OZM_50_kraj_serwer }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { has_idea = OZM_serwer_kraj } remove_ideas = OZM_serwer_kraj } add_ideas = OZM_topka
+			news_event = { id = ozm.15 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_52_slady
+		icon = GFX_TRN_form_mapa
+		x = 26
+		y = 13
+		cost = 5
+		prerequisite = { focus = OZM_44_mikrofon }
+		mutually_exclusive = { focus = OZM_45_rzad_wazona }
+		ai_will_do = { factor = 25 }
+		completion_reward = {
+			set_country_flag = OZM_sygnal_aktywny
+			set_variable = { OZM_sygnal = 10 } OZM_przelicz = yes
+			country_event = { id = ozm.9 days = 2 }
+		}
+	}
+
+	focus = {
+		id = OZM_53_souljah
+		icon = GFX_TRN_form_tarcza
+		x = 25
+		y = 14
+		cost = 5
+		prerequisite = { focus = OZM_52_slady }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = OZM_tt_sygnal10 hidden_effect = { add_to_variable = { OZM_sygnal = 10 } OZM_przelicz = yes }
+			add_manpower = 500
+		}
+	}
+
+	focus = {
+		id = OZM_54_kasa
+		icon = GFX_pl2027_081_media_0
+		x = 27
+		y = 14
+		cost = 5
+		prerequisite = { focus = OZM_52_slady }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = -40
+			add_timed_idea = { idea = OZM_koszty_nadajnika days = 120 }
+			custom_effect_tooltip = OZM_tt_sygnal5 hidden_effect = { add_to_variable = { OZM_sygnal = 5 } OZM_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = OZM_55_bejem
+		icon = GFX_pl2027_081_dyplomacja_4
+		x = 25
+		y = 15
+		cost = 5
+		prerequisite = { focus = OZM_53_souljah }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.43 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_56_cztery
+		icon = GFX_pl2027_081_wywiad_2
+		x = 27
+		y = 15
+		cost = 5
+		prerequisite = { focus = OZM_54_kasa }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = OZM_tt_sygnal15 hidden_effect = { add_to_variable = { OZM_sygnal = 15 } OZM_przelicz = yes }
+			custom_effect_tooltip = OZM_tt_18 hidden_effect = { set_country_flag = OZM_master }
+		}
+	}
+
+	focus = {
+		id = OZM_57_glos
+		icon = GFX_pl2027_081_media_1
+		x = 26
+		y = 16
+		cost = 5
+		prerequisite = { focus = OZM_55_bejem }
+		prerequisite = { focus = OZM_56_cztery }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = OZM_tt_sygnal15_legitm5 hidden_effect = { add_to_variable = { OZM_sygnal = 15 } add_to_variable = { OZM_legit = -5 } OZM_przelicz = yes }
+			set_country_flag = OZM_nasluch
+			custom_effect_tooltip = OZM_tt_19 
+			country_event = { id = ozm.10 days = 3 }
+		}
+	}
+
+	focus = {
+		id = OZM_58_nadajnik
+		icon = GFX_pl2027_081_media_2
+		x = 26
+		y = 17
+		cost = 7
+		prerequisite = { focus = OZM_57_glos }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_1 check_variable = { OZM_zasiegi > 49 } } custom_trigger_tooltip = { tooltip = OZM_tt_20 num_of_civilian_factories > 1 } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			custom_effect_tooltip = OZM_tt_sygnal5 hidden_effect = { add_to_variable = { OZM_sygnal = 5 } OZM_przelicz = yes }
+			set_country_flag = OZM_nadajnik
+		}
+	}
+
+	focus = {
+		id = OZM_59_rytual
+		icon = GFX_pl2027_081_wywiad_3
+		x = 26
+		y = 18
+		cost = 7
+		prerequisite = { focus = OZM_58_nadajnik }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_14 check_variable = { OZM_zasiegi > 69 } } custom_trigger_tooltip = { tooltip = OZM_tt_4 check_variable = { OZM_sygnal > 79 } } custom_trigger_tooltip = { tooltip = OZM_tt_15 has_completed_focus = OZM_68_prad } custom_trigger_tooltip = { tooltip = OZM_tt_16 OR = { has_character = OZM_yungwazon has_country_flag = OZM_rzad_records } } custom_trigger_tooltip = { tooltip = OZM_tt_17 has_civil_war = no } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.11 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_60_przywolac
+		icon = GFX_TRN_form_korona
+		x = 26
+		y = 19
+		cost = 8
+		prerequisite = { focus = OZM_59_rytual }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_21 has_country_flag = OZM_rytual_ok } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.12 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_61_wszedzie
+		icon = GFX_TRN_form_korona
+		x = 26
+		y = 20
+		cost = 8
+		prerequisite = { focus = OZM_60_przywolac }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_swiebodzin_idea
+			set_country_flag = OZM_ekspansja
+			news_event = { id = ozm.13 days = 2 }
+			every_neighbor_country = { limit = { has_country_flag = PL2027_polska } add_opinion_modifier = { target = ROOT modifier = OZM_niepokoj } }
+		}
+	}
+
+	focus = {
+		id = OZM_62_kabel
+		icon = GFX_pl2027_081_przemysl_1
+		x = 30
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_03_kablownia }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { has_country_flag = OZM_kablownia_cywilna } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = OZM_63_warzywa
+		icon = GFX_TRN_form_klos
+		x = 32
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_05_bronisze }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_bronisze
+			custom_effect_tooltip = OZM_tt_dostawy15 hidden_effect = { add_to_variable = { OZM_dostawy = 15 } OZM_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = OZM_64_wezel
+		icon = GFX_pl2027_081_droga_0
+		x = 31
+		y = 4
+		cost = 7
+		prerequisite = { focus = OZM_62_kabel focus = OZM_63_warzywa }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_political_power = -20
+		}
+	}
+
+	focus = {
+		id = OZM_65_kablownia_studio
+		icon = GFX_TRN_form_dwie
+		x = 30
+		y = 5
+		cost = 5
+		prerequisite = { focus = OZM_64_wezel }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.32 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_66_plakaty
+		icon = GFX_pl2027_081_kampania_0
+		x = 30
+		y = 6
+		cost = 5
+		prerequisite = { focus = OZM_65_kablownia_studio }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { has_country_flag = OZM_hala_studio } custom_effect_tooltip = OZM_tt_zasiegi6 hidden_effect = { add_to_variable = { OZM_zasiegi = 6 } OZM_przelicz = yes } } else = { custom_effect_tooltip = OZM_tt_legit5 hidden_effect = { add_to_variable = { OZM_legit = 5 } OZM_przelicz = yes } add_stability = 0.02 }
+		}
+	}
+
+	focus = {
+		id = OZM_67_magazyny
+		icon = GFX_pl2027_081_droga_1
+		x = 32
+		y = 5
+		cost = 5
+		prerequisite = { focus = OZM_64_wezel }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_country_flag = OZM_magazyny
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			custom_effect_tooltip = OZM_tt_22 
+		}
+	}
+
+	focus = {
+		id = OZM_68_prad
+		icon = GFX_pl2027_081_media_3
+		x = 31
+		y = 7
+		cost = 5
+		prerequisite = { focus = OZM_66_plakaty focus = OZM_67_magazyny }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { has_country_flag = OZM_sygnal_aktywny } custom_effect_tooltip = OZM_tt_sygnal5 hidden_effect = { add_to_variable = { OZM_sygnal = 5 } OZM_przelicz = yes } } else = { add_stability = 0.01 }
+		}
+	}
+
+	focus = {
+		id = OZM_69_kultura
+		icon = GFX_pl2027_081_przemysl_2
+		x = 31
+		y = 8
+		cost = 7
+		prerequisite = { focus = OZM_68_prad }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_kultura
+			if = { limit = { has_country_flag = OZM_rzad_records } custom_effect_tooltip = OZM_tt_zasiegi5 hidden_effect = { add_to_variable = { OZM_zasiegi = 5 } OZM_przelicz = yes } } else = { custom_effect_tooltip = OZM_tt_legit5 hidden_effect = { add_to_variable = { OZM_legit = 5 } OZM_przelicz = yes } }
+		}
+	}
+
+	focus = {
+		id = OZM_70_obrona
+		icon = GFX_pl2027_081_milicja_0_ozm
+		x = 35
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_04_dk92 }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			if = { limit = { NOT = { has_template = "Ochotnicza Obrona Ożarowa" } } division_template = { name = "Ochotnicza Obrona Ożarowa" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } support = { engineer = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Ochotnicza Obrona Ożarowa\" start_experience_factor = 0.1" owner = ROOT } }
+			add_manpower = 1500
+		}
+	}
+
+	focus = {
+		id = OZM_71_patrole
+		icon = GFX_pl2027_081_porzadek_2
+		x = 37
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_04_dk92 }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = OZM_patrole
+		}
+	}
+
+	focus = {
+		id = OZM_72_radiowezel
+		icon = GFX_pl2027_081_media_4
+		x = 36
+		y = 4
+		cost = 5
+		prerequisite = { focus = OZM_70_obrona focus = OZM_71_patrole }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.33 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_73_posterunki
+		icon = GFX_pl2027_081_granica_0_ozm
+		x = 35
+		y = 5
+		cost = 5
+		prerequisite = { focus = OZM_72_radiowezel }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = -25
+			every_owned_state = { limit = { any_neighbor_state = { NOT = { is_owned_by = ROOT } } } add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = OZM_74_wojna_brama
+		icon = GFX_pl2027_081_wojna_1_ozm
+		x = 37
+		y = 5
+		cost = 7
+		prerequisite = { focus = OZM_72_radiowezel }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } }  custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = OZM_tt_23 any_neighbor_country = { has_country_flag = PL2027_polska is_subject = no NOT = { is_in_faction_with = ROOT } has_opinion = { target = ROOT value < 10 } } } }
+		ai_will_do = { factor = 5 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
+		completion_reward = {
+			random_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no NOT = { is_in_faction_with = ROOT } NOT = { has_war_with = ROOT } has_opinion = { target = ROOT value < 10 } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } }
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = OZM_75_warszawa
+		icon = GFX_TRN_form_korona
+		x = 36
+		y = 6
+		cost = 7
+		prerequisite = { focus = OZM_73_posterunki focus = OZM_74_wojna_brama }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			country_event = { id = ozm.34 days = 1 }
+		}
+	}
+
+	focus = {
+		id = OZM_mil_start
+		icon = GFX_pl2027_081_sztab_1_ozm
+		x = 41
+		y = 0
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
+		bypass = { has_country_flag = MIL_start }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_start
+			army_experience = 5
+			add_manpower = 1000
+		}
+	}
+
+	focus = {
+		id = OZM_mil_rejestr
+		icon = GFX_pl2027_081_pobor_1_ozm
+		x = 39
+		y = 1
+		cost = 7
+		prerequisite = { focus = OZM_mil_start }
+		bypass = { has_country_flag = MIL_rejestr }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_rejestr
+			add_ideas = MIL_pobor_1
+		}
+	}
+
+	focus = {
+		id = OZM_mil_ochotnicy
+		icon = GFX_pl2027_081_pobor_3_ozm
+		x = 41
+		y = 1
+		cost = 7
+		prerequisite = { focus = OZM_mil_start }
+		bypass = { has_country_flag = MIL_ochotnicy }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_ochotnicy
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = OZM_mil_fabryka
+		icon = GFX_pl2027_081_fabryka_broni_1
+		x = 43
+		y = 1
+		cost = 10
+		prerequisite = { focus = OZM_mil_start }
+		bypass = { has_country_flag = MIL_fabryka }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_fabryka
+			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = OZM_mil_pobor
+		icon = GFX_pl2027_081_pobor_2_ozm
+		x = 39
+		y = 2
+		cost = 10
+		prerequisite = { focus = OZM_mil_rejestr }
+		bypass = { has_country_flag = MIL_pobor }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_pobor
+			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
+		}
+	}
+
+	focus = {
+		id = OZM_mil_bataliony
+		icon = GFX_pl2027_081_wojsko_4_ozm
+		x = 41
+		y = 2
+		cost = 7
+		prerequisite = { focus = OZM_mil_ochotnicy }
+		bypass = { has_country_flag = MIL_bataliony }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_bataliony
+			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+		}
+	}
+
+	focus = {
+		id = OZM_mil_produkcja
+		icon = GFX_pl2027_081_przemysl_4
+		x = 43
+		y = 2
+		cost = 7
+		prerequisite = { focus = OZM_mil_fabryka }
+		bypass = { has_country_flag = MIL_produkcja }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_produkcja
+			add_timed_idea = { idea = MIL_produkcja days = 365 }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 50 }
+		}
+	}
+
+	focus = {
+		id = OZM_mil_rezerwisci
+		icon = GFX_pl2027_081_pobor_3_ozm
+		x = 39
+		y = 3
+		cost = 7
+		prerequisite = { focus = OZM_mil_pobor }
+		bypass = { has_country_flag = MIL_rezerwisci }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_rezerwisci
+			add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = OZM_mil_brygady
+		icon = GFX_pl2027_081_obrona_terytorialna_1_ozm
+		x = 41
+		y = 3
+		cost = 10
+		prerequisite = { focus = OZM_mil_bataliony }
+		bypass = { has_country_flag = MIL_brygady }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_brygady
+			if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 40 }
+		}
+	}
+
+	focus = {
+		id = OZM_mil_zaplecze
+		icon = GFX_pl2027_081_logistyka_0
+		x = 43
+		y = 3
+		cost = 7
+		prerequisite = { focus = OZM_mil_produkcja }
+		bypass = { has_country_flag = MIL_zaplecze }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_zaplecze
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_ideas = MIL_zaopatrzenie
+		}
+	}
+
+	focus = {
+		id = OZM_mil_kadra
+		icon = GFX_pl2027_081_oficer_1_ozm
+		x = 40
+		y = 4
+		cost = 10
+		prerequisite = { focus = OZM_mil_rezerwisci }
+		prerequisite = { focus = OZM_mil_brygady }
+		bypass = { has_country_flag = MIL_kadra }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_kadra
+			army_experience = 25
+			add_ideas = MIL_kadra
+		}
+	}
+
+	focus = {
+		id = OZM_mil_zawodowa
+		icon = GFX_pl2027_081_zawodowa_1_ozm
+		x = 42
+		y = 5
+		cost = 10
+		prerequisite = { focus = OZM_mil_kadra }
+		prerequisite = { focus = OZM_mil_zaplecze }
+		bypass = { has_country_flag = MIL_zawodowa }
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		completion_reward = {
+			set_country_flag = MIL_zawodowa
+			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
+			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = OZM_zy_s_ulica
+		icon = GFX_pl2027_081_media_0
+		x = 48
+		y = 1
+		cost = 5
+		prerequisite = { focus = OZM_01_godzina_zero }
+		bypass = { has_country_flag = TFR_zy_pl_s_ulica }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_ulica
+			country_event = { id = zycie.1 }
+		}
+	}
+
+	focus = {
+		id = OZM_zy_s_media
+		icon = GFX_pl2027_081_media_1
+		x = 47
+		y = 2
+		cost = 5
+		prerequisite = { focus = OZM_zy_s_ulica }
+		bypass = { has_country_flag = TFR_zy_pl_s_media }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_media
+			add_ideas = TFR_media
+		}
+	}
+
+	focus = {
+		id = OZM_zy_s_spis
+		icon = GFX_pl2027_081_spis_0
+		x = 49
+		y = 2
+		cost = 5
+		prerequisite = { focus = OZM_zy_s_ulica }
+		bypass = { has_country_flag = TFR_zy_pl_s_spis }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_spis
+			country_event = { id = zycie.3 }
+		}
+	}
+
+	focus = {
+		id = OZM_zy_s_kartki
+		icon = GFX_pl2027_081_kartki_0_ozm_k
+		x = 47
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_zy_s_media }
+		prerequisite = { focus = OZM_zy_s_spis }
+		mutually_exclusive = { focus = OZM_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_kartki }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_kartki
+			add_ideas = TFR_kartki
+		}
+	}
+
+	focus = {
+		id = OZM_zy_s_rynek
+		icon = GFX_pl2027_081_handel_1_ozm_k
+		x = 49
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_zy_s_media }
+		prerequisite = { focus = OZM_zy_s_spis }
+		mutually_exclusive = { focus = OZM_zy_s_kartki }
+		bypass = { has_country_flag = TFR_zy_pl_s_rynek }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_rynek
+			add_ideas = TFR_wolny_rynek
+		}
+	}
+
+	focus = {
+		id = OZM_zy_s_szkoly
+		icon = GFX_pl2027_081_szkola_0
+		x = 46
+		y = 4
+		cost = 5
+		prerequisite = { focus = OZM_zy_s_kartki focus = OZM_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_szkoly
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = OZM_zy_s_czarny
+		icon = GFX_pl2027_081_czarny_rynek_1
+		x = 48
+		y = 4
+		cost = 5
+		prerequisite = { focus = OZM_zy_s_kartki focus = OZM_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_czarny }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_czarny
+			country_event = { id = zycie.2 }
+		}
+	}
+
+	focus = {
+		id = OZM_zy_s_straze
+		icon = GFX_pl2027_081_straz_1
+		x = 50
+		y = 4
+		cost = 5
+		prerequisite = { focus = OZM_zy_s_kartki focus = OZM_zy_s_rynek }
+		bypass = { has_country_flag = TFR_zy_pl_s_straze }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_straze
+			add_manpower = 2500
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = OZM_zy_s_wspolnota
+		icon = GFX_pl2027_081_wspolnota_1
+		x = 48
+		y = 5
+		cost = 5
+		prerequisite = { focus = OZM_zy_s_szkoly }
+		prerequisite = { focus = OZM_zy_s_czarny }
+		prerequisite = { focus = OZM_zy_s_straze }
+		bypass = { has_country_flag = TFR_zy_pl_s_wspolnota }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			set_country_flag = TFR_zy_pl_s_wspolnota
+			if = { limit = { has_idea = TFR_kartki } remove_ideas = TFR_kartki }
+			if = { limit = { has_idea = TFR_wolny_rynek } remove_ideas = TFR_wolny_rynek }
+			add_ideas = TFR_spoleczenstwo
+		}
+	}
+
+	focus = {
+		id = OZM_zy_k_admin
+		icon = GFX_pl2027_081_administracja_1
+		x = 54
+		y = 1
+		cost = 5
+		prerequisite = { focus = OZM_01_godzina_zero }
+		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
+		bypass = { has_country_flag = TFR_zy_k_k_admin }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_admin
+			add_political_power = 40
+			random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = OZM_zy_k_defilada
+		icon = GFX_pl2027_081_defilada_1_ozm
+		x = 53
+		y = 2
+		cost = 5
+		prerequisite = { focus = OZM_zy_k_admin }
+		bypass = { has_country_flag = TFR_zy_k_k_defilada }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_defilada
+			add_war_support = 0.05
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = OZM_zy_k_opor
+		icon = GFX_pl2027_081_bunt_3
+		x = 55
+		y = 2
+		cost = 5
+		prerequisite = { focus = OZM_zy_k_admin }
+		bypass = { has_country_flag = TFR_zy_k_k_opor }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_opor
+			country_event = { id = zycie.10 }
+		}
+	}
+
+	focus = {
+		id = OZM_zy_k_owoce
+		icon = GFX_pl2027_081_integracja_2_ozm
+		x = 54
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_zy_k_defilada }
+		prerequisite = { focus = OZM_zy_k_opor }
+		bypass = { has_country_flag = TFR_zy_k_k_owoce }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_k_k_owoce
+			add_timed_idea = { idea = TFR_owoce days = 365 }
+		}
+	}
+
+	focus = {
+		id = OZM_zy_p_straty
+		icon = GFX_pl2027_081_straty_0
+		x = 59
+		y = 1
+		cost = 5
+		prerequisite = { focus = OZM_01_godzina_zero }
+		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
+		bypass = { has_country_flag = TFR_zy_p_p_straty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_straty
+			country_event = { id = zycie.11 }
+			add_manpower = 3000
+		}
+	}
+
+	focus = {
+		id = OZM_zy_p_rzad
+		icon = GFX_pl2027_081_rada_0
+		x = 59
+		y = 2
+		cost = 5
+		prerequisite = { focus = OZM_zy_p_straty }
+		bypass = { has_country_flag = TFR_zy_p_p_rzad }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_rzad
+			add_stability = 0.05
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = OZM_zy_p_rewanz
+		icon = GFX_pl2027_081_gotowosc_1_ozm_k
+		x = 58
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_zy_p_rzad }
+		mutually_exclusive = { focus = OZM_zy_p_pojednanie }
+		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_rewanz
+			add_timed_idea = { idea = TFR_rewanz days = 730 }
+		}
+	}
+
+	focus = {
+		id = OZM_zy_p_pojednanie
+		icon = GFX_pl2027_081_pojednanie_3_ozm_k
+		x = 60
+		y = 3
+		cost = 5
+		prerequisite = { focus = OZM_zy_p_rzad }
+		mutually_exclusive = { focus = OZM_zy_p_rewanz }
+		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_pojednanie
+			add_timed_idea = { idea = TFR_pojednanie days = 730 }
+		}
+	}
+
+	focus = {
+		id = OZM_zy_p_odbudowa
+		icon = GFX_pl2027_081_wyposazenie_2
+		x = 59
+		y = 4
+		cost = 5
+		prerequisite = { focus = OZM_zy_p_rewanz focus = OZM_zy_p_pojednanie }
+		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			set_country_flag = TFR_zy_p_p_odbudowa
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
+			army_experience = 15
+			add_manpower = 5000
+		}
+	}
+}

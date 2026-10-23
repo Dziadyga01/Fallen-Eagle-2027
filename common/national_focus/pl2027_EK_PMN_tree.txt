@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zarzad
 		icon = GFX_pl2027_081_port_0
-		x = 22
+		x = 24
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -747,7 +747,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 34
+		x = 36
 		y = 2
 		cost = 1
 		prerequisite = { focus = EK_PMN_zarzad }
@@ -763,7 +763,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 33
+		x = 35
 		y = 3
 		cost = 5
 		prerequisite = { focus = EK_PMN_zy_s_ulica }
@@ -779,7 +779,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 35
+		x = 37
 		y = 3
 		cost = 1
 		prerequisite = { focus = EK_PMN_zy_s_ulica }
@@ -901,7 +901,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 39
+		x = 40
 		y = 2
 		cost = 6
 		prerequisite = { focus = EK_PMN_zarzad }
@@ -919,7 +919,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_pmn
-		x = 38
+		x = 39
 		y = 3
 		cost = 5
 		prerequisite = { focus = EK_PMN_zy_k_admin }
@@ -936,7 +936,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 40
+		x = 41
 		y = 3
 		cost = 1
 		prerequisite = { focus = EK_PMN_zy_k_admin }
@@ -952,7 +952,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_pmn
-		x = 39
+		x = 40
 		y = 4
 		cost = 5
 		prerequisite = { focus = EK_PMN_zy_k_defilada }
@@ -969,7 +969,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 42
+		x = 44
 		y = 2
 		cost = 5
 		prerequisite = { focus = EK_PMN_zarzad }
@@ -987,7 +987,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 42
+		x = 44
 		y = 3
 		cost = 5
 		prerequisite = { focus = EK_PMN_zy_p_straty }
@@ -1004,7 +1004,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_pmn_k
-		x = 41
+		x = 43
 		y = 4
 		cost = 5
 		prerequisite = { focus = EK_PMN_zy_p_rzad }
@@ -1021,7 +1021,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_pmn_k
-		x = 43
+		x = 45
 		y = 4
 		cost = 5
 		prerequisite = { focus = EK_PMN_zy_p_rzad }
@@ -1038,7 +1038,7 @@ focus_tree = {
 	focus = {
 		id = EK_PMN_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 42
+		x = 44
 		y = 5
 		cost = 6
 		prerequisite = { focus = EK_PMN_zy_p_rewanz focus = EK_PMN_zy_p_pojednanie }

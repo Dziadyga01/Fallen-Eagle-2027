@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_start
 		icon = GFX_pl2027_081_mapa_0_che
-		x = 24
+		x = 25
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_porzadek
 		icon = GFX_pl2027_081_porzadek_0
-		x = 30
+		x = 31
 		y = 1
 		cost = 5
 		prerequisite = { focus = RCHE_start }
@@ -43,7 +43,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_zaopatrzenie
 		icon = GFX_pl2027_081_zywnosc_0
-		x = 32
+		x = 33
 		y = 1
 		cost = 5
 		prerequisite = { focus = RCHE_start }
@@ -57,7 +57,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_wladza
 		icon = GFX_pl2027_081_rada_0
-		x = 30
+		x = 31
 		y = 2
 		cost = 1
 		prerequisite = { focus = RCHE_porzadek }
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_wybor
 		icon = GFX_pl2027_081_wiara_0
-		x = 21
+		x = 22
 		y = 3
 		cost = 5
 		prerequisite = { focus = RCHE_wladza }
@@ -88,7 +88,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_a1
 		icon = GFX_pl2027_081_wybory_0_che_k
-		x = 17
+		x = 18
 		y = 4
 		cost = 5
 		prerequisite = { focus = RCHE_wybor }
@@ -103,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_a2
 		icon = GFX_pl2027_081_sad_0
-		x = 16
+		x = 17
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHE_a1 }
@@ -117,7 +117,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_a3
 		icon = GFX_pl2027_081_wybory_1
-		x = 18
+		x = 19
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHE_a1 }
@@ -130,7 +130,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_a4
 		icon = GFX_pl2027_081_wybory_2
-		x = 17
+		x = 18
 		y = 6
 		cost = 10
 		prerequisite = { focus = RCHE_a2 }
@@ -149,7 +149,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_b1
 		icon = GFX_pl2027_081_wiara_1_che_k
-		x = 21
+		x = 22
 		y = 4
 		cost = 5
 		prerequisite = { focus = RCHE_wybor }
@@ -164,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_b2
 		icon = GFX_pl2027_081_wybory_3
-		x = 20
+		x = 21
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHE_b1 }
@@ -178,7 +178,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_b3
 		icon = GFX_pl2027_081_rada_1
-		x = 22
+		x = 23
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHE_b1 }
@@ -191,7 +191,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_b4
 		icon = GFX_pl2027_081_wiara_2
-		x = 21
+		x = 22
 		y = 6
 		cost = 10
 		prerequisite = { focus = RCHE_b2 }
@@ -210,7 +210,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_c1
 		icon = GFX_pl2027_081_wybory_0_che_k
-		x = 25
+		x = 26
 		y = 4
 		cost = 5
 		prerequisite = { focus = RCHE_wybor }
@@ -225,7 +225,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_c2
 		icon = GFX_pl2027_081_wybory_1
-		x = 24
+		x = 25
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHE_c1 }
@@ -239,7 +239,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_c3
 		icon = GFX_pl2027_081_handel_0
-		x = 26
+		x = 27
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHE_c1 }
@@ -252,7 +252,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_c4
 		icon = GFX_pl2027_081_wybory_2
-		x = 25
+		x = 26
 		y = 6
 		cost = 10
 		prerequisite = { focus = RCHE_c2 }
@@ -271,7 +271,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_e1
 		icon = GFX_pl2027_081_energia_0
-		x = 30
+		x = 31
 		y = 3
 		cost = 6
 		prerequisite = { focus = RCHE_wladza }
@@ -284,7 +284,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_e2
 		icon = GFX_pl2027_081_przemysl_0
-		x = 29
+		x = 30
 		y = 4
 		cost = 7
 		prerequisite = { focus = RCHE_e1 }
@@ -298,7 +298,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_e3
 		icon = GFX_pl2027_081_ludzie_0
-		x = 31
+		x = 32
 		y = 4
 		cost = 1
 		prerequisite = { focus = RCHE_e1 }
@@ -313,7 +313,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_e4
 		icon = GFX_pl2027_081_most_0_che_k
-		x = 28
+		x = 29
 		y = 5
 		cost = 7
 		prerequisite = { focus = RCHE_e2 }
@@ -331,7 +331,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_e5
 		icon = GFX_pl2027_081_przemysl_1_che_k
-		x = 30
+		x = 31
 		y = 5
 		cost = 6
 		prerequisite = { focus = RCHE_e2 }
@@ -347,7 +347,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_e6
 		icon = GFX_pl2027_081_rzeka_0
-		x = 29
+		x = 30
 		y = 6
 		cost = 7
 		prerequisite = { focus = RCHE_e4 focus = RCHE_e5 }
@@ -362,7 +362,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_m1
 		icon = GFX_pl2027_081_porzadek_1
-		x = 36
+		x = 37
 		y = 3
 		cost = 7
 		prerequisite = { focus = RCHE_wladza }
@@ -377,7 +377,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_m2
 		icon = GFX_pl2027_081_pobor_1_che_k
-		x = 35
+		x = 36
 		y = 4
 		cost = 7
 		prerequisite = { focus = RCHE_m1 }
@@ -395,7 +395,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_m3
 		icon = GFX_pl2027_081_wyposazenie_2_che_k
-		x = 37
+		x = 38
 		y = 4
 		cost = 6
 		prerequisite = { focus = RCHE_m1 }
@@ -412,7 +412,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_m4
 		icon = GFX_pl2027_081_artyleria_0_che
-		x = 35
+		x = 36
 		y = 5
 		cost = 7
 		prerequisite = { focus = RCHE_m2 focus = RCHE_m3 }
@@ -427,7 +427,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_m5
 		icon = GFX_pl2027_081_porzadek_2
-		x = 34
+		x = 35
 		y = 6
 		cost = 5
 		prerequisite = { focus = RCHE_m4 }
@@ -441,7 +441,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_d0
 		icon = GFX_pl2027_081_administracja_0
-		x = 40
+		x = 41
 		y = 3
 		cost = 5
 		prerequisite = { focus = RCHE_wladza }
@@ -454,7 +454,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_s1
 		icon = GFX_pl2027_081_twierdza_0_che_k
-		x = 39
+		x = 40
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHE_d0 }
@@ -471,7 +471,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_s2
 		icon = GFX_pl2027_081_sad_1
-		x = 39
+		x = 40
 		y = 6
 		cost = 5
 		prerequisite = { focus = RCHE_s1 }
@@ -485,7 +485,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_pomoc
 		icon = GFX_pl2027_081_pomoc_2_che_k
-		x = 39
+		x = 40
 		y = 4
 		cost = 6
 		prerequisite = { focus = RCHE_d0 }
@@ -502,7 +502,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_samodzielnosc
 		icon = GFX_pl2027_081_orzel_0_che_k
-		x = 41
+		x = 42
 		y = 4
 		cost = 5
 		prerequisite = { focus = RCHE_d0 }
@@ -517,7 +517,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_s3
 		icon = GFX_pl2027_081_mapa_1_che
-		x = 39
+		x = 40
 		y = 7
 		cost = 1
 		prerequisite = { focus = RCHE_s2 }
@@ -532,7 +532,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_w1
 		icon = GFX_pl2027_081_wojna_0_che_k
-		x = 32
+		x = 33
 		y = 6
 		cost = 8
 		prerequisite = { focus = RCHE_d0 }
@@ -551,7 +551,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_w2
 		icon = GFX_pl2027_081_wojna_1_che
-		x = 32
+		x = 33
 		y = 7
 		cost = 8
 		prerequisite = { focus = RCHE_w1 }
@@ -567,7 +567,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_w3
 		icon = GFX_pl2027_081_wojna_2_che
-		x = 32
+		x = 33
 		y = 8
 		cost = 8
 		prerequisite = { focus = RCHE_w2 }
@@ -583,7 +583,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_region
 		icon = GFX_pl2027_081_mapa_2_che
-		x = 32
+		x = 33
 		y = 9
 		cost = 7
 		prerequisite = { focus = RCHE_s3 focus = RCHE_w3 }
@@ -602,7 +602,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_centralizacja
 		icon = GFX_pl2027_081_centralizacja_0_che_k
-		x = 31
+		x = 32
 		y = 10
 		cost = 5
 		prerequisite = { focus = RCHE_region }
@@ -617,7 +617,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_porozumienie
 		icon = GFX_pl2027_081_administracja_0_che_k
-		x = 33
+		x = 34
 		y = 10
 		cost = 5
 		prerequisite = { focus = RCHE_region }
@@ -631,7 +631,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_pl1
 		icon = GFX_pl2027_081_korona_3_che
-		x = 31
+		x = 32
 		y = 11
 		cost = 5
 		prerequisite = { focus = RCHE_region }
@@ -646,7 +646,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_pl2
 		icon = GFX_pl2027_081_ofensywa_2_che
-		x = 31
+		x = 32
 		y = 12
 		cost = 8
 		prerequisite = { focus = RCHE_pl1 }
@@ -662,7 +662,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_pl3
 		icon = GFX_pl2027_081_polska_2_che_f
-		x = 31
+		x = 32
 		y = 13
 		cost = 10
 		prerequisite = { focus = RCHE_pl2 }
@@ -682,7 +682,7 @@ focus_tree = {
 	focus = {
 		id = RCHE_mury
 		icon = GFX_pl2027_081_twierdza_1_che
-		x = 36
+		x = 37
 		y = 6
 		cost = 6
 		prerequisite = { focus = RCHE_m4 }
@@ -865,7 +865,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_che
-		x = 0
+		x = 2
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_CHE_mil_rezerwisci }
@@ -885,7 +885,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_che
-		x = 6
+		x = 7
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_CHE_mil_kadra }
@@ -905,7 +905,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 13
+		x = 14
 		y = 1
 		cost = 1
 		prerequisite = { focus = RCHE_start }
@@ -921,7 +921,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 11
+		x = 13
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_s_ulica }
@@ -937,7 +937,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 14
+		x = 15
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_CHE_zy_s_ulica }
@@ -953,7 +953,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_che_k
-		x = 13
+		x = 12
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_s_media }
@@ -971,7 +971,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_che_k
-		x = 15
+		x = 14
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_s_media }
@@ -989,7 +989,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 11
+		x = 12
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_s_kartki focus = REG_CHE_zy_s_rynek }
@@ -1006,7 +1006,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 13
+		x = 14
 		y = 4
 		cost = 1
 		prerequisite = { focus = REG_CHE_zy_s_kartki focus = REG_CHE_zy_s_rynek }
@@ -1022,7 +1022,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 15
+		x = 16
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_s_kartki focus = REG_CHE_zy_s_rynek }
@@ -1039,7 +1039,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 13
+		x = 14
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_CHE_zy_s_szkoly }
@@ -1059,7 +1059,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 37
+		x = 35
 		y = 1
 		cost = 6
 		prerequisite = { focus = RCHE_start }
@@ -1077,7 +1077,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_che
-		x = 36
+		x = 34
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_k_admin }
@@ -1094,7 +1094,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 38
+		x = 36
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_CHE_zy_k_admin }
@@ -1110,7 +1110,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_che
-		x = 38
+		x = 35
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_k_defilada }
@@ -1127,7 +1127,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 44
+		x = 45
 		y = 1
 		cost = 5
 		prerequisite = { focus = RCHE_start }
@@ -1145,7 +1145,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 44
+		x = 45
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_p_straty }
@@ -1162,7 +1162,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_che_k
-		x = 43
+		x = 44
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_p_rzad }
@@ -1179,7 +1179,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_che_k
-		x = 45
+		x = 46
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_p_rzad }
@@ -1196,7 +1196,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 44
+		x = 45
 		y = 4
 		cost = 6
 		prerequisite = { focus = REG_CHE_zy_p_rewanz focus = REG_CHE_zy_p_pojednanie }
@@ -1215,7 +1215,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_che
-		x = 32
+		x = 33
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHE_wybor }

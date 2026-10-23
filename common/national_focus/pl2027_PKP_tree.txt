@@ -996,7 +996,7 @@ focus_tree = {
 	focus = {
 		id = PKP_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_koc
-		x = 8
+		x = 10
 		y = 4
 		cost = 5
 		prerequisite = { focus = PKP_mil_rezerwisci }
@@ -1016,7 +1016,7 @@ focus_tree = {
 	focus = {
 		id = PKP_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_koc
-		x = 14
+		x = 15
 		y = 5
 		cost = 7
 		prerequisite = { focus = PKP_mil_kadra }
@@ -1402,7 +1402,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 54
+		x = 53
 		y = 1
 		cost = 5
 		prerequisite = { focus = PKP_ostatni_rozklad }
@@ -1420,7 +1420,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 54
+		x = 53
 		y = 2
 		cost = 5
 		prerequisite = { focus = PKP_zy_p_straty }
@@ -1437,7 +1437,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_koc_k
-		x = 53
+		x = 52
 		y = 3
 		cost = 5
 		prerequisite = { focus = PKP_zy_p_rzad }
@@ -1454,7 +1454,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_koc_k
-		x = 55
+		x = 54
 		y = 3
 		cost = 5
 		prerequisite = { focus = PKP_zy_p_rzad }
@@ -1471,7 +1471,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 54
+		x = 53
 		y = 4
 		cost = 6
 		prerequisite = { focus = PKP_zy_p_rewanz focus = PKP_zy_p_pojednanie }

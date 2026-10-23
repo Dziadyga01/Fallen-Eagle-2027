@@ -874,7 +874,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szo_zy_r_tv
 		icon = GFX_pl2027_081_telewizja_0
-		x = 33
+		x = 34
 		y = 1
 		cost = 3
 		prerequisite = { focus = ROS_szo_najwyzszy }
@@ -890,7 +890,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szo_zy_r_listy
 		icon = GFX_pl2027_081_dyplomacja_1
-		x = 32
+		x = 33
 		y = 2
 		cost = 1
 		prerequisite = { focus = ROS_szo_zy_r_tv }
@@ -906,7 +906,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szo_zy_r_oligarchowie
 		icon = GFX_pl2027_081_oligarchia_0
-		x = 34
+		x = 35
 		y = 2
 		cost = 1
 		prerequisite = { focus = ROS_szo_zy_r_tv }
@@ -922,7 +922,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szo_zy_r_rubel
 		icon = GFX_pl2027_081_kryzys_gosp_3
-		x = 33
+		x = 32
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_szo_zy_r_listy }
@@ -940,7 +940,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szo_zy_r_druk
 		icon = GFX_pl2027_081_kryzys_gosp_0
-		x = 35
+		x = 34
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_szo_zy_r_listy }
@@ -958,7 +958,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szo_zy_r_cenzura
 		icon = GFX_pl2027_081_cenzura_2
-		x = 32
+		x = 31
 		y = 4
 		cost = 2
 		prerequisite = { focus = ROS_szo_zy_r_rubel focus = ROS_szo_zy_r_druk }
@@ -975,7 +975,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szo_zy_r_regiony
 		icon = GFX_pl2027_081_mapa_0
-		x = 34
+		x = 33
 		y = 4
 		cost = 3
 		prerequisite = { focus = ROS_szo_zy_r_rubel focus = ROS_szo_zy_r_druk }
@@ -992,7 +992,7 @@ focus_tree = {
 	focus = {
 		id = ROS_szo_zy_r_jednosc
 		icon = GFX_pl2027_081_wojna_1
-		x = 33
+		x = 32
 		y = 5
 		cost = 6
 		prerequisite = { focus = ROS_szo_zy_r_cenzura }

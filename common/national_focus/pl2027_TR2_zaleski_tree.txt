@@ -26,7 +26,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_gospodarz
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 24
+		x = 25
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
@@ -39,7 +39,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_centralizacja
 		icon = GFX_pl2027_081_centralizacja_0_slk
-		x = 27
+		x = 28
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
@@ -53,7 +53,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_budzet
 		icon = GFX_pl2027_081_pieniadze_1
-		x = 23
+		x = 24
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_zal_gospodarz }
@@ -67,7 +67,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_spolki
 		icon = GFX_pl2027_081_pieniadze_2
-		x = 25
+		x = 26
 		y = 2
 		cost = 6
 		prerequisite = { focus = TR2_zal_gospodarz }
@@ -81,7 +81,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_porzadek
 		icon = GFX_pl2027_081_porzadek_1
-		x = 27
+		x = 28
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_zal_centralizacja }
@@ -95,7 +95,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_wielkie_inwestycje
 		icon = GFX_pl2027_081_budowa_0
-		x = 25
+		x = 26
 		y = 3
 		cost = 6
 		prerequisite = { focus = TR2_zal_budzet focus = TR2_zal_spolki focus = TR2_zal_porzadek }
@@ -109,7 +109,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_arterie
 		icon = GFX_TRN_pl2027_autostrada
-		x = 24
+		x = 25
 		y = 4
 		cost = 7
 		prerequisite = { focus = TR2_zal_wielkie_inwestycje }
@@ -122,7 +122,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_nowy_most
 		icon = GFX_pl2027_081_most_0
-		x = 27
+		x = 28
 		y = 4
 		cost = 7
 		prerequisite = { focus = TR2_zal_wielkie_inwestycje }
@@ -137,7 +137,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_przemysl
 		icon = GFX_TRN_pl2027_przemysl20
-		x = 23
+		x = 24
 		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_zal_arterie }
@@ -151,7 +151,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_lotnisko
 		icon = GFX_TRN_pl2027_lotnisko
-		x = 25
+		x = 26
 		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_zal_arterie }
@@ -166,7 +166,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_inwestycje_idea
 		icon = GFX_pl2027_081_budowa_1
-		x = 27
+		x = 28
 		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_zal_nowy_most }
@@ -180,7 +180,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_sasiedzi
 		icon = GFX_pl2027_081_droga_0
-		x = 25
+		x = 26
 		y = 6
 		cost = 5
 		prerequisite = { focus = TR2_zal_przemysl focus = TR2_zal_lotnisko focus = TR2_zal_inwestycje_idea }
@@ -193,7 +193,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_opieka
 		icon = GFX_pl2027_081_administracja_0
-		x = 24
+		x = 25
 		y = 7
 		cost = 1
 		prerequisite = { focus = TR2_zal_sasiedzi }
@@ -207,7 +207,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_wcielenie
 		icon = GFX_pl2027_081_integracja_0_slk
-		x = 27
+		x = 28
 		y = 7
 		cost = 10
 		prerequisite = { focus = TR2_zal_sasiedzi }
@@ -221,7 +221,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_metropolia
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 23
+		x = 24
 		y = 8
 		cost = 5
 		prerequisite = { focus = TR2_zal_opieka }
@@ -235,7 +235,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_referenda
 		icon = GFX_pl2027_081_wybory_0
-		x = 25
+		x = 26
 		y = 8
 		cost = 5
 		prerequisite = { focus = TR2_zal_opieka }
@@ -249,7 +249,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_metropolia_t
 		icon = GFX_pl2027_081_mapa_4_slk
-		x = 27
+		x = 28
 		y = 8
 		cost = 1
 		prerequisite = { focus = TR2_zal_wcielenie }
@@ -265,7 +265,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_straz
 		icon = GFX_pl2027_081_porzadek_0
-		x = 25
+		x = 26
 		y = 9
 		cost = 7
 		prerequisite = { focus = TR2_zal_metropolia focus = TR2_zal_referenda focus = TR2_zal_metropolia_t }
@@ -279,7 +279,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_garnizon
 		icon = GFX_TRN_pl2027_garnizon
-		x = 24
+		x = 25
 		y = 10
 		cost = 6
 		prerequisite = { focus = TR2_zal_straz }
@@ -293,7 +293,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_artyleria
 		icon = GFX_pl2027_081_artyleria_0_slk
-		x = 27
+		x = 28
 		y = 10
 		cost = 7
 		prerequisite = { focus = TR2_zal_straz }
@@ -308,7 +308,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_roszczenia
 		icon = GFX_pl2027_081_granica_0_slk
-		x = 23
+		x = 24
 		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_zal_garnizon }
@@ -324,7 +324,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_solec
 		icon = GFX_pl2027_081_ofensywa_0_slk
-		x = 25
+		x = 26
 		y = 11
 		cost = 8
 		prerequisite = { focus = TR2_zal_garnizon }
@@ -344,7 +344,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_przemysl_obr
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 27
+		x = 28
 		y = 11
 		cost = 6
 		prerequisite = { focus = TR2_zal_artyleria }
@@ -357,7 +357,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_porzadek_rozwoj
 		icon = GFX_pl2027_081_porzadek_2
-		x = 25
+		x = 26
 		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_zal_roszczenia focus = TR2_zal_solec focus = TR2_zal_przemysl_obr }
@@ -371,7 +371,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_kujawy
 		icon = GFX_pl2027_081_ofensywa_1_slk
-		x = 24
+		x = 25
 		y = 13
 		cost = 8
 		prerequisite = { focus = TR2_zal_porzadek_rozwoj }
@@ -390,7 +390,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_grudziadz
 		icon = GFX_pl2027_081_pojednanie_0
-		x = 27
+		x = 28
 		y = 13
 		cost = 1
 		prerequisite = { focus = TR2_zal_porzadek_rozwoj }
@@ -404,7 +404,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_integracja
 		icon = GFX_pl2027_081_integracja_1_slk_f
-		x = 23
+		x = 24
 		y = 14
 		cost = 5
 		prerequisite = { focus = TR2_zal_kujawy }
@@ -418,7 +418,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_region
 		icon = GFX_pl2027_081_mapa_1_slk_f
-		x = 25
+		x = 26
 		y = 14
 		cost = 5
 		prerequisite = { focus = TR2_zal_kujawy }
@@ -432,7 +432,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_final
 		icon = GFX_pl2027_081_korona_0_slk_f
-		x = 27
+		x = 28
 		y = 14
 		cost = 10
 		prerequisite = { focus = TR2_zal_grudziadz }
@@ -447,7 +447,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_plan
 		icon = GFX_pl2027_081_pieniadze_3
-		x = 31
+		x = 32
 		y = 1
 		cost = 7
 		prerequisite = { focus = TR2_zal_stare_porzadki }
@@ -462,7 +462,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_rubinkowo
 		icon = GFX_pl2027_081_osiedle_0
-		x = 29
+		x = 30
 		y = 2
 		cost = 6
 		prerequisite = { focus = TR2_zal_r_plan }
@@ -476,7 +476,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_jar
 		icon = GFX_pl2027_081_osiedle_1
-		x = 33
+		x = 34
 		y = 2
 		cost = 6
 		prerequisite = { focus = TR2_zal_r_plan }
@@ -489,7 +489,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_bielany
 		icon = GFX_TRN_pl2027_szkoly
-		x = 31
+		x = 32
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_zal_r_plan }
@@ -502,7 +502,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_osiedla
 		icon = GFX_pl2027_081_osiedle_2
-		x = 33
+		x = 34
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_zal_r_jar }
@@ -516,7 +516,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_komunikacja
 		icon = GFX_pl2027_081_tramwaj_1
-		x = 32
+		x = 33
 		y = 4
 		cost = 7
 		prerequisite = { focus = TR2_zal_r_bielany }
@@ -531,7 +531,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_infrastruktura
 		icon = GFX_TRN_pl2027_autostrada
-		x = 31
+		x = 32
 		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_zal_r_komunikacja }
@@ -544,7 +544,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_toron2030
 		icon = GFX_pl2027_081_korona_1_slk
-		x = 33
+		x = 34
 		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_zal_r_komunikacja }
@@ -672,7 +672,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_sasiedzi
 		icon = GFX_pl2027_081_administracja_1
-		x = 38
+		x = 39
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
@@ -686,7 +686,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_chelmza
 		icon = GFX_pl2027_081_sojusz_1_slk
-		x = 36
+		x = 37
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_zal_d_sasiedzi }
@@ -701,7 +701,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_grudziadz
 		icon = GFX_pl2027_081_rzeka_0
-		x = 38
+		x = 39
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_zal_d_sasiedzi }
@@ -715,7 +715,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_metropolia
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 36
+		x = 37
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_zal_d_chelmza }
@@ -729,7 +729,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_kampania
 		icon = GFX_pl2027_081_budowa_2
-		x = 40
+		x = 41
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_zal_d_sasiedzi }
@@ -742,7 +742,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_referenda
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 36
+		x = 37
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_zal_d_metropolia }
@@ -757,7 +757,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_kujawy
 		icon = GFX_pl2027_081_mapa_4_slk
-		x = 35
+		x = 36
 		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_zal_d_referenda }
@@ -771,7 +771,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_metropolia_f
 		icon = GFX_pl2027_081_sojusz_3_slk
-		x = 37
+		x = 38
 		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_zal_d_referenda }
@@ -904,7 +904,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_start
 		icon = GFX_pl2027_081_sztab_1_slk
-		x = 17
+		x = 18
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
@@ -921,7 +921,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_slk
-		x = 13
+		x = 14
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_start }
@@ -937,7 +937,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_slk
-		x = 17
+		x = 18
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_start }
@@ -953,7 +953,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 21
+		x = 22
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_start }
@@ -969,7 +969,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_slk
-		x = 12
+		x = 13
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_rejestr }
@@ -985,7 +985,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_slk
-		x = 16
+		x = 17
 		y = 3
 		cost = 7
 		prerequisite = { focus = TR2_zaleski_mil_ochotnicy }
@@ -1003,7 +1003,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 20
+		x = 21
 		y = 3
 		cost = 6
 		prerequisite = { focus = TR2_zaleski_mil_fabryka }
@@ -1021,7 +1021,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_slk
-		x = 14
+		x = 15
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_rejestr }
@@ -1037,7 +1037,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_slk
-		x = 18
+		x = 19
 		y = 3
 		cost = 7
 		prerequisite = { focus = TR2_zaleski_mil_ochotnicy }
@@ -1056,7 +1056,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 22
+		x = 23
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_fabryka }
@@ -1074,7 +1074,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_slk
-		x = 14
+		x = 13
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_rezerwisci }
@@ -1114,7 +1114,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 43
+		x = 44
 		y = 1
 		cost = 1
 		prerequisite = { focus = TR2_zal_stare_porzadki }
@@ -1130,7 +1130,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 42
+		x = 43
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_s_ulica }
@@ -1146,7 +1146,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 44
+		x = 45
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_zaleski_zy_s_ulica }
@@ -1162,7 +1162,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_slk_k
-		x = 41
+		x = 42
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_s_media }
@@ -1180,7 +1180,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_slk_k
-		x = 43
+		x = 44
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_s_media }
@@ -1198,7 +1198,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 41
+		x = 40
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_s_kartki focus = TR2_zaleski_zy_s_rynek }
@@ -1215,7 +1215,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 43
+		x = 42
 		y = 4
 		cost = 1
 		prerequisite = { focus = TR2_zaleski_zy_s_kartki focus = TR2_zaleski_zy_s_rynek }
@@ -1231,7 +1231,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 45
+		x = 44
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_s_kartki focus = TR2_zaleski_zy_s_rynek }
@@ -1248,7 +1248,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 43
+		x = 42
 		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_zaleski_zy_s_szkoly }
@@ -1268,7 +1268,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 47
+		x = 48
 		y = 1
 		cost = 6
 		prerequisite = { focus = TR2_zal_stare_porzadki }
@@ -1286,7 +1286,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_slk
-		x = 46
+		x = 47
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_k_admin }
@@ -1303,7 +1303,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 48
+		x = 49
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_zaleski_zy_k_admin }
@@ -1319,7 +1319,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_slk
-		x = 47
+		x = 48
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_k_defilada }
@@ -1336,7 +1336,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 50
+		x = 51
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
@@ -1354,7 +1354,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 50
+		x = 51
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_p_straty }
@@ -1371,7 +1371,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_slk_k
-		x = 49
+		x = 50
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_p_rzad }
@@ -1388,7 +1388,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_slk_k
-		x = 51
+		x = 52
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_p_rzad }
@@ -1405,7 +1405,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 50
+		x = 51
 		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_zaleski_zy_p_rewanz focus = TR2_zaleski_zy_p_pojednanie }
@@ -1424,7 +1424,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_slk
-		x = 34
+		x = 35
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_zal_d_metropolia }

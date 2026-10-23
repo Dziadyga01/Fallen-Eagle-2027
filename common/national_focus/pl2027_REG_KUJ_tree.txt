@@ -1074,7 +1074,7 @@ focus_tree = {
 	focus = {
 		id = REG_KUJ_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 38
+		x = 37
 		y = 1
 		cost = 6
 		prerequisite = { focus = RKUJ_start }
@@ -1092,7 +1092,7 @@ focus_tree = {
 	focus = {
 		id = REG_KUJ_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_kuj
-		x = 37
+		x = 36
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_KUJ_zy_k_admin }
@@ -1109,7 +1109,7 @@ focus_tree = {
 	focus = {
 		id = REG_KUJ_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 39
+		x = 38
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_KUJ_zy_k_admin }
@@ -1125,7 +1125,7 @@ focus_tree = {
 	focus = {
 		id = REG_KUJ_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_kuj
-		x = 38
+		x = 37
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_KUJ_zy_k_defilada }
@@ -1142,7 +1142,7 @@ focus_tree = {
 	focus = {
 		id = REG_KUJ_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 48
+		x = 47
 		y = 1
 		cost = 5
 		prerequisite = { focus = RKUJ_start }
@@ -1160,7 +1160,7 @@ focus_tree = {
 	focus = {
 		id = REG_KUJ_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 48
+		x = 47
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_KUJ_zy_p_straty }
@@ -1177,7 +1177,7 @@ focus_tree = {
 	focus = {
 		id = REG_KUJ_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_kuj_k
-		x = 47
+		x = 46
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_KUJ_zy_p_rzad }
@@ -1194,7 +1194,7 @@ focus_tree = {
 	focus = {
 		id = REG_KUJ_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_kuj_k
-		x = 49
+		x = 48
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_KUJ_zy_p_rzad }
@@ -1211,7 +1211,7 @@ focus_tree = {
 	focus = {
 		id = REG_KUJ_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 48
+		x = 47
 		y = 4
 		cost = 6
 		prerequisite = { focus = REG_KUJ_zy_p_rewanz focus = REG_KUJ_zy_p_pojednanie }

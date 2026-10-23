@@ -773,7 +773,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_r_tv
 		icon = GFX_pl2027_081_telewizja_0
-		x = 26
+		x = 25
 		y = 1
 		cost = 3
 		prerequisite = { focus = ROS_mie_f_start }
@@ -789,7 +789,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_r_listy
 		icon = GFX_pl2027_081_dyplomacja_1
-		x = 25
+		x = 24
 		y = 2
 		cost = 1
 		prerequisite = { focus = ROS_mie_future_zy_r_tv }
@@ -805,7 +805,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_r_oligarchowie
 		icon = GFX_pl2027_081_oligarchia_0
-		x = 27
+		x = 26
 		y = 2
 		cost = 1
 		prerequisite = { focus = ROS_mie_future_zy_r_tv }
@@ -821,7 +821,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_r_rubel
 		icon = GFX_pl2027_081_kryzys_gosp_3
-		x = 24
+		x = 25
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_mie_future_zy_r_listy }
@@ -839,7 +839,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_r_druk
 		icon = GFX_pl2027_081_kryzys_gosp_0
-		x = 26
+		x = 27
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_mie_future_zy_r_listy }
@@ -857,7 +857,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_r_cenzura
 		icon = GFX_pl2027_081_cenzura_2
-		x = 25
+		x = 24
 		y = 4
 		cost = 2
 		prerequisite = { focus = ROS_mie_future_zy_r_rubel focus = ROS_mie_future_zy_r_druk }
@@ -874,7 +874,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_r_regiony
 		icon = GFX_pl2027_081_mapa_0
-		x = 27
+		x = 26
 		y = 4
 		cost = 3
 		prerequisite = { focus = ROS_mie_future_zy_r_rubel focus = ROS_mie_future_zy_r_druk }
@@ -891,7 +891,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_r_jednosc
 		icon = GFX_pl2027_081_wojna_1
-		x = 26
+		x = 25
 		y = 5
 		cost = 6
 		prerequisite = { focus = ROS_mie_future_zy_r_cenzura }
@@ -909,7 +909,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 30
+		x = 29
 		y = 1
 		cost = 5
 		prerequisite = { focus = ROS_mie_f_start }
@@ -927,7 +927,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1
-		x = 29
+		x = 28
 		y = 2
 		cost = 2
 		prerequisite = { focus = ROS_mie_future_zy_k_admin }
@@ -944,7 +944,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 31
+		x = 30
 		y = 2
 		cost = 1
 		prerequisite = { focus = ROS_mie_future_zy_k_admin }
@@ -960,7 +960,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_future_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2
-		x = 30
+		x = 29
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_mie_future_zy_k_defilada }

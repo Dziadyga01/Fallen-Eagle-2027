@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = RCHJ_start
 		icon = GFX_pl2027_081_mapa_0_chj
-		x = 25
+		x = 24
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -1128,7 +1128,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHJ_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 45
+		x = 44
 		y = 1
 		cost = 5
 		prerequisite = { focus = RCHJ_start }
@@ -1146,7 +1146,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHJ_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 45
+		x = 44
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_CHJ_zy_p_straty }
@@ -1163,7 +1163,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHJ_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_chj_k
-		x = 44
+		x = 43
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHJ_zy_p_rzad }
@@ -1180,7 +1180,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHJ_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_chj_k
-		x = 46
+		x = 45
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHJ_zy_p_rzad }
@@ -1197,7 +1197,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHJ_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 45
+		x = 44
 		y = 4
 		cost = 6
 		prerequisite = { focus = REG_CHJ_zy_p_rewanz focus = REG_CHJ_zy_p_pojednanie }

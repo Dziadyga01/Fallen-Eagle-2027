@@ -1,0 +1,3 @@
+OZM_przelicz = {
+	clamp_variable = { var = OZM_legit min = 0 max = 100 } clamp_variable = { var = OZM_zasiegi min = 0 max = 100 } clamp_variable = { var = OZM_sygnal min = 0 max = 100 } clamp_variable = { var = OZM_dostawy min = 0 max = 100 } set_variable = { OZM_mod_stab = OZM_legit } subtract_from_variable = { OZM_mod_stab = 50 } divide_variable = { OZM_mod_stab = 500 } set_variable = { OZM_mod_pp = OZM_zasiegi } divide_variable = { OZM_mod_pp = 500 } set_variable = { OZM_mod_cg = 50 } subtract_from_variable = { OZM_mod_cg = OZM_dostawy } divide_variable = { OZM_mod_cg = 1000 } clamp_variable = { var = OZM_mod_cg min = -0.03 max = 0.05 }
+}

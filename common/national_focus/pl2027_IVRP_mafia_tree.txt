@@ -967,7 +967,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 23
+		x = 22
 		y = 1
 		cost = 5
 		prerequisite = { focus = IVM_w0 }
@@ -985,7 +985,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 23
+		x = 22
 		y = 2
 		cost = 5
 		prerequisite = { focus = IVRP_mafia_zy_p_straty }
@@ -1002,7 +1002,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_tec_k
-		x = 22
+		x = 21
 		y = 3
 		cost = 5
 		prerequisite = { focus = IVRP_mafia_zy_p_rzad }
@@ -1019,7 +1019,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_tec_k
-		x = 24
+		x = 23
 		y = 3
 		cost = 5
 		prerequisite = { focus = IVRP_mafia_zy_p_rzad }
@@ -1036,7 +1036,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 23
+		x = 22
 		y = 4
 		cost = 6
 		prerequisite = { focus = IVRP_mafia_zy_p_rewanz focus = IVRP_mafia_zy_p_pojednanie }

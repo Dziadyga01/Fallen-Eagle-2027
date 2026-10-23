@@ -919,7 +919,7 @@ focus_tree = {
 	focus = {
 		id = REG_PTK_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 14
+		x = 12
 		y = 1
 		cost = 1
 		prerequisite = { focus = RPTK_start }
@@ -935,7 +935,7 @@ focus_tree = {
 	focus = {
 		id = REG_PTK_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 13
+		x = 11
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_PTK_zy_s_ulica }
@@ -951,7 +951,7 @@ focus_tree = {
 	focus = {
 		id = REG_PTK_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 15
+		x = 13
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_PTK_zy_s_ulica }

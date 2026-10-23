@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_wolne
 		icon = GFX_pl2027_tfr_portret_wmg_leader
-		x = 25
+		x = 26
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -989,7 +989,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_wmg
-		x = 6
+		x = 8
 		y = 4
 		cost = 5
 		prerequisite = { focus = TRM_WMG_mil_rezerwisci }
@@ -1009,7 +1009,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_wmg
-		x = 12
+		x = 13
 		y = 5
 		cost = 7
 		prerequisite = { focus = TRM_WMG_mil_kadra }
@@ -1029,7 +1029,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 40
+		x = 42
 		y = 1
 		cost = 1
 		prerequisite = { focus = TRM_WMG_wolne }
@@ -1045,7 +1045,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 38
+		x = 41
 		y = 2
 		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_s_ulica }
@@ -1061,7 +1061,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 41
+		x = 43
 		y = 2
 		cost = 1
 		prerequisite = { focus = TRM_WMG_zy_s_ulica }
@@ -1183,7 +1183,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 44
+		x = 46
 		y = 1
 		cost = 6
 		prerequisite = { focus = TRM_WMG_wolne }
@@ -1201,7 +1201,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_wmg
-		x = 43
+		x = 45
 		y = 2
 		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_k_admin }
@@ -1218,7 +1218,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 45
+		x = 47
 		y = 2
 		cost = 1
 		prerequisite = { focus = TRM_WMG_zy_k_admin }
@@ -1234,7 +1234,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_wmg
-		x = 44
+		x = 46
 		y = 3
 		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_k_defilada }
@@ -1251,7 +1251,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 48
+		x = 49
 		y = 1
 		cost = 5
 		prerequisite = { focus = TRM_WMG_wolne }
@@ -1269,7 +1269,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 48
+		x = 49
 		y = 2
 		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_p_straty }
@@ -1286,7 +1286,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_wmg_k
-		x = 47
+		x = 48
 		y = 3
 		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_p_rzad }
@@ -1303,7 +1303,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_wmg_k
-		x = 49
+		x = 50
 		y = 3
 		cost = 5
 		prerequisite = { focus = TRM_WMG_zy_p_rzad }
@@ -1320,7 +1320,7 @@ focus_tree = {
 	focus = {
 		id = TRM_WMG_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 48
+		x = 49
 		y = 4
 		cost = 6
 		prerequisite = { focus = TRM_WMG_zy_p_rewanz focus = TRM_WMG_zy_p_pojednanie }

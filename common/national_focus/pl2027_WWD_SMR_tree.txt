@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = WWD_smr_start
 		icon = GFX_pl2027_081_parlament_0_smr
-		x = 21
+		x = 22
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -592,7 +592,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_premier
 		icon = GFX_pl2027_081_parlament_0_smr_k
-		x = 42
+		x = 43
 		y = 0
 		cost = 5
 		mutually_exclusive = { focus = EK_SMR_nastepca }
@@ -607,7 +607,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_negocjacje
 		icon = GFX_pl2027_081_dyplomacja_0
-		x = 40
+		x = 41
 		y = 1
 		cost = 5
 		prerequisite = { focus = EK_SMR_premier }
@@ -621,7 +621,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_zaopatrzenie
 		icon = GFX_pl2027_081_paliwo_0
-		x = 42
+		x = 43
 		y = 1
 		cost = 5
 		prerequisite = { focus = EK_SMR_premier }
@@ -635,7 +635,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_legalnosc
 		icon = GFX_pl2027_081_ludzie_1
-		x = 44
+		x = 45
 		y = 1
 		cost = 5
 		prerequisite = { focus = EK_SMR_premier }
@@ -649,7 +649,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_palac
 		icon = GFX_pl2027_081_administracja_0
-		x = 43
+		x = 44
 		y = 2
 		cost = 5
 		prerequisite = { focus = EK_SMR_legalnosc }
@@ -663,7 +663,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_pruszkow
 		icon = GFX_pl2027_081_porzadek_3
-		x = 45
+		x = 46
 		y = 2
 		cost = 5
 		prerequisite = { focus = EK_SMR_legalnosc }
@@ -677,7 +677,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_bruksela
 		icon = GFX_pl2027_081_most_powietrzny_0_smr
-		x = 40
+		x = 41
 		y = 2
 		cost = 6
 		prerequisite = { focus = EK_SMR_negocjacje focus = EK_SMR_zaopatrzenie }
@@ -693,7 +693,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_rada
 		icon = GFX_pl2027_081_rada_0
-		x = 40
+		x = 41
 		y = 3
 		cost = 5
 		prerequisite = { focus = EK_SMR_bruksela }
@@ -707,7 +707,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_konstytucja
 		icon = GFX_pl2027_081_konstytucja_0
-		x = 43
+		x = 44
 		y = 3
 		cost = 5
 		prerequisite = { focus = EK_SMR_bruksela focus = EK_SMR_palac focus = EK_SMR_pruszkow }
@@ -721,7 +721,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_odbudowa
 		icon = GFX_pl2027_081_budowa_1
-		x = 40
+		x = 42
 		y = 4
 		cost = 5
 		prerequisite = { focus = EK_SMR_rada focus = EK_SMR_konstytucja }
@@ -736,7 +736,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_stolica
 		icon = GFX_pl2027_081_administracja_1
-		x = 43
+		x = 44
 		y = 4
 		cost = 5
 		prerequisite = { focus = EK_SMR_konstytucja }
@@ -750,7 +750,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_nastepca
 		icon = GFX_pl2027_081_parlament_1_smr_k
-		x = 49
+		x = 50
 		y = 0
 		cost = 5
 		mutually_exclusive = { focus = EK_SMR_premier }
@@ -764,7 +764,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_prezydium
 		icon = GFX_pl2027_081_rada_1
-		x = 46
+		x = 47
 		y = 1
 		cost = 5
 		prerequisite = { focus = EK_SMR_nastepca }
@@ -779,7 +779,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_marszalek
 		icon = GFX_pl2027_081_parlament_2_smr
-		x = 50
+		x = 51
 		y = 1
 		cost = 5
 		prerequisite = { focus = EK_SMR_nastepca }
@@ -794,7 +794,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_rada_ocalenia
 		icon = GFX_pl2027_081_rada_2
-		x = 52
+		x = 53
 		y = 1
 		cost = 5
 		prerequisite = { focus = EK_SMR_nastepca }
@@ -810,7 +810,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_szczecin
 		icon = GFX_pl2027_081_dyplomacja_1
-		x = 48
+		x = 49
 		y = 1
 		cost = 5
 		prerequisite = { focus = EK_SMR_nastepca }
@@ -824,7 +824,7 @@ focus_tree = {
 	focus = {
 		id = EK_SMR_wlasna_droga
 		icon = GFX_pl2027_081_parlament_0_smr
-		x = 49
+		x = 50
 		y = 2
 		cost = 5
 		prerequisite = { focus = EK_SMR_prezydium focus = EK_SMR_marszalek focus = EK_SMR_rada_ocalenia focus = EK_SMR_szczecin }
@@ -1270,7 +1270,7 @@ focus_tree = {
 	focus = {
 		id = WWD_SMR_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 37
+		x = 38
 		y = 1
 		cost = 5
 		prerequisite = { focus = WWD_smr_start }
@@ -1288,7 +1288,7 @@ focus_tree = {
 	focus = {
 		id = WWD_SMR_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 37
+		x = 38
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_SMR_zy_p_straty }
@@ -1305,7 +1305,7 @@ focus_tree = {
 	focus = {
 		id = WWD_SMR_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_smr_k
-		x = 36
+		x = 37
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_SMR_zy_p_rzad }
@@ -1322,7 +1322,7 @@ focus_tree = {
 	focus = {
 		id = WWD_SMR_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_smr_k
-		x = 38
+		x = 39
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_SMR_zy_p_rzad }
@@ -1339,7 +1339,7 @@ focus_tree = {
 	focus = {
 		id = WWD_SMR_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 37
+		x = 38
 		y = 4
 		cost = 6
 		prerequisite = { focus = WWD_SMR_zy_p_rewanz focus = WWD_SMR_zy_p_pojednanie }

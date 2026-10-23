@@ -851,7 +851,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_not
-		x = 0
+		x = 2
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_NOT_mil_rezerwisci }
@@ -871,7 +871,7 @@ focus_tree = {
 	focus = {
 		id = REG_NOT_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_not
-		x = 6
+		x = 7
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_NOT_mil_kadra }

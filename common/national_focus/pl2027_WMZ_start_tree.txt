@@ -1047,7 +1047,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_wmz_k
-		x = 50
+		x = 52
 		y = 3
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_s_media }
@@ -1065,7 +1065,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_wmz_k
-		x = 52
+		x = 54
 		y = 3
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_s_media }
@@ -1083,7 +1083,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 50
+		x = 52
 		y = 4
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_s_kartki focus = WMZ_start_zy_s_rynek }
@@ -1100,7 +1100,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 52
+		x = 54
 		y = 4
 		cost = 1
 		prerequisite = { focus = WMZ_start_zy_s_kartki focus = WMZ_start_zy_s_rynek }
@@ -1116,7 +1116,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 54
+		x = 56
 		y = 4
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_s_kartki focus = WMZ_start_zy_s_rynek }
@@ -1133,7 +1133,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1_f
-		x = 52
+		x = 54
 		y = 5
 		cost = 7
 		prerequisite = { focus = WMZ_start_zy_s_szkoly }

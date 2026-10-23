@@ -1653,108 +1653,12 @@ focus_tree = {
 
 
 	# Torun Rework 2026: wybory maja konsekwencje po utworzeniu nowego panstwa
-	focus = {
-		id = TR2_RW_ela_review
-		icon = GFX_pl2027_081_rada_0
-		x = 19
-		y = 15
-		cost = 5
-		prerequisite = { focus = TR2_ela_final }
-		ai_will_do = { factor = 2 }
-		completion_reward = {
-			add_stability = -0.02
-			country_event = { id = tr2rw.6 days = 1 }
-		}
-	}
 
-	focus = {
-		id = TR2_RW_ela_civic
-		icon = GFX_pl2027_081_wspolnota_0
-		x = 17
-		y = 16
-		cost = 6
-		prerequisite = { focus = TR2_RW_ela_review }
-		mutually_exclusive = { focus = TR2_RW_ela_executive }
-		ai_will_do = { factor = 2 }
-		completion_reward = {
-			add_war_support = 0.05
-			add_stability = -0.02
-			set_country_flag = TR2_RW_ela_reforma_spoleczna
-		}
-	}
 
-	focus = {
-		id = TR2_RW_ela_executive
-		icon = GFX_pl2027_081_administracja_0
-		x = 21
-		y = 16
-		cost = 6
-		prerequisite = { focus = TR2_RW_ela_review }
-		mutually_exclusive = { focus = TR2_RW_ela_civic }
-		ai_will_do = { factor = 2 }
-		completion_reward = {
-			add_political_power = 40
-			add_stability = 0.01
-			set_country_flag = TR2_RW_ela_reforma_wladzy
-		}
-	}
 
-	focus = {
-		id = TR2_RW_ela_civic_work
-		icon = GFX_pl2027_081_osiedle_0
-		x = 17
-		y = 17
-		cost = 6
-		prerequisite = { focus = TR2_RW_ela_civic }
-		ai_will_do = { factor = 2 }
-		completion_reward = {
-			add_manpower = 2000
-			add_war_support = 0.03
-		}
-	}
 
-	focus = {
-		id = TR2_RW_ela_executive_work
-		icon = GFX_pl2027_081_przemysl_0
-		x = 21
-		y = 17
-		cost = 6
-		prerequisite = { focus = TR2_RW_ela_executive }
-		ai_will_do = { factor = 2 }
-		completion_reward = {
-			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-			add_political_power = 15
-		}
-	}
 
-	focus = {
-		id = TR2_RW_ela_accord
-		icon = GFX_pl2027_081_wybory_0
-		x = 19
-		y = 18
-		cost = 7
-		prerequisite = { focus = TR2_RW_ela_civic_work focus = TR2_RW_ela_executive_work }
-		ai_will_do = { factor = 2 }
-		completion_reward = {
-			add_stability = 0.03
-			add_political_power = 15
-		}
-	}
 
-	focus = {
-		id = TR2_RW_ela_legacy
-		icon = GFX_pl2027_081_miasto_1
-		x = 19
-		y = 19
-		cost = 7
-		prerequisite = { focus = TR2_RW_ela_accord }
-		ai_will_do = { factor = 2 }
-		completion_reward = {
-			add_war_support = 0.03
-			add_political_power = 35
-			country_event = { id = tr2rw.26 days = 1 }
-		}
-	}
 
 	# Statecraft: rozne panstwa zalezne od wyboru tego ugrupowania
 	focus = {

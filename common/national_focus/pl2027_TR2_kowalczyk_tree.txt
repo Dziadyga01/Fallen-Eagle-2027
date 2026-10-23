@@ -1925,6 +1925,7 @@ focus_tree = {
 		ai_will_do = { factor = 5 }
 		completion_reward = {
 			set_country_flag = TR2END_kow_solo
+			if = { limit = { is_in_faction = yes } leave_faction = yes }
 			add_ideas = TR2END_kow_solo_idea
 			add_political_power = 30
 			country_event = { id = tr2end.131 days = 1 }

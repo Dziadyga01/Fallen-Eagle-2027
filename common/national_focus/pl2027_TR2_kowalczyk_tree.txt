@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_powrot
 		icon = GFX_pl2027_tfr_portret_trn_katarzyna_kowalczyk
-		x = 28
+		x = 46
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -28,7 +28,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_elity
 		icon = GFX_TRN_pl2027_umk
-		x = 28
+		x = 46
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kow_powrot }
@@ -41,7 +41,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_administracja
 		icon = GFX_pl2027_081_technika_0
-		x = 31
+		x = 51
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kow_powrot }
@@ -54,7 +54,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_tozsamosc
 		icon = GFX_pl2027_081_ludzie_0
-		x = 27
+		x = 45
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kow_elity }
@@ -67,7 +67,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_dialog
 		icon = GFX_pl2027_081_ludzie_1
-		x = 29
+		x = 48
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kow_elity }
@@ -82,7 +82,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_kultura
 		icon = GFX_TRN_pl2027_pomnik
-		x = 31
+		x = 51
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kow_administracja }
@@ -95,7 +95,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_otwarty
 		icon = GFX_pl2027_081_handel_0
-		x = 29
+		x = 48
 		y = 3
 		cost = 6
 		prerequisite = { focus = TR2_kow_tozsamosc focus = TR2_kow_dialog focus = TR2_kow_kultura }
@@ -109,7 +109,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_handel
 		icon = GFX_TRN_pl2027_eksport
-		x = 28
+		x = 46
 		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_kow_otwarty }
@@ -122,7 +122,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_technologie
 		icon = GFX_pl2027_081_technika_1
-		x = 31
+		x = 51
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_kow_otwarty }
@@ -136,7 +136,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_logistyka
 		icon = GFX_pl2027_081_kolej_0
-		x = 27
+		x = 45
 		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_kow_handel }
@@ -149,7 +149,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_turystyka
 		icon = GFX_TRN_pl2027_stabilizacja
-		x = 29
+		x = 48
 		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_kow_handel }
@@ -164,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_gospodarka
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 31
+		x = 51
 		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_kow_technologie }
@@ -178,7 +178,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_dyplomacja
 		icon = GFX_pl2027_081_dyplomacja_0
-		x = 29
+		x = 48
 		y = 6
 		cost = 5
 		prerequisite = { focus = TR2_kow_logistyka focus = TR2_kow_turystyka focus = TR2_kow_gospodarka }
@@ -192,7 +192,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_gminy
 		icon = GFX_pl2027_081_sojusz_0_slk
-		x = 28
+		x = 46
 		y = 7
 		cost = 1
 		prerequisite = { focus = TR2_kow_dyplomacja }
@@ -206,7 +206,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_referenda
 		icon = GFX_pl2027_081_wybory_0
-		x = 31
+		x = 51
 		y = 7
 		cost = 5
 		prerequisite = { focus = TR2_kow_dyplomacja }
@@ -220,7 +220,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_sojusz
 		icon = GFX_pl2027_081_sojusz_1_slk
-		x = 27
+		x = 45
 		y = 8
 		cost = 5
 		prerequisite = { focus = TR2_kow_gminy }
@@ -234,7 +234,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_litwa
 		icon = GFX_pl2027_081_pojednanie_0
-		x = 29
+		x = 48
 		y = 8
 		cost = 6
 		prerequisite = { focus = TR2_kow_gminy }
@@ -249,7 +249,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_wspolnota
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 31
+		x = 51
 		y = 8
 		cost = 5
 		prerequisite = { focus = TR2_kow_referenda }
@@ -263,7 +263,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_obrona
 		icon = GFX_pl2027_081_obrona_terytorialna_0_slk
-		x = 29
+		x = 48
 		y = 9
 		cost = 7
 		prerequisite = { focus = TR2_kow_sojusz focus = TR2_kow_litwa focus = TR2_kow_wspolnota }
@@ -277,7 +277,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_sprzet
 		icon = GFX_pl2027_081_wyposazenie_0
-		x = 28
+		x = 46
 		y = 10
 		cost = 6
 		prerequisite = { focus = TR2_kow_obrona }
@@ -292,7 +292,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_wywiad
 		icon = GFX_pl2027_081_wywiad_0
-		x = 31
+		x = 51
 		y = 10
 		cost = 5
 		prerequisite = { focus = TR2_kow_obrona }
@@ -305,7 +305,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_kadra
 		icon = GFX_pl2027_081_oficer_0_slk
-		x = 27
+		x = 45
 		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_kow_sprzet }
@@ -318,7 +318,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_gwarancje
 		icon = GFX_pl2027_081_porzadek_0
-		x = 29
+		x = 48
 		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_kow_sprzet }
@@ -332,7 +332,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_przemysl
 		icon = GFX_pl2027_081_przemysl_0
-		x = 31
+		x = 51
 		y = 11
 		cost = 6
 		prerequisite = { focus = TR2_kow_wywiad }
@@ -345,7 +345,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_republika
 		icon = GFX_pl2027_081_parlament_0_slk
-		x = 29
+		x = 48
 		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_kow_kadra focus = TR2_kow_gwarancje focus = TR2_kow_przemysl }
@@ -359,7 +359,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_kongres
 		icon = GFX_pl2027_081_rada_0
-		x = 28
+		x = 46
 		y = 13
 		cost = 5
 		prerequisite = { focus = TR2_kow_republika }
@@ -372,7 +372,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_integracja
 		icon = GFX_pl2027_081_integracja_0_slk
-		x = 31
+		x = 51
 		y = 13
 		cost = 10
 		prerequisite = { focus = TR2_kow_republika }
@@ -386,7 +386,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_bydgoszcz
 		icon = GFX_pl2027_081_most_0_f
-		x = 27
+		x = 45
 		y = 14
 		cost = 1
 		prerequisite = { focus = TR2_kow_kongres }
@@ -400,7 +400,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_region
 		icon = GFX_pl2027_081_mapa_0_slk_f
-		x = 29
+		x = 48
 		y = 14
 		cost = 5
 		prerequisite = { focus = TR2_kow_kongres }
@@ -414,7 +414,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_final
 		icon = GFX_pl2027_081_wspolnota_1_f
-		x = 31
+		x = 51
 		y = 14
 		cost = 10
 		prerequisite = { focus = TR2_kow_integracja }
@@ -429,8 +429,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_r_plan
 		icon = GFX_pl2027_081_budowa_0
-		x = 8
-		y = 1
+		x = 2
+		y = 3
 		cost = 6
 		prerequisite = { focus = TR2_kow_powrot }
 		ai_will_do = { factor = 10 }
@@ -447,8 +447,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_r_rubinkowo
 		icon = GFX_pl2027_081_osiedle_0
-		x = 6
-		y = 2
+		x = 0
+		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_kow_r_plan }
 		ai_will_do = { factor = 10 }
@@ -464,8 +464,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_r_jar
 		icon = GFX_pl2027_081_osiedle_1
-		x = 10
-		y = 2
+		x = 4
+		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_kow_r_plan }
 		ai_will_do = { factor = 10 }
@@ -480,8 +480,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_r_bielany
 		icon = GFX_TRN_pl2027_szkoly
-		x = 8
-		y = 2
+		x = 2
+		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_kow_r_plan }
 		ai_will_do = { factor = 10 }
@@ -496,8 +496,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_r_osiedla
 		icon = GFX_pl2027_081_osiedle_2
-		x = 10
-		y = 3
+		x = 4
+		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_kow_r_jar }
 		ai_will_do = { factor = 10 }
@@ -513,8 +513,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_r_komunikacja
 		icon = GFX_pl2027_081_tramwaj_1
-		x = 10
-		y = 4
+		x = 4
+		y = 6
 		cost = 7
 		prerequisite = { focus = TR2_kow_r_bielany }
 		prerequisite = { focus = TR2_kow_r_osiedla }
@@ -531,8 +531,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_r_infrastruktura
 		icon = GFX_TRN_pl2027_autostrada
-		x = 9
-		y = 5
+		x = 3
+		y = 7
 		cost = 7
 		prerequisite = { focus = TR2_kow_r_komunikacja }
 		ai_will_do = { factor = 10 }
@@ -547,8 +547,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_r_toron2030
 		icon = GFX_pl2027_081_nauka_0
-		x = 11
-		y = 5
+		x = 5
+		y = 7
 		cost = 6
 		prerequisite = { focus = TR2_kow_r_komunikacja }
 		ai_will_do = { factor = 10 }
@@ -565,8 +565,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_p_odbudowa
 		icon = GFX_TRN_pl2027_firmy
-		x = 2
-		y = 1
+		x = 14
+		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_kow_powrot }
 		ai_will_do = { factor = 10 }
@@ -582,8 +582,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_p_apator
 		icon = GFX_TRN_pl2027_apator
-		x = 0
-		y = 2
+		x = 12
+		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_kow_p_odbudowa }
 		ai_will_do = { factor = 10 }
@@ -599,8 +599,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_p_pierniki
 		icon = GFX_pl2027_081_zywnosc_3
-		x = 4
-		y = 2
+		x = 16
+		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_kow_p_odbudowa }
 		ai_will_do = { factor = 10 }
@@ -616,8 +616,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_p_logistyka
 		icon = GFX_pl2027_081_logistyka_2
-		x = 2
-		y = 2
+		x = 14
+		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_kow_p_odbudowa }
 		ai_will_do = { factor = 10 }
@@ -633,8 +633,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_p_uslugi
 		icon = GFX_TRN_pl2027_stabilizacja
-		x = 4
-		y = 3
+		x = 16
+		y = 6
 		cost = 6
 		prerequisite = { focus = TR2_kow_p_pierniki }
 		ai_will_do = { factor = 10 }
@@ -650,8 +650,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_p_kopernik
 		icon = GFX_TRN_pl2027_kopernik
-		x = 4
-		y = 4
+		x = 16
+		y = 7
 		cost = 6
 		prerequisite = { focus = TR2_kow_p_logistyka }
 		prerequisite = { focus = TR2_kow_p_uslugi }
@@ -668,8 +668,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_p_strefa
 		icon = GFX_pl2027_081_handel_2
-		x = 3
-		y = 5
+		x = 15
+		y = 8
 		cost = 6
 		prerequisite = { focus = TR2_kow_p_kopernik }
 		ai_will_do = { factor = 10 }
@@ -684,8 +684,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_p_przemysl
 		icon = GFX_TRN_pl2027_przemysl20
-		x = 5
-		y = 5
+		x = 17
+		y = 8
 		cost = 6
 		prerequisite = { focus = TR2_kow_p_kopernik }
 		available = { OR = { NOT = { has_country_flag = TR2S_kow_founded } has_country_flag = TR2S_kow_route_A } }
@@ -703,8 +703,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_d_sasiedzi
 		icon = GFX_pl2027_081_wspolnota_2
-		x = 16
-		y = 1
+		x = 95
+		y = 9
 		cost = 5
 		prerequisite = { focus = TR2_kow_powrot }
 		prerequisite = { focus = TR2_kow_p_odbudowa }
@@ -721,8 +721,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_d_chelmza
 		icon = GFX_pl2027_081_sojusz_1_slk
-		x = 14
-		y = 2
+		x = 93
+		y = 10
 		cost = 1
 		prerequisite = { focus = TR2_kow_d_sasiedzi }
 		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
@@ -739,8 +739,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_d_grudziadz
 		icon = GFX_pl2027_081_rzeka_0
-		x = 16
-		y = 2
+		x = 95
+		y = 10
 		cost = 1
 		prerequisite = { focus = TR2_kow_d_sasiedzi }
 		bypass = { OR = { NOT = { country_exists = GRU } GRU = { is_subject_of = ROOT } } }
@@ -756,8 +756,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_d_metropolia
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 14
-		y = 3
+		x = 93
+		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_kow_d_chelmza }
 		ai_will_do = { factor = 10 }
@@ -773,8 +773,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_d_kampania
 		icon = GFX_pl2027_081_budowa_2
-		x = 18
-		y = 2
+		x = 97
+		y = 10
 		cost = 5
 		prerequisite = { focus = TR2_kow_d_sasiedzi }
 		ai_will_do = { factor = 10 }
@@ -789,8 +789,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_d_referenda
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 14
-		y = 4
+		x = 93
+		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_kow_d_metropolia }
 		prerequisite = { focus = TR2_kow_d_kampania }
@@ -807,8 +807,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_d_kujawy
 		icon = GFX_pl2027_081_mapa_4_slk
-		x = 13
-		y = 5
+		x = 92
+		y = 13
 		cost = 5
 		prerequisite = { focus = TR2_kow_d_referenda }
 		ai_will_do = { factor = 10 }
@@ -824,8 +824,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_d_metropolia_f
 		icon = GFX_pl2027_081_sojusz_3_slk
-		x = 15
-		y = 5
+		x = 94
+		y = 13
 		cost = 5
 		prerequisite = { focus = TR2_kow_d_referenda }
 		available = { OR = { NOT = { has_country_flag = TR2S_kow_founded } has_country_flag = TR2S_kow_route_B }  check_variable = { global.MET_trn_obszary > 1 } check_variable = { global.MET_byd_obszary > 1 } check_variable = { global.MET_napiecie < 30 } NOT = { has_global_flag = MET_rozstrzygniete } }
@@ -843,8 +843,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_w_obrona
 		icon = GFX_pl2027_081_zawodowa_1_slk
-		x = 22
-		y = 1
+		x = 79
+		y = 10
 		cost = 5
 		prerequisite = { focus = TR2_kow_powrot }
 		prerequisite = { focus = TR2_kow_r_bielany }
@@ -862,8 +862,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_w_mobilizacja
 		icon = GFX_pl2027_081_pobor_1_slk
-		x = 20
-		y = 2
+		x = 77
+		y = 11
 		cost = 6
 		prerequisite = { focus = TR2_kow_w_obrona }
 		ai_will_do = { factor = 10 }
@@ -879,8 +879,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_w_garnizon
 		icon = GFX_TRN_pl2027_garnizon
-		x = 24
-		y = 2
+		x = 81
+		y = 11
 		cost = 7
 		prerequisite = { focus = TR2_kow_w_obrona }
 		ai_will_do = { factor = 10 }
@@ -896,8 +896,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_w_roszczenia
 		icon = GFX_pl2027_081_ultimatum_0_slk
-		x = 22
-		y = 2
+		x = 79
+		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_kow_w_obrona }
 		ai_will_do = { factor = 10 }
@@ -912,8 +912,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_w_lokalne
 		icon = GFX_pl2027_081_dyplomacja_5
-		x = 24
-		y = 3
+		x = 81
+		y = 12
 		cost = 1
 		prerequisite = { focus = TR2_kow_w_garnizon }
 		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_4000 has_army_manpower = { size > 3999 } } }
@@ -929,8 +929,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_w_wcielenie
 		icon = GFX_pl2027_081_integracja_2_slk
-		x = 24
-		y = 4
+		x = 81
+		y = 13
 		cost = 10
 		prerequisite = { focus = TR2_kow_w_roszczenia }
 		prerequisite = { focus = TR2_kow_w_lokalne }
@@ -948,8 +948,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_w_kujawy
 		icon = GFX_pl2027_081_sojusz_0_slk
-		x = 23
-		y = 5
+		x = 80
+		y = 14
 		cost = 1
 		prerequisite = { focus = TR2_kow_w_wcielenie }
 		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
@@ -966,8 +966,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kow_w_dominacja
 		icon = GFX_TRN_form_korona
-		x = 25
-		y = 5
+		x = 82
+		y = 14
 		cost = 5
 		prerequisite = { focus = TR2_kow_w_wcielenie }
 		ai_will_do = { factor = 10 }
@@ -985,8 +985,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_start
 		icon = GFX_pl2027_081_sztab_1_slk
-		x = 38
-		y = 1
+		x = 68
+		y = 6
 		cost = 5
 		prerequisite = { focus = TR2_kow_powrot }
 		bypass = { has_country_flag = MIL_start }
@@ -1005,8 +1005,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_slk
-		x = 34
-		y = 2
+		x = 64
+		y = 7
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_mil_start }
 		bypass = { has_country_flag = MIL_rejestr }
@@ -1024,8 +1024,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_slk
-		x = 38
-		y = 2
+		x = 68
+		y = 7
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_mil_start }
 		bypass = { has_country_flag = MIL_ochotnicy }
@@ -1043,8 +1043,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 42
-		y = 2
+		x = 72
+		y = 7
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_mil_start }
 		bypass = { has_country_flag = MIL_fabryka }
@@ -1062,8 +1062,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_slk
-		x = 33
-		y = 3
+		x = 63
+		y = 8
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_mil_rejestr }
 		bypass = { has_country_flag = MIL_pobor }
@@ -1081,8 +1081,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_slk
-		x = 37
-		y = 3
+		x = 67
+		y = 8
 		cost = 7
 		prerequisite = { focus = TR2_kowalczyk_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_bataliony }
@@ -1102,8 +1102,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 41
-		y = 3
+		x = 71
+		y = 8
 		cost = 6
 		prerequisite = { focus = TR2_kowalczyk_mil_fabryka }
 		bypass = { has_country_flag = MIL_produkcja }
@@ -1123,8 +1123,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_slk
-		x = 35
-		y = 3
+		x = 65
+		y = 8
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_mil_rejestr }
 		bypass = { has_country_flag = MIL_rezerwisci }
@@ -1142,8 +1142,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_slk
-		x = 39
-		y = 3
+		x = 69
+		y = 8
 		cost = 7
 		prerequisite = { focus = TR2_kowalczyk_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_brygady }
@@ -1164,8 +1164,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 43
-		y = 3
+		x = 73
+		y = 8
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_mil_fabryka }
 		bypass = { has_country_flag = MIL_zaplecze }
@@ -1185,8 +1185,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_slk
-		x = 33
-		y = 4
+		x = 63
+		y = 9
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_mil_rezerwisci }
 		prerequisite = { focus = TR2_kowalczyk_mil_brygady }
@@ -1208,8 +1208,8 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_slk
-		x = 39
-		y = 5
+		x = 69
+		y = 10
 		cost = 7
 		prerequisite = { focus = TR2_kowalczyk_mil_kadra }
 		prerequisite = { focus = TR2_kowalczyk_mil_zaplecze }
@@ -1231,7 +1231,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 47
+		x = 28
 		y = 1
 		cost = 1
 		prerequisite = { focus = TR2_kow_powrot }
@@ -1250,7 +1250,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 46
+		x = 27
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_s_ulica }
@@ -1269,7 +1269,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 48
+		x = 29
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_kowalczyk_zy_s_ulica }
@@ -1288,7 +1288,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_slk_k
-		x = 45
+		x = 26
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_s_media }
@@ -1309,7 +1309,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_slk_k
-		x = 47
+		x = 28
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_s_media }
@@ -1330,7 +1330,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 43
+		x = 24
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_s_kartki focus = TR2_kowalczyk_zy_s_rynek }
@@ -1350,7 +1350,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 45
+		x = 26
 		y = 4
 		cost = 1
 		prerequisite = { focus = TR2_kowalczyk_zy_s_kartki focus = TR2_kowalczyk_zy_s_rynek }
@@ -1369,7 +1369,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 47
+		x = 28
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_s_kartki focus = TR2_kowalczyk_zy_s_rynek }
@@ -1389,7 +1389,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 45
+		x = 26
 		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_kowalczyk_zy_s_szkoly }
@@ -1412,7 +1412,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 51
+		x = 32
 		y = 1
 		cost = 6
 		prerequisite = { focus = TR2_kow_powrot }
@@ -1433,7 +1433,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_slk
-		x = 50
+		x = 31
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_k_admin }
@@ -1453,7 +1453,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 52
+		x = 33
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_kowalczyk_zy_k_admin }
@@ -1472,7 +1472,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_slk
-		x = 51
+		x = 32
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_k_defilada }
@@ -1492,7 +1492,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 54
+		x = 35
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kow_powrot }
@@ -1513,7 +1513,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 54
+		x = 35
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_p_straty }
@@ -1533,7 +1533,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_slk_k
-		x = 53
+		x = 34
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_p_rzad }
@@ -1553,7 +1553,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_slk_k
-		x = 55
+		x = 36
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_p_rzad }
@@ -1573,7 +1573,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 54
+		x = 35
 		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_kowalczyk_zy_p_rewanz focus = TR2_kowalczyk_zy_p_pojednanie }
@@ -1605,8 +1605,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_start
 		icon = GFX_TRN_pl2027_umk
-		x = 70
-		y = 17
+		x = 48
+		y = 25
 		cost = 2
 		prerequisite = { focus = TR2_kow_powrot }
 		ai_will_do = { factor = 4 }
@@ -1619,8 +1619,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_crisis
 		icon = GFX_TRN_pl2027_umk
-		x = 70
-		y = 18
+		x = 48
+		y = 26
 		cost = 2
 		prerequisite = { focus = TR2S_kow_start }
 		ai_will_do = { factor = 4 }
@@ -1633,8 +1633,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_a_choice
 		icon = GFX_TRN_pl2027_umk
-		x = 65
-		y = 19
+		x = 35
+		y = 27
 		cost = 3
 		prerequisite = { focus = TR2S_kow_crisis }
 		mutually_exclusive = { focus = TR2S_kow_b_choice }
@@ -1648,8 +1648,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_a_1
 		icon = GFX_TRN_pl2027_umk
-		x = 64
-		y = 20
+		x = 33
+		y = 28
 		cost = 2
 		prerequisite = { focus = TR2S_kow_a_choice }
 		ai_will_do = { factor = 4 }
@@ -1662,8 +1662,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_a_2
 		icon = GFX_pl2027_081_media_0
-		x = 66
-		y = 21
+		x = 38
+		y = 29
 		cost = 2
 		prerequisite = { focus = TR2S_kow_a_1 }
 		ai_will_do = { factor = 4 }
@@ -1676,8 +1676,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_a_3
 		icon = GFX_TRN_pl2027_umk
-		x = 64
-		y = 22
+		x = 33
+		y = 30
 		cost = 2
 		prerequisite = { focus = TR2S_kow_a_2 }
 		ai_will_do = { factor = 4 }
@@ -1690,8 +1690,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_a_4
 		icon = GFX_pl2027_081_media_0
-		x = 66
-		y = 23
+		x = 38
+		y = 31
 		cost = 2
 		prerequisite = { focus = TR2S_kow_a_3 }
 		ai_will_do = { factor = 4 }
@@ -1704,8 +1704,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_a_found
 		icon = GFX_pl2027_081_media_0
-		x = 65
-		y = 24
+		x = 35
+		y = 32
 		cost = 3
 		prerequisite = { focus = TR2S_kow_a_4 }
 		available = { check_variable = { TR2S_kow_meter > 54 } }
@@ -1726,8 +1726,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_a_legacy
 		icon = GFX_TRN_pl2027_umk
-		x = 65
-		y = 25
+		x = 35
+		y = 33
 		cost = 3
 		prerequisite = { focus = TR2S_kow_a_found }
 		ai_will_do = { factor = 4 }
@@ -1739,8 +1739,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_b_choice
 		icon = GFX_pl2027_081_media_0
-		x = 75
-		y = 19
+		x = 61
+		y = 27
 		cost = 3
 		prerequisite = { focus = TR2S_kow_crisis }
 		mutually_exclusive = { focus = TR2S_kow_a_choice }
@@ -1754,8 +1754,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_b_1
 		icon = GFX_TRN_pl2027_umk
-		x = 74
-		y = 20
+		x = 58
+		y = 28
 		cost = 2
 		prerequisite = { focus = TR2S_kow_b_choice }
 		ai_will_do = { factor = 4 }
@@ -1768,8 +1768,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_b_2
 		icon = GFX_pl2027_081_media_0
-		x = 76
-		y = 21
+		x = 63
+		y = 29
 		cost = 2
 		prerequisite = { focus = TR2S_kow_b_1 }
 		ai_will_do = { factor = 4 }
@@ -1782,8 +1782,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_b_3
 		icon = GFX_TRN_pl2027_umk
-		x = 74
-		y = 22
+		x = 58
+		y = 30
 		cost = 2
 		prerequisite = { focus = TR2S_kow_b_2 }
 		ai_will_do = { factor = 4 }
@@ -1796,8 +1796,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_b_4
 		icon = GFX_pl2027_081_media_0
-		x = 76
-		y = 23
+		x = 63
+		y = 31
 		cost = 2
 		prerequisite = { focus = TR2S_kow_b_3 }
 		ai_will_do = { factor = 4 }
@@ -1810,8 +1810,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_b_5
 		icon = GFX_TRN_pl2027_umk
-		x = 74
-		y = 24
+		x = 58
+		y = 32
 		cost = 2
 		prerequisite = { focus = TR2S_kow_b_4 }
 		ai_will_do = { factor = 4 }
@@ -1824,8 +1824,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_b_found
 		icon = GFX_pl2027_081_media_0
-		x = 75
-		y = 25
+		x = 61
+		y = 33
 		cost = 3
 		prerequisite = { focus = TR2S_kow_b_5 }
 		available = { check_variable = { TR2S_kow_meter > 54 } }
@@ -1846,8 +1846,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_kow_b_legacy
 		icon = GFX_TRN_pl2027_umk
-		x = 75
-		y = 26
+		x = 61
+		y = 34
 		cost = 3
 		prerequisite = { focus = TR2S_kow_b_found }
 		ai_will_do = { factor = 4 }
@@ -1861,8 +1861,8 @@ focus_tree = {
 	focus = {
 		id = TR2C_kow_A_institution
 		icon = GFX_pl2027_081_rada_0
-		x = 62
-		y = 27
+		x = 33
+		y = 35
 		cost = 5
 		prerequisite = { focus = TR2S_kow_a_legacy }
 		ai_will_do = { factor = 3 }
@@ -1875,8 +1875,8 @@ focus_tree = {
 	focus = {
 		id = TR2C_kow_A_future
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 62
-		y = 28
+		x = 33
+		y = 36
 		cost = 5
 		prerequisite = { focus = TR2C_kow_A_institution }
 		ai_will_do = { factor = 3 }
@@ -1889,8 +1889,8 @@ focus_tree = {
 	focus = {
 		id = TR2C_kow_B_institution
 		icon = GFX_pl2027_081_rada_0
-		x = 78
-		y = 28
+		x = 63
+		y = 36
 		cost = 5
 		prerequisite = { focus = TR2S_kow_b_legacy }
 		ai_will_do = { factor = 3 }
@@ -1903,14 +1903,65 @@ focus_tree = {
 	focus = {
 		id = TR2C_kow_B_future
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 78
-		y = 29
+		x = 63
+		y = 37
 		cost = 5
 		prerequisite = { focus = TR2C_kow_B_institution }
 		ai_will_do = { factor = 3 }
 		completion_reward = {
 			add_political_power = 35
 			add_stability = 0.006
+		}
+	}
+
+	focus = {
+		id = TR2END_kow_solo
+		icon = GFX_pl2027_081_konstytucja_0
+		x = 32
+		y = 42
+		cost = 8
+		prerequisite = { focus = TR2C_kow_A_future focus = TR2C_kow_B_future }
+		mutually_exclusive = { focus = TR2END_kow_union focus = TR2END_kow_pact }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			set_country_flag = TR2END_kow_solo
+			add_ideas = TR2END_kow_solo_idea
+			add_political_power = 30
+			country_event = { id = tr2end.131 days = 1 }
+		}
+	}
+
+	focus = {
+		id = TR2END_kow_union
+		icon = GFX_pl2027_081_sojusz_2_slk
+		x = 48
+		y = 42
+		cost = 8
+		prerequisite = { focus = TR2C_kow_A_future focus = TR2C_kow_B_future }
+		mutually_exclusive = { focus = TR2END_kow_solo focus = TR2END_kow_pact }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			set_country_flag = TR2END_kow_union_offer
+			add_political_power = -30
+			if = { limit = { country_exists = BYD NOT = { has_war_with = BYD } BYD = { is_subject = no } } BYD = { country_event = { id = tr2end.132 days = 2 } } }
+			else = { country_event = { id = tr2end.133 days = 2 } }
+		}
+	}
+
+	focus = {
+		id = TR2END_kow_pact
+		icon = GFX_pl2027_081_sojusz_2_slk
+		x = 64
+		y = 42
+		cost = 8
+		prerequisite = { focus = TR2C_kow_A_future focus = TR2C_kow_B_future }
+		mutually_exclusive = { focus = TR2END_kow_solo focus = TR2END_kow_union }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			set_country_flag = TR2END_kow_pact
+			if = { limit = { is_in_faction = no } create_faction = TR2END_KOW_PAKT }
+			if = { limit = { is_faction_leader = yes } every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.134 days = 2 } } }
+			add_war_support = 0.02
 		}
 	}
 }

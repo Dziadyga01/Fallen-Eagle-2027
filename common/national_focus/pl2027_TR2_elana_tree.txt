@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_nasz_torun
 		icon = GFX_pl2027_081_porzadek_0
-		x = 26
+		x = 56
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -28,7 +28,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_mobilizacja
 		icon = GFX_pl2027_081_pobor_0_slk
-		x = 18
+		x = 43
 		y = 1
 		cost = 7
 		prerequisite = { focus = TR2_ela_nasz_torun }
@@ -43,7 +43,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_czystka
 		icon = GFX_pl2027_081_chaos_0
-		x = 21
+		x = 48
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_ela_nasz_torun }
@@ -58,7 +58,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_propaganda
 		icon = GFX_pl2027_081_media_0
-		x = 17
+		x = 41
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_ela_mobilizacja }
@@ -71,7 +71,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_straz
 		icon = GFX_pl2027_081_porzadek_1
-		x = 19
+		x = 45
 		y = 2
 		cost = 7
 		prerequisite = { focus = TR2_ela_mobilizacja }
@@ -87,7 +87,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_mlodziez
 		icon = GFX_pl2027_081_wojna_0_slk
-		x = 21
+		x = 48
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_ela_czystka }
@@ -101,7 +101,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_przemysl
 		icon = GFX_pl2027_081_przemysl_0
-		x = 19
+		x = 45
 		y = 3
 		cost = 6
 		prerequisite = { focus = TR2_ela_propaganda focus = TR2_ela_straz focus = TR2_ela_mlodziez }
@@ -114,7 +114,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_nowe_oddzialy
 		icon = GFX_pl2027_081_wojsko_0_slk
-		x = 18
+		x = 43
 		y = 4
 		cost = 7
 		prerequisite = { focus = TR2_ela_przemysl }
@@ -128,7 +128,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_twierdza
 		icon = GFX_pl2027_081_twierdza_0_slk
-		x = 21
+		x = 48
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_ela_przemysl }
@@ -143,7 +143,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_zaopatrzenie
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 17
+		x = 41
 		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_ela_nowe_oddzialy }
@@ -157,7 +157,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_artyleria
 		icon = GFX_pl2027_081_artyleria_0_slk
-		x = 19
+		x = 45
 		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_ela_nowe_oddzialy }
@@ -172,7 +172,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_dowodcy
 		icon = GFX_pl2027_081_oficer_0_slk
-		x = 21
+		x = 48
 		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_ela_twierdza }
@@ -185,7 +185,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_roszczenia
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 19
+		x = 45
 		y = 6
 		cost = 5
 		prerequisite = { focus = TR2_ela_zaopatrzenie focus = TR2_ela_artyleria focus = TR2_ela_dowodcy }
@@ -199,7 +199,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_podgorz
 		icon = GFX_pl2027_081_ofensywa_0_slk
-		x = 18
+		x = 43
 		y = 7
 		cost = 8
 		prerequisite = { focus = TR2_ela_roszczenia }
@@ -218,7 +218,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_gminy
 		icon = GFX_pl2027_081_ultimatum_2_slk
-		x = 21
+		x = 48
 		y = 7
 		cost = 1
 		prerequisite = { focus = TR2_ela_roszczenia }
@@ -232,7 +232,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_solec
 		icon = GFX_pl2027_081_wojna_1_slk
-		x = 17
+		x = 41
 		y = 8
 		cost = 8
 		prerequisite = { focus = TR2_ela_podgorz }
@@ -250,7 +250,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_wcielenie
 		icon = GFX_pl2027_081_integracja_0_slk
-		x = 19
+		x = 45
 		y = 8
 		cost = 10
 		prerequisite = { focus = TR2_ela_podgorz }
@@ -265,7 +265,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_kujawy
 		icon = GFX_pl2027_081_mapa_1_slk
-		x = 24
+		x = 53
 		y = 8
 		cost = 8
 		prerequisite = { focus = TR2_ela_gminy }
@@ -285,7 +285,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_rywalizacja
 		icon = GFX_pl2027_081_wybory_0
-		x = 19
+		x = 45
 		y = 9
 		cost = 1
 		prerequisite = { focus = TR2_ela_solec focus = TR2_ela_wcielenie focus = TR2_ela_kujawy }
@@ -299,7 +299,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_bydgoszcz
 		icon = GFX_pl2027_081_ofensywa_1_slk
-		x = 18
+		x = 43
 		y = 10
 		cost = 8
 		prerequisite = { focus = TR2_ela_rywalizacja }
@@ -318,7 +318,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_grudziadz
 		icon = GFX_pl2027_081_ofensywa_2_slk
-		x = 21
+		x = 48
 		y = 10
 		cost = 8
 		prerequisite = { focus = TR2_ela_rywalizacja }
@@ -337,7 +337,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_integracja
 		icon = GFX_pl2027_081_mapa_2_slk
-		x = 17
+		x = 41
 		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_ela_bydgoszcz }
@@ -351,7 +351,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_wloclawek
 		icon = GFX_pl2027_081_kolej_0
-		x = 19
+		x = 45
 		y = 11
 		cost = 8
 		prerequisite = { focus = TR2_ela_bydgoszcz }
@@ -371,7 +371,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_region
 		icon = GFX_pl2027_081_mapa_3_slk
-		x = 21
+		x = 48
 		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_ela_grudziadz }
@@ -384,7 +384,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_panstwo
 		icon = GFX_pl2027_081_ludzie_0
-		x = 19
+		x = 45
 		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_ela_integracja focus = TR2_ela_wloclawek focus = TR2_ela_region }
@@ -398,7 +398,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_armia
 		icon = GFX_pl2027_081_wojsko_1_slk
-		x = 18
+		x = 43
 		y = 13
 		cost = 7
 		prerequisite = { focus = TR2_ela_panstwo }
@@ -412,7 +412,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_bezpieka
 		icon = GFX_pl2027_081_porzadek_2
-		x = 21
+		x = 48
 		y = 13
 		cost = 5
 		prerequisite = { focus = TR2_ela_panstwo }
@@ -425,7 +425,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_przemysl2
 		icon = GFX_pl2027_081_przemysl_1_f
-		x = 17
+		x = 41
 		y = 14
 		cost = 6
 		prerequisite = { focus = TR2_ela_armia }
@@ -438,7 +438,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_defilada
 		icon = GFX_pl2027_081_defilada_1_slk_f
-		x = 19
+		x = 45
 		y = 14
 		cost = 5
 		prerequisite = { focus = TR2_ela_armia }
@@ -453,7 +453,7 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_final
 		icon = GFX_pl2027_081_twierdza_1_slk_f
-		x = 21
+		x = 48
 		y = 14
 		cost = 10
 		prerequisite = { focus = TR2_ela_bezpieka }
@@ -468,8 +468,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_r_plan
 		icon = GFX_pl2027_081_porzadek_1
-		x = 25
-		y = 1
+		x = 79
+		y = 7
 		cost = 6
 		prerequisite = { focus = TR2_ela_nasz_torun }
 		ai_will_do = { factor = 10 }
@@ -486,8 +486,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_r_rubinkowo
 		icon = GFX_pl2027_081_osiedle_0
-		x = 23
-		y = 2
+		x = 77
+		y = 8
 		cost = 6
 		prerequisite = { focus = TR2_ela_r_plan }
 		ai_will_do = { factor = 10 }
@@ -503,8 +503,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_r_jar
 		icon = GFX_pl2027_081_osiedle_1
-		x = 27
-		y = 2
+		x = 81
+		y = 8
 		cost = 6
 		prerequisite = { focus = TR2_ela_r_plan }
 		ai_will_do = { factor = 10 }
@@ -519,8 +519,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_r_bielany
 		icon = GFX_TRN_pl2027_szkoly
-		x = 25
-		y = 2
+		x = 79
+		y = 8
 		cost = 5
 		prerequisite = { focus = TR2_ela_r_plan }
 		ai_will_do = { factor = 10 }
@@ -535,8 +535,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_r_osiedla
 		icon = GFX_pl2027_081_osiedle_2
-		x = 27
-		y = 3
+		x = 81
+		y = 9
 		cost = 5
 		prerequisite = { focus = TR2_ela_r_jar }
 		ai_will_do = { factor = 10 }
@@ -552,8 +552,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_r_komunikacja
 		icon = GFX_pl2027_081_tramwaj_1
-		x = 26
-		y = 4
+		x = 80
+		y = 10
 		cost = 7
 		prerequisite = { focus = TR2_ela_r_bielany }
 		prerequisite = { focus = TR2_ela_r_osiedla }
@@ -570,8 +570,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_r_infrastruktura
 		icon = GFX_TRN_pl2027_autostrada
-		x = 25
-		y = 5
+		x = 79
+		y = 11
 		cost = 7
 		prerequisite = { focus = TR2_ela_r_komunikacja }
 		ai_will_do = { factor = 10 }
@@ -586,8 +586,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_r_toron2030
 		icon = GFX_pl2027_081_twierdza_2_slk
-		x = 27
-		y = 5
+		x = 81
+		y = 11
 		cost = 6
 		prerequisite = { focus = TR2_ela_r_komunikacja }
 		ai_will_do = { factor = 10 }
@@ -604,8 +604,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_p_odbudowa
 		icon = GFX_TRN_pl2027_firmy
-		x = 2
-		y = 1
+		x = 94
+		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_ela_nasz_torun }
 		prerequisite = { focus = TR2_ela_w_obrona }
@@ -622,8 +622,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_p_apator
 		icon = GFX_TRN_pl2027_apator
-		x = 0
-		y = 2
+		x = 92
+		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_ela_p_odbudowa }
 		ai_will_do = { factor = 10 }
@@ -639,8 +639,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_p_pierniki
 		icon = GFX_pl2027_081_zywnosc_3
-		x = 4
-		y = 2
+		x = 96
+		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_ela_p_odbudowa }
 		ai_will_do = { factor = 10 }
@@ -656,8 +656,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_p_logistyka
 		icon = GFX_pl2027_081_logistyka_2
-		x = 2
-		y = 2
+		x = 94
+		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_ela_p_odbudowa }
 		ai_will_do = { factor = 10 }
@@ -673,8 +673,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_p_uslugi
 		icon = GFX_TRN_pl2027_stabilizacja
-		x = 4
-		y = 3
+		x = 96
+		y = 6
 		cost = 6
 		prerequisite = { focus = TR2_ela_p_pierniki }
 		ai_will_do = { factor = 10 }
@@ -690,8 +690,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_p_kopernik
 		icon = GFX_TRN_pl2027_kopernik
-		x = 4
-		y = 4
+		x = 96
+		y = 7
 		cost = 6
 		prerequisite = { focus = TR2_ela_p_logistyka }
 		prerequisite = { focus = TR2_ela_p_uslugi }
@@ -708,8 +708,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_p_strefa
 		icon = GFX_pl2027_081_handel_2
-		x = 3
-		y = 5
+		x = 95
+		y = 8
 		cost = 6
 		prerequisite = { focus = TR2_ela_p_kopernik }
 		ai_will_do = { factor = 10 }
@@ -724,8 +724,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_p_przemysl
 		icon = GFX_TRN_pl2027_przemysl20
-		x = 5
-		y = 5
+		x = 97
+		y = 8
 		cost = 7
 		prerequisite = { focus = TR2_ela_p_kopernik }
 		ai_will_do = { factor = 10 }
@@ -742,8 +742,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_d_sasiedzi
 		icon = GFX_pl2027_081_ultimatum_0_slk
-		x = 31
-		y = 1
+		x = 14
+		y = 9
 		cost = 5
 		prerequisite = { focus = TR2_ela_nasz_torun }
 		prerequisite = { focus = TR2_ela_w_obrona }
@@ -760,8 +760,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_d_chelmza
 		icon = GFX_pl2027_081_dyplomacja_3
-		x = 30
-		y = 2
+		x = 13
+		y = 10
 		cost = 1
 		prerequisite = { focus = TR2_ela_d_sasiedzi }
 		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
@@ -778,8 +778,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_d_grudziadz
 		icon = GFX_pl2027_081_rzeka_0
-		x = 32
-		y = 2
+		x = 15
+		y = 10
 		cost = 1
 		prerequisite = { focus = TR2_ela_d_sasiedzi }
 		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
@@ -796,8 +796,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_d_metropolia
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 30
-		y = 3
+		x = 13
+		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_ela_d_chelmza }
 		ai_will_do = { factor = 10 }
@@ -813,8 +813,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_d_kampania
 		icon = GFX_pl2027_081_administracja_1
-		x = 32
-		y = 3
+		x = 15
+		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_ela_d_grudziadz }
 		ai_will_do = { factor = 10 }
@@ -829,8 +829,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_d_referenda
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 30
-		y = 4
+		x = 13
+		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_ela_d_metropolia }
 		prerequisite = { focus = TR2_ela_d_kampania }
@@ -846,8 +846,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_d_kujawy
 		icon = GFX_pl2027_081_mapa_4_slk
-		x = 29
-		y = 5
+		x = 12
+		y = 13
 		cost = 5
 		prerequisite = { focus = TR2_ela_d_referenda }
 		ai_will_do = { factor = 10 }
@@ -863,8 +863,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_d_metropolia_f
 		icon = GFX_pl2027_081_mapa_4_slk
-		x = 31
-		y = 5
+		x = 14
+		y = 13
 		cost = 1
 		prerequisite = { focus = TR2_ela_d_referenda }
 		available = { OR = { NOT = { has_country_flag = TR2S_ela_founded } has_country_flag = TR2S_ela_route_A }  check_variable = { global.MET_trn_obszary > 3 } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_8000 has_army_manpower = { size > 7999 } } NOT = { has_global_flag = MET_rozstrzygniete } }
@@ -882,8 +882,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_w_obrona
 		icon = GFX_pl2027_081_milicja_0_slk
-		x = 36
-		y = 1
+		x = 3
+		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_ela_nasz_torun }
 		ai_will_do = { factor = 10 }
@@ -900,8 +900,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_w_mobilizacja
 		icon = GFX_pl2027_081_pobor_1_slk
-		x = 34
-		y = 2
+		x = 1
+		y = 3
 		cost = 6
 		prerequisite = { focus = TR2_ela_w_obrona }
 		ai_will_do = { factor = 10 }
@@ -917,8 +917,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_w_garnizon
 		icon = GFX_TRN_pl2027_garnizon
-		x = 38
-		y = 2
+		x = 5
+		y = 3
 		cost = 7
 		prerequisite = { focus = TR2_ela_w_obrona }
 		ai_will_do = { factor = 10 }
@@ -934,8 +934,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_w_roszczenia
 		icon = GFX_pl2027_081_ultimatum_0_slk
-		x = 36
-		y = 2
+		x = 3
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_ela_w_obrona }
 		ai_will_do = { factor = 10 }
@@ -950,8 +950,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_w_lokalne
 		icon = GFX_pl2027_081_ultimatum_2_slk
-		x = 38
-		y = 3
+		x = 5
+		y = 4
 		cost = 1
 		prerequisite = { focus = TR2_ela_w_garnizon }
 		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_4000 has_army_manpower = { size > 3999 } } }
@@ -967,8 +967,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_w_wcielenie
 		icon = GFX_pl2027_081_integracja_2_slk
-		x = 38
-		y = 4
+		x = 5
+		y = 5
 		cost = 10
 		prerequisite = { focus = TR2_ela_w_roszczenia }
 		prerequisite = { focus = TR2_ela_w_lokalne }
@@ -986,8 +986,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_w_kujawy
 		icon = GFX_pl2027_081_ofensywa_1_slk
-		x = 33
-		y = 5
+		x = 0
+		y = 6
 		cost = 8
 		prerequisite = { focus = TR2_ela_w_wcielenie }
 		prerequisite = { focus = TR2_elana_tree_gotowosc }
@@ -1009,8 +1009,8 @@ focus_tree = {
 	focus = {
 		id = TR2_ela_w_dominacja
 		icon = GFX_pl2027_081_wojna_2_slk
-		x = 39
-		y = 5
+		x = 6
+		y = 6
 		cost = 5
 		prerequisite = { focus = TR2_ela_w_wcielenie }
 		ai_will_do = { factor = 10 }
@@ -1028,8 +1028,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_start
 		icon = GFX_pl2027_081_sztab_1_slk
-		x = 11
-		y = 1
+		x = 68
+		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_ela_nasz_torun }
 		bypass = { has_country_flag = MIL_start }
@@ -1048,8 +1048,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_slk
-		x = 7
-		y = 2
+		x = 64
+		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_elana_mil_start }
 		bypass = { has_country_flag = MIL_rejestr }
@@ -1067,8 +1067,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_slk
-		x = 11
-		y = 2
+		x = 68
+		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_elana_mil_start }
 		bypass = { has_country_flag = MIL_ochotnicy }
@@ -1086,8 +1086,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 15
-		y = 2
+		x = 72
+		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_elana_mil_start }
 		bypass = { has_country_flag = MIL_fabryka }
@@ -1105,8 +1105,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_slk
-		x = 6
-		y = 3
+		x = 63
+		y = 6
 		cost = 5
 		prerequisite = { focus = TR2_elana_mil_rejestr }
 		bypass = { has_country_flag = MIL_pobor }
@@ -1124,8 +1124,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_slk
-		x = 10
-		y = 3
+		x = 67
+		y = 6
 		cost = 7
 		prerequisite = { focus = TR2_elana_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_bataliony }
@@ -1145,8 +1145,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 14
-		y = 3
+		x = 71
+		y = 6
 		cost = 6
 		prerequisite = { focus = TR2_elana_mil_fabryka }
 		bypass = { has_country_flag = MIL_produkcja }
@@ -1166,8 +1166,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_slk
-		x = 8
-		y = 3
+		x = 65
+		y = 6
 		cost = 5
 		prerequisite = { focus = TR2_elana_mil_rejestr }
 		bypass = { has_country_flag = MIL_rezerwisci }
@@ -1185,8 +1185,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_slk
-		x = 12
-		y = 3
+		x = 69
+		y = 6
 		cost = 7
 		prerequisite = { focus = TR2_elana_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_brygady }
@@ -1207,8 +1207,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 16
-		y = 3
+		x = 73
+		y = 6
 		cost = 5
 		prerequisite = { focus = TR2_elana_mil_fabryka }
 		bypass = { has_country_flag = MIL_zaplecze }
@@ -1228,8 +1228,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_slk
-		x = 8
-		y = 4
+		x = 65
+		y = 7
 		cost = 5
 		prerequisite = { focus = TR2_elana_mil_rezerwisci }
 		prerequisite = { focus = TR2_elana_mil_brygady }
@@ -1251,8 +1251,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_slk
-		x = 13
-		y = 5
+		x = 70
+		y = 8
 		cost = 7
 		prerequisite = { focus = TR2_elana_mil_kadra }
 		prerequisite = { focus = TR2_elana_mil_zaplecze }
@@ -1274,8 +1274,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 41
-		y = 1
+		x = 25
+		y = 10
 		cost = 1
 		prerequisite = { focus = TR2_ela_nasz_torun }
 		bypass = { has_country_flag = TFR_zy_pl_s_ulica }
@@ -1293,8 +1293,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 40
-		y = 2
+		x = 24
+		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_elana_zy_s_ulica }
 		bypass = { has_country_flag = TFR_zy_pl_s_media }
@@ -1312,8 +1312,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 42
-		y = 2
+		x = 26
+		y = 11
 		cost = 1
 		prerequisite = { focus = TR2_elana_zy_s_ulica }
 		bypass = { has_country_flag = TFR_zy_pl_s_spis }
@@ -1331,8 +1331,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_slk_k
-		x = 41
-		y = 3
+		x = 25
+		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_elana_zy_s_media }
 		prerequisite = { focus = TR2_elana_zy_s_spis }
@@ -1352,8 +1352,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_slk_k
-		x = 43
-		y = 3
+		x = 27
+		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_elana_zy_s_media }
 		prerequisite = { focus = TR2_elana_zy_s_spis }
@@ -1373,8 +1373,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 41
-		y = 4
+		x = 25
+		y = 13
 		cost = 5
 		prerequisite = { focus = TR2_elana_zy_s_kartki focus = TR2_elana_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
@@ -1393,8 +1393,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 43
-		y = 4
+		x = 27
+		y = 13
 		cost = 1
 		prerequisite = { focus = TR2_elana_zy_s_kartki focus = TR2_elana_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_czarny }
@@ -1412,8 +1412,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 45
-		y = 4
+		x = 29
+		y = 13
 		cost = 5
 		prerequisite = { focus = TR2_elana_zy_s_kartki focus = TR2_elana_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_straze }
@@ -1432,8 +1432,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 43
-		y = 5
+		x = 27
+		y = 14
 		cost = 7
 		prerequisite = { focus = TR2_elana_zy_s_szkoly }
 		prerequisite = { focus = TR2_elana_zy_s_czarny }
@@ -1455,8 +1455,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 45
-		y = 1
+		x = 29
+		y = 10
 		cost = 6
 		prerequisite = { focus = TR2_ela_nasz_torun }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
@@ -1476,8 +1476,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_slk
-		x = 44
-		y = 2
+		x = 28
+		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_elana_zy_k_admin }
 		bypass = { has_country_flag = TFR_zy_k_k_defilada }
@@ -1496,8 +1496,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 46
-		y = 2
+		x = 30
+		y = 11
 		cost = 1
 		prerequisite = { focus = TR2_elana_zy_k_admin }
 		bypass = { has_country_flag = TFR_zy_k_k_opor }
@@ -1515,8 +1515,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_slk
-		x = 45
-		y = 3
+		x = 29
+		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_elana_zy_k_defilada }
 		prerequisite = { focus = TR2_elana_zy_k_opor }
@@ -1535,8 +1535,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 49
-		y = 1
+		x = 33
+		y = 10
 		cost = 5
 		prerequisite = { focus = TR2_ela_nasz_torun }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
@@ -1556,8 +1556,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 49
-		y = 2
+		x = 33
+		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_elana_zy_p_straty }
 		bypass = { has_country_flag = TFR_zy_p_p_rzad }
@@ -1576,8 +1576,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_slk_k
-		x = 48
-		y = 3
+		x = 32
+		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_elana_zy_p_rzad }
 		mutually_exclusive = { focus = TR2_elana_zy_p_pojednanie }
@@ -1596,8 +1596,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_slk_k
-		x = 50
-		y = 3
+		x = 34
+		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_elana_zy_p_rzad }
 		mutually_exclusive = { focus = TR2_elana_zy_p_rewanz }
@@ -1616,8 +1616,8 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 49
-		y = 4
+		x = 33
+		y = 13
 		cost = 6
 		prerequisite = { focus = TR2_elana_zy_p_rewanz focus = TR2_elana_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
@@ -1638,7 +1638,7 @@ focus_tree = {
 	focus = {
 		id = TR2_elana_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_slk
-		x = 28
+		x = 60
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_ela_d_metropolia }
@@ -1666,8 +1666,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_start
 		icon = GFX_pl2027_081_twierdza_1_slk_f
-		x = 65
-		y = 17
+		x = 48
+		y = 27
 		cost = 2
 		prerequisite = { focus = TR2_ela_nasz_torun }
 		ai_will_do = { factor = 4 }
@@ -1680,8 +1680,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_crisis
 		icon = GFX_pl2027_081_twierdza_1_slk_f
-		x = 65
-		y = 18
+		x = 48
+		y = 28
 		cost = 2
 		prerequisite = { focus = TR2S_ela_start }
 		ai_will_do = { factor = 4 }
@@ -1694,8 +1694,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_a_choice
 		icon = GFX_pl2027_081_twierdza_1_slk_f
-		x = 60
-		y = 19
+		x = 42
+		y = 29
 		cost = 3
 		prerequisite = { focus = TR2S_ela_crisis }
 		mutually_exclusive = { focus = TR2S_ela_b_choice }
@@ -1709,8 +1709,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_a_1
 		icon = GFX_pl2027_081_twierdza_1_slk_f
-		x = 59
-		y = 20
+		x = 41
+		y = 30
 		cost = 2
 		prerequisite = { focus = TR2S_ela_a_choice }
 		ai_will_do = { factor = 4 }
@@ -1723,8 +1723,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_a_2
 		icon = GFX_pl2027_081_porzadek_0
-		x = 61
-		y = 21
+		x = 43
+		y = 31
 		cost = 2
 		prerequisite = { focus = TR2S_ela_a_1 }
 		ai_will_do = { factor = 4 }
@@ -1737,8 +1737,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_a_3
 		icon = GFX_pl2027_081_twierdza_1_slk_f
-		x = 59
-		y = 22
+		x = 41
+		y = 32
 		cost = 2
 		prerequisite = { focus = TR2S_ela_a_2 }
 		ai_will_do = { factor = 4 }
@@ -1751,8 +1751,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_a_found
 		icon = GFX_pl2027_081_porzadek_0
-		x = 60
-		y = 23
+		x = 42
+		y = 33
 		cost = 3
 		prerequisite = { focus = TR2S_ela_a_3 }
 		available = { check_variable = { TR2S_ela_meter > 54 } }
@@ -1773,8 +1773,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_a_legacy
 		icon = GFX_pl2027_081_twierdza_1_slk_f
-		x = 60
-		y = 24
+		x = 42
+		y = 34
 		cost = 3
 		prerequisite = { focus = TR2S_ela_a_found }
 		ai_will_do = { factor = 4 }
@@ -1786,8 +1786,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_b_choice
 		icon = GFX_pl2027_081_porzadek_0
-		x = 70
-		y = 19
+		x = 54
+		y = 29
 		cost = 3
 		prerequisite = { focus = TR2S_ela_crisis }
 		mutually_exclusive = { focus = TR2S_ela_a_choice }
@@ -1801,8 +1801,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_b_1
 		icon = GFX_pl2027_081_twierdza_1_slk_f
-		x = 69
-		y = 20
+		x = 53
+		y = 30
 		cost = 2
 		prerequisite = { focus = TR2S_ela_b_choice }
 		ai_will_do = { factor = 4 }
@@ -1815,8 +1815,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_b_2
 		icon = GFX_pl2027_081_porzadek_0
-		x = 71
-		y = 21
+		x = 55
+		y = 31
 		cost = 2
 		prerequisite = { focus = TR2S_ela_b_1 }
 		ai_will_do = { factor = 4 }
@@ -1829,8 +1829,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_b_3
 		icon = GFX_pl2027_081_twierdza_1_slk_f
-		x = 69
-		y = 22
+		x = 53
+		y = 32
 		cost = 2
 		prerequisite = { focus = TR2S_ela_b_2 }
 		ai_will_do = { factor = 4 }
@@ -1843,8 +1843,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_b_4
 		icon = GFX_pl2027_081_porzadek_0
-		x = 71
-		y = 23
+		x = 55
+		y = 33
 		cost = 2
 		prerequisite = { focus = TR2S_ela_b_3 }
 		ai_will_do = { factor = 4 }
@@ -1857,8 +1857,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_b_found
 		icon = GFX_pl2027_081_porzadek_0
-		x = 70
-		y = 24
+		x = 54
+		y = 34
 		cost = 3
 		prerequisite = { focus = TR2S_ela_b_4 }
 		available = { check_variable = { TR2S_ela_meter > 54 } }
@@ -1879,8 +1879,8 @@ focus_tree = {
 	focus = {
 		id = TR2S_ela_b_legacy
 		icon = GFX_pl2027_081_twierdza_1_slk_f
-		x = 70
-		y = 25
+		x = 54
+		y = 35
 		cost = 3
 		prerequisite = { focus = TR2S_ela_b_found }
 		ai_will_do = { factor = 4 }
@@ -1894,8 +1894,8 @@ focus_tree = {
 	focus = {
 		id = TR2C_ela_A_institution
 		icon = GFX_pl2027_081_rada_0
-		x = 57
-		y = 26
+		x = 40
+		y = 36
 		cost = 5
 		prerequisite = { focus = TR2S_ela_a_legacy }
 		ai_will_do = { factor = 3 }
@@ -1908,8 +1908,8 @@ focus_tree = {
 	focus = {
 		id = TR2C_ela_A_future
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 57
-		y = 27
+		x = 40
+		y = 37
 		cost = 5
 		prerequisite = { focus = TR2C_ela_A_institution }
 		ai_will_do = { factor = 3 }
@@ -1922,8 +1922,8 @@ focus_tree = {
 	focus = {
 		id = TR2C_ela_B_institution
 		icon = GFX_pl2027_081_rada_0
-		x = 73
-		y = 27
+		x = 56
+		y = 37
 		cost = 5
 		prerequisite = { focus = TR2S_ela_b_legacy }
 		ai_will_do = { factor = 3 }
@@ -1936,14 +1936,66 @@ focus_tree = {
 	focus = {
 		id = TR2C_ela_B_future
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 73
-		y = 28
+		x = 56
+		y = 38
 		cost = 5
 		prerequisite = { focus = TR2C_ela_B_institution }
 		ai_will_do = { factor = 3 }
 		completion_reward = {
 			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
 			add_stability = -0.02
+		}
+	}
+
+	focus = {
+		id = TR2END_ela_solo
+		icon = GFX_pl2027_081_konstytucja_0
+		x = 32
+		y = 43
+		cost = 8
+		prerequisite = { focus = TR2C_ela_A_future focus = TR2C_ela_B_future }
+		mutually_exclusive = { focus = TR2END_ela_union focus = TR2END_ela_pact }
+		ai_will_do = { factor = 5 }
+		completion_reward = {
+			set_country_flag = TR2END_ela_solo
+			if = { limit = { is_in_faction = yes } leave_faction = yes }
+			add_ideas = TR2END_ela_solo_idea
+			add_political_power = 30
+			country_event = { id = tr2end.151 days = 1 }
+		}
+	}
+
+	focus = {
+		id = TR2END_ela_union
+		icon = GFX_pl2027_081_sojusz_2_slk
+		x = 48
+		y = 43
+		cost = 8
+		prerequisite = { focus = TR2C_ela_A_future focus = TR2C_ela_B_future }
+		mutually_exclusive = { focus = TR2END_ela_solo focus = TR2END_ela_pact }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			set_country_flag = TR2END_ela_union_offer
+			add_political_power = -30
+			if = { limit = { country_exists = CHZ NOT = { has_war_with = CHZ } CHZ = { is_subject = no } } CHZ = { country_event = { id = tr2end.152 days = 2 } } }
+			else = { country_event = { id = tr2end.153 days = 2 } }
+		}
+	}
+
+	focus = {
+		id = TR2END_ela_pact
+		icon = GFX_pl2027_081_armia_0
+		x = 64
+		y = 43
+		cost = 8
+		prerequisite = { focus = TR2C_ela_A_future focus = TR2C_ela_B_future }
+		mutually_exclusive = { focus = TR2END_ela_solo focus = TR2END_ela_union }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			set_country_flag = TR2END_ela_marsz
+			add_war_support = 0.06
+			if = { limit = { country_exists = BYD NOT = { has_war_with = BYD } } create_wargoal = { type = annex_everything target = BYD } }
+			else = { army_experience = 20 }
 		}
 	}
 }

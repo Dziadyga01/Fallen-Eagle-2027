@@ -1,0 +1,19 @@
+TR2END_dyplomacja = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = {
+		OR = {
+			has_country_flag = TR2END_gul_union_rejected
+			has_country_flag = TR2END_gul_pact
+			has_country_flag = TR2END_zal_union_rejected
+			has_country_flag = TR2END_zal_pact
+			has_country_flag = TR2END_rom_union_rejected
+			has_country_flag = TR2END_rom_pact
+			has_country_flag = TR2END_kow_union_rejected
+			has_country_flag = TR2END_kow_pact
+			has_country_flag = TR2END_kre_union_rejected
+			has_country_flag = TR2END_kre_pact
+		}
+	}
+	priority = 82
+}

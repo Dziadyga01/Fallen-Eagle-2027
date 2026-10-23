@@ -437,7 +437,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_r_plan
 		icon = GFX_pl2027_081_ludzie_2
-		x = 2
+		x = 15
 		y = 1
 		cost = 6
 		prerequisite = { focus = TR2_rom_dla_mieszkancow }
@@ -455,7 +455,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_r_rubinkowo
 		icon = GFX_pl2027_081_osiedle_0
-		x = 0
+		x = 13
 		y = 2
 		cost = 6
 		prerequisite = { focus = TR2_rom_r_plan }
@@ -472,7 +472,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_r_jar
 		icon = GFX_pl2027_081_osiedle_1
-		x = 4
+		x = 17
 		y = 2
 		cost = 6
 		prerequisite = { focus = TR2_rom_r_plan }
@@ -488,7 +488,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_r_bielany
 		icon = GFX_TRN_pl2027_szkoly
-		x = 2
+		x = 15
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_rom_r_plan }
@@ -504,7 +504,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_r_osiedla
 		icon = GFX_pl2027_081_osiedle_2
-		x = 4
+		x = 17
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_rom_r_jar }
@@ -521,7 +521,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_r_komunikacja
 		icon = GFX_pl2027_081_tramwaj_1
-		x = 4
+		x = 17
 		y = 4
 		cost = 7
 		prerequisite = { focus = TR2_rom_r_bielany }
@@ -539,7 +539,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_r_infrastruktura
 		icon = GFX_TRN_pl2027_autostrada
-		x = 3
+		x = 16
 		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_rom_r_komunikacja }
@@ -555,7 +555,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_r_toron2030
 		icon = GFX_pl2027_081_tramwaj_0
-		x = 5
+		x = 18
 		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_rom_r_komunikacja }
@@ -710,7 +710,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_d_sasiedzi
 		icon = GFX_pl2027_081_wojna_0_slk
-		x = 16
+		x = 3
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_rom_dla_mieszkancow }
@@ -727,7 +727,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_d_chelmza
 		icon = GFX_pl2027_081_sojusz_1_slk
-		x = 14
+		x = 1
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_rom_d_sasiedzi }
@@ -745,7 +745,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_d_grudziadz
 		icon = GFX_pl2027_081_rzeka_0
-		x = 16
+		x = 3
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_rom_d_sasiedzi }
@@ -762,7 +762,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_d_metropolia
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 14
+		x = 1
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_rom_d_chelmza }
@@ -779,7 +779,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_d_kampania
 		icon = GFX_pl2027_081_budowa_2
-		x = 18
+		x = 5
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_rom_d_sasiedzi }
@@ -795,7 +795,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_d_referenda
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 14
+		x = 1
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_rom_d_metropolia }
@@ -813,7 +813,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_d_kujawy
 		icon = GFX_pl2027_081_mapa_4_slk
-		x = 13
+		x = 0
 		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_rom_d_referenda }
@@ -830,7 +830,7 @@ focus_tree = {
 	focus = {
 		id = TR2_rom_d_metropolia_f
 		icon = GFX_pl2027_081_sojusz_3_slk
-		x = 15
+		x = 2
 		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_rom_d_referenda }

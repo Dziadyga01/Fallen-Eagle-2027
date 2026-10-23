@@ -708,6 +708,7 @@ focus_tree = {
 		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_zal_p_kopernik }
+		available = { OR = { NOT = { has_country_flag = TR2S_zal_founded } has_country_flag = TR2S_zal_route_A } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_zal_p_przemysl_tb bonus = 1.0 uses = 2 category = industry }
@@ -969,7 +970,7 @@ focus_tree = {
 		y = 5
 		cost = 1
 		prerequisite = { focus = TR2_zal_w_wcielenie }
-		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
+		available = { OR = { NOT = { has_country_flag = TR2S_zal_founded } has_country_flag = TR2S_zal_route_B }  custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
 		bypass = { OR = { NOT = { country_exists = KUJ } KUJ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {

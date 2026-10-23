@@ -1,0 +1,398 @@
+add_namespace = tr2end
+
+country_event = {
+	id = tr2end.101
+	title = tr2end.101.t
+	desc = tr2end.101.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.101.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.012
+	}
+}
+
+country_event = {
+	id = tr2end.102
+	title = tr2end.102.t
+	desc = tr2end.102.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.102.a
+		ai_chance = { factor = 35 }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
+			FROM = {
+				set_country_flag = TR2END_gul_union_success
+				annex_country = { target = ROOT transfer_troops = yes }
+				add_stability = 0.015
+			}
+		}
+	}
+	option = {
+		name = tr2end.102.b
+		ai_chance = { factor = 55 }
+		FROM = { set_country_flag = TR2END_gul_union_rejected add_political_power = 15 add_stability = -0.015 }
+	}
+}
+
+country_event = {
+	id = tr2end.103
+	title = tr2end.103.t
+	desc = tr2end.103.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.103.a
+		ai_chance = { factor = 1 }
+		set_country_flag = TR2END_gul_union_unavailable
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = tr2end.104
+	title = tr2end.104.t
+	desc = tr2end.104.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.104.a
+		ai_chance = { factor = 40 }
+		if = { limit = { is_in_faction = no FROM = { is_faction_leader = yes } NOT = { has_war_with = FROM } } FROM = { add_to_faction = ROOT } }
+	}
+	option = {
+		name = tr2end.104.b
+		ai_chance = { factor = 45 }
+		FROM = { add_political_power = 3 }
+	}
+}
+
+country_event = {
+	id = tr2end.111
+	title = tr2end.111.t
+	desc = tr2end.111.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.111.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.012
+	}
+}
+
+country_event = {
+	id = tr2end.112
+	title = tr2end.112.t
+	desc = tr2end.112.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.112.a
+		ai_chance = { factor = 35 }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
+			FROM = {
+				set_country_flag = TR2END_zal_union_success
+				annex_country = { target = ROOT transfer_troops = yes }
+				add_stability = 0.015
+			}
+		}
+	}
+	option = {
+		name = tr2end.112.b
+		ai_chance = { factor = 55 }
+		FROM = { set_country_flag = TR2END_zal_union_rejected add_political_power = 15 add_stability = -0.015 }
+	}
+}
+
+country_event = {
+	id = tr2end.113
+	title = tr2end.113.t
+	desc = tr2end.113.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.113.a
+		ai_chance = { factor = 1 }
+		set_country_flag = TR2END_zal_union_unavailable
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = tr2end.114
+	title = tr2end.114.t
+	desc = tr2end.114.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.114.a
+		ai_chance = { factor = 40 }
+		if = { limit = { is_in_faction = no FROM = { is_faction_leader = yes } NOT = { has_war_with = FROM } } FROM = { add_to_faction = ROOT } }
+	}
+	option = {
+		name = tr2end.114.b
+		ai_chance = { factor = 45 }
+		FROM = { add_political_power = 3 }
+	}
+}
+
+country_event = {
+	id = tr2end.121
+	title = tr2end.121.t
+	desc = tr2end.121.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.121.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.012
+	}
+}
+
+country_event = {
+	id = tr2end.122
+	title = tr2end.122.t
+	desc = tr2end.122.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.122.a
+		ai_chance = { factor = 35 }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
+			FROM = {
+				set_country_flag = TR2END_rom_union_success
+				annex_country = { target = ROOT transfer_troops = yes }
+				add_stability = 0.015
+			}
+		}
+	}
+	option = {
+		name = tr2end.122.b
+		ai_chance = { factor = 55 }
+		FROM = { set_country_flag = TR2END_rom_union_rejected add_political_power = 15 add_stability = -0.015 }
+	}
+}
+
+country_event = {
+	id = tr2end.123
+	title = tr2end.123.t
+	desc = tr2end.123.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.123.a
+		ai_chance = { factor = 1 }
+		set_country_flag = TR2END_rom_union_unavailable
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = tr2end.124
+	title = tr2end.124.t
+	desc = tr2end.124.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.124.a
+		ai_chance = { factor = 40 }
+		if = { limit = { is_in_faction = no FROM = { is_faction_leader = yes } NOT = { has_war_with = FROM } } FROM = { add_to_faction = ROOT } }
+	}
+	option = {
+		name = tr2end.124.b
+		ai_chance = { factor = 45 }
+		FROM = { add_political_power = 3 }
+	}
+}
+
+country_event = {
+	id = tr2end.131
+	title = tr2end.131.t
+	desc = tr2end.131.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.131.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.012
+	}
+}
+
+country_event = {
+	id = tr2end.132
+	title = tr2end.132.t
+	desc = tr2end.132.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.132.a
+		ai_chance = { factor = 35 }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
+			FROM = {
+				set_country_flag = TR2END_kow_union_success
+				annex_country = { target = ROOT transfer_troops = yes }
+				add_stability = 0.015
+			}
+		}
+	}
+	option = {
+		name = tr2end.132.b
+		ai_chance = { factor = 55 }
+		FROM = { set_country_flag = TR2END_kow_union_rejected add_political_power = 15 add_stability = -0.015 }
+	}
+}
+
+country_event = {
+	id = tr2end.133
+	title = tr2end.133.t
+	desc = tr2end.133.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.133.a
+		ai_chance = { factor = 1 }
+		set_country_flag = TR2END_kow_union_unavailable
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = tr2end.134
+	title = tr2end.134.t
+	desc = tr2end.134.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.134.a
+		ai_chance = { factor = 40 }
+		if = { limit = { is_in_faction = no FROM = { is_faction_leader = yes } NOT = { has_war_with = FROM } } FROM = { add_to_faction = ROOT } }
+	}
+	option = {
+		name = tr2end.134.b
+		ai_chance = { factor = 45 }
+		FROM = { add_political_power = 3 }
+	}
+}
+
+country_event = {
+	id = tr2end.141
+	title = tr2end.141.t
+	desc = tr2end.141.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.141.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.012
+	}
+}
+
+country_event = {
+	id = tr2end.142
+	title = tr2end.142.t
+	desc = tr2end.142.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.142.a
+		ai_chance = { factor = 35 }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
+			FROM = {
+				set_country_flag = TR2END_kre_union_success
+				annex_country = { target = ROOT transfer_troops = yes }
+				add_stability = 0.015
+			}
+		}
+	}
+	option = {
+		name = tr2end.142.b
+		ai_chance = { factor = 55 }
+		FROM = { set_country_flag = TR2END_kre_union_rejected add_political_power = 15 add_stability = -0.015 }
+	}
+}
+
+country_event = {
+	id = tr2end.143
+	title = tr2end.143.t
+	desc = tr2end.143.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.143.a
+		ai_chance = { factor = 1 }
+		set_country_flag = TR2END_kre_union_unavailable
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = tr2end.144
+	title = tr2end.144.t
+	desc = tr2end.144.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.144.a
+		ai_chance = { factor = 25 }
+		if = { limit = { is_in_faction = no FROM = { is_faction_leader = yes } NOT = { has_war_with = FROM } } FROM = { add_to_faction = ROOT } }
+	}
+	option = {
+		name = tr2end.144.b
+		ai_chance = { factor = 45 }
+		FROM = { add_political_power = 3 }
+	}
+}
+
+country_event = {
+	id = tr2end.151
+	title = tr2end.151.t
+	desc = tr2end.151.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.151.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.012
+	}
+}
+
+country_event = {
+	id = tr2end.152
+	title = tr2end.152.t
+	desc = tr2end.152.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.152.a
+		ai_chance = { factor = 10 }
+		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
+			FROM = {
+				set_country_flag = TR2END_ela_union_success
+				annex_country = { target = ROOT transfer_troops = yes }
+				add_stability = 0.015
+			}
+		}
+	}
+	option = {
+		name = tr2end.152.b
+		ai_chance = { factor = 65 }
+		FROM = { set_country_flag = TR2END_ela_union_rejected add_political_power = 15 if = { limit = { country_exists = CHZ NOT = { has_war_with = CHZ } } create_wargoal = { type = annex_everything target = CHZ } } }
+	}
+}
+
+country_event = {
+	id = tr2end.153
+	title = tr2end.153.t
+	desc = tr2end.153.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = tr2end.153.a
+		ai_chance = { factor = 1 }
+		set_country_flag = TR2END_ela_union_unavailable
+		add_political_power = 15
+	}
+}
+

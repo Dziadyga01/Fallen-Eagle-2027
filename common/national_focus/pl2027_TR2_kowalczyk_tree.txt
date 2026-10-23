@@ -1714,6 +1714,9 @@ focus_tree = {
 			set_country_flag = TR2S_kow_route_A
 			add_political_power = 20
 			country_event = { id = tr2state.131 days = 1 }
+			add_ideas = TR2C_kow_A_constitution
+			set_politics = { ruling_party = social_liberal elections_allowed = yes }
+			country_event = { id = tr2c.131 days = 3 }
 		}
 	}
 
@@ -1831,6 +1834,9 @@ focus_tree = {
 			set_country_flag = TR2S_kow_route_B
 			add_political_power = 20
 			country_event = { id = tr2state.132 days = 1 }
+			add_ideas = TR2C_kow_B_constitution
+			set_politics = { ruling_party = social_liberal elections_allowed = yes }
+			country_event = { id = tr2c.132 days = 3 }
 		}
 	}
 
@@ -1844,6 +1850,64 @@ focus_tree = {
 		ai_will_do = { factor = 4 }
 		completion_reward = {
 			add_political_power = 30
+		}
+	}
+
+
+	# Kontynuacja ustrojowa: niezalezne instytucje i skutki wyboru panstwa
+	focus = {
+		id = TR2C_kow_A_institution
+		icon = GFX_pl2027_081_rada_0
+		x = 62
+		y = 27
+		cost = 5
+		prerequisite = { focus = TR2S_kow_a_legacy }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			add_tech_bonus = { name = TR2C_kow_math bonus = 1.0 uses = 1 category = electronics }
+			add_political_power = -15
+		}
+	}
+
+	focus = {
+		id = TR2C_kow_A_future
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 62
+		y = 28
+		cost = 5
+		prerequisite = { focus = TR2C_kow_A_institution }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			add_stability = 0.025
+			add_political_power = -15
+		}
+	}
+
+	focus = {
+		id = TR2C_kow_B_institution
+		icon = GFX_pl2027_081_rada_0
+		x = 78
+		y = 28
+		cost = 5
+		prerequisite = { focus = TR2S_kow_b_legacy }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = TR2C_kow_B_future
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 78
+		y = 29
+		cost = 5
+		prerequisite = { focus = TR2C_kow_B_institution }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			add_political_power = 35
+			add_stability = 0.006
 		}
 	}
 }

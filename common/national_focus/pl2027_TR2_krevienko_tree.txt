@@ -598,6 +598,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
+		prerequisite = { focus = TR2_kre_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_kre_p_odbudowa_tb bonus = 1.0 uses = 1 category = industry }
@@ -736,6 +737,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
+		prerequisite = { focus = TR2_kre_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_political_power = 30
@@ -875,6 +877,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
+		prerequisite = { focus = TR2_kre_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_war_support = 0.03

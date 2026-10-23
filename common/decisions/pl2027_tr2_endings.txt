@@ -1,0 +1,127 @@
+TR2END_dyplomacja = {
+	TR2END_gul_ponow_rokowania = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2END_gul_union_rejected NOT = { has_country_flag = TR2END_gul_union_success } }
+		available = { country_exists = BYD NOT = { has_war_with = BYD } BYD = { is_subject = no } }
+		cost = 75
+		days_re_enable = 120
+		complete_effect = {
+			clr_country_flag = TR2END_gul_union_rejected
+			BYD = { country_event = { id = tr2end.102 days = 2 } }
+		}
+		ai_will_do = { factor = 0.5 }
+	}
+	TR2END_gul_ponow_sojusz = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2END_gul_pact }
+		available = { is_faction_leader = yes }
+		cost = 35
+		days_re_enable = 90
+		complete_effect = {
+			every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.104 days = 2 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2END_zal_ponow_rokowania = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2END_zal_union_rejected NOT = { has_country_flag = TR2END_zal_union_success } }
+		available = { country_exists = CHZ NOT = { has_war_with = CHZ } CHZ = { is_subject = no } }
+		cost = 75
+		days_re_enable = 120
+		complete_effect = {
+			clr_country_flag = TR2END_zal_union_rejected
+			CHZ = { country_event = { id = tr2end.112 days = 2 } }
+		}
+		ai_will_do = { factor = 0.5 }
+	}
+	TR2END_zal_ponow_sojusz = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2END_zal_pact }
+		available = { is_faction_leader = yes }
+		cost = 35
+		days_re_enable = 90
+		complete_effect = {
+			every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.114 days = 2 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2END_rom_ponow_rokowania = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2END_rom_union_rejected NOT = { has_country_flag = TR2END_rom_union_success } }
+		available = { country_exists = BYD NOT = { has_war_with = BYD } BYD = { is_subject = no } }
+		cost = 75
+		days_re_enable = 120
+		complete_effect = {
+			clr_country_flag = TR2END_rom_union_rejected
+			BYD = { country_event = { id = tr2end.122 days = 2 } }
+		}
+		ai_will_do = { factor = 0.5 }
+	}
+	TR2END_rom_ponow_sojusz = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2END_rom_pact }
+		available = { is_faction_leader = yes }
+		cost = 35
+		days_re_enable = 90
+		complete_effect = {
+			every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.124 days = 2 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2END_kow_ponow_rokowania = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2END_kow_union_rejected NOT = { has_country_flag = TR2END_kow_union_success } }
+		available = { country_exists = BYD NOT = { has_war_with = BYD } BYD = { is_subject = no } }
+		cost = 75
+		days_re_enable = 120
+		complete_effect = {
+			clr_country_flag = TR2END_kow_union_rejected
+			BYD = { country_event = { id = tr2end.132 days = 2 } }
+		}
+		ai_will_do = { factor = 0.5 }
+	}
+	TR2END_kow_ponow_sojusz = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2END_kow_pact }
+		available = { is_faction_leader = yes }
+		cost = 35
+		days_re_enable = 90
+		complete_effect = {
+			every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.134 days = 2 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2END_kre_ponow_rokowania = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2END_kre_union_rejected NOT = { has_country_flag = TR2END_kre_union_success } }
+		available = { country_exists = GRU NOT = { has_war_with = GRU } GRU = { is_subject = no } }
+		cost = 75
+		days_re_enable = 120
+		complete_effect = {
+			clr_country_flag = TR2END_kre_union_rejected
+			GRU = { country_event = { id = tr2end.142 days = 2 } }
+		}
+		ai_will_do = { factor = 0.5 }
+	}
+	TR2END_kre_ponow_sojusz = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2END_kre_pact }
+		available = { is_faction_leader = yes }
+		cost = 35
+		days_re_enable = 90
+		complete_effect = {
+			every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.144 days = 2 } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

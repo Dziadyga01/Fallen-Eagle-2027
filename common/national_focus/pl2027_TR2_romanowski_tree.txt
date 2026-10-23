@@ -1999,6 +1999,7 @@ focus_tree = {
 		ai_will_do = { factor = 3 }
 		completion_reward = {
 			set_country_flag = TR2END_rom_pact
+			if = { limit = { is_in_faction = yes } leave_faction = yes }
 			if = { limit = { is_in_faction = no } create_faction = TR2END_ROM_PAKT }
 			if = { limit = { is_faction_leader = yes } every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.124 days = 2 } } }
 			add_war_support = 0.02

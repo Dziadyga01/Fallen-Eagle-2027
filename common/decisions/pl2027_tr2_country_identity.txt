@@ -1,0 +1,480 @@
+TR2C_gul_rzad = {
+	TR2C_gul_A_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_gul_route_A has_completed_focus = TR2C_gul_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_stability = 0.025
+			add_political_power = -12
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_gul_A_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_gul_route_A has_completed_focus = TR2C_gul_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_political_power = 25
+			add_stability = 0.005
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_gul_A_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_gul_route_A has_completed_focus = TR2C_gul_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_stability = 0.018
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_gul_B_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_gul_route_B has_completed_focus = TR2C_gul_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_political_power = 30
+			add_stability = -0.012
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_gul_B_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_gul_route_B has_completed_focus = TR2C_gul_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			army_experience = 10
+			add_manpower = 350
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_gul_B_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_gul_route_B has_completed_focus = TR2C_gul_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_stability = 0.02
+			add_political_power = -10
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+TR2C_zal_rzad = {
+	TR2C_zal_A_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_zal_route_A has_completed_focus = TR2C_zal_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_political_power = 50
+			add_stability = -0.022
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_zal_A_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_zal_route_A has_completed_focus = TR2C_zal_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_zal_A_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_zal_route_A has_completed_focus = TR2C_zal_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_stability = 0.015
+			add_political_power = 12
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_zal_B_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_zal_route_B has_completed_focus = TR2C_zal_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_political_power = 45
+			add_stability = -0.025
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_zal_B_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_zal_route_B has_completed_focus = TR2C_zal_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_political_power = 35
+			add_stability = -0.01
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_zal_B_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_zal_route_B has_completed_focus = TR2C_zal_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_stability = 0.015
+			army_experience = 5
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+TR2C_rom_rzad = {
+	TR2C_rom_A_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_rom_route_A has_completed_focus = TR2C_rom_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_stability = 0.035
+			add_political_power = -15
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_rom_A_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_rom_route_A has_completed_focus = TR2C_rom_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_political_power = 18
+			add_stability = 0.01
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_rom_A_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_rom_route_A has_completed_focus = TR2C_rom_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_stability = 0.02
+			add_political_power = -10
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_rom_B_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_rom_route_B has_completed_focus = TR2C_rom_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_stability = 0.02
+			add_political_power = -12
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_rom_B_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_rom_route_B has_completed_focus = TR2C_rom_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_political_power = 20
+			add_stability = 0.006
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_rom_B_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_rom_route_B has_completed_focus = TR2C_rom_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_stability = 0.02
+			army_experience = 5
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+TR2C_kow_rzad = {
+	TR2C_kow_A_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kow_route_A has_completed_focus = TR2C_kow_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_tech_bonus = { name = TR2C_kow_teach bonus = 1.0 uses = 1 category = industry }
+			add_political_power = -12
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_kow_A_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kow_route_A has_completed_focus = TR2C_kow_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_political_power = 30
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_kow_A_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kow_route_A has_completed_focus = TR2C_kow_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_tech_bonus = { name = TR2C_kow_lab bonus = 1.0 uses = 1 category = electronics }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_kow_B_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kow_route_B has_completed_focus = TR2C_kow_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_tech_bonus = { name = TR2C_kow_exchange bonus = 1.0 uses = 1 category = industry }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_kow_B_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kow_route_B has_completed_focus = TR2C_kow_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_stability = 0.025
+			add_political_power = 5
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_kow_B_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kow_route_B has_completed_focus = TR2C_kow_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_political_power = 30
+			add_stability = 0.007
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+TR2C_kre_rzad = {
+	TR2C_kre_A_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kre_route_A has_completed_focus = TR2C_kre_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_stability = 0.025
+			add_political_power = -12
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_kre_A_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kre_route_A has_completed_focus = TR2C_kre_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_stability = 0.015
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_kre_A_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kre_route_A has_completed_focus = TR2C_kre_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_manpower = 700
+			add_war_support = 0.008
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_kre_B_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kre_route_B has_completed_focus = TR2C_kre_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_stability = 0.018
+			add_political_power = -12
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_kre_B_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kre_route_B has_completed_focus = TR2C_kre_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_political_power = 20
+			army_experience = 4
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_kre_B_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_kre_route_B has_completed_focus = TR2C_kre_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_manpower = 900
+			add_stability = -0.01
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+TR2C_ela_rzad = {
+	TR2C_ela_A_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_ela_route_A has_completed_focus = TR2C_ela_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_political_power = 30
+			add_stability = -0.02
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_ela_A_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_ela_route_A has_completed_focus = TR2C_ela_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			army_experience = 12
+			add_political_power = -12
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_ela_A_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_ela_route_A has_completed_focus = TR2C_ela_A_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_war_support = 0.018
+			add_stability = -0.012
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_ela_B_decision_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_ela_route_B has_completed_focus = TR2C_ela_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_manpower = 1200
+			add_stability = -0.015
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_ela_B_decision_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_ela_route_B has_completed_focus = TR2C_ela_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_stability = -0.015
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2C_ela_B_decision_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2S_ela_route_B has_completed_focus = TR2C_ela_B_institution }
+		available = { has_stability > 0.15 }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_war_support = 0.025
+			add_stability = -0.02
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+

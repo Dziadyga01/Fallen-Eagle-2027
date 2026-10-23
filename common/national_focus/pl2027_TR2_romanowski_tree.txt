@@ -429,7 +429,7 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { has_idea = TR2_romanowski_1 } remove_ideas = TR2_romanowski_1 } add_ideas = TR2_romanowski_2
-			set_cosmetic_tag = TR2_FIN_ROMANOWSKI
+			if = { limit = { NOT = { has_country_flag = TR2S_rom_founded } } set_cosmetic_tag = TR2_FIN_ROMANOWSKI }
 			add_political_power = 100
 		}
 	}
@@ -2401,6 +2401,241 @@ focus_tree = {
 			clamp_variable = { var = TR2_RMX_zaufanie min = 0 max = 100 }
 			clamp_variable = { var = TR2_RMX_zasoby min = 0 max = 100 }
 			country_event = { id = tr2romx.10 days = 1 }
+		}
+	}
+
+	# Statecraft: rozne panstwa zalezne od wyboru tego ugrupowania
+	focus = {
+		id = TR2S_rom_start
+		icon = GFX_pl2027_081_osiedle_0
+		x = 102
+		y = 16
+		cost = 2
+		prerequisite = { focus = TR2_rom_dla_mieszkancow }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			set_variable = { TR2S_rom_meter = 30 }
+			add_political_power = 15
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_crisis
+		icon = GFX_pl2027_081_osiedle_0
+		x = 102
+		y = 17
+		cost = 2
+		prerequisite = { focus = TR2S_rom_start }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_political_power = -5
+			country_event = { id = tr2state.120 days = 1 }
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_a_choice
+		icon = GFX_pl2027_081_osiedle_0
+		x = 97
+		y = 18
+		cost = 3
+		prerequisite = { focus = TR2S_rom_crisis }
+		mutually_exclusive = { focus = TR2S_rom_b_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_rom_meter = 20 }
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_a_1
+		icon = GFX_pl2027_081_osiedle_0
+		x = 96
+		y = 19
+		cost = 2
+		prerequisite = { focus = TR2S_rom_a_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_rom_meter = 8 }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_a_2
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 98
+		y = 20
+		cost = 2
+		prerequisite = { focus = TR2S_rom_a_1 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_rom_meter = 8 }
+			capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_a_3
+		icon = GFX_pl2027_081_osiedle_0
+		x = 96
+		y = 21
+		cost = 2
+		prerequisite = { focus = TR2S_rom_a_2 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_rom_meter = 8 }
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_a_4
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 98
+		y = 22
+		cost = 2
+		prerequisite = { focus = TR2S_rom_a_3 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_rom_meter = 8 }
+			add_political_power = 15
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_a_found
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 97
+		y = 23
+		cost = 3
+		prerequisite = { focus = TR2S_rom_a_4 }
+		available = { check_variable = { TR2S_rom_meter > 54 } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			set_cosmetic_tag = TR2S_rom_A
+			add_ideas = TR2S_rom_A_spirit
+			set_country_flag = TR2S_rom_founded
+			set_country_flag = TR2S_rom_route_A
+			add_political_power = 20
+			country_event = { id = tr2state.121 days = 1 }
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_a_legacy
+		icon = GFX_pl2027_081_osiedle_0
+		x = 97
+		y = 24
+		cost = 3
+		prerequisite = { focus = TR2S_rom_a_found }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_b_choice
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 107
+		y = 18
+		cost = 3
+		prerequisite = { focus = TR2S_rom_crisis }
+		mutually_exclusive = { focus = TR2S_rom_a_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_rom_meter = 20 }
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_b_1
+		icon = GFX_pl2027_081_osiedle_0
+		x = 106
+		y = 19
+		cost = 2
+		prerequisite = { focus = TR2S_rom_b_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_rom_meter = 8 }
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_b_2
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 108
+		y = 20
+		cost = 2
+		prerequisite = { focus = TR2S_rom_b_1 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_rom_meter = 8 }
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_b_3
+		icon = GFX_pl2027_081_osiedle_0
+		x = 106
+		y = 21
+		cost = 2
+		prerequisite = { focus = TR2S_rom_b_2 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_rom_meter = 8 }
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_b_4
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 108
+		y = 22
+		cost = 2
+		prerequisite = { focus = TR2S_rom_b_3 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_rom_meter = 8 }
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_b_found
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 107
+		y = 23
+		cost = 3
+		prerequisite = { focus = TR2S_rom_b_4 }
+		available = { check_variable = { TR2S_rom_meter > 54 } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			set_cosmetic_tag = TR2S_rom_B
+			add_ideas = TR2S_rom_B_spirit
+			set_country_flag = TR2S_rom_founded
+			set_country_flag = TR2S_rom_route_B
+			add_political_power = 20
+			country_event = { id = tr2state.122 days = 1 }
+		}
+	}
+
+	focus = {
+		id = TR2S_rom_b_legacy
+		icon = GFX_pl2027_081_osiedle_0
+		x = 107
+		y = 24
+		cost = 3
+		prerequisite = { focus = TR2S_rom_b_found }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_stability = 0.03
 		}
 	}
 }

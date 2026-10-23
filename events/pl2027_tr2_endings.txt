@@ -25,6 +25,7 @@ country_event = {
 		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
 			FROM = {
 				set_country_flag = TR2END_gul_union_success
+				set_cosmetic_tag = TR2S_gul_B
 				annex_country = { target = ROOT transfer_troops = yes }
 				add_stability = 0.015
 			}
@@ -94,6 +95,7 @@ country_event = {
 		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
 			FROM = {
 				set_country_flag = TR2END_zal_union_success
+				set_cosmetic_tag = TR2S_zal_B
 				annex_country = { target = ROOT transfer_troops = yes }
 				add_stability = 0.015
 			}
@@ -163,6 +165,7 @@ country_event = {
 		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
 			FROM = {
 				set_country_flag = TR2END_rom_union_success
+				set_cosmetic_tag = TR2S_rom_B
 				annex_country = { target = ROOT transfer_troops = yes }
 				add_stability = 0.015
 			}
@@ -232,6 +235,7 @@ country_event = {
 		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
 			FROM = {
 				set_country_flag = TR2END_kow_union_success
+				set_cosmetic_tag = TR2S_kow_B
 				annex_country = { target = ROOT transfer_troops = yes }
 				add_stability = 0.015
 			}
@@ -301,6 +305,7 @@ country_event = {
 		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
 			FROM = {
 				set_country_flag = TR2END_kre_union_success
+				set_cosmetic_tag = TR2S_kre_B
 				annex_country = { target = ROOT transfer_troops = yes }
 				add_stability = 0.015
 			}
@@ -370,6 +375,7 @@ country_event = {
 		if = { limit = { FROM = { exists = yes } NOT = { has_war_with = FROM } }
 			FROM = {
 				set_country_flag = TR2END_ela_union_success
+				set_cosmetic_tag = TR2S_ela_B
 				annex_country = { target = ROOT transfer_troops = yes }
 				add_stability = 0.015
 			}

@@ -2356,6 +2356,7 @@ focus_tree = {
 		cost = 7
 		prerequisite = { focus = TR2_RMX_druga_republika }
 		mutually_exclusive = { focus = TR2_RMX_niezalezny_torun }
+		available = { check_variable = { TR2_RMX_zaufanie > 59 } check_variable = { TR2_RMX_zasoby > 19 } }
 		ai_will_do = { factor = 3 }
 		completion_reward = {
 			set_country_flag = TR2_RMX_federacja
@@ -2392,6 +2393,7 @@ focus_tree = {
 		y = 14
 		cost = 7
 		prerequisite = { focus = TR2_RMX_zwiazek_metropolitalny focus = TR2_RMX_niezalezny_torun }
+		available = { check_variable = { TR2_RMX_zaufanie > 49 } check_variable = { TR2_RMX_zasoby > 24 } }
 		ai_will_do = { factor = 3 }
 		completion_reward = {
 			add_stability = 0.04

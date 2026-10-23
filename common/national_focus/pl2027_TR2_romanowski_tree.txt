@@ -1408,4 +1408,109 @@ focus_tree = {
 			add_manpower = 5000
 		}
 	}
+
+
+	# Torun Rework 2026: wybory maja konsekwencje po utworzeniu nowego panstwa
+	focus = {
+		id = TR2_RW_rom_review
+		icon = GFX_pl2027_081_rada_0
+		x = 29
+		y = 15
+		cost = 5
+		prerequisite = { focus = TR2_rom_final }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_stability = -0.01
+			country_event = { id = tr2rw.3 days = 1 }
+		}
+	}
+
+	focus = {
+		id = TR2_RW_rom_civic
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 27
+		y = 16
+		cost = 6
+		prerequisite = { focus = TR2_RW_rom_review }
+		mutually_exclusive = { focus = TR2_RW_rom_executive }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = -25
+			set_country_flag = TR2_RW_rom_reforma_spoleczna
+		}
+	}
+
+	focus = {
+		id = TR2_RW_rom_executive
+		icon = GFX_pl2027_081_administracja_0
+		x = 31
+		y = 16
+		cost = 6
+		prerequisite = { focus = TR2_RW_rom_review }
+		mutually_exclusive = { focus = TR2_RW_rom_civic }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = -20
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			set_country_flag = TR2_RW_rom_reforma_wladzy
+		}
+	}
+
+	focus = {
+		id = TR2_RW_rom_civic_work
+		icon = GFX_pl2027_081_osiedle_0
+		x = 27
+		y = 17
+		cost = 6
+		prerequisite = { focus = TR2_RW_rom_civic }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_stability = 0.04
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = TR2_RW_rom_executive_work
+		icon = GFX_pl2027_081_przemysl_0
+		x = 31
+		y = 17
+		cost = 6
+		prerequisite = { focus = TR2_RW_rom_executive }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_political_power = 35
+			add_stability = 0.01
+		}
+	}
+
+	focus = {
+		id = TR2_RW_rom_accord
+		icon = GFX_pl2027_081_wybory_0
+		x = 29
+		y = 18
+		cost = 7
+		prerequisite = { focus = TR2_RW_rom_civic_work focus = TR2_RW_rom_executive_work }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 15
+		}
+	}
+
+	focus = {
+		id = TR2_RW_rom_legacy
+		icon = GFX_pl2027_081_miasto_1
+		x = 29
+		y = 19
+		cost = 7
+		prerequisite = { focus = TR2_RW_rom_accord }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 20
+			country_event = { id = tr2rw.23 days = 1 }
+		}
+	}
 }

@@ -1656,7 +1656,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_start
 		icon = GFX_pl2027_081_osiedle_0
-		x = 102
+		x = 64
 		y = 16
 		cost = 2
 		prerequisite = { focus = TR2_rom_dla_mieszkancow }
@@ -1670,7 +1670,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_crisis
 		icon = GFX_pl2027_081_osiedle_0
-		x = 102
+		x = 64
 		y = 17
 		cost = 2
 		prerequisite = { focus = TR2S_rom_start }
@@ -1684,7 +1684,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_a_choice
 		icon = GFX_pl2027_081_osiedle_0
-		x = 97
+		x = 59
 		y = 18
 		cost = 3
 		prerequisite = { focus = TR2S_rom_crisis }
@@ -1699,7 +1699,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_a_1
 		icon = GFX_pl2027_081_osiedle_0
-		x = 96
+		x = 58
 		y = 19
 		cost = 2
 		prerequisite = { focus = TR2S_rom_a_choice }
@@ -1713,7 +1713,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_a_2
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 98
+		x = 60
 		y = 20
 		cost = 2
 		prerequisite = { focus = TR2S_rom_a_1 }
@@ -1727,7 +1727,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_a_3
 		icon = GFX_pl2027_081_osiedle_0
-		x = 96
+		x = 58
 		y = 21
 		cost = 2
 		prerequisite = { focus = TR2S_rom_a_2 }
@@ -1741,7 +1741,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_a_4
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 98
+		x = 60
 		y = 22
 		cost = 2
 		prerequisite = { focus = TR2S_rom_a_3 }
@@ -1755,7 +1755,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_a_found
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 97
+		x = 59
 		y = 23
 		cost = 3
 		prerequisite = { focus = TR2S_rom_a_4 }
@@ -1777,7 +1777,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_a_legacy
 		icon = GFX_pl2027_081_osiedle_0
-		x = 97
+		x = 59
 		y = 24
 		cost = 3
 		prerequisite = { focus = TR2S_rom_a_found }
@@ -1790,7 +1790,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_b_choice
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 107
+		x = 69
 		y = 18
 		cost = 3
 		prerequisite = { focus = TR2S_rom_crisis }
@@ -1805,7 +1805,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_b_1
 		icon = GFX_pl2027_081_osiedle_0
-		x = 106
+		x = 68
 		y = 19
 		cost = 2
 		prerequisite = { focus = TR2S_rom_b_choice }
@@ -1819,7 +1819,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_b_2
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 108
+		x = 70
 		y = 20
 		cost = 2
 		prerequisite = { focus = TR2S_rom_b_1 }
@@ -1833,7 +1833,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_b_3
 		icon = GFX_pl2027_081_osiedle_0
-		x = 106
+		x = 68
 		y = 21
 		cost = 2
 		prerequisite = { focus = TR2S_rom_b_2 }
@@ -1847,7 +1847,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_b_4
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 108
+		x = 70
 		y = 22
 		cost = 2
 		prerequisite = { focus = TR2S_rom_b_3 }
@@ -1861,7 +1861,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_b_found
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 107
+		x = 69
 		y = 23
 		cost = 3
 		prerequisite = { focus = TR2S_rom_b_4 }
@@ -1883,7 +1883,7 @@ focus_tree = {
 	focus = {
 		id = TR2S_rom_b_legacy
 		icon = GFX_pl2027_081_osiedle_0
-		x = 107
+		x = 69
 		y = 24
 		cost = 3
 		prerequisite = { focus = TR2S_rom_b_found }

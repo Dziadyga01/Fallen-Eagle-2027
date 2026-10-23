@@ -429,7 +429,7 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { has_idea = TR2_gulewski_1 } remove_ideas = TR2_gulewski_1 } add_ideas = TR2_gulewski_2
-			set_cosmetic_tag = TR2_FIN_GULEWSKI
+			if = { limit = { NOT = { has_country_flag = TR2S_gul_founded } } set_cosmetic_tag = TR2_FIN_GULEWSKI }
 			every_owned_state = { add_core_of = ROOT }
 			add_political_power = 100
 		}
@@ -1700,6 +1700,199 @@ focus_tree = {
 			add_stability = 0.02
 			add_political_power = 35
 			country_event = { id = tr2rw.21 days = 1 }
+		}
+	}
+
+	# Statecraft: rozne panstwa zalezne od wyboru tego ugrupowania
+	focus = {
+		id = TR2S_gul_start
+		icon = GFX_pl2027_081_rada_0
+		x = 64
+		y = 17
+		cost = 2
+		prerequisite = { focus = TR2_gul_obywatelski }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			set_variable = { TR2S_gul_meter = 30 }
+			add_political_power = 15
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_crisis
+		icon = GFX_pl2027_081_rada_0
+		x = 64
+		y = 18
+		cost = 2
+		prerequisite = { focus = TR2S_gul_start }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_political_power = -5
+			country_event = { id = tr2state.100 days = 1 }
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_a_choice
+		icon = GFX_pl2027_081_rada_0
+		x = 59
+		y = 19
+		cost = 3
+		prerequisite = { focus = TR2S_gul_crisis }
+		mutually_exclusive = { focus = TR2S_gul_b_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_gul_meter = 20 }
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_a_1
+		icon = GFX_pl2027_081_rada_0
+		x = 58
+		y = 20
+		cost = 2
+		prerequisite = { focus = TR2S_gul_a_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_gul_meter = 8 }
+			add_stability = 0.025
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_a_2
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 60
+		y = 21
+		cost = 2
+		prerequisite = { focus = TR2S_gul_a_1 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_gul_meter = 8 }
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_a_3
+		icon = GFX_pl2027_081_rada_0
+		x = 58
+		y = 22
+		cost = 2
+		prerequisite = { focus = TR2S_gul_a_2 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_gul_meter = 8 }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_a_found
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 59
+		y = 23
+		cost = 3
+		prerequisite = { focus = TR2S_gul_a_3 }
+		available = { check_variable = { TR2S_gul_meter > 54 } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			set_cosmetic_tag = TR2S_gul_A
+			add_ideas = TR2S_gul_A_spirit
+			set_country_flag = TR2S_gul_founded
+			set_country_flag = TR2S_gul_route_A
+			add_political_power = 20
+			country_event = { id = tr2state.101 days = 1 }
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_a_legacy
+		icon = GFX_pl2027_081_rada_0
+		x = 59
+		y = 24
+		cost = 3
+		prerequisite = { focus = TR2S_gul_a_found }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_b_choice
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 69
+		y = 19
+		cost = 3
+		prerequisite = { focus = TR2S_gul_crisis }
+		mutually_exclusive = { focus = TR2S_gul_a_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_gul_meter = 20 }
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_b_1
+		icon = GFX_pl2027_081_rada_0
+		x = 68
+		y = 20
+		cost = 2
+		prerequisite = { focus = TR2S_gul_b_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_gul_meter = 8 }
+			army_experience = 10
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_b_2
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 70
+		y = 21
+		cost = 2
+		prerequisite = { focus = TR2S_gul_b_1 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_gul_meter = 8 }
+			add_war_support = 0.04
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_b_found
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 69
+		y = 22
+		cost = 3
+		prerequisite = { focus = TR2S_gul_b_2 }
+		available = { check_variable = { TR2S_gul_meter > 54 } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			set_cosmetic_tag = TR2S_gul_B
+			add_ideas = TR2S_gul_B_spirit
+			set_country_flag = TR2S_gul_founded
+			set_country_flag = TR2S_gul_route_B
+			add_political_power = 20
+			country_event = { id = tr2state.102 days = 1 }
+		}
+	}
+
+	focus = {
+		id = TR2S_gul_b_legacy
+		icon = GFX_pl2027_081_rada_0
+		x = 69
+		y = 23
+		cost = 3
+		prerequisite = { focus = TR2S_gul_b_found }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_manpower = 1200
 		}
 	}
 }

@@ -608,6 +608,7 @@ focus_tree = {
 		y = 1
 		cost = 6
 		prerequisite = { focus = TR2_ela_nasz_torun }
+		prerequisite = { focus = TR2_ela_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_ela_p_odbudowa_tb bonus = 1.0 uses = 1 category = industry }
@@ -745,6 +746,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_ela_nasz_torun }
+		prerequisite = { focus = TR2_ela_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_political_power = 30

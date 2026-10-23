@@ -1,0 +1,170 @@
+add_namespace = tr2state
+
+country_event = {
+	id = tr2state.100
+	title = tr2state.100.t
+	desc = tr2state.100.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.100.a ai_chance = { factor = 1 } add_to_variable = { TR2S_gul_meter = 8 } add_political_power = -10 }
+	option = { name = tr2state.100.b ai_chance = { factor = 1 } add_to_variable = { TR2S_gul_meter = 5 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.101
+	title = tr2state.101.t
+	desc = tr2state.101.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.101.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.102
+	title = tr2state.102.t
+	desc = tr2state.102.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.102.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.110
+	title = tr2state.110.t
+	desc = tr2state.110.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.110.a ai_chance = { factor = 1 } add_to_variable = { TR2S_zal_meter = 8 } add_political_power = -10 }
+	option = { name = tr2state.110.b ai_chance = { factor = 1 } add_to_variable = { TR2S_zal_meter = 5 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.111
+	title = tr2state.111.t
+	desc = tr2state.111.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.111.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.112
+	title = tr2state.112.t
+	desc = tr2state.112.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.112.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.120
+	title = tr2state.120.t
+	desc = tr2state.120.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.120.a ai_chance = { factor = 1 } add_to_variable = { TR2S_rom_meter = 8 } add_political_power = -10 }
+	option = { name = tr2state.120.b ai_chance = { factor = 1 } add_to_variable = { TR2S_rom_meter = 5 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.121
+	title = tr2state.121.t
+	desc = tr2state.121.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.121.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.122
+	title = tr2state.122.t
+	desc = tr2state.122.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.122.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.130
+	title = tr2state.130.t
+	desc = tr2state.130.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.130.a ai_chance = { factor = 1 } add_to_variable = { TR2S_kow_meter = 8 } add_political_power = -10 }
+	option = { name = tr2state.130.b ai_chance = { factor = 1 } add_to_variable = { TR2S_kow_meter = 5 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.131
+	title = tr2state.131.t
+	desc = tr2state.131.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.131.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.132
+	title = tr2state.132.t
+	desc = tr2state.132.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.132.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.140
+	title = tr2state.140.t
+	desc = tr2state.140.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.140.a ai_chance = { factor = 1 } add_to_variable = { TR2S_kre_meter = 8 } add_political_power = -10 }
+	option = { name = tr2state.140.b ai_chance = { factor = 1 } add_to_variable = { TR2S_kre_meter = 5 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.141
+	title = tr2state.141.t
+	desc = tr2state.141.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.141.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.142
+	title = tr2state.142.t
+	desc = tr2state.142.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.142.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.150
+	title = tr2state.150.t
+	desc = tr2state.150.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.150.a ai_chance = { factor = 1 } add_to_variable = { TR2S_ela_meter = 8 } add_political_power = -10 }
+	option = { name = tr2state.150.b ai_chance = { factor = 1 } add_to_variable = { TR2S_ela_meter = 5 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.151
+	title = tr2state.151.t
+	desc = tr2state.151.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.151.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+
+country_event = {
+	id = tr2state.152
+	title = tr2state.152.t
+	desc = tr2state.152.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = { name = tr2state.152.a ai_chance = { factor = 1 } add_political_power = 10 }
+}
+

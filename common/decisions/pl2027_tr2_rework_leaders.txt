@@ -1,0 +1,269 @@
+TR2RW_panel_gul = {
+	TR2RW_gul_decyzja_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_gul_wladza has_completed_focus = TR2_gul_r_plan }
+		available = { check_variable = { TR2RW_gul_zasob > 20 } }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_to_variable = { TR2RW_gul_zasob = -20 }
+			clamp_variable = { var = TR2RW_gul_zasob min = 0 max = 100 }
+			add_stability = 0.03
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_gul_decyzja_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_gul_wladza has_completed_focus = TR2_gul_p_odbudowa }
+		available = { check_variable = { TR2RW_gul_zasob > 30 } }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_to_variable = { TR2RW_gul_zasob = -30 }
+			clamp_variable = { var = TR2RW_gul_zasob min = 0 max = 100 }
+			add_political_power = 25 add_stability = 0.01
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_gul_decyzja_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_gul_wladza has_completed_focus = TR2_gul_d_sasiedzi }
+		available = { check_variable = { TR2RW_gul_zasob > 40 } }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_to_variable = { TR2RW_gul_zasob = -40 }
+			clamp_variable = { var = TR2RW_gul_zasob min = 0 max = 100 }
+			add_political_power = 30
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+TR2RW_panel_zal = {
+	TR2RW_zal_decyzja_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_zal_wladza has_completed_focus = TR2_zal_r_plan }
+		available = { check_variable = { TR2RW_zal_zasob > 20 } }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_to_variable = { TR2RW_zal_zasob = -20 }
+			clamp_variable = { var = TR2RW_zal_zasob min = 0 max = 100 }
+			add_political_power = 35
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_zal_decyzja_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_zal_wladza has_completed_focus = TR2_zal_p_odbudowa }
+		available = { check_variable = { TR2RW_zal_zasob > 30 } }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_to_variable = { TR2RW_zal_zasob = -30 }
+			clamp_variable = { var = TR2RW_zal_zasob min = 0 max = 100 }
+			add_political_power = 60 add_stability = -0.02
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_zal_decyzja_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_zal_wladza has_completed_focus = TR2_zal_d_sasiedzi }
+		available = { check_variable = { TR2RW_zal_zasob > 40 } }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_to_variable = { TR2RW_zal_zasob = -40 }
+			clamp_variable = { var = TR2RW_zal_zasob min = 0 max = 100 }
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+TR2RW_panel_rom = {
+	TR2RW_rom_decyzja_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_rom_wladza has_completed_focus = TR2_rom_r_plan }
+		available = { check_variable = { TR2RW_rom_zasob > 20 } }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_to_variable = { TR2RW_rom_zasob = -20 }
+			clamp_variable = { var = TR2RW_rom_zasob min = 0 max = 100 }
+			add_stability = 0.04 add_political_power = -10
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_rom_decyzja_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_rom_wladza has_completed_focus = TR2_rom_p_odbudowa }
+		available = { check_variable = { TR2RW_rom_zasob > 30 } }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_to_variable = { TR2RW_rom_zasob = -30 }
+			clamp_variable = { var = TR2RW_rom_zasob min = 0 max = 100 }
+			add_stability = 0.035 add_manpower = 500
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_rom_decyzja_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_rom_wladza has_completed_focus = TR2_rom_d_sasiedzi }
+		available = { check_variable = { TR2RW_rom_zasob > 40 } }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_to_variable = { TR2RW_rom_zasob = -40 }
+			clamp_variable = { var = TR2RW_rom_zasob min = 0 max = 100 }
+			add_political_power = 25 add_stability = 0.01
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+TR2RW_panel_kow = {
+	TR2RW_kow_decyzja_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_kow_wladza has_completed_focus = TR2_kow_r_plan }
+		available = { check_variable = { TR2RW_kow_zasob > 20 } }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_to_variable = { TR2RW_kow_zasob = -20 }
+			clamp_variable = { var = TR2RW_kow_zasob min = 0 max = 100 }
+			add_tech_bonus = { name = TR2RW_kow_grant bonus = 1.0 uses = 1 category = electronics }
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_kow_decyzja_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_kow_wladza has_completed_focus = TR2_kow_p_odbudowa }
+		available = { check_variable = { TR2RW_kow_zasob > 30 } }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_to_variable = { TR2RW_kow_zasob = -30 }
+			clamp_variable = { var = TR2RW_kow_zasob min = 0 max = 100 }
+			add_political_power = 35
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_kow_decyzja_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_kow_wladza has_completed_focus = TR2_kow_d_sasiedzi }
+		available = { check_variable = { TR2RW_kow_zasob > 40 } }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_to_variable = { TR2RW_kow_zasob = -40 }
+			clamp_variable = { var = TR2RW_kow_zasob min = 0 max = 100 }
+			add_stability = 0.02 add_political_power = 20
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+TR2RW_panel_kre = {
+	TR2RW_kre_decyzja_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_kre_wladza has_completed_focus = TR2_kre_r_plan }
+		available = { check_variable = { TR2RW_kre_zasob > 20 } }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_to_variable = { TR2RW_kre_zasob = -20 }
+			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
+			add_stability = 0.035 add_political_power = -10
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_kre_decyzja_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_kre_wladza has_completed_focus = TR2_kre_p_odbudowa }
+		available = { check_variable = { TR2RW_kre_zasob > 30 } }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_to_variable = { TR2RW_kre_zasob = -30 }
+			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
+			add_political_power = 20 add_stability = 0.02
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_kre_decyzja_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_kre_wladza has_completed_focus = TR2_kre_d_sasiedzi }
+		available = { check_variable = { TR2RW_kre_zasob > 40 } }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_to_variable = { TR2RW_kre_zasob = -40 }
+			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
+			add_manpower = 1200 add_war_support = 0.02
+		}
+		ai_will_do = { factor = 1 }
+	}
+}
+
+TR2RW_panel_ela = {
+	TR2RW_ela_decyzja_1 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_ela_wladza has_completed_focus = TR2_ela_r_plan }
+		available = { check_variable = { TR2RW_ela_zasob > 20 } }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_to_variable = { TR2RW_ela_zasob = -20 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_manpower = 1800 add_war_support = 0.025
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_ela_decyzja_2 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_ela_wladza has_completed_focus = TR2_ela_p_odbudowa }
+		available = { check_variable = { TR2RW_ela_zasob > 30 } }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = {
+			add_to_variable = { TR2RW_ela_zasob = -30 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_stability = 0.02 add_political_power = -20
+		}
+		ai_will_do = { factor = 1 }
+	}
+	TR2RW_ela_decyzja_3 = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_country_flag = TR2RW_ela_wladza has_completed_focus = TR2_ela_d_sasiedzi }
+		available = { check_variable = { TR2RW_ela_zasob > 40 } }
+		cost = 30
+		days_re_enable = 75
+		complete_effect = {
+			add_to_variable = { TR2RW_ela_zasob = -40 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+		ai_will_do = { factor = 1 }
+	}
+}

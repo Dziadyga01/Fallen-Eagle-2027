@@ -20,6 +20,8 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_ideas = TR2_elana_1
+			set_variable = { TR2RW_ela_zasob = 35 }
+			set_country_flag = TR2RW_ela_wladza
 		}
 	}
 
@@ -458,7 +460,7 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { has_idea = TR2_elana_1 } remove_ideas = TR2_elana_1 } add_ideas = TR2_elana_2
-			set_cosmetic_tag = TR2_FIN_ELANA
+			if = { limit = { NOT = { has_country_flag = TR2S_ela_founded } } set_cosmetic_tag = TR2_FIN_ELANA }
 			add_political_power = 100
 		}
 	}
@@ -475,6 +477,9 @@ focus_tree = {
 			add_political_power = 30
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			add_war_support = 0.03
+			add_to_variable = { TR2RW_ela_zasob = 3 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_stability = -0.006 add_political_power = 7
 		}
 	}
 
@@ -489,6 +494,9 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.03
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 3 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_stability = -0.006 add_political_power = 7
 		}
 	}
 
@@ -502,6 +510,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 3 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_stability = -0.006 add_political_power = 7
 		}
 	}
 
@@ -515,6 +526,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_ela_r_bielany_tb bonus = 1.0 uses = 1 category = industry }
+			add_to_variable = { TR2RW_ela_zasob = 3 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_stability = -0.006 add_political_power = 7
 		}
 	}
 
@@ -529,6 +543,9 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.03
 			add_manpower = 1500
+			add_to_variable = { TR2RW_ela_zasob = 3 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_stability = -0.006 add_political_power = 7
 		}
 	}
 
@@ -544,6 +561,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 3 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_stability = -0.006 add_political_power = 7
 		}
 	}
 
@@ -557,6 +577,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 3 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_stability = -0.006 add_political_power = 7
 		}
 	}
 
@@ -572,6 +595,9 @@ focus_tree = {
 			add_stability = 0.04
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			add_war_support = 0.03
+			add_to_variable = { TR2RW_ela_zasob = 6 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_stability = -0.006 add_political_power = 7
 		}
 	}
 
@@ -582,10 +608,14 @@ focus_tree = {
 		y = 1
 		cost = 6
 		prerequisite = { focus = TR2_ela_nasz_torun }
+		prerequisite = { focus = TR2_ela_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_ela_p_odbudowa_tb bonus = 1.0 uses = 1 category = industry }
 			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 4 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			army_experience = 3
 		}
 	}
 
@@ -600,6 +630,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = { name = TR2_ela_p_apator_tb bonus = 1.0 uses = 1 category = electronics }
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 4 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			army_experience = 3
 		}
 	}
 
@@ -614,6 +647,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.02
+			add_to_variable = { TR2RW_ela_zasob = 4 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			army_experience = 3
 		}
 	}
 
@@ -628,6 +664,9 @@ focus_tree = {
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 4 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			army_experience = 3
 		}
 	}
 
@@ -642,6 +681,9 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 40
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 4 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			army_experience = 3
 		}
 	}
 
@@ -657,6 +699,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 4 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			army_experience = 3
 		}
 	}
 
@@ -670,6 +715,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 4 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			army_experience = 3
 		}
 	}
 
@@ -685,6 +733,9 @@ focus_tree = {
 			add_tech_bonus = { name = TR2_ela_p_przemysl_tb bonus = 1.0 uses = 2 category = industry }
 			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 7 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			army_experience = 3
 		}
 	}
 
@@ -695,10 +746,14 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_ela_nasz_torun }
+		prerequisite = { focus = TR2_ela_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_political_power = 30
 			add_war_support = 0.03
+			add_to_variable = { TR2RW_ela_zasob = 5 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.008
 		}
 	}
 
@@ -714,6 +769,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { country_exists = CHZ CHZ = { is_subject = no } NOT = { has_war_with = CHZ } } CHZ = { country_event = { id = trn.1 days = 2 } } }
+			add_to_variable = { TR2RW_ela_zasob = 5 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.008
 		}
 	}
 
@@ -729,6 +787,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { country_exists = GRU GRU = { is_subject = no } NOT = { has_war_with = GRU } } GRU = { country_event = { id = trn.1 days = 2 } } }
+			add_to_variable = { TR2RW_ela_zasob = 5 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.008
 		}
 	}
 
@@ -743,6 +804,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TRN_spor_metropolia
 			if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } } add_to_variable = { global.MET_solec_trn = 6 } add_to_variable = { global.MET_zlawies_trn = 6 } add_to_variable = { global.MET_ostromecko_trn = 6 } add_to_variable = { global.MET_unislaw_trn = 6 } add_to_variable = { global.MET_nowawies_trn = 6 } add_to_variable = { global.MET_chelmno_trn = 6 } MET_przelicz = yes }
+			add_to_variable = { TR2RW_ela_zasob = 5 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.008
 		}
 	}
 
@@ -756,6 +820,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } } add_to_variable = { global.MET_solec_trn = 6 } add_to_variable = { global.MET_solec_byd = -3 } add_to_variable = { global.MET_zlawies_trn = 6 } add_to_variable = { global.MET_zlawies_byd = -3 } add_to_variable = { global.MET_ostromecko_trn = 6 } add_to_variable = { global.MET_ostromecko_byd = -3 } add_to_variable = { global.MET_unislaw_trn = 6 } add_to_variable = { global.MET_unislaw_byd = -3 } add_to_variable = { global.MET_nowawies_trn = 6 } add_to_variable = { global.MET_nowawies_byd = -3 } add_to_variable = { global.MET_chelmno_trn = 6 } add_to_variable = { global.MET_chelmno_byd = -3 } add_to_variable = { global.MET_napiecie = 5 } MET_przelicz = yes }
+			add_to_variable = { TR2RW_ela_zasob = 5 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.008
 		}
 	}
 
@@ -770,6 +837,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_solec_trn > 59 } check_variable = { global.MET_solec_przewaga > 19 } 53 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_solec_trn = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_zlawies_trn > 59 } check_variable = { global.MET_zlawies_przewaga > 19 } 125 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_zlawies_trn = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_ostromecko_trn > 59 } check_variable = { global.MET_ostromecko_przewaga > 19 } 47 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_ostromecko_trn = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_unislaw_trn > 59 } check_variable = { global.MET_unislaw_przewaga > 19 } 60 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_unislaw_trn = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_nowawies_trn > 59 } check_variable = { global.MET_nowawies_przewaga > 19 } 50 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_nowawies_trn = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_chelmno_trn > 59 } check_variable = { global.MET_chelmno_przewaga > 19 } 54 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_chelmno_trn = yes }
+			add_to_variable = { TR2RW_ela_zasob = 5 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.008
 		}
 	}
 
@@ -784,6 +854,9 @@ focus_tree = {
 		completion_reward = {
 			every_state = { limit = { is_owned_by = KUJ } add_claim_by = ROOT }
 			add_war_support = 0.03
+			add_to_variable = { TR2RW_ela_zasob = 5 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.008
 		}
 	}
 
@@ -794,12 +867,15 @@ focus_tree = {
 		y = 5
 		cost = 1
 		prerequisite = { focus = TR2_ela_d_referenda }
-		available = { check_variable = { global.MET_trn_obszary > 3 } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_8000 has_army_manpower = { size > 7999 } } NOT = { has_global_flag = MET_rozstrzygniete } }
+		available = { OR = { NOT = { has_country_flag = TR2S_ela_founded } has_country_flag = TR2S_ela_route_A }  check_variable = { global.MET_trn_obszary > 3 } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_8000 has_army_manpower = { size > 7999 } } NOT = { has_global_flag = MET_rozstrzygniete } }
 		bypass = { has_global_flag = MET_rozstrzygniete }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			set_global_flag = MET_rozstrzygniete
 			if = { limit = { country_exists = BYD NOT = { has_war_with = BYD } } BYD = { country_event = { id = met.50 } } }
+			add_to_variable = { TR2RW_ela_zasob = 8 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.008
 		}
 	}
 
@@ -815,6 +891,9 @@ focus_tree = {
 			add_war_support = 0.03
 			army_experience = 10
 			add_manpower = 4000
+			add_to_variable = { TR2RW_ela_zasob = 6 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.009 add_stability = -0.004
 		}
 	}
 
@@ -829,6 +908,9 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 5000
 			add_equipment_to_stockpile = { type = ranged_equipment amount = 600 }
+			add_to_variable = { TR2RW_ela_zasob = 6 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.009 add_stability = -0.004
 		}
 	}
 
@@ -843,6 +925,9 @@ focus_tree = {
 		completion_reward = {
 			if = { limit = { NOT = { has_template = "Brygada Toruńska" } } division_template = { name = "Brygada Toruńska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
 			capital_scope = { create_unit = { division = "division_template = \"Brygada Toruńska\" start_experience_factor = 0.3" owner = ROOT } }
+			add_to_variable = { TR2RW_ela_zasob = 6 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.009 add_stability = -0.004
 		}
 	}
 
@@ -856,6 +941,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			every_state = { limit = { is_owned_by = PDG } add_claim_by = ROOT } every_state = { limit = { is_owned_by = LUB } add_claim_by = ROOT } every_state = { limit = { is_owned_by = LYS } add_claim_by = ROOT } every_state = { limit = { is_owned_by = CHZ } add_claim_by = ROOT } every_state = { limit = { is_owned_by = ROZ } add_claim_by = ROOT } every_state = { limit = { is_owned_by = DAB } add_claim_by = ROOT } every_state = { limit = { is_owned_by = SLK } add_claim_by = ROOT }
+			add_to_variable = { TR2RW_ela_zasob = 6 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.009 add_stability = -0.004
 		}
 	}
 
@@ -870,6 +958,9 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { country_exists = PDG PDG = { is_subject = no } NOT = { has_war_with = PDG } } PDG = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = LUB LUB = { is_subject = no } NOT = { has_war_with = LUB } } LUB = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = LYS LYS = { is_subject = no } NOT = { has_war_with = LYS } } LYS = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = CHZ CHZ = { is_subject = no } NOT = { has_war_with = CHZ } } CHZ = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = ROZ ROZ = { is_subject = no } NOT = { has_war_with = ROZ } } ROZ = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = DAB DAB = { is_subject = no } NOT = { has_war_with = DAB } } DAB = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = SLK SLK = { is_subject = no } NOT = { has_war_with = SLK } } SLK = { country_event = { id = trn.1 days = 2 } } }
+			add_to_variable = { TR2RW_ela_zasob = 6 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.009 add_stability = -0.004
 		}
 	}
 
@@ -886,6 +977,9 @@ focus_tree = {
 		completion_reward = {
 			every_country = { limit = { is_subject_of = ROOT OR = { tag = PDG tag = LUB tag = LYS tag = CHZ tag = ROZ tag = DAB tag = SLK } } ROOT = { annex_country = { target = PREV transfer_troops = yes } } }
 			every_owned_state = { add_core_of = ROOT }
+			add_to_variable = { TR2RW_ela_zasob = 6 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.009 add_stability = -0.004
 		}
 	}
 
@@ -897,7 +991,7 @@ focus_tree = {
 		cost = 8
 		prerequisite = { focus = TR2_ela_w_wcielenie }
 		prerequisite = { focus = TR2_elana_tree_gotowosc }
-		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } OR = { NOT = { country_exists = KUJ } custom_trigger_tooltip = { tooltip = TRK_req_granica_KUJ is_neighbor_of = KUJ } } }
+		available = { OR = { NOT = { has_country_flag = TR2S_ela_founded } has_country_flag = TR2S_ela_route_B }  custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } OR = { NOT = { country_exists = KUJ } custom_trigger_tooltip = { tooltip = TRK_req_granica_KUJ is_neighbor_of = KUJ } } }
 		bypass = { OR = { NOT = { country_exists = KUJ } KUJ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 country_exists = KUJ NOT = { strength_ratio = { tag = KUJ ratio > 1.2 } } } modifier = { factor = 0 has_war = yes } modifier = { factor = 0 has_stability < 0.35 } }
 		completion_reward = {
@@ -906,6 +1000,9 @@ focus_tree = {
 			if = { limit = { country_exists = KUJ } KUJ = { country_event = { id = trk.95 days = 1 } } }
 		 # PL2027_AI_ATAK
 			if = { limit = { is_ai = yes country_exists = KUJ } set_country_flag = TRK_cel_KUJ country_event = { id = trk.96 days = 14 } add_ai_strategy = { type = antagonize id = KUJ value = 100 } }
+			add_to_variable = { TR2RW_ela_zasob = 6 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.009 add_stability = -0.004
 		}
 	}
 
@@ -922,6 +1019,9 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = 0.03
 			add_war_support = 0.05
+			add_to_variable = { TR2RW_ela_zasob = 9 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.009 add_stability = -0.004
 		}
 	}
 
@@ -939,6 +1039,9 @@ focus_tree = {
 			set_country_flag = MIL_start
 			army_experience = 5
 			add_manpower = 1000
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -955,6 +1058,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MIL_rejestr
 			add_ideas = MIL_pobor_1
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -971,6 +1077,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MIL_ochotnicy
 			add_manpower = 3000
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -987,6 +1096,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MIL_fabryka
 			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -1003,6 +1115,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MIL_pobor
 			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -1021,6 +1136,9 @@ focus_tree = {
 			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
 			capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
 			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -1039,6 +1157,9 @@ focus_tree = {
 			add_timed_idea = { idea = MIL_produkcja days = 365 }
 			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
 			add_equipment_to_stockpile = { type = support_equipment amount = 50 }
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -1055,6 +1176,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MIL_rezerwisci
 			add_manpower = 5000
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -1074,6 +1198,9 @@ focus_tree = {
 			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
 			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
 			add_equipment_to_stockpile = { type = support_equipment amount = 40 }
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -1092,6 +1219,9 @@ focus_tree = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			add_ideas = MIL_zaopatrzenie
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -1112,6 +1242,9 @@ focus_tree = {
 			set_country_flag = MIL_kadra
 			army_experience = 25
 			add_ideas = MIL_kadra
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -1132,6 +1265,9 @@ focus_tree = {
 			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
 			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
 			add_manpower = 2000
+			add_to_variable = { TR2RW_ela_zasob = 2 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.004
 		}
 	}
 
@@ -1148,6 +1284,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_ulica
 			country_event = { id = zycie.1 }
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1164,6 +1303,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_media
 			add_ideas = TFR_media
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1180,6 +1322,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_spis
 			country_event = { id = zycie.3 }
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1198,6 +1343,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_kartki
 			add_ideas = TFR_kartki
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1216,6 +1364,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_rynek
 			add_ideas = TFR_wolny_rynek
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1233,6 +1384,9 @@ focus_tree = {
 			set_country_flag = TFR_zy_pl_s_szkoly
 			add_stability = 0.03
 			add_political_power = 25
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1249,6 +1403,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_czarny
 			country_event = { id = zycie.2 }
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1266,6 +1423,9 @@ focus_tree = {
 			set_country_flag = TFR_zy_pl_s_straze
 			add_manpower = 2500
 			add_stability = 0.02
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1286,6 +1446,9 @@ focus_tree = {
 			if = { limit = { has_idea = TFR_kartki } remove_ideas = TFR_kartki }
 			if = { limit = { has_idea = TFR_wolny_rynek } remove_ideas = TFR_wolny_rynek }
 			add_ideas = TFR_spoleczenstwo
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1304,6 +1467,9 @@ focus_tree = {
 			set_country_flag = TFR_zy_k_k_admin
 			add_political_power = 40
 			random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1321,6 +1487,9 @@ focus_tree = {
 			set_country_flag = TFR_zy_k_k_defilada
 			add_war_support = 0.05
 			add_stability = 0.03
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1337,6 +1506,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_k_k_opor
 			country_event = { id = zycie.10 }
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1354,6 +1526,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_k_k_owoce
 			add_timed_idea = { idea = TFR_owoce days = 365 }
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1372,6 +1547,9 @@ focus_tree = {
 			set_country_flag = TFR_zy_p_p_straty
 			country_event = { id = zycie.11 }
 			add_manpower = 3000
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1389,6 +1567,9 @@ focus_tree = {
 			set_country_flag = TFR_zy_p_p_rzad
 			add_stability = 0.05
 			add_political_power = 30
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1406,6 +1587,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_p_p_rewanz
 			add_timed_idea = { idea = TFR_rewanz days = 730 }
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1423,6 +1607,9 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_p_p_pojednanie
 			add_timed_idea = { idea = TFR_pojednanie days = 730 }
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1442,6 +1629,9 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
 			army_experience = 15
 			add_manpower = 5000
+			add_to_variable = { TR2RW_ela_zasob = 1 }
+			clamp_variable = { var = TR2RW_ela_zasob min = 0 max = 100 }
+			add_war_support = 0.003
 		}
 	}
 
@@ -1460,6 +1650,300 @@ focus_tree = {
 			add_political_power = 50
 			add_war_support = 0.05
 			army_experience = 10
+		}
+	}
+
+
+	# Torun Rework 2026: wybory maja konsekwencje po utworzeniu nowego panstwa
+
+
+
+
+
+
+
+	# Statecraft: rozne panstwa zalezne od wyboru tego ugrupowania
+	focus = {
+		id = TR2S_ela_start
+		icon = GFX_pl2027_081_twierdza_1_slk_f
+		x = 65
+		y = 17
+		cost = 2
+		prerequisite = { focus = TR2_ela_nasz_torun }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			set_variable = { TR2S_ela_meter = 30 }
+			add_political_power = 15
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_crisis
+		icon = GFX_pl2027_081_twierdza_1_slk_f
+		x = 65
+		y = 18
+		cost = 2
+		prerequisite = { focus = TR2S_ela_start }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_political_power = -5
+			country_event = { id = tr2state.150 days = 1 }
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_a_choice
+		icon = GFX_pl2027_081_twierdza_1_slk_f
+		x = 60
+		y = 19
+		cost = 3
+		prerequisite = { focus = TR2S_ela_crisis }
+		mutually_exclusive = { focus = TR2S_ela_b_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_ela_meter = 20 }
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_a_1
+		icon = GFX_pl2027_081_twierdza_1_slk_f
+		x = 59
+		y = 20
+		cost = 2
+		prerequisite = { focus = TR2S_ela_a_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_ela_meter = 8 }
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_a_2
+		icon = GFX_pl2027_081_porzadek_0
+		x = 61
+		y = 21
+		cost = 2
+		prerequisite = { focus = TR2S_ela_a_1 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_ela_meter = 8 }
+			capital_scope = { add_building_construction = { type = bunker level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_a_3
+		icon = GFX_pl2027_081_twierdza_1_slk_f
+		x = 59
+		y = 22
+		cost = 2
+		prerequisite = { focus = TR2S_ela_a_2 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_ela_meter = 8 }
+			add_stability = -0.01 add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_a_found
+		icon = GFX_pl2027_081_porzadek_0
+		x = 60
+		y = 23
+		cost = 3
+		prerequisite = { focus = TR2S_ela_a_3 }
+		available = { check_variable = { TR2S_ela_meter > 54 } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			set_cosmetic_tag = TR2S_ela_A
+			add_ideas = TR2S_ela_A_spirit
+			set_country_flag = TR2S_ela_founded
+			set_country_flag = TR2S_ela_route_A
+			add_political_power = 20
+			country_event = { id = tr2state.151 days = 1 }
+			add_ideas = TR2C_ela_A_constitution
+			set_politics = { ruling_party = fascist elections_allowed = no }
+			country_event = { id = tr2c.151 days = 3 }
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_a_legacy
+		icon = GFX_pl2027_081_twierdza_1_slk_f
+		x = 60
+		y = 24
+		cost = 3
+		prerequisite = { focus = TR2S_ela_a_found }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_b_choice
+		icon = GFX_pl2027_081_porzadek_0
+		x = 70
+		y = 19
+		cost = 3
+		prerequisite = { focus = TR2S_ela_crisis }
+		mutually_exclusive = { focus = TR2S_ela_a_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_ela_meter = 20 }
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_b_1
+		icon = GFX_pl2027_081_twierdza_1_slk_f
+		x = 69
+		y = 20
+		cost = 2
+		prerequisite = { focus = TR2S_ela_b_choice }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_ela_meter = 8 }
+			add_manpower = 2000
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_b_2
+		icon = GFX_pl2027_081_porzadek_0
+		x = 71
+		y = 21
+		cost = 2
+		prerequisite = { focus = TR2S_ela_b_1 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_ela_meter = 8 }
+			add_political_power = 30 add_stability = -0.025
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_b_3
+		icon = GFX_pl2027_081_twierdza_1_slk_f
+		x = 69
+		y = 22
+		cost = 2
+		prerequisite = { focus = TR2S_ela_b_2 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_ela_meter = 8 }
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_b_4
+		icon = GFX_pl2027_081_porzadek_0
+		x = 71
+		y = 23
+		cost = 2
+		prerequisite = { focus = TR2S_ela_b_3 }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_to_variable = { TR2S_ela_meter = 8 }
+			add_war_support = 0.035 add_stability = -0.025
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_b_found
+		icon = GFX_pl2027_081_porzadek_0
+		x = 70
+		y = 24
+		cost = 3
+		prerequisite = { focus = TR2S_ela_b_4 }
+		available = { check_variable = { TR2S_ela_meter > 54 } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			set_cosmetic_tag = TR2S_ela_B
+			add_ideas = TR2S_ela_B_spirit
+			set_country_flag = TR2S_ela_founded
+			set_country_flag = TR2S_ela_route_B
+			add_political_power = 20
+			country_event = { id = tr2state.152 days = 1 }
+			add_ideas = TR2C_ela_B_constitution
+			set_politics = { ruling_party = fascist elections_allowed = no }
+			country_event = { id = tr2c.152 days = 3 }
+		}
+	}
+
+	focus = {
+		id = TR2S_ela_b_legacy
+		icon = GFX_pl2027_081_twierdza_1_slk_f
+		x = 70
+		y = 25
+		cost = 3
+		prerequisite = { focus = TR2S_ela_b_found }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			add_war_support = 0.02
+		}
+	}
+
+
+	# Kontynuacja ustrojowa: niezalezne instytucje i skutki wyboru panstwa
+	focus = {
+		id = TR2C_ela_A_institution
+		icon = GFX_pl2027_081_rada_0
+		x = 57
+		y = 26
+		cost = 5
+		prerequisite = { focus = TR2S_ela_a_legacy }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			add_political_power = 40
+			add_stability = -0.025
+		}
+	}
+
+	focus = {
+		id = TR2C_ela_A_future
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 57
+		y = 27
+		cost = 5
+		prerequisite = { focus = TR2C_ela_A_institution }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			add_manpower = 600
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = TR2C_ela_B_institution
+		icon = GFX_pl2027_081_rada_0
+		x = 73
+		y = 27
+		cost = 5
+		prerequisite = { focus = TR2S_ela_b_legacy }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			army_experience = 20
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = TR2C_ela_B_future
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 73
+		y = 28
+		cost = 5
+		prerequisite = { focus = TR2C_ela_B_institution }
+		ai_will_do = { factor = 3 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+			add_stability = -0.02
 		}
 	}
 }

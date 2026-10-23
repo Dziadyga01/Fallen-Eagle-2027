@@ -717,6 +717,7 @@ focus_tree = {
 		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_kre_p_kopernik }
+		available = { OR = { NOT = { has_country_flag = TR2S_kre_founded } has_country_flag = TR2S_kre_route_B } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_kre_p_przemysl_tb bonus = 1.0 uses = 2 category = industry }
@@ -855,7 +856,7 @@ focus_tree = {
 		y = 5
 		cost = 1
 		prerequisite = { focus = TR2_kre_d_referenda }
-		available = { check_variable = { global.MET_trn_obszary > 3 } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_8000 has_army_manpower = { size > 7999 } } NOT = { has_global_flag = MET_rozstrzygniete } }
+		available = { OR = { NOT = { has_country_flag = TR2S_kre_founded } has_country_flag = TR2S_kre_route_A }  check_variable = { global.MET_trn_obszary > 3 } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_8000 has_army_manpower = { size > 7999 } } NOT = { has_global_flag = MET_rozstrzygniete } }
 		bypass = { has_global_flag = MET_rozstrzygniete }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -979,7 +980,7 @@ focus_tree = {
 		cost = 8
 		prerequisite = { focus = TR2_kre_w_wcielenie }
 		prerequisite = { focus = TR2_krevienko_tree_gotowosc }
-		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } OR = { NOT = { country_exists = KUJ } custom_trigger_tooltip = { tooltip = TRK_req_granica_KUJ is_neighbor_of = KUJ } } }
+		available = { OR = { NOT = { has_country_flag = TR2S_kre_founded } has_country_flag = TR2S_kre_route_B }  custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } OR = { NOT = { country_exists = KUJ } custom_trigger_tooltip = { tooltip = TRK_req_granica_KUJ is_neighbor_of = KUJ } } }
 		bypass = { OR = { NOT = { country_exists = KUJ } KUJ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 country_exists = KUJ NOT = { strength_ratio = { tag = KUJ ratio > 1.2 } } } modifier = { factor = 0 has_war = yes } modifier = { factor = 0 has_stability < 0.35 } }
 		completion_reward = {

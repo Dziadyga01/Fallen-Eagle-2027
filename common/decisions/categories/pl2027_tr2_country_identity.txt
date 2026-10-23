@@ -1,0 +1,42 @@
+TR2C_gul_rzad = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { OR = { has_country_flag = TR2S_gul_route_A has_country_flag = TR2S_gul_route_B } }
+	priority = 86
+}
+
+TR2C_zal_rzad = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { OR = { has_country_flag = TR2S_zal_route_A has_country_flag = TR2S_zal_route_B } }
+	priority = 86
+}
+
+TR2C_rom_rzad = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { OR = { has_country_flag = TR2S_rom_route_A has_country_flag = TR2S_rom_route_B } }
+	priority = 86
+}
+
+TR2C_kow_rzad = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { OR = { has_country_flag = TR2S_kow_route_A has_country_flag = TR2S_kow_route_B } }
+	priority = 86
+}
+
+TR2C_kre_rzad = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { OR = { has_country_flag = TR2S_kre_route_A has_country_flag = TR2S_kre_route_B } }
+	priority = 86
+}
+
+TR2C_ela_rzad = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { OR = { has_country_flag = TR2S_ela_route_A has_country_flag = TR2S_ela_route_B } }
+	priority = 86
+}
+

@@ -696,6 +696,7 @@ focus_tree = {
 		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_rom_p_kopernik }
+		available = { OR = { NOT = { has_country_flag = TR2S_rom_founded } has_country_flag = TR2S_rom_route_A } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_rom_p_przemysl_tb bonus = 1.0 uses = 2 category = industry }
@@ -834,7 +835,7 @@ focus_tree = {
 		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_rom_d_referenda }
-		available = { check_variable = { global.MET_trn_obszary > 1 } check_variable = { global.MET_byd_obszary > 1 } check_variable = { global.MET_napiecie < 30 } NOT = { has_global_flag = MET_rozstrzygniete } }
+		available = { OR = { NOT = { has_country_flag = TR2S_rom_founded } has_country_flag = TR2S_rom_route_B }  check_variable = { global.MET_trn_obszary > 1 } check_variable = { global.MET_byd_obszary > 1 } check_variable = { global.MET_napiecie < 30 } NOT = { has_global_flag = MET_rozstrzygniete } }
 		bypass = { has_global_flag = MET_rozstrzygniete }
 		ai_will_do = { factor = 10 }
 		completion_reward = {

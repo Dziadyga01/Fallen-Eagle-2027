@@ -1846,7 +1846,7 @@ focus_tree = {
 			add_political_power = 20
 			country_event = { id = tr2state.112 days = 1 }
 			add_ideas = TR2C_zal_B_constitution
-			set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+			set_politics = { ruling_party = conservative elections_allowed = no }
 			country_event = { id = tr2c.112 days = 3 }
 		}
 	}

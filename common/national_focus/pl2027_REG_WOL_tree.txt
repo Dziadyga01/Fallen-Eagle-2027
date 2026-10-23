@@ -863,7 +863,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_wol
-		x = 0
+		x = 2
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_WOL_mil_rezerwisci }
@@ -883,7 +883,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_wol
-		x = 6
+		x = 7
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_WOL_mil_kadra }
@@ -903,7 +903,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 13
+		x = 14
 		y = 1
 		cost = 1
 		prerequisite = { focus = RWOL_start }
@@ -919,7 +919,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 11
+		x = 13
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_s_ulica }
@@ -935,7 +935,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 14
+		x = 15
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_WOL_zy_s_ulica }
@@ -951,7 +951,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_wol_k
-		x = 13
+		x = 12
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_s_media }
@@ -969,7 +969,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_wol_k
-		x = 15
+		x = 14
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_s_media }
@@ -987,7 +987,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 11
+		x = 12
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_s_kartki focus = REG_WOL_zy_s_rynek }
@@ -1004,7 +1004,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 13
+		x = 14
 		y = 4
 		cost = 1
 		prerequisite = { focus = REG_WOL_zy_s_kartki focus = REG_WOL_zy_s_rynek }
@@ -1020,7 +1020,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 15
+		x = 16
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_s_kartki focus = REG_WOL_zy_s_rynek }
@@ -1037,7 +1037,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 13
+		x = 14
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_WOL_zy_s_szkoly }

@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_porzadek
 		icon = GFX_pl2027_081_porzadek_0
-		x = 31
+		x = 30
 		y = 1
 		cost = 5
 		prerequisite = { focus = RCHZ_start }
@@ -43,7 +43,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_zaopatrzenie
 		icon = GFX_pl2027_081_chemia_1
-		x = 33
+		x = 32
 		y = 1
 		cost = 5
 		prerequisite = { focus = RCHZ_start }
@@ -57,7 +57,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_wladza
 		icon = GFX_pl2027_081_rada_1
-		x = 31
+		x = 30
 		y = 2
 		cost = 1
 		prerequisite = { focus = RCHZ_porzadek }
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_wybor
 		icon = GFX_pl2027_081_chemia_2
-		x = 22
+		x = 21
 		y = 3
 		cost = 5
 		prerequisite = { focus = RCHZ_wladza }
@@ -88,7 +88,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_a1
 		icon = GFX_pl2027_081_rada_1_chz_k
-		x = 18
+		x = 17
 		y = 4
 		cost = 5
 		prerequisite = { focus = RCHZ_wybor }
@@ -103,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_a2
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 17
+		x = 16
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHZ_a1 }
@@ -117,7 +117,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_a3
 		icon = GFX_pl2027_081_wybory_2
-		x = 19
+		x = 18
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHZ_a1 }
@@ -130,7 +130,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_a4
 		icon = GFX_pl2027_081_wybory_0
-		x = 18
+		x = 17
 		y = 6
 		cost = 10
 		prerequisite = { focus = RCHZ_a2 }
@@ -148,7 +148,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_b1
 		icon = GFX_pl2027_081_wybory_1_chz_k
-		x = 22
+		x = 21
 		y = 4
 		cost = 5
 		prerequisite = { focus = RCHZ_wybor }
@@ -163,7 +163,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_b2
 		icon = GFX_pl2027_081_rada_0
-		x = 21
+		x = 20
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHZ_b1 }
@@ -177,7 +177,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_b3
 		icon = GFX_pl2027_081_administracja_0
-		x = 23
+		x = 22
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHZ_b1 }
@@ -190,7 +190,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_b4
 		icon = GFX_pl2027_081_wiara_0
-		x = 22
+		x = 21
 		y = 6
 		cost = 10
 		prerequisite = { focus = RCHZ_b2 }
@@ -209,7 +209,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_c1
 		icon = GFX_pl2027_081_chemia_0_chz_k
-		x = 26
+		x = 25
 		y = 4
 		cost = 5
 		prerequisite = { focus = RCHZ_wybor }
@@ -224,7 +224,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_c2
 		icon = GFX_pl2027_081_robotnicy_0
-		x = 25
+		x = 24
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHZ_c1 }
@@ -238,7 +238,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_c3
 		icon = GFX_pl2027_081_rada_2
-		x = 27
+		x = 26
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHZ_c1 }
@@ -251,7 +251,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_c4
 		icon = GFX_pl2027_081_parlament_0_chz
-		x = 26
+		x = 25
 		y = 6
 		cost = 10
 		prerequisite = { focus = RCHZ_c2 }
@@ -270,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_e1
 		icon = GFX_pl2027_081_energia_0
-		x = 31
+		x = 30
 		y = 3
 		cost = 6
 		prerequisite = { focus = RCHZ_wladza }
@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_e2
 		icon = GFX_pl2027_081_przemysl_0
-		x = 30
+		x = 29
 		y = 4
 		cost = 7
 		prerequisite = { focus = RCHZ_e1 }
@@ -297,7 +297,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_e3
 		icon = GFX_pl2027_081_chemia_1
-		x = 32
+		x = 31
 		y = 4
 		cost = 1
 		prerequisite = { focus = RCHZ_e1 }
@@ -312,7 +312,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_e4
 		icon = GFX_pl2027_081_kolej_0_chz_k
-		x = 29
+		x = 28
 		y = 5
 		cost = 7
 		prerequisite = { focus = RCHZ_e2 }
@@ -330,7 +330,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_e5
 		icon = GFX_pl2027_081_przemysl_1_chz_k
-		x = 31
+		x = 30
 		y = 5
 		cost = 6
 		prerequisite = { focus = RCHZ_e2 }
@@ -346,7 +346,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_e6
 		icon = GFX_pl2027_081_chemia_2
-		x = 30
+		x = 29
 		y = 6
 		cost = 7
 		prerequisite = { focus = RCHZ_e4 focus = RCHZ_e5 }
@@ -361,7 +361,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_m1
 		icon = GFX_pl2027_081_porzadek_1
-		x = 36
+		x = 35
 		y = 3
 		cost = 7
 		prerequisite = { focus = RCHZ_wladza }
@@ -376,7 +376,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_m2
 		icon = GFX_pl2027_081_pobor_1_chz_k
-		x = 35
+		x = 34
 		y = 4
 		cost = 7
 		prerequisite = { focus = RCHZ_m1 }
@@ -394,7 +394,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_m3
 		icon = GFX_pl2027_081_wyposazenie_2_chz_k
-		x = 37
+		x = 36
 		y = 4
 		cost = 6
 		prerequisite = { focus = RCHZ_m1 }
@@ -411,7 +411,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_m4
 		icon = GFX_pl2027_081_porzadek_2
-		x = 35
+		x = 34
 		y = 5
 		cost = 7
 		prerequisite = { focus = RCHZ_m2 focus = RCHZ_m3 }
@@ -426,7 +426,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_m5
 		icon = GFX_pl2027_081_porzadek_3
-		x = 35
+		x = 34
 		y = 6
 		cost = 5
 		prerequisite = { focus = RCHZ_m4 }
@@ -440,7 +440,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_d0
 		icon = GFX_pl2027_081_administracja_1
-		x = 40
+		x = 39
 		y = 3
 		cost = 5
 		prerequisite = { focus = RCHZ_wladza }
@@ -453,7 +453,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_s1
 		icon = GFX_pl2027_081_twierdza_0_chz_k
-		x = 39
+		x = 38
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHZ_d0 }
@@ -470,7 +470,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_s2
 		icon = GFX_pl2027_081_sojusz_2_chz
-		x = 39
+		x = 38
 		y = 6
 		cost = 5
 		prerequisite = { focus = RCHZ_s1 }
@@ -484,7 +484,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_pomoc
 		icon = GFX_pl2027_081_pomoc_2_chz_k
-		x = 39
+		x = 38
 		y = 4
 		cost = 6
 		prerequisite = { focus = RCHZ_d0 }
@@ -501,7 +501,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_samodzielnosc
 		icon = GFX_pl2027_081_orzel_0_chz_k
-		x = 41
+		x = 40
 		y = 4
 		cost = 5
 		prerequisite = { focus = RCHZ_d0 }
@@ -516,7 +516,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_s3
 		icon = GFX_pl2027_081_administracja_2
-		x = 39
+		x = 38
 		y = 7
 		cost = 1
 		prerequisite = { focus = RCHZ_s2 }
@@ -531,7 +531,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_w1
 		icon = GFX_pl2027_081_wojna_0_chz_k
-		x = 33
+		x = 32
 		y = 6
 		cost = 8
 		prerequisite = { focus = RCHZ_d0 }
@@ -550,7 +550,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_w2
 		icon = GFX_pl2027_081_wojna_1_chz
-		x = 33
+		x = 32
 		y = 7
 		cost = 8
 		prerequisite = { focus = RCHZ_w1 }
@@ -566,7 +566,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_w3
 		icon = GFX_pl2027_081_wojna_2_chz
-		x = 33
+		x = 32
 		y = 8
 		cost = 8
 		prerequisite = { focus = RCHZ_w2 }
@@ -582,7 +582,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_region
 		icon = GFX_pl2027_081_mapa_0_chz
-		x = 33
+		x = 32
 		y = 9
 		cost = 7
 		prerequisite = { focus = RCHZ_s3 focus = RCHZ_w3 }
@@ -601,7 +601,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_centralizacja
 		icon = GFX_pl2027_081_centralizacja_0_chz_k
-		x = 32
+		x = 31
 		y = 10
 		cost = 5
 		prerequisite = { focus = RCHZ_region }
@@ -616,7 +616,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_porozumienie
 		icon = GFX_pl2027_081_administracja_0_chz_k
-		x = 34
+		x = 33
 		y = 10
 		cost = 5
 		prerequisite = { focus = RCHZ_region }
@@ -630,7 +630,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_pl1
 		icon = GFX_pl2027_081_korona_3_chz
-		x = 32
+		x = 31
 		y = 11
 		cost = 5
 		prerequisite = { focus = RCHZ_region }
@@ -645,7 +645,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_pl2
 		icon = GFX_pl2027_081_ofensywa_2_chz
-		x = 32
+		x = 31
 		y = 12
 		cost = 8
 		prerequisite = { focus = RCHZ_pl1 }
@@ -661,7 +661,7 @@ focus_tree = {
 	focus = {
 		id = RCHZ_pl3
 		icon = GFX_pl2027_081_polska_2_chz_f
-		x = 32
+		x = 31
 		y = 13
 		cost = 10
 		prerequisite = { focus = RCHZ_pl2 }
@@ -851,7 +851,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_chz
-		x = 2
+		x = 0
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_CHZ_mil_rezerwisci }
@@ -871,7 +871,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_chz
-		x = 7
+		x = 6
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_CHZ_mil_kadra }
@@ -891,7 +891,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 12
+		x = 13
 		y = 1
 		cost = 1
 		prerequisite = { focus = RCHZ_start }
@@ -923,7 +923,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 13
+		x = 14
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_CHZ_zy_s_ulica }
@@ -939,7 +939,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_chz_k
-		x = 12
+		x = 13
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHZ_zy_s_media }
@@ -957,7 +957,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_chz_k
-		x = 14
+		x = 15
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHZ_zy_s_media }
@@ -975,7 +975,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 12
+		x = 11
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_CHZ_zy_s_kartki focus = REG_CHZ_zy_s_rynek }
@@ -992,7 +992,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 14
+		x = 13
 		y = 4
 		cost = 1
 		prerequisite = { focus = REG_CHZ_zy_s_kartki focus = REG_CHZ_zy_s_rynek }
@@ -1008,7 +1008,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 16
+		x = 15
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_CHZ_zy_s_kartki focus = REG_CHZ_zy_s_rynek }
@@ -1025,7 +1025,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 14
+		x = 13
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_CHZ_zy_s_szkoly }
@@ -1045,7 +1045,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 37
+		x = 34
 		y = 1
 		cost = 6
 		prerequisite = { focus = RCHZ_start }
@@ -1063,7 +1063,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_chz
-		x = 36
+		x = 33
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_CHZ_zy_k_admin }
@@ -1080,7 +1080,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 38
+		x = 35
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_CHZ_zy_k_admin }
@@ -1096,7 +1096,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_chz
-		x = 38
+		x = 33
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHZ_zy_k_defilada }
@@ -1113,7 +1113,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 44
+		x = 43
 		y = 1
 		cost = 5
 		prerequisite = { focus = RCHZ_start }
@@ -1131,7 +1131,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 44
+		x = 43
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_CHZ_zy_p_straty }
@@ -1148,7 +1148,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_chz_k
-		x = 43
+		x = 42
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHZ_zy_p_rzad }
@@ -1165,7 +1165,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_chz_k
-		x = 45
+		x = 44
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHZ_zy_p_rzad }
@@ -1182,7 +1182,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 44
+		x = 43
 		y = 4
 		cost = 6
 		prerequisite = { focus = REG_CHZ_zy_p_rewanz focus = REG_CHZ_zy_p_pojednanie }
@@ -1201,7 +1201,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHZ_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_chz
-		x = 33
+		x = 32
 		y = 5
 		cost = 5
 		prerequisite = { focus = RCHZ_wybor }

@@ -292,7 +292,7 @@ focus_tree = {
 	focus = {
 		id = FED_kol_mil_kadra
 		icon = GFX_pl2027_081_oficer_1
-		x = 14
+		x = 12
 		y = 4
 		cost = 5
 		prerequisite = { focus = FED_kol_mil_rezerwisci }
@@ -312,7 +312,7 @@ focus_tree = {
 	focus = {
 		id = FED_kol_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1
-		x = 19
+		x = 18
 		y = 5
 		cost = 7
 		prerequisite = { focus = FED_kol_mil_kadra }
@@ -835,7 +835,7 @@ focus_tree = {
 	focus = {
 		id = FED_kol_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 29
+		x = 30
 		y = 1
 		cost = 6
 		prerequisite = { focus = FED_kol_0 }
@@ -853,7 +853,7 @@ focus_tree = {
 	focus = {
 		id = FED_kol_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1
-		x = 28
+		x = 29
 		y = 2
 		cost = 5
 		prerequisite = { focus = FED_kol_zy_k_admin }
@@ -870,7 +870,7 @@ focus_tree = {
 	focus = {
 		id = FED_kol_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 30
+		x = 31
 		y = 2
 		cost = 1
 		prerequisite = { focus = FED_kol_zy_k_admin }
@@ -886,7 +886,7 @@ focus_tree = {
 	focus = {
 		id = FED_kol_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2
-		x = 29
+		x = 30
 		y = 3
 		cost = 5
 		prerequisite = { focus = FED_kol_zy_k_defilada }

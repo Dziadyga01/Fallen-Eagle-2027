@@ -1,0 +1,708 @@
+add_namespace = ozm
+
+country_event = {
+	id = ozm.23
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.23.t
+	desc = ozm.23.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = ozm.23.a
+		ai_chance = { factor = 1 }
+		add_timed_idea = { idea = OZM_paraliz days = 180 } add_stability = -0.05 custom_effect_tooltip = OZM_tt_legit5 hidden_effect = { add_to_variable = { OZM_legit = 5 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.30.t
+	desc = ozm.30.d
+	picture = GFX_pl2027_ev081_porzadek_5
+	is_triggered_only = yes
+	option = {
+		name = ozm.30.a
+		ai_chance = { factor = 5 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } }
+		add_opinion_modifier = { target = FROM modifier = OZM_porozumienie } FROM = { add_opinion_modifier = { target = ROOT modifier = OZM_porozumienie } custom_effect_tooltip = OZM_tt_legit3 hidden_effect = { add_to_variable = { OZM_legit = 3 } OZM_przelicz = yes } }
+	}
+	option = {
+		name = ozm.30.b
+		ai_chance = { factor = 3 }
+		FROM = { custom_effect_tooltip = OZM_tt_legitm1 hidden_effect = { add_to_variable = { OZM_legit = -1 } OZM_przelicz = yes } }
+	}
+}
+
+country_event = {
+	id = ozm.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.1.t
+	desc = ozm.1.d
+	picture = GFX_pl2027_ev081_kolej_1
+	is_triggered_only = yes
+	option = {
+		name = ozm.1.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_legit3 hidden_effect = { add_to_variable = { OZM_legit = 3 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.1.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_legit2_zasiegi2 hidden_effect = { add_to_variable = { OZM_legit = 2 } add_to_variable = { OZM_zasiegi = 2 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.2.t
+	desc = ozm.2.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_2
+	is_triggered_only = yes
+	option = {
+		name = ozm.2.a
+		trigger = { has_political_power > 29 }
+		ai_chance = { factor = 3 }
+		add_political_power = -30 custom_effect_tooltip = OZM_tt_dostawy15 hidden_effect = { add_to_variable = { OZM_dostawy = 15 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.2.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.03 custom_effect_tooltip = OZM_tt_legitm3 hidden_effect = { add_to_variable = { OZM_legit = -3 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.3.t
+	desc = ozm.3.d
+	picture = GFX_pl2027_ev081_miasto_0
+	is_triggered_only = yes
+	option = {
+		name = ozm.3.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_zasiegi3 hidden_effect = { add_to_variable = { OZM_zasiegi = 3 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.3.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegim4_legitm2 hidden_effect = { add_to_variable = { OZM_zasiegi = -4 } add_to_variable = { OZM_legit = -2 } OZM_przelicz = yes } add_stability = -0.01
+	}
+	option = {
+		name = ozm.3.c
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_zasiegi2_legit2 hidden_effect = { add_to_variable = { OZM_zasiegi = 2 } add_to_variable = { OZM_legit = 2 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.4
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.4.t
+	desc = ozm.4.d
+	picture = GFX_pl2027_ev081_narada_0
+	is_triggered_only = yes
+	option = {
+		name = ozm.4.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_zasiegi6 hidden_effect = { add_to_variable = { OZM_zasiegi = 6 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.4.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegi3 hidden_effect = { add_to_variable = { OZM_zasiegi = 3 } OZM_przelicz = yes } add_political_power = 20
+	}
+	option = {
+		name = ozm.4.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegi2_legit3 hidden_effect = { add_to_variable = { OZM_zasiegi = 2 } add_to_variable = { OZM_legit = 3 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.5
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.5.t
+	desc = ozm.5.d
+	picture = GFX_pl2027_ev081_narada_0
+	is_triggered_only = yes
+	option = {
+		name = ozm.5.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_zasiegim5 hidden_effect = { add_to_variable = { OZM_zasiegi = -5 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.5.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegim2_legitm4 hidden_effect = { add_to_variable = { OZM_zasiegi = -2 } add_to_variable = { OZM_legit = -4 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.6
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.6.t
+	desc = ozm.6.d
+	picture = GFX_pl2027_ev081_ulica_1
+	is_triggered_only = yes
+	option = {
+		name = ozm.6.a
+		ai_chance = { factor = 2 }
+		add_political_power = -20 custom_effect_tooltip = OZM_tt_zasiegi8 hidden_effect = { add_to_variable = { OZM_zasiegi = 8 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.6.b
+		ai_chance = { factor = 1 }
+		if = { limit = { check_variable = { OZM_dostawy > 39 } } custom_effect_tooltip = OZM_tt_zasiegi14 hidden_effect = { add_to_variable = { OZM_zasiegi = 14 } OZM_przelicz = yes } } else = { custom_effect_tooltip = OZM_tt_zasiegi4 hidden_effect = { add_to_variable = { OZM_zasiegi = 4 } OZM_przelicz = yes } add_stability = -0.04 }
+	}
+}
+
+country_event = {
+	id = ozm.7
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.7.t
+	desc = ozm.7.d
+	picture = GFX_pl2027_ev081_miasto_0
+	is_triggered_only = yes
+	option = {
+		name = ozm.7.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_zasiegi8_legitm5 hidden_effect = { add_to_variable = { OZM_zasiegi = 8 } add_to_variable = { OZM_legit = -5 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.7.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegi3_legit2 hidden_effect = { add_to_variable = { OZM_zasiegi = 3 } add_to_variable = { OZM_legit = 2 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.8
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ozm.8.t
+	desc = ozm.8.d
+	picture = GFX_pl2027_ev081_wybory_3
+	is_triggered_only = yes
+	option = {
+		name = ozm.8.a
+		ai_chance = { factor = 1 }
+		if = { limit = { check_variable = { OZM_zasiegi > 59 } check_variable = { OZM_zasiegi > OZM_legit } has_stability > 0.29 } set_country_flag = OZM_referendum_wygrane country_event = { id = ozm.44 days = 1 } } else = { set_country_flag = OZM_referendum_przegrane country_event = { id = ozm.45 days = 1 } }
+	}
+}
+
+country_event = {
+	id = ozm.44
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ozm.44.t
+	desc = ozm.44.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	option = {
+		name = ozm.44.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegi5 hidden_effect = { add_to_variable = { OZM_zasiegi = 5 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.45
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ozm.45.t
+	desc = ozm.45.d
+	picture = GFX_pl2027_ev081_wybory_1
+	is_triggered_only = yes
+	option = {
+		name = ozm.45.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegim10_legit4 hidden_effect = { add_to_variable = { OZM_zasiegi = -10 } add_to_variable = { OZM_legit = 4 } OZM_przelicz = yes } add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = ozm.9
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ozm.9.t
+	desc = ozm.9.d
+	picture = GFX_tfe_mapa_kolej
+	is_triggered_only = yes
+	option = {
+		name = ozm.9.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_sygnal5 hidden_effect = { add_to_variable = { OZM_sygnal = 5 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.10.t
+	desc = ozm.10.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = ozm.10.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_sygnal5_legitm2 hidden_effect = { add_to_variable = { OZM_sygnal = 5 } add_to_variable = { OZM_legit = -2 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.10.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_legit2 hidden_effect = { add_to_variable = { OZM_legit = 2 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.11.t
+	desc = ozm.11.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = ozm.11.a
+		ai_chance = { factor = 1 }
+		random_list = { 80 = { modifier = { factor = 1.3 has_country_flag = OZM_master } modifier = { factor = 1.2 has_country_flag = OZM_rozsadek } country_event = { id = ozm.26 days = 2 } } 20 = { country_event = { id = ozm.28 days = 1 } } }
+	}
+}
+
+country_event = {
+	id = ozm.26
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.26.t
+	desc = ozm.26.d
+	picture = GFX_pl2027_ev081_media_5
+	is_triggered_only = yes
+	option = {
+		name = ozm.26.a
+		ai_chance = { factor = 1 }
+		random_list = { 70 = { modifier = { factor = 1.3 has_country_flag = OZM_master } modifier = { factor = 1.2 has_country_flag = OZM_rozsadek } country_event = { id = ozm.27 days = 2 } } 30 = { country_event = { id = ozm.28 days = 1 } } }
+	}
+}
+
+country_event = {
+	id = ozm.27
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.27.t
+	desc = ozm.27.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_1
+	is_triggered_only = yes
+	option = {
+		name = ozm.27.a
+		ai_chance = { factor = 1 }
+		if = { limit = { check_variable = { OZM_dostawy > 39 } } random_list = { 85 = { set_country_flag = OZM_rytual_ok custom_effect_tooltip = OZM_tt_sygnal10 hidden_effect = { add_to_variable = { OZM_sygnal = 10 } OZM_przelicz = yes } } 15 = { country_event = { id = ozm.28 days = 1 } } } } else = { random_list = { 50 = { set_country_flag = OZM_rytual_ok custom_effect_tooltip = OZM_tt_sygnal10 hidden_effect = { add_to_variable = { OZM_sygnal = 10 } OZM_przelicz = yes } } 50 = { country_event = { id = ozm.28 days = 1 } } } }
+	}
+}
+
+country_event = {
+	id = ozm.28
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.28.t
+	desc = ozm.28.d
+	picture = GFX_pl2027_ev081_blackout_0
+	is_triggered_only = yes
+	option = {
+		name = ozm.28.a
+		ai_chance = { factor = 1 }
+		set_country_flag = OZM_rytual_nieudany custom_effect_tooltip = OZM_tt_sygnalm30_zasiegim10 hidden_effect = { add_to_variable = { OZM_sygnal = -30 } add_to_variable = { OZM_zasiegi = -10 } OZM_przelicz = yes } add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = ozm.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.20.t
+	desc = ozm.20.d
+	picture = GFX_pl2027_ev081_narada_4
+	is_triggered_only = yes
+	option = {
+		name = ozm.20.a
+		ai_chance = { factor = 1 }
+		clr_country_flag = OZM_rytual_nieudany country_event = { id = ozm.11 days = 1 }
+	}
+}
+
+country_event = {
+	id = ozm.12
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.12.t
+	desc = ozm.12.d
+	picture = GFX_pl2027_ev081_polityka_5
+	is_triggered_only = yes
+	option = {
+		name = ozm.12.a
+		ai_chance = { factor = 1 }
+		set_cosmetic_tag = OZM_SWIEBODZIN set_politics = { ruling_party = nationalist elections_allowed = no } add_popularity = { ideology = nationalist popularity = 0.20 } if = { limit = { NOT = { has_character = OZM_swiebodzin } } recruit_character = OZM_swiebodzin } promote_character = OZM_swiebodzin add_stability = -0.05
+	}
+}
+
+news_event = {
+	id = ozm.13
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.13.t
+	desc = ozm.13.d
+	picture = GFX_pl2027_ev081_miasto_4_news
+	is_triggered_only = yes
+	option = {
+		name = ozm.13.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = ozm.14
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.14.t
+	desc = ozm.14.d
+	picture = GFX_pl2027_ev081_wybory_1_news
+	is_triggered_only = yes
+	option = {
+		name = ozm.14.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = ozm.15
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.15.t
+	desc = ozm.15.d
+	picture = GFX_pl2027_ev081_polityka_1_news
+	is_triggered_only = yes
+	option = {
+		name = ozm.15.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = ozm.16
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.16.t
+	desc = ozm.16.d
+	picture = GFX_pl2027_ev081_gospodarka_0
+	is_triggered_only = yes
+	option = {
+		name = ozm.16.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_zasiegi6 hidden_effect = { add_to_variable = { OZM_zasiegi = 6 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.16.b
+		ai_chance = { factor = 1 }
+		add_political_power = 40
+	}
+}
+
+country_event = {
+	id = ozm.17
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.17.t
+	desc = ozm.17.d
+	picture = GFX_pl2027_ev081_miasto_2
+	is_triggered_only = yes
+	option = {
+		name = ozm.17.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegi4_legitm1 hidden_effect = { add_to_variable = { OZM_zasiegi = 4 } add_to_variable = { OZM_legit = -1 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.18
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.18.t
+	desc = ozm.18.d
+	picture = GFX_pl2027_ev081_ulica_1
+	is_triggered_only = yes
+	option = {
+		name = ozm.18.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.02 custom_effect_tooltip = OZM_tt_zasiegim2 hidden_effect = { add_to_variable = { OZM_zasiegi = -2 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.19
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.19.t
+	desc = ozm.19.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = ozm.19.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03 custom_effect_tooltip = OZM_tt_zasiegi4 hidden_effect = { add_to_variable = { OZM_zasiegi = 4 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.21.t
+	desc = ozm.21.d
+	picture = GFX_pl2027_ev081_media_4
+	is_triggered_only = yes
+	option = {
+		name = ozm.21.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegi6_legitm3 hidden_effect = { add_to_variable = { OZM_zasiegi = 6 } add_to_variable = { OZM_legit = -3 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.22.t
+	desc = ozm.22.d
+	picture = GFX_pl2027_ev081_miasto_2
+	is_triggered_only = yes
+	option = {
+		name = ozm.22.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegi5 hidden_effect = { add_to_variable = { OZM_zasiegi = 5 } OZM_przelicz = yes } add_political_power = 15
+	}
+}
+
+country_event = {
+	id = ozm.35
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.35.t
+	desc = ozm.35.d
+	picture = GFX_pl2027_ev081_praca_3
+	is_triggered_only = yes
+	option = {
+		name = ozm.35.a
+		ai_chance = { factor = 1 }
+		add_war_support = 0.02 custom_effect_tooltip = OZM_tt_legitm1 hidden_effect = { add_to_variable = { OZM_legit = -1 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.35.b
+		ai_chance = { factor = 2 }
+		set_country_flag = OZM_kablownia_cywilna custom_effect_tooltip = OZM_tt_legit3 hidden_effect = { add_to_variable = { OZM_legit = 3 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.36
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.36.t
+	desc = ozm.36.d
+	picture = GFX_pl2027_ev081_polityka_0
+	is_triggered_only = yes
+	option = {
+		name = ozm.36.a
+		ai_chance = { factor = 1 }
+		if = { limit = { country_exists = SMR } SMR = { add_opinion_modifier = { target = ROOT modifier = OZM_kanal } } } custom_effect_tooltip = OZM_tt_legit2 hidden_effect = { add_to_variable = { OZM_legit = 2 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.36.b
+		ai_chance = { factor = 1 }
+		if = { limit = { country_exists = KPR } KPR = { add_opinion_modifier = { target = ROOT modifier = OZM_kanal } } } custom_effect_tooltip = OZM_tt_legit2 hidden_effect = { add_to_variable = { OZM_legit = 2 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.36.c
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_legit3 hidden_effect = { add_to_variable = { OZM_legit = 3 } OZM_przelicz = yes } add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = ozm.37
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.37.t
+	desc = ozm.37.d
+	picture = GFX_pl2027_ev081_miasto_3
+	is_triggered_only = yes
+	option = {
+		name = ozm.37.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegi4 hidden_effect = { add_to_variable = { OZM_zasiegi = 4 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.38
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ozm.38.t
+	desc = ozm.38.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = ozm.38.a
+		ai_chance = { factor = 2 }
+		add_political_power = -20 add_stability = 0.03 custom_effect_tooltip = OZM_tt_legit3 hidden_effect = { add_to_variable = { OZM_legit = 3 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.38.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_legit1 hidden_effect = { add_to_variable = { OZM_legit = 1 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.39
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ozm.39.t
+	desc = ozm.39.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	option = {
+		name = ozm.39.a
+		ai_chance = { factor = 1 }
+		if = { limit = { has_stability > 0.54 check_variable = { OZM_legit > 59 } } add_stability = 0.05 custom_effect_tooltip = OZM_tt_legit6 hidden_effect = { add_to_variable = { OZM_legit = 6 } OZM_przelicz = yes } } else_if = { limit = { has_stability > 0.39 } add_stability = 0.01 custom_effect_tooltip = OZM_tt_legit2 hidden_effect = { add_to_variable = { OZM_legit = 2 } OZM_przelicz = yes } } else = { add_stability = -0.04 custom_effect_tooltip = OZM_tt_legitm6 hidden_effect = { add_to_variable = { OZM_legit = -6 } OZM_przelicz = yes } }
+	}
+}
+
+country_event = {
+	id = ozm.40
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.40.t
+	desc = ozm.40.d
+	picture = GFX_pl2027_ev081_granica_4
+	is_triggered_only = yes
+	option = {
+		name = ozm.40.a
+		ai_chance = { factor = 2 }
+		random_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no NOT = { has_war_with = ROOT } } add_opinion_modifier = { target = ROOT modifier = OZM_porozumienie } } custom_effect_tooltip = OZM_tt_dostawy5 hidden_effect = { add_to_variable = { OZM_dostawy = 5 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.40.b
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03 custom_effect_tooltip = OZM_tt_dostawym5_legit2 hidden_effect = { add_to_variable = { OZM_dostawy = -5 } add_to_variable = { OZM_legit = 2 } OZM_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = ozm.41
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = ozm.41.t
+	desc = ozm.41.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	option = {
+		name = ozm.41.a
+		ai_chance = { factor = 2 }
+		add_ideas = OZM_rzad_technokratow
+	}
+	option = {
+		name = ozm.41.b
+		ai_chance = { factor = 2 }
+		add_ideas = OZM_rzad_wyborczy if = { limit = { has_government = social_liberal } set_politics = { ruling_party = social_liberal elections_allowed = yes } }
+	}
+	option = {
+		name = ozm.41.c
+		ai_chance = { factor = 1 }
+		add_ideas = OZM_rzad_kryzysowy
+	}
+}
+
+country_event = {
+	id = ozm.42
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.42.t
+	desc = ozm.42.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	option = {
+		name = ozm.42.a
+		ai_chance = { factor = 3 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } }
+		FROM = { add_to_faction = ROOT } add_opinion_modifier = { target = FROM modifier = OZM_porozumienie }
+	}
+	option = {
+		name = ozm.42.b
+		trigger = { FROM = { has_country_flag = OZM_rzad_records } }
+		ai_chance = { factor = 3 }
+		FROM = { country_event = { id = ozm.19 days = 2 } }
+	}
+	option = {
+		name = ozm.42.c
+		trigger = { FROM = { NOT = { has_country_flag = OZM_rzad_records } } }
+		ai_chance = { factor = 3 }
+	}
+}
+
+country_event = {
+	id = ozm.32
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = ozm.32.t
+	desc = ozm.32.d
+	picture = GFX_pl2027_ev081_praca_0
+	is_triggered_only = yes
+	option = {
+		name = ozm.32.a
+		ai_chance = { factor = 2 }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+	}
+	option = {
+		name = ozm.32.b
+		ai_chance = { factor = 1 }
+		set_country_flag = OZM_hala_studio add_ideas = OZM_hala_propaganda country_event = { id = ozm.17 days = 5 }
+	}
+}
+
+country_event = {
+	id = ozm.33
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.33.t
+	desc = ozm.33.d
+	picture = GFX_pl2027_ev081_media_3
+	is_triggered_only = yes
+	option = {
+		name = ozm.33.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_legit5 hidden_effect = { add_to_variable = { OZM_legit = 5 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.33.b
+		trigger = { has_country_flag = OZM_records_ruch }
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = OZM_tt_zasiegi8 hidden_effect = { add_to_variable = { OZM_zasiegi = 8 } OZM_przelicz = yes } country_event = { id = ozm.22 days = 10 }
+	}
+}
+
+country_event = {
+	id = ozm.43
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.43.t
+	desc = ozm.43.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	option = {
+		name = ozm.43.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = OZM_tt_sygnal10_legitm3 hidden_effect = { add_to_variable = { OZM_sygnal = 10 } add_to_variable = { OZM_legit = -3 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.43.b
+		ai_chance = { factor = 1 }
+		set_country_flag = OZM_rozsadek custom_effect_tooltip = OZM_tt_sygnal3_legit3 hidden_effect = { add_to_variable = { OZM_sygnal = 3 } add_to_variable = { OZM_legit = 3 } OZM_przelicz = yes } country_event = { id = ozm.18 days = 5 }
+	}
+}
+
+country_event = {
+	id = ozm.34
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = ozm.34.t
+	desc = ozm.34.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	option = {
+		name = ozm.34.a
+		trigger = { 745 = { owner = { NOT = { tag = ROOT } NOT = { has_war_with = ROOT } } } }
+		ai_chance = { factor = 3 }
+		745 = { owner = { add_opinion_modifier = { target = ROOT modifier = OZM_porozumienie } } } add_political_power = 50 custom_effect_tooltip = OZM_tt_legit3 hidden_effect = { add_to_variable = { OZM_legit = 3 } OZM_przelicz = yes }
+	}
+	option = {
+		name = ozm.34.b
+		trigger = { 745 = { owner = { NOT = { tag = ROOT } } } }
+		ai_chance = { factor = 1 }
+		add_war_support = 0.08 add_political_power = 20
+	}
+	option = {
+		name = ozm.34.c
+		trigger = { 745 = { is_owned_by = ROOT } }
+		ai_chance = { factor = 1 }
+		add_stability = 0.05 add_political_power = 100
+	}
+}

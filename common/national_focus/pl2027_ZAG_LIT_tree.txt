@@ -525,7 +525,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_LIT_zy_z_media
 		icon = GFX_pl2027_081_polska_0
-		x = 2
+		x = 0
 		y = 4
 		cost = 5
 		prerequisite = { focus = ZAG_LIT_zy_z_pomoc focus = ZAG_LIT_zy_z_mur }
@@ -542,7 +542,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_LIT_zy_z_konsulaty
 		icon = GFX_pl2027_081_dyplomacja_1
-		x = 4
+		x = 2
 		y = 4
 		cost = 5
 		prerequisite = { focus = ZAG_LIT_zy_z_pomoc focus = ZAG_LIT_zy_z_mur }
@@ -559,7 +559,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_LIT_zy_z_polityka
 		icon = GFX_pl2027_081_dyplomacja_0
-		x = 3
+		x = 1
 		y = 5
 		cost = 5
 		prerequisite = { focus = ZAG_LIT_zy_z_media }

@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = WWD_prg_start
 		icon = GFX_pl2027_tfr_portret_prg_leader
-		x = 13
+		x = 14
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -513,7 +513,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 21
+		x = 20
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_PRG_zy_s_ulica }
@@ -545,7 +545,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_prg_k
-		x = 20
+		x = 22
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_PRG_zy_s_media }
@@ -563,7 +563,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_prg_k
-		x = 22
+		x = 24
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_PRG_zy_s_media }
@@ -651,7 +651,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 18
+		x = 17
 		y = 1
 		cost = 6
 		prerequisite = { focus = WWD_prg_start }
@@ -669,7 +669,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_prg
-		x = 17
+		x = 16
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_PRG_zy_k_admin }
@@ -686,7 +686,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 19
+		x = 18
 		y = 2
 		cost = 1
 		prerequisite = { focus = WWD_PRG_zy_k_admin }
@@ -702,7 +702,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_prg
-		x = 18
+		x = 17
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_PRG_zy_k_defilada }
@@ -719,7 +719,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 25
+		x = 27
 		y = 1
 		cost = 5
 		prerequisite = { focus = WWD_prg_start }
@@ -737,7 +737,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 25
+		x = 27
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_PRG_zy_p_straty }
@@ -754,7 +754,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_prg_k
-		x = 24
+		x = 26
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_PRG_zy_p_rzad }
@@ -771,7 +771,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_prg_k
-		x = 26
+		x = 28
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_PRG_zy_p_rzad }
@@ -788,7 +788,7 @@ focus_tree = {
 	focus = {
 		id = WWD_PRG_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 26
+		x = 27
 		y = 4
 		cost = 6
 		prerequisite = { focus = WWD_PRG_zy_p_rewanz focus = WWD_PRG_zy_p_pojednanie }

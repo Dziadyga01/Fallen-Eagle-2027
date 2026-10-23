@@ -817,7 +817,7 @@ focus_tree = {
 	focus = {
 		id = KNF_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_nna
-		x = 0
+		x = 2
 		y = 4
 		cost = 5
 		prerequisite = { focus = KNF_mil_rezerwisci }
@@ -837,7 +837,7 @@ focus_tree = {
 	focus = {
 		id = KNF_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_nna
-		x = 6
+		x = 7
 		y = 5
 		cost = 7
 		prerequisite = { focus = KNF_mil_kadra }
@@ -857,7 +857,7 @@ focus_tree = {
 	focus = {
 		id = KNF_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 12
+		x = 14
 		y = 1
 		cost = 1
 		prerequisite = { focus = KNF_start }
@@ -873,7 +873,7 @@ focus_tree = {
 	focus = {
 		id = KNF_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 11
+		x = 13
 		y = 2
 		cost = 5
 		prerequisite = { focus = KNF_zy_s_ulica }
@@ -889,7 +889,7 @@ focus_tree = {
 	focus = {
 		id = KNF_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 13
+		x = 15
 		y = 2
 		cost = 1
 		prerequisite = { focus = KNF_zy_s_ulica }

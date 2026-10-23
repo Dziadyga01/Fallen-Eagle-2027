@@ -1,9 +1,9 @@
-version="0.8.8"
+version="0.8.9"
 tags={
 	"Map"
 	"Alternative History"
 }
-name="The Fallen Eagle Alpha 0.8.8 Godzina Zero – etap II (wersja testowa)"
+name="The Fallen Eagle Alpha 0.8.9 Godzina Zero – etap II (wersja testowa)"
 picture="thumbnail.png"
 supported_version="1.19.*"
 replace_path="history/states"

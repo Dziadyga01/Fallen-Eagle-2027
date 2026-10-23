@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = PKP_ostatni_rozklad
 		icon = GFX_pl2027_081_parlament_0_koc
-		x = 26
+		x = 28
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = PKP_kryzys_na_torach
 		icon = GFX_pl2027_081_kolej_0
-		x = 31
+		x = 27
 		y = 1
 		cost = 5
 		prerequisite = { focus = PKP_ostatni_rozklad }
@@ -45,7 +45,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zarzad_nadzwyczajny
 		icon = GFX_pl2027_081_kolej_1
-		x = 30
+		x = 22
 		y = 2
 		cost = 5
 		prerequisite = { focus = PKP_kryzys_na_torach }
@@ -75,7 +75,7 @@ focus_tree = {
 	focus = {
 		id = PKP_rada_akcjonariuszy
 		icon = GFX_pl2027_081_rada_0
-		x = 30
+		x = 32
 		y = 3
 		cost = 5
 		prerequisite = { focus = PKP_tczew_centralny }
@@ -90,7 +90,7 @@ focus_tree = {
 	focus = {
 		id = PKP_narodziny_holdingu
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 30
+		x = 32
 		y = 4
 		cost = 10
 		prerequisite = { focus = PKP_rada_akcjonariuszy }
@@ -114,7 +114,7 @@ focus_tree = {
 	focus = {
 		id = PKP_audyt_torowisk
 		icon = GFX_pl2027_081_pieniadze_1
-		x = 22
+		x = 24
 		y = 3
 		cost = 6
 		prerequisite = { focus = PKP_tczew_centralny }
@@ -129,7 +129,7 @@ focus_tree = {
 	focus = {
 		id = PKP_magistrala_weglowa
 		icon = GFX_pl2027_081_kolej_2
-		x = 21
+		x = 23
 		y = 4
 		cost = 6
 		prerequisite = { focus = PKP_audyt_torowisk }
@@ -143,7 +143,7 @@ focus_tree = {
 	focus = {
 		id = PKP_warsztaty_starogardzkie
 		icon = GFX_pl2027_081_przemysl_0
-		x = 23
+		x = 25
 		y = 4
 		cost = 7
 		prerequisite = { focus = PKP_audyt_torowisk }
@@ -157,7 +157,7 @@ focus_tree = {
 	focus = {
 		id = PKP_siec_magazynow
 		icon = GFX_pl2027_081_technika_0
-		x = 21
+		x = 23
 		y = 5
 		cost = 6
 		prerequisite = { focus = PKP_magistrala_weglowa }
@@ -172,7 +172,7 @@ focus_tree = {
 	focus = {
 		id = PKP_nowe_taryfy
 		icon = GFX_pl2027_081_kolej_3
-		x = 21
+		x = 23
 		y = 6
 		cost = 5
 		prerequisite = { focus = PKP_siec_magazynow }
@@ -186,7 +186,7 @@ focus_tree = {
 	focus = {
 		id = PKP_potega_przemyslowa
 		icon = GFX_pl2027_081_kolej_0
-		x = 20
+		x = 22
 		y = 7
 		cost = 7
 		prerequisite = { focus = PKP_nowe_taryfy }
@@ -202,7 +202,7 @@ focus_tree = {
 	focus = {
 		id = PKP_bilet_dokument
 		icon = GFX_pl2027_081_administracja_0
-		x = 25
+		x = 27
 		y = 5
 		cost = 5
 		prerequisite = { focus = PKP_narodziny_holdingu }
@@ -216,7 +216,7 @@ focus_tree = {
 	focus = {
 		id = PKP_abonament
 		icon = GFX_pl2027_081_ludzie_0
-		x = 24
+		x = 26
 		y = 6
 		cost = 5
 		prerequisite = { focus = PKP_bilet_dokument }
@@ -230,7 +230,7 @@ focus_tree = {
 	focus = {
 		id = PKP_prywatne_perony
 		icon = GFX_pl2027_081_kolej_1
-		x = 26
+		x = 28
 		y = 6
 		cost = 5
 		prerequisite = { focus = PKP_bilet_dokument }
@@ -244,7 +244,7 @@ focus_tree = {
 	focus = {
 		id = PKP_urzad_windykacji
 		icon = GFX_pl2027_081_pieniadze_2
-		x = 24
+		x = 26
 		y = 7
 		cost = 5
 		prerequisite = { focus = PKP_abonament }
@@ -258,7 +258,7 @@ focus_tree = {
 	focus = {
 		id = PKP_rynek_koncesji
 		icon = GFX_pl2027_081_handel_0
-		x = 26
+		x = 28
 		y = 7
 		cost = 6
 		prerequisite = { focus = PKP_prywatne_perony }
@@ -272,7 +272,7 @@ focus_tree = {
 	focus = {
 		id = PKP_lojalnosc_pasazera
 		icon = GFX_pl2027_081_pieniadze_3_f
-		x = 24
+		x = 26
 		y = 8
 		cost = 7
 		prerequisite = { focus = PKP_urzad_windykacji focus = PKP_rynek_koncesji }
@@ -286,7 +286,7 @@ focus_tree = {
 	focus = {
 		id = PKP_reforma_sok
 		icon = GFX_pl2027_081_technika_1
-		x = 39
+		x = 41
 		y = 3
 		cost = 7
 		prerequisite = { focus = PKP_tczew_centralny }
@@ -305,7 +305,7 @@ focus_tree = {
 	focus = {
 		id = PKP_brygady_inzynieryjne
 		icon = GFX_pl2027_081_wojsko_0_koc
-		x = 38
+		x = 40
 		y = 4
 		cost = 7
 		prerequisite = { focus = PKP_reforma_sok }
@@ -321,7 +321,7 @@ focus_tree = {
 	focus = {
 		id = PKP_ochrona_mostow
 		icon = GFX_pl2027_081_most_1
-		x = 40
+		x = 42
 		y = 4
 		cost = 6
 		prerequisite = { focus = PKP_reforma_sok }
@@ -335,7 +335,7 @@ focus_tree = {
 	focus = {
 		id = PKP_pociagi_pancerne
 		icon = GFX_pl2027_081_kolej_2
-		x = 38
+		x = 40
 		y = 5
 		cost = 6
 		prerequisite = { focus = PKP_brygady_inzynieryjne }
@@ -351,7 +351,7 @@ focus_tree = {
 	focus = {
 		id = PKP_sily_szybkiego_reagowania
 		icon = GFX_pl2027_081_kolej_3
-		x = 38
+		x = 40
 		y = 6
 		cost = 7
 		prerequisite = { focus = PKP_pociagi_pancerne }
@@ -368,7 +368,7 @@ focus_tree = {
 	focus = {
 		id = PKP_mobilizacja_konwojow
 		icon = GFX_pl2027_081_pobor_0_koc
-		x = 38
+		x = 40
 		y = 7
 		cost = 7
 		prerequisite = { focus = PKP_sily_szybkiego_reagowania }
@@ -384,7 +384,7 @@ focus_tree = {
 	focus = {
 		id = PKP_uklad_z_gdanskiem
 		icon = GFX_pl2027_081_sojusz_0_koc
-		x = 31
+		x = 33
 		y = 5
 		cost = 5
 		prerequisite = { focus = PKP_narodziny_holdingu }
@@ -399,7 +399,7 @@ focus_tree = {
 	focus = {
 		id = PKP_oferta_dla_swiecia
 		icon = GFX_pl2027_081_pieniadze_4
-		x = 30
+		x = 32
 		y = 6
 		cost = 5
 		prerequisite = { focus = PKP_uklad_z_gdanskiem }
@@ -413,7 +413,7 @@ focus_tree = {
 	focus = {
 		id = PKP_przekonac_grudziadz
 		icon = GFX_pl2027_081_pieniadze_5
-		x = 32
+		x = 34
 		y = 6
 		cost = 5
 		prerequisite = { focus = PKP_uklad_z_gdanskiem }
@@ -428,7 +428,7 @@ focus_tree = {
 	focus = {
 		id = PKP_bydgoski_wezel
 		icon = GFX_pl2027_081_pieniadze_6
-		x = 30
+		x = 32
 		y = 7
 		cost = 5
 		prerequisite = { focus = PKP_oferta_dla_swiecia }
@@ -444,7 +444,7 @@ focus_tree = {
 	focus = {
 		id = PKP_torunski_rozklad
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 30
+		x = 32
 		y = 8
 		cost = 5
 		prerequisite = { focus = PKP_bydgoski_wezel }
@@ -458,7 +458,7 @@ focus_tree = {
 	focus = {
 		id = PKP_gwarancje_bezpieczenstwa
 		icon = GFX_pl2027_081_kolej_0
-		x = 30
+		x = 32
 		y = 9
 		cost = 5
 		prerequisite = { focus = PKP_torunski_rozklad }
@@ -472,7 +472,7 @@ focus_tree = {
 	focus = {
 		id = PKP_jedno_kociewie
 		icon = GFX_pl2027_081_wiara_0
-		x = 28
+		x = 30
 		y = 5
 		cost = 5
 		prerequisite = { focus = PKP_narodziny_holdingu }
@@ -486,7 +486,7 @@ focus_tree = {
 	focus = {
 		id = PKP_szlak_polnoc_poludnie
 		icon = GFX_pl2027_081_pieniadze_1
-		x = 28
+		x = 30
 		y = 6
 		cost = 7
 		prerequisite = { focus = PKP_jedno_kociewie }
@@ -502,7 +502,7 @@ focus_tree = {
 	focus = {
 		id = PKP_wspolna_taryfa
 		icon = GFX_pl2027_081_mapa_0_koc
-		x = 22
+		x = 24
 		y = 7
 		cost = 5
 		prerequisite = { focus = PKP_szlak_polnoc_poludnie }
@@ -517,7 +517,7 @@ focus_tree = {
 	focus = {
 		id = PKP_wielki_zjazd
 		icon = GFX_pl2027_081_korona_0_koc
-		x = 26
+		x = 28
 		y = 8
 		cost = 1
 		prerequisite = { focus = PKP_wspolna_taryfa }
@@ -532,7 +532,7 @@ focus_tree = {
 	focus = {
 		id = PKP_siec_ponad_granicami
 		icon = GFX_pl2027_081_granica_0_koc
-		x = 26
+		x = 28
 		y = 9
 		cost = 6
 		prerequisite = { focus = PKP_wielki_zjazd }
@@ -548,7 +548,7 @@ focus_tree = {
 	focus = {
 		id = PKP_panstwo_na_torach
 		icon = GFX_pl2027_081_pieniadze_2_f
-		x = 31
+		x = 33
 		y = 10
 		cost = 1
 		prerequisite = { focus = PKP_siec_ponad_granicami }
@@ -562,7 +562,7 @@ focus_tree = {
 	focus = {
 		id = PKP_konsorcjum
 		icon = GFX_pl2027_081_dyplomacja_0
-		x = 35
+		x = 37
 		y = 5
 		cost = 1
 		prerequisite = { focus = PKP_narodziny_holdingu }
@@ -576,7 +576,7 @@ focus_tree = {
 	focus = {
 		id = PKP_cysterny
 		icon = GFX_pl2027_081_kolej_1
-		x = 34
+		x = 36
 		y = 6
 		cost = 6
 		prerequisite = { focus = PKP_konsorcjum }
@@ -590,7 +590,7 @@ focus_tree = {
 	focus = {
 		id = PKP_tpizza
 		icon = GFX_pl2027_081_pieniadze_3
-		x = 36
+		x = 38
 		y = 6
 		cost = 1
 		prerequisite = { focus = PKP_konsorcjum }
@@ -604,7 +604,7 @@ focus_tree = {
 	focus = {
 		id = PKP_logistyka
 		icon = GFX_pl2027_081_technika_2
-		x = 34
+		x = 36
 		y = 7
 		cost = 7
 		prerequisite = { focus = PKP_cysterny }
@@ -620,7 +620,7 @@ focus_tree = {
 	focus = {
 		id = PKP_rada_korporacji_f
 		icon = GFX_pl2027_081_rada_1
-		x = 34
+		x = 36
 		y = 8
 		cost = 5
 		prerequisite = { focus = PKP_logistyka }
@@ -634,7 +634,7 @@ focus_tree = {
 	focus = {
 		id = PKP_kolej_korporacji
 		icon = GFX_TRN_form_korona
-		x = 34
+		x = 36
 		y = 9
 		cost = 5
 		prerequisite = { focus = PKP_rada_korporacji_f }
@@ -996,7 +996,7 @@ focus_tree = {
 	focus = {
 		id = PKP_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_koc
-		x = 8
+		x = 10
 		y = 4
 		cost = 5
 		prerequisite = { focus = PKP_mil_rezerwisci }
@@ -1016,7 +1016,7 @@ focus_tree = {
 	focus = {
 		id = PKP_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_koc
-		x = 14
+		x = 15
 		y = 5
 		cost = 7
 		prerequisite = { focus = PKP_mil_kadra }
@@ -1084,7 +1084,7 @@ focus_tree = {
 	focus = {
 		id = PKP_nalot_sok_f1
 		icon = GFX_pl2027_081_kolej_2
-		x = 34
+		x = 29
 		y = 1
 		cost = 5
 		prerequisite = { focus = PKP_ostatni_rozklad }
@@ -1100,7 +1100,7 @@ focus_tree = {
 	focus = {
 		id = PKP_nalot_sok_f2
 		icon = GFX_pl2027_081_kolej_2
-		x = 34
+		x = 29
 		y = 2
 		cost = 5
 		prerequisite = { focus = PKP_nalot_sok_f1 }
@@ -1116,7 +1116,7 @@ focus_tree = {
 	focus = {
 		id = PKP_nalot_sok_f3
 		icon = GFX_pl2027_081_kolej_2
-		x = 34
+		x = 29
 		y = 3
 		cost = 5
 		prerequisite = { focus = PKP_nalot_sok_f2 }
@@ -1132,7 +1132,7 @@ focus_tree = {
 	focus = {
 		id = PKP_wojenny_rozklad_dec_f1
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 36
+		x = 34
 		y = 1
 		cost = 5
 		prerequisite = { focus = PKP_ostatni_rozklad }
@@ -1148,7 +1148,7 @@ focus_tree = {
 	focus = {
 		id = PKP_wojenny_rozklad_dec_f2
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 36
+		x = 34
 		y = 2
 		cost = 5
 		prerequisite = { focus = PKP_wojenny_rozklad_dec_f1 }
@@ -1164,7 +1164,7 @@ focus_tree = {
 	focus = {
 		id = PKP_wojenny_rozklad_dec_f3
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 36
+		x = 34
 		y = 3
 		cost = 5
 		prerequisite = { focus = PKP_wojenny_rozklad_dec_f2 }
@@ -1180,7 +1180,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 42
+		x = 46
 		y = 1
 		cost = 1
 		prerequisite = { focus = PKP_ostatni_rozklad }
@@ -1196,7 +1196,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 41
+		x = 45
 		y = 2
 		cost = 5
 		prerequisite = { focus = PKP_zy_s_ulica }
@@ -1212,7 +1212,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 43
+		x = 47
 		y = 2
 		cost = 1
 		prerequisite = { focus = PKP_zy_s_ulica }
@@ -1228,7 +1228,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_koc_k
-		x = 42
+		x = 44
 		y = 3
 		cost = 5
 		prerequisite = { focus = PKP_zy_s_media }
@@ -1246,7 +1246,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_koc_k
-		x = 44
+		x = 46
 		y = 3
 		cost = 5
 		prerequisite = { focus = PKP_zy_s_media }
@@ -1264,7 +1264,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 42
+		x = 44
 		y = 4
 		cost = 5
 		prerequisite = { focus = PKP_zy_s_kartki focus = PKP_zy_s_rynek }
@@ -1281,7 +1281,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 44
+		x = 46
 		y = 4
 		cost = 1
 		prerequisite = { focus = PKP_zy_s_kartki focus = PKP_zy_s_rynek }
@@ -1297,7 +1297,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 46
+		x = 48
 		y = 4
 		cost = 5
 		prerequisite = { focus = PKP_zy_s_kartki focus = PKP_zy_s_rynek }
@@ -1314,7 +1314,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 44
+		x = 46
 		y = 5
 		cost = 7
 		prerequisite = { focus = PKP_zy_s_szkoly }
@@ -1334,7 +1334,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 47
+		x = 50
 		y = 1
 		cost = 6
 		prerequisite = { focus = PKP_ostatni_rozklad }
@@ -1352,7 +1352,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_koc
-		x = 46
+		x = 49
 		y = 2
 		cost = 5
 		prerequisite = { focus = PKP_zy_k_admin }
@@ -1369,7 +1369,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 48
+		x = 51
 		y = 2
 		cost = 1
 		prerequisite = { focus = PKP_zy_k_admin }
@@ -1385,7 +1385,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_koc
-		x = 47
+		x = 50
 		y = 3
 		cost = 5
 		prerequisite = { focus = PKP_zy_k_defilada }
@@ -1402,7 +1402,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 50
+		x = 53
 		y = 1
 		cost = 5
 		prerequisite = { focus = PKP_ostatni_rozklad }
@@ -1420,7 +1420,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 50
+		x = 53
 		y = 2
 		cost = 5
 		prerequisite = { focus = PKP_zy_p_straty }
@@ -1437,7 +1437,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_koc_k
-		x = 49
+		x = 52
 		y = 3
 		cost = 5
 		prerequisite = { focus = PKP_zy_p_rzad }
@@ -1454,7 +1454,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_koc_k
-		x = 51
+		x = 54
 		y = 3
 		cost = 5
 		prerequisite = { focus = PKP_zy_p_rzad }
@@ -1471,7 +1471,7 @@ focus_tree = {
 	focus = {
 		id = PKP_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 50
+		x = 53
 		y = 4
 		cost = 6
 		prerequisite = { focus = PKP_zy_p_rewanz focus = PKP_zy_p_pojednanie }

@@ -83,4 +83,24 @@ TR2_RMX_panel = {
 		}
 		ai_will_do = { factor = 1 }
 	}
+	TR2_RMX_d_reformy_rytm = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_completed_focus = TR2_RMX_pragmatyzm }
+		available = { check_variable = { TR2_RMX_zaufanie > 9 } }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { TR2_RMX_zasoby = 8 } add_to_variable = { TR2_RMX_zaufanie = -2 } clamp_variable = { var = TR2_RMX_zaufanie min = 0 max = 100 } clamp_variable = { var = TR2_RMX_zasoby min = 0 max = 100 } }
+		ai_will_do = { factor = 1 }
+	}
+	TR2_RMX_d_ochrona_mieszkan = {
+		icon = generic_political_discourse
+		allowed = { original_tag = TRN }
+		visible = { has_completed_focus = TR2_RMX_idealizm }
+		available = { check_variable = { TR2_RMX_zaufanie > 9 } }
+		cost = 30
+		days_re_enable = 70
+		complete_effect = { add_to_variable = { TR2_RMX_zasoby = -8 } add_to_variable = { TR2_RMX_zaufanie = 10 } clamp_variable = { var = TR2_RMX_zaufanie min = 0 max = 100 } clamp_variable = { var = TR2_RMX_zasoby min = 0 max = 100 } }
+		ai_will_do = { factor = 1 }
+	}
 }

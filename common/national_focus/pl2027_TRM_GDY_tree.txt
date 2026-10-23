@@ -989,7 +989,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_gdy
-		x = 10
+		x = 8
 		y = 4
 		cost = 5
 		prerequisite = { focus = TRM_GDY_mil_rezerwisci }
@@ -1009,7 +1009,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_gdy
-		x = 15
+		x = 14
 		y = 5
 		cost = 7
 		prerequisite = { focus = TRM_GDY_mil_kadra }
@@ -1183,7 +1183,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 46
+		x = 47
 		y = 1
 		cost = 6
 		prerequisite = { focus = TRM_GDY_republika }
@@ -1201,7 +1201,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_gdy
-		x = 45
+		x = 46
 		y = 2
 		cost = 5
 		prerequisite = { focus = TRM_GDY_zy_k_admin }
@@ -1218,7 +1218,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 47
+		x = 48
 		y = 2
 		cost = 1
 		prerequisite = { focus = TRM_GDY_zy_k_admin }
@@ -1234,7 +1234,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_gdy
-		x = 46
+		x = 47
 		y = 3
 		cost = 5
 		prerequisite = { focus = TRM_GDY_zy_k_defilada }

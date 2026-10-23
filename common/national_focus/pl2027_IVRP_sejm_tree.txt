@@ -26,7 +26,7 @@ focus_tree = {
 	focus = {
 		id = IVS_w1
 		icon = GFX_pl2027_081_kibice_0
-		x = 15
+		x = 14
 		y = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } } }
 		cost = 8
@@ -46,7 +46,7 @@ focus_tree = {
 	focus = {
 		id = IVS_w2
 		icon = GFX_pl2027_081_ludzie_1
-		x = 4
+		x = 5
 		y = 1
 		cost = 5
 		prerequisite = { focus = IVS_w0 }
@@ -60,7 +60,7 @@ focus_tree = {
 	focus = {
 		id = IVS_w3
 		icon = GFX_pl2027_081_rada_0
-		x = 11
+		x = 10
 		y = 6
 		cost = 5
 		prerequisite = { focus = IVS_w1 }
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = IVS_w4
 		icon = GFX_pl2027_081_konstytucja_0
-		x = 4
+		x = 5
 		y = 2
 		cost = 5
 		prerequisite = { focus = IVS_w2 }
@@ -88,7 +88,7 @@ focus_tree = {
 	focus = {
 		id = IVS_w5
 		icon = GFX_pl2027_081_wybory_0
-		x = 11
+		x = 10
 		y = 7
 		cost = 5
 		prerequisite = { focus = IVS_w3 }
@@ -103,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = IVS_w6
 		icon = GFX_pl2027_081_sad_0
-		x = 11
+		x = 10
 		y = 8
 		cost = 5
 		prerequisite = { focus = IVS_w5 }
@@ -117,7 +117,7 @@ focus_tree = {
 	focus = {
 		id = IVS_odb_dzielnice
 		icon = GFX_pl2027_081_osiedle_1
-		x = 9
+		x = 8
 		y = 1
 		cost = 7
 		prerequisite = { focus = IVS_w0 }
@@ -131,7 +131,7 @@ focus_tree = {
 	focus = {
 		id = IVS_odb_przemysl
 		icon = GFX_pl2027_081_przemysl_5
-		x = 8
+		x = 7
 		y = 2
 		cost = 7
 		prerequisite = { focus = IVS_odb_dzielnice }
@@ -144,7 +144,7 @@ focus_tree = {
 	focus = {
 		id = IVS_odb_integracja
 		icon = GFX_pl2027_081_osiedle_2
-		x = 11
+		x = 10
 		y = 2
 		cost = 5
 		prerequisite = { focus = IVS_odb_dzielnice }
@@ -158,7 +158,7 @@ focus_tree = {
 	focus = {
 		id = IVS_odb_infra
 		icon = GFX_pl2027_081_most_1
-		x = 7
+		x = 6
 		y = 3
 		cost = 7
 		prerequisite = { focus = IVS_odb_przemysl }
@@ -171,7 +171,7 @@ focus_tree = {
 	focus = {
 		id = IVS_odb_energia
 		icon = GFX_pl2027_081_energia_0
-		x = 9
+		x = 8
 		y = 3
 		cost = 6
 		prerequisite = { focus = IVS_odb_przemysl }
@@ -186,7 +186,7 @@ focus_tree = {
 	focus = {
 		id = IVS_odb_uczelnie
 		icon = GFX_pl2027_081_przemysl_1
-		x = 11
+		x = 10
 		y = 3
 		cost = 5
 		prerequisite = { focus = IVS_odb_integracja }
@@ -200,7 +200,7 @@ focus_tree = {
 	focus = {
 		id = IVS_odb_transport
 		icon = GFX_pl2027_081_kolej_1
-		x = 7
+		x = 6
 		y = 4
 		cost = 7
 		prerequisite = { focus = IVS_odb_infra }
@@ -215,7 +215,7 @@ focus_tree = {
 	focus = {
 		id = IVS_odb_gospodarka
 		icon = GFX_pl2027_081_pieniadze_4
-		x = 9
+		x = 8
 		y = 5
 		cost = 6
 		prerequisite = { focus = IVS_odb_transport }
@@ -230,7 +230,7 @@ focus_tree = {
 	focus = {
 		id = IVS_woj_rekrutacja
 		icon = GFX_pl2027_081_wojsko_2_tec
-		x = 15
+		x = 14
 		y = 1
 		cost = 6
 		prerequisite = { focus = IVS_w0 }
@@ -244,7 +244,7 @@ focus_tree = {
 	focus = {
 		id = IVS_woj_pobor
 		icon = GFX_pl2027_081_pobor_2_tec
-		x = 14
+		x = 13
 		y = 2
 		cost = 5
 		prerequisite = { focus = IVS_woj_rekrutacja }
@@ -257,7 +257,7 @@ focus_tree = {
 	focus = {
 		id = IVS_woj_przemysl
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 17
+		x = 16
 		y = 2
 		cost = 7
 		prerequisite = { focus = IVS_woj_rekrutacja }
@@ -270,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = IVS_woj_dywizje
 		icon = GFX_pl2027_081_wojsko_3_tec
-		x = 13
+		x = 12
 		y = 3
 		cost = 7
 		prerequisite = { focus = IVS_woj_pobor }
@@ -284,7 +284,7 @@ focus_tree = {
 	focus = {
 		id = IVS_woj_modernizacja
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 15
+		x = 14
 		y = 3
 		cost = 5
 		prerequisite = { focus = IVS_woj_pobor }
@@ -299,7 +299,7 @@ focus_tree = {
 	focus = {
 		id = IVS_woj_zmotoryzowane
 		icon = GFX_pl2027_081_zmotoryzowane_0_tec
-		x = 17
+		x = 16
 		y = 3
 		cost = 7
 		prerequisite = { focus = IVS_woj_przemysl }
@@ -314,7 +314,7 @@ focus_tree = {
 	focus = {
 		id = IVS_woj_kadra
 		icon = GFX_pl2027_081_oficer_1_tec
-		x = 11
+		x = 10
 		y = 4
 		cost = 5
 		prerequisite = { focus = IVS_woj_dywizje }
@@ -329,7 +329,7 @@ focus_tree = {
 	focus = {
 		id = IVS_woj_armia
 		icon = GFX_pl2027_081_wojsko_0_tec
-		x = 11
+		x = 10
 		y = 5
 		cost = 7
 		prerequisite = { focus = IVS_woj_kadra }
@@ -345,7 +345,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_plan
 		icon = GFX_pl2027_081_budowa_1
-		x = 19
+		x = 18
 		y = 6
 		cost = 5
 		prerequisite = { focus = IVS_w1 }
@@ -359,7 +359,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_r1_ozm
 		icon = GFX_pl2027_081_ofensywa_1_tec
-		x = 13
+		x = 12
 		y = 7
 		cost = 8
 		prerequisite = { focus = IVS_e_plan }
@@ -377,7 +377,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_r1_grd
 		icon = GFX_pl2027_081_ofensywa_1_tec
-		x = 15
+		x = 14
 		y = 7
 		cost = 8
 		prerequisite = { focus = IVS_e_plan }
@@ -395,7 +395,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_r1_psc
 		icon = GFX_pl2027_081_ofensywa_1_tec
-		x = 20
+		x = 19
 		y = 7
 		cost = 8
 		prerequisite = { focus = IVS_e_plan }
@@ -413,7 +413,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_r1_otw
 		icon = GFX_pl2027_081_ofensywa_0_tec
-		x = 22
+		x = 21
 		y = 7
 		cost = 8
 		prerequisite = { focus = IVS_e_plan }
@@ -431,7 +431,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_r1_wlm
 		icon = GFX_pl2027_081_ofensywa_3_tec
-		x = 24
+		x = 23
 		y = 7
 		cost = 8
 		prerequisite = { focus = IVS_e_plan }
@@ -449,7 +449,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_r1_mpr
 		icon = GFX_pl2027_081_ofensywa_2_tec
-		x = 26
+		x = 25
 		y = 7
 		cost = 8
 		prerequisite = { focus = IVS_e_plan }
@@ -467,7 +467,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_region
 		icon = GFX_pl2027_081_mapa_1_tec
-		x = 20
+		x = 19
 		y = 8
 		cost = 5
 		prerequisite = { focus = IVS_e_r1_ozm focus = IVS_e_r1_grd focus = IVS_e_r1_psc focus = IVS_e_r1_otw focus = IVS_e_r1_wlm focus = IVS_e_r1_mpr }
@@ -483,7 +483,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_w_nna
 		icon = GFX_pl2027_081_administracja_0
-		x = 15
+		x = 14
 		y = 9
 		cost = 1
 		prerequisite = { focus = IVS_e_region }
@@ -497,7 +497,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_o_nna
 		icon = GFX_pl2027_081_budowa_1
-		x = 15
+		x = 14
 		y = 10
 		cost = 8
 		prerequisite = { focus = IVS_e_w_nna }
@@ -516,7 +516,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_w_kkr
 		icon = GFX_pl2027_081_korona_0_tec
-		x = 17
+		x = 16
 		y = 9
 		cost = 1
 		prerequisite = { focus = IVS_e_region }
@@ -530,7 +530,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_o_kkr
 		icon = GFX_pl2027_081_korona_1_tec
-		x = 17
+		x = 16
 		y = 10
 		cost = 8
 		prerequisite = { focus = IVS_e_w_kkr }
@@ -549,7 +549,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_w_plo
 		icon = GFX_pl2027_081_administracja_1
-		x = 19
+		x = 18
 		y = 9
 		cost = 1
 		prerequisite = { focus = IVS_e_region }
@@ -563,7 +563,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_o_plo
 		icon = GFX_pl2027_081_budowa_5
-		x = 19
+		x = 18
 		y = 10
 		cost = 8
 		prerequisite = { focus = IVS_e_w_plo }
@@ -582,7 +582,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_w_prw
 		icon = GFX_pl2027_081_polska_2_tec
-		x = 21
+		x = 20
 		y = 9
 		cost = 1
 		prerequisite = { focus = IVS_e_region }
@@ -596,7 +596,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_o_prw
 		icon = GFX_pl2027_081_polska_1_tec
-		x = 21
+		x = 20
 		y = 10
 		cost = 8
 		prerequisite = { focus = IVS_e_w_prw }
@@ -615,7 +615,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_w_wol
 		icon = GFX_pl2027_081_parlament_1_tec
-		x = 23
+		x = 22
 		y = 9
 		cost = 1
 		prerequisite = { focus = IVS_e_region }
@@ -629,7 +629,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_o_wol
 		icon = GFX_pl2027_081_parlament_2_tec
-		x = 23
+		x = 22
 		y = 10
 		cost = 8
 		prerequisite = { focus = IVS_e_w_wol }
@@ -648,7 +648,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_w_mla
 		icon = GFX_pl2027_081_mapa_3_tec
-		x = 25
+		x = 24
 		y = 9
 		cost = 1
 		prerequisite = { focus = IVS_e_region }
@@ -662,7 +662,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_o_mla
 		icon = GFX_pl2027_081_mapa_2_tec
-		x = 25
+		x = 24
 		y = 10
 		cost = 8
 		prerequisite = { focus = IVS_e_w_mla }
@@ -681,7 +681,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_mazowsze
 		icon = GFX_pl2027_081_kolej_0
-		x = 19
+		x = 18
 		y = 11
 		cost = 5
 		prerequisite = { focus = IVS_e_o_nna focus = IVS_e_o_kkr focus = IVS_e_o_plo focus = IVS_e_o_prw focus = IVS_e_o_wol focus = IVS_e_o_mla }
@@ -697,7 +697,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_rp
 		icon = GFX_pl2027_081_budowa_3
-		x = 19
+		x = 18
 		y = 12
 		cost = 10
 		prerequisite = { focus = IVS_e_mazowsze }
@@ -714,7 +714,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_wojna
 		icon = GFX_pl2027_081_sojusz_3_tec
-		x = 18
+		x = 17
 		y = 13
 		cost = 8
 		prerequisite = { focus = IVS_e_rp }
@@ -730,7 +730,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_unia
 		icon = GFX_pl2027_081_sojusz_0_tec
-		x = 20
+		x = 19
 		y = 13
 		cost = 1
 		prerequisite = { focus = IVS_e_rp }
@@ -745,7 +745,7 @@ focus_tree = {
 	focus = {
 		id = IVS_e_zjednoczona
 		icon = GFX_pl2027_081_polska_0_tec_f
-		x = 19
+		x = 18
 		y = 14
 		cost = 10
 		prerequisite = { focus = IVS_e_wojna focus = IVS_e_unia }
@@ -764,7 +764,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 1
+		x = 2
 		y = 1
 		cost = 1
 		prerequisite = { focus = IVS_w0 }
@@ -780,7 +780,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 0
+		x = 1
 		y = 2
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_s_ulica }
@@ -796,7 +796,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 2
+		x = 3
 		y = 2
 		cost = 1
 		prerequisite = { focus = IVRP_sejm_zy_s_ulica }
@@ -812,7 +812,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_tec_k
-		x = 1
+		x = 0
 		y = 3
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_s_media }
@@ -830,7 +830,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_tec_k
-		x = 3
+		x = 2
 		y = 3
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_s_media }
@@ -848,7 +848,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 1
+		x = 0
 		y = 4
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_s_kartki focus = IVRP_sejm_zy_s_rynek }
@@ -865,7 +865,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 3
+		x = 2
 		y = 4
 		cost = 1
 		prerequisite = { focus = IVRP_sejm_zy_s_kartki focus = IVRP_sejm_zy_s_rynek }
@@ -881,7 +881,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 5
+		x = 4
 		y = 4
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_s_kartki focus = IVRP_sejm_zy_s_rynek }
@@ -898,7 +898,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 3
+		x = 2
 		y = 5
 		cost = 7
 		prerequisite = { focus = IVRP_sejm_zy_s_szkoly }
@@ -918,7 +918,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 20
+		x = 19
 		y = 1
 		cost = 6
 		prerequisite = { focus = IVS_w0 }
@@ -936,7 +936,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_tec
-		x = 19
+		x = 18
 		y = 2
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_k_admin }
@@ -953,7 +953,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 21
+		x = 20
 		y = 2
 		cost = 1
 		prerequisite = { focus = IVRP_sejm_zy_k_admin }
@@ -969,7 +969,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_tec
-		x = 20
+		x = 19
 		y = 3
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_k_defilada }
@@ -986,7 +986,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 24
+		x = 22
 		y = 1
 		cost = 5
 		prerequisite = { focus = IVS_w0 }
@@ -1004,7 +1004,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 24
+		x = 22
 		y = 2
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_p_straty }
@@ -1021,7 +1021,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_tec_k
-		x = 23
+		x = 21
 		y = 3
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_p_rzad }
@@ -1038,7 +1038,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_tec_k
-		x = 25
+		x = 23
 		y = 3
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_p_rzad }
@@ -1055,7 +1055,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 24
+		x = 22
 		y = 4
 		cost = 6
 		prerequisite = { focus = IVRP_sejm_zy_p_rewanz focus = IVRP_sejm_zy_p_pojednanie }
@@ -1074,7 +1074,7 @@ focus_tree = {
 	focus = {
 		id = IVRP_sejm_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_tec
-		x = 15
+		x = 14
 		y = 4
 		cost = 5
 		prerequisite = { focus = IVRP_sejm_zy_k_owoce }

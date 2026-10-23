@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_start
 		icon = GFX_pl2027_081_parlament_0_wol
-		x = 26
+		x = 25
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -1057,7 +1057,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 37
+		x = 39
 		y = 1
 		cost = 6
 		prerequisite = { focus = RWOL_start }
@@ -1075,7 +1075,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_wol
-		x = 36
+		x = 38
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_k_admin }
@@ -1092,7 +1092,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 38
+		x = 40
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_WOL_zy_k_admin }
@@ -1108,7 +1108,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_wol
-		x = 36
+		x = 40
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_k_defilada }
@@ -1125,7 +1125,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 46
+		x = 45
 		y = 1
 		cost = 5
 		prerequisite = { focus = RWOL_start }
@@ -1143,7 +1143,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 46
+		x = 45
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_p_straty }
@@ -1160,7 +1160,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_wol_k
-		x = 45
+		x = 44
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_p_rzad }
@@ -1177,7 +1177,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_wol_k
-		x = 47
+		x = 46
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_p_rzad }
@@ -1194,7 +1194,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 46
+		x = 45
 		y = 4
 		cost = 6
 		prerequisite = { focus = REG_WOL_zy_p_rewanz focus = REG_WOL_zy_p_pojednanie }

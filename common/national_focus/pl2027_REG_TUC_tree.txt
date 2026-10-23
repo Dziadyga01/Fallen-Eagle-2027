@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_porzadek
 		icon = GFX_pl2027_081_las_1
-		x = 31
+		x = 30
 		y = 1
 		cost = 5
 		prerequisite = { focus = RTUC_start }
@@ -43,7 +43,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_zaopatrzenie
 		icon = GFX_pl2027_081_las_2
-		x = 33
+		x = 32
 		y = 1
 		cost = 5
 		prerequisite = { focus = RTUC_start }
@@ -58,7 +58,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_wladza
 		icon = GFX_pl2027_081_rada_0
-		x = 31
+		x = 30
 		y = 2
 		cost = 5
 		prerequisite = { focus = RTUC_porzadek }
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_wybor
 		icon = GFX_pl2027_081_wspolnota_0
-		x = 22
+		x = 21
 		y = 3
 		cost = 5
 		prerequisite = { focus = RTUC_wladza }
@@ -88,7 +88,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_a1
 		icon = GFX_pl2027_081_rada_1_tuc_k
-		x = 18
+		x = 17
 		y = 4
 		cost = 5
 		prerequisite = { focus = RTUC_wybor }
@@ -103,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_a2
 		icon = GFX_pl2027_081_ulica_0
-		x = 17
+		x = 16
 		y = 5
 		cost = 5
 		prerequisite = { focus = RTUC_a1 }
@@ -117,7 +117,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_a3
 		icon = GFX_pl2027_081_konstytucja_0
-		x = 19
+		x = 18
 		y = 5
 		cost = 5
 		prerequisite = { focus = RTUC_a1 }
@@ -130,7 +130,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_a4
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 18
+		x = 17
 		y = 6
 		cost = 10
 		prerequisite = { focus = RTUC_a2 }
@@ -148,7 +148,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_b1
 		icon = GFX_pl2027_081_wybory_0_tuc_k
-		x = 22
+		x = 21
 		y = 4
 		cost = 5
 		prerequisite = { focus = RTUC_wybor }
@@ -163,7 +163,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_b2
 		icon = GFX_pl2027_081_las_0
-		x = 21
+		x = 20
 		y = 5
 		cost = 5
 		prerequisite = { focus = RTUC_b1 }
@@ -177,7 +177,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_b3
 		icon = GFX_pl2027_081_rada_2
-		x = 23
+		x = 22
 		y = 5
 		cost = 5
 		prerequisite = { focus = RTUC_b1 }
@@ -190,7 +190,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_b4
 		icon = GFX_pl2027_081_wiara_0
-		x = 22
+		x = 21
 		y = 6
 		cost = 10
 		prerequisite = { focus = RTUC_b2 }
@@ -209,7 +209,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_c1
 		icon = GFX_pl2027_081_porzadek_0_tuc_k
-		x = 26
+		x = 25
 		y = 4
 		cost = 5
 		prerequisite = { focus = RTUC_wybor }
@@ -224,7 +224,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_c2
 		icon = GFX_pl2027_081_las_1
-		x = 25
+		x = 24
 		y = 5
 		cost = 5
 		prerequisite = { focus = RTUC_c1 }
@@ -238,7 +238,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_c3
 		icon = GFX_pl2027_081_las_2
-		x = 27
+		x = 26
 		y = 5
 		cost = 5
 		prerequisite = { focus = RTUC_c1 }
@@ -251,7 +251,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_c4
 		icon = GFX_pl2027_081_las_0
-		x = 26
+		x = 25
 		y = 6
 		cost = 10
 		prerequisite = { focus = RTUC_c2 }
@@ -270,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_e1
 		icon = GFX_pl2027_081_energia_0
-		x = 31
+		x = 30
 		y = 3
 		cost = 6
 		prerequisite = { focus = RTUC_wladza }
@@ -283,7 +283,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_e2
 		icon = GFX_pl2027_081_przemysl_0
-		x = 30
+		x = 29
 		y = 4
 		cost = 7
 		prerequisite = { focus = RTUC_e1 }
@@ -297,7 +297,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_e3
 		icon = GFX_pl2027_081_las_1
-		x = 32
+		x = 31
 		y = 4
 		cost = 6
 		prerequisite = { focus = RTUC_e1 }
@@ -312,7 +312,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_e4
 		icon = GFX_pl2027_081_droga_0_tuc_k
-		x = 29
+		x = 28
 		y = 5
 		cost = 7
 		prerequisite = { focus = RTUC_e2 }
@@ -330,7 +330,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_e5
 		icon = GFX_pl2027_081_przemysl_1_tuc_k
-		x = 31
+		x = 30
 		y = 5
 		cost = 6
 		prerequisite = { focus = RTUC_e2 }
@@ -346,7 +346,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_e6
 		icon = GFX_pl2027_081_las_2
-		x = 30
+		x = 29
 		y = 6
 		cost = 7
 		prerequisite = { focus = RTUC_e4 focus = RTUC_e5 }
@@ -361,7 +361,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_m1
 		icon = GFX_pl2027_081_las_0
-		x = 36
+		x = 35
 		y = 3
 		cost = 7
 		prerequisite = { focus = RTUC_wladza }
@@ -376,7 +376,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_m2
 		icon = GFX_pl2027_081_pobor_0_tuc_k
-		x = 35
+		x = 34
 		y = 4
 		cost = 7
 		prerequisite = { focus = RTUC_m1 }
@@ -393,7 +393,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_m3
 		icon = GFX_pl2027_081_wyposazenie_0_tuc_k
-		x = 37
+		x = 36
 		y = 4
 		cost = 6
 		prerequisite = { focus = RTUC_m1 }
@@ -410,7 +410,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_m4
 		icon = GFX_pl2027_081_pobor_1_tuc
-		x = 35
+		x = 34
 		y = 5
 		cost = 7
 		prerequisite = { focus = RTUC_m2 focus = RTUC_m3 }
@@ -426,7 +426,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_m5
 		icon = GFX_pl2027_081_las_1
-		x = 35
+		x = 34
 		y = 6
 		cost = 5
 		prerequisite = { focus = RTUC_m4 }
@@ -440,7 +440,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_d0
 		icon = GFX_pl2027_081_las_2
-		x = 40
+		x = 39
 		y = 3
 		cost = 5
 		prerequisite = { focus = RTUC_wladza }
@@ -453,7 +453,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_s1
 		icon = GFX_pl2027_081_twierdza_0_tuc_k
-		x = 39
+		x = 38
 		y = 5
 		cost = 5
 		prerequisite = { focus = RTUC_d0 }
@@ -470,7 +470,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_s2
 		icon = GFX_pl2027_081_las_0
-		x = 39
+		x = 38
 		y = 6
 		cost = 5
 		prerequisite = { focus = RTUC_s1 }
@@ -484,7 +484,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_pomoc
 		icon = GFX_pl2027_081_pomoc_2_tuc_k
-		x = 39
+		x = 38
 		y = 4
 		cost = 6
 		prerequisite = { focus = RTUC_d0 }
@@ -501,7 +501,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_samodzielnosc
 		icon = GFX_pl2027_081_orzel_0_tuc_k
-		x = 41
+		x = 40
 		y = 4
 		cost = 5
 		prerequisite = { focus = RTUC_d0 }
@@ -516,7 +516,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_s3
 		icon = GFX_pl2027_081_las_1
-		x = 39
+		x = 38
 		y = 7
 		cost = 1
 		prerequisite = { focus = RTUC_s2 }
@@ -531,7 +531,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_w1
 		icon = GFX_pl2027_081_wojna_0_tuc_k
-		x = 33
+		x = 32
 		y = 6
 		cost = 8
 		prerequisite = { focus = RTUC_d0 }
@@ -550,7 +550,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_w2
 		icon = GFX_pl2027_081_wojna_1_tuc
-		x = 33
+		x = 32
 		y = 7
 		cost = 8
 		prerequisite = { focus = RTUC_w1 }
@@ -566,7 +566,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_w3
 		icon = GFX_pl2027_081_wojna_2_tuc
-		x = 33
+		x = 32
 		y = 8
 		cost = 8
 		prerequisite = { focus = RTUC_w2 }
@@ -582,7 +582,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_region
 		icon = GFX_pl2027_081_las_2
-		x = 33
+		x = 32
 		y = 9
 		cost = 7
 		prerequisite = { focus = RTUC_s3 focus = RTUC_w3 }
@@ -601,7 +601,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_centralizacja
 		icon = GFX_pl2027_081_centralizacja_0_tuc_k
-		x = 32
+		x = 31
 		y = 10
 		cost = 5
 		prerequisite = { focus = RTUC_region }
@@ -616,7 +616,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_porozumienie
 		icon = GFX_pl2027_081_administracja_0_tuc_k
-		x = 34
+		x = 33
 		y = 10
 		cost = 5
 		prerequisite = { focus = RTUC_region }
@@ -630,7 +630,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_pl1
 		icon = GFX_pl2027_081_korona_3_tuc
-		x = 32
+		x = 31
 		y = 11
 		cost = 5
 		prerequisite = { focus = RTUC_region }
@@ -645,7 +645,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_pl2
 		icon = GFX_pl2027_081_ofensywa_2_tuc
-		x = 32
+		x = 31
 		y = 12
 		cost = 8
 		prerequisite = { focus = RTUC_pl1 }
@@ -661,7 +661,7 @@ focus_tree = {
 	focus = {
 		id = RTUC_pl3
 		icon = GFX_pl2027_081_polska_2_tuc_f
-		x = 32
+		x = 31
 		y = 13
 		cost = 10
 		prerequisite = { focus = RTUC_pl2 }
@@ -851,7 +851,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_tuc
-		x = 2
+		x = 0
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_TUC_mil_rezerwisci }
@@ -871,7 +871,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_tuc
-		x = 7
+		x = 6
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_TUC_mil_kadra }
@@ -1045,7 +1045,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 37
+		x = 36
 		y = 1
 		cost = 6
 		prerequisite = { focus = RTUC_start }
@@ -1063,7 +1063,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_tuc
-		x = 36
+		x = 35
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_TUC_zy_k_admin }
@@ -1080,7 +1080,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 38
+		x = 37
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_TUC_zy_k_admin }
@@ -1096,7 +1096,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_tuc
-		x = 38
+		x = 37
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_TUC_zy_k_defilada }
@@ -1113,7 +1113,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 43
+		x = 42
 		y = 1
 		cost = 5
 		prerequisite = { focus = RTUC_start }
@@ -1131,7 +1131,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 43
+		x = 42
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_TUC_zy_p_straty }
@@ -1148,7 +1148,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_tuc_k
-		x = 42
+		x = 41
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_TUC_zy_p_rzad }
@@ -1165,7 +1165,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_tuc_k
-		x = 44
+		x = 43
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_TUC_zy_p_rzad }
@@ -1182,7 +1182,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 43
+		x = 42
 		y = 4
 		cost = 6
 		prerequisite = { focus = REG_TUC_zy_p_rewanz focus = REG_TUC_zy_p_pojednanie }
@@ -1201,7 +1201,7 @@ focus_tree = {
 	focus = {
 		id = REG_TUC_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_tuc
-		x = 33
+		x = 32
 		y = 5
 		cost = 5
 		prerequisite = { focus = RTUC_wybor }

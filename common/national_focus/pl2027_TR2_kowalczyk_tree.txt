@@ -1094,7 +1094,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 47
+		x = 45
 		y = 1
 		cost = 1
 		prerequisite = { focus = TR2_kow_powrot }
@@ -1110,7 +1110,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 46
+		x = 44
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_s_ulica }
@@ -1126,7 +1126,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 48
+		x = 46
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_kowalczyk_zy_s_ulica }
@@ -1178,7 +1178,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 43
+		x = 45
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_s_kartki focus = TR2_kowalczyk_zy_s_rynek }
@@ -1195,7 +1195,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 45
+		x = 47
 		y = 4
 		cost = 1
 		prerequisite = { focus = TR2_kowalczyk_zy_s_kartki focus = TR2_kowalczyk_zy_s_rynek }
@@ -1211,7 +1211,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 47
+		x = 49
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_s_kartki focus = TR2_kowalczyk_zy_s_rynek }
@@ -1228,7 +1228,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 45
+		x = 47
 		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_kowalczyk_zy_s_szkoly }
@@ -1248,7 +1248,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 51
+		x = 49
 		y = 1
 		cost = 6
 		prerequisite = { focus = TR2_kow_powrot }
@@ -1266,7 +1266,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_slk
-		x = 50
+		x = 48
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_k_admin }
@@ -1283,7 +1283,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 52
+		x = 50
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_kowalczyk_zy_k_admin }
@@ -1299,7 +1299,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_slk
-		x = 51
+		x = 49
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_k_defilada }
@@ -1316,7 +1316,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 54
+		x = 53
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kow_powrot }
@@ -1334,7 +1334,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 54
+		x = 53
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_p_straty }
@@ -1351,7 +1351,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_slk_k
-		x = 53
+		x = 52
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_p_rzad }
@@ -1368,7 +1368,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_slk_k
-		x = 55
+		x = 54
 		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kowalczyk_zy_p_rzad }
@@ -1385,7 +1385,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kowalczyk_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 54
+		x = 53
 		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_kowalczyk_zy_p_rewanz focus = TR2_kowalczyk_zy_p_pojednanie }

@@ -1054,7 +1054,7 @@ focus_tree = {
 	focus = {
 		id = ROS_putin_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 41
+		x = 42
 		y = 1
 		cost = 5
 		prerequisite = { focus = ROS_imperium }
@@ -1072,7 +1072,7 @@ focus_tree = {
 	focus = {
 		id = ROS_putin_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_ros
-		x = 40
+		x = 41
 		y = 2
 		cost = 2
 		prerequisite = { focus = ROS_putin_zy_k_admin }
@@ -1089,7 +1089,7 @@ focus_tree = {
 	focus = {
 		id = ROS_putin_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 42
+		x = 43
 		y = 2
 		cost = 1
 		prerequisite = { focus = ROS_putin_zy_k_admin }
@@ -1105,7 +1105,7 @@ focus_tree = {
 	focus = {
 		id = ROS_putin_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_ros
-		x = 41
+		x = 42
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_putin_zy_k_defilada }

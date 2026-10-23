@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_kryzys
 		icon = GFX_pl2027_081_pieniadze_1
-		x = 15
+		x = 14
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_budzet
 		icon = GFX_pl2027_081_kryzys_gosp_0
-		x = 7
+		x = 6
 		y = 1
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_kryzys }
@@ -44,7 +44,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_cywilne
 		icon = GFX_pl2027_081_przemysl_4
-		x = 10
+		x = 9
 		y = 1
 		cost = 7
 		prerequisite = { focus = ZAG_UKR_kryzys }
@@ -57,7 +57,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_handel
 		icon = GFX_pl2027_081_handel_1
-		x = 6
+		x = 5
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_budzet }
@@ -71,7 +71,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_inwestycje
 		icon = GFX_pl2027_081_budowa_1
-		x = 8
+		x = 7
 		y = 2
 		cost = 7
 		prerequisite = { focus = ZAG_UKR_budzet }
@@ -85,7 +85,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_nauka
 		icon = GFX_pl2027_081_przemysl_5
-		x = 10
+		x = 9
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_cywilne }
@@ -99,7 +99,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_gospodarka
 		icon = GFX_pl2027_081_pieniadze_6
-		x = 8
+		x = 7
 		y = 3
 		cost = 7
 		prerequisite = { focus = ZAG_UKR_handel }
@@ -115,7 +115,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_drogi
 		icon = GFX_pl2027_081_technika_1
-		x = 13
+		x = 12
 		y = 1
 		cost = 7
 		prerequisite = { focus = ZAG_UKR_kryzys }
@@ -128,7 +128,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_kolej
 		icon = GFX_pl2027_081_technika_3
-		x = 12
+		x = 11
 		y = 2
 		cost = 7
 		prerequisite = { focus = ZAG_UKR_drogi }
@@ -142,7 +142,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_magazyny
 		icon = GFX_pl2027_081_logistyka_0
-		x = 14
+		x = 13
 		y = 2
 		cost = 6
 		prerequisite = { focus = ZAG_UKR_drogi }
@@ -156,7 +156,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_logistyka
 		icon = GFX_pl2027_081_logistyka_2
-		x = 12
+		x = 11
 		y = 3
 		cost = 6
 		prerequisite = { focus = ZAG_UKR_kolej }
@@ -171,7 +171,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_obrona
 		icon = GFX_pl2027_081_sztab_1
-		x = 19
+		x = 18
 		y = 1
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_kryzys }
@@ -185,7 +185,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_pobor
 		icon = GFX_pl2027_081_pobor_0
-		x = 17
+		x = 16
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_obrona }
@@ -198,7 +198,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_ochotnicy
 		icon = GFX_pl2027_081_milicja_0
-		x = 20
+		x = 19
 		y = 2
 		cost = 6
 		prerequisite = { focus = ZAG_UKR_obrona }
@@ -212,7 +212,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_fabryki
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 16
+		x = 15
 		y = 3
 		cost = 7
 		prerequisite = { focus = ZAG_UKR_pobor }
@@ -225,7 +225,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_jednostki
 		icon = GFX_pl2027_081_wojsko_5
-		x = 18
+		x = 17
 		y = 3
 		cost = 7
 		prerequisite = { focus = ZAG_UKR_pobor }
@@ -240,7 +240,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_wyposazenie
 		icon = GFX_pl2027_081_przemysl_5
-		x = 20
+		x = 19
 		y = 3
 		cost = 6
 		prerequisite = { focus = ZAG_UKR_ochotnicy }
@@ -255,7 +255,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_modernizacja
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 16
+		x = 15
 		y = 4
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_fabryki }
@@ -270,7 +270,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zmotoryzowane
 		icon = GFX_pl2027_081_zmotoryzowane_0
-		x = 19
+		x = 18
 		y = 4
 		cost = 7
 		prerequisite = { focus = ZAG_UKR_jednostki }
@@ -286,7 +286,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_rezerwa
 		icon = GFX_pl2027_081_pobor_3
-		x = 15
+		x = 14
 		y = 5
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_modernizacja }
@@ -299,7 +299,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_kadra
 		icon = GFX_pl2027_081_oficer_1
-		x = 18
+		x = 16
 		y = 5
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_modernizacja }
@@ -313,7 +313,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_armia
 		icon = GFX_pl2027_081_zawodowa_2_f
-		x = 15
+		x = 14
 		y = 6
 		cost = 7
 		prerequisite = { focus = ZAG_UKR_rezerwa }
@@ -330,7 +330,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_atak_plan
 		icon = GFX_pl2027_081_sztab_0
-		x = 21
+		x = 20
 		y = 1
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_kryzys }
@@ -347,7 +347,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_atak_cel1
 		icon = GFX_pl2027_081_ofensywa_3
-		x = 12
+		x = 11
 		y = 5
 		cost = 8
 		prerequisite = { focus = ZAG_UKR_atak_plan }
@@ -366,7 +366,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_atak_cel2
 		icon = GFX_pl2027_081_ofensywa_3
-		x = 11
+		x = 10
 		y = 6
 		cost = 8
 		prerequisite = { focus = ZAG_UKR_atak_cel1 }
@@ -385,7 +385,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_atak_integracja
 		icon = GFX_pl2027_081_integracja_1
-		x = 13
+		x = 12
 		y = 6
 		cost = 10
 		prerequisite = { focus = ZAG_UKR_atak_cel1 }
@@ -403,7 +403,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_atak_cel3
 		icon = GFX_pl2027_081_ofensywa_1
-		x = 11
+		x = 10
 		y = 7
 		cost = 8
 		prerequisite = { focus = ZAG_UKR_atak_cel2 }
@@ -422,7 +422,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_atak_dominacja
 		icon = GFX_pl2027_081_korona_0_f
-		x = 12
+		x = 11
 		y = 8
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_atak_cel3 }
@@ -441,7 +441,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_z_uchodzcy
 		icon = GFX_pl2027_081_pomoc_3
-		x = 3
+		x = 2
 		y = 1
 		cost = 1
 		prerequisite = { focus = ZAG_UKR_kryzys }
@@ -457,7 +457,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_z_przemyt
 		icon = GFX_pl2027_081_czarny_rynek_0
-		x = 2
+		x = 1
 		y = 2
 		cost = 1
 		prerequisite = { focus = ZAG_UKR_zy_z_uchodzcy }
@@ -473,7 +473,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_z_ochotnicy
 		icon = GFX_pl2027_081_milicja_1
-		x = 4
+		x = 3
 		y = 2
 		cost = 1
 		prerequisite = { focus = ZAG_UKR_zy_z_uchodzcy }
@@ -489,7 +489,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_z_pomoc
 		icon = GFX_pl2027_081_pomoc_1
-		x = 1
+		x = 0
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_zy_z_przemyt }
@@ -507,7 +507,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_z_mur
 		icon = GFX_pl2027_081_granica_3
-		x = 3
+		x = 2
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_zy_z_przemyt }
@@ -525,7 +525,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_z_media
 		icon = GFX_pl2027_081_polska_0
-		x = 0
+		x = 1
 		y = 4
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_zy_z_pomoc focus = ZAG_UKR_zy_z_mur }
@@ -542,7 +542,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_z_konsulaty
 		icon = GFX_pl2027_081_dyplomacja_1
-		x = 2
+		x = 3
 		y = 4
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_zy_z_pomoc focus = ZAG_UKR_zy_z_mur }
@@ -559,7 +559,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_z_polityka
 		icon = GFX_pl2027_081_dyplomacja_0
-		x = 1
+		x = 2
 		y = 5
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_zy_z_media }
@@ -576,7 +576,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 23
+		x = 22
 		y = 1
 		cost = 6
 		prerequisite = { focus = ZAG_UKR_kryzys }
@@ -594,7 +594,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1
-		x = 22
+		x = 21
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_zy_k_admin }
@@ -611,7 +611,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 24
+		x = 23
 		y = 2
 		cost = 1
 		prerequisite = { focus = ZAG_UKR_zy_k_admin }
@@ -627,7 +627,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2
-		x = 23
+		x = 22
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_zy_k_defilada }
@@ -644,7 +644,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 27
+		x = 25
 		y = 1
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_kryzys }
@@ -662,7 +662,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 27
+		x = 25
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_zy_p_straty }
@@ -679,7 +679,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1
-		x = 26
+		x = 24
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_zy_p_rzad }
@@ -696,7 +696,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3
-		x = 28
+		x = 26
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_zy_p_rzad }
@@ -713,7 +713,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 27
+		x = 25
 		y = 4
 		cost = 6
 		prerequisite = { focus = ZAG_UKR_zy_p_rewanz focus = ZAG_UKR_zy_p_pojednanie }
@@ -732,7 +732,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_UKR_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0
-		x = 12
+		x = 11
 		y = 4
 		cost = 5
 		prerequisite = { focus = ZAG_UKR_gospodarka }

@@ -1059,7 +1059,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 35
+		x = 38
 		y = 1
 		cost = 6
 		prerequisite = { focus = RCHE_start }
@@ -1077,7 +1077,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_che
-		x = 34
+		x = 37
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_k_admin }
@@ -1094,7 +1094,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 36
+		x = 39
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_CHE_zy_k_admin }
@@ -1110,7 +1110,7 @@ focus_tree = {
 	focus = {
 		id = REG_CHE_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_che
-		x = 35
+		x = 39
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_CHE_zy_k_defilada }

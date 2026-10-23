@@ -578,6 +578,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_gul_obywatelski }
+		prerequisite = { focus = TR2_gul_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_gul_p_odbudowa_tb bonus = 1.0 uses = 1 category = industry }
@@ -854,6 +855,7 @@ focus_tree = {
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_gul_obywatelski }
+		prerequisite = { focus = TR2_gul_d_sasiedzi }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_war_support = 0.03

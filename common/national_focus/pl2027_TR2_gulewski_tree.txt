@@ -835,7 +835,7 @@ focus_tree = {
 		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_gul_d_referenda }
-		available = { check_variable = { global.MET_trn_obszary > 1 } check_variable = { global.MET_byd_obszary > 1 } check_variable = { global.MET_napiecie < 30 } NOT = { has_global_flag = MET_rozstrzygniete } }
+		available = { OR = { NOT = { has_country_flag = TR2S_gul_founded } has_country_flag = TR2S_gul_route_A }  check_variable = { global.MET_trn_obszary > 1 } check_variable = { global.MET_byd_obszary > 1 } check_variable = { global.MET_napiecie < 30 } NOT = { has_global_flag = MET_rozstrzygniete } }
 		bypass = { has_global_flag = MET_rozstrzygniete }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -958,7 +958,7 @@ focus_tree = {
 		y = 5
 		cost = 1
 		prerequisite = { focus = TR2_gul_w_wcielenie }
-		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
+		available = { OR = { NOT = { has_country_flag = TR2S_gul_founded } has_country_flag = TR2S_gul_route_B }  custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
 		bypass = { OR = { NOT = { country_exists = KUJ } KUJ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {

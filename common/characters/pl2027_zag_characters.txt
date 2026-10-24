@@ -4,11 +4,10 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ZAG/LIT_nauseda.dds"
-				small = "gfx/leaders/ZAG/LIT_nauseda_small.dds"
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = euroliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -17,7 +16,6 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ZAG/UKR_zaluzny.dds"
-				small = "gfx/leaders/ZAG/UKR_zaluzny_small.dds"
 			}
 		}
 		country_leader = {
@@ -30,11 +28,49 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ZAG/CZE_pavel.dds"
-				small = "gfx/leaders/ZAG/CZE_pavel_small.dds"
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = left_euroliberalism
+			expire = "2065.1.1.1"
+		}
+	}
+    GER_ursula = {
+        name = GER_ursula
+        portraits = {
+			civilian = {
+				large = "gfx/leaders/GER/GER_ursula.png"
+			}
+		}
+		country_leader = {
+			ideology = euroliberalism
+			expire = "2065.1.1.1"
+			traits = { 
+                eurofuhrerin
+            }
+		}
+    }
+	SLS_radoslaw_sikorski = {
+		name = SLS_radoslaw_sikorski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SLS/SLS_radoslaw_sikorski.png"
+			}
+		}
+		country_leader = {
+			ideology = euroliberalism
+			expire = "2065.1.1.1"
+		}
+	}
+	PMN_ewa_kopacz = {
+		name = PMN_ewa_kopacz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PMN/PMN_ewa_kopacz.png"
+			}
+		}
+		country_leader = {
+			ideology = euroliberalism
 			expire = "2065.1.1.1"
 		}
 	}

@@ -1,0 +1,20 @@
+guiTypes = {
+		
+		containerWindowType = {
+		name = "PL2027_diplomacy_diplo"
+		position = { x = 0 y = 0}
+		
+		instantTextboxType = {
+			name = "subideology_name"
+			position = { x = 263 y = 145 }
+			font = "hoi_16mbs"
+			text = "[GetSubideologyType]"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+	}
+}

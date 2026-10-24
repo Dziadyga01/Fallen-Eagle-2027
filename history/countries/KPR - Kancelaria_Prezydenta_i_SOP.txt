@@ -35,7 +35,7 @@ set_technology = {
 	tech_support = 1
 }
 set_politics = {
-	ruling_party = social_liberal
+	ruling_party = conservative
 	last_election = "2027.10.10"
 	election_frequency = 48
 	elections_allowed = yes
@@ -46,18 +46,17 @@ set_popularities = {
 	libertarian_socialist = 2
 	social_democrat = 9
 	market_liberal = 6
-	conservative = 13
+	conservative = 47
 	authoritarian_democrat = 13
 	nationalist = 6
 	fascist = 1
-	social_liberal = 47
+	social_liberal = 13
 }
-recruit_character = KPR_leader
-# --- wwd ---
+recruit_character = KPR_karol_nawrocki
 add_ideas = WWD_gmachy
-# --- lok ---
+
 recruit_character = LOK_kpr_belwederski
-# --- dor ---
+
 recruit_character = KPR_dor_krupinski
 recruit_character = KPR_dor_zbikowska
 recruit_character = KPR_dor_rogowski

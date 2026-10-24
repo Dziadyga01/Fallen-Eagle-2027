@@ -1,0 +1,301 @@
+defined_text = {
+    name = GetSubideologyType
+    text = {
+        trigger = { 
+            has_country_leader_ideology = totalism
+        }
+        localization_key = totalism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = maoism
+        }
+        localization_key = maoism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = left_wing_junta
+        }
+        localization_key = left_wing_junta
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = neo_stalinism
+        }
+        localization_key = neo_stalinism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = marxism_leninism
+        }
+        localization_key = marxism_leninism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = eurocommunism
+        }
+        localization_key = eurocommunism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = trotskyism
+        }
+        localization_key = trotskyism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = reformist_socialism
+        }
+        localization_key = reformist_socialism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = left_anarchist
+        }
+        localization_key = left_anarchist
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = eco_socialism
+        }
+        localization_key = eco_socialism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = labour_syndicalism
+        }
+        localization_key = labour_syndicalism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = social_democracy
+        }
+        localization_key = social_democracy
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = progressivism
+        }
+        localization_key = progressivism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = green_politics
+        }
+        localization_key = green_politics
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = left_populism
+        }
+        localization_key = left_populism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = social_patriotism
+        }
+        localization_key = social_patriotism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = left_centrist
+        }
+        localization_key = left_centrist
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = neoliberalism
+        }
+        localization_key = neoliberalism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = centrist
+        }
+        localization_key = centrist
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = green_liberalism
+        }
+        localization_key = green_liberalism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = supervised_democracy_liberal
+        }
+        localization_key = supervised_democracy_liberal
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = classical_liberalism
+        }
+        localization_key = classical_liberalism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = right_libertarianism
+        }
+        localization_key = right_libertarianism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = civic_nationalism
+        }
+        localization_key = civic_nationalism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = right_centrist
+        }
+        localization_key = right_centrist
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = constitutionalist
+        }
+        localization_key = constitutionalist
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = right_populism
+        }
+        localization_key = right_populism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = neoconservative
+        }
+        localization_key = neoconservative
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = classical_conservatism
+        }
+        localization_key = classical_conservatism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = national_conservatism
+        }
+        localization_key = national_conservatism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = conservative_socialism
+        }
+        localization_key = conservative_socialism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = oligarchist
+        }
+        localization_key = oligarchist
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = ultra_conservatism
+        }
+        localization_key = ultra_conservatism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = military_democracy
+        }
+        localization_key = military_democracy
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = ultraglobalism
+        }
+        localization_key = ultraglobalism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = putinism
+        }
+        localization_key = putinism
+    }
+    #corporatism
+    text = {
+        trigger = { 
+            has_country_leader_ideology = corporatism
+        }
+        localization_key = corporatism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = autocrat
+        }
+        localization_key = autocrat
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = absolute_monarchist
+        }
+        localization_key = absolute_monarchist
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = military_junta
+        }
+        localization_key = military_junta
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = mafia_state
+        }
+        localization_key = mafia_state
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = theocracy
+        }
+        localization_key = theocracy
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = neofascism
+        }
+        localization_key = neofascism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = clerofascism
+        }
+        localization_key = clerofascism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = classical_fascism
+        }
+        localization_key = classical_fascism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = ecofascism
+        }
+        localization_key = ecofascism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = falangism
+        }
+        localization_key = falangism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = national_socialism
+        }
+        localization_key = national_socialism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = national_bolshevism
+        }
+        localization_key = national_bolshevism
+    }
+    text = {
+		localization_key = ideology_unknown
+	}
+}

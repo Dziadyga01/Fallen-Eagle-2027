@@ -1,4 +1,4 @@
-# Imie przywodcy zmienisz w localisation/english/pl2027_countries_l_english.yml (klucz TAG_leader)
+
 characters = {
 	BST_leader = {
 		name = BST_leader
@@ -9,7 +9,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -22,7 +22,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -36,7 +36,7 @@ characters = {
 		}
 		country_leader = {
 			desc = CHE_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -50,7 +50,7 @@ characters = {
 		}
 		country_leader = {
 			desc = CHJ_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -64,7 +64,7 @@ characters = {
 		}
 		country_leader = {
 			desc = CHZ_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -78,7 +78,7 @@ characters = {
 		}
 		country_leader = {
 			desc = DAB_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -92,7 +92,7 @@ characters = {
 		}
 		country_leader = {
 			desc = DOB_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -106,7 +106,7 @@ characters = {
 		}
 		country_leader = {
 			desc = GDY_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -120,7 +120,7 @@ characters = {
 		}
 		country_leader = {
 			desc = GNL_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -134,7 +134,7 @@ characters = {
 		}
 		country_leader = {
 			desc = GNZ_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -148,7 +148,7 @@ characters = {
 		}
 		country_leader = {
 			desc = GRD_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -162,7 +162,7 @@ characters = {
 		}
 		country_leader = {
 			desc = GRU_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -175,7 +175,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = christian_conservatism
+			ideology = classical_conservatism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -203,7 +203,7 @@ characters = {
 		}
 		country_leader = {
 			desc = KOC_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -217,7 +217,7 @@ characters = {
 		}
 		country_leader = {
 			desc = KON_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -231,12 +231,12 @@ characters = {
 		}
 		country_leader = {
 			desc = KPM_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
-	KPR_leader = {
-		name = KPR_leader
+	KPR_karol_nawrocki = {
+		name = KPR_karol_nawrocki
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/PL2027/KPR_leader.dds"
@@ -244,7 +244,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = constitutionalist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -258,7 +258,7 @@ characters = {
 		}
 		country_leader = {
 			desc = KRJ_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -271,7 +271,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -285,7 +285,7 @@ characters = {
 		}
 		country_leader = {
 			desc = KRW_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -299,7 +299,7 @@ characters = {
 		}
 		country_leader = {
 			desc = KST_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -313,7 +313,7 @@ characters = {
 		}
 		country_leader = {
 			desc = KTN_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -341,7 +341,7 @@ characters = {
 		}
 		country_leader = {
 			desc = LBW_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -368,7 +368,7 @@ characters = {
 		}
 		country_leader = {
 			desc = LES_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -382,7 +382,7 @@ characters = {
 		}
 		country_leader = {
 			desc = LOW_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -395,7 +395,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -422,7 +422,7 @@ characters = {
 		}
 		country_leader = {
 			desc = LYS_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -436,7 +436,7 @@ characters = {
 		}
 		country_leader = {
 			desc = MAZ_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -450,7 +450,7 @@ characters = {
 		}
 		country_leader = {
 			desc = MLA_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -491,7 +491,7 @@ characters = {
 		}
 		country_leader = {
 			desc = NML_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -518,7 +518,7 @@ characters = {
 		}
 		country_leader = {
 			desc = NOT_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -532,7 +532,7 @@ characters = {
 		}
 		country_leader = {
 			desc = NWW_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -546,7 +546,7 @@ characters = {
 		}
 		country_leader = {
 			desc = OSD_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -560,7 +560,7 @@ characters = {
 		}
 		country_leader = {
 			desc = OTW_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -574,7 +574,7 @@ characters = {
 		}
 		country_leader = {
 			desc = OZM_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -587,7 +587,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -601,7 +601,7 @@ characters = {
 		}
 		country_leader = {
 			desc = PDL_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -614,7 +614,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -628,7 +628,7 @@ characters = {
 		}
 		country_leader = {
 			desc = PLK_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -641,7 +641,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -667,7 +667,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -694,7 +694,7 @@ characters = {
 		}
 		country_leader = {
 			desc = PSC_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -721,7 +721,7 @@ characters = {
 		}
 		country_leader = {
 			desc = PTK_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -735,7 +735,7 @@ characters = {
 		}
 		country_leader = {
 			desc = RAD_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -749,7 +749,7 @@ characters = {
 		}
 		country_leader = {
 			desc = ROZ_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -763,7 +763,7 @@ characters = {
 		}
 		country_leader = {
 			desc = SCK_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -776,7 +776,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -802,7 +802,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -815,7 +815,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -829,7 +829,7 @@ characters = {
 		}
 		country_leader = {
 			desc = SRD_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -843,7 +843,7 @@ characters = {
 		}
 		country_leader = {
 			desc = SUW_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -857,7 +857,7 @@ characters = {
 		}
 		country_leader = {
 			desc = SWC_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -870,7 +870,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -896,7 +896,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -988,7 +988,7 @@ characters = {
 		}
 		country_leader = {
 			desc = TUC_leader_desc
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -1001,7 +1001,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = authoritarian_democracy
+			ideology = oligarchist
 			expire = "2065.1.1.1"
 		}
 	}
@@ -1014,7 +1014,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -1027,7 +1027,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -1040,7 +1040,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -1054,7 +1054,7 @@ characters = {
 		}
 		country_leader = {
 			desc = WMP_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}
@@ -1068,7 +1068,7 @@ characters = {
 		}
 		country_leader = {
 			desc = WMZ_leader_desc
-			ideology = social_liberalism
+			ideology = neoliberalism
 			expire = "2065.1.1.1"
 		}
 	}

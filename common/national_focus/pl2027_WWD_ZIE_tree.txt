@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = WWD_zie_start
 		icon = GFX_pl2027_081_osiedle_0
-		x = 13
+		x = 14
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -346,7 +346,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_zie
-		x = 7
+		x = 4
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_ZIE_mil_rezerwisci }
@@ -366,7 +366,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_zie
-		x = 12
+		x = 11
 		y = 5
 		cost = 7
 		prerequisite = { focus = WWD_ZIE_mil_kadra }
@@ -403,7 +403,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_atak_cel1
 		icon = GFX_pl2027_081_ofensywa_3_zie
-		x = 5
+		x = 6
 		y = 5
 		cost = 8
 		prerequisite = { focus = WWD_ZIE_atak_plan }
@@ -422,7 +422,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_atak_cel2
 		icon = GFX_pl2027_081_ofensywa_3_zie
-		x = 4
+		x = 5
 		y = 6
 		cost = 8
 		prerequisite = { focus = WWD_ZIE_atak_cel1 }
@@ -441,7 +441,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_atak_integracja
 		icon = GFX_pl2027_081_integracja_1_zie
-		x = 6
+		x = 7
 		y = 6
 		cost = 10
 		prerequisite = { focus = WWD_ZIE_atak_cel1 }
@@ -459,7 +459,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_atak_cel3
 		icon = GFX_pl2027_081_ofensywa_1_zie
-		x = 4
+		x = 5
 		y = 7
 		cost = 8
 		prerequisite = { focus = WWD_ZIE_atak_cel2 }
@@ -478,7 +478,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_atak_dominacja
 		icon = GFX_pl2027_081_korona_0_zie_f
-		x = 5
+		x = 6
 		y = 8
 		cost = 5
 		prerequisite = { focus = WWD_ZIE_atak_cel3 }
@@ -581,7 +581,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 18
+		x = 20
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_ZIE_zy_s_kartki focus = WWD_ZIE_zy_s_rynek }
@@ -598,7 +598,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 20
+		x = 22
 		y = 4
 		cost = 1
 		prerequisite = { focus = WWD_ZIE_zy_s_kartki focus = WWD_ZIE_zy_s_rynek }
@@ -614,7 +614,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 22
+		x = 24
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_ZIE_zy_s_kartki focus = WWD_ZIE_zy_s_rynek }
@@ -631,7 +631,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 20
+		x = 22
 		y = 5
 		cost = 7
 		prerequisite = { focus = WWD_ZIE_zy_s_szkoly }
@@ -719,7 +719,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 25
+		x = 27
 		y = 1
 		cost = 5
 		prerequisite = { focus = WWD_zie_start }
@@ -737,7 +737,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 25
+		x = 27
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_ZIE_zy_p_straty }
@@ -754,7 +754,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_zie_k
-		x = 24
+		x = 26
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_ZIE_zy_p_rzad }
@@ -771,7 +771,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_zie_k
-		x = 26
+		x = 28
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_ZIE_zy_p_rzad }
@@ -788,7 +788,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 25
+		x = 27
 		y = 4
 		cost = 6
 		prerequisite = { focus = WWD_ZIE_zy_p_rewanz focus = WWD_ZIE_zy_p_pojednanie }
@@ -807,7 +807,7 @@ focus_tree = {
 	focus = {
 		id = WWD_ZIE_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_zie
-		x = 5
+		x = 6
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_ZIE_zy_k_owoce }

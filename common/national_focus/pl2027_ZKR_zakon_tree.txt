@@ -1737,7 +1737,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_zakon_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_zkr
-		x = 26
+		x = 24
 		y = 4
 		cost = 5
 		prerequisite = { focus = ZKR_zakon_mil_rezerwisci }
@@ -1757,7 +1757,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_zakon_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_zkr
-		x = 31
+		x = 30
 		y = 5
 		cost = 7
 		prerequisite = { focus = ZKR_zakon_mil_kadra }
@@ -2014,7 +2014,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_zakon_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 80
+		x = 79
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZKR_zakon_zy_s_ulica }
@@ -2046,7 +2046,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_zakon_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_zkr_k
-		x = 79
+		x = 81
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZKR_zakon_zy_s_media }
@@ -2064,7 +2064,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_zakon_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_zkr_k
-		x = 81
+		x = 83
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZKR_zakon_zy_s_media }

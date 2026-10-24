@@ -623,7 +623,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 27
+		x = 26
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_s_ulica }
@@ -655,7 +655,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0
-		x = 26
+		x = 28
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_s_media }
@@ -673,7 +673,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1
-		x = 28
+		x = 30
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_s_media }
@@ -829,7 +829,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 35
+		x = 36
 		y = 1
 		cost = 5
 		prerequisite = { focus = ZKR_os_panstwo }
@@ -847,7 +847,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 35
+		x = 36
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_p_straty }
@@ -864,7 +864,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1
-		x = 34
+		x = 35
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_p_rzad }
@@ -881,7 +881,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3
-		x = 36
+		x = 37
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZKR_ordensstaat_zy_p_rzad }
@@ -898,7 +898,7 @@ focus_tree = {
 	focus = {
 		id = ZKR_ordensstaat_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2_f
-		x = 35
+		x = 36
 		y = 4
 		cost = 6
 		prerequisite = { focus = ZKR_ordensstaat_zy_p_rewanz focus = ZKR_ordensstaat_zy_p_pojednanie }

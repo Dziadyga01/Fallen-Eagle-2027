@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_koniec_ratusza
 		icon = GFX_pl2027_tfr_portret_trn_maksim_krevienko
-		x = 55
+		x = 26
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -20,15 +20,13 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 30
 			add_ideas = TR2_krevienko_1
-			set_variable = { TR2RW_kre_zasob = 35 }
-			set_country_flag = TR2RW_kre_wladza
 		}
 	}
 
 	focus = {
 		id = TR2_kre_komuny
 		icon = GFX_pl2027_081_przemysl_0
-		x = 43
+		x = 19
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
@@ -41,7 +39,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_zgromadzenia
 		icon = GFX_pl2027_081_parlament_0_slk
-		x = 48
+		x = 22
 		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
@@ -57,7 +55,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_kolektywy
 		icon = GFX_pl2027_081_robotnicy_0
-		x = 41
+		x = 18
 		y = 2
 		cost = 6
 		prerequisite = { focus = TR2_kre_komuny }
@@ -70,7 +68,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_skarpa
 		icon = GFX_pl2027_081_parlament_1_slk
-		x = 45
+		x = 20
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kre_komuny }
@@ -85,7 +83,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_wymiana
 		icon = GFX_pl2027_081_technika_0
-		x = 48
+		x = 22
 		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kre_zgromadzenia }
@@ -98,7 +96,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_milicja
 		icon = GFX_pl2027_081_milicja_0_slk
-		x = 45
+		x = 20
 		y = 3
 		cost = 7
 		prerequisite = { focus = TR2_kre_kolektywy focus = TR2_kre_skarpa focus = TR2_kre_wymiana }
@@ -113,7 +111,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_warsztaty
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 43
+		x = 19
 		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_kre_milicja }
@@ -126,7 +124,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_obrona_dzielnic
 		icon = GFX_pl2027_081_osiedle_0
-		x = 48
+		x = 22
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_kre_milicja }
@@ -140,7 +138,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_szkolenie
 		icon = GFX_pl2027_081_milicja_1_slk
-		x = 41
+		x = 18
 		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_kre_warsztaty }
@@ -154,7 +152,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_wyposazenie
 		icon = GFX_pl2027_081_bron_0
-		x = 45
+		x = 20
 		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_kre_warsztaty }
@@ -169,7 +167,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_gospodarka
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 48
+		x = 22
 		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_kre_obrona_dzielnic }
@@ -183,7 +181,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_gminy
 		icon = GFX_pl2027_081_administracja_0
-		x = 45
+		x = 20
 		y = 6
 		cost = 1
 		prerequisite = { focus = TR2_kre_szkolenie focus = TR2_kre_wyposazenie focus = TR2_kre_gospodarka }
@@ -197,7 +195,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_podgorz
 		icon = GFX_pl2027_081_sojusz_0_slk
-		x = 43
+		x = 19
 		y = 7
 		cost = 1
 		prerequisite = { focus = TR2_kre_gminy }
@@ -210,7 +208,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_rady_byd
 		icon = GFX_pl2027_081_sojusz_1_slk
-		x = 48
+		x = 22
 		y = 7
 		cost = 1
 		prerequisite = { focus = TR2_kre_gminy }
@@ -224,7 +222,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_wcielenie
 		icon = GFX_pl2027_081_sojusz_2_slk
-		x = 41
+		x = 18
 		y = 8
 		cost = 10
 		prerequisite = { focus = TR2_kre_podgorz }
@@ -238,7 +236,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_roszczenia
 		icon = GFX_pl2027_081_granica_0_slk
-		x = 45
+		x = 20
 		y = 8
 		cost = 5
 		prerequisite = { focus = TR2_kre_podgorz }
@@ -252,7 +250,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_solec
 		icon = GFX_pl2027_081_wojna_0_slk
-		x = 55
+		x = 26
 		y = 8
 		cost = 8
 		prerequisite = { focus = TR2_kre_rady_byd }
@@ -271,7 +269,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_kujawy
 		icon = GFX_pl2027_081_bunt_0
-		x = 45
+		x = 20
 		y = 9
 		cost = 8
 		prerequisite = { focus = TR2_kre_wcielenie focus = TR2_kre_roszczenia focus = TR2_kre_solec }
@@ -290,7 +288,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_dobrzyn
 		icon = GFX_pl2027_081_bunt_1
-		x = 43
+		x = 19
 		y = 10
 		cost = 8
 		prerequisite = { focus = TR2_kre_kujawy }
@@ -309,7 +307,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_integracja
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 48
+		x = 22
 		y = 10
 		cost = 5
 		prerequisite = { focus = TR2_kre_kujawy }
@@ -323,7 +321,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_propaganda
 		icon = GFX_pl2027_081_media_0
-		x = 41
+		x = 18
 		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_kre_dobrzyn }
@@ -337,7 +335,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_internacjonal
 		icon = GFX_pl2027_081_sojusz_3_slk
-		x = 45
+		x = 20
 		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_kre_dobrzyn }
@@ -352,7 +350,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_region
 		icon = GFX_pl2027_081_mapa_1_slk
-		x = 48
+		x = 22
 		y = 11
 		cost = 5
 		prerequisite = { focus = TR2_kre_integracja }
@@ -365,7 +363,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_rada_delegatow
 		icon = GFX_pl2027_081_rada_0
-		x = 45
+		x = 20
 		y = 12
 		cost = 5
 		prerequisite = { focus = TR2_kre_propaganda focus = TR2_kre_internacjonal focus = TR2_kre_region }
@@ -381,7 +379,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_armia
 		icon = GFX_pl2027_081_sojusz_0_slk
-		x = 43
+		x = 19
 		y = 13
 		cost = 7
 		prerequisite = { focus = TR2_kre_rada_delegatow }
@@ -395,7 +393,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_bydgoszcz
 		icon = GFX_pl2027_081_bunt_2
-		x = 48
+		x = 22
 		y = 13
 		cost = 8
 		prerequisite = { focus = TR2_kre_rada_delegatow }
@@ -414,7 +412,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_gospodarka2
 		icon = GFX_pl2027_081_robotnicy_1_f
-		x = 41
+		x = 18
 		y = 14
 		cost = 6
 		prerequisite = { focus = TR2_kre_armia }
@@ -427,7 +425,7 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_obrona2
 		icon = GFX_pl2027_081_bunt_3_f
-		x = 45
+		x = 20
 		y = 14
 		cost = 5
 		prerequisite = { focus = TR2_kre_armia }
@@ -443,14 +441,14 @@ focus_tree = {
 	focus = {
 		id = TR2_kre_final
 		icon = GFX_pl2027_081_rzeka_0_f
-		x = 48
+		x = 22
 		y = 14
 		cost = 10
 		prerequisite = { focus = TR2_kre_bydgoszcz }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { has_idea = TR2_krevienko_1 } remove_ideas = TR2_krevienko_1 } add_ideas = TR2_krevienko_2
-			if = { limit = { NOT = { has_country_flag = TR2S_kre_founded } } set_cosmetic_tag = TR2_FIN_KREVIENKO }
+			set_cosmetic_tag = TR2_FIN_KREVIENKO
 			add_political_power = 100
 		}
 	}
@@ -459,7 +457,7 @@ focus_tree = {
 		id = TR2_kre_r_plan
 		icon = GFX_pl2027_081_anarchia_0
 		x = 2
-		y = 4
+		y = 1
 		cost = 6
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
 		ai_will_do = { factor = 10 }
@@ -467,9 +465,6 @@ focus_tree = {
 			add_political_power = 30
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			add_stability = 0.02
-			add_to_variable = { TR2RW_kre_zasob = 3 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 90 add_political_power = -3
 		}
 	}
 
@@ -477,16 +472,13 @@ focus_tree = {
 		id = TR2_kre_r_rubinkowo
 		icon = GFX_pl2027_081_osiedle_0
 		x = 0
-		y = 5
+		y = 2
 		cost = 6
 		prerequisite = { focus = TR2_kre_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_stability = 0.03
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 3 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 90 add_political_power = -3
 		}
 	}
 
@@ -494,15 +486,12 @@ focus_tree = {
 		id = TR2_kre_r_jar
 		icon = GFX_pl2027_081_osiedle_1
 		x = 4
-		y = 5
+		y = 2
 		cost = 6
 		prerequisite = { focus = TR2_kre_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 3 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 90 add_political_power = -3
 		}
 	}
 
@@ -510,15 +499,12 @@ focus_tree = {
 		id = TR2_kre_r_bielany
 		icon = GFX_TRN_pl2027_szkoly
 		x = 2
-		y = 5
+		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kre_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_kre_r_bielany_tb bonus = 1.0 uses = 1 category = industry }
-			add_to_variable = { TR2RW_kre_zasob = 3 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 90 add_political_power = -3
 		}
 	}
 
@@ -526,16 +512,13 @@ focus_tree = {
 		id = TR2_kre_r_osiedla
 		icon = GFX_pl2027_081_osiedle_2
 		x = 4
-		y = 6
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kre_r_jar }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_stability = 0.03
 			add_manpower = 1500
-			add_to_variable = { TR2RW_kre_zasob = 3 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 90 add_political_power = -3
 		}
 	}
 
@@ -543,7 +526,7 @@ focus_tree = {
 		id = TR2_kre_r_komunikacja
 		icon = GFX_pl2027_081_tramwaj_1
 		x = 4
-		y = 7
+		y = 4
 		cost = 7
 		prerequisite = { focus = TR2_kre_r_bielany }
 		prerequisite = { focus = TR2_kre_r_osiedla }
@@ -551,9 +534,6 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 3 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 90 add_political_power = -3
 		}
 	}
 
@@ -561,15 +541,12 @@ focus_tree = {
 		id = TR2_kre_r_infrastruktura
 		icon = GFX_TRN_pl2027_autostrada
 		x = 3
-		y = 8
+		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_kre_r_komunikacja }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 3 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 90 add_political_power = -3
 		}
 	}
 
@@ -577,7 +554,7 @@ focus_tree = {
 		id = TR2_kre_r_toron2030
 		icon = GFX_pl2027_081_sojusz_1_slk
 		x = 5
-		y = 8
+		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_kre_r_komunikacja }
 		ai_will_do = { factor = 10 }
@@ -585,103 +562,84 @@ focus_tree = {
 			add_stability = 0.04
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 			add_stability = 0.03
-			add_to_variable = { TR2RW_kre_zasob = 6 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 90 add_political_power = -3
 		}
 	}
 
 	focus = {
 		id = TR2_kre_p_odbudowa
 		icon = GFX_TRN_pl2027_firmy
-		x = 94
-		y = 8
+		x = 26
+		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
-		prerequisite = { focus = TR2_kre_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_kre_p_odbudowa_tb bonus = 1.0 uses = 1 category = industry }
 			add_manpower = 2000
-			add_to_variable = { TR2RW_kre_zasob = 4 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_kre_p_apator
 		icon = GFX_TRN_pl2027_apator
-		x = 92
-		y = 9
+		x = 24
+		y = 2
 		cost = 6
 		prerequisite = { focus = TR2_kre_p_odbudowa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_kre_p_apator_tb bonus = 1.0 uses = 1 category = electronics }
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 4 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_kre_p_pierniki
 		icon = GFX_pl2027_081_zywnosc_3
-		x = 96
-		y = 9
+		x = 28
+		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kre_p_odbudowa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_political_power = 50
 			add_stability = 0.02
-			add_to_variable = { TR2RW_kre_zasob = 4 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_kre_p_logistyka
 		icon = GFX_pl2027_081_logistyka_2
-		x = 94
-		y = 9
+		x = 26
+		y = 2
 		cost = 7
 		prerequisite = { focus = TR2_kre_p_odbudowa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 4 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_kre_p_uslugi
 		icon = GFX_TRN_pl2027_stabilizacja
-		x = 96
-		y = 10
+		x = 28
+		y = 3
 		cost = 6
 		prerequisite = { focus = TR2_kre_p_pierniki }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_political_power = 40
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 4 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_kre_p_kopernik
 		icon = GFX_TRN_pl2027_kopernik
-		x = 95
-		y = 11
+		x = 27
+		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_kre_p_logistyka }
 		prerequisite = { focus = TR2_kre_p_uslugi }
@@ -689,70 +647,56 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 4 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_kre_p_strefa
 		icon = GFX_pl2027_081_handel_2
-		x = 94
-		y = 12
+		x = 26
+		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_kre_p_kopernik }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 4 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_kre_p_przemysl
 		icon = GFX_TRN_pl2027_przemysl20
-		x = 96
-		y = 12
+		x = 28
+		y = 5
 		cost = 6
 		prerequisite = { focus = TR2_kre_p_kopernik }
-		available = { OR = { NOT = { has_country_flag = TR2S_kre_founded } has_country_flag = TR2S_kre_route_B } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = TR2_kre_p_przemysl_tb bonus = 1.0 uses = 2 category = industry }
 			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 			add_stability = 0.02
-			add_to_variable = { TR2RW_kre_zasob = 7 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_kre_d_sasiedzi
 		icon = GFX_pl2027_081_administracja_1
-		x = 14
-		y = 2
+		x = 32
+		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
-		prerequisite = { focus = TR2_kre_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_political_power = 30
 			add_political_power = 20
-			add_to_variable = { TR2RW_kre_zasob = 5 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_stability = 0.007
 		}
 	}
 
 	focus = {
 		id = TR2_kre_d_chelmza
 		icon = GFX_pl2027_081_pieniadze_6
-		x = 13
-		y = 3
+		x = 31
+		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_kre_d_sasiedzi }
 		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
@@ -760,17 +704,14 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { country_exists = CHZ CHZ = { is_subject = no } NOT = { has_war_with = CHZ } } CHZ = { country_event = { id = trn.1 days = 2 } } }
-			add_to_variable = { TR2RW_kre_zasob = 5 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_stability = 0.007
 		}
 	}
 
 	focus = {
 		id = TR2_kre_d_grudziadz
 		icon = GFX_pl2027_081_rzeka_0
-		x = 15
-		y = 3
+		x = 33
+		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_kre_d_sasiedzi }
 		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
@@ -778,189 +719,155 @@ focus_tree = {
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { country_exists = GRU GRU = { is_subject = no } NOT = { has_war_with = GRU } } GRU = { country_event = { id = trn.1 days = 2 } } }
-			add_to_variable = { TR2RW_kre_zasob = 5 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_stability = 0.007
 		}
 	}
 
 	focus = {
 		id = TR2_kre_d_metropolia
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 13
-		y = 4
+		x = 31
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kre_d_chelmza }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			set_country_flag = TRN_spor_metropolia
 			if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } } add_to_variable = { global.MET_solec_trn = 6 } add_to_variable = { global.MET_zlawies_trn = 6 } add_to_variable = { global.MET_ostromecko_trn = 6 } add_to_variable = { global.MET_unislaw_trn = 6 } add_to_variable = { global.MET_nowawies_trn = 6 } add_to_variable = { global.MET_chelmno_trn = 6 } MET_przelicz = yes }
-			add_to_variable = { TR2RW_kre_zasob = 5 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_stability = 0.007
 		}
 	}
 
 	focus = {
 		id = TR2_kre_d_kampania
 		icon = GFX_pl2027_081_administracja_1
-		x = 15
-		y = 4
+		x = 33
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_kre_d_grudziadz }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } } add_to_variable = { global.MET_solec_trn = 6 } add_to_variable = { global.MET_solec_byd = -3 } add_to_variable = { global.MET_zlawies_trn = 6 } add_to_variable = { global.MET_zlawies_byd = -3 } add_to_variable = { global.MET_ostromecko_trn = 6 } add_to_variable = { global.MET_ostromecko_byd = -3 } add_to_variable = { global.MET_unislaw_trn = 6 } add_to_variable = { global.MET_unislaw_byd = -3 } add_to_variable = { global.MET_nowawies_trn = 6 } add_to_variable = { global.MET_nowawies_byd = -3 } add_to_variable = { global.MET_chelmno_trn = 6 } add_to_variable = { global.MET_chelmno_byd = -3 } add_to_variable = { global.MET_napiecie = 5 } MET_przelicz = yes }
-			add_to_variable = { TR2RW_kre_zasob = 5 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_stability = 0.007
 		}
 	}
 
 	focus = {
 		id = TR2_kre_d_referenda
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 13
-		y = 5
+		x = 31
+		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_kre_d_metropolia }
 		prerequisite = { focus = TR2_kre_d_kampania }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_solec_trn > 59 } check_variable = { global.MET_solec_przewaga > 19 } 53 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_solec_trn = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_zlawies_trn > 59 } check_variable = { global.MET_zlawies_przewaga > 19 } 125 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_zlawies_trn = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_ostromecko_trn > 59 } check_variable = { global.MET_ostromecko_przewaga > 19 } 47 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_ostromecko_trn = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_unislaw_trn > 59 } check_variable = { global.MET_unislaw_przewaga > 19 } 60 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_unislaw_trn = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_nowawies_trn > 59 } check_variable = { global.MET_nowawies_przewaga > 19 } 50 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_nowawies_trn = yes } if = { limit = { NOT = { has_global_flag = MET_rozstrzygniete } check_variable = { global.MET_chelmno_trn > 59 } check_variable = { global.MET_chelmno_przewaga > 19 } 54 = { NOT = { is_owned_by = TRN } NOT = { is_owned_by = BYD } owner = { NOT = { is_subject_of = TRN } NOT = { is_subject_of = BYD } } } } MET_ref_chelmno_trn = yes }
-			add_to_variable = { TR2RW_kre_zasob = 5 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_stability = 0.007
 		}
 	}
 
 	focus = {
 		id = TR2_kre_d_kujawy
 		icon = GFX_pl2027_081_mapa_4_slk
-		x = 12
-		y = 6
+		x = 30
+		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_kre_d_referenda }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			every_state = { limit = { is_owned_by = KUJ } add_claim_by = ROOT }
 			add_war_support = 0.03
-			add_to_variable = { TR2RW_kre_zasob = 5 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_stability = 0.007
 		}
 	}
 
 	focus = {
 		id = TR2_kre_d_metropolia_f
 		icon = GFX_pl2027_081_mapa_4_slk
-		x = 14
-		y = 6
+		x = 32
+		y = 5
 		cost = 1
 		prerequisite = { focus = TR2_kre_d_referenda }
-		available = { OR = { NOT = { has_country_flag = TR2S_kre_founded } has_country_flag = TR2S_kre_route_A }  check_variable = { global.MET_trn_obszary > 3 } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_8000 has_army_manpower = { size > 7999 } } NOT = { has_global_flag = MET_rozstrzygniete } }
+		available = { check_variable = { global.MET_trn_obszary > 3 } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_8000 has_army_manpower = { size > 7999 } } NOT = { has_global_flag = MET_rozstrzygniete } }
 		bypass = { has_global_flag = MET_rozstrzygniete }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			set_global_flag = MET_rozstrzygniete
 			if = { limit = { country_exists = BYD NOT = { has_war_with = BYD } } BYD = { country_event = { id = met.50 } } }
-			add_to_variable = { TR2RW_kre_zasob = 8 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_stability = 0.007
 		}
 	}
 
 	focus = {
 		id = TR2_kre_w_obrona
 		icon = GFX_pl2027_081_osiedle_1
-		x = 66
-		y = 10
+		x = 37
+		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
-		prerequisite = { focus = TR2_kre_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_war_support = 0.03
 			army_experience = 10
 			add_manpower = 3000
-			add_to_variable = { TR2RW_kre_zasob = 6 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 250 add_stability = -0.003
 		}
 	}
 
 	focus = {
 		id = TR2_kre_w_mobilizacja
 		icon = GFX_pl2027_081_pobor_1_slk
-		x = 64
-		y = 11
+		x = 35
+		y = 2
 		cost = 6
 		prerequisite = { focus = TR2_kre_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_manpower = 5000
 			add_equipment_to_stockpile = { type = ranged_equipment amount = 600 }
-			add_to_variable = { TR2RW_kre_zasob = 6 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 250 add_stability = -0.003
 		}
 	}
 
 	focus = {
 		id = TR2_kre_w_garnizon
 		icon = GFX_TRN_pl2027_garnizon
-		x = 68
-		y = 11
+		x = 39
+		y = 2
 		cost = 7
 		prerequisite = { focus = TR2_kre_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { NOT = { has_template = "Brygada Toruńska" } } division_template = { name = "Brygada Toruńska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
 			capital_scope = { create_unit = { division = "division_template = \"Brygada Toruńska\" start_experience_factor = 0.3" owner = ROOT } }
-			add_to_variable = { TR2RW_kre_zasob = 6 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 250 add_stability = -0.003
 		}
 	}
 
 	focus = {
 		id = TR2_kre_w_roszczenia
 		icon = GFX_pl2027_081_ultimatum_0_slk
-		x = 66
-		y = 11
+		x = 37
+		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_kre_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			every_state = { limit = { is_owned_by = PDG } add_claim_by = ROOT } every_state = { limit = { is_owned_by = LUB } add_claim_by = ROOT } every_state = { limit = { is_owned_by = LYS } add_claim_by = ROOT } every_state = { limit = { is_owned_by = CHZ } add_claim_by = ROOT } every_state = { limit = { is_owned_by = ROZ } add_claim_by = ROOT } every_state = { limit = { is_owned_by = DAB } add_claim_by = ROOT } every_state = { limit = { is_owned_by = SLK } add_claim_by = ROOT }
-			add_to_variable = { TR2RW_kre_zasob = 6 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 250 add_stability = -0.003
 		}
 	}
 
 	focus = {
 		id = TR2_kre_w_lokalne
 		icon = GFX_pl2027_081_ultimatum_2_slk
-		x = 68
-		y = 12
+		x = 39
+		y = 3
 		cost = 1
 		prerequisite = { focus = TR2_kre_w_garnizon }
 		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_4000 has_army_manpower = { size > 3999 } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { country_exists = PDG PDG = { is_subject = no } NOT = { has_war_with = PDG } } PDG = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = LUB LUB = { is_subject = no } NOT = { has_war_with = LUB } } LUB = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = LYS LYS = { is_subject = no } NOT = { has_war_with = LYS } } LYS = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = CHZ CHZ = { is_subject = no } NOT = { has_war_with = CHZ } } CHZ = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = ROZ ROZ = { is_subject = no } NOT = { has_war_with = ROZ } } ROZ = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = DAB DAB = { is_subject = no } NOT = { has_war_with = DAB } } DAB = { country_event = { id = trn.1 days = 2 } } } if = { limit = { country_exists = SLK SLK = { is_subject = no } NOT = { has_war_with = SLK } } SLK = { country_event = { id = trn.1 days = 2 } } }
-			add_to_variable = { TR2RW_kre_zasob = 6 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 250 add_stability = -0.003
 		}
 	}
 
 	focus = {
 		id = TR2_kre_w_wcielenie
 		icon = GFX_pl2027_081_integracja_2_slk
-		x = 68
-		y = 13
+		x = 39
+		y = 4
 		cost = 10
 		prerequisite = { focus = TR2_kre_w_roszczenia }
 		prerequisite = { focus = TR2_kre_w_lokalne }
@@ -969,21 +876,18 @@ focus_tree = {
 		completion_reward = {
 			every_country = { limit = { is_subject_of = ROOT OR = { tag = PDG tag = LUB tag = LYS tag = CHZ tag = ROZ tag = DAB tag = SLK } } ROOT = { annex_country = { target = PREV transfer_troops = yes } } }
 			every_owned_state = { add_core_of = ROOT }
-			add_to_variable = { TR2RW_kre_zasob = 6 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 250 add_stability = -0.003
 		}
 	}
 
 	focus = {
 		id = TR2_kre_w_kujawy
 		icon = GFX_pl2027_081_ofensywa_1_slk
-		x = 63
-		y = 14
+		x = 34
+		y = 5
 		cost = 8
 		prerequisite = { focus = TR2_kre_w_wcielenie }
 		prerequisite = { focus = TR2_krevienko_tree_gotowosc }
-		available = { OR = { NOT = { has_country_flag = TR2S_kre_founded } has_country_flag = TR2S_kre_route_B }  custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } OR = { NOT = { country_exists = KUJ } custom_trigger_tooltip = { tooltip = TRK_req_granica_KUJ is_neighbor_of = KUJ } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } OR = { NOT = { country_exists = KUJ } custom_trigger_tooltip = { tooltip = TRK_req_granica_KUJ is_neighbor_of = KUJ } } }
 		bypass = { OR = { NOT = { country_exists = KUJ } KUJ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 country_exists = KUJ NOT = { strength_ratio = { tag = KUJ ratio > 1.2 } } } modifier = { factor = 0 has_war = yes } modifier = { factor = 0 has_stability < 0.35 } }
 		completion_reward = {
@@ -992,17 +896,14 @@ focus_tree = {
 			if = { limit = { country_exists = KUJ } KUJ = { country_event = { id = trk.95 days = 1 } } }
 		 # PL2027_AI_ATAK
 			if = { limit = { is_ai = yes country_exists = KUJ } set_country_flag = TRK_cel_KUJ country_event = { id = trk.96 days = 14 } add_ai_strategy = { type = antagonize id = KUJ value = 100 } }
-			add_to_variable = { TR2RW_kre_zasob = 6 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 250 add_stability = -0.003
 		}
 	}
 
 	focus = {
 		id = TR2_kre_w_dominacja
 		icon = GFX_pl2027_081_mapa_2_slk
-		x = 69
-		y = 14
+		x = 40
+		y = 5
 		cost = 5
 		prerequisite = { focus = TR2_kre_w_wcielenie }
 		ai_will_do = { factor = 10 }
@@ -1011,17 +912,14 @@ focus_tree = {
 			add_political_power = 50
 			add_stability = 0.03
 			add_stability = 0.03
-			add_to_variable = { TR2RW_kre_zasob = 9 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 250 add_stability = -0.003
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_start
 		icon = GFX_pl2027_081_sztab_1_slk
-		x = 29
-		y = 11
+		x = 12
+		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
 		bypass = { has_country_flag = MIL_start }
@@ -1031,17 +929,14 @@ focus_tree = {
 			set_country_flag = MIL_start
 			army_experience = 5
 			add_manpower = 1000
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_slk
-		x = 25
-		y = 12
+		x = 8
+		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_mil_start }
 		bypass = { has_country_flag = MIL_rejestr }
@@ -1050,17 +945,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MIL_rejestr
 			add_ideas = MIL_pobor_1
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_slk
-		x = 29
-		y = 12
+		x = 12
+		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_mil_start }
 		bypass = { has_country_flag = MIL_ochotnicy }
@@ -1069,17 +961,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MIL_ochotnicy
 			add_manpower = 3000
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 33
-		y = 12
+		x = 16
+		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_mil_start }
 		bypass = { has_country_flag = MIL_fabryka }
@@ -1088,17 +977,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MIL_fabryka
 			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_slk
-		x = 24
-		y = 13
+		x = 7
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_mil_rejestr }
 		bypass = { has_country_flag = MIL_pobor }
@@ -1107,17 +993,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MIL_pobor
 			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_slk
-		x = 28
-		y = 13
+		x = 11
+		y = 3
 		cost = 7
 		prerequisite = { focus = TR2_krevienko_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_bataliony }
@@ -1128,17 +1011,14 @@ focus_tree = {
 			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
 			capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
 			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 32
-		y = 13
+		x = 15
+		y = 3
 		cost = 6
 		prerequisite = { focus = TR2_krevienko_mil_fabryka }
 		bypass = { has_country_flag = MIL_produkcja }
@@ -1149,17 +1029,14 @@ focus_tree = {
 			add_timed_idea = { idea = MIL_produkcja days = 365 }
 			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
 			add_equipment_to_stockpile = { type = support_equipment amount = 50 }
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_slk
-		x = 26
-		y = 13
+		x = 9
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_mil_rejestr }
 		bypass = { has_country_flag = MIL_rezerwisci }
@@ -1168,17 +1045,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = MIL_rezerwisci
 			add_manpower = 5000
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_slk
-		x = 30
-		y = 13
+		x = 13
+		y = 3
 		cost = 7
 		prerequisite = { focus = TR2_krevienko_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_brygady }
@@ -1190,17 +1064,14 @@ focus_tree = {
 			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
 			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
 			add_equipment_to_stockpile = { type = support_equipment amount = 40 }
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 34
-		y = 13
+		x = 17
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_mil_fabryka }
 		bypass = { has_country_flag = MIL_zaplecze }
@@ -1211,17 +1082,14 @@ focus_tree = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 			add_ideas = MIL_zaopatrzenie
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_slk
-		x = 24
-		y = 14
+		x = 7
+		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_mil_rezerwisci }
 		prerequisite = { focus = TR2_krevienko_mil_brygady }
@@ -1234,17 +1102,14 @@ focus_tree = {
 			set_country_flag = MIL_kadra
 			army_experience = 25
 			add_ideas = MIL_kadra
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_slk
-		x = 30
-		y = 15
+		x = 13
+		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_krevienko_mil_kadra }
 		prerequisite = { focus = TR2_krevienko_mil_zaplecze }
@@ -1257,17 +1122,14 @@ focus_tree = {
 			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
 			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
 			add_manpower = 2000
-			add_to_variable = { TR2RW_kre_zasob = 2 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 110
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 79
-		y = 3
+		x = 42
+		y = 1
 		cost = 1
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
 		bypass = { has_country_flag = TFR_zy_pl_s_ulica }
@@ -1276,17 +1138,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_ulica
 			country_event = { id = zycie.1 }
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 78
-		y = 4
+		x = 41
+		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_zy_s_ulica }
 		bypass = { has_country_flag = TFR_zy_pl_s_media }
@@ -1295,17 +1154,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_media
 			add_ideas = TFR_media
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 80
-		y = 4
+		x = 43
+		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_krevienko_zy_s_ulica }
 		bypass = { has_country_flag = TFR_zy_pl_s_spis }
@@ -1314,17 +1170,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_spis
 			country_event = { id = zycie.3 }
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_slk_k
-		x = 77
-		y = 5
+		x = 42
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_zy_s_media }
 		prerequisite = { focus = TR2_krevienko_zy_s_spis }
@@ -1335,17 +1188,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_kartki
 			add_ideas = TFR_kartki
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_slk_k
-		x = 79
-		y = 5
+		x = 44
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_zy_s_media }
 		prerequisite = { focus = TR2_krevienko_zy_s_spis }
@@ -1356,17 +1206,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_rynek
 			add_ideas = TFR_wolny_rynek
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 77
-		y = 6
+		x = 42
+		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_zy_s_kartki focus = TR2_krevienko_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
@@ -1376,17 +1223,14 @@ focus_tree = {
 			set_country_flag = TFR_zy_pl_s_szkoly
 			add_stability = 0.03
 			add_political_power = 25
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 79
-		y = 6
+		x = 44
+		y = 4
 		cost = 1
 		prerequisite = { focus = TR2_krevienko_zy_s_kartki focus = TR2_krevienko_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_czarny }
@@ -1395,17 +1239,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_pl_s_czarny
 			country_event = { id = zycie.2 }
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 81
-		y = 6
+		x = 46
+		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_zy_s_kartki focus = TR2_krevienko_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_straze }
@@ -1415,17 +1256,14 @@ focus_tree = {
 			set_country_flag = TFR_zy_pl_s_straze
 			add_manpower = 2500
 			add_stability = 0.02
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 79
-		y = 7
+		x = 44
+		y = 5
 		cost = 7
 		prerequisite = { focus = TR2_krevienko_zy_s_szkoly }
 		prerequisite = { focus = TR2_krevienko_zy_s_czarny }
@@ -1438,17 +1276,14 @@ focus_tree = {
 			if = { limit = { has_idea = TFR_kartki } remove_ideas = TFR_kartki }
 			if = { limit = { has_idea = TFR_wolny_rynek } remove_ideas = TFR_wolny_rynek }
 			add_ideas = TFR_spoleczenstwo
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 83
-		y = 3
+		x = 46
+		y = 1
 		cost = 6
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
@@ -1459,17 +1294,14 @@ focus_tree = {
 			set_country_flag = TFR_zy_k_k_admin
 			add_political_power = 40
 			random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_slk
-		x = 82
-		y = 4
+		x = 45
+		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_zy_k_admin }
 		bypass = { has_country_flag = TFR_zy_k_k_defilada }
@@ -1479,17 +1311,14 @@ focus_tree = {
 			set_country_flag = TFR_zy_k_k_defilada
 			add_war_support = 0.05
 			add_stability = 0.03
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 84
-		y = 4
+		x = 47
+		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_krevienko_zy_k_admin }
 		bypass = { has_country_flag = TFR_zy_k_k_opor }
@@ -1498,17 +1327,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_k_k_opor
 			country_event = { id = zycie.10 }
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_slk
-		x = 83
-		y = 5
+		x = 46
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_zy_k_defilada }
 		prerequisite = { focus = TR2_krevienko_zy_k_opor }
@@ -1518,17 +1344,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_k_k_owoce
 			add_timed_idea = { idea = TFR_owoce days = 365 }
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 86
-		y = 3
+		x = 50
+		y = 1
 		cost = 5
 		prerequisite = { focus = TR2_kre_koniec_ratusza }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
@@ -1539,17 +1362,14 @@ focus_tree = {
 			set_country_flag = TFR_zy_p_p_straty
 			country_event = { id = zycie.11 }
 			add_manpower = 3000
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 86
-		y = 4
+		x = 50
+		y = 2
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_zy_p_straty }
 		bypass = { has_country_flag = TFR_zy_p_p_rzad }
@@ -1559,17 +1379,14 @@ focus_tree = {
 			set_country_flag = TFR_zy_p_p_rzad
 			add_stability = 0.05
 			add_political_power = 30
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_slk_k
-		x = 85
-		y = 5
+		x = 49
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_zy_p_rzad }
 		mutually_exclusive = { focus = TR2_krevienko_zy_p_pojednanie }
@@ -1579,17 +1396,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_p_p_rewanz
 			add_timed_idea = { idea = TFR_rewanz days = 730 }
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_slk_k
-		x = 87
-		y = 5
+		x = 51
+		y = 3
 		cost = 5
 		prerequisite = { focus = TR2_krevienko_zy_p_rzad }
 		mutually_exclusive = { focus = TR2_krevienko_zy_p_rewanz }
@@ -1599,17 +1413,14 @@ focus_tree = {
 		completion_reward = {
 			set_country_flag = TFR_zy_p_p_pojednanie
 			add_timed_idea = { idea = TFR_pojednanie days = 730 }
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 86
-		y = 6
+		x = 50
+		y = 4
 		cost = 6
 		prerequisite = { focus = TR2_krevienko_zy_p_rewanz focus = TR2_krevienko_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
@@ -1621,16 +1432,13 @@ focus_tree = {
 			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
 			army_experience = 15
 			add_manpower = 5000
-			add_to_variable = { TR2RW_kre_zasob = 1 }
-			clamp_variable = { var = TR2RW_kre_zasob min = 0 max = 100 }
-			add_manpower = 80
 		}
 	}
 
 	focus = {
 		id = TR2_krevienko_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_slk
-		x = 60
+		x = 29
 		y = 4
 		cost = 5
 		prerequisite = { focus = TR2_kre_d_metropolia }
@@ -1642,324 +1450,6 @@ focus_tree = {
 			add_political_power = 50
 			add_war_support = 0.05
 			army_experience = 10
-		}
-	}
-
-
-	# Torun Rework 2026: wybory maja konsekwencje po utworzeniu nowego panstwa
-
-
-
-
-
-
-
-	# Statecraft: rozne panstwa zalezne od wyboru tego ugrupowania
-	focus = {
-		id = TR2S_kre_start
-		icon = GFX_pl2027_081_anarchia_0
-		x = 48
-		y = 27
-		cost = 2
-		prerequisite = { focus = TR2_kre_koniec_ratusza }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			set_variable = { TR2S_kre_meter = 30 }
-			add_political_power = 15
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_crisis
-		icon = GFX_pl2027_081_anarchia_0
-		x = 48
-		y = 28
-		cost = 2
-		prerequisite = { focus = TR2S_kre_start }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			add_political_power = -5
-			country_event = { id = tr2state.140 days = 1 }
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_a_choice
-		icon = GFX_pl2027_081_anarchia_0
-		x = 33
-		y = 29
-		cost = 3
-		prerequisite = { focus = TR2S_kre_crisis }
-		mutually_exclusive = { focus = TR2S_kre_b_choice }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			add_to_variable = { TR2S_kre_meter = 20 }
-			add_political_power = 10
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_a_1
-		icon = GFX_pl2027_081_anarchia_0
-		x = 30
-		y = 30
-		cost = 2
-		prerequisite = { focus = TR2S_kre_a_choice }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			add_to_variable = { TR2S_kre_meter = 8 }
-			add_stability = 0.025
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_a_2
-		icon = GFX_pl2027_081_robotnicy_1
-		x = 36
-		y = 31
-		cost = 2
-		prerequisite = { focus = TR2S_kre_a_1 }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			add_to_variable = { TR2S_kre_meter = 8 }
-			add_manpower = 1600
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_a_found
-		icon = GFX_pl2027_081_robotnicy_1
-		x = 33
-		y = 32
-		cost = 3
-		prerequisite = { focus = TR2S_kre_a_2 }
-		available = { check_variable = { TR2S_kre_meter > 54 } }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			set_cosmetic_tag = TR2S_kre_A
-			add_ideas = TR2S_kre_A_spirit
-			set_country_flag = TR2S_kre_founded
-			set_country_flag = TR2S_kre_route_A
-			add_political_power = 20
-			country_event = { id = tr2state.141 days = 1 }
-			add_ideas = TR2C_kre_A_constitution
-			set_politics = { ruling_party = libertarian_socialist elections_allowed = no }
-			country_event = { id = tr2c.141 days = 3 }
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_a_legacy
-		icon = GFX_pl2027_081_anarchia_0
-		x = 33
-		y = 33
-		cost = 3
-		prerequisite = { focus = TR2S_kre_a_found }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			army_experience = 10
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_b_choice
-		icon = GFX_pl2027_081_robotnicy_1
-		x = 63
-		y = 29
-		cost = 3
-		prerequisite = { focus = TR2S_kre_crisis }
-		mutually_exclusive = { focus = TR2S_kre_a_choice }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			add_to_variable = { TR2S_kre_meter = 20 }
-			add_political_power = 10
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_b_1
-		icon = GFX_pl2027_081_anarchia_0
-		x = 60
-		y = 30
-		cost = 2
-		prerequisite = { focus = TR2S_kre_b_choice }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			add_to_variable = { TR2S_kre_meter = 8 }
-			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_b_2
-		icon = GFX_pl2027_081_robotnicy_1
-		x = 66
-		y = 31
-		cost = 2
-		prerequisite = { focus = TR2S_kre_b_1 }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			add_to_variable = { TR2S_kre_meter = 8 }
-			add_stability = 0.02
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_b_3
-		icon = GFX_pl2027_081_anarchia_0
-		x = 60
-		y = 32
-		cost = 2
-		prerequisite = { focus = TR2S_kre_b_2 }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			add_to_variable = { TR2S_kre_meter = 8 }
-			add_political_power = -20
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_b_found
-		icon = GFX_pl2027_081_robotnicy_1
-		x = 63
-		y = 33
-		cost = 3
-		prerequisite = { focus = TR2S_kre_b_3 }
-		available = { check_variable = { TR2S_kre_meter > 54 } }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			set_cosmetic_tag = TR2S_kre_B
-			add_ideas = TR2S_kre_B_spirit
-			set_country_flag = TR2S_kre_founded
-			set_country_flag = TR2S_kre_route_B
-			add_political_power = 20
-			country_event = { id = tr2state.142 days = 1 }
-			add_ideas = TR2C_kre_B_constitution
-			set_politics = { ruling_party = libertarian_socialist elections_allowed = no }
-			country_event = { id = tr2c.142 days = 3 }
-		}
-	}
-
-	focus = {
-		id = TR2S_kre_b_legacy
-		icon = GFX_pl2027_081_anarchia_0
-		x = 63
-		y = 34
-		cost = 3
-		prerequisite = { focus = TR2S_kre_b_found }
-		ai_will_do = { factor = 4 }
-		completion_reward = {
-			add_manpower = 1500
-		}
-	}
-
-
-	# Kontynuacja ustrojowa: niezalezne instytucje i skutki wyboru panstwa
-	focus = {
-		id = TR2C_kre_A_institution
-		icon = GFX_pl2027_081_rada_0
-		x = 31
-		y = 35
-		cost = 5
-		prerequisite = { focus = TR2S_kre_a_legacy }
-		ai_will_do = { factor = 3 }
-		completion_reward = {
-			add_stability = 0.02
-			add_political_power = -20
-		}
-	}
-
-	focus = {
-		id = TR2C_kre_A_future
-		icon = GFX_pl2027_081_wspolnota_0
-		x = 31
-		y = 36
-		cost = 5
-		prerequisite = { focus = TR2C_kre_A_institution }
-		ai_will_do = { factor = 3 }
-		completion_reward = {
-			add_manpower = 750
-			army_experience = 8
-		}
-	}
-
-	focus = {
-		id = TR2C_kre_B_institution
-		icon = GFX_pl2027_081_rada_0
-		x = 65
-		y = 36
-		cost = 5
-		prerequisite = { focus = TR2S_kre_b_legacy }
-		ai_will_do = { factor = 3 }
-		completion_reward = {
-			add_political_power = 15
-			add_stability = -0.01
-		}
-	}
-
-	focus = {
-		id = TR2C_kre_B_future
-		icon = GFX_pl2027_081_wspolnota_0
-		x = 65
-		y = 37
-		cost = 5
-		prerequisite = { focus = TR2C_kre_B_institution }
-		ai_will_do = { factor = 3 }
-		completion_reward = {
-			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = TR2END_kre_solo
-		icon = GFX_pl2027_081_konstytucja_0
-		x = 32
-		y = 42
-		cost = 8
-		prerequisite = { focus = TR2C_kre_A_future focus = TR2C_kre_B_future }
-		mutually_exclusive = { focus = TR2END_kre_union focus = TR2END_kre_pact }
-		ai_will_do = { factor = 5 }
-		completion_reward = {
-			set_country_flag = TR2END_kre_solo
-			if = { limit = { is_in_faction = yes } leave_faction = yes }
-			add_ideas = TR2END_kre_solo_idea
-			add_political_power = 30
-			country_event = { id = tr2end.141 days = 1 }
-		}
-	}
-
-	focus = {
-		id = TR2END_kre_union
-		icon = GFX_pl2027_081_sojusz_2_slk
-		x = 48
-		y = 42
-		cost = 8
-		prerequisite = { focus = TR2C_kre_A_future focus = TR2C_kre_B_future }
-		mutually_exclusive = { focus = TR2END_kre_solo focus = TR2END_kre_pact }
-		ai_will_do = { factor = 3 }
-		completion_reward = {
-			set_country_flag = TR2END_kre_union_offer
-			add_political_power = -30
-			if = { limit = { country_exists = GRU NOT = { has_war_with = GRU } GRU = { is_subject = no } } GRU = { country_event = { id = tr2end.142 days = 2 } } }
-			else = { country_event = { id = tr2end.143 days = 2 } }
-		}
-	}
-
-	focus = {
-		id = TR2END_kre_pact
-		icon = GFX_pl2027_081_sojusz_2_slk
-		x = 64
-		y = 42
-		cost = 8
-		prerequisite = { focus = TR2C_kre_A_future focus = TR2C_kre_B_future }
-		mutually_exclusive = { focus = TR2END_kre_solo focus = TR2END_kre_union }
-		ai_will_do = { factor = 3 }
-		completion_reward = {
-			set_country_flag = TR2END_kre_pact
-			if = { limit = { is_in_faction = yes } leave_faction = yes }
-			if = { limit = { is_in_faction = no } create_faction = TR2END_KRE_PAKT }
-			if = { limit = { is_faction_leader = yes } every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.144 days = 2 } } }
-			add_war_support = 0.02
 		}
 	}
 }

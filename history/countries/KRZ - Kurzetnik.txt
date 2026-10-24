@@ -1,5 +1,5 @@
-﻿capital = 1080
-oob = "GNL_2027"
+capital = 2274
+oob = "KRZ_2027"
 set_research_slots = 3
 set_stability = 0.45
 set_war_support = 0.35
@@ -40,15 +40,11 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	communist = 3
-	libertarian_socialist = 3
-	social_democrat = 6
-	social_liberal = 8
-	market_liberal = 5
-	conservative = 16
-	nationalist = 8
-	fascist = 3
-	authoritarian_democrat = 48
+	social_democrat = 7
+	market_liberal = 31
+	conservative = 12
+	fascist = 10
+	authoritarian_democrat = 40
 }
-recruit_character = GNL_leader

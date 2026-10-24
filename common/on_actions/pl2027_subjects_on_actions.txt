@@ -1,7 +1,0 @@
-on_actions = {
-	on_startup = {
-		effect = {
-			if = { limit = { has_game_rule = { rule = PL2027_SCENARIUSZ option = PODZIELONA } } PL2027_zaleznosci_startowe = yes }
-		}
-	}
-}

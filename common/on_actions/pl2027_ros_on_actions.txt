@@ -1,14 +1,18 @@
 on_actions = {
 	on_weekly_ROS = {
-		effect = {
+		effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } } 
 			if = {
 				limit = { has_country_flag = ROS_operacja_start NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } }
 				add_to_variable = { ROS_dni_wojny = 7 }
+				set_variable = { ROS_cel_kontrola = 0 } set_variable = { ROS_cel_razem = 0 }
+				every_state = { limit = { has_state_flag = ROS_cel_mazury } ROS = { add_to_variable = { ROS_cel_razem = 1 } } if = { limit = { is_controlled_by = ROS } ROS = { add_to_variable = { ROS_cel_kontrola = 1 } } } }
+				set_variable = { ROS_proc_kontroli = ROS_cel_kontrola } multiply_variable = { ROS_proc_kontroli = 100 } if = { limit = { check_variable = { ROS_cel_razem > 0 } } divide_variable = { ROS_proc_kontroli = ROS_cel_razem } } round_variable = ROS_proc_kontroli
+				if = { limit = { ROS_przewaga_operacyjna = yes } add_to_variable = { ROS_tyg_przewagi = 1 } } else = { set_variable = { ROS_tyg_przewagi = 0 } }
 				if = { limit = { NOT = { has_country_flag = ROS_zwyciestwo } ROS_warunek_zwyciestwa = yes } country_event = { id = ros.300 } }
 				else_if = { limit = { NOT = { has_country_flag = ROS_zwyciestwo } ROS_warunek_kleski = yes } country_event = { id = ros.310 } }
 				if = { limit = { has_country_flag = ROS_zwyciestwo } add_to_variable = { ROS_dni_po_zwyciestwie = 7 } if = { limit = { check_variable = { ROS_dni_po_zwyciestwie > 119 } NOT = { has_country_flag = ROS_302_wyslane } } country_event = { id = ros.302 } } }
 			}
-		}
+		 } }
 	}
 	on_startup = {
 		effect = {
@@ -16,7 +20,7 @@ on_actions = {
 		}
 	}
 	on_monthly_ROS = {
-		effect = {
+		effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } } 
 			if = {
 				limit = { has_country_flag = ROS_operacja_start NOT = { has_country_flag = ROS_wojna_rozstrzygnieta } ROS_przy_wojnie = yes }
 				add_equipment_to_stockpile = { type = ranged_equipment amount = 600 producer = ROS }
@@ -27,6 +31,6 @@ on_actions = {
 				add_fuel = 3000
 				add_manpower = 2500
 			}
-		}
+		 } }
 	}
 }

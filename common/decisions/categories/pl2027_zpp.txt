@@ -1,0 +1,6 @@
+ZPP_frakcje = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { NOT = { has_country_flag = ZPP_kongres_rozstrzygniety } check_variable = { ZPP_masl > -1 } }
+	priority = 88
+}

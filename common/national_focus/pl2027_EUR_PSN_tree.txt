@@ -15,10 +15,11 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_zarzad
-		icon = GFX_pl2027_081_ludzie_2
+		icon = GFX_pl2027_081_ludzie_0
 		x = 18
 		y = 0
-		cost = 2
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 50 }
 		completion_reward = {
 			add_political_power = 40
@@ -31,7 +32,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_parlament_0_psn
 		x = 21
 		y = 1
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zarzad }
 		ai_will_do = { factor = 50 }
 		completion_reward = {
@@ -42,10 +43,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_fundusze
-		icon = GFX_pl2027_081_budowa_1
+		icon = GFX_pl2027_081_budowa_0
 		x = 1
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zarzad }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -59,7 +60,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_budowa_2
 		x = 0
 		y = 2
-		cost = 6
+		cost = 7
 		prerequisite = { focus = EUR_PSN_fundusze }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -69,10 +70,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_drogi
-		icon = GFX_pl2027_081_most_1
+		icon = GFX_pl2027_081_most_0
 		x = 2
 		y = 2
-		cost = 6
+		cost = 7
 		prerequisite = { focus = EUR_PSN_fundusze }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -83,10 +84,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_standardy
-		icon = GFX_pl2027_081_szpital_1
+		icon = GFX_pl2027_081_szpital_0
 		x = 0
 		y = 3
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_przemysl focus = EUR_PSN_drogi }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -97,10 +98,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_energetyka
-		icon = GFX_pl2027_081_energia_4_f
+		icon = GFX_pl2027_081_energia_0_f
 		x = 0
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = EUR_PSN_standardy }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -114,7 +115,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_droga_0_psn_k
 		x = 19
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_sejmik }
 		mutually_exclusive = { focus = EUR_PSN_samodzielnosc }
 		ai_will_do = { factor = 20 }
@@ -126,10 +127,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_obywatelstwo
-		icon = GFX_pl2027_081_ludzie_2
+		icon = GFX_pl2027_081_ludzie_1
 		x = 19
 		y = 3
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_integracja }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -140,10 +141,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_policja_ue
-		icon = GFX_pl2027_081_porzadek_2
+		icon = GFX_pl2027_081_porzadek_0
 		x = 19
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_obywatelstwo }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -154,10 +155,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_euroregion
-		icon = GFX_pl2027_081_mapa_1_psn_f
+		icon = GFX_pl2027_081_mapa_0_psn_f
 		x = 19
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = EUR_PSN_policja_ue }
 		available = { check_variable = { EUR_zaleznosc > 69 } }
 		ai_will_do = { factor = 1 }
@@ -169,10 +170,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_samodzielnosc
-		icon = GFX_pl2027_081_orzel_1_psn_k
+		icon = GFX_pl2027_081_orzel_0_psn_k
 		x = 22
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_sejmik }
 		mutually_exclusive = { focus = EUR_PSN_integracja }
 		ai_will_do = { factor = 15 }
@@ -185,10 +186,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_kompetencje
-		icon = GFX_pl2027_081_szkola_1
+		icon = GFX_pl2027_081_szkola_0
 		x = 21
 		y = 3
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_samodzielnosc }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -202,7 +203,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_gwardia_0_psn
 		x = 23
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = EUR_PSN_samodzielnosc }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -214,7 +215,7 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_wniosek
-		icon = GFX_pl2027_081_wywiad_2
+		icon = GFX_pl2027_081_wywiad_0
 		x = 21
 		y = 4
 		cost = 1
@@ -229,10 +230,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_nowe_panstwo
-		icon = GFX_pl2027_081_szpital_0
+		icon = GFX_pl2027_081_szpital_1
 		x = 21
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_wniosek }
 		available = { is_subject = no }
 		ai_will_do = { factor = 1 }
@@ -245,24 +246,24 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_powrot
-		icon = GFX_pl2027_081_dyplomacja_5_f
+		icon = GFX_pl2027_081_dyplomacja_0_f
 		x = 21
 		y = 6
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_nowe_panstwo }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_political_power = 50
-			if = { limit = { country_exists = POL has_global_flag = ROZ_rp_trwa } POL = { add_opinion_modifier = { target = ROOT modifier = EUR_dobre_sasiedztwo } } ROOT = { add_opinion_modifier = { target = POL modifier = EUR_dobre_sasiedztwo } } }
+			if = { limit = { country_exists = SMR } SMR = { add_opinion_modifier = { target = ROOT modifier = EUR_dobre_sasiedztwo } } ROOT = { add_opinion_modifier = { target = SMR modifier = EUR_dobre_sasiedztwo } } }
 		}
 	}
 
 	focus = {
 		id = EUR_PSN_granica
-		icon = GFX_pl2027_081_granica_2_psn
+		icon = GFX_pl2027_081_granica_0_psn
 		x = 5
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zarzad }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -272,10 +273,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_komisja
-		icon = GFX_pl2027_081_granica_2_psn_k
+		icon = GFX_pl2027_081_granica_1_psn_k
 		x = 4
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_granica }
 		mutually_exclusive = { focus = EUR_PSN_twarda_granica }
 		ai_will_do = { factor = 1 }
@@ -287,10 +288,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_twarda_granica
-		icon = GFX_pl2027_081_granica_3_psn_k
+		icon = GFX_pl2027_081_granica_2_psn_k
 		x = 6
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = EUR_PSN_granica }
 		mutually_exclusive = { focus = EUR_PSN_komisja }
 		ai_will_do = { factor = 1 }
@@ -302,10 +303,10 @@ focus_tree = {
 
 	focus = {
 		id = EUR_PSN_handel
-		icon = GFX_pl2027_081_granica_1_psn
+		icon = GFX_pl2027_081_granica_3_psn
 		x = 4
 		y = 3
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_komisja focus = EUR_PSN_twarda_granica }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -320,7 +321,7 @@ focus_tree = {
 		y = 4
 		cost = 8
 		prerequisite = { focus = EUR_PSN_handel }
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } }  is_subject = no }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } }  is_subject = no }
 		ai_will_do = { factor = 1 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
 			random_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no NOT = { has_war_with = ROOT } has_opinion = { target = ROOT value < -10 } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } }
@@ -332,7 +333,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_sztab_1_psn
 		x = 12
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zarzad }
 		bypass = { has_country_flag = MIL_start }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -349,7 +350,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_1_psn
 		x = 8
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_mil_start }
 		bypass = { has_country_flag = MIL_rejestr }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -365,7 +366,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_3_psn
 		x = 12
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_mil_start }
 		bypass = { has_country_flag = MIL_ochotnicy }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -381,7 +382,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_fabryka_broni_1
 		x = 16
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_mil_start }
 		bypass = { has_country_flag = MIL_fabryka }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -397,7 +398,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_2_psn
 		x = 7
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_mil_rejestr }
 		bypass = { has_country_flag = MIL_pobor }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -413,7 +414,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_wojsko_4_psn
 		x = 11
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = EUR_PSN_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_bataliony }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -431,7 +432,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_przemysl_4
 		x = 15
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = EUR_PSN_mil_fabryka }
 		bypass = { has_country_flag = MIL_produkcja }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -449,7 +450,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_3_psn
 		x = 9
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_mil_rejestr }
 		bypass = { has_country_flag = MIL_rezerwisci }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -465,7 +466,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_obrona_terytorialna_1_psn
 		x = 13
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = EUR_PSN_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_brygady }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -484,7 +485,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_logistyka_0
 		x = 17
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_mil_fabryka }
 		bypass = { has_country_flag = MIL_zaplecze }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -500,9 +501,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_psn
-		x = 7
+		x = 9
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_mil_rezerwisci }
 		prerequisite = { focus = EUR_PSN_mil_brygady }
 		prerequisite = { focus = EUR_PSN_mil_pobor }
@@ -520,9 +521,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_psn_f
-		x = 13
+		x = 14
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = EUR_PSN_mil_kadra }
 		prerequisite = { focus = EUR_PSN_mil_zaplecze }
 		prerequisite = { focus = EUR_PSN_mil_produkcja }
@@ -540,7 +541,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 27
+		x = 26
 		y = 1
 		cost = 1
 		prerequisite = { focus = EUR_PSN_zarzad }
@@ -556,9 +557,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 26
+		x = 24
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_s_ulica }
 		bypass = { has_country_flag = TFR_zy_pl_s_media }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -572,7 +573,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 28
+		x = 27
 		y = 2
 		cost = 1
 		prerequisite = { focus = EUR_PSN_zy_s_ulica }
@@ -588,9 +589,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_psn_k
-		x = 25
+		x = 26
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_s_media }
 		prerequisite = { focus = EUR_PSN_zy_s_spis }
 		mutually_exclusive = { focus = EUR_PSN_zy_s_rynek }
@@ -606,9 +607,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_psn_k
-		x = 27
+		x = 28
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_s_media }
 		prerequisite = { focus = EUR_PSN_zy_s_spis }
 		mutually_exclusive = { focus = EUR_PSN_zy_s_kartki }
@@ -624,9 +625,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 25
+		x = 24
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_s_kartki focus = EUR_PSN_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -641,7 +642,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 27
+		x = 26
 		y = 4
 		cost = 1
 		prerequisite = { focus = EUR_PSN_zy_s_kartki focus = EUR_PSN_zy_s_rynek }
@@ -657,9 +658,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 29
+		x = 28
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_s_kartki focus = EUR_PSN_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_straze }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -674,9 +675,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1_f
-		x = 27
+		x = 26
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = EUR_PSN_zy_s_szkoly }
 		prerequisite = { focus = EUR_PSN_zy_s_czarny }
 		prerequisite = { focus = EUR_PSN_zy_s_straze }
@@ -696,7 +697,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_administracja_1
 		x = 31
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = EUR_PSN_zarzad }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
 		bypass = { has_country_flag = TFR_zy_k_k_admin }
@@ -714,7 +715,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_defilada_1_psn
 		x = 30
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_k_admin }
 		bypass = { has_country_flag = TFR_zy_k_k_defilada }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -747,7 +748,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_integracja_2_psn
 		x = 31
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_k_defilada }
 		prerequisite = { focus = EUR_PSN_zy_k_opor }
 		bypass = { has_country_flag = TFR_zy_k_k_owoce }
@@ -762,9 +763,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 35
+		x = 34
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zarzad }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
 		bypass = { has_country_flag = TFR_zy_p_p_straty }
@@ -780,9 +781,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 35
+		x = 34
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_p_straty }
 		bypass = { has_country_flag = TFR_zy_p_p_rzad }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -797,9 +798,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_psn_k
-		x = 34
+		x = 33
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_p_rzad }
 		mutually_exclusive = { focus = EUR_PSN_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
@@ -814,9 +815,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_psn_k
-		x = 36
+		x = 35
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_p_rzad }
 		mutually_exclusive = { focus = EUR_PSN_zy_p_rewanz }
 		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
@@ -831,9 +832,9 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2_f
-		x = 35
+		x = 34
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = EUR_PSN_zy_p_rewanz focus = EUR_PSN_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
 		search_filters = { FOCUS_FILTER_POLITICAL }

@@ -1,5 +1,0 @@
-on_actions = {
-	on_startup = {
-		effect = { if = { limit = { country_exists = GER NOT = { has_global_flag = KAL_harmonogram } } set_global_flag = KAL_harmonogram GER = { country_event = { id = kal.101 days = 1 } country_event = { id = kal.108 days = 3 } country_event = { id = kal.102 days = 14 } country_event = { id = kal.105 days = 27 } country_event = { id = kal.103 days = 40 } country_event = { id = kal.104 days = 62 } country_event = { id = kal.106 days = 128 } country_event = { id = kal.109 days = 156 } country_event = { id = kal.107 days = 172 } country_event = { id = kal.110 days = 730 } } } }
-	}
-}

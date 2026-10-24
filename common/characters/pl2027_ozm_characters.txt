@@ -1,0 +1,28 @@
+characters = {
+	OZM_yungwazon = {
+		name = OZM_yungwazon
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OZM/OZM_yungwazon.dds"
+				small = "gfx/leaders/OZM/OZM_yungwazon_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = streamocracy
+			expire = "2065.1.1.1"
+		}
+	}
+	OZM_swiebodzin = {
+		name = OZM_swiebodzin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/OZM/OZM_swiebodzin.dds"
+				small = "gfx/leaders/OZM/OZM_swiebodzin_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+			expire = "2065.1.1.1"
+		}
+	}
+}

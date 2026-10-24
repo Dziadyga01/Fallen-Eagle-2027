@@ -1,0 +1,466 @@
+NRT_atlas = {
+	NRT_g_totalitarian_socialist = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_totalitarian_socialist } clr_country_flag = NRT_otwarte_totalitarian_socialist } else = { set_country_flag = NRT_otwarte_totalitarian_socialist } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_totalism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_totalitarian_socialist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_maoism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_totalitarian_socialist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_left_wing_junta = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_totalitarian_socialist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_neo_stalinism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_totalitarian_socialist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_g_communist = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_communist } clr_country_flag = NRT_otwarte_communist } else = { set_country_flag = NRT_otwarte_communist } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_marxism_leninism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_communist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_eurocommunism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_communist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_trotskyism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_communist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_g_libertarian_socialist = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_libertarian_socialist } clr_country_flag = NRT_otwarte_libertarian_socialist } else = { set_country_flag = NRT_otwarte_libertarian_socialist } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_reformist_socialism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_libertarian_socialist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_left_anarchist = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_libertarian_socialist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_eco_socialism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_libertarian_socialist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_labour_syndicalism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_libertarian_socialist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_g_social_democrat = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_social_democrat } clr_country_flag = NRT_otwarte_social_democrat } else = { set_country_flag = NRT_otwarte_social_democrat } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_social_democracy = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_social_democrat }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_progressivism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_social_democrat }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_green_politics = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_social_democrat }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_left_populism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_social_democrat }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_g_social_liberal = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_social_liberal } clr_country_flag = NRT_otwarte_social_liberal } else = { set_country_flag = NRT_otwarte_social_liberal } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_social_liberalism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_social_liberal }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_centrist = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_social_liberal }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_green_liberalism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_social_liberal }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_g_market_liberal = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_market_liberal } clr_country_flag = NRT_otwarte_market_liberal } else = { set_country_flag = NRT_otwarte_market_liberal } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_classical_liberalism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_market_liberal }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_right_libertarianism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_market_liberal }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_civic_nationalism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_market_liberal }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_g_conservative = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_conservative } clr_country_flag = NRT_otwarte_conservative } else = { set_country_flag = NRT_otwarte_conservative } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_classical_conservatism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_conservative }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_christian_conservatism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_conservative }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_right_populism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_conservative }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_national_conservatism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_conservative }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_patronage_populism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_conservative }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_managerial_conservatism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_conservative }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_g_authoritarian_democrat = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_authoritarian_democrat } clr_country_flag = NRT_otwarte_authoritarian_democrat } else = { set_country_flag = NRT_otwarte_authoritarian_democrat } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_authoritarian_democracy = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_authoritarian_democrat }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_oligarchist = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_authoritarian_democrat }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_military_democracy = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_authoritarian_democrat }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_corporatism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_authoritarian_democrat }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_streamocracy = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_authoritarian_democrat }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_g_nationalist = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_nationalist } clr_country_flag = NRT_otwarte_nationalist } else = { set_country_flag = NRT_otwarte_nationalist } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_autocrat = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_nationalist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_absolute_monarchist = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_nationalist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_military_junta = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_nationalist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_mafia_state = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_nationalist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_theocracy = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_nationalist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_cyberocracy = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_nationalist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_g_fascist = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_fascist } clr_country_flag = NRT_otwarte_fascist } else = { set_country_flag = NRT_otwarte_fascist } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_neofascism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_fascist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_clerofascism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_fascist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_falangism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_fascist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_g_national_socialist = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		cost = 0
+		complete_effect = { if = { limit = { has_country_flag = NRT_otwarte_national_socialist } clr_country_flag = NRT_otwarte_national_socialist } else = { set_country_flag = NRT_otwarte_national_socialist } }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_neonazism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_national_socialist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+	NRT_t_national_bolshevism = {
+		icon = generic_political_discourse
+		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = NRT_otwarte_national_socialist }
+		available = { always = no }
+		cost = 0
+		complete_effect = {  }
+		ai_will_do = { factor = 0 }
+	}
+}

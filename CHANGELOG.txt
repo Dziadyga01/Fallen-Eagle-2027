@@ -2,6 +2,357 @@ THE FALLEN EAGLE 2027 – CHANGELOG
 =================================
 Najnowsza wersja na górze. Wersje „testowe” nie były jeszcze sprawdzone w silniku gry.
 
+The Fallen Eagle Alpha 0.8.9 (wersja testowa) – nazwa moda bez zmian („Godzina Zero – etap II”)
+Podstawa: gałąź wersja-0.8.8 (0.8.8 + Białoruś: siły zbrojne i zaplecze poza mapą).
+
+1. OŻARÓW MAZOWIECKI (OZM) – WŁASNE DRZEWKO „URZĄD I STUDIO” (wg specyfikacji autora z 23.10.2026)
+- OZM nie korzysta już z drzewka generycznego. Nowe drzewko: 75 fokusów.
+  - I. Prolog wspólny (1–9): Godzina Zero, tymczasowy urząd, kablownia, DK92, Bronisze, echo Rzeczypospolitej, kryzys reprezentacji, wejście Świebodzin Records.
+  - II. Republika Ożarowska (10–31): rada nadzwyczajna, budżet kryzysowy, pakt gmin zachodnich;
+    wybór Sejm / Pałac / neutralność (wzajemnie wykluczające się); konstytucja, referendum z trzema wynikami,
+    Twierdza Ożarów, konferencja zachodniego Mazowsza (sojusz bez aneksji), finał „Republika przetrwała”.
+  - III.1 Świebodzin Records (32–44): studio, SERWER, kampanie, koncert, diss, wojna na komentarze, referendum przez serwer
+    (próg 60 zasięgów, więcej zasięgów niż legitymizacji, stabilność ≥ 30%; porażka = kryzys polityczny i możliwość powtórki).
+  - III.2 Rząd Yungwazona (45–51) ALBO III.3 Tajna droga przywołania (52–61) – wzajemnie wykluczające się.
+  - IV. Gospodarka (62–69) i V. Bezpieczeństwo (70–75) – wspólne, odblokowywane w prologu.
+- Koszty: zwykłe fokusy 35 dni, kluczowe 49 dni, trzy finały 70 dni.
+- Wojna: tylko fokus 74 „Wojna o zachodnią bramę” – od fazy IV rozpadu, w pokoju, z celem bez dobrych relacji; bez darmowej aneksji.
+- Panel decyzji „Ożarów: urząd, Bronisze i SERWER” z czterema wskaźnikami:
+  - Legitymizacja administracji (start 55), Zasięgi Records (start 10), Dostawy Bronisz (start 60), Sygnał Świebodzina (ukryty do fokusu 52);
+  - co miesiąc: dostawy maleją, niska stabilność obniża legitymizację, ruch Records zjada zaufanie do urzędu, awarie SERWERA;
+  - przy dostawach poniżej 25 – kryzys na Broniszach; przy legitymizacji i zasięgach poniżej 15 (od marca 2028) – „Nikt nie rządzi Ożarowem”;
+  - decyzje: koncert, singiel, reorganizacja SERWERA, dostawy z Bronisz, debata w urzędzie, naprawa przekaźnika (fabryka cywilna na 30 dni),
+    umocnienia, trzy decyzje medialne, powtórka referendum, „JESZCZE RAZ”, porozumienie regionalne z sąsiadem;
+  - misje: „Bronisze muszą handlować” (60 dni) i „Odzyskać świebodzińską częstotliwość” (60 dni).
+- Rytuał wielkiego odsłuchu: warunki ze specyfikacji (zasięgi ≥ 70, sygnał ≥ 80, fokus 68, rząd Records, brak wojny domowej);
+  trzy etapy z ryzykiem porażki, jedna dodatkowa próba („JESZCZE RAZ”).
+- Zakończenia: Republika Ożarowska / Republika Świebodzin Records (Yungwazon, Strimokracja) / Państwo Świebodzina (Monarchia absolutna).
+- 41 zdarzeń (OZM.1–22 ze specyfikacji i zdarzenia fokusów), 25 duchów narodowych, 3 tagi kosmetyczne z flagami.
+- Fikcja: Yungwazon i Sxmmersosa występują wyłącznie jako postacie satyrycznej alternatywnej historii (z dopiskiem w zdarzeniach) – bez cytatów,
+  bez przypisanych czynów; tytuły wydawnictw służą za nazwy fokusów i zdarzeń. „Świebodzin” to fikcyjna personifikacja miasta.
+- Pseudonim zapisany jako „Sxmmersosa” – znak „$” w tekstach HOI4 otwiera odwołanie do klucza lokalizacji i psuje wyświetlanie.
+
+2. PORTRETY
+- Zdjęcie „Jezus swiebodzin records” przeniesione na personifikację Świebodzina (w 0.8.8 omyłkowo trafiło do Rady Regencyjnej Korony Polskiej,
+  która wraca do dawnego portretu).
+- Yungwazon i Sxmmersosa – sylwetki zastępcze do czasu przesłania portretów z prawami do użycia.
+
+3. PORTRETY – DRUGA PACZKA (23.10, wieczór)
+- 15 nowych zdjęć przywódców (każde pod swoim państwem):
+  - Gmina Lubicz – Zbigniew Bombolewski; Suwalszczyzna – Czesław Renkiewicz (dotąd fikcyjny Waldemar Hańczański);
+  - Zakon Krzyżacki – Frank Bayard (dotąd „Wielki Mistrz Zakonu”); Korona Polska – Grzegorz Braun;
+  - Otwock – Jarosław Margielski (dotąd fikcyjna Marta Świderska); Świecie – Krzysztof Kułakowski (dotąd Rafał Świecki);
+  - Związek Mazurski – Stanisław Mazur (dotąd Katarzyna Giżycka); Gmina Łysomice – Piotr Kowal (dotąd Grzegorz Łysomicki);
+  - Toruń – Maksim Krevienko, Michał Romanowski, Katharina Schmidt-Kowalczyk (imię bez zmian);
+  - Zjednoczona Polska Prawica – Przemysław Czarnek; Konfederacja Północna – Sławomir Mentzen; Warmia i Mazury – Robert Szewczyk.
+- Opisy postaci, które mówiły „Postać fikcyjna”, poprawione: to prawdziwe osoby, fikcją jest ich ścieżka w modzie.
+- Dwa zdjęcia Krzysztofa Kułakowskiego – użyte ostrzejsze.
+
+The Fallen Eagle Alpha 0.8.8 (wersja testowa) – nazwa moda bez zmian („Godzina Zero – etap II”)
+Zmienia się tylko numer wersji (0.8.6 → 0.8.8). Wersja 0.8.8 = repozytorium romanrunner2049/fallen-eagle-2027 (main, 430d489)
++ cała zawartość 0.8.7 „Dwa początki” + nowe portrety + nowe stacje radiowe.
+
+1. ZMIANY FILIKOWSKIEGO (commity „feweks”: 5aecbb3, 4cfc478, 430d489) – ZACHOWANE 1:1
+- Nowe Miasto Lubawskie:
+  - przywódca Filip Orłowski (postać NML_filip_orlowski, portret NML_filip_orlowski_suit.png, subideologia progresywizm);
+  - socjaldemokracja rządzi (poparcie 47%), demokracja autorytarna 7%;
+  - nowa flaga NML.tga; flagi ideologiczne NML usunięte (gra używa jednej flagi);
+  - lokalizacja angielska i polska z imieniem Orłowskiego.
+- Kolor subideologii progresywizm (233, 50, 149).
+- Portrety png: Władimir Putin, Dmitrij Miedwiediew (ROS_medvedev.png), Alaksandr Łukaszenka; stare pliki .dds usunięte.
+- Pliki: postacie ROS/BLR, historia NML i plik postaci NML są bajt w bajt takie jak w commicie 430d489
+  (oprócz zmian 0.8.7 w innych miejscach tych samych folderów).
+- Uwaga: 0.8.7 przy rozpadzie przywraca politykę województw z historii państw – Nowe Miasto Lubawskie wraca więc
+  pod Orłowskiego i socjaldemokrację, a nie pod dawny układ.
+
+2. NOWE PORTRETY PRZYWÓDCÓW (31 zdjęć od autora moda, 38 postaci)
+- Duże portrety 156 × 210 i małe 65 × 67 (głowa i ramiona); ikony fokusów z portretami budowane już z nowych zdjęć.
+- Gdańsk – Aleksandra Dulkiewicz (dotąd „Prezydentka Gdańska”); Gdynia – Aleksandra Kosiorek; Sopot – Magdalena Czarzyńska-Jachim
+  (dotąd „Prezydent Sopotu”); Włocławek – Krzysztof Kukucki; Bydgoszcz – Rafał Bruski (Bydgoszcz i Toruń);
+  Toruń – Michał Zaleski, Paweł Gulewski.
+- Donald Tusk (Sejm, Eurokomisariat Pomorza, IV RP – Sejm); Borys Budka (Eurokomisariat Śląska); Karol Nawrocki (IV RP – prezydent);
+  „Słowik” (Mafia Pruszkowska, IV RP); Daniel Obajtek (Płock); Maja Staśko; CyberJarek; Kibic Legii; Policja; Wojsko.
+- Nowe imiona (zdjęcie pokazuje konkretną osobę; ścieżki tych postaci są fikcją):
+  - Komisarz Zarządu Tymczasowego Pomorza → Ursula von der Leyen;
+  - Marszałkini Seniorka (Sejm) → Włodzimierz Czarzasty (tekst opcji prl.21 i opis ducha „Marszałek” dopasowane);
+  - Naczelnik Sztabu Programowego (frakcja ZPP „Państwo menedżerów”) → Mateusz Morawiecki;
+  - Jerzy Semaforski (Holding Kolejowy) → „Zarząd PKP” (portret: logo).
+- Korona Polska – Rada Regencyjna: figura Chrystusa Króla (Świebodzin).
+- Zagranica i wschód: Gitanas Nausėda, Petr Pavel, Wałerij Załużny (przywódca i generał), Siergiej Szojgu, Natalia Pokłonska,
+  Julia Nawalna, Lew Szlosberg, gen. Maciej Maciak.
+
+3. PIĘĆ NOWYCH STACJI RADIOWYCH (osobne mody, jak „Radio Kryzys”)
+- odNOVA FM – polski pop i przeboje radiowe (28 nagrań, w tym blok reklamowy stacji);
+- Beton 102.7 – polski rap, „Miasto nigdy nie milczy” (29);
+- Discobox FM – disco polo i bałkańskie hity (18);
+- Petrovox – Petrol FM – polski rock i klasyka lat 80. i 90. (33);
+- Etaż 77 – Kaliningrad FM – rosyjski pop i estrada z obwodu królewieckiego (40; teledysk Nautilusa zamieniony na ścieżkę dźwiękową).
+- Każda stacja ma kafelek z logo (zwykły i wybrany, ramka w kolorze stacji), miniaturę w launcherze i listę utworów w README.
+- Audio: Ogg Vorbis 44,1 kHz stereo, bez metadanych, głośność wyrównana (EBU R128, −16 LUFS).
+- Podstawa użycia: oświadczenie autora moda (22.10.2026), że ma prawa do nagrań i logotypów.
+- Pominięty 1 plik: „Honor – Narodowy Socjalizm” (utwór zespołu RAC gloryfikujący nazizm) – nie trafia do moda niezależnie od praw.
+
+4. BIAŁORUŚ – SIŁY ZBROJNE I ZAPLECZE POZA MAPĄ (poprawka z 22.10)
+- Dotąd Białoruś nie mogła zbudować armii: na mapie ma tylko obwody brzeski i grodzieński (3 fabryki), bez technologii, szablonów i jednostek.
+- Fabryki poza mapą (jak u rządu na emigracji): 5 cywilnych i 4 wojskowe – przemysł Mińska, Homla, Mohylewa i Witebska.
+- Duch „Kraj poza mapą” (+10% poboru), 30 tys. rekrutów na start.
+- Nowe fokusy w drzewku Białorusi (gałąź „Zarząd i sprawy bieżące” – w tym modzie decyzje są fokusami), każdy 3 razy (I–III):
+  - „Pobór w obwodach wschodnich” – 25 PP, +15 000 ludzi (AI bierze je głównie w czasie wojny i przy małej puli rekrutów);
+  - „Zamówienia w zakładach MAZ i BiełAZ” – 30 PP, 60 ciężarówek i 100 sprzętu wsparcia.
+- Technologie startowe jak u państw polskich, szablony „Brygada Zmechanizowana BY” i „Brygada Piechoty BY”, 5 brygad na start (Brześć, Grodno).
+
+5. TECHNICZNE
+- Nowe kroki budowy: gen_liderzy_088.py (portrety, po remaster/portrety.py), gen_feweks_088.py (zmiany Filikowskiego,
+  po loc_mirror, przed gen_rozpad), radio_nowe_088.py + gen_radio.py nowa:<id> (stacje).
+- gen_radio.py: dla nowych stacji można ustawić dopasowanie okładki (logo na białym tle), jakość Vorbis i licencję w README.
+
+The Fallen Eagle Alpha 0.8.7 (wersja testowa) – „Dwa początki”
+1. DWA POCZĄTKI KAMPANII
+- Dwa scenariusze na ekranie wyboru:
+  - „Godzina Zero – 22 października 2027”:
+    - Polska jest jednym państwem, a gracz prowadzi rząd centralny (Rzeczpospolita Polska, POL);
+    - regiony są województwami, w tym Eurokomisariaty Pomorza i Śląska oraz Eurostaat Posen.
+  - „11 listopada 2027” (domyślny): Polska jest już podzielona.
+- Oba starty dzielą ten sam świat.
+  - Na starcie listopadowym od razu rusza wspólny „start regionalny”, który zbiera efekty startowe 8 modułów:
+    - fazy rozpadu i panel kryzysu;
+    - kampania Torunia;
+    - kalendarz wydarzeń;
+    - wpływy w Warszawie i zależności bloków stolicy;
+    - Eurostaat Posen;
+    - strategie AI i frakcje ZPP.
+  - W starcie październikowym ten sam start regionalny rusza dopiero 11.11, po Godzinie Zero.
+- Start listopadowy nie uruchamia żadnego zdarzenia prologu.
+- W czasie prologu stoją:
+  - takty miesięczne, tygodniowe i dzienne modułów regionalnych;
+  - zdarzenia losowe (MTTH);
+  - pierwsze fokusy wszystkich drzewek.
+  Dzięki temu 11.11 świat jest ten sam w obu startach. Decyzje z października zostają zapamiętane (flagi, duchy, relacje).
+- Zasada gry „Scenariusz startowy” (0.8.6) usunięta – scenariusz wybiera się na ekranie wyboru.
+- Nowa zasada „Start 11.11: gdzie jest Donald Tusk”: Sejm / Eurokomisariat Pomorza / losowo.
+- Nowe obrazy scenariuszy: mapa jednej Rzeczypospolitej (22.10.2027) i mapa podzielonej Polski (11.11.2027).
+
+2. PROLOG (20 DNI): REFERENDA, AFERY, SECESJE
+- 15 regionów zgłasza żądania, rozłożone na dni 2–13. Każde żądanie:
+  - ma nazwę, opis, koszt porozumienia i licznik do eskalacji (misja, 5–8 dni);
+  - pokazuje lojalność regionu.
+- Reakcje rządu:
+  - negocjacje – 30–85 PP; cena rośnie po aferach i po odwlekaniu, a spada przy lojalnym regionie;
+  - referendum – 50–70 PP; wynik zależy od zaufania społecznego i lojalności regionu;
+  - ustępstwa autonomiczne – 20–30 PP; region dostaje własny kolor na mapie, a administracja słabnie;
+  - odwlekanie – 10 PP, raz na region; dodaje drugą, 4-dniową rundę z wyższą ceną.
+- Gdy rząd nie odpowie:
+  - region z lojalnością co najmniej 50 czeka na Godzinę Zero bez umowy (bez kar);
+  - region mniej lojalny eskaluje: ogłasza samorząd bez zgody Warszawy;
+  - spada zaufanie, poparcie i administracja;
+  - sąsiedzi szybciej stawiają własne żądania (efekt domina).
+- Budżet władzy politycznej (120 PP na starcie, przyrost, fokusy i rezerwy – razem ok. 250–320 PP) nie wystarcza na wszystkie porozumienia (pełna cena ok. 700 PP).
+- 4 wskaźniki prologu: zaufanie, poparcie rządu, sprawność administracji, rezerwy państwa.
+  - Poparcie zmienia przyrost władzy politycznej rządu, a zaufanie – stabilność (modyfikator).
+- 6 fikcyjnych afer, z których w każdej grze pojawiają się 4: taśmy, paliwo, lista wojewodów, fundusz odbudowy, podsłuchy, energetyka.
+  - Każda ma 2–3 opcje o różnych skutkach dla zaufania, poparcia, kosztu porozumień i lojalności konkretnych regionów.
+- Obowiązkowe secesje (referenda ich nie zatrzymują):
+  - Eurokomisariat Pomorza – dzień 6;
+  - Eurokomisariat Śląska – dzień 11;
+  - Eurostaat Posen pod Niemcami – dzień 15.
+  Warunki rozdziału (umowa, protest, rozmowy o przyszłości albo kontrakt) zmieniają:
+  - rezerwy;
+  - relacje z następcami;
+  - dostępność europejskiego projektu odbudowy.
+- Krótkie drzewko „Rząd w kryzysie zaufania”: 8 fokusów po 7 dni; w 20 dni zmieszczą się 2–3.
+- Decyzje rządu: konferencja premiera, pakiet dla samorządów, rezerwy strategiczne.
+- Gracz grający województwem może zaostrzyć żądania albo je wycofać w zamian za gwarancje.
+- Godzina Zero (11.11) – bilans prologu ustala start regionalny:
+  - co najmniej 4 porozumienia (umowy i wygrane referenda), najwyżej 6 eskalacji i średnia zaufania, poparcia i administracji co najmniej 30:
+    Sejm zachowuje Śródmieście i przyłącza Ożarów; duch „Państwo, które przetrwało”; 1500 sztuk broni strzeleckiej;
+  - 10 lub więcej eskalacji albo średnia poniżej 22: duch „Państwo z papieru”;
+  - w pozostałych przypadkach: „Administracja w rozsypce”;
+  - regiony dostają duchy według wyniku: umowa z Warszawą, mandat referendalny, mandat niepodległości, autonomia z umowy albo gorączka secesji;
+  - zmieniają się relacje z Sejmem oraz startowe wskaźniki kryzysu (jedność, samorządy, zaufanie, gospodarka).
+  - Model (raport testów B1): rząd bierny – zawsze najgorszy wynik; aktywny gracz – najlepszy w ok. 44% gier, środkowy w pozostałych. To model, nie test w grze.
+- Gracz grający Polską:
+  - po każdej secesji eurokomisariatu może zostać przy rządzie albo przejąć eurokomisariat;
+  - 11.11 wybiera: Sejm w Warszawie, Eurokomisariat Pomorza albo Eurokomisariat Śląska.
+  - Przejęcie działa zdarzeniem (bez konsoli) i następuje przed likwidacją Rzeczypospolitej.
+  - Rzeczpospolita znika dopiero po przekazaniu Śródmieścia; nie ma własnej armii, więc nic się nie dubluje.
+  - Rezerwy przechodzą na Sejm jako sprzęt.
+
+3. DONALD TUSK, EUROKOMISARIATY, SEJM
+- Po secesji Pomorza rząd wybiera:
+  - Tusk zostaje w Sejmie albo jedzie do Szczecina;
+  - jeśli wyjedzie – Sejm wybiera następcę: Prezydium Sejmu, Marszałkini Seniorka albo Rada Ocalenia Państwa (postacie fikcyjne lub zbiorowe).
+- Jedna postać Tuska naraz:
+  - w prologu Sejmem kieruje Komendant Straży Marszałkowskiej;
+  - Tuska rekrutuje albo Sejm (SMR_leader), albo Eurokomisariat (PMN_tusk) – nigdy oba.
+- Pomorze Zachodnie: „Eurokomisariat Pomorza” (Szczecin).
+- Śląsk: „Eurokomisariat Śląska” – Dolny Śląsk, Opolszczyzna i południe Ziemi Lubuskiej; ośrodek we Wrocławiu.
+  - Górny Śląsk nie należy do Eurokomisariatu.
+  - Na czele stoi Borys Budka (portret-sylwetka).
+- Oba eurokomisariaty:
+  - są niepodległe (już nie są marionetkami Niemiec);
+  - mają ducha „Eurokomisariat” i wskaźnik zależności od instytucji UE;
+  - mają nowe drzewka (Pomorze 29 własnych fokusów, Śląsk 23 – plus gałęzie wspólne moda).
+- Eurostaat Posen pozostaje protektoratem Niemiec.
+- Pomorze z Tuskiem – „Europejska Rzeczpospolita Polska” (nazwa robocza):
+  - Europejski mandat;
+  - Rada Regionów – panel ofert stowarzyszenia;
+  - pomoc z warunkami;
+  - wspólne instytucje;
+  - spór o zależność od Unii (3 wybory);
+  - konwent;
+  - federacja przez negocjacje i ratyfikację;
+  - zaproszenie Sejmu.
+- Pomorze bez Tuska: zarząd komisaryczny – euroregion albo samodzielność.
+- Trójmiasto zostaje osobne. Szczecin może tylko zaproponować stowarzyszenie (bez nakładania się właścicieli).
+- Śląsk z Budką:
+  - Zagłębie Miedziowe, Odra, Wałbrzych;
+  - statut, Opolszczyzna, pytanie o Górny Śląsk;
+  - „Oś Odry” z Pomorzem – współpraca bez łączenia państw;
+  - wybór „odbudowa bez Warszawy” albo „most do Sejmu”;
+  - obrona Sudetów.
+- Sejm z Tuskiem – nowa gałąź w drzewku Straży Marszałkowskiej (10 fokusów):
+  - negocjacje z regionami i zaopatrzenie stolicy;
+  - walka o legalność oraz rywalizacja z Pałacem i Pruszkowem;
+  - most powietrzny z Brukseli i Rada Regionów;
+  - Konstytucja Odrodzenia, odbudowa Polski, Zjednoczona Warszawa.
+- Sejm bez Tuska: gałąź następców (7 fokusów).
+
+4. POKOJOWE UNIE I „INTEGRACJA REGIONÓW”
+- Nowa kategoria decyzji „Integracja regionów”.
+- Unia Bydgosko-Toruńska ma pełną procedurę:
+  - propozycja rozmów;
+  - odpowiedź partnera: rozmowy, tylko pakt albo odmowa;
+  - negocjacje 5 warunków: forma (pakt / federacja / połączenie), stolica (Toruń / Bydgoszcz / dwie), instytucje, dowództwo, autonomia;
+  - jedna kontrpropozycja: stolica, federacja zamiast połączenia albo tylko pakt;
+  - osobna ratyfikacja każdej strony;
+  - integracja: 60 dni dla federacji, 90 dla połączenia;
+  - na koniec gra sprawdza istnienie obu stron, ważne ratyfikacje, brak wojny i brak cudzego zwierzchnika.
+- Odmowa na każdym etapie zostawia oba państwa niepodległe; kolejna propozycja jest możliwa po 180 dniach.
+- Usunięte jednostronne tworzenie unii:
+  - met.55 (zgoda oznaczała aneksję przez silniejszego);
+  - opcje „zgoda” w tr2.76/77/79, byd2.80/81/82 i trn.6 – teraz oznaczają wyłącznie zgodę na rozmowy.
+- Federacja Kujawsko-Pomorska z drzewka Torunia wymaga zawartej unii albo kontroli Bydgoszczy.
+- AI decyduje według:
+  - relacji;
+  - zagrożenia (wojna sąsiada, faza IV, niska stabilność, operacja rosyjska);
+  - zgodności ideologii;
+  - warunków (stolica u siebie, forma, autonomia, napięcie w metropolii).
+- Zmiana partii rządzącej unieważnia zgody i ratyfikacje, a nowy rząd głosuje ponownie.
+- Blokady przed równoległymi procesami: jedno państwo uczestniczy w jednym procesie naraz.
+- Zawieszone rozmowy wygasają po 120–150 dniach.
+- Takt miesięczny sprząta procesy z nieistniejącymi uczestnikami.
+- 6 projektów wielostronnych:
+  - Państwo Kujawsko-Pomorskie – 129 regionów województwa:
+    - propozycja wymaga 2 z 3 miast (Toruń, Bydgoszcz, Włocławek);
+    - nowa nazwa wymaga 75% województwa i wszystkich trzech miast;
+  - Federacja Trójmiejska;
+  - Państwo Warmińsko-Mazurskie;
+  - Federacja Północno-Wschodnia (pakt albo federacja);
+  - Zjednoczona Warszawa – od fazy III, przy wpływach co najmniej 45;
+  - Europejska Rzeczpospolita Polska – inicjator: Pomorze albo Sejm.
+  Zasady wszystkich projektów:
+  - każdy niezależny uczestnik decyduje osobno: zgoda, tylko jako autonomia, tylko pakt albo odmowa;
+  - potem jest osobna ratyfikacja i integracja z końcową kontrolą.
+- Federacja oznacza podmiot z autonomią. Wyjątek dodany w zasadzie „zakaz marionetek” i w poziomach autonomii.
+- Podbój jest osobną mechaniką: decyzja „Odbudowa administracji na przyłączonych ziemiach” (120 dni, 60 PP, bez wojny) daje rdzenie dopiero po odbudowie.
+
+5. ZJEDNOCZONA POLSKA PRAWICA (dawniej „Zjednoczona Rzeczpospolita”, Lublin)
+- Zmiana nazwy w danych państw, drzewku, opisach i na ekranie wyboru.
+- Trzy frakcje z wpływami 0–100: Maślarze, Harcerze, CyberJarek.
+  - Start: 36 / 34 / 0.
+  - Wpływy zmieniają się co miesiąc i przez 4 decyzje panelu.
+  - Modyfikator „Frakcje” pokazuje napięcie.
+- CyberJarek ma wprowadzenie fabularne:
+  - szafa serwerowa z Nowogrodzkiej → „głos z serwerowni” → robot w szarym garniturze;
+  - opisany jako satyryczna postać fikcyjna.
+- Kongres partii:
+  - możliwy od lutego 2028 przy wpływach co najmniej 55–60 i prowadzeniu;
+  - bez przewagi kończy się kompromisem;
+  - nikt nie wygrywa na starcie.
+- Każda ścieżka ma:
+  - nową subideologię: Populizm klientelistyczny, Konserwatyzm menedżerski albo Cyberkratyzm;
+  - przywódcę i ducha;
+  - 6–7 fokusów;
+  - skutki w polityce zagranicznej:
+    - Maślarze – patronat nad konserwatywnymi sąsiadami, wrogość wobec projektu europejskiego;
+    - Harcerze – pragmatyczne układy (także z Sejmem), fundusze bez federacji;
+    - CyberJarek – technologiczne podporządkowanie sąsiadów (oferta systemu), izolacja.
+
+6. ATLAS NURTÓW POLITYCZNYCH
+- Nowy panel decyzji dla każdego państwa polskiego.
+- 11 grup ideologicznych rozwijanych przełącznikami.
+- 43 subideologie, także te, które nigdzie nie rządzą. Każdy wpis zawiera:
+  - grupę i nazwę;
+  - opis i cechy ustroju;
+  - efekty mechaniczne;
+  - przywódców w świecie moda (lista budowana z plików postaci);
+  - wyjaśnienie, czym jest partia.
+- Efekty działają naprawdę: modyfikator „Nurt rządzący” liczony co miesiąc z subideologii przywódcy (5 parametrów).
+
+7. OPERACJA MAZURSKA I BLOKADA ROSJI
+- Operacja najwcześniej w lutym 2028.
+- Jasne warunki, pokazane w panelu obrońców:
+  - zwycięstwo Rosji: co najmniej 75% regionów celu i wszystkie trzy stolice przez 4 kolejne tygodnie;
+  - klęska Rosji: utrata Królewca, poparcie dla wojny < 5%, po 300 dniach < 40% kontroli albo koniec walk bez zdobyczy.
+- Usunięty warunek „zwycięstwa przez brak wojny” – rozejm nie jest już zwycięstwem.
+- Żadne zdarzenie nie wymusza kapitulacji obrońców.
+- Panel „Obrona Warmii, Mazur i Suwalszczyzny”, od fazy II:
+  - Linia Wielkich Jezior (45 dni budowy);
+  - mobilizacja rezerw (2 dywizje OT);
+  - magazyny i ochrona zaopatrzenia (30 dni);
+  - obrona w lasach i na bagnach;
+  - wspólne dowództwo (sojusz przed wojną);
+  - rozpoznanie.
+- Białystok: ochotnicy dla zaatakowanych sąsiadów i korytarz zaopatrzenia.
+  - Przystąpienie do wojny obronnej jest fokusem w drzewku Białegostoku; ścieżka neutralna wyklucza się z nim.
+- Do zwycięstwa w operacji Rosja nie może prowadzić innych podbojów:
+  - fokusy i decyzje wojenne Rosji wymagają zwycięstwa;
+  - modyfikator „Priorytet: operacja mazurska”: uzasadnianie celów wojennych ×11, ochotnicy wstrzymani.
+  - Obrona, produkcja, logistyka i kryzysy działają normalnie.
+- Rozejm, zmiana przywódcy ani przerwa w walkach nie zdejmują blokady.
+- Po klęsce Rosja:
+  - dostaje ducha „Odbudowa po Mazurach” (365 dni);
+  - po roku może raz spróbować drugiej operacji (cel ten sam, 6 dywizji zamiast 11).
+
+8. TEMPO
+- Czasy fokusów (poza kampanią Torunia, Bydgoszczy, prologiem i Rosją):
+  - 7 dni → 7 dni (reakcje kryzysowe);
+  - 14–28 dni → 35;
+  - 35 → 42;
+  - 42–49 → 49;
+  - 56–63 → 56;
+  - 70 → 70.
+- Fokusy wojenne wymagają:
+  - pokoju;
+  - braku ducha „Odbudowa po wojnie” (180 dni po każdej aneksji);
+  - nie bycia małym państwem.
+- Fazy I–III: uzasadnianie celów wojennych +1000%.
+- Małe państwa (do 3 regionów, poza Toruniem, Bydgoszczą i blokami Warszawy):
+  - +500% do uzasadniania celów wojennych;
+  - blokada fokusów wojennych, także w drzewku generycznym;
+  - panel „Małe państwo”: urząd, fundusz gminny, straż obywatelska, neutralność, obrona granicy, prośba o ochronę.
+- Walki o Warszawę mają osobny harmonogram: fokusy wojenne bloków od fazy III i najwcześniej w lutym 2028. Operacja rosyjska ma własny.
+
+9. GAŁĘZIE FABULARNE (drzewka, które były szablonami)
+- Gdańsk: port, Hanza, Sala BHP, Westerplatte, Wolne Miasto (10 fokusów).
+- Gdynia: flota z Oksywia, piechota morska, Akademia Morska, Republika Morska (10).
+- Sopot: kasyna, bankowość, neutralność, mediacje w Grand Hotelu, gwarancje sąsiadów – bez armii (10).
+- Kancelaria Prezydenta i SOP: dekrety, Modlin, uznanie z zagranicy, prezydent ponad frakcjami (7).
+- Mafia Pruszkowska: czarny rynek, ochrona, paliwo, kibice na kontraktach, Rada Rodzin (8).
+- Policja: punkty kontrolne, wydział przeciw Pruszkowowi; wybór Sejm albo „policja sama sobie” (7).
+- Kibice Legii: Żyleta, stadion-twierdza, wybór patrona, Legion Łazienkowskiej (7).
+- Warmia i Mazury (Olsztyn): sztab obrony, uniwersytet, węzeł kolejowy, projekt warmińsko-mazurski (7).
+- Mazury (Giżycko): Twierdza Boyen, flotylla jezior, leśni ludzie, mosty do wysadzenia (7).
+- Suwalszczyzna: przesmyk, współpraca z Litwą, dostawy przez Kowno, Brama Północy (7).
+- Białystok: granica z Białorusią (przemytnicy uzbrojeni i wspierani przez służby, przemycani ludzie jako ofiary), pomoc humanitarna, wsparcie sąsiadów albo neutralność (8).
+- Do tego nowe drzewka eurokomisariatów, gałęzie Sejmu i ZPP (pkt 3 i 5).
+
+10. NAPRAWY I PORZĄDKI
+- Opisy Eurostaatów w menu i wydarzeniach Warszawy zaktualizowane (eurokomisariaty).
+- Cytat przypisany prawdziwemu politykowi w drzewku Lublina zastąpiony opisem bez cudzysłowu.
+- Nowe panele decyzji zostają decyzjami (nie są przenoszone do drzewek).
+- Narzędzie kontroli check_087.py: kontrole plików i modele prologu, unii, operacji i tempa.
+
 The Fallen Eagle Alpha 0.8.6 (wersja testowa) – „Godzina Zero”, etap II (finalizacja)
 1. DYNAMICZNY ROZPAD – GRA ZACZYNA SIĘ JAKO JEDNO PAŃSTWO
 - Nowa zasada gry „Scenariusz startowy” (ekran „Zasady gry”):

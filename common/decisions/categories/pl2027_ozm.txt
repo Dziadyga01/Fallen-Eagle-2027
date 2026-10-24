@@ -1,0 +1,6 @@
+OZM_panel = {
+	icon = generic_civil_support
+	allowed = { original_tag = OZM }
+	visible = { has_country_flag = OZM_panel }
+	priority = 90
+}

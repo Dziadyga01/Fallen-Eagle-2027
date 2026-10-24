@@ -1,0 +1,21 @@
+add_namespace = mal
+
+country_event = {
+	id = mal.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = mal.1.t
+	desc = mal.1.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	trigger = { country_exists = FROM }
+	option = {
+		name = mal.1.a
+		ai_chance = { factor = 10 modifier = { factor = 0.3 has_war = yes } modifier = { factor = 2 has_opinion = { target = FROM value > 0 } } }
+		give_guarantee = FROM add_opinion_modifier = { target = FROM modifier = MAL_gwarancja_op } FROM = { add_opinion_modifier = { target = ROOT modifier = MAL_gwarancja_op } }
+	}
+	option = {
+		name = mal.1.b
+		ai_chance = { factor = 5 }
+		FROM = { add_opinion_modifier = { target = ROOT modifier = MAL_odmowa_op } }
+	}
+}

@@ -1,0 +1,6 @@
+MAL_kat = {
+	icon = generic_civil_support
+	allowed = { has_country_flag = PL2027_polska }
+	visible = { PL2027_male_panstwo = yes }
+	priority = 70
+}

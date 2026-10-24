@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		PL2027_odbudowa_po_wojnie = {
+			picture = generic_infantry_bonus
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				production_speed_buildings_factor = 0.05
+				justify_war_goal_time = 1.0
+			}
+		}
+	}
+}

@@ -1,0 +1,238 @@
+ideas = {
+	country = {
+		OZM_paraliz = {
+			picture = DU_OZM_paraliz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.2
+			}
+		}
+		OZM_urzad_tymczasowy = {
+			picture = DU_OZM_urzad_tymczasowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = -0.05
+			}
+		}
+		OZM_brama = {
+			picture = DU_OZM_brama
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				army_core_defence_factor = 0.05
+			}
+		}
+		OZM_neutralnosc = {
+			picture = DU_OZM_neutralnosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.1
+				trade_opinion_factor = 0.1
+			}
+		}
+		OZM_samorzad = {
+			picture = DU_OZM_samorzad
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				conscription_factor = -0.05
+			}
+		}
+		OZM_republika = {
+			picture = DU_OZM_republika
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.05
+			}
+		}
+		OZM_straz = {
+			picture = DU_OZM_straz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.05
+				production_factory_max_efficiency_factor = -0.03
+			}
+		}
+		OZM_patrole = {
+			picture = DU_OZM_patrole
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				consumer_goods_factor = 0.02
+			}
+		}
+		OZM_bronisze = {
+			picture = DU_OZM_bronisze
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				trade_opinion_factor = 0.05
+			}
+		}
+		OZM_nie_chicago = {
+			picture = DU_OZM_nie_chicago
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				trade_opinion_factor = -0.05
+			}
+		}
+		OZM_minister_kultury = {
+			picture = DU_OZM_minister_kultury
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = 0.02
+			}
+		}
+		OZM_nigdy_wiecej = {
+			picture = DU_OZM_nigdy_wiecej
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.03
+			}
+		}
+		OZM_serwer_kraj = {
+			picture = DU_OZM_serwer_kraj
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.03
+			}
+		}
+		OZM_topka = {
+			picture = DU_OZM_topka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+		OZM_swiebodzin_idea = {
+			picture = DU_OZM_swiebodzin_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				war_support_factor = 0.1
+				stability_factor = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		OZM_kultura = {
+			picture = DU_OZM_kultura
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.03
+			}
+		}
+		OZM_toksyczny_smog = {
+			picture = DU_OZM_toksyczny_smog
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.05
+				stability_factor = -0.02
+			}
+		}
+		OZM_topka_ochotnicy = {
+			picture = DU_OZM_topka_ochotnicy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+			}
+		}
+		OZM_budzet_kryzysowy = {
+			picture = DU_OZM_budzet_kryzysowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		OZM_sluzby = {
+			picture = DU_OZM_sluzby
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_core_defence_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		OZM_tranzyt = {
+			picture = DU_OZM_tranzyt
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		OZM_koszty_nadajnika = {
+			picture = DU_OZM_koszty_nadajnika
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.04
+			}
+		}
+		OZM_hala_propaganda = {
+			picture = DU_OZM_hala_propaganda
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = 0.03
+			}
+		}
+		OZM_rzad_technokratow = {
+			picture = DU_OZM_rzad_technokratow
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		OZM_rzad_wyborczy = {
+			picture = DU_OZM_rzad_wyborczy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+			}
+		}
+		OZM_rzad_kryzysowy = {
+			picture = DU_OZM_rzad_kryzysowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.08
+				stability_factor = -0.02
+			}
+		}
+	}
+}

@@ -129,36 +129,3 @@ country_event = {
 		add_war_support = 0.05
 	}
 }
-
-country_event = {
-	id = met.55
-	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
-	title = met.55.t
-	desc = met.55.d
-	picture = GFX_pl2027_ev081_gospodarka_1
-	is_triggered_only = yes
-	option = {
-		name = met.55.a
-		ai_chance = { factor = 40 modifier = { factor = 2 check_variable = { global.MET_napiecie < 15 } } }
-		custom_effect_tooltip = MET_tt_3 hidden_effect = { set_global_flag = MET_rozstrzygniete if = { limit = { country_exists = TRN country_exists = BYD check_variable = { global.MET_trn_obszary > global.MET_byd_obszary } } TRN = { annex_country = { target = BYD transfer_troops = yes } set_cosmetic_tag = MET_FEDERACJA } } else_if = { limit = { country_exists = TRN country_exists = BYD check_variable = { global.MET_byd_obszary > global.MET_trn_obszary } } BYD = { annex_country = { target = TRN transfer_troops = yes } set_cosmetic_tag = MET_FEDERACJA } } else_if = { limit = { FROM = { exists = yes } } FROM = { annex_country = { target = ROOT transfer_troops = yes } set_cosmetic_tag = MET_FEDERACJA } } }
-	}
-	option = {
-		name = met.55.b
-		ai_chance = { factor = 60 }
-		clr_global_flag = MET_fed_oczekuje custom_effect_tooltip = MET_tt_4 hidden_effect = { add_to_variable = { global.MET_napiecie = 20 } MET_przelicz = yes } FROM = { country_event = { id = met.57 } }
-	}
-}
-
-country_event = {
-	id = met.57
-	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
-	title = met.57.t
-	desc = met.57.d
-	picture = GFX_pl2027_ev081_wisla_3
-	is_triggered_only = yes
-	option = {
-		name = met.57.a
-		ai_chance = { factor = 1 }
-		add_stability = -0.02
-	}
-}

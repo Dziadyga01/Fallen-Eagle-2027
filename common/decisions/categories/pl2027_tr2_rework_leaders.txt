@@ -1,0 +1,41 @@
+TR2RW_panel_gul = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TR2RW_gul_wladza }
+	priority = 85
+}
+
+TR2RW_panel_zal = {
+	icon = generic_construction
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TR2RW_zal_wladza }
+	priority = 85
+}
+
+TR2RW_panel_rom = {
+	icon = generic_civil_support
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TR2RW_rom_wladza }
+	priority = 85
+}
+
+TR2RW_panel_kow = {
+	icon = generic_political_discourse
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TR2RW_kow_wladza }
+	priority = 85
+}
+
+TR2RW_panel_kre = {
+	icon = generic_civil_support
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TR2RW_kre_wladza }
+	priority = 85
+}
+
+TR2RW_panel_ela = {
+	icon = generic_operation
+	allowed = { original_tag = TRN }
+	visible = { has_country_flag = TR2RW_ela_wladza }
+	priority = 85
+}

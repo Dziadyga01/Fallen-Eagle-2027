@@ -23,7 +23,7 @@ autonomy_state = {
 	}
 	ai_subject_wants_higher = { factor = 0 }
 	ai_overlord_wants_lower = { factor = 0 }
-	allowed = { OR = { has_country_flag = ROZ_wojewodztwo has_country_flag = ROZ_autonomia has_country_flag = ROZ_lojalny original_tag = POL } }
+	allowed = { OR = { has_country_flag = ROZ_wojewodztwo has_country_flag = ROZ_autonomia has_country_flag = ROZ_lojalny has_country_flag = UNI_federacja original_tag = POL original_tag = PMN original_tag = SMR } }
 	can_take_level = { always = no }
 	can_lose_level = { always = no }
 }
@@ -52,7 +52,7 @@ autonomy_state = {
 	}
 	ai_subject_wants_higher = { factor = 0 }
 	ai_overlord_wants_lower = { factor = 0 }
-	allowed = { OR = { has_country_flag = ROZ_wojewodztwo has_country_flag = ROZ_autonomia has_country_flag = ROZ_lojalny original_tag = POL } }
+	allowed = { OR = { has_country_flag = ROZ_wojewodztwo has_country_flag = ROZ_autonomia has_country_flag = ROZ_lojalny has_country_flag = UNI_federacja original_tag = POL original_tag = PMN original_tag = SMR } }
 	can_take_level = { always = no }
 	can_lose_level = { always = no }
 }

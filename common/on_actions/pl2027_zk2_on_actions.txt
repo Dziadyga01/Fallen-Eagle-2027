@@ -3,6 +3,6 @@ on_actions = {
 		effect = { if = { limit = { country_exists = ZKR } ZKR = { add_dynamic_modifier = { modifier = ZKR_rozciagniecie } ZKR_policz_ekspansje = yes } } }
 	}
 	on_monthly_ZKR = {
-		effect = { ZKR_policz_ekspansje = yes if = { limit = { check_variable = { ZKR_obce > 15 } NOT = { has_country_flag = ZKR_opor_cd } } set_country_flag = { flag = ZKR_opor_cd days = 120 } country_event = { id = zk2.1 days = 3 } } }
+		effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } }  ZKR_policz_ekspansje = yes if = { limit = { check_variable = { ZKR_obce > 15 } NOT = { has_country_flag = ZKR_opor_cd } } set_country_flag = { flag = ZKR_opor_cd days = 120 } country_event = { id = zk2.1 days = 3 } }  } }
 	}
 }

@@ -1,0 +1,7 @@
+PRL_rzad_mod = {
+	icon = GFX_idea_PRL_rzad_mod
+	enable = { always = yes }
+	remove_trigger = { NOT = { has_global_flag = PL2027_prolog } }
+	political_power_gain = PRL_mod_pp
+	stability_factor = PRL_mod_stab
+}

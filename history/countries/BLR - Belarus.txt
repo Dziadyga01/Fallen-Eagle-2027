@@ -25,3 +25,39 @@ promote_character = BLR_lukaszenka
 set_variable = { BLR_niezaleznosc = 35 }
 set_variable = { BLR_stabilnosc = 60 }
 add_ideas = BLR_panstwo_zwiazkowe
+oob = "BLR_2027"
+set_technology = {
+	army_uniform = 1
+	basic_fortification_tech = 1
+	basic_machine_tools = 1
+	basic_train = 1
+	construction1 = 1
+	excavation1 = 1
+	infantry_training = 1
+	light_artillery = 1
+	light_artillery1 = 1
+	light_artillery2 = 1
+	light_artillery3 = 1
+	light_artillery_upgrade1 = 1
+	melee_weapons = 1
+	nsb_bicycle = 1
+	nsb_truck_1 = 1
+	nsb_truck_2 = 1
+	nsb_truck_3 = 1
+	nsb_truck_4 = 1
+	post_collapse_assesment = 1
+	ranged_weapons = 1
+	ranged_weapons1 = 1
+	ranged_weapons2 = 1
+	ranged_weapons3 = 1
+	ranged_weapons_upgrade = 1
+	ranged_weapons_upgrade1 = 1
+	ranged_weapons_upgrade2 = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_support = 1
+}
+add_offsite_building = { type = industrial_complex level = 5 }
+add_offsite_building = { type = arms_factory level = 4 }
+add_manpower = 30000
+add_ideas = BLR_zaplecze_kraju

@@ -1,0 +1,65 @@
+ideas = {
+	country = {
+		ROS_odbudowa_po_mazurach = {
+			picture = DU_ROS_odbudowa_po_mazurach
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.08
+				war_support_factor = -0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		OBR_rezerwy = {
+			picture = DU_OBR_rezerwy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.05
+				consumer_goods_factor = 0.03
+			}
+		}
+		OBR_zaopatrzenie = {
+			picture = DU_OBR_zaopatrzenie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.12
+				army_org_factor = 0.03
+			}
+		}
+		OBR_teren = {
+			picture = DU_OBR_teren
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+			}
+		}
+		OBR_dowodztwo = {
+			picture = DU_OBR_dowodztwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.15
+				army_org_factor = 0.04
+			}
+		}
+		OBR_rozpoznanie = {
+			picture = DU_OBR_rozpoznanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				max_planning = 0.1
+			}
+		}
+		OBR_korytarz = {
+			picture = DU_OBR_korytarz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.08
+			}
+		}
+	}
+}

@@ -14,7 +14,8 @@ focus_tree = {
 		icon = GFX_pl2027_081_ulica_0
 		x = 26
 		y = 0
-		cost = 3
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_political_power = 50
@@ -25,9 +26,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_obietnice
 		icon = GFX_pl2027_081_paliwo_0
-		x = 19
+		x = 18
 		y = 1
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_wiec }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -39,9 +40,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_czystka
 		icon = GFX_pl2027_081_administracja_0
-		x = 22
+		x = 21
 		y = 1
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_wiec }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -53,9 +54,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_telewizja
 		icon = GFX_pl2027_081_telewizja_0
-		x = 18
+		x = 17
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_obietnice }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -67,9 +68,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_referendum
 		icon = GFX_pl2027_081_wybory_0
-		x = 20
+		x = 19
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_obietnice }
 		prerequisite = { focus = BYD2_brd_czystka }
 		ai_will_do = { factor = 10 }
@@ -82,9 +83,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_stadion
 		icon = GFX_pl2027_081_kibice_0
-		x = 22
+		x = 21
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_czystka }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -96,9 +97,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_budowy
 		icon = GFX_pl2027_081_budowa_0
-		x = 20
+		x = 19
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brd_telewizja focus = BYD2_brd_referendum focus = BYD2_brd_stadion }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -109,9 +110,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_drogi
 		icon = GFX_pl2027_081_droga_0
-		x = 19
+		x = 18
 		y = 4
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brd_budowy }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -123,9 +124,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_lotnisko
 		icon = GFX_pl2027_081_lotnictwo_0_trn
-		x = 22
+		x = 21
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_budowy }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -137,9 +138,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_firmy
 		icon = GFX_pl2027_081_przemysl_0
-		x = 18
+		x = 17
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_drogi }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -151,9 +152,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_przemysl
 		icon = GFX_pl2027_081_przemysl_1
-		x = 20
+		x = 19
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brd_drogi }
 		prerequisite = { focus = BYD2_brd_lotnisko }
 		ai_will_do = { factor = 10 }
@@ -166,9 +167,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_boom
 		icon = GFX_pl2027_081_nauka_0
-		x = 22
+		x = 21
 		y = 5
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_lotnisko }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -180,9 +181,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_torun_wrog
 		icon = GFX_pl2027_081_wywiad_0
-		x = 20
+		x = 19
 		y = 6
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_firmy focus = BYD2_brd_przemysl focus = BYD2_brd_boom }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -193,9 +194,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_straz
 		icon = GFX_pl2027_081_porzadek_0
-		x = 19
+		x = 18
 		y = 7
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brd_torun_wrog }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -207,7 +208,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_ultimata
 		icon = GFX_pl2027_081_ultimatum_2_trn
-		x = 22
+		x = 21
 		y = 7
 		cost = 1
 		prerequisite = { focus = BYD2_brd_torun_wrog }
@@ -221,12 +222,12 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_solec
 		icon = GFX_pl2027_081_porzadek_1
-		x = 24
+		x = 23
 		y = 8
 		cost = 8
 		prerequisite = { focus = BYD2_brd_straz }
 		prerequisite = { focus = BYD2_brdowski_tree_gotowosc }
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_3000 has_army_manpower = { size > 2999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_3000 has_army_manpower = { size > 2999 } } }
 		bypass = { OR = { NOT = { country_exists = SLK } SLK = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
@@ -240,9 +241,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_referenda
 		icon = GFX_pl2027_081_wybory_1
-		x = 20
+		x = 19
 		y = 8
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_straz }
 		prerequisite = { focus = BYD2_brd_ultimata }
 		ai_will_do = { factor = 10 }
@@ -254,9 +255,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_kujawy_roszczenia
 		icon = GFX_pl2027_081_korona_0_trn
-		x = 22
+		x = 21
 		y = 8
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_ultimata }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -269,9 +270,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_armia
 		icon = GFX_pl2027_081_milicja_0_trn
-		x = 20
+		x = 19
 		y = 9
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brd_solec focus = BYD2_brd_referenda focus = BYD2_brd_kujawy_roszczenia }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -283,9 +284,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_sprzet
 		icon = GFX_pl2027_081_wyposazenie_0
-		x = 19
+		x = 18
 		y = 10
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_armia }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -297,9 +298,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_fortyfikacje
 		icon = GFX_pl2027_081_rzeka_0
-		x = 22
+		x = 21
 		y = 10
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_armia }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -311,9 +312,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_oficerowie
 		icon = GFX_pl2027_081_telewizja_1
-		x = 18
+		x = 17
 		y = 11
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_sprzet }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -324,12 +325,12 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_torun
 		icon = GFX_pl2027_081_ofensywa_0_trn
-		x = 20
+		x = 19
 		y = 11
 		cost = 8
 		prerequisite = { focus = BYD2_brd_sprzet }
 		prerequisite = { focus = BYD2_brd_fortyfikacje }
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
 		bypass = { OR = { NOT = { country_exists = TRN } TRN = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
@@ -342,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_integracja
 		icon = GFX_pl2027_081_korona_1_trn
-		x = 22
+		x = 21
 		y = 11
 		cost = 10
 		prerequisite = { focus = BYD2_brd_fortyfikacje }
@@ -356,11 +357,11 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_kujawy
 		icon = GFX_pl2027_081_wojna_0_trn
-		x = 20
+		x = 19
 		y = 12
 		cost = 8
 		prerequisite = { focus = BYD2_brd_oficerowie focus = BYD2_brd_torun focus = BYD2_brd_integracja }
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
 		bypass = { OR = { NOT = { country_exists = KUJ } KUJ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
@@ -373,9 +374,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_region
 		icon = GFX_pl2027_081_mapa_0_trn
-		x = 19
+		x = 18
 		y = 13
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_kujawy }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -386,9 +387,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_defilada
 		icon = GFX_pl2027_081_defilada_0_trn
-		x = 22
+		x = 21
 		y = 13
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_kujawy }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -400,9 +401,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_cores
 		icon = GFX_pl2027_081_osiedle_0_f
-		x = 18
+		x = 17
 		y = 14
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_region }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -414,9 +415,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_wybory2
 		icon = GFX_pl2027_081_wybory_2_f
-		x = 20
+		x = 19
 		y = 14
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_region }
 		prerequisite = { focus = BYD2_brd_defilada }
 		ai_will_do = { factor = 10 }
@@ -429,7 +430,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_final
 		icon = GFX_pl2027_081_korona_2_trn_f
-		x = 22
+		x = 21
 		y = 14
 		cost = 10
 		prerequisite = { focus = BYD2_brd_defilada }
@@ -444,9 +445,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_r_plan
 		icon = GFX_pl2027_081_budowa_1
-		x = 26
+		x = 25
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_wiec }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -458,9 +459,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_r_fordon
 		icon = GFX_pl2027_081_osiedle_2
-		x = 24
+		x = 23
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -472,9 +473,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_r_kapusciska
 		icon = GFX_pl2027_081_osiedle_1
-		x = 28
+		x = 27
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -485,9 +486,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_r_uczelnie
 		icon = GFX_pl2027_081_nauka_3
-		x = 26
+		x = 25
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -498,9 +499,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_r_osiedla
 		icon = GFX_pl2027_081_osiedle_2
-		x = 28
+		x = 27
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_r_kapusciska }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -512,9 +513,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_r_tramwaje
 		icon = GFX_pl2027_081_tramwaj_0
-		x = 27
+		x = 26
 		y = 4
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brd_r_uczelnie }
 		prerequisite = { focus = BYD2_brd_r_osiedla }
 		prerequisite = { focus = BYD2_brd_r_fordon }
@@ -527,9 +528,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_r_infrastruktura
 		icon = GFX_pl2027_081_mapa_1_trn
-		x = 26
+		x = 25
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brd_r_tramwaje }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -540,9 +541,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_r_2030
 		icon = GFX_pl2027_081_przemysl_5
-		x = 28
+		x = 27
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_r_tramwaje }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -556,7 +557,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_budowa_2
 		x = 2
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_wiec }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -569,7 +570,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_kolej_2
 		x = 0
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_p_odbudowa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -583,7 +584,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_chemia_2
 		x = 4
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_p_odbudowa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -596,7 +597,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_chemia_1
 		x = 2
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_p_odbudowa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -610,7 +611,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_port_3
 		x = 4
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brd_p_chemia }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -624,7 +625,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_przemysl_3
 		x = 4
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_p_zachem }
 		prerequisite = { focus = BYD2_brd_p_port }
 		prerequisite = { focus = BYD2_brd_p_pesa }
@@ -640,7 +641,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_handel_2
 		x = 3
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brd_p_belma }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -653,7 +654,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_przemysl_4
 		x = 5
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_p_belma }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -665,9 +666,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_d_urzednicy
 		icon = GFX_pl2027_081_administracja_1
-		x = 32
+		x = 31
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_wiec }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -678,9 +679,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_d_misje
 		icon = GFX_pl2027_081_dyplomacja_0
-		x = 30
+		x = 29
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_d_urzednicy }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -692,9 +693,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_d_finansowanie
 		icon = GFX_pl2027_081_pieniadze_4
-		x = 34
+		x = 33
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_d_urzednicy }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -705,9 +706,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_d_metropolia
 		icon = GFX_pl2027_081_mapa_0_trn
-		x = 32
+		x = 31
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_d_urzednicy }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -718,9 +719,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_d_kampanie
 		icon = GFX_pl2027_081_administracja_1
-		x = 34
+		x = 33
 		y = 3
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_d_finansowanie }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -731,7 +732,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_d_referenda
 		icon = GFX_pl2027_081_wybory_1
-		x = 34
+		x = 33
 		y = 4
 		cost = 10
 		prerequisite = { focus = BYD2_brd_d_metropolia }
@@ -748,7 +749,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_d_sasiedzi
 		icon = GFX_pl2027_081_ultimatum_2_trn
-		x = 33
+		x = 32
 		y = 5
 		cost = 1
 		prerequisite = { focus = BYD2_brd_d_referenda }
@@ -762,7 +763,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_d_metropolia_f
 		icon = GFX_pl2027_081_mapa_3_trn
-		x = 35
+		x = 34
 		y = 5
 		cost = 1
 		prerequisite = { focus = BYD2_brd_d_referenda }
@@ -778,9 +779,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_w_obrona
 		icon = GFX_pl2027_081_rzeka_1
-		x = 38
+		x = 37
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_wiec }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -792,9 +793,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_w_mobilizacja
 		icon = GFX_pl2027_081_pobor_1_trn
-		x = 36
+		x = 35
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -806,9 +807,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_w_garnizon
 		icon = GFX_pl2027_081_wojsko_5_trn
-		x = 40
+		x = 39
 		y = 2
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brd_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -820,9 +821,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_w_roszczenia
 		icon = GFX_pl2027_081_ultimatum_0_trn
-		x = 38
+		x = 37
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -833,7 +834,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_w_lokalne
 		icon = GFX_pl2027_081_ultimatum_2_trn
-		x = 40
+		x = 39
 		y = 3
 		cost = 1
 		prerequisite = { focus = BYD2_brd_w_garnizon }
@@ -847,7 +848,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_w_integracja
 		icon = GFX_pl2027_081_integracja_2_trn
-		x = 40
+		x = 39
 		y = 4
 		cost = 10
 		prerequisite = { focus = BYD2_brd_w_roszczenia }
@@ -863,12 +864,12 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_w_swiecie
 		icon = GFX_pl2027_081_ofensywa_3_trn
-		x = 39
+		x = 38
 		y = 5
 		cost = 8
 		prerequisite = { focus = BYD2_brd_w_integracja }
 		prerequisite = { focus = BYD2_brdowski_tree_gotowosc }
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
 		bypass = { OR = { NOT = { country_exists = SWC } SWC = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
@@ -882,9 +883,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brd_w_dominacja
 		icon = GFX_pl2027_081_korona_0_trn
-		x = 41
+		x = 40
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_w_integracja }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -897,9 +898,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_start
 		icon = GFX_pl2027_081_sztab_1_trn
-		x = 12
+		x = 11
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_wiec }
 		bypass = { has_country_flag = MIL_start }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -914,9 +915,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_trn
-		x = 8
+		x = 7
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_mil_start }
 		bypass = { has_country_flag = MIL_rejestr }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -930,9 +931,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_trn
-		x = 12
+		x = 11
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_mil_start }
 		bypass = { has_country_flag = MIL_ochotnicy }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -946,9 +947,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 16
+		x = 15
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_mil_start }
 		bypass = { has_country_flag = MIL_fabryka }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -962,9 +963,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_trn
-		x = 7
+		x = 6
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_mil_rejestr }
 		bypass = { has_country_flag = MIL_pobor }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -978,9 +979,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_trn
-		x = 11
+		x = 10
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brdowski_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_bataliony }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -996,9 +997,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 15
+		x = 14
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brdowski_mil_fabryka }
 		bypass = { has_country_flag = MIL_produkcja }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1014,9 +1015,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_trn
-		x = 9
+		x = 8
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_mil_rejestr }
 		bypass = { has_country_flag = MIL_rezerwisci }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1030,9 +1031,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_trn
-		x = 13
+		x = 12
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brdowski_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_brygady }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1049,9 +1050,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 17
+		x = 16
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_mil_fabryka }
 		bypass = { has_country_flag = MIL_zaplecze }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1067,9 +1068,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_trn
-		x = 7
+		x = 8
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_mil_rezerwisci }
 		prerequisite = { focus = BYD2_brdowski_mil_brygady }
 		prerequisite = { focus = BYD2_brdowski_mil_pobor }
@@ -1089,7 +1090,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_zawodowa_1_trn
 		x = 13
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brdowski_mil_kadra }
 		prerequisite = { focus = BYD2_brdowski_mil_zaplecze }
 		prerequisite = { focus = BYD2_brdowski_mil_produkcja }
@@ -1107,7 +1108,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 44
+		x = 43
 		y = 1
 		cost = 1
 		prerequisite = { focus = BYD2_brd_wiec }
@@ -1123,9 +1124,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 43
+		x = 42
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_zy_s_ulica }
 		bypass = { has_country_flag = TFR_zy_pl_s_media }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1139,7 +1140,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 45
+		x = 44
 		y = 2
 		cost = 1
 		prerequisite = { focus = BYD2_brdowski_zy_s_ulica }
@@ -1155,9 +1156,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_trn_k
-		x = 42
+		x = 41
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_zy_s_media }
 		prerequisite = { focus = BYD2_brdowski_zy_s_spis }
 		mutually_exclusive = { focus = BYD2_brdowski_zy_s_rynek }
@@ -1173,9 +1174,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_trn_k
-		x = 44
+		x = 43
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_zy_s_media }
 		prerequisite = { focus = BYD2_brdowski_zy_s_spis }
 		mutually_exclusive = { focus = BYD2_brdowski_zy_s_kartki }
@@ -1191,9 +1192,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 42
+		x = 41
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_zy_s_kartki focus = BYD2_brdowski_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1208,7 +1209,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 44
+		x = 43
 		y = 4
 		cost = 1
 		prerequisite = { focus = BYD2_brdowski_zy_s_kartki focus = BYD2_brdowski_zy_s_rynek }
@@ -1224,9 +1225,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 46
+		x = 45
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_zy_s_kartki focus = BYD2_brdowski_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_straze }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1241,9 +1242,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 44
+		x = 43
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = BYD2_brdowski_zy_s_szkoly }
 		prerequisite = { focus = BYD2_brdowski_zy_s_czarny }
 		prerequisite = { focus = BYD2_brdowski_zy_s_straze }
@@ -1261,9 +1262,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 48
+		x = 47
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brd_wiec }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
 		bypass = { has_country_flag = TFR_zy_k_k_admin }
@@ -1279,9 +1280,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_trn
-		x = 47
+		x = 46
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_zy_k_admin }
 		bypass = { has_country_flag = TFR_zy_k_k_defilada }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1296,7 +1297,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 49
+		x = 48
 		y = 2
 		cost = 1
 		prerequisite = { focus = BYD2_brdowski_zy_k_admin }
@@ -1312,9 +1313,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_trn
-		x = 48
+		x = 47
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_zy_k_defilada }
 		prerequisite = { focus = BYD2_brdowski_zy_k_opor }
 		bypass = { has_country_flag = TFR_zy_k_k_owoce }
@@ -1331,7 +1332,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_straty_0
 		x = 51
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brd_wiec }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
 		bypass = { has_country_flag = TFR_zy_p_p_straty }
@@ -1349,7 +1350,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_rada_0
 		x = 51
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_zy_p_straty }
 		bypass = { has_country_flag = TFR_zy_p_p_rzad }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1366,7 +1367,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_gotowosc_1_trn_k
 		x = 50
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_zy_p_rzad }
 		mutually_exclusive = { focus = BYD2_brdowski_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
@@ -1383,7 +1384,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pojednanie_3_trn_k
 		x = 52
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = BYD2_brdowski_zy_p_rzad }
 		mutually_exclusive = { focus = BYD2_brdowski_zy_p_rewanz }
 		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
@@ -1400,7 +1401,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_wyposazenie_2
 		x = 51
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = BYD2_brdowski_zy_p_rewanz focus = BYD2_brdowski_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1417,9 +1418,9 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_trn
-		x = 29
+		x = 28
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = BYD2_brd_d_kampanie }
 		prerequisite = { focus = BYD2_brd_budowy }
 		prerequisite = { focus = BYD2_brd_r_osiedla }

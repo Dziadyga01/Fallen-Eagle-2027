@@ -12,9 +12,10 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_stare_porzadki
 		icon = GFX_pl2027_tfr_portret_trn_michal_zaleski
-		x = 27
+		x = 26
 		y = 0
-		cost = 2
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_political_power = 60
@@ -25,9 +26,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_gospodarz
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 25
+		x = 24
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -38,9 +39,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_centralizacja
 		icon = GFX_pl2027_081_centralizacja_0_slk
-		x = 28
+		x = 27
 		y = 1
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -52,9 +53,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_budzet
 		icon = GFX_pl2027_081_pieniadze_1
-		x = 24
+		x = 23
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_gospodarz }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -66,9 +67,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_spolki
 		icon = GFX_pl2027_081_pieniadze_2
-		x = 26
+		x = 25
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_gospodarz }
 		prerequisite = { focus = TR2_zal_centralizacja }
 		ai_will_do = { factor = 10 }
@@ -80,9 +81,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_porzadek
 		icon = GFX_pl2027_081_porzadek_1
-		x = 28
+		x = 27
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zal_centralizacja }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -94,9 +95,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_wielkie_inwestycje
 		icon = GFX_pl2027_081_budowa_0
-		x = 26
+		x = 25
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_budzet focus = TR2_zal_spolki focus = TR2_zal_porzadek }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -108,9 +109,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_arterie
 		icon = GFX_TRN_pl2027_autostrada
-		x = 25
+		x = 24
 		y = 4
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zal_wielkie_inwestycje }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -121,9 +122,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_nowy_most
 		icon = GFX_pl2027_081_most_0
-		x = 28
+		x = 27
 		y = 4
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zal_wielkie_inwestycje }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -136,9 +137,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_przemysl
 		icon = GFX_TRN_pl2027_przemysl20
-		x = 24
+		x = 23
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_arterie }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -150,9 +151,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_lotnisko
 		icon = GFX_TRN_pl2027_lotnisko
-		x = 26
+		x = 25
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_arterie }
 		prerequisite = { focus = TR2_zal_nowy_most }
 		ai_will_do = { factor = 10 }
@@ -165,9 +166,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_inwestycje_idea
 		icon = GFX_pl2027_081_budowa_1
-		x = 28
+		x = 27
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zal_nowy_most }
 		available = { TRK_zob_max_60 = yes }
 		ai_will_do = { factor = 10 }
@@ -179,9 +180,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_sasiedzi
 		icon = GFX_pl2027_081_droga_0
-		x = 26
+		x = 25
 		y = 6
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_przemysl focus = TR2_zal_lotnisko focus = TR2_zal_inwestycje_idea }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -192,7 +193,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_opieka
 		icon = GFX_pl2027_081_administracja_0
-		x = 25
+		x = 24
 		y = 7
 		cost = 1
 		prerequisite = { focus = TR2_zal_sasiedzi }
@@ -206,7 +207,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_wcielenie
 		icon = GFX_pl2027_081_integracja_0_slk
-		x = 28
+		x = 27
 		y = 7
 		cost = 10
 		prerequisite = { focus = TR2_zal_sasiedzi }
@@ -220,9 +221,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_metropolia
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 24
+		x = 23
 		y = 8
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_opieka }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -234,9 +235,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_referenda
 		icon = GFX_pl2027_081_wybory_0
-		x = 26
+		x = 25
 		y = 8
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_opieka }
 		prerequisite = { focus = TR2_zal_wcielenie }
 		ai_will_do = { factor = 10 }
@@ -248,7 +249,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_metropolia_t
 		icon = GFX_pl2027_081_mapa_4_slk
-		x = 28
+		x = 27
 		y = 8
 		cost = 1
 		prerequisite = { focus = TR2_zal_wcielenie }
@@ -264,9 +265,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_straz
 		icon = GFX_pl2027_081_porzadek_0
-		x = 26
+		x = 25
 		y = 9
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zal_metropolia focus = TR2_zal_referenda focus = TR2_zal_metropolia_t }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -278,9 +279,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_garnizon
 		icon = GFX_TRN_pl2027_garnizon
-		x = 25
+		x = 24
 		y = 10
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_straz }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -292,9 +293,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_artyleria
 		icon = GFX_pl2027_081_artyleria_0_slk
-		x = 28
+		x = 27
 		y = 10
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zal_straz }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -307,9 +308,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_roszczenia
 		icon = GFX_pl2027_081_granica_0_slk
-		x = 24
+		x = 23
 		y = 11
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_garnizon }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -323,13 +324,13 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_solec
 		icon = GFX_pl2027_081_ofensywa_0_slk
-		x = 26
+		x = 25
 		y = 11
 		cost = 8
 		prerequisite = { focus = TR2_zal_garnizon }
 		prerequisite = { focus = TR2_zal_artyleria }
 		prerequisite = { focus = TR2_zaleski_tree_gotowosc }
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_3000 has_army_manpower = { size > 2999 } } OR = { NOT = { country_exists = SLK } custom_trigger_tooltip = { tooltip = TRK_req_granica_SLK is_neighbor_of = SLK } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_3000 has_army_manpower = { size > 2999 } } OR = { NOT = { country_exists = SLK } custom_trigger_tooltip = { tooltip = TRK_req_granica_SLK is_neighbor_of = SLK } } }
 		bypass = { OR = { NOT = { country_exists = SLK } SLK = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 country_exists = SLK NOT = { strength_ratio = { tag = SLK ratio > 1.2 } } } modifier = { factor = 0 has_war = yes } modifier = { factor = 0 has_stability < 0.35 } }
 		completion_reward = {
@@ -343,9 +344,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_przemysl_obr
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 28
+		x = 27
 		y = 11
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_artyleria }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -356,9 +357,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_porzadek_rozwoj
 		icon = GFX_pl2027_081_porzadek_2
-		x = 26
+		x = 25
 		y = 12
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_roszczenia focus = TR2_zal_solec focus = TR2_zal_przemysl_obr }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -370,11 +371,11 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_kujawy
 		icon = GFX_pl2027_081_ofensywa_1_slk
-		x = 25
+		x = 24
 		y = 13
 		cost = 8
 		prerequisite = { focus = TR2_zal_porzadek_rozwoj }
-		available = { custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } OR = { NOT = { country_exists = KUJ } custom_trigger_tooltip = { tooltip = TRK_req_granica_KUJ is_neighbor_of = KUJ } } }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } OR = { NOT = { country_exists = KUJ } custom_trigger_tooltip = { tooltip = TRK_req_granica_KUJ is_neighbor_of = KUJ } } }
 		bypass = { OR = { NOT = { country_exists = KUJ } KUJ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 country_exists = KUJ NOT = { strength_ratio = { tag = KUJ ratio > 1.2 } } } modifier = { factor = 0 has_war = yes } modifier = { factor = 0 has_stability < 0.35 } }
 		completion_reward = {
@@ -389,7 +390,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_grudziadz
 		icon = GFX_pl2027_081_pojednanie_0
-		x = 28
+		x = 27
 		y = 13
 		cost = 1
 		prerequisite = { focus = TR2_zal_porzadek_rozwoj }
@@ -403,9 +404,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_integracja
 		icon = GFX_pl2027_081_integracja_1_slk_f
-		x = 24
+		x = 23
 		y = 14
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_kujawy }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -417,9 +418,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_region
 		icon = GFX_pl2027_081_mapa_1_slk_f
-		x = 26
+		x = 25
 		y = 14
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_kujawy }
 		prerequisite = { focus = TR2_zal_grudziadz }
 		ai_will_do = { factor = 10 }
@@ -431,7 +432,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_final
 		icon = GFX_pl2027_081_korona_0_slk_f
-		x = 28
+		x = 27
 		y = 14
 		cost = 10
 		prerequisite = { focus = TR2_zal_grudziadz }
@@ -446,9 +447,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_plan
 		icon = GFX_pl2027_081_pieniadze_3
-		x = 32
+		x = 31
 		y = 1
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zal_stare_porzadki }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -461,9 +462,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_rubinkowo
 		icon = GFX_pl2027_081_osiedle_0
-		x = 30
+		x = 29
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -475,9 +476,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_jar
 		icon = GFX_pl2027_081_osiedle_1
-		x = 34
+		x = 33
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -488,9 +489,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_bielany
 		icon = GFX_TRN_pl2027_szkoly
-		x = 32
+		x = 31
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zal_r_plan }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -501,9 +502,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_osiedla
 		icon = GFX_pl2027_081_osiedle_2
-		x = 34
+		x = 33
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zal_r_jar }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -515,9 +516,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_komunikacja
 		icon = GFX_pl2027_081_tramwaj_1
-		x = 33
+		x = 32
 		y = 4
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zal_r_bielany }
 		prerequisite = { focus = TR2_zal_r_osiedla }
 		prerequisite = { focus = TR2_zal_r_rubinkowo }
@@ -530,9 +531,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_infrastruktura
 		icon = GFX_TRN_pl2027_autostrada
-		x = 32
+		x = 31
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zal_r_komunikacja }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -543,9 +544,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_r_toron2030
 		icon = GFX_pl2027_081_korona_1_slk
-		x = 34
+		x = 33
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_r_komunikacja }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -560,7 +561,7 @@ focus_tree = {
 		icon = GFX_TRN_pl2027_firmy
 		x = 2
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_stare_porzadki }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -574,7 +575,7 @@ focus_tree = {
 		icon = GFX_TRN_pl2027_apator
 		x = 0
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_p_odbudowa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -588,7 +589,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_zywnosc_3
 		x = 4
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_p_odbudowa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -602,7 +603,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_logistyka_2
 		x = 2
 		y = 2
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zal_p_odbudowa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -616,7 +617,7 @@ focus_tree = {
 		icon = GFX_TRN_pl2027_stabilizacja
 		x = 4
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_p_pierniki }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -630,7 +631,7 @@ focus_tree = {
 		icon = GFX_TRN_pl2027_kopernik
 		x = 4
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_p_logistyka }
 		prerequisite = { focus = TR2_zal_p_uslugi }
 		prerequisite = { focus = TR2_zal_p_apator }
@@ -645,7 +646,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_handel_2
 		x = 3
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_p_kopernik }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -658,7 +659,7 @@ focus_tree = {
 		icon = GFX_TRN_pl2027_przemysl20
 		x = 5
 		y = 5
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_p_kopernik }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -671,9 +672,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_sasiedzi
 		icon = GFX_pl2027_081_administracja_1
-		x = 39
+		x = 38
 		y = 1
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -685,7 +686,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_chelmza
 		icon = GFX_pl2027_081_sojusz_1_slk
-		x = 37
+		x = 36
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_zal_d_sasiedzi }
@@ -700,7 +701,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_grudziadz
 		icon = GFX_pl2027_081_rzeka_0
-		x = 39
+		x = 38
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_zal_d_sasiedzi }
@@ -714,9 +715,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_metropolia
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 37
+		x = 36
 		y = 3
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_d_chelmza }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -728,9 +729,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_kampania
 		icon = GFX_pl2027_081_budowa_2
-		x = 41
+		x = 40
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_d_sasiedzi }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -741,9 +742,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_referenda
 		icon = GFX_pl2027_081_mapa_0_slk
-		x = 37
+		x = 36
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_d_metropolia }
 		prerequisite = { focus = TR2_zal_d_kampania }
 		prerequisite = { focus = TR2_zal_d_grudziadz }
@@ -756,9 +757,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_kujawy
 		icon = GFX_pl2027_081_mapa_4_slk
-		x = 36
+		x = 35
 		y = 5
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zal_d_referenda }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -770,16 +771,16 @@ focus_tree = {
 	focus = {
 		id = TR2_zal_d_metropolia_f
 		icon = GFX_pl2027_081_sojusz_3_slk
-		x = 38
+		x = 37
 		y = 5
-		cost = 1
+		cost = 5
 		prerequisite = { focus = TR2_zal_d_referenda }
 		available = { check_variable = { global.MET_trn_obszary > 1 } check_variable = { global.MET_byd_obszary > 1 } check_variable = { global.MET_napiecie < 30 } NOT = { has_global_flag = MET_rozstrzygniete } }
 		bypass = { has_global_flag = MET_rozstrzygniete }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			set_global_flag = MET_fed_oczekuje
-			if = { limit = { country_exists = BYD NOT = { has_war_with = BYD } } BYD = { country_event = { id = met.55 } } }
+			custom_effect_tooltip = UNI_tt_tylko_rozmowy
+			if = { limit = { country_exists = BYD NOT = { has_war_with = BYD } NOT = { has_global_flag = UNI_btu_trwa } NOT = { has_global_flag = UNI_btu_zawarta } } UNI_btu_start = yes }
 		}
 	}
 
@@ -788,7 +789,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_gwardia_0_slk
 		x = 8
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -803,7 +804,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_pobor_1_slk
 		x = 6
 		y = 2
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -817,7 +818,7 @@ focus_tree = {
 		icon = GFX_TRN_pl2027_garnizon
 		x = 10
 		y = 2
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zal_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -831,7 +832,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_ultimatum_0_slk
 		x = 8
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_w_obrona }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -889,7 +890,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_mapa_2_slk
 		x = 11
 		y = 5
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_w_wcielenie }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -903,9 +904,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_start
 		icon = GFX_pl2027_081_sztab_1_slk
-		x = 18
+		x = 17
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
 		bypass = { has_country_flag = MIL_start }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -920,9 +921,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_slk
-		x = 14
+		x = 13
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_start }
 		bypass = { has_country_flag = MIL_rejestr }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -936,9 +937,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_slk
-		x = 18
+		x = 17
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_start }
 		bypass = { has_country_flag = MIL_ochotnicy }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -952,9 +953,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 22
+		x = 21
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_start }
 		bypass = { has_country_flag = MIL_fabryka }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -968,9 +969,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_slk
-		x = 13
+		x = 12
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_rejestr }
 		bypass = { has_country_flag = MIL_pobor }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -984,9 +985,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_slk
-		x = 17
+		x = 16
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zaleski_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_bataliony }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1002,9 +1003,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 21
+		x = 20
 		y = 3
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zaleski_mil_fabryka }
 		bypass = { has_country_flag = MIL_produkcja }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1020,9 +1021,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_slk
-		x = 15
+		x = 14
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_rejestr }
 		bypass = { has_country_flag = MIL_rezerwisci }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1036,9 +1037,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_slk
-		x = 19
+		x = 18
 		y = 3
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zaleski_mil_ochotnicy }
 		bypass = { has_country_flag = MIL_brygady }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1055,9 +1056,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 23
+		x = 22
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_fabryka }
 		bypass = { has_country_flag = MIL_zaplecze }
 		search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1073,9 +1074,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_slk
-		x = 13
+		x = 14
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_mil_rezerwisci }
 		prerequisite = { focus = TR2_zaleski_mil_brygady }
 		prerequisite = { focus = TR2_zaleski_mil_pobor }
@@ -1095,7 +1096,7 @@ focus_tree = {
 		icon = GFX_pl2027_081_zawodowa_1_slk
 		x = 19
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zaleski_mil_kadra }
 		prerequisite = { focus = TR2_zaleski_mil_zaplecze }
 		prerequisite = { focus = TR2_zaleski_mil_produkcja }
@@ -1113,7 +1114,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 44
+		x = 43
 		y = 1
 		cost = 1
 		prerequisite = { focus = TR2_zal_stare_porzadki }
@@ -1129,9 +1130,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 43
+		x = 42
 		y = 2
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_s_ulica }
 		bypass = { has_country_flag = TFR_zy_pl_s_media }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1145,7 +1146,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 45
+		x = 44
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_zaleski_zy_s_ulica }
@@ -1161,9 +1162,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_slk_k
-		x = 42
+		x = 41
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_s_media }
 		prerequisite = { focus = TR2_zaleski_zy_s_spis }
 		mutually_exclusive = { focus = TR2_zaleski_zy_s_rynek }
@@ -1179,9 +1180,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_slk_k
-		x = 44
+		x = 43
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_s_media }
 		prerequisite = { focus = TR2_zaleski_zy_s_spis }
 		mutually_exclusive = { focus = TR2_zaleski_zy_s_kartki }
@@ -1197,9 +1198,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 42
+		x = 39
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_s_kartki focus = TR2_zaleski_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1214,7 +1215,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 44
+		x = 41
 		y = 4
 		cost = 1
 		prerequisite = { focus = TR2_zaleski_zy_s_kartki focus = TR2_zaleski_zy_s_rynek }
@@ -1230,9 +1231,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 46
+		x = 43
 		y = 4
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_s_kartki focus = TR2_zaleski_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_straze }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1247,9 +1248,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 44
+		x = 41
 		y = 5
-		cost = 6
+		cost = 7
 		prerequisite = { focus = TR2_zaleski_zy_s_szkoly }
 		prerequisite = { focus = TR2_zaleski_zy_s_czarny }
 		prerequisite = { focus = TR2_zaleski_zy_s_straze }
@@ -1267,9 +1268,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 48
+		x = 47
 		y = 1
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zal_stare_porzadki }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
 		bypass = { has_country_flag = TFR_zy_k_k_admin }
@@ -1285,9 +1286,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_slk
-		x = 47
+		x = 46
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_k_admin }
 		bypass = { has_country_flag = TFR_zy_k_k_defilada }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1302,7 +1303,7 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 49
+		x = 48
 		y = 2
 		cost = 1
 		prerequisite = { focus = TR2_zaleski_zy_k_admin }
@@ -1318,9 +1319,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_slk
-		x = 48
+		x = 47
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_k_defilada }
 		prerequisite = { focus = TR2_zaleski_zy_k_opor }
 		bypass = { has_country_flag = TFR_zy_k_k_owoce }
@@ -1335,9 +1336,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 52
+		x = 50
 		y = 1
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zal_stare_porzadki }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
 		bypass = { has_country_flag = TFR_zy_p_p_straty }
@@ -1353,9 +1354,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 52
+		x = 50
 		y = 2
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_p_straty }
 		bypass = { has_country_flag = TFR_zy_p_p_rzad }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1370,9 +1371,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_slk_k
-		x = 51
+		x = 49
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_p_rzad }
 		mutually_exclusive = { focus = TR2_zaleski_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
@@ -1387,9 +1388,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_slk_k
-		x = 53
+		x = 51
 		y = 3
-		cost = 3
+		cost = 5
 		prerequisite = { focus = TR2_zaleski_zy_p_rzad }
 		mutually_exclusive = { focus = TR2_zaleski_zy_p_rewanz }
 		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
@@ -1404,9 +1405,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 52
+		x = 50
 		y = 4
-		cost = 5
+		cost = 6
 		prerequisite = { focus = TR2_zaleski_zy_p_rewanz focus = TR2_zaleski_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1423,9 +1424,9 @@ focus_tree = {
 	focus = {
 		id = TR2_zaleski_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_slk
-		x = 35
+		x = 34
 		y = 4
-		cost = 2
+		cost = 5
 		prerequisite = { focus = TR2_zal_d_metropolia }
 		prerequisite = { focus = TR2_zal_wielkie_inwestycje }
 		prerequisite = { focus = TR2_zal_r_osiedla }

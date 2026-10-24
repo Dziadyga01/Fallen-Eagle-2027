@@ -1,0 +1,161 @@
+# The Fallen Eagle 2027 – Rząd w kryzysie zaufania
+focus_tree = {
+	id = PRL_rzad_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = POL
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1300 }
+	initial_show_position = { focus = PRL_f_godzina }
+
+	focus = {
+		id = PRL_f_godzina
+		icon = GFX_pl2027_081_sztab_0
+		x = 16
+		y = 0
+		cost = 1
+		ai_will_do = { factor = 50 }
+		completion_reward = {
+			add_political_power = 30
+			custom_effect_tooltip = PRL_tt_39 hidden_effect = { add_to_variable = { global.PRL_administracja = 2 } PRL_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = PRL_f_oredzie
+		icon = GFX_pl2027_081_polska_0
+		x = 0
+		y = 1
+		cost = 1
+		prerequisite = { focus = PRL_f_godzina }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = PRL_tt_40 hidden_effect = { add_to_variable = { global.PRL_zaufanie = 6 } add_to_variable = { global.PRL_poparcie = 3 } PRL_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = PRL_f_rzecznik
+		icon = GFX_pl2027_081_mapa_0
+		x = 2
+		y = 1
+		cost = 1
+		prerequisite = { focus = PRL_f_godzina }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = PRL_tt_41 hidden_effect = { add_to_variable = { global.PRL_koszt = -1 } PRL_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = PRL_f_wojewodowie
+		icon = GFX_pl2027_081_robotnicy_0
+		x = 4
+		y = 1
+		cost = 1
+		prerequisite = { focus = PRL_f_godzina }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			every_country = { limit = { is_subject_of = POL } add_to_variable = { PRL_lojalnosc = 5 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } }
+			custom_effect_tooltip = PRL_tt_39 hidden_effect = { add_to_variable = { global.PRL_administracja = 2 } PRL_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = PRL_f_rezerwy
+		icon = GFX_pl2027_081_pieniadze_0
+		x = 6
+		y = 1
+		cost = 1
+		prerequisite = { focus = PRL_f_godzina }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 60
+			custom_effect_tooltip = PRL_tt_8 hidden_effect = { add_to_variable = { global.PRL_rezerwy = -10 } PRL_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = PRL_f_sluzby
+		icon = GFX_pl2027_081_polska_1
+		x = 22
+		y = 1
+		cost = 1
+		prerequisite = { focus = PRL_f_godzina }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			custom_effect_tooltip = PRL_tt_42 hidden_effect = { add_to_variable = { global.PRL_administracja = 5 } add_to_variable = { global.PRL_zaufanie = -3 } PRL_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = PRL_f_bruksela
+		icon = GFX_pl2027_081_port_0
+		x = 24
+		y = 1
+		cost = 1
+		prerequisite = { focus = PRL_f_godzina }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_global_flag = PRL_europa_otwarta
+			custom_effect_tooltip = PRL_tt_43 hidden_effect = { add_to_variable = { global.PRL_rezerwy = 8 } add_to_variable = { global.PRL_poparcie = -3 } PRL_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = PRL_f_rbn
+		icon = GFX_pl2027_081_rada_0
+		x = 26
+		y = 1
+		cost = 1
+		prerequisite = { focus = PRL_f_godzina }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_global_flag = PRL_rbn_wschod
+			custom_effect_tooltip = PRL_tt_44 hidden_effect = { add_to_variable = { global.PRL_rezerwy = -6 } PRL_przelicz = yes }
+			if = { limit = { country_exists = WMZ } WMZ = { add_to_variable = { PRL_lojalnosc = 8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = MAZ } MAZ = { add_to_variable = { PRL_lojalnosc = 8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = SUW } SUW = { add_to_variable = { PRL_lojalnosc = 8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } } if = { limit = { country_exists = BST } BST = { add_to_variable = { PRL_lojalnosc = 8 } clamp_variable = { var = PRL_lojalnosc min = 0 max = 100 } } }
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -4,7 +4,7 @@ add_namespace = dom
 country_event = {
 	id = dom.11
 	hidden = yes
-	trigger = { has_country_flag = PL2027_polska is_subject = yes NOT = { has_game_rule = { rule = PL2027_MARIONETKI option = DOZWOLONE } } NOT = { AND = { tag = PLC SMR = { exists = yes } is_subject_of = SMR } } NOT = { AND = { tag = WOJ KPR = { exists = yes } is_subject_of = KPR } } NOT = { AND = { tag = LEG MPR = { exists = yes } is_subject_of = MPR } } NOT = { AND = { tag = GNL NML = { exists = yes } is_subject_of = NML } } NOT = { AND = { tag = PMN GER = { exists = yes } is_subject_of = GER } } NOT = { AND = { tag = PSN GER = { exists = yes } is_subject_of = GER } } NOT = { AND = { tag = SLS GER = { exists = yes } is_subject_of = GER } } NOT = { is_subject_of = POL } }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = PL2027_polska is_subject = yes NOT = { has_game_rule = { rule = PL2027_MARIONETKI option = DOZWOLONE } } NOT = { AND = { tag = PLC SMR = { exists = yes } is_subject_of = SMR } } NOT = { AND = { tag = WOJ KPR = { exists = yes } is_subject_of = KPR } } NOT = { AND = { tag = LEG MPR = { exists = yes } is_subject_of = MPR } } NOT = { AND = { tag = GNL NML = { exists = yes } is_subject_of = NML } } NOT = { AND = { tag = PSN GER = { exists = yes } is_subject_of = GER } } NOT = { is_subject_of = POL } NOT = { has_country_flag = UNI_federacja } }
 	mean_time_to_happen = { days = 7 }
 	immediate = { random_country = { limit = { ROOT = { is_subject_of = PREV } } annex_country = { target = ROOT transfer_troops = yes } } }
 	option = {
@@ -16,7 +16,7 @@ country_event = {
 country_event = {
 	id = dom.13
 	hidden = yes
-	trigger = { tag = ROS has_country_flag = ROS_interwencja has_country_flag = ROS_putin_zyje NOT = { has_country_flag = ROS_los_putina } }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } tag = ROS has_country_flag = ROS_interwencja has_country_flag = ROS_putin_zyje NOT = { has_country_flag = ROS_los_putina } }
 	mean_time_to_happen = { days = 7 }
 	immediate = { set_variable = { ROS_bilans = ROS_cel_mazury } multiply_variable = { ROS_bilans = -1 } every_state = { limit = { has_state_flag = ROS_cel_mazury is_controlled_by = ROS } ROS = { add_to_variable = { ROS_bilans = 2 } } } if = { limit = { OR = { check_variable = { ROS_bilans > -1 } NOT = { has_country_flag = ROS_wojna_trwa } } } country_event = { id = ros.20 } } }
 	option = {

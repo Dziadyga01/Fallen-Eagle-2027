@@ -19,6 +19,7 @@ focus_tree = {
 		x = 8
 		y = 0
 		cost = 1
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			add_political_power = 30

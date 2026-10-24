@@ -1,0 +1,88 @@
+OBR_ros = {
+	OBR_d_druga_operacja = {
+		icon = generic_army_support
+		allowed = { original_tag = ROS }
+		available = { custom_trigger_tooltip = { tooltip = OBR_tt_1 NOT = { has_country_flag = ROS_druga_proba_cd } has_war = no NOT = { has_country_flag = ROS_lider_szl } NOT = { has_country_flag = ROS_lider_naw } check_variable = { ROS_proby < 2 } has_war_support > 0.3 } }
+		cost = 100
+		complete_effect = { ROS_druga_operacja = yes }
+		ai_will_do = { factor = 2 modifier = { factor = 0 has_stability < 0.35 } }
+	}
+}
+OBR_obrona = {
+	OBR_d_jeziora = {
+		icon = generic_army_support
+		allowed = { OR = { original_tag = WMZ original_tag = MAZ original_tag = SUW } }
+		available = { has_global_flag = TFE_faza_2  }
+		cost = 60
+		days_re_enable = 120
+		days_remove = 45
+		remove_effect = { every_owned_state = { limit = { OR = { any_neighbor_state = { is_owned_by = ROS } has_state_flag = ROS_kluczowy } } add_building_construction = { type = bunker level = 2 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } } capital_scope = { add_building_construction = { type = bunker level = 1 province = { all_provinces = yes } instant_build = yes } } }
+		complete_effect = { custom_effect_tooltip = OBR_tt_2  }
+		ai_will_do = { factor = 8 modifier = { factor = 0.3 has_political_power < 80 } modifier = { factor = 2 has_global_flag = TFE_faza_3 } modifier = { factor = 3 has_global_flag = ROS_wojna_mazurska } }
+	}
+	OBR_d_rezerwy = {
+		icon = generic_army_support
+		allowed = { OR = { original_tag = WMZ original_tag = MAZ original_tag = SUW } }
+		available = { has_global_flag = TFE_faza_2  }
+		cost = 40
+		days_re_enable = 150
+		complete_effect = { add_manpower = 6000 add_stability = -0.03 add_timed_idea = { idea = OBR_rezerwy days = 180 } if = { limit = { NOT = { has_template = "Obrona Terytorialna Mazur" } } division_template = { name = "Obrona Terytorialna Mazur" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } } support = { recon = { x = 0 y = 0 } } } } capital_scope = { create_unit = { division = "division_template = \"Obrona Terytorialna Mazur\" start_experience_factor = 0.1" owner = ROOT } create_unit = { division = "division_template = \"Obrona Terytorialna Mazur\" start_experience_factor = 0.1" owner = ROOT } } add_equipment_to_stockpile = { type = ranged_equipment amount = 800 } }
+		ai_will_do = { factor = 6 modifier = { factor = 2 has_global_flag = TFE_faza_3 } modifier = { factor = 3 has_global_flag = ROS_wojna_mazurska } }
+	}
+	OBR_d_magazyny = {
+		icon = generic_army_support
+		allowed = { OR = { original_tag = WMZ original_tag = MAZ original_tag = SUW } }
+		available = { has_global_flag = TFE_faza_2  }
+		cost = 50
+		days_re_enable = 180
+		days_remove = 30
+		remove_effect = { add_timed_idea = { idea = OBR_zaopatrzenie days = 365 } capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+		complete_effect = { custom_effect_tooltip = OBR_tt_3  }
+		ai_will_do = { factor = 6 modifier = { factor = 2 has_global_flag = TFE_faza_3 } modifier = { factor = 3 has_global_flag = ROS_wojna_mazurska } }
+	}
+	OBR_d_teren = {
+		icon = generic_army_support
+		allowed = { OR = { original_tag = WMZ original_tag = MAZ original_tag = SUW } }
+		available = { has_global_flag = TFE_faza_2  }
+		cost = 35
+		days_re_enable = 365
+		complete_effect = { add_timed_idea = { idea = OBR_teren days = 365 } }
+		ai_will_do = { factor = 5 modifier = { factor = 2 has_global_flag = TFE_faza_3 } modifier = { factor = 3 has_global_flag = ROS_wojna_mazurska } }
+	}
+	OBR_d_dowodztwo = {
+		icon = generic_army_support
+		allowed = { OR = { original_tag = WMZ original_tag = MAZ original_tag = SUW } }
+		available = { has_global_flag = TFE_faza_2 any_country = { NOT = { tag = ROOT } OR = { tag = WMZ tag = MAZ tag = SUW } exists = yes is_subject = no NOT = { has_war_with = ROOT } } }
+		cost = 30
+		days_re_enable = 365
+		complete_effect = { if = { limit = { is_in_faction = no } create_faction = PL2027_SOJUSZ_MAZURSKI } every_country = { limit = { NOT = { tag = ROOT } OR = { tag = WMZ tag = MAZ tag = SUW } exists = yes is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } ROOT = { if = { limit = { is_faction_leader = yes } add_to_faction = PREV } } add_opinion_modifier = { target = ROOT modifier = OBR_wsparcie_op } } add_timed_idea = { idea = OBR_dowodztwo days = 365 } }
+		ai_will_do = { factor = 6 modifier = { factor = 2 has_global_flag = TFE_faza_3 } modifier = { factor = 3 has_global_flag = ROS_wojna_mazurska } }
+	}
+	OBR_d_rozpoznanie = {
+		icon = generic_army_support
+		allowed = { OR = { original_tag = WMZ original_tag = MAZ original_tag = SUW } }
+		available = { has_global_flag = TFE_faza_2  }
+		cost = 25
+		days_re_enable = 240
+		complete_effect = { add_timed_idea = { idea = OBR_rozpoznanie days = 240 } }
+		ai_will_do = { factor = 4 modifier = { factor = 2 has_global_flag = TFE_faza_3 } modifier = { factor = 3 has_global_flag = ROS_wojna_mazurska } }
+	}
+	OBR_d_ochotnicy = {
+		icon = generic_army_support
+		allowed = { original_tag = BST }
+		available = { has_global_flag = TFE_faza_2 any_country = { OR = { tag = WMZ tag = MAZ tag = SUW } has_war_with = ROS } }
+		cost = 50
+		days_re_enable = 90
+		complete_effect = { add_manpower = -4000 random_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW } has_war_with = ROS } if = { limit = { NOT = { has_template = "Ochotnicy z Podlasia" } } division_template = { name = "Ochotnicy z Podlasia" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } } } capital_scope = { create_unit = { division = "division_template = \"Ochotnicy z Podlasia\" start_experience_factor = 0.2" owner = PREV } create_unit = { division = "division_template = \"Ochotnicy z Podlasia\" start_experience_factor = 0.2" owner = PREV } } add_opinion_modifier = { target = ROOT modifier = OBR_wsparcie_op } country_event = { id = obr.10 } } }
+		ai_will_do = { factor = 5 modifier = { factor = 2 has_global_flag = TFE_faza_3 } modifier = { factor = 3 has_global_flag = ROS_wojna_mazurska } }
+	}
+	OBR_d_korytarz = {
+		icon = generic_army_support
+		allowed = { original_tag = BST }
+		available = { has_global_flag = TFE_faza_2 any_country = { OR = { tag = WMZ tag = MAZ tag = SUW } exists = yes } }
+		cost = 40
+		days_re_enable = 180
+		complete_effect = { every_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW } exists = yes NOT = { has_war_with = ROOT } } add_timed_idea = { idea = OBR_korytarz days = 240 } add_equipment_to_stockpile = { type = ranged_equipment amount = 500 } add_opinion_modifier = { target = ROOT modifier = OBR_wsparcie_op } }  }
+		ai_will_do = { factor = 4 modifier = { factor = 2 has_global_flag = TFE_faza_3 } modifier = { factor = 3 has_global_flag = ROS_wojna_mazurska } }
+	}
+}

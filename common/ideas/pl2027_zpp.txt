@@ -1,0 +1,112 @@
+ideas = {
+	country = {
+		ZPP_maslarze_idea = {
+			picture = DU_ZPP_maslarze_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.05
+				consumer_goods_factor = 0.05
+				political_power_gain = -0.05
+			}
+		}
+		ZPP_harcerze_idea = {
+			picture = DU_ZPP_harcerze_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.12
+				production_speed_buildings_factor = 0.08
+				stability_factor = -0.02
+			}
+		}
+		ZPP_cyber_idea = {
+			picture = DU_ZPP_cyber_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.1
+				stability_factor = -0.06
+				political_power_gain = 0.05
+			}
+		}
+		ZPP_m_spolki = {
+			picture = DU_ZPP_m_spolki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				consumer_goods_factor = 0.03
+			}
+		}
+		ZPP_m_panstwo = {
+			picture = DU_ZPP_m_panstwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.08
+				consumer_goods_factor = 0.04
+			}
+		}
+		ZPP_h_sztab = {
+			picture = DU_ZPP_h_sztab
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		ZPP_h_panstwo = {
+			picture = DU_ZPP_h_panstwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.12
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		ZPP_c_siec = {
+			picture = DU_ZPP_c_siec
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.04
+			}
+		}
+		ZPP_c_centralizacja = {
+			picture = DU_ZPP_c_centralizacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				production_speed_buildings_factor = 0.08
+			}
+		}
+		ZPP_c_wersja3 = {
+			picture = DU_ZPP_c_wersja3
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.2
+				production_speed_buildings_factor = 0.15
+				research_speed_factor = 0.1
+				stability_factor = -0.08
+			}
+		}
+		ZPP_c_zaleznosc = {
+			picture = DU_ZPP_c_zaleznosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_gain = -0.08
+			}
+		}
+	}
+}

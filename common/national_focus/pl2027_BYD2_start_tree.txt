@@ -19,6 +19,7 @@ focus_tree = {
 		x = 6
 		y = 0
 		cost = 1
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			add_political_power = 25
@@ -298,7 +299,7 @@ focus_tree = {
 
 	focus = {
 		id = BYD2_kamp_brus_poparcie
-		icon = GFX_pl2027_tfr_portret_byd_rafal_bruski
+		icon = GFX_pl2027_081_rada_1_byd_k
 		x = 0
 		y = 6
 		cost = 1
@@ -375,7 +376,7 @@ focus_tree = {
 
 	focus = {
 		id = BYD2_kamp_prze_poparcie
-		icon = GFX_pl2027_081_rada_1_byd_k
+		icon = GFX_pl2027_081_rada_2_byd_k
 		x = 3
 		y = 6
 		cost = 1
@@ -451,7 +452,7 @@ focus_tree = {
 
 	focus = {
 		id = BYD2_kamp_rady_poparcie
-		icon = GFX_pl2027_081_rada_2_byd_k
+		icon = GFX_pl2027_081_rada_0_byd_k
 		x = 6
 		y = 6
 		cost = 1
@@ -529,7 +530,7 @@ focus_tree = {
 
 	focus = {
 		id = BYD2_kamp_junt_poparcie
-		icon = GFX_pl2027_081_rada_0_byd_k
+		icon = GFX_TRN_form_korona
 		x = 9
 		y = 6
 		cost = 1

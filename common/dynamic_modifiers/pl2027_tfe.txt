@@ -3,7 +3,7 @@ TFE_faza_mod_1 = {
 	enable = { has_global_flag = TFE_faza_1 NOT = { has_global_flag = TFE_faza_2 } }
 	remove_trigger = { NOT = { has_global_flag = TFE_faza_1 } OR = { has_global_flag = TFE_faza_2 } }
 	stability_factor = -0.03
-	justify_war_goal_time = 1.0
+	justify_war_goal_time = 10.0
 }
 TFE_faza_mod_2 = {
 	icon = GFX_idea_TFE_faza_mod_2
@@ -11,7 +11,7 @@ TFE_faza_mod_2 = {
 	remove_trigger = { NOT = { has_global_flag = TFE_faza_2 } OR = { has_global_flag = TFE_faza_3 } }
 	stability_factor = -0.04
 	political_power_gain = 0.05
-	justify_war_goal_time = 0.5
+	justify_war_goal_time = 10.0
 }
 TFE_faza_mod_3 = {
 	icon = GFX_idea_TFE_faza_mod_3
@@ -20,6 +20,7 @@ TFE_faza_mod_3 = {
 	stability_factor = -0.05
 	war_support_factor = 0.05
 	conscription_factor = 0.05
+	justify_war_goal_time = 10.0
 }
 TFE_faza_mod_4 = {
 	icon = GFX_idea_TFE_faza_mod_4

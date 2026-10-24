@@ -1,0 +1,125 @@
+ideas = {
+	country = {
+		EK_komisariat = {
+			picture = DU_EK_komisariat
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+				war_support_factor = -0.15
+				conscription_factor = -0.25
+				political_power_gain = -0.05
+			}
+		}
+		EK_fundusze_stowarzyszeniowe = {
+			picture = DU_EK_fundusze_stowarzyszeniowe
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.08
+				political_power_gain = -0.03
+			}
+		}
+		EK_PMN_gaz = {
+			picture = DU_EK_PMN_gaz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		EK_pomoc_warunkowa = {
+			picture = DU_EK_pomoc_warunkowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.12
+				consumer_goods_factor = -0.03
+				political_power_gain = -0.08
+			}
+		}
+		EK_federacja_centrum = {
+			picture = DU_EK_federacja_centrum
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+			}
+		}
+		EK_straz_wybrzeza = {
+			picture = DU_EK_straz_wybrzeza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.04
+				stability_factor = 0.02
+			}
+		}
+		EK_misja_ue = {
+			picture = DU_EK_misja_ue
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.1
+				army_org_factor = 0.03
+			}
+		}
+		EK_SLS_miedz = {
+			picture = DU_EK_SLS_miedz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		EK_SLS_strefa = {
+			picture = DU_EK_SLS_strefa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = -0.02
+			}
+		}
+		EK_SLS_straz = {
+			picture = DU_EK_SLS_straz
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.04
+			}
+		}
+		EK_wspolny_rynek_odry = {
+			picture = DU_EK_wspolny_rynek_odry
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		EK_os_odry_idea = {
+			picture = DU_EK_os_odry_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				production_speed_buildings_factor = 0.03
+			}
+		}
+		EK_SMR_konwoje = {
+			picture = DU_EK_SMR_konwoje
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				consumer_goods_factor = -0.03
+			}
+		}
+	}
+}

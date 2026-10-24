@@ -1,0 +1,959 @@
+add_namespace = uni
+
+country_event = {
+	id = uni.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.1.t
+	desc = uni.1.d
+	picture = GFX_pl2027_ev081_dyplomacja_4
+	is_triggered_only = yes
+	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.1.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.8 has_government = totalitarian_socialist FROM = { has_government = totalitarian_socialist } } modifier = { factor = 1.8 has_government = communist FROM = { has_government = communist } } modifier = { factor = 1.8 has_government = libertarian_socialist FROM = { has_government = libertarian_socialist } } modifier = { factor = 1.8 has_government = social_democrat FROM = { has_government = social_democrat } } modifier = { factor = 1.8 has_government = social_liberal FROM = { has_government = social_liberal } } modifier = { factor = 1.8 has_government = market_liberal FROM = { has_government = market_liberal } } modifier = { factor = 1.8 has_government = conservative FROM = { has_government = conservative } } modifier = { factor = 1.8 has_government = authoritarian_democrat FROM = { has_government = authoritarian_democrat } } modifier = { factor = 1.8 has_government = nationalist FROM = { has_government = nationalist } } modifier = { factor = 1.8 has_government = fascist FROM = { has_government = fascist } } modifier = { factor = 1.8 has_government = national_socialist FROM = { has_government = national_socialist } } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  modifier = { factor = 0.4 check_variable = { global.MET_napiecie > 59 } } }
+		set_country_flag = UNI_btu_zgoda_rozmowy FROM = { country_event = { id = uni.2 days = 1 } } if = { limit = { FROM = { is_ai = yes } } FROM = { country_event = { id = uni.9 days = 7 } } }
+	}
+	option = {
+		name = uni.1.b
+		ai_chance = { factor = 6 modifier = { factor = 2 has_opinion = { target = FROM value < 20 } } modifier = { factor = 1.5 any_neighbor_country = { has_war_with = ROOT } } }
+		set_country_flag = UNI_btu_zgoda_rozmowy set_global_flag = UNI_btu_tylko_pakt set_variable = { global.UNI_btu_forma = 1 } FROM = { country_event = { id = uni.2 days = 1 } } if = { limit = { FROM = { is_ai = yes } } FROM = { country_event = { id = uni.9 days = 7 } } }
+	}
+	option = {
+		name = uni.1.c
+		ai_chance = { factor = 8 modifier = { factor = 2 check_variable = { global.MET_napiecie > 59 } } modifier = { factor = 2 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.5 has_opinion = { target = FROM value > 49 } } }
+		add_opinion_modifier = { target = FROM modifier = UNI_odmowa_op } FROM = { country_event = { id = uni.3 days = 1 } } UNI_btu_koniec_rozmow = yes
+	}
+}
+
+country_event = {
+	id = uni.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.2.t
+	desc = uni.2.d
+	picture = GFX_pl2027_ev081_dyplomacja_0
+	is_triggered_only = yes
+	option = {
+		name = uni.2.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.3.t
+	desc = uni.3.d
+	picture = GFX_pl2027_ev081_miasto_3
+	is_triggered_only = yes
+	option = {
+		name = uni.3.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = uni.9
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = uni.9.a
+		ai_chance = { factor = 1 }
+		if = { limit = { has_country_flag = UNI_btu_proponujacy NOT = { has_global_flag = UNI_btu_przedstawione } } set_global_flag = UNI_btu_przedstawione if = { limit = { tag = TRN } BYD = { country_event = { id = uni.4 days = 1 } } } if = { limit = { tag = BYD } TRN = { country_event = { id = uni.4 days = 1 } } } }
+	}
+}
+
+country_event = {
+	id = uni.4
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.4.t
+	desc = uni.4.d
+	picture = GFX_pl2027_ev081_miasto_5
+	is_triggered_only = yes
+	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.4.a
+		ai_chance = { factor = 10 modifier = { factor = 1.6 OR = { AND = { tag = TRN check_variable = { global.UNI_btu_stolica = 1 } } AND = { tag = BYD check_variable = { global.UNI_btu_stolica = 2 } } } } modifier = { factor = 0.6 OR = { AND = { tag = TRN check_variable = { global.UNI_btu_stolica = 2 } } AND = { tag = BYD check_variable = { global.UNI_btu_stolica = 1 } } } } modifier = { factor = 0.5 check_variable = { global.UNI_btu_forma = 3 } } modifier = { factor = 1.8 check_variable = { global.UNI_btu_forma = 1 } } modifier = { factor = 1.4 check_variable = { global.UNI_btu_autonomia = 1 } } modifier = { factor = 1.2 check_variable = { global.UNI_btu_instytucje = 2 } } modifier = { factor = 0.5 check_variable = { global.MET_napiecie > 59 } } modifier = { factor = 1.5 check_variable = { global.MET_napiecie < 20 } } modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.8 has_government = totalitarian_socialist FROM = { has_government = totalitarian_socialist } } modifier = { factor = 1.8 has_government = communist FROM = { has_government = communist } } modifier = { factor = 1.8 has_government = libertarian_socialist FROM = { has_government = libertarian_socialist } } modifier = { factor = 1.8 has_government = social_democrat FROM = { has_government = social_democrat } } modifier = { factor = 1.8 has_government = social_liberal FROM = { has_government = social_liberal } } modifier = { factor = 1.8 has_government = market_liberal FROM = { has_government = market_liberal } } modifier = { factor = 1.8 has_government = conservative FROM = { has_government = conservative } } modifier = { factor = 1.8 has_government = authoritarian_democrat FROM = { has_government = authoritarian_democrat } } modifier = { factor = 1.8 has_government = nationalist FROM = { has_government = nationalist } } modifier = { factor = 1.8 has_government = fascist FROM = { has_government = fascist } } modifier = { factor = 1.8 has_government = national_socialist FROM = { has_government = national_socialist } } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_global_flag = UNI_btu_warunki TRN = { country_event = { id = uni.6 days = 3 } } BYD = { country_event = { id = uni.6 days = 5 } }
+	}
+	option = {
+		name = uni.4.b
+		trigger = { NOT = { has_global_flag = UNI_btu_kontra } OR = { AND = { tag = TRN NOT = { check_variable = { global.UNI_btu_stolica = 1 } } } AND = { tag = BYD NOT = { check_variable = { global.UNI_btu_stolica = 2 } } } } }
+		ai_chance = { factor = 6 modifier = { factor = 2 strength_ratio = { tag = FROM ratio > 1 } } }
+		if = { limit = { tag = TRN } set_variable = { global.UNI_btu_stolica = 1 } } else = { set_variable = { global.UNI_btu_stolica = 2 } } set_global_flag = UNI_btu_kontra FROM = { country_event = { id = uni.5 days = 1 } }
+	}
+	option = {
+		name = uni.4.c
+		trigger = { NOT = { has_global_flag = UNI_btu_kontra } check_variable = { global.UNI_btu_forma = 3 } }
+		ai_chance = { factor = 8 }
+		set_variable = { global.UNI_btu_forma = 2 } set_variable = { global.UNI_btu_autonomia = 1 } set_global_flag = UNI_btu_kontra FROM = { country_event = { id = uni.5 days = 1 } }
+	}
+	option = {
+		name = uni.4.e
+		trigger = { NOT = { has_global_flag = UNI_btu_kontra } check_variable = { global.UNI_btu_forma > 1 } }
+		ai_chance = { factor = 4 modifier = { factor = 2 has_opinion = { target = FROM value < 20 } } }
+		set_variable = { global.UNI_btu_forma = 1 } set_global_flag = UNI_btu_kontra FROM = { country_event = { id = uni.5 days = 1 } }
+	}
+	option = {
+		name = uni.4.f
+		ai_chance = { factor = 6 }
+		add_opinion_modifier = { target = FROM modifier = UNI_odmowa_op } UNI_btu_koniec_rozmow = yes
+	}
+}
+
+country_event = {
+	id = uni.5
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.5.t
+	desc = uni.5.d
+	picture = GFX_pl2027_ev081_dyplomacja_4
+	is_triggered_only = yes
+	trigger = { country_exists = FROM }
+	option = {
+		name = uni.5.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.8 has_government = totalitarian_socialist FROM = { has_government = totalitarian_socialist } } modifier = { factor = 1.8 has_government = communist FROM = { has_government = communist } } modifier = { factor = 1.8 has_government = libertarian_socialist FROM = { has_government = libertarian_socialist } } modifier = { factor = 1.8 has_government = social_democrat FROM = { has_government = social_democrat } } modifier = { factor = 1.8 has_government = social_liberal FROM = { has_government = social_liberal } } modifier = { factor = 1.8 has_government = market_liberal FROM = { has_government = market_liberal } } modifier = { factor = 1.8 has_government = conservative FROM = { has_government = conservative } } modifier = { factor = 1.8 has_government = authoritarian_democrat FROM = { has_government = authoritarian_democrat } } modifier = { factor = 1.8 has_government = nationalist FROM = { has_government = nationalist } } modifier = { factor = 1.8 has_government = fascist FROM = { has_government = fascist } } modifier = { factor = 1.8 has_government = national_socialist FROM = { has_government = national_socialist } } }
+		set_global_flag = UNI_btu_warunki TRN = { country_event = { id = uni.6 days = 3 } } BYD = { country_event = { id = uni.6 days = 5 } }
+	}
+	option = {
+		name = uni.5.b
+		ai_chance = { factor = 6 modifier = { factor = 2 strength_ratio = { tag = FROM ratio < 0.7 } } }
+		UNI_btu_koniec_rozmow = yes
+	}
+}
+
+country_event = {
+	id = uni.6
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = uni.6.t
+	desc = uni.6.d
+	picture = GFX_pl2027_ev081_wybory_2
+	is_triggered_only = yes
+	trigger = { country_exists = TRN country_exists = BYD has_global_flag = UNI_btu_warunki NOT = { has_country_flag = UNI_btu_ratyfikacja } }
+	option = {
+		name = uni.6.a
+		ai_chance = { factor = 12 modifier = { factor = 1.6 OR = { AND = { tag = TRN check_variable = { global.UNI_btu_stolica = 1 } } AND = { tag = BYD check_variable = { global.UNI_btu_stolica = 2 } } } } modifier = { factor = 0.6 OR = { AND = { tag = TRN check_variable = { global.UNI_btu_stolica = 2 } } AND = { tag = BYD check_variable = { global.UNI_btu_stolica = 1 } } } } modifier = { factor = 0.5 check_variable = { global.UNI_btu_forma = 3 } } modifier = { factor = 1.8 check_variable = { global.UNI_btu_forma = 1 } } modifier = { factor = 1.4 check_variable = { global.UNI_btu_autonomia = 1 } } modifier = { factor = 1.2 check_variable = { global.UNI_btu_instytucje = 2 } } modifier = { factor = 0.5 check_variable = { global.MET_napiecie > 59 } } modifier = { factor = 1.5 check_variable = { global.MET_napiecie < 20 } } modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.8 has_government = totalitarian_socialist FROM = { has_government = totalitarian_socialist } } modifier = { factor = 1.8 has_government = communist FROM = { has_government = communist } } modifier = { factor = 1.8 has_government = libertarian_socialist FROM = { has_government = libertarian_socialist } } modifier = { factor = 1.8 has_government = social_democrat FROM = { has_government = social_democrat } } modifier = { factor = 1.8 has_government = social_liberal FROM = { has_government = social_liberal } } modifier = { factor = 1.8 has_government = market_liberal FROM = { has_government = market_liberal } } modifier = { factor = 1.8 has_government = conservative FROM = { has_government = conservative } } modifier = { factor = 1.8 has_government = authoritarian_democrat FROM = { has_government = authoritarian_democrat } } modifier = { factor = 1.8 has_government = nationalist FROM = { has_government = nationalist } } modifier = { factor = 1.8 has_government = fascist FROM = { has_government = fascist } } modifier = { factor = 1.8 has_government = national_socialist FROM = { has_government = national_socialist } } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_btu_ratyfikacja custom_effect_tooltip = UNI_tt_2  if = { limit = { TRN = { has_country_flag = UNI_btu_ratyfikacja } BYD = { has_country_flag = UNI_btu_ratyfikacja } NOT = { any_country = { OR = { has_country_flag = UNI_btu_integracja_2 has_country_flag = UNI_btu_integracja_3 } } } } UNI_btu_po_ratyfikacji = yes }
+	}
+	option = {
+		name = uni.6.b
+		ai_chance = { factor = 4 modifier = { factor = 2 check_variable = { global.MET_napiecie > 59 } } modifier = { factor = 0.5 has_opinion = { target = FROM value > 49 } } }
+		UNI_btu_koniec_rozmow = yes
+	}
+}
+
+country_event = {
+	id = uni.7
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.7.t
+	desc = uni.7.d
+	picture = GFX_pl2027_ev081_dyplomacja_0
+	is_triggered_only = yes
+	option = {
+		name = uni.7.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = uni.10
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.10.t
+	desc = uni.10.d
+	picture = GFX_pl2027_ev081_miasto_1_news
+	is_triggered_only = yes
+	option = {
+		name = uni.10.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.11
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.11.t
+	desc = uni.11.d
+	picture = GFX_pl2027_ev081_granica_2
+	is_triggered_only = yes
+	option = {
+		name = uni.11.a
+		ai_chance = { factor = 1 }
+		add_stability = -0.02
+	}
+}
+
+news_event = {
+	id = uni.12
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.12.t
+	desc = uni.12.d
+	picture = GFX_pl2027_ev081_granica_1_news
+	is_triggered_only = yes
+	option = {
+		name = uni.12.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = uni.13
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.13.t
+	desc = uni.13.d
+	picture = GFX_pl2027_ev081_polityka_0_news
+	is_triggered_only = yes
+	option = {
+		name = uni.13.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.101
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.101.t
+	desc = uni.101.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.101.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.8 has_government = totalitarian_socialist FROM = { has_government = totalitarian_socialist } } modifier = { factor = 1.8 has_government = communist FROM = { has_government = communist } } modifier = { factor = 1.8 has_government = libertarian_socialist FROM = { has_government = libertarian_socialist } } modifier = { factor = 1.8 has_government = social_democrat FROM = { has_government = social_democrat } } modifier = { factor = 1.8 has_government = social_liberal FROM = { has_government = social_liberal } } modifier = { factor = 1.8 has_government = market_liberal FROM = { has_government = market_liberal } } modifier = { factor = 1.8 has_government = conservative FROM = { has_government = conservative } } modifier = { factor = 1.8 has_government = authoritarian_democrat FROM = { has_government = authoritarian_democrat } } modifier = { factor = 1.8 has_government = nationalist FROM = { has_government = nationalist } } modifier = { factor = 1.8 has_government = fascist FROM = { has_government = fascist } } modifier = { factor = 1.8 has_government = national_socialist FROM = { has_government = national_socialist } } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  modifier = { factor = 0.4 check_variable = { global.UNI_kujpom_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio < 0.4 } } }
+		set_country_flag = UNI_kujpom_zgoda FROM = { add_to_variable = { UNI_kujpom_zgody = 1 } } add_opinion_modifier = { target = FROM modifier = UNI_rozmowy_op }
+	}
+	option = {
+		name = uni.101.b
+		trigger = { check_variable = { global.UNI_kujpom_forma = 3 } }
+		ai_chance = { factor = 8 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } }
+		set_country_flag = UNI_kujpom_zgoda set_country_flag = UNI_kujpom_autonomia FROM = { add_to_variable = { UNI_kujpom_zgody = 1 } }
+	}
+	option = {
+		name = uni.101.c
+		trigger = { check_variable = { global.UNI_kujpom_forma > 1 } }
+		ai_chance = { factor = 6 modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_kujpom_zgoda set_country_flag = UNI_kujpom_tylko_pakt FROM = { add_to_variable = { UNI_kujpom_zgody = 1 } }
+	}
+	option = {
+		name = uni.101.e
+		ai_chance = { factor = 9 modifier = { factor = 2 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.5 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.8 check_variable = { global.UNI_kujpom_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio > 1.5 } } }
+		set_country_flag = UNI_kujpom_odmowa clr_country_flag = UNI_zajety add_opinion_modifier = { target = FROM modifier = UNI_odmowa_op }
+	}
+}
+
+country_event = {
+	id = uni.103
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.103.t
+	desc = uni.103.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	trigger = { has_global_flag = UNI_kujpom_trwa }
+	option = {
+		name = uni.103.a
+		trigger = { check_variable = { UNI_kujpom_zgody > 0 } }
+		ai_chance = { factor = 10 }
+		set_country_flag = UNI_kujpom_ratyfikacja every_country = { limit = { has_country_flag = UNI_kujpom_zgoda } country_event = { id = uni.104 days = 2 } } country_event = { id = uni.105 days = 16 }
+	}
+	option = {
+		name = uni.103.b
+		ai_chance = { factor = 1 modifier = { factor = 20 check_variable = { UNI_kujpom_zgody < 1 } } }
+		UNI_kujpom_reset = yes set_global_flag = { flag = UNI_kujpom_odmowa_cd days = 120 }
+	}
+}
+
+country_event = {
+	id = uni.104
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = uni.104.t
+	desc = uni.104.d
+	picture = GFX_pl2027_ev081_wybory_2
+	is_triggered_only = yes
+	trigger = { country_exists = FROM has_country_flag = UNI_kujpom_zgoda NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.104.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_kujpom_ratyfikacja
+	}
+	option = {
+		name = uni.104.b
+		ai_chance = { factor = 3 modifier = { factor = 3 has_opinion = { target = FROM value < 0 } } }
+		clr_country_flag = UNI_kujpom_zgoda clr_country_flag = UNI_zajety FROM = { add_to_variable = { UNI_kujpom_zgody = -1 } }
+	}
+}
+
+country_event = {
+	id = uni.105
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = uni.105.a
+		ai_chance = { factor = 1 }
+		if = { limit = { any_country = { has_country_flag = UNI_kujpom_zaproszony has_country_flag = UNI_kujpom_ratyfikacja } } set_country_flag = UNI_kujpom_integracja add_ideas = UNI_integracja_trwa news_event = { id = uni.108 days = 1 } } else = { country_event = { id = uni.107 days = 1 } UNI_kujpom_reset = yes }
+	}
+}
+
+news_event = {
+	id = uni.106
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.106.t
+	desc = uni.106.d
+	picture = GFX_pl2027_ev081_narada_5_news
+	is_triggered_only = yes
+	option = {
+		name = uni.106.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.107
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.107.t
+	desc = uni.107.d
+	picture = GFX_pl2027_ev081_narada_0
+	is_triggered_only = yes
+	option = {
+		name = uni.107.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = uni.108
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.108.t
+	desc = uni.108.d
+	picture = GFX_pl2027_ev081_gospodarka_4_news
+	is_triggered_only = yes
+	option = {
+		name = uni.108.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.111
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.111.t
+	desc = uni.111.d
+	picture = GFX_pl2027_ev081_wisla_5
+	is_triggered_only = yes
+	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.111.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.8 has_government = totalitarian_socialist FROM = { has_government = totalitarian_socialist } } modifier = { factor = 1.8 has_government = communist FROM = { has_government = communist } } modifier = { factor = 1.8 has_government = libertarian_socialist FROM = { has_government = libertarian_socialist } } modifier = { factor = 1.8 has_government = social_democrat FROM = { has_government = social_democrat } } modifier = { factor = 1.8 has_government = social_liberal FROM = { has_government = social_liberal } } modifier = { factor = 1.8 has_government = market_liberal FROM = { has_government = market_liberal } } modifier = { factor = 1.8 has_government = conservative FROM = { has_government = conservative } } modifier = { factor = 1.8 has_government = authoritarian_democrat FROM = { has_government = authoritarian_democrat } } modifier = { factor = 1.8 has_government = nationalist FROM = { has_government = nationalist } } modifier = { factor = 1.8 has_government = fascist FROM = { has_government = fascist } } modifier = { factor = 1.8 has_government = national_socialist FROM = { has_government = national_socialist } } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  modifier = { factor = 0.4 check_variable = { global.UNI_trojmiasto_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio < 0.4 } } }
+		set_country_flag = UNI_trojmiasto_zgoda FROM = { add_to_variable = { UNI_trojmiasto_zgody = 1 } } add_opinion_modifier = { target = FROM modifier = UNI_rozmowy_op }
+	}
+	option = {
+		name = uni.111.b
+		trigger = { check_variable = { global.UNI_trojmiasto_forma = 3 } }
+		ai_chance = { factor = 8 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } }
+		set_country_flag = UNI_trojmiasto_zgoda set_country_flag = UNI_trojmiasto_autonomia FROM = { add_to_variable = { UNI_trojmiasto_zgody = 1 } }
+	}
+	option = {
+		name = uni.111.c
+		trigger = { check_variable = { global.UNI_trojmiasto_forma > 1 } }
+		ai_chance = { factor = 6 modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_trojmiasto_zgoda set_country_flag = UNI_trojmiasto_tylko_pakt FROM = { add_to_variable = { UNI_trojmiasto_zgody = 1 } }
+	}
+	option = {
+		name = uni.111.e
+		ai_chance = { factor = 9 modifier = { factor = 2 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.5 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.8 check_variable = { global.UNI_trojmiasto_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio > 1.5 } } }
+		set_country_flag = UNI_trojmiasto_odmowa clr_country_flag = UNI_zajety add_opinion_modifier = { target = FROM modifier = UNI_odmowa_op }
+	}
+}
+
+country_event = {
+	id = uni.113
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.113.t
+	desc = uni.113.d
+	picture = GFX_pl2027_ev081_narada_0
+	is_triggered_only = yes
+	trigger = { has_global_flag = UNI_trojmiasto_trwa }
+	option = {
+		name = uni.113.a
+		trigger = { check_variable = { UNI_trojmiasto_zgody > 0 } }
+		ai_chance = { factor = 10 }
+		set_country_flag = UNI_trojmiasto_ratyfikacja every_country = { limit = { has_country_flag = UNI_trojmiasto_zgoda } country_event = { id = uni.114 days = 2 } } country_event = { id = uni.115 days = 16 }
+	}
+	option = {
+		name = uni.113.b
+		ai_chance = { factor = 1 modifier = { factor = 20 check_variable = { UNI_trojmiasto_zgody < 1 } } }
+		UNI_trojmiasto_reset = yes set_global_flag = { flag = UNI_trojmiasto_odmowa_cd days = 120 }
+	}
+}
+
+country_event = {
+	id = uni.114
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = uni.114.t
+	desc = uni.114.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	trigger = { country_exists = FROM has_country_flag = UNI_trojmiasto_zgoda NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.114.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_trojmiasto_ratyfikacja
+	}
+	option = {
+		name = uni.114.b
+		ai_chance = { factor = 3 modifier = { factor = 3 has_opinion = { target = FROM value < 0 } } }
+		clr_country_flag = UNI_trojmiasto_zgoda clr_country_flag = UNI_zajety FROM = { add_to_variable = { UNI_trojmiasto_zgody = -1 } }
+	}
+}
+
+country_event = {
+	id = uni.115
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = uni.115.a
+		ai_chance = { factor = 1 }
+		if = { limit = { any_country = { has_country_flag = UNI_trojmiasto_zaproszony has_country_flag = UNI_trojmiasto_ratyfikacja } } set_country_flag = UNI_trojmiasto_integracja add_ideas = UNI_integracja_trwa news_event = { id = uni.118 days = 1 } } else = { country_event = { id = uni.117 days = 1 } UNI_trojmiasto_reset = yes }
+	}
+}
+
+news_event = {
+	id = uni.116
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.116.t
+	desc = uni.116.d
+	picture = GFX_pl2027_ev081_narada_2_news
+	is_triggered_only = yes
+	option = {
+		name = uni.116.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.117
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.117.t
+	desc = uni.117.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = uni.117.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = uni.118
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.118.t
+	desc = uni.118.d
+	picture = GFX_pl2027_ev081_gospodarka_5_news
+	is_triggered_only = yes
+	option = {
+		name = uni.118.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.121
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.121.t
+	desc = uni.121.d
+	picture = GFX_pl2027_ev081_mazury_0
+	is_triggered_only = yes
+	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.121.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.8 has_government = totalitarian_socialist FROM = { has_government = totalitarian_socialist } } modifier = { factor = 1.8 has_government = communist FROM = { has_government = communist } } modifier = { factor = 1.8 has_government = libertarian_socialist FROM = { has_government = libertarian_socialist } } modifier = { factor = 1.8 has_government = social_democrat FROM = { has_government = social_democrat } } modifier = { factor = 1.8 has_government = social_liberal FROM = { has_government = social_liberal } } modifier = { factor = 1.8 has_government = market_liberal FROM = { has_government = market_liberal } } modifier = { factor = 1.8 has_government = conservative FROM = { has_government = conservative } } modifier = { factor = 1.8 has_government = authoritarian_democrat FROM = { has_government = authoritarian_democrat } } modifier = { factor = 1.8 has_government = nationalist FROM = { has_government = nationalist } } modifier = { factor = 1.8 has_government = fascist FROM = { has_government = fascist } } modifier = { factor = 1.8 has_government = national_socialist FROM = { has_government = national_socialist } } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 } modifier = { factor = 3 has_global_flag = ROS_wojna_mazurska }  modifier = { factor = 0.4 check_variable = { global.UNI_warmaz_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio < 0.4 } } }
+		set_country_flag = UNI_warmaz_zgoda FROM = { add_to_variable = { UNI_warmaz_zgody = 1 } } add_opinion_modifier = { target = FROM modifier = UNI_rozmowy_op }
+	}
+	option = {
+		name = uni.121.b
+		trigger = { check_variable = { global.UNI_warmaz_forma = 3 } }
+		ai_chance = { factor = 8 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } }
+		set_country_flag = UNI_warmaz_zgoda set_country_flag = UNI_warmaz_autonomia FROM = { add_to_variable = { UNI_warmaz_zgody = 1 } }
+	}
+	option = {
+		name = uni.121.c
+		trigger = { check_variable = { global.UNI_warmaz_forma > 1 } }
+		ai_chance = { factor = 6 modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_warmaz_zgoda set_country_flag = UNI_warmaz_tylko_pakt FROM = { add_to_variable = { UNI_warmaz_zgody = 1 } }
+	}
+	option = {
+		name = uni.121.e
+		ai_chance = { factor = 9 modifier = { factor = 2 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.5 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.8 check_variable = { global.UNI_warmaz_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio > 1.5 } } }
+		set_country_flag = UNI_warmaz_odmowa clr_country_flag = UNI_zajety add_opinion_modifier = { target = FROM modifier = UNI_odmowa_op }
+	}
+}
+
+country_event = {
+	id = uni.123
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.123.t
+	desc = uni.123.d
+	picture = GFX_pl2027_ev081_mazury_2
+	is_triggered_only = yes
+	trigger = { has_global_flag = UNI_warmaz_trwa }
+	option = {
+		name = uni.123.a
+		trigger = { check_variable = { UNI_warmaz_zgody > 0 } }
+		ai_chance = { factor = 10 }
+		set_country_flag = UNI_warmaz_ratyfikacja every_country = { limit = { has_country_flag = UNI_warmaz_zgoda } country_event = { id = uni.124 days = 2 } } country_event = { id = uni.125 days = 16 }
+	}
+	option = {
+		name = uni.123.b
+		ai_chance = { factor = 1 modifier = { factor = 20 check_variable = { UNI_warmaz_zgody < 1 } } }
+		UNI_warmaz_reset = yes set_global_flag = { flag = UNI_warmaz_odmowa_cd days = 120 }
+	}
+}
+
+country_event = {
+	id = uni.124
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = uni.124.t
+	desc = uni.124.d
+	picture = GFX_pl2027_ev081_mazury_4
+	is_triggered_only = yes
+	trigger = { country_exists = FROM has_country_flag = UNI_warmaz_zgoda NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.124.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_warmaz_ratyfikacja
+	}
+	option = {
+		name = uni.124.b
+		ai_chance = { factor = 3 modifier = { factor = 3 has_opinion = { target = FROM value < 0 } } }
+		clr_country_flag = UNI_warmaz_zgoda clr_country_flag = UNI_zajety FROM = { add_to_variable = { UNI_warmaz_zgody = -1 } }
+	}
+}
+
+country_event = {
+	id = uni.125
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = uni.125.a
+		ai_chance = { factor = 1 }
+		if = { limit = { any_country = { has_country_flag = UNI_warmaz_zaproszony has_country_flag = UNI_warmaz_ratyfikacja } } set_country_flag = UNI_warmaz_integracja add_ideas = UNI_integracja_trwa news_event = { id = uni.128 days = 1 } } else = { country_event = { id = uni.127 days = 1 } UNI_warmaz_reset = yes }
+	}
+}
+
+news_event = {
+	id = uni.126
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.126.t
+	desc = uni.126.d
+	picture = GFX_pl2027_ev081_mazury_5_news
+	is_triggered_only = yes
+	option = {
+		name = uni.126.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.127
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.127.t
+	desc = uni.127.d
+	picture = GFX_pl2027_ev081_mazury_5
+	is_triggered_only = yes
+	option = {
+		name = uni.127.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = uni.128
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.128.t
+	desc = uni.128.d
+	picture = GFX_pl2027_ev081_mazury_1_news
+	is_triggered_only = yes
+	option = {
+		name = uni.128.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.131
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.131.t
+	desc = uni.131.d
+	picture = GFX_pl2027_ev081_mazury_0
+	is_triggered_only = yes
+	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.131.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.8 has_government = totalitarian_socialist FROM = { has_government = totalitarian_socialist } } modifier = { factor = 1.8 has_government = communist FROM = { has_government = communist } } modifier = { factor = 1.8 has_government = libertarian_socialist FROM = { has_government = libertarian_socialist } } modifier = { factor = 1.8 has_government = social_democrat FROM = { has_government = social_democrat } } modifier = { factor = 1.8 has_government = social_liberal FROM = { has_government = social_liberal } } modifier = { factor = 1.8 has_government = market_liberal FROM = { has_government = market_liberal } } modifier = { factor = 1.8 has_government = conservative FROM = { has_government = conservative } } modifier = { factor = 1.8 has_government = authoritarian_democrat FROM = { has_government = authoritarian_democrat } } modifier = { factor = 1.8 has_government = nationalist FROM = { has_government = nationalist } } modifier = { factor = 1.8 has_government = fascist FROM = { has_government = fascist } } modifier = { factor = 1.8 has_government = national_socialist FROM = { has_government = national_socialist } } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 } modifier = { factor = 3 has_global_flag = ROS_wojna_mazurska }  modifier = { factor = 0.4 check_variable = { global.UNI_pnwsch_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio < 0.4 } } }
+		set_country_flag = UNI_pnwsch_zgoda FROM = { add_to_variable = { UNI_pnwsch_zgody = 1 } } add_opinion_modifier = { target = FROM modifier = UNI_rozmowy_op }
+	}
+	option = {
+		name = uni.131.b
+		trigger = { check_variable = { global.UNI_pnwsch_forma = 3 } }
+		ai_chance = { factor = 8 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } }
+		set_country_flag = UNI_pnwsch_zgoda set_country_flag = UNI_pnwsch_autonomia FROM = { add_to_variable = { UNI_pnwsch_zgody = 1 } }
+	}
+	option = {
+		name = uni.131.c
+		trigger = { check_variable = { global.UNI_pnwsch_forma > 1 } }
+		ai_chance = { factor = 6 modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_pnwsch_zgoda set_country_flag = UNI_pnwsch_tylko_pakt FROM = { add_to_variable = { UNI_pnwsch_zgody = 1 } }
+	}
+	option = {
+		name = uni.131.e
+		ai_chance = { factor = 9 modifier = { factor = 2 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.5 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.8 check_variable = { global.UNI_pnwsch_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio > 1.5 } } }
+		set_country_flag = UNI_pnwsch_odmowa clr_country_flag = UNI_zajety add_opinion_modifier = { target = FROM modifier = UNI_odmowa_op }
+	}
+}
+
+country_event = {
+	id = uni.133
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.133.t
+	desc = uni.133.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	trigger = { has_global_flag = UNI_pnwsch_trwa }
+	option = {
+		name = uni.133.a
+		trigger = { check_variable = { UNI_pnwsch_zgody > 0 } }
+		ai_chance = { factor = 10 }
+		set_country_flag = UNI_pnwsch_ratyfikacja every_country = { limit = { has_country_flag = UNI_pnwsch_zgoda } country_event = { id = uni.134 days = 2 } } country_event = { id = uni.135 days = 16 }
+	}
+	option = {
+		name = uni.133.b
+		ai_chance = { factor = 1 modifier = { factor = 20 check_variable = { UNI_pnwsch_zgody < 1 } } }
+		UNI_pnwsch_reset = yes set_global_flag = { flag = UNI_pnwsch_odmowa_cd days = 120 }
+	}
+}
+
+country_event = {
+	id = uni.134
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = uni.134.t
+	desc = uni.134.d
+	picture = GFX_pl2027_ev081_wybory_0
+	is_triggered_only = yes
+	trigger = { country_exists = FROM has_country_flag = UNI_pnwsch_zgoda NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.134.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_pnwsch_ratyfikacja
+	}
+	option = {
+		name = uni.134.b
+		ai_chance = { factor = 3 modifier = { factor = 3 has_opinion = { target = FROM value < 0 } } }
+		clr_country_flag = UNI_pnwsch_zgoda clr_country_flag = UNI_zajety FROM = { add_to_variable = { UNI_pnwsch_zgody = -1 } }
+	}
+}
+
+country_event = {
+	id = uni.135
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = uni.135.a
+		ai_chance = { factor = 1 }
+		if = { limit = { any_country = { has_country_flag = UNI_pnwsch_zaproszony has_country_flag = UNI_pnwsch_ratyfikacja } } set_country_flag = UNI_pnwsch_integracja add_ideas = UNI_integracja_trwa news_event = { id = uni.138 days = 1 } } else = { country_event = { id = uni.137 days = 1 } UNI_pnwsch_reset = yes }
+	}
+}
+
+news_event = {
+	id = uni.136
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.136.t
+	desc = uni.136.d
+	picture = GFX_pl2027_ev081_narada_5_news
+	is_triggered_only = yes
+	option = {
+		name = uni.136.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.137
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.137.t
+	desc = uni.137.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = uni.137.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = uni.138
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.138.t
+	desc = uni.138.d
+	picture = GFX_pl2027_ev081_gospodarka_0_news
+	is_triggered_only = yes
+	option = {
+		name = uni.138.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.141
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.141.t
+	desc = uni.141.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.141.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.8 has_government = totalitarian_socialist FROM = { has_government = totalitarian_socialist } } modifier = { factor = 1.8 has_government = communist FROM = { has_government = communist } } modifier = { factor = 1.8 has_government = libertarian_socialist FROM = { has_government = libertarian_socialist } } modifier = { factor = 1.8 has_government = social_democrat FROM = { has_government = social_democrat } } modifier = { factor = 1.8 has_government = social_liberal FROM = { has_government = social_liberal } } modifier = { factor = 1.8 has_government = market_liberal FROM = { has_government = market_liberal } } modifier = { factor = 1.8 has_government = conservative FROM = { has_government = conservative } } modifier = { factor = 1.8 has_government = authoritarian_democrat FROM = { has_government = authoritarian_democrat } } modifier = { factor = 1.8 has_government = nationalist FROM = { has_government = nationalist } } modifier = { factor = 1.8 has_government = fascist FROM = { has_government = fascist } } modifier = { factor = 1.8 has_government = national_socialist FROM = { has_government = national_socialist } } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  modifier = { factor = 0.4 check_variable = { global.UNI_warszawa_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio < 0.4 } } }
+		set_country_flag = UNI_warszawa_zgoda FROM = { add_to_variable = { UNI_warszawa_zgody = 1 } } add_opinion_modifier = { target = FROM modifier = UNI_rozmowy_op }
+	}
+	option = {
+		name = uni.141.b
+		trigger = { check_variable = { global.UNI_warszawa_forma = 3 } }
+		ai_chance = { factor = 8 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } }
+		set_country_flag = UNI_warszawa_zgoda set_country_flag = UNI_warszawa_autonomia FROM = { add_to_variable = { UNI_warszawa_zgody = 1 } }
+	}
+	option = {
+		name = uni.141.c
+		trigger = { check_variable = { global.UNI_warszawa_forma > 1 } }
+		ai_chance = { factor = 6 modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_warszawa_zgoda set_country_flag = UNI_warszawa_tylko_pakt FROM = { add_to_variable = { UNI_warszawa_zgody = 1 } }
+	}
+	option = {
+		name = uni.141.e
+		ai_chance = { factor = 9 modifier = { factor = 2 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.5 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.8 check_variable = { global.UNI_warszawa_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio > 1.5 } } }
+		set_country_flag = UNI_warszawa_odmowa clr_country_flag = UNI_zajety add_opinion_modifier = { target = FROM modifier = UNI_odmowa_op }
+	}
+}
+
+country_event = {
+	id = uni.143
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.143.t
+	desc = uni.143.d
+	picture = GFX_pl2027_ev081_narada_4
+	is_triggered_only = yes
+	trigger = { has_global_flag = UNI_warszawa_trwa }
+	option = {
+		name = uni.143.a
+		trigger = { check_variable = { UNI_warszawa_zgody > 0 } }
+		ai_chance = { factor = 10 }
+		set_country_flag = UNI_warszawa_ratyfikacja every_country = { limit = { has_country_flag = UNI_warszawa_zgoda } country_event = { id = uni.144 days = 2 } } country_event = { id = uni.145 days = 16 }
+	}
+	option = {
+		name = uni.143.b
+		ai_chance = { factor = 1 modifier = { factor = 20 check_variable = { UNI_warszawa_zgody < 1 } } }
+		UNI_warszawa_reset = yes set_global_flag = { flag = UNI_warszawa_odmowa_cd days = 120 }
+	}
+}
+
+country_event = {
+	id = uni.144
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = uni.144.t
+	desc = uni.144.d
+	picture = GFX_pl2027_ev081_wybory_0
+	is_triggered_only = yes
+	trigger = { country_exists = FROM has_country_flag = UNI_warszawa_zgoda NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.144.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_warszawa_ratyfikacja
+	}
+	option = {
+		name = uni.144.b
+		ai_chance = { factor = 3 modifier = { factor = 3 has_opinion = { target = FROM value < 0 } } }
+		clr_country_flag = UNI_warszawa_zgoda clr_country_flag = UNI_zajety FROM = { add_to_variable = { UNI_warszawa_zgody = -1 } }
+	}
+}
+
+country_event = {
+	id = uni.145
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = uni.145.a
+		ai_chance = { factor = 1 }
+		if = { limit = { any_country = { has_country_flag = UNI_warszawa_zaproszony has_country_flag = UNI_warszawa_ratyfikacja } } set_country_flag = UNI_warszawa_integracja add_ideas = UNI_integracja_trwa news_event = { id = uni.148 days = 1 } } else = { country_event = { id = uni.147 days = 1 } UNI_warszawa_reset = yes }
+	}
+}
+
+news_event = {
+	id = uni.146
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.146.t
+	desc = uni.146.d
+	picture = GFX_pl2027_ev081_narada_0_news
+	is_triggered_only = yes
+	option = {
+		name = uni.146.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.147
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.147.t
+	desc = uni.147.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = uni.147.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = uni.148
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.148.t
+	desc = uni.148.d
+	picture = GFX_pl2027_ev081_gospodarka_4_news
+	is_triggered_only = yes
+	option = {
+		name = uni.148.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.151
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.151.t
+	desc = uni.151.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.151.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.8 has_government = totalitarian_socialist FROM = { has_government = totalitarian_socialist } } modifier = { factor = 1.8 has_government = communist FROM = { has_government = communist } } modifier = { factor = 1.8 has_government = libertarian_socialist FROM = { has_government = libertarian_socialist } } modifier = { factor = 1.8 has_government = social_democrat FROM = { has_government = social_democrat } } modifier = { factor = 1.8 has_government = social_liberal FROM = { has_government = social_liberal } } modifier = { factor = 1.8 has_government = market_liberal FROM = { has_government = market_liberal } } modifier = { factor = 1.8 has_government = conservative FROM = { has_government = conservative } } modifier = { factor = 1.8 has_government = authoritarian_democrat FROM = { has_government = authoritarian_democrat } } modifier = { factor = 1.8 has_government = nationalist FROM = { has_government = nationalist } } modifier = { factor = 1.8 has_government = fascist FROM = { has_government = fascist } } modifier = { factor = 1.8 has_government = national_socialist FROM = { has_government = national_socialist } } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  modifier = { factor = 0.4 check_variable = { global.UNI_europa_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio < 0.4 } } }
+		set_country_flag = UNI_europa_zgoda FROM = { add_to_variable = { UNI_europa_zgody = 1 } } add_opinion_modifier = { target = FROM modifier = UNI_rozmowy_op }
+	}
+	option = {
+		name = uni.151.b
+		trigger = { check_variable = { global.UNI_europa_forma = 3 } }
+		ai_chance = { factor = 8 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } }
+		set_country_flag = UNI_europa_zgoda set_country_flag = UNI_europa_autonomia FROM = { add_to_variable = { UNI_europa_zgody = 1 } }
+	}
+	option = {
+		name = uni.151.c
+		trigger = { check_variable = { global.UNI_europa_forma > 1 } }
+		ai_chance = { factor = 6 modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_europa_zgoda set_country_flag = UNI_europa_tylko_pakt FROM = { add_to_variable = { UNI_europa_zgody = 1 } }
+	}
+	option = {
+		name = uni.151.e
+		ai_chance = { factor = 9 modifier = { factor = 2 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.5 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.8 check_variable = { global.UNI_europa_forma = 3 } } modifier = { factor = 1.5 strength_ratio = { tag = FROM ratio > 1.5 } } }
+		set_country_flag = UNI_europa_odmowa clr_country_flag = UNI_zajety add_opinion_modifier = { target = FROM modifier = UNI_odmowa_op }
+	}
+}
+
+country_event = {
+	id = uni.153
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.153.t
+	desc = uni.153.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	trigger = { has_global_flag = UNI_europa_trwa }
+	option = {
+		name = uni.153.a
+		trigger = { check_variable = { UNI_europa_zgody > 0 } }
+		ai_chance = { factor = 10 }
+		set_country_flag = UNI_europa_ratyfikacja every_country = { limit = { has_country_flag = UNI_europa_zgoda } country_event = { id = uni.154 days = 2 } } country_event = { id = uni.155 days = 16 }
+	}
+	option = {
+		name = uni.153.b
+		ai_chance = { factor = 1 modifier = { factor = 20 check_variable = { UNI_europa_zgody < 1 } } }
+		UNI_europa_reset = yes set_global_flag = { flag = UNI_europa_odmowa_cd days = 120 }
+	}
+}
+
+country_event = {
+	id = uni.154
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = uni.154.t
+	desc = uni.154.d
+	picture = GFX_pl2027_ev081_wybory_4
+	is_triggered_only = yes
+	trigger = { country_exists = FROM has_country_flag = UNI_europa_zgoda NOT = { has_war_with = FROM } }
+	option = {
+		name = uni.154.a
+		ai_chance = { factor = 10 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } modifier = { factor = 1.6 any_neighbor_country = { has_war_with = ROOT } } modifier = { factor = 1.3 has_global_flag = TFE_faza_4 } modifier = { factor = 1.5 has_stability < 0.35 }  }
+		set_country_flag = UNI_europa_ratyfikacja
+	}
+	option = {
+		name = uni.154.b
+		ai_chance = { factor = 3 modifier = { factor = 3 has_opinion = { target = FROM value < 0 } } }
+		clr_country_flag = UNI_europa_zgoda clr_country_flag = UNI_zajety FROM = { add_to_variable = { UNI_europa_zgody = -1 } }
+	}
+}
+
+country_event = {
+	id = uni.155
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = uni.155.a
+		ai_chance = { factor = 1 }
+		if = { limit = { any_country = { has_country_flag = UNI_europa_zaproszony has_country_flag = UNI_europa_ratyfikacja } } set_country_flag = UNI_europa_integracja add_ideas = UNI_integracja_trwa news_event = { id = uni.158 days = 1 } } else = { country_event = { id = uni.157 days = 1 } UNI_europa_reset = yes }
+	}
+}
+
+news_event = {
+	id = uni.156
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.156.t
+	desc = uni.156.d
+	picture = GFX_pl2027_ev081_narada_4_news
+	is_triggered_only = yes
+	option = {
+		name = uni.156.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.157
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
+	title = uni.157.t
+	desc = uni.157.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	option = {
+		name = uni.157.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = uni.158
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = uni.158.t
+	desc = uni.158.d
+	picture = GFX_pl2027_ev081_gospodarka_4_news
+	is_triggered_only = yes
+	option = {
+		name = uni.158.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = uni.90
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = uni.90.t
+	desc = uni.90.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = uni.90.a
+		ai_chance = { factor = 1 }
+	}
+}

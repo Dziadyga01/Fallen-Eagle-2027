@@ -1,0 +1,151 @@
+OZM_panel = {
+	OZM_d_koncert = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		cost = 20
+		days_re_enable = 30
+		complete_effect = { custom_effect_tooltip = OZM_tt_zasiegi8 hidden_effect = { add_to_variable = { OZM_zasiegi = 8 } OZM_przelicz = yes } if = { limit = { check_variable = { OZM_dostawy < 30 } } add_stability = -0.02 } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_country_flag = OZM_droga_records } }
+	}
+	OZM_d_singiel = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		available = { has_country_flag = OZM_records_ruch }
+		cost = 15
+		days_re_enable = 30
+		complete_effect = { custom_effect_tooltip = OZM_tt_zasiegi5 hidden_effect = { add_to_variable = { OZM_zasiegi = 5 } OZM_przelicz = yes } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 has_country_flag = OZM_droga_records } }
+	}
+	OZM_d_serwer = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		visible = { has_country_flag = OZM_serwer }
+		available = { has_country_flag = OZM_serwer }
+		cost = 15
+		days_re_enable = 90
+		complete_effect = { set_country_flag = { flag = OZM_serwer_stabilny days = 90 } }
+		ai_will_do = { factor = 1 }
+	}
+	OZM_d_bronisze = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		cost = 25
+		days_re_enable = 30
+		complete_effect = { custom_effect_tooltip = OZM_tt_dostawy15 hidden_effect = { add_to_variable = { OZM_dostawy = 15 } OZM_przelicz = yes } if = { limit = { has_country_flag = OZM_magazyny } custom_effect_tooltip = OZM_tt_dostawy5 hidden_effect = { add_to_variable = { OZM_dostawy = 5 } OZM_przelicz = yes } } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { OZM_dostawy < 40 } } modifier = { factor = 0 check_variable = { OZM_dostawy > 80 } } }
+	}
+	OZM_d_debata = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		available = { NOT = { has_country_flag = OZM_rzad_records } }
+		cost = 20
+		days_re_enable = 30
+		complete_effect = { custom_effect_tooltip = OZM_tt_legit6_zasiegim3 hidden_effect = { add_to_variable = { OZM_legit = 6 } add_to_variable = { OZM_zasiegi = -3 } OZM_przelicz = yes } }
+		ai_will_do = { factor = 2 modifier = { factor = 2 check_variable = { OZM_legit < 40 } } }
+	}
+	OZM_d_przekaznik = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		visible = { has_country_flag = OZM_sygnal_aktywny }
+		available = { has_country_flag = OZM_sygnal_aktywny }
+		cost = 20
+		days_re_enable = 45
+		days_remove = 30
+		modifier = { civilian_factory_use = 1 }
+		remove_effect = { custom_effect_tooltip = OZM_tt_sygnal15 hidden_effect = { add_to_variable = { OZM_sygnal = 15 } OZM_przelicz = yes } }
+		complete_effect = {  }
+		ai_will_do = { factor = 1 }
+	}
+	OZM_d_czestotliwosc = {
+		icon = generic_operation
+		allowed = { original_tag = OZM }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_1 check_variable = { OZM_zasiegi > 49 } } custom_trigger_tooltip = { tooltip = OZM_tt_2 check_variable = { OZM_dostawy > 49 } } }
+		activation = { has_country_flag = OZM_nasluch }
+		cost = 0
+		days_mission_timeout = 60
+		timeout_effect = { custom_effect_tooltip = OZM_tt_sygnalm5 hidden_effect = { add_to_variable = { OZM_sygnal = -5 } OZM_przelicz = yes } clr_country_flag = OZM_nasluch }
+		complete_effect = { custom_effect_tooltip = OZM_tt_sygnal10 hidden_effect = { add_to_variable = { OZM_sygnal = 10 } OZM_przelicz = yes } clr_country_flag = OZM_nasluch }
+		ai_will_do = { factor = 1 }
+	}
+	OZM_d_umocnienia = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		visible = { has_completed_focus = OZM_26_twierdza }
+		cost = 25
+		days_re_enable = 60
+		complete_effect = { capital_scope = { add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } } }
+		ai_will_do = { factor = 1 }
+	}
+	OZM_d_powtorz_ref = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		visible = { has_country_flag = OZM_referendum_przegrane }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_3 check_variable = { OZM_zasiegi > 59 } } has_stability > 0.29 }
+		cost = 50
+		days_re_enable = 60
+		complete_effect = { clr_country_flag = OZM_referendum_przegrane country_event = { id = ozm.8 days = 2 } }
+		ai_will_do = { factor = 1 }
+	}
+	OZM_d_jeszcze_raz = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		visible = { has_country_flag = OZM_rytual_nieudany NOT = { has_country_flag = OZM_jeszcze_raz_uzyte } }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_4 check_variable = { OZM_sygnal > 79 } } }
+		cost = 100
+		fire_only_once = yes
+		complete_effect = { set_country_flag = OZM_jeszcze_raz_uzyte country_event = { id = ozm.20 days = 1 } }
+		ai_will_do = { factor = 1 }
+	}
+	OZM_d_memy = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		visible = { has_country_flag = OZM_komentarze }
+		available = { NOT = { has_country_flag = OZM_rzad_records } }
+		cost = 15
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = OZM_tt_zasiegi4_legitm1 hidden_effect = { add_to_variable = { OZM_zasiegi = 4 } add_to_variable = { OZM_legit = -1 } OZM_przelicz = yes } }
+		ai_will_do = { factor = 1 }
+	}
+	OZM_d_live = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		visible = { has_country_flag = OZM_komentarze }
+		available = { NOT = { has_country_flag = OZM_rzad_records } }
+		cost = 20
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = OZM_tt_zasiegi6_legitm2 hidden_effect = { add_to_variable = { OZM_zasiegi = 6 } add_to_variable = { OZM_legit = -2 } OZM_przelicz = yes } }
+		ai_will_do = { factor = 1 }
+	}
+	OZM_d_exclusive = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		visible = { has_country_flag = OZM_komentarze }
+		available = { NOT = { has_country_flag = OZM_rzad_records } }
+		cost = 25
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = OZM_tt_zasiegi8 hidden_effect = { add_to_variable = { OZM_zasiegi = 8 } OZM_przelicz = yes } if = { limit = { NOT = { has_country_flag = OZM_exclusive } } set_country_flag = OZM_exclusive country_event = { id = ozm.21 days = 2 } } }
+		ai_will_do = { factor = 1 }
+	}
+	OZM_d_porozumienie = {
+		icon = generic_political_discourse
+		allowed = { original_tag = OZM }
+		targets = { WOL NNA KKR PLO GRD RAD MLA NAR OTW PSC MPR KST WLM KPR PLC PRG ZIE LEG TEC WOJ SMR }
+		target_non_existing = no
+		target_trigger = { FROM = { is_neighbor_of = ROOT has_country_flag = PL2027_polska is_subject = no NOT = { has_war_with = ROOT } } }
+		cost = 30
+		days_re_enable = 90
+		complete_effect = { FROM = { country_event = { id = ozm.30 days = 1 } } }
+		ai_will_do = { factor = 1 modifier = { factor = 2 has_opinion = { target = FROM value > 49 } } modifier = { factor = 1.5 has_opinion = { target = FROM value > 19 } } modifier = { factor = 0.4 has_opinion = { target = FROM value < 0 } } modifier = { factor = 0.1 has_opinion = { target = FROM value < -30 } } modifier = { factor = 0.05 has_war_with = FROM } }
+	}
+	OZM_d_misja_bronisze = {
+		icon = generic_operation
+		allowed = { original_tag = OZM }
+		available = { custom_trigger_tooltip = { tooltip = OZM_tt_24 check_variable = { OZM_dostawy > 69 } } }
+		activation = { has_country_flag = OZM_misja_bronisze }
+		cost = 0
+		days_mission_timeout = 60
+		timeout_effect = { custom_effect_tooltip = OZM_tt_legitm2 hidden_effect = { add_to_variable = { OZM_legit = -2 } OZM_przelicz = yes } clr_country_flag = OZM_misja_bronisze }
+		complete_effect = { custom_effect_tooltip = OZM_tt_legit5 hidden_effect = { add_to_variable = { OZM_legit = 5 } OZM_przelicz = yes } clr_country_flag = OZM_misja_bronisze }
+		ai_will_do = { factor = 1 }
+	}
+}

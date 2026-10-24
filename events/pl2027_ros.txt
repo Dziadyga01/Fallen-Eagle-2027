@@ -247,6 +247,8 @@ country_event = {
 	trigger = { NOT = { has_country_flag = ROS_zwyciestwo } }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front }
 		set_country_flag = ROS_zwyciestwo
+		set_country_flag = ROS_operacja_wygrana
+		set_global_flag = ROS_operacja_wygrana
 		set_variable = { ROS_dni_po_zwyciestwie = 0 }
 		mark_focus_tree_layout_dirty = yes
 	}
@@ -303,6 +305,10 @@ country_event = {
 		ROS_zachowaj_zdobycze = yes
 		ROS_koniec_wojny = yes
 		set_country_flag = ROS_kleska
+		set_country_flag = ROS_operacja_nieudana
+		add_timed_idea = { idea = ROS_odbudowa_po_mazurach days = 365 }
+		set_country_flag = { flag = ROS_druga_proba_cd days = 365 }
+		add_to_variable = { ROS_proby = 1 }
 		mark_focus_tree_layout_dirty = yes
 		add_war_support = -0.10
 		add_stability = -0.05

@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_start
 		icon = GFX_pl2027_tfr_portret_woj_leader
-		x = 16
+		x = 17
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_kadry
 		icon = GFX_pl2027_081_nauka_0
-		x = 9
+		x = 8
 		y = 1
 		cost = 5
 		prerequisite = { focus = WWD_woj_start }
@@ -44,7 +44,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_sprzet
 		icon = GFX_pl2027_081_wojsko_0_woj
-		x = 13
+		x = 12
 		y = 1
 		cost = 6
 		prerequisite = { focus = WWD_woj_start }
@@ -58,7 +58,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_szkolenie
 		icon = GFX_pl2027_081_pobor_3_woj
-		x = 8
+		x = 7
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_woj_kadry }
@@ -71,7 +71,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_rekrutacja
 		icon = GFX_pl2027_081_pobor_3_woj
-		x = 10
+		x = 9
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_woj_kadry }
@@ -84,7 +84,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_magazyny
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 12
+		x = 11
 		y = 2
 		cost = 6
 		prerequisite = { focus = WWD_woj_sprzet }
@@ -98,7 +98,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_warsztaty
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 14
+		x = 13
 		y = 2
 		cost = 6
 		prerequisite = { focus = WWD_woj_sprzet }
@@ -111,7 +111,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_doktryna
 		icon = GFX_pl2027_081_gotowosc_1_woj
-		x = 8
+		x = 7
 		y = 3
 		cost = 7
 		prerequisite = { focus = WWD_woj_szkolenie }
@@ -125,7 +125,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_bron
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 12
+		x = 11
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_woj_magazyny }
@@ -139,7 +139,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_elita
 		icon = GFX_pl2027_081_wojsko_1_woj
-		x = 7
+		x = 6
 		y = 4
 		cost = 7
 		prerequisite = { focus = WWD_woj_doktryna }
@@ -154,7 +154,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_dowodcy
 		icon = GFX_pl2027_081_pobor_0_woj
-		x = 9
+		x = 8
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_woj_doktryna }
@@ -168,7 +168,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_ciezki
 		icon = GFX_pl2027_081_artyleria_0_woj
-		x = 11
+		x = 10
 		y = 4
 		cost = 6
 		prerequisite = { focus = WWD_woj_bron }
@@ -182,7 +182,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_lojalnosc
 		icon = GFX_pl2027_081_pobor_1_woj
-		x = 9
+		x = 8
 		y = 5
 		cost = 6
 		prerequisite = { focus = WWD_woj_elita }
@@ -198,7 +198,7 @@ focus_tree = {
 	focus = {
 		id = WWD_woj_final
 		icon = GFX_pl2027_081_wojsko_2_woj_f
-		x = 9
+		x = 8
 		y = 6
 		cost = 7
 		prerequisite = { focus = WWD_woj_lojalnosc }
@@ -213,7 +213,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_start
 		icon = GFX_pl2027_081_sztab_1_woj
-		x = 20
+		x = 19
 		y = 1
 		cost = 5
 		prerequisite = { focus = WWD_woj_start }
@@ -230,7 +230,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_woj
-		x = 16
+		x = 15
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_mil_start }
@@ -246,7 +246,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_woj
-		x = 20
+		x = 19
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_mil_start }
@@ -262,7 +262,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 24
+		x = 23
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_mil_start }
@@ -278,7 +278,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_woj
-		x = 15
+		x = 14
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_mil_rejestr }
@@ -294,7 +294,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_woj
-		x = 19
+		x = 18
 		y = 3
 		cost = 7
 		prerequisite = { focus = WWD_WOJ_mil_ochotnicy }
@@ -312,7 +312,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 23
+		x = 22
 		y = 3
 		cost = 6
 		prerequisite = { focus = WWD_WOJ_mil_fabryka }
@@ -330,7 +330,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_woj
-		x = 17
+		x = 16
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_mil_rejestr }
@@ -346,7 +346,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_woj
-		x = 21
+		x = 20
 		y = 3
 		cost = 7
 		prerequisite = { focus = WWD_WOJ_mil_ochotnicy }
@@ -365,7 +365,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 25
+		x = 24
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_mil_fabryka }
@@ -383,7 +383,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_woj
-		x = 15
+		x = 14
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_mil_rezerwisci }
@@ -403,7 +403,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_woj
-		x = 21
+		x = 20
 		y = 5
 		cost = 7
 		prerequisite = { focus = WWD_WOJ_mil_kadra }
@@ -423,7 +423,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_atak_plan
 		icon = GFX_pl2027_081_sztab_0_woj
-		x = 22
+		x = 21
 		y = 1
 		cost = 5
 		prerequisite = { focus = WWD_woj_start }
@@ -440,7 +440,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_atak_cel1
 		icon = GFX_pl2027_081_ofensywa_3_woj
-		x = 13
+		x = 12
 		y = 5
 		cost = 8
 		prerequisite = { focus = WWD_WOJ_atak_plan }
@@ -459,7 +459,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_atak_cel2
 		icon = GFX_pl2027_081_ofensywa_3_woj
-		x = 12
+		x = 11
 		y = 6
 		cost = 8
 		prerequisite = { focus = WWD_WOJ_atak_cel1 }
@@ -478,7 +478,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_atak_integracja
 		icon = GFX_pl2027_081_integracja_1_woj
-		x = 14
+		x = 13
 		y = 6
 		cost = 10
 		prerequisite = { focus = WWD_WOJ_atak_cel1 }
@@ -496,7 +496,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_atak_cel3
 		icon = GFX_pl2027_081_ofensywa_1_woj
-		x = 12
+		x = 11
 		y = 7
 		cost = 8
 		prerequisite = { focus = WWD_WOJ_atak_cel2 }
@@ -515,7 +515,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_atak_dominacja
 		icon = GFX_pl2027_081_korona_0_woj_f
-		x = 13
+		x = 12
 		y = 8
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_atak_cel3 }
@@ -534,7 +534,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 1
+		x = 4
 		y = 1
 		cost = 1
 		prerequisite = { focus = WWD_woj_start }
@@ -550,7 +550,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 0
+		x = 3
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_zy_s_ulica }
@@ -566,7 +566,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 2
+		x = 5
 		y = 2
 		cost = 1
 		prerequisite = { focus = WWD_WOJ_zy_s_ulica }
@@ -582,7 +582,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_woj_k
-		x = 1
+		x = 2
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_zy_s_media }
@@ -600,7 +600,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_woj_k
-		x = 3
+		x = 4
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_zy_s_media }
@@ -618,7 +618,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 1
+		x = 0
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_zy_s_kartki focus = WWD_WOJ_zy_s_rynek }
@@ -635,7 +635,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 3
+		x = 2
 		y = 4
 		cost = 1
 		prerequisite = { focus = WWD_WOJ_zy_s_kartki focus = WWD_WOJ_zy_s_rynek }
@@ -651,7 +651,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 5
+		x = 4
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_zy_s_kartki focus = WWD_WOJ_zy_s_rynek }
@@ -668,7 +668,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 3
+		x = 2
 		y = 5
 		cost = 7
 		prerequisite = { focus = WWD_WOJ_zy_s_szkoly }
@@ -688,7 +688,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 28
+		x = 26
 		y = 1
 		cost = 6
 		prerequisite = { focus = WWD_woj_start }
@@ -706,7 +706,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_woj
-		x = 27
+		x = 25
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_zy_k_admin }
@@ -723,7 +723,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 29
+		x = 27
 		y = 2
 		cost = 1
 		prerequisite = { focus = WWD_WOJ_zy_k_admin }
@@ -739,7 +739,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_woj
-		x = 28
+		x = 26
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_zy_k_defilada }
@@ -756,7 +756,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 31
+		x = 30
 		y = 1
 		cost = 5
 		prerequisite = { focus = WWD_woj_start }
@@ -774,7 +774,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 31
+		x = 30
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_zy_p_straty }
@@ -791,7 +791,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_woj_k
-		x = 30
+		x = 29
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_zy_p_rzad }
@@ -808,7 +808,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_woj_k
-		x = 32
+		x = 31
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_WOJ_zy_p_rzad }
@@ -825,7 +825,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 31
+		x = 30
 		y = 4
 		cost = 6
 		prerequisite = { focus = WWD_WOJ_zy_p_rewanz focus = WWD_WOJ_zy_p_pojednanie }
@@ -844,7 +844,7 @@ focus_tree = {
 	focus = {
 		id = WWD_WOJ_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_woj
-		x = 13
+		x = 12
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_woj_doktryna }

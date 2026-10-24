@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_start
 		icon = GFX_pl2027_081_parlament_0_wol
-		x = 25
+		x = 24
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_porzadek
 		icon = GFX_pl2027_081_przemysl_4
-		x = 33
+		x = 31
 		y = 1
 		cost = 1
 		prerequisite = { focus = RWOL_start }
@@ -44,7 +44,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_zaopatrzenie
 		icon = GFX_pl2027_081_handel_1
-		x = 35
+		x = 33
 		y = 1
 		cost = 5
 		prerequisite = { focus = RWOL_start }
@@ -58,7 +58,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_wladza
 		icon = GFX_pl2027_081_rada_0
-		x = 33
+		x = 31
 		y = 2
 		cost = 5
 		prerequisite = { focus = RWOL_porzadek }
@@ -74,7 +74,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_wybor
 		icon = GFX_pl2027_081_administracja_0
-		x = 23
+		x = 21
 		y = 3
 		cost = 5
 		prerequisite = { focus = RWOL_wladza }
@@ -88,7 +88,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_a1
 		icon = GFX_pl2027_081_wybory_0_wol_k
-		x = 18
+		x = 16
 		y = 4
 		cost = 5
 		prerequisite = { focus = RWOL_wybor }
@@ -103,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_a2
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 17
+		x = 15
 		y = 5
 		cost = 5
 		prerequisite = { focus = RWOL_a1 }
@@ -117,7 +117,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_a3
 		icon = GFX_pl2027_081_administracja_1
-		x = 19
+		x = 17
 		y = 5
 		cost = 5
 		prerequisite = { focus = RWOL_a1 }
@@ -130,7 +130,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_a4
 		icon = GFX_pl2027_081_wolnosc_0
-		x = 18
+		x = 16
 		y = 6
 		cost = 10
 		prerequisite = { focus = RWOL_a2 }
@@ -149,7 +149,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_b1
 		icon = GFX_pl2027_081_konstytucja_0_wol_k
-		x = 22
+		x = 20
 		y = 4
 		cost = 5
 		prerequisite = { focus = RWOL_wybor }
@@ -164,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_b2
 		icon = GFX_pl2027_081_wybory_1
-		x = 21
+		x = 19
 		y = 5
 		cost = 5
 		prerequisite = { focus = RWOL_b1 }
@@ -178,7 +178,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_b3
 		icon = GFX_pl2027_081_sad_0
-		x = 23
+		x = 21
 		y = 5
 		cost = 5
 		prerequisite = { focus = RWOL_b1 }
@@ -191,7 +191,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_b4
 		icon = GFX_pl2027_081_parlament_1_wol
-		x = 22
+		x = 20
 		y = 6
 		cost = 10
 		prerequisite = { focus = RWOL_b2 }
@@ -209,7 +209,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_c1
 		icon = GFX_pl2027_081_konstytucja_1_wol_k
-		x = 28
+		x = 26
 		y = 4
 		cost = 5
 		prerequisite = { focus = RWOL_wybor }
@@ -224,7 +224,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_c2
 		icon = GFX_pl2027_081_pieniadze_1
-		x = 27
+		x = 25
 		y = 5
 		cost = 5
 		prerequisite = { focus = RWOL_c1 }
@@ -238,7 +238,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_c3
 		icon = GFX_pl2027_081_administracja_2
-		x = 29
+		x = 27
 		y = 5
 		cost = 5
 		prerequisite = { focus = RWOL_c1 }
@@ -251,7 +251,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_c4
 		icon = GFX_pl2027_081_wybory_2
-		x = 28
+		x = 26
 		y = 6
 		cost = 10
 		prerequisite = { focus = RWOL_c2 }
@@ -269,7 +269,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_e1
 		icon = GFX_pl2027_081_energia_0
-		x = 33
+		x = 31
 		y = 3
 		cost = 6
 		prerequisite = { focus = RWOL_wladza }
@@ -282,7 +282,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_e2
 		icon = GFX_pl2027_081_pieniadze_2
-		x = 32
+		x = 30
 		y = 4
 		cost = 7
 		prerequisite = { focus = RWOL_e1 }
@@ -296,7 +296,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_e3
 		icon = GFX_pl2027_081_pieniadze_3
-		x = 34
+		x = 32
 		y = 4
 		cost = 6
 		prerequisite = { focus = RWOL_e1 }
@@ -311,7 +311,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_e4
 		icon = GFX_pl2027_081_droga_0_wol_k
-		x = 31
+		x = 29
 		y = 5
 		cost = 7
 		prerequisite = { focus = RWOL_e2 }
@@ -329,7 +329,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_e5
 		icon = GFX_pl2027_081_handel_0_wol_k
-		x = 33
+		x = 31
 		y = 5
 		cost = 6
 		prerequisite = { focus = RWOL_e2 }
@@ -345,7 +345,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_e6
 		icon = GFX_pl2027_081_pieniadze_4
-		x = 32
+		x = 30
 		y = 6
 		cost = 7
 		prerequisite = { focus = RWOL_e4 focus = RWOL_e5 }
@@ -360,7 +360,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_m1
 		icon = GFX_pl2027_081_milicja_0_wol
-		x = 38
+		x = 36
 		y = 3
 		cost = 7
 		prerequisite = { focus = RWOL_wladza }
@@ -375,7 +375,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_m2
 		icon = GFX_pl2027_081_pieniadze_5_wol_k
-		x = 37
+		x = 35
 		y = 4
 		cost = 7
 		prerequisite = { focus = RWOL_m1 }
@@ -393,7 +393,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_m3
 		icon = GFX_pl2027_081_wyposazenie_0_wol_k
-		x = 39
+		x = 37
 		y = 4
 		cost = 6
 		prerequisite = { focus = RWOL_m1 }
@@ -410,7 +410,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_m4
 		icon = GFX_pl2027_081_wojsko_0_wol
-		x = 37
+		x = 35
 		y = 5
 		cost = 7
 		prerequisite = { focus = RWOL_m2 focus = RWOL_m3 }
@@ -425,7 +425,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_m5
 		icon = GFX_pl2027_081_milicja_1_wol
-		x = 37
+		x = 35
 		y = 6
 		cost = 5
 		prerequisite = { focus = RWOL_m4 }
@@ -439,7 +439,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_d0
 		icon = GFX_pl2027_081_handel_2
-		x = 42
+		x = 40
 		y = 3
 		cost = 5
 		prerequisite = { focus = RWOL_wladza }
@@ -452,7 +452,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_s1
 		icon = GFX_pl2027_081_handel_3_wol_k
-		x = 41
+		x = 39
 		y = 5
 		cost = 5
 		prerequisite = { focus = RWOL_d0 }
@@ -469,7 +469,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_s2
 		icon = GFX_pl2027_081_ludzie_0
-		x = 41
+		x = 39
 		y = 6
 		cost = 5
 		prerequisite = { focus = RWOL_s1 }
@@ -483,7 +483,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_pomoc
 		icon = GFX_pl2027_081_pomoc_2_wol_k
-		x = 41
+		x = 39
 		y = 4
 		cost = 6
 		prerequisite = { focus = RWOL_d0 }
@@ -500,7 +500,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_samodzielnosc
 		icon = GFX_pl2027_081_orzel_0_wol_k
-		x = 43
+		x = 41
 		y = 4
 		cost = 5
 		prerequisite = { focus = RWOL_d0 }
@@ -515,7 +515,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_s3
 		icon = GFX_pl2027_081_dyplomacja_0
-		x = 41
+		x = 39
 		y = 7
 		cost = 1
 		prerequisite = { focus = RWOL_s2 }
@@ -530,7 +530,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_w1
 		icon = GFX_pl2027_081_wojna_0_wol_k
-		x = 35
+		x = 33
 		y = 6
 		cost = 8
 		prerequisite = { focus = RWOL_d0 }
@@ -549,7 +549,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_w2
 		icon = GFX_pl2027_081_wojna_1_wol
-		x = 35
+		x = 33
 		y = 7
 		cost = 8
 		prerequisite = { focus = RWOL_w1 }
@@ -565,7 +565,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_w3
 		icon = GFX_pl2027_081_wojna_2_wol
-		x = 35
+		x = 33
 		y = 8
 		cost = 8
 		prerequisite = { focus = RWOL_w2 }
@@ -581,7 +581,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_region
 		icon = GFX_pl2027_081_ludzie_1
-		x = 35
+		x = 33
 		y = 9
 		cost = 7
 		prerequisite = { focus = RWOL_s3 focus = RWOL_w3 }
@@ -600,7 +600,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_centralizacja
 		icon = GFX_pl2027_081_centralizacja_0_wol_k
-		x = 34
+		x = 32
 		y = 10
 		cost = 5
 		prerequisite = { focus = RWOL_region }
@@ -615,7 +615,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_porozumienie
 		icon = GFX_pl2027_081_administracja_0_wol_k
-		x = 36
+		x = 34
 		y = 10
 		cost = 5
 		prerequisite = { focus = RWOL_region }
@@ -629,7 +629,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_pl1
 		icon = GFX_pl2027_081_korona_3_wol
-		x = 34
+		x = 32
 		y = 11
 		cost = 5
 		prerequisite = { focus = RWOL_region }
@@ -644,7 +644,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_pl2
 		icon = GFX_pl2027_081_ofensywa_2_wol
-		x = 34
+		x = 32
 		y = 12
 		cost = 8
 		prerequisite = { focus = RWOL_pl1 }
@@ -660,7 +660,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_pl3
 		icon = GFX_pl2027_081_polska_2_wol_f
-		x = 34
+		x = 32
 		y = 13
 		cost = 10
 		prerequisite = { focus = RWOL_pl2 }
@@ -680,7 +680,7 @@ focus_tree = {
 	focus = {
 		id = RWOL_chopin
 		icon = GFX_pl2027_081_ludzie_2
-		x = 25
+		x = 23
 		y = 5
 		cost = 5
 		prerequisite = { focus = RWOL_wybor }
@@ -987,7 +987,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 12
+		x = 10
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_s_kartki focus = REG_WOL_zy_s_rynek }
@@ -1004,7 +1004,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 14
+		x = 12
 		y = 4
 		cost = 1
 		prerequisite = { focus = REG_WOL_zy_s_kartki focus = REG_WOL_zy_s_rynek }
@@ -1020,7 +1020,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 16
+		x = 14
 		y = 4
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_s_kartki focus = REG_WOL_zy_s_rynek }
@@ -1037,7 +1037,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 14
+		x = 12
 		y = 5
 		cost = 7
 		prerequisite = { focus = REG_WOL_zy_s_szkoly }
@@ -1057,7 +1057,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 39
+		x = 37
 		y = 1
 		cost = 6
 		prerequisite = { focus = RWOL_start }
@@ -1075,7 +1075,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_wol
-		x = 38
+		x = 36
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_k_admin }
@@ -1092,7 +1092,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 40
+		x = 38
 		y = 2
 		cost = 1
 		prerequisite = { focus = REG_WOL_zy_k_admin }
@@ -1108,7 +1108,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_wol
-		x = 40
+		x = 38
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_k_defilada }
@@ -1125,7 +1125,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 45
+		x = 44
 		y = 1
 		cost = 5
 		prerequisite = { focus = RWOL_start }
@@ -1143,7 +1143,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 45
+		x = 44
 		y = 2
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_p_straty }
@@ -1160,7 +1160,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_wol_k
-		x = 44
+		x = 43
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_p_rzad }
@@ -1177,7 +1177,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_wol_k
-		x = 46
+		x = 45
 		y = 3
 		cost = 5
 		prerequisite = { focus = REG_WOL_zy_p_rzad }
@@ -1194,7 +1194,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 45
+		x = 44
 		y = 4
 		cost = 6
 		prerequisite = { focus = REG_WOL_zy_p_rewanz focus = REG_WOL_zy_p_pojednanie }
@@ -1213,7 +1213,7 @@ focus_tree = {
 	focus = {
 		id = REG_WOL_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_wol
-		x = 35
+		x = 33
 		y = 5
 		cost = 5
 		prerequisite = { focus = RWOL_wybor }

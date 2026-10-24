@@ -1840,7 +1840,7 @@ focus_tree = {
 	focus = {
 		id = FED_federacja_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 67
+		x = 68
 		y = 2
 		cost = 5
 		prerequisite = { focus = FED_federacja_zy_s_ulica }
@@ -1872,7 +1872,7 @@ focus_tree = {
 	focus = {
 		id = FED_federacja_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0
-		x = 69
+		x = 67
 		y = 3
 		cost = 5
 		prerequisite = { focus = FED_federacja_zy_s_media }
@@ -1890,7 +1890,7 @@ focus_tree = {
 	focus = {
 		id = FED_federacja_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1
-		x = 71
+		x = 69
 		y = 3
 		cost = 5
 		prerequisite = { focus = FED_federacja_zy_s_media }
@@ -2046,7 +2046,7 @@ focus_tree = {
 	focus = {
 		id = FED_federacja_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 77
+		x = 76
 		y = 1
 		cost = 5
 		prerequisite = { focus = FED_uswm }
@@ -2064,7 +2064,7 @@ focus_tree = {
 	focus = {
 		id = FED_federacja_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 77
+		x = 76
 		y = 2
 		cost = 5
 		prerequisite = { focus = FED_federacja_zy_p_straty }
@@ -2081,7 +2081,7 @@ focus_tree = {
 	focus = {
 		id = FED_federacja_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1
-		x = 76
+		x = 75
 		y = 3
 		cost = 5
 		prerequisite = { focus = FED_federacja_zy_p_rzad }
@@ -2098,7 +2098,7 @@ focus_tree = {
 	focus = {
 		id = FED_federacja_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3
-		x = 78
+		x = 77
 		y = 3
 		cost = 5
 		prerequisite = { focus = FED_federacja_zy_p_rzad }
@@ -2115,7 +2115,7 @@ focus_tree = {
 	focus = {
 		id = FED_federacja_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 77
+		x = 76
 		y = 4
 		cost = 6
 		prerequisite = { focus = FED_federacja_zy_p_rewanz focus = FED_federacja_zy_p_pojednanie }

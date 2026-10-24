@@ -418,7 +418,7 @@ focus_tree = {
 	focus = {
 		id = BST_enklawa_mil_kadra
 		icon = GFX_pl2027_081_oficer_1
-		x = 14
+		x = 16
 		y = 4
 		cost = 5
 		prerequisite = { focus = BST_enklawa_mil_rezerwisci }
@@ -438,7 +438,7 @@ focus_tree = {
 	focus = {
 		id = BST_enklawa_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1
-		x = 20
+		x = 21
 		y = 5
 		cost = 7
 		prerequisite = { focus = BST_enklawa_mil_kadra }
@@ -612,7 +612,7 @@ focus_tree = {
 	focus = {
 		id = BST_enklawa_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 27
+		x = 26
 		y = 1
 		cost = 6
 		prerequisite = { focus = BST_e_przejecie }
@@ -630,7 +630,7 @@ focus_tree = {
 	focus = {
 		id = BST_enklawa_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1
-		x = 26
+		x = 25
 		y = 2
 		cost = 5
 		prerequisite = { focus = BST_enklawa_zy_k_admin }
@@ -647,7 +647,7 @@ focus_tree = {
 	focus = {
 		id = BST_enklawa_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 28
+		x = 27
 		y = 2
 		cost = 1
 		prerequisite = { focus = BST_enklawa_zy_k_admin }
@@ -663,7 +663,7 @@ focus_tree = {
 	focus = {
 		id = BST_enklawa_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2
-		x = 27
+		x = 26
 		y = 3
 		cost = 5
 		prerequisite = { focus = BST_enklawa_zy_k_defilada }

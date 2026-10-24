@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = WWD_kpr_start
 		icon = GFX_pl2027_tfr_portret_kpr_leader
-		x = 21
+		x = 20
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -860,7 +860,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_kpr
-		x = 6
+		x = 4
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_KPR_mil_rezerwisci }
@@ -880,7 +880,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_kpr
-		x = 11
+		x = 10
 		y = 5
 		cost = 7
 		prerequisite = { focus = WWD_KPR_mil_kadra }
@@ -916,7 +916,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 31
+		x = 32
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_KPR_zy_s_ulica }
@@ -948,7 +948,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_kpr_k
-		x = 33
+		x = 31
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_KPR_zy_s_media }
@@ -966,7 +966,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_kpr_k
-		x = 35
+		x = 33
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_KPR_zy_s_media }
@@ -984,7 +984,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 31
+		x = 29
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_KPR_zy_s_kartki focus = WWD_KPR_zy_s_rynek }
@@ -1001,7 +1001,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 33
+		x = 31
 		y = 4
 		cost = 1
 		prerequisite = { focus = WWD_KPR_zy_s_kartki focus = WWD_KPR_zy_s_rynek }
@@ -1017,7 +1017,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 35
+		x = 33
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_KPR_zy_s_kartki focus = WWD_KPR_zy_s_rynek }
@@ -1034,7 +1034,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 33
+		x = 31
 		y = 5
 		cost = 7
 		prerequisite = { focus = WWD_KPR_zy_s_szkoly }
@@ -1054,7 +1054,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 38
+		x = 37
 		y = 1
 		cost = 6
 		prerequisite = { focus = WWD_kpr_start }
@@ -1072,7 +1072,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_kpr
-		x = 37
+		x = 36
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_KPR_zy_k_admin }
@@ -1089,7 +1089,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 39
+		x = 38
 		y = 2
 		cost = 1
 		prerequisite = { focus = WWD_KPR_zy_k_admin }
@@ -1105,7 +1105,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_kpr
-		x = 38
+		x = 37
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_KPR_zy_k_defilada }
@@ -1122,7 +1122,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 41
+		x = 40
 		y = 1
 		cost = 5
 		prerequisite = { focus = WWD_kpr_start }
@@ -1140,7 +1140,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 41
+		x = 40
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_KPR_zy_p_straty }
@@ -1157,7 +1157,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_kpr_k
-		x = 40
+		x = 39
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_KPR_zy_p_rzad }
@@ -1174,7 +1174,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_kpr_k
-		x = 42
+		x = 41
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_KPR_zy_p_rzad }
@@ -1191,7 +1191,7 @@ focus_tree = {
 	focus = {
 		id = WWD_KPR_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 41
+		x = 40
 		y = 4
 		cost = 6
 		prerequisite = { focus = WWD_KPR_zy_p_rewanz focus = WWD_KPR_zy_p_pojednanie }

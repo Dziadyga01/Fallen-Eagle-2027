@@ -1221,7 +1221,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 62
+		x = 61
 		y = 1
 		cost = 5
 		prerequisite = { focus = WMZ_dwa_regiony }
@@ -1239,7 +1239,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 62
+		x = 61
 		y = 2
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_p_straty }
@@ -1256,7 +1256,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_wmz_k
-		x = 61
+		x = 60
 		y = 3
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_p_rzad }
@@ -1273,7 +1273,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_wmz_k
-		x = 63
+		x = 62
 		y = 3
 		cost = 5
 		prerequisite = { focus = WMZ_start_zy_p_rzad }
@@ -1290,7 +1290,7 @@ focus_tree = {
 	focus = {
 		id = WMZ_start_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 62
+		x = 61
 		y = 4
 		cost = 6
 		prerequisite = { focus = WMZ_start_zy_p_rewanz focus = WMZ_start_zy_p_pojednanie }

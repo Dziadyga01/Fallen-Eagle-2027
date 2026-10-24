@@ -509,7 +509,7 @@ focus_tree = {
 	focus = {
 		id = EK_SLS_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_sls
-		x = 18
+		x = 20
 		y = 5
 		cost = 5
 		prerequisite = { focus = EK_SLS_mil_rezerwisci }
@@ -529,7 +529,7 @@ focus_tree = {
 	focus = {
 		id = EK_SLS_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_sls
-		x = 24
+		x = 25
 		y = 6
 		cost = 7
 		prerequisite = { focus = EK_SLS_mil_kadra }
@@ -660,7 +660,7 @@ focus_tree = {
 	focus = {
 		id = EK_SLS_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 30
+		x = 32
 		y = 2
 		cost = 1
 		prerequisite = { focus = EK_SLS_wroclaw }
@@ -676,7 +676,7 @@ focus_tree = {
 	focus = {
 		id = EK_SLS_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 29
+		x = 31
 		y = 3
 		cost = 5
 		prerequisite = { focus = EK_SLS_zy_s_ulica }
@@ -692,7 +692,7 @@ focus_tree = {
 	focus = {
 		id = EK_SLS_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 31
+		x = 33
 		y = 3
 		cost = 1
 		prerequisite = { focus = EK_SLS_zy_s_ulica }
@@ -744,7 +744,7 @@ focus_tree = {
 	focus = {
 		id = EK_SLS_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 30
+		x = 28
 		y = 5
 		cost = 5
 		prerequisite = { focus = EK_SLS_zy_s_kartki focus = EK_SLS_zy_s_rynek }
@@ -761,7 +761,7 @@ focus_tree = {
 	focus = {
 		id = EK_SLS_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 32
+		x = 30
 		y = 5
 		cost = 1
 		prerequisite = { focus = EK_SLS_zy_s_kartki focus = EK_SLS_zy_s_rynek }
@@ -777,7 +777,7 @@ focus_tree = {
 	focus = {
 		id = EK_SLS_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 34
+		x = 32
 		y = 5
 		cost = 5
 		prerequisite = { focus = EK_SLS_zy_s_kartki focus = EK_SLS_zy_s_rynek }
@@ -794,7 +794,7 @@ focus_tree = {
 	focus = {
 		id = EK_SLS_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 32
+		x = 30
 		y = 6
 		cost = 7
 		prerequisite = { focus = EK_SLS_zy_s_szkoly }
@@ -951,7 +951,7 @@ focus_tree = {
 	focus = {
 		id = EK_SLS_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 36
+		x = 35
 		y = 5
 		cost = 6
 		prerequisite = { focus = EK_SLS_zy_p_rewanz focus = EK_SLS_zy_p_pojednanie }

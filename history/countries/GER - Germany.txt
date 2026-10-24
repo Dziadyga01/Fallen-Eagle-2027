@@ -9,11 +9,16 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	social_liberal = 70
-	authoritarian_democrat = 10
-	communist = 10
-	fascist = 10
+	social_liberal = 100
 }
+
+puppet = CZE
+puppet = PMN
+puppet = SLS
+puppet = LIT
+
+recruit_character = GER_ursula
+
 # --- gnr ---
 recruit_character = GER_gen_breuer
 recruit_character = GER_gen_mais

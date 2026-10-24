@@ -80,6 +80,12 @@ defined_text = {
     }
     text = {
         trigger = { 
+            has_country_leader_ideology = left_euroliberalism
+        }
+        localization_key = left_euroliberalism
+    }
+    text = {
+        trigger = { 
             has_country_leader_ideology = green_politics
         }
         localization_key = green_politics
@@ -107,6 +113,12 @@ defined_text = {
             has_country_leader_ideology = neoliberalism
         }
         localization_key = neoliberalism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = euroliberalism
+        }
+        localization_key = euroliberalism
     }
     text = {
         trigger = { 

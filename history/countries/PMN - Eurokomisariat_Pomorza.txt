@@ -40,17 +40,13 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = yes
 }
+
 set_popularities = {
-	communist = 2
-	libertarian_socialist = 2
-	social_democrat = 5
-	social_liberal = 17
-	market_liberal = 6
-	authoritarian_democrat = 14
-	nationalist = 11
-	fascist = 2
-	conservative = 41
+	social_liberal = 50
+	totalitarian_socialist = 30
+	conservative = 20
 }
-recruit_character = PMN_komisarz
+
+recruit_character = PMN_ewa_kopacz
 # --- ek ---
 add_ideas = EK_komisariat

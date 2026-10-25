@@ -501,7 +501,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_psn
-		x = 9
+		x = 7
 		y = 4
 		cost = 5
 		prerequisite = { focus = EUR_PSN_mil_rezerwisci }
@@ -521,7 +521,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_psn_f
-		x = 14
+		x = 13
 		y = 5
 		cost = 7
 		prerequisite = { focus = EUR_PSN_mil_kadra }
@@ -625,7 +625,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 23
+		x = 25
 		y = 4
 		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_s_kartki focus = EUR_PSN_zy_s_rynek }
@@ -642,7 +642,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 25
+		x = 27
 		y = 4
 		cost = 1
 		prerequisite = { focus = EUR_PSN_zy_s_kartki focus = EUR_PSN_zy_s_rynek }
@@ -658,7 +658,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 27
+		x = 29
 		y = 4
 		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_s_kartki focus = EUR_PSN_zy_s_rynek }
@@ -675,7 +675,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1_f
-		x = 25
+		x = 27
 		y = 5
 		cost = 7
 		prerequisite = { focus = EUR_PSN_zy_s_szkoly }
@@ -763,7 +763,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 34
+		x = 35
 		y = 1
 		cost = 5
 		prerequisite = { focus = EUR_PSN_zarzad }
@@ -781,7 +781,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 34
+		x = 35
 		y = 2
 		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_p_straty }
@@ -798,7 +798,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_psn_k
-		x = 33
+		x = 34
 		y = 3
 		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_p_rzad }
@@ -815,7 +815,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_psn_k
-		x = 35
+		x = 36
 		y = 3
 		cost = 5
 		prerequisite = { focus = EUR_PSN_zy_p_rzad }
@@ -832,7 +832,7 @@ focus_tree = {
 	focus = {
 		id = EUR_PSN_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2_f
-		x = 34
+		x = 35
 		y = 4
 		cost = 6
 		prerequisite = { focus = EUR_PSN_zy_p_rewanz focus = EUR_PSN_zy_p_pojednanie }

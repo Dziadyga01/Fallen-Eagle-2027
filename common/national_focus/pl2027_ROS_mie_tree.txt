@@ -1012,7 +1012,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 38
+		x = 37
 		y = 1
 		cost = 5
 		prerequisite = { focus = ROS_mie_prezydent }
@@ -1030,7 +1030,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1
-		x = 37
+		x = 36
 		y = 2
 		cost = 2
 		prerequisite = { focus = ROS_mie_zy_k_admin }
@@ -1047,7 +1047,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 39
+		x = 38
 		y = 2
 		cost = 1
 		prerequisite = { focus = ROS_mie_zy_k_admin }
@@ -1063,7 +1063,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2
-		x = 38
+		x = 37
 		y = 3
 		cost = 3
 		prerequisite = { focus = ROS_mie_zy_k_defilada }

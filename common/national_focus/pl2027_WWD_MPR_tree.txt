@@ -879,7 +879,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 31
+		x = 32
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_MPR_zy_s_ulica }
@@ -911,7 +911,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_mpr_k
-		x = 33
+		x = 31
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_MPR_zy_s_media }
@@ -929,7 +929,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_mpr_k
-		x = 35
+		x = 33
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_MPR_zy_s_media }
@@ -947,7 +947,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 31
+		x = 29
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_MPR_zy_s_kartki focus = WWD_MPR_zy_s_rynek }
@@ -964,7 +964,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 33
+		x = 31
 		y = 4
 		cost = 1
 		prerequisite = { focus = WWD_MPR_zy_s_kartki focus = WWD_MPR_zy_s_rynek }
@@ -980,7 +980,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 35
+		x = 33
 		y = 4
 		cost = 5
 		prerequisite = { focus = WWD_MPR_zy_s_kartki focus = WWD_MPR_zy_s_rynek }
@@ -997,7 +997,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 33
+		x = 31
 		y = 5
 		cost = 7
 		prerequisite = { focus = WWD_MPR_zy_s_szkoly }
@@ -1017,7 +1017,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 38
+		x = 37
 		y = 1
 		cost = 6
 		prerequisite = { focus = WWD_mpr_start }
@@ -1035,7 +1035,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_mpr
-		x = 37
+		x = 36
 		y = 2
 		cost = 5
 		prerequisite = { focus = WWD_MPR_zy_k_admin }
@@ -1052,7 +1052,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 39
+		x = 38
 		y = 2
 		cost = 1
 		prerequisite = { focus = WWD_MPR_zy_k_admin }
@@ -1068,7 +1068,7 @@ focus_tree = {
 	focus = {
 		id = WWD_MPR_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_mpr
-		x = 38
+		x = 37
 		y = 3
 		cost = 5
 		prerequisite = { focus = WWD_MPR_zy_k_defilada }

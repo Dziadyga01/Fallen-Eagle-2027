@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_CZE_kryzys
 		icon = GFX_pl2027_081_pieniadze_1
-		x = 13
+		x = 12
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -525,7 +525,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_CZE_zy_z_media
 		icon = GFX_pl2027_081_polska_0
-		x = 2
+		x = 0
 		y = 4
 		cost = 5
 		prerequisite = { focus = ZAG_CZE_zy_z_pomoc focus = ZAG_CZE_zy_z_mur }
@@ -542,7 +542,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_CZE_zy_z_konsulaty
 		icon = GFX_pl2027_081_dyplomacja_1
-		x = 4
+		x = 2
 		y = 4
 		cost = 5
 		prerequisite = { focus = ZAG_CZE_zy_z_pomoc focus = ZAG_CZE_zy_z_mur }
@@ -559,7 +559,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_CZE_zy_z_polityka
 		icon = GFX_pl2027_081_dyplomacja_0
-		x = 3
+		x = 1
 		y = 5
 		cost = 5
 		prerequisite = { focus = ZAG_CZE_zy_z_media }
@@ -644,7 +644,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_CZE_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 25
+		x = 24
 		y = 1
 		cost = 5
 		prerequisite = { focus = ZAG_CZE_kryzys }
@@ -662,7 +662,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_CZE_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 25
+		x = 24
 		y = 2
 		cost = 5
 		prerequisite = { focus = ZAG_CZE_zy_p_straty }
@@ -679,7 +679,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_CZE_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1
-		x = 24
+		x = 23
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZAG_CZE_zy_p_rzad }
@@ -696,7 +696,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_CZE_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3
-		x = 26
+		x = 25
 		y = 3
 		cost = 5
 		prerequisite = { focus = ZAG_CZE_zy_p_rzad }
@@ -713,7 +713,7 @@ focus_tree = {
 	focus = {
 		id = ZAG_CZE_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 25
+		x = 24
 		y = 4
 		cost = 6
 		prerequisite = { focus = ZAG_CZE_zy_p_rewanz focus = ZAG_CZE_zy_p_pojednanie }

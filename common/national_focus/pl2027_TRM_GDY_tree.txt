@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_republika
 		icon = GFX_pl2027_081_parlament_0_gdy
-		x = 27
+		x = 28
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -989,7 +989,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_gdy
-		x = 10
+		x = 8
 		y = 4
 		cost = 5
 		prerequisite = { focus = TRM_GDY_mil_rezerwisci }
@@ -1009,7 +1009,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_gdy
-		x = 15
+		x = 14
 		y = 5
 		cost = 7
 		prerequisite = { focus = TRM_GDY_mil_kadra }
@@ -1251,7 +1251,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 51
+		x = 52
 		y = 1
 		cost = 5
 		prerequisite = { focus = TRM_GDY_republika }
@@ -1269,7 +1269,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 51
+		x = 52
 		y = 2
 		cost = 5
 		prerequisite = { focus = TRM_GDY_zy_p_straty }
@@ -1286,7 +1286,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_gdy_k
-		x = 50
+		x = 51
 		y = 3
 		cost = 5
 		prerequisite = { focus = TRM_GDY_zy_p_rzad }
@@ -1303,7 +1303,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_gdy_k
-		x = 52
+		x = 53
 		y = 3
 		cost = 5
 		prerequisite = { focus = TRM_GDY_zy_p_rzad }
@@ -1320,7 +1320,7 @@ focus_tree = {
 	focus = {
 		id = TRM_GDY_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 51
+		x = 52
 		y = 4
 		cost = 6
 		prerequisite = { focus = TRM_GDY_zy_p_rewanz focus = TRM_GDY_zy_p_pojednanie }

@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = KOR_rafineria_stoi
 		icon = GFX_pl2027_tfr_portret_plo_leader
-		x = 24
+		x = 22
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -631,7 +631,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_start
 		icon = GFX_pl2027_081_sztab_1_plo
-		x = 26
+		x = 24
 		y = 1
 		cost = 5
 		prerequisite = { focus = KOR_rafineria_stoi }
@@ -648,7 +648,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_plo
-		x = 22
+		x = 20
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_mil_start }
@@ -664,7 +664,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_plo
-		x = 26
+		x = 24
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_mil_start }
@@ -680,7 +680,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 30
+		x = 28
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_mil_start }
@@ -696,7 +696,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_plo
-		x = 21
+		x = 19
 		y = 3
 		cost = 5
 		prerequisite = { focus = KOR_mil_rejestr }
@@ -712,7 +712,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_plo
-		x = 25
+		x = 23
 		y = 3
 		cost = 7
 		prerequisite = { focus = KOR_mil_ochotnicy }
@@ -730,7 +730,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 29
+		x = 27
 		y = 3
 		cost = 6
 		prerequisite = { focus = KOR_mil_fabryka }
@@ -748,7 +748,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_plo
-		x = 23
+		x = 21
 		y = 3
 		cost = 5
 		prerequisite = { focus = KOR_mil_rejestr }
@@ -764,7 +764,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_plo
-		x = 27
+		x = 25
 		y = 3
 		cost = 7
 		prerequisite = { focus = KOR_mil_ochotnicy }
@@ -783,7 +783,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 31
+		x = 29
 		y = 3
 		cost = 5
 		prerequisite = { focus = KOR_mil_fabryka }
@@ -801,7 +801,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_plo
-		x = 23
+		x = 19
 		y = 4
 		cost = 5
 		prerequisite = { focus = KOR_mil_rezerwisci }
@@ -821,7 +821,7 @@ focus_tree = {
 	focus = {
 		id = KOR_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_plo
-		x = 28
+		x = 25
 		y = 5
 		cost = 7
 		prerequisite = { focus = KOR_mil_kadra }
@@ -1033,7 +1033,7 @@ focus_tree = {
 	focus = {
 		id = KOR_promocja_f1
 		icon = GFX_pl2027_081_kolej_1
-		x = 37
+		x = 34
 		y = 1
 		cost = 5
 		prerequisite = { focus = KOR_rafineria_stoi }
@@ -1049,7 +1049,7 @@ focus_tree = {
 	focus = {
 		id = KOR_promocja_f2
 		icon = GFX_pl2027_081_kolej_1
-		x = 37
+		x = 34
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_promocja_f1 }
@@ -1065,7 +1065,7 @@ focus_tree = {
 	focus = {
 		id = KOR_promocja_f3
 		icon = GFX_pl2027_081_kolej_1
-		x = 37
+		x = 34
 		y = 3
 		cost = 5
 		prerequisite = { focus = KOR_promocja_f2 }
@@ -1081,7 +1081,7 @@ focus_tree = {
 	focus = {
 		id = KOR_rezerwa_f1
 		icon = GFX_pl2027_081_paliwo_3
-		x = 39
+		x = 36
 		y = 1
 		cost = 5
 		prerequisite = { focus = KOR_rafineria_stoi }
@@ -1097,7 +1097,7 @@ focus_tree = {
 	focus = {
 		id = KOR_rezerwa_f2
 		icon = GFX_pl2027_081_paliwo_3
-		x = 39
+		x = 36
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_rezerwa_f1 }
@@ -1113,7 +1113,7 @@ focus_tree = {
 	focus = {
 		id = KOR_rezerwa_f3
 		icon = GFX_pl2027_081_paliwo_3
-		x = 39
+		x = 36
 		y = 3
 		cost = 5
 		prerequisite = { focus = KOR_rezerwa_f2 }
@@ -1129,7 +1129,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 42
+		x = 40
 		y = 1
 		cost = 1
 		prerequisite = { focus = KOR_rafineria_stoi }
@@ -1145,7 +1145,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 41
+		x = 39
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_zy_s_ulica }
@@ -1161,7 +1161,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 43
+		x = 41
 		y = 2
 		cost = 1
 		prerequisite = { focus = KOR_zy_s_ulica }
@@ -1177,7 +1177,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_plo_k
-		x = 42
+		x = 38
 		y = 3
 		cost = 5
 		prerequisite = { focus = KOR_zy_s_media }
@@ -1195,7 +1195,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_plo_k
-		x = 44
+		x = 40
 		y = 3
 		cost = 5
 		prerequisite = { focus = KOR_zy_s_media }
@@ -1213,7 +1213,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 42
+		x = 36
 		y = 4
 		cost = 5
 		prerequisite = { focus = KOR_zy_s_kartki focus = KOR_zy_s_rynek }
@@ -1230,7 +1230,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 44
+		x = 38
 		y = 4
 		cost = 1
 		prerequisite = { focus = KOR_zy_s_kartki focus = KOR_zy_s_rynek }
@@ -1246,7 +1246,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 46
+		x = 40
 		y = 4
 		cost = 5
 		prerequisite = { focus = KOR_zy_s_kartki focus = KOR_zy_s_rynek }
@@ -1263,7 +1263,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 44
+		x = 38
 		y = 5
 		cost = 7
 		prerequisite = { focus = KOR_zy_s_szkoly }
@@ -1283,7 +1283,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 34
+		x = 31
 		y = 1
 		cost = 6
 		prerequisite = { focus = KOR_rafineria_stoi }
@@ -1301,7 +1301,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_plo
-		x = 33
+		x = 30
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_zy_k_admin }
@@ -1318,7 +1318,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 35
+		x = 32
 		y = 2
 		cost = 1
 		prerequisite = { focus = KOR_zy_k_admin }
@@ -1334,7 +1334,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_plo
-		x = 34
+		x = 31
 		y = 3
 		cost = 5
 		prerequisite = { focus = KOR_zy_k_defilada }
@@ -1351,7 +1351,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 49
+		x = 43
 		y = 1
 		cost = 5
 		prerequisite = { focus = KOR_rafineria_stoi }
@@ -1369,7 +1369,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 49
+		x = 43
 		y = 2
 		cost = 5
 		prerequisite = { focus = KOR_zy_p_straty }
@@ -1386,7 +1386,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_plo_k
-		x = 48
+		x = 42
 		y = 3
 		cost = 5
 		prerequisite = { focus = KOR_zy_p_rzad }
@@ -1403,7 +1403,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_plo_k
-		x = 50
+		x = 44
 		y = 3
 		cost = 5
 		prerequisite = { focus = KOR_zy_p_rzad }
@@ -1420,7 +1420,7 @@ focus_tree = {
 	focus = {
 		id = KOR_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 49
+		x = 43
 		y = 4
 		cost = 6
 		prerequisite = { focus = KOR_zy_p_rewanz focus = KOR_zy_p_pojednanie }

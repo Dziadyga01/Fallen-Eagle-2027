@@ -696,7 +696,7 @@ focus_tree = {
 	focus = {
 		id = FED_cen_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 24
+		x = 23
 		y = 2
 		cost = 5
 		prerequisite = { focus = FED_cen_zy_s_ulica }
@@ -764,7 +764,7 @@ focus_tree = {
 	focus = {
 		id = FED_cen_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 25
+		x = 23
 		y = 4
 		cost = 5
 		prerequisite = { focus = FED_cen_zy_s_kartki focus = FED_cen_zy_s_rynek }
@@ -781,7 +781,7 @@ focus_tree = {
 	focus = {
 		id = FED_cen_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 27
+		x = 25
 		y = 4
 		cost = 1
 		prerequisite = { focus = FED_cen_zy_s_kartki focus = FED_cen_zy_s_rynek }
@@ -797,7 +797,7 @@ focus_tree = {
 	focus = {
 		id = FED_cen_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 29
+		x = 27
 		y = 4
 		cost = 5
 		prerequisite = { focus = FED_cen_zy_s_kartki focus = FED_cen_zy_s_rynek }
@@ -814,7 +814,7 @@ focus_tree = {
 	focus = {
 		id = FED_cen_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 27
+		x = 25
 		y = 5
 		cost = 7
 		prerequisite = { focus = FED_cen_zy_s_szkoly }

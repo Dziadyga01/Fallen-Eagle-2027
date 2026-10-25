@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = BST_rada
 		icon = GFX_pl2027_081_rada_0
-		x = 24
+		x = 26
 		y = 1
 		cost = 5
 		prerequisite = { focus = BST_podlasie }
@@ -352,7 +352,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_droga
 		icon = GFX_pl2027_081_mapa_0_bst_k
-		x = 27
+		x = 29
 		y = 2
 		cost = 1
 		prerequisite = { focus = BST_rada }
@@ -367,7 +367,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_kampania
 		icon = GFX_pl2027_081_ofensywa_2_bst
-		x = 25
+		x = 28
 		y = 3
 		cost = 5
 		prerequisite = { focus = BST_m_droga }
@@ -380,7 +380,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_wladza
 		icon = GFX_pl2027_081_wybory_0
-		x = 29
+		x = 30
 		y = 3
 		cost = 5
 		prerequisite = { focus = BST_m_droga }
@@ -394,7 +394,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_mleko
 		icon = GFX_pl2027_081_zywnosc_0
-		x = 27
+		x = 26
 		y = 4
 		cost = 5
 		prerequisite = { focus = BST_m_wladza }
@@ -408,7 +408,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_mleczarnie
 		icon = GFX_pl2027_081_zywnosc_2
-		x = 29
+		x = 28
 		y = 4
 		cost = 7
 		prerequisite = { focus = BST_m_wladza }
@@ -422,7 +422,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_porzadek
 		icon = GFX_pl2027_081_porzadek_1
-		x = 31
+		x = 30
 		y = 4
 		cost = 5
 		prerequisite = { focus = BST_m_wladza }
@@ -437,7 +437,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_gwardia
 		icon = GFX_pl2027_081_gwardia_0_bst
-		x = 27
+		x = 26
 		y = 5
 		cost = 7
 		prerequisite = { focus = BST_m_mleko focus = BST_m_mleczarnie }
@@ -452,7 +452,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_cysterny
 		icon = GFX_pl2027_081_paliwo_0
-		x = 30
+		x = 29
 		y = 5
 		cost = 6
 		prerequisite = { focus = BST_m_mleczarnie focus = BST_m_porzadek }
@@ -466,7 +466,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_mapa
 		icon = GFX_pl2027_081_korona_0_bst
-		x = 27
+		x = 26
 		y = 6
 		cost = 5
 		prerequisite = { focus = BST_m_gwardia focus = BST_m_cysterny }
@@ -483,7 +483,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_suwalki
 		icon = GFX_pl2027_081_wojna_0_bst
-		x = 25
+		x = 24
 		y = 7
 		cost = 8
 		prerequisite = { focus = BST_m_mapa }
@@ -501,7 +501,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_lomza
 		icon = GFX_pl2027_081_zywnosc_3
-		x = 27
+		x = 26
 		y = 7
 		cost = 8
 		prerequisite = { focus = BST_m_mapa }
@@ -519,7 +519,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_mazury
 		icon = GFX_pl2027_081_mapa_1_bst
-		x = 29
+		x = 28
 		y = 7
 		cost = 8
 		prerequisite = { focus = BST_m_mapa }
@@ -537,7 +537,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_warmia
 		icon = GFX_pl2027_081_mapa_2_bst
-		x = 29
+		x = 28
 		y = 8
 		cost = 8
 		prerequisite = { focus = BST_m_mazury }
@@ -554,7 +554,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_integracja
 		icon = GFX_pl2027_081_korona_1_bst
-		x = 29
+		x = 28
 		y = 9
 		cost = 10
 		prerequisite = { focus = BST_m_suwalki focus = BST_m_lomza focus = BST_m_warmia }
@@ -569,7 +569,7 @@ focus_tree = {
 	focus = {
 		id = BST_m_imperium
 		icon = GFX_pl2027_081_korona_2_bst_f
-		x = 29
+		x = 28
 		y = 10
 		cost = 10
 		prerequisite = { focus = BST_m_integracja }
@@ -586,7 +586,7 @@ focus_tree = {
 	focus = {
 		id = FAB_BST_wschod
 		icon = GFX_pl2027_081_administracja_1
-		x = 34
+		x = 33
 		y = 1
 		cost = 5
 		prerequisite = { focus = BST_podlasie }
@@ -599,7 +599,7 @@ focus_tree = {
 	focus = {
 		id = FAB_BST_granica
 		icon = GFX_pl2027_081_granica_0_bst
-		x = 32
+		x = 31
 		y = 2
 		cost = 5
 		prerequisite = { focus = FAB_BST_wschod }
@@ -613,7 +613,7 @@ focus_tree = {
 	focus = {
 		id = FAB_BST_pomoc
 		icon = GFX_pl2027_081_pomoc_1
-		x = 34
+		x = 33
 		y = 2
 		cost = 5
 		prerequisite = { focus = FAB_BST_wschod }
@@ -627,7 +627,7 @@ focus_tree = {
 	focus = {
 		id = FAB_BST_magazyny
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 36
+		x = 35
 		y = 2
 		cost = 6
 		prerequisite = { focus = FAB_BST_wschod }
@@ -640,7 +640,7 @@ focus_tree = {
 	focus = {
 		id = FAB_BST_ochotnicy
 		icon = GFX_pl2027_081_wojsko_1_bst
-		x = 34
+		x = 33
 		y = 3
 		cost = 7
 		prerequisite = { focus = FAB_BST_pomoc focus = FAB_BST_magazyny }
@@ -654,7 +654,7 @@ focus_tree = {
 	focus = {
 		id = FAB_BST_sojusz
 		icon = GFX_pl2027_081_mapa_3_bst_k
-		x = 33
+		x = 32
 		y = 4
 		cost = 5
 		prerequisite = { focus = FAB_BST_ochotnicy }
@@ -670,7 +670,7 @@ focus_tree = {
 	focus = {
 		id = FAB_BST_front_polnocny
 		icon = GFX_pl2027_081_wojna_1_bst
-		x = 33
+		x = 32
 		y = 5
 		cost = 5
 		prerequisite = { focus = FAB_BST_sojusz }
@@ -684,7 +684,7 @@ focus_tree = {
 	focus = {
 		id = FAB_BST_neutralnosc
 		icon = GFX_pl2027_081_szpital_0_bst_k
-		x = 35
+		x = 34
 		y = 4
 		cost = 5
 		prerequisite = { focus = FAB_BST_ochotnicy }
@@ -869,7 +869,7 @@ focus_tree = {
 	focus = {
 		id = BST_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_bst
-		x = 2
+		x = 0
 		y = 4
 		cost = 5
 		prerequisite = { focus = BST_mil_rezerwisci }
@@ -889,7 +889,7 @@ focus_tree = {
 	focus = {
 		id = BST_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_bst
-		x = 7
+		x = 6
 		y = 5
 		cost = 7
 		prerequisite = { focus = BST_mil_kadra }
@@ -909,7 +909,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 13
+		x = 14
 		y = 1
 		cost = 1
 		prerequisite = { focus = BST_podlasie }
@@ -925,7 +925,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 11
+		x = 13
 		y = 2
 		cost = 5
 		prerequisite = { focus = BST_zy_s_ulica }
@@ -941,7 +941,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 14
+		x = 15
 		y = 2
 		cost = 1
 		prerequisite = { focus = BST_zy_s_ulica }
@@ -957,7 +957,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_bst_k
-		x = 13
+		x = 12
 		y = 3
 		cost = 5
 		prerequisite = { focus = BST_zy_s_media }
@@ -975,7 +975,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_bst_k
-		x = 15
+		x = 14
 		y = 3
 		cost = 5
 		prerequisite = { focus = BST_zy_s_media }
@@ -993,7 +993,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 11
+		x = 10
 		y = 4
 		cost = 5
 		prerequisite = { focus = BST_zy_s_kartki focus = BST_zy_s_rynek }
@@ -1010,7 +1010,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 13
+		x = 12
 		y = 4
 		cost = 1
 		prerequisite = { focus = BST_zy_s_kartki focus = BST_zy_s_rynek }
@@ -1026,7 +1026,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 15
+		x = 14
 		y = 4
 		cost = 5
 		prerequisite = { focus = BST_zy_s_kartki focus = BST_zy_s_rynek }
@@ -1043,7 +1043,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 13
+		x = 12
 		y = 5
 		cost = 7
 		prerequisite = { focus = BST_zy_s_szkoly }
@@ -1063,7 +1063,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 39
+		x = 38
 		y = 1
 		cost = 6
 		prerequisite = { focus = BST_podlasie }
@@ -1081,7 +1081,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_bst
-		x = 38
+		x = 37
 		y = 2
 		cost = 5
 		prerequisite = { focus = BST_zy_k_admin }
@@ -1098,7 +1098,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 40
+		x = 39
 		y = 2
 		cost = 1
 		prerequisite = { focus = BST_zy_k_admin }
@@ -1114,7 +1114,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_bst
-		x = 39
+		x = 38
 		y = 3
 		cost = 5
 		prerequisite = { focus = BST_zy_k_defilada }
@@ -1131,7 +1131,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 43
+		x = 42
 		y = 1
 		cost = 5
 		prerequisite = { focus = BST_podlasie }
@@ -1149,7 +1149,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 43
+		x = 42
 		y = 2
 		cost = 5
 		prerequisite = { focus = BST_zy_p_straty }
@@ -1166,7 +1166,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_bst_k
-		x = 42
+		x = 41
 		y = 3
 		cost = 5
 		prerequisite = { focus = BST_zy_p_rzad }
@@ -1183,7 +1183,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_bst_k
-		x = 44
+		x = 43
 		y = 3
 		cost = 5
 		prerequisite = { focus = BST_zy_p_rzad }
@@ -1200,7 +1200,7 @@ focus_tree = {
 	focus = {
 		id = BST_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 43
+		x = 42
 		y = 4
 		cost = 6
 		prerequisite = { focus = BST_zy_p_rewanz focus = BST_zy_p_pojednanie }

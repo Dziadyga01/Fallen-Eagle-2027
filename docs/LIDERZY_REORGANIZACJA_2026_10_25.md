@@ -49,3 +49,19 @@ Gotowa paczka binarna `The_Fallen_Eagle_2027_NAPRAWIENI_LIDERZY_2026_10_25.zip` 
 ## Uwagi
 
 Tożsamości nieznanych postaci nie ustalano na podstawie samego podobieństwa twarzy. Dane oparto na podpisach przekazanych przez autora moda i tekstowej weryfikacji stanowisk. W przypadku dwóch osób związanych z OSD drugi portret pozostaje rezerwowy, dopóki nie powstanie odpowiednia mechanika wyboru lidera.
+
+## Uzupełnienie: pięć obsad potwierdzonych przez autora (25.10.2026)
+
+| Obraz wejściowy | Postać | Postać HOI4 | Rola w świecie moda |
+|---|---|---|---|
+| `zalewski.png` | Michał Zaleski | `TRN_michal_zaleski` | kandydat na prezydenta Torunia |
+| `Donek.png` | Donald Tusk | `IVRP_lider_sejm` | tymczasowy przewodniczący Rady Sejmowej |
+| `Krzysztof Gawkowski.png` | Krzysztof Gawkowski | `LWC_leader` | prezydent Łodzi, LWC |
+| `Pokłanska.png` | Natalia Pokłońska | `ROS_poklonska` | alternatywna przywódczyni Rosji, ROS |
+| `Łukasz Kwiatkowski.png` | Łukasz Kwiatkowski | `GRU_leader` | prezydent Grudziądza, GRU |
+
+- Wszystkie pięć zdjęć trafiło do istniejących folderów postaci w paczce `The_Fallen_Eagle_2027_LIDERZY_POPRAWKI_5_OSOB_2026_10_25.zip` (156×210 + 65×67 px, DDS).
+- `GRU_leader` zastępuje portret oraz nazwę Macieja Glamowskiego. Jego poprzedni portret zachowano w `DODATKOWI/GRU_maciej_glamowski` **bez przypisania do postaci**.
+- `IVRP_lider_sejm` ma nowy opis stanowiska, a `ROS_droga_poklonskiej` rekrutuje i promuje `ROS_poklonska`. `LWC_leader` był już podpisany jako Gawkowski, lecz otrzymuje nowy obraz.
+- Cztery pozostałe pliki (`czarzasty.png`, `Generał jakiś tam.png`, `feweks.png`, `Łukasz Walusiak.png`) zachowano **bez obsady**. Nie dodano ich jako polityków, doradców ani generałów.
+- **Uwaga:** obrazów DDS nie wgrano do GitHuba; nadal potrzebna instalacja ZIP i wysłanie nowych obrazów na gałąź PR, zanim scalimy zmiany ze ścieżkami.

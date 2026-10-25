@@ -3,13 +3,16 @@ state = {
 	name = "STATE_39"
 	manpower = 2959
 	state_category = rural
+	resources = {
+		oil = 18
+	}
 	history = {
-		owner = DOB
-		add_core_of = DOB
+		owner = BRZ
+		add_core_of = BRZ
 		victory_points = { 8405 1 }
 		victory_points = { 1393 1 }
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 	}
 	provinces = { 1393 8405 8406 }

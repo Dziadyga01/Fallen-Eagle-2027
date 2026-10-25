@@ -1,0 +1,41 @@
+characters = {
+    KRZ_katarzyna_trzaskalska = {
+		name = KRZ_katarzyna_trzaskalska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KRZ/KRZ_katarzyna_trzaskalska.png"
+			}
+		}
+		country_leader = {
+			ideology = military_democracy
+			expire = "2065.1.1.1"
+            traits = { 
+                big_brother
+            }
+		}
+	}
+    KRZ_miroslaw_wodara = {
+		name = KRZ_miroslaw_wodara
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KRZ/KRZ_miroslaw_wodara.png"
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+			expire = "2065.1.1.1"
+		}
+	}
+    KRZ_arkadiusz_wojtak = {
+		name = KRZ_arkadiusz_wojtak
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KRZ/KRZ_arkadiusz_wojtak.png"
+			}
+		}
+		country_leader = {
+			ideology = social_patriotism
+			expire = "2065.1.1.1"
+		}
+	}
+}

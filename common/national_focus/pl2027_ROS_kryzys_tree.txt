@@ -144,6 +144,8 @@ focus_tree = {
 		mutually_exclusive = { focus = ROS_droga_szojgu }
 		ai_will_do = { factor = 2 }
 		completion_reward = {
+			recruit_character = ROS_poklonska
+			promote_character = ROS_poklonska
 			load_focus_tree = { tree = ROS_poklonska_tree keep_completed = yes }
 		}
 	}

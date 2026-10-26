@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_prezydent
 		icon = GFX_pl2027_tfr_portret_ros_miedwiediew
-		x = 21
+		x = 26
 		y = 0
 		cost = 2
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -26,10 +26,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_dziedzictwo
 		icon = GFX_pl2027_081_ludzie_0
-		x = 15
-		y = 1
+		x = 7
+		y = 2
+		prerequisite = { focus = ROS_mie_zy_r_tv }
 		cost = 2
-		prerequisite = { focus = ROS_mie_prezydent }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_stability = 0.05
@@ -40,10 +40,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_nowa_elita
 		icon = GFX_pl2027_081_rosja_0
-		x = 15
-		y = 2
-		cost = 2
+		x = 7
+		y = 3
 		prerequisite = { focus = ROS_mie_dziedzictwo }
+		cost = 2
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			if = { limit = { has_idea = ROS_kryzys_elit } remove_ideas = ROS_kryzys_elit }
@@ -54,10 +54,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_emigracja
 		icon = GFX_pl2027_081_emigracja_0
-		x = 14
-		y = 3
-		cost = 2
+		x = 6
+		y = 4
 		prerequisite = { focus = ROS_mie_nowa_elita }
+		cost = 2
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_stability = 0.03
@@ -68,10 +68,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_jedna_rosja
 		icon = GFX_pl2027_081_wybory_0
-		x = 16
-		y = 3
-		cost = 2
+		x = 8
+		y = 4
 		prerequisite = { focus = ROS_mie_nowa_elita }
+		cost = 2
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_popularity = { ideology = authoritarian_democrat popularity = 0.06 }
@@ -81,11 +81,11 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_konstytucja
 		icon = GFX_pl2027_081_konstytucja_0
-		x = 14
-		y = 4
-		cost = 2
+		x = 5
+		y = 5
 		prerequisite = { focus = ROS_mie_emigracja }
 		prerequisite = { focus = ROS_mie_jedna_rosja }
+		cost = 2
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_political_power = 70
@@ -96,10 +96,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_nie_ustapi
 		icon = GFX_pl2027_081_dyplomacja_0
-		x = 19
+		x = 37
 		y = 1
-		cost = 2
 		prerequisite = { focus = ROS_mie_prezydent }
+		cost = 2
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_war_support = 0.06
@@ -109,10 +109,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_mazury_nasze
 		icon = GFX_pl2027_081_mapa_0
-		x = 18
+		x = 40
 		y = 2
-		cost = 3
 		prerequisite = { focus = ROS_mie_nie_ustapi }
+		cost = 3
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			every_state = { limit = { has_state_flag = ROS_cel_mazury } add_claim_by = ROS }
@@ -123,10 +123,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_ogien
 		icon = GFX_pl2027_081_twierdza_0
-		x = 20
+		x = 42
 		y = 2
-		cost = 5
 		prerequisite = { focus = ROS_mie_nie_ustapi }
+		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_tech_bonus = { name = ROS_ogien_tb bonus = 1.0 uses = 1 category = artillery }
@@ -137,11 +137,11 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zwyciestwo
 		icon = GFX_pl2027_081_zwyciestwo_0
-		x = 18
+		x = 40
 		y = 3
-		cost = 3
 		prerequisite = { focus = ROS_mie_mazury_nasze }
 		prerequisite = { focus = ROS_mie_ogien }
+		cost = 3
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_timed_idea = { idea = ROS_zwyciestwo_za_wszelka_cene days = 180 }
@@ -153,10 +153,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_dywizje
 		icon = GFX_pl2027_081_wojsko_0
-		x = 16
+		x = 39
 		y = 4
-		cost = 6
 		prerequisite = { focus = ROS_mie_zwyciestwo }
+		cost = 6
 		available = { OR = { has_war_with = WMZ has_war_with = MAZ has_war_with = SUW } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
@@ -168,10 +168,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_panstwo_zwiazkowe
 		icon = GFX_pl2027_081_rosja_1
-		x = 18
+		x = 41
 		y = 4
-		cost = 3
 		prerequisite = { focus = ROS_mie_zwyciestwo }
+		cost = 3
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			if = { limit = { country_exists = BLR } BLR = { give_military_access = ROS } }
@@ -182,10 +182,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_gospodarka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 1
-		y = 1
+		x = 25
+		y = 2
+		prerequisite = { focus = ROS_mie_zy_r_tv }
 		cost = 5
-		prerequisite = { focus = ROS_mie_prezydent }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
@@ -195,10 +195,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_import
 		icon = GFX_pl2027_081_handel_0
-		x = 0
-		y = 2
-		cost = 2
+		x = 24
+		y = 3
 		prerequisite = { focus = ROS_mie_gospodarka }
+		cost = 2
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			if = { limit = { has_idea = ROS_koszty_wojny } remove_ideas = ROS_koszty_wojny }
@@ -209,10 +209,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_twierdza
 		icon = GFX_pl2027_081_mapa_1
-		x = 2
-		y = 2
-		cost = 3
+		x = 26
+		y = 3
 		prerequisite = { focus = ROS_mie_gospodarka }
+		cost = 3
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_timed_idea = { idea = ROS_twierdza_krolewiec days = 365 }
@@ -222,11 +222,11 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_telewizja
 		icon = GFX_pl2027_081_telewizja_0
-		x = 0
-		y = 3
-		cost = 2
+		x = 24
+		y = 4
 		prerequisite = { focus = ROS_mie_import }
 		prerequisite = { focus = ROS_mie_twierdza }
+		cost = 2
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_stability = 0.05
@@ -237,10 +237,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_kontraktowcy
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 0
-		y = 4
-		cost = 3
+		x = 24
+		y = 5
 		prerequisite = { focus = ROS_mie_telewizja }
+		cost = 3
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_manpower = 15000
@@ -251,11 +251,11 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_po_wojnie
 		icon = GFX_pl2027_081_korona_1
-		x = 12
-		y = 5
-		cost = 10
+		x = 5
+		y = 6
 		prerequisite = { focus = ROS_mie_konstytucja }
 		prerequisite = { focus = ROS_mie_dywizje focus = ROS_mie_panstwo_zwiazkowe focus = ROS_mie_kontraktowcy }
+		cost = 10
 		available = { OR = { has_country_flag = ROS_wojna_rozstrzygnieta date > 2029.6.1 } }
 		ai_will_do = { factor = 50 }
 		completion_reward = {
@@ -266,10 +266,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_triumf_mie
 		icon = GFX_pl2027_081_defilada_0
-		x = 26
-		y = 1
+		x = 13
+		y = 2
+		prerequisite = { focus = ROS_mie_zy_r_tv }
 		cost = 2
-		prerequisite = { focus = ROS_mie_prezydent }
 		allow_branch = { has_country_flag = ROS_zwyciestwo }
 		available = { has_country_flag = ROS_wojna_rozstrzygnieta }
 		bypass = { has_country_flag = ROS_wyn_zw_triumf }
@@ -284,10 +284,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_obwod_mie
 		icon = GFX_pl2027_081_rada_2
-		x = 24
-		y = 2
-		cost = 2
+		x = 11
+		y = 3
 		prerequisite = { focus = ROS_zw_triumf_mie }
+		cost = 2
 		available = { country_exists = OWM }
 		bypass = { OR = { has_country_flag = ROS_wyn_zw_obwod NOT = { country_exists = OWM } } }
 		ai_will_do = { factor = 10 }
@@ -301,10 +301,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_garnizony_mie
 		icon = GFX_pl2027_081_wojsko_0
-		x = 26
-		y = 2
-		cost = 6
+		x = 13
+		y = 3
 		prerequisite = { focus = ROS_zw_triumf_mie }
+		cost = 6
 		bypass = { has_country_flag = ROS_wyn_zw_garnizony }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -317,10 +317,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_kolej_mie
 		icon = GFX_pl2027_081_kolej_1
-		x = 28
-		y = 2
-		cost = 6
+		x = 15
+		y = 3
 		prerequisite = { focus = ROS_zw_triumf_mie }
+		cost = 6
 		bypass = { has_country_flag = ROS_wyn_zw_kolej }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -334,10 +334,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_polityka_mie
 		icon = GFX_pl2027_081_pancerne_1
-		x = 24
-		y = 3
-		cost = 2
+		x = 11
+		y = 4
 		prerequisite = { focus = ROS_zw_obwod_mie focus = ROS_zw_garnizony_mie }
+		cost = 2
 		bypass = { has_country_flag = ROS_wyn_zw_polityka }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -350,10 +350,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_media_mie
 		icon = GFX_pl2027_081_media_2
-		x = 22
-		y = 4
-		cost = 2
+		x = 9
+		y = 5
 		prerequisite = { focus = ROS_zw_polityka_mie }
+		cost = 2
 		bypass = { has_country_flag = ROS_wyn_zw_media }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -366,10 +366,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_protektorat_mie
 		icon = GFX_pl2027_081_paliwo_3
-		x = 22
-		y = 5
-		cost = 1
+		x = 9
+		y = 6
 		prerequisite = { focus = ROS_zw_media_mie }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = PL2027_ARMIA_15000 has_army_manpower = { size > 14999 } } }
 		bypass = { has_country_flag = ROS_wyn_zw_protektorat }
 		ai_will_do = { factor = 10 }
@@ -383,10 +383,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_przemysl_mie
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 28
-		y = 3
-		cost = 6
+		x = 15
+		y = 4
 		prerequisite = { focus = ROS_zw_kolej_mie }
+		cost = 6
 		bypass = { has_country_flag = ROS_wyn_zw_przemysl }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -399,10 +399,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_strefa_mie
 		icon = GFX_pl2027_081_korona_2
-		x = 24
-		y = 4
-		cost = 3
+		x = 11
+		y = 5
 		prerequisite = { focus = ROS_zw_polityka_mie }
+		cost = 3
 		bypass = { has_country_flag = ROS_wyn_zw_strefa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -414,11 +414,11 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_bufor_mie
 		icon = GFX_pl2027_081_granica_2
-		x = 26
-		y = 4
-		cost = 3
+		x = 13
+		y = 5
 		prerequisite = { focus = ROS_zw_polityka_mie }
 		prerequisite = { focus = ROS_zw_przemysl_mie }
+		cost = 3
 		bypass = { has_country_flag = ROS_wyn_zw_bufor }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -431,11 +431,11 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_final_mie
 		icon = GFX_pl2027_081_rosja_0
-		x = 24
-		y = 5
-		cost = 2
+		x = 11
+		y = 6
 		prerequisite = { focus = ROS_zw_strefa_mie }
 		prerequisite = { focus = ROS_zw_bufor_mie }
+		cost = 2
 		bypass = { has_country_flag = ROS_wyn_zw_final }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -449,10 +449,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_zwiazkowe_mie
 		icon = GFX_pl2027_081_rosja_1
-		x = 23
-		y = 6
-		cost = 1
+		x = 10
+		y = 7
 		prerequisite = { focus = ROS_zw_final_mie }
+		cost = 1
 		available = { country_exists = BLR }
 		bypass = { OR = { has_country_flag = ROS_wyn_zw_zwiazkowe NOT = { country_exists = BLR } } }
 		ai_will_do = { factor = 10 }
@@ -466,11 +466,11 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_druga_fala_mie
 		icon = GFX_pl2027_081_wojna_2
-		x = 25
-		y = 6
-		cost = 8
+		x = 12
+		y = 7
 		prerequisite = { focus = ROS_zw_final_mie }
 		prerequisite = { focus = ROS_mie_tree_gotowosc }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = ROS_req_operacja_wygrana has_global_flag = ROS_operacja_wygrana } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
 		bypass = { has_country_flag = ROS_wyn_zw_druga_fala }
 		ai_will_do = { factor = 10 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -486,10 +486,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_podlasie_mie
 		icon = GFX_pl2027_081_ofensywa_1
-		x = 23
-		y = 7
-		cost = 8
+		x = 10
+		y = 8
 		prerequisite = { focus = ROS_zw_zwiazkowe_mie focus = ROS_zw_druga_fala_mie }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = ROS_req_operacja_wygrana has_global_flag = ROS_operacja_wygrana } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
 		bypass = { has_country_flag = ROS_wyn_zw_podlasie }
 		ai_will_do = { factor = 10 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -504,10 +504,10 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_wisla_mie
 		icon = GFX_pl2027_081_rosja_0_f
-		x = 23
-		y = 8
+		x = 10
+		y = 9
+		prerequisite = { focus = ROS_zw_podlasie_mie focus = ROS_zw_protektorat_mie focus = ROS_mie_po_wojnie }
 		cost = 2
-		prerequisite = { focus = ROS_zw_podlasie_mie }
 		available = { custom_trigger_tooltip = { tooltip = ROSW_tt_wisla num_of_controlled_states > 120 } }
 		bypass = { has_country_flag = ROS_wyn_zw_wisla }
 		ai_will_do = { factor = 10 }
@@ -517,16 +517,17 @@ focus_tree = {
 			add_stability = -0.05
 			add_war_support = 0.05
 			set_country_flag = ROS_wyn_zw_wisla
+			PL2027_fundament_awans = yes
 		}
 	}
 
 	focus = {
 		id = ROS_kl_lekcja_mie
 		icon = GFX_pl2027_081_straty_1
-		x = 6
-		y = 1
+		x = 2
+		y = 2
+		prerequisite = { focus = ROS_mie_zy_r_tv }
 		cost = 2
-		prerequisite = { focus = ROS_mie_prezydent }
 		allow_branch = { has_country_flag = ROS_kleska }
 		available = { has_country_flag = ROS_wojna_rozstrzygnieta }
 		bypass = { has_country_flag = ROS_wyn_kl_lekcja }
@@ -541,10 +542,10 @@ focus_tree = {
 	focus = {
 		id = ROS_kl_zdobycze_mie
 		icon = GFX_pl2027_081_twierdza_2
-		x = 4
-		y = 2
-		cost = 2
+		x = 0
+		y = 3
 		prerequisite = { focus = ROS_kl_lekcja_mie }
+		cost = 2
 		available = { any_owned_state = { has_state_flag = ROS_zatrzymany } }
 		bypass = { OR = { has_country_flag = ROS_wyn_kl_zdobycze NOT = { any_owned_state = { has_state_flag = ROS_zatrzymany } } } }
 		ai_will_do = { factor = 10 }
@@ -557,10 +558,10 @@ focus_tree = {
 	focus = {
 		id = ROS_kl_rozliczenia_mie
 		icon = GFX_pl2027_081_sztab_2
-		x = 6
-		y = 2
-		cost = 2
+		x = 2
+		y = 3
 		prerequisite = { focus = ROS_kl_lekcja_mie }
+		cost = 2
 		bypass = { has_country_flag = ROS_wyn_kl_rozliczenia }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -574,10 +575,10 @@ focus_tree = {
 	focus = {
 		id = ROS_kl_gospodarka_mie
 		icon = GFX_pl2027_081_pieniadze_1
-		x = 8
-		y = 2
-		cost = 5
+		x = 4
+		y = 3
 		prerequisite = { focus = ROS_kl_lekcja_mie }
+		cost = 5
 		bypass = { has_country_flag = ROS_wyn_kl_gospodarka }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -590,10 +591,10 @@ focus_tree = {
 	focus = {
 		id = ROS_kl_rozmowy_mie
 		icon = GFX_pl2027_081_dyplomacja_0
-		x = 4
-		y = 3
-		cost = 2
+		x = 0
+		y = 4
 		prerequisite = { focus = ROS_kl_zdobycze_mie }
+		cost = 2
 		bypass = { has_country_flag = ROS_wyn_kl_rozmowy }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -606,10 +607,10 @@ focus_tree = {
 	focus = {
 		id = ROS_kl_reforma_mie
 		icon = GFX_pl2027_081_wyposazenie_1
-		x = 6
-		y = 3
-		cost = 3
+		x = 2
+		y = 4
 		prerequisite = { focus = ROS_kl_rozliczenia_mie }
+		cost = 3
 		bypass = { has_country_flag = ROS_wyn_kl_reforma }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -622,10 +623,10 @@ focus_tree = {
 	focus = {
 		id = ROS_kl_spokoj_mie
 		icon = GFX_pl2027_081_telewizja_1
-		x = 8
-		y = 3
-		cost = 2
+		x = 4
+		y = 4
 		prerequisite = { focus = ROS_kl_gospodarka_mie }
+		cost = 2
 		bypass = { has_country_flag = ROS_wyn_kl_spokoj }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -638,11 +639,11 @@ focus_tree = {
 	focus = {
 		id = ROS_kl_odbudowa_mie
 		icon = GFX_pl2027_081_budowa_4
-		x = 7
-		y = 4
-		cost = 3
+		x = 2
+		y = 5
 		prerequisite = { focus = ROS_kl_reforma_mie }
 		prerequisite = { focus = ROS_kl_spokoj_mie }
+		cost = 3
 		bypass = { has_country_flag = ROS_wyn_kl_odbudowa }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -655,7 +656,7 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_aneksja_mie
 		icon = GFX_pl2027_081_ultimatum_1
-		x = 0
+		x = 28
 		y = 0
 		cost = 1
 		mutually_exclusive = { focus = ROS_zw_administracja_mie focus = ROS_zw_obwod_wm_mie focus = ROS_zw_pokoj_mie }
@@ -672,7 +673,7 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_administracja_mie
 		icon = GFX_pl2027_081_administracja_1
-		x = 2
+		x = 30
 		y = 0
 		cost = 1
 		mutually_exclusive = { focus = ROS_zw_aneksja_mie focus = ROS_zw_obwod_wm_mie focus = ROS_zw_pokoj_mie }
@@ -689,7 +690,7 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_obwod_wm_mie
 		icon = GFX_pl2027_081_mapa_3
-		x = 4
+		x = 32
 		y = 0
 		cost = 1
 		mutually_exclusive = { focus = ROS_zw_aneksja_mie focus = ROS_zw_administracja_mie focus = ROS_zw_pokoj_mie }
@@ -706,7 +707,7 @@ focus_tree = {
 	focus = {
 		id = ROS_zw_pokoj_mie
 		icon = GFX_pl2027_081_pojednanie_2
-		x = 6
+		x = 34
 		y = 0
 		cost = 1
 		mutually_exclusive = { focus = ROS_zw_aneksja_mie focus = ROS_zw_administracja_mie focus = ROS_zw_obwod_wm_mie }
@@ -723,10 +724,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_ROS_dec_posilki_f1
 		icon = GFX_pl2027_081_rosja_0
-		x = 10
-		y = 1
+		x = 33
+		y = 2
+		prerequisite = { focus = ROS_mie_nie_ustapi }
 		cost = 6
-		prerequisite = { focus = ROS_mie_prezydent }
 		available = { original_tag = ROS ROS_przy_wojnie = yes has_political_power > 59 }
 		bypass = { has_country_flag = DZ_ROS_dec_posilki_1 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -740,10 +741,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_ROS_dec_posilki_f2
 		icon = GFX_pl2027_081_rosja_0
-		x = 10
-		y = 2
-		cost = 6
+		x = 33
+		y = 3
 		prerequisite = { focus = ROS_mie_ROS_dec_posilki_f1 }
+		cost = 6
 		available = { original_tag = ROS ROS_przy_wojnie = yes has_political_power > 59 }
 		bypass = { has_country_flag = DZ_ROS_dec_posilki_2 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -757,10 +758,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_ROS_dec_posilki_f3
 		icon = GFX_pl2027_081_rosja_0
-		x = 10
-		y = 3
-		cost = 6
+		x = 33
+		y = 4
 		prerequisite = { focus = ROS_mie_ROS_dec_posilki_f2 }
+		cost = 6
 		available = { original_tag = ROS ROS_przy_wojnie = yes has_political_power > 59 }
 		bypass = { has_country_flag = DZ_ROS_dec_posilki_3 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -774,10 +775,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_ROS_dec_most_f1
 		icon = GFX_pl2027_081_most_powietrzny_1
-		x = 12
-		y = 1
+		x = 35
+		y = 2
+		prerequisite = { focus = ROS_mie_nie_ustapi }
 		cost = 5
-		prerequisite = { focus = ROS_mie_prezydent }
 		available = { original_tag = ROS has_political_power > 29 }
 		bypass = { has_country_flag = DZ_ROS_dec_most_1 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -791,10 +792,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_ROS_dec_most_f2
 		icon = GFX_pl2027_081_most_powietrzny_1
-		x = 12
-		y = 2
-		cost = 5
+		x = 35
+		y = 3
 		prerequisite = { focus = ROS_mie_ROS_dec_most_f1 }
+		cost = 5
 		available = { original_tag = ROS has_political_power > 29 }
 		bypass = { has_country_flag = DZ_ROS_dec_most_2 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -808,10 +809,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_ROS_dec_most_f3
 		icon = GFX_pl2027_081_most_powietrzny_1
-		x = 12
-		y = 3
-		cost = 5
+		x = 35
+		y = 4
 		prerequisite = { focus = ROS_mie_ROS_dec_most_f2 }
+		cost = 5
 		available = { original_tag = ROS has_political_power > 29 }
 		bypass = { has_country_flag = DZ_ROS_dec_most_3 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -825,10 +826,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_ROS_dec_mobilizacja_f1
 		icon = GFX_pl2027_081_pobor_2
-		x = 30
-		y = 1
+		x = 37
+		y = 2
+		prerequisite = { focus = ROS_mie_nie_ustapi }
 		cost = 3
-		prerequisite = { focus = ROS_mie_prezydent }
 		available = { original_tag = ROS has_political_power > 39 }
 		bypass = { has_country_flag = DZ_ROS_dec_mobilizacja_1 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -842,10 +843,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_ROS_dec_mobilizacja_f2
 		icon = GFX_pl2027_081_pobor_2
-		x = 30
-		y = 2
-		cost = 3
+		x = 37
+		y = 3
 		prerequisite = { focus = ROS_mie_ROS_dec_mobilizacja_f1 }
+		cost = 3
 		available = { original_tag = ROS has_political_power > 39 }
 		bypass = { has_country_flag = DZ_ROS_dec_mobilizacja_2 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -859,10 +860,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_ROS_dec_mobilizacja_f3
 		icon = GFX_pl2027_081_pobor_2
-		x = 30
-		y = 3
-		cost = 3
+		x = 37
+		y = 4
 		prerequisite = { focus = ROS_mie_ROS_dec_mobilizacja_f2 }
+		cost = 3
 		available = { original_tag = ROS has_political_power > 39 }
 		bypass = { has_country_flag = DZ_ROS_dec_mobilizacja_3 }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -876,10 +877,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_r_tv
 		icon = GFX_pl2027_081_telewizja_0
-		x = 33
+		x = 16
 		y = 1
-		cost = 3
 		prerequisite = { focus = ROS_mie_prezydent }
+		cost = 3
 		bypass = { has_country_flag = TFR_zy_ros_r_tv }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -892,10 +893,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_r_listy
 		icon = GFX_pl2027_081_dyplomacja_1
-		x = 32
+		x = 29
 		y = 2
-		cost = 1
 		prerequisite = { focus = ROS_mie_zy_r_tv }
+		cost = 1
 		bypass = { has_country_flag = TFR_zy_ros_r_listy }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -908,10 +909,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_r_oligarchowie
 		icon = GFX_pl2027_081_oligarchia_0
-		x = 34
+		x = 31
 		y = 2
-		cost = 1
 		prerequisite = { focus = ROS_mie_zy_r_tv }
+		cost = 1
 		bypass = { has_country_flag = TFR_zy_ros_r_oligarchowie }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -924,11 +925,11 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_r_rubel
 		icon = GFX_pl2027_081_kryzys_gosp_3
-		x = 33
+		x = 28
 		y = 3
-		cost = 3
 		prerequisite = { focus = ROS_mie_zy_r_listy }
 		prerequisite = { focus = ROS_mie_zy_r_oligarchowie }
+		cost = 3
 		mutually_exclusive = { focus = ROS_mie_zy_r_druk }
 		bypass = { has_country_flag = TFR_zy_ros_r_rubel }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -942,11 +943,11 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_r_druk
 		icon = GFX_pl2027_081_kryzys_gosp_0
-		x = 35
+		x = 30
 		y = 3
-		cost = 3
 		prerequisite = { focus = ROS_mie_zy_r_listy }
 		prerequisite = { focus = ROS_mie_zy_r_oligarchowie }
+		cost = 3
 		mutually_exclusive = { focus = ROS_mie_zy_r_rubel }
 		bypass = { has_country_flag = TFR_zy_ros_r_druk }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -960,10 +961,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_r_cenzura
 		icon = GFX_pl2027_081_cenzura_2
-		x = 34
+		x = 27
 		y = 4
-		cost = 2
 		prerequisite = { focus = ROS_mie_zy_r_rubel focus = ROS_mie_zy_r_druk }
+		cost = 2
 		bypass = { has_country_flag = TFR_zy_ros_r_cenzura }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -977,10 +978,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_r_regiony
 		icon = GFX_pl2027_081_mapa_0
-		x = 36
+		x = 29
 		y = 4
-		cost = 3
 		prerequisite = { focus = ROS_mie_zy_r_rubel focus = ROS_mie_zy_r_druk }
+		cost = 3
 		bypass = { has_country_flag = TFR_zy_ros_r_regiony }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -994,11 +995,11 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_r_jednosc
 		icon = GFX_pl2027_081_wojna_1
-		x = 35
+		x = 27
 		y = 5
-		cost = 6
 		prerequisite = { focus = ROS_mie_zy_r_cenzura }
 		prerequisite = { focus = ROS_mie_zy_r_regiony }
+		cost = 6
 		bypass = { has_country_flag = TFR_zy_ros_r_jednosc }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -1012,10 +1013,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 38
-		y = 1
+		x = 18
+		y = 2
+		prerequisite = { focus = ROS_mie_zy_r_tv }
 		cost = 5
-		prerequisite = { focus = ROS_mie_prezydent }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
 		bypass = { has_country_flag = TFR_zy_k_k_admin }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1030,10 +1031,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1
-		x = 37
-		y = 2
-		cost = 2
+		x = 17
+		y = 3
 		prerequisite = { focus = ROS_mie_zy_k_admin }
+		cost = 2
 		bypass = { has_country_flag = TFR_zy_k_k_defilada }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
@@ -1047,10 +1048,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 39
-		y = 2
-		cost = 1
+		x = 19
+		y = 3
 		prerequisite = { focus = ROS_mie_zy_k_admin }
+		cost = 1
 		bypass = { has_country_flag = TFR_zy_k_k_opor }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
@@ -1063,11 +1064,11 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2
-		x = 38
-		y = 3
-		cost = 3
+		x = 17
+		y = 4
 		prerequisite = { focus = ROS_mie_zy_k_defilada }
 		prerequisite = { focus = ROS_mie_zy_k_opor }
+		cost = 3
 		bypass = { has_country_flag = TFR_zy_k_k_owoce }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
@@ -1080,10 +1081,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 41
-		y = 1
+		x = 21
+		y = 2
+		prerequisite = { focus = ROS_mie_zy_r_tv }
 		cost = 3
-		prerequisite = { focus = ROS_mie_prezydent }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
 		bypass = { has_country_flag = TFR_zy_p_p_straty }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1098,10 +1099,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 41
-		y = 2
-		cost = 2
+		x = 21
+		y = 3
 		prerequisite = { focus = ROS_mie_zy_p_straty }
+		cost = 2
 		bypass = { has_country_flag = TFR_zy_p_p_rzad }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
@@ -1115,10 +1116,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1
-		x = 40
-		y = 3
-		cost = 3
+		x = 20
+		y = 4
 		prerequisite = { focus = ROS_mie_zy_p_rzad }
+		cost = 3
 		mutually_exclusive = { focus = ROS_mie_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1132,10 +1133,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3
-		x = 42
-		y = 3
-		cost = 3
+		x = 22
+		y = 4
 		prerequisite = { focus = ROS_mie_zy_p_rzad }
+		cost = 3
 		mutually_exclusive = { focus = ROS_mie_zy_p_rewanz }
 		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1149,10 +1150,10 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 41
-		y = 4
-		cost = 5
+		x = 20
+		y = 5
 		prerequisite = { focus = ROS_mie_zy_p_rewanz focus = ROS_mie_zy_p_pojednanie }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
@@ -1168,12 +1169,12 @@ focus_tree = {
 	focus = {
 		id = ROS_mie_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0
-		x = 20
-		y = 4
-		cost = 2
+		x = 7
+		y = 5
 		prerequisite = { focus = ROS_mie_emigracja }
 		prerequisite = { focus = ROS_zw_przemysl_mie }
 		prerequisite = { focus = ROS_mie_zwyciestwo }
+		cost = 2
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		ai_will_do = { factor = 30 }
 		completion_reward = {

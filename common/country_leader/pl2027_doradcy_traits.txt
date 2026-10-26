@@ -106,6 +106,12 @@ leader_traits = {
 		max_dig_in = 2
 		ai_will_do = { factor = 1 }
 	}
+	PL2027_dor_SMR_kukiz = {
+		random = no
+		stability_factor = 0.03
+		political_power_gain = 0.05
+		ai_will_do = { factor = 1 }
+	}
 	PL2027_dor_KPR_krupinski = {
 		random = no
 		political_power_gain = 0.1

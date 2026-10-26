@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = IVM_w0
 		icon = GFX_pl2027_081_administracja_0
-		x = 12
+		x = 20
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -26,12 +26,12 @@ focus_tree = {
 	focus = {
 		id = IVM_w1
 		icon = GFX_pl2027_081_chaos_0
-		x = 14
-		y = 5
-		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } } }
-		cost = 8
+		x = 7
+		y = 6
 		prerequisite = { focus = IVM_w0 }
 		prerequisite = { focus = IVRP_mafia_tree_gotowosc }
+		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_7000 has_army_manpower = { size > 6999 } } }
+		cost = 8
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
 			every_country = { limit = { OR = { original_tag = SMR original_tag = PLC original_tag = KPR original_tag = WOJ original_tag = MPR original_tag = LEG original_tag = PRG original_tag = ZIE original_tag = TEC } is_subject_of = ROOT } ROOT = { annex_country = { target = PREV transfer_troops = yes } } }
@@ -46,10 +46,10 @@ focus_tree = {
 	focus = {
 		id = IVM_w2
 		icon = GFX_pl2027_081_wojsko_0_tec
-		x = 5
-		y = 1
+		x = 21
+		y = 2
+		prerequisite = { focus = IVM_woj_rekrutacja }
 		cost = 5
-		prerequisite = { focus = IVM_w0 }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			army_experience = 15
@@ -60,10 +60,10 @@ focus_tree = {
 	focus = {
 		id = IVM_w3
 		icon = GFX_pl2027_081_przemysl_0
-		x = 10
-		y = 6
-		cost = 6
+		x = 4
+		y = 7
 		prerequisite = { focus = IVM_w1 }
+		cost = 6
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_political_power = 75
@@ -74,10 +74,10 @@ focus_tree = {
 	focus = {
 		id = IVM_w4
 		icon = GFX_pl2027_081_ludzie_0
-		x = 5
-		y = 2
-		cost = 5
+		x = 21
+		y = 3
 		prerequisite = { focus = IVM_w2 }
+		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_stability = 0.06
@@ -87,11 +87,11 @@ focus_tree = {
 	focus = {
 		id = IVM_w5
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 10
-		y = 7
-		cost = 6
+		x = 4
+		y = 8
 		prerequisite = { focus = IVM_w3 }
 		prerequisite = { focus = IVM_w4 }
+		cost = 6
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
@@ -102,10 +102,10 @@ focus_tree = {
 	focus = {
 		id = IVM_w6
 		icon = GFX_pl2027_081_ludzie_1
-		x = 10
-		y = 8
-		cost = 5
+		x = 4
+		y = 9
 		prerequisite = { focus = IVM_w5 }
+		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_stability = 0.05
@@ -116,10 +116,10 @@ focus_tree = {
 	focus = {
 		id = IVM_odb_dzielnice
 		icon = GFX_pl2027_081_osiedle_1
-		x = 8
-		y = 1
+		x = 24
+		y = 2
+		prerequisite = { focus = IVM_woj_rekrutacja }
 		cost = 7
-		prerequisite = { focus = IVM_w0 }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
@@ -130,10 +130,10 @@ focus_tree = {
 	focus = {
 		id = IVM_odb_przemysl
 		icon = GFX_pl2027_081_przemysl_5
-		x = 7
-		y = 2
-		cost = 7
+		x = 23
+		y = 3
 		prerequisite = { focus = IVM_odb_dzielnice }
+		cost = 7
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
@@ -143,10 +143,10 @@ focus_tree = {
 	focus = {
 		id = IVM_odb_integracja
 		icon = GFX_pl2027_081_osiedle_2
-		x = 10
-		y = 2
-		cost = 5
+		x = 26
+		y = 3
 		prerequisite = { focus = IVM_odb_dzielnice }
+		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			725 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 726 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 727 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 728 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 729 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 730 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 731 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 732 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 733 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 734 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 735 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 736 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 737 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 738 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 739 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 740 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 741 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 742 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 743 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 744 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 745 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } } 746 = { if = { limit = { is_owned_by = ROOT } add_core_of = ROOT } }
@@ -157,10 +157,10 @@ focus_tree = {
 	focus = {
 		id = IVM_odb_infra
 		icon = GFX_pl2027_081_most_1
-		x = 6
-		y = 3
-		cost = 7
+		x = 22
+		y = 4
 		prerequisite = { focus = IVM_odb_przemysl }
+		cost = 7
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
@@ -170,11 +170,11 @@ focus_tree = {
 	focus = {
 		id = IVM_odb_energia
 		icon = GFX_pl2027_081_energia_0
-		x = 8
-		y = 3
-		cost = 6
+		x = 24
+		y = 4
 		prerequisite = { focus = IVM_odb_przemysl }
 		prerequisite = { focus = IVM_odb_integracja }
+		cost = 6
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
@@ -185,10 +185,10 @@ focus_tree = {
 	focus = {
 		id = IVM_odb_uczelnie
 		icon = GFX_pl2027_081_przemysl_1
-		x = 10
-		y = 3
-		cost = 5
+		x = 26
+		y = 4
 		prerequisite = { focus = IVM_odb_integracja }
+		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_tech_bonus = { name = IVRP2_uczelnie_a_tb bonus = 1.0 uses = 2 category = industry }
@@ -199,11 +199,11 @@ focus_tree = {
 	focus = {
 		id = IVM_odb_transport
 		icon = GFX_pl2027_081_kolej_1
-		x = 6
-		y = 4
-		cost = 7
+		x = 22
+		y = 5
 		prerequisite = { focus = IVM_odb_infra }
 		prerequisite = { focus = IVM_odb_energia }
+		cost = 7
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
@@ -214,11 +214,11 @@ focus_tree = {
 	focus = {
 		id = IVM_odb_gospodarka
 		icon = GFX_pl2027_081_pieniadze_4
-		x = 8
-		y = 5
-		cost = 6
+		x = 22
+		y = 6
 		prerequisite = { focus = IVM_odb_transport }
 		prerequisite = { focus = IVM_odb_uczelnie }
+		cost = 6
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			if = { limit = { has_idea = IVRP2_odbudowa } remove_ideas = IVRP2_odbudowa } add_ideas = IVRP2_gospodarka
@@ -229,10 +229,10 @@ focus_tree = {
 	focus = {
 		id = IVM_woj_rekrutacja
 		icon = GFX_pl2027_081_wojsko_2_tec
-		x = 14
+		x = 27
 		y = 1
-		cost = 6
 		prerequisite = { focus = IVM_w0 }
+		cost = 6
 		ai_will_do = { factor = 20 }
 		completion_reward = {
 			add_manpower = 8000
@@ -243,10 +243,10 @@ focus_tree = {
 	focus = {
 		id = IVM_woj_pobor
 		icon = GFX_pl2027_081_pobor_2_tec
-		x = 13
+		x = 29
 		y = 2
-		cost = 5
 		prerequisite = { focus = IVM_woj_rekrutacja }
+		cost = 5
 		ai_will_do = { factor = 20 }
 		completion_reward = {
 			add_ideas = IVRP2_pobor
@@ -256,10 +256,10 @@ focus_tree = {
 	focus = {
 		id = IVM_woj_przemysl
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 16
+		x = 32
 		y = 2
-		cost = 7
 		prerequisite = { focus = IVM_woj_rekrutacja }
+		cost = 7
 		ai_will_do = { factor = 20 }
 		completion_reward = {
 			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
@@ -269,10 +269,10 @@ focus_tree = {
 	focus = {
 		id = IVM_woj_dywizje
 		icon = GFX_pl2027_081_wojsko_3_tec
-		x = 12
+		x = 28
 		y = 3
-		cost = 7
 		prerequisite = { focus = IVM_woj_pobor }
+		cost = 7
 		ai_will_do = { factor = 20 }
 		completion_reward = {
 			if = { limit = { NOT = { has_template = "Dywizja IV RP" } } division_template = { name = "Dywizja IV RP" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } artillery_brigade = { x = 2 y = 0 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
@@ -283,11 +283,11 @@ focus_tree = {
 	focus = {
 		id = IVM_woj_modernizacja
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 14
+		x = 30
 		y = 3
-		cost = 5
 		prerequisite = { focus = IVM_woj_pobor }
 		prerequisite = { focus = IVM_woj_przemysl }
+		cost = 5
 		ai_will_do = { factor = 20 }
 		completion_reward = {
 			add_tech_bonus = { name = IVRP2_mod_a_tb bonus = 1.0 uses = 2 category = infantry_weapons }
@@ -298,10 +298,10 @@ focus_tree = {
 	focus = {
 		id = IVM_woj_zmotoryzowane
 		icon = GFX_pl2027_081_zmotoryzowane_0_tec
-		x = 16
+		x = 32
 		y = 3
-		cost = 7
 		prerequisite = { focus = IVM_woj_przemysl }
+		cost = 7
 		ai_will_do = { factor = 20 }
 		completion_reward = {
 			add_equipment_to_stockpile = { type = motorized_equipment amount = 200 }
@@ -313,11 +313,11 @@ focus_tree = {
 	focus = {
 		id = IVM_woj_kadra
 		icon = GFX_pl2027_081_oficer_1_tec
-		x = 10
+		x = 28
 		y = 4
-		cost = 5
 		prerequisite = { focus = IVM_woj_dywizje }
 		prerequisite = { focus = IVM_woj_modernizacja }
+		cost = 5
 		ai_will_do = { factor = 20 }
 		completion_reward = {
 			army_experience = 30
@@ -328,11 +328,11 @@ focus_tree = {
 	focus = {
 		id = IVM_woj_armia
 		icon = GFX_pl2027_081_wojsko_0_tec
-		x = 10
+		x = 28
 		y = 5
-		cost = 7
 		prerequisite = { focus = IVM_woj_kadra }
 		prerequisite = { focus = IVM_woj_zmotoryzowane }
+		cost = 7
 		ai_will_do = { factor = 20 }
 		completion_reward = {
 			if = { limit = { has_idea = IVRP2_kadra } remove_ideas = IVRP2_kadra } add_ideas = IVRP2_armia
@@ -344,10 +344,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_plan
 		icon = GFX_pl2027_081_budowa_1
-		x = 18
-		y = 6
-		cost = 5
+		x = 10
+		y = 7
 		prerequisite = { focus = IVM_w1 }
+		cost = 5
 		ai_will_do = { factor = 20 }
 		completion_reward = {
 			add_political_power = 40
@@ -358,10 +358,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_r1_ozm
 		icon = GFX_pl2027_081_ofensywa_1_tec
-		x = 12
-		y = 7
-		cost = 8
+		x = 6
+		y = 8
 		prerequisite = { focus = IVM_e_plan }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
 		bypass = { OR = { NOT = { country_exists = OZM } OZM = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = OZM ratio > 1.2 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -376,10 +376,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_r1_grd
 		icon = GFX_pl2027_081_ofensywa_1_tec
-		x = 14
-		y = 7
-		cost = 8
+		x = 8
+		y = 8
 		prerequisite = { focus = IVM_e_plan }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
 		bypass = { OR = { NOT = { country_exists = GRD } GRD = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = GRD ratio > 1.2 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -394,10 +394,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_r1_psc
 		icon = GFX_pl2027_081_ofensywa_1_tec
-		x = 19
-		y = 7
-		cost = 8
+		x = 10
+		y = 8
 		prerequisite = { focus = IVM_e_plan }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
 		bypass = { OR = { NOT = { country_exists = PSC } PSC = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = PSC ratio > 1.2 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -412,10 +412,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_r1_otw
 		icon = GFX_pl2027_081_ofensywa_0_tec
-		x = 21
-		y = 7
-		cost = 8
+		x = 12
+		y = 8
 		prerequisite = { focus = IVM_e_plan }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_5000 has_army_manpower = { size > 4999 } } }
 		bypass = { OR = { NOT = { country_exists = OTW } OTW = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = OTW ratio > 1.2 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -430,10 +430,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_r1_wlm
 		icon = GFX_pl2027_081_ofensywa_3_tec
-		x = 23
-		y = 7
-		cost = 8
+		x = 14
+		y = 8
 		prerequisite = { focus = IVM_e_plan }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
 		bypass = { OR = { NOT = { country_exists = WLM } WLM = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = WLM ratio > 1.2 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -448,10 +448,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_region
 		icon = GFX_pl2027_081_mapa_1_tec
-		x = 19
-		y = 8
-		cost = 5
+		x = 6
+		y = 9
 		prerequisite = { focus = IVM_e_r1_ozm focus = IVM_e_r1_grd focus = IVM_e_r1_psc focus = IVM_e_r1_otw focus = IVM_e_r1_wlm }
+		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = IVRP2_req_ring count_triggers = { amount = 4 OR = { NOT = { country_exists = OZM } OZM = { is_subject_of = ROOT } } OR = { NOT = { country_exists = GRD } GRD = { is_subject_of = ROOT } } OR = { NOT = { country_exists = PSC } PSC = { is_subject_of = ROOT } } OR = { NOT = { country_exists = OTW } OTW = { is_subject_of = ROOT } } OR = { NOT = { country_exists = WLM } WLM = { is_subject_of = ROOT } } } } has_war = no }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
@@ -464,10 +464,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_w_nna
 		icon = GFX_pl2027_081_administracja_0
-		x = 14
-		y = 9
-		cost = 1
+		x = 1
+		y = 10
 		prerequisite = { focus = IVM_e_region }
+		cost = 1
 		bypass = { OR = { NOT = { country_exists = NNA } NNA = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -478,10 +478,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_o_nna
 		icon = GFX_pl2027_081_budowa_1
-		x = 14
-		y = 10
-		cost = 8
+		x = 1
+		y = 11
 		prerequisite = { focus = IVM_e_w_nna }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
 		bypass = { OR = { NOT = { country_exists = NNA } NNA = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = NNA ratio > 1.1 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -497,10 +497,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_w_kkr
 		icon = GFX_pl2027_081_korona_0_tec
-		x = 16
-		y = 9
-		cost = 1
+		x = 3
+		y = 10
 		prerequisite = { focus = IVM_e_region }
+		cost = 1
 		bypass = { OR = { NOT = { country_exists = KKR } KKR = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -511,10 +511,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_o_kkr
 		icon = GFX_pl2027_081_korona_1_tec
-		x = 16
-		y = 10
-		cost = 8
+		x = 3
+		y = 11
 		prerequisite = { focus = IVM_e_w_kkr }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
 		bypass = { OR = { NOT = { country_exists = KKR } KKR = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = KKR ratio > 1.1 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -530,10 +530,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_w_plo
 		icon = GFX_pl2027_081_administracja_1
-		x = 18
-		y = 9
-		cost = 1
+		x = 5
+		y = 10
 		prerequisite = { focus = IVM_e_region }
+		cost = 1
 		bypass = { OR = { NOT = { country_exists = PLO } PLO = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -544,10 +544,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_o_plo
 		icon = GFX_pl2027_081_budowa_5
-		x = 18
-		y = 10
-		cost = 8
+		x = 5
+		y = 11
 		prerequisite = { focus = IVM_e_w_plo }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_15000 has_army_manpower = { size > 14999 } } }
 		bypass = { OR = { NOT = { country_exists = PLO } PLO = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = PLO ratio > 1.1 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -563,10 +563,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_w_prw
 		icon = GFX_pl2027_081_polska_2_tec
-		x = 20
-		y = 9
-		cost = 1
+		x = 7
+		y = 10
 		prerequisite = { focus = IVM_e_region }
+		cost = 1
 		bypass = { OR = { NOT = { country_exists = PRW } PRW = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -577,10 +577,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_o_prw
 		icon = GFX_pl2027_081_polska_1_tec
-		x = 20
-		y = 10
-		cost = 8
+		x = 7
+		y = 11
 		prerequisite = { focus = IVM_e_w_prw }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_20000 has_army_manpower = { size > 19999 } } }
 		bypass = { OR = { NOT = { country_exists = PRW } PRW = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = PRW ratio > 1.1 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -596,10 +596,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_w_wol
 		icon = GFX_pl2027_081_parlament_1_tec
-		x = 22
-		y = 9
-		cost = 1
+		x = 9
+		y = 10
 		prerequisite = { focus = IVM_e_region }
+		cost = 1
 		bypass = { OR = { NOT = { country_exists = WOL } WOL = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -610,10 +610,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_o_wol
 		icon = GFX_pl2027_081_parlament_2_tec
-		x = 22
-		y = 10
-		cost = 8
+		x = 9
+		y = 11
 		prerequisite = { focus = IVM_e_w_wol }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_15000 has_army_manpower = { size > 14999 } } }
 		bypass = { OR = { NOT = { country_exists = WOL } WOL = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = WOL ratio > 1.1 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -629,10 +629,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_w_mla
 		icon = GFX_pl2027_081_mapa_3_tec
-		x = 24
-		y = 9
-		cost = 1
+		x = 11
+		y = 10
 		prerequisite = { focus = IVM_e_region }
+		cost = 1
 		bypass = { OR = { NOT = { country_exists = MLA } MLA = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
@@ -643,10 +643,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_o_mla
 		icon = GFX_pl2027_081_mapa_2_tec
-		x = 24
-		y = 10
-		cost = 8
+		x = 11
+		y = 11
 		prerequisite = { focus = IVM_e_w_mla }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_10000 has_army_manpower = { size > 9999 } } }
 		bypass = { OR = { NOT = { country_exists = MLA } MLA = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0 NOT = { strength_ratio = { tag = MLA ratio > 1.1 } } } modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
@@ -662,10 +662,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_mazowsze
 		icon = GFX_pl2027_081_kolej_0
-		x = 18
-		y = 11
-		cost = 5
+		x = 1
+		y = 12
 		prerequisite = { focus = IVM_e_o_nna focus = IVM_e_o_kkr focus = IVM_e_o_plo focus = IVM_e_o_prw focus = IVM_e_o_wol focus = IVM_e_o_mla }
+		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = IVRP2_req_maz num_of_controlled_states > 119 } }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
@@ -678,10 +678,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_rp
 		icon = GFX_pl2027_081_budowa_3
-		x = 18
-		y = 12
-		cost = 10
+		x = 1
+		y = 13
 		prerequisite = { focus = IVM_e_mazowsze }
+		cost = 10
 		available = { custom_trigger_tooltip = { tooltip = IVRP2_req_rp num_of_controlled_states > 249 } }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
@@ -695,10 +695,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_wojna
 		icon = GFX_pl2027_081_sojusz_3_tec
-		x = 17
-		y = 13
-		cost = 8
+		x = 0
+		y = 14
 		prerequisite = { focus = IVM_e_rp }
+		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_40000 has_army_manpower = { size > 39999 } } }
 		ai_will_do = { factor = 10 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
@@ -711,10 +711,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_unia
 		icon = GFX_pl2027_081_sojusz_0_tec
-		x = 19
-		y = 13
-		cost = 1
+		x = 2
+		y = 14
 		prerequisite = { focus = IVM_e_rp }
+		cost = 1
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			every_neighbor_country = { limit = { is_subject = no NOT = { has_war_with = ROOT } num_of_controlled_states < 15 NOT = { OR = { tag = ROS tag = KRL tag = GER tag = CZE tag = UKR tag = LIT tag = BLR tag = SLO tag = OWM } } } country_event = { id = ivrp2.10 days = 3 } }
@@ -726,10 +726,10 @@ focus_tree = {
 	focus = {
 		id = IVM_e_zjednoczona
 		icon = GFX_pl2027_081_polska_0_tec_f
-		x = 18
-		y = 14
-		cost = 10
+		x = 0
+		y = 15
 		prerequisite = { focus = IVM_e_wojna focus = IVM_e_unia }
+		cost = 10
 		available = { custom_trigger_tooltip = { tooltip = IVRP2_req_zj num_of_controlled_states > 599 } }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
@@ -739,16 +739,17 @@ focus_tree = {
 			add_political_power = 150
 			add_stability = 0.1
 			news_event = { id = ivrp2.20 }
+			PL2027_fundament_awans = yes
 		}
 	}
 
 	focus = {
 		id = IVRP_mafia_zy_s_ulica
 		icon = GFX_pl2027_081_media_0
-		x = 2
+		x = 14
 		y = 1
-		cost = 1
 		prerequisite = { focus = IVM_w0 }
+		cost = 1
 		bypass = { has_country_flag = TFR_zy_pl_s_ulica }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -761,10 +762,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_s_media
 		icon = GFX_pl2027_081_media_1
-		x = 0
+		x = 17
 		y = 2
-		cost = 5
 		prerequisite = { focus = IVRP_mafia_zy_s_ulica }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_pl_s_media }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -777,10 +778,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_s_spis
 		icon = GFX_pl2027_081_spis_0
-		x = 3
+		x = 19
 		y = 2
-		cost = 1
 		prerequisite = { focus = IVRP_mafia_zy_s_ulica }
+		cost = 1
 		bypass = { has_country_flag = TFR_zy_pl_s_spis }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -793,11 +794,11 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_s_kartki
 		icon = GFX_pl2027_081_kartki_0_tec_k
-		x = 2
+		x = 16
 		y = 3
-		cost = 5
 		prerequisite = { focus = IVRP_mafia_zy_s_media }
 		prerequisite = { focus = IVRP_mafia_zy_s_spis }
+		cost = 5
 		mutually_exclusive = { focus = IVRP_mafia_zy_s_rynek }
 		bypass = { has_country_flag = TFR_zy_pl_s_kartki }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -811,11 +812,11 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_s_rynek
 		icon = GFX_pl2027_081_handel_1_tec_k
-		x = 4
+		x = 18
 		y = 3
-		cost = 5
 		prerequisite = { focus = IVRP_mafia_zy_s_media }
 		prerequisite = { focus = IVRP_mafia_zy_s_spis }
+		cost = 5
 		mutually_exclusive = { focus = IVRP_mafia_zy_s_kartki }
 		bypass = { has_country_flag = TFR_zy_pl_s_rynek }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -829,10 +830,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_s_szkoly
 		icon = GFX_pl2027_081_szkola_0
-		x = 0
+		x = 14
 		y = 4
-		cost = 5
 		prerequisite = { focus = IVRP_mafia_zy_s_kartki focus = IVRP_mafia_zy_s_rynek }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -846,10 +847,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_s_czarny
 		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 2
+		x = 16
 		y = 4
-		cost = 1
 		prerequisite = { focus = IVRP_mafia_zy_s_kartki focus = IVRP_mafia_zy_s_rynek }
+		cost = 1
 		bypass = { has_country_flag = TFR_zy_pl_s_czarny }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -862,10 +863,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_s_straze
 		icon = GFX_pl2027_081_straz_1
-		x = 4
+		x = 18
 		y = 4
-		cost = 5
 		prerequisite = { focus = IVRP_mafia_zy_s_kartki focus = IVRP_mafia_zy_s_rynek }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_pl_s_straze }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -879,12 +880,12 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_s_wspolnota
 		icon = GFX_pl2027_081_wspolnota_1
-		x = 2
+		x = 14
 		y = 5
-		cost = 7
 		prerequisite = { focus = IVRP_mafia_zy_s_szkoly }
 		prerequisite = { focus = IVRP_mafia_zy_s_czarny }
 		prerequisite = { focus = IVRP_mafia_zy_s_straze }
+		cost = 7
 		bypass = { has_country_flag = TFR_zy_pl_s_wspolnota }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 12 }
@@ -899,10 +900,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
-		x = 19
-		y = 1
+		x = 8
+		y = 2
+		prerequisite = { focus = IVRP_mafia_zy_s_ulica }
 		cost = 6
-		prerequisite = { focus = IVM_w0 }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
 		bypass = { has_country_flag = TFR_zy_k_k_admin }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -917,10 +918,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_k_defilada
 		icon = GFX_pl2027_081_defilada_1_tec
-		x = 18
-		y = 2
-		cost = 5
+		x = 7
+		y = 3
 		prerequisite = { focus = IVRP_mafia_zy_k_admin }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_k_k_defilada }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
@@ -934,10 +935,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_k_opor
 		icon = GFX_pl2027_081_bunt_3
-		x = 20
-		y = 2
-		cost = 1
+		x = 9
+		y = 3
 		prerequisite = { focus = IVRP_mafia_zy_k_admin }
+		cost = 1
 		bypass = { has_country_flag = TFR_zy_k_k_opor }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
@@ -950,11 +951,11 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_k_owoce
 		icon = GFX_pl2027_081_integracja_2_tec
-		x = 19
-		y = 3
-		cost = 5
+		x = 7
+		y = 4
 		prerequisite = { focus = IVRP_mafia_zy_k_defilada }
 		prerequisite = { focus = IVRP_mafia_zy_k_opor }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_k_k_owoce }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
@@ -967,10 +968,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 23
-		y = 1
+		x = 11
+		y = 2
+		prerequisite = { focus = IVRP_mafia_zy_s_ulica }
 		cost = 5
-		prerequisite = { focus = IVM_w0 }
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
 		bypass = { has_country_flag = TFR_zy_p_p_straty }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -985,10 +986,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 23
-		y = 2
-		cost = 5
+		x = 11
+		y = 3
 		prerequisite = { focus = IVRP_mafia_zy_p_straty }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_p_p_rzad }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
@@ -1002,10 +1003,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_tec_k
-		x = 22
-		y = 3
-		cost = 5
+		x = 10
+		y = 4
 		prerequisite = { focus = IVRP_mafia_zy_p_rzad }
+		cost = 5
 		mutually_exclusive = { focus = IVRP_mafia_zy_p_pojednanie }
 		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1019,10 +1020,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_tec_k
-		x = 24
-		y = 3
-		cost = 5
+		x = 12
+		y = 4
 		prerequisite = { focus = IVRP_mafia_zy_p_rzad }
+		cost = 5
 		mutually_exclusive = { focus = IVRP_mafia_zy_p_rewanz }
 		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -1036,10 +1037,10 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 23
-		y = 4
-		cost = 6
+		x = 10
+		y = 5
 		prerequisite = { focus = IVRP_mafia_zy_p_rewanz focus = IVRP_mafia_zy_p_pojednanie }
+		cost = 6
 		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
@@ -1055,12 +1056,12 @@ focus_tree = {
 	focus = {
 		id = IVRP_mafia_tree_gotowosc
 		icon = GFX_pl2027_081_gotowosc_0_tec
-		x = 14
-		y = 4
-		cost = 5
+		x = 7
+		y = 5
 		prerequisite = { focus = IVRP_mafia_zy_k_owoce }
 		prerequisite = { focus = IVM_odb_infra }
 		prerequisite = { focus = IVM_woj_dywizje }
+		cost = 5
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		ai_will_do = { factor = 30 }
 		completion_reward = {

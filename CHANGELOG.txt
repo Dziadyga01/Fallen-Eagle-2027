@@ -63,6 +63,23 @@ Podstawa: gałąź wersja-0.8.8 (0.8.8 + Białoruś: siły zbrojne i zaplecze po
 - Plik „SWZ” przypisany Świeciu (SWC) – tagu SWZ w modzie nie ma.
 - Flagi tagów kosmetycznych (zmiany nazw państw na ścieżkach) bez zmian.
 
+6. DRZEWKA W SCHEMACIE THE FIRE RISES (26.10)
+- Porównanie 49 drzewek TFR z 101 drzewkami moda: TFR ma 1 korzeń, 3–5 dużych gałęzi (mediana dzieci korzenia: 3, u nas było 8),
+  gałęzie w kształcie rombów zbiegające się w finałach i gęste rozmieszczenie (odstęp 2, bez pustych kolumn).
+- Nowy krok budowy tfr_schemat.py (po gen_087.py) dla WSZYSTKICH drzewek moda (także ręcznych: Ożarów, kampanie Torunia i Bydgoszczy, Rosja, prolog):
+  - jeden pień: gałęzie doklejone przez inne kroki (siły zbrojne, życie codzienne) startują od korzenia;
+  - filary: małe gałęzie wychodzące z korzenia łączą się w 2–5 filarów wg tematu (polityka, region i dyplomacja, społeczeństwo,
+    gospodarka, wojsko); pierwsza duża gałąź filaru jest jego głową, pozostałe zaczynają się po niej (648 gałęzi podpiętych);
+    gałęzie z warunkiem dostępności albo wykluczeniem nie są głowami filarów;
+  - romby: w filarze z co najmniej 3 zakończeniami najgłębszy fokus jest finałem dostępnym z jednego z kilku zakończeń (112 rombów);
+  - układ: wysokość = najdłuższa ścieżka wymagań, rozmieszczenie Reingolda–Tilforda (poddrzewa dosuwane na odstęp 2 na każdym poziomie);
+  - mediana szerokości drzewka: 44 -> 47 kolumn przy większej liczbie gałęzi na poziomach (gęstsze, bez pustych pasów); głębokość 11–12.
+- Nagrody w stylu TFR:
+  - nowy duch „Fundamenty państwa” I–IV (wspólny dla wszystkich państw): każdy finał filaru podnosi go o poziom (swap_ideas);
+    poziom N: +2N% stabilności, +3N% władzy politycznej, +2N% szybkości budowy;
+  - fokusy, które odblokowują decyzje z panelu, pokazują je w podpowiedzi (unlock_decision_tooltip).
+- Treść fokusów, koszty, warunki wojenne (fazy rozpadu) i wykluczenia bez zmian.
+
 The Fallen Eagle Alpha 0.8.8 (wersja testowa) – nazwa moda bez zmian („Godzina Zero – etap II”)
 Zmienia się tylko numer wersji (0.8.6 → 0.8.8). Wersja 0.8.8 = repozytorium romanrunner2049/fallen-eagle-2027 (main, 430d489)
 + cała zawartość 0.8.7 „Dwa początki” + nowe portrety + nowe stacje radiowe.

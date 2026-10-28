@@ -1,0 +1,391 @@
+add_namespace = cie
+
+country_event = {
+	id = cie.1
+	title = cie.1.t
+	desc = cie.1.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.1.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = -2 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_political_power = 10
+	}
+	option = {
+		name = cie.1.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = 4 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_to_variable = { CIE_fajfy = 1 }
+	}
+}
+
+country_event = {
+	id = cie.2
+	title = cie.2.t
+	desc = cie.2.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.2.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_zapasy = -10 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		add_to_variable = { CIE_humor = 7 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+	option = {
+		name = cie.2.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_zapasy = 3 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		add_to_variable = { CIE_humor = -3 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.3
+	title = cie.3.t
+	desc = cie.3.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.3.a
+		ai_chance = { factor = 1 }
+		add_political_power = -15
+		add_to_variable = { CIE_humor = 6 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+	option = {
+		name = cie.3.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_fajfy = 2 }
+		add_to_variable = { CIE_humor = 3 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.4
+	title = cie.4.t
+	desc = cie.4.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.4.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = 3 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+	option = {
+		name = cie.4.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_zapasy = 5 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.5
+	title = cie.5.t
+	desc = cie.5.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.5.a
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+	}
+	option = {
+		name = cie.5.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = 6 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.6
+	title = cie.6.t
+	desc = cie.6.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.6.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_zapasy = -5 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		add_to_variable = { CIE_fajfy = 2 }
+	}
+	option = {
+		name = cie.6.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = 3 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.7
+	title = cie.7.t
+	desc = cie.7.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.7.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_zapasy = -3 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		add_to_variable = { CIE_humor = 7 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_to_variable = { CIE_fajfy = 1 }
+	}
+	option = {
+		name = cie.7.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = -2 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_to_variable = { CIE_fajfy = 1 }
+	}
+}
+
+country_event = {
+	id = cie.8
+	title = cie.8.t
+	desc = cie.8.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.8.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = 6 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+	option = {
+		name = cie.8.b
+		ai_chance = { factor = 1 }
+		add_war_support = 0.02
+		add_to_variable = { CIE_humor = -3 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.9
+	title = cie.9.t
+	desc = cie.9.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.9.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_fajfy = 2 }
+		add_to_variable = { CIE_humor = 6 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_war_support = 0.02
+	}
+	option = {
+		name = cie.9.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_zapasy = -5 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = cie.10
+	title = cie.10.t
+	desc = cie.10.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.10.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_fajfy = 3 }
+		add_to_variable = { CIE_humor = 5 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+	option = {
+		name = cie.10.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_zapasy = 5 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.11
+	title = cie.11.t
+	desc = cie.11.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.11.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = 6 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+	option = {
+		name = cie.11.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_zapasy = 5 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.12
+	title = cie.12.t
+	desc = cie.12.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.12.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = 7 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+	option = {
+		name = cie.12.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = -1 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_political_power = 15
+	}
+}
+
+country_event = {
+	id = cie.13
+	title = cie.13.t
+	desc = cie.13.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.13.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = 6 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_to_variable = { CIE_fajfy = 2 }
+	}
+	option = {
+		name = cie.13.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_zapasy = -5 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		add_to_variable = { CIE_humor = 8 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.14
+	title = cie.14.t
+	desc = cie.14.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.14.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = 10 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_stability = 0.05
+		set_country_flag = CIE_campaign_completed
+	}
+}
+
+country_event = {
+	id = cie.15
+	title = cie.15.t
+	desc = cie.15.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.15.a
+		ai_chance = { factor = 1 }
+		add_political_power = -10
+		add_to_variable = { CIE_humor = 5 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+	option = {
+		name = cie.15.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = -4 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_to_variable = { CIE_zapasy = 3 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.16
+	title = cie.16.t
+	desc = cie.16.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.16.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_zapasy = -5 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		add_to_variable = { CIE_humor = 6 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+	option = {
+		name = cie.16.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = -5 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_to_variable = { CIE_zapasy = 3 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = cie.17
+	title = cie.17.t
+	desc = cie.17.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.17.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = 5 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_to_variable = { CIE_zapasy = -2 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+	}
+	option = {
+		name = cie.17.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = -4 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = cie.18
+	title = cie.18.t
+	desc = cie.18.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = cie.18.a
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_fajfy = 1 }
+		add_to_variable = { CIE_humor = 4 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+	}
+	option = {
+		name = cie.18.b
+		ai_chance = { factor = 1 }
+		add_to_variable = { CIE_humor = -7 }
+		clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		add_to_variable = { CIE_zapasy = 4 }
+		clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+	}
+}

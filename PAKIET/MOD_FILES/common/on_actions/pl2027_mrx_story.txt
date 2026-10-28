@@ -1,0 +1,25 @@
+on_actions = {
+    on_monthly = {
+        effect = {
+            if = {
+                limit = {
+                    original_tag = TRN
+                    has_country_flag = MRX_aktywny
+                    NOT = { has_country_flag = MRX_zakonczenie }
+                    NOT = { has_global_flag = PL2027_prolog }
+                }
+                if = {
+                    limit = { check_variable = { MRX_napiecie > 82 } }
+                    add_stability = -0.01
+                }
+                random_list = {
+                    84 = { }
+                    4 = { country_event = { id = mrx.15 days = 1 } }
+                    4 = { country_event = { id = mrx.16 days = 1 } }
+                    4 = { country_event = { id = mrx.17 days = 1 } }
+                    4 = { country_event = { id = mrx.18 days = 1 } }
+                }
+            }
+        }
+    }
+}

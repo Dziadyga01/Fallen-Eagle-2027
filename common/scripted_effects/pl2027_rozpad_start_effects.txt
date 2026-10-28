@@ -389,7 +389,7 @@ TFE_start_jedna_polska = {
 		WLM = { set_country_flag = ROZ_wojewodztwo }
 		POL = { puppet = WLM }
 		POL = { set_autonomy = { target = WLM autonomous_state = autonomy_tfe_wojewodztwo } }
-		WLM = { set_politics = { ruling_party = social_liberal elections_allowed = yes } set_popularities = { communist = 3 libertarian_socialist = 3 social_democrat = 9 market_liberal = 6 conservative = 13 authoritarian_democrat = 13 nationalist = 6 fascist = 3 social_liberal = 44 } }
+		WLM = { set_politics = { ruling_party = nationalist elections_allowed = no } set_popularities = { nationalist = 100 } }
 	}
 	if = { limit = { country_exists = WMG WMG = { is_subject = no } }
 		WMG = { set_country_flag = ROZ_wojewodztwo }

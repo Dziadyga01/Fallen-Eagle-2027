@@ -14,6 +14,19 @@ scripted_gui = {
 			pl2027_se_obraz_bitwa_o_warszawe_visible = { has_global_flag = PL2027_SE_bitwa_o_warszawe }
 			pl2027_se_obraz_odrodzona_visible = { has_global_flag = PL2027_SE_odrodzona }
 			pl2027_se_obraz_zima_visible = { has_global_flag = PL2027_SE_zima }
+			pl2027_se_obraz_kapitulacja_visible = { has_global_flag = PL2027_SE_kapitulacja }
+			pl2027_se_obraz_aneksja_visible = { has_global_flag = PL2027_SE_aneksja }
+			pl2027_se_obraz_rosja_triumf_visible = { has_global_flag = PL2027_SE_rosja_triumf }
+			pl2027_se_obraz_rosja_odparta_visible = { has_global_flag = PL2027_SE_rosja_odparta }
+			pl2027_se_obraz_bialorus_triumf_visible = { has_global_flag = PL2027_SE_bialorus_triumf }
+			pl2027_se_obraz_bialorus_odparta_visible = { has_global_flag = PL2027_SE_bialorus_odparta }
+			pl2027_se_obraz_zakon_triumf_visible = { has_global_flag = PL2027_SE_zakon_triumf }
+			pl2027_se_obraz_zakon_upadek_visible = { has_global_flag = PL2027_SE_zakon_upadek }
+			pl2027_se_obraz_torun_wygrywa_visible = { has_global_flag = PL2027_SE_torun_wygrywa }
+			pl2027_se_obraz_bydgoszcz_wygrywa_visible = { has_global_flag = PL2027_SE_bydgoszcz_wygrywa }
+			pl2027_se_obraz_warszawa_smr_visible = { has_global_flag = PL2027_SE_warszawa_smr }
+			pl2027_se_obraz_warszawa_kpr_visible = { has_global_flag = PL2027_SE_warszawa_kpr }
+			pl2027_se_obraz_warszawa_mpr_visible = { has_global_flag = PL2027_SE_warszawa_mpr }
 		}
 		effects = {
 			pl2027_se_zamknij_click = {
@@ -28,6 +41,19 @@ scripted_gui = {
 				clr_global_flag = PL2027_SE_bitwa_o_warszawe
 				clr_global_flag = PL2027_SE_odrodzona
 				clr_global_flag = PL2027_SE_zima
+				clr_global_flag = PL2027_SE_kapitulacja
+				clr_global_flag = PL2027_SE_aneksja
+				clr_global_flag = PL2027_SE_rosja_triumf
+				clr_global_flag = PL2027_SE_rosja_odparta
+				clr_global_flag = PL2027_SE_bialorus_triumf
+				clr_global_flag = PL2027_SE_bialorus_odparta
+				clr_global_flag = PL2027_SE_zakon_triumf
+				clr_global_flag = PL2027_SE_zakon_upadek
+				clr_global_flag = PL2027_SE_torun_wygrywa
+				clr_global_flag = PL2027_SE_bydgoszcz_wygrywa
+				clr_global_flag = PL2027_SE_warszawa_smr
+				clr_global_flag = PL2027_SE_warszawa_kpr
+				clr_global_flag = PL2027_SE_warszawa_mpr
 			}
 		}
 	}

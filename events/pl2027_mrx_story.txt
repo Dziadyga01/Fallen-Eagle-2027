@@ -1,0 +1,504 @@
+add_namespace = mrx
+
+country_event = {
+	id = mrx.1
+	title = mrx.1.t
+	desc = mrx.1.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = mrx.1.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 8 }
+		add_to_variable = { MRX_napiecie = -4 }
+		add_to_variable = { MRX_sygnal = -2 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.1.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_napiecie = 8 }
+		add_to_variable = { MRX_sygnal = 8 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.2
+	title = mrx.2.t
+	desc = mrx.2.d
+	picture = GFX_pl2027_ev081_praca_3
+	is_triggered_only = yes
+	option = {
+		name = mrx.2.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 6 }
+		add_to_variable = { MRX_napiecie = -3 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.2.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_napiecie = 9 }
+		add_to_variable = { MRX_sygnal = 10 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.3
+	title = mrx.3.t
+	desc = mrx.3.d
+	picture = GFX_pl2027_ev081_gospodarka_5
+	is_triggered_only = yes
+	option = {
+		name = mrx.3.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 10 }
+		add_to_variable = { MRX_sygnal = -2 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.3.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = -2 }
+		add_to_variable = { MRX_napiecie = 6 }
+		add_to_variable = { MRX_sygnal = 9 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.3.c
+		ai_chance = { factor = 6 }
+		add_to_variable = { MRX_zaufanie = 2 }
+		add_to_variable = { MRX_napiecie = -13 }
+		add_to_variable = { MRX_sygnal = -3 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.4
+	title = mrx.4.t
+	desc = mrx.4.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	option = {
+		name = mrx.4.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 12 }
+		add_to_variable = { MRX_napiecie = -2 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.4.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = -7 }
+		add_to_variable = { MRX_napiecie = 9 }
+		add_to_variable = { MRX_sygnal = 6 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.5
+	title = mrx.5.t
+	desc = mrx.5.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = mrx.5.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 7 }
+		add_to_variable = { MRX_napiecie = 2 }
+		add_to_variable = { MRX_sygnal = 2 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.5.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = -4 }
+		add_to_variable = { MRX_napiecie = 7 }
+		add_to_variable = { MRX_sygnal = 12 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.6
+	title = mrx.6.t
+	desc = mrx.6.d
+	picture = GFX_pl2027_ev081_praca_3
+	is_triggered_only = yes
+	option = {
+		name = mrx.6.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 6 }
+		add_to_variable = { MRX_napiecie = 5 }
+		add_to_variable = { MRX_sygnal = -3 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.6.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = 2 }
+		add_to_variable = { MRX_napiecie = 2 }
+		add_to_variable = { MRX_sygnal = 4 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.7
+	title = mrx.7.t
+	desc = mrx.7.d
+	picture = GFX_pl2027_ev081_gospodarka_5
+	is_triggered_only = yes
+	option = {
+		name = mrx.7.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 10 }
+		add_to_variable = { MRX_napiecie = 2 }
+		add_to_variable = { MRX_sygnal = 4 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.7.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = -8 }
+		add_to_variable = { MRX_napiecie = -2 }
+		add_to_variable = { MRX_sygnal = 4 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.8
+	title = mrx.8.t
+	desc = mrx.8.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	option = {
+		name = mrx.8.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 10 }
+		add_to_variable = { MRX_napiecie = 8 }
+		add_to_variable = { MRX_sygnal = 5 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.8.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = -7 }
+		add_to_variable = { MRX_napiecie = -3 }
+		add_to_variable = { MRX_sygnal = 8 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.9
+	title = mrx.9.t
+	desc = mrx.9.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = mrx.9.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 7 }
+		add_to_variable = { MRX_napiecie = -8 }
+		add_to_variable = { MRX_sygnal = -2 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.9.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_napiecie = 9 }
+		add_to_variable = { MRX_sygnal = 5 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.10
+	title = mrx.10.t
+	desc = mrx.10.d
+	picture = GFX_pl2027_ev081_praca_3
+	is_triggered_only = yes
+	option = {
+		name = mrx.10.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 3 }
+		add_to_variable = { MRX_napiecie = -4 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.10.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_napiecie = 12 }
+		add_to_variable = { MRX_sygnal = 5 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.11
+	title = mrx.11.t
+	desc = mrx.11.d
+	picture = GFX_pl2027_ev081_gospodarka_5
+	is_triggered_only = yes
+	option = {
+		name = mrx.11.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 4 }
+		add_to_variable = { MRX_napiecie = -6 }
+		add_to_variable = { MRX_sygnal = 2 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.11.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = -2 }
+		add_to_variable = { MRX_napiecie = 9 }
+		add_to_variable = { MRX_sygnal = 2 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.12
+	title = mrx.12.t
+	desc = mrx.12.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	option = {
+		name = mrx.12.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 6 }
+		add_to_variable = { MRX_napiecie = -3 }
+		add_to_variable = { MRX_sygnal = 1 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.12.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_napiecie = 10 }
+		add_to_variable = { MRX_sygnal = 12 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.13
+	title = mrx.13.t
+	desc = mrx.13.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = mrx.13.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 3 }
+		add_to_variable = { MRX_napiecie = -3 }
+		add_to_variable = { MRX_sygnal = 7 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.13.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = 7 }
+		add_to_variable = { MRX_napiecie = 1 }
+		add_to_variable = { MRX_sygnal = 3 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.14
+	title = mrx.14.t
+	desc = mrx.14.d
+	picture = GFX_pl2027_ev081_praca_3
+	is_triggered_only = yes
+	option = {
+		name = mrx.14.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 8 }
+		add_to_variable = { MRX_napiecie = -10 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.14.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = -2 }
+		add_to_variable = { MRX_napiecie = 14 }
+		add_to_variable = { MRX_sygnal = 10 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.15
+	title = mrx.15.t
+	desc = mrx.15.d
+	picture = GFX_pl2027_ev081_gospodarka_5
+	is_triggered_only = yes
+	option = {
+		name = mrx.15.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 6 }
+		add_to_variable = { MRX_napiecie = -2 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.15.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = -6 }
+		add_to_variable = { MRX_napiecie = 10 }
+		add_to_variable = { MRX_sygnal = 8 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.16
+	title = mrx.16.t
+	desc = mrx.16.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	option = {
+		name = mrx.16.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 2 }
+		add_to_variable = { MRX_napiecie = -6 }
+		add_to_variable = { MRX_sygnal = 1 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.16.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_napiecie = 8 }
+		add_to_variable = { MRX_sygnal = 5 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.17
+	title = mrx.17.t
+	desc = mrx.17.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = mrx.17.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 7 }
+		add_to_variable = { MRX_napiecie = -3 }
+		add_to_variable = { MRX_sygnal = 2 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.17.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = -4 }
+		add_to_variable = { MRX_napiecie = 5 }
+		add_to_variable = { MRX_sygnal = 9 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = mrx.18
+	title = mrx.18.t
+	desc = mrx.18.d
+	picture = GFX_pl2027_ev081_praca_3
+	is_triggered_only = yes
+	option = {
+		name = mrx.18.a
+		ai_chance = { factor = 10 }
+		add_to_variable = { MRX_zaufanie = 3 }
+		add_to_variable = { MRX_napiecie = -5 }
+		add_to_variable = { MRX_sygnal = 2 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+	option = {
+		name = mrx.18.b
+		ai_chance = { factor = 8 }
+		add_to_variable = { MRX_zaufanie = -3 }
+		add_to_variable = { MRX_napiecie = 12 }
+		add_to_variable = { MRX_sygnal = 10 }
+		clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+		clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+		clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+	}
+}
+

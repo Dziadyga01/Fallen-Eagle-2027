@@ -1,0 +1,124 @@
+ideas = {
+	country = {
+		MRX_pracownicy = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.05
+			}
+		}
+		MRX_komitety = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		MRX_redakcja = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.08
+				stability_factor = 0.03
+			}
+		}
+		MRX_wolne_media = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.07
+			}
+		}
+		MRX_delegacja = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.07
+				stability_factor = 0.03
+			}
+		}
+		MRX_spokoj = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = -0.03
+			}
+		}
+		MRX_transport = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.04
+				army_org_regain = 0.02
+			}
+		}
+		MRX_nauka = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+				political_power_gain = 0.04
+			}
+		}
+		MRX_moder = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+				research_speed_factor = 0.03
+			}
+		}
+		MRX_radio = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				war_support_factor = 0.01
+			}
+		}
+		MRX_end_ulica = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.12
+				political_power_gain = 0.08
+			}
+		}
+		MRX_end_media = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.08
+			}
+		}
+		MRX_end_analog = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.14
+				war_support_factor = -0.03
+			}
+		}
+		MRX_end_czlowiek = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.12
+				political_power_gain = 0.05
+			}
+		}
+		MRX_end_przerwa = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.03
+				political_power_gain = -0.04
+			}
+		}
+	}
+}

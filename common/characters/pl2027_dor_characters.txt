@@ -317,6 +317,23 @@ characters = {
 			ai_will_do = { factor = 1 }
 		}
 	}
+	SMR_dor_kukiz = {
+		name = SMR_dor_kukiz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/DOR/SMR_dor_kukiz.dds"
+				small = "gfx/leaders/DOR/SMR_dor_kukiz_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = SMR_dor_kukiz
+			allowed = { original_tag = SMR }
+			traits = { PL2027_dor_SMR_kukiz }
+			cost = 150
+			ai_will_do = { factor = 1 }
+		}
+	}
 	KPR_dor_krupinski = {
 		name = KPR_dor_krupinski
 		portraits = {

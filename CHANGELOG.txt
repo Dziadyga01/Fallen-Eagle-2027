@@ -48,6 +48,61 @@ Podstawa: gałąź wersja-0.8.8 (0.8.8 + Białoruś: siły zbrojne i zaplecze po
 - Opisy postaci, które mówiły „Postać fikcyjna”, poprawione: to prawdziwe osoby, fikcją jest ich ścieżka w modzie.
 - Dwa zdjęcia Krzysztofa Kułakowskiego – użyte ostrzejsze.
 
+4. PORTRETY – TRZECIA PACZKA (25.10)
+- Ożarów Mazowiecki – Szymon Hołownia (dotąd fikcyjny Adam Ożarowski); Praga – Gabriela Szustek; Podlasie Nadbużańskie – Michał Kołodziejczak;
+  Gniezno – Michał Powałowski; Sieradz – Paweł Osiewała; Mława – Piotr Jankowski; Grudziądz – Maciej Glamowski;
+  Ziemia Kociewska – Rafał Zając; Ziemia Chełmińska – Krzysztof Wypij; Ziemia Zaborska (Chojnice) – Arseniusz Finster;
+  Państwo Narodowe – Robert Bąkiewicz; Wołomin – Paweł Krupa (tylko imię, portret bez zmian).
+- Nowy doradca Sejmu: Paweł Kukiz – „Pełnomocnik ds. referendów” (+3% stabilności, +5% władzy politycznej); ścieżka w modzie to fikcja.
+- Zdjęcie z postacią Skalmara (Nickelodeon) nie trafiło do moda – to chroniona postać, do której mod nie ma praw.
+
+5. FLAGI (25.10)
+- 43 nowe flagi od autora moda w trzech rozmiarach (82×52, medium 41×26, small 10×7), dla flagi podstawowej i wszystkich 11 wariantów ideologicznych:
+  BLR, BST, CHE, CHJ, CHZ, DAB, DOB, GDY, GNZ, GRU, KKR, KLS, KON, KPM, KRJ, KRW, KST, KTN, KUJ, LES, LOW, MAZ, MLA, NAR, NNA, NOT, NWW, OSD,
+  PDL, PLK, PRG, PRW, PTK, RAD, ROZ, SLK, SPT, SRD, SWC, TUC, WLM, WMZ oraz Tęczowa Republika Warszawy (TEC – „Flaga Warszawy”).
+- Plik „SWZ” przypisany Świeciu (SWC) – tagu SWZ w modzie nie ma.
+- Flagi tagów kosmetycznych (zmiany nazw państw na ścieżkach) bez zmian.
+
+6. DRZEWKA W SCHEMACIE THE FIRE RISES (26.10)
+- Porównanie 49 drzewek TFR z 101 drzewkami moda: TFR ma 1 korzeń, 3–5 dużych gałęzi (mediana dzieci korzenia: 3, u nas było 8),
+  gałęzie w kształcie rombów zbiegające się w finałach i gęste rozmieszczenie (odstęp 2, bez pustych kolumn).
+- Nowy krok budowy tfr_schemat.py (po gen_087.py) dla WSZYSTKICH drzewek moda (także ręcznych: Ożarów, kampanie Torunia i Bydgoszczy, Rosja, prolog):
+  - jeden pień: gałęzie doklejone przez inne kroki (siły zbrojne, życie codzienne) startują od korzenia;
+  - filary: małe gałęzie wychodzące z korzenia łączą się w 2–5 filarów wg tematu (polityka, region i dyplomacja, społeczeństwo,
+    gospodarka, wojsko); pierwsza duża gałąź filaru jest jego głową, pozostałe zaczynają się po niej (648 gałęzi podpiętych);
+    gałęzie z warunkiem dostępności albo wykluczeniem nie są głowami filarów;
+  - romby: w filarze z co najmniej 3 zakończeniami najgłębszy fokus jest finałem dostępnym z jednego z kilku zakończeń (112 rombów);
+  - układ: wysokość = najdłuższa ścieżka wymagań, rozmieszczenie Reingolda–Tilforda (poddrzewa dosuwane na odstęp 2 na każdym poziomie);
+  - mediana szerokości drzewka: 44 -> 47 kolumn przy większej liczbie gałęzi na poziomach (gęstsze, bez pustych pasów); głębokość 11–12.
+- Nagrody w stylu TFR:
+  - nowy duch „Fundamenty państwa” I–IV (wspólny dla wszystkich państw): każdy finał filaru podnosi go o poziom (swap_ideas);
+    poziom N: +2N% stabilności, +3N% władzy politycznej, +2N% szybkości budowy;
+  - fokusy, które odblokowują decyzje z panelu, pokazują je w podpowiedzi (unlock_decision_tooltip).
+- Treść fokusów, koszty, warunki wojenne (fazy rozpadu) i wykluczenia bez zmian.
+
+7. CIECHOCINEK (CIE) – „FAJFY MUSZĄ TRWAĆ” (26.10)
+- Państwo Ciechocinek istniało dotąd tylko w lokalnym folderze autora (nie było na GitHubie), więc paczki 0.8.9 je usunęły. Wraca do moda.
+- Treść autora 1:1: drzewko 70 fokusów (trzy wykluczające się rządy: Wodzirej, Komitet Pań, Ruchocinek), 18 zdarzeń cie.1–18,
+  14 duchów, panel „Komisja do spraw fajfów” (12 decyzji), wskaźniki Humor / Zapasy / Maść końska / Fajfy, losowe afery co tydzień.
+- Dołożone, bo nie było ich w plikach autora:
+  - tag CIE, definicja i historia państwa (rządzi Komitet Pań spod Grzybka – konserwatyści, wybory dozwolone), oddział „Straż Uzdrowiskowa”;
+  - przywódczyni Halina (portret z folderu leaders autora);
+  - nowy stan 1367 „Ciechocinek” (prowincja 8108) wydzielony z Aleksandrowa Kujawskiego (stan 31, KUJ):
+    10 600 rekrutów przechodzi do Ciechocinka, punkt zwycięstwa 2 razem z prowincją, pozycje budynków na mapie, region UNI Kujawy-Pomorze;
+  - flaga zastępcza (błękit, biel, drewniana tężnia) – do podmiany na flagę autora;
+  - pliki tekstów zapisane z BOM (bez niego HOI4 pomija plik), 5 powtórzonych kluczy (fokus i duch o tym samym id) – zostaje pierwszy.
+- Drzewko w układzie autora (bez przebudowy na schemat TFR). Koszty fokusów jak u autora (1 = 7 dni). Brak fokusów wojennych.
+
+8. NOWE PODIDEOLOGIE (26.10, ikony od autora moda)
+- Satanizm (grupa autokracji, obok teokracji). Wołomin: rządzi „Zakon Pentagramu”, 100% poparcia, bez wyborów (oba starty), przywódca Paweł Krupa.
+- Koalicja Obywatelska – politycy KO: Donald Tusk (3 postacie), Borys Budka (2), Radosław Sikorski, Ewa Kopacz, Rafał Bruski (2), Paweł Gulewski,
+  Mieczysław Struk, Jacek Jaśkowiak, Radosław Witkowski, Robert Szewczyk.
+- Prawo i Sprawiedliwość – Przemysław Czarnek, Mateusz Morawiecki, Daniel Obajtek.
+- Podideologia musi należeć do grupy partii rządzącej, więc KO i PiS mają też warianty w grupie demokracji autorytarnej (Witkowski, Obajtek) – ta sama nazwa i ikona.
+- Ścieżki tych polityków w modzie to fikcja; przypisanie dotyczy tylko ich prawdziwej przynależności partyjnej.
+- Naprawa: 6 podideologii używanych przez postacie nie miało definicji po zmianie pliku ideologii (m.in. Socjalliberalizm, Streamokracja,
+  Konserwatyzm menedżerski) – ich przywódcy nie mogli rządzić. Dopisane do właściwych grup.
+
 The Fallen Eagle Alpha 0.8.8 (wersja testowa) – nazwa moda bez zmian („Godzina Zero – etap II”)
 Zmienia się tylko numer wersji (0.8.6 → 0.8.8). Wersja 0.8.8 = repozytorium romanrunner2049/fallen-eagle-2027 (main, 430d489)
 + cała zawartość 0.8.7 „Dwa początki” + nowe portrety + nowe stacje radiowe.

@@ -1,0 +1,39 @@
+on_actions = {
+    on_weekly = {
+        effect = {
+            if = {
+                limit = {
+                    original_tag = CIE
+                    has_country_flag = CIE_system
+                    NOT = { has_country_flag = CIE_afera_cd }
+                    NOT = { has_country_flag = CIE_fajfy_wygrane }
+                }
+                random = {
+                    chance = 40
+                    set_country_flag = { flag = CIE_afera_cd days = 21 }
+                    random_list = {
+                        25 = { country_event = { id = cie.15 days = 1 } }
+                        25 = { country_event = { id = cie.16 days = 1 } }
+                        25 = { country_event = { id = cie.17 days = 1 } }
+                        25 = { country_event = { id = cie.18 days = 1 } }
+                    }
+                }
+            }
+        }
+    }
+    on_monthly = {
+        effect = {
+            if = {
+                limit = {
+                    original_tag = CIE
+                    has_country_flag = CIE_system
+                    NOT = { has_country_flag = CIE_fajfy_wygrane }
+                }
+                add_to_variable = { CIE_zapasy = -3 }
+                clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+                add_to_variable = { CIE_humor = -1 }
+                clamp_variable = { var = CIE_humor min = 0 max = 100 }
+            }
+        }
+    }
+}

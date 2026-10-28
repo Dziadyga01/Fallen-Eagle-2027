@@ -1,0 +1,8 @@
+on_actions = {
+	on_capitulation = {
+		effect = { if = { limit = { has_country_flag = PL2027_polska OR = { tag = PRW tag = NNA tag = BST tag = KKR tag = PTK tag = SLS tag = NAR tag = PDL tag = RAD tag = LWC tag = SRD tag = KLS tag = KON tag = ZKR tag = PLO tag = WMZ tag = WOL tag = PMN tag = KOC tag = SUW tag = LOW tag = KTN tag = DOB tag = LES tag = WLC tag = KPM tag = TRN tag = BYD tag = WMG tag = WMP tag = GDY tag = SMR tag = KPR tag = MPR } NOT = { has_country_flag = PL2027_SE_kapitulowal } NOT = { has_global_flag = PL2027_SE_cd } NOT = { has_global_flag = PL2027_SE_widoczny } } set_country_flag = PL2027_SE_kapitulowal set_global_flag = { flag = PL2027_SE_cd days = 30 } clear_global_event_target = PL2027_SE_przegrany clear_global_event_target = PL2027_SE_zwyciezca ROOT = { save_global_event_target_as = PL2027_SE_przegrany } FROM = { save_global_event_target_as = PL2027_SE_zwyciezca } PL2027_SE_kapitulacja = yes } }
+	}
+	on_annex = {
+		effect = { if = { limit = { FROM = { has_country_flag = PL2027_polska OR = { tag = PRW tag = NNA tag = BST tag = KKR tag = PTK tag = SLS tag = NAR tag = PDL tag = RAD tag = LWC tag = SRD tag = KLS tag = KON tag = ZKR tag = PLO tag = WMZ tag = WOL tag = PMN tag = KOC tag = SUW tag = LOW tag = KTN tag = DOB tag = LES tag = WLC tag = KPM tag = TRN tag = BYD tag = WMG tag = WMP tag = GDY tag = SMR tag = KPR tag = MPR } } NOT = { has_global_flag = PL2027_SE_cd } NOT = { has_global_flag = PL2027_SE_widoczny } } set_global_flag = { flag = PL2027_SE_cd days = 30 } clear_global_event_target = PL2027_SE_przegrany clear_global_event_target = PL2027_SE_zwyciezca FROM = { save_global_event_target_as = PL2027_SE_przegrany } ROOT = { save_global_event_target_as = PL2027_SE_zwyciezca } PL2027_SE_aneksja = yes } }
+	}
+}

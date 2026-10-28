@@ -1,0 +1,44 @@
+ideas = {
+	country = {
+		PL2027_fundament_1 = {
+			picture = PL2027_fundament_1
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.02
+				political_power_gain = 0.03
+				production_speed_buildings_factor = 0.02
+			}
+		}
+		PL2027_fundament_2 = {
+			picture = PL2027_fundament_2
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.06
+				production_speed_buildings_factor = 0.04
+			}
+		}
+		PL2027_fundament_3 = {
+			picture = PL2027_fundament_3
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.09
+				production_speed_buildings_factor = 0.06
+			}
+		}
+		PL2027_fundament_4 = {
+			picture = PL2027_fundament_4
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.12
+				production_speed_buildings_factor = 0.08
+			}
+		}
+	}
+}

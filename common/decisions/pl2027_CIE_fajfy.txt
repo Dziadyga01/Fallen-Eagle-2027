@@ -1,0 +1,215 @@
+CIE_panel = {
+	CIE_d_fajfy = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_system }
+		available = {
+			check_variable = { CIE_zapasy > 9 }
+		}
+		cost = 20
+		days_re_enable = 14
+		complete_effect = {
+			add_to_variable = { CIE_zapasy = -10 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+			add_to_variable = { CIE_humor = 12 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_fajfy = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_masc = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_system }
+		available = {
+			check_variable = { CIE_zapasy > 4 }
+		}
+		cost = 15
+		days_re_enable = 20
+		complete_effect = {
+			add_to_variable = { CIE_zapasy = -5 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+			add_to_variable = { CIE_masc = 20 }
+			clamp_variable = { var = CIE_masc min = 0 max = 100 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_herbata = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_system }
+		available = {
+			check_variable = { CIE_zapasy > 7 }
+		}
+		cost = 15
+		days_re_enable = 10
+		complete_effect = {
+			add_to_variable = { CIE_zapasy = -8 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+			add_to_variable = { CIE_humor = 9 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_kartki = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_system }
+		available = {
+			check_variable = { CIE_humor > 7 }
+		}
+		cost = 10
+		days_re_enable = 30
+		complete_effect = {
+			add_to_variable = { CIE_zapasy = 15 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+			add_to_variable = { CIE_humor = -8 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_fajfy_awaryjne = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_system }
+		available = {
+			check_variable = { CIE_humor > 9 }
+		}
+		cost = 25
+		days_re_enable = 40
+		complete_effect = {
+			add_to_variable = { CIE_humor = -10 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_fajfy = 2 }
+			add_war_support = 0.015
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_fajfy_dj = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_system }
+		available = {
+			check_variable = { CIE_masc > 14 }
+		}
+		cost = 40
+		days_re_enable = 60
+		complete_effect = {
+			add_to_variable = { CIE_masc = -15 }
+			clamp_variable = { var = CIE_masc min = 0 max = 100 }
+			add_to_variable = { CIE_humor = 15 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_fajfy = 2 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_wodzirej_repertuar = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_route_wodzirej }
+		available = {
+			always = yes
+		}
+		cost = 15
+		days_re_enable = 20
+		complete_effect = {
+			add_to_variable = { CIE_humor = 7 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_political_power = -10
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_babcie_zebranie = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_route_babcie }
+		available = {
+			always = yes
+		}
+		cost = 15
+		days_re_enable = 25
+		complete_effect = {
+			add_to_variable = { CIE_humor = 6 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_zapasy = 5 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_ruchocinek_randki = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_route_ruchocinek }
+		available = {
+			always = yes
+		}
+		cost = 15
+		days_re_enable = 20
+		complete_effect = {
+			add_to_variable = { CIE_humor = 10 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_fajfy = 1 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_naprawy = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_system }
+		available = {
+			always = yes
+		}
+		cost = 35
+		days_re_enable = 45
+		complete_effect = {
+			add_to_variable = { CIE_zapasy = 12 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_awaria = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_system }
+		available = {
+			always = yes
+		}
+		cost = 20
+		days_re_enable = 45
+		complete_effect = {
+			add_to_variable = { CIE_zapasy = 8 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+			add_to_variable = { CIE_humor = 2 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+	CIE_d_apel = {
+		icon = generic_political_discourse
+		allowed = { original_tag = CIE }
+		visible = { has_country_flag = CIE_system }
+		available = {
+			always = yes
+		}
+		cost = 20
+		days_re_enable = 30
+		complete_effect = {
+			add_to_variable = { CIE_humor = 5 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_stability = 0.005
+		}
+		ai_will_do = { factor = 1 }
+	}
+
+}

@@ -16,7 +16,7 @@ focus_tree = {
 	focus = {
 		id = BYD2_bez_panstwa
 		icon = GFX_pl2027_081_administracja_0
-		x = 6
+		x = 7
 		y = 0
 		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
@@ -30,10 +30,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_komitet
 		icon = GFX_pl2027_081_rada_0
-		x = 6
+		x = 7
 		y = 1
-		cost = 1
 		prerequisite = { focus = BYD2_bez_panstwa }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			if = { limit = { has_idea = BYD_i_miasto_bez_rzadu } remove_ideas = BYD_i_miasto_bez_rzadu } add_ideas = BYD_i_rzad_tymczasowy
@@ -46,10 +46,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_mosty
 		icon = GFX_pl2027_081_most_0
-		x = 16
+		x = 12
 		y = 2
-		cost = 1
 		prerequisite = { focus = BYD2_komitet }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			add_timed_idea = { idea = BYD_i_mosty_pod_kontrola days = 240 }
@@ -60,10 +60,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kolejki
 		icon = GFX_pl2027_081_paliwo_0
-		x = 18
+		x = 14
 		y = 2
-		cost = 1
 		prerequisite = { focus = BYD2_komitet }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			country_event = { id = byd2.3 days = 1 }
@@ -73,11 +73,11 @@ focus_tree = {
 	focus = {
 		id = BYD2_pesa
 		icon = GFX_pl2027_081_strajk_0
-		x = 17
+		x = 12
 		y = 3
-		cost = 1
 		prerequisite = { focus = BYD2_mosty }
 		prerequisite = { focus = BYD2_kolejki }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			country_event = { id = byd2.4 days = 1 }
@@ -87,10 +87,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_fordon
 		icon = GFX_pl2027_081_rzeka_0
-		x = 16
+		x = 11
 		y = 4
-		cost = 1
 		prerequisite = { focus = BYD2_pesa }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			add_to_variable = { global.MET_ostromecko_byd = 3 } MET_przelicz = yes
@@ -101,10 +101,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_solec
 		icon = GFX_pl2027_081_droga_0
-		x = 18
+		x = 13
 		y = 4
-		cost = 1
 		prerequisite = { focus = BYD2_pesa }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			add_to_variable = { global.MET_solec_byd = 5 } MET_przelicz = yes
@@ -116,11 +116,11 @@ focus_tree = {
 	focus = {
 		id = BYD2_oficerowie
 		icon = GFX_pl2027_081_oficer_0_byd
-		x = 17
+		x = 11
 		y = 5
-		cost = 1
 		prerequisite = { focus = BYD2_fordon }
 		prerequisite = { focus = BYD2_solec }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			country_event = { id = byd2.7 days = 1 }
@@ -130,10 +130,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_rady
 		icon = GFX_pl2027_081_rada_1
-		x = 16
+		x = 10
 		y = 6
-		cost = 1
 		prerequisite = { focus = BYD2_oficerowie }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			country_event = { id = byd2.8 days = 1 }
@@ -143,10 +143,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_przemyslowcy
 		icon = GFX_pl2027_081_przemysl_0
-		x = 18
+		x = 12
 		y = 6
-		cost = 1
 		prerequisite = { focus = BYD2_oficerowie }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			country_event = { id = byd2.9 days = 1 }
@@ -156,11 +156,11 @@ focus_tree = {
 	focus = {
 		id = BYD2_brdowski
 		icon = GFX_pl2027_081_telewizja_0
-		x = 17
+		x = 10
 		y = 7
-		cost = 1
 		prerequisite = { focus = BYD2_rady }
 		prerequisite = { focus = BYD2_przemyslowcy }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			country_event = { id = byd2.10 days = 1 }
@@ -170,10 +170,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_koniec_komitetu
 		icon = GFX_pl2027_081_rada_2
-		x = 17
+		x = 10
 		y = 8
-		cost = 1
 		prerequisite = { focus = BYD2_brdowski }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			country_event = { id = byd2.20 days = 1 }
@@ -184,10 +184,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_rejestracja
 		icon = GFX_pl2027_081_rada_0
-		x = 17
+		x = 10
 		y = 9
-		cost = 1
 		prerequisite = { focus = BYD2_koniec_komitetu }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kand BYD2_jest_kandydat = yes } }
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -198,10 +198,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_debata
 		icon = GFX_pl2027_081_kampania_0
-		x = 17
+		x = 10
 		y = 10
-		cost = 1
 		prerequisite = { focus = BYD2_rejestracja }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			country_event = { id = byd2.30 days = 1 }
@@ -211,10 +211,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_wybory
 		icon = GFX_pl2027_081_wybory_0
-		x = 17
+		x = 10
 		y = 11
-		cost = 1
 		prerequisite = { focus = BYD2_debata }
+		cost = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			BYD2_wskaz_faworyta = yes
@@ -225,15 +225,16 @@ focus_tree = {
 	focus = {
 		id = BYD2_zaprzysiezenie
 		icon = GFX_pl2027_081_administracja_1_f
-		x = 17
+		x = 10
 		y = 12
-		cost = 1
 		prerequisite = { focus = BYD2_wybory }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_zwyciezca OR = { has_country_flag = BYD2_wybrany_bruski has_country_flag = BYD2_wybrany_przemysl has_country_flag = BYD2_wybrany_rady has_country_flag = BYD2_wybrany_junta has_country_flag = BYD2_wybrany_brdowski } } }
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			if = { limit = { has_country_flag = BYD2_wybrany_bruski } BYD2_przejecie_bruski = yes } if = { limit = { has_country_flag = BYD2_wybrany_przemysl } BYD2_przejecie_przemysl = yes } if = { limit = { has_country_flag = BYD2_wybrany_rady } BYD2_przejecie_rady = yes } if = { limit = { has_country_flag = BYD2_wybrany_junta } BYD2_przejecie_junta = yes } if = { limit = { has_country_flag = BYD2_wybrany_brdowski } BYD2_przejecie_brdowski = yes }
 			custom_effect_tooltip = BYD2_tt_zaprz
+			PL2027_fundament_awans = yes
 		}
 	}
 
@@ -242,8 +243,8 @@ focus_tree = {
 		icon = GFX_pl2027_081_osiedle_0
 		x = 0
 		y = 2
-		cost = 1
 		prerequisite = { focus = BYD2_komitet }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_bruski > 24 } } }
 		completion_reward = {
@@ -257,8 +258,8 @@ focus_tree = {
 		icon = GFX_pl2027_081_kampania_1
 		x = 0
 		y = 3
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_brus_osiedla }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_bruski > 24 } } }
 		completion_reward = {
@@ -272,8 +273,8 @@ focus_tree = {
 		icon = GFX_pl2027_081_administracja_2
 		x = 0
 		y = 4
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_brus_program }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_bruski > 24 } } }
 		completion_reward = {
@@ -287,8 +288,8 @@ focus_tree = {
 		icon = GFX_pl2027_081_ulica_0
 		x = 0
 		y = 5
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_brus_urzednicy }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_bruski > 24 } } }
 		completion_reward = {
@@ -302,8 +303,8 @@ focus_tree = {
 		icon = GFX_pl2027_081_rada_1_byd_k
 		x = 0
 		y = 6
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_brus_rynek }
+		cost = 1
 		mutually_exclusive = { focus = BYD2_kamp_prze_poparcie focus = BYD2_kamp_rady_poparcie focus = BYD2_kamp_junt_poparcie focus = BYD2_kamp_brdo_poparcie }
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 4 check_variable = { BYD2_pop_bruski > 29 } } }
@@ -317,10 +318,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_prze_mlyny
 		icon = GFX_pl2027_081_bankiet_0
-		x = 3
+		x = 2
 		y = 2
-		cost = 1
 		prerequisite = { focus = BYD2_komitet }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_przemysl > 24 } } }
 		completion_reward = {
@@ -332,10 +333,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_prze_program
 		icon = GFX_pl2027_081_kampania_2
-		x = 3
+		x = 2
 		y = 3
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_prze_mlyny }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_przemysl > 24 } } }
 		completion_reward = {
@@ -347,10 +348,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_prze_izba
 		icon = GFX_pl2027_081_pieniadze_0
-		x = 3
+		x = 2
 		y = 4
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_prze_program }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_przemysl > 24 } } }
 		completion_reward = {
@@ -362,10 +363,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_prze_media
 		icon = GFX_pl2027_081_media_0
-		x = 3
+		x = 2
 		y = 5
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_prze_izba }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_przemysl > 24 } } }
 		completion_reward = {
@@ -377,10 +378,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_prze_poparcie
 		icon = GFX_pl2027_081_rada_2_byd_k
-		x = 3
+		x = 2
 		y = 6
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_prze_media }
+		cost = 1
 		mutually_exclusive = { focus = BYD2_kamp_brus_poparcie focus = BYD2_kamp_rady_poparcie focus = BYD2_kamp_junt_poparcie focus = BYD2_kamp_brdo_poparcie }
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 4 check_variable = { BYD2_pop_przemysl > 29 } } }
@@ -394,10 +395,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_rady_zebrania
 		icon = GFX_pl2027_081_robotnicy_0
-		x = 6
+		x = 4
 		y = 2
-		cost = 1
 		prerequisite = { focus = BYD2_komitet }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_rady > 24 } } }
 		completion_reward = {
@@ -409,10 +410,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_rady_program
 		icon = GFX_pl2027_081_przemysl_1
-		x = 6
+		x = 4
 		y = 3
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_rady_zebrania }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_rady > 24 } } }
 		completion_reward = {
@@ -424,10 +425,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_rady_zwiazki
 		icon = GFX_pl2027_081_robotnicy_1
-		x = 6
+		x = 4
 		y = 4
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_rady_program }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_rady > 24 } } }
 		completion_reward = {
@@ -439,10 +440,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_rady_brama
 		icon = GFX_pl2027_081_ulica_1
-		x = 6
+		x = 4
 		y = 5
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_rady_zwiazki }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_rady > 24 } } }
 		completion_reward = {
@@ -453,10 +454,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_rady_poparcie
 		icon = GFX_pl2027_081_rada_0_byd_k
-		x = 6
+		x = 4
 		y = 6
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_rady_brama }
+		cost = 1
 		mutually_exclusive = { focus = BYD2_kamp_brus_poparcie focus = BYD2_kamp_prze_poparcie focus = BYD2_kamp_junt_poparcie focus = BYD2_kamp_brdo_poparcie }
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 4 check_variable = { BYD2_pop_rady > 29 } } }
@@ -470,10 +471,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_junt_patrole
 		icon = GFX_pl2027_081_porzadek_0
-		x = 9
+		x = 6
 		y = 2
-		cost = 1
 		prerequisite = { focus = BYD2_komitet }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_junta > 24 } } }
 		completion_reward = {
@@ -485,10 +486,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_junt_program
 		icon = GFX_pl2027_081_porzadek_1
-		x = 9
+		x = 6
 		y = 3
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_junt_patrole }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_junta > 24 } } }
 		completion_reward = {
@@ -500,10 +501,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_junt_rezerwisci
 		icon = GFX_pl2027_081_pobor_0_byd
-		x = 9
+		x = 6
 		y = 4
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_junt_program }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_junta > 24 } } }
 		completion_reward = {
@@ -515,10 +516,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_junt_defilada
 		icon = GFX_pl2027_081_defilada_0_byd
-		x = 9
+		x = 6
 		y = 5
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_junt_rezerwisci }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_junta > 24 } } }
 		completion_reward = {
@@ -531,10 +532,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_junt_poparcie
 		icon = GFX_TRN_form_korona
-		x = 9
+		x = 6
 		y = 6
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_junt_defilada }
+		cost = 1
 		mutually_exclusive = { focus = BYD2_kamp_brus_poparcie focus = BYD2_kamp_prze_poparcie focus = BYD2_kamp_rady_poparcie focus = BYD2_kamp_brdo_poparcie }
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 4 check_variable = { BYD2_pop_junta > 29 } } }
@@ -548,10 +549,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_brdo_myjnie
 		icon = GFX_pl2027_081_ludzie_0
-		x = 12
+		x = 8
 		y = 2
-		cost = 1
 		prerequisite = { focus = BYD2_komitet }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_brdowski > 24 } } }
 		completion_reward = {
@@ -563,10 +564,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_brdo_program
 		icon = GFX_pl2027_081_kampania_0
-		x = 12
+		x = 8
 		y = 3
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_brdo_myjnie }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_brdowski > 24 } } }
 		completion_reward = {
@@ -578,10 +579,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_brdo_telewizja
 		icon = GFX_pl2027_081_telewizja_1
-		x = 12
+		x = 8
 		y = 4
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_brdo_program }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_brdowski > 24 } } }
 		completion_reward = {
@@ -592,10 +593,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_brdo_festyn
 		icon = GFX_pl2027_081_polska_0_byd
-		x = 12
+		x = 8
 		y = 5
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_brdo_telewizja }
+		cost = 1
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 3 check_variable = { BYD2_pop_brdowski > 24 } } }
 		completion_reward = {
@@ -607,10 +608,10 @@ focus_tree = {
 	focus = {
 		id = BYD2_kamp_brdo_poparcie
 		icon = GFX_TRN_form_korona
-		x = 12
+		x = 8
 		y = 6
-		cost = 1
 		prerequisite = { focus = BYD2_kamp_brdo_festyn }
+		cost = 1
 		mutually_exclusive = { focus = BYD2_kamp_brus_poparcie focus = BYD2_kamp_prze_poparcie focus = BYD2_kamp_rady_poparcie focus = BYD2_kamp_junt_poparcie }
 		available = { custom_trigger_tooltip = { tooltip = BYD2_req_kampania NOT = { has_completed_focus = BYD2_wybory } } }
 		ai_will_do = { factor = 4 modifier = { factor = 4 check_variable = { BYD2_pop_brdowski > 29 } } }

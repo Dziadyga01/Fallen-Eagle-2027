@@ -1,0 +1,671 @@
+defined_text = {
+	name = PL2027_SE_Get_przegrany
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = CIE } }
+		localization_key = CIE_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = BST } }
+		localization_key = BST_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = BYD } }
+		localization_key = BYD_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = CHE } }
+		localization_key = CHE_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = CHJ } }
+		localization_key = CHJ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = CHZ } }
+		localization_key = CHZ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = DAB } }
+		localization_key = DAB_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = DOB } }
+		localization_key = DOB_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = GDY } }
+		localization_key = GDY_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = GNL } }
+		localization_key = GNL_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = GNZ } }
+		localization_key = GNZ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = GRD } }
+		localization_key = GRD_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = GRU } }
+		localization_key = GRU_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KKR } }
+		localization_key = KKR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KLS } }
+		localization_key = KLS_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KOC } }
+		localization_key = KOC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KON } }
+		localization_key = KON_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KPM } }
+		localization_key = KPM_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KPR } }
+		localization_key = KPR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KRJ } }
+		localization_key = KRJ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KRL } }
+		localization_key = KRL_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KRW } }
+		localization_key = KRW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KST } }
+		localization_key = KST_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KTN } }
+		localization_key = KTN_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KUJ } }
+		localization_key = KUJ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = LBW } }
+		localization_key = LBW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = LEG } }
+		localization_key = LEG_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = LES } }
+		localization_key = LES_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = LOW } }
+		localization_key = LOW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = LUB } }
+		localization_key = LUB_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = LWC } }
+		localization_key = LWC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = LYS } }
+		localization_key = LYS_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = MAZ } }
+		localization_key = MAZ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = MLA } }
+		localization_key = MLA_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = MPR } }
+		localization_key = MPR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = NAR } }
+		localization_key = NAR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = NML } }
+		localization_key = NML_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = NNA } }
+		localization_key = NNA_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = NOT } }
+		localization_key = NOT_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = NWW } }
+		localization_key = NWW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = OSD } }
+		localization_key = OSD_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = OTW } }
+		localization_key = OTW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = OZM } }
+		localization_key = OZM_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PDG } }
+		localization_key = PDG_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PDL } }
+		localization_key = PDL_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PLC } }
+		localization_key = PLC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PLK } }
+		localization_key = PLK_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PLO } }
+		localization_key = PLO_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PMN } }
+		localization_key = PMN_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PRG } }
+		localization_key = PRG_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PRW } }
+		localization_key = PRW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PSC } }
+		localization_key = PSC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PSN } }
+		localization_key = PSN_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = PTK } }
+		localization_key = PTK_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = RAD } }
+		localization_key = RAD_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = ROZ } }
+		localization_key = ROZ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = SCK } }
+		localization_key = SCK_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = SLK } }
+		localization_key = SLK_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = SLS } }
+		localization_key = SLS_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = SMR } }
+		localization_key = SMR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = SPT } }
+		localization_key = SPT_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = SRD } }
+		localization_key = SRD_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = SUW } }
+		localization_key = SUW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = SWC } }
+		localization_key = SWC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = TEC } }
+		localization_key = TEC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = TRN } }
+		localization_key = TRN_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = TUC } }
+		localization_key = TUC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = UBJ } }
+		localization_key = UBJ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = WLC } }
+		localization_key = WLC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = WLM } }
+		localization_key = WLM_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = WMG } }
+		localization_key = WMG_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = WMP } }
+		localization_key = WMP_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = WMZ } }
+		localization_key = WMZ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = WOJ } }
+		localization_key = WOJ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = WOL } }
+		localization_key = WOL_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = ZIE } }
+		localization_key = ZIE_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = ZKR } }
+		localization_key = ZKR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = KRZ } }
+		localization_key = KRZ
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = ILA } }
+		localization_key = ILA
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = BRO } }
+		localization_key = BRO
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = BRZ } }
+		localization_key = BRZ
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = OWM } }
+		localization_key = OWM_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_przegrany = { tag = ROS } }
+		localization_key = ROS_DEF
+	}
+}
+
+defined_text = {
+	name = PL2027_SE_Get_zwyciezca
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = CIE } }
+		localization_key = CIE_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = BST } }
+		localization_key = BST_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = BYD } }
+		localization_key = BYD_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = CHE } }
+		localization_key = CHE_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = CHJ } }
+		localization_key = CHJ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = CHZ } }
+		localization_key = CHZ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = DAB } }
+		localization_key = DAB_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = DOB } }
+		localization_key = DOB_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = GDY } }
+		localization_key = GDY_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = GNL } }
+		localization_key = GNL_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = GNZ } }
+		localization_key = GNZ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = GRD } }
+		localization_key = GRD_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = GRU } }
+		localization_key = GRU_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KKR } }
+		localization_key = KKR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KLS } }
+		localization_key = KLS_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KOC } }
+		localization_key = KOC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KON } }
+		localization_key = KON_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KPM } }
+		localization_key = KPM_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KPR } }
+		localization_key = KPR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KRJ } }
+		localization_key = KRJ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KRL } }
+		localization_key = KRL_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KRW } }
+		localization_key = KRW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KST } }
+		localization_key = KST_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KTN } }
+		localization_key = KTN_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KUJ } }
+		localization_key = KUJ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = LBW } }
+		localization_key = LBW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = LEG } }
+		localization_key = LEG_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = LES } }
+		localization_key = LES_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = LOW } }
+		localization_key = LOW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = LUB } }
+		localization_key = LUB_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = LWC } }
+		localization_key = LWC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = LYS } }
+		localization_key = LYS_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = MAZ } }
+		localization_key = MAZ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = MLA } }
+		localization_key = MLA_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = MPR } }
+		localization_key = MPR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = NAR } }
+		localization_key = NAR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = NML } }
+		localization_key = NML_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = NNA } }
+		localization_key = NNA_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = NOT } }
+		localization_key = NOT_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = NWW } }
+		localization_key = NWW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = OSD } }
+		localization_key = OSD_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = OTW } }
+		localization_key = OTW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = OZM } }
+		localization_key = OZM_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PDG } }
+		localization_key = PDG_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PDL } }
+		localization_key = PDL_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PLC } }
+		localization_key = PLC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PLK } }
+		localization_key = PLK_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PLO } }
+		localization_key = PLO_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PMN } }
+		localization_key = PMN_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PRG } }
+		localization_key = PRG_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PRW } }
+		localization_key = PRW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PSC } }
+		localization_key = PSC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PSN } }
+		localization_key = PSN_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = PTK } }
+		localization_key = PTK_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = RAD } }
+		localization_key = RAD_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = ROZ } }
+		localization_key = ROZ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = SCK } }
+		localization_key = SCK_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = SLK } }
+		localization_key = SLK_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = SLS } }
+		localization_key = SLS_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = SMR } }
+		localization_key = SMR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = SPT } }
+		localization_key = SPT_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = SRD } }
+		localization_key = SRD_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = SUW } }
+		localization_key = SUW_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = SWC } }
+		localization_key = SWC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = TEC } }
+		localization_key = TEC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = TRN } }
+		localization_key = TRN_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = TUC } }
+		localization_key = TUC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = UBJ } }
+		localization_key = UBJ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = WLC } }
+		localization_key = WLC_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = WLM } }
+		localization_key = WLM_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = WMG } }
+		localization_key = WMG_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = WMP } }
+		localization_key = WMP_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = WMZ } }
+		localization_key = WMZ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = WOJ } }
+		localization_key = WOJ_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = WOL } }
+		localization_key = WOL_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = ZIE } }
+		localization_key = ZIE_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = ZKR } }
+		localization_key = ZKR_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = KRZ } }
+		localization_key = KRZ
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = ILA } }
+		localization_key = ILA
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = BRO } }
+		localization_key = BRO
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = BRZ } }
+		localization_key = BRZ
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = OWM } }
+		localization_key = OWM_DEF
+	}
+	text = {
+		trigger = { event_target:PL2027_SE_zwyciezca = { tag = ROS } }
+		localization_key = ROS_DEF
+	}
+}

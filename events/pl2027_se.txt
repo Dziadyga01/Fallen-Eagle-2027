@@ -77,3 +77,68 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 }
+
+country_event = {
+	id = se.7
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = PL2027_polska NOT = { has_global_flag = PL2027_SE_D_rosja_koniec } NOT = { has_global_flag = PL2027_SE_widoczny } has_global_flag = PL2027_SE_D_inwazja_rosji NOT = { any_country = { has_country_flag = PL2027_polska OR = { has_war_with = ROS has_war_with = KRL has_war_with = OWM } } } }
+	mean_time_to_happen = { days = 1 }
+	immediate = { set_global_flag = PL2027_SE_D_rosja_koniec if = { limit = { OR = { 1124 = { OR = { is_owned_by = ROS is_owned_by = KRL is_owned_by = OWM } } 842 = { OR = { is_owned_by = ROS is_owned_by = KRL is_owned_by = OWM } } } } PL2027_SE_rosja_triumf = yes } else = { PL2027_SE_rosja_odparta = yes } }
+	option = {
+		name = se.7.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = se.8
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = PL2027_polska NOT = { has_global_flag = PL2027_SE_D_bialorus_koniec } NOT = { has_global_flag = PL2027_SE_widoczny } has_global_flag = PL2027_SE_D_bialorus NOT = { any_country = { has_country_flag = PL2027_polska OR = { has_war_with = BLR } } } }
+	mean_time_to_happen = { days = 1 }
+	immediate = { set_global_flag = PL2027_SE_D_bialorus_koniec if = { limit = { OR = { 858 = { OR = { is_owned_by = BLR } } } } PL2027_SE_bialorus_triumf = yes } else = { PL2027_SE_bialorus_odparta = yes } }
+	option = {
+		name = se.8.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = se.9
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = PL2027_polska NOT = { has_global_flag = PL2027_SE_D_zakon_koniec } NOT = { has_global_flag = PL2027_SE_widoczny } has_global_flag = PL2027_SE_D_krucjata OR = { NOT = { country_exists = ZKR } AND = { NOT = { any_country = { has_country_flag = PL2027_polska OR = { has_war_with = ZKR } } } OR = { 964 = { OR = { is_owned_by = ZKR } } 1124 = { OR = { is_owned_by = ZKR } } 156 = { OR = { is_owned_by = ZKR } } 1035 = { OR = { is_owned_by = ZKR } } } } } }
+	mean_time_to_happen = { days = 1 }
+	immediate = { set_global_flag = PL2027_SE_D_zakon_koniec if = { limit = { NOT = { country_exists = ZKR } } PL2027_SE_zakon_upadek = yes } else = { PL2027_SE_zakon_triumf = yes } }
+	option = {
+		name = se.9.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = se.10
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = PL2027_polska NOT = { has_global_flag = PL2027_SE_D_metropolia_koniec } NOT = { has_global_flag = PL2027_SE_widoczny } has_global_flag = PL2027_SE_D_wojna_metropolitalna OR = { AND = { 154 = { is_owned_by = TRN } OR = { NOT = { country_exists = BYD } BYD = { is_subject_of = TRN } } } AND = { 156 = { is_owned_by = BYD } OR = { NOT = { country_exists = TRN } TRN = { is_subject_of = BYD } } } } }
+	mean_time_to_happen = { days = 1 }
+	immediate = { set_global_flag = PL2027_SE_D_metropolia_koniec if = { limit = { 154 = { is_owned_by = TRN } } PL2027_SE_torun_wygrywa = yes } else = { PL2027_SE_bydgoszcz_wygrywa = yes } }
+	option = {
+		name = se.10.a
+		ai_chance = { factor = 1 }
+	}
+}
+
+country_event = {
+	id = se.11
+	hidden = yes
+	fire_only_once = yes
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = PL2027_polska NOT = { has_global_flag = PL2027_SE_D_warszawa_koniec } NOT = { has_global_flag = PL2027_SE_widoczny } has_global_flag = PL2027_SE_D_bitwa_o_warszawe NOT = { any_country = { OR = { tag = SMR tag = KPR tag = MPR } any_country = { OR = { tag = SMR tag = KPR tag = MPR tag = PLC tag = WOJ tag = LEG } has_war_with = PREV } } } 745 = { OR = { is_controlled_by = SMR is_controlled_by = KPR is_controlled_by = MPR } } }
+	mean_time_to_happen = { days = 1 }
+	immediate = { set_global_flag = PL2027_SE_D_warszawa_koniec if = { limit = { 745 = { is_controlled_by = SMR } } PL2027_SE_warszawa_smr = yes } else_if = { limit = { 745 = { is_controlled_by = KPR } } PL2027_SE_warszawa_kpr = yes } else = { PL2027_SE_warszawa_mpr = yes } }
+	option = {
+		name = se.11.a
+		ai_chance = { factor = 1 }
+	}
+}

@@ -1,0 +1,1198 @@
+# BEGIN MRX_STORY_CAMPAIGN_V2
+# Romanowski: Czy to wciaz jest gra? / osobisty rozdzial
+# Extension of TR2_romanowski_tree after TR2_rom_final. No separate focus_tree.
+
+	focus = {
+		id = MRX_w_nocy
+		icon = GFX_pl2027_081_media_0
+		x = 28
+		y = 15
+		cost = 3
+		prerequisite = { focus = TR2_rom_final }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_country_flag = MRX_aktywny
+			set_variable = { MRX_zaufanie = 45 }
+			set_variable = { MRX_napiecie = 35 }
+			set_variable = { MRX_sygnal = 40 }
+			country_event = { id = mrx.1 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_mapa
+		icon = GFX_pl2027_081_nauka_0
+		x = 28
+		y = 16
+		cost = 3
+		prerequisite = { focus = MRX_w_nocy }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_napiecie = 7 }
+			add_to_variable = { MRX_sygnal = 8 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_political_power = 20
+			country_event = { id = mrx.2 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_wybor
+		icon = GFX_pl2027_081_rada_0
+		x = 28
+		y = 17
+		cost = 3
+		prerequisite = { focus = MRX_mapa }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 2 }
+			add_to_variable = { MRX_napiecie = 4 }
+			add_to_variable = { MRX_sygnal = 2 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.3 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_a_ulica
+		icon = GFX_pl2027_081_ludzie_1
+		x = 12
+		y = 18
+		cost = 4
+		prerequisite = { focus = MRX_wybor }
+		mutually_exclusive = { focus = MRX_b_ekran }
+		mutually_exclusive = { focus = MRX_c_oddech }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 10 }
+			add_to_variable = { MRX_napiecie = -2 }
+			add_to_variable = { MRX_sygnal = -5 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			set_country_flag = MRX_droga_ulica
+		}
+	}
+
+	focus = {
+		id = MRX_a_bloki
+		icon = GFX_pl2027_081_osiedle_0
+		x = 11
+		y = 19
+		cost = 5
+		prerequisite = { focus = MRX_a_ulica }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 7 }
+			add_to_variable = { MRX_napiecie = 3 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = MRX_a_klatka
+		icon = GFX_pl2027_081_rada_0
+		x = 13
+		y = 19
+		cost = 5
+		prerequisite = { focus = MRX_a_ulica }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 8 }
+			add_to_variable = { MRX_napiecie = 1 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_a_sasiad
+		icon = GFX_pl2027_081_zywnosc_0
+		x = 12
+		y = 20
+		cost = 5
+		prerequisite = { focus = MRX_a_bloki }
+		prerequisite = { focus = MRX_a_klatka }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 6 }
+			add_to_variable = { MRX_napiecie = -3 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = MRX_a_spoldzielnia
+		icon = GFX_pl2027_081_robotnicy_0
+		x = 11
+		y = 21
+		cost = 5
+		prerequisite = { focus = MRX_a_sasiad }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 9 }
+			add_to_variable = { MRX_napiecie = 2 }
+			add_to_variable = { MRX_sygnal = 1 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_pracownicy
+		}
+	}
+
+	focus = {
+		id = MRX_a_tramwaj
+		icon = GFX_pl2027_081_droga_0
+		x = 13
+		y = 21
+		cost = 5
+		prerequisite = { focus = MRX_a_sasiad }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 6 }
+			add_to_variable = { MRX_napiecie = 4 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = MRX_a_jawne
+		icon = GFX_pl2027_081_pieniadze_0
+		x = 11
+		y = 22
+		cost = 5
+		prerequisite = { focus = MRX_a_spoldzielnia }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 8 }
+			add_to_variable = { MRX_napiecie = 1 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_political_power = 35
+		}
+	}
+
+	focus = {
+		id = MRX_a_spor
+		icon = GFX_pl2027_081_wybory_0
+		x = 13
+		y = 22
+		cost = 5
+		prerequisite = { focus = MRX_a_tramwaj }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 10 }
+			add_to_variable = { MRX_napiecie = 5 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.4 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_a_final
+		icon = GFX_pl2027_081_wspolnota_1
+		x = 12
+		y = 23
+		cost = 7
+		prerequisite = { focus = MRX_a_jawne }
+		prerequisite = { focus = MRX_a_spor }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 13 }
+			add_to_variable = { MRX_napiecie = -5 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_komitety
+			set_country_flag = MRX_droga_zakonczona
+		}
+	}
+
+	focus = {
+		id = MRX_b_ekran
+		icon = GFX_pl2027_081_media_1
+		x = 28
+		y = 18
+		cost = 4
+		prerequisite = { focus = MRX_wybor }
+		mutually_exclusive = { focus = MRX_a_ulica }
+		mutually_exclusive = { focus = MRX_c_oddech }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = -3 }
+			add_to_variable = { MRX_napiecie = 5 }
+			add_to_variable = { MRX_sygnal = 12 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			set_country_flag = MRX_droga_ekran
+		}
+	}
+
+	focus = {
+		id = MRX_b_vira
+		icon = GFX_pl2027_081_media_0
+		x = 27
+		y = 19
+		cost = 5
+		prerequisite = { focus = MRX_b_ekran }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = -5 }
+			add_to_variable = { MRX_napiecie = 8 }
+			add_to_variable = { MRX_sygnal = 12 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_political_power = 35
+			country_event = { id = mrx.5 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_b_prawda
+		icon = GFX_pl2027_081_nauka_0
+		x = 29
+		y = 19
+		cost = 5
+		prerequisite = { focus = MRX_b_ekran }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 10 }
+			add_to_variable = { MRX_napiecie = 2 }
+			add_to_variable = { MRX_sygnal = 4 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = MRX_b_bot
+		icon = GFX_pl2027_081_technika_0
+		x = 27
+		y = 20
+		cost = 5
+		prerequisite = { focus = MRX_b_vira }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_napiecie = 7 }
+			add_to_variable = { MRX_sygnal = 4 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.6 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_b_kontr
+		icon = GFX_pl2027_081_telewizja_0
+		x = 29
+		y = 20
+		cost = 5
+		prerequisite = { focus = MRX_b_prawda }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 7 }
+			add_to_variable = { MRX_napiecie = 5 }
+			add_to_variable = { MRX_sygnal = 2 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.7 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_b_redakcja
+		icon = GFX_pl2027_081_rada_1
+		x = 27
+		y = 21
+		cost = 5
+		prerequisite = { focus = MRX_b_bot }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 8 }
+			add_to_variable = { MRX_napiecie = 1 }
+			add_to_variable = { MRX_sygnal = 4 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_redakcja
+		}
+	}
+
+	focus = {
+		id = MRX_b_live
+		icon = GFX_pl2027_081_media_1
+		x = 29
+		y = 21
+		cost = 5
+		prerequisite = { focus = MRX_b_kontr }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 10 }
+			add_to_variable = { MRX_napiecie = 8 }
+			add_to_variable = { MRX_sygnal = 8 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.8 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_b_protokol
+		icon = GFX_pl2027_081_wybory_0
+		x = 28
+		y = 22
+		cost = 5
+		prerequisite = { focus = MRX_b_redakcja }
+		prerequisite = { focus = MRX_b_live }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 12 }
+			add_to_variable = { MRX_napiecie = 1 }
+			add_to_variable = { MRX_sygnal = -2 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_b_final
+		icon = GFX_pl2027_081_media_0
+		x = 28
+		y = 23
+		cost = 7
+		prerequisite = { focus = MRX_b_protokol }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 10 }
+			add_to_variable = { MRX_napiecie = -3 }
+			add_to_variable = { MRX_sygnal = 10 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_wolne_media
+			set_country_flag = MRX_droga_zakonczona
+		}
+	}
+
+	focus = {
+		id = MRX_c_oddech
+		icon = GFX_pl2027_081_wspolnota_1
+		x = 44
+		y = 18
+		cost = 4
+		prerequisite = { focus = MRX_wybor }
+		mutually_exclusive = { focus = MRX_a_ulica }
+		mutually_exclusive = { focus = MRX_b_ekran }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 5 }
+			add_to_variable = { MRX_napiecie = -12 }
+			add_to_variable = { MRX_sygnal = -4 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			set_country_flag = MRX_droga_oddech
+		}
+	}
+
+	focus = {
+		id = MRX_c_analog
+		icon = GFX_pl2027_081_administracja_0
+		x = 43
+		y = 19
+		cost = 5
+		prerequisite = { focus = MRX_c_oddech }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 5 }
+			add_to_variable = { MRX_napiecie = -8 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_c_grafik
+		icon = GFX_pl2027_081_rada_0
+		x = 45
+		y = 19
+		cost = 5
+		prerequisite = { focus = MRX_c_oddech }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 2 }
+			add_to_variable = { MRX_napiecie = -9 }
+			add_to_variable = { MRX_sygnal = -3 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_c_zastepcy
+		icon = GFX_pl2027_081_rada_1
+		x = 43
+		y = 20
+		cost = 5
+		prerequisite = { focus = MRX_c_analog }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 8 }
+			add_to_variable = { MRX_napiecie = -8 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_delegacja
+		}
+	}
+
+	focus = {
+		id = MRX_c_szkola
+		icon = GFX_pl2027_081_szkola_0
+		x = 45
+		y = 20
+		cost = 5
+		prerequisite = { focus = MRX_c_grafik }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 8 }
+			add_to_variable = { MRX_napiecie = 2 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = MRX_c_strefa
+		icon = GFX_pl2027_081_osiedle_0
+		x = 43
+		y = 21
+		cost = 5
+		prerequisite = { focus = MRX_c_zastepcy }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 8 }
+			add_to_variable = { MRX_napiecie = -6 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_c_tydzien
+		icon = GFX_pl2027_081_ludzie_0
+		x = 45
+		y = 21
+		cost = 5
+		prerequisite = { focus = MRX_c_szkola }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 4 }
+			add_to_variable = { MRX_napiecie = -12 }
+			add_to_variable = { MRX_sygnal = -2 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.9 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_c_urzad
+		icon = GFX_pl2027_081_administracja_1
+		x = 44
+		y = 22
+		cost = 5
+		prerequisite = { focus = MRX_c_strefa }
+		prerequisite = { focus = MRX_c_tydzien }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 10 }
+			add_to_variable = { MRX_napiecie = -10 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_c_final
+		icon = GFX_pl2027_081_wspolnota_1
+		x = 44
+		y = 23
+		cost = 7
+		prerequisite = { focus = MRX_c_urzad }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 9 }
+			add_to_variable = { MRX_napiecie = -14 }
+			add_to_variable = { MRX_sygnal = 2 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_spokoj
+			set_country_flag = MRX_droga_zakonczona
+		}
+	}
+
+	focus = {
+		id = MRX_fronty
+		icon = GFX_pl2027_081_administracja_0
+		x = 28
+		y = 25
+		cost = 3
+		prerequisite = { focus = MRX_a_final focus = MRX_b_final focus = MRX_c_final }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_napiecie = 1 }
+			add_to_variable = { MRX_sygnal = 3 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			set_variable = { MRX_zaliczone = 0 }
+		}
+	}
+
+	focus = {
+		id = MRX_m_auto
+		icon = GFX_pl2027_081_droga_0
+		x = 4
+		y = 26
+		cost = 5
+		prerequisite = { focus = MRX_fronty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_napiecie = 4 }
+			add_to_variable = { MRX_sygnal = -1 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_m_panewki
+		icon = GFX_pl2027_081_przemysl_0
+		x = 4
+		y = 27
+		cost = 5
+		prerequisite = { focus = MRX_m_auto }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_napiecie = 6 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.10 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_m_czesci
+		icon = GFX_pl2027_081_technika_0
+		x = 4
+		y = 28
+		cost = 5
+		prerequisite = { focus = MRX_m_panewki }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 2 }
+			add_to_variable = { MRX_napiecie = -1 }
+			add_to_variable = { MRX_sygnal = 2 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_m_oem
+		icon = GFX_pl2027_081_droga_0
+		x = 4
+		y = 29
+		cost = 5
+		prerequisite = { focus = MRX_m_czesci }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 1 }
+			add_to_variable = { MRX_napiecie = -5 }
+			add_to_variable = { MRX_sygnal = 2 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_m_final
+		icon = GFX_pl2027_081_logistyka_0
+		x = 4
+		y = 30
+		cost = 6
+		prerequisite = { focus = MRX_m_oem }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 7 }
+			add_to_variable = { MRX_napiecie = -3 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_to_variable = { MRX_zaliczone = 1 }
+			add_ideas = MRX_transport
+		}
+	}
+
+	focus = {
+		id = MRX_s_uczelnia
+		icon = GFX_pl2027_081_szkola_0
+		x = 20
+		y = 26
+		cost = 5
+		prerequisite = { focus = MRX_fronty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_napiecie = 4 }
+			add_to_variable = { MRX_sygnal = 1 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_s_egzamin
+		icon = GFX_pl2027_081_nauka_0
+		x = 20
+		y = 27
+		cost = 5
+		prerequisite = { focus = MRX_s_uczelnia }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_napiecie = 7 }
+			add_to_variable = { MRX_sygnal = 2 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.11 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_s_podstawy
+		icon = GFX_pl2027_081_administracja_0
+		x = 20
+		y = 28
+		cost = 5
+		prerequisite = { focus = MRX_s_egzamin }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 4 }
+			add_to_variable = { MRX_sygnal = 2 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_political_power = 15
+		}
+	}
+
+	focus = {
+		id = MRX_s_discord
+		icon = GFX_pl2027_081_media_0
+		x = 20
+		y = 29
+		cost = 5
+		prerequisite = { focus = MRX_s_podstawy }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 3 }
+			add_to_variable = { MRX_napiecie = 3 }
+			add_to_variable = { MRX_sygnal = 3 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_s_final
+		icon = GFX_pl2027_081_szkola_0
+		x = 20
+		y = 30
+		cost = 6
+		prerequisite = { focus = MRX_s_discord }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 8 }
+			add_to_variable = { MRX_napiecie = -5 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_to_variable = { MRX_zaliczone = 1 }
+			add_ideas = MRX_nauka
+		}
+	}
+
+	focus = {
+		id = MRX_g_git
+		icon = GFX_pl2027_081_technika_0
+		x = 36
+		y = 26
+		cost = 5
+		prerequisite = { focus = MRX_fronty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_napiecie = 5 }
+			add_to_variable = { MRX_sygnal = 6 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_g_mapa
+		icon = GFX_pl2027_081_mapa_0_slk
+		x = 36
+		y = 27
+		cost = 5
+		prerequisite = { focus = MRX_g_git }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_napiecie = 4 }
+			add_to_variable = { MRX_sygnal = 8 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_g_portret
+		icon = GFX_pl2027_081_media_1
+		x = 36
+		y = 28
+		cost = 5
+		prerequisite = { focus = MRX_g_mapa }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = -2 }
+			add_to_variable = { MRX_napiecie = 8 }
+			add_to_variable = { MRX_sygnal = 8 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.12 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_g_tfr
+		icon = GFX_pl2027_081_nauka_0
+		x = 36
+		y = 29
+		cost = 5
+		prerequisite = { focus = MRX_g_portret }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_napiecie = 7 }
+			add_to_variable = { MRX_sygnal = 10 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_g_final
+		icon = GFX_pl2027_081_technika_0
+		x = 36
+		y = 30
+		cost = 6
+		prerequisite = { focus = MRX_g_tfr }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 6 }
+			add_to_variable = { MRX_napiecie = -6 }
+			add_to_variable = { MRX_sygnal = 7 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_to_variable = { MRX_zaliczone = 1 }
+			add_ideas = MRX_moder
+		}
+	}
+
+	focus = {
+		id = MRX_r_radio
+		icon = GFX_pl2027_081_media_0
+		x = 52
+		y = 26
+		cost = 5
+		prerequisite = { focus = MRX_fronty }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 3 }
+			add_to_variable = { MRX_napiecie = 2 }
+			add_to_variable = { MRX_sygnal = 7 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_r_artpop
+		icon = GFX_pl2027_081_media_1
+		x = 52
+		y = 27
+		cost = 5
+		prerequisite = { focus = MRX_r_radio }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 3 }
+			add_to_variable = { MRX_napiecie = -2 }
+			add_to_variable = { MRX_sygnal = 6 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_r_odbior
+		icon = GFX_pl2027_081_rada_0
+		x = 52
+		y = 28
+		cost = 5
+		prerequisite = { focus = MRX_r_artpop }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 2 }
+			add_to_variable = { MRX_napiecie = 1 }
+			add_to_variable = { MRX_sygnal = 6 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.13 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_r_noc
+		icon = GFX_pl2027_081_media_0
+		x = 52
+		y = 29
+		cost = 5
+		prerequisite = { focus = MRX_r_odbior }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 5 }
+			add_to_variable = { MRX_napiecie = -2 }
+			add_to_variable = { MRX_sygnal = 6 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_r_final
+		icon = GFX_pl2027_081_media_1
+		x = 52
+		y = 30
+		cost = 6
+		prerequisite = { focus = MRX_r_noc }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 8 }
+			add_to_variable = { MRX_napiecie = -3 }
+			add_to_variable = { MRX_sygnal = 7 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_to_variable = { MRX_zaliczone = 1 }
+			add_ideas = MRX_radio
+		}
+	}
+
+	focus = {
+		id = MRX_lustro
+		icon = GFX_pl2027_081_rada_0
+		x = 28
+		y = 32
+		cost = 4
+		prerequisite = { focus = MRX_m_final focus = MRX_s_final focus = MRX_g_final focus = MRX_r_final }
+		available = {
+			check_variable = { MRX_zaliczone > 1 }
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 5 }
+			add_to_variable = { MRX_napiecie = -7 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = MRX_sesja
+		icon = GFX_pl2027_081_wspolnota_1
+		x = 28
+		y = 33
+		cost = 4
+		prerequisite = { focus = MRX_lustro }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 4 }
+			add_to_variable = { MRX_napiecie = -3 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			country_event = { id = mrx.14 days = 1 }
+		}
+	}
+
+	focus = {
+		id = MRX_jutro
+		icon = GFX_pl2027_081_nauka_0
+		x = 28
+		y = 34
+		cost = 4
+		prerequisite = { focus = MRX_sesja }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 3 }
+			add_to_variable = { MRX_napiecie = -3 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = MRX_end_ulica
+		icon = GFX_pl2027_081_wspolnota_1
+		x = 10
+		y = 36
+		cost = 10
+		prerequisite = { focus = MRX_jutro }
+		mutually_exclusive = { focus = MRX_end_media }
+		mutually_exclusive = { focus = MRX_end_analog }
+		mutually_exclusive = { focus = MRX_end_czlowiek }
+		mutually_exclusive = { focus = MRX_end_plik }
+		available = {
+			has_country_flag = MRX_droga_ulica
+			check_variable = { MRX_zaufanie > 64 }
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 5 }
+			add_to_variable = { MRX_napiecie = -5 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_end_ulica
+			set_country_flag = MRX_zakonczenie
+		}
+	}
+
+	focus = {
+		id = MRX_end_media
+		icon = GFX_pl2027_081_media_1
+		x = 19
+		y = 36
+		cost = 10
+		prerequisite = { focus = MRX_jutro }
+		mutually_exclusive = { focus = MRX_end_ulica }
+		mutually_exclusive = { focus = MRX_end_analog }
+		mutually_exclusive = { focus = MRX_end_czlowiek }
+		mutually_exclusive = { focus = MRX_end_plik }
+		available = {
+			has_country_flag = MRX_droga_ekran
+			check_variable = { MRX_sygnal > 64 }
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 7 }
+			add_to_variable = { MRX_napiecie = -4 }
+			add_to_variable = { MRX_sygnal = 6 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_end_media
+			set_country_flag = MRX_zakonczenie
+		}
+	}
+
+	focus = {
+		id = MRX_end_analog
+		icon = GFX_pl2027_081_ludzie_0
+		x = 37
+		y = 36
+		cost = 10
+		prerequisite = { focus = MRX_jutro }
+		mutually_exclusive = { focus = MRX_end_ulica }
+		mutually_exclusive = { focus = MRX_end_media }
+		mutually_exclusive = { focus = MRX_end_czlowiek }
+		mutually_exclusive = { focus = MRX_end_plik }
+		available = {
+			has_country_flag = MRX_droga_oddech
+			check_variable = { MRX_napiecie < 46 }
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 5 }
+			add_to_variable = { MRX_napiecie = -8 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_end_analog
+			set_country_flag = MRX_zakonczenie
+		}
+	}
+
+	focus = {
+		id = MRX_end_czlowiek
+		icon = GFX_pl2027_081_pojednanie_0
+		x = 28
+		y = 36
+		cost = 10
+		prerequisite = { focus = MRX_jutro }
+		mutually_exclusive = { focus = MRX_end_ulica }
+		mutually_exclusive = { focus = MRX_end_media }
+		mutually_exclusive = { focus = MRX_end_analog }
+		mutually_exclusive = { focus = MRX_end_plik }
+		available = {
+			check_variable = { MRX_zaufanie > 49 }
+			check_variable = { MRX_napiecie < 71 }
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 8 }
+			add_to_variable = { MRX_napiecie = -12 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_end_czlowiek
+			set_country_flag = MRX_zakonczenie
+		}
+	}
+
+	focus = {
+		id = MRX_end_plik
+		icon = GFX_pl2027_081_administracja_0
+		x = 46
+		y = 36
+		cost = 10
+		prerequisite = { focus = MRX_jutro }
+		mutually_exclusive = { focus = MRX_end_ulica }
+		mutually_exclusive = { focus = MRX_end_media }
+		mutually_exclusive = { focus = MRX_end_analog }
+		mutually_exclusive = { focus = MRX_end_czlowiek }
+		available = {
+			check_variable = { MRX_napiecie > 70 }
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { MRX_zaufanie = 3 }
+			add_to_variable = { MRX_napiecie = -25 }
+			clamp_variable = { var = MRX_zaufanie min = 0 max = 100 }
+			clamp_variable = { var = MRX_napiecie min = 0 max = 100 }
+			clamp_variable = { var = MRX_sygnal min = 0 max = 100 }
+			add_ideas = MRX_end_przerwa
+			set_country_flag = MRX_zakonczenie
+		}
+	}
+
+# END MRX_STORY_CAMPAIGN_V2

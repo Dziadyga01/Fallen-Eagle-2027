@@ -1,0 +1,15 @@
+characters = {
+	CIE_halina = {
+		name = CIE_halina
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CIE/CIE_halina.png"
+			}
+		}
+		country_leader = {
+			desc = CIE_halina_desc
+			ideology = right_centrist
+			expire = "2065.1.1.1"
+		}
+	}
+}

@@ -1,0 +1,1068 @@
+# CIECHOCINEK: FAJFY MUSZA TRWAC | The Fallen Eagle: 2027
+# 70 fokusu, 3 wzajemnie wykluczajace sie rzady, 4 wskazniki sanatoryjne.
+# CIE is an existing local country in the user's mod. This file does not change state ownership.
+focus_tree = {
+	id = CIE_fajfy_tree
+	country = {
+		factor = 0
+		modifier = { add = 100 tag = CIE }
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 24 y = 1320 }
+	initial_show_position = { focus = CIE_polska_upadla }
+
+	focus = {
+		id = CIE_polska_upadla
+		icon = GFX_pl2027_081_rada_0
+		x = 24
+		y = 0
+		cost = 1
+		available = {
+			NOT = { has_global_flag = PL2027_prolog }
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_country_flag = CIE_system
+			set_variable = { CIE_humor = 38 }
+			set_variable = { CIE_zapasy = 54 }
+			set_variable = { CIE_masc = 28 }
+			set_variable = { CIE_fajfy = 0 }
+			add_ideas = CIE_kryzys_turnusu
+			add_political_power = 15
+		}
+	}
+
+	focus = {
+		id = CIE_nfz_nie_odbiera
+		icon = GFX_pl2027_081_administracja_0
+		x = 24
+		y = 1
+		cost = 1
+		prerequisite = { focus = CIE_polska_upadla }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = -2 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_political_power = 15
+			country_event = { id = cie.1 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_radom_autokar
+		icon = GFX_pl2027_081_ludzie_0
+		x = 24
+		y = 2
+		cost = 1
+		prerequisite = { focus = CIE_nfz_nie_odbiera }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_zapasy = -5 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+			add_manpower = 50
+			country_event = { id = cie.2 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_pilot
+		icon = GFX_pl2027_081_bunt_3
+		x = 24
+		y = 3
+		cost = 1
+		prerequisite = { focus = CIE_radom_autokar }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = -3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_stability = -0.01
+			country_event = { id = cie.3 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_ostatnia_masc
+		icon = GFX_pl2027_081_pomoc_0
+		x = 24
+		y = 4
+		cost = 1
+		prerequisite = { focus = CIE_pilot }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_masc = 10 }
+			clamp_variable = { var = CIE_masc min = 0 max = 100 }
+			add_political_power = 10
+		}
+	}
+
+	focus = {
+		id = CIE_herbata_rada
+		icon = GFX_pl2027_081_administracja_0
+		x = 24
+		y = 5
+		cost = 1
+		prerequisite = { focus = CIE_ostatnia_masc }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = CIE_kto_rzadzi
+		icon = GFX_pl2027_081_wybory_0
+		x = 24
+		y = 6
+		cost = 1
+		prerequisite = { focus = CIE_herbata_rada }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 35
+			country_event = { id = cie.4 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_wodzirej
+		icon = GFX_pl2027_081_media_0
+		x = 6
+		y = 7
+		cost = 1
+		prerequisite = { focus = CIE_kto_rzadzi }
+		mutually_exclusive = { focus = CIE_plotki }
+		mutually_exclusive = { focus = CIE_samotni }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_country_flag = CIE_route_wodzirej
+			set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
+			add_ideas = CIE_wodzirejat
+		}
+	}
+
+	focus = {
+		id = CIE_jedna_partia
+		icon = GFX_pl2027_081_wybory_0
+		x = 6
+		y = 8
+		cost = 1
+		prerequisite = { focus = CIE_wodzirej }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 45
+		}
+	}
+
+	focus = {
+		id = CIE_wolne_zakaz
+		icon = GFX_pl2027_081_media_0
+		x = 6
+		y = 9
+		cost = 1
+		prerequisite = { focus = CIE_jedna_partia }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = -3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = CIE_polka
+		icon = GFX_pl2027_081_bankiet_0
+		x = 6
+		y = 10
+		cost = 1
+		prerequisite = { focus = CIE_wolne_zakaz }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 1 }
+			add_to_variable = { CIE_humor = 4 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_podejrzani
+		icon = GFX_pl2027_081_straz_1
+		x = 6
+		y = 11
+		cost = 1
+		prerequisite = { focus = CIE_polka }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = -0.02
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = CIE_wyjatkowy_17
+		icon = GFX_pl2027_081_porzadek_1
+		x = 6
+		y = 12
+		cost = 1
+		prerequisite = { focus = CIE_podejrzani }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 8 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_fajfy = 2 }
+		}
+	}
+
+	focus = {
+		id = CIE_wieczny_dancing
+		icon = GFX_pl2027_081_bankiet_0
+		x = 6
+		y = 13
+		cost = 1
+		prerequisite = { focus = CIE_wyjatkowy_17 }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 2 }
+			add_ideas = CIE_wieczny_dancing
+		}
+	}
+
+	focus = {
+		id = CIE_najwyzszy_dj
+		icon = GFX_pl2027_081_zwyciestwo_0_wmp_k
+		x = 6
+		y = 14
+		cost = 1
+		prerequisite = { focus = CIE_wieczny_dancing }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 100
+			country_event = { id = cie.10 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_plotki
+		icon = GFX_pl2027_081_ludzie_0
+		x = 24
+		y = 7
+		cost = 1
+		prerequisite = { focus = CIE_kto_rzadzi }
+		mutually_exclusive = { focus = CIE_wodzirej }
+		mutually_exclusive = { focus = CIE_samotni }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 4 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			set_country_flag = CIE_route_babcie
+			set_politics = { ruling_party = conservative elections_allowed = yes }
+			add_ideas = CIE_rada_babc
+		}
+	}
+
+	focus = {
+		id = CIE_komitet_pan
+		icon = GFX_pl2027_081_administracja_0
+		x = 24
+		y = 8
+		cost = 1
+		prerequisite = { focus = CIE_plotki }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = CIE_wszystkie_lawki
+		icon = GFX_pl2027_081_porzadek_1
+		x = 24
+		y = 9
+		cost = 1
+		prerequisite = { focus = CIE_komitet_pan }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 5 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_stolowki
+		icon = GFX_pl2027_081_zywnosc_0
+		x = 24
+		y = 10
+		cost = 1
+		prerequisite = { focus = CIE_wszystkie_lawki }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_zapasy = 12 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_romanse_komisja
+		icon = GFX_pl2027_081_administracja_0
+		x = 24
+		y = 11
+		cost = 1
+		prerequisite = { focus = CIE_stolowki }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 20
+			country_event = { id = cie.5 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_obiad
+		icon = GFX_pl2027_081_zywnosc_0
+		x = 24
+		y = 12
+		cost = 1
+		prerequisite = { focus = CIE_romanse_komisja }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 7 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_zapasy = -3 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_halinka
+		icon = GFX_pl2027_081_ludzie_0
+		x = 24
+		y = 13
+		cost = 1
+		prerequisite = { focus = CIE_obiad }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 4 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_stability = 0.06
+		}
+	}
+
+	focus = {
+		id = CIE_republika_san
+		icon = GFX_pl2027_081_zwyciestwo_0_wmp_k
+		x = 24
+		y = 14
+		cost = 1
+		prerequisite = { focus = CIE_halinka }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 85
+			add_ideas = CIE_republika_san
+			country_event = { id = cie.11 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_samotni
+		icon = GFX_pl2027_081_ludzie_0
+		x = 42
+		y = 7
+		cost = 1
+		prerequisite = { focus = CIE_kto_rzadzi }
+		mutually_exclusive = { focus = CIE_wodzirej }
+		mutually_exclusive = { focus = CIE_plotki }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 4 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			set_country_flag = CIE_route_ruchocinek
+			set_politics = { ruling_party = social_liberal elections_allowed = yes }
+			add_ideas = CIE_romanse
+		}
+	}
+
+	focus = {
+		id = CIE_ministerstwo_flirtu
+		icon = GFX_pl2027_081_administracja_0
+		x = 42
+		y = 8
+		cost = 1
+		prerequisite = { focus = CIE_samotni }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = CIE_randki_teznia
+		icon = GFX_pl2027_081_ludzie_0
+		x = 42
+		y = 9
+		cost = 1
+		prerequisite = { focus = CIE_ministerstwo_flirtu }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 7 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_fajfy = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_stoliki_podwojne
+		icon = GFX_pl2027_081_porzadek_1
+		x = 42
+		y = 10
+		cost = 1
+		prerequisite = { focus = CIE_randki_teznia }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_love_story
+		icon = GFX_pl2027_081_bankiet_0
+		x = 42
+		y = 11
+		cost = 1
+		prerequisite = { focus = CIE_stoliki_podwojne }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 8 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			country_event = { id = cie.12 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_rozwody
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 42
+		y = 12
+		cost = 1
+		prerequisite = { focus = CIE_love_story }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 35
+			add_stability = -0.01
+		}
+	}
+
+	focus = {
+		id = CIE_milosc
+		icon = GFX_pl2027_081_ludzie_0
+		x = 42
+		y = 13
+		cost = 1
+		prerequisite = { focus = CIE_rozwody }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 7 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_fajfy = 2 }
+		}
+	}
+
+	focus = {
+		id = CIE_ruchocinek
+		icon = GFX_pl2027_081_zwyciestwo_0_wmp_k
+		x = 42
+		y = 14
+		cost = 1
+		prerequisite = { focus = CIE_milosc }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = CIE_wolne_miasto
+			add_stability = 0.08
+			country_event = { id = cie.13 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_panowie
+		icon = GFX_pl2027_081_bankiet_0
+		x = 60
+		y = 7
+		cost = 1
+		prerequisite = { focus = CIE_kto_rzadzi }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 1 }
+			add_to_variable = { CIE_humor = 3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_modern
+		icon = GFX_pl2027_081_media_0
+		x = 60
+		y = 8
+		cost = 1
+		prerequisite = { focus = CIE_panowie }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 1 }
+			add_to_variable = { CIE_humor = 3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_aux
+		icon = GFX_pl2027_081_bunt_3
+		x = 60
+		y = 9
+		cost = 1
+		prerequisite = { focus = CIE_modern }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_zapasy = -2 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+			add_political_power = 15
+			country_event = { id = cie.6 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_trzy_malzenstwa
+		icon = GFX_pl2027_081_ludzie_0
+		x = 60
+		y = 10
+		cost = 1
+		prerequisite = { focus = CIE_aux }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 1 }
+			add_to_variable = { CIE_humor = 2 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_zenek
+		icon = GFX_pl2027_081_media_0
+		x = 60
+		y = 11
+		cost = 1
+		prerequisite = { focus = CIE_trzy_malzenstwa }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 1 }
+			add_to_variable = { CIE_humor = 2 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_mietek
+		icon = GFX_pl2027_081_media_0
+		x = 60
+		y = 12
+		cost = 1
+		prerequisite = { focus = CIE_zenek }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 2 }
+			add_to_variable = { CIE_humor = 5 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			country_event = { id = cie.7 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_dwa_piwa
+		icon = GFX_pl2027_081_bankiet_0
+		x = 60
+		y = 13
+		cost = 1
+		prerequisite = { focus = CIE_mietek }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 1 }
+			add_to_variable = { CIE_humor = 2 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_bitwa_stolik
+		icon = GFX_pl2027_081_straz_1
+		x = 60
+		y = 14
+		cost = 1
+		prerequisite = { focus = CIE_dwa_piwa }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 1 }
+			add_war_support = 0.01
+			country_event = { id = cie.8 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_stali
+		icon = GFX_pl2027_081_administracja_0
+		x = 60
+		y = 15
+		cost = 1
+		prerequisite = { focus = CIE_bitwa_stolik }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_glosnik
+		icon = GFX_pl2027_081_bunt_3
+		x = 60
+		y = 16
+		cost = 1
+		prerequisite = { focus = CIE_stali }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 1 }
+			add_to_variable = { CIE_humor = -1 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_disco
+		icon = GFX_pl2027_081_straz_1
+		x = 60
+		y = 17
+		cost = 1
+		prerequisite = { focus = CIE_glosnik }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 4 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_bombardowanie
+		icon = GFX_pl2027_081_media_0
+		x = 60
+		y = 18
+		cost = 1
+		prerequisite = { focus = CIE_disco }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 2 }
+			add_to_variable = { CIE_humor = 4 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_war_support = 0.03
+			country_event = { id = cie.9 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_cala_polska
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 60
+		y = 19
+		cost = 1
+		prerequisite = { focus = CIE_bombardowanie }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_fajfy = 2 }
+			add_to_variable = { CIE_humor = 5 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = CIE_fajfy_wieczne
+		icon = GFX_pl2027_081_zwyciestwo_0_wmp_k
+		x = 60
+		y = 20
+		cost = 1
+		prerequisite = { focus = CIE_cala_polska }
+		available = {
+			check_variable = { CIE_humor > 59 }
+			check_variable = { CIE_zapasy > 39 }
+			check_variable = { CIE_fajfy > 9 }
+			date > 2028.3.1
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = CIE_fajfy_final
+			add_stability = 0.12
+			add_political_power = 100
+			set_country_flag = CIE_fajfy_wygrane
+			country_event = { id = cie.14 days = 1 }
+		}
+	}
+
+	focus = {
+		id = CIE_zus_bastion
+		icon = GFX_pl2027_081_pomoc_0
+		x = 76
+		y = 7
+		cost = 1
+		prerequisite = { focus = CIE_kto_rzadzi }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_zapasy = 5 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_herbatka
+		icon = GFX_pl2027_081_zywnosc_0
+		x = 76
+		y = 8
+		cost = 1
+		prerequisite = { focus = CIE_zus_bastion }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 5 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_zapasy = -2 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_pilot_wojna
+		icon = GFX_pl2027_081_administracja_0
+		x = 76
+		y = 9
+		cost = 1
+		prerequisite = { focus = CIE_herbatka }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 4 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_reczniki
+		icon = GFX_pl2027_081_logistyka_0
+		x = 76
+		y = 10
+		cost = 1
+		prerequisite = { focus = CIE_pilot_wojna }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_zapasy = 10 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_cukier
+		icon = GFX_pl2027_081_zywnosc_0
+		x = 76
+		y = 11
+		cost = 1
+		prerequisite = { focus = CIE_reczniki }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_zapasy = 8 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_masc_waluta
+		icon = GFX_pl2027_081_pieniadze_0
+		x = 76
+		y = 12
+		cost = 1
+		prerequisite = { focus = CIE_cukier }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_masc = 15 }
+			clamp_variable = { var = CIE_masc min = 0 max = 100 }
+			add_ideas = CIE_masc_waluta
+		}
+	}
+
+	focus = {
+		id = CIE_kapcie
+		icon = GFX_pl2027_081_handel_0
+		x = 76
+		y = 13
+		cost = 1
+		prerequisite = { focus = CIE_masc_waluta }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 55
+		}
+	}
+
+	focus = {
+		id = CIE_szara_reha
+		icon = GFX_pl2027_081_pomoc_0
+		x = 76
+		y = 14
+		cost = 1
+		prerequisite = { focus = CIE_kapcie }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_zapasy = 5 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = CIE_nfz_blagam
+		icon = GFX_pl2027_081_administracja_0
+		x = 76
+		y = 15
+		cost = 1
+		prerequisite = { focus = CIE_szara_reha }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = -3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = CIE_reforma_turnus
+		icon = GFX_pl2027_081_zwyciestwo_0_wmp_k
+		x = 76
+		y = 16
+		cost = 1
+		prerequisite = { focus = CIE_nfz_blagam }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_zapasy = 15 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+			add_ideas = CIE_gospodarka_turnusu
+		}
+	}
+
+	focus = {
+		id = CIE_linia
+		icon = GFX_pl2027_081_straz_1
+		x = 92
+		y = 7
+		cost = 1
+		prerequisite = { focus = CIE_kto_rzadzi }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_war_support = 0.02
+		}
+	}
+
+	focus = {
+		id = CIE_kijki
+		icon = GFX_pl2027_081_obrona_terytorialna_0_wmp
+		x = 92
+		y = 8
+		cost = 1
+		prerequisite = { focus = CIE_linia }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 1 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			army_experience = 5
+		}
+	}
+
+	focus = {
+		id = CIE_grazyna_skrot
+		icon = GFX_pl2027_081_obrona_terytorialna_0_wmp
+		x = 92
+		y = 9
+		cost = 1
+		prerequisite = { focus = CIE_kijki }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			army_experience = 8
+		}
+	}
+
+	focus = {
+		id = CIE_nordic
+		icon = GFX_pl2027_081_obrona_terytorialna_0_wmp
+		x = 92
+		y = 10
+		cost = 1
+		prerequisite = { focus = CIE_grazyna_skrot }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = CIE_nordic
+			add_manpower = 80
+			if = { limit = { NOT = { has_template = "Batalion Nordic Walking" } } division_template = { name = "Batalion Nordic Walking" regiments = { infantry = { x = 0 y = 0 } } } }
+			capital_scope = { create_unit = { division = "division_template = \"Batalion Nordic Walking\" start_experience_factor = 0.1" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = CIE_lezaki
+		icon = GFX_pl2027_081_straz_1
+		x = 92
+		y = 11
+		cost = 1
+		prerequisite = { focus = CIE_nordic }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = CIE_zajety
+		icon = GFX_pl2027_081_porzadek_1
+		x = 92
+		y = 12
+		cost = 1
+		prerequisite = { focus = CIE_lezaki }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = CIE_cisza
+		icon = GFX_pl2027_081_straz_1
+		x = 92
+		y = 13
+		cost = 1
+		prerequisite = { focus = CIE_zajety }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = CIE_grzybek
+		icon = GFX_pl2027_081_zwyciestwo_0_wmp_k
+		x = 92
+		y = 14
+		cost = 1
+		prerequisite = { focus = CIE_cisza }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = CIE_obrona_grzybka
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = CIE_aleksandrow_telefon
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 108
+		y = 7
+		cost = 1
+		prerequisite = { focus = CIE_kto_rzadzi }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = CIE_wodzirej_zada
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 108
+		y = 8
+		cost = 1
+		prerequisite = { focus = CIE_aleksandrow_telefon }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 3 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_ino_kuracjusze
+		icon = GFX_pl2027_081_bunt_3
+		x = 108
+		y = 9
+		cost = 1
+		prerequisite = { focus = CIE_wodzirej_zada }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = -2 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = CIE_embargo_woda
+		icon = GFX_pl2027_081_handel_0
+		x = 108
+		y = 10
+		cost = 1
+		prerequisite = { focus = CIE_ino_kuracjusze }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_masc = 8 }
+			clamp_variable = { var = CIE_masc min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = CIE_turnusy_wojna
+		icon = GFX_pl2027_081_pieniadze_0
+		x = 108
+		y = 11
+		cost = 1
+		prerequisite = { focus = CIE_embargo_woda }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_zapasy = 5 }
+			clamp_variable = { var = CIE_zapasy min = 0 max = 100 }
+			add_political_power = 30
+		}
+	}
+
+	focus = {
+		id = CIE_pakt_uzdrowisk
+		icon = GFX_pl2027_081_sojusz_1_wmp
+		x = 108
+		y = 12
+		cost = 1
+		prerequisite = { focus = CIE_turnusy_wojna }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 5 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_ideas = CIE_pakt_uzdrowisk
+		}
+	}
+
+	focus = {
+		id = CIE_festiwal
+		icon = GFX_pl2027_081_zwyciestwo_0_wmp_k
+		x = 108
+		y = 13
+		cost = 1
+		prerequisite = { focus = CIE_pakt_uzdrowisk }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { CIE_humor = 8 }
+			clamp_variable = { var = CIE_humor min = 0 max = 100 }
+			add_to_variable = { CIE_fajfy = 2 }
+			add_political_power = 40
+		}
+	}
+
+}

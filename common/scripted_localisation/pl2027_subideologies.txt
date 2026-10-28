@@ -241,6 +241,13 @@ defined_text = {
         }
         localization_key = autocrat
     }
+
+    text = {
+        trigger = { 
+            has_country_leader_ideology = satanism
+        }
+        localization_key = satanism
+    }
     text = {
         trigger = { 
             has_country_leader_ideology = absolute_monarchist

@@ -220,6 +220,17 @@ ideologies = {
 					78
 				}
 			}
+			koalicja_obywatelska = {
+				can_be_randomly_selected = no
+				color = {
+					255
+					120
+					20
+				}
+			}
+			social_liberalism = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"PL2027_FACTION_SOCIAL_LIBERAL_1"
@@ -319,6 +330,23 @@ ideologies = {
 					204
 				}
 			}
+			prawo_i_sprawiedliwosc = {
+				can_be_randomly_selected = no
+				color = {
+					20
+					50
+					140
+				}
+			}
+			christian_conservatism = {
+				can_be_randomly_selected = no
+			}
+			patronage_populism = {
+				can_be_randomly_selected = no
+			}
+			managerial_conservatism = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"PL2027_FACTION_CONSERVATIVE_1"
@@ -387,6 +415,28 @@ ideologies = {
 			corporatism = {
 				
 			}
+			koalicja_obywatelska_rada = {
+				can_be_randomly_selected = no
+				color = {
+					255
+					120
+					20
+				}
+			}
+			prawo_i_sprawiedliwosc_rada = {
+				can_be_randomly_selected = no
+				color = {
+					20
+					50
+					140
+				}
+			}
+			streamocracy = {
+				can_be_randomly_selected = no
+			}
+			authoritarian_democracy = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"PL2027_FACTION_AUTHORITARIAN_DEMOCRAT_1"
@@ -422,6 +472,14 @@ ideologies = {
 			theocracy = {
 			}
 			cyberocracy = {
+			}
+			satanism = {
+				can_be_randomly_selected = no
+				color = {
+					150
+					0
+					0
+				}
 			}
 		}
 		dynamic_faction_names = {

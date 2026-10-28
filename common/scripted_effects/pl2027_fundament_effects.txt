@@ -1,0 +1,9 @@
+PL2027_fundament_awans = {
+	custom_effect_tooltip = PL2027_tt_fundament
+	hidden_effect = {
+		if = { limit = { has_idea = PL2027_fundament_3 } swap_ideas = { remove_idea = PL2027_fundament_3 add_idea = PL2027_fundament_4 } }
+		else_if = { limit = { has_idea = PL2027_fundament_2 } swap_ideas = { remove_idea = PL2027_fundament_2 add_idea = PL2027_fundament_3 } }
+		else_if = { limit = { has_idea = PL2027_fundament_1 } swap_ideas = { remove_idea = PL2027_fundament_1 add_idea = PL2027_fundament_2 } }
+		else_if = { limit = { NOT = { has_idea = PL2027_fundament_4 } } add_ideas = PL2027_fundament_1 }
+	}
+}

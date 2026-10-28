@@ -34,21 +34,18 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1
 }
-set_politics = {
-	ruling_party = social_liberal
-	last_election = "2027.10.10"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	communist = 3
-	libertarian_socialist = 3
-	social_democrat = 9
-	market_liberal = 6
-	conservative = 13
-	authoritarian_democrat = 13
-	nationalist = 6
-	fascist = 3
-	social_liberal = 44
-}
+
 recruit_character = WLM_leader
+
+set_politics = {
+    ruling_party = nationalist
+    last_election = "2027.10.10"
+    election_frequency = 48
+    elections_allowed = no
+}
+
+set_popularities = {
+    nationalist = 100
+}
+
+

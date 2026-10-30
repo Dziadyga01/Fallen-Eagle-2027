@@ -20,3 +20,5 @@ replace_path="common/ai_equipment"
 replace_path="common/ai_templates"
 replace_path="events"
 replace_path="gfx/loadingscreens"
+replace_path="common/scripted_localization"
+

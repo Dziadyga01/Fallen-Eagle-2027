@@ -1,0 +1,19 @@
+add_namespace = gdp
+
+country_event = {
+	id = gdp.10
+	title = gdp.10.t
+	desc = gdp.10.d
+	picture = GFX_pl2027_ev081_gospodarka_4
+	is_triggered_only = yes
+	option = {
+		name = gdp.10.a
+		ai_chance = { base = 2 }
+		add_political_power = -40 add_to_variable = { GDY_port = 15 } clamp_variable = { var = GDY_port min = 0 max = 100 }
+	}
+	option = {
+		name = gdp.10.b
+		ai_chance = { base = 1 }
+		add_stability = -0.04
+	}
+}

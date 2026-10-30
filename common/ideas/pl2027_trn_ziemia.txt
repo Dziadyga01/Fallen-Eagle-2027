@@ -1,0 +1,10 @@
+ideas = {
+	country = {
+		TRN_idea_ziemia = {
+			picture = DU_TFE_dotacje
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.10 production_speed_buildings_factor = 0.10 }
+		}
+	}
+}

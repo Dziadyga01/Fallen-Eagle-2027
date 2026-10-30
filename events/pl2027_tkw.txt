@@ -76,7 +76,7 @@ country_event = {
 	option = {
 		name = tkw.11.a
 		ai_chance = { factor = 2 modifier = { factor = 0 has_war = yes } modifier = { factor = 0.3 has_country_flag = TRN_walka_o_wladze } }
-		give_guarantee = FROM
+		if = { limit = { FROM = { PL2027_ideologia_jak_PREV = yes } } give_guarantee = FROM }
 	}
 	option = {
 		name = tkw.11.b

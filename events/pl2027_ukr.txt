@@ -1,0 +1,86 @@
+add_namespace = ukr
+
+country_event = {
+	id = ukr.1
+	title = ukr.1.t
+	desc = ukr.1.d
+	picture = GFX_pl2027_ev081_front_ros_1
+	is_triggered_only = yes
+	option = {
+		name = ukr.1.a
+		ai_chance = { base = 1 }
+		load_focus_tree = { tree = ROS_ukraina_tree keep_completed = yes } if = { limit = { NOT = { has_variable = ROS_front_ua } } set_variable = { ROS_front_ua = 45 } }
+	}
+}
+
+country_event = {
+	id = ukr.2
+	title = ukr.2.t
+	desc = ukr.2.d
+	picture = GFX_pl2027_ev081_front_ros_3
+	is_triggered_only = yes
+	option = {
+		name = ukr.2.a
+		ai_chance = { base = 3 }
+		add_to_variable = { ROS_front_ua = 8 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_manpower = -15000 add_war_support = 0.02
+	}
+	option = {
+		name = ukr.2.b
+		ai_chance = { base = 3 }
+		add_to_variable = { ROS_front_ua = 4 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_manpower = -5000
+	}
+}
+
+country_event = {
+	id = ukr.3
+	title = ukr.3.t
+	desc = ukr.3.d
+	picture = GFX_pl2027_ev081_front_ros_4
+	is_triggered_only = yes
+	option = {
+		name = ukr.3.a
+		ai_chance = { base = 3 }
+		add_to_variable = { ROS_front_ua = 4 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_manpower = -20000
+	}
+	option = {
+		name = ukr.3.b
+		ai_chance = { base = 2 }
+		add_to_variable = { ROS_front_ua = -3 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = ukr.4
+	title = ukr.4.t
+	desc = ukr.4.d
+	picture = GFX_pl2027_ev081_dyplomacja_3
+	is_triggered_only = yes
+	option = {
+		name = ukr.4.a
+		ai_chance = { base = 3 }
+		set_country_flag = ROS_ua_rozmowy_twarde add_to_variable = { ROS_front_ua = 2 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 }
+	}
+	option = {
+		name = ukr.4.b
+		ai_chance = { base = 2 }
+		set_country_flag = ROS_ua_rozmowy_ustepstwa add_stability = 0.03
+	}
+	option = {
+		name = ukr.4.c
+		ai_chance = { base = 1 }
+		add_to_variable = { ROS_front_ua = 1 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_war_support = 0.03
+	}
+}
+
+news_event = {
+	id = ukr.10
+	title = ukr.10.t
+	desc = ukr.10.d
+	picture = GFX_pl2027_ev081_rosja_0_news
+	is_triggered_only = yes
+	option = {
+		name = ukr.10.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}

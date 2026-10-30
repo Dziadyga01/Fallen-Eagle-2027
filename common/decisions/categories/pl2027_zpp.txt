@@ -1,6 +1,60 @@
-ZPP_frakcje = {
+PRW_frakcje = {
 	icon = generic_political_discourse
 	allowed = { original_tag = PRW }
-	visible = { NOT = { has_country_flag = ZPP_kongres_rozstrzygniety } check_variable = { ZPP_masl > -1 } }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
 	priority = 88
+}
+PRW_kongres_kat = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = PRW_kampania_kongresowa NOT = { has_country_flag = PRW_kongres_rozstrzygniety } }
+	priority = 87
+}
+PRW_obietnice_kat = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { has_country_flag = PRW_kongres_rozstrzygniety OR = { AND = { has_country_flag = PRW_ob_uklad NOT = { has_country_flag = PRW_ob_uklad_ok } } AND = { has_country_flag = PRW_ob_struktury NOT = { has_country_flag = PRW_ob_struktury_ok } } AND = { has_country_flag = PRW_ob_kontrakty NOT = { has_country_flag = PRW_ob_kontrakty_ok } } AND = { has_country_flag = PRW_ob_rozliczenia NOT = { has_country_flag = PRW_ob_rozliczenia_ok } } AND = { has_country_flag = PRW_ob_media NOT = { has_country_flag = PRW_ob_media_ok } } AND = { has_country_flag = PRW_ob_pamiec NOT = { has_country_flag = PRW_ob_pamiec_ok } } AND = { has_country_flag = PRW_nom_czarnek NOT = { has_country_flag = PRW_nom_czarnek_ok } } AND = { has_country_flag = PRW_nom_morawiecki NOT = { has_country_flag = PRW_nom_morawiecki_ok } } AND = { has_country_flag = PRW_nom_ziobro NOT = { has_country_flag = PRW_nom_ziobro_ok } } AND = { has_country_flag = PRW_nom_kurski NOT = { has_country_flag = PRW_nom_kurski_ok } } AND = { has_country_flag = PRW_nom_macierewicz NOT = { has_country_flag = PRW_nom_macierewicz_ok } } AND = { has_country_flag = PRW_nom_kot NOT = { has_country_flag = PRW_nom_kot_ok } } } }
+	priority = 86
+}
+PRW_cz_kat = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { has_country_flag = PRW_lider_czarnek has_country_flag = PRW_kongres_rozstrzygniety }
+	priority = 85
+}
+PRW_mo_kat = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { has_country_flag = PRW_lider_morawiecki has_country_flag = PRW_kongres_rozstrzygniety }
+	priority = 85
+}
+PRW_zi_kat = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { has_country_flag = PRW_lider_ziobro has_country_flag = PRW_kongres_rozstrzygniety }
+	priority = 85
+}
+PRW_ku_kat = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { has_country_flag = PRW_lider_kurski has_country_flag = PRW_kongres_rozstrzygniety }
+	priority = 85
+}
+PRW_ma_kat = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { has_country_flag = PRW_lider_macierewicz has_country_flag = PRW_kongres_rozstrzygniety }
+	priority = 85
+}
+PRW_kt_kat = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { has_country_flag = PRW_lider_kot has_country_flag = PRW_kongres_rozstrzygniety }
+	priority = 85
+}
+PRW_reg_kat = {
+	icon = generic_political_discourse
+	allowed = { original_tag = PRW }
+	visible = { OR = { has_country_flag = PRW_reg_odm_pdl has_country_flag = PRW_reg_odm_rad has_country_flag = PRW_reg_odm_ptk } }
+	priority = 70
 }

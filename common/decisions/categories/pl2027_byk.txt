@@ -1,0 +1,6 @@
+BYK_kampania = {
+	icon = generic_political_rally
+	allowed = { original_tag = BYD }
+	visible = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } }
+	priority = 90
+}

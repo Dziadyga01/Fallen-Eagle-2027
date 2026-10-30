@@ -1,0 +1,29 @@
+LIT_panel = {
+	LIT_dec_patrole = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { original_tag = LIT }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { LIT_przesmyk = 8 } clamp_variable = { var = LIT_przesmyk min = 0 max = 100 } set_variable = { LIT_dm_a = LIT_przesmyk } divide_variable = { LIT_dm_a = 1000 } set_variable = { LIT_dm_b = LIT_przesmyk } subtract_from_variable = { LIT_dm_b = 50 } divide_variable = { LIT_dm_b = 1000 } }
+		ai_will_do = { base = 2 modifier = { factor = 4 check_variable = { LIT_przesmyk < 60 } } modifier = { factor = 3 check_variable = { LIT_przesmyk < 35 } } modifier = { factor = 0.2 check_variable = { LIT_przesmyk > 85 } } }
+	}
+	LIT_dec_cwiczenia = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = LIT }
+		available = { has_war = no }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { LIT_przesmyk = 12 } clamp_variable = { var = LIT_przesmyk min = 0 max = 100 } set_variable = { LIT_dm_a = LIT_przesmyk } divide_variable = { LIT_dm_a = 1000 } set_variable = { LIT_dm_b = LIT_przesmyk } subtract_from_variable = { LIT_dm_b = 50 } divide_variable = { LIT_dm_b = 1000 } army_experience = 5 }
+		ai_will_do = { base = 2 modifier = { factor = 3 check_variable = { LIT_przesmyk < 60 } } modifier = { factor = 0 check_variable = { LIT_przesmyk > 85 } } }
+	}
+	LIT_dec_umocnienia = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { original_tag = LIT }
+		available = { always = yes }
+		days_re_enable = 180
+		complete_effect = { add_to_variable = { LIT_przesmyk = 15 } clamp_variable = { var = LIT_przesmyk min = 0 max = 100 } set_variable = { LIT_dm_a = LIT_przesmyk } divide_variable = { LIT_dm_a = 1000 } set_variable = { LIT_dm_b = LIT_przesmyk } subtract_from_variable = { LIT_dm_b = 50 } divide_variable = { LIT_dm_b = 1000 } every_owned_state = { limit = { any_neighbor_state = { is_owned_by = ROS } } add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } } }
+		ai_will_do = { base = 1 modifier = { factor = 5 check_variable = { LIT_przesmyk < 35 } } modifier = { factor = 2 has_war = yes } }
+	}
+}

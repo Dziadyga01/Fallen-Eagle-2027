@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		WOS_idea_zie_siec = {
+			picture = DU_WWD_wolna_dzielnica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { consumer_goods_factor = -0.04 stability_factor = 0.04 }
+		}
+		WOS_idea_zie_ekokomuna = {
+			picture = DU_WWD_wolna_dzielnica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.1 war_support_factor = -0.1 consumer_goods_factor = -0.05 political_power_gain = -0.05 }
+		}
+		WOS_idea_zie_federacja = {
+			picture = DU_WWD_wolna_dzielnica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 production_speed_buildings_factor = 0.05 }
+		}
+	}
+}

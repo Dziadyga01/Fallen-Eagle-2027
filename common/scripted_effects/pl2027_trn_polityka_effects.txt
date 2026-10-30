@@ -44,7 +44,7 @@ TRN_kolejnosc = {
 	set_variable = { TRN_przewaga = TRN_max1 }
 	subtract_from_variable = { TRN_przewaga = TRN_max2 }
 }
-TRN_przelicz = {
+TRN_przelicz_polityka = {
 	clamp_variable = { var = TRN_frak_gul min = 0 max = 100 }
 	clamp_variable = { var = TRN_frak_zal min = 0 max = 100 }
 	clamp_variable = { var = TRN_frak_rom min = 0 max = 100 }
@@ -281,4 +281,10 @@ TRN_test_raport = {
 	log = "[GetDateText] TRN-TEST wplywy: gul=[?TRN_frak_gul] zal=[?TRN_frak_zal] rom=[?TRN_frak_rom] kow=[?TRN_frak_kow] ela=[?TRN_frak_ela] kre=[?TRN_frak_kre]"
 	log = "[GetDateText] TRN-TEST dzielnice: stare=[?TRN_dz_stare] chel=[?TRN_dz_chelminskie] rub=[?TRN_dz_rubinkowo] biel=[?TRN_dz_bielany] byd=[?TRN_dz_bydgoskie] skarpa=[?TRN_dz_skarpa]"
 	log = "[GetDateText] TRN-TEST faworyt=[?TRN_faworyt] pierwszy=[?TRN_pierwszy] drugi=[?TRN_drugi] przewaga=[?TRN_przewaga] rywal=[?TRN_rywal] lok=[?TRN_lok] dm_stab=[?TRN_dm_stab] dm_res=[?TRN_dm_res] dm_ws=[?TRN_dm_ws] dm_pp=[?TRN_dm_pp]"
+}
+
+# 0.9.20: wspólne przeliczenie obu systemów Torunia (wcześniej dwa efekty o tej samej nazwie)
+TRN_przelicz = {
+	TRN_przelicz_form = yes
+	TRN_przelicz_polityka = yes
 }

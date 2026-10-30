@@ -1,0 +1,94 @@
+add_namespace = fkp
+
+country_event = {
+	id = fkp.1
+	title = fkp.1.t
+	desc = fkp.1.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	option = {
+		name = fkp.1.a
+		ai_chance = { base = 2 modifier = { factor = 3 FROM = { OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 2 } } } modifier = { factor = 2 num_of_controlled_states < 4 } modifier = { factor = 0.3 is_subject = no num_of_controlled_states > 12 } }
+		set_country_flag = FKP_czlonek FROM = { add_to_variable = { FKP_czlonkowie = 1 } } add_political_power = 25
+	}
+	option = {
+		name = fkp.1.b
+		ai_chance = { base = 2 }
+		set_country_flag = FKP_odmowa FROM = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } }
+	}
+}
+
+country_event = {
+	id = fkp.2
+	title = fkp.2.t
+	desc = fkp.2.d
+	picture = GFX_pl2027_ev081_polityka_0
+	is_triggered_only = yes
+	option = {
+		name = fkp.2.a
+		ai_chance = { base = 2 modifier = { factor = 3 FROM = { OR = { has_government = libertarian_socialist has_government = communist has_government = totalitarian_socialist } } OR = { has_government = libertarian_socialist has_government = communist has_government = totalitarian_socialist } } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 2 } } } modifier = { factor = 2 num_of_controlled_states < 4 } modifier = { factor = 0.3 is_subject = no num_of_controlled_states > 12 } }
+		set_country_flag = FKP_czlonek FROM = { add_to_variable = { FKP_czlonkowie = 1 } } add_political_power = 25
+	}
+	option = {
+		name = fkp.2.b
+		ai_chance = { base = 2 }
+		set_country_flag = FKP_odmowa FROM = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } }
+	}
+}
+
+country_event = {
+	id = fkp.3
+	title = fkp.3.t
+	desc = fkp.3.d
+	picture = GFX_pl2027_ev081_granica_2
+	is_triggered_only = yes
+	option = {
+		name = fkp.3.a
+		ai_chance = { base = 2 modifier = { factor = 3 FROM = { OR = { has_government = authoritarian_democrat has_government = nationalist has_government = fascist } } OR = { has_government = authoritarian_democrat has_government = nationalist has_government = fascist } } modifier = { factor = 4 FROM = { strength_ratio = { tag = ROOT ratio > 2 } } } modifier = { factor = 2 num_of_controlled_states < 4 } modifier = { factor = 0.3 is_subject = no num_of_controlled_states > 12 } }
+		set_country_flag = FKP_czlonek FROM = { add_to_variable = { FKP_czlonkowie = 1 } } add_political_power = 25
+	}
+	option = {
+		name = fkp.3.b
+		ai_chance = { base = 3 }
+		set_country_flag = FKP_odmowa FROM = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } }
+	}
+}
+
+country_event = {
+	id = fkp.10
+	title = fkp.10.t
+	desc = fkp.10.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = fkp.10.a
+		ai_chance = { base = 1 }
+		every_country = { limit = { has_country_flag = FKP_czlonek exists = yes NOT = { tag = ROOT } NOT = { has_war_with = ROOT } } ROOT = { annex_country = { target = PREV transfer_troops = yes } } } every_state = { limit = { has_state_flag = UNI_reg_kujpom is_owned_by = ROOT } add_core_of = ROOT } if = { limit = { original_tag = TRN has_country_flag = FKP_forma_lew OR = { has_government = communist has_government = totalitarian_socialist } } set_cosmetic_tag = TRN_KOMUNY add_ideas = FKP_idea_lew } else_if = { limit = { always = no } } else_if = { limit = { original_tag = TRN has_country_flag = FKP_forma_dem } set_cosmetic_tag = TRN_FKP add_ideas = FKP_idea_dem } else_if = { limit = { original_tag = TRN has_country_flag = FKP_forma_lew } set_cosmetic_tag = TRN_ZKP_ANA add_ideas = FKP_idea_lew } else_if = { limit = { original_tag = TRN has_country_flag = FKP_forma_aut } set_cosmetic_tag = TRN_ZKP_NAC add_ideas = FKP_idea_aut } else_if = { limit = { original_tag = BYD has_country_flag = FKP_forma_dem } set_cosmetic_tag = BYD_NRKP add_ideas = FKP_idea_dem } else_if = { limit = { original_tag = BYD has_country_flag = FKP_forma_lew } set_cosmetic_tag = BYD_ZWM add_ideas = FKP_idea_lew } else_if = { limit = { original_tag = BYD has_country_flag = FKP_forma_aut } set_cosmetic_tag = BYD_KOW add_ideas = FKP_idea_aut }  set_global_flag = FKP_utworzona set_global_flag = UNI_kujpom_zawarta clr_global_flag = FKP_kongres set_country_flag = FKP_zalozyciel add_stability = 0.03 news_event = { id = fkp.20 days = 1 }
+	}
+}
+
+country_event = {
+	id = fkp.11
+	title = fkp.11.t
+	desc = fkp.11.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = fkp.11.a
+		ai_chance = { base = 1 }
+		every_country = { limit = { has_country_flag = FKP_czlonek exists = yes NOT = { tag = ROOT } NOT = { has_war_with = ROOT } } ROOT = { annex_country = { target = PREV transfer_troops = yes } } } every_state = { limit = { has_state_flag = UNI_reg_kujpom is_owned_by = ROOT } add_core_of = ROOT } add_political_power = 20
+	}
+}
+
+news_event = {
+	id = fkp.20
+	title = fkp.20.t
+	desc = fkp.20.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = fkp.20.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}

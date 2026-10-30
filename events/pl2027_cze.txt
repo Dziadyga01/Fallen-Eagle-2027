@@ -1,0 +1,45 @@
+add_namespace = cze
+
+country_event = {
+	id = cze.10
+	title = cze.10.t
+	desc = cze.10.d
+	picture = GFX_pl2027_ev081_granica_4
+	is_triggered_only = yes
+	option = {
+		name = cze.10.a
+		ai_chance = { base = 2 }
+		army_experience = 5 add_political_power = -40 add_to_variable = { CZE_pogr = 12 } clamp_variable = { var = CZE_pogr min = 0 max = 100 } set_variable = { CZE_dm_a = CZE_pogr } subtract_from_variable = { CZE_dm_a = 50 } divide_variable = { CZE_dm_a = 800 } set_variable = { CZE_dm_b = CZE_pogr } subtract_from_variable = { CZE_dm_b = 50 } divide_variable = { CZE_dm_b = -2000 }
+	}
+	option = {
+		name = cze.10.b
+		ai_chance = { base = 1 }
+		add_stability = -0.03 add_to_variable = { CZE_pogr = 6 } clamp_variable = { var = CZE_pogr min = 0 max = 100 } set_variable = { CZE_dm_a = CZE_pogr } subtract_from_variable = { CZE_dm_a = 50 } divide_variable = { CZE_dm_a = 800 } set_variable = { CZE_dm_b = CZE_pogr } subtract_from_variable = { CZE_dm_b = 50 } divide_variable = { CZE_dm_b = -2000 }
+	}
+}
+
+news_event = {
+	id = cze.30
+	title = cze.30.t
+	desc = cze.30.d
+	picture = GFX_pl2027_ev081_granica_1_news
+	is_triggered_only = yes
+	option = {
+		name = cze.30.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}
+
+news_event = {
+	id = cze.31
+	title = cze.31.t
+	desc = cze.31.d
+	picture = GFX_pl2027_ev081_dyplomacja_4_news
+	is_triggered_only = yes
+	option = {
+		name = cze.31.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}

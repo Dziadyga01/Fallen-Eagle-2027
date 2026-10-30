@@ -1,0 +1,334 @@
+ideas = {
+	country = {
+		ROS_idea_putin_1 = {
+			picture = DU_ROS_zaplecze_imperium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_industrial_complex_factor = 0.15 consumer_goods_factor = -0.03 }
+		}
+		ROS_idea_putin_2 = {
+			picture = DU_ROS_zaklocanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.08 drift_defence_factor = 0.1 }
+		}
+		ROS_idea_putin_3 = {
+			picture = DU_ROS_putin_umocniony
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+		}
+		ROS_idea_mazury_1 = {
+			picture = DU_ROS_planowanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.08 production_factory_max_efficiency_factor = 0.05 }
+		}
+		ROS_idea_mazury_2 = {
+			picture = DU_ROS_zaklocanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+		}
+		ROS_idea_mazury_3 = {
+			picture = DU_ROS_administracja_mazur
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.08 drift_defence_factor = 0.1 }
+		}
+		ROS_idea_kryzys_1 = {
+			picture = DU_ROS_kryzys_elit
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 }
+		}
+		ROS_idea_kryzys_2 = {
+			picture = DU_ROS_kryzys_rzadowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+		}
+		ROS_idea_kryzys_3 = {
+			picture = DU_ROS_chaos_sztab
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_org_factor = 0.05 experience_gain_army_factor = 0.1 }
+		}
+		ROS_idea_poklonska_1 = {
+			picture = DU_ROS_nowa_demokracja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 }
+		}
+		ROS_idea_poklonska_2 = {
+			picture = DU_ROS_administracja_kryzysowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.1 research_speed_factor = 0.03 }
+		}
+		ROS_idea_poklonska_3 = {
+			picture = DU_ROS_obrona_pozycji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_attack_factor = 0.05 conscription = 0.005 }
+		}
+		ROS_idea_szojgu_1 = {
+			picture = DU_ROS_szo_junta
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+		}
+		ROS_idea_szojgu_2 = {
+			picture = DU_ROS_panstwo_koszary
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.1 research_speed_factor = 0.03 }
+		}
+		ROS_idea_szojgu_3 = {
+			picture = DU_ROS_stan_wyjatkowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 }
+		}
+		ROS_idea_wybory_1 = {
+			picture = DU_ROS_niepewna_przyszlosc
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+		}
+		ROS_idea_wybory_2 = {
+			picture = DU_ROS_nowa_demokracja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.08 drift_defence_factor = 0.1 }
+		}
+		ROS_idea_wybory_3 = {
+			picture = DU_ROS_administracja_kryzysowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+		}
+		ROS_idea_car_1 = {
+			picture = DU_ROS_jesien_patriarchy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+		}
+		ROS_idea_car_2 = {
+			picture = DU_ROS_drugie_imperium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.08 max_planning = 0.05 }
+		}
+		ROS_idea_car_3 = {
+			picture = DU_ROS_wieczna_rosja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.08 production_factory_max_efficiency_factor = 0.05 }
+		}
+		ROS_idea_mie_1 = {
+			picture = DU_ROS_mie_putinizm
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 }
+		}
+		ROS_idea_mie_2 = {
+			picture = DU_ROS_planowanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.1 research_speed_factor = 0.03 }
+		}
+		ROS_idea_mie_3 = {
+			picture = DU_ROS_koszty_wojny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.08 max_planning = 0.05 }
+		}
+		ROS_idea_szo_1 = {
+			picture = DU_ROS_szo_junta
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+		}
+		ROS_idea_szo_2 = {
+			picture = DU_ROS_panstwo_koszary
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_attack_factor = 0.05 conscription = 0.005 }
+		}
+		ROS_idea_szo_3 = {
+			picture = DU_ROS_ani_kroku
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 }
+		}
+		ROS_idea_cho_1 = {
+			picture = DU_ROS_cho_oligarchia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.1 research_speed_factor = 0.03 }
+		}
+		ROS_idea_cho_2 = {
+			picture = DU_ROS_planowanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 }
+		}
+		ROS_idea_cho_3 = {
+			picture = DU_ROS_przewaga_powietrzna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_attack_factor = 0.05 conscription = 0.005 }
+		}
+		ROS_idea_szl_1 = {
+			picture = DU_ROS_federacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.08 drift_defence_factor = 0.1 }
+		}
+		ROS_idea_szl_2 = {
+			picture = DU_ROS_szl_parlament
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.08 drift_defence_factor = 0.1 }
+		}
+		ROS_idea_szl_3 = {
+			picture = DU_ROS_nowa_demokracja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.1 research_speed_factor = 0.03 }
+		}
+		ROS_idea_naw_1 = {
+			picture = DU_ROS_naw_antykorupcja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.1 war_support_factor = 0.03 }
+		}
+		ROS_idea_naw_2 = {
+			picture = DU_ROS_nowa_demokracja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+		}
+		ROS_idea_naw_3 = {
+			picture = DU_ROS_obrona_pozycji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 }
+		}
+		ROS_idea_putin_future_1 = {
+			picture = DU_ROS_twierdza_krolewiec
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_industrial_complex_factor = 0.15 consumer_goods_factor = -0.03 }
+		}
+		ROS_idea_putin_future_2 = {
+			picture = DU_ROS_wieczna_rosja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.08 drift_defence_factor = 0.1 }
+		}
+		ROS_idea_putin_future_3 = {
+			picture = DU_ROS_przewaga_powietrzna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_arms_factory_factor = 0.1 industrial_capacity_factory = 0.05 }
+		}
+		ROS_idea_mie_future_1 = {
+			picture = DU_ROS_drugie_imperium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.08 drift_defence_factor = 0.1 }
+		}
+		ROS_idea_mie_future_2 = {
+			picture = DU_ROS_jesien_patriarchy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 }
+		}
+		ROS_idea_mie_future_3 = {
+			picture = DU_ROS_zaplecze_imperium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.1 research_speed_factor = 0.03 }
+		}
+		ROS_idea_szo_future_1 = {
+			picture = DU_ROS_szo_junta
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.08 drift_defence_factor = 0.1 }
+		}
+		ROS_idea_szo_future_2 = {
+			picture = DU_ROS_iskander
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.08 max_planning = 0.05 }
+		}
+		ROS_idea_szo_future_3 = {
+			picture = DU_ROS_panstwo_koszary
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.1 research_speed_factor = 0.03 }
+		}
+		ROS_idea_cho_future_1 = {
+			picture = DU_ROS_cho_oligarchia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.08 production_factory_max_efficiency_factor = 0.05 }
+		}
+		ROS_idea_cho_future_2 = {
+			picture = DU_ROS_planowanie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.05 }
+		}
+		ROS_idea_cho_future_3 = {
+			picture = DU_ROS_iskander
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { land_reinforce_rate = 0.02 army_morale_factor = 0.05 }
+		}
+		ROS_idea_szl_future_1 = {
+			picture = DU_ROS_federacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 }
+		}
+		ROS_idea_szl_future_2 = {
+			picture = DU_ROS_szl_parlament
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.08 production_factory_max_efficiency_factor = 0.05 }
+		}
+		ROS_idea_szl_future_3 = {
+			picture = DU_ROS_nowa_demokracja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 }
+		}
+		ROS_idea_naw_future_1 = {
+			picture = DU_ROS_nowa_demokracja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.08 drift_defence_factor = 0.1 }
+		}
+		ROS_idea_naw_future_2 = {
+			picture = DU_ROS_naw_antykorupcja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_industrial_complex_factor = 0.15 consumer_goods_factor = -0.03 }
+		}
+		ROS_idea_naw_future_3 = {
+			picture = DU_ROS_obrona_pozycji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.08 drift_defence_factor = 0.1 }
+		}
+		ROS_idea_opor_zdobyczy = {
+			picture = DU_ROS_zaplecze_imperium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = -0.05 required_garrison_factor = 0.25 war_support_factor = 0.03 }
+		}
+	}
+}

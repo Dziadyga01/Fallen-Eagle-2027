@@ -1,0 +1,6 @@
+GDS_panel = {
+	icon = generic_political_discourse
+	allowed = { always = yes }
+	visible = { original_tag = WMG NOT = { has_global_flag = PL2027_prolog } }
+	priority = 80
+}

@@ -13,6 +13,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1560 }
 	initial_show_position = { focus = BST_podlasie }
 
+
 	focus = {
 		id = BST_podlasie
 		icon = GFX_pl2027_tfr_portret_bst_leader
@@ -22,10 +23,10 @@ focus_tree = {
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 50 }
 		completion_reward = {
-			add_political_power = 40
-			add_stability = 0.02
+		add_political_power = 40
+		add_stability = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = BST_rada
@@ -36,9 +37,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 50 }
 		completion_reward = {
-			add_political_power = 50
+		add_political_power = 50
 		}
-	}
+			}
 
 	focus = {
 		id = BST_g_kryzys
@@ -49,10 +50,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 30 }
 		completion_reward = {
-			custom_effect_tooltip = BST_tt_pm5_d0 hidden_effect = { add_to_variable = { BST_presja = -5 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
-			custom_effect_tooltip = BST_tt_granica
+		custom_effect_tooltip = BST_tt_pm5_d0 hidden_effect = { add_to_variable = { BST_presja = -5 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
+		custom_effect_tooltip = BST_tt_granica
 		}
-	}
+			}
 
 	focus = {
 		id = BST_g_straz
@@ -63,11 +64,11 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			if = { limit = { NOT = { has_template = "Straż Graniczna Podlasia" } } division_template = { name = "Straż Graniczna Podlasia" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } support = { recon = { x = 0 y = 0 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Straż Graniczna Podlasia\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Straż Graniczna Podlasia\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Straż Graniczna Podlasia\" start_experience_factor = 0.3" owner = ROOT } }
-			custom_effect_tooltip = BST_tt_pm5_d0 hidden_effect = { add_to_variable = { BST_presja = -5 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
+		if = { limit = { NOT = { has_template = "Straż Graniczna Podlasia" } } division_template = { name = "Straż Graniczna Podlasia" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } } support = { recon = { x = 0 y = 0 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Straż Graniczna Podlasia\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Straż Graniczna Podlasia\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Straż Graniczna Podlasia\" start_experience_factor = 0.3" owner = ROOT } }
+		custom_effect_tooltip = BST_tt_pm5_d0 hidden_effect = { add_to_variable = { BST_presja = -5 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_g_zapora
@@ -78,10 +79,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			add_ideas = BST_zapora
-			custom_effect_tooltip = BST_tt_pm8_d0 hidden_effect = { add_to_variable = { BST_presja = -8 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
+		add_ideas = BST_zapora
+		custom_effect_tooltip = BST_tt_pm8_d0 hidden_effect = { add_to_variable = { BST_presja = -8 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_g_forty
@@ -92,10 +93,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			every_owned_state = { limit = { OR = { state = 792 state = 794 state = 791 state = 825 state = 827 state = 834 state = 836 state = 826 state = 782 state = 769 state = 772 state = 797 state = 1361 state = 1362 state = 1363 state = 1364 } } add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } }
-			add_war_support = 0.02
+		every_owned_state = { limit = { OR = { state = 792 state = 794 state = 791 state = 825 state = 827 state = 834 state = 836 state = 826 state = 782 state = 769 state = 772 state = 797 state = 1361 state = 1362 state = 1363 state = 1364 } } add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } }
+		add_war_support = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = BST_g_pomoc
@@ -106,10 +107,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_stability = 0.03
-			custom_effect_tooltip = BST_tt_p0_dm6 hidden_effect = { add_to_variable = { BST_destab = -6 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
+		add_stability = 0.03
+		custom_effect_tooltip = BST_tt_p0_dm6 hidden_effect = { add_to_variable = { BST_destab = -6 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_g_litwa
@@ -120,10 +121,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			if = { limit = { country_exists = LIT } LIT = { add_opinion_modifier = { target = ROOT modifier = TR2_wspolpraca } } }
-			custom_effect_tooltip = BST_tt_pm6_dm2 hidden_effect = { add_to_variable = { BST_presja = -6 } add_to_variable = { BST_destab = -2 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
+		if = { limit = { country_exists = LIT } LIT = { add_opinion_modifier = { target = ROOT modifier = TR2_wspolpraca } } }
+		custom_effect_tooltip = BST_tt_pm6_dm2 hidden_effect = { add_to_variable = { BST_presja = -6 } add_to_variable = { BST_destab = -2 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_g_siatki
@@ -134,10 +135,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			set_country_flag = BST_siatki
-			custom_effect_tooltip = BST_tt_pm15_dm5 hidden_effect = { add_to_variable = { BST_presja = -15 } add_to_variable = { BST_destab = -5 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
+		set_country_flag = BST_siatki
+		custom_effect_tooltip = BST_tt_pm15_dm5 hidden_effect = { add_to_variable = { BST_presja = -15 } add_to_variable = { BST_destab = -5 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_g_spokoj
@@ -148,10 +149,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_ideas = BST_spokojna_granica
-			custom_effect_tooltip = BST_tt_pm20_dm15 hidden_effect = { add_to_variable = { BST_presja = -20 } add_to_variable = { BST_destab = -15 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
+		add_ideas = BST_spokojna_granica
+		custom_effect_tooltip = BST_tt_pm20_dm15 hidden_effect = { add_to_variable = { BST_presja = -20 } add_to_variable = { BST_destab = -15 } clamp_variable = { var = BST_presja min = 0 max = 100 } clamp_variable = { var = BST_destab min = 0 max = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_droga
@@ -159,14 +160,14 @@ focus_tree = {
 		x = 5
 		y = 2
 		prerequisite = { focus = BST_rada }
-		cost = 5
 		mutually_exclusive = { focus = BST_m_droga }
+		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_ideas = BST_nizina_1
-			add_stability = 0.03
+		add_ideas = BST_nizina_1
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_urzedy
@@ -177,9 +178,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 50
+		add_political_power = 50
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_przemysl
@@ -190,9 +191,9 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_kolej
@@ -203,9 +204,9 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_rolnictwo
@@ -216,10 +217,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.03
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		add_stability = 0.03
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_armia
@@ -230,11 +231,11 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { NOT = { has_template = "Brygada Podlaska" } } division_template = { name = "Brygada Podlaska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Brygada Podlaska\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada Podlaska\" start_experience_factor = 0.3" owner = ROOT } }
-			add_manpower = 3000
+		if = { limit = { NOT = { has_template = "Brygada Podlaska" } } division_template = { name = "Brygada Podlaska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Brygada Podlaska\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada Podlaska\" start_experience_factor = 0.3" owner = ROOT } }
+		add_manpower = 3000
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_tozsamosc
@@ -245,11 +246,11 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			every_state = { limit = { is_owned_by = SUW } add_claim_by = ROOT }
-			every_state = { limit = { is_owned_by = NAR } add_claim_by = ROOT }
-			add_political_power = 30
+		every_state = { limit = { is_owned_by = SUW } add_claim_by = ROOT }
+		every_state = { limit = { is_owned_by = NAR } add_claim_by = ROOT }
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_suw_oferta
@@ -262,9 +263,9 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = SUW } SUW = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = SUW SUW = { is_subject = no } NOT = { has_war_with = SUW } } SUW = { country_event = { id = bst.70 days = 2 } } }
+		if = { limit = { country_exists = SUW SUW = { is_subject = no } NOT = { has_war_with = SUW } } SUW = { country_event = { id = bst.70 days = 2 } } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_nar_oferta
@@ -277,9 +278,9 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = NAR } NAR = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = NAR NAR = { is_subject = no } NOT = { has_war_with = NAR } } NAR = { country_event = { id = bst.70 days = 2 } } }
+		if = { limit = { country_exists = NAR NAR = { is_subject = no } NOT = { has_war_with = NAR } } NAR = { country_event = { id = bst.70 days = 2 } } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_suw_wojna
@@ -293,11 +294,11 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = SUW } SUW = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = SUW NOT = { has_war_with = SUW } NOT = { SUW = { is_subject_of = ROOT } } NOT = { is_in_faction_with = SUW } } create_wargoal = { type = annex_everything target = SUW } } else = { add_political_power = 40 }
+		if = { limit = { country_exists = SUW NOT = { has_war_with = SUW } NOT = { SUW = { is_subject_of = ROOT } } NOT = { is_in_faction_with = SUW } } create_wargoal = { type = annex_everything target = SUW } } else = { add_political_power = 40 }
 		 # PL2027_AI_ATAK
-			if = { limit = { is_ai = yes has_war = no country_exists = SUW NOT = { has_war_with = SUW } NOT = { is_in_faction_with = SUW } NOT = { SUW = { is_subject_of = ROOT } } NOT = { is_subject_of = SUW } NOT = { SUW = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = SUW type = annex_everything } } if = { limit = { is_ai = yes country_exists = SUW } add_ai_strategy = { type = conquer id = SUW value = 150 } add_ai_strategy = { type = antagonize id = SUW value = 100 } }
+		if = { limit = { is_ai = yes has_war = no country_exists = SUW NOT = { has_war_with = SUW } NOT = { is_in_faction_with = SUW } NOT = { SUW = { is_subject_of = ROOT } } NOT = { is_subject_of = SUW } NOT = { SUW = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = SUW type = annex_everything } } if = { limit = { is_ai = yes country_exists = SUW } add_ai_strategy = { type = conquer id = SUW value = 150 } add_ai_strategy = { type = antagonize id = SUW value = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_nar_wojna
@@ -311,11 +312,11 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = NAR } NAR = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = NAR NOT = { has_war_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = NAR } } create_wargoal = { type = annex_everything target = NAR } } else = { add_political_power = 40 }
+		if = { limit = { country_exists = NAR NOT = { has_war_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = NAR } } create_wargoal = { type = annex_everything target = NAR } } else = { add_political_power = 40 }
 		 # PL2027_AI_ATAK
-			if = { limit = { is_ai = yes has_war = no country_exists = NAR NOT = { has_war_with = NAR } NOT = { is_in_faction_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_subject_of = NAR } NOT = { NAR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = NAR type = annex_everything } } if = { limit = { is_ai = yes country_exists = NAR } add_ai_strategy = { type = conquer id = NAR value = 150 } add_ai_strategy = { type = antagonize id = NAR value = 100 } }
+		if = { limit = { is_ai = yes has_war = no country_exists = NAR NOT = { has_war_with = NAR } NOT = { is_in_faction_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_subject_of = NAR } NOT = { NAR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = NAR type = annex_everything } } if = { limit = { is_ai = yes country_exists = NAR } add_ai_strategy = { type = conquer id = NAR value = 150 } add_ai_strategy = { type = antagonize id = NAR value = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_integracja
@@ -326,11 +327,11 @@ focus_tree = {
 		cost = 10
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = SUW SUW = { is_subject_of = ROOT } } annex_country = { target = SUW transfer_troops = yes } } if = { limit = { country_exists = NAR NAR = { is_subject_of = ROOT } } annex_country = { target = NAR transfer_troops = yes } }
-			every_owned_state = { add_core_of = ROOT }
-			add_stability = 0.02
+		if = { limit = { country_exists = SUW SUW = { is_subject_of = ROOT } } annex_country = { target = SUW transfer_troops = yes } } if = { limit = { country_exists = NAR NAR = { is_subject_of = ROOT } } annex_country = { target = NAR transfer_troops = yes } }
+		every_owned_state = { add_core_of = ROOT }
+		add_stability = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = BST_k_nizina
@@ -342,13 +343,13 @@ focus_tree = {
 		available = { custom_trigger_tooltip = { tooltip = BST_req_nizina OR = { NOT = { country_exists = SUW } SUW = { is_subject_of = ROOT } 842 = { is_controlled_by = ROOT } } OR = { NOT = { country_exists = NAR } NAR = { is_subject_of = ROOT } 804 = { is_controlled_by = ROOT } } } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			set_cosmetic_tag = BST_NIZINA
-			if = { limit = { has_idea = BST_nizina_1 } remove_ideas = BST_nizina_1 } add_ideas = BST_nizina_2
-			add_political_power = 100
-			add_stability = 0.05
-			PL2027_fundament_awans = yes
+		set_cosmetic_tag = BST_NIZINA
+		if = { limit = { has_idea = BST_nizina_1 } remove_ideas = BST_nizina_1 } add_ideas = BST_nizina_2
+		add_political_power = 100
+		add_stability = 0.05
+		PL2027_fundament_awans = yes
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_droga
@@ -356,14 +357,14 @@ focus_tree = {
 		x = 10
 		y = 2
 		prerequisite = { focus = BST_rada }
-		cost = 1
 		mutually_exclusive = { focus = BST_k_droga }
+		cost = 1
 		ai_will_do = { factor = 3 }
 		completion_reward = {
-			country_event = { id = bst.50 days = 1 }
-			add_stability = -0.02
+		country_event = { id = bst.50 days = 1 }
+		add_stability = -0.02
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_kampania
@@ -374,9 +375,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_popularity = { ideology = authoritarian_democrat popularity = 0.1 }
+		add_popularity = { ideology = authoritarian_democrat popularity = 0.1 }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_wladza
@@ -387,10 +388,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			country_event = { id = bst.51 days = 1 }
-			add_ideas = BST_mleko_1
+		country_event = { id = bst.51 days = 1 }
+		add_ideas = BST_mleko_1
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_mleko
@@ -402,9 +403,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.04
+		add_stability = 0.04
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_mleczarnie
@@ -416,9 +417,9 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_porzadek
@@ -430,10 +431,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.03
-			add_political_power = 30
+		add_stability = 0.03
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_gwardia
@@ -444,11 +445,11 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { NOT = { has_template = "Gwardia Mleczna" } } division_template = { name = "Gwardia Mleczna" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } } support = { recon = { x = 0 y = 0 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Gwardia Mleczna\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Gwardia Mleczna\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Gwardia Mleczna\" start_experience_factor = 0.3" owner = ROOT } }
-			add_manpower = 4000
+		if = { limit = { NOT = { has_template = "Gwardia Mleczna" } } division_template = { name = "Gwardia Mleczna" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } } support = { recon = { x = 0 y = 0 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Gwardia Mleczna\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Gwardia Mleczna\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Gwardia Mleczna\" start_experience_factor = 0.3" owner = ROOT } }
+		add_manpower = 4000
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_cysterny
@@ -459,10 +460,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_equipment_to_stockpile = { type = motorized_equipment amount = 40 }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_equipment_to_stockpile = { type = motorized_equipment amount = 40 }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_mapa
@@ -473,13 +474,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			every_state = { limit = { is_owned_by = SUW } add_claim_by = ROOT }
-			every_state = { limit = { is_owned_by = NAR } add_claim_by = ROOT }
-			every_state = { limit = { is_owned_by = WMZ } add_claim_by = ROOT }
-			every_state = { limit = { is_owned_by = MAZ } add_claim_by = ROOT }
-			add_war_support = 0.05
+		every_state = { limit = { is_owned_by = SUW } add_claim_by = ROOT }
+		every_state = { limit = { is_owned_by = NAR } add_claim_by = ROOT }
+		every_state = { limit = { is_owned_by = WMZ } add_claim_by = ROOT }
+		every_state = { limit = { is_owned_by = MAZ } add_claim_by = ROOT }
+		add_war_support = 0.05
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_suwalki
@@ -493,11 +494,11 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = SUW } SUW = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = SUW NOT = { has_war_with = SUW } NOT = { SUW = { is_subject_of = ROOT } } NOT = { is_in_faction_with = SUW } } create_wargoal = { type = annex_everything target = SUW } } else = { add_political_power = 40 }
+		if = { limit = { country_exists = SUW NOT = { has_war_with = SUW } NOT = { SUW = { is_subject_of = ROOT } } NOT = { is_in_faction_with = SUW } } create_wargoal = { type = annex_everything target = SUW } } else = { add_political_power = 40 }
 		 # PL2027_AI_ATAK
-			if = { limit = { is_ai = yes has_war = no country_exists = SUW NOT = { has_war_with = SUW } NOT = { is_in_faction_with = SUW } NOT = { SUW = { is_subject_of = ROOT } } NOT = { is_subject_of = SUW } NOT = { SUW = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = SUW type = annex_everything } } if = { limit = { is_ai = yes country_exists = SUW } add_ai_strategy = { type = conquer id = SUW value = 150 } add_ai_strategy = { type = antagonize id = SUW value = 100 } }
+		if = { limit = { is_ai = yes has_war = no country_exists = SUW NOT = { has_war_with = SUW } NOT = { is_in_faction_with = SUW } NOT = { SUW = { is_subject_of = ROOT } } NOT = { is_subject_of = SUW } NOT = { SUW = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = SUW type = annex_everything } } if = { limit = { is_ai = yes country_exists = SUW } add_ai_strategy = { type = conquer id = SUW value = 150 } add_ai_strategy = { type = antagonize id = SUW value = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_lomza
@@ -511,11 +512,11 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = NAR } NAR = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = NAR NOT = { has_war_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = NAR } } create_wargoal = { type = annex_everything target = NAR } } else = { add_political_power = 40 }
+		if = { limit = { country_exists = NAR NOT = { has_war_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_in_faction_with = NAR } } create_wargoal = { type = annex_everything target = NAR } } else = { add_political_power = 40 }
 		 # PL2027_AI_ATAK
-			if = { limit = { is_ai = yes has_war = no country_exists = NAR NOT = { has_war_with = NAR } NOT = { is_in_faction_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_subject_of = NAR } NOT = { NAR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = NAR type = annex_everything } } if = { limit = { is_ai = yes country_exists = NAR } add_ai_strategy = { type = conquer id = NAR value = 150 } add_ai_strategy = { type = antagonize id = NAR value = 100 } }
+		if = { limit = { is_ai = yes has_war = no country_exists = NAR NOT = { has_war_with = NAR } NOT = { is_in_faction_with = NAR } NOT = { NAR = { is_subject_of = ROOT } } NOT = { is_subject_of = NAR } NOT = { NAR = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = NAR type = annex_everything } } if = { limit = { is_ai = yes country_exists = NAR } add_ai_strategy = { type = conquer id = NAR value = 150 } add_ai_strategy = { type = antagonize id = NAR value = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_mazury
@@ -529,11 +530,11 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = MAZ } MAZ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = MAZ NOT = { has_war_with = MAZ } NOT = { MAZ = { is_subject_of = ROOT } } NOT = { is_in_faction_with = MAZ } } create_wargoal = { type = annex_everything target = MAZ } } else = { add_political_power = 40 }
+		if = { limit = { country_exists = MAZ NOT = { has_war_with = MAZ } NOT = { MAZ = { is_subject_of = ROOT } } NOT = { is_in_faction_with = MAZ } } create_wargoal = { type = annex_everything target = MAZ } } else = { add_political_power = 40 }
 		 # PL2027_AI_ATAK
-			if = { limit = { is_ai = yes has_war = no country_exists = MAZ NOT = { has_war_with = MAZ } NOT = { is_in_faction_with = MAZ } NOT = { MAZ = { is_subject_of = ROOT } } NOT = { is_subject_of = MAZ } NOT = { MAZ = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = MAZ type = annex_everything } } if = { limit = { is_ai = yes country_exists = MAZ } add_ai_strategy = { type = conquer id = MAZ value = 150 } add_ai_strategy = { type = antagonize id = MAZ value = 100 } }
+		if = { limit = { is_ai = yes has_war = no country_exists = MAZ NOT = { has_war_with = MAZ } NOT = { is_in_faction_with = MAZ } NOT = { MAZ = { is_subject_of = ROOT } } NOT = { is_subject_of = MAZ } NOT = { MAZ = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = MAZ type = annex_everything } } if = { limit = { is_ai = yes country_exists = MAZ } add_ai_strategy = { type = conquer id = MAZ value = 150 } add_ai_strategy = { type = antagonize id = MAZ value = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_warmia
@@ -546,11 +547,11 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = WMZ } WMZ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = WMZ NOT = { has_war_with = WMZ } NOT = { WMZ = { is_subject_of = ROOT } } NOT = { is_in_faction_with = WMZ } } create_wargoal = { type = annex_everything target = WMZ } } else = { add_political_power = 40 }
+		if = { limit = { country_exists = WMZ NOT = { has_war_with = WMZ } NOT = { WMZ = { is_subject_of = ROOT } } NOT = { is_in_faction_with = WMZ } } create_wargoal = { type = annex_everything target = WMZ } } else = { add_political_power = 40 }
 		 # PL2027_AI_ATAK
-			if = { limit = { is_ai = yes has_war = no country_exists = WMZ NOT = { has_war_with = WMZ } NOT = { is_in_faction_with = WMZ } NOT = { WMZ = { is_subject_of = ROOT } } NOT = { is_subject_of = WMZ } NOT = { WMZ = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = WMZ type = annex_everything } } if = { limit = { is_ai = yes country_exists = WMZ } add_ai_strategy = { type = conquer id = WMZ value = 150 } add_ai_strategy = { type = antagonize id = WMZ value = 100 } }
+		if = { limit = { is_ai = yes has_war = no country_exists = WMZ NOT = { has_war_with = WMZ } NOT = { is_in_faction_with = WMZ } NOT = { WMZ = { is_subject_of = ROOT } } NOT = { is_subject_of = WMZ } NOT = { WMZ = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = WMZ type = annex_everything } } if = { limit = { is_ai = yes country_exists = WMZ } add_ai_strategy = { type = conquer id = WMZ value = 150 } add_ai_strategy = { type = antagonize id = WMZ value = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_integracja
@@ -561,11 +562,11 @@ focus_tree = {
 		cost = 10
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = SUW SUW = { is_subject_of = ROOT } } annex_country = { target = SUW transfer_troops = yes } } if = { limit = { country_exists = NAR NAR = { is_subject_of = ROOT } } annex_country = { target = NAR transfer_troops = yes } } if = { limit = { country_exists = MAZ MAZ = { is_subject_of = ROOT } } annex_country = { target = MAZ transfer_troops = yes } } if = { limit = { country_exists = WMZ WMZ = { is_subject_of = ROOT } } annex_country = { target = WMZ transfer_troops = yes } }
-			every_owned_state = { add_core_of = ROOT }
-			add_stability = 0.03
+		if = { limit = { country_exists = SUW SUW = { is_subject_of = ROOT } } annex_country = { target = SUW transfer_troops = yes } } if = { limit = { country_exists = NAR NAR = { is_subject_of = ROOT } } annex_country = { target = NAR transfer_troops = yes } } if = { limit = { country_exists = MAZ MAZ = { is_subject_of = ROOT } } annex_country = { target = MAZ transfer_troops = yes } } if = { limit = { country_exists = WMZ WMZ = { is_subject_of = ROOT } } annex_country = { target = WMZ transfer_troops = yes } }
+		every_owned_state = { add_core_of = ROOT }
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = BST_m_imperium
@@ -577,25 +578,25 @@ focus_tree = {
 		available = { custom_trigger_tooltip = { tooltip = BST_req_mleczne OR = { NOT = { country_exists = SUW } SUW = { is_subject_of = ROOT } 842 = { is_controlled_by = ROOT } } OR = { NOT = { country_exists = NAR } NAR = { is_subject_of = ROOT } 804 = { is_controlled_by = ROOT } } OR = { NOT = { country_exists = WMZ } WMZ = { is_subject_of = ROOT } 1124 = { is_controlled_by = ROOT } } OR = { NOT = { country_exists = MAZ } MAZ = { is_subject_of = ROOT } 1049 = { is_controlled_by = ROOT } } } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			set_cosmetic_tag = BST_MLECZNE
-			if = { limit = { has_idea = BST_mleko_1 } remove_ideas = BST_mleko_1 } add_ideas = BST_mleko_2
-			add_political_power = 100
-			add_stability = 0.05
+		set_cosmetic_tag = BST_MLECZNE
+		if = { limit = { has_idea = BST_mleko_1 } remove_ideas = BST_mleko_1 } add_ideas = BST_mleko_2
+		add_political_power = 100
+		add_stability = 0.05
 		}
-	}
+			}
 
 	focus = {
 		id = FAB_BST_wschod
 		icon = GFX_pl2027_081_administracja_1
 		x = 15
 		y = 2
-		prerequisite = { focus = BST_zy_s_ulica }
+		prerequisite = { focus = BST_podlasie }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 30
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = FAB_BST_granica
@@ -606,10 +607,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = FAB_BST_granica_idea
-			add_stability = 0.02
+		add_ideas = FAB_BST_granica_idea
+		add_stability = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = FAB_BST_pomoc
@@ -620,10 +621,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.04
-			add_political_power = -20
+		add_stability = 0.04
+		add_political_power = -20
 		}
-	}
+			}
 
 	focus = {
 		id = FAB_BST_magazyny
@@ -634,9 +635,9 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
 		}
-	}
+			}
 
 	focus = {
 		id = FAB_BST_ochotnicy
@@ -647,10 +648,10 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { NOT = { has_template = "Brygada Podlaska" } } division_template = { name = "Brygada Podlaska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Brygada Podlaska\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada Podlaska\" start_experience_factor = 0.3" owner = ROOT } }
+		if = { limit = { NOT = { has_template = "Brygada Podlaska" } } division_template = { name = "Brygada Podlaska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Brygada Podlaska\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada Podlaska\" start_experience_factor = 0.3" owner = ROOT } }
 		}
-	}
+			}
 
 	focus = {
 		id = FAB_BST_sojusz
@@ -658,15 +659,15 @@ focus_tree = {
 		x = 14
 		y = 5
 		prerequisite = { focus = FAB_BST_ochotnicy }
-		cost = 5
 		mutually_exclusive = { focus = FAB_BST_neutralnosc }
+		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = FAB_tt_1 any_country = { OR = { tag = WMZ tag = MAZ tag = SUW } has_war_with = ROS } } NOT = { has_war_with = ROS } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW } has_war_with = ROS } ROOT = { add_to_war = { targeted_alliance = PREV enemy = ROS } } PREV = { add_opinion_modifier = { target = ROOT modifier = FAB_pomoc_op } } }
-			add_war_support = 0.05
+		random_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW } has_war_with = ROS } ROOT = { add_to_war = { targeted_alliance = PREV enemy = ROS } } PREV = { add_opinion_modifier = { target = ROOT modifier = FAB_pomoc_op } } }
+		add_war_support = 0.05
 		}
-	}
+			}
 
 	focus = {
 		id = FAB_BST_front_polnocny
@@ -677,10 +678,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = FAB_BST_front
-			every_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW } } add_opinion_modifier = { target = ROOT modifier = FAB_pomoc_op } }
+		add_ideas = FAB_BST_front
+		every_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW } } add_opinion_modifier = { target = ROOT modifier = FAB_pomoc_op } }
 		}
-	}
+			}
 
 	focus = {
 		id = FAB_BST_neutralnosc
@@ -688,189 +689,189 @@ focus_tree = {
 		x = 16
 		y = 5
 		prerequisite = { focus = FAB_BST_ochotnicy }
-		cost = 5
 		mutually_exclusive = { focus = FAB_BST_sojusz }
+		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = FAB_BST_neutralny
-			add_stability = 0.04
+		add_ideas = FAB_BST_neutralny
+		add_stability = 0.04
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_start
 		icon = GFX_pl2027_081_sztab_1_bst
-		x = 37
+		x = 31
 		y = 1
 		prerequisite = { focus = BST_podlasie }
 		cost = 5
 		bypass = { has_country_flag = MIL_start }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_start
-			army_experience = 5
-			add_manpower = 1000
+		set_country_flag = MIL_start
+		army_experience = 5
+		add_manpower = 1000
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_bst
-		x = 33
+		x = 27
 		y = 2
 		prerequisite = { focus = BST_mil_start }
 		cost = 5
 		bypass = { has_country_flag = MIL_rejestr }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_rejestr
-			add_ideas = MIL_pobor_1
+		set_country_flag = MIL_rejestr
+		add_ideas = MIL_pobor_1
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_bst
-		x = 37
+		x = 31
 		y = 2
 		prerequisite = { focus = BST_mil_start }
 		cost = 5
 		bypass = { has_country_flag = MIL_ochotnicy }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_ochotnicy
-			add_manpower = 3000
+		set_country_flag = MIL_ochotnicy
+		add_manpower = 3000
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 41
+		x = 35
 		y = 2
 		prerequisite = { focus = BST_mil_start }
 		cost = 5
 		bypass = { has_country_flag = MIL_fabryka }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_fabryka
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		set_country_flag = MIL_fabryka
+		random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_bst
-		x = 32
+		x = 26
 		y = 3
 		prerequisite = { focus = BST_mil_rejestr }
 		cost = 5
 		bypass = { has_country_flag = MIL_pobor }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_pobor
-			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
+		set_country_flag = MIL_pobor
+		if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_bst
-		x = 36
+		x = 30
 		y = 3
 		prerequisite = { focus = BST_mil_ochotnicy }
 		cost = 7
 		bypass = { has_country_flag = MIL_bataliony }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_bataliony
-			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+		set_country_flag = MIL_bataliony
+		if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 40
+		x = 34
 		y = 3
 		prerequisite = { focus = BST_mil_fabryka }
 		cost = 6
 		bypass = { has_country_flag = MIL_produkcja }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_produkcja
-			add_timed_idea = { idea = MIL_produkcja days = 365 }
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 50 }
+		set_country_flag = MIL_produkcja
+		add_timed_idea = { idea = MIL_produkcja days = 365 }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 50 }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_bst
-		x = 34
+		x = 28
 		y = 3
 		prerequisite = { focus = BST_mil_rejestr }
 		cost = 5
 		bypass = { has_country_flag = MIL_rezerwisci }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_rezerwisci
-			add_manpower = 5000
+		set_country_flag = MIL_rezerwisci
+		add_manpower = 5000
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_bst
-		x = 38
+		x = 32
 		y = 3
 		prerequisite = { focus = BST_mil_ochotnicy }
 		cost = 7
 		bypass = { has_country_flag = MIL_brygady }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_brygady
-			if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 40 }
+		set_country_flag = MIL_brygady
+		if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 40 }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 42
+		x = 36
 		y = 3
 		prerequisite = { focus = BST_mil_fabryka }
 		cost = 5
 		bypass = { has_country_flag = MIL_zaplecze }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_zaplecze
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_ideas = MIL_zaopatrzenie
+		set_country_flag = MIL_zaplecze
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_ideas = MIL_zaopatrzenie
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_bst
-		x = 34
+		x = 28
 		y = 4
 		prerequisite = { focus = BST_mil_rezerwisci }
 		prerequisite = { focus = BST_mil_brygady }
@@ -879,18 +880,18 @@ focus_tree = {
 		cost = 5
 		bypass = { has_country_flag = MIL_kadra }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_kadra
-			army_experience = 25
-			add_ideas = MIL_kadra
+		set_country_flag = MIL_kadra
+		army_experience = 25
+		add_ideas = MIL_kadra
 		}
-	}
+			}
 
 	focus = {
 		id = BST_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_bst
-		x = 34
+		x = 28
 		y = 5
 		prerequisite = { focus = BST_mil_kadra }
 		prerequisite = { focus = BST_mil_zaplecze }
@@ -898,186 +899,32 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_zawodowa }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_zawodowa
-			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
-			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
-			add_manpower = 2000
+		set_country_flag = MIL_zawodowa
+		if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
+		capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+		add_manpower = 2000
 		}
-	}
-
-	focus = {
-		id = BST_zy_s_ulica
-		icon = GFX_pl2027_081_media_0
-		x = 23
-		y = 1
-		prerequisite = { focus = BST_podlasie }
-		cost = 1
-		bypass = { has_country_flag = TFR_zy_pl_s_ulica }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_ulica
-			country_event = { id = zycie.1 }
-		}
-	}
-
-	focus = {
-		id = BST_zy_s_media
-		icon = GFX_pl2027_081_media_1
-		x = 29
-		y = 2
-		prerequisite = { focus = BST_zy_s_ulica }
-		cost = 5
-		bypass = { has_country_flag = TFR_zy_pl_s_media }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_media
-			add_ideas = TFR_media
-		}
-	}
-
-	focus = {
-		id = BST_zy_s_spis
-		icon = GFX_pl2027_081_spis_0
-		x = 31
-		y = 2
-		prerequisite = { focus = BST_zy_s_ulica }
-		cost = 1
-		bypass = { has_country_flag = TFR_zy_pl_s_spis }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_spis
-			country_event = { id = zycie.3 }
-		}
-	}
-
-	focus = {
-		id = BST_zy_s_kartki
-		icon = GFX_pl2027_081_kartki_0_bst_k
-		x = 28
-		y = 3
-		prerequisite = { focus = BST_zy_s_media }
-		prerequisite = { focus = BST_zy_s_spis }
-		cost = 5
-		mutually_exclusive = { focus = BST_zy_s_rynek }
-		bypass = { has_country_flag = TFR_zy_pl_s_kartki }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_kartki
-			add_ideas = TFR_kartki
-		}
-	}
-
-	focus = {
-		id = BST_zy_s_rynek
-		icon = GFX_pl2027_081_handel_1_bst_k
-		x = 30
-		y = 3
-		prerequisite = { focus = BST_zy_s_media }
-		prerequisite = { focus = BST_zy_s_spis }
-		cost = 5
-		mutually_exclusive = { focus = BST_zy_s_kartki }
-		bypass = { has_country_flag = TFR_zy_pl_s_rynek }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_rynek
-			add_ideas = TFR_wolny_rynek
-		}
-	}
-
-	focus = {
-		id = BST_zy_s_szkoly
-		icon = GFX_pl2027_081_szkola_0
-		x = 26
-		y = 4
-		prerequisite = { focus = BST_zy_s_kartki focus = BST_zy_s_rynek }
-		cost = 5
-		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_szkoly
-			add_stability = 0.03
-			add_political_power = 25
-		}
-	}
-
-	focus = {
-		id = BST_zy_s_czarny
-		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 28
-		y = 4
-		prerequisite = { focus = BST_zy_s_kartki focus = BST_zy_s_rynek }
-		cost = 1
-		bypass = { has_country_flag = TFR_zy_pl_s_czarny }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_czarny
-			country_event = { id = zycie.2 }
-		}
-	}
-
-	focus = {
-		id = BST_zy_s_straze
-		icon = GFX_pl2027_081_straz_1
-		x = 30
-		y = 4
-		prerequisite = { focus = BST_zy_s_kartki focus = BST_zy_s_rynek }
-		cost = 5
-		bypass = { has_country_flag = TFR_zy_pl_s_straze }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_straze
-			add_manpower = 2500
-			add_stability = 0.02
-		}
-	}
-
-	focus = {
-		id = BST_zy_s_wspolnota
-		icon = GFX_pl2027_081_wspolnota_1
-		x = 26
-		y = 5
-		prerequisite = { focus = BST_zy_s_szkoly }
-		prerequisite = { focus = BST_zy_s_czarny }
-		prerequisite = { focus = BST_zy_s_straze }
-		cost = 7
-		bypass = { has_country_flag = TFR_zy_pl_s_wspolnota }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_wspolnota
-			if = { limit = { has_idea = TFR_kartki } remove_ideas = TFR_kartki }
-			if = { limit = { has_idea = TFR_wolny_rynek } remove_ideas = TFR_wolny_rynek }
-			add_ideas = TFR_spoleczenstwo
-		}
-	}
+			}
 
 	focus = {
 		id = BST_zy_k_admin
 		icon = GFX_pl2027_081_administracja_1
 		x = 20
 		y = 2
-		prerequisite = { focus = BST_zy_s_ulica }
+		prerequisite = { focus = BST_podlasie }
 		cost = 6
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
 		bypass = { has_country_flag = TFR_zy_k_k_admin }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_k_k_admin
-			add_political_power = 40
-			random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		set_country_flag = TFR_zy_k_k_admin
+		add_political_power = 40
+		random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_zy_k_defilada
@@ -1090,11 +937,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_k_k_defilada
-			add_war_support = 0.05
-			add_stability = 0.03
+		set_country_flag = TFR_zy_k_k_defilada
+		add_war_support = 0.05
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = BST_zy_k_opor
@@ -1107,10 +954,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_k_k_opor
-			country_event = { id = zycie.10 }
+		set_country_flag = TFR_zy_k_k_opor
+		country_event = { id = zycie.10 }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_zy_k_owoce
@@ -1124,28 +971,28 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_k_k_owoce
-			add_timed_idea = { idea = TFR_owoce days = 365 }
+		set_country_flag = TFR_zy_k_k_owoce
+		add_timed_idea = { idea = TFR_owoce days = 365 }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
 		x = 23
 		y = 2
-		prerequisite = { focus = BST_zy_s_ulica }
+		prerequisite = { focus = BST_podlasie }
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
 		bypass = { has_country_flag = TFR_zy_p_p_straty }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_straty
-			country_event = { id = zycie.11 }
-			add_manpower = 3000
+		set_country_flag = TFR_zy_p_p_straty
+		country_event = { id = zycie.11 }
+		add_manpower = 3000
 		}
-	}
+			}
 
 	focus = {
 		id = BST_zy_p_rzad
@@ -1158,11 +1005,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_rzad
-			add_stability = 0.05
-			add_political_power = 30
+		set_country_flag = TFR_zy_p_p_rzad
+		add_stability = 0.05
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = BST_zy_p_rewanz
@@ -1170,16 +1017,16 @@ focus_tree = {
 		x = 22
 		y = 4
 		prerequisite = { focus = BST_zy_p_rzad }
-		cost = 5
 		mutually_exclusive = { focus = BST_zy_p_pojednanie }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_rewanz
-			add_timed_idea = { idea = TFR_rewanz days = 730 }
+		set_country_flag = TFR_zy_p_p_rewanz
+		add_timed_idea = { idea = TFR_rewanz days = 730 }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_zy_p_pojednanie
@@ -1187,16 +1034,16 @@ focus_tree = {
 		x = 24
 		y = 4
 		prerequisite = { focus = BST_zy_p_rzad }
-		cost = 5
 		mutually_exclusive = { focus = BST_zy_p_rewanz }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_pojednanie
-			add_timed_idea = { idea = TFR_pojednanie days = 730 }
+		set_country_flag = TFR_zy_p_p_pojednanie
+		add_timed_idea = { idea = TFR_pojednanie days = 730 }
 		}
-	}
+			}
 
 	focus = {
 		id = BST_zy_p_odbudowa
@@ -1209,13 +1056,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_odbudowa
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
-			army_experience = 15
-			add_manpower = 5000
+		set_country_flag = TFR_zy_p_p_odbudowa
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 80 }
+		army_experience = 15
+		add_manpower = 5000
 		}
-	}
+			}
 
 	focus = {
 		id = BST_tree_gotowosc
@@ -1229,9 +1076,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		ai_will_do = { factor = 30 }
 		completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.05
-			army_experience = 10
+		add_political_power = 50
+		add_war_support = 0.05
+		army_experience = 10
 		}
-	}
+			}
 }

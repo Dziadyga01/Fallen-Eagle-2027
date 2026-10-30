@@ -3,6 +3,10 @@ state = {
 	name = "STATE_555"
 	manpower = 4342
 	state_category = rural
+	resources = {
+		aluminium = 1
+		rubber = 1
+	}
 	history = {
 		owner = NAR
 		add_core_of = NAR

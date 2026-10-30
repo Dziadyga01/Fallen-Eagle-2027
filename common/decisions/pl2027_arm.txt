@@ -1,0 +1,92 @@
+ARM_panel = {
+	ARM_pobor = {
+		icon = generic_army_support
+		cost = 25
+		visible = { NOT = { has_country_flag = ARM_etap_pobor } always = yes }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { add_manpower = 4000 set_country_flag = ARM_etap_pobor set_variable = { ARM_etap = 1 } }
+		ai_will_do = { factor = 20 }
+	}
+	ARM_kadry = {
+		icon = generic_army_support
+		cost = 35
+		visible = { NOT = { has_country_flag = ARM_etap_kadry } has_country_flag = ARM_etap_pobor }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { army_experience = 15 add_manpower = 1000 set_country_flag = ARM_etap_kadry set_variable = { ARM_etap = 2 } }
+		ai_will_do = { factor = 19 }
+	}
+	ARM_arsenal = {
+		icon = generic_army_support
+		cost = 45
+		visible = { NOT = { has_country_flag = ARM_etap_arsenal } has_country_flag = ARM_etap_kadry }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { add_equipment_to_stockpile = { type = ranged_equipment amount = 1500 } add_equipment_to_stockpile = { type = support_equipment amount = 120 } set_country_flag = ARM_etap_arsenal set_variable = { ARM_etap = 3 } }
+		ai_will_do = { factor = 18 }
+	}
+	ARM_batalion = {
+		icon = generic_army_support
+		cost = 55
+		visible = { NOT = { has_country_flag = ARM_etap_batalion } has_country_flag = ARM_etap_arsenal }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { if = { limit = { NOT = { has_template = "Batalion regularny" } } division_template = { name = "Batalion regularny" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 0 y = 3 }  } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } } capital_scope = { create_unit = { division = "division_template = \"Batalion regularny\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion regularny\" start_experience_factor = 0.2" owner = ROOT } } set_country_flag = ARM_etap_batalion set_variable = { ARM_etap = 4 } }
+		ai_will_do = { factor = 17 }
+	}
+	ARM_fabryka = {
+		icon = generic_army_support
+		cost = 70
+		visible = { NOT = { has_country_flag = ARM_etap_fabryka } has_country_flag = ARM_etap_batalion }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } set_country_flag = ARM_etap_fabryka set_variable = { ARM_etap = 5 } }
+		ai_will_do = { factor = 16 }
+	}
+	ARM_brygada = {
+		icon = generic_army_support
+		cost = 90
+		visible = { NOT = { has_country_flag = ARM_etap_brygada } has_country_flag = ARM_etap_fabryka }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { add_equipment_to_stockpile = { type = motorized_equipment amount = 150 } if = { limit = { NOT = { has_template = "Brygada zmotoryzowana" } } division_template = { name = "Brygada zmotoryzowana" regiments = { motorized = { x = 0 y = 0 } motorized = { x = 0 y = 1 } motorized = { x = 0 y = 2 } motorized = { x = 0 y = 3 } artillery_brigade = { x = 1 y = 0 }  } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } } capital_scope = { create_unit = { division = "division_template = \"Brygada zmotoryzowana\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada zmotoryzowana\" start_experience_factor = 0.3" owner = ROOT } } set_country_flag = ARM_etap_brygada set_variable = { ARM_etap = 6 } }
+		ai_will_do = { factor = 15 }
+	}
+	ARM_c_nabor = {
+		icon = generic_army_support
+		cost = 30
+		visible = { has_country_flag = ARM_etap_kadry }
+		available = { always = yes }
+		days_re_enable = 120
+		complete_effect = { add_manpower = 2500 }
+		ai_will_do = { factor = 6 }
+	}
+	ARM_c_cwiczenia = {
+		icon = generic_army_support
+		cost = 40
+		visible = { has_country_flag = ARM_etap_kadry }
+		available = { has_war = no }
+		days_re_enable = 180
+		complete_effect = { army_experience = 10 }
+		ai_will_do = { factor = 6 }
+	}
+	ARM_c_uzupelnienia = {
+		icon = generic_army_support
+		cost = 50
+		visible = { has_country_flag = ARM_etap_kadry }
+		available = { always = yes }
+		days_re_enable = 150
+		complete_effect = { add_equipment_to_stockpile = { type = ranged_equipment amount = 800 } add_equipment_to_stockpile = { type = support_equipment amount = 50 } }
+		ai_will_do = { factor = 6 }
+	}
+	ARM_c_batalion_nowy = {
+		icon = generic_army_support
+		cost = 60
+		visible = { has_country_flag = ARM_etap_brygada }
+		available = { always = yes }
+		days_re_enable = 240
+		complete_effect = { if = { limit = { NOT = { has_template = "Batalion regularny" } } division_template = { name = "Batalion regularny" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 0 y = 3 }  } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } } capital_scope = { create_unit = { division = "division_template = \"Batalion regularny\" start_experience_factor = 0.2" owner = ROOT } } }
+		ai_will_do = { factor = 6 }
+	}
+}

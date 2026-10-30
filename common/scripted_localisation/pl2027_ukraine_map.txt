@@ -1,0 +1,28 @@
+defined_text = {
+    name = FEUKR_SelectedName
+    text = { trigger = { check_variable = { ROS_UKR_selected = 1 } } localization_key = FEUKR_NAME_VOL }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 2 } } localization_key = FEUKR_NAME_RIV }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 3 } } localization_key = FEUKR_NAME_LVI }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 4 } } localization_key = FEUKR_NAME_ZAK }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 5 } } localization_key = FEUKR_NAME_IVA }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 6 } } localization_key = FEUKR_NAME_TER }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 7 } } localization_key = FEUKR_NAME_CHE }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 8 } } localization_key = FEUKR_NAME_KHM }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 9 } } localization_key = FEUKR_NAME_ZHY }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 10 } } localization_key = FEUKR_NAME_VIN }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 11 } } localization_key = FEUKR_NAME_KYI }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 12 } } localization_key = FEUKR_NAME_CHR }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 13 } } localization_key = FEUKR_NAME_SUM }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 14 } } localization_key = FEUKR_NAME_KHA }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 15 } } localization_key = FEUKR_NAME_POL }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 16 } } localization_key = FEUKR_NAME_CKA }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 17 } } localization_key = FEUKR_NAME_KIR }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 18 } } localization_key = FEUKR_NAME_DNI }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 19 } } localization_key = FEUKR_NAME_DON }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 20 } } localization_key = FEUKR_NAME_LUH }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 21 } } localization_key = FEUKR_NAME_ZAP }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 22 } } localization_key = FEUKR_NAME_KHE }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 23 } } localization_key = FEUKR_NAME_MYK }
+    text = { trigger = { check_variable = { ROS_UKR_selected = 24 } } localization_key = FEUKR_NAME_ODE }
+    text = { localization_key = FEUKR_NAME_NONE }
+}

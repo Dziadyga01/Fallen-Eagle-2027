@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		WOS_idea_plc_siec = {
+			picture = DU_WWD_plc_idea_doktryna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.04 army_core_defence_factor = 0.05 }
+		}
+		WOS_idea_plc_sluzba = {
+			picture = DU_WWD_plc_idea_doktryna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 political_power_gain = 0.05 }
+		}
+		WOS_idea_plc_panstwo = {
+			picture = DU_WWD_plc_idea_doktryna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 war_support_factor = 0.05 political_power_gain = 0.08 consumer_goods_factor = 0.03 }
+		}
+	}
+}

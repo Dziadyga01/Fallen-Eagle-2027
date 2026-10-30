@@ -1,0 +1,23 @@
+IVR_dm_S = {
+	icon = GFX_idea_DU_IVRP2_s_prawo
+	enable = { always = yes }
+	remove_trigger = { NOT = { has_country_flag = IVR_typ_S } }
+	stability_factor = IVR_a
+	political_power_gain = IVR_b
+}
+IVR_dm_P = {
+	icon = GFX_idea_DU_IVRP2_p_wladza
+	enable = { always = yes }
+	remove_trigger = { NOT = { has_country_flag = IVR_typ_P } }
+	political_power_gain = IVR_a
+	war_support_factor = IVR_b
+	stability_factor = IVR_c
+}
+IVR_dm_M = {
+	icon = GFX_idea_DU_IVRP2_m_rodzina
+	enable = { always = yes }
+	remove_trigger = { NOT = { has_country_flag = IVR_typ_M } }
+	political_power_gain = IVR_a
+	stability_factor = IVR_b
+	army_org_factor = IVR_c
+}

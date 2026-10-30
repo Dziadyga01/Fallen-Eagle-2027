@@ -1,0 +1,19 @@
+add_namespace = rna
+
+country_event = {
+	id = rna.10
+	title = rna.10.t
+	desc = rna.10.d
+	picture = GFX_pl2027_ev081_ulica_2
+	is_triggered_only = yes
+	option = {
+		name = rna.10.a
+		ai_chance = { base = 2 }
+		add_political_power = -40 add_to_variable = { NAR_kurpie = -25 } clamp_variable = { var = NAR_kurpie min = 0 max = 100 }
+	}
+	option = {
+		name = rna.10.b
+		ai_chance = { base = 1 }
+		add_stability = -0.05 add_to_variable = { NAR_kurpie = -10 } clamp_variable = { var = NAR_kurpie min = 0 max = 100 } add_to_variable = { NAR_porzadek = 8 } clamp_variable = { var = NAR_porzadek min = 0 max = 100 }
+	}
+}

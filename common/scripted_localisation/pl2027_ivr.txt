@@ -1,0 +1,30 @@
+defined_text = {
+	name = IVR_Get_nazwa
+	text = {
+		trigger = { has_country_flag = IVR_typ_S }
+		localization_key = IVR_m_nazwa_S
+	}
+	text = {
+		trigger = { has_country_flag = IVR_typ_P }
+		localization_key = IVR_m_nazwa_P
+	}
+	text = {
+		trigger = { has_country_flag = IVR_typ_M }
+		localization_key = IVR_m_nazwa_M
+	}
+}
+defined_text = {
+	name = IVR_Get_opis
+	text = {
+		trigger = { has_country_flag = IVR_typ_S }
+		localization_key = IVR_m_opis_S
+	}
+	text = {
+		trigger = { has_country_flag = IVR_typ_P }
+		localization_key = IVR_m_opis_P
+	}
+	text = {
+		trigger = { has_country_flag = IVR_typ_M }
+		localization_key = IVR_m_opis_M
+	}
+}

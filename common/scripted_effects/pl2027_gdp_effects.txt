@@ -1,0 +1,4 @@
+GDP_miesiac = {
+	if = { limit = { country_exists = GDY } GDY = { if = { limit = { NOT = { has_variable = GDY_port } } set_variable = { GDY_port = 40 } add_dynamic_modifier = { modifier = GDP_dm } } add_to_variable = { GDY_port = -3 } clamp_variable = { var = GDY_port min = 0 max = 100 } if = { limit = { has_war = yes } add_to_variable = { GDY_port = -3 } clamp_variable = { var = GDY_port min = 0 max = 100 } } if = { limit = { check_variable = { GDY_port < 20 } NOT = { has_country_flag = GDY_port_cd } } set_country_flag = { flag = GDY_port_cd days = 120 } country_event = { id = gdp.10 days = 1 } } set_variable = { GDP_dm_0 = GDY_port } subtract_from_variable = { GDP_dm_0 = 50 } divide_variable = { GDP_dm_0 = -2000 } set_variable = { GDP_dm_1 = GDY_port } subtract_from_variable = { GDP_dm_1 = 40 } divide_variable = { GDP_dm_1 = 600 } } }
+	
+}

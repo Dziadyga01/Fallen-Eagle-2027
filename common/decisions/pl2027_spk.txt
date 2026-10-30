@@ -1,0 +1,29 @@
+SPK_panel = {
+	SPK_dec_kasyno = {
+		icon = generic_political_discourse
+		cost = 0
+		visible = { original_tag = SPT has_variable = SPT_kapital }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { SPT_kapital = 12 } clamp_variable = { var = SPT_kapital min = 0 max = 100 } add_to_variable = { SPT_reputacja = -8 } clamp_variable = { var = SPT_reputacja min = 0 max = 100 } set_variable = { SPK_dm_0 = SPT_kapital } subtract_from_variable = { SPK_dm_0 = 40 } divide_variable = { SPK_dm_0 = 500 } set_variable = { SPK_dm_1 = SPT_reputacja } subtract_from_variable = { SPK_dm_1 = 50 } divide_variable = { SPK_dm_1 = 800 } }
+		ai_will_do = { base = 2 modifier = { factor = 3 check_variable = { SPT_kapital < 30 } } modifier = { factor = 0 check_variable = { SPT_reputacja < 35 } } }
+	}
+	SPK_dec_festiwal = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = SPT has_variable = SPT_kapital }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { SPT_kapital = 5 } clamp_variable = { var = SPT_kapital min = 0 max = 100 } add_to_variable = { SPT_reputacja = 10 } clamp_variable = { var = SPT_reputacja min = 0 max = 100 } set_variable = { SPK_dm_0 = SPT_kapital } subtract_from_variable = { SPK_dm_0 = 40 } divide_variable = { SPK_dm_0 = 500 } set_variable = { SPK_dm_1 = SPT_reputacja } subtract_from_variable = { SPK_dm_1 = 50 } divide_variable = { SPK_dm_1 = 800 } }
+		ai_will_do = { base = 2 modifier = { factor = 4 check_variable = { SPT_reputacja < 40 } } }
+	}
+	SPK_dec_pozyczka = {
+		icon = generic_political_discourse
+		cost = 0
+		visible = { original_tag = SPT has_variable = SPT_kapital }
+		available = { check_variable = { SPT_kapital > 29 } }
+		days_re_enable = 120
+		complete_effect = { add_to_variable = { SPT_kapital = -15 } clamp_variable = { var = SPT_kapital min = 0 max = 100 } add_political_power = 50 every_neighbor_country = { limit = { has_country_flag = PL2027_polska } add_opinion_modifier = { target = ROOT modifier = WOS_dialog } } set_variable = { SPK_dm_0 = SPT_kapital } subtract_from_variable = { SPK_dm_0 = 40 } divide_variable = { SPK_dm_0 = 500 } set_variable = { SPK_dm_1 = SPT_reputacja } subtract_from_variable = { SPK_dm_1 = 50 } divide_variable = { SPK_dm_1 = 800 } }
+		ai_will_do = { base = 1 modifier = { factor = 3 check_variable = { SPT_kapital > 60 } } modifier = { factor = 0 check_variable = { SPT_reputacja < 30 } } }
+	}
+}

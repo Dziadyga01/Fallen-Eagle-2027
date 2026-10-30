@@ -1,0 +1,4 @@
+LIT_miesiac = {
+	LIT = { add_to_variable = { LIT_przesmyk = -2 } clamp_variable = { var = LIT_przesmyk min = 0 max = 100 } if = { limit = { OR = { has_global_flag = ROS_wojna_mazurska ROS = { has_country_flag = ROS_druga_gotowa } } } add_to_variable = { LIT_przesmyk = -3 } clamp_variable = { var = LIT_przesmyk min = 0 max = 100 } } if = { limit = { check_variable = { LIT_przesmyk < 25 } NOT = { has_country_flag = LIT_korytarz_cd } country_exists = ROS } set_country_flag = { flag = LIT_korytarz_cd days = 180 } country_event = { id = lit.10 days = 2 } } set_variable = { LIT_dm_a = LIT_przesmyk } divide_variable = { LIT_dm_a = 1000 } set_variable = { LIT_dm_b = LIT_przesmyk } subtract_from_variable = { LIT_dm_b = 50 } divide_variable = { LIT_dm_b = 1000 } }
+	
+}

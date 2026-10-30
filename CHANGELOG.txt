@@ -1,6 +1,632 @@
-THE FALLEN EAGLE 2027 – CHANGELOG
+﻿THE FALLEN EAGLE 2027 – CHANGELOG
 =================================
 Najnowsza wersja na górze. Wersje „testowe” nie były jeszcze sprawdzone w silniku gry.
+
+The Fallen Eagle Alpha 0.9.27 (wersja testowa) – nazwa moda bez zmian; ROSJA: KONIEC BLOKADY CELÓW WOJENNYCH PO INWAZJI
+Podstawa: 0.9.26. Nic z tego nie było jeszcze uruchomione w grze.
+
+- Modyfikator „Priorytet mazurski” (+1000% czasu uzasadniania celów wojennych) znikał dopiero po wygranej operacji mazurskiej.
+  Teraz znika, gdy Rosja rozpocznie inwazję na Polskę (fokus operacji mazurskiej) albo prowadzi wojnę z dowolnym polskim państwem
+  (prośba autora).
+
+The Fallen Eagle Alpha 0.9.26 (wersja testowa) – nazwa moda bez zmian; EUROSTAATY: SWOBODA I ROZBUDOWANE DRZEWKA
+Podstawa: 0.9.25. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. EUROSTAATY NIE SĄ JUŻ „PRAWIE WCIELONE” (zgłoszenie autora)
+- Podwładni Niemiec dostawali stopień autonomii bez ustawionej swobody, więc pasek autonomii stał tuż przy aneksji.
+  Teraz na starcie swoboda wynosi 90%, a co miesiąc, gdy spadnie poniżej połowy paska, Eurostaat odzyskuje 5%.
+
+2. ROZBUDOWANE DRZEWKA EUROSTAATÓW (prośba autora) – gałąź „Przed rozstrzygnięciem” (od 2031)
+- Każdy Eurostaat buduje pozycję przed propozycją wcielenia z Berlina (od 2034): droga autonomii (niższa zależność od Niemiec,
+  więcej swobody) albo droga związku z Niemcami (wyższa zależność, fabryki i władza polityczna). Na końcu jedna z dwóch postaw:
+  samodzielność (Eurostaat raczej odmówi wcielenia – i wybierze wojnę) albo związek z Republiką Federalną (raczej się zgodzi).
+- Pomorze: statut wolnego portu, Rada Pomorza Zachodniego, kapitał z Hamburga, wspólne prawo z Meklemburgią.
+- Śląsk: miedź pod śląską kontrolą, Sejmik Dolnośląski z prawem weta, niemieckie udziały w kombinacie, wspólnota z Saksonią.
+- Wielkopolska: szkoła samorządu, pamięć powstania, poznańskie targi dla Niemiec, wspólne prawo z Brandenburgią.
+
+3. NIEMCY – PO WCIELENIU
+- „Nowe landy nad Odrą i Wartą”: ziemie wcielonych Eurostaatów stają się rdzennymi ziemiami Niemiec, przez rok trwa opór
+  (stabilność −5%, większe garnizony). „Bundeswehra nad Wartą”: doświadczenie i rekruci dla nowej granicy.
+
+The Fallen Eagle Alpha 0.9.25 (wersja testowa) – nazwa moda bez zmian; WYBÓR PRZYWÓDCY LUBLINA W DRZEWKU, EUROSTAATY I PÓŹNA GRA NIEMIEC
+Podstawa: 0.9.24. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. ZJEDNOCZONA POLSKA PRAWICA – PRZYWÓDCA WYBIERANY W DRZEWKU (prośba autora)
+- Dotąd kongres był jednym zdarzeniem: gdy żaden kandydat nie miał 30 punktów poparcia, kongres odraczano, a ukończony fokus nie
+  pozwalał spróbować ponownie – kampania stawała.
+- Teraz po fokusie „Kongres w Lublinie” jest sześć wykluczających się fokusów „Przewodniczący: …” (Czarnek, Morawiecki, Ziobro,
+  Kurski, Macierewicz, Kot). Kandydat potrzebuje 30 punktów poparcia; jeśli nikt ich nie ma, można wybrać każdego, kto wcześniej
+  nie przegrał. Wybór ładuje drzewko przywódcy jak dotąd (obietnice, nominacje i wiadomość o nowym przywódcy zostają).
+- Tak samo w drzewku odnowy po kryzysie przywódcy (bez kandydata, który przegrał).
+- Komputer wybiera kandydata z największym poparciem.
+
+2. EUROSTAATY – WIĘCEJ AUTONOMII (prośba autora)
+- Autonomia „Eurostaat”: wyższa swoboda (0,6), żadnych poborowych, fabryk ani handlu oddawanych Berlinowi, własny kolor na mapie,
+  prawo odmowy udziału w wojnie Niemiec. Berlin nadal nie może ich wcielić dyplomatycznie.
+
+3. NIEMCY – PÓŹNA GRA (prośba autora)
+- Nowy fokus „Jedno państwo nad Odrą” (od 2034 roku, po zakończeniu drogi Nowego porządku albo Tarczy): polskie Eurostaaty
+  dostają propozycję wcielenia do Republiki Federalnej. Zgoda zależy od wpływów Berlina (zależność od Niemiec): powyżej 70 –
+  prawie pewna, powyżej 50 – prawdopodobna, poniżej 30 – prawie wykluczona.
+- Odmowa: Eurostaat ogłasza niepodległość i wypowiada wojnę Niemcom.
+- Po wcieleniu co najmniej jednego Eurostaatu Niemcy mogą prowadzić wojny z sąsiednimi polskimi państwami – 11 fokusów, każdy
+  wobec jednego państwa (Ziemia Leszczyńska, Kaliska, Nadnotecka, Księstwo Gnieźnieńskie, Wolne Miasto Poznań, Republika
+  Krajeńska, Ziemia Sieradzka, Republika Pomorska, Księstwo Pałuckie, Republika Socjaldemokratyczna, Ziemia Zaborska);
+  dostępne, gdy Niemcy graniczą z tym państwem i nie prowadzą innej wojny.
+
+The Fallen Eagle Alpha 0.9.24 (wersja testowa) – nazwa moda bez zmian; POPRAWKA „ideology_unknown”
+Podstawa: 0.9.23. Nic z tego nie było jeszcze uruchomione w grze.
+
+- Panel polityki i dyplomacji pokazywał „ideology_unknown” zamiast podideologii przywódcy (zgłoszenie autora: Paweł Gulewski,
+  Toruń). Lista podideologii w panelu nie znała 11 typów, których używają postacie: koalicja_obywatelska, social_liberalism,
+  prawo_i_sprawiedliwosc, christian_conservatism, patronage_populism, managerial_conservatism, koalicja_obywatelska_rada,
+  prawo_i_sprawiedliwosc_rada, streamocracy, authoritarian_democracy, cyberocracy. Teraz lista obejmuje wszystkie 63 podideologie
+  z pliku ideologii (polskie nazwy już istniały).
+
+The Fallen Eagle Alpha 0.9.23 (wersja testowa) – nazwa moda bez zmian; CZYTELNE PANELE TORUNIA, KOMPUTER NA NOWYCH ETAPACH
+Podstawa: 0.9.22. Nic z tego nie było jeszcze uruchomione w grze.
+
+- Toruń: 18 paneli autora (program władzy i drogi ustrojowe) pokazuje stan zasobu, skąd się bierze i na co się go wydaje
+  (dotąd opis bez wartości, np. „Decyzje programu władzy wykorzystują punkty zasobu kapitał”).
+- Komputer: Lublin na etapie „Lublin i sąsiedzi” – przywódcy z naciskiem (Czarnek, Ziobro, Macierewicz) przestawiają fabryki
+  na wojsko przed ofertami; Rosja po wygranej wojnie odbudowuje gospodarkę cywilną.
+- Kontrola: czasy przejścia wszystkich 89 drzewek (najdłuższa ścieżka: Ozimek ok. 777 dni, Bydgoszcz i Toruń 530–620 dni,
+  Rosja 210–245 dni na etap, Lublin 84–91 dni kongresu i 210–294 dni kampanii przywódcy), wszystkie odwołania do fokusów
+  i przełączenia drzewek wskazują istniejące elementy.
+
+The Fallen Eagle Alpha 0.9.22 (wersja testowa) – nazwa moda bez zmian; MECHANIKI PIĘCIU REGIONÓW
+Podstawa: 0.9.21. Nic z tego nie było jeszcze uruchomione w grze.
+
+Pięć regionów z drzewkami autora nie miało dotąd własnego systemu. Drzewka zostają bez zmian, a każdy region dostaje mechanikę
+wynikającą z jego fabuły: panel z opisem celu, kosztu i skutków zaniedbania, trzy decyzje, kryzys przy progu i wagi komputera
+zależne od wskaźników. Wojny nie wybuchają z tych systemów.
+
+- Korona Polska – prawomocność korony kontra pretendenci: sejmiki ziemskie, procesje z insygniami, układ z pretendentem;
+  od 70 siły pretendentów – rokosz (sejm elekcyjny albo stłumienie).
+- Republika Pomorska – jedność Kaszub i Pomorza oraz porty i energia: szkoły kaszubskie, farmy wiatrowe (spór z gminami),
+  inwestycje w Ustce i Łebie; poniżej 25 jedności sejmik kaszubski grozi odejściem.
+- Ziemia Mławska – ruch na S7 i gotowość Reduty Mławskiej: myto (władza kosztem ruchu), konwoje z Gdańska, prace na Reducie
+  (obrona na własnych ziemiach); poniżej 20 ruchu korytarz zamiera.
+- Państwo Narodowe – porządek narodowy kontra gniew Kurpiów: bataliony na ulicach, sejmiki kurpiowskie, mleko i piwo dla miast;
+  represje przy wysokim porządku podnoszą gniew; od 70 – „Puszcza się burzy”.
+- Suwalszczyzna – zaufanie Wilna i presja Rosji: wspólne patrole z Litwą, umocnienia przesmyku, handel przez Via Baltica;
+  silna Litwa (przesmyk powyżej 60) zmniejsza presję; od 75 – prowokacje na granicy.
+
+The Fallen Eagle Alpha 0.9.21 (wersja testowa) – nazwa moda bez zmian; ROSJA PO WOJNIE, NIEMCY BEZ WCIELANIA REGIONÓW, LUBLIN I SĄSIEDZI
+Podstawa: 0.9.20. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. ROSJA – CO PO WYGRANEJ WOJNIE (prośba autora)
+- Każde drzewko Rosji (wszyscy przywódcy i etapy) oraz etap „Wojna na Ukrainie” ma dwa wykluczające się fokusy dostępne
+  po wojnie, gdy Rosja trzyma zdobyte ziemie (cele operacji mazurskiej albo Ukrainę):
+  „Protektoraty na zdobytych ziemiach” – pokonane państwa wracają na mapę jako marionetki Rosji (stabilność +5%, władza +50);
+  „Zdobycze zostają przy Rosji” – zdobyte ziemie stają się rdzennymi ziemiami Rosji, ale przez rok trwa opór (stabilność −5%,
+  większe garnizony).
+
+2. NIEMCY NIE WCIELAJĄ SWOICH REGIONÓW (prośba autora)
+- Podwładni Niemiec (Czechy, Litwa, Eurostaaty) mają własny stopień autonomii „Eurostaat”, z którego nie można zejść niżej –
+  ani do zintegrowanej marionetki, ani do aneksji. Nadawany na starcie i pilnowany co miesiąc.
+- Fokus „Nowe kraje związkowe” zastąpiony przez „Kraje stowarzyszone”: Eurostaat zgadza się na niemiecki budżet i doradców
+  (idea „Kraj stowarzyszony z Niemcami”), ale zostaje osobnym państwem.
+
+3. ZJEDNOCZONA POLSKA PRAWICA – ETAP III „LUBLIN I SĄSIEDZI”
+- Po zakończeniu kampanii przywódcy (każdego z sześciu) kolejna gałąź: Podlasie Nadbużańskie, Ziemia Radomska i Ziemia
+  Piotrkowska – sąsiedzi z dawnego drzewka regionalnego autora. Każdy fokus to oferta dla jednego państwa.
+- Inny styl dla każdego przywódcy: Czarnek – ultimatum struktur, Morawiecki – umowa rozwojowa, Ziobro – nakaz współpracy,
+  Kurski – kampania przekonywania (zgoda rośnie z zasięgiem i wiarygodnością), Macierewicz – apel o wspólny front przeciw Rosji,
+  Kot – oferta „systemu” (zgoda zależy od wyniku projektu Cyber).
+- Odmowa: u Czarnka, Ziobry i Macierewicza – cel wojenny tylko wobec tego jednego państwa; u Morawieckiego, Kurskiego i Kota –
+  bez wojny, nowe rozmowy po 120 dniach (panel „Lublin i sąsiedzi”).
+- Fokus końcowy „Zjednoczona Polska od Bugu po Pilicę” wymaga, by wszystkie trzy ziemie należały do Lublina.
+
+The Fallen Eagle Alpha 0.9.20 (wersja testowa) – nazwa moda bez zmian; PODŁĄCZONE SYSTEMY TORUNIA AUTORA
+Podstawa: 0.9.19. Nic z tego nie było jeszcze uruchomione w grze.
+
+Kontrola całego modu wykazała, że trzy gotowe systemy Torunia (ideologie, panele, zdarzenia i teksty) nigdy się nie uruchamiały,
+bo nic nie ustawiało ich flag ani zasobów. Teraz są podłączone, bez zmiany ich treści:
+
+1. USTRÓJ PAŃSTWA (TR2S/TR2C)
+- Po fokusie ustanowienia państwa (Gulewski: Druga Republika Toruńska, Zaleski: Porządek i rozwój, Romanowski: Socjalna Republika
+  Toruńska, Kowalczyk: Republika Odrodzenia, Krevienko: Rada Delegatów Regionu, Elana: Państwo Ruchu) przychodzi wybór ustroju:
+  dwie drogi autora dla każdego przywódcy (np. Rzeczpospolita Samorządów albo Konfederacja Obronnych Miast).
+- Wybór daje konstytucję autora (idea), otwiera dwa panele decyzji tej drogi i zasób rządu (start 20; co miesiąc +3, +1 przy
+  stabilności powyżej 50%, −2 w czasie wojny). Co 180 dni wraca dylemat autora („Czy rada miast może rządzić państwem?” itd.).
+
+2. PROGRAM WŁADZY (TR2RW)
+- Panele autora („Obywatelski Toruń: konsensus”, „Gospodarski Toruń: kapitał”, …) pojawiają się od pierwszego fokusu drzewka
+  przywódcy; zasób startuje od 25 i rośnie co miesiąc (+3, +1 przy stabilności powyżej 50%). Decyzje odblokowują fokusy autora.
+
+3. ZAKOŃCZENIA (TR2END)
+- Po ostatnim fokusie drzewka: własna droga, propozycja unii (Gulewski, Romanowski, Kowalczyk – Bydgoszcz; Zaleski – Chełmża;
+  Krevienko – Grudziądz; Elana – żądania wobec Chełmży) albo pakt obronny z sąsiadami (frakcja i zaproszenia). Druga strona może
+  odmówić; po odmowie działają decyzje autora „ponów rokowania” i „ponów sojusz”.
+
+4. POPRAWKA
+- Dwa różne efekty o tej samej nazwie TRN_przelicz (formowanie Torunia i polityka frakcji) – gra używała tylko jednego. Teraz
+  wspólne przeliczenie uruchamia oba.
+
+The Fallen Eagle Alpha 0.9.19 (wersja testowa) – nazwa moda bez zmian; PRZEGLĄD WARSZAWY I POPRAWKI BŁĘDÓW
+Podstawa: 0.9.18. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. WARSZAWA – WYBORY KOMPUTERA
+- Kluczowe wybory dróg 9 frakcji zależą teraz od sytuacji, a nie od stałych wag (dotąd np. Sejm zawsze wybierał „Odrodzenie
+  demokratycznej Rzeczypospolitej”). Przykłady: Sejm przy słabej legitymacji albo w wojnie skłania się ku Prezydium, w koalicji –
+  ku kohabitacji, w wojnie z Pałacem – ku trybowi nadzwyczajnemu; Pałac przy wysokim autorytecie wybiera dekrety, w koalicji –
+  porozumienie; Pruszków przy wpływach >55 buduje przestępcze państwo; Praga, Bielany i Powiśle w Lidze wybierają federację
+  i niepodległość; Wojsko przy braku prądu albo nastrojach <30 skłania się ku Wojskowej Radzie Ocalenia.
+- 17 decyzji panelu „Warszawa: walka o stolicę” ma wagi zależne od wskaźników: komputer ratuje zasilanie, zaopatrzenie i nastroje,
+  gdy spadają, a decyzji obniżających własny wskaźnik frakcji używa tylko, gdy ma zapas.
+
+2. WARSZAWA – CZYTELNY PANEL
+- Wartości wyróżnione kolorem, a pod wskaźnikiem frakcji jej cel i skutki zaniedbania (np. Pałac: utrzymać 40–70, powyżej 70
+  spada stabilność, powyżej 80 – „Kryzys w Pałacu”).
+- Nowa sekcja „Jak działa miasto”: co miesięcznie zmienia zasilanie, zaopatrzenie i nastroje, i co dzieje się poniżej progów.
+
+3. POPRAWKI BŁĘDÓW (znalezione w kontroli całego modu)
+- Warszawa: cztery wyzwalacze (koalicja, Liga, walki w mieście, frakcja Warszawy) były zapisane bez „= yes” w 27 miejscach – gra
+  nie mogła ich odczytać, więc część comiesięcznych zmian wskaźników i zdarzeń miejskich mogła nie działać.
+- Wersja 0.9.15 nadpisała plik idei Litwy, Czech, Ukrainy i Niemiec (odbudowa, gospodarka, logistyka, pobór, armia, produkcja) –
+  fokusy dawały nieistniejące idee. Plik przywrócony, nowe idee mechanik są w osobnym pliku (pl2027_zag_mech.txt).
+- 17 zdarzeń (Zjednoczona Polska Prawica, Litwa, Czechy, Ukraina) wskazywało nieistniejące ilustracje – teraz zawsze istniejący
+  wariant tego samego tematu.
+- Pliki autora: dwa osierocone fragmenty w colors.txt i nadmiarowy nawias w postaciach Nowego Miasta Lubawskiego usunięte;
+  Białoruś – „Rada Narodowa Białorusi” z zdarzenia o okrągłym stole miała portret i nazwę, ale brakowało definicji postaci (dodana).
+
+The Fallen Eagle Alpha 0.9.18 (wersja testowa) – nazwa moda bez zmian; KAMPANIA W BYDGOSZCZY, KOMPUTER DLA NOWYCH MECHANIK
+Podstawa: 0.9.17. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. KAMPANIA WYBORCZA W BYDGOSZCZY (na wzór Torunia)
+- Nowy panel „Kampania wyborcza w Bydgoszczy”: sondaż na żywo (udział pięciu komitetów w procentach), wiece poparcia
+  (25 władzy, +3 poparcia i popularność ideologii; najwyżej 2 razy dla jednego komitetu i 5 razy łącznie), obserwatorzy wyborów
+  przy niskiej stabilności (mniejsze ryzyko puczu).
+- 4 zdarzenia kampanii (raz każde, losowo co miesiąc): zamknięty Most Fordoński, strajk w Pesie, wieczór Brdowskiego w lokalnej
+  telewizji, patrole na Kapuściskach – każdy wybór przesuwa poparcie komitetów.
+- Wybory liczone według poparcia zarejestrowanych komitetów; zdarzenie „Wybory nad Brdą” pokazuje wyniki w procentach.
+  Wcześniej gracz po prostu wybierał zwycięzcę. Ogłoszenie innego zwycięzcy jest nadal możliwe, ale to fałszerstwo:
+  stabilność -12% i „kontrowersyjny wynik” przez rok.
+
+2. KOMPUTER DLA NOWYCH MECHANIK
+- Decyzje Litwy (przesmyk), Czech (pogranicze), Ukrainy (zasoby wojny), Gdyni (port), Sopotu (kapitał i reputacja), Gdańska
+  (stocznia i napięcie) i Konfederacji Północnej (wzrost i nierówności) mają wagi zależne od stanu wskaźnika – komputer ratuje
+  wskaźnik w kryzysie i nie przesadza, gdy jest dobrze (np. Gdańsk daje podwyżki przy napięciu >50, Konfederacja wprowadza
+  program osłonowy przy nierównościach >55).
+- Strategie gospodarki: Litwa przy przesmyku <35 i Czechy przy pograniczu <30 przestawiają fabryki na wojsko; Ukraina w czasie
+  wojny z Rosją – mocno na wojsko; Gdańsk przy napięciu >60 – na cywilne.
+
+The Fallen Eagle Alpha 0.9.17 (wersja testowa) – nazwa moda bez zmian; 18 POSTACI TORUNIA
+Podstawa: 0.9.16. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. POSTACIE OD STARTU (dla każdego przywódcy Torunia)
+- 10 doradców politycznych – widoczni w panelu doradców, zatrudnienie za 150 władzy politycznej:
+  Mirosław Ziętarski (Olimpijska dyscyplina: szkolenie -6%, organizacja +3%), Jacek Kiełpiński (Kiełpiński Konkretnie: obrona przed
+  wpływami +20%, władza +5%), Oliwier Szulejko (Młody dyplomata: przyrost opinii +25%, koszt relacji -25%), Tymoteusz Ułanowski
+  (Architekt kompromisu: stabilność +3%, stabilność w wojnie +5%), Bartosz Szymański (Toruń obywatelski: garnizony -10%, surowce
+  lokalne +5%), Małgorzata Kożuchowska (Twarz odbudowy: poparcie dla wojny +7%), Pan Wojtek (Legenda Starówki: dobra konsumpcyjne -4%,
+  opinia handlowa +15%), Łukasz „Małpa” Małkiewicz (Głos toruńskich ulic: pobór +6%), Daniel „Magical” Zwierzyński (Internetowa
+  popularność: władza +10%, obrona przed wpływami -10%), MrKryha (Robi wrażenie!: zużycie zaopatrzenia i paliwa -5%).
+- 2 generałów (poziom 2) od razu w kadrze: Adrian Miedziński (Weteran Motoareny: szybkość +5%, organizacja +3%),
+  Bogusław Linda (Twarda ręka: organizacja +5%, morale +3%; oficer piechoty).
+
+2. POSTACIE UNIKATOWE (tylko dla jednego przywódcy, po fokusie w jego drzewku; każdy fokus ma własne zdarzenie)
+- Romanowski – „Nowe pokolenie Torunia”: Katarzyna Zillmann (Siła solidarności: stabilność +5%, szkolenie -5%).
+- Gulewski – „Nowe pokolenie Ratusza”: Hubert Maciejewski (Nowe pokolenie administracji: stabilność +5%, władza +10%).
+- Zaleski – „Dziedzictwo starego miasta”: Wacław Okoniewicz (Strażnik tradycji: stabilność +5%, obrona na własnych ziemiach +5%).
+- Kowalczyk – „Obywatelska mobilizacja”: Nadia Beyer (stabilność +5%, budowa infrastruktury +5%).
+- Krevienko – „Straże sąsiedzkie”: generał Batman Stanisław (poziom 2, Mroczny Rycerz Torunia: obrona +5%, okopywanie +15%;
+  specjalista walk w mieście).
+- Zaleski – „Władza dla osiedli”: Krzysztof Dominikowski (Głos osiedli: stabilność +5%, budowa infrastruktury +10%) – przypisany
+  zgodnie z listą autora („Zalewski”).
+- Portrety od autora (bez zmian wyglądu; małe portrety to górna część zdjęcia, jak u postaci autora).
+- Role prawdziwych osób są elementem alternatywnej historii moda – opisy nie przypisują im poglądów politycznych.
+
+The Fallen Eagle Alpha 0.9.16 (wersja testowa) – nazwa moda bez zmian; PORZĄDKI W DRZEWKACH MAJORÓW, DECYZJE ZAMIAST DRABINEK, TRÓJMIASTO I KONFEDERACJA
+Podstawa: 0.9.15. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. FOKUSY WYZNACZAJĄ KIERUNEK, DECYZJE OBSŁUGUJĄ ZARZĄDZANIE
+- „Drabinki” fokusów I–III (dawne decyzje zamienione kiedyś na fokusy) wróciły jako decyzje w panelach – 26 decyzji, te same efekty i warunki:
+  Zakon (panel „Wpływy rosyjskie”: doradcy, dostawy, odsunięcie oficerów, wzmocnienie Zakonu),
+  Warmia-Mazury i Federacja (panel „Równowaga federacji”: Warmia, Mazury, pojednanie, centralizacja),
+  Korporacja, PKP, sieć sklepów (panele zarządów), Białoruś (pobór na wschodzie, zamówienia z MAZ),
+  Rosja (posiłki, most powietrzny do Królewca, mobilizacja – także te usunięte w 0.9.6).
+- Z 30 drzewek (Zakon ×4, Warmia-Mazury i Federacja ×5, Bydgoszcz ×5, Trójmiasto ×3, Konfederacja Północna, Korporacja, Ozimek, PKP,
+  sieć sklepów, Bastion ×2, regiony ×5) oraz 6 drzewek Torunia usunięto wspólny wypełniacz „życie w państwie” (gałąź społeczna, identyczna
+  w wielu państwach). Gałęzie po wygranej i po przegranej wojnie ZOSTAJĄ – zaczynają się teraz od korzenia drzewka (kontynuacja po wojnie).
+- Puste kolumny po usuniętych gałęziach ściśnięte. W całym modzie jest ok. 5070 fokusów (było ok. 5660).
+
+2. POPRAWKI
+- pl2027_CIE_tree.txt był kopią drzewka Zakonu z tym samym identyfikatorem – plik wyłączony (pusty); Zakon ma swoje drzewko,
+  Ciechocinek – swoje (CIE_fajfy).
+- Decyzje ustrojowe Torunia wymagały fokusów, których nie ma w żadnym drzewku – teraz wystarcza wybrana droga ustrojowa.
+
+3. NOWE MECHANIKI (panele z celem, kosztem i skutkami zaniedbania)
+- Gdynia – ruch w porcie: eskorty konwojów, pogłębianie toru, opłaty portowe; poniżej 20 port stoi.
+- Sopot – kapitał kurortu i reputacja: kasyna, festiwal w Operze Leśnej, pożyczki dla sąsiadów; poniżej 20 reputacji – skandal.
+- Wolne Miasto Gdańsk – stocznia i napięcie: zamówienia, podwyżki, linia zbrojeniowa; od 70 napięcia – strajk w stoczni.
+- Konfederacja Północna – wzrost i nierówności: obniżki podatków, deregulacja, program osłonowy; od 75 nierówności – niepokoje.
+
+The Fallen Eagle Alpha 0.9.15 (wersja testowa) – nazwa moda bez zmian; LITWA, CZECHY, UKRAINA, BIAŁORUŚ: WŁASNE KAMPANIE
+Podstawa: 0.9.14. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. LITWA, CZECHY, UKRAINA – KONIEC WSPÓLNEGO SZABLONU
+- Usunięte z trzech drzewek: identyczny szablon „życie w państwie” (17 celów) i kampanie przeciw dowolnemu słabszemu sąsiadowi (6 celów).
+- Gospodarka i program wojskowy zostają, ale z nazwami właściwymi dla każdego państwa.
+- Litwa – „Przesmyk suwalski”: wskaźnik bezpieczeństwa przesmyku (presja Rosji, rosyjskie żądanie korytarza poniżej 25),
+  patrole, ćwiczenia, umocnienia; trzy drogi: Tarcza Bałtycka (sojusz, gwarancja dla Suwalszczyzny), Wspólnota z Suwalszczyzną
+  (oferta protektoratu – odmowa bez wojny), Neutralność wobec Moskwy (umowa tranzytowa, handel przez Kłajpedę).
+- Czechy – „Pogranicze”: wskaźnik stabilności pogranicza (uchodźcy, przemyt, bojówki), straż graniczna, pomoc dla Śląska,
+  korytarz handlowy; dwie drogi: Partner Berlina (wspólne patrole, przemysł dla Tarczy) albo Most Środkowoeuropejski (mediacja, kontrakty).
+- Ukraina – „Front i wsparcie”: zasoby wojny powiązane z frontem rosyjskiego etapu „Wojna na Ukrainie” – uderzenia dronów i kontrofensywa
+  przesuwają front, wsparcie z Berlina trzeba wypraszać, przy zasobach poniżej 20 front pęka; dwie drogi: Obrona do zwycięstwa albo
+  Rozmowy w Stambule (otwierają Rosji „Pokój bez zwycięstwa”); po wojnie – odbudowa.
+
+2. BIAŁORUŚ
+- Kampania autora (niezależność, stabilność, trzy drogi) zostaje. Usunięte wypełniacze: wspólny szablon „życie w państwie” (18 celów)
+  i drabinki powielające decyzje (6 celów); puste kolumny ściśnięte.
+
+The Fallen Eagle Alpha 0.9.14 (wersja testowa) – nazwa moda bez zmian; AI MAJORÓW ZALEŻNE OD ETAPU
+Podstawa: 0.9.13. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. STRATEGIE AI (common/ai_strategy/pl2027_majory.txt)
+- Zjednoczona Polska Prawica: przed kongresem gospodarka; po kongresie proporcja fabryk zależna od przywódcy
+  (Morawiecki – cywilne, Macierewicz i Ziobro – zbrojeniowe).
+- Rosja: przy przygotowanej drugiej operacji – zbrojenia i przygotowanie wojny z Warmią-Mazurami/Suwalszczyzną; w czasie wojny na Ukrainie – zbrojenia.
+- Niemcy: „Tarcza Europy” – ochrona Eurostaatów; „Nowy porządek” – zbrojenia.
+- Toruń: Zaleski i Elana zbroją się przed ultimatum, pozostali przywódcy budują gospodarkę.
+- Federacja Kujawsko-Pomorska w wersji autorytarnej: założyciel się zbroi.
+
+2. CZAS PRZEJŚCIA (przy ciągłym wybieraniu fokusów)
+- Zjednoczona Polska Prawica: kongres po ok. 91 dniach (najwcześniej luty 2028); kampanie przywódców do zakończenia 98–182 dni
+  plus czas na spełnienie progów mechaniki.
+- Rosja, wojna na Ukrainie: zwycięstwo najwcześniej po ok. 245 dniach (i przy froncie ≥ 75).
+
+The Fallen Eagle Alpha 0.9.13 (wersja testowa) – nazwa moda bez zmian; TORUŃ, ROSJA, NIEMCY: DECYZJE MAJĄ SKUTKI W KOLEJNYCH ETAPACH
+Podstawa: 0.9.12. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. TORUŃ – WARUNKI WSPÓŁPRACY ZALEŻNE OD PRZYWÓDCY („Ziemia Toruńska”)
+- Gulewski: federacja samorządów – chętniej zgadzają się demokracje i państwa o dobrej opinii o Toruniu.
+- Romanowski: wspólne usługi (ciepło, woda, szpital) – chętniej państwa w kryzysie; każde przyłączenie kosztuje Toruń 35 władzy politycznej.
+- Kowalczyk: Republika Akademicka – chętniej państwa liberalne i socjaldemokratyczne.
+- Krevienko: wolne dzielnice – chętniej państwa lewicowe; każde przyłączenie lekko obniża stabilność.
+- Zaleski: kontrakt metropolitalny – chętniej małe państwa i słabsi sąsiedzi.
+- Elana: ultimatum Komendantury – zgoda zależy wyłącznie od przewagi wojskowej.
+- Odmowa: u Zaleskiego i Elany – cel wojenny wobec jednego sąsiada (ścieżka to przewiduje); u pozostałych – bez wojny,
+  rozmowy można ponowić po 120 dniach (nowy panel „Ziemia Toruńska”).
+
+2. ROSJA – SPADEK PO POPRZEDNIM ETAPIE
+- Korzeń każdego kolejnego drzewka (Ukraina, Mazury, kryzys, wybory, przywódcy, drzewka przyszłości) przejmuje skutki poprzedniego etapu:
+  wynik wojny na Ukrainie (zwycięstwo – doświadczenie armii; zamrożenie – stabilność; pokój – fabryki poza mapą),
+  wynik wojny mazurskiej (zwycięstwo – władza polityczna; klęska – kary) i dorobek poprzedniego przywódcy
+  (liczba ukończonych gałęzi: 0 – kara, 1–2 – premia, 3 – duża premia).
+
+3. NIEMCY – KOSZTY PODPORZĄDKOWANIA REGIONÓW
+- Każdy Eurostaat z zależnością od Berlina powyżej 60 kosztuje Niemcy 4% władzy politycznej i 1,5% stabilności;
+  ochrona Eurostaatów w kursie „Tarcza Europy” kosztuje dobra konsumpcyjne. Opis w panelu „Niemcy wobec rozbitej Polski”.
+
+The Fallen Eagle Alpha 0.9.12 (wersja testowa) – nazwa moda bez zmian; ZJEDNOCZONA POLSKA PRAWICA: KONGRES I SZEŚĆ KAMPANII
+Podstawa: 0.9.11. Nic z tego nie było jeszcze uruchomione w grze. Postacie prawdziwe występują wyłącznie w fikcyjnych ścieżkach moda, bez przypisanych im wypowiedzi.
+
+1. ETAP I – ROZPAD KOALICJI I KONGRES (nowe drzewko PRW_kongres_tree, ok. 175 dni do kongresu, najwcześniej luty 2028)
+- Rozpad koalicji (ratować układ albo rządzić samemu), ratowanie struktur (archiwa, kasa, biura, kadry), przygotowanie sukcesji (komisja, regulamin, obietnice).
+- Wpływy Harcerzy i Maślarzy jako Balance of Power (common/bop/pl2027_prw.txt). Kompromis: spokój w partii, ale −15% władzy politycznej;
+  dominacja jednej frakcji: duże premie, ale spadek spójności.
+- Spójność partii (0–100) osobno od wpływów: posłuszeństwo struktur i ryzyko rozłamu (poniżej 20 – zdarzenie „Rozłam w klubie”).
+- Kampania kongresowa: poparcie kandydata = nominacja, którą trzeba spełnić po kongresie, nawet jeśli przegra.
+- Obietnice z kongresu (koalicjanci, struktury, kontrakty, rozliczenia, telewizja, pamięć) obowiązują po wyborze przywódcy:
+  240 dni na spełnienie, potem −2 spójności co miesiąc za każdą.
+- Kongres: wybór tylko spośród kandydatów z co najmniej 30 poparcia; opis każdej opcji mówi, jaką kampanię otwiera.
+
+2. SZEŚĆ KAMPANII PRZYWÓDCÓW (osobne drzewka, panele i mechaniki)
+- Czarnek – lojalność struktur i centralizacja (bunt baronów, nominacje z centrali, odwołanie barona).
+- Morawiecki – kontrakty z terminami i autonomia regionów (zrealizowany kontrakt = fabryka, trzy zerwane = kryzys).
+- Ziobro – aparat kontroli kontra opór społeczny (teczki, procesy, amnestia, strajk generalny); dwa zakończenia: państwo prokuratorskie albo odwilż.
+- Kurski – zasięg przekazu i wiarygodność (obietnice w programie z terminem 120 dni; niespełnione niszczą wiarygodność).
+- Macierewicz – mobilizacja zwolenników i zmęczenie społeczne (miesięcznice, raport komisji, marsz rocznicowy).
+- Kot Prezesa (satyra) – rywalizacja trzech opiekunów i projekt Cyber-Jarosław z czterema elementami; wynik (działa / wersja z błędami / awaria)
+  zależy od wcześniejszych działań (serwerownia, spójność, przewaga Harcerzy, obietnica telewizji, archiwa); panel podaje progi.
+- Kryzys przywódcy (próg mechaniki) → drzewko odnowy i nowy kongres bez przegranego kandydata.
+- Każde zakończenie kampanii ma wiadomość dla świata.
+
+3. MIESIĘCZNICE
+- Powtarzalna decyzja (co 30 dni) z pięcioma wariantami zdarzeń; najmocniej działa w kampanii Macierewicza.
+
+UWAGA: Ziobro, Kurski, Macierewicz i Kot nie mają portretów – gra pokaże portret domyślny, dopóki autor ich nie doda.
+
+The Fallen Eagle Alpha 0.9.11 (wersja testowa) – nazwa moda bez zmian; ZASADY: WOJNY TYLKO Z FOKUSÓW (JEDNO PAŃSTWO), FORMOWANIE = POSIADANIE ZIEM
+Podstawa: 0.9.10. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. WOJNY TYLKO Z FOKUSÓW, JEDEN FOKUS = JEDNO PAŃSTWO
+- Operacja Mazurska: Rosja wypowiada wojnę jednemu państwu (Warmia-Mazury; gdy go nie ma – Suwalszczyzna, potem Mazowsze).
+  Sojusz Mazurski powstaje przed atakiem, więc sojusznicy mogą wejść do wojny w obronie celu (dotąd jeden fokus atakował trzy państwa).
+- „Druga operacja mazurska”: decyzja tylko przygotowuje plan (flaga sztabu). Wojnę zaczyna nowy fokus „Druga operacja mazurska”
+  w drzewkach Rosji (poza Szlosbergiem i Nawalnym) – tylko z jednym państwem, tym, które trzyma kluczowe miasta celu.
+- IV RP: decyzja „Następny etap zjednoczenia” usunięta. Zamiast niej w każdym z trzech drzewek IV RP są fokusy „Wojna o zjednoczenie –
+  etap 2, 3, 4” (po zakończeniu poprzedniej wojny), każdy wobec jednego sąsiada.
+
+2. FORMOWANIE PAŃSTW WYMAGA POSIADANIA ZIEM
+- Unie regionalne (Kujawy-Pomorze, Trójmiasto, Warmia-Mazury, Warszawa): warunki zwołania i nowej nazwy liczą posiadane regiony,
+  a nie tylko kontrolowane. Opisy warunków zmienione („posiadanie”).
+
+The Fallen Eagle Alpha 0.9.10 (wersja testowa) – nazwa moda bez zmian; GWARANCJE TYLKO W TEJ SAMEJ IDEOLOGII
+Podstawa: 0.9.9. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. GWARANCJE NIEPODLEGŁOŚCI
+- Wszystkie grupy ideologii: nie można gwarantować państw innej ideologii (dotyczy gracza i AI w dyplomacji).
+- 17 gwarancji dawanych przez fokusy, zdarzenia i efekty (Ciechocinek, Zakon, Federacja, Trójmiasto–Sopot, Bydgoszcz, Toruń, Podgórz,
+  Malbork, Tczew, Rosja wobec Zakonu) działa tylko wtedy, gdy obie strony mają tę samą grupę ideologii – w przeciwnym razie gwarancji nie ma.
+- Po zmianie partii rządzącej gwarancje z państwami innej ideologii wygasają (w obie strony).
+
+The Fallen Eagle Alpha 0.9.9 (wersja testowa) – nazwa moda bez zmian; FLAGI AUTORA PRZYWRÓCONE, FEDERACJA WYMAGA POSIADANIA ZIEM
+Podstawa: 0.9.8. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. FLAGI – TYLKO FLAGI AUTORA
+- Usunięte wszystkie flagi wygenerowane w 0.9.4 i 0.9.8 (warianty ideologii dorysowane automatycznie). Folder gfx/flags jest dokładnie taki,
+  jak przygotował autor (stan z „Lekkiego Reworku”).
+- W łatce pliki, które dorobiłem, są kopiami flagi bazowej danego państwa – po wgraniu wyglądają jak oryginał (tak jak gdyby wariantu nie było).
+  Można je też usunąć – lista w CZYTAJ.
+
+2. FEDERACJA KUJAWSKO-POMORSKA – TRZEBA POSIADAĆ ZIEMIE
+- Decyzje (konwent / zjazd rad i komun / proklamacja) wymagają posiadania: Torunia, Bydgoszczy, Włocławka, Grudziądza, Inowrocławia i Chełmna
+  oraz co najmniej 30 ze 130 regionów województwa kujawsko-pomorskiego, do tego pokoju i niezależności.
+- Federacja powstaje od razu (nazwa i duch zależne od ustroju, rdzenie w regionie). Gminy regionu, które jeszcze są osobno, dostają zaproszenie
+  i po 30 dniach przyłączane są te, które się zgodzą (odmowa nie oznacza wojny).
+
+The Fallen Eagle Alpha 0.9.8 (wersja testowa) – nazwa moda bez zmian; FLAGI ZMIENIAJĄ SIĘ Z USTROJEM (NAPRAWA), SUROWCE WEDŁUG TERENU, WIĘCEJ VP, FEDERACJA KUJAWSKO-POMORSKA
+Podstawa: 0.9.7. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. FLAGI – NAPRAWA
+- Dlaczego flaga się nie zmieniała: po ustawieniu tagu kosmetycznego (np. Toruń po wyborze przywódcy – TR2_GULEWSKI, TR2_ZALESKI…, Rosja – ROS_SMUTA,
+  federacje, unie) gra bierze flagę tagu kosmetycznego, a te miały wszystkie warianty identyczne z flagą bazową albo nie miały ich wcale.
+  Do tego część państw (Niemcy, Czechy, Litwa, Pomorze, Śląsk, Ciechocinek i inne) nie miała wariantów, a w wielu państwach
+  kilka ideologii dzieliło jedną flagę.
+- Teraz każda z 10 ideologii ma inną flagę – dla 363 flag (państwa i tagi kosmetyczne) dorobiono 2213 wariantów w trzech rozmiarach.
+  Flagę oryginalną zachowuje ideologia „domowa” (startowa albo ta, z którą ustawiany jest tag). Autorskie warianty zostały bez zmian.
+
+2. SUROWCE WEDŁUG TERENU (jeszcze więcej, rozłożone po różnych krainach)
+- Góry: wolfram, chrom, stal. Wyżyny: stal, czasem wolfram i chrom. Lasy: guma. Bagna: ropa albo guma. Równiny: aluminium albo stal.
+  Miasta: stal i aluminium. Pojezierza: czasem guma.
+- Razem na mapie: stal 1790, guma 1364, aluminium 742, ropa 165, wolfram 117, chrom 61 (w 0.9.6: stal 543, guma 323, aluminium 108, ropa 70, bez wolframu i chromu).
+
+3. WIĘCEJ PUNKTÓW ZWYCIĘSTWA (VP)
+- Główne miasto każdego regionu zależnie od kategorii: miasteczko +1, duże miasteczko +2, miasto +3, duże miasto +5; stolice państw +3.
+- Ośrodki regionalne podniesione do co najmniej: Łódź 20, Bydgoszcz 18, Wrocław, Poznań, Gdańsk 16, Królewiec 15, Szczecin, Lublin, Toruń 13,
+  Białystok 11 … (ok. 60 miast, także Saksonia, Brandenburgia, Kowno, Kłajpeda, Brześć, Grodno, Wołyń, Śródmieście i Sejm w Warszawie).
+- Pozostałe VP w miastach i miasteczkach +1, dzielnice miejskie +1. Suma VP na mapie: 4861 → 6593.
+
+4. FEDERACJA KUJAWSKO-POMORSKA (decyzje dla Torunia i Bydgoszczy)
+- Nowy panel decyzji. Wersja zależy od ustroju:
+  • demokratyczny – „Konwent federacyjny” (stabilność > 50%), referenda w gminach;
+  • lewicowy – „Zjazd rad i komun”;
+  • autorytarny – „Proklamacja państwa kujawsko-pomorskiego” (ultimatum; wymaga armii 10 tys.).
+- Zaproszenie dostają wszystkie państwa z ziemiami w regionie; odmowa nie oznacza wojny. Po 30 dniach członkowie są przyłączani,
+  założyciel dostaje rdzenie w regionie, ducha narodowego i nazwę z flagą zależną od ustroju:
+  Toruń – Federacja Kujawsko-Pomorska / Wolna Federacja Kujaw i Pomorza / Federacja Wolnych Komun Kujaw / Wielkie Państwo Kujawsko-Pomorskie;
+  Bydgoszcz – Nowa Republika Kujawsko-Pomorska / Związek Wolnych Miast / Kujawski Okręg Wojskowy.
+- Po powstaniu federacji można ponowić zaproszenie dla tych, którzy odmówili (co 180 dni).
+
+The Fallen Eagle Alpha 0.9.7 (wersja testowa) – nazwa moda bez zmian; IDEOLOGIA TYLKO PRZEZ DRZEWKA, WOLFRAM I WIĘCEJ SUROWCÓW, KARA ZA BADANIA PRZED CZASEM, ZIEMIA TORUŃSKA, SILNIEJSZA ROSJA
+Podstawa: 0.9.6. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. IDEOLOGIA ZMIENIA SIĘ TYLKO PRZEZ DRZEWKA
+- Usunięty panel „Ustrój i władza” z 0.9.5 (kampania polityczna i przejęcie władzy). Pliki zostały jako puste, żeby nadpisały starą wersję.
+- Flagi nadal zmieniają się razem z ideologią (warianty z 0.9.4).
+
+2. SUROWCE
+- Na mapie pojawił się wolfram (83) i chrom (34) – wcześniej nie było ich wcale, a wymaga ich część sprzętu.
+  Wolfram: Karkonosze i Sudety (Jelenia Góra, Karpacz, Kamienna Góra, Wałbrzych, Lądek), Kielce, Rudawy (Saksonia, kraj ustecki, liberecki).
+  Chrom: Świdnica, Ziębice, Nowa Ruda, Chęciny, Saksonia. Do tego drobne złoża w kilkudziesięciu innych regionach.
+- Więcej surowców na całej mapie: istniejące złoża ×1,5, miasta i część gmin wiejskich dostały drobne złoża (stal, guma, aluminium).
+  Razem: stal 543 → 1203, guma 323 → 712, aluminium 108 → 319, ropa 70 → 121.
+- Niemcy, Czechy, Litwa, Białoruś i Ukraina (na mapie) nie miały żadnych surowców – teraz mają złoża według regionów.
+
+3. KARA ZA BADANIA PRZED CZASEM
+- Prawie wszystkie technologie miały rok 2027 (rok startu), więc gra nie naliczała kary. Teraz rok rośnie z głębokością gałęzi:
+  pierwsze technologie 2027, najdalsze ok. 2039. Badanie technologii z przyszłości trwa dłużej (kara „przed czasem”).
+- Rosja, Niemcy, Litwa i Czechy nadal mają na starcie technologie z 0.9.5 – czyli są kilka lat „przed” resztą.
+
+4. ZIEMIA TORUŃSKA – STOPNIOWE PRZYŁĄCZANIE PRZEZ DRZEWKO
+- Nowa gałąź w każdym z 6 drzewek przywódców Torunia (10 celów): Podgórz → Łysomice → Zławieś Wielka → Chełmża → Dąbrowa Chełmińska
+  → Ziemia Chełmińska oraz Lubicz → Solec Kujawski → Gniewkowo, Rojewo i Aleksandrów (tylko te gminy Republiki Kujawskiej) → „Ziemia Toruńska”.
+- Każdy cel to oferta dla jednego sąsiada (u przywódców demokratycznych – referendum, u autorytarnych – ultimatum):
+  przyjęcie = przyłączenie, odmowa = cel wojenny tylko wobec tego jednego sąsiada. Cele wymagają pokoju, więc idzie to krok po kroku.
+- Ostatni cel: duch „Ziemia Toruńska” i rdzenie na przyłączonych gminach.
+
+5. ROSJA – WIĘCEJ SIŁ
+- Rezerwa strategiczna w obwodzie królewieckim: 20 dodatkowych brygad (8 zmechanizowanych, 8 grup taktycznych, 2 artylerii, 2 piechoty morskiej)
+  – razem 50 zamiast 30. Zapasy sprzętu na start zwiększone o ok. 2/3.
+
+The Fallen Eagle Alpha 0.9.6 (wersja testowa) – nazwa moda bez zmian; ROSJA: KAŻDE DRZEWKO PRZYWÓDCY JEST INNE
+Podstawa: 0.9.5. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. KONIEC POWTARZANYCH DRZEWEK ROSJI
+- Ze wszystkich 18 drzewek Rosji (Putin, Mazury, kryzys, Pokłonska, Szojgu, wybory, car, 6 prezydentów i 6 drzewek „przyszłości”)
+  usunięto wspólne elementy, które były identyczne w każdym drzewku i przy każdej zmianie zaliczały się same (bypass):
+  szablon „życia w państwie” (20 celów) i drabinki powielające decyzje (9 celów).
+- Każde drzewko dostało 3 własne gałęzie po 5 celów (razem 270 nowych celów), bez pomijania – po zmianie przywódcy
+  są nowe rzeczy do zrobienia, a nie te same cele od nowa. Ostatni cel gałęzi daje ducha narodowego (54 nowe duchy).
+  Przykłady: Putin – „Gospodarka za Uralem”, „Wojna hybrydowa”, „Elity Kremla”; Szojgu – „Junta”, „Mobilizacja przemysłu”,
+  „Kontrola regionów”; Nawalny – „Antykorupcja”, „Reformy demokratyczne”, „Armia obywatelska”; Chodorkowski – „Rynek i prywatyzacja”,
+  „Prawo własności”, „Prywatne armie”; Mazury – „Logistyka operacji”, „Front informacyjny w Polsce”, „Administracja okupacyjna”.
+- Nagrody: fabryki cywilne i zbrojeniowe POZA MAPĄ, premie do badań (broń, artyleria, czołgi, drony, przemysł), sprzęt, paliwo,
+  rekruci, doświadczenie, stabilność i punkty polityczne.
+- Gałęzie wyniku wojny mazurskiej (zwycięstwo/klęska) zostają – wynik wojny przenosi się między drzewkami.
+- Puste kolumny po usuniętych gałęziach zostały ściśnięte, drzewka są węższe.
+- „Druga fala” i „Podlasie” nadal wymagają zakończenia wojny na Ukrainie (poprawione: blokada działa w obu celach każdego drzewka).
+- Fikcja: postacie z prawdziwego świata występują wyłącznie w alternatywnej historii moda, bez przypisanych im wypowiedzi.
+
+The Fallen Eagle Alpha 0.9.5 (wersja testowa) – nazwa moda bez zmian; USTRÓJ, FABRYKI, TECHNOLOGIE MOCARSTW, ROSJA POZA MAPĄ, WOJNA NA UKRAINIE
+Podstawa: 0.9.4. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. ZMIANA USTROJU NIE TYLKO PRZEZ DRZEWKO (każde państwo, po prologu)
+- Panel „Ustrój i władza”: kampania polityczna (w zdarzeniu wybór ugrupowania, +7% poparcia) oraz zmiana władzy, gdy inne ugrupowanie
+  ma ponad 45% poparcia (zmienia się rząd, przywódca i flaga).
+
+2. WIĘCEJ SPOSOBÓW BUDOWY FABRYK (każde państwo, po prologu)
+- Panel „Przemysł i fabryki”: nowa fabryka cywilna, nowa fabryka zbrojeniowa, nowe tereny przemysłowe (+2 miejsca na budynki w stolicy),
+  remont dróg i torów, specjalna strefa ekonomiczna (pół roku szybszej budowy fabryk).
+
+3. LEPSZY SPRZĘT NA START DLA PAŃSTW, KTÓRE SIĘ NIE ROZPADŁY
+- Niemcy, Litwa i Czechy nie miały żadnych technologii na starcie (nie mogły produkować podstawowego sprzętu) – teraz mają.
+- Rosja: 211 technologii (było 33), Niemcy: 205, Litwa i Czechy: 169 (państwa polskie mają ok. 29) – m.in. czołgi, BWP, drony,
+  śmigłowce, artyleria rakietowa, lepsza broń strzelecka i przemysł.
+
+4. ROSJA – ZAPLECZE POZA MAPĄ
+- Na start: 20 fabryk cywilnych i 15 zbrojeniowych poza mapą, dodatkowe 120 tys. rekrutów, duch „Zaplecze poza mapą”
+  (fabryki pracują mimo braku surowców na mapie, szybszy przyrost rekrutów).
+- Panel „Rosja: zaplecze poza mapą”: nowe zakłady za Uralem (+2 fabryki zbrojeniowe poza mapą), przemysł cywilny w głębi kraju,
+  pobór w obwodach wewnętrznych, transport sprzętu koleją, ropa z Syberii, brygady z Zachodniego Okręgu.
+
+5. ROSJA – ETAP „WOJNA NA UKRAINIE” (nowe drzewko)
+- Po wojnie mazurskiej Rosja nie przechodzi od razu do losu Putina i kryzysu sukcesji – najpierw musi rozstrzygnąć wojnę na Ukrainie.
+- Wskaźnik frontu ukraińskiego (co miesiąc słabnie, rośnie po ofensywach); decyzje „Operacja frontowa” i „Rotacja jednostek”.
+- Drzewko: sztab i zaplecze (mobilizacja, zakłady za Uralem, gospodarka wojenna, rezerwy), front (ofensywy, wojna dronów, linia obrony,
+  przełamanie), dyplomacja i państwo (rozmowy w Stambule, wymiana jeńców, rachunek za wojnę, weterani).
+- Zakończenia: Zwycięstwo na Ukrainie (front ≥ 75) / Zamrożony konflikt (front ≥ 40) / Pokój bez zwycięstwa. Po każdym – los przywódcy jak dotąd.
+- „Druga fala” i „Uderzenie z dwóch stron” (druga wojna w Polsce) we wszystkich drzewkach Rosji wymagają końca wojny na Ukrainie.
+
+The Fallen Eagle Alpha 0.9.4 (wersja testowa) – nazwa moda bez zmian; DRZEWKA TYLKO DLA WSKAZANYCH PAŃSTW, FLAGI IDEOLOGICZNE
+Podstawa: 0.9.3. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. DRZEWKA – TYLKO PAŃSTWA ZAZNACZONE PRZEZ AUTORA NA MAPIE
+- Usunięte drzewka 26 państw niezaznaczonych na mapie: Ziemia Chełmińska, Zaborska, Chełmża, Dobrzyń, Gniezno, Grudziądz, Kalisz, Konin,
+  Krajna, Łęczyca–Kutno, Kujawy, Lubawa, Leszno, Łowicz, Republika Socjaldemokratyczna, Nadnoteckie, Podlasie Nadbużańskie, Pałuki,
+  Zjednoczona Polska Prawica, Piotrków, Radom, Sieradz, Świecie, Tuchola, Republika Wolnościowa oraz Podgórz.
+- Ogólne drzewko moda zostaje tylko dla Wołomina, Obwodu Królewieckiego i dwóch państw bez ziem na starcie (Gmina Nowe Miasto Lubawskie, Brat Jan).
+  Pozostałe małe państwa (np. Grodzisk, Otwock, Piaseczno, Łysomice) nie mają drzewka.
+- Państwa bez drzewka nie dostają już ogólnego drzewka z gry podstawowej (plik common/national_focus/generic.txt zastąpiony pustym drzewkiem –
+  oryginał odwoływał się do technologii i jednostek, których w modzie nie ma).
+- Zostają: Niemcy, Litwa, Czechy, Ukraina, Eurostaat Posen, Ciechocinek oraz wszystkie państwa zaznaczone na czarno.
+- Panel „Rozbudowa wojska” (z 0.9.2) działa także dla państw bez drzewka.
+
+2. FLAGI ZMIENIAJĄ SIĘ RAZEM Z USTROJEM
+- U 56 państw wszystkie warianty ideologiczne flagi były kopią flagi podstawowej – dlatego po zmianie ideologii nic się nie zmieniało.
+- Nowe warianty wyprowadzone z flagi podstawowej (82×52, 41×26 i 10×7): każda grupa ideologiczna ma własny znak – pasy, barwienie,
+  gwiazda dla komunizmu i socjalizmu totalitarnego, czerwono-czarny klin dla socjalizmu wolnościowego, ciemne barwy dla faszyzmu (bez symboli).
+- Wariant ideologii, z którą państwo startuje, zostaje taki sam jak flaga podstawowa.
+- 21 państw, które miały już własne warianty od autora, bez zmian.
+
+The Fallen Eagle Alpha 0.9.3 (wersja testowa) – nazwa moda bez zmian; REWORK, ETAP 5: NIEMCY I EUROSTAATY
+Podstawa: 0.9.2. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. NIEMCY – „BERLIN I ROZBITA POLSKA” (drzewko ZAG_GER_tree)
+- Usunięte gałęzie szablonowe wspólne z Czechami, Litwą i Ukrainą („zy”) oraz losowe kampanie przeciw dowolnemu sąsiadowi („atak”).
+- Zachowane gospodarka, logistyka i program wojskowy – z niemieckimi nazwami i wysokim priorytetem AI (rozbudowa wojska jako główne zadanie).
+- Rada Bezpieczeństwa i debata w Bundestagu wybierają kurs na lata (wykluczające się drogi):
+  - Nowy porządek europejski: komisarze w Eurostaatach, kontrola granicy na Odrze, Korpus Stabilizacyjny Wschód,
+    interwencja tylko przeciw państwu, które napadło na Eurostaat (jeden cel), propozycja „nowych krajów związkowych” dla Eurostaatów
+    najbardziej zależnych od Berlina (mogą odmówić). Zakończenie: Nowy porządek nad Odrą i Wisłą.
+  - Tarcza Europy: samorząd dla Eurostaatów, Bundeswehr na Odrze, obronny pakt „Tarcza Europy” z państwami podległymi Berlinowi,
+    Fundusz Odbudowy Polski dla IV RP, wschodnia flanka. Zakończenia: Europa regionów (Eurostaaty mogą prosić o samodzielność) / Bastion na wschodzie.
+- Panel decyzji „Niemcy wobec rozbitej Polski” pokazuje zależność trzech Eurostaatów od Berlina; decyzje: audyt, transza funduszu, ćwiczenia nad Odrą.
+- Zdarzenia: debata w Bundestagu, komisarze z Berlina, propozycja kraju związkowego, fundusz odbudowy, Tarcza Europy (wiadomość),
+  interwencja stabilizacyjna, strajk w Eurostaacie (przy bardzo wysokiej zależności).
+- Żaden fokus Niemiec nie wypowiada wojny ani nie daje celów wojennych wobec więcej niż jednego państwa.
+
+2. EUROSTAATY – POMORZE, ŚLĄSK, WIELKOPOLSKA
+- Usunięte szablonowe gałęzie „zy” i „Gotowi do działania”; program wojskowy i własne gałęzie zostają.
+- Nowa gałąź „kurs Berlina”, inna w każdym Eurostaacie: lojalność ⟷ cichy opór (przy Nowym porządku), wspólna obrona z Bundeswehrą (przy Tarczy),
+  na końcu wniosek o samodzielność, gdy zależność od Berlina spadnie poniżej 30.
+
+The Fallen Eagle Alpha 0.9.2 (wersja testowa) – nazwa moda bez zmian; ROZBUDOWA WOJSKA JAKO GŁÓWNE ZADANIE KAŻDEGO KRAJU
+Podstawa: 0.9.1. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. PANEL „ROZBUDOWA WOJSKA” – DLA KAŻDEGO PAŃSTWA
+- Nowa kategoria decyzji widoczna dla wszystkich państw (po prologu). Sześć etapów po kolei, każdy raz:
+  komisja poborowa → szkoła podoficerska → arsenał → pierwsze bataliony regularne (2 jednostki) → fabryka broni → brygada zmotoryzowana (2 jednostki).
+- Po szkole podoficerskiej – decyzje cykliczne z czasem odnowienia: kolejny nabór, ćwiczenia poligonowe (w pokoju), uzupełnienia sprzętu,
+  a po brygadzie – nowy batalion. Postęp widać w opisie panelu („Etap programu rozbudowy: X/6”).
+- AI traktuje etapy programu jako priorytet.
+
+2. PROGRAM WOJSKOWY W DRZEWKACH
+- Frakcje Warszawy: przywrócona gałąź programu wojskowego (rejestr, ochotnicy, fabryka, pobór, bataliony, produkcja, rezerwiści, brygady,
+  zaplecze, kadra, armia zawodowa), usunięta w 0.9.0 razem z szablonami. Każda frakcja ma własne nazwy (np. „Bataliony Straży Marszałkowskiej”,
+  „Kompanie prewencji”, „Legion Łazienkowskiej”, „Armia Rad Powiśla”). Program zaczyna się od pierwszego fokusa mechaniki frakcji.
+- Praga, Bielany, Powiśle: dodatkowa gałąź obrony dzielnicy (bataliony, strzelnica/kursy, arsenał/warsztat, drugi batalion, pułk/gwardia).
+- IV RP: wojsko jest teraz największą gałęzią każdej republiki:
+  Sejmowa – obowiązek obrony, brygady OT, pułki artylerii, Pierwsza Dywizja Obywatelska, Armia IV Rzeczypospolitej;
+  Prezydencka – Akademia Prezydencka, Dywizja Gwardii Prezydenckiej, brygady zmotoryzowane, pułki artylerii, Armia Prezydencka;
+  Rodzin – najemnicy, Dywizje Ochrony Rodziny, kolumny terenówek, kursy oficerskie, prywatna armia państwa.
+- Wszystkie drzewka moda: fokusy programu wojskowego (915 fokusów w 77 plikach) mają wysoki priorytet AI (25 zamiast 3).
+
+3. NAZWY
+- Usunięte powtórzenia nazw: porozumienia z gminami i statuty dzielnic Pałacu i Pruszkowa, „Biuro Bezpieczeństwa Narodowego”
+  i „Gwardia Prezydencka” w IV RP.
+
+The Fallen Eagle Alpha 0.9.1 (wersja testowa) – nazwa moda bez zmian; REWORK, ETAP 4 (IV RZECZPOSPOLITA) i wybór Marszałka
+Podstawa: 0.9.0 (rework Warszawy, etapy 2 i 3). Nic z tego nie było jeszcze uruchomione w grze.
+
+1. WYBÓR MARSZAŁKA SEJMU – GŁOSOWANIE WYZNACZA ŚCIEŻKĘ SEJMU
+- Na starcie Sejm nie ma marszałka. Pierwszy fokus gałęzi, „Wybór Marszałka Sejmu”, uruchamia głosowanie z kandydatami
+  (postacie, które już są w modzie): Donald Tusk, Włodzimierz Czarzasty, Barbara Konopka, Paweł Kukiz, płk Henryk Ostrowski,
+  kolegialne Prezydium albo Rada Ocalenia Państwa.
+- Wybór Tuska otwiera ścieżkę „Premier w Sejmie”, każdy inny wybór – „Sejm bez premiera”. Tusk nie jest kandydatem, jeśli wyjechał do Szczecina
+  (reguła gry albo decyzja z prologu).
+- Wybrany zostaje przywódcą Sejmu (jego grupa ideologiczna przejmuje rząd), daje własnego ducha narodowego i zmienia Legitymację Sejmu.
+- „Kolegialne prezydium”, „Jeden głos Sejmu” i „Rada Ocalenia Państwa” zależą od wyniku głosowania; „Rozmowy ze Szczecinem” – tylko gdy Tusk jest w Szczecinie.
+- Decyzja „Wotum nieufności wobec Marszałka” (raz na rok) pozwala głosować ponownie.
+- Proklamacja Republiki Sejmowej IV RP zostawia u władzy wybranego marszałka; Tusk zostaje przywódcą tylko na ścieżce „Premier w Sejmie”.
+- Ścieżki prawdziwych polityków są fikcją moda (opis w zdarzeniu i duchach narodowych).
+
+2. IV RZECZPOSPOLITA – TRZY RÓŻNE DRZEWKA (ETAP 4)
+- Usunięte gałęzie szablonowe wspólne dla trzech republik (odbudowa, wojsko, „zy” i „Gotowi do działania”). Zostały: rdzeń każdej republiki
+  i gałąź ekspansji (z nowymi nazwami w każdej republice).
+- Wskaźnik republiki w panelu „IV Rzeczpospolita” (co miesiąc się zmienia, daje modyfikator):
+  Większość sejmowa (Sejmowa) / Autorytet Prezydenta (Prezydencka) / Lojalność Rodzin (Rodzin).
+- Republika Sejmowa – układ półkola sali plenarnej, pięć klubów: samorządy i Senat Ziem, Fundusz Odbudowy i budżet, Trybunał i Komisja Prawdy
+  i Rozliczeń, Obrona Terytorialna i Akademia, delegacja do Brukseli. Zakończenia: Rzeczpospolita Parlamentarna / Rzeczpospolita Federalna /
+  Rząd Ocalenia Narodowego (gdy rozpadnie się większość). Zdarzenia: Komisja Prawdy i Rozliczeń, kryzys koalicyjny.
+- Republika Prezydencka – kręgosłup pięciu dekretów z ramionami bezpieczeństwa i gospodarki, referendum konstytucyjne.
+  Zakończenia: Republika Prezydencka / Dyktatura komisaryczna / Przekazanie władzy Zgromadzeniu Narodowemu.
+  Zdarzenia: referendum, opozycja na ulicach (zbyt silny autorytet), generałowie tracą cierpliwość (zbyt słaby).
+- Rzeczpospolita Rodzin – drzewo trzech fikcyjnych rodów (Pruszków, Praga, Ursus) i fasada państwa, Zjazd Rodzin.
+  Zakończenia: Państwo-holding / Legalizacja: republika oligarchów / Upadek Rodziny (po wojnie rodzin podległe państwa odzyskują niezależność).
+- Decyzje w panelu każdej republiki (debata nad orędziem, konsultacje, orędzie, komisarz, koperty dla rodzin, przysługi).
+- „Rozwiązanie bojówek”: zamiast wypowiedzenia wojny wszystkim dziewięciu frakcjom stolicy naraz – wezwanie do rozwiązania; zgoda = wcielenie
+  bez walki, odmowa = cel wojenny tylko wobec tej frakcji.
+- „Wojna o zjednoczenie”: zamiast celów wojennych na wszystkich sąsiadów – jeden przeciwnik naraz; kolejni decyzją „Następny etap zjednoczenia”
+  (raz na 180 dni, tylko w czasie pokoju).
+- Gminy podwarszawskie: obok ofensywy można zawrzeć porozumienie (związek miast / akt przyłączenia / umowa z gminą – zależnie od republiki).
+
+3. POPRAWKI
+- Dwa zdarzenia Warszawy miały obraz wskazujący na nieistniejącą grafikę.
+
+The Fallen Eagle Alpha 0.9.0 (wersja testowa) – nazwa moda bez zmian; REWORK WARSZAWY, ETAPY 2 i 3
+Podstawa: main („Lekki Rework”, 3e2dbb9). Nic z tego nie było jeszcze uruchomione w grze.
+
+1. WSPÓLNE SYSTEMY WARSZAWY (ETAP 2)
+- Panel decyzji „Warszawa: walka o stolicę”: trzy wskaźniki miasta (prąd, zaopatrzenie, nastroje) i własny wskaźnik każdej z 9 frakcji
+  (Legitymacja Sejmu, Autorytet, Sieć wpływów, Jedność trybun, Porządek publiczny, Łańcuch dowodzenia, Autonomia prawego brzegu,
+  Samowystarczalność, Poparcie społeczne). Wskaźnik zmienia się co miesiąc i daje frakcji modyfikatory (dynamiczny modyfikator).
+- 12 zdarzeń sytuacyjnych (m.in. strzały na Moście Poniatowskiego, noc bez prądu, ostatnia transmisja z Wiejskiej, układ z Pruszkowem, „Żyleta wychodzi na ulice”, metro, zamknięcie przepraw),
+  każde z czasem odnowienia, żeby się nie zapętlały.
+- Koalicja Sejmu i Pałacu: negocjacje, zaufanie, zdrada. Liga Wolnych Dzielnic: negocjacje, wspólna kasa, federacja.
+- Gminy podwarszawskie (Ożarów, Grodzisk, Piaseczno, Wołomin, Otwock): każda ma funkcję strategiczną; zamiast ofensywy można zaproponować
+  związek miast (fokus „Porozumienie: …”, wykluczający się z atakiem). Dzielnice mogą dostać statut z autonomią.
+
+2. DRZEWKA FRAKCJI (ETAP 3)
+- Usunięte szablonowe gałęzie WWD_<TAG>_mil_* i WWD_<TAG>_zy_*, identyczne we wszystkich 9 drzewkach. Zachowane: rdzeń WWD, gałęzie fabularne
+  FAB_, ataki (z nowymi nazwami dla każdej frakcji) i gałąź zbrojna (z nowymi nazwami szablonowych fokusów).
+- Każda frakcja ma własny układ drzewka, własną gałąź mechaniki, zdarzenia i decyzje:
+  - Sejm (SMR) „Rzeczpospolita trwa na Wiejskiej” – kworum, ustawy, „Ostatnie posiedzenie Sejmu”; demokracja albo prezydium nadzwyczajne.
+  - Pałac (KPR) „Pałac nie kapituluje” – drabina dekretów, SOP, administracja; „Dwa ośrodki władzy, jedna Polska”; groźba zamachu wojskowego.
+  - Pruszków (MPR) „Ośmiornica nad Wisłą” – pięć macek wpływów; „Rodzina jest ważniejsza od państwa” (możliwa wojna wewnętrzna);
+    państwo przestępcze, legalizacja albo upadek.
+  - Kibice (LEG) „Żyleta przejmuje miasto” – cztery sektory trybun; niezależna Warszawa kibicowska, junta trybun, sojusz albo normalizacja.
+  - Policja (PLC) „Miasto pod nadzorem” – sieć komisariatów (Wola, Ochota, Żoliborz, Bemowo), BSW i akcja „Czyste ręce”;
+    „Kto pilnuje tych, którzy pilnują miasta?”; Policja Rzeczypospolitej albo państwo policyjne.
+  - Wojsko (WOJ) „Rozkaz z Rembertowa” – sztab i trzy kierunki (Rembertów, Wawer, Wesoła), żandarmeria; „Spór generałów”;
+    wojsko przywraca władzę cywilną / Wojskowa Rada Ocalenia / Armia odrodzonej Rzeczypospolitej (po proklamacji IV RP).
+  - Praga (PRG) „Prawy brzeg” – asymetrycznie: drabina mostów (otwarte albo zamknięte mosty) i wachlarz czterech dzielnic;
+    Konwent Prawego Brzegu; Wolna Praga / autonomiczny prawy brzeg / Praga współtworzy stolicę.
+  - Bielany (ZIE) „Sieć kooperatyw” – pierścień kooperatyw; „Las czy piece?” (pragmatycy i radykałowie);
+    Ekokomuna Bielańska / Federacja kooperatyw / Zielona Republika Bielan.
+  - Powiśle (TEC) „Mozaika rad” – mozaika 3×3 rad obywatelskich; „Głosowanie na Tamce”;
+    Wolne Powiśle / Federacja Wolnych Dzielnic / Demokratyczna Warszawa (propozycja wyborów dla całego miasta).
+- Poprawka błędu z oryginału: „Wolna Praga”, „Zielona Republika Bielan” i „Wolne Powiśle” wymagały obu wzajemnie wykluczających się gałęzi
+  (Liga i patron), więc były nieosiągalne. Teraz wystarczy jedna z nich.
+- Poprawka: typ wyposażenia w nowych nagrodach to ranged_equipment (infantry_equipment nie istnieje w modzie).
+
+3. ZNANE SPRAWY DO DECYZJI
+- common/national_focus/pl2027_CIE_tree.txt to druga kopia drzewka ZKR_zakon_tree (te same 176 fokusów, inne pozycje) – podwójne ID.
+  Nie usunięta, czekam na decyzję, którą wersję zostawić.
 
 The Fallen Eagle Alpha 0.8.9 (wersja testowa) – nazwa moda bez zmian („Godzina Zero – etap II”)
 Podstawa: gałąź wersja-0.8.8 (0.8.8 + Białoruś: siły zbrojne i zaplecze poza mapą).

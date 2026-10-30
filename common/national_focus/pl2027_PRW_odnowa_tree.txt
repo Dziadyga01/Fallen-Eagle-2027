@@ -1,0 +1,167 @@
+# The Fallen Eagle 2027 – Zjednoczona Polska Prawica: odnowa po kryzysie (fikcyjna ścieżka moda)
+focus_tree = {
+	id = PRW_odnowa_tree
+	country = {
+		factor = 0
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1200 }
+	initial_show_position = { focus = PRW_od_start }
+
+	focus = {
+		id = PRW_od_start
+		icon = GFX_pl2027_081_rada_2
+		x = 4
+		y = 0
+		cost = 3
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_stability = 0.02 set_country_flag = PRW_kampania_kongresowa custom_effect_tooltip = WOS_tt_68
+		}
+	}
+
+	focus = {
+		id = PRW_od_komitet
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 2
+		y = 1
+		prerequisite = { focus = PRW_od_start }
+		cost = 3
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_spojnosc = 10 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = PRW_od_rozliczenie
+		icon = GFX_pl2027_081_sad_0
+		x = 4
+		y = 1
+		prerequisite = { focus = PRW_od_start }
+		cost = 3
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			if = { limit = { check_variable = { PRW_bop > 0 } } add_power_balance_value = { id = PRW_bop value = -0.10 tooltip_side = PRW_harcerze } hidden_effect = { add_to_variable = { PRW_bop = -10 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } } else_if = { limit = { check_variable = { PRW_bop < 0 } } add_power_balance_value = { id = PRW_bop value = 0.10 tooltip_side = PRW_maslarze } hidden_effect = { add_to_variable = { PRW_bop = 10 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } } add_to_variable = { PRW_spojnosc = 5 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = PRW_od_teren
+		icon = GFX_pl2027_081_ludzie_2
+		x = 6
+		y = 1
+		prerequisite = { focus = PRW_od_start }
+		cost = 3
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_spojnosc = 5 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = PRW_od_kongres
+		icon = GFX_pl2027_081_wybory_2
+		x = 5
+		y = 3
+		prerequisite = { focus = PRW_od_komitet }
+		prerequisite = { focus = PRW_od_rozliczenie }
+		prerequisite = { focus = PRW_od_teren }
+		cost = 6
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			custom_effect_tooltip = WOS_tt_69
+		}
+	}
+
+	focus = {
+		id = PRW_od_wyb_czarnek
+		icon = GFX_pl2027_081_wybory_0
+		x = 0
+		y = 4
+		prerequisite = { focus = PRW_od_kongres }
+		mutually_exclusive = { focus = PRW_od_wyb_morawiecki focus = PRW_od_wyb_ziobro focus = PRW_od_wyb_kurski focus = PRW_od_wyb_macierewicz focus = PRW_od_wyb_kot }
+		cost = 1
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_kand_czarnek NOT = { has_country_flag = PRW_przegral_czarnek } OR = { check_variable = { PRW_p_czarnek > 29 } NOT = { OR = { AND = { check_variable = { PRW_p_czarnek > 29 } NOT = { has_country_flag = PRW_przegral_czarnek } } AND = { check_variable = { PRW_p_morawiecki > 29 } NOT = { has_country_flag = PRW_przegral_morawiecki } } AND = { check_variable = { PRW_p_ziobro > 29 } NOT = { has_country_flag = PRW_przegral_ziobro } } AND = { check_variable = { PRW_p_kurski > 29 } NOT = { has_country_flag = PRW_przegral_kurski } } AND = { check_variable = { PRW_p_macierewicz > 29 } NOT = { has_country_flag = PRW_przegral_macierewicz } } AND = { check_variable = { PRW_p_kot > 29 } NOT = { has_country_flag = PRW_przegral_kot } } } } } } NOT = { has_country_flag = PRW_kongres_rozstrzygniety } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			custom_effect_tooltip = PRW_tt_kongres_czarnek PRW_wybor_czarnek = yes
+		}
+	}
+
+	focus = {
+		id = PRW_od_wyb_morawiecki
+		icon = GFX_pl2027_081_wybory_1
+		x = 2
+		y = 4
+		prerequisite = { focus = PRW_od_kongres }
+		mutually_exclusive = { focus = PRW_od_wyb_czarnek focus = PRW_od_wyb_ziobro focus = PRW_od_wyb_kurski focus = PRW_od_wyb_macierewicz focus = PRW_od_wyb_kot }
+		cost = 1
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_kand_morawiecki NOT = { has_country_flag = PRW_przegral_morawiecki } OR = { check_variable = { PRW_p_morawiecki > 29 } NOT = { OR = { AND = { check_variable = { PRW_p_czarnek > 29 } NOT = { has_country_flag = PRW_przegral_czarnek } } AND = { check_variable = { PRW_p_morawiecki > 29 } NOT = { has_country_flag = PRW_przegral_morawiecki } } AND = { check_variable = { PRW_p_ziobro > 29 } NOT = { has_country_flag = PRW_przegral_ziobro } } AND = { check_variable = { PRW_p_kurski > 29 } NOT = { has_country_flag = PRW_przegral_kurski } } AND = { check_variable = { PRW_p_macierewicz > 29 } NOT = { has_country_flag = PRW_przegral_macierewicz } } AND = { check_variable = { PRW_p_kot > 29 } NOT = { has_country_flag = PRW_przegral_kot } } } } } } NOT = { has_country_flag = PRW_kongres_rozstrzygniety } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			custom_effect_tooltip = PRW_tt_kongres_morawiecki PRW_wybor_morawiecki = yes
+		}
+	}
+
+	focus = {
+		id = PRW_od_wyb_ziobro
+		icon = GFX_pl2027_081_wybory_2
+		x = 4
+		y = 4
+		prerequisite = { focus = PRW_od_kongres }
+		mutually_exclusive = { focus = PRW_od_wyb_czarnek focus = PRW_od_wyb_morawiecki focus = PRW_od_wyb_kurski focus = PRW_od_wyb_macierewicz focus = PRW_od_wyb_kot }
+		cost = 1
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_kand_ziobro NOT = { has_country_flag = PRW_przegral_ziobro } OR = { check_variable = { PRW_p_ziobro > 29 } NOT = { OR = { AND = { check_variable = { PRW_p_czarnek > 29 } NOT = { has_country_flag = PRW_przegral_czarnek } } AND = { check_variable = { PRW_p_morawiecki > 29 } NOT = { has_country_flag = PRW_przegral_morawiecki } } AND = { check_variable = { PRW_p_ziobro > 29 } NOT = { has_country_flag = PRW_przegral_ziobro } } AND = { check_variable = { PRW_p_kurski > 29 } NOT = { has_country_flag = PRW_przegral_kurski } } AND = { check_variable = { PRW_p_macierewicz > 29 } NOT = { has_country_flag = PRW_przegral_macierewicz } } AND = { check_variable = { PRW_p_kot > 29 } NOT = { has_country_flag = PRW_przegral_kot } } } } } } NOT = { has_country_flag = PRW_kongres_rozstrzygniety } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			custom_effect_tooltip = PRW_tt_kongres_ziobro PRW_wybor_ziobro = yes
+		}
+	}
+
+	focus = {
+		id = PRW_od_wyb_kurski
+		icon = GFX_pl2027_081_wybory_3
+		x = 6
+		y = 4
+		prerequisite = { focus = PRW_od_kongres }
+		mutually_exclusive = { focus = PRW_od_wyb_czarnek focus = PRW_od_wyb_morawiecki focus = PRW_od_wyb_ziobro focus = PRW_od_wyb_macierewicz focus = PRW_od_wyb_kot }
+		cost = 1
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_kand_kurski NOT = { has_country_flag = PRW_przegral_kurski } OR = { check_variable = { PRW_p_kurski > 29 } NOT = { OR = { AND = { check_variable = { PRW_p_czarnek > 29 } NOT = { has_country_flag = PRW_przegral_czarnek } } AND = { check_variable = { PRW_p_morawiecki > 29 } NOT = { has_country_flag = PRW_przegral_morawiecki } } AND = { check_variable = { PRW_p_ziobro > 29 } NOT = { has_country_flag = PRW_przegral_ziobro } } AND = { check_variable = { PRW_p_kurski > 29 } NOT = { has_country_flag = PRW_przegral_kurski } } AND = { check_variable = { PRW_p_macierewicz > 29 } NOT = { has_country_flag = PRW_przegral_macierewicz } } AND = { check_variable = { PRW_p_kot > 29 } NOT = { has_country_flag = PRW_przegral_kot } } } } } } NOT = { has_country_flag = PRW_kongres_rozstrzygniety } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			custom_effect_tooltip = PRW_tt_kongres_kurski PRW_wybor_kurski = yes
+		}
+	}
+
+	focus = {
+		id = PRW_od_wyb_macierewicz
+		icon = GFX_pl2027_081_wybory_0
+		x = 8
+		y = 4
+		prerequisite = { focus = PRW_od_kongres }
+		mutually_exclusive = { focus = PRW_od_wyb_czarnek focus = PRW_od_wyb_morawiecki focus = PRW_od_wyb_ziobro focus = PRW_od_wyb_kurski focus = PRW_od_wyb_kot }
+		cost = 1
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_kand_macierewicz NOT = { has_country_flag = PRW_przegral_macierewicz } OR = { check_variable = { PRW_p_macierewicz > 29 } NOT = { OR = { AND = { check_variable = { PRW_p_czarnek > 29 } NOT = { has_country_flag = PRW_przegral_czarnek } } AND = { check_variable = { PRW_p_morawiecki > 29 } NOT = { has_country_flag = PRW_przegral_morawiecki } } AND = { check_variable = { PRW_p_ziobro > 29 } NOT = { has_country_flag = PRW_przegral_ziobro } } AND = { check_variable = { PRW_p_kurski > 29 } NOT = { has_country_flag = PRW_przegral_kurski } } AND = { check_variable = { PRW_p_macierewicz > 29 } NOT = { has_country_flag = PRW_przegral_macierewicz } } AND = { check_variable = { PRW_p_kot > 29 } NOT = { has_country_flag = PRW_przegral_kot } } } } } } NOT = { has_country_flag = PRW_kongres_rozstrzygniety } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			custom_effect_tooltip = PRW_tt_kongres_macierewicz PRW_wybor_macierewicz = yes
+		}
+	}
+
+	focus = {
+		id = PRW_od_wyb_kot
+		icon = GFX_pl2027_081_wybory_1
+		x = 10
+		y = 4
+		prerequisite = { focus = PRW_od_kongres }
+		mutually_exclusive = { focus = PRW_od_wyb_czarnek focus = PRW_od_wyb_morawiecki focus = PRW_od_wyb_ziobro focus = PRW_od_wyb_kurski focus = PRW_od_wyb_macierewicz }
+		cost = 1
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_kand_kot NOT = { has_country_flag = PRW_przegral_kot } OR = { check_variable = { PRW_p_kot > 29 } NOT = { OR = { AND = { check_variable = { PRW_p_czarnek > 29 } NOT = { has_country_flag = PRW_przegral_czarnek } } AND = { check_variable = { PRW_p_morawiecki > 29 } NOT = { has_country_flag = PRW_przegral_morawiecki } } AND = { check_variable = { PRW_p_ziobro > 29 } NOT = { has_country_flag = PRW_przegral_ziobro } } AND = { check_variable = { PRW_p_kurski > 29 } NOT = { has_country_flag = PRW_przegral_kurski } } AND = { check_variable = { PRW_p_macierewicz > 29 } NOT = { has_country_flag = PRW_przegral_macierewicz } } AND = { check_variable = { PRW_p_kot > 29 } NOT = { has_country_flag = PRW_przegral_kot } } } } } } NOT = { has_country_flag = PRW_kongres_rozstrzygniety } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			custom_effect_tooltip = PRW_tt_kongres_kot PRW_wybor_kot = yes
+		}
+	}
+}

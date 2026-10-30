@@ -1,0 +1,19 @@
+add_namespace = rkp
+
+country_event = {
+	id = rkp.10
+	title = rkp.10.t
+	desc = rkp.10.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = rkp.10.a
+		ai_chance = { base = 2 }
+		add_political_power = -40 add_to_variable = { KPM_jednosc = 20 } clamp_variable = { var = KPM_jednosc min = 0 max = 100 }
+	}
+	option = {
+		name = rkp.10.b
+		ai_chance = { base = 1 }
+		add_stability = -0.05 add_to_variable = { KPM_jednosc = 5 } clamp_variable = { var = KPM_jednosc min = 0 max = 100 }
+	}
+}

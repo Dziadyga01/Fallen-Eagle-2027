@@ -1,0 +1,11 @@
+# The Fallen Eagle 2027 – zastępuje ogólne drzewko z gry podstawowej (generic.txt).
+# Państwa bez własnego drzewka nie dostają żadnych fokusów (decyzja autora moda: drzewka mają tylko wybrane państwa).
+# Ogólne drzewko HOI4 odwoływało się do technologii, jednostek i idei, których w modzie nie ma.
+focus_tree = {
+	id = generic_focus
+	country = {
+		factor = 1
+	}
+	default = yes
+	reset_on_civilwar = no
+}

@@ -1,0 +1,45 @@
+add_namespace = feukr
+
+country_event = {
+    id = feukr.1
+    title = feukr.1.t
+    desc = feukr.1.d
+    is_triggered_only = yes
+    option = { name = feukr.1.a }
+}
+
+news_event = {
+    id = feukr.25
+    title = feukr.25.t
+    desc = feukr.25.d
+    is_triggered_only = yes
+    major = yes
+    option = { name = feukr.25.a }
+}
+
+news_event = {
+    id = feukr.50
+    title = feukr.50.t
+    desc = feukr.50.d
+    is_triggered_only = yes
+    major = yes
+    option = { name = feukr.50.a }
+}
+
+news_event = {
+    id = feukr.75
+    title = feukr.75.t
+    desc = feukr.75.d
+    is_triggered_only = yes
+    major = yes
+    option = { name = feukr.75.a }
+}
+
+news_event = {
+    id = feukr.100
+    title = feukr.100.t
+    desc = feukr.100.d
+    is_triggered_only = yes
+    major = yes
+    option = { name = feukr.100.a }
+}

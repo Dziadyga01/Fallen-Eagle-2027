@@ -24,4 +24,17 @@ characters = {
 			expire = "2065.1.1.1"
 		}
 	}
+	BLR_rada_narodowa = {
+		name = BLR_rada_narodowa
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BLR/BLR_rada_narodowa.dds"
+				small = "gfx/leaders/BLR/BLR_rada_narodowa_small.dds"
+			}
+		}
+		country_leader = {
+			ideology = centrist
+			expire = "2065.1.1.1"
+		}
+	}
 }

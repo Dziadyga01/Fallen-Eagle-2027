@@ -1,0 +1,42 @@
+DZ_BLR_kat = {
+	icon = generic_political_discourse
+	allowed = { OR = { original_tag = BLR } }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
+	priority = 75
+}
+FED_rownowaga_kat = {
+	icon = generic_political_discourse
+	allowed = { OR = { original_tag = MAZ original_tag = WMZ } }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
+	priority = 75
+}
+DZ_KOR_kat = {
+	icon = generic_political_discourse
+	allowed = { OR = { original_tag = PLO } }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
+	priority = 75
+}
+DZ_PKP_kat = {
+	icon = generic_political_discourse
+	allowed = { OR = { original_tag = KOC } }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
+	priority = 75
+}
+DZ_ROS_kat = {
+	icon = generic_political_discourse
+	allowed = { OR = { original_tag = ROS } }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
+	priority = 75
+}
+DZ_TPZ_kat = {
+	icon = generic_political_discourse
+	allowed = { OR = { original_tag = WLC } }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
+	priority = 75
+}
+ZKR_wplywy_kat = {
+	icon = generic_political_discourse
+	allowed = { OR = { original_tag = ZKR } }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
+	priority = 75
+}

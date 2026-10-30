@@ -1,0 +1,164 @@
+WOS_panel = {
+	WOS_dec_siec = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { always = yes }
+		available = { OR = { 727 = { is_controlled_by = ROOT } 729 = { is_controlled_by = ROOT } } has_war = no }
+		days_re_enable = 120
+		complete_effect = { add_to_variable = { global.WOS_prad = 10 } clamp_variable = { var = global.WOS_prad min = 0 max = 100 } add_to_variable = { WOS_m = 2 } clamp_variable = { var = WOS_m min = 0 max = 100 } }
+		ai_will_do = { base = 2 modifier = { factor = 4 check_variable = { global.WOS_prad < 40 } } modifier = { factor = 0.2 check_variable = { global.WOS_prad > 80 } } }
+	}
+	WOS_dec_bronisze = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { always = yes }
+		available = { 679 = { controller = { has_war = no } } }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { global.WOS_zaopatrzenie = 8 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 2 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } }
+		ai_will_do = { base = 2 modifier = { factor = 4 check_variable = { global.WOS_zaopatrzenie < 40 } } modifier = { factor = 0.2 check_variable = { global.WOS_zaopatrzenie > 80 } } }
+	}
+	WOS_dec_kuchnie = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { always = yes }
+		available = { check_variable = { global.WOS_zaopatrzenie > 15 } }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { global.WOS_nastroje = 5 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_to_variable = { WOS_m = 3 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.WOS_zaopatrzenie = -2 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } }
+		ai_will_do = { base = 2 modifier = { factor = 4 check_variable = { global.WOS_nastroje < 40 } } modifier = { factor = 0 check_variable = { global.WOS_zaopatrzenie < 25 } } modifier = { factor = 0.3 check_variable = { global.WOS_nastroje > 75 } } }
+	}
+	WOS_dec_smr_wotum = {
+		icon = generic_political_discourse
+		cost = 75
+		visible = { original_tag = SMR has_country_flag = WOS_smr_wybrany }
+		available = { custom_trigger_tooltip = { tooltip = WOS_req_m_min_35 check_variable = { WOS_m > 34 } } }
+		days_re_enable = 365
+		complete_effect = { country_event = { id = wos.102 days = 1 } }
+		ai_will_do = { factor = 0 }
+	}
+	WOS_dec_mpr_koperta = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { original_tag = MPR }
+		available = { check_variable = { WOS_m > 30 } }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { WOS_m = -3 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.TFE_wwa_mpr = 4 } WWP_clamp = yes add_to_variable = { global.TFE_wwa_smr = -2 } WWP_clamp = yes add_to_variable = { global.TFE_wwa_kpr = -2 } WWP_clamp = yes }
+		ai_will_do = { base = 2 modifier = { factor = 0 check_variable = { WOS_m < 40 } } modifier = { factor = 2 check_variable = { WOS_m > 65 } } }
+	}
+	WOS_dec_mpr_przemyt = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { original_tag = MPR }
+		available = { 598 = { is_controlled_by = ROOT } }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { global.WOS_zaopatrzenie = 6 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } add_to_variable = { WOS_m = 4 } clamp_variable = { var = WOS_m min = 0 max = 100 } }
+		ai_will_do = { base = 3 modifier = { factor = 2 check_variable = { WOS_m < 40 } } modifier = { factor = 2 check_variable = { global.WOS_zaopatrzenie < 40 } } }
+	}
+	WOS_dec_leg_oprawa = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = LEG }
+		available = { 736 = { is_controlled_by = ROOT } }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { WOS_m = 6 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_war_support = 0.02 }
+		ai_will_do = { base = 3 modifier = { factor = 2 check_variable = { WOS_m < 45 } } modifier = { factor = 0.2 check_variable = { WOS_m > 85 } } }
+	}
+	WOS_dec_leg_zrzutka = {
+		icon = generic_political_discourse
+		cost = 20
+		visible = { original_tag = LEG }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { WOS_m = -3 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_equipment_to_stockpile = { type = ranged_equipment amount = 300 } }
+		ai_will_do = { base = 2 modifier = { factor = 0 check_variable = { WOS_m < 40 } } modifier = { factor = 3 has_war = yes } }
+	}
+	WOS_dec_plc_patrole = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { original_tag = PLC }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { WOS_m = 4 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 2 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } }
+		ai_will_do = { base = 3 modifier = { factor = 2 check_variable = { WOS_m < 45 } } modifier = { factor = 0.2 check_variable = { WOS_m > 85 } } }
+	}
+	WOS_dec_plc_paliwo = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = PLC }
+		available = { check_variable = { WOS_m < 70 } }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { WOS_m = 6 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_fuel = 1500 }
+		ai_will_do = { base = 2 modifier = { factor = 3 check_variable = { WOS_m < 40 } } modifier = { factor = 2 has_war = yes } }
+	}
+	WOS_dec_woj_odprawa = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = WOJ }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { WOS_m = 5 } clamp_variable = { var = WOS_m min = 0 max = 100 } army_experience = 5 }
+		ai_will_do = { base = 3 modifier = { factor = 2 check_variable = { WOS_m < 50 } } modifier = { factor = 0.2 check_variable = { WOS_m > 85 } } }
+	}
+	WOS_dec_woj_rezerwisci = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = WOJ }
+		available = { custom_trigger_tooltip = { tooltip = WOS_req_m_min_40 check_variable = { WOS_m > 39 } } }
+		days_re_enable = 120
+		complete_effect = { add_manpower = 2500 add_to_variable = { WOS_m = -2 } clamp_variable = { var = WOS_m min = 0 max = 100 } }
+		ai_will_do = { base = 2 modifier = { factor = 0 check_variable = { WOS_m < 45 } } modifier = { factor = 4 has_war = yes } }
+	}
+	WOS_dec_prg_bazar = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { original_tag = PRG }
+		available = { 733 = { is_controlled_by = ROOT } has_war = no }
+		days_re_enable = 60
+		complete_effect = { add_political_power = 30 add_to_variable = { global.WOS_zaopatrzenie = 2 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } }
+		ai_will_do = { base = 3 modifier = { factor = 2 check_variable = { global.WOS_zaopatrzenie < 40 } } }
+	}
+	WOS_dec_prg_prom = {
+		icon = generic_political_discourse
+		cost = 20
+		visible = { original_tag = PRG }
+		available = { has_idea = WOS_idea_prg_zamkniete }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { global.WOS_zaopatrzenie = 4 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } add_to_variable = { WOS_m = -2 } clamp_variable = { var = WOS_m min = 0 max = 100 } }
+		ai_will_do = { base = 2 modifier = { factor = 0 check_variable = { WOS_m < 35 } } modifier = { factor = 3 check_variable = { global.WOS_zaopatrzenie < 35 } } }
+	}
+	WOS_dec_zie_wymiana = {
+		icon = generic_political_discourse
+		cost = 20
+		visible = { original_tag = ZIE }
+		available = { has_war = no }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { WOS_m = 4 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 2 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } }
+		ai_will_do = { base = 3 modifier = { factor = 2 check_variable = { WOS_m < 45 } } modifier = { factor = 0.2 check_variable = { WOS_m > 85 } } }
+	}
+	WOS_dec_zie_szklarnie = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { original_tag = ZIE }
+		available = { custom_trigger_tooltip = { tooltip = WOS_req_m_min_25 check_variable = { WOS_m > 24 } } }
+		days_re_enable = 120
+		complete_effect = { add_to_variable = { WOS_m = 5 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.WOS_zaopatrzenie = 2 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } }
+		ai_will_do = { base = 2 modifier = { factor = 2 check_variable = { WOS_m < 50 } } modifier = { factor = 2 check_variable = { global.WOS_zaopatrzenie < 40 } } }
+	}
+	WOS_dec_tec_zebranie = {
+		icon = generic_political_discourse
+		cost = 20
+		visible = { original_tag = TEC }
+		available = { has_war = no }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { WOS_m = 5 } clamp_variable = { var = WOS_m min = 0 max = 100 } }
+		ai_will_do = { base = 3 modifier = { factor = 2 check_variable = { WOS_m < 45 } } modifier = { factor = 0.2 check_variable = { WOS_m > 85 } } }
+	}
+	WOS_dec_tec_apel = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { original_tag = TEC }
+		available = { custom_trigger_tooltip = { tooltip = WOS_req_m_min_40 check_variable = { WOS_m > 39 } } }
+		days_re_enable = 120
+		complete_effect = { add_to_variable = { global.WOS_nastroje = 3 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_to_variable = { WOS_m = 2 } clamp_variable = { var = WOS_m min = 0 max = 100 } }
+		ai_will_do = { base = 2 modifier = { factor = 3 check_variable = { global.WOS_nastroje < 40 } } modifier = { factor = 0 check_variable = { WOS_m < 45 } } }
+	}
+}

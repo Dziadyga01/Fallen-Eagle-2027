@@ -1,0 +1,29 @@
+GDS_panel = {
+	GDS_dec_zamowienie = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = WMG has_variable = WMG_stocznia }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { WMG_stocznia = 12 } clamp_variable = { var = WMG_stocznia min = 0 max = 100 } add_to_variable = { WMG_napiecie = 6 } clamp_variable = { var = WMG_napiecie min = 0 max = 100 } set_variable = { GDS_dm_0 = WMG_stocznia } subtract_from_variable = { GDS_dm_0 = 30 } divide_variable = { GDS_dm_0 = 600 } set_variable = { GDS_dm_1 = WMG_napiecie } subtract_from_variable = { GDS_dm_1 = 40 } divide_variable = { GDS_dm_1 = -800 } }
+		ai_will_do = { base = 2 modifier = { factor = 2 check_variable = { WMG_stocznia < 40 } } modifier = { factor = 0 check_variable = { WMG_napiecie > 55 } } }
+	}
+	GDS_dec_podwyzki = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { original_tag = WMG has_variable = WMG_stocznia }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { WMG_napiecie = -15 } clamp_variable = { var = WMG_napiecie min = 0 max = 100 } set_variable = { GDS_dm_0 = WMG_stocznia } subtract_from_variable = { GDS_dm_0 = 30 } divide_variable = { GDS_dm_0 = 600 } set_variable = { GDS_dm_1 = WMG_napiecie } subtract_from_variable = { GDS_dm_1 = 40 } divide_variable = { GDS_dm_1 = -800 } }
+		ai_will_do = { base = 1 modifier = { factor = 6 check_variable = { WMG_napiecie > 50 } } modifier = { factor = 0.1 check_variable = { WMG_napiecie < 25 } } }
+	}
+	GDS_dec_zbrojenia = {
+		icon = generic_political_discourse
+		cost = 60
+		visible = { original_tag = WMG has_variable = WMG_stocznia }
+		available = { check_variable = { WMG_stocznia > 49 } }
+		days_re_enable = 240
+		complete_effect = { random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } add_to_variable = { WMG_napiecie = 10 } clamp_variable = { var = WMG_napiecie min = 0 max = 100 } set_variable = { GDS_dm_0 = WMG_stocznia } subtract_from_variable = { GDS_dm_0 = 30 } divide_variable = { GDS_dm_0 = 600 } set_variable = { GDS_dm_1 = WMG_napiecie } subtract_from_variable = { GDS_dm_1 = 40 } divide_variable = { GDS_dm_1 = -800 } }
+		ai_will_do = { base = 1 modifier = { factor = 3 has_war = yes } modifier = { factor = 0 check_variable = { WMG_napiecie > 55 } } }
+	}
+}

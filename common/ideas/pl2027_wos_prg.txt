@@ -1,0 +1,28 @@
+ideas = {
+	country = {
+		WOS_idea_prg_otwarte = {
+			picture = DU_WWD_dzielnica_twierdza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { consumer_goods_factor = -0.03 political_power_gain = 0.05 stability_factor = 0.02 }
+		}
+		WOS_idea_prg_zamkniete = {
+			picture = DU_WWD_dzielnica_twierdza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_core_defence_factor = 0.1 war_support_factor = 0.05 consumer_goods_factor = 0.03 }
+		}
+		WOS_idea_prg_autonomia = {
+			picture = DU_WWD_dzielnica_twierdza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 political_power_gain = 0.03 }
+		}
+		WOS_idea_prg_udzial = {
+			picture = DU_WWD_dzielnica_twierdza
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.06 production_speed_buildings_factor = 0.05 }
+		}
+	}
+}

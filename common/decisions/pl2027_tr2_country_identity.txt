@@ -2,7 +2,7 @@ TR2C_gul_rzad = {
 	TR2C_gul_A_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_gul_route_A has_completed_focus = TR2C_gul_A_institution }
+		visible = { has_country_flag = TR2S_gul_route_A }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -15,7 +15,7 @@ TR2C_gul_rzad = {
 	TR2C_gul_A_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_gul_route_A has_completed_focus = TR2C_gul_A_institution }
+		visible = { has_country_flag = TR2S_gul_route_A }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -28,7 +28,7 @@ TR2C_gul_rzad = {
 	TR2C_gul_A_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_gul_route_A has_completed_focus = TR2C_gul_A_institution }
+		visible = { has_country_flag = TR2S_gul_route_A }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -40,7 +40,7 @@ TR2C_gul_rzad = {
 	TR2C_gul_B_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_gul_route_B has_completed_focus = TR2C_gul_B_institution }
+		visible = { has_country_flag = TR2S_gul_route_B }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -53,7 +53,7 @@ TR2C_gul_rzad = {
 	TR2C_gul_B_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_gul_route_B has_completed_focus = TR2C_gul_B_institution }
+		visible = { has_country_flag = TR2S_gul_route_B }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -66,7 +66,7 @@ TR2C_gul_rzad = {
 	TR2C_gul_B_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_gul_route_B has_completed_focus = TR2C_gul_B_institution }
+		visible = { has_country_flag = TR2S_gul_route_B }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -82,7 +82,7 @@ TR2C_zal_rzad = {
 	TR2C_zal_A_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_zal_route_A has_completed_focus = TR2C_zal_A_institution }
+		visible = { has_country_flag = TR2S_zal_route_A }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -95,7 +95,7 @@ TR2C_zal_rzad = {
 	TR2C_zal_A_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_zal_route_A has_completed_focus = TR2C_zal_A_institution }
+		visible = { has_country_flag = TR2S_zal_route_A }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -107,7 +107,7 @@ TR2C_zal_rzad = {
 	TR2C_zal_A_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_zal_route_A has_completed_focus = TR2C_zal_A_institution }
+		visible = { has_country_flag = TR2S_zal_route_A }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -120,7 +120,7 @@ TR2C_zal_rzad = {
 	TR2C_zal_B_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_zal_route_B has_completed_focus = TR2C_zal_B_institution }
+		visible = { has_country_flag = TR2S_zal_route_B }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -133,7 +133,7 @@ TR2C_zal_rzad = {
 	TR2C_zal_B_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_zal_route_B has_completed_focus = TR2C_zal_B_institution }
+		visible = { has_country_flag = TR2S_zal_route_B }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -146,7 +146,7 @@ TR2C_zal_rzad = {
 	TR2C_zal_B_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_zal_route_B has_completed_focus = TR2C_zal_B_institution }
+		visible = { has_country_flag = TR2S_zal_route_B }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -162,7 +162,7 @@ TR2C_rom_rzad = {
 	TR2C_rom_A_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_rom_route_A has_completed_focus = TR2C_rom_A_institution }
+		visible = { has_country_flag = TR2S_rom_route_A }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -175,7 +175,7 @@ TR2C_rom_rzad = {
 	TR2C_rom_A_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_rom_route_A has_completed_focus = TR2C_rom_A_institution }
+		visible = { has_country_flag = TR2S_rom_route_A }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -188,7 +188,7 @@ TR2C_rom_rzad = {
 	TR2C_rom_A_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_rom_route_A has_completed_focus = TR2C_rom_A_institution }
+		visible = { has_country_flag = TR2S_rom_route_A }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -201,7 +201,7 @@ TR2C_rom_rzad = {
 	TR2C_rom_B_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_rom_route_B has_completed_focus = TR2C_rom_B_institution }
+		visible = { has_country_flag = TR2S_rom_route_B }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -214,7 +214,7 @@ TR2C_rom_rzad = {
 	TR2C_rom_B_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_rom_route_B has_completed_focus = TR2C_rom_B_institution }
+		visible = { has_country_flag = TR2S_rom_route_B }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -227,7 +227,7 @@ TR2C_rom_rzad = {
 	TR2C_rom_B_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_rom_route_B has_completed_focus = TR2C_rom_B_institution }
+		visible = { has_country_flag = TR2S_rom_route_B }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -243,7 +243,7 @@ TR2C_kow_rzad = {
 	TR2C_kow_A_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kow_route_A has_completed_focus = TR2C_kow_A_institution }
+		visible = { has_country_flag = TR2S_kow_route_A }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -256,7 +256,7 @@ TR2C_kow_rzad = {
 	TR2C_kow_A_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kow_route_A has_completed_focus = TR2C_kow_A_institution }
+		visible = { has_country_flag = TR2S_kow_route_A }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -268,7 +268,7 @@ TR2C_kow_rzad = {
 	TR2C_kow_A_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kow_route_A has_completed_focus = TR2C_kow_A_institution }
+		visible = { has_country_flag = TR2S_kow_route_A }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -280,7 +280,7 @@ TR2C_kow_rzad = {
 	TR2C_kow_B_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kow_route_B has_completed_focus = TR2C_kow_B_institution }
+		visible = { has_country_flag = TR2S_kow_route_B }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -292,7 +292,7 @@ TR2C_kow_rzad = {
 	TR2C_kow_B_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kow_route_B has_completed_focus = TR2C_kow_B_institution }
+		visible = { has_country_flag = TR2S_kow_route_B }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -305,7 +305,7 @@ TR2C_kow_rzad = {
 	TR2C_kow_B_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kow_route_B has_completed_focus = TR2C_kow_B_institution }
+		visible = { has_country_flag = TR2S_kow_route_B }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -321,7 +321,7 @@ TR2C_kre_rzad = {
 	TR2C_kre_A_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kre_route_A has_completed_focus = TR2C_kre_A_institution }
+		visible = { has_country_flag = TR2S_kre_route_A }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -334,7 +334,7 @@ TR2C_kre_rzad = {
 	TR2C_kre_A_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kre_route_A has_completed_focus = TR2C_kre_A_institution }
+		visible = { has_country_flag = TR2S_kre_route_A }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -346,7 +346,7 @@ TR2C_kre_rzad = {
 	TR2C_kre_A_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kre_route_A has_completed_focus = TR2C_kre_A_institution }
+		visible = { has_country_flag = TR2S_kre_route_A }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -359,7 +359,7 @@ TR2C_kre_rzad = {
 	TR2C_kre_B_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kre_route_B has_completed_focus = TR2C_kre_B_institution }
+		visible = { has_country_flag = TR2S_kre_route_B }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -372,7 +372,7 @@ TR2C_kre_rzad = {
 	TR2C_kre_B_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kre_route_B has_completed_focus = TR2C_kre_B_institution }
+		visible = { has_country_flag = TR2S_kre_route_B }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -385,7 +385,7 @@ TR2C_kre_rzad = {
 	TR2C_kre_B_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_kre_route_B has_completed_focus = TR2C_kre_B_institution }
+		visible = { has_country_flag = TR2S_kre_route_B }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -401,7 +401,7 @@ TR2C_ela_rzad = {
 	TR2C_ela_A_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_ela_route_A has_completed_focus = TR2C_ela_A_institution }
+		visible = { has_country_flag = TR2S_ela_route_A }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -414,7 +414,7 @@ TR2C_ela_rzad = {
 	TR2C_ela_A_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_ela_route_A has_completed_focus = TR2C_ela_A_institution }
+		visible = { has_country_flag = TR2S_ela_route_A }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -427,7 +427,7 @@ TR2C_ela_rzad = {
 	TR2C_ela_A_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_ela_route_A has_completed_focus = TR2C_ela_A_institution }
+		visible = { has_country_flag = TR2S_ela_route_A }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75
@@ -440,7 +440,7 @@ TR2C_ela_rzad = {
 	TR2C_ela_B_decision_1 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_ela_route_B has_completed_focus = TR2C_ela_B_institution }
+		visible = { has_country_flag = TR2S_ela_route_B }
 		available = { has_stability > 0.15 }
 		cost = 20
 		days_re_enable = 45
@@ -453,7 +453,7 @@ TR2C_ela_rzad = {
 	TR2C_ela_B_decision_2 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_ela_route_B has_completed_focus = TR2C_ela_B_institution }
+		visible = { has_country_flag = TR2S_ela_route_B }
 		available = { has_stability > 0.15 }
 		cost = 25
 		days_re_enable = 60
@@ -466,7 +466,7 @@ TR2C_ela_rzad = {
 	TR2C_ela_B_decision_3 = {
 		icon = generic_political_discourse
 		allowed = { original_tag = TRN }
-		visible = { has_country_flag = TR2S_ela_route_B has_completed_focus = TR2C_ela_B_institution }
+		visible = { has_country_flag = TR2S_ela_route_B }
 		available = { has_stability > 0.15 }
 		cost = 30
 		days_re_enable = 75

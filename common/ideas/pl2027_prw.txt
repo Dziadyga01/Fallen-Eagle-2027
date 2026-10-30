@@ -1,0 +1,70 @@
+ideas = {
+	country = {
+		PRW_idea_cz_budzet = {
+			picture = DU_ZPP_m_spolki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.08 stability_factor = -0.02 }
+		}
+		PRW_idea_cz_final = {
+			picture = DU_ZPP_m_panstwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 political_power_gain = 0.1 war_support_factor = 0.05 }
+		}
+		PRW_idea_mo_strefa = {
+			picture = DU_ZPP_h_sztab
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_industrial_complex_factor = 0.15 production_speed_arms_factory_factor = 0.1 }
+		}
+		PRW_idea_mo_final = {
+			picture = DU_ZPP_h_panstwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.1 production_speed_buildings_factor = 0.1 stability_factor = 0.04 }
+		}
+		PRW_idea_zi_final = {
+			picture = DU_ZPP_c_centralizacja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.12 stability_factor = 0.04 consumer_goods_factor = 0.03 }
+		}
+		PRW_idea_zi_odwilz = {
+			picture = DU_ZPP_h_panstwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.06 political_power_gain = 0.05 }
+		}
+		PRW_idea_ku_wiar = {
+			picture = DU_ZPP_h_panstwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.04 political_power_gain = 0.05 }
+		}
+		PRW_idea_ku_final = {
+			picture = DU_ZPP_cyber_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.12 war_support_factor = 0.05 stability_factor = 0.03 }
+		}
+		PRW_idea_ma_final = {
+			picture = DU_ZPP_maslarze_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.1 conscription = 0.01 army_morale_factor = 0.05 }
+		}
+		PRW_idea_kt_wersja = {
+			picture = DU_ZPP_c_wersja3
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { research_speed_factor = 0.05 production_speed_buildings_factor = 0.05 stability_factor = -0.03 }
+		}
+		PRW_idea_region = {
+			picture = DU_ZPP_m_panstwo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.1 stability_factor = 0.03 production_speed_buildings_factor = 0.05 }
+		}
+	}
+}

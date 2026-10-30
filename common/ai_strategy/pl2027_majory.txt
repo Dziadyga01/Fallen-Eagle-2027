@@ -1,0 +1,102 @@
+# The Fallen Eagle 2027 – strategie AI majorów zależne od etapu kampanii (0.9.14)
+PRW_ai_kongres = {
+	allowed = { original_tag = PRW }
+	enable = { NOT = { has_country_flag = PRW_kongres_rozstrzygniety } }
+	abort = { has_country_flag = PRW_kongres_rozstrzygniety }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = -10 }
+}
+PRW_ai_czarnek = {
+	allowed = { original_tag = PRW }
+	enable = { has_country_flag = PRW_lider_czarnek }
+	abort = { NOT = { has_country_flag = PRW_lider_czarnek } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 5 }
+}
+PRW_ai_morawiecki = {
+	allowed = { original_tag = PRW }
+	enable = { has_country_flag = PRW_lider_morawiecki }
+	abort = { NOT = { has_country_flag = PRW_lider_morawiecki } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = -25 }
+}
+PRW_ai_ziobro = {
+	allowed = { original_tag = PRW }
+	enable = { has_country_flag = PRW_lider_ziobro }
+	abort = { NOT = { has_country_flag = PRW_lider_ziobro } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 15 }
+}
+PRW_ai_kurski = {
+	allowed = { original_tag = PRW }
+	enable = { has_country_flag = PRW_lider_kurski }
+	abort = { NOT = { has_country_flag = PRW_lider_kurski } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 0 }
+}
+PRW_ai_macierewicz = {
+	allowed = { original_tag = PRW }
+	enable = { has_country_flag = PRW_lider_macierewicz }
+	abort = { NOT = { has_country_flag = PRW_lider_macierewicz } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 25 }
+}
+PRW_ai_kot = {
+	allowed = { original_tag = PRW }
+	enable = { has_country_flag = PRW_lider_kot }
+	abort = { NOT = { has_country_flag = PRW_lider_kot } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = -10 }
+}
+ROS_ai_druga_operacja = {
+	allowed = { original_tag = ROS }
+	enable = { has_country_flag = ROS_druga_gotowa }
+	abort = { NOT = { has_country_flag = ROS_druga_gotowa } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 30 }
+	ai_strategy = { type = prepare_for_war id = WMZ value = 100 }
+	ai_strategy = { type = prepare_for_war id = SUW value = 60 }
+}
+ROS_ai_ukraina = {
+	allowed = { original_tag = ROS }
+	enable = { has_country_flag = ROS_etap_ukraina NOT = { has_global_flag = ROS_ukraina_koniec } }
+	abort = { has_global_flag = ROS_ukraina_koniec }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 40 }
+}
+GER_ai_tarcza = {
+	allowed = { original_tag = GER }
+	enable = { has_global_flag = GER_kurs_tarcza }
+	abort = { NOT = { has_global_flag = GER_kurs_tarcza } }
+	ai_strategy = { type = protect id = PMN value = 100 }
+	ai_strategy = { type = protect id = SLS value = 100 }
+	ai_strategy = { type = protect id = PSN value = 100 }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 10 }
+}
+GER_ai_porzadek = {
+	allowed = { original_tag = GER }
+	enable = { has_global_flag = GER_kurs_porzadek }
+	abort = { NOT = { has_global_flag = GER_kurs_porzadek } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 20 }
+}
+TRN_ai_nacisk = {
+	allowed = { original_tag = TRN }
+	enable = { OR = { has_completed_focus = TR2_zal_zt_podgorz has_completed_focus = TR2_ela_zt_podgorz } }
+	abort = { always = no }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 25 }
+}
+TRN_ai_wspolpraca = {
+	allowed = { original_tag = TRN }
+	enable = { OR = { has_completed_focus = TR2_gul_zt_podgorz has_completed_focus = TR2_rom_zt_podgorz has_completed_focus = TR2_kow_zt_podgorz has_completed_focus = TR2_kre_zt_podgorz } }
+	abort = { always = no }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = -5 }
+}
+FKP_ai_aut = {
+	allowed = { OR = { original_tag = TRN original_tag = BYD } }
+	enable = { has_country_flag = FKP_forma_aut }
+	abort = { has_global_flag = FKP_utworzona }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 20 }
+}
+PRW_ai_region_nacisk = {
+	allowed = { original_tag = PRW }
+	enable = { OR = { has_completed_focus = PRW_cz_final has_completed_focus = PRW_zi_final has_completed_focus = PRW_zi_final_odwilz has_completed_focus = PRW_ma_final } NOT = { has_completed_focus = PRW_cz_reg_final has_completed_focus = PRW_zi_reg_final has_completed_focus = PRW_ma_reg_final } }
+	abort = { OR = { has_completed_focus = PRW_cz_reg_final has_completed_focus = PRW_zi_reg_final has_completed_focus = PRW_ma_reg_final } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 20 }
+}
+ROS_ai_po_wojnie = {
+	allowed = { original_tag = ROS }
+	enable = { has_war = no OR = { has_idea = ROS_idea_opor_zdobyczy any_country = { is_subject_of = ROS has_country_flag = PL2027_polska } } }
+	abort = { has_war = yes }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = -10 }
+}

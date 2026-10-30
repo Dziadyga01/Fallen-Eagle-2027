@@ -1,0 +1,20 @@
+leader_traits = {
+	TRN_pt_weteran_motoareny = {
+		type = land
+		trait_type = personality_trait
+		modifier = { army_speed_factor = 0.05 army_org_factor = 0.03 }
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_twarda_reka = {
+		type = land
+		trait_type = personality_trait
+		modifier = { army_org_factor = 0.05 army_morale_factor = 0.03 }
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_mroczny_rycerz = {
+		type = land
+		trait_type = personality_trait
+		defense_skill = 1 modifier = { army_defence_factor = 0.05 dig_in_speed_factor = 0.15 }
+		ai_will_do = { factor = 1 }
+	}
+}

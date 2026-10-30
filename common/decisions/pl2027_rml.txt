@@ -1,0 +1,29 @@
+RML_panel = {
+	RML_dec_myto = {
+		icon = generic_political_discourse
+		cost = 0
+		visible = { original_tag = MLA has_variable = MLA_s7 }
+		available = { check_variable = { MLA_s7 > 30 } }
+		days_re_enable = 90
+		complete_effect = { add_political_power = 35 add_to_variable = { MLA_s7 = -10 } clamp_variable = { var = MLA_s7 min = 0 max = 100 } set_variable = { RML_dm_0 = MLA_s7 } subtract_from_variable = { RML_dm_0 = 40 } divide_variable = { RML_dm_0 = 500 } set_variable = { RML_dm_1 = MLA_reduta } subtract_from_variable = { RML_dm_1 = 30 } divide_variable = { RML_dm_1 = 700 } }
+		ai_will_do = { factor = 1 modifier = { factor = 3 check_variable = { MLA_s7 > 65 } } modifier = { factor = 0 check_variable = { MLA_s7 < 40 } } }
+	}
+	RML_dec_konwoje = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = MLA has_variable = MLA_s7 }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { MLA_s7 = 12 } clamp_variable = { var = MLA_s7 min = 0 max = 100 } set_variable = { RML_dm_0 = MLA_s7 } subtract_from_variable = { RML_dm_0 = 40 } divide_variable = { RML_dm_0 = 500 } set_variable = { RML_dm_1 = MLA_reduta } subtract_from_variable = { RML_dm_1 = 30 } divide_variable = { RML_dm_1 = 700 } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { MLA_s7 < 45 } } }
+	}
+	RML_dec_reduta = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { original_tag = MLA has_variable = MLA_s7 }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { MLA_reduta = 12 } clamp_variable = { var = MLA_reduta min = 0 max = 100 } set_variable = { RML_dm_0 = MLA_s7 } subtract_from_variable = { RML_dm_0 = 40 } divide_variable = { RML_dm_0 = 500 } set_variable = { RML_dm_1 = MLA_reduta } subtract_from_variable = { RML_dm_1 = 30 } divide_variable = { RML_dm_1 = 700 } }
+		ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } modifier = { factor = 2 check_variable = { MLA_reduta < 50 } } modifier = { factor = 0.2 check_variable = { MLA_reduta > 85 } } }
+	}
+}

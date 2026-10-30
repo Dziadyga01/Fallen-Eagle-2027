@@ -1,0 +1,56 @@
+IVR_panel = {
+	IVR_dec_s_debata = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { has_country_flag = IVR_typ_S }
+		available = { has_war = no }
+		days_re_enable = 180
+		complete_effect = { add_to_variable = { IVR_m = 5 } clamp_variable = { var = IVR_m min = 0 max = 100 } }
+		ai_will_do = { factor = 3 }
+	}
+	IVR_dec_s_konsultacje = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { has_country_flag = IVR_typ_S has_idea = IVR_s_samorzady }
+		available = { always = yes }
+		days_re_enable = 120
+		complete_effect = { add_to_variable = { IVR_m = 3 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = 0.01 }
+		ai_will_do = { factor = 2 }
+	}
+	IVR_dec_p_oredzie = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { has_country_flag = IVR_typ_P }
+		available = { always = yes }
+		days_re_enable = 120
+		complete_effect = { add_to_variable = { IVR_m = 5 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_war_support = 0.01 }
+		ai_will_do = { factor = 3 }
+	}
+	IVR_dec_p_komisarz = {
+		icon = generic_political_discourse
+		cost = 60
+		visible = { has_country_flag = IVR_typ_P }
+		available = { has_war = no }
+		days_re_enable = 180
+		complete_effect = { add_to_variable = { IVR_m = 6 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = -0.02 }
+		ai_will_do = { factor = 2 }
+	}
+	IVR_dec_m_koperty = {
+		icon = generic_political_discourse
+		cost = 60
+		visible = { has_country_flag = IVR_typ_M }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { IVR_m = 8 } clamp_variable = { var = IVR_m min = 0 max = 100 } }
+		ai_will_do = { factor = 4 }
+	}
+	IVR_dec_m_przyslugi = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = IVR_typ_M }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { IVR_m = 3 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = -0.01 add_political_power = 15 }
+		ai_will_do = { factor = 2 }
+	}
+}

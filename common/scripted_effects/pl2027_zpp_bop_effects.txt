@@ -1,0 +1,12 @@
+ZPP_bop_inicjalizacja = {
+    if = {
+        limit = { NOT = { has_power_balance = { id = ZPP_rownowaga_sil } } }
+        set_power_balance = {
+            id = ZPP_rownowaga_sil
+            left_side = ZPP_bop_harcerze
+            right_side = ZPP_bop_maslarze
+            set_value = 0.02
+        }
+        set_country_flag = ZPP_bop_uruchomiony
+    }
+}

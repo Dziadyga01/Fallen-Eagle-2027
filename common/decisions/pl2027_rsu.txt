@@ -1,0 +1,29 @@
+RSU_panel = {
+	RSU_dec_patrole = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = SUW has_variable = SUW_litwa }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { SUW_litwa = 8 } clamp_variable = { var = SUW_litwa min = 0 max = 100 } add_to_variable = { SUW_presja = -6 } clamp_variable = { var = SUW_presja min = 0 max = 100 } set_variable = { RSU_dm_0 = SUW_litwa } subtract_from_variable = { RSU_dm_0 = 30 } divide_variable = { RSU_dm_0 = 700 } set_variable = { RSU_dm_1 = SUW_presja } subtract_from_variable = { RSU_dm_1 = 40 } divide_variable = { RSU_dm_1 = -800 } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { SUW_presja > 50 } } modifier = { factor = 2 check_variable = { SUW_litwa < 50 } } }
+	}
+	RSU_dec_umocnienia = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { original_tag = SUW has_variable = SUW_litwa }
+		available = { always = yes }
+		days_re_enable = 120
+		complete_effect = { add_to_variable = { SUW_presja = -10 } clamp_variable = { var = SUW_presja min = 0 max = 100 } set_variable = { RSU_dm_0 = SUW_litwa } subtract_from_variable = { RSU_dm_0 = 30 } divide_variable = { RSU_dm_0 = 700 } set_variable = { RSU_dm_1 = SUW_presja } subtract_from_variable = { RSU_dm_1 = 40 } divide_variable = { RSU_dm_1 = -800 } }
+		ai_will_do = { factor = 1 modifier = { factor = 4 check_variable = { SUW_presja > 60 } } }
+	}
+	RSU_dec_via = {
+		icon = generic_political_discourse
+		cost = 0
+		visible = { original_tag = SUW has_variable = SUW_litwa }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_political_power = 30 add_to_variable = { SUW_litwa = 4 } clamp_variable = { var = SUW_litwa min = 0 max = 100 } add_to_variable = { SUW_presja = 3 } clamp_variable = { var = SUW_presja min = 0 max = 100 } set_variable = { RSU_dm_0 = SUW_litwa } subtract_from_variable = { RSU_dm_0 = 30 } divide_variable = { RSU_dm_0 = 700 } set_variable = { RSU_dm_1 = SUW_presja } subtract_from_variable = { RSU_dm_1 = 40 } divide_variable = { RSU_dm_1 = -800 } }
+		ai_will_do = { factor = 2 modifier = { factor = 0 check_variable = { SUW_presja > 65 } } }
+	}
+}

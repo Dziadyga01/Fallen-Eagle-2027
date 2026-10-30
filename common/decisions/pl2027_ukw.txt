@@ -1,0 +1,29 @@
+UKW_panel = {
+	UKW_dec_drony = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = UKR country_exists = ROS ROS = { has_country_flag = ROS_etap_ukraina } NOT = { has_global_flag = ROS_ukraina_koniec } }
+		available = { check_variable = { UKR_zasoby > 9 } }
+		days_re_enable = 30
+		complete_effect = { add_to_variable = { UKR_zasoby = -8 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 } if = { limit = { country_exists = ROS } ROS = { add_to_variable = { ROS_front_ua = -3 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } } } }
+		ai_will_do = { base = 3 modifier = { factor = 3 check_variable = { UKR_zasoby > 40 } } modifier = { factor = 0 check_variable = { UKR_zasoby < 20 } } }
+	}
+	UKW_dec_pomoc = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { original_tag = UKR }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { if = { limit = { country_exists = GER } GER = { country_event = { id = ukw.20 days = 3 } } } else = { add_to_variable = { UKR_zasoby = 5 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 } } }
+		ai_will_do = { base = 3 modifier = { factor = 4 check_variable = { UKR_zasoby < 40 } } }
+	}
+	UKW_dec_mobilizacja = {
+		icon = generic_political_discourse
+		cost = 0
+		visible = { original_tag = UKR country_exists = ROS ROS = { has_country_flag = ROS_etap_ukraina } NOT = { has_global_flag = ROS_ukraina_koniec } }
+		available = { always = yes }
+		days_re_enable = 120
+		complete_effect = { add_stability = -0.03 add_manpower = 8000 add_to_variable = { UKR_zasoby = 10 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 } }
+		ai_will_do = { base = 2 modifier = { factor = 5 check_variable = { UKR_zasoby < 25 } } modifier = { factor = 0.3 check_variable = { UKR_zasoby > 70 } } }
+	}
+}

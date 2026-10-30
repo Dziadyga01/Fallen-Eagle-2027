@@ -371,40 +371,70 @@ country_event = {
 
 country_event = {
 	id = byd2.40
-	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	immediate = { BYK_wyniki = yes if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = byd2.40.t
-	desc = byd2.40.d
+	desc = BYK_wyniki_d
 	picture = GFX_pl2027_ev081_wybory_0
 	is_triggered_only = yes
 	option = {
 		name = byd2.40.a
-		trigger = { has_country_flag = BYD2_kand_bruski }
+		trigger = { OR = { has_country_flag = BYK_wynik_bruski AND = { NOT = { has_country_flag = BYK_wynik_znany } has_country_flag = BYD2_kand_bruski } } }
 		ai_chance = { factor = 1 modifier = { factor = 100 has_country_flag = BYD2_ai_bruski } }
 		set_country_flag = BYD2_wybrany_bruski
 	}
 	option = {
 		name = byd2.40.b
-		trigger = { has_country_flag = BYD2_kand_przemysl }
+		trigger = { OR = { has_country_flag = BYK_wynik_przemysl AND = { NOT = { has_country_flag = BYK_wynik_znany } has_country_flag = BYD2_kand_przemysl } } }
 		ai_chance = { factor = 1 modifier = { factor = 100 has_country_flag = BYD2_ai_przemysl } }
 		set_country_flag = BYD2_wybrany_przemysl
 	}
 	option = {
 		name = byd2.40.c
-		trigger = { has_country_flag = BYD2_kand_rady }
+		trigger = { OR = { has_country_flag = BYK_wynik_rady AND = { NOT = { has_country_flag = BYK_wynik_znany } has_country_flag = BYD2_kand_rady } } }
 		ai_chance = { factor = 1 modifier = { factor = 100 has_country_flag = BYD2_ai_rady } }
 		set_country_flag = BYD2_wybrany_rady
 	}
 	option = {
 		name = byd2.40.e
-		trigger = { has_country_flag = BYD2_kand_junta }
+		trigger = { OR = { has_country_flag = BYK_wynik_junta AND = { NOT = { has_country_flag = BYK_wynik_znany } has_country_flag = BYD2_kand_junta } } }
 		ai_chance = { factor = 1 modifier = { factor = 100 has_country_flag = BYD2_ai_junta } }
 		set_country_flag = BYD2_wybrany_junta
 	}
 	option = {
 		name = byd2.40.f
-		trigger = { has_country_flag = BYD2_kand_brdowski }
+		trigger = { OR = { has_country_flag = BYK_wynik_brdowski AND = { NOT = { has_country_flag = BYK_wynik_znany } has_country_flag = BYD2_kand_brdowski } } }
 		ai_chance = { factor = 1 modifier = { factor = 100 has_country_flag = BYD2_ai_brdowski } }
 		set_country_flag = BYD2_wybrany_brdowski
+	}
+	option = {
+		name = BYK_falsz_bruski
+		trigger = { has_country_flag = BYD2_kand_bruski has_country_flag = BYK_wynik_znany NOT = { has_country_flag = BYK_wynik_bruski } }
+		ai_chance = { factor = 0 }
+		set_country_flag = BYD2_wybrany_bruski add_stability = -0.12 add_timed_idea = { idea = BYD2_kontrowersyjny days = 365 }
+	}
+	option = {
+		name = BYK_falsz_przemysl
+		trigger = { has_country_flag = BYD2_kand_przemysl has_country_flag = BYK_wynik_znany NOT = { has_country_flag = BYK_wynik_przemysl } }
+		ai_chance = { factor = 0 }
+		set_country_flag = BYD2_wybrany_przemysl add_stability = -0.12 add_timed_idea = { idea = BYD2_kontrowersyjny days = 365 }
+	}
+	option = {
+		name = BYK_falsz_rady
+		trigger = { has_country_flag = BYD2_kand_rady has_country_flag = BYK_wynik_znany NOT = { has_country_flag = BYK_wynik_rady } }
+		ai_chance = { factor = 0 }
+		set_country_flag = BYD2_wybrany_rady add_stability = -0.12 add_timed_idea = { idea = BYD2_kontrowersyjny days = 365 }
+	}
+	option = {
+		name = BYK_falsz_junta
+		trigger = { has_country_flag = BYD2_kand_junta has_country_flag = BYK_wynik_znany NOT = { has_country_flag = BYK_wynik_junta } }
+		ai_chance = { factor = 0 }
+		set_country_flag = BYD2_wybrany_junta add_stability = -0.12 add_timed_idea = { idea = BYD2_kontrowersyjny days = 365 }
+	}
+	option = {
+		name = BYK_falsz_brdowski
+		trigger = { has_country_flag = BYD2_kand_brdowski has_country_flag = BYK_wynik_znany NOT = { has_country_flag = BYK_wynik_brdowski } }
+		ai_chance = { factor = 0 }
+		set_country_flag = BYD2_wybrany_brdowski add_stability = -0.12 add_timed_idea = { idea = BYD2_kontrowersyjny days = 365 }
 	}
 }
 

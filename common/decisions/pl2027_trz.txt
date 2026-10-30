@@ -1,0 +1,83 @@
+TRZ_panel = {
+	TRZ_ponow_podgorz = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = TRZ_odm_podgorz country_exists = PDG }
+		available = { NOT = { has_country_flag = TRZ_odm_cd_podgorz } has_war = no NOT = { has_war_with = PDG } }
+		days_re_enable = 120
+		complete_effect = { if = { limit = { has_country_flag = TRZ_odm_podgorz_gul } PDG = { country_event = { id = tza.100 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_podgorz_rom } PDG = { country_event = { id = tza.120 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_podgorz_kow } PDG = { country_event = { id = tza.140 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_podgorz_kre } PDG = { country_event = { id = tza.160 days = 1 } } } }
+		ai_will_do = { factor = 2 }
+	}
+	TRZ_ponow_lysomice = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = TRZ_odm_lysomice country_exists = LYS }
+		available = { NOT = { has_country_flag = TRZ_odm_cd_lysomice } has_war = no NOT = { has_war_with = LYS } }
+		days_re_enable = 120
+		complete_effect = { if = { limit = { has_country_flag = TRZ_odm_lysomice_gul } LYS = { country_event = { id = tza.101 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_lysomice_rom } LYS = { country_event = { id = tza.121 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_lysomice_kow } LYS = { country_event = { id = tza.141 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_lysomice_kre } LYS = { country_event = { id = tza.161 days = 1 } } } }
+		ai_will_do = { factor = 2 }
+	}
+	TRZ_ponow_lubicz = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = TRZ_odm_lubicz country_exists = LUB }
+		available = { NOT = { has_country_flag = TRZ_odm_cd_lubicz } has_war = no NOT = { has_war_with = LUB } }
+		days_re_enable = 120
+		complete_effect = { if = { limit = { has_country_flag = TRZ_odm_lubicz_gul } LUB = { country_event = { id = tza.102 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_lubicz_rom } LUB = { country_event = { id = tza.122 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_lubicz_kow } LUB = { country_event = { id = tza.142 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_lubicz_kre } LUB = { country_event = { id = tza.162 days = 1 } } } }
+		ai_will_do = { factor = 2 }
+	}
+	TRZ_ponow_zlawies = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = TRZ_odm_zlawies country_exists = ROZ }
+		available = { NOT = { has_country_flag = TRZ_odm_cd_zlawies } has_war = no NOT = { has_war_with = ROZ } }
+		days_re_enable = 120
+		complete_effect = { if = { limit = { has_country_flag = TRZ_odm_zlawies_gul } ROZ = { country_event = { id = tza.103 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_zlawies_rom } ROZ = { country_event = { id = tza.123 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_zlawies_kow } ROZ = { country_event = { id = tza.143 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_zlawies_kre } ROZ = { country_event = { id = tza.163 days = 1 } } } }
+		ai_will_do = { factor = 2 }
+	}
+	TRZ_ponow_solec = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = TRZ_odm_solec country_exists = SLK }
+		available = { NOT = { has_country_flag = TRZ_odm_cd_solec } has_war = no NOT = { has_war_with = SLK } }
+		days_re_enable = 120
+		complete_effect = { if = { limit = { has_country_flag = TRZ_odm_solec_gul } SLK = { country_event = { id = tza.104 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_solec_rom } SLK = { country_event = { id = tza.124 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_solec_kow } SLK = { country_event = { id = tza.144 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_solec_kre } SLK = { country_event = { id = tza.164 days = 1 } } } }
+		ai_will_do = { factor = 2 }
+	}
+	TRZ_ponow_chelmza = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = TRZ_odm_chelmza country_exists = CHZ }
+		available = { NOT = { has_country_flag = TRZ_odm_cd_chelmza } has_war = no NOT = { has_war_with = CHZ } }
+		days_re_enable = 120
+		complete_effect = { if = { limit = { has_country_flag = TRZ_odm_chelmza_gul } CHZ = { country_event = { id = tza.105 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_chelmza_rom } CHZ = { country_event = { id = tza.125 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_chelmza_kow } CHZ = { country_event = { id = tza.145 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_chelmza_kre } CHZ = { country_event = { id = tza.165 days = 1 } } } }
+		ai_will_do = { factor = 2 }
+	}
+	TRZ_ponow_dabrowa = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = TRZ_odm_dabrowa country_exists = DAB }
+		available = { NOT = { has_country_flag = TRZ_odm_cd_dabrowa } has_war = no NOT = { has_war_with = DAB } }
+		days_re_enable = 120
+		complete_effect = { if = { limit = { has_country_flag = TRZ_odm_dabrowa_gul } DAB = { country_event = { id = tza.106 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_dabrowa_rom } DAB = { country_event = { id = tza.126 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_dabrowa_kow } DAB = { country_event = { id = tza.146 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_dabrowa_kre } DAB = { country_event = { id = tza.166 days = 1 } } } }
+		ai_will_do = { factor = 2 }
+	}
+	TRZ_ponow_kujawy = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = TRZ_odm_kujawy country_exists = KUJ }
+		available = { NOT = { has_country_flag = TRZ_odm_cd_kujawy } has_war = no NOT = { has_war_with = KUJ } }
+		days_re_enable = 120
+		complete_effect = { if = { limit = { has_country_flag = TRZ_odm_kujawy_gul } KUJ = { country_event = { id = tza.107 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_kujawy_rom } KUJ = { country_event = { id = tza.127 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_kujawy_kow } KUJ = { country_event = { id = tza.147 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_kujawy_kre } KUJ = { country_event = { id = tza.167 days = 1 } } } }
+		ai_will_do = { factor = 2 }
+	}
+	TRZ_ponow_chelmno = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = TRZ_odm_chelmno country_exists = CHE }
+		available = { NOT = { has_country_flag = TRZ_odm_cd_chelmno } has_war = no NOT = { has_war_with = CHE } }
+		days_re_enable = 120
+		complete_effect = { if = { limit = { has_country_flag = TRZ_odm_chelmno_gul } CHE = { country_event = { id = tza.108 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_chelmno_rom } CHE = { country_event = { id = tza.128 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_chelmno_kow } CHE = { country_event = { id = tza.148 days = 1 } } } if = { limit = { has_country_flag = TRZ_odm_chelmno_kre } CHE = { country_event = { id = tza.168 days = 1 } } } }
+		ai_will_do = { factor = 2 }
+	}
+}

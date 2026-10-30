@@ -1,0 +1,4 @@
+GDS_miesiac = {
+	if = { limit = { country_exists = WMG } WMG = { if = { limit = { NOT = { has_variable = WMG_stocznia } } set_variable = { WMG_stocznia = 40 } set_variable = { WMG_napiecie = 30 } add_dynamic_modifier = { modifier = GDS_dm } } add_to_variable = { WMG_napiecie = 2 } clamp_variable = { var = WMG_napiecie min = 0 max = 100 } if = { limit = { check_variable = { WMG_napiecie > 69 } NOT = { has_country_flag = WMG_strajk_cd } } set_country_flag = { flag = WMG_strajk_cd days = 120 } country_event = { id = gds.10 days = 1 } } set_variable = { GDS_dm_0 = WMG_stocznia } subtract_from_variable = { GDS_dm_0 = 30 } divide_variable = { GDS_dm_0 = 600 } set_variable = { GDS_dm_1 = WMG_napiecie } subtract_from_variable = { GDS_dm_1 = 40 } divide_variable = { GDS_dm_1 = -800 } } }
+	
+}

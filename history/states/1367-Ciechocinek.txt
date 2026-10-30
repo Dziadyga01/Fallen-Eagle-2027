@@ -3,10 +3,13 @@ state = {
 	name = "STATE_1367"
 	manpower = 10600
 	state_category = town
+	resources = {
+		steel = 1
+	}
 	history = {
 		owner = CIE
 		add_core_of = CIE
-		victory_points = { 8108 2 }
+		victory_points = { 8108 6 }
 		buildings = {
 			infrastructure = 3
 		}

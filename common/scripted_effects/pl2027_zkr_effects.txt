@@ -45,7 +45,7 @@ ZKR_wojna_domowa = {
 		promote_character = ZKR_radecki
 		add_ideas = ZKR_wsparcie_rosji
 		add_equipment_to_stockpile = { type = ranged_equipment amount = 2000 }
-		if = { limit = { country_exists = ROS } ROS = { give_guarantee = PREV } }
+		if = { limit = { country_exists = ROS } ROS = { if = { limit = { PREV = { PL2027_ideologia_jak_PREV = yes } } give_guarantee = PREV } } }
 		country_event = { id = zkr.71 }
 	}
 	country_event = { id = zkr.70 }

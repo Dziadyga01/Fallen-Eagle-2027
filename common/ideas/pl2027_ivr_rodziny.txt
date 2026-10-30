@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		IVR_m_przetargi = {
+			picture = DU_IVRP2_m_rodzina
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.1 consumer_goods_factor = 0.03 }
+		}
+		IVR_m_ochrona = {
+			picture = DU_IVRP2_m_rodzina
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.04 political_power_gain = 0.04 }
+		}
+		IVR_m_bojowki = {
+			picture = DU_IVRP2_m_rodzina
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_attack_factor = 0.06 army_org_factor = -0.03 conscription_factor = 0.03 }
+		}
+		IVR_m_f_holding = {
+			picture = DU_IVRP2_m_rodzina
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.12 production_speed_buildings_factor = 0.08 stability_factor = 0.03 }
+		}
+		IVR_m_f_oligarchia = {
+			picture = DU_IVRP2_m_rodzina
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.06 political_power_gain = 0.06 consumer_goods_factor = -0.03 }
+		}
+		IVR_m_f_upadek = {
+			picture = DU_IVRP2_m_rodzina
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = -0.1 political_power_gain = -0.1 war_support_factor = 0.05 }
+		}
+	}
+}

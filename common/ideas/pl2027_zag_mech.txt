@@ -1,0 +1,52 @@
+ideas = {
+	country = {
+		LIT_idea_bastion = {
+			picture = DU_ZAG_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.1 army_org_factor = 0.05 }
+		}
+		LIT_idea_wspolnota = {
+			picture = DU_EUR_euroregion_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.08 stability_factor = 0.04 }
+		}
+		LIT_idea_neutralnosc = {
+			picture = DU_EK_misja_ue
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { consumer_goods_factor = -0.05 stability_factor = 0.05 war_support_factor = -0.05 }
+		}
+		CZE_idea_korytarz = {
+			picture = DU_EUR_euroregion_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { consumer_goods_factor = -0.04 production_speed_industrial_complex_factor = 0.05 }
+		}
+		CZE_idea_granica = {
+			picture = DU_ZAG_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.08 stability_factor = 0.04 }
+		}
+		CZE_idea_most = {
+			picture = DU_EK_misja_ue
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.1 trade_opinion_factor = 0.2 }
+		}
+		UKR_idea_niezlomna = {
+			picture = DU_ZAG_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.12 war_support_factor = 0.08 army_morale_factor = 0.05 }
+		}
+		UKR_idea_rozejm = {
+			picture = DU_EK_misja_ue
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 production_speed_buildings_factor = 0.1 }
+		}
+	}
+}

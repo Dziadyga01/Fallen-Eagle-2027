@@ -1,0 +1,2173 @@
+# Ukraine operation decisions. Values are percentages PER OBLAST.
+ROS_UKR_offensive_category = {
+    ROS_UKR_VOL_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_VOL < 100 }
+            NOT = { has_country_flag = ROS_UKR_VOL_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_VOL = 30 }
+            clamp_variable = { var = ROS_UKR_VOL min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_VOL_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_VOL_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_VOL < 100 }
+            NOT = { has_country_flag = ROS_UKR_VOL_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_VOL = 10 }
+            clamp_variable = { var = ROS_UKR_VOL min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_VOL_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_VOL_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_VOL < 100 }
+            NOT = { has_country_flag = ROS_UKR_VOL_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_VOL = 5 }
+            clamp_variable = { var = ROS_UKR_VOL min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_VOL_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_RIV_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_RIV < 100 }
+            NOT = { has_country_flag = ROS_UKR_RIV_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_RIV = 30 }
+            clamp_variable = { var = ROS_UKR_RIV min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_RIV_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_RIV_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_RIV < 100 }
+            NOT = { has_country_flag = ROS_UKR_RIV_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_RIV = 10 }
+            clamp_variable = { var = ROS_UKR_RIV min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_RIV_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_RIV_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_RIV < 100 }
+            NOT = { has_country_flag = ROS_UKR_RIV_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_RIV = 5 }
+            clamp_variable = { var = ROS_UKR_RIV min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_RIV_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_LVI_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_LVI < 100 }
+            NOT = { has_country_flag = ROS_UKR_LVI_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_LVI = 30 }
+            clamp_variable = { var = ROS_UKR_LVI min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_LVI_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_LVI_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_LVI < 100 }
+            NOT = { has_country_flag = ROS_UKR_LVI_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_LVI = 10 }
+            clamp_variable = { var = ROS_UKR_LVI min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_LVI_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_LVI_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_LVI < 100 }
+            NOT = { has_country_flag = ROS_UKR_LVI_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_LVI = 5 }
+            clamp_variable = { var = ROS_UKR_LVI min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_LVI_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_ZAK_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_ZAK < 100 }
+            NOT = { has_country_flag = ROS_UKR_ZAK_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_ZAK = 30 }
+            clamp_variable = { var = ROS_UKR_ZAK min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ZAK_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_ZAK_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_ZAK < 100 }
+            NOT = { has_country_flag = ROS_UKR_ZAK_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_ZAK = 10 }
+            clamp_variable = { var = ROS_UKR_ZAK min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ZAK_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_ZAK_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_ZAK < 100 }
+            NOT = { has_country_flag = ROS_UKR_ZAK_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_ZAK = 5 }
+            clamp_variable = { var = ROS_UKR_ZAK min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ZAK_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_IVA_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_IVA < 100 }
+            NOT = { has_country_flag = ROS_UKR_IVA_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_IVA = 30 }
+            clamp_variable = { var = ROS_UKR_IVA min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_IVA_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_IVA_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_IVA < 100 }
+            NOT = { has_country_flag = ROS_UKR_IVA_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_IVA = 10 }
+            clamp_variable = { var = ROS_UKR_IVA min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_IVA_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_IVA_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_IVA < 100 }
+            NOT = { has_country_flag = ROS_UKR_IVA_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_IVA = 5 }
+            clamp_variable = { var = ROS_UKR_IVA min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_IVA_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_TER_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_TER < 100 }
+            NOT = { has_country_flag = ROS_UKR_TER_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_TER = 30 }
+            clamp_variable = { var = ROS_UKR_TER min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_TER_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_TER_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_TER < 100 }
+            NOT = { has_country_flag = ROS_UKR_TER_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_TER = 10 }
+            clamp_variable = { var = ROS_UKR_TER min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_TER_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_TER_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_TER < 100 }
+            NOT = { has_country_flag = ROS_UKR_TER_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_TER = 5 }
+            clamp_variable = { var = ROS_UKR_TER min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_TER_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_CHE_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_CHE < 100 }
+            NOT = { has_country_flag = ROS_UKR_CHE_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_CHE = 30 }
+            clamp_variable = { var = ROS_UKR_CHE min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_CHE_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_CHE_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_CHE < 100 }
+            NOT = { has_country_flag = ROS_UKR_CHE_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_CHE = 10 }
+            clamp_variable = { var = ROS_UKR_CHE min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_CHE_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_CHE_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_CHE < 100 }
+            NOT = { has_country_flag = ROS_UKR_CHE_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_CHE = 5 }
+            clamp_variable = { var = ROS_UKR_CHE min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_CHE_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_KHM_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_KHM < 100 }
+            NOT = { has_country_flag = ROS_UKR_KHM_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_KHM = 30 }
+            clamp_variable = { var = ROS_UKR_KHM min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KHM_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_KHM_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_KHM < 100 }
+            NOT = { has_country_flag = ROS_UKR_KHM_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_KHM = 10 }
+            clamp_variable = { var = ROS_UKR_KHM min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KHM_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_KHM_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_KHM < 100 }
+            NOT = { has_country_flag = ROS_UKR_KHM_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_KHM = 5 }
+            clamp_variable = { var = ROS_UKR_KHM min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KHM_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_ZHY_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_ZHY < 100 }
+            NOT = { has_country_flag = ROS_UKR_ZHY_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_ZHY = 30 }
+            clamp_variable = { var = ROS_UKR_ZHY min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ZHY_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_ZHY_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_ZHY < 100 }
+            NOT = { has_country_flag = ROS_UKR_ZHY_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_ZHY = 10 }
+            clamp_variable = { var = ROS_UKR_ZHY min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ZHY_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_ZHY_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_ZHY < 100 }
+            NOT = { has_country_flag = ROS_UKR_ZHY_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_ZHY = 5 }
+            clamp_variable = { var = ROS_UKR_ZHY min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ZHY_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_VIN_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_VIN < 100 }
+            NOT = { has_country_flag = ROS_UKR_VIN_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_VIN = 30 }
+            clamp_variable = { var = ROS_UKR_VIN min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_VIN_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_VIN_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_VIN < 100 }
+            NOT = { has_country_flag = ROS_UKR_VIN_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_VIN = 10 }
+            clamp_variable = { var = ROS_UKR_VIN min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_VIN_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_VIN_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_VIN < 100 }
+            NOT = { has_country_flag = ROS_UKR_VIN_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_VIN = 5 }
+            clamp_variable = { var = ROS_UKR_VIN min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_VIN_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_KYI_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_KYI < 100 }
+            NOT = { has_country_flag = ROS_UKR_KYI_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_KYI = 30 }
+            clamp_variable = { var = ROS_UKR_KYI min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KYI_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_KYI_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_KYI < 100 }
+            NOT = { has_country_flag = ROS_UKR_KYI_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_KYI = 10 }
+            clamp_variable = { var = ROS_UKR_KYI min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KYI_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_KYI_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_KYI < 100 }
+            NOT = { has_country_flag = ROS_UKR_KYI_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_KYI = 5 }
+            clamp_variable = { var = ROS_UKR_KYI min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KYI_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_CHR_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_CHR < 100 }
+            NOT = { has_country_flag = ROS_UKR_CHR_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_CHR = 30 }
+            clamp_variable = { var = ROS_UKR_CHR min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_CHR_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_CHR_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_CHR < 100 }
+            NOT = { has_country_flag = ROS_UKR_CHR_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_CHR = 10 }
+            clamp_variable = { var = ROS_UKR_CHR min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_CHR_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_CHR_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_CHR < 100 }
+            NOT = { has_country_flag = ROS_UKR_CHR_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_CHR = 5 }
+            clamp_variable = { var = ROS_UKR_CHR min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_CHR_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_SUM_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_SUM < 100 }
+            NOT = { has_country_flag = ROS_UKR_SUM_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_SUM = 30 }
+            clamp_variable = { var = ROS_UKR_SUM min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_SUM_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_SUM_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_SUM < 100 }
+            NOT = { has_country_flag = ROS_UKR_SUM_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_SUM = 10 }
+            clamp_variable = { var = ROS_UKR_SUM min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_SUM_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_SUM_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_SUM < 100 }
+            NOT = { has_country_flag = ROS_UKR_SUM_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_SUM = 5 }
+            clamp_variable = { var = ROS_UKR_SUM min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_SUM_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_KHA_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_KHA < 100 }
+            NOT = { has_country_flag = ROS_UKR_KHA_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_KHA = 30 }
+            clamp_variable = { var = ROS_UKR_KHA min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KHA_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_KHA_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_KHA < 100 }
+            NOT = { has_country_flag = ROS_UKR_KHA_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_KHA = 10 }
+            clamp_variable = { var = ROS_UKR_KHA min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KHA_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_KHA_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_KHA < 100 }
+            NOT = { has_country_flag = ROS_UKR_KHA_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_KHA = 5 }
+            clamp_variable = { var = ROS_UKR_KHA min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KHA_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_POL_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_POL < 100 }
+            NOT = { has_country_flag = ROS_UKR_POL_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_POL = 30 }
+            clamp_variable = { var = ROS_UKR_POL min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_POL_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_POL_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_POL < 100 }
+            NOT = { has_country_flag = ROS_UKR_POL_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_POL = 10 }
+            clamp_variable = { var = ROS_UKR_POL min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_POL_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_POL_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_POL < 100 }
+            NOT = { has_country_flag = ROS_UKR_POL_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_POL = 5 }
+            clamp_variable = { var = ROS_UKR_POL min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_POL_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_CKA_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_CKA < 100 }
+            NOT = { has_country_flag = ROS_UKR_CKA_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_CKA = 30 }
+            clamp_variable = { var = ROS_UKR_CKA min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_CKA_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_CKA_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_CKA < 100 }
+            NOT = { has_country_flag = ROS_UKR_CKA_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_CKA = 10 }
+            clamp_variable = { var = ROS_UKR_CKA min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_CKA_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_CKA_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_CKA < 100 }
+            NOT = { has_country_flag = ROS_UKR_CKA_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_CKA = 5 }
+            clamp_variable = { var = ROS_UKR_CKA min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_CKA_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_KIR_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_KIR < 100 }
+            NOT = { has_country_flag = ROS_UKR_KIR_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_KIR = 30 }
+            clamp_variable = { var = ROS_UKR_KIR min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KIR_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_KIR_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_KIR < 100 }
+            NOT = { has_country_flag = ROS_UKR_KIR_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_KIR = 10 }
+            clamp_variable = { var = ROS_UKR_KIR min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KIR_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_KIR_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_KIR < 100 }
+            NOT = { has_country_flag = ROS_UKR_KIR_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_KIR = 5 }
+            clamp_variable = { var = ROS_UKR_KIR min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KIR_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_DNI_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_DNI < 100 }
+            NOT = { has_country_flag = ROS_UKR_DNI_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_DNI = 30 }
+            clamp_variable = { var = ROS_UKR_DNI min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_DNI_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_DNI_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_DNI < 100 }
+            NOT = { has_country_flag = ROS_UKR_DNI_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_DNI = 10 }
+            clamp_variable = { var = ROS_UKR_DNI min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_DNI_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_DNI_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_DNI < 100 }
+            NOT = { has_country_flag = ROS_UKR_DNI_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_DNI = 5 }
+            clamp_variable = { var = ROS_UKR_DNI min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_DNI_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_DON_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_DON < 100 }
+            NOT = { has_country_flag = ROS_UKR_DON_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_DON = 30 }
+            clamp_variable = { var = ROS_UKR_DON min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_DON_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_DON_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_DON < 100 }
+            NOT = { has_country_flag = ROS_UKR_DON_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_DON = 10 }
+            clamp_variable = { var = ROS_UKR_DON min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_DON_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_DON_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_DON < 100 }
+            NOT = { has_country_flag = ROS_UKR_DON_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_DON = 5 }
+            clamp_variable = { var = ROS_UKR_DON min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_DON_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_LUH_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_LUH < 100 }
+            NOT = { has_country_flag = ROS_UKR_LUH_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_LUH = 30 }
+            clamp_variable = { var = ROS_UKR_LUH min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_LUH_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_LUH_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_LUH < 100 }
+            NOT = { has_country_flag = ROS_UKR_LUH_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_LUH = 10 }
+            clamp_variable = { var = ROS_UKR_LUH min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_LUH_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_LUH_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_LUH < 100 }
+            NOT = { has_country_flag = ROS_UKR_LUH_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_LUH = 5 }
+            clamp_variable = { var = ROS_UKR_LUH min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_LUH_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_ZAP_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_ZAP < 100 }
+            NOT = { has_country_flag = ROS_UKR_ZAP_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_ZAP = 30 }
+            clamp_variable = { var = ROS_UKR_ZAP min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ZAP_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_ZAP_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_ZAP < 100 }
+            NOT = { has_country_flag = ROS_UKR_ZAP_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_ZAP = 10 }
+            clamp_variable = { var = ROS_UKR_ZAP min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ZAP_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_ZAP_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_ZAP < 100 }
+            NOT = { has_country_flag = ROS_UKR_ZAP_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_ZAP = 5 }
+            clamp_variable = { var = ROS_UKR_ZAP min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ZAP_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_KHE_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_KHE < 100 }
+            NOT = { has_country_flag = ROS_UKR_KHE_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_KHE = 30 }
+            clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KHE_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_KHE_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_KHE < 100 }
+            NOT = { has_country_flag = ROS_UKR_KHE_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_KHE = 10 }
+            clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KHE_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_KHE_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_KHE < 100 }
+            NOT = { has_country_flag = ROS_UKR_KHE_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_KHE = 5 }
+            clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_KHE_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_MYK_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_MYK < 100 }
+            NOT = { has_country_flag = ROS_UKR_MYK_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_MYK = 30 }
+            clamp_variable = { var = ROS_UKR_MYK min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_MYK_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_MYK_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_MYK < 100 }
+            NOT = { has_country_flag = ROS_UKR_MYK_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_MYK = 10 }
+            clamp_variable = { var = ROS_UKR_MYK min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_MYK_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_MYK_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_MYK < 100 }
+            NOT = { has_country_flag = ROS_UKR_MYK_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_MYK = 5 }
+            clamp_variable = { var = ROS_UKR_MYK min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_MYK_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_ODE_major = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 65
+        days_re_enable = 60
+        available = {
+            check_variable = { ROS_UKR_ODE < 100 }
+            NOT = { has_country_flag = ROS_UKR_ODE_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 8000
+        }
+        complete_effect = {
+            add_manpower = -8000
+            add_to_variable = { ROS_UKR_ODE = 30 }
+            clamp_variable = { var = ROS_UKR_ODE min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ODE_cooldown days = 60 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_ODE_minor = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            check_variable = { ROS_UKR_ODE < 100 }
+            NOT = { has_country_flag = ROS_UKR_ODE_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 2500
+        }
+        complete_effect = {
+            add_manpower = -2500
+            add_to_variable = { ROS_UKR_ODE = 10 }
+            clamp_variable = { var = ROS_UKR_ODE min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ODE_cooldown days = 30 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 2
+        }
+    }
+    ROS_UKR_ODE_probe = {
+        icon = generic_operation
+        allowed = { original_tag = ROS }
+        visible = { is_ai = yes }
+        cost = 10
+        days_re_enable = 14
+        available = {
+            check_variable = { ROS_UKR_ODE < 100 }
+            NOT = { has_country_flag = ROS_UKR_ODE_cooldown }
+            NOT = { has_country_flag = ROS_UKR_succession_pause }
+            has_manpower > 750
+        }
+        complete_effect = {
+            add_manpower = -750
+            add_to_variable = { ROS_UKR_ODE = 5 }
+            clamp_variable = { var = ROS_UKR_ODE min = 0 max = 100 }
+            set_country_flag = { flag = ROS_UKR_ODE_cooldown days = 14 }
+            ROS_UKR_recalculate = yes
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ROS_UKR_report = {
+        icon = generic_political_discourse
+        cost = 0
+        days_re_enable = 1
+        complete_effect = { country_event = { id = feukr.1 days = 1 } }
+        ai_will_do = { factor = 0 }
+    }
+}
+
+UKR_UKR_defensive_category = {
+    UKR_UKR_VOL_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_VOL > 0 }
+                NOT = { has_country_flag = ROS_UKR_VOL_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_VOL = -10 }
+                clamp_variable = { var = ROS_UKR_VOL min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_VOL_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_RIV_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_RIV > 0 }
+                NOT = { has_country_flag = ROS_UKR_RIV_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_RIV = -10 }
+                clamp_variable = { var = ROS_UKR_RIV min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_RIV_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_LVI_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_LVI > 0 }
+                NOT = { has_country_flag = ROS_UKR_LVI_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_LVI = -10 }
+                clamp_variable = { var = ROS_UKR_LVI min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_LVI_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_ZAK_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_ZAK > 0 }
+                NOT = { has_country_flag = ROS_UKR_ZAK_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_ZAK = -10 }
+                clamp_variable = { var = ROS_UKR_ZAK min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_ZAK_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_IVA_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_IVA > 0 }
+                NOT = { has_country_flag = ROS_UKR_IVA_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_IVA = -10 }
+                clamp_variable = { var = ROS_UKR_IVA min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_IVA_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_TER_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_TER > 0 }
+                NOT = { has_country_flag = ROS_UKR_TER_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_TER = -10 }
+                clamp_variable = { var = ROS_UKR_TER min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_TER_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_CHE_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_CHE > 0 }
+                NOT = { has_country_flag = ROS_UKR_CHE_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_CHE = -10 }
+                clamp_variable = { var = ROS_UKR_CHE min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_CHE_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_KHM_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_KHM > 0 }
+                NOT = { has_country_flag = ROS_UKR_KHM_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_KHM = -10 }
+                clamp_variable = { var = ROS_UKR_KHM min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_KHM_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_ZHY_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_ZHY > 0 }
+                NOT = { has_country_flag = ROS_UKR_ZHY_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_ZHY = -10 }
+                clamp_variable = { var = ROS_UKR_ZHY min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_ZHY_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_VIN_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_VIN > 0 }
+                NOT = { has_country_flag = ROS_UKR_VIN_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_VIN = -10 }
+                clamp_variable = { var = ROS_UKR_VIN min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_VIN_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_KYI_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_KYI > 0 }
+                NOT = { has_country_flag = ROS_UKR_KYI_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_KYI = -10 }
+                clamp_variable = { var = ROS_UKR_KYI min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_KYI_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_CHR_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_CHR > 0 }
+                NOT = { has_country_flag = ROS_UKR_CHR_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_CHR = -10 }
+                clamp_variable = { var = ROS_UKR_CHR min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_CHR_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_SUM_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_SUM > 0 }
+                NOT = { has_country_flag = ROS_UKR_SUM_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_SUM = -10 }
+                clamp_variable = { var = ROS_UKR_SUM min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_SUM_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_KHA_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_KHA > 0 }
+                NOT = { has_country_flag = ROS_UKR_KHA_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_KHA = -10 }
+                clamp_variable = { var = ROS_UKR_KHA min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_KHA_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_POL_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_POL > 0 }
+                NOT = { has_country_flag = ROS_UKR_POL_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_POL = -10 }
+                clamp_variable = { var = ROS_UKR_POL min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_POL_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_CKA_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_CKA > 0 }
+                NOT = { has_country_flag = ROS_UKR_CKA_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_CKA = -10 }
+                clamp_variable = { var = ROS_UKR_CKA min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_CKA_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_KIR_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_KIR > 0 }
+                NOT = { has_country_flag = ROS_UKR_KIR_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_KIR = -10 }
+                clamp_variable = { var = ROS_UKR_KIR min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_KIR_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_DNI_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_DNI > 0 }
+                NOT = { has_country_flag = ROS_UKR_DNI_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_DNI = -10 }
+                clamp_variable = { var = ROS_UKR_DNI min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_DNI_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_DON_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_DON > 0 }
+                NOT = { has_country_flag = ROS_UKR_DON_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_DON = -10 }
+                clamp_variable = { var = ROS_UKR_DON min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_DON_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_LUH_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_LUH > 0 }
+                NOT = { has_country_flag = ROS_UKR_LUH_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_LUH = -10 }
+                clamp_variable = { var = ROS_UKR_LUH min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_LUH_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_ZAP_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_ZAP > 0 }
+                NOT = { has_country_flag = ROS_UKR_ZAP_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_ZAP = -10 }
+                clamp_variable = { var = ROS_UKR_ZAP min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_ZAP_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_KHE_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_KHE > 0 }
+                NOT = { has_country_flag = ROS_UKR_KHE_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_KHE = -10 }
+                clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_KHE_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_MYK_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_MYK > 0 }
+                NOT = { has_country_flag = ROS_UKR_MYK_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_MYK = -10 }
+                clamp_variable = { var = ROS_UKR_MYK min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_MYK_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+    UKR_UKR_ODE_counter = {
+        icon = generic_operation
+        allowed = { original_tag = UKR }
+        cost = 25
+        days_re_enable = 30
+        available = {
+            ROS = {
+                check_variable = { ROS_UKR_ODE > 0 }
+                NOT = { has_country_flag = ROS_UKR_ODE_defense_cooldown }
+            }
+        }
+        complete_effect = {
+            ROS = {
+                add_to_variable = { ROS_UKR_ODE = -10 }
+                clamp_variable = { var = ROS_UKR_ODE min = 0 max = 100 }
+                set_country_flag = { flag = ROS_UKR_ODE_defense_cooldown days = 30 }
+                ROS_UKR_recalculate = yes
+            }
+        }
+        ai_will_do = { factor = 2 }
+    }
+}

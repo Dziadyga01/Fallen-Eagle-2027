@@ -1,0 +1,85 @@
+# The Fallen Eagle 2027 | PRW: real HOI4 Balance of Power
+# -1 = Harcerze (technokraci), +1 = Maslarze (aparat terenowy)
+# CyberJarek zachowuje osobna sciezke kongresowa, bez trzeciej strony paska.
+ZPP_rownowaga_sil = {
+    initial_value = 0.02
+    left_side = ZPP_bop_harcerze
+    right_side = ZPP_bop_maslarze
+    decision_category = ZPP_bop_decyzje
+
+    range = {
+        id = ZPP_bop_kompromis
+        min = -0.20
+        max = 0.20
+        modifier = {
+            stability_factor = 0.06
+            political_power_gain = 0.03
+        }
+    }
+
+    side = {
+        id = ZPP_bop_harcerze
+        icon = GFX_idea_ZPP_harcerze_idea
+        range = {
+            id = ZPP_bop_harcerze_przewaga
+            min = -0.65
+            max = -0.20
+            modifier = {
+                political_power_gain = 0.06
+                production_speed_buildings_factor = 0.06
+                stability_factor = -0.03
+            }
+        }
+        range = {
+            id = ZPP_bop_harcerze_dominacja
+            min = -1.0
+            max = -0.65
+            modifier = {
+                political_power_gain = 0.10
+                production_speed_buildings_factor = 0.08
+                stability_factor = -0.12
+                war_support_factor = -0.05
+            }
+            on_activate = {
+                if = {
+                    limit = { NOT = { has_country_flag = ZPP_bop_harc_kryzys_cd } }
+                    set_country_flag = { flag = ZPP_bop_harc_kryzys_cd days = 120 }
+                    country_event = { id = zppbop.10 days = 1 }
+                }
+            }
+        }
+    }
+
+    side = {
+        id = ZPP_bop_maslarze
+        icon = GFX_idea_ZPP_maslarze_idea
+        range = {
+            id = ZPP_bop_maslarze_przewaga
+            min = 0.20
+            max = 0.65
+            modifier = {
+                stability_factor = 0.07
+                war_support_factor = 0.04
+                consumer_goods_factor = 0.02
+            }
+        }
+        range = {
+            id = ZPP_bop_maslarze_dominacja
+            min = 0.65
+            max = 1.0
+            modifier = {
+                stability_factor = 0.09
+                war_support_factor = 0.07
+                political_power_gain = -0.10
+                consumer_goods_factor = 0.06
+            }
+            on_activate = {
+                if = {
+                    limit = { NOT = { has_country_flag = ZPP_bop_masl_kryzys_cd } }
+                    set_country_flag = { flag = ZPP_bop_masl_kryzys_cd days = 120 }
+                    country_event = { id = zppbop.20 days = 1 }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+CZE_panel = {
+	CZE_dec_straz = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { original_tag = CZE }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { CZE_pogr = 8 } clamp_variable = { var = CZE_pogr min = 0 max = 100 } set_variable = { CZE_dm_a = CZE_pogr } subtract_from_variable = { CZE_dm_a = 50 } divide_variable = { CZE_dm_a = 800 } set_variable = { CZE_dm_b = CZE_pogr } subtract_from_variable = { CZE_dm_b = 50 } divide_variable = { CZE_dm_b = -2000 } }
+		ai_will_do = { base = 2 modifier = { factor = 4 check_variable = { CZE_pogr < 50 } } modifier = { factor = 3 check_variable = { CZE_pogr < 30 } } modifier = { factor = 0.2 check_variable = { CZE_pogr > 85 } } }
+	}
+	CZE_dec_pomoc = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = CZE }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { CZE_pogr = 5 } clamp_variable = { var = CZE_pogr min = 0 max = 100 } set_variable = { CZE_dm_a = CZE_pogr } subtract_from_variable = { CZE_dm_a = 50 } divide_variable = { CZE_dm_a = 800 } set_variable = { CZE_dm_b = CZE_pogr } subtract_from_variable = { CZE_dm_b = 50 } divide_variable = { CZE_dm_b = -2000 } if = { limit = { country_exists = SLS } SLS = { add_opinion_modifier = { target = ROOT modifier = WOS_dialog } } } }
+		ai_will_do = { base = 2 modifier = { factor = 2 check_variable = { CZE_pogr < 60 } } modifier = { factor = 0.5 check_variable = { CZE_pogr > 80 } } }
+	}
+	CZE_dec_korytarz = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = CZE }
+		available = { custom_trigger_tooltip = { tooltip = CZE_req_50 check_variable = { CZE_pogr > 49 } } NOT = { has_idea = CZE_idea_korytarz } }
+		days_re_enable = 180
+		complete_effect = { add_timed_idea = { idea = CZE_idea_korytarz days = 180 } }
+		ai_will_do = { base = 2 modifier = { factor = 0.3 check_variable = { CZE_pogr < 60 } } }
+	}
+}

@@ -1,0 +1,18 @@
+LIT_dm = {
+	icon = GFX_idea_DU_ZAG_armia
+	enable = { always = yes }
+	army_defence_factor = LIT_dm_a
+	stability_factor = LIT_dm_b
+}
+CZE_dm = {
+	icon = GFX_idea_DU_EUR_euroregion_idea
+	enable = { always = yes }
+	stability_factor = CZE_dm_a
+	consumer_goods_factor = CZE_dm_b
+}
+UKR_dm = {
+	icon = GFX_idea_DU_ZAG_armia
+	enable = { always = yes }
+	army_defence_factor = UKR_dm_a
+	war_support_factor = UKR_dm_b
+}

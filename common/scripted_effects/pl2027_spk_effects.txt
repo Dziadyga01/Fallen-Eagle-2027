@@ -1,0 +1,4 @@
+SPK_miesiac = {
+	if = { limit = { country_exists = SPT } SPT = { if = { limit = { NOT = { has_variable = SPT_kapital } } set_variable = { SPT_kapital = 40 } set_variable = { SPT_reputacja = 60 } add_dynamic_modifier = { modifier = SPK_dm } } add_to_variable = { SPT_kapital = -2 } clamp_variable = { var = SPT_kapital min = 0 max = 100 } if = { limit = { check_variable = { SPT_reputacja < 20 } NOT = { has_country_flag = SPT_skandal_cd } } set_country_flag = { flag = SPT_skandal_cd days = 150 } country_event = { id = spk.10 days = 1 } } set_variable = { SPK_dm_0 = SPT_kapital } subtract_from_variable = { SPK_dm_0 = 40 } divide_variable = { SPK_dm_0 = 500 } set_variable = { SPK_dm_1 = SPT_reputacja } subtract_from_variable = { SPK_dm_1 = 50 } divide_variable = { SPK_dm_1 = 800 } } }
+	
+}

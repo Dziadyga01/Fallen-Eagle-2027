@@ -1,0 +1,46 @@
+ideas = {
+	country = {
+		WOS_idea_smr_m_tusk = {
+			picture = DU_WWD_sejm_trwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.04 political_power_gain = 0.05 }
+		}
+		WOS_idea_smr_m_czarzasty = {
+			picture = DU_WWD_sejm_trwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.1 stability_factor = -0.02 }
+		}
+		WOS_idea_smr_m_konopka = {
+			picture = DU_WWD_sejm_trwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.03 }
+		}
+		WOS_idea_smr_m_kukiz = {
+			picture = DU_WWD_sejm_trwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.04 war_support_factor = 0.03 political_power_gain = -0.03 }
+		}
+		WOS_idea_smr_m_ostrowski = {
+			picture = DU_WWD_sejm_trwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_core_defence_factor = 0.08 war_support_factor = 0.05 stability_factor = -0.03 }
+		}
+		WOS_idea_smr_m_prezydium = {
+			picture = DU_WWD_sejm_trwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.06 political_power_gain = -0.05 }
+		}
+		WOS_idea_smr_m_rada = {
+			picture = DU_WWD_sejm_trwa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_org_factor = 0.05 conscription_factor = 0.05 stability_factor = -0.02 }
+		}
+	}
+}

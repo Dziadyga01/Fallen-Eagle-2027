@@ -1,0 +1,19 @@
+add_namespace = gds
+
+country_event = {
+	id = gds.10
+	title = gds.10.t
+	desc = gds.10.d
+	picture = GFX_pl2027_ev081_ulica_3
+	is_triggered_only = yes
+	option = {
+		name = gds.10.a
+		ai_chance = { base = 2 }
+		add_political_power = -60 add_to_variable = { WMG_napiecie = -25 } clamp_variable = { var = WMG_napiecie min = 0 max = 100 }
+	}
+	option = {
+		name = gds.10.b
+		ai_chance = { base = 1 }
+		add_stability = -0.05 add_to_variable = { WMG_stocznia = -15 } clamp_variable = { var = WMG_stocznia min = 0 max = 100 } add_to_variable = { WMG_napiecie = -10 } clamp_variable = { var = WMG_napiecie min = 0 max = 100 }
+	}
+}

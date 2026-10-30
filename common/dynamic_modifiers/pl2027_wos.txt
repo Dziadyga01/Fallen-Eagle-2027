@@ -1,0 +1,69 @@
+WOS_dm_SMR = {
+	icon = GFX_idea_DU_WWD_sejm_trwa
+	enable = { always = yes }
+	remove_trigger = { NOT = { original_tag = SMR } }
+	stability_factor = WOS_a
+	political_power_gain = WOS_b
+}
+WOS_dm_KPR = {
+	icon = GFX_idea_DU_WWD_dekrety
+	enable = { always = yes }
+	remove_trigger = { NOT = { original_tag = KPR } }
+	political_power_gain = WOS_a
+	war_support_factor = WOS_b
+	stability_factor = WOS_c
+}
+WOS_dm_MPR = {
+	icon = GFX_idea_DU_WWD_osmiornica
+	enable = { always = yes }
+	remove_trigger = { NOT = { original_tag = MPR } }
+	political_power_gain = WOS_a
+	consumer_goods_factor = WOS_b
+	production_speed_buildings_factor = WOS_c
+}
+WOS_dm_LEG = {
+	icon = GFX_idea_DU_WWD_kibole
+	enable = { always = yes }
+	remove_trigger = { NOT = { original_tag = LEG } }
+	army_org_factor = WOS_a
+	conscription_factor = WOS_b
+	stability_factor = WOS_c
+}
+WOS_dm_PLC = {
+	icon = GFX_idea_DU_WWD_plc_idea_doktryna
+	enable = { always = yes }
+	remove_trigger = { NOT = { original_tag = PLC } }
+	stability_factor = WOS_a
+	army_core_defence_factor = WOS_b
+	political_power_gain = WOS_c
+}
+WOS_dm_WOJ = {
+	icon = GFX_idea_DU_WWD_woj_idea_doktryna
+	enable = { always = yes }
+	remove_trigger = { NOT = { original_tag = WOJ } }
+	army_org_factor = WOS_a
+	planning_speed = WOS_b
+}
+WOS_dm_PRG = {
+	icon = GFX_idea_DU_WWD_dzielnica_twierdza
+	enable = { always = yes }
+	remove_trigger = { NOT = { original_tag = PRG } }
+	army_defence_factor = WOS_a
+	stability_factor = WOS_b
+}
+WOS_dm_ZIE = {
+	icon = GFX_idea_DU_WWD_wolna_dzielnica
+	enable = { always = yes }
+	remove_trigger = { NOT = { original_tag = ZIE } }
+	consumer_goods_factor = WOS_a
+	production_speed_buildings_factor = WOS_b
+	stability_factor = WOS_c
+}
+WOS_dm_TEC = {
+	icon = GFX_idea_DU_WWD_wolna_dzielnica
+	enable = { always = yes }
+	remove_trigger = { NOT = { original_tag = TEC } }
+	stability_factor = WOS_a
+	political_power_gain = WOS_b
+	war_support_factor = WOS_c
+}

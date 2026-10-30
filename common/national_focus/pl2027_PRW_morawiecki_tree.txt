@@ -1,0 +1,215 @@
+# The Fallen Eagle 2027 – Morawiecki: kontrakty i regiony (fikcyjna ścieżka moda)
+focus_tree = {
+	id = PRW_morawiecki_tree
+	country = {
+		factor = 0
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1200 }
+	initial_show_position = { focus = PRW_mo_start }
+
+	focus = {
+		id = PRW_mo_start
+		icon = GFX_pl2027_081_handel_1
+		x = 5
+		y = 0
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_political_power = 50 PRW_przelicz_lidera = yes
+		}
+	}
+
+	focus = {
+		id = PRW_mo_strefa
+		icon = GFX_pl2027_081_przemysl_2
+		x = 3
+		y = 1
+		prerequisite = { focus = PRW_mo_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_ideas = PRW_idea_mo_strefa
+		}
+	}
+
+	focus = {
+		id = PRW_mo_powiaty
+		icon = GFX_pl2027_081_wspolnota_1
+		x = 5
+		y = 1
+		prerequisite = { focus = PRW_mo_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_auto = 15 } clamp_variable = { var = PRW_auto min = 0 max = 100 } PRW_przelicz_lidera = yes
+		}
+	}
+
+	focus = {
+		id = PRW_mo_fundusz
+		icon = GFX_pl2027_081_pieniadze_2
+		x = 7
+		y = 1
+		prerequisite = { focus = PRW_mo_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = PRW_mo_kolej
+		icon = GFX_pl2027_081_kolej_0
+		x = 3
+		y = 2
+		prerequisite = { focus = PRW_mo_strefa }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } 
+		}
+	}
+
+	focus = {
+		id = PRW_mo_zagranica
+		icon = GFX_pl2027_081_dyplomacja_1
+		x = 3
+		y = 3
+		prerequisite = { focus = PRW_mo_strefa }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_kontr_1 check_variable = { PRW_kontr > 0 } } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PRW_mo_spolki
+		icon = GFX_pl2027_081_przemysl_3
+		x = 5
+		y = 2
+		prerequisite = { focus = PRW_mo_powiaty }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_auto40 check_variable = { PRW_auto > 39 } } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PRW_mo_zywnosc
+		icon = GFX_pl2027_081_zywnosc_0
+		x = 5
+		y = 3
+		prerequisite = { focus = PRW_mo_spolki }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_political_power = 40 every_neighbor_country = { limit = { has_country_flag = PL2027_polska } add_opinion_modifier = { target = ROOT modifier = ZPP_uklad_op } }
+		}
+	}
+
+	focus = {
+		id = PRW_mo_zbrojenia
+		icon = GFX_pl2027_081_fabryka_broni_1
+		x = 7
+		y = 2
+		prerequisite = { focus = PRW_mo_fundusz }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_kontr_2 check_variable = { PRW_kontr > 1 } } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PRW_mo_brygada
+		icon = GFX_pl2027_081_wojsko_0
+		x = 7
+		y = 3
+		prerequisite = { focus = PRW_mo_zbrojenia }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_manpower = 3000 army_experience = 15
+		}
+	}
+
+	focus = {
+		id = PRW_mo_final
+		icon = GFX_pl2027_081_przemysl_4
+		x = 5
+		y = 5
+		prerequisite = { focus = PRW_mo_zagranica }
+		prerequisite = { focus = PRW_mo_zywnosc }
+		prerequisite = { focus = PRW_mo_brygada }
+		cost = 6
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_kontr_4 check_variable = { PRW_kontr > 3 } } }
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			add_ideas = PRW_idea_mo_final set_country_flag = PRW_sukces news_event = { id = zpp.191 days = 1 }
+		}
+	}
+
+	focus = {
+		id = PRW_mo_reg_pdl
+		icon = GFX_pl2027_081_granica_0
+		x = 9
+		y = 6
+		prerequisite = { focus = PRW_mo_final }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_pokoj_reg has_war = no } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			if = { limit = { country_exists = PDL PDL = { is_subject_of = ROOT } } annex_country = { target = PDL transfer_troops = yes } } else_if = { limit = { country_exists = PDL NOT = { has_war_with = PDL } } PDL = { country_event = { id = zpp.240 days = 1 } } custom_effect_tooltip = PRW_tt_reg_mo_pdl } else = { add_political_power = 40 }
+		}
+	}
+
+	focus = {
+		id = PRW_mo_reg_rad
+		icon = GFX_pl2027_081_pojednanie_2
+		x = 9
+		y = 7
+		prerequisite = { focus = PRW_mo_reg_pdl }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_pokoj_reg has_war = no } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			if = { limit = { country_exists = RAD RAD = { is_subject_of = ROOT } } annex_country = { target = RAD transfer_troops = yes } } else_if = { limit = { country_exists = RAD NOT = { has_war_with = RAD } } RAD = { country_event = { id = zpp.241 days = 1 } } custom_effect_tooltip = PRW_tt_reg_mo_rad } else = { add_political_power = 40 }
+		}
+	}
+
+	focus = {
+		id = PRW_mo_reg_ptk
+		icon = GFX_pl2027_081_droga_1
+		x = 9
+		y = 8
+		prerequisite = { focus = PRW_mo_reg_rad }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_pokoj_reg has_war = no } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			if = { limit = { country_exists = PTK PTK = { is_subject_of = ROOT } } annex_country = { target = PTK transfer_troops = yes } } else_if = { limit = { country_exists = PTK NOT = { has_war_with = PTK } } PTK = { country_event = { id = zpp.242 days = 1 } } custom_effect_tooltip = PRW_tt_reg_mo_ptk } else = { add_political_power = 40 }
+		}
+	}
+
+	focus = {
+		id = PRW_mo_reg_final
+		icon = GFX_pl2027_081_polska_0
+		x = 9
+		y = 9
+		prerequisite = { focus = PRW_mo_reg_ptk }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_reg_ziemie OR = { NOT = { country_exists = PDL } PDL = { is_subject_of = ROOT } } OR = { NOT = { country_exists = RAD } RAD = { is_subject_of = ROOT } } OR = { NOT = { country_exists = PTK } PTK = { is_subject_of = ROOT } } any_owned_state = { is_core_of = PDL } any_owned_state = { is_core_of = RAD } any_owned_state = { is_core_of = PTK } } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_ideas = PRW_idea_region every_owned_state = { limit = { OR = { is_core_of = PDL is_core_of = RAD is_core_of = PTK } } add_core_of = ROOT } news_event = { id = zpp.197 days = 1 }
+		}
+	}
+}

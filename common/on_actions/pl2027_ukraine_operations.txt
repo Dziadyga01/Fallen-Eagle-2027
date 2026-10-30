@@ -1,0 +1,18 @@
+on_actions = {
+    on_startup = {
+        effect = {
+            if = { limit = { country_exists = ROS } ROS = { ROS_UKR_initialize = yes } }
+        }
+    }
+    on_weekly_ROS = {
+        effect = {
+            if = { limit = { NOT = { has_country_flag = ROS_UKR_initialized } } ROS_UKR_initialize = yes }
+            if = {
+                limit = { has_country_flag = ROS_putin_zmarl NOT = { has_country_flag = ROS_UKR_succession_processed } }
+                set_country_flag = ROS_UKR_succession_processed
+                set_country_flag = { flag = ROS_UKR_succession_pause days = 35 }
+            }
+            ROS_UKR_recalculate = yes
+        }
+    }
+}

@@ -1,0 +1,62 @@
+BYK_kampania = {
+	BYK_wsp_bruski = {
+		icon = generic_political_rally
+		allowed = { original_tag = BYD }
+		visible = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } }
+		available = { custom_trigger_tooltip = { tooltip = BYK_req_limit check_variable = { BYK_wsp_bruski < 2 } check_variable = { BYK_wsp_suma < 5 } } }
+		cost = 25
+		days_re_enable = 21
+		complete_effect = { custom_effect_tooltip = BYK_sup_bruski_p3 hidden_effect = { add_to_variable = { BYD2_pop_bruski = 3 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } } add_popularity = { ideology = social_liberal popularity = 0.015 } add_to_variable = { BYK_wsp_bruski = 1 } add_to_variable = { BYK_wsp_suma = 1 } BYK_sondaz = yes }
+		ai_will_do = { factor = 0 modifier = { add = 15 has_country_flag = BYK_faw_bruski } }
+	}
+	BYK_wsp_przemysl = {
+		icon = generic_political_rally
+		allowed = { original_tag = BYD }
+		visible = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } }
+		available = { custom_trigger_tooltip = { tooltip = BYK_req_limit check_variable = { BYK_wsp_przemysl < 2 } check_variable = { BYK_wsp_suma < 5 } } }
+		cost = 25
+		days_re_enable = 21
+		complete_effect = { custom_effect_tooltip = BYK_sup_przemysl_p3 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = 3 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } } add_popularity = { ideology = market_liberal popularity = 0.015 } add_to_variable = { BYK_wsp_przemysl = 1 } add_to_variable = { BYK_wsp_suma = 1 } BYK_sondaz = yes }
+		ai_will_do = { factor = 0 modifier = { add = 15 has_country_flag = BYK_faw_przemysl } }
+	}
+	BYK_wsp_rady = {
+		icon = generic_political_rally
+		allowed = { original_tag = BYD }
+		visible = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } }
+		available = { custom_trigger_tooltip = { tooltip = BYK_req_limit check_variable = { BYK_wsp_rady < 2 } check_variable = { BYK_wsp_suma < 5 } } }
+		cost = 25
+		days_re_enable = 21
+		complete_effect = { custom_effect_tooltip = BYK_sup_rady_p3 hidden_effect = { add_to_variable = { BYD2_pop_rady = 3 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } } add_popularity = { ideology = libertarian_socialist popularity = 0.015 } add_to_variable = { BYK_wsp_rady = 1 } add_to_variable = { BYK_wsp_suma = 1 } BYK_sondaz = yes }
+		ai_will_do = { factor = 0 modifier = { add = 15 has_country_flag = BYK_faw_rady } }
+	}
+	BYK_wsp_junta = {
+		icon = generic_political_rally
+		allowed = { original_tag = BYD }
+		visible = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } }
+		available = { custom_trigger_tooltip = { tooltip = BYK_req_limit check_variable = { BYK_wsp_junta < 2 } check_variable = { BYK_wsp_suma < 5 } } }
+		cost = 25
+		days_re_enable = 21
+		complete_effect = { custom_effect_tooltip = BYK_sup_junta_p3 hidden_effect = { add_to_variable = { BYD2_pop_junta = 3 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } } add_popularity = { ideology = nationalist popularity = 0.015 } add_to_variable = { BYK_wsp_junta = 1 } add_to_variable = { BYK_wsp_suma = 1 } BYK_sondaz = yes }
+		ai_will_do = { factor = 0 modifier = { add = 15 has_country_flag = BYK_faw_junta } }
+	}
+	BYK_wsp_brdowski = {
+		icon = generic_political_rally
+		allowed = { original_tag = BYD }
+		visible = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } }
+		available = { custom_trigger_tooltip = { tooltip = BYK_req_limit check_variable = { BYK_wsp_brdowski < 2 } check_variable = { BYK_wsp_suma < 5 } } }
+		cost = 25
+		days_re_enable = 21
+		complete_effect = { custom_effect_tooltip = BYK_sup_brdowski_p3 hidden_effect = { add_to_variable = { BYD2_pop_brdowski = 3 } clamp_variable = { var = BYD2_pop_brdowski min = 0 max = 100 } } add_popularity = { ideology = conservative popularity = 0.015 } add_to_variable = { BYK_wsp_brdowski = 1 } add_to_variable = { BYK_wsp_suma = 1 } BYK_sondaz = yes }
+		ai_will_do = { factor = 0 modifier = { add = 15 has_country_flag = BYK_faw_brdowski } }
+	}
+	BYK_obserwatorzy = {
+		icon = generic_political_discourse
+		allowed = { original_tag = BYD }
+		visible = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } }
+		available = { has_stability < 0.35 }
+		cost = 30
+		days_re_enable = 90
+		complete_effect = { add_stability = 0.05 }
+		ai_will_do = { factor = 5 modifier = { factor = 4 has_stability < 0.2 } }
+	}
+}

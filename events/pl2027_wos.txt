@@ -1,0 +1,832 @@
+add_namespace = wos
+
+country_event = {
+	id = wos.1
+	title = wos.1.t
+	desc = wos.1.d
+	picture = GFX_pl2027_ev081_wisla_2
+	is_triggered_only = yes
+	option = {
+		name = wos.1.a
+		ai_chance = { base = 3 }
+		add_war_support = 0.03 add_to_variable = { global.WOS_zaopatrzenie = -4 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = -3 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_timed_idea = { idea = WOS_most_zamkniety days = 60 }
+	}
+	option = {
+		name = wos.1.b
+		ai_chance = { base = 5 }
+		add_political_power = -25 add_to_variable = { global.WOS_zaopatrzenie = 2 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 2 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_to_variable = { WOS_m = 2 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+	option = {
+		name = wos.1.c
+		ai_chance = { base = 2 }
+		add_political_power = -10 add_to_variable = { global.WOS_nastroje = 3 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = wos.2
+	title = wos.2.t
+	desc = wos.2.d
+	picture = GFX_pl2027_ev081_blackout_2
+	is_triggered_only = yes
+	option = {
+		name = wos.2.a
+		ai_chance = { base = 4 }
+		add_stability = -0.02 add_to_variable = { global.WOS_prad = 6 } clamp_variable = { var = global.WOS_prad min = 0 max = 100 } add_timed_idea = { idea = WOS_racjonowanie days = 90 }
+	}
+	option = {
+		name = wos.2.b
+		ai_chance = { base = 4 }
+		add_political_power = -30 add_to_variable = { global.WOS_nastroje = 4 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_to_variable = { WOS_m = 2 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+	option = {
+		name = wos.2.c
+		ai_chance = { base = 2 }
+		add_war_support = 0.03 add_to_variable = { global.WOS_nastroje = -2 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_to_variable = { WOS_m = 1 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = wos.3
+	title = wos.3.t
+	desc = wos.3.d
+	picture = GFX_pl2027_ev081_media_3
+	is_triggered_only = yes
+	option = {
+		name = wos.3.a
+		ai_chance = { base = 6 }
+		add_political_power = -50 add_to_variable = { WOS_m = 20 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = -0.02 set_country_flag = WOS_smr_parlament_ocalony
+	}
+	option = {
+		name = wos.3.b
+		ai_chance = { base = 3 }
+		add_political_power = 60 add_to_variable = { WOS_m = -10 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_war_support = 0.05 set_country_flag = WOS_smr_prezydium_nadzwyczajne
+	}
+}
+
+country_event = {
+	id = wos.4
+	title = wos.4.t
+	desc = wos.4.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = wos.4.a
+		ai_chance = { base = 2 modifier = { factor = 3 check_variable = { WOS_m < 30 } } }
+		add_political_power = 75 add_to_variable = { WOS_m = -8 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.TFE_wwa_mpr = 6 } WWP_clamp = yes set_country_flag = WOS_uklad_z_pruszkowem
+	}
+	option = {
+		name = wos.4.b
+		ai_chance = { base = 5 }
+		add_to_variable = { WOS_m = 4 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.TFE_wwa_mpr = -3 } WWP_clamp = yes add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = wos.5
+	title = wos.5.t
+	desc = wos.5.d
+	picture = GFX_pl2027_ev081_kibice_2
+	is_triggered_only = yes
+	option = {
+		name = wos.5.a
+		ai_chance = { base = 4 }
+		add_to_variable = { WOS_m = 10 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_war_support = 0.05 set_country_flag = WOS_leg_niezaleznosc_glos if = { limit = { is_subject = yes } overlord = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } } }
+	}
+	option = {
+		name = wos.5.b
+		ai_chance = { base = 3 }
+		add_to_variable = { WOS_m = -5 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = wos.6
+	title = wos.6.t
+	desc = wos.6.d
+	picture = GFX_pl2027_ev081_ulica_3
+	is_triggered_only = yes
+	option = {
+		name = wos.6.a
+		ai_chance = { base = 5 }
+		add_timed_idea = { idea = WOS_barykady_pragi days = 120 } add_to_variable = { WOS_m = 5 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = -20
+	}
+	option = {
+		name = wos.6.b
+		ai_chance = { base = 2 }
+		add_political_power = 40 add_to_variable = { WOS_m = -3 } clamp_variable = { var = WOS_m min = 0 max = 100 } set_country_flag = WOS_prg_negocjuje
+	}
+}
+
+country_event = {
+	id = wos.7
+	title = wos.7.t
+	desc = wos.7.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = wos.7.a
+		ai_chance = { base = 3 }
+		add_stability = -0.04 add_war_support = 0.03 add_to_variable = { WOS_m = 5 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_timed_idea = { idea = WOS_czystka_sop days = 90 }
+	}
+	option = {
+		name = wos.7.b
+		ai_chance = { base = 4 }
+		add_political_power = -40 add_to_variable = { WOS_m = -15 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = wos.8
+	title = wos.8.t
+	desc = wos.8.d
+	picture = GFX_pl2027_ev081_porzadek_3
+	is_triggered_only = yes
+	option = {
+		name = wos.8.a
+		ai_chance = { base = 3 }
+		add_stability = -0.03 add_to_variable = { WOS_m = -4 } clamp_variable = { var = WOS_m min = 0 max = 100 } if = { limit = { is_subject = yes } overlord = { add_political_power = 25 } }
+	}
+	option = {
+		name = wos.8.b
+		ai_chance = { base = 3 }
+		add_to_variable = { WOS_m = 6 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = 30 set_country_flag = WOS_plc_wlasna_droga if = { limit = { is_subject = yes } overlord = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } } }
+	}
+}
+
+country_event = {
+	id = wos.9
+	title = wos.9.t
+	desc = wos.9.d
+	picture = GFX_pl2027_ev081_narada_4
+	is_triggered_only = yes
+	option = {
+		name = wos.9.a
+		ai_chance = { base = 4 }
+		set_country_flag = WOS_woj_neutralne add_to_variable = { WOS_m = 8 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.03 if = { limit = { is_subject = yes } overlord = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } } }
+	}
+	option = {
+		name = wos.9.b
+		ai_chance = { base = 3 }
+		add_to_variable = { WOS_m = -6 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_war_support = 0.05 army_experience = 10
+	}
+}
+
+country_event = {
+	id = wos.10
+	title = wos.10.t
+	desc = wos.10.d
+	picture = GFX_pl2027_ev081_wybory_3
+	is_triggered_only = yes
+	option = {
+		name = wos.10.a
+		ai_chance = { base = 6 }
+		add_to_variable = { global.WOS_nastroje = 6 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_to_variable = { WOS_m = 6 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.04 set_global_flag = WOS_referendum_odbyte
+	}
+	option = {
+		name = wos.10.b
+		ai_chance = { base = 1 }
+		add_political_power = 50 add_to_variable = { global.WOS_nastroje = -6 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_to_variable = { WOS_m = -6 } clamp_variable = { var = WOS_m min = 0 max = 100 } set_global_flag = WOS_referendum_odbyte set_global_flag = WOS_referendum_sfalszowane
+	}
+}
+
+country_event = {
+	id = wos.11
+	title = wos.11.t
+	desc = wos.11.d
+	picture = GFX_pl2027_ev081_kolej_3
+	is_triggered_only = yes
+	option = {
+		name = wos.11.a
+		ai_chance = { base = 4 modifier = { factor = 2 has_war = yes } }
+		add_timed_idea = { idea = WOS_metro_wojskowe days = 120 } add_war_support = 0.02
+	}
+	option = {
+		name = wos.11.b
+		ai_chance = { base = 4 modifier = { factor = 2 has_war = no } }
+		add_to_variable = { global.WOS_zaopatrzenie = 4 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 4 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_to_variable = { WOS_m = 3 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = wos.12
+	title = wos.12.t
+	desc = wos.12.d
+	picture = GFX_pl2027_ev081_wisla_4
+	is_triggered_only = yes
+	option = {
+		name = wos.12.a
+		ai_chance = { base = 3 }
+		add_timed_idea = { idea = WOS_most_zamkniety days = 90 } add_to_variable = { global.WOS_zaopatrzenie = -6 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = -4 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_war_support = 0.04
+	}
+	option = {
+		name = wos.12.b
+		ai_chance = { base = 4 }
+		add_political_power = 60 add_to_variable = { global.WOS_nastroje = -2 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 }
+	}
+	option = {
+		name = wos.12.c
+		ai_chance = { base = 3 }
+		add_to_variable = { WOS_m = 5 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 3 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = wos.20
+	title = wos.20.t
+	desc = wos.20.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = wos.20.a
+		ai_chance = { base = 3 modifier = { factor = 3 original_tag = SMR } }
+		set_global_flag = WOS_k_wladza_sejm add_to_variable = { global.WOS_zaufanie_k = -5 } clamp_variable = { var = global.WOS_zaufanie_k min = 0 max = 100 } SMR = { add_to_variable = { WOS_m = 8 } clamp_variable = { var = WOS_m min = 0 max = 100 } } country_event = { id = wos.21 days = 3 }
+	}
+	option = {
+		name = wos.20.b
+		ai_chance = { base = 3 modifier = { factor = 3 original_tag = KPR } }
+		set_global_flag = WOS_k_wladza_palac add_to_variable = { global.WOS_zaufanie_k = -5 } clamp_variable = { var = global.WOS_zaufanie_k min = 0 max = 100 } KPR = { add_to_variable = { WOS_m = 8 } clamp_variable = { var = WOS_m min = 0 max = 100 } } country_event = { id = wos.21 days = 3 }
+	}
+	option = {
+		name = wos.20.c
+		ai_chance = { base = 4 }
+		set_global_flag = WOS_k_wladza_rada add_to_variable = { global.WOS_zaufanie_k = 10 } clamp_variable = { var = global.WOS_zaufanie_k min = 0 max = 100 } add_political_power = -40 country_event = { id = wos.21 days = 3 }
+	}
+}
+
+country_event = {
+	id = wos.21
+	title = wos.21.t
+	desc = wos.21.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	option = {
+		name = wos.21.a
+		ai_chance = { base = 4 }
+		set_global_flag = WOS_k_wojsko_wspolne add_to_variable = { global.WOS_zaufanie_k = 8 } clamp_variable = { var = global.WOS_zaufanie_k min = 0 max = 100 } army_experience = 5 country_event = { id = wos.22 days = 3 }
+	}
+	option = {
+		name = wos.21.b
+		ai_chance = { base = 3 }
+		set_global_flag = WOS_k_wojsko_osobne add_to_variable = { global.WOS_zaufanie_k = -3 } clamp_variable = { var = global.WOS_zaufanie_k min = 0 max = 100 } add_war_support = 0.03 country_event = { id = wos.22 days = 3 }
+	}
+}
+
+country_event = {
+	id = wos.22
+	title = wos.22.t
+	desc = wos.22.d
+	picture = GFX_pl2027_ev081_gospodarka_2
+	is_triggered_only = yes
+	option = {
+		name = wos.22.a
+		ai_chance = { base = 4 }
+		set_global_flag = WOS_k_budzet_rowny add_to_variable = { global.WOS_zaufanie_k = 8 } clamp_variable = { var = global.WOS_zaufanie_k min = 0 max = 100 } add_political_power = -30 country_event = { id = wos.23 days = 3 }
+	}
+	option = {
+		name = wos.22.b
+		ai_chance = { base = 3 }
+		set_global_flag = WOS_k_budzet_front add_to_variable = { global.WOS_zaufanie_k = -6 } clamp_variable = { var = global.WOS_zaufanie_k min = 0 max = 100 } add_war_support = 0.03 country_event = { id = wos.23 days = 3 }
+	}
+}
+
+country_event = {
+	id = wos.23
+	title = wos.23.t
+	desc = wos.23.d
+	picture = GFX_pl2027_ev081_miasto_3
+	is_triggered_only = yes
+	option = {
+		name = wos.23.a
+		ai_chance = { base = 4 }
+		set_global_flag = WOS_k_autonomia add_to_variable = { global.WOS_zaufanie_k = 6 } clamp_variable = { var = global.WOS_zaufanie_k min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 4 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 }
+	}
+	option = {
+		name = wos.23.b
+		ai_chance = { base = 3 }
+		set_global_flag = WOS_k_centralizacja add_to_variable = { global.WOS_zaufanie_k = -4 } clamp_variable = { var = global.WOS_zaufanie_k min = 0 max = 100 } add_political_power = 50
+	}
+}
+
+country_event = {
+	id = wos.24
+	title = wos.24.t
+	desc = wos.24.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = wos.24.a
+		ai_chance = { base = 3 }
+		set_global_flag = WWD_koalicja_zerwana if = { limit = { is_in_faction = yes } leave_faction = yes } add_political_power = 50 add_to_variable = { WOS_m = -5 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+	option = {
+		name = wos.24.b
+		ai_chance = { base = 4 }
+		add_political_power = -60 add_to_variable = { global.WOS_zaufanie_k = 20 } clamp_variable = { var = global.WOS_zaufanie_k min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = wos.30
+	title = wos.30.t
+	desc = wos.30.d
+	picture = GFX_pl2027_ev081_narada_1
+	is_triggered_only = yes
+	option = {
+		name = wos.30.a
+		ai_chance = { base = 4 }
+		set_global_flag = WOS_l_wspolna_straz add_to_variable = { global.WOS_zaufanie_l = 8 } clamp_variable = { var = global.WOS_zaufanie_l min = 0 max = 100 } army_experience = 5 country_event = { id = wos.31 days = 3 }
+	}
+	option = {
+		name = wos.30.b
+		ai_chance = { base = 3 }
+		set_global_flag = WOS_l_osobne_straze add_to_variable = { global.WOS_zaufanie_l = -3 } clamp_variable = { var = global.WOS_zaufanie_l min = 0 max = 100 } add_to_variable = { WOS_m = 3 } clamp_variable = { var = WOS_m min = 0 max = 100 } country_event = { id = wos.31 days = 3 }
+	}
+}
+
+country_event = {
+	id = wos.31
+	title = wos.31.t
+	desc = wos.31.d
+	picture = GFX_pl2027_ev081_gospodarka_4
+	is_triggered_only = yes
+	option = {
+		name = wos.31.a
+		ai_chance = { base = 4 }
+		set_global_flag = WOS_l_wspolna_kasa add_to_variable = { global.WOS_zaufanie_l = 6 } clamp_variable = { var = global.WOS_zaufanie_l min = 0 max = 100 } add_political_power = -25 country_event = { id = wos.32 days = 3 }
+	}
+	option = {
+		name = wos.31.b
+		ai_chance = { base = 3 }
+		add_to_variable = { global.WOS_zaufanie_l = -2 } clamp_variable = { var = global.WOS_zaufanie_l min = 0 max = 100 } add_political_power = 25 country_event = { id = wos.32 days = 3 }
+	}
+}
+
+country_event = {
+	id = wos.32
+	title = wos.32.t
+	desc = wos.32.d
+	picture = GFX_pl2027_ev081_wybory_1
+	is_triggered_only = yes
+	option = {
+		name = wos.32.a
+		ai_chance = { base = 4 }
+		set_global_flag = WOS_liga_federacja add_to_variable = { global.WOS_zaufanie_l = 10 } clamp_variable = { var = global.WOS_zaufanie_l min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 3 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 }
+	}
+	option = {
+		name = wos.32.b
+		ai_chance = { base = 3 }
+		add_to_variable = { global.WOS_zaufanie_l = 2 } clamp_variable = { var = global.WOS_zaufanie_l min = 0 max = 100 } add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = wos.33
+	title = wos.33.t
+	desc = wos.33.d
+	picture = GFX_pl2027_ev081_ulica_1
+	is_triggered_only = yes
+	option = {
+		name = wos.33.a
+		ai_chance = { base = 2 }
+		if = { limit = { is_in_faction = yes } leave_faction = yes } clr_country_flag = WWD_liga add_to_variable = { WOS_m = 3 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+	option = {
+		name = wos.33.b
+		ai_chance = { base = 5 }
+		add_political_power = -40 add_to_variable = { global.WOS_zaufanie_l = 15 } clamp_variable = { var = global.WOS_zaufanie_l min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = wos.50
+	title = wos.50.t
+	desc = wos.50.d
+	picture = GFX_pl2027_ev081_dyplomacja_2
+	is_triggered_only = yes
+	option = {
+		name = wos.50.a
+		ai_chance = { base = 1 modifier = { factor = 5 FROM = { strength_ratio = { tag = ROOT ratio > 2 } } } modifier = { factor = 2 has_opinion = { target = FROM value > 24 } } modifier = { factor = 0 has_war_with = FROM } }
+		FROM = { puppet = ROOT } if = { limit = { original_tag = OZM } add_to_variable = { global.WOS_zaopatrzenie = 10 } clamp_variable = { var = global.WOS_zaopatrzenie min = 0 max = 100 } } if = { limit = { original_tag = GRD } FROM = { add_political_power = 40 add_timed_idea = { idea = WOS_wezel_grodzisk days = 180 } } } if = { limit = { original_tag = PSC } FROM = { add_timed_idea = { idea = WOS_poludniowe_podejscia days = 180 } } } if = { limit = { original_tag = WLM } FROM = { add_stability = -0.01 add_manpower = 2000 add_political_power = 30 } } if = { limit = { original_tag = OTW } add_to_variable = { global.WOS_nastroje = 6 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } FROM = { add_manpower = 3000 } } add_stability = 0.02
+	}
+	option = {
+		name = wos.50.b
+		ai_chance = { base = 3 }
+		FROM = { country_event = { id = wos.52 days = 1 } } add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = wos.51
+	title = wos.51.t
+	desc = wos.51.d
+	picture = GFX_pl2027_ev081_miasto_2
+	is_triggered_only = yes
+	option = {
+		name = wos.51.a
+		ai_chance = { base = 1 modifier = { factor = 4 FROM = { strength_ratio = { tag = ROOT ratio > 2 } } } modifier = { factor = 3 has_opinion = { target = FROM value > 24 } } modifier = { factor = 0 has_war_with = FROM } modifier = { factor = 0.3 has_country_flag = WWD_liga } }
+		FROM = { puppet = ROOT } add_to_variable = { global.WOS_nastroje = 4 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_stability = 0.03
+	}
+	option = {
+		name = wos.51.b
+		ai_chance = { base = 3 }
+		FROM = { country_event = { id = wos.52 days = 1 } } add_war_support = 0.04
+	}
+}
+
+country_event = {
+	id = wos.52
+	title = wos.52.t
+	desc = wos.52.d
+	picture = GFX_pl2027_ev081_narada_0
+	is_triggered_only = yes
+	option = {
+		name = wos.52.a
+		ai_chance = { base = 1 }
+		add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = wos.101
+	title = wos.101.t
+	desc = wos.101.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	option = {
+		name = wos.101.a
+		ai_chance = { base = 6 }
+		set_country_flag = WOS_smr_parlament_ocalony clr_country_flag = WOS_smr_prezydium_nadzwyczajne add_to_variable = { WOS_m = 15 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = -50 add_stability = 0.03
+	}
+	option = {
+		name = wos.101.b
+		ai_chance = { base = 2 }
+		set_country_flag = WOS_smr_prezydium_nadzwyczajne clr_country_flag = WOS_smr_parlament_ocalony add_to_variable = { WOS_m = -10 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = 80 add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = wos.102
+	title = wos.102.t
+	desc = wos.102.d
+	picture = GFX_pl2027_ev081_wybory_1
+	is_triggered_only = yes
+	option = {
+		name = wos.102.a
+		ai_chance = { base = 3 modifier = { factor = 3 has_global_flag = PRL_tusk_sejm } modifier = { factor = 0 has_country_flag = WOS_smr_m_tusk } }
+		trigger = { NOT = { has_country_flag = WOS_smr_m_tusk } NOT = { has_global_flag = PRL_tusk_pomorze } NOT = { any_country = { has_country_flag = EK_tusk } } } clr_country_flag = WOS_smr_m_tusk if = { limit = { has_idea = WOS_idea_smr_m_tusk } remove_ideas = WOS_idea_smr_m_tusk } clr_country_flag = WOS_smr_m_czarzasty if = { limit = { has_idea = WOS_idea_smr_m_czarzasty } remove_ideas = WOS_idea_smr_m_czarzasty } clr_country_flag = WOS_smr_m_konopka if = { limit = { has_idea = WOS_idea_smr_m_konopka } remove_ideas = WOS_idea_smr_m_konopka } clr_country_flag = WOS_smr_m_kukiz if = { limit = { has_idea = WOS_idea_smr_m_kukiz } remove_ideas = WOS_idea_smr_m_kukiz } clr_country_flag = WOS_smr_m_ostrowski if = { limit = { has_idea = WOS_idea_smr_m_ostrowski } remove_ideas = WOS_idea_smr_m_ostrowski } clr_country_flag = WOS_smr_m_prezydium if = { limit = { has_idea = WOS_idea_smr_m_prezydium } remove_ideas = WOS_idea_smr_m_prezydium } clr_country_flag = WOS_smr_m_rada if = { limit = { has_idea = WOS_idea_smr_m_rada } remove_ideas = WOS_idea_smr_m_rada } set_country_flag = SMR_tusk set_country_flag = WOS_smr_m_tusk set_country_flag = WOS_smr_wybrany if = { limit = { NOT = { has_character = SMR_leader } } recruit_character = SMR_leader } set_politics = { ruling_party = social_liberal elections_allowed = yes } add_popularity = { ideology = social_liberal popularity = 0.15 } promote_character = SMR_leader add_ideas = WOS_idea_smr_m_tusk add_to_variable = { WOS_m = 4 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 2 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 }
+	}
+	option = {
+		name = wos.102.b
+		ai_chance = { base = 3 modifier = { factor = 3 has_global_flag = PRL_nast_marszalek } modifier = { factor = 0 has_country_flag = WOS_smr_m_czarzasty } }
+		trigger = { NOT = { has_country_flag = WOS_smr_m_czarzasty } } clr_country_flag = WOS_smr_m_tusk if = { limit = { has_idea = WOS_idea_smr_m_tusk } remove_ideas = WOS_idea_smr_m_tusk } clr_country_flag = WOS_smr_m_czarzasty if = { limit = { has_idea = WOS_idea_smr_m_czarzasty } remove_ideas = WOS_idea_smr_m_czarzasty } clr_country_flag = WOS_smr_m_konopka if = { limit = { has_idea = WOS_idea_smr_m_konopka } remove_ideas = WOS_idea_smr_m_konopka } clr_country_flag = WOS_smr_m_kukiz if = { limit = { has_idea = WOS_idea_smr_m_kukiz } remove_ideas = WOS_idea_smr_m_kukiz } clr_country_flag = WOS_smr_m_ostrowski if = { limit = { has_idea = WOS_idea_smr_m_ostrowski } remove_ideas = WOS_idea_smr_m_ostrowski } clr_country_flag = WOS_smr_m_prezydium if = { limit = { has_idea = WOS_idea_smr_m_prezydium } remove_ideas = WOS_idea_smr_m_prezydium } clr_country_flag = WOS_smr_m_rada if = { limit = { has_idea = WOS_idea_smr_m_rada } remove_ideas = WOS_idea_smr_m_rada } clr_country_flag = SMR_tusk set_country_flag = WOS_smr_m_czarzasty set_country_flag = WOS_smr_wybrany if = { limit = { NOT = { has_character = SMR_marszalek_seniorka } } recruit_character = SMR_marszalek_seniorka } set_politics = { ruling_party = social_liberal elections_allowed = yes } add_popularity = { ideology = social_liberal popularity = 0.15 } promote_character = SMR_marszalek_seniorka add_ideas = WOS_idea_smr_m_czarzasty add_to_variable = { WOS_m = 3 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 1 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 }
+	}
+	option = {
+		name = wos.102.c
+		ai_chance = { base = 3 modifier = { factor = 0 has_country_flag = WOS_smr_m_konopka } }
+		trigger = { NOT = { has_country_flag = WOS_smr_m_konopka } } clr_country_flag = WOS_smr_m_tusk if = { limit = { has_idea = WOS_idea_smr_m_tusk } remove_ideas = WOS_idea_smr_m_tusk } clr_country_flag = WOS_smr_m_czarzasty if = { limit = { has_idea = WOS_idea_smr_m_czarzasty } remove_ideas = WOS_idea_smr_m_czarzasty } clr_country_flag = WOS_smr_m_konopka if = { limit = { has_idea = WOS_idea_smr_m_konopka } remove_ideas = WOS_idea_smr_m_konopka } clr_country_flag = WOS_smr_m_kukiz if = { limit = { has_idea = WOS_idea_smr_m_kukiz } remove_ideas = WOS_idea_smr_m_kukiz } clr_country_flag = WOS_smr_m_ostrowski if = { limit = { has_idea = WOS_idea_smr_m_ostrowski } remove_ideas = WOS_idea_smr_m_ostrowski } clr_country_flag = WOS_smr_m_prezydium if = { limit = { has_idea = WOS_idea_smr_m_prezydium } remove_ideas = WOS_idea_smr_m_prezydium } clr_country_flag = WOS_smr_m_rada if = { limit = { has_idea = WOS_idea_smr_m_rada } remove_ideas = WOS_idea_smr_m_rada } clr_country_flag = SMR_tusk set_country_flag = WOS_smr_m_konopka set_country_flag = WOS_smr_wybrany if = { limit = { NOT = { has_character = SMR_dor_konopka } } recruit_character = SMR_dor_konopka } set_politics = { ruling_party = conservative elections_allowed = yes } add_popularity = { ideology = conservative popularity = 0.15 } promote_character = SMR_dor_konopka add_ideas = WOS_idea_smr_m_konopka add_to_variable = { WOS_m = 8 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+	option = {
+		name = wos.102.e
+		ai_chance = { base = 3 modifier = { factor = 0 has_country_flag = WOS_smr_m_kukiz } }
+		trigger = { NOT = { has_country_flag = WOS_smr_m_kukiz } } clr_country_flag = WOS_smr_m_tusk if = { limit = { has_idea = WOS_idea_smr_m_tusk } remove_ideas = WOS_idea_smr_m_tusk } clr_country_flag = WOS_smr_m_czarzasty if = { limit = { has_idea = WOS_idea_smr_m_czarzasty } remove_ideas = WOS_idea_smr_m_czarzasty } clr_country_flag = WOS_smr_m_konopka if = { limit = { has_idea = WOS_idea_smr_m_konopka } remove_ideas = WOS_idea_smr_m_konopka } clr_country_flag = WOS_smr_m_kukiz if = { limit = { has_idea = WOS_idea_smr_m_kukiz } remove_ideas = WOS_idea_smr_m_kukiz } clr_country_flag = WOS_smr_m_ostrowski if = { limit = { has_idea = WOS_idea_smr_m_ostrowski } remove_ideas = WOS_idea_smr_m_ostrowski } clr_country_flag = WOS_smr_m_prezydium if = { limit = { has_idea = WOS_idea_smr_m_prezydium } remove_ideas = WOS_idea_smr_m_prezydium } clr_country_flag = WOS_smr_m_rada if = { limit = { has_idea = WOS_idea_smr_m_rada } remove_ideas = WOS_idea_smr_m_rada } clr_country_flag = SMR_tusk set_country_flag = WOS_smr_m_kukiz set_country_flag = WOS_smr_wybrany if = { limit = { NOT = { has_character = SMR_dor_kukiz } } recruit_character = SMR_dor_kukiz } set_politics = { ruling_party = conservative elections_allowed = yes } add_popularity = { ideology = conservative popularity = 0.15 } promote_character = SMR_dor_kukiz add_ideas = WOS_idea_smr_m_kukiz add_to_variable = { WOS_m = 5 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 3 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 }
+	}
+	option = {
+		name = wos.102.f
+		ai_chance = { base = 3 modifier = { factor = 3 has_global_flag = PRL_nast_rada } modifier = { factor = 0 has_country_flag = WOS_smr_m_ostrowski } }
+		trigger = { NOT = { has_country_flag = WOS_smr_m_ostrowski } } clr_country_flag = WOS_smr_m_tusk if = { limit = { has_idea = WOS_idea_smr_m_tusk } remove_ideas = WOS_idea_smr_m_tusk } clr_country_flag = WOS_smr_m_czarzasty if = { limit = { has_idea = WOS_idea_smr_m_czarzasty } remove_ideas = WOS_idea_smr_m_czarzasty } clr_country_flag = WOS_smr_m_konopka if = { limit = { has_idea = WOS_idea_smr_m_konopka } remove_ideas = WOS_idea_smr_m_konopka } clr_country_flag = WOS_smr_m_kukiz if = { limit = { has_idea = WOS_idea_smr_m_kukiz } remove_ideas = WOS_idea_smr_m_kukiz } clr_country_flag = WOS_smr_m_ostrowski if = { limit = { has_idea = WOS_idea_smr_m_ostrowski } remove_ideas = WOS_idea_smr_m_ostrowski } clr_country_flag = WOS_smr_m_prezydium if = { limit = { has_idea = WOS_idea_smr_m_prezydium } remove_ideas = WOS_idea_smr_m_prezydium } clr_country_flag = WOS_smr_m_rada if = { limit = { has_idea = WOS_idea_smr_m_rada } remove_ideas = WOS_idea_smr_m_rada } clr_country_flag = SMR_tusk set_country_flag = WOS_smr_m_ostrowski set_country_flag = WOS_smr_wybrany if = { limit = { NOT = { has_character = SMR_dor_ostrowski } } recruit_character = SMR_dor_ostrowski } set_politics = { ruling_party = authoritarian_democrat elections_allowed = no } add_popularity = { ideology = authoritarian_democrat popularity = 0.15 } promote_character = SMR_dor_ostrowski add_ideas = WOS_idea_smr_m_ostrowski add_to_variable = { WOS_m = -6 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+	option = {
+		name = wos.102.g
+		ai_chance = { base = 3 modifier = { factor = 3 has_global_flag = PRL_nast_prezydium } modifier = { factor = 0 has_country_flag = WOS_smr_m_prezydium } }
+		trigger = { NOT = { has_country_flag = WOS_smr_m_prezydium } } clr_country_flag = WOS_smr_m_tusk if = { limit = { has_idea = WOS_idea_smr_m_tusk } remove_ideas = WOS_idea_smr_m_tusk } clr_country_flag = WOS_smr_m_czarzasty if = { limit = { has_idea = WOS_idea_smr_m_czarzasty } remove_ideas = WOS_idea_smr_m_czarzasty } clr_country_flag = WOS_smr_m_konopka if = { limit = { has_idea = WOS_idea_smr_m_konopka } remove_ideas = WOS_idea_smr_m_konopka } clr_country_flag = WOS_smr_m_kukiz if = { limit = { has_idea = WOS_idea_smr_m_kukiz } remove_ideas = WOS_idea_smr_m_kukiz } clr_country_flag = WOS_smr_m_ostrowski if = { limit = { has_idea = WOS_idea_smr_m_ostrowski } remove_ideas = WOS_idea_smr_m_ostrowski } clr_country_flag = WOS_smr_m_prezydium if = { limit = { has_idea = WOS_idea_smr_m_prezydium } remove_ideas = WOS_idea_smr_m_prezydium } clr_country_flag = WOS_smr_m_rada if = { limit = { has_idea = WOS_idea_smr_m_rada } remove_ideas = WOS_idea_smr_m_rada } clr_country_flag = SMR_tusk set_country_flag = WOS_smr_m_prezydium set_country_flag = WOS_smr_wybrany if = { limit = { NOT = { has_character = SMR_prezydium } } recruit_character = SMR_prezydium } set_politics = { ruling_party = social_liberal elections_allowed = yes } add_popularity = { ideology = social_liberal popularity = 0.15 } promote_character = SMR_prezydium add_ideas = WOS_idea_smr_m_prezydium add_to_variable = { WOS_m = 6 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.WOS_nastroje = 1 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 }
+	}
+	option = {
+		name = wos.102.h
+		ai_chance = { base = 3 modifier = { factor = 3 has_global_flag = PRL_nast_rada } modifier = { factor = 0 has_country_flag = WOS_smr_m_rada } }
+		trigger = { NOT = { has_country_flag = WOS_smr_m_rada } } clr_country_flag = WOS_smr_m_tusk if = { limit = { has_idea = WOS_idea_smr_m_tusk } remove_ideas = WOS_idea_smr_m_tusk } clr_country_flag = WOS_smr_m_czarzasty if = { limit = { has_idea = WOS_idea_smr_m_czarzasty } remove_ideas = WOS_idea_smr_m_czarzasty } clr_country_flag = WOS_smr_m_konopka if = { limit = { has_idea = WOS_idea_smr_m_konopka } remove_ideas = WOS_idea_smr_m_konopka } clr_country_flag = WOS_smr_m_kukiz if = { limit = { has_idea = WOS_idea_smr_m_kukiz } remove_ideas = WOS_idea_smr_m_kukiz } clr_country_flag = WOS_smr_m_ostrowski if = { limit = { has_idea = WOS_idea_smr_m_ostrowski } remove_ideas = WOS_idea_smr_m_ostrowski } clr_country_flag = WOS_smr_m_prezydium if = { limit = { has_idea = WOS_idea_smr_m_prezydium } remove_ideas = WOS_idea_smr_m_prezydium } clr_country_flag = WOS_smr_m_rada if = { limit = { has_idea = WOS_idea_smr_m_rada } remove_ideas = WOS_idea_smr_m_rada } clr_country_flag = SMR_tusk set_country_flag = WOS_smr_m_rada set_country_flag = WOS_smr_wybrany if = { limit = { NOT = { has_character = SMR_rada_ocalenia } } recruit_character = SMR_rada_ocalenia } set_politics = { ruling_party = authoritarian_democrat elections_allowed = no } add_popularity = { ideology = authoritarian_democrat popularity = 0.15 } promote_character = SMR_rada_ocalenia add_ideas = WOS_idea_smr_m_rada add_to_variable = { WOS_m = -8 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+	option = {
+		name = wos.102.i
+		ai_chance = { base = 2 }
+		trigger = { has_country_flag = WOS_smr_wybrany } add_to_variable = { WOS_m = 2 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = 20
+	}
+}
+
+country_event = {
+	id = wos.111
+	title = wos.111.t
+	desc = wos.111.d
+	picture = GFX_pl2027_ev081_narada_4
+	is_triggered_only = yes
+	option = {
+		name = wos.111.a
+		ai_chance = { base = 3 modifier = { factor = 2 check_variable = { WOS_m > 70 } } }
+		set_country_flag = WOS_kpr_porozumienie add_to_variable = { WOS_m = -10 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.05 if = { limit = { country_exists = SMR } SMR = { add_opinion_modifier = { target = ROOT modifier = WOS_dialog } } }
+	}
+	option = {
+		name = wos.111.b
+		ai_chance = { base = 3 }
+		set_country_flag = WOS_kpr_dekrety add_to_variable = { WOS_m = 10 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.TFE_wwa_smr = -6 } WWP_clamp = yes add_to_variable = { global.TFE_wwa_kpr = 5 } WWP_clamp = yes if = { limit = { country_exists = SMR } SMR = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } } }
+	}
+}
+
+country_event = {
+	id = wos.112
+	title = wos.112.t
+	desc = wos.112.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	option = {
+		name = wos.112.a
+		ai_chance = { base = 3 }
+		add_ideas = WOS_idea_kpr_rada_wojskowa set_country_flag = WOS_kpr_pucz add_to_variable = { WOS_m = 5 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+	option = {
+		name = wos.112.b
+		ai_chance = { base = 2 }
+		add_stability = -0.08 add_to_variable = { WOS_m = 10 } clamp_variable = { var = WOS_m min = 0 max = 100 } if = { limit = { country_exists = WOJ } WOJ = { add_to_variable = { WOS_m = -20 } clamp_variable = { var = WOS_m min = 0 max = 100 } } }
+	}
+}
+
+country_event = {
+	id = wos.121
+	title = wos.121.t
+	desc = wos.121.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = wos.121.a
+		ai_chance = { base = 6 }
+		set_country_flag = WOS_mpr_jednosc add_to_variable = { WOS_m = 10 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.03
+	}
+	option = {
+		name = wos.121.b
+		ai_chance = { base = 1 }
+		set_country_flag = WOS_mpr_wojna_rodzin add_to_variable = { WOS_m = -15 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_war_support = 0.08 start_civil_war = { ideology = nationalist size = 0.25 }
+	}
+	option = {
+		name = wos.121.c
+		ai_chance = { base = 2 }
+		set_country_flag = WOS_mpr_jednosc add_to_variable = { WOS_m = -8 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = 80 add_to_variable = { global.TFE_wwa_mpr = -5 } WWP_clamp = yes
+	}
+}
+
+country_event = {
+	id = wos.122
+	title = wos.122.t
+	desc = wos.122.d
+	picture = GFX_pl2027_ev081_ulica_4
+	is_triggered_only = yes
+	option = {
+		name = wos.122.a
+		ai_chance = { base = 1 }
+		add_stability = -0.05 add_to_variable = { global.TFE_wwa_mpr = -8 } WWP_clamp = yes if = { limit = { country_exists = LEG LEG = { is_subject_of = ROOT } } end_puppet = LEG }
+	}
+}
+
+country_event = {
+	id = wos.131
+	title = wos.131.t
+	desc = wos.131.d
+	picture = GFX_pl2027_ev081_kibice_3
+	is_triggered_only = yes
+	option = {
+		name = wos.131.a
+		ai_chance = { base = 4 }
+		add_to_variable = { WOS_m = 6 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = -25
+	}
+	option = {
+		name = wos.131.b
+		ai_chance = { base = 3 }
+		add_to_variable = { WOS_m = 3 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.02
+	}
+	option = {
+		name = wos.131.c
+		ai_chance = { base = 1 }
+		add_to_variable = { WOS_m = -10 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_war_support = 0.05 army_experience = 10
+	}
+}
+
+country_event = {
+	id = wos.53
+	title = wos.53.t
+	desc = wos.53.d
+	picture = GFX_pl2027_ev081_kibice_0
+	is_triggered_only = yes
+	option = {
+		name = wos.53.a
+		ai_chance = { base = 3 modifier = { factor = 0 has_war_with = FROM } }
+		FROM = { if = { limit = { is_subject = no NOT = { has_war_with = ROOT } } ROOT = { puppet = FROM } } } add_manpower = 2000
+	}
+	option = {
+		name = wos.53.b
+		ai_chance = { base = 2 }
+		FROM = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } }
+	}
+}
+
+country_event = {
+	id = wos.141
+	title = wos.141.t
+	desc = wos.141.d
+	picture = GFX_pl2027_ev081_porzadek_4
+	is_triggered_only = yes
+	option = {
+		name = wos.141.a
+		ai_chance = { base = 4 }
+		set_country_flag = WOS_plc_sluzba add_to_variable = { WOS_m = 5 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.03
+	}
+	option = {
+		name = wos.141.b
+		ai_chance = { base = 3 }
+		set_country_flag = WOS_plc_autorytaryzm add_to_variable = { WOS_m = 8 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_war_support = 0.05 add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = wos.151
+	title = wos.151.t
+	desc = wos.151.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = wos.151.a
+		ai_chance = { base = 3 }
+		set_country_flag = WOS_woj_prezydent add_to_variable = { WOS_m = 6 } clamp_variable = { var = WOS_m min = 0 max = 100 } if = { limit = { is_subject_of = KPR } KPR = { add_opinion_modifier = { target = ROOT modifier = WOS_dialog } } }
+	}
+	option = {
+		name = wos.151.b
+		ai_chance = { base = 4 }
+		set_country_flag = WOS_woj_konstytucja add_to_variable = { WOS_m = 4 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.03
+	}
+	option = {
+		name = wos.151.c
+		ai_chance = { base = 2 modifier = { factor = 0.3 check_variable = { WOS_m < 50 } } }
+		set_country_flag = WOS_woj_rada add_to_variable = { WOS_m = -8 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_war_support = 0.05 add_political_power = 40
+	}
+}
+
+country_event = {
+	id = wos.152
+	title = wos.152.t
+	desc = wos.152.d
+	picture = GFX_pl2027_ev081_front_1
+	is_triggered_only = yes
+	option = {
+		name = wos.152.a
+		ai_chance = { base = 3 }
+		add_to_variable = { WOS_m = 6 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = -0.02 add_war_support = 0.02
+	}
+	option = {
+		name = wos.152.b
+		ai_chance = { base = 4 }
+		add_to_variable = { WOS_m = 3 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = -20
+	}
+	option = {
+		name = wos.152.c
+		ai_chance = { base = 1 }
+		add_to_variable = { WOS_m = -4 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = wos.161
+	title = wos.161.t
+	desc = wos.161.d
+	picture = GFX_pl2027_ev081_wybory_2
+	is_triggered_only = yes
+	option = {
+		name = wos.161.a
+		ai_chance = { base = 3 }
+		set_country_flag = WOS_prg_niepodleglosc add_to_variable = { WOS_m = 6 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_war_support = 0.03
+	}
+	option = {
+		name = wos.161.b
+		ai_chance = { base = 3 }
+		set_country_flag = WOS_prg_autonomia add_to_variable = { WOS_m = 3 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.02
+	}
+	option = {
+		name = wos.161.c
+		ai_chance = { base = 2 }
+		set_country_flag = WOS_prg_udzial add_to_variable = { global.WOS_nastroje = 3 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_political_power = 25
+	}
+}
+
+country_event = {
+	id = wos.162
+	title = wos.162.t
+	desc = wos.162.d
+	picture = GFX_pl2027_ev081_wisla_1
+	is_triggered_only = yes
+	option = {
+		name = wos.162.a
+		ai_chance = { base = 4 modifier = { factor = 0 has_war_with = FROM } }
+		FROM = { if = { limit = { is_subject = no NOT = { has_war_with = ROOT } } ROOT = { puppet = FROM } } } add_stability = 0.02
+	}
+	option = {
+		name = wos.162.b
+		ai_chance = { base = 1 }
+		FROM = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } }
+	}
+}
+
+country_event = {
+	id = wos.171
+	title = wos.171.t
+	desc = wos.171.d
+	picture = GFX_pl2027_ev081_narada_1
+	is_triggered_only = yes
+	option = {
+		name = wos.171.a
+		ai_chance = { base = 3 }
+		set_country_flag = WOS_zie_pragmatycy add_to_variable = { global.WOS_prad = 4 } clamp_variable = { var = global.WOS_prad min = 0 max = 100 } add_political_power = 30 add_to_variable = { WOS_m = 4 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+	option = {
+		name = wos.171.b
+		ai_chance = { base = 2 }
+		set_country_flag = WOS_zie_radykalowie add_stability = 0.03 add_to_variable = { WOS_m = -2 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_to_variable = { global.TFE_wwa_mpr = -2 } WWP_clamp = yes
+	}
+	option = {
+		name = wos.171.c
+		ai_chance = { base = 3 }
+		set_country_flag = WOS_zie_pragmatycy add_to_variable = { WOS_m = 2 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = wos.172
+	title = wos.172.t
+	desc = wos.172.d
+	picture = GFX_pl2027_ev081_gospodarka_1
+	is_triggered_only = yes
+	option = {
+		name = wos.172.a
+		ai_chance = { base = 2 }
+		add_to_variable = { WOS_m = -3 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_stability = 0.02
+	}
+	option = {
+		name = wos.172.b
+		ai_chance = { base = 4 }
+		add_to_variable = { WOS_m = 3 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = -15
+	}
+}
+
+country_event = {
+	id = wos.181
+	title = wos.181.t
+	desc = wos.181.d
+	picture = GFX_pl2027_ev081_wybory_3
+	is_triggered_only = yes
+	option = {
+		name = wos.181.a
+		ai_chance = { base = 3 }
+		set_country_flag = WOS_tec_lokalnie add_to_variable = { WOS_m = 5 } clamp_variable = { var = WOS_m min = 0 max = 100 }
+	}
+	option = {
+		name = wos.181.b
+		ai_chance = { base = 3 }
+		set_country_flag = WOS_tec_federacja add_to_variable = { WOS_m = 3 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = 20
+	}
+	option = {
+		name = wos.181.c
+		ai_chance = { base = 2 }
+		set_country_flag = WOS_tec_demokracja add_to_variable = { global.WOS_nastroje = 4 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 }
+	}
+}
+
+country_event = {
+	id = wos.182
+	title = wos.182.t
+	desc = wos.182.d
+	picture = GFX_pl2027_ev081_wybory_0
+	is_triggered_only = yes
+	option = {
+		name = wos.182.a
+		ai_chance = { base = 2 modifier = { factor = 2 OR = { original_tag = SMR original_tag = PRG original_tag = ZIE } } modifier = { factor = 0 has_war_with = FROM } }
+		set_country_flag = WOS_wybory_poparte add_opinion_modifier = { target = FROM modifier = WOS_dialog } add_stability = 0.02 add_to_variable = { global.WOS_nastroje = 2 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 }
+	}
+	option = {
+		name = wos.182.b
+		ai_chance = { base = 3 }
+		add_to_variable = { global.WOS_nastroje = -2 } clamp_variable = { var = global.WOS_nastroje min = 0 max = 100 } add_political_power = 15
+	}
+}
+
+country_event = {
+	id = wos.183
+	title = wos.183.t
+	desc = wos.183.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = wos.183.a
+		ai_chance = { base = 4 }
+		add_to_variable = { WOS_m = 4 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = -20
+	}
+	option = {
+		name = wos.183.b
+		ai_chance = { base = 1 }
+		add_to_variable = { WOS_m = -6 } clamp_variable = { var = WOS_m min = 0 max = 100 } add_political_power = 40
+	}
+}

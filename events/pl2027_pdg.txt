@@ -105,7 +105,7 @@ country_event = {
 	option = {
 		name = pdg.22.a
 		ai_chance = { factor = 3 modifier = { factor = 0 has_war_with = FROM } }
-		give_guarantee = FROM FROM = { country_event = { id = pdg.23 } }
+		if = { limit = { FROM = { PL2027_ideologia_jak_PREV = yes } } give_guarantee = FROM } FROM = { country_event = { id = pdg.23 } }
 	}
 	option = {
 		name = pdg.22.b

@@ -3,6 +3,11 @@ state = {
 	name = "STATE_885"
 	manpower = 3487
 	state_category = rural
+	resources = {
+		tungsten = 1
+		steel = 2
+		chromium = 2
+	}
 	history = {
 		owner = SPT
 		add_core_of = SPT

@@ -1,0 +1,4 @@
+UKW_miesiac = {
+	UKR = { if = { limit = { country_exists = ROS ROS = { has_country_flag = ROS_etap_ukraina } NOT = { has_global_flag = ROS_ukraina_koniec } } add_to_variable = { UKR_zasoby = -3 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } if = { limit = { check_variable = { UKR_zasoby < 20 } } if = { limit = { country_exists = ROS } ROS = { add_to_variable = { ROS_front_ua = 3 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } } } if = { limit = { NOT = { has_country_flag = UKR_peka_cd } } set_country_flag = { flag = UKR_peka_cd days = 120 } country_event = { id = ukw.10 days = 1 } } } } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 } }
+	
+}

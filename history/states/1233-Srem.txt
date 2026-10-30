@@ -3,15 +3,19 @@ state = {
 	name = "STATE_1233"
 	manpower = 59849
 	state_category = town
+	resources = {
+		aluminium = 1
+		steel = 1
+	}
 	history = {
 		owner = PSN
 		add_core_of = PSN
-		victory_points = { 7187 1 }
-		victory_points = { 7186 2 }
-		victory_points = { 7189 2 }
-		victory_points = { 7212 1 }
-		victory_points = { 7185 1 }
-		victory_points = { 506 1 }
+		victory_points = { 7187 2 }
+		victory_points = { 7186 3 }
+		victory_points = { 7189 3 }
+		victory_points = { 7212 2 }
+		victory_points = { 7185 2 }
+		victory_points = { 506 2 }
 		buildings = {
 			infrastructure = 3
 		}

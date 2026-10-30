@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		FKP_idea_dem = {
+			picture = DU_EUR_euroregion_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.06 political_power_gain = 0.1 }
+		}
+		FKP_idea_lew = {
+			picture = DU_EK_komisariat
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.1 consumer_goods_factor = -0.03 stability_factor = 0.03 }
+		}
+		FKP_idea_aut = {
+			picture = DU_ZAG_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_org_factor = 0.05 conscription = 0.01 political_power_gain = 0.05 }
+		}
+	}
+}

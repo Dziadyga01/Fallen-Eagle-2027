@@ -1,0 +1,999 @@
+add_namespace = tza
+
+country_event = {
+	id = tza.100
+	title = tza.100.t
+	desc = tza.100.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.100.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } modifier = { factor = 2 has_opinion = { target = FROM value > 20 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_podgorz clr_country_flag = TRZ_odm_podgorz add_political_power = -15 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.100.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_podgorz } FROM = { set_country_flag = TRZ_odm_podgorz set_country_flag = TRZ_odm_podgorz_gul set_country_flag = { flag = TRZ_odm_cd_podgorz days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.101
+	title = tza.101.t
+	desc = tza.101.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.101.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } modifier = { factor = 2 has_opinion = { target = FROM value > 20 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lysomice clr_country_flag = TRZ_odm_lysomice add_political_power = -15 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.101.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lysomice } FROM = { set_country_flag = TRZ_odm_lysomice set_country_flag = TRZ_odm_lysomice_gul set_country_flag = { flag = TRZ_odm_cd_lysomice days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.102
+	title = tza.102.t
+	desc = tza.102.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.102.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } modifier = { factor = 2 has_opinion = { target = FROM value > 20 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lubicz clr_country_flag = TRZ_odm_lubicz add_political_power = -15 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.102.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lubicz } FROM = { set_country_flag = TRZ_odm_lubicz set_country_flag = TRZ_odm_lubicz_gul set_country_flag = { flag = TRZ_odm_cd_lubicz days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.103
+	title = tza.103.t
+	desc = tza.103.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.103.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } modifier = { factor = 2 has_opinion = { target = FROM value > 20 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_zlawies clr_country_flag = TRZ_odm_zlawies add_political_power = -15 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.103.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_zlawies } FROM = { set_country_flag = TRZ_odm_zlawies set_country_flag = TRZ_odm_zlawies_gul set_country_flag = { flag = TRZ_odm_cd_zlawies days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.104
+	title = tza.104.t
+	desc = tza.104.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.104.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } modifier = { factor = 2 has_opinion = { target = FROM value > 20 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_solec clr_country_flag = TRZ_odm_solec add_political_power = -15 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.104.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_solec } FROM = { set_country_flag = TRZ_odm_solec set_country_flag = TRZ_odm_solec_gul set_country_flag = { flag = TRZ_odm_cd_solec days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.105
+	title = tza.105.t
+	desc = tza.105.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.105.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } modifier = { factor = 2 has_opinion = { target = FROM value > 20 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmza clr_country_flag = TRZ_odm_chelmza add_political_power = -15 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.105.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmza } FROM = { set_country_flag = TRZ_odm_chelmza set_country_flag = TRZ_odm_chelmza_gul set_country_flag = { flag = TRZ_odm_cd_chelmza days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.106
+	title = tza.106.t
+	desc = tza.106.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.106.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } modifier = { factor = 2 has_opinion = { target = FROM value > 20 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_dabrowa clr_country_flag = TRZ_odm_dabrowa add_political_power = -15 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.106.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_dabrowa } FROM = { set_country_flag = TRZ_odm_dabrowa set_country_flag = TRZ_odm_dabrowa_gul set_country_flag = { flag = TRZ_odm_cd_dabrowa days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.107
+	title = tza.107.t
+	desc = tza.107.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.107.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } modifier = { factor = 2 has_opinion = { target = FROM value > 20 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_kujawy clr_country_flag = TRZ_odm_kujawy add_political_power = -15 } if = { limit = { 74 = { is_owned_by = ROOT } } FROM = { transfer_state = 74 } } if = { limit = { 79 = { is_owned_by = ROOT } } FROM = { transfer_state = 79 } } if = { limit = { 31 = { is_owned_by = ROOT } } FROM = { transfer_state = 31 } }
+	}
+	option = {
+		name = tza.107.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_kujawy } FROM = { set_country_flag = TRZ_odm_kujawy set_country_flag = TRZ_odm_kujawy_gul set_country_flag = { flag = TRZ_odm_cd_kujawy days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.108
+	title = tza.108.t
+	desc = tza.108.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.108.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = social_democrat has_government = market_liberal has_government = conservative } } modifier = { factor = 2 has_opinion = { target = FROM value > 20 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmno clr_country_flag = TRZ_odm_chelmno add_political_power = -15 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.108.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmno } FROM = { set_country_flag = TRZ_odm_chelmno set_country_flag = TRZ_odm_chelmno_gul set_country_flag = { flag = TRZ_odm_cd_chelmno days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.120
+	title = tza.120.t
+	desc = tza.120.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.120.a
+		ai_chance = { base = 2 modifier = { factor = 3 has_stability < 0.4 } modifier = { factor = 2 num_of_controlled_states < 3 } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_podgorz clr_country_flag = TRZ_odm_podgorz add_political_power = -35 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.120.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_podgorz } FROM = { set_country_flag = TRZ_odm_podgorz set_country_flag = TRZ_odm_podgorz_rom set_country_flag = { flag = TRZ_odm_cd_podgorz days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.121
+	title = tza.121.t
+	desc = tza.121.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.121.a
+		ai_chance = { base = 2 modifier = { factor = 3 has_stability < 0.4 } modifier = { factor = 2 num_of_controlled_states < 3 } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lysomice clr_country_flag = TRZ_odm_lysomice add_political_power = -35 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.121.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lysomice } FROM = { set_country_flag = TRZ_odm_lysomice set_country_flag = TRZ_odm_lysomice_rom set_country_flag = { flag = TRZ_odm_cd_lysomice days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.122
+	title = tza.122.t
+	desc = tza.122.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.122.a
+		ai_chance = { base = 2 modifier = { factor = 3 has_stability < 0.4 } modifier = { factor = 2 num_of_controlled_states < 3 } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lubicz clr_country_flag = TRZ_odm_lubicz add_political_power = -35 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.122.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lubicz } FROM = { set_country_flag = TRZ_odm_lubicz set_country_flag = TRZ_odm_lubicz_rom set_country_flag = { flag = TRZ_odm_cd_lubicz days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.123
+	title = tza.123.t
+	desc = tza.123.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.123.a
+		ai_chance = { base = 2 modifier = { factor = 3 has_stability < 0.4 } modifier = { factor = 2 num_of_controlled_states < 3 } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_zlawies clr_country_flag = TRZ_odm_zlawies add_political_power = -35 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.123.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_zlawies } FROM = { set_country_flag = TRZ_odm_zlawies set_country_flag = TRZ_odm_zlawies_rom set_country_flag = { flag = TRZ_odm_cd_zlawies days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.124
+	title = tza.124.t
+	desc = tza.124.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.124.a
+		ai_chance = { base = 2 modifier = { factor = 3 has_stability < 0.4 } modifier = { factor = 2 num_of_controlled_states < 3 } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_solec clr_country_flag = TRZ_odm_solec add_political_power = -35 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.124.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_solec } FROM = { set_country_flag = TRZ_odm_solec set_country_flag = TRZ_odm_solec_rom set_country_flag = { flag = TRZ_odm_cd_solec days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.125
+	title = tza.125.t
+	desc = tza.125.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.125.a
+		ai_chance = { base = 2 modifier = { factor = 3 has_stability < 0.4 } modifier = { factor = 2 num_of_controlled_states < 3 } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmza clr_country_flag = TRZ_odm_chelmza add_political_power = -35 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.125.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmza } FROM = { set_country_flag = TRZ_odm_chelmza set_country_flag = TRZ_odm_chelmza_rom set_country_flag = { flag = TRZ_odm_cd_chelmza days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.126
+	title = tza.126.t
+	desc = tza.126.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.126.a
+		ai_chance = { base = 2 modifier = { factor = 3 has_stability < 0.4 } modifier = { factor = 2 num_of_controlled_states < 3 } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_dabrowa clr_country_flag = TRZ_odm_dabrowa add_political_power = -35 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.126.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_dabrowa } FROM = { set_country_flag = TRZ_odm_dabrowa set_country_flag = TRZ_odm_dabrowa_rom set_country_flag = { flag = TRZ_odm_cd_dabrowa days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.127
+	title = tza.127.t
+	desc = tza.127.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.127.a
+		ai_chance = { base = 2 modifier = { factor = 3 has_stability < 0.4 } modifier = { factor = 2 num_of_controlled_states < 3 } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_kujawy clr_country_flag = TRZ_odm_kujawy add_political_power = -35 } if = { limit = { 74 = { is_owned_by = ROOT } } FROM = { transfer_state = 74 } } if = { limit = { 79 = { is_owned_by = ROOT } } FROM = { transfer_state = 79 } } if = { limit = { 31 = { is_owned_by = ROOT } } FROM = { transfer_state = 31 } }
+	}
+	option = {
+		name = tza.127.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_kujawy } FROM = { set_country_flag = TRZ_odm_kujawy set_country_flag = TRZ_odm_kujawy_rom set_country_flag = { flag = TRZ_odm_cd_kujawy days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.128
+	title = tza.128.t
+	desc = tza.128.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.128.a
+		ai_chance = { base = 2 modifier = { factor = 3 has_stability < 0.4 } modifier = { factor = 2 num_of_controlled_states < 3 } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmno clr_country_flag = TRZ_odm_chelmno add_political_power = -35 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.128.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmno } FROM = { set_country_flag = TRZ_odm_chelmno set_country_flag = TRZ_odm_chelmno_rom set_country_flag = { flag = TRZ_odm_cd_chelmno days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.140
+	title = tza.140.t
+	desc = tza.140.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.140.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = market_liberal has_government = social_democrat } } modifier = { factor = 2 has_opinion = { target = FROM value > 30 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_podgorz clr_country_flag = TRZ_odm_podgorz add_political_power = -20 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.140.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_podgorz } FROM = { set_country_flag = TRZ_odm_podgorz set_country_flag = TRZ_odm_podgorz_kow set_country_flag = { flag = TRZ_odm_cd_podgorz days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.141
+	title = tza.141.t
+	desc = tza.141.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.141.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = market_liberal has_government = social_democrat } } modifier = { factor = 2 has_opinion = { target = FROM value > 30 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lysomice clr_country_flag = TRZ_odm_lysomice add_political_power = -20 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.141.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lysomice } FROM = { set_country_flag = TRZ_odm_lysomice set_country_flag = TRZ_odm_lysomice_kow set_country_flag = { flag = TRZ_odm_cd_lysomice days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.142
+	title = tza.142.t
+	desc = tza.142.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.142.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = market_liberal has_government = social_democrat } } modifier = { factor = 2 has_opinion = { target = FROM value > 30 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lubicz clr_country_flag = TRZ_odm_lubicz add_political_power = -20 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.142.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lubicz } FROM = { set_country_flag = TRZ_odm_lubicz set_country_flag = TRZ_odm_lubicz_kow set_country_flag = { flag = TRZ_odm_cd_lubicz days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.143
+	title = tza.143.t
+	desc = tza.143.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.143.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = market_liberal has_government = social_democrat } } modifier = { factor = 2 has_opinion = { target = FROM value > 30 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_zlawies clr_country_flag = TRZ_odm_zlawies add_political_power = -20 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.143.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_zlawies } FROM = { set_country_flag = TRZ_odm_zlawies set_country_flag = TRZ_odm_zlawies_kow set_country_flag = { flag = TRZ_odm_cd_zlawies days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.144
+	title = tza.144.t
+	desc = tza.144.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.144.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = market_liberal has_government = social_democrat } } modifier = { factor = 2 has_opinion = { target = FROM value > 30 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_solec clr_country_flag = TRZ_odm_solec add_political_power = -20 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.144.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_solec } FROM = { set_country_flag = TRZ_odm_solec set_country_flag = TRZ_odm_solec_kow set_country_flag = { flag = TRZ_odm_cd_solec days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.145
+	title = tza.145.t
+	desc = tza.145.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.145.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = market_liberal has_government = social_democrat } } modifier = { factor = 2 has_opinion = { target = FROM value > 30 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmza clr_country_flag = TRZ_odm_chelmza add_political_power = -20 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.145.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmza } FROM = { set_country_flag = TRZ_odm_chelmza set_country_flag = TRZ_odm_chelmza_kow set_country_flag = { flag = TRZ_odm_cd_chelmza days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.146
+	title = tza.146.t
+	desc = tza.146.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.146.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = market_liberal has_government = social_democrat } } modifier = { factor = 2 has_opinion = { target = FROM value > 30 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_dabrowa clr_country_flag = TRZ_odm_dabrowa add_political_power = -20 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.146.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_dabrowa } FROM = { set_country_flag = TRZ_odm_dabrowa set_country_flag = TRZ_odm_dabrowa_kow set_country_flag = { flag = TRZ_odm_cd_dabrowa days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.147
+	title = tza.147.t
+	desc = tza.147.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.147.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = market_liberal has_government = social_democrat } } modifier = { factor = 2 has_opinion = { target = FROM value > 30 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_kujawy clr_country_flag = TRZ_odm_kujawy add_political_power = -20 } if = { limit = { 74 = { is_owned_by = ROOT } } FROM = { transfer_state = 74 } } if = { limit = { 79 = { is_owned_by = ROOT } } FROM = { transfer_state = 79 } } if = { limit = { 31 = { is_owned_by = ROOT } } FROM = { transfer_state = 31 } }
+	}
+	option = {
+		name = tza.147.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_kujawy } FROM = { set_country_flag = TRZ_odm_kujawy set_country_flag = TRZ_odm_kujawy_kow set_country_flag = { flag = TRZ_odm_cd_kujawy days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.148
+	title = tza.148.t
+	desc = tza.148.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.148.a
+		ai_chance = { base = 2 modifier = { factor = 3 OR = { has_government = social_liberal has_government = market_liberal has_government = social_democrat } } modifier = { factor = 2 has_opinion = { target = FROM value > 30 } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmno clr_country_flag = TRZ_odm_chelmno add_political_power = -20 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.148.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmno } FROM = { set_country_flag = TRZ_odm_chelmno set_country_flag = TRZ_odm_chelmno_kow set_country_flag = { flag = TRZ_odm_cd_chelmno days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.160
+	title = tza.160.t
+	desc = tza.160.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.160.a
+		ai_chance = { base = 1 modifier = { factor = 4 OR = { has_government = communist has_government = libertarian_socialist has_government = social_democrat has_government = totalitarian_socialist } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_podgorz clr_country_flag = TRZ_odm_podgorz add_stability = -0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.160.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_podgorz } FROM = { set_country_flag = TRZ_odm_podgorz set_country_flag = TRZ_odm_podgorz_kre set_country_flag = { flag = TRZ_odm_cd_podgorz days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.161
+	title = tza.161.t
+	desc = tza.161.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.161.a
+		ai_chance = { base = 1 modifier = { factor = 4 OR = { has_government = communist has_government = libertarian_socialist has_government = social_democrat has_government = totalitarian_socialist } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lysomice clr_country_flag = TRZ_odm_lysomice add_stability = -0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.161.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lysomice } FROM = { set_country_flag = TRZ_odm_lysomice set_country_flag = TRZ_odm_lysomice_kre set_country_flag = { flag = TRZ_odm_cd_lysomice days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.162
+	title = tza.162.t
+	desc = tza.162.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.162.a
+		ai_chance = { base = 1 modifier = { factor = 4 OR = { has_government = communist has_government = libertarian_socialist has_government = social_democrat has_government = totalitarian_socialist } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lubicz clr_country_flag = TRZ_odm_lubicz add_stability = -0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.162.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lubicz } FROM = { set_country_flag = TRZ_odm_lubicz set_country_flag = TRZ_odm_lubicz_kre set_country_flag = { flag = TRZ_odm_cd_lubicz days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.163
+	title = tza.163.t
+	desc = tza.163.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.163.a
+		ai_chance = { base = 1 modifier = { factor = 4 OR = { has_government = communist has_government = libertarian_socialist has_government = social_democrat has_government = totalitarian_socialist } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_zlawies clr_country_flag = TRZ_odm_zlawies add_stability = -0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.163.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_zlawies } FROM = { set_country_flag = TRZ_odm_zlawies set_country_flag = TRZ_odm_zlawies_kre set_country_flag = { flag = TRZ_odm_cd_zlawies days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.164
+	title = tza.164.t
+	desc = tza.164.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.164.a
+		ai_chance = { base = 1 modifier = { factor = 4 OR = { has_government = communist has_government = libertarian_socialist has_government = social_democrat has_government = totalitarian_socialist } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_solec clr_country_flag = TRZ_odm_solec add_stability = -0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.164.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_solec } FROM = { set_country_flag = TRZ_odm_solec set_country_flag = TRZ_odm_solec_kre set_country_flag = { flag = TRZ_odm_cd_solec days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.165
+	title = tza.165.t
+	desc = tza.165.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.165.a
+		ai_chance = { base = 1 modifier = { factor = 4 OR = { has_government = communist has_government = libertarian_socialist has_government = social_democrat has_government = totalitarian_socialist } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmza clr_country_flag = TRZ_odm_chelmza add_stability = -0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.165.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmza } FROM = { set_country_flag = TRZ_odm_chelmza set_country_flag = TRZ_odm_chelmza_kre set_country_flag = { flag = TRZ_odm_cd_chelmza days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.166
+	title = tza.166.t
+	desc = tza.166.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.166.a
+		ai_chance = { base = 1 modifier = { factor = 4 OR = { has_government = communist has_government = libertarian_socialist has_government = social_democrat has_government = totalitarian_socialist } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_dabrowa clr_country_flag = TRZ_odm_dabrowa add_stability = -0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.166.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_dabrowa } FROM = { set_country_flag = TRZ_odm_dabrowa set_country_flag = TRZ_odm_dabrowa_kre set_country_flag = { flag = TRZ_odm_cd_dabrowa days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.167
+	title = tza.167.t
+	desc = tza.167.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.167.a
+		ai_chance = { base = 1 modifier = { factor = 4 OR = { has_government = communist has_government = libertarian_socialist has_government = social_democrat has_government = totalitarian_socialist } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_kujawy clr_country_flag = TRZ_odm_kujawy add_stability = -0.01 } if = { limit = { 74 = { is_owned_by = ROOT } } FROM = { transfer_state = 74 } } if = { limit = { 79 = { is_owned_by = ROOT } } FROM = { transfer_state = 79 } } if = { limit = { 31 = { is_owned_by = ROOT } } FROM = { transfer_state = 31 } }
+	}
+	option = {
+		name = tza.167.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_kujawy } FROM = { set_country_flag = TRZ_odm_kujawy set_country_flag = TRZ_odm_kujawy_kre set_country_flag = { flag = TRZ_odm_cd_kujawy days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.168
+	title = tza.168.t
+	desc = tza.168.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.168.a
+		ai_chance = { base = 1 modifier = { factor = 4 OR = { has_government = communist has_government = libertarian_socialist has_government = social_democrat has_government = totalitarian_socialist } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmno clr_country_flag = TRZ_odm_chelmno add_stability = -0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.168.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmno } FROM = { set_country_flag = TRZ_odm_chelmno set_country_flag = TRZ_odm_chelmno_kre set_country_flag = { flag = TRZ_odm_cd_chelmno days = 120 } country_event = { id = tza.51 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.180
+	title = tza.180.t
+	desc = tza.180.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.180.a
+		ai_chance = { base = 2 modifier = { factor = 3 num_of_controlled_states < 3 } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_podgorz clr_country_flag = TRZ_odm_podgorz add_political_power = -25 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.180.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_podgorz } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.181
+	title = tza.181.t
+	desc = tza.181.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.181.a
+		ai_chance = { base = 2 modifier = { factor = 3 num_of_controlled_states < 3 } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lysomice clr_country_flag = TRZ_odm_lysomice add_political_power = -25 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.181.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lysomice } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.182
+	title = tza.182.t
+	desc = tza.182.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.182.a
+		ai_chance = { base = 2 modifier = { factor = 3 num_of_controlled_states < 3 } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lubicz clr_country_flag = TRZ_odm_lubicz add_political_power = -25 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.182.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lubicz } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.183
+	title = tza.183.t
+	desc = tza.183.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.183.a
+		ai_chance = { base = 2 modifier = { factor = 3 num_of_controlled_states < 3 } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_zlawies clr_country_flag = TRZ_odm_zlawies add_political_power = -25 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.183.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_zlawies } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.184
+	title = tza.184.t
+	desc = tza.184.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.184.a
+		ai_chance = { base = 2 modifier = { factor = 3 num_of_controlled_states < 3 } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_solec clr_country_flag = TRZ_odm_solec add_political_power = -25 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.184.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_solec } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.185
+	title = tza.185.t
+	desc = tza.185.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.185.a
+		ai_chance = { base = 2 modifier = { factor = 3 num_of_controlled_states < 3 } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmza clr_country_flag = TRZ_odm_chelmza add_political_power = -25 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.185.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmza } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.186
+	title = tza.186.t
+	desc = tza.186.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.186.a
+		ai_chance = { base = 2 modifier = { factor = 3 num_of_controlled_states < 3 } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_dabrowa clr_country_flag = TRZ_odm_dabrowa add_political_power = -25 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.186.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_dabrowa } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.187
+	title = tza.187.t
+	desc = tza.187.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.187.a
+		ai_chance = { base = 2 modifier = { factor = 3 num_of_controlled_states < 3 } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_kujawy clr_country_flag = TRZ_odm_kujawy add_political_power = -25 } if = { limit = { 74 = { is_owned_by = ROOT } } FROM = { transfer_state = 74 } } if = { limit = { 79 = { is_owned_by = ROOT } } FROM = { transfer_state = 79 } } if = { limit = { 31 = { is_owned_by = ROOT } } FROM = { transfer_state = 31 } }
+	}
+	option = {
+		name = tza.187.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_kujawy } FROM = { create_wargoal = { type = take_state_focus target = ROOT generator = { 74 79 31 } } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.188
+	title = tza.188.t
+	desc = tza.188.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.188.a
+		ai_chance = { base = 2 modifier = { factor = 3 num_of_controlled_states < 3 } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmno clr_country_flag = TRZ_odm_chelmno add_political_power = -25 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.188.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmno } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.200
+	title = tza.200.t
+	desc = tza.200.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.200.a
+		ai_chance = { base = 1 modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 3 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_podgorz clr_country_flag = TRZ_odm_podgorz add_war_support = 0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.200.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_podgorz } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.201
+	title = tza.201.t
+	desc = tza.201.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.201.a
+		ai_chance = { base = 1 modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 3 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lysomice clr_country_flag = TRZ_odm_lysomice add_war_support = 0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.201.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lysomice } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.202
+	title = tza.202.t
+	desc = tza.202.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.202.a
+		ai_chance = { base = 1 modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 3 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_lubicz clr_country_flag = TRZ_odm_lubicz add_war_support = 0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.202.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_lubicz } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.203
+	title = tza.203.t
+	desc = tza.203.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.203.a
+		ai_chance = { base = 1 modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 3 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_zlawies clr_country_flag = TRZ_odm_zlawies add_war_support = 0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.203.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_zlawies } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.204
+	title = tza.204.t
+	desc = tza.204.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.204.a
+		ai_chance = { base = 1 modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 3 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_solec clr_country_flag = TRZ_odm_solec add_war_support = 0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.204.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_solec } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.205
+	title = tza.205.t
+	desc = tza.205.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.205.a
+		ai_chance = { base = 1 modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 3 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmza clr_country_flag = TRZ_odm_chelmza add_war_support = 0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.205.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmza } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.206
+	title = tza.206.t
+	desc = tza.206.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.206.a
+		ai_chance = { base = 1 modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 3 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_dabrowa clr_country_flag = TRZ_odm_dabrowa add_war_support = 0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.206.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_dabrowa } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.207
+	title = tza.207.t
+	desc = tza.207.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.207.a
+		ai_chance = { base = 1 modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 3 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_kujawy clr_country_flag = TRZ_odm_kujawy add_war_support = 0.01 } if = { limit = { 74 = { is_owned_by = ROOT } } FROM = { transfer_state = 74 } } if = { limit = { 79 = { is_owned_by = ROOT } } FROM = { transfer_state = 79 } } if = { limit = { 31 = { is_owned_by = ROOT } } FROM = { transfer_state = 31 } }
+	}
+	option = {
+		name = tza.207.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_kujawy } FROM = { create_wargoal = { type = take_state_focus target = ROOT generator = { 74 79 31 } } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.208
+	title = tza.208.t
+	desc = tza.208.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.208.a
+		ai_chance = { base = 1 modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 1.5 } } } modifier = { factor = 3 FROM = { strength_ratio = { tag = ROOT ratio > 3 } } } modifier = { factor = 0.3 has_war = yes } }
+		FROM = { set_country_flag = TRZ_chelmno clr_country_flag = TRZ_odm_chelmno add_war_support = 0.01 } FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = tza.208.b
+		ai_chance = { base = 2 modifier = { factor = 3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { set_country_flag = TRZ_chelmno } FROM = { create_wargoal = { type = annex_everything target = ROOT } country_event = { id = tza.50 days = 1 } }
+	}
+}
+
+country_event = {
+	id = tza.50
+	title = tza.50.t
+	desc = tza.50.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.50.a
+		ai_chance = { base = 1 }
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = tza.51
+	title = tza.51.t
+	desc = tza.51.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = tza.51.a
+		ai_chance = { base = 1 }
+		add_political_power = 10
+	}
+}

@@ -1,0 +1,6 @@
+IVR_panel = {
+	icon = generic_political_discourse
+	allowed = { always = yes }
+	visible = { has_country_flag = IVR_panstwo }
+	priority = 60
+}

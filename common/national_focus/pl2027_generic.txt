@@ -1,4 +1,4 @@
-# Generyczne drzewko Polski 2027 – wszystkie panstwa poza Toruniem
+# Generyczne drzewko Polski 2027 – tylko państwa wskazane przez autora (Wołomin, Obwód Królewiecki) i państwa bez ziem na starcie (Gmina Nowe Miasto Lubawskie, Brat Jan)
 focus_tree = {
 	id = PL2027_generic_focus
 	country = {
@@ -6,25 +6,10 @@ focus_tree = {
 		modifier = {
 			add = 20
 			OR = {
-				original_tag = DAB
 				original_tag = GNL
-				original_tag = GRD
 				original_tag = KRL
-				original_tag = KRW
-				original_tag = KST
-				original_tag = LUB
-				original_tag = LYS
-				original_tag = NML
-				original_tag = NWW
-				original_tag = OSD
-				original_tag = OTW
-				original_tag = PSC
-				original_tag = ROZ
-				original_tag = SCK
-				original_tag = SLK
 				original_tag = UBJ
 				original_tag = WLM
-				original_tag = WMP
 			}
 		}
 	}
@@ -1145,7 +1130,7 @@ focus_tree = {
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		bypass = { has_country_flag = MIL_start }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_start
 			army_experience = 5
@@ -1162,7 +1147,7 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_rejestr }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_rejestr
 			add_ideas = MIL_pobor_1
@@ -1178,7 +1163,7 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_ochotnicy }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_ochotnicy
 			add_manpower = 3000
@@ -1194,7 +1179,7 @@ focus_tree = {
 		cost = 10
 		bypass = { has_country_flag = MIL_fabryka }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_fabryka
 			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
@@ -1210,7 +1195,7 @@ focus_tree = {
 		cost = 10
 		bypass = { has_country_flag = MIL_pobor }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_pobor
 			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
@@ -1226,7 +1211,7 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_bataliony }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_bataliony
 			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
@@ -1244,7 +1229,7 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_produkcja }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_produkcja
 			add_timed_idea = { idea = MIL_produkcja days = 365 }
@@ -1262,7 +1247,7 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_rezerwisci }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_rezerwisci
 			add_manpower = 5000
@@ -1278,7 +1263,7 @@ focus_tree = {
 		cost = 10
 		bypass = { has_country_flag = MIL_brygady }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_brygady
 			if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
@@ -1297,7 +1282,7 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_zaplecze }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_zaplecze
 			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
@@ -1316,7 +1301,7 @@ focus_tree = {
 		cost = 10
 		bypass = { has_country_flag = MIL_kadra }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_kadra
 			army_experience = 25
@@ -1334,7 +1319,7 @@ focus_tree = {
 		cost = 10
 		bypass = { has_country_flag = MIL_zawodowa }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
 			set_country_flag = MIL_zawodowa
 			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa

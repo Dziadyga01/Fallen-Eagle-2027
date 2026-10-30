@@ -4,12 +4,13 @@ state = {
 	manpower = 131376
 	state_category = large_town
 	resources = {
-		rubber = 2
+		rubber = 4
+		steel = 1
 	}
 	history = {
 		owner = SLS
 		add_core_of = SLS
-		victory_points = { 5103 1 }
+		victory_points = { 5103 8 }
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1

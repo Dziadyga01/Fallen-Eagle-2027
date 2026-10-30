@@ -1,0 +1,50 @@
+on_actions = {
+    on_weekly_PRW = {
+        effect = {
+            if = {
+                limit = {
+                    NOT = { has_global_flag = PL2027_prolog }
+                    NOT = { has_country_flag = ZPP_sciezka_cyber }
+                    NOT = { has_power_balance = { id = ZPP_rownowaga_sil } }
+                }
+                ZPP_bop_inicjalizacja = yes
+            }
+            if = {
+                limit = {
+                    has_country_flag = ZPP_sciezka_cyber
+                    has_power_balance = { id = ZPP_rownowaga_sil }
+                }
+                remove_power_balance = { id = ZPP_rownowaga_sil }
+            }
+        }
+    }
+    on_monthly_PRW = {
+        effect = {
+            if = {
+                limit = { has_power_balance = { id = ZPP_rownowaga_sil } }
+                # W czasie wojny struktury partyjne zyskuja, przy niskiej
+                # stabilnosci aparat technokratyczny domaga sie reform.
+                if = {
+                    limit = { has_war = yes }
+                    add_power_balance_value = { id = ZPP_rownowaga_sil value = 0.015 tooltip_side = ZPP_bop_maslarze }
+                }
+                if = {
+                    limit = { has_stability < 0.40 }
+                    add_power_balance_value = { id = ZPP_rownowaga_sil value = -0.02 tooltip_side = ZPP_bop_harcerze }
+                }
+                if = {
+                    limit = { has_country_flag = ZPP_bop_ugoda }
+                    # Pakt ogranicza radykalizacje: bardzo maly ruch ku centrum.
+                    if = {
+                        limit = { power_balance_value = { id = ZPP_rownowaga_sil value > 0.10 } }
+                        add_power_balance_value = { id = ZPP_rownowaga_sil value = -0.02 tooltip_side = ZPP_bop_harcerze }
+                    }
+                    else_if = {
+                        limit = { power_balance_value = { id = ZPP_rownowaga_sil value < -0.10 } }
+                        add_power_balance_value = { id = ZPP_rownowaga_sil value = 0.02 tooltip_side = ZPP_bop_maslarze }
+                    }
+                }
+            }
+        }
+    }
+}

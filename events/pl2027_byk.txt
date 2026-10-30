@@ -1,0 +1,101 @@
+add_namespace = byk
+
+country_event = {
+	id = byk.10
+	title = byk.10.t
+	desc = byk.10.d
+	picture = GFX_pl2027_ev081_miasto_3
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } NOT = { has_country_flag = BYK_ev_10 } }
+	immediate = { set_country_flag = BYK_ev_10 }
+	option = {
+		name = byk.10.a
+		ai_chance = { base = 1 modifier = { factor = 4 has_country_flag = BYK_faw_junta } }
+		custom_effect_tooltip = BYK_sup_junta_p5 hidden_effect = { add_to_variable = { BYD2_pop_junta = 5 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } } custom_effect_tooltip = BYK_sup_rady_m3 hidden_effect = { add_to_variable = { BYD2_pop_rady = -3 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } } add_stability = 0.01 BYK_sondaz = yes
+	}
+	option = {
+		name = byk.10.b
+		ai_chance = { base = 1 modifier = { factor = 4 has_country_flag = BYK_faw_rady } }
+		custom_effect_tooltip = BYK_sup_rady_p5 hidden_effect = { add_to_variable = { BYD2_pop_rady = 5 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } } custom_effect_tooltip = BYK_sup_przemysl_m3 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = -3 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } } BYK_sondaz = yes
+	}
+	option = {
+		name = byk.10.c
+		ai_chance = { base = 1 modifier = { factor = 4 has_country_flag = BYK_faw_przemysl } }
+		custom_effect_tooltip = BYK_sup_przemysl_p5 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = 5 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } } add_political_power = -15 BYK_sondaz = yes
+	}
+}
+
+country_event = {
+	id = byk.11
+	title = byk.11.t
+	desc = byk.11.d
+	picture = GFX_pl2027_ev081_praca_2
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } NOT = { has_country_flag = BYK_ev_11 } }
+	immediate = { set_country_flag = BYK_ev_11 }
+	option = {
+		name = byk.11.a
+		ai_chance = { base = 1 modifier = { factor = 4 has_country_flag = BYK_faw_rady } }
+		custom_effect_tooltip = BYK_sup_rady_p6 hidden_effect = { add_to_variable = { BYD2_pop_rady = 6 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } } custom_effect_tooltip = BYK_sup_przemysl_m3 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = -3 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } } BYK_sondaz = yes
+	}
+	option = {
+		name = byk.11.b
+		ai_chance = { base = 1 modifier = { factor = 4 has_country_flag = BYK_faw_bruski } }
+		custom_effect_tooltip = BYK_sup_bruski_p4 hidden_effect = { add_to_variable = { BYD2_pop_bruski = 4 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } } add_political_power = -10 BYK_sondaz = yes
+	}
+	option = {
+		name = byk.11.c
+		ai_chance = { base = 1 modifier = { factor = 4 has_country_flag = BYK_faw_przemysl } }
+		custom_effect_tooltip = BYK_sup_przemysl_p6 hidden_effect = { add_to_variable = { BYD2_pop_przemysl = 6 } clamp_variable = { var = BYD2_pop_przemysl min = 0 max = 100 } } custom_effect_tooltip = BYK_sup_rady_m3 hidden_effect = { add_to_variable = { BYD2_pop_rady = -3 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } } add_stability = -0.01 BYK_sondaz = yes
+	}
+}
+
+country_event = {
+	id = byk.12
+	title = byk.12.t
+	desc = byk.12.d
+	picture = GFX_pl2027_ev081_media_2
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } NOT = { has_country_flag = BYK_ev_12 } }
+	immediate = { set_country_flag = BYK_ev_12 }
+	option = {
+		name = byk.12.a
+		ai_chance = { base = 1 modifier = { factor = 4 has_country_flag = BYK_faw_brdowski } }
+		custom_effect_tooltip = BYK_sup_brdowski_p6 hidden_effect = { add_to_variable = { BYD2_pop_brdowski = 6 } clamp_variable = { var = BYD2_pop_brdowski min = 0 max = 100 } } BYK_sondaz = yes
+	}
+	option = {
+		name = byk.12.b
+		ai_chance = { base = 2 }
+		add_stability = 0.02 add_political_power = -10 custom_effect_tooltip = BYK_sup_brdowski_m3 hidden_effect = { add_to_variable = { BYD2_pop_brdowski = -3 } clamp_variable = { var = BYD2_pop_brdowski min = 0 max = 100 } } BYK_sondaz = yes
+	}
+	option = {
+		name = byk.12.c
+		ai_chance = { base = 1 }
+		custom_effect_tooltip = BYK_sup_bruski_p3 hidden_effect = { add_to_variable = { BYD2_pop_bruski = 3 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } } custom_effect_tooltip = BYK_sup_brdowski_p3 hidden_effect = { add_to_variable = { BYD2_pop_brdowski = 3 } clamp_variable = { var = BYD2_pop_brdowski min = 0 max = 100 } } BYK_sondaz = yes
+	}
+}
+
+country_event = {
+	id = byk.13
+	title = byk.13.t
+	desc = byk.13.d
+	picture = GFX_pl2027_ev081_ulica_3
+	is_triggered_only = yes
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } NOT = { has_country_flag = BYK_ev_13 } }
+	immediate = { set_country_flag = BYK_ev_13 }
+	option = {
+		name = byk.13.a
+		ai_chance = { base = 1 modifier = { factor = 4 has_country_flag = BYK_faw_junta } }
+		custom_effect_tooltip = BYK_sup_junta_p6 hidden_effect = { add_to_variable = { BYD2_pop_junta = 6 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } } add_stability = 0.02 BYK_sondaz = yes
+	}
+	option = {
+		name = byk.13.b
+		ai_chance = { base = 1 modifier = { factor = 4 has_country_flag = BYK_faw_bruski } }
+		custom_effect_tooltip = BYK_sup_bruski_p4 hidden_effect = { add_to_variable = { BYD2_pop_bruski = 4 } clamp_variable = { var = BYD2_pop_bruski min = 0 max = 100 } } add_political_power = -10 BYK_sondaz = yes
+	}
+	option = {
+		name = byk.13.c
+		ai_chance = { base = 1 modifier = { factor = 4 has_country_flag = BYK_faw_rady } }
+		custom_effect_tooltip = BYK_sup_rady_p4 hidden_effect = { add_to_variable = { BYD2_pop_rady = 4 } clamp_variable = { var = BYD2_pop_rady min = 0 max = 100 } } custom_effect_tooltip = BYK_sup_junta_m3 hidden_effect = { add_to_variable = { BYD2_pop_junta = -3 } clamp_variable = { var = BYD2_pop_junta min = 0 max = 100 } } BYK_sondaz = yes
+	}
+}

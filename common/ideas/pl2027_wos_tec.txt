@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		WOS_idea_tec_mozaika = {
+			picture = DU_WWD_wolna_dzielnica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = 0.04 }
+		}
+		WOS_idea_tec_federacja = {
+			picture = DU_WWD_wolna_dzielnica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.06 army_core_defence_factor = 0.05 political_power_gain = 0.04 }
+		}
+		WOS_idea_tec_demokracja = {
+			picture = DU_WWD_wolna_dzielnica
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.1 war_support_factor = -0.05 political_power_gain = 0.06 }
+		}
+	}
+}

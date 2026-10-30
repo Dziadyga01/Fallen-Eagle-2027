@@ -1,0 +1,313 @@
+characters = {
+	TRN_pt_zietarski = {
+		name = TRN_pt_zietarski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_zietarski.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_zietarski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_zietarski
+			allowed = { original_tag = TRN }
+			traits = { TRN_pt_olimpijska_dyscyplina }
+			cost = 150
+			ai_will_do = { base = 1 modifier = { factor = 3 has_war = yes } }
+		}
+	}
+	TRN_pt_kielpinski = {
+		name = TRN_pt_kielpinski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_kielpinski.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_kielpinski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_kielpinski
+			allowed = { original_tag = TRN }
+			traits = { TRN_pt_konkretnie }
+			cost = 150
+			ai_will_do = { base = 1 }
+		}
+	}
+	TRN_pt_szulejko = {
+		name = TRN_pt_szulejko
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_szulejko.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_szulejko_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_szulejko
+			allowed = { original_tag = TRN }
+			traits = { TRN_pt_mlody_dyplomata }
+			cost = 150
+			ai_will_do = { base = 1 }
+		}
+	}
+	TRN_pt_ulanowski = {
+		name = TRN_pt_ulanowski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_ulanowski.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_ulanowski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_ulanowski
+			allowed = { original_tag = TRN }
+			traits = { TRN_pt_architekt_kompromisu }
+			cost = 150
+			ai_will_do = { base = 1 modifier = { factor = 2 has_stability < 0.4 } }
+		}
+	}
+	TRN_pt_szymanski = {
+		name = TRN_pt_szymanski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_szymanski.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_szymanski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_szymanski
+			allowed = { original_tag = TRN }
+			traits = { TRN_pt_torun_obywatelski }
+			cost = 150
+			ai_will_do = { base = 1 }
+		}
+	}
+	TRN_pt_kozuchowska = {
+		name = TRN_pt_kozuchowska
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_kozuchowska.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_kozuchowska_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_kozuchowska
+			allowed = { original_tag = TRN }
+			traits = { TRN_pt_twarz_odbudowy }
+			cost = 150
+			ai_will_do = { base = 1 modifier = { factor = 2 has_war_support < 0.3 } }
+		}
+	}
+	TRN_pt_pan_wojtek = {
+		name = TRN_pt_pan_wojtek
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_pan_wojtek.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_pan_wojtek_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_pan_wojtek
+			allowed = { original_tag = TRN }
+			traits = { TRN_pt_legenda_starowki }
+			cost = 150
+			ai_will_do = { base = 1 }
+		}
+	}
+	TRN_pt_malkiewicz = {
+		name = TRN_pt_malkiewicz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_malkiewicz.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_malkiewicz_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_malkiewicz
+			allowed = { original_tag = TRN }
+			traits = { TRN_pt_glos_ulic }
+			cost = 150
+			ai_will_do = { base = 1 modifier = { factor = 2 has_war = yes } }
+		}
+	}
+	TRN_pt_magical = {
+		name = TRN_pt_magical
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_magical.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_magical_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_magical
+			allowed = { original_tag = TRN }
+			traits = { TRN_pt_internetowa_popularnosc }
+			cost = 150
+			ai_will_do = { base = 1 }
+		}
+	}
+	TRN_pt_mrkryha = {
+		name = TRN_pt_mrkryha
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_mrkryha.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_mrkryha_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_mrkryha
+			allowed = { original_tag = TRN }
+			traits = { TRN_pt_robi_wrazenie }
+			cost = 150
+			ai_will_do = { base = 1 modifier = { factor = 2 has_war = yes } }
+		}
+	}
+	TRN_pt_zillmann = {
+		name = TRN_pt_zillmann
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_zillmann.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_zillmann_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_zillmann
+			allowed = { original_tag = TRN }
+			available = { has_completed_focus = TR2_rom_nowe_pokolenie }
+			traits = { TRN_pt_sila_solidarnosci }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+	TRN_pt_maciejewski = {
+		name = TRN_pt_maciejewski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_maciejewski.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_maciejewski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_maciejewski
+			allowed = { original_tag = TRN }
+			available = { has_completed_focus = TR2_gul_nowe_pokolenie }
+			traits = { TRN_pt_nowe_pokolenie_adm }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+	TRN_pt_okoniewicz = {
+		name = TRN_pt_okoniewicz
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_okoniewicz.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_okoniewicz_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_okoniewicz
+			allowed = { original_tag = TRN }
+			available = { has_completed_focus = TR2_zal_dziedzictwo }
+			traits = { TRN_pt_straznik_tradycji }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+	TRN_pt_beyer = {
+		name = TRN_pt_beyer
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_beyer.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_beyer_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_beyer
+			allowed = { original_tag = TRN }
+			available = { has_completed_focus = TR2_kow_mobilizacja_obywatelska }
+			traits = { TRN_pt_obywatelska_mobilizacja }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+	TRN_pt_dominikowski = {
+		name = TRN_pt_dominikowski
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_dominikowski.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_dominikowski_small.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = TRN_pt_dominikowski
+			allowed = { original_tag = TRN }
+			available = { has_completed_focus = TR2_zal_wladza_dla_osiedli }
+			traits = { TRN_pt_glos_osiedli }
+			cost = 100
+			ai_will_do = { base = 3 }
+		}
+	}
+	TRN_pt_miedzinski = {
+		name = TRN_pt_miedzinski
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_miedzinski.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_miedzinski_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { TRN_pt_weteran_motoareny }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	TRN_pt_linda = {
+		name = TRN_pt_linda
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_linda.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_linda_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { TRN_pt_twarda_reka infantry_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	TRN_pt_batman = {
+		name = TRN_pt_batman
+		portraits = {
+			army = {
+				large = "gfx/leaders/TRN/postacie/TRN_pt_batman.dds"
+				small = "gfx/leaders/TRN/postacie/TRN_pt_batman_small.dds"
+			}
+		}
+		corps_commander = {
+			traits = { TRN_pt_mroczny_rycerz urban_assault_specialist }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

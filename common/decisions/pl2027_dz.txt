@@ -1,0 +1,274 @@
+DZ_BLR_kat = {
+	BLR_pobor_wschod = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = BLR } }
+		cost = 25
+		visible = { OR = { has_completed_focus = BLR_mil_start } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_manpower = 15000 custom_effect_tooltip = BLR_tt_stm2 hidden_effect = { add_to_variable = { BLR_stabilnosc = -2 } clamp_variable = { var = BLR_stabilnosc min = 0 max = 100 } } }
+		ai_will_do = { factor = 3 modifier = { factor = 3 has_war = yes } modifier = { factor = 0 has_manpower > 20000 } }
+	}
+	BLR_zamowienia_maz = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = BLR } }
+		cost = 30
+		visible = { OR = { has_completed_focus = BLR_mil_start } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_equipment_to_stockpile = { type = motorized_equipment amount = 60 } add_equipment_to_stockpile = { type = support_equipment amount = 100 } }
+		ai_will_do = { factor = 3 modifier = { factor = 0 has_political_power < 60 } }
+	}
+}
+FED_rownowaga_kat = {
+	FED_dec_centralizacja = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = MAZ original_tag = WMZ } }
+		cost = 50
+		visible = { OR = { has_completed_focus = FED_cen_1 has_completed_focus = FED_kol_3 has_completed_focus = FED_sep_1 has_completed_focus = FED_wybory has_completed_focus = MAZ_rozmowy has_completed_focus = WMZ_administracja_olsztyna } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { FED_postep = 12 } add_to_variable = { FED_niez_w = 6 } add_to_variable = { FED_niez_m = 6 } FED_przelicz = yes }
+		ai_will_do = { factor = 6 modifier = { factor = 0 OR = { check_variable = { FED_niez_w > 54 } check_variable = { FED_niez_m > 54 } } } }
+	}
+	FED_dec_mazury = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = MAZ original_tag = WMZ } }
+		cost = 30
+		visible = { OR = { has_completed_focus = FED_cen_1 has_completed_focus = FED_kol_3 has_completed_focus = FED_sep_1 has_completed_focus = FED_wybory has_completed_focus = MAZ_rozmowy has_completed_focus = WMZ_administracja_olsztyna } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { FED_niez_m = -10 } add_to_variable = { FED_niez_w = 5 } add_to_variable = { FED_postep = 2 } FED_przelicz = yes }
+		ai_will_do = { factor = 3 modifier = { factor = 5 check_variable = { FED_niez_m > 49 } } modifier = { factor = 0 check_variable = { FED_niez_w > 64 } } }
+	}
+	FED_dec_pojednanie = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = MAZ original_tag = WMZ } }
+		cost = 80
+		visible = { OR = { has_completed_focus = FED_cen_1 has_completed_focus = FED_kol_3 has_completed_focus = FED_sep_1 has_completed_focus = FED_wybory has_completed_focus = MAZ_rozmowy has_completed_focus = WMZ_administracja_olsztyna } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { FED_niez_w = -8 } add_to_variable = { FED_niez_m = -8 } add_to_variable = { FED_postep = 5 } FED_przelicz = yes }
+		ai_will_do = { factor = 9 }
+	}
+	FED_dec_warmia = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = MAZ original_tag = WMZ } }
+		cost = 30
+		visible = { OR = { has_completed_focus = FED_cen_1 has_completed_focus = FED_kol_3 has_completed_focus = FED_sep_1 has_completed_focus = FED_wybory has_completed_focus = MAZ_rozmowy has_completed_focus = WMZ_administracja_olsztyna } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { FED_niez_w = -10 } add_to_variable = { FED_niez_m = 5 } add_to_variable = { FED_postep = 2 } FED_przelicz = yes }
+		ai_will_do = { factor = 3 modifier = { factor = 5 check_variable = { FED_niez_w > 49 } } modifier = { factor = 0 check_variable = { FED_niez_m > 64 } } }
+	}
+}
+DZ_KOR_kat = {
+	KOR_dywidenda = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = PLO } }
+		cost = 0
+		visible = { always = yes }
+		available = { check_variable = { KOR_kurs > 109 } }
+		days_re_enable = 45
+		complete_effect = { add_political_power = 60 custom_effect_tooltip = KOR_kurs_tt_m12 hidden_effect = { add_to_variable = { KOR_kurs = -12 } KOR_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 0 check_variable = { KOR_kurs < 120 } } }
+	}
+	KOR_emisja_akcji = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = PLO } }
+		cost = 25
+		visible = { OR = { has_completed_focus = KOR_mil_start } }
+		available = { has_country_flag = KOR_gielda check_variable = { KOR_kurs > 89 } }
+		days_re_enable = 45
+		complete_effect = { random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } custom_effect_tooltip = KOR_kurs_tt_m15 hidden_effect = { add_to_variable = { KOR_kurs = -15 } KOR_przelicz = yes } }
+		ai_will_do = { factor = 6 }
+	}
+	KOR_podwyzka_cen = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = PLO } }
+		cost = 0
+		visible = { always = yes }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = KOR_kurs_tt_p8 hidden_effect = { add_to_variable = { KOR_kurs = 8 } KOR_przelicz = yes } add_stability = -0.03 }
+		ai_will_do = { factor = 3 modifier = { factor = 0 has_stability < 0.45 } }
+	}
+	KOR_promocja = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = PLO } }
+		cost = 15
+		visible = { always = yes }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = KOR_kurs_tt_m6 hidden_effect = { add_to_variable = { KOR_kurs = -6 } KOR_przelicz = yes } add_stability = 0.03 add_popularity = { ideology = authoritarian_democrat popularity = 0.02 } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 has_stability < 0.4 } }
+	}
+	KOR_rezerwa = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = PLO } }
+		cost = 50
+		visible = { OR = { has_completed_focus = KOR_mil_start } }
+		available = { fuel_ratio < 0.5 }
+		days_re_enable = 45
+		complete_effect = { add_fuel = 5000 custom_effect_tooltip = KOR_kurs_tt_m5 hidden_effect = { add_to_variable = { KOR_kurs = -5 } KOR_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 3 has_war = yes } }
+	}
+	KOR_skup_akcji = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = PLO } }
+		cost = 50
+		visible = { always = yes }
+		available = { check_variable = { KOR_kurs < 150 } }
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = KOR_kurs_tt_p10 hidden_effect = { add_to_variable = { KOR_kurs = 10 } KOR_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 3 check_variable = { KOR_kurs < 70 } } }
+	}
+}
+DZ_PKP_kat = {
+	PKP_emisja_akcji = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = KOC } }
+		cost = 0
+		visible = { always = yes }
+		available = { has_stability > 0.35 }
+		days_re_enable = 45
+		complete_effect = { add_political_power = 60 add_stability = -0.03 }
+		ai_will_do = { factor = 3 modifier = { factor = 0 has_stability < 0.5 } }
+	}
+	PKP_nalot_sok = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = KOC } }
+		cost = 25
+		visible = { OR = { has_completed_focus = PKP_siec_mapa } }
+		available = { has_country_flag = PKP_sok }
+		days_re_enable = 45
+		complete_effect = { add_manpower = 1500 add_stability = -0.02 add_political_power = 10 }
+		ai_will_do = { factor = 3 }
+	}
+	PKP_wojenny_rozklad_dec = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = KOC } }
+		cost = 50
+		visible = { OR = { has_completed_focus = PKP_siec_mapa } }
+		available = { has_country_flag = PKP_mobilizacja has_war = yes }
+		days_re_enable = 45
+		complete_effect = { add_timed_idea = { idea = PKP_wojenny_rozklad days = 180 } }
+		ai_will_do = { factor = 6 }
+	}
+}
+DZ_ROS_kat = {
+	ROS_dec_mobilizacja = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = ROS } }
+		cost = 40
+		visible = { OR = { has_completed_focus = ROS_car_mazury_rosyjskie has_completed_focus = ROS_mie_f3 has_completed_focus = ROS_mie_nie_ustapi has_completed_focus = ROS_przygotowanie_ofensywy has_completed_focus = ROS_szo_kontrola_armii has_completed_focus = ROS_wojna_bez_konca } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_manpower = 10000 add_stability = -0.02 }
+		ai_will_do = { factor = 6 }
+	}
+	ROS_dec_most = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = ROS } }
+		cost = 30
+		visible = { OR = { has_completed_focus = ROS_car_mazury_rosyjskie has_completed_focus = ROS_mie_f3 has_completed_focus = ROS_mie_nie_ustapi has_completed_focus = ROS_przygotowanie_ofensywy has_completed_focus = ROS_szo_kontrola_armii has_completed_focus = ROS_wojna_bez_konca } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_equipment_to_stockpile = { type = ranged_equipment amount = 1200 producer = ROS } add_equipment_to_stockpile = { type = support_equipment amount = 120 producer = ROS } add_equipment_to_stockpile = { type = light_artillery_equipment amount = 60 producer = ROS } }
+		ai_will_do = { factor = 9 }
+	}
+	ROS_dec_posilki = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = ROS } }
+		cost = 60
+		visible = { OR = { has_completed_focus = ROS_car_mazury_rosyjskie has_completed_focus = ROS_mie_f3 has_completed_focus = ROS_mie_nie_ustapi has_completed_focus = ROS_przygotowanie_ofensywy has_completed_focus = ROS_szo_kontrola_armii has_completed_focus = ROS_wojna_bez_konca } }
+		available = { ROS_przy_wojnie = yes }
+		days_re_enable = 45
+		complete_effect = { capital_scope = { create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.3" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.3" owner = ROS } } }
+		ai_will_do = { factor = 15 }
+	}
+}
+DZ_TPZ_kat = {
+	TPZ_dec_podwyzka = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = WLC } }
+		cost = 0
+		visible = { OR = { has_completed_focus = TPZ_siec_kuchnia } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_political_power = 30 custom_effect_tooltip = TPZ_sat_tt_m10 hidden_effect = { add_to_variable = { TPZ_satysfakcja = -10 } TPZ_przelicz = yes } }
+		ai_will_do = { factor = 0.9 modifier = { factor = 0 check_variable = { TPZ_satysfakcja < 45 } } }
+	}
+	TPZ_dec_promocja = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = WLC } }
+		cost = 25
+		visible = { OR = { has_completed_focus = TPZ_siec_kuchnia } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = TPZ_sat_tt_p6 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 6 } TPZ_przelicz = yes } }
+		ai_will_do = { factor = 3 modifier = { factor = 3 check_variable = { TPZ_satysfakcja < 40 } } }
+	}
+	TPZ_dec_punkty = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = WLC } }
+		cost = 0
+		visible = { always = yes }
+		available = { has_country_flag = TPZ_lojalnosc custom_trigger_tooltip = { tooltip = TPZ_dec_punkty_koszt check_variable = { TPZ_punkty > 29 } } }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { TPZ_punkty = -30 } custom_effect_tooltip = TPZ_sat_tt_p7 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 7 } TPZ_przelicz = yes } add_stability = 0.02 }
+		ai_will_do = { factor = 3 }
+	}
+	TPZ_dec_weekend = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = WLC } }
+		cost = 15
+		visible = { OR = { has_completed_focus = TPZ_siec_kuchnia } }
+		available = { has_completed_focus = TPZ_darmowa_pizza }
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = TPZ_sat_tt_p4 hidden_effect = { add_to_variable = { TPZ_satysfakcja = 4 } TPZ_przelicz = yes } add_timed_idea = { idea = TPZ_duch_weekend days = 30 } }
+		ai_will_do = { factor = 3 modifier = { factor = 2 check_variable = { TPZ_satysfakcja < 45 } } }
+	}
+}
+ZKR_wplywy_kat = {
+	ZKR_dec_doradcy = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = ZKR } }
+		cost = 25
+		visible = { OR = { has_completed_focus = ZKR_kajdany_mil_start has_completed_focus = ZKR_ordensstaat_mil_start has_completed_focus = ZKR_rosyjskie_prusy_mil_start has_completed_focus = ZKR_zakon_mil_start } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { army_experience = 15 add_to_variable = { ZKR_wplywy = 15 } ZKR_wplywy_przelicz = yes }
+		ai_will_do = { factor = 6 }
+	}
+	ZKR_dec_dostawy = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = ZKR } }
+		cost = 15
+		visible = { OR = { has_completed_focus = ZKR_kajdany_mil_start has_completed_focus = ZKR_ordensstaat_mil_start has_completed_focus = ZKR_rosyjskie_prusy_mil_start has_completed_focus = ZKR_zakon_mil_start } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_equipment_to_stockpile = { type = ranged_equipment amount = 800 } add_equipment_to_stockpile = { type = support_equipment amount = 60 } add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes }
+		ai_will_do = { factor = 6 }
+	}
+	ZKR_dec_odsunac = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = ZKR } }
+		cost = 40
+		visible = { OR = { has_completed_focus = ZKR_odbudowa_malborka } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_stability = -0.02 add_to_variable = { ZKR_wplywy = -10 } ZKR_wplywy_przelicz = yes }
+		ai_will_do = { factor = 3 modifier = { factor = 4 check_variable = { ZKR_wplywy > 75 } } }
+	}
+	ZKR_dec_wzmocnic = {
+		icon = generic_political_discourse
+		allowed = { OR = { original_tag = ZKR } }
+		cost = 60
+		visible = { OR = { has_completed_focus = ZKR_kj_czystka has_completed_focus = ZKR_rp_prawo has_completed_focus = ZKR_ziemie_wokol } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { ZKR_wplywy = -15 } ZKR_wplywy_przelicz = yes }
+		ai_will_do = { factor = 3 modifier = { factor = 4 check_variable = { ZKR_wplywy > 80 } } }
+	}
+}

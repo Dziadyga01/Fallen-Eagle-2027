@@ -1,0 +1,76 @@
+add_namespace = lit
+
+country_event = {
+	id = lit.10
+	title = lit.10.t
+	desc = lit.10.d
+	picture = GFX_pl2027_ev081_rosja_2
+	is_triggered_only = yes
+	option = {
+		name = lit.10.a
+		ai_chance = { base = 1 modifier = { factor = 3 check_variable = { LIT_przesmyk < 15 } } }
+		give_military_access = ROS add_stability = -0.05 add_to_variable = { LIT_przesmyk = 15 } clamp_variable = { var = LIT_przesmyk min = 0 max = 100 } set_variable = { LIT_dm_a = LIT_przesmyk } divide_variable = { LIT_dm_a = 1000 } set_variable = { LIT_dm_b = LIT_przesmyk } subtract_from_variable = { LIT_dm_b = 50 } divide_variable = { LIT_dm_b = 1000 }
+	}
+	option = {
+		name = lit.10.b
+		ai_chance = { base = 3 }
+		add_war_support = 0.05 add_to_variable = { LIT_przesmyk = -5 } clamp_variable = { var = LIT_przesmyk min = 0 max = 100 } set_variable = { LIT_dm_a = LIT_przesmyk } divide_variable = { LIT_dm_a = 1000 } set_variable = { LIT_dm_b = LIT_przesmyk } subtract_from_variable = { LIT_dm_b = 50 } divide_variable = { LIT_dm_b = 1000 }
+	}
+}
+
+country_event = {
+	id = lit.20
+	title = lit.20.t
+	desc = lit.20.d
+	picture = GFX_pl2027_ev081_dyplomacja_3
+	is_triggered_only = yes
+	option = {
+		name = lit.20.a
+		ai_chance = { base = 2 modifier = { factor = 3 has_war = yes } modifier = { factor = 2 FROM = { strength_ratio = { tag = ROOT ratio > 2 } } } }
+		FROM = { puppet = ROOT }
+	}
+	option = {
+		name = lit.20.b
+		ai_chance = { base = 3 }
+		FROM = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } }
+	}
+}
+
+news_event = {
+	id = lit.30
+	title = lit.30.t
+	desc = lit.30.d
+	picture = GFX_pl2027_ev081_granica_1_news
+	is_triggered_only = yes
+	option = {
+		name = lit.30.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}
+
+news_event = {
+	id = lit.31
+	title = lit.31.t
+	desc = lit.31.d
+	picture = GFX_pl2027_ev081_dyplomacja_4_news
+	is_triggered_only = yes
+	option = {
+		name = lit.31.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}
+
+news_event = {
+	id = lit.32
+	title = lit.32.t
+	desc = lit.32.d
+	picture = GFX_pl2027_ev081_rosja_0_news
+	is_triggered_only = yes
+	option = {
+		name = lit.32.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}

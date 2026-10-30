@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+		WOS_wezel_grodzisk = {
+			picture = DU_WWD_region_stoleczny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.05 political_power_gain = 0.05 }
+		}
+		WOS_poludniowe_podejscia = {
+			picture = DU_WWD_region_stoleczny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.07 army_core_defence_factor = 0.05 }
+		}
+	}
+}

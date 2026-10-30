@@ -315,6 +315,72 @@ defined_text = {
         localization_key = national_bolshevism
     }
     text = {
+        trigger = { 
+            has_country_leader_ideology = koalicja_obywatelska
+        }
+        localization_key = koalicja_obywatelska
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = social_liberalism
+        }
+        localization_key = social_liberalism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = prawo_i_sprawiedliwosc
+        }
+        localization_key = prawo_i_sprawiedliwosc
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = christian_conservatism
+        }
+        localization_key = christian_conservatism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = patronage_populism
+        }
+        localization_key = patronage_populism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = managerial_conservatism
+        }
+        localization_key = managerial_conservatism
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = koalicja_obywatelska_rada
+        }
+        localization_key = koalicja_obywatelska_rada
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = prawo_i_sprawiedliwosc_rada
+        }
+        localization_key = prawo_i_sprawiedliwosc_rada
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = streamocracy
+        }
+        localization_key = streamocracy
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = authoritarian_democracy
+        }
+        localization_key = authoritarian_democracy
+    }
+    text = {
+        trigger = { 
+            has_country_leader_ideology = cyberocracy
+        }
+        localization_key = cyberocracy
+    }
+    text = {
 		localization_key = ideology_unknown
 	}
 }

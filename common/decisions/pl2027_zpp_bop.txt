@@ -1,0 +1,101 @@
+ZPP_bop_decyzje = {
+    ZPP_bop_reforma_urzedow = {
+        icon = generic_political_discourse
+        allowed = { original_tag = PRW }
+        cost = 35
+        days_re_enable = 40
+        complete_effect = {
+            add_power_balance_value = { id = ZPP_rownowaga_sil value = -0.12 tooltip_side = ZPP_bop_harcerze }
+            add_stability = -0.01
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_stability > 0.50 } }
+    }
+    ZPP_bop_kontrakty_ministerialne = {
+        icon = generic_political_discourse
+        allowed = { original_tag = PRW }
+        cost = 30
+        days_re_enable = 35
+        complete_effect = {
+            add_power_balance_value = { id = ZPP_rownowaga_sil value = -0.08 tooltip_side = ZPP_bop_harcerze }
+            add_political_power = 5
+        }
+        ai_will_do = { factor = 2 }
+    }
+    ZPP_bop_mianowania_terenowe = {
+        icon = generic_political_discourse
+        allowed = { original_tag = PRW }
+        cost = 35
+        days_re_enable = 40
+        complete_effect = {
+            add_power_balance_value = { id = ZPP_rownowaga_sil value = 0.12 tooltip_side = ZPP_bop_maslarze }
+            add_stability = 0.01
+        }
+        ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+    }
+    ZPP_bop_kontrola_spolek = {
+        icon = generic_political_discourse
+        allowed = { original_tag = PRW }
+        cost = 30
+        days_re_enable = 35
+        complete_effect = {
+            add_power_balance_value = { id = ZPP_rownowaga_sil value = 0.08 tooltip_side = ZPP_bop_maslarze }
+            add_stability = -0.01
+        }
+        ai_will_do = { factor = 2 }
+    }
+    # Centrowanie: kazdy z dwoch wariantow dostepny tylko przy przechyle.
+    ZPP_bop_pakt_z_harcerzami = {
+        icon = generic_political_discourse
+        allowed = { original_tag = PRW }
+        available = { power_balance_value = { id = ZPP_rownowaga_sil value > 0.10 } }
+        cost = 45
+        days_re_enable = 60
+        complete_effect = {
+            add_power_balance_value = { id = ZPP_rownowaga_sil value = -0.15 tooltip_side = ZPP_bop_harcerze }
+            add_stability = 0.02
+        }
+        ai_will_do = { factor = 4 modifier = { factor = 2 has_stability < 0.50 } }
+    }
+    ZPP_bop_pakt_z_maslarzami = {
+        icon = generic_political_discourse
+        allowed = { original_tag = PRW }
+        available = { power_balance_value = { id = ZPP_rownowaga_sil value < -0.10 } }
+        cost = 45
+        days_re_enable = 60
+        complete_effect = {
+            add_power_balance_value = { id = ZPP_rownowaga_sil value = 0.15 tooltip_side = ZPP_bop_maslarze }
+            add_stability = 0.02
+        }
+        ai_will_do = { factor = 4 modifier = { factor = 2 has_stability < 0.50 } }
+    }
+    ZPP_bop_stanowiska_kompromisowe = {
+        icon = generic_political_discourse
+        allowed = { original_tag = PRW }
+        available = { is_power_balance_in_range = { id = ZPP_rownowaga_sil range = ZPP_bop_kompromis } }
+        cost = 55
+        days_re_enable = 90
+        complete_effect = {
+            add_stability = 0.04
+            add_political_power = 10
+            set_country_flag = { flag = ZPP_bop_ugoda days = 90 }
+        }
+        ai_will_do = { factor = 3 }
+    }
+    ZPP_bop_przekaz_telewizyjny = {
+        icon = generic_political_discourse
+        allowed = { original_tag = PRW }
+        cost = 20
+        days_re_enable = 28
+        complete_effect = {
+            add_war_support = 0.01
+            if = {
+                limit = { power_balance_value = { id = ZPP_rownowaga_sil value > 0 } }
+                add_power_balance_value = { id = ZPP_rownowaga_sil value = 0.05 tooltip_side = ZPP_bop_maslarze }
+            }
+            else = {
+                add_power_balance_value = { id = ZPP_rownowaga_sil value = -0.05 tooltip_side = ZPP_bop_harcerze }
+            }
+        }
+        ai_will_do = { factor = 1 }
+    }
+}

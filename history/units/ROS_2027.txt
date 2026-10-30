@@ -242,13 +242,134 @@ units = {
 		division_template = "Pułk Rosgwardii"
 		start_experience_factor = 0.33
 	}
+	# --- 0.9.7: rezerwa strategiczna ---
+	division = {
+		name = "1. Brygada Zmechanizowana Rezerwy Strategicznej"
+		location = 2869
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "2. Brygada Zmechanizowana Rezerwy Strategicznej"
+		location = 4403
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.37
+	}
+	division = {
+		name = "3. Brygada Zmechanizowana Rezerwy Strategicznej"
+		location = 4277
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.44
+	}
+	division = {
+		name = "4. Brygada Zmechanizowana Rezerwy Strategicznej"
+		location = 9826
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.36
+	}
+	division = {
+		name = "5. Brygada Zmechanizowana Rezerwy Strategicznej"
+		location = 390
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.43
+	}
+	division = {
+		name = "6. Brygada Zmechanizowana Rezerwy Strategicznej"
+		location = 9669
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "7. Brygada Zmechanizowana Rezerwy Strategicznej"
+		location = 9677
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.42
+	}
+	division = {
+		name = "8. Brygada Zmechanizowana Rezerwy Strategicznej"
+		location = 2833
+		division_template = "Brygada Zmechanizowana"
+		start_experience_factor = 0.34
+	}
+	division = {
+		name = "1. Grupa Taktyczna Rezerwy Strategicznej"
+		location = 4417
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.41
+	}
+	division = {
+		name = "2. Grupa Taktyczna Rezerwy Strategicznej"
+		location = 2596
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.33
+	}
+	division = {
+		name = "3. Grupa Taktyczna Rezerwy Strategicznej"
+		location = 4399
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "4. Grupa Taktyczna Rezerwy Strategicznej"
+		location = 9675
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.32
+	}
+	division = {
+		name = "5. Grupa Taktyczna Rezerwy Strategicznej"
+		location = 9676
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.39
+	}
+	division = {
+		name = "6. Grupa Taktyczna Rezerwy Strategicznej"
+		location = 9545
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.31
+	}
+	division = {
+		name = "7. Grupa Taktyczna Rezerwy Strategicznej"
+		location = 2981
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.38
+	}
+	division = {
+		name = "8. Grupa Taktyczna Rezerwy Strategicznej"
+		location = 2289
+		division_template = "Batalionowa Grupa Taktyczna"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "1. Brygada Artylerii Rakietowej Rezerwy"
+		location = 4442
+		division_template = "Brygada Artylerii"
+		start_experience_factor = 0.37
+	}
+	division = {
+		name = "2. Brygada Artylerii Rakietowej Rezerwy"
+		location = 9815
+		division_template = "Brygada Artylerii"
+		start_experience_factor = 0.44
+	}
+	division = {
+		name = "1. Brygada Piechoty Morskiej Rezerwy"
+		location = 3096
+		division_template = "Brygada Piechoty Morskiej"
+		start_experience_factor = 0.36
+	}
+	division = {
+		name = "2. Brygada Piechoty Morskiej Rezerwy"
+		location = 3427
+		division_template = "Brygada Piechoty Morskiej"
+		start_experience_factor = 0.43
+	}
 }
 instant_effect = {
-	add_equipment_to_stockpile = { type = ranged_equipment amount = 18000 producer = ROS }
-	add_equipment_to_stockpile = { type = motorized_equipment amount = 1400 producer = ROS }
-	add_equipment_to_stockpile = { type = apc_equipment amount = 1400 producer = ROS }
-	add_equipment_to_stockpile = { type = armored_car_equipment amount = 520 producer = ROS }
-	add_equipment_to_stockpile = { type = light_artillery_equipment amount = 1400 producer = ROS }
-	add_equipment_to_stockpile = { type = support_equipment amount = 1600 producer = ROS }
-	add_equipment_to_stockpile = { type = inf_anti_tank_equipment amount = 600 producer = ROS }
+	add_equipment_to_stockpile = { type = ranged_equipment amount = 30000 producer = ROS }
+	add_equipment_to_stockpile = { type = motorized_equipment amount = 2300 producer = ROS }
+	add_equipment_to_stockpile = { type = apc_equipment amount = 2300 producer = ROS }
+	add_equipment_to_stockpile = { type = armored_car_equipment amount = 870 producer = ROS }
+	add_equipment_to_stockpile = { type = light_artillery_equipment amount = 2300 producer = ROS }
+	add_equipment_to_stockpile = { type = support_equipment amount = 2600 producer = ROS }
+	add_equipment_to_stockpile = { type = inf_anti_tank_equipment amount = 1000 producer = ROS }
 }

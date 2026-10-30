@@ -11,7 +11,7 @@ country_event = {
 	option = {
 		name = mal.1.a
 		ai_chance = { factor = 10 modifier = { factor = 0.3 has_war = yes } modifier = { factor = 2 has_opinion = { target = FROM value > 0 } } }
-		give_guarantee = FROM add_opinion_modifier = { target = FROM modifier = MAL_gwarancja_op } FROM = { add_opinion_modifier = { target = ROOT modifier = MAL_gwarancja_op } }
+		if = { limit = { FROM = { PL2027_ideologia_jak_PREV = yes } } give_guarantee = FROM } add_opinion_modifier = { target = FROM modifier = MAL_gwarancja_op } FROM = { add_opinion_modifier = { target = ROOT modifier = MAL_gwarancja_op } }
 	}
 	option = {
 		name = mal.1.b

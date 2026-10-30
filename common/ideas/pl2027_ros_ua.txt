@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		ROS_zaplecze_poza_mapa = {
+			picture = DU_ROS_zaplecze_imperium
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_lack_of_resource_penalty_factor = -0.75 monthly_population = 0.15 }
+		}
+		ROS_idea_ua_gospodarka = {
+			picture = DU_ROS_koszty_wojny
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_arms_factory_factor = 0.15 consumer_goods_factor = 0.05 industrial_capacity_factory = 0.05 }
+		}
+		ROS_idea_ua_linia = {
+			picture = DU_ROS_obrona_pozycji
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.1 }
+		}
+		ROS_idea_ua_zwyciestwo = {
+			picture = DU_ROS_zwyciestwo_za_wszelka_cene
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_attack_factor = 0.08 experience_gain_army_factor = 0.15 war_support_factor = 0.05 }
+		}
+		ROS_idea_ua_zamrozenie = {
+			picture = DU_ROS_pokoj_negocjowany
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 army_defence_factor = 0.05 }
+		}
+		ROS_idea_ua_pokoj = {
+			picture = DU_ROS_pokoj_negocjowany
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 consumer_goods_factor = -0.05 war_support_factor = -0.1 }
+		}
+	}
+}

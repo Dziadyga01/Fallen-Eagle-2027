@@ -1,0 +1,29 @@
+KNM_panel = {
+	KNM_dec_podatki = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = NNA has_variable = NNA_wzrost }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { NNA_wzrost = 10 } clamp_variable = { var = NNA_wzrost min = 0 max = 100 } add_to_variable = { NNA_nierownosci = 6 } clamp_variable = { var = NNA_nierownosci min = 0 max = 100 } set_variable = { KNM_dm_0 = NNA_wzrost } subtract_from_variable = { KNM_dm_0 = 30 } divide_variable = { KNM_dm_0 = 400 } set_variable = { KNM_dm_1 = NNA_nierownosci } subtract_from_variable = { KNM_dm_1 = 45 } divide_variable = { KNM_dm_1 = -700 } }
+		ai_will_do = { base = 2 modifier = { factor = 0 check_variable = { NNA_nierownosci > 60 } } }
+	}
+	KNM_dec_deregulacja = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = NNA has_variable = NNA_wzrost }
+		available = { always = yes }
+		days_re_enable = 180
+		complete_effect = { add_to_variable = { NNA_wzrost = 12 } clamp_variable = { var = NNA_wzrost min = 0 max = 100 } add_to_variable = { NNA_nierownosci = 8 } clamp_variable = { var = NNA_nierownosci min = 0 max = 100 } random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } set_variable = { KNM_dm_0 = NNA_wzrost } subtract_from_variable = { KNM_dm_0 = 30 } divide_variable = { KNM_dm_0 = 400 } set_variable = { KNM_dm_1 = NNA_nierownosci } subtract_from_variable = { KNM_dm_1 = 45 } divide_variable = { KNM_dm_1 = -700 } }
+		ai_will_do = { base = 2 modifier = { factor = 0 check_variable = { NNA_nierownosci > 55 } } }
+	}
+	KNM_dec_oslona = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { original_tag = NNA has_variable = NNA_wzrost }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { NNA_nierownosci = -15 } clamp_variable = { var = NNA_nierownosci min = 0 max = 100 } add_to_variable = { NNA_wzrost = -4 } clamp_variable = { var = NNA_wzrost min = 0 max = 100 } set_variable = { KNM_dm_0 = NNA_wzrost } subtract_from_variable = { KNM_dm_0 = 30 } divide_variable = { KNM_dm_0 = 400 } set_variable = { KNM_dm_1 = NNA_nierownosci } subtract_from_variable = { KNM_dm_1 = 45 } divide_variable = { KNM_dm_1 = -700 } }
+		ai_will_do = { base = 1 modifier = { factor = 6 check_variable = { NNA_nierownosci > 55 } } modifier = { factor = 0.1 check_variable = { NNA_nierownosci < 30 } } }
+	}
+}

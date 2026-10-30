@@ -1,0 +1,25 @@
+# The Fallen Eagle 2027 – AI nowych mechanik (0.9.18): kryzys wskaźnika przesuwa gospodarkę na wojsko albo na odbudowę
+LIT_ai_przesmyk = {
+	allowed = { original_tag = LIT }
+	enable = { check_variable = { LIT_przesmyk < 35 } }
+	abort = { check_variable = { LIT_przesmyk > 50 } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 20 }
+}
+CZE_ai_pogranicze = {
+	allowed = { original_tag = CZE }
+	enable = { check_variable = { CZE_pogr < 30 } }
+	abort = { check_variable = { CZE_pogr > 50 } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 15 }
+}
+UKR_ai_wojna = {
+	allowed = { original_tag = UKR }
+	enable = { country_exists = ROS ROS = { has_country_flag = ROS_etap_ukraina } NOT = { has_global_flag = ROS_ukraina_koniec } }
+	abort = { has_global_flag = ROS_ukraina_koniec }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = 40 }
+}
+WMG_ai_strajk = {
+	allowed = { original_tag = WMG }
+	enable = { check_variable = { WMG_napiecie > 60 } }
+	abort = { check_variable = { WMG_napiecie < 40 } }
+	ai_strategy = { type = added_military_to_civilian_factory_ratio value = -15 }
+}

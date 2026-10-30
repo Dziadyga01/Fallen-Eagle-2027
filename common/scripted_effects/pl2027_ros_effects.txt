@@ -86,9 +86,13 @@ ROS_start_wojny = {
 	if = { limit = { country_exists = WMZ } WMZ = { capital_scope = { set_state_flag = ROS_kluczowy } } }
 	if = { limit = { country_exists = MAZ } MAZ = { capital_scope = { set_state_flag = ROS_kluczowy } } }
 	if = { limit = { country_exists = SUW } SUW = { capital_scope = { set_state_flag = ROS_kluczowy } } }
+	# 0.9.11: jeden fokus = jedno państwo; Sojusz Mazurski powstaje przed atakiem, więc sojusznicy bronią się razem z celem
+	ROS_sojusz_mazurski = yes
+	set_country_flag = ROS_inwazja_rozpoczeta
 	if = { limit = { country_exists = WMZ WMZ = { is_subject = no } NOT = { has_war_with = WMZ } } declare_war_on = { target = WMZ type = annex_everything } }
-	if = { limit = { country_exists = MAZ MAZ = { is_subject = no } NOT = { has_war_with = MAZ } } declare_war_on = { target = MAZ type = annex_everything } }
-	if = { limit = { country_exists = SUW SUW = { is_subject = no } NOT = { has_war_with = SUW } } declare_war_on = { target = SUW type = annex_everything } }
+	else_if = { limit = { country_exists = SUW SUW = { is_subject = no } NOT = { has_war_with = SUW } } declare_war_on = { target = SUW type = annex_everything } }
+	else_if = { limit = { country_exists = MAZ MAZ = { is_subject = no } NOT = { has_war_with = MAZ } } declare_war_on = { target = MAZ type = annex_everything } }
+	custom_effect_tooltip = WOS_tt_71
 	add_ai_strategy = { type = conquer id = WMZ value = 200 }
 	add_ai_strategy = { type = front_unit_request tag = WMZ value = 80 }
 	add_ai_strategy = { type = conquer id = MAZ value = 200 }
@@ -98,7 +102,6 @@ ROS_start_wojny = {
 	ROS_oznacz_wartosc = yes
 	capital_scope = { create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Batalionowa Grupa Taktyczna\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Brygada Zmechanizowana\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Brygada Zmechanizowana\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Brygada Zmechanizowana\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Brygada Artylerii\" start_experience_factor = 0.4" owner = ROS } create_unit = { division = "division_template = \"Brygada Artylerii\" start_experience_factor = 0.4" owner = ROS } }
 	if = { limit = { country_exists = BLR } BLR = { give_military_access = ROS } }
-	ROS_sojusz_mazurski = yes
 	every_country = { limit = { OR = { tag = WMZ tag = MAZ tag = SUW } exists = yes } country_event = { id = ros.1 } }
 	news_event = { id = ros.2 }
 	if = { limit = { country_exists = ZKR } ZKR = { country_event = { id = zkr.10 days = 2 } } }

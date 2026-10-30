@@ -1,0 +1,58 @@
+add_namespace = ukw
+
+country_event = {
+	id = ukw.10
+	title = ukw.10.t
+	desc = ukw.10.d
+	picture = GFX_pl2027_ev081_front_5
+	is_triggered_only = yes
+	option = {
+		name = ukw.10.a
+		ai_chance = { base = 1 }
+		add_stability = -0.03 add_to_variable = { UKR_zasoby = 10 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 }
+	}
+}
+
+country_event = {
+	id = ukw.20
+	title = ukw.20.t
+	desc = ukw.20.d
+	picture = GFX_pl2027_ev081_dyplomacja_0
+	is_triggered_only = yes
+	option = {
+		name = ukw.20.a
+		ai_chance = { base = 3 modifier = { factor = 2 has_global_flag = GER_kurs_tarcza } }
+		add_political_power = -40 FROM = { add_to_variable = { UKR_zasoby = 20 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 } }
+	}
+	option = {
+		name = ukw.20.b
+		ai_chance = { base = 1 }
+		FROM = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } }
+	}
+}
+
+news_event = {
+	id = ukw.30
+	title = ukw.30.t
+	desc = ukw.30.d
+	picture = GFX_pl2027_ev081_front_3_news
+	is_triggered_only = yes
+	option = {
+		name = ukw.30.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}
+
+news_event = {
+	id = ukw.31
+	title = ukw.31.t
+	desc = ukw.31.d
+	picture = GFX_pl2027_ev081_pokoj_4_news
+	is_triggered_only = yes
+	option = {
+		name = ukw.31.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}

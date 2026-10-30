@@ -1,0 +1,3 @@
+on_actions = {
+	on_monthly_GER = { effect = { if = { limit = { has_global_flag = IVRP_proklamowana } IVR_miesiac = yes } } }
+}

@@ -1,0 +1,8 @@
+on_actions = {
+	on_startup = {
+		effect = { if = { limit = { country_exists = GER } GER = { every_country = { limit = { is_subject_of = GER OR = { original_tag = CZE original_tag = LIT original_tag = PMN original_tag = SLS original_tag = PSN } NOT = { has_autonomy_state = autonomy_tfe_eurostaat } } GER = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_eurostaat freedom_level = 0.9 } } } } GER = { every_country = { limit = { is_subject_of = GER OR = { original_tag = CZE original_tag = LIT original_tag = PMN original_tag = SLS original_tag = PSN } compare_autonomy_progress_ratio < 0.5 } add_autonomy_ratio = { value = 0.05 localization = EUR_autonomia_ratio } } } } }
+	}
+	on_monthly_GER = {
+		effect = { GER = { every_country = { limit = { is_subject_of = GER OR = { original_tag = CZE original_tag = LIT original_tag = PMN original_tag = SLS original_tag = PSN } NOT = { has_autonomy_state = autonomy_tfe_eurostaat } } GER = { set_autonomy = { target = PREV autonomous_state = autonomy_tfe_eurostaat freedom_level = 0.9 } } } } GER = { every_country = { limit = { is_subject_of = GER OR = { original_tag = CZE original_tag = LIT original_tag = PMN original_tag = SLS original_tag = PSN } compare_autonomy_progress_ratio < 0.5 } add_autonomy_ratio = { value = 0.05 localization = EUR_autonomia_ratio } } } }
+	}
+}

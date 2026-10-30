@@ -1,0 +1,6 @@
+FKP_panel = {
+	icon = generic_form_nation
+	allowed = { always = yes }
+	visible = { OR = { original_tag = TRN original_tag = BYD } NOT = { has_global_flag = PL2027_prolog } OR = { NOT = { has_global_flag = FKP_utworzona } has_country_flag = FKP_zalozyciel } }
+	priority = 60
+}

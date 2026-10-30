@@ -1,0 +1,158 @@
+guiTypes = {
+    containerWindowType = {
+        name = "FEUKR_MapWindow"
+        position = { x = 0 y = 0 }
+        size = { width = 502 height = 398 }
+        moveable = no
+        iconType = { name = "feukr_background" spriteType = "GFX_FEUKR_BG" position = { x = 0 y = 0 } }
+        iconType = { name = "rg_VOL_t0" spriteType = "GFX_FEUKR_VOL_t0" position = { x = 64 y = 25 } }
+        iconType = { name = "rg_VOL_t1" spriteType = "GFX_FEUKR_VOL_t1" position = { x = 64 y = 25 } }
+        iconType = { name = "rg_VOL_t2" spriteType = "GFX_FEUKR_VOL_t2" position = { x = 64 y = 25 } }
+        iconType = { name = "rg_VOL_t3" spriteType = "GFX_FEUKR_VOL_t3" position = { x = 64 y = 25 } }
+        iconType = { name = "rg_VOL_t4" spriteType = "GFX_FEUKR_VOL_t4" position = { x = 64 y = 25 } }
+        iconType = { name = "rg_RIV_t0" spriteType = "GFX_FEUKR_RIV_t0" position = { x = 100 y = 26 } }
+        iconType = { name = "rg_RIV_t1" spriteType = "GFX_FEUKR_RIV_t1" position = { x = 100 y = 26 } }
+        iconType = { name = "rg_RIV_t2" spriteType = "GFX_FEUKR_RIV_t2" position = { x = 100 y = 26 } }
+        iconType = { name = "rg_RIV_t3" spriteType = "GFX_FEUKR_RIV_t3" position = { x = 100 y = 26 } }
+        iconType = { name = "rg_RIV_t4" spriteType = "GFX_FEUKR_RIV_t4" position = { x = 100 y = 26 } }
+        iconType = { name = "rg_LVI_t0" spriteType = "GFX_FEUKR_LVI_t0" position = { x = 42 y = 64 } }
+        iconType = { name = "rg_LVI_t1" spriteType = "GFX_FEUKR_LVI_t1" position = { x = 42 y = 64 } }
+        iconType = { name = "rg_LVI_t2" spriteType = "GFX_FEUKR_LVI_t2" position = { x = 42 y = 64 } }
+        iconType = { name = "rg_LVI_t3" spriteType = "GFX_FEUKR_LVI_t3" position = { x = 42 y = 64 } }
+        iconType = { name = "rg_LVI_t4" spriteType = "GFX_FEUKR_LVI_t4" position = { x = 42 y = 64 } }
+        iconType = { name = "rg_ZAK_t0" spriteType = "GFX_FEUKR_ZAK_t0" position = { x = 28 y = 112 } }
+        iconType = { name = "rg_ZAK_t1" spriteType = "GFX_FEUKR_ZAK_t1" position = { x = 28 y = 112 } }
+        iconType = { name = "rg_ZAK_t2" spriteType = "GFX_FEUKR_ZAK_t2" position = { x = 28 y = 112 } }
+        iconType = { name = "rg_ZAK_t3" spriteType = "GFX_FEUKR_ZAK_t3" position = { x = 28 y = 112 } }
+        iconType = { name = "rg_ZAK_t4" spriteType = "GFX_FEUKR_ZAK_t4" position = { x = 28 y = 112 } }
+        iconType = { name = "rg_IVA_t0" spriteType = "GFX_FEUKR_IVA_t0" position = { x = 63 y = 98 } }
+        iconType = { name = "rg_IVA_t1" spriteType = "GFX_FEUKR_IVA_t1" position = { x = 63 y = 98 } }
+        iconType = { name = "rg_IVA_t2" spriteType = "GFX_FEUKR_IVA_t2" position = { x = 63 y = 98 } }
+        iconType = { name = "rg_IVA_t3" spriteType = "GFX_FEUKR_IVA_t3" position = { x = 63 y = 98 } }
+        iconType = { name = "rg_IVA_t4" spriteType = "GFX_FEUKR_IVA_t4" position = { x = 63 y = 98 } }
+        iconType = { name = "rg_TER_t0" spriteType = "GFX_FEUKR_TER_t0" position = { x = 92 y = 76 } }
+        iconType = { name = "rg_TER_t1" spriteType = "GFX_FEUKR_TER_t1" position = { x = 92 y = 76 } }
+        iconType = { name = "rg_TER_t2" spriteType = "GFX_FEUKR_TER_t2" position = { x = 92 y = 76 } }
+        iconType = { name = "rg_TER_t3" spriteType = "GFX_FEUKR_TER_t3" position = { x = 92 y = 76 } }
+        iconType = { name = "rg_TER_t4" spriteType = "GFX_FEUKR_TER_t4" position = { x = 92 y = 76 } }
+        iconType = { name = "rg_CHE_t0" spriteType = "GFX_FEUKR_CHE_t0" position = { x = 97 y = 125 } }
+        iconType = { name = "rg_CHE_t1" spriteType = "GFX_FEUKR_CHE_t1" position = { x = 97 y = 125 } }
+        iconType = { name = "rg_CHE_t2" spriteType = "GFX_FEUKR_CHE_t2" position = { x = 97 y = 125 } }
+        iconType = { name = "rg_CHE_t3" spriteType = "GFX_FEUKR_CHE_t3" position = { x = 97 y = 125 } }
+        iconType = { name = "rg_CHE_t4" spriteType = "GFX_FEUKR_CHE_t4" position = { x = 97 y = 125 } }
+        iconType = { name = "rg_KHM_t0" spriteType = "GFX_FEUKR_KHM_t0" position = { x = 127 y = 68 } }
+        iconType = { name = "rg_KHM_t1" spriteType = "GFX_FEUKR_KHM_t1" position = { x = 127 y = 68 } }
+        iconType = { name = "rg_KHM_t2" spriteType = "GFX_FEUKR_KHM_t2" position = { x = 127 y = 68 } }
+        iconType = { name = "rg_KHM_t3" spriteType = "GFX_FEUKR_KHM_t3" position = { x = 127 y = 68 } }
+        iconType = { name = "rg_KHM_t4" spriteType = "GFX_FEUKR_KHM_t4" position = { x = 127 y = 68 } }
+        iconType = { name = "rg_ZHY_t0" spriteType = "GFX_FEUKR_ZHY_t0" position = { x = 153 y = 34 } }
+        iconType = { name = "rg_ZHY_t1" spriteType = "GFX_FEUKR_ZHY_t1" position = { x = 153 y = 34 } }
+        iconType = { name = "rg_ZHY_t2" spriteType = "GFX_FEUKR_ZHY_t2" position = { x = 153 y = 34 } }
+        iconType = { name = "rg_ZHY_t3" spriteType = "GFX_FEUKR_ZHY_t3" position = { x = 153 y = 34 } }
+        iconType = { name = "rg_ZHY_t4" spriteType = "GFX_FEUKR_ZHY_t4" position = { x = 153 y = 34 } }
+        iconType = { name = "rg_VIN_t0" spriteType = "GFX_FEUKR_VIN_t0" position = { x = 157 y = 88 } }
+        iconType = { name = "rg_VIN_t1" spriteType = "GFX_FEUKR_VIN_t1" position = { x = 157 y = 88 } }
+        iconType = { name = "rg_VIN_t2" spriteType = "GFX_FEUKR_VIN_t2" position = { x = 157 y = 88 } }
+        iconType = { name = "rg_VIN_t3" spriteType = "GFX_FEUKR_VIN_t3" position = { x = 157 y = 88 } }
+        iconType = { name = "rg_VIN_t4" spriteType = "GFX_FEUKR_VIN_t4" position = { x = 157 y = 88 } }
+        iconType = { name = "rg_KYI_t0" spriteType = "GFX_FEUKR_KYI_t0" position = { x = 204 y = 38 } }
+        iconType = { name = "rg_KYI_t1" spriteType = "GFX_FEUKR_KYI_t1" position = { x = 204 y = 38 } }
+        iconType = { name = "rg_KYI_t2" spriteType = "GFX_FEUKR_KYI_t2" position = { x = 204 y = 38 } }
+        iconType = { name = "rg_KYI_t3" spriteType = "GFX_FEUKR_KYI_t3" position = { x = 204 y = 38 } }
+        iconType = { name = "rg_KYI_t4" spriteType = "GFX_FEUKR_KYI_t4" position = { x = 204 y = 38 } }
+        iconType = { name = "rg_CHR_t0" spriteType = "GFX_FEUKR_CHR_t0" position = { x = 234 y = 12 } }
+        iconType = { name = "rg_CHR_t1" spriteType = "GFX_FEUKR_CHR_t1" position = { x = 234 y = 12 } }
+        iconType = { name = "rg_CHR_t2" spriteType = "GFX_FEUKR_CHR_t2" position = { x = 234 y = 12 } }
+        iconType = { name = "rg_CHR_t3" spriteType = "GFX_FEUKR_CHR_t3" position = { x = 234 y = 12 } }
+        iconType = { name = "rg_CHR_t4" spriteType = "GFX_FEUKR_CHR_t4" position = { x = 234 y = 12 } }
+        iconType = { name = "rg_SUM_t0" spriteType = "GFX_FEUKR_SUM_t0" position = { x = 297 y = 12 } }
+        iconType = { name = "rg_SUM_t1" spriteType = "GFX_FEUKR_SUM_t1" position = { x = 297 y = 12 } }
+        iconType = { name = "rg_SUM_t2" spriteType = "GFX_FEUKR_SUM_t2" position = { x = 297 y = 12 } }
+        iconType = { name = "rg_SUM_t3" spriteType = "GFX_FEUKR_SUM_t3" position = { x = 297 y = 12 } }
+        iconType = { name = "rg_SUM_t4" spriteType = "GFX_FEUKR_SUM_t4" position = { x = 297 y = 12 } }
+        iconType = { name = "rg_KHA_t0" spriteType = "GFX_FEUKR_KHA_t0" position = { x = 341 y = 71 } }
+        iconType = { name = "rg_KHA_t1" spriteType = "GFX_FEUKR_KHA_t1" position = { x = 341 y = 71 } }
+        iconType = { name = "rg_KHA_t2" spriteType = "GFX_FEUKR_KHA_t2" position = { x = 341 y = 71 } }
+        iconType = { name = "rg_KHA_t3" spriteType = "GFX_FEUKR_KHA_t3" position = { x = 341 y = 71 } }
+        iconType = { name = "rg_KHA_t4" spriteType = "GFX_FEUKR_KHA_t4" position = { x = 341 y = 71 } }
+        iconType = { name = "rg_POL_t0" spriteType = "GFX_FEUKR_POL_t0" position = { x = 273 y = 67 } }
+        iconType = { name = "rg_POL_t1" spriteType = "GFX_FEUKR_POL_t1" position = { x = 273 y = 67 } }
+        iconType = { name = "rg_POL_t2" spriteType = "GFX_FEUKR_POL_t2" position = { x = 273 y = 67 } }
+        iconType = { name = "rg_POL_t3" spriteType = "GFX_FEUKR_POL_t3" position = { x = 273 y = 67 } }
+        iconType = { name = "rg_POL_t4" spriteType = "GFX_FEUKR_POL_t4" position = { x = 273 y = 67 } }
+        iconType = { name = "rg_CKA_t0" spriteType = "GFX_FEUKR_CKA_t0" position = { x = 213 y = 76 } }
+        iconType = { name = "rg_CKA_t1" spriteType = "GFX_FEUKR_CKA_t1" position = { x = 213 y = 76 } }
+        iconType = { name = "rg_CKA_t2" spriteType = "GFX_FEUKR_CKA_t2" position = { x = 213 y = 76 } }
+        iconType = { name = "rg_CKA_t3" spriteType = "GFX_FEUKR_CKA_t3" position = { x = 213 y = 76 } }
+        iconType = { name = "rg_CKA_t4" spriteType = "GFX_FEUKR_CKA_t4" position = { x = 213 y = 76 } }
+        iconType = { name = "rg_KIR_t0" spriteType = "GFX_FEUKR_KIR_t0" position = { x = 215 y = 107 } }
+        iconType = { name = "rg_KIR_t1" spriteType = "GFX_FEUKR_KIR_t1" position = { x = 215 y = 107 } }
+        iconType = { name = "rg_KIR_t2" spriteType = "GFX_FEUKR_KIR_t2" position = { x = 215 y = 107 } }
+        iconType = { name = "rg_KIR_t3" spriteType = "GFX_FEUKR_KIR_t3" position = { x = 215 y = 107 } }
+        iconType = { name = "rg_KIR_t4" spriteType = "GFX_FEUKR_KIR_t4" position = { x = 215 y = 107 } }
+        iconType = { name = "rg_DNI_t0" spriteType = "GFX_FEUKR_DNI_t0" position = { x = 295 y = 109 } }
+        iconType = { name = "rg_DNI_t1" spriteType = "GFX_FEUKR_DNI_t1" position = { x = 295 y = 109 } }
+        iconType = { name = "rg_DNI_t2" spriteType = "GFX_FEUKR_DNI_t2" position = { x = 295 y = 109 } }
+        iconType = { name = "rg_DNI_t3" spriteType = "GFX_FEUKR_DNI_t3" position = { x = 295 y = 109 } }
+        iconType = { name = "rg_DNI_t4" spriteType = "GFX_FEUKR_DNI_t4" position = { x = 295 y = 109 } }
+        iconType = { name = "rg_DON_t0" spriteType = "GFX_FEUKR_DON_t0" position = { x = 383 y = 107 } }
+        iconType = { name = "rg_DON_t1" spriteType = "GFX_FEUKR_DON_t1" position = { x = 383 y = 107 } }
+        iconType = { name = "rg_DON_t2" spriteType = "GFX_FEUKR_DON_t2" position = { x = 383 y = 107 } }
+        iconType = { name = "rg_DON_t3" spriteType = "GFX_FEUKR_DON_t3" position = { x = 383 y = 107 } }
+        iconType = { name = "rg_DON_t4" spriteType = "GFX_FEUKR_DON_t4" position = { x = 383 y = 107 } }
+        iconType = { name = "rg_LUH_t0" spriteType = "GFX_FEUKR_LUH_t0" position = { x = 414 y = 82 } }
+        iconType = { name = "rg_LUH_t1" spriteType = "GFX_FEUKR_LUH_t1" position = { x = 414 y = 82 } }
+        iconType = { name = "rg_LUH_t2" spriteType = "GFX_FEUKR_LUH_t2" position = { x = 414 y = 82 } }
+        iconType = { name = "rg_LUH_t3" spriteType = "GFX_FEUKR_LUH_t3" position = { x = 414 y = 82 } }
+        iconType = { name = "rg_LUH_t4" spriteType = "GFX_FEUKR_LUH_t4" position = { x = 414 y = 82 } }
+        iconType = { name = "rg_ZAP_t0" spriteType = "GFX_FEUKR_ZAP_t0" position = { x = 325 y = 142 } }
+        iconType = { name = "rg_ZAP_t1" spriteType = "GFX_FEUKR_ZAP_t1" position = { x = 325 y = 142 } }
+        iconType = { name = "rg_ZAP_t2" spriteType = "GFX_FEUKR_ZAP_t2" position = { x = 325 y = 142 } }
+        iconType = { name = "rg_ZAP_t3" spriteType = "GFX_FEUKR_ZAP_t3" position = { x = 325 y = 142 } }
+        iconType = { name = "rg_ZAP_t4" spriteType = "GFX_FEUKR_ZAP_t4" position = { x = 325 y = 142 } }
+        iconType = { name = "rg_KHE_t0" spriteType = "GFX_FEUKR_KHE_t0" position = { x = 258 y = 158 } }
+        iconType = { name = "rg_KHE_t1" spriteType = "GFX_FEUKR_KHE_t1" position = { x = 258 y = 158 } }
+        iconType = { name = "rg_KHE_t2" spriteType = "GFX_FEUKR_KHE_t2" position = { x = 258 y = 158 } }
+        iconType = { name = "rg_KHE_t3" spriteType = "GFX_FEUKR_KHE_t3" position = { x = 258 y = 158 } }
+        iconType = { name = "rg_KHE_t4" spriteType = "GFX_FEUKR_KHE_t4" position = { x = 258 y = 158 } }
+        iconType = { name = "rg_MYK_t0" spriteType = "GFX_FEUKR_MYK_t0" position = { x = 227 y = 138 } }
+        iconType = { name = "rg_MYK_t1" spriteType = "GFX_FEUKR_MYK_t1" position = { x = 227 y = 138 } }
+        iconType = { name = "rg_MYK_t2" spriteType = "GFX_FEUKR_MYK_t2" position = { x = 227 y = 138 } }
+        iconType = { name = "rg_MYK_t3" spriteType = "GFX_FEUKR_MYK_t3" position = { x = 227 y = 138 } }
+        iconType = { name = "rg_MYK_t4" spriteType = "GFX_FEUKR_MYK_t4" position = { x = 227 y = 138 } }
+        iconType = { name = "rg_ODE_t0" spriteType = "GFX_FEUKR_ODE_t0" position = { x = 177 y = 141 } }
+        iconType = { name = "rg_ODE_t1" spriteType = "GFX_FEUKR_ODE_t1" position = { x = 177 y = 141 } }
+        iconType = { name = "rg_ODE_t2" spriteType = "GFX_FEUKR_ODE_t2" position = { x = 177 y = 141 } }
+        iconType = { name = "rg_ODE_t3" spriteType = "GFX_FEUKR_ODE_t3" position = { x = 177 y = 141 } }
+        iconType = { name = "rg_ODE_t4" spriteType = "GFX_FEUKR_ODE_t4" position = { x = 177 y = 141 } }
+        buttonType = { name = "pin_VOL" spriteType = "GFX_FEUKR_PIN" position = { x = 88 y = 43 } pdx_tooltip = "FEUKR_pin_VOL_tt" }
+        buttonType = { name = "pin_RIV" spriteType = "GFX_FEUKR_PIN" position = { x = 126 y = 48 } pdx_tooltip = "FEUKR_pin_RIV_tt" }
+        buttonType = { name = "pin_LVI" spriteType = "GFX_FEUKR_PIN" position = { x = 69 y = 86 } pdx_tooltip = "FEUKR_pin_LVI_tt" }
+        buttonType = { name = "pin_ZAK" spriteType = "GFX_FEUKR_PIN" position = { x = 52 y = 123 } pdx_tooltip = "FEUKR_pin_ZAK_tt" }
+        buttonType = { name = "pin_IVA" spriteType = "GFX_FEUKR_PIN" position = { x = 82 y = 119 } pdx_tooltip = "FEUKR_pin_IVA_tt" }
+        buttonType = { name = "pin_TER" spriteType = "GFX_FEUKR_PIN" position = { x = 105 y = 96 } pdx_tooltip = "FEUKR_pin_TER_tt" }
+        buttonType = { name = "pin_CHE" spriteType = "GFX_FEUKR_PIN" position = { x = 121 y = 132 } pdx_tooltip = "FEUKR_pin_CHE_tt" }
+        buttonType = { name = "pin_KHM" spriteType = "GFX_FEUKR_PIN" position = { x = 142 y = 93 } pdx_tooltip = "FEUKR_pin_KHM_tt" }
+        buttonType = { name = "pin_ZHY" spriteType = "GFX_FEUKR_PIN" position = { x = 177 y = 58 } pdx_tooltip = "FEUKR_pin_ZHY_tt" }
+        buttonType = { name = "pin_VIN" spriteType = "GFX_FEUKR_PIN" position = { x = 183 y = 109 } pdx_tooltip = "FEUKR_pin_VIN_tt" }
+        buttonType = { name = "pin_KYI" spriteType = "GFX_FEUKR_PIN" position = { x = 232 y = 67 } pdx_tooltip = "FEUKR_pin_KYI_tt" }
+        buttonType = { name = "pin_CHR" spriteType = "GFX_FEUKR_PIN" position = { x = 264 y = 36 } pdx_tooltip = "FEUKR_pin_CHR_tt" }
+        buttonType = { name = "pin_SUM" spriteType = "GFX_FEUKR_PIN" position = { x = 323 y = 39 } pdx_tooltip = "FEUKR_pin_SUM_tt" }
+        buttonType = { name = "pin_KHA" spriteType = "GFX_FEUKR_PIN" position = { x = 374 y = 93 } pdx_tooltip = "FEUKR_pin_KHA_tt" }
+        buttonType = { name = "pin_POL" spriteType = "GFX_FEUKR_PIN" position = { x = 308 y = 88 } pdx_tooltip = "FEUKR_pin_POL_tt" }
+        buttonType = { name = "pin_CKA" spriteType = "GFX_FEUKR_PIN" position = { x = 246 y = 96 } pdx_tooltip = "FEUKR_pin_CKA_tt" }
+        buttonType = { name = "pin_KIR" spriteType = "GFX_FEUKR_PIN" position = { x = 260 y = 122 } pdx_tooltip = "FEUKR_pin_KIR_tt" }
+        buttonType = { name = "pin_DNI" spriteType = "GFX_FEUKR_PIN" position = { x = 336 y = 127 } pdx_tooltip = "FEUKR_pin_DNI_tt" }
+        buttonType = { name = "pin_DON" spriteType = "GFX_FEUKR_PIN" position = { x = 406 y = 136 } pdx_tooltip = "FEUKR_pin_DON_tt" }
+        buttonType = { name = "pin_LUH" spriteType = "GFX_FEUKR_PIN" position = { x = 435 y = 109 } pdx_tooltip = "FEUKR_pin_LUH_tt" }
+        buttonType = { name = "pin_ZAP" spriteType = "GFX_FEUKR_PIN" position = { x = 355 y = 163 } pdx_tooltip = "FEUKR_pin_ZAP_tt" }
+        buttonType = { name = "pin_KHE" spriteType = "GFX_FEUKR_PIN" position = { x = 299 y = 179 } pdx_tooltip = "FEUKR_pin_KHE_tt" }
+        buttonType = { name = "pin_MYK" spriteType = "GFX_FEUKR_PIN" position = { x = 255 y = 156 } pdx_tooltip = "FEUKR_pin_MYK_tt" }
+        buttonType = { name = "pin_ODE" spriteType = "GFX_FEUKR_PIN" position = { x = 209 y = 179 } pdx_tooltip = "FEUKR_pin_ODE_tt" }
+        instantTextBoxType = { name = "feukr_selected" position = { x = 10 y = 304 } maxWidth = 295 maxHeight = 24 text = "FEUKR_SELECTED_DISPLAY" font = "hoi_16mbs" format = left }
+        instantTextBoxType = { name = "feukr_total" position = { x = 314 y = 304 } maxWidth = 180 maxHeight = 24 text = "FEUKR_TOTAL_DISPLAY" font = "hoi_16mbs" format = right }
+        buttonType = { name = "op_tiny" spriteType = "GFX_FEUKR_BTN" position = { x = 8 y = 342 } buttonText = "FEUKR_TINY" buttonFont = "hoi_16mbs" pdx_tooltip = "FEUKR_TINY_TT" }
+        buttonType = { name = "op_small" spriteType = "GFX_FEUKR_BTN" position = { x = 179 y = 342 } buttonText = "FEUKR_SMALL" buttonFont = "hoi_16mbs" pdx_tooltip = "FEUKR_SMALL_TT" }
+        buttonType = { name = "op_huge" spriteType = "GFX_FEUKR_BTN" position = { x = 350 y = 342 } buttonText = "FEUKR_HUGE" buttonFont = "hoi_16mbs" pdx_tooltip = "FEUKR_HUGE_TT" }
+    }
+}

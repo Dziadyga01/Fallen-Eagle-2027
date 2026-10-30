@@ -1,0 +1,200 @@
+# The Fallen Eagle 2027 – Macierewicz: mobilizacja (fikcyjna ścieżka moda)
+focus_tree = {
+	id = PRW_macierewicz_tree
+	country = {
+		factor = 0
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1200 }
+	initial_show_position = { focus = PRW_ma_start }
+
+	focus = {
+		id = PRW_ma_start
+		icon = GFX_pl2027_081_wiara_1
+		x = 5
+		y = 0
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_political_power = 50 PRW_przelicz_lidera = yes
+		}
+	}
+
+	focus = {
+		id = PRW_ma_kalendarz
+		icon = GFX_pl2027_081_wiara_2
+		x = 3
+		y = 1
+		prerequisite = { focus = PRW_ma_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_mob = 5 } clamp_variable = { var = PRW_mob min = 0 max = 100 } custom_effect_tooltip = WOS_tt_66 PRW_przelicz_lidera = yes
+		}
+	}
+
+	focus = {
+		id = PRW_ma_raport
+		icon = GFX_pl2027_081_spis_0
+		x = 3
+		y = 2
+		prerequisite = { focus = PRW_ma_kalendarz }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_mob = 10 } clamp_variable = { var = PRW_mob min = 0 max = 100 } add_stability = -0.02 PRW_przelicz_lidera = yes
+		}
+	}
+
+	focus = {
+		id = PRW_ma_marsz
+		icon = GFX_pl2027_081_defilada_0
+		x = 3
+		y = 3
+		prerequisite = { focus = PRW_ma_raport }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_mob_50 check_variable = { PRW_mob > 49 } } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			country_event = { id = zpp.142 days = 1 }
+		}
+	}
+
+	focus = {
+		id = PRW_ma_kluby
+		icon = GFX_pl2027_081_ludzie_1
+		x = 5
+		y = 1
+		prerequisite = { focus = PRW_ma_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_manpower = 5000 add_to_variable = { PRW_mob = 5 } clamp_variable = { var = PRW_mob min = 0 max = 100 } PRW_przelicz_lidera = yes
+		}
+	}
+
+	focus = {
+		id = PRW_ma_ot
+		icon = GFX_pl2027_081_obrona_terytorialna_0
+		x = 5
+		y = 2
+		prerequisite = { focus = PRW_ma_kluby }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			random_owned_controlled_state = { limit = { is_core_of = ROOT free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } army_experience = 15
+		}
+	}
+
+	focus = {
+		id = PRW_ma_pomnik
+		icon = GFX_pl2027_081_wiara_3
+		x = 7
+		y = 2
+		prerequisite = { focus = PRW_ma_kluby }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_spojnosc = 5 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } add_to_variable = { PRW_mob = 5 } clamp_variable = { var = PRW_mob min = 0 max = 100 } if = { limit = { has_country_flag = PRW_ob_pamiec } set_country_flag = PRW_ob_pamiec_ok } PRW_przelicz_lidera = yes
+		}
+	}
+
+	focus = {
+		id = PRW_ma_rodziny
+		icon = GFX_pl2027_081_wspolnota_2
+		x = 7
+		y = 1
+		prerequisite = { focus = PRW_ma_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_zmecz = -15 } clamp_variable = { var = PRW_zmecz min = 0 max = 100 } add_to_variable = { PRW_mob = -5 } clamp_variable = { var = PRW_mob min = 0 max = 100 } PRW_przelicz_lidera = yes
+		}
+	}
+
+	focus = {
+		id = PRW_ma_armia
+		icon = GFX_pl2027_081_wojsko_1
+		x = 5
+		y = 3
+		prerequisite = { focus = PRW_ma_ot }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_manpower = 4000 army_experience = 15
+		}
+	}
+
+	focus = {
+		id = PRW_ma_final
+		icon = GFX_pl2027_081_defilada_1
+		x = 5
+		y = 5
+		prerequisite = { focus = PRW_ma_marsz }
+		prerequisite = { focus = PRW_ma_armia }
+		prerequisite = { focus = PRW_ma_pomnik }
+		cost = 6
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_mob_70 check_variable = { PRW_mob > 69 } } custom_trigger_tooltip = { tooltip = PRW_req_zmecz_60 check_variable = { PRW_zmecz < 60 } } }
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			add_ideas = PRW_idea_ma_final set_country_flag = PRW_sukces news_event = { id = zpp.194 days = 1 }
+		}
+	}
+
+	focus = {
+		id = PRW_ma_reg_pdl
+		icon = GFX_pl2027_081_granica_3
+		x = 9
+		y = 6
+		prerequisite = { focus = PRW_ma_final }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_pokoj_reg has_war = no } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			if = { limit = { country_exists = PDL PDL = { is_subject_of = ROOT } } annex_country = { target = PDL transfer_troops = yes } } else_if = { limit = { country_exists = PDL NOT = { has_war_with = PDL } } PDL = { country_event = { id = zpp.230 days = 1 } } custom_effect_tooltip = PRW_tt_reg_ma_pdl } else = { add_political_power = 40 }
+		}
+	}
+
+	focus = {
+		id = PRW_ma_reg_rad
+		icon = GFX_pl2027_081_pojednanie_0
+		x = 9
+		y = 7
+		prerequisite = { focus = PRW_ma_reg_pdl }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_pokoj_reg has_war = no } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			if = { limit = { country_exists = RAD RAD = { is_subject_of = ROOT } } annex_country = { target = RAD transfer_troops = yes } } else_if = { limit = { country_exists = RAD NOT = { has_war_with = RAD } } RAD = { country_event = { id = zpp.231 days = 1 } } custom_effect_tooltip = PRW_tt_reg_ma_rad } else = { add_political_power = 40 }
+		}
+	}
+
+	focus = {
+		id = PRW_ma_reg_ptk
+		icon = GFX_pl2027_081_droga_0
+		x = 9
+		y = 8
+		prerequisite = { focus = PRW_ma_reg_rad }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_pokoj_reg has_war = no } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			if = { limit = { country_exists = PTK PTK = { is_subject_of = ROOT } } annex_country = { target = PTK transfer_troops = yes } } else_if = { limit = { country_exists = PTK NOT = { has_war_with = PTK } } PTK = { country_event = { id = zpp.232 days = 1 } } custom_effect_tooltip = PRW_tt_reg_ma_ptk } else = { add_political_power = 40 }
+		}
+	}
+
+	focus = {
+		id = PRW_ma_reg_final
+		icon = GFX_pl2027_081_polska_1
+		x = 9
+		y = 9
+		prerequisite = { focus = PRW_ma_reg_ptk }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_reg_ziemie OR = { NOT = { country_exists = PDL } PDL = { is_subject_of = ROOT } } OR = { NOT = { country_exists = RAD } RAD = { is_subject_of = ROOT } } OR = { NOT = { country_exists = PTK } PTK = { is_subject_of = ROOT } } any_owned_state = { is_core_of = PDL } any_owned_state = { is_core_of = RAD } any_owned_state = { is_core_of = PTK } } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_ideas = PRW_idea_region every_owned_state = { limit = { OR = { is_core_of = PDL is_core_of = RAD is_core_of = PTK } } add_core_of = ROOT } news_event = { id = zpp.197 days = 1 }
+		}
+	}
+}

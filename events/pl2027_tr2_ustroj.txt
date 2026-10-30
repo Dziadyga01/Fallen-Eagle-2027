@@ -1,0 +1,271 @@
+add_namespace = tr2u
+
+country_event = {
+	id = tr2u.1
+	title = tr2u.1.t
+	desc = tr2u.1.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = TR2S_gul_route_A } NOT = { has_country_flag = TR2S_gul_route_B } }
+	option = {
+		name = tr2u.1.a
+		ai_chance = { base = 2 modifier = { factor = 1 has_war = yes } }
+		set_country_flag = TR2S_gul_route_A add_ideas = TR2C_gul_A_constitution set_variable = { TR2S_gul_meter = 20 }
+		set_country_flag = { flag = TR2U_gul_dylemat_cd days = 180 } country_event = { id = tr2state.101 days = 1 }
+	}
+	option = {
+		name = tr2u.1.b
+		ai_chance = { base = 1 modifier = { factor = 3 has_war = yes } }
+		set_country_flag = TR2S_gul_route_B add_ideas = TR2C_gul_B_constitution set_variable = { TR2S_gul_meter = 20 }
+		set_country_flag = { flag = TR2U_gul_dylemat_cd days = 180 } country_event = { id = tr2state.102 days = 1 }
+	}
+}
+
+country_event = {
+	id = tr2u.2
+	title = tr2u.2.t
+	desc = tr2u.2.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = TR2S_zal_route_A } NOT = { has_country_flag = TR2S_zal_route_B } }
+	option = {
+		name = tr2u.2.a
+		ai_chance = { base = 2 modifier = { factor = 1 has_war = yes } }
+		set_country_flag = TR2S_zal_route_A add_ideas = TR2C_zal_A_constitution set_variable = { TR2S_zal_meter = 20 }
+		set_country_flag = { flag = TR2U_zal_dylemat_cd days = 180 } country_event = { id = tr2state.111 days = 1 }
+	}
+	option = {
+		name = tr2u.2.b
+		ai_chance = { base = 1 modifier = { factor = 3 has_war = yes } }
+		set_country_flag = TR2S_zal_route_B add_ideas = TR2C_zal_B_constitution set_variable = { TR2S_zal_meter = 20 }
+		set_country_flag = { flag = TR2U_zal_dylemat_cd days = 180 } country_event = { id = tr2state.112 days = 1 }
+	}
+}
+
+country_event = {
+	id = tr2u.3
+	title = tr2u.3.t
+	desc = tr2u.3.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = TR2S_rom_route_A } NOT = { has_country_flag = TR2S_rom_route_B } }
+	option = {
+		name = tr2u.3.a
+		ai_chance = { base = 2 modifier = { factor = 1 has_war = yes } }
+		set_country_flag = TR2S_rom_route_A add_ideas = TR2C_rom_A_constitution set_variable = { TR2S_rom_meter = 20 }
+		set_country_flag = { flag = TR2U_rom_dylemat_cd days = 180 } country_event = { id = tr2state.121 days = 1 }
+	}
+	option = {
+		name = tr2u.3.b
+		ai_chance = { base = 1 modifier = { factor = 3 has_war = yes } }
+		set_country_flag = TR2S_rom_route_B add_ideas = TR2C_rom_B_constitution set_variable = { TR2S_rom_meter = 20 }
+		set_country_flag = { flag = TR2U_rom_dylemat_cd days = 180 } country_event = { id = tr2state.122 days = 1 }
+	}
+}
+
+country_event = {
+	id = tr2u.4
+	title = tr2u.4.t
+	desc = tr2u.4.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = TR2S_kow_route_A } NOT = { has_country_flag = TR2S_kow_route_B } }
+	option = {
+		name = tr2u.4.a
+		ai_chance = { base = 2 modifier = { factor = 1 has_war = yes } }
+		set_country_flag = TR2S_kow_route_A add_ideas = TR2C_kow_A_constitution set_variable = { TR2S_kow_meter = 20 }
+		set_country_flag = { flag = TR2U_kow_dylemat_cd days = 180 } country_event = { id = tr2state.131 days = 1 }
+	}
+	option = {
+		name = tr2u.4.b
+		ai_chance = { base = 1 modifier = { factor = 3 has_war = yes } }
+		set_country_flag = TR2S_kow_route_B add_ideas = TR2C_kow_B_constitution set_variable = { TR2S_kow_meter = 20 }
+		set_country_flag = { flag = TR2U_kow_dylemat_cd days = 180 } country_event = { id = tr2state.132 days = 1 }
+	}
+}
+
+country_event = {
+	id = tr2u.5
+	title = tr2u.5.t
+	desc = tr2u.5.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = TR2S_kre_route_A } NOT = { has_country_flag = TR2S_kre_route_B } }
+	option = {
+		name = tr2u.5.a
+		ai_chance = { base = 2 modifier = { factor = 1 has_war = yes } }
+		set_country_flag = TR2S_kre_route_A add_ideas = TR2C_kre_A_constitution set_variable = { TR2S_kre_meter = 20 }
+		set_country_flag = { flag = TR2U_kre_dylemat_cd days = 180 } country_event = { id = tr2state.141 days = 1 }
+	}
+	option = {
+		name = tr2u.5.b
+		ai_chance = { base = 1 modifier = { factor = 3 has_war = yes } }
+		set_country_flag = TR2S_kre_route_B add_ideas = TR2C_kre_B_constitution set_variable = { TR2S_kre_meter = 20 }
+		set_country_flag = { flag = TR2U_kre_dylemat_cd days = 180 } country_event = { id = tr2state.142 days = 1 }
+	}
+}
+
+country_event = {
+	id = tr2u.6
+	title = tr2u.6.t
+	desc = tr2u.6.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	trigger = { NOT = { has_country_flag = TR2S_ela_route_A } NOT = { has_country_flag = TR2S_ela_route_B } }
+	option = {
+		name = tr2u.6.a
+		ai_chance = { base = 2 modifier = { factor = 1 has_war = yes } }
+		set_country_flag = TR2S_ela_route_A add_ideas = TR2C_ela_A_constitution set_variable = { TR2S_ela_meter = 20 }
+		set_country_flag = { flag = TR2U_ela_dylemat_cd days = 180 } country_event = { id = tr2state.151 days = 1 }
+	}
+	option = {
+		name = tr2u.6.b
+		ai_chance = { base = 1 modifier = { factor = 3 has_war = yes } }
+		set_country_flag = TR2S_ela_route_B add_ideas = TR2C_ela_B_constitution set_variable = { TR2S_ela_meter = 20 }
+		set_country_flag = { flag = TR2U_ela_dylemat_cd days = 180 } country_event = { id = tr2state.152 days = 1 }
+	}
+}
+
+country_event = {
+	id = tr2u.11
+	title = tr2u.11.t
+	desc = tr2u.11.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tr2u.11.a
+		ai_chance = { base = 1 }
+		country_event = { id = tr2end.101 days = 1 }
+	}
+	option = {
+		name = tr2u.11.b
+		ai_chance = { base = 2 modifier = { factor = 0 NOT = { country_exists = BYD } } }
+		if = { limit = { country_exists = BYD NOT = { has_war_with = BYD } BYD = { is_subject = no } } BYD = { country_event = { id = tr2end.102 days = 2 } } } else = { country_event = { id = tr2end.103 days = 1 } }
+	}
+	option = {
+		name = tr2u.11.c
+		ai_chance = { base = 1 modifier = { factor = 2 has_war = yes } }
+		set_country_flag = TR2END_gul_pact if = { limit = { is_in_faction = no } create_faction = TR2END_gul_pact }
+		every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.104 days = 2 } }
+	}
+}
+
+country_event = {
+	id = tr2u.12
+	title = tr2u.12.t
+	desc = tr2u.12.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tr2u.12.a
+		ai_chance = { base = 1 }
+		country_event = { id = tr2end.111 days = 1 }
+	}
+	option = {
+		name = tr2u.12.b
+		ai_chance = { base = 2 modifier = { factor = 0 NOT = { country_exists = CHZ } } }
+		if = { limit = { country_exists = CHZ NOT = { has_war_with = CHZ } CHZ = { is_subject = no } } CHZ = { country_event = { id = tr2end.112 days = 2 } } } else = { country_event = { id = tr2end.113 days = 1 } }
+	}
+	option = {
+		name = tr2u.12.c
+		ai_chance = { base = 1 modifier = { factor = 2 has_war = yes } }
+		set_country_flag = TR2END_zal_pact if = { limit = { is_in_faction = no } create_faction = TR2END_zal_pact }
+		every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.114 days = 2 } }
+	}
+}
+
+country_event = {
+	id = tr2u.13
+	title = tr2u.13.t
+	desc = tr2u.13.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tr2u.13.a
+		ai_chance = { base = 1 }
+		country_event = { id = tr2end.121 days = 1 }
+	}
+	option = {
+		name = tr2u.13.b
+		ai_chance = { base = 2 modifier = { factor = 0 NOT = { country_exists = BYD } } }
+		if = { limit = { country_exists = BYD NOT = { has_war_with = BYD } BYD = { is_subject = no } } BYD = { country_event = { id = tr2end.122 days = 2 } } } else = { country_event = { id = tr2end.123 days = 1 } }
+	}
+	option = {
+		name = tr2u.13.c
+		ai_chance = { base = 1 modifier = { factor = 2 has_war = yes } }
+		set_country_flag = TR2END_rom_pact if = { limit = { is_in_faction = no } create_faction = TR2END_rom_pact }
+		every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.124 days = 2 } }
+	}
+}
+
+country_event = {
+	id = tr2u.14
+	title = tr2u.14.t
+	desc = tr2u.14.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tr2u.14.a
+		ai_chance = { base = 1 }
+		country_event = { id = tr2end.131 days = 1 }
+	}
+	option = {
+		name = tr2u.14.b
+		ai_chance = { base = 2 modifier = { factor = 0 NOT = { country_exists = BYD } } }
+		if = { limit = { country_exists = BYD NOT = { has_war_with = BYD } BYD = { is_subject = no } } BYD = { country_event = { id = tr2end.132 days = 2 } } } else = { country_event = { id = tr2end.133 days = 1 } }
+	}
+	option = {
+		name = tr2u.14.c
+		ai_chance = { base = 1 modifier = { factor = 2 has_war = yes } }
+		set_country_flag = TR2END_kow_pact if = { limit = { is_in_faction = no } create_faction = TR2END_kow_pact }
+		every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.134 days = 2 } }
+	}
+}
+
+country_event = {
+	id = tr2u.15
+	title = tr2u.15.t
+	desc = tr2u.15.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tr2u.15.a
+		ai_chance = { base = 1 }
+		country_event = { id = tr2end.141 days = 1 }
+	}
+	option = {
+		name = tr2u.15.b
+		ai_chance = { base = 2 modifier = { factor = 0 NOT = { country_exists = GRU } } }
+		if = { limit = { country_exists = GRU NOT = { has_war_with = GRU } GRU = { is_subject = no } } GRU = { country_event = { id = tr2end.142 days = 2 } } } else = { country_event = { id = tr2end.143 days = 1 } }
+	}
+	option = {
+		name = tr2u.15.c
+		ai_chance = { base = 1 modifier = { factor = 2 has_war = yes } }
+		set_country_flag = TR2END_kre_pact if = { limit = { is_in_faction = no } create_faction = TR2END_kre_pact }
+		every_neighbor_country = { limit = { is_subject = no is_in_faction = no NOT = { has_war_with = ROOT } } country_event = { id = tr2end.144 days = 2 } }
+	}
+}
+
+country_event = {
+	id = tr2u.16
+	title = tr2u.16.t
+	desc = tr2u.16.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = tr2u.16.a
+		ai_chance = { base = 1 }
+		country_event = { id = tr2end.151 days = 1 }
+	}
+	option = {
+		name = tr2u.16.b
+		ai_chance = { base = 2 modifier = { factor = 0 NOT = { country_exists = CHZ } } }
+		if = { limit = { country_exists = CHZ NOT = { has_war_with = CHZ } CHZ = { is_subject = no } } CHZ = { country_event = { id = tr2end.152 days = 2 } } } else = { country_event = { id = tr2end.153 days = 1 } }
+	}
+}

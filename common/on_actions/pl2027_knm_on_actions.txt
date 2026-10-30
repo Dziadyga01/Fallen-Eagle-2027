@@ -1,0 +1,3 @@
+on_actions = {
+	on_monthly_GER = { effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } } KNM_miesiac = yes } } }
+}

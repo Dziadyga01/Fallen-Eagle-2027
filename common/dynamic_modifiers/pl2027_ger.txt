@@ -1,0 +1,7 @@
+GER_dm_protektorat = {
+	icon = GFX_idea_DU_EK_komisariat
+	enable = { always = yes }
+	political_power_gain = GER_k_pp
+	stability_factor = GER_k_stab
+	consumer_goods_factor = GER_k_cg
+}

@@ -1,0 +1,6 @@
+RML_panel = {
+	icon = generic_political_discourse
+	allowed = { always = yes }
+	visible = { original_tag = MLA NOT = { has_global_flag = PL2027_prolog } }
+	priority = 80
+}

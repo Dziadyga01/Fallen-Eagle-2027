@@ -1,0 +1,14 @@
+defined_text = {
+	name = PRW_Get_bop
+	text = { trigger = { check_variable = { PRW_bop < -50 } } localization_key = PRW_bop_opis_h2 }
+	text = { trigger = { check_variable = { PRW_bop < -15 } } localization_key = PRW_bop_opis_h1 }
+	text = { trigger = { check_variable = { PRW_bop < 16 } } localization_key = PRW_bop_opis_k }
+	text = { trigger = { check_variable = { PRW_bop < 51 } } localization_key = PRW_bop_opis_m1 }
+	text = { localization_key = PRW_bop_opis_m2 }
+}
+defined_text = {
+	name = PRW_Get_spoj
+	text = { trigger = { check_variable = { PRW_spojnosc > 59 } } localization_key = PRW_sp_opis_w }
+	text = { trigger = { check_variable = { PRW_spojnosc > 19 } } localization_key = PRW_sp_opis_s }
+	text = { localization_key = PRW_sp_opis_n }
+}

@@ -3,13 +3,19 @@ state = {
 	name = "STATE_907"
 	manpower = 41889
 	state_category = town
+	resources = {
+		tungsten = 2
+		aluminium = 1
+		steel = 3
+		chromium = 1
+	}
 	history = {
 		owner = KPM
 		add_core_of = KPM
-		victory_points = { 8709 1 }
-		victory_points = { 8708 2 }
-		victory_points = { 8930 1 }
-		victory_points = { 8915 1 }
+		victory_points = { 8709 2 }
+		victory_points = { 8708 3 }
+		victory_points = { 8930 2 }
+		victory_points = { 8915 2 }
 		buildings = {
 			infrastructure = 3
 		}

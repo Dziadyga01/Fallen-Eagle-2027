@@ -1,0 +1,29 @@
+RKK_panel = {
+	RKK_dec_sejmik = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = KKR has_variable = KKR_korona }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { KKR_korona = 8 } clamp_variable = { var = KKR_korona min = 0 max = 100 } set_variable = { RKK_dm_0 = KKR_korona } subtract_from_variable = { RKK_dm_0 = 50 } divide_variable = { RKK_dm_0 = 800 } set_variable = { RKK_dm_1 = KKR_korona } subtract_from_variable = { RKK_dm_1 = 40 } divide_variable = { RKK_dm_1 = 400 } set_variable = { RKK_dm_2 = KKR_pretendenci } subtract_from_variable = { RKK_dm_2 = 50 } divide_variable = { RKK_dm_2 = -1000 } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { KKR_korona < 60 } } modifier = { factor = 0.2 check_variable = { KKR_korona > 85 } } }
+	}
+	RKK_dec_insygnia = {
+		icon = generic_political_discourse
+		cost = 20
+		visible = { original_tag = KKR has_variable = KKR_korona }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { KKR_korona = 5 } clamp_variable = { var = KKR_korona min = 0 max = 100 } add_stability = 0.02 set_variable = { RKK_dm_0 = KKR_korona } subtract_from_variable = { RKK_dm_0 = 50 } divide_variable = { RKK_dm_0 = 800 } set_variable = { RKK_dm_1 = KKR_korona } subtract_from_variable = { RKK_dm_1 = 40 } divide_variable = { RKK_dm_1 = 400 } set_variable = { RKK_dm_2 = KKR_pretendenci } subtract_from_variable = { RKK_dm_2 = 50 } divide_variable = { RKK_dm_2 = -1000 } }
+		ai_will_do = { factor = 2 modifier = { factor = 2 has_stability < 0.4 } }
+	}
+	RKK_dec_uklad = {
+		icon = generic_political_discourse
+		cost = 0
+		visible = { original_tag = KKR has_variable = KKR_korona }
+		available = { check_variable = { KKR_pretendenci > 40 } }
+		days_re_enable = 120
+		complete_effect = { add_to_variable = { KKR_pretendenci = -15 } clamp_variable = { var = KKR_pretendenci min = 0 max = 100 } add_to_variable = { KKR_korona = -5 } clamp_variable = { var = KKR_korona min = 0 max = 100 } set_variable = { RKK_dm_0 = KKR_korona } subtract_from_variable = { RKK_dm_0 = 50 } divide_variable = { RKK_dm_0 = 800 } set_variable = { RKK_dm_1 = KKR_korona } subtract_from_variable = { RKK_dm_1 = 40 } divide_variable = { RKK_dm_1 = 400 } set_variable = { RKK_dm_2 = KKR_pretendenci } subtract_from_variable = { RKK_dm_2 = 50 } divide_variable = { RKK_dm_2 = -1000 } }
+		ai_will_do = { factor = 1 modifier = { factor = 5 check_variable = { KKR_pretendenci > 60 } } }
+	}
+}

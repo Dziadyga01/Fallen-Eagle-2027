@@ -32,7 +32,7 @@ technologies = {
 	}
 	melee_weapons_upgrade = {
 		research_cost = 1
-		start_year = 2027
+		start_year = 2028
 		path = {
 			leads_to_tech = melee_weapons1
 		}
@@ -58,7 +58,7 @@ technologies = {
 			leads_to_tech = melee_weapons_upgrade_1
 		}
 		research_cost = 0.5
-		start_year = 2027
+		start_year = 2029
 		folder = {
 			name = infantry_folder
 			position = {
@@ -73,7 +73,7 @@ technologies = {
 	}
 	melee_weapons_upgrade_1 = {
 		research_cost = 1.5
-		start_year = 2027
+		start_year = 2031
 		path = {
 			leads_to_tech = melee_weapons2
 		}
@@ -99,7 +99,7 @@ technologies = {
 			leads_to_tech = melee_weapons_upgrade_2
 		}
 		research_cost = 2
-		start_year = 2027
+		start_year = 2032
 		folder = {
 			name = infantry_folder
 			position = {
@@ -114,7 +114,7 @@ technologies = {
 	}
 	melee_weapons_upgrade_2 = {
 		research_cost = 1.5
-		start_year = 2027
+		start_year = 2033
 		path = {
 			leads_to_tech = melee_weapons3
 		}
@@ -140,7 +140,7 @@ technologies = {
 			leads_to_tech = melee_weapons_upgrade_3
 		}
 		research_cost = 2.5
-		start_year = 2027
+		start_year = 2034
 		folder = {
 			name = infantry_folder
 			position = {
@@ -155,7 +155,7 @@ technologies = {
 	}
 	melee_weapons_upgrade_3 = {
 		research_cost = 1.5
-		start_year = 2027
+		start_year = 2035
 		path = {
 			leads_to_tech = melee_weapons4
 		}
@@ -181,7 +181,7 @@ technologies = {
 			leads_to_tech = melee_weapons_upgrade_4
 		}
 		research_cost = 3
-		start_year = 2027
+		start_year = 2037
 		folder = {
 			name = infantry_folder
 			position = {
@@ -196,7 +196,7 @@ technologies = {
 	}
 	melee_weapons_upgrade_4 = {
 		research_cost = 1.5
-		start_year = 2027
+		start_year = 2038
 		folder = {
 			name = infantry_folder
 			position = {
@@ -235,7 +235,7 @@ technologies = {
 	}
 	ranged_weapons_upgrade = {
 		research_cost = 1
-		start_year = 2027
+		start_year = 2028
 		path = {
 			leads_to_tech = ranged_weapons1
 		}
@@ -261,7 +261,7 @@ technologies = {
 			leads_to_tech = ranged_weapons_upgrade1
 		}
 		research_cost = 2
-		start_year = 2027
+		start_year = 2029
 		folder = {
 			name = infantry_folder
 			position = {
@@ -276,7 +276,7 @@ technologies = {
 	}
 	ranged_weapons_upgrade1 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2031
 		path = {
 			leads_to_tech = ranged_weapons2
 		}
@@ -306,7 +306,7 @@ technologies = {
 			leads_to_tech = inf_antitank_1
 		}
 		research_cost = 3
-		start_year = 2027
+		start_year = 2032
 		folder = {
 			name = infantry_folder
 			position = {
@@ -321,7 +321,7 @@ technologies = {
 	}
 	ranged_weapons_upgrade2 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2033
 		path = {
 			leads_to_tech = ranged_weapons3
 		}
@@ -347,7 +347,7 @@ technologies = {
 			leads_to_tech = ranged_weapons_upgrade3
 		}
 		research_cost = 3.5
-		start_year = 2027
+		start_year = 2034
 		folder = {
 			name = infantry_folder
 			position = {
@@ -367,7 +367,7 @@ technologies = {
 	}
 	ranged_weapons_upgrade3 = {
 		research_cost = 2.5
-		start_year = 2027
+		start_year = 2035
 		path = {
 			leads_to_tech = ranged_weapons4
 		}
@@ -393,7 +393,7 @@ technologies = {
 			leads_to_tech = ranged_weapons_upgrade4
 		}
 		research_cost = 3.75
-		start_year = 2027
+		start_year = 2037
 		folder = {
 			name = infantry_folder
 			position = {
@@ -408,7 +408,7 @@ technologies = {
 	}
 	ranged_weapons_upgrade4 = {
 		research_cost = 2.5
-		start_year = 2027
+		start_year = 2038
 		path = {
 			leads_to_tech = ranged_weapons5
 		}
@@ -431,7 +431,7 @@ technologies = {
 	ranged_weapons5 = {
 		enable_equipments = { ranged_equipment_5 }
 		research_cost = 4
-		start_year = 2027
+		start_year = 2039
 		folder = {
 			name = infantry_folder
 			position = {
@@ -451,7 +451,7 @@ technologies = {
 		path = {
 			leads_to_tech = inf_antitank_upgrade
 		}
-		start_year = 2027
+		start_year = 2033
 		folder = {
 			name = infantry_folder
 			position = {
@@ -466,7 +466,7 @@ technologies = {
 	}
 	inf_antitank_upgrade = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2034
 		path = {
 			leads_to_tech = inf_antitank_2
 		}
@@ -500,7 +500,7 @@ technologies = {
 		path = {
 			leads_to_tech = inf_antitank_upgrade1
 		}
-		start_year = 2027
+		start_year = 2035
 		folder = {
 			name = infantry_folder
 			position = {
@@ -515,7 +515,7 @@ technologies = {
 	}
 	inf_antitank_upgrade1 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2037
 		path = {
 			leads_to_tech = inf_antitank_3
 		}
@@ -546,7 +546,7 @@ technologies = {
 	inf_antitank_3 = {
 		enable_equipments = { inf_anti_tank_equipment_3 }
 		research_cost = 4.5
-		start_year = 2027
+		start_year = 2038
 		path = {
 			leads_to_tech = inf_antitank_upgrade2
 		}
@@ -564,7 +564,7 @@ technologies = {
 	}
 	inf_antitank_upgrade2 = {
 		research_cost = 2.5
-		start_year = 2027
+		start_year = 2039
 		folder = {
 			name = infantry_folder
 			position = {
@@ -620,7 +620,7 @@ technologies = {
 	}
 	infantry_training1 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2028
 		path = {
 			leads_to_tech = infantry_training2
 		}
@@ -649,7 +649,7 @@ technologies = {
 	}
 	infantry_training2 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2029
 		path = {
 			leads_to_tech = infantry_training3
 		}
@@ -678,7 +678,7 @@ technologies = {
 	}
 	infantry_training3 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2031
 		path = {
 			leads_to_tech = infantry_training4
 		}
@@ -707,7 +707,7 @@ technologies = {
 	}
 	infantry_training4 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2032
 		path = {
 			leads_to_tech = infantry_training5
 		}
@@ -736,7 +736,7 @@ technologies = {
 	}
 	infantry_training5 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2033
 		category_all_infantry = {
 			max_organisation = 1
 			default_morale = 0.05
@@ -765,7 +765,7 @@ technologies = {
 			leads_to_tech = infantry_armor2
 		}
 		research_cost = 1
-		start_year = 2027
+		start_year = 2028
 		folder = {
 			name = infantry_folder
 			position = {
@@ -784,7 +784,7 @@ technologies = {
 	}
 	infantry_armor2 = {
 		research_cost = 1.5
-		start_year = 2027
+		start_year = 2029
 		path = {
 			leads_to_tech = infantry_armor3
 		}
@@ -809,7 +809,7 @@ technologies = {
 			leads_to_tech = infantry_armor4
 		}
 		research_cost = 2
-		start_year = 2027
+		start_year = 2031
 		folder = {
 			name = infantry_folder
 			position = {
@@ -828,7 +828,7 @@ technologies = {
 	}
 	infantry_armor4 = {
 		research_cost = 2.5
-		start_year = 2027
+		start_year = 2032
 		path = {
 			leads_to_tech = infantry_armor5
 		}
@@ -850,7 +850,7 @@ technologies = {
 	}
 	infantry_armor5 = {
 		research_cost = 3
-		start_year = 2027
+		start_year = 2033
 		folder = {
 			name = infantry_folder
 			position = {
@@ -902,7 +902,7 @@ technologies = {
 			leads_to_tech = camouflage_upgrade1
 		}
 		research_cost = 2
-		start_year = 2027
+		start_year = 2028
 		folder = {
 			name = infantry_folder
 			position = {
@@ -917,7 +917,7 @@ technologies = {
 	}
 	camouflage_upgrade1 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2029
 		path = {
 			leads_to_tech = army_uniform2
 		}
@@ -942,7 +942,7 @@ technologies = {
 			leads_to_tech = camouflage_upgrade2
 		}
 		research_cost = 2.5
-		start_year = 2027
+		start_year = 2031
 		folder = {
 			name = infantry_folder
 			position = {
@@ -957,7 +957,7 @@ technologies = {
 	}
 	camouflage_upgrade2 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2032
 		path = {
 			leads_to_tech = army_uniform3
 		}
@@ -979,7 +979,7 @@ technologies = {
 		}
 		coordination_bonus = 0.1
 		research_cost = 3
-		start_year = 2027
+		start_year = 2033
 		folder = {
 			name = infantry_folder
 			position = {
@@ -1045,7 +1045,7 @@ technologies = {
 			leads_to_tech = special_forces_equipment2
 		}
 		research_cost = 3
-		start_year = 2027
+		start_year = 2028
 		folder = {
 			name = infantry_folder
 			position = {
@@ -1061,7 +1061,7 @@ technologies = {
 	special_forces_equipment2 = {
 		enable_equipments = { special_forces_equipment_2 }
 		research_cost = 4
-		start_year = 2027
+		start_year = 2029
 		folder = {
 			name = infantry_folder
 			position = {
@@ -1082,7 +1082,7 @@ technologies = {
 			leads_to_tech = special_forces_quality
 		}
 		research_cost = 2
-		start_year = 2027
+		start_year = 2028
 		category_special_forces = {
 			max_organisation = 5
 			soft_attack = 0.05
@@ -1104,7 +1104,7 @@ technologies = {
 	}
 	special_forces_training2 = {
 		research_cost = 3
-		start_year = 2027
+		start_year = 2033
 		category_special_forces = {
 			max_organisation = 3
 			soft_attack = 0.05
@@ -1130,7 +1130,7 @@ technologies = {
 			leads_to_tech = special_forces_quantity1
 		}
 		research_cost = 2
-		start_year = 2027
+		start_year = 2029
 		category_special_forces = {
 			supply_consumption_factor = -0.05
 		}
@@ -1153,7 +1153,7 @@ technologies = {
 			leads_to_tech = special_forces_quantity3
 		}
 		research_cost = 2
-		start_year = 2027
+		start_year = 2031
 		category_special_forces = {
 			supply_consumption_factor = -0.1
 		}
@@ -1173,7 +1173,7 @@ technologies = {
 	}
 	special_forces_quantity3 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2032
 		category_special_forces = {
 			supply_consumption_factor = -0.1
 		}
@@ -1200,7 +1200,7 @@ technologies = {
 			leads_to_tech = special_forces_quality1
 		}
 		research_cost = 2
-		start_year = 2027
+		start_year = 2029
 		category_special_forces = {
 			max_organisation = 2
 			soft_attack = 0.05
@@ -1224,7 +1224,7 @@ technologies = {
 			leads_to_tech = special_forces_quality3
 		}
 		research_cost = 2
-		start_year = 2027
+		start_year = 2031
 		category_special_forces = {
 			max_organisation = 2
 			soft_attack = 0.05
@@ -1246,7 +1246,7 @@ technologies = {
 	}
 	special_forces_quality3 = {
 		research_cost = 2
-		start_year = 2027
+		start_year = 2032
 		category_special_forces = {
 			max_organisation = 3
 			soft_attack = 0.05

@@ -1,0 +1,29 @@
+RKP_panel = {
+	RKP_dec_szkoly = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { original_tag = KPM has_variable = KPM_jednosc }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { KPM_jednosc = 10 } clamp_variable = { var = KPM_jednosc min = 0 max = 100 } set_variable = { RKP_dm_0 = KPM_jednosc } subtract_from_variable = { RKP_dm_0 = 50 } divide_variable = { RKP_dm_0 = 800 } set_variable = { RKP_dm_1 = KPM_porty } subtract_from_variable = { RKP_dm_1 = 30 } divide_variable = { RKP_dm_1 = 500 } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { KPM_jednosc < 50 } } modifier = { factor = 0.2 check_variable = { KPM_jednosc > 85 } } }
+	}
+	RKP_dec_wiatraki = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = KPM has_variable = KPM_jednosc }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { KPM_porty = 10 } clamp_variable = { var = KPM_porty min = 0 max = 100 } add_to_variable = { KPM_jednosc = -4 } clamp_variable = { var = KPM_jednosc min = 0 max = 100 } set_variable = { RKP_dm_0 = KPM_jednosc } subtract_from_variable = { RKP_dm_0 = 50 } divide_variable = { RKP_dm_0 = 800 } set_variable = { RKP_dm_1 = KPM_porty } subtract_from_variable = { RKP_dm_1 = 30 } divide_variable = { RKP_dm_1 = 500 } }
+		ai_will_do = { factor = 2 modifier = { factor = 2 check_variable = { KPM_porty < 50 } } modifier = { factor = 0 check_variable = { KPM_jednosc < 30 } } }
+	}
+	RKP_dec_porty = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { original_tag = KPM has_variable = KPM_jednosc }
+		available = { always = yes }
+		days_re_enable = 180
+		complete_effect = { add_to_variable = { KPM_porty = 12 } clamp_variable = { var = KPM_porty min = 0 max = 100 } random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } set_variable = { RKP_dm_0 = KPM_jednosc } subtract_from_variable = { RKP_dm_0 = 50 } divide_variable = { RKP_dm_0 = 800 } set_variable = { RKP_dm_1 = KPM_porty } subtract_from_variable = { RKP_dm_1 = 30 } divide_variable = { RKP_dm_1 = 500 } }
+		ai_will_do = { factor = 2 modifier = { factor = 2 check_variable = { KPM_porty < 60 } } }
+	}
+}

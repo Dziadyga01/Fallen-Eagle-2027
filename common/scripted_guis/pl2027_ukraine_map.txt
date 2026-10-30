@@ -1,0 +1,905 @@
+scripted_gui = {
+    FEUKR_MapGUI = {
+        window_name = FEUKR_MapWindow
+        context_type = decision_category
+        visible = { ROOT = { tag = ROS has_country_flag = ROS_UKR_initialized } }
+        effects = {
+            pin_VOL_click = { ROOT = { set_variable = { ROS_UKR_selected = 1 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_VOL } } }
+            pin_RIV_click = { ROOT = { set_variable = { ROS_UKR_selected = 2 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_RIV } } }
+            pin_LVI_click = { ROOT = { set_variable = { ROS_UKR_selected = 3 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_LVI } } }
+            pin_ZAK_click = { ROOT = { set_variable = { ROS_UKR_selected = 4 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_ZAK } } }
+            pin_IVA_click = { ROOT = { set_variable = { ROS_UKR_selected = 5 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_IVA } } }
+            pin_TER_click = { ROOT = { set_variable = { ROS_UKR_selected = 6 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_TER } } }
+            pin_CHE_click = { ROOT = { set_variable = { ROS_UKR_selected = 7 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_CHE } } }
+            pin_KHM_click = { ROOT = { set_variable = { ROS_UKR_selected = 8 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_KHM } } }
+            pin_ZHY_click = { ROOT = { set_variable = { ROS_UKR_selected = 9 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_ZHY } } }
+            pin_VIN_click = { ROOT = { set_variable = { ROS_UKR_selected = 10 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_VIN } } }
+            pin_KYI_click = { ROOT = { set_variable = { ROS_UKR_selected = 11 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_KYI } } }
+            pin_CHR_click = { ROOT = { set_variable = { ROS_UKR_selected = 12 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_CHR } } }
+            pin_SUM_click = { ROOT = { set_variable = { ROS_UKR_selected = 13 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_SUM } } }
+            pin_KHA_click = { ROOT = { set_variable = { ROS_UKR_selected = 14 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_KHA } } }
+            pin_POL_click = { ROOT = { set_variable = { ROS_UKR_selected = 15 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_POL } } }
+            pin_CKA_click = { ROOT = { set_variable = { ROS_UKR_selected = 16 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_CKA } } }
+            pin_KIR_click = { ROOT = { set_variable = { ROS_UKR_selected = 17 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_KIR } } }
+            pin_DNI_click = { ROOT = { set_variable = { ROS_UKR_selected = 18 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_DNI } } }
+            pin_DON_click = { ROOT = { set_variable = { ROS_UKR_selected = 19 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_DON } } }
+            pin_LUH_click = { ROOT = { set_variable = { ROS_UKR_selected = 20 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_LUH } } }
+            pin_ZAP_click = { ROOT = { set_variable = { ROS_UKR_selected = 21 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_ZAP } } }
+            pin_KHE_click = { ROOT = { set_variable = { ROS_UKR_selected = 22 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_KHE } } }
+            pin_MYK_click = { ROOT = { set_variable = { ROS_UKR_selected = 23 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_MYK } } }
+            pin_ODE_click = { ROOT = { set_variable = { ROS_UKR_selected = 24 } set_variable = { ROS_UKR_selected_progress = ROS_UKR_ODE } } }
+            op_huge_click = {
+                ROOT = {
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 1 } check_variable = { ROS_UKR_VOL < 100 } NOT = { has_country_flag = ROS_UKR_VOL_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_VOL = 30 }
+                        clamp_variable = { var = ROS_UKR_VOL min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_VOL_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 2 } check_variable = { ROS_UKR_RIV < 100 } NOT = { has_country_flag = ROS_UKR_RIV_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_RIV = 30 }
+                        clamp_variable = { var = ROS_UKR_RIV min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_RIV_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 3 } check_variable = { ROS_UKR_LVI < 100 } NOT = { has_country_flag = ROS_UKR_LVI_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_LVI = 30 }
+                        clamp_variable = { var = ROS_UKR_LVI min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_LVI_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 4 } check_variable = { ROS_UKR_ZAK < 100 } NOT = { has_country_flag = ROS_UKR_ZAK_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_ZAK = 30 }
+                        clamp_variable = { var = ROS_UKR_ZAK min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ZAK_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 5 } check_variable = { ROS_UKR_IVA < 100 } NOT = { has_country_flag = ROS_UKR_IVA_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_IVA = 30 }
+                        clamp_variable = { var = ROS_UKR_IVA min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_IVA_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 6 } check_variable = { ROS_UKR_TER < 100 } NOT = { has_country_flag = ROS_UKR_TER_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_TER = 30 }
+                        clamp_variable = { var = ROS_UKR_TER min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_TER_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 7 } check_variable = { ROS_UKR_CHE < 100 } NOT = { has_country_flag = ROS_UKR_CHE_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_CHE = 30 }
+                        clamp_variable = { var = ROS_UKR_CHE min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_CHE_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 8 } check_variable = { ROS_UKR_KHM < 100 } NOT = { has_country_flag = ROS_UKR_KHM_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_KHM = 30 }
+                        clamp_variable = { var = ROS_UKR_KHM min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KHM_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 9 } check_variable = { ROS_UKR_ZHY < 100 } NOT = { has_country_flag = ROS_UKR_ZHY_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_ZHY = 30 }
+                        clamp_variable = { var = ROS_UKR_ZHY min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ZHY_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 10 } check_variable = { ROS_UKR_VIN < 100 } NOT = { has_country_flag = ROS_UKR_VIN_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_VIN = 30 }
+                        clamp_variable = { var = ROS_UKR_VIN min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_VIN_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 11 } check_variable = { ROS_UKR_KYI < 100 } NOT = { has_country_flag = ROS_UKR_KYI_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_KYI = 30 }
+                        clamp_variable = { var = ROS_UKR_KYI min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KYI_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 12 } check_variable = { ROS_UKR_CHR < 100 } NOT = { has_country_flag = ROS_UKR_CHR_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_CHR = 30 }
+                        clamp_variable = { var = ROS_UKR_CHR min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_CHR_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 13 } check_variable = { ROS_UKR_SUM < 100 } NOT = { has_country_flag = ROS_UKR_SUM_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_SUM = 30 }
+                        clamp_variable = { var = ROS_UKR_SUM min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_SUM_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 14 } check_variable = { ROS_UKR_KHA < 100 } NOT = { has_country_flag = ROS_UKR_KHA_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_KHA = 30 }
+                        clamp_variable = { var = ROS_UKR_KHA min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KHA_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 15 } check_variable = { ROS_UKR_POL < 100 } NOT = { has_country_flag = ROS_UKR_POL_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_POL = 30 }
+                        clamp_variable = { var = ROS_UKR_POL min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_POL_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 16 } check_variable = { ROS_UKR_CKA < 100 } NOT = { has_country_flag = ROS_UKR_CKA_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_CKA = 30 }
+                        clamp_variable = { var = ROS_UKR_CKA min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_CKA_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 17 } check_variable = { ROS_UKR_KIR < 100 } NOT = { has_country_flag = ROS_UKR_KIR_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_KIR = 30 }
+                        clamp_variable = { var = ROS_UKR_KIR min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KIR_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 18 } check_variable = { ROS_UKR_DNI < 100 } NOT = { has_country_flag = ROS_UKR_DNI_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_DNI = 30 }
+                        clamp_variable = { var = ROS_UKR_DNI min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_DNI_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 19 } check_variable = { ROS_UKR_DON < 100 } NOT = { has_country_flag = ROS_UKR_DON_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_DON = 30 }
+                        clamp_variable = { var = ROS_UKR_DON min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_DON_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 20 } check_variable = { ROS_UKR_LUH < 100 } NOT = { has_country_flag = ROS_UKR_LUH_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_LUH = 30 }
+                        clamp_variable = { var = ROS_UKR_LUH min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_LUH_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 21 } check_variable = { ROS_UKR_ZAP < 100 } NOT = { has_country_flag = ROS_UKR_ZAP_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_ZAP = 30 }
+                        clamp_variable = { var = ROS_UKR_ZAP min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ZAP_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 22 } check_variable = { ROS_UKR_KHE < 100 } NOT = { has_country_flag = ROS_UKR_KHE_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_KHE = 30 }
+                        clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KHE_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 23 } check_variable = { ROS_UKR_MYK < 100 } NOT = { has_country_flag = ROS_UKR_MYK_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_MYK = 30 }
+                        clamp_variable = { var = ROS_UKR_MYK min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_MYK_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 24 } check_variable = { ROS_UKR_ODE < 100 } NOT = { has_country_flag = ROS_UKR_ODE_cooldown } }
+                        add_political_power = -65
+                        add_manpower = -8000
+                        add_to_variable = { ROS_UKR_ODE = 30 }
+                        clamp_variable = { var = ROS_UKR_ODE min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ODE_cooldown days = 60 }
+                        ROS_UKR_recalculate = yes
+                    }
+                }
+            }
+            op_small_click = {
+                ROOT = {
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 1 } check_variable = { ROS_UKR_VOL < 100 } NOT = { has_country_flag = ROS_UKR_VOL_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_VOL = 10 }
+                        clamp_variable = { var = ROS_UKR_VOL min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_VOL_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 2 } check_variable = { ROS_UKR_RIV < 100 } NOT = { has_country_flag = ROS_UKR_RIV_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_RIV = 10 }
+                        clamp_variable = { var = ROS_UKR_RIV min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_RIV_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 3 } check_variable = { ROS_UKR_LVI < 100 } NOT = { has_country_flag = ROS_UKR_LVI_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_LVI = 10 }
+                        clamp_variable = { var = ROS_UKR_LVI min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_LVI_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 4 } check_variable = { ROS_UKR_ZAK < 100 } NOT = { has_country_flag = ROS_UKR_ZAK_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_ZAK = 10 }
+                        clamp_variable = { var = ROS_UKR_ZAK min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ZAK_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 5 } check_variable = { ROS_UKR_IVA < 100 } NOT = { has_country_flag = ROS_UKR_IVA_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_IVA = 10 }
+                        clamp_variable = { var = ROS_UKR_IVA min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_IVA_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 6 } check_variable = { ROS_UKR_TER < 100 } NOT = { has_country_flag = ROS_UKR_TER_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_TER = 10 }
+                        clamp_variable = { var = ROS_UKR_TER min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_TER_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 7 } check_variable = { ROS_UKR_CHE < 100 } NOT = { has_country_flag = ROS_UKR_CHE_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_CHE = 10 }
+                        clamp_variable = { var = ROS_UKR_CHE min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_CHE_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 8 } check_variable = { ROS_UKR_KHM < 100 } NOT = { has_country_flag = ROS_UKR_KHM_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_KHM = 10 }
+                        clamp_variable = { var = ROS_UKR_KHM min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KHM_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 9 } check_variable = { ROS_UKR_ZHY < 100 } NOT = { has_country_flag = ROS_UKR_ZHY_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_ZHY = 10 }
+                        clamp_variable = { var = ROS_UKR_ZHY min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ZHY_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 10 } check_variable = { ROS_UKR_VIN < 100 } NOT = { has_country_flag = ROS_UKR_VIN_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_VIN = 10 }
+                        clamp_variable = { var = ROS_UKR_VIN min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_VIN_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 11 } check_variable = { ROS_UKR_KYI < 100 } NOT = { has_country_flag = ROS_UKR_KYI_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_KYI = 10 }
+                        clamp_variable = { var = ROS_UKR_KYI min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KYI_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 12 } check_variable = { ROS_UKR_CHR < 100 } NOT = { has_country_flag = ROS_UKR_CHR_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_CHR = 10 }
+                        clamp_variable = { var = ROS_UKR_CHR min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_CHR_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 13 } check_variable = { ROS_UKR_SUM < 100 } NOT = { has_country_flag = ROS_UKR_SUM_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_SUM = 10 }
+                        clamp_variable = { var = ROS_UKR_SUM min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_SUM_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 14 } check_variable = { ROS_UKR_KHA < 100 } NOT = { has_country_flag = ROS_UKR_KHA_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_KHA = 10 }
+                        clamp_variable = { var = ROS_UKR_KHA min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KHA_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 15 } check_variable = { ROS_UKR_POL < 100 } NOT = { has_country_flag = ROS_UKR_POL_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_POL = 10 }
+                        clamp_variable = { var = ROS_UKR_POL min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_POL_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 16 } check_variable = { ROS_UKR_CKA < 100 } NOT = { has_country_flag = ROS_UKR_CKA_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_CKA = 10 }
+                        clamp_variable = { var = ROS_UKR_CKA min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_CKA_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 17 } check_variable = { ROS_UKR_KIR < 100 } NOT = { has_country_flag = ROS_UKR_KIR_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_KIR = 10 }
+                        clamp_variable = { var = ROS_UKR_KIR min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KIR_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 18 } check_variable = { ROS_UKR_DNI < 100 } NOT = { has_country_flag = ROS_UKR_DNI_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_DNI = 10 }
+                        clamp_variable = { var = ROS_UKR_DNI min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_DNI_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 19 } check_variable = { ROS_UKR_DON < 100 } NOT = { has_country_flag = ROS_UKR_DON_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_DON = 10 }
+                        clamp_variable = { var = ROS_UKR_DON min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_DON_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 20 } check_variable = { ROS_UKR_LUH < 100 } NOT = { has_country_flag = ROS_UKR_LUH_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_LUH = 10 }
+                        clamp_variable = { var = ROS_UKR_LUH min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_LUH_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 21 } check_variable = { ROS_UKR_ZAP < 100 } NOT = { has_country_flag = ROS_UKR_ZAP_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_ZAP = 10 }
+                        clamp_variable = { var = ROS_UKR_ZAP min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ZAP_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 22 } check_variable = { ROS_UKR_KHE < 100 } NOT = { has_country_flag = ROS_UKR_KHE_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_KHE = 10 }
+                        clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KHE_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 23 } check_variable = { ROS_UKR_MYK < 100 } NOT = { has_country_flag = ROS_UKR_MYK_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_MYK = 10 }
+                        clamp_variable = { var = ROS_UKR_MYK min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_MYK_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 24 } check_variable = { ROS_UKR_ODE < 100 } NOT = { has_country_flag = ROS_UKR_ODE_cooldown } }
+                        add_political_power = -25
+                        add_manpower = -2500
+                        add_to_variable = { ROS_UKR_ODE = 10 }
+                        clamp_variable = { var = ROS_UKR_ODE min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ODE_cooldown days = 30 }
+                        ROS_UKR_recalculate = yes
+                    }
+                }
+            }
+            op_tiny_click = {
+                ROOT = {
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 1 } check_variable = { ROS_UKR_VOL < 100 } NOT = { has_country_flag = ROS_UKR_VOL_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_VOL = 5 }
+                        clamp_variable = { var = ROS_UKR_VOL min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_VOL_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 2 } check_variable = { ROS_UKR_RIV < 100 } NOT = { has_country_flag = ROS_UKR_RIV_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_RIV = 5 }
+                        clamp_variable = { var = ROS_UKR_RIV min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_RIV_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 3 } check_variable = { ROS_UKR_LVI < 100 } NOT = { has_country_flag = ROS_UKR_LVI_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_LVI = 5 }
+                        clamp_variable = { var = ROS_UKR_LVI min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_LVI_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 4 } check_variable = { ROS_UKR_ZAK < 100 } NOT = { has_country_flag = ROS_UKR_ZAK_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_ZAK = 5 }
+                        clamp_variable = { var = ROS_UKR_ZAK min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ZAK_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 5 } check_variable = { ROS_UKR_IVA < 100 } NOT = { has_country_flag = ROS_UKR_IVA_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_IVA = 5 }
+                        clamp_variable = { var = ROS_UKR_IVA min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_IVA_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 6 } check_variable = { ROS_UKR_TER < 100 } NOT = { has_country_flag = ROS_UKR_TER_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_TER = 5 }
+                        clamp_variable = { var = ROS_UKR_TER min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_TER_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 7 } check_variable = { ROS_UKR_CHE < 100 } NOT = { has_country_flag = ROS_UKR_CHE_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_CHE = 5 }
+                        clamp_variable = { var = ROS_UKR_CHE min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_CHE_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 8 } check_variable = { ROS_UKR_KHM < 100 } NOT = { has_country_flag = ROS_UKR_KHM_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_KHM = 5 }
+                        clamp_variable = { var = ROS_UKR_KHM min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KHM_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 9 } check_variable = { ROS_UKR_ZHY < 100 } NOT = { has_country_flag = ROS_UKR_ZHY_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_ZHY = 5 }
+                        clamp_variable = { var = ROS_UKR_ZHY min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ZHY_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 10 } check_variable = { ROS_UKR_VIN < 100 } NOT = { has_country_flag = ROS_UKR_VIN_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_VIN = 5 }
+                        clamp_variable = { var = ROS_UKR_VIN min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_VIN_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 11 } check_variable = { ROS_UKR_KYI < 100 } NOT = { has_country_flag = ROS_UKR_KYI_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_KYI = 5 }
+                        clamp_variable = { var = ROS_UKR_KYI min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KYI_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 12 } check_variable = { ROS_UKR_CHR < 100 } NOT = { has_country_flag = ROS_UKR_CHR_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_CHR = 5 }
+                        clamp_variable = { var = ROS_UKR_CHR min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_CHR_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 13 } check_variable = { ROS_UKR_SUM < 100 } NOT = { has_country_flag = ROS_UKR_SUM_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_SUM = 5 }
+                        clamp_variable = { var = ROS_UKR_SUM min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_SUM_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 14 } check_variable = { ROS_UKR_KHA < 100 } NOT = { has_country_flag = ROS_UKR_KHA_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_KHA = 5 }
+                        clamp_variable = { var = ROS_UKR_KHA min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KHA_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 15 } check_variable = { ROS_UKR_POL < 100 } NOT = { has_country_flag = ROS_UKR_POL_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_POL = 5 }
+                        clamp_variable = { var = ROS_UKR_POL min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_POL_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 16 } check_variable = { ROS_UKR_CKA < 100 } NOT = { has_country_flag = ROS_UKR_CKA_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_CKA = 5 }
+                        clamp_variable = { var = ROS_UKR_CKA min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_CKA_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 17 } check_variable = { ROS_UKR_KIR < 100 } NOT = { has_country_flag = ROS_UKR_KIR_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_KIR = 5 }
+                        clamp_variable = { var = ROS_UKR_KIR min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KIR_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 18 } check_variable = { ROS_UKR_DNI < 100 } NOT = { has_country_flag = ROS_UKR_DNI_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_DNI = 5 }
+                        clamp_variable = { var = ROS_UKR_DNI min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_DNI_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 19 } check_variable = { ROS_UKR_DON < 100 } NOT = { has_country_flag = ROS_UKR_DON_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_DON = 5 }
+                        clamp_variable = { var = ROS_UKR_DON min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_DON_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 20 } check_variable = { ROS_UKR_LUH < 100 } NOT = { has_country_flag = ROS_UKR_LUH_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_LUH = 5 }
+                        clamp_variable = { var = ROS_UKR_LUH min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_LUH_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 21 } check_variable = { ROS_UKR_ZAP < 100 } NOT = { has_country_flag = ROS_UKR_ZAP_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_ZAP = 5 }
+                        clamp_variable = { var = ROS_UKR_ZAP min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ZAP_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 22 } check_variable = { ROS_UKR_KHE < 100 } NOT = { has_country_flag = ROS_UKR_KHE_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_KHE = 5 }
+                        clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_KHE_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 23 } check_variable = { ROS_UKR_MYK < 100 } NOT = { has_country_flag = ROS_UKR_MYK_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_MYK = 5 }
+                        clamp_variable = { var = ROS_UKR_MYK min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_MYK_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                    if = {
+                        limit = { check_variable = { ROS_UKR_selected = 24 } check_variable = { ROS_UKR_ODE < 100 } NOT = { has_country_flag = ROS_UKR_ODE_cooldown } }
+                        add_political_power = -10
+                        add_manpower = -750
+                        add_to_variable = { ROS_UKR_ODE = 5 }
+                        clamp_variable = { var = ROS_UKR_ODE min = 0 max = 100 }
+                        set_country_flag = { flag = ROS_UKR_ODE_cooldown days = 14 }
+                        ROS_UKR_recalculate = yes
+                    }
+                }
+            }
+        }
+        triggers = {
+            rg_VOL_t0_visible = { ROOT = { check_variable = { ROS_UKR_VOL < 1 } } }
+            rg_VOL_t1_visible = { ROOT = { check_variable = { ROS_UKR_VOL > 0.99 } check_variable = { ROS_UKR_VOL < 30.00 } } }
+            rg_VOL_t2_visible = { ROOT = { check_variable = { ROS_UKR_VOL > 29.99 } check_variable = { ROS_UKR_VOL < 70.00 } } }
+            rg_VOL_t3_visible = { ROOT = { check_variable = { ROS_UKR_VOL > 69.99 } check_variable = { ROS_UKR_VOL < 100.00 } } }
+            rg_VOL_t4_visible = { ROOT = { check_variable = { ROS_UKR_VOL > 99 } } }
+            rg_RIV_t0_visible = { ROOT = { check_variable = { ROS_UKR_RIV < 1 } } }
+            rg_RIV_t1_visible = { ROOT = { check_variable = { ROS_UKR_RIV > 0.99 } check_variable = { ROS_UKR_RIV < 30.00 } } }
+            rg_RIV_t2_visible = { ROOT = { check_variable = { ROS_UKR_RIV > 29.99 } check_variable = { ROS_UKR_RIV < 70.00 } } }
+            rg_RIV_t3_visible = { ROOT = { check_variable = { ROS_UKR_RIV > 69.99 } check_variable = { ROS_UKR_RIV < 100.00 } } }
+            rg_RIV_t4_visible = { ROOT = { check_variable = { ROS_UKR_RIV > 99 } } }
+            rg_LVI_t0_visible = { ROOT = { check_variable = { ROS_UKR_LVI < 1 } } }
+            rg_LVI_t1_visible = { ROOT = { check_variable = { ROS_UKR_LVI > 0.99 } check_variable = { ROS_UKR_LVI < 30.00 } } }
+            rg_LVI_t2_visible = { ROOT = { check_variable = { ROS_UKR_LVI > 29.99 } check_variable = { ROS_UKR_LVI < 70.00 } } }
+            rg_LVI_t3_visible = { ROOT = { check_variable = { ROS_UKR_LVI > 69.99 } check_variable = { ROS_UKR_LVI < 100.00 } } }
+            rg_LVI_t4_visible = { ROOT = { check_variable = { ROS_UKR_LVI > 99 } } }
+            rg_ZAK_t0_visible = { ROOT = { check_variable = { ROS_UKR_ZAK < 1 } } }
+            rg_ZAK_t1_visible = { ROOT = { check_variable = { ROS_UKR_ZAK > 0.99 } check_variable = { ROS_UKR_ZAK < 30.00 } } }
+            rg_ZAK_t2_visible = { ROOT = { check_variable = { ROS_UKR_ZAK > 29.99 } check_variable = { ROS_UKR_ZAK < 70.00 } } }
+            rg_ZAK_t3_visible = { ROOT = { check_variable = { ROS_UKR_ZAK > 69.99 } check_variable = { ROS_UKR_ZAK < 100.00 } } }
+            rg_ZAK_t4_visible = { ROOT = { check_variable = { ROS_UKR_ZAK > 99 } } }
+            rg_IVA_t0_visible = { ROOT = { check_variable = { ROS_UKR_IVA < 1 } } }
+            rg_IVA_t1_visible = { ROOT = { check_variable = { ROS_UKR_IVA > 0.99 } check_variable = { ROS_UKR_IVA < 30.00 } } }
+            rg_IVA_t2_visible = { ROOT = { check_variable = { ROS_UKR_IVA > 29.99 } check_variable = { ROS_UKR_IVA < 70.00 } } }
+            rg_IVA_t3_visible = { ROOT = { check_variable = { ROS_UKR_IVA > 69.99 } check_variable = { ROS_UKR_IVA < 100.00 } } }
+            rg_IVA_t4_visible = { ROOT = { check_variable = { ROS_UKR_IVA > 99 } } }
+            rg_TER_t0_visible = { ROOT = { check_variable = { ROS_UKR_TER < 1 } } }
+            rg_TER_t1_visible = { ROOT = { check_variable = { ROS_UKR_TER > 0.99 } check_variable = { ROS_UKR_TER < 30.00 } } }
+            rg_TER_t2_visible = { ROOT = { check_variable = { ROS_UKR_TER > 29.99 } check_variable = { ROS_UKR_TER < 70.00 } } }
+            rg_TER_t3_visible = { ROOT = { check_variable = { ROS_UKR_TER > 69.99 } check_variable = { ROS_UKR_TER < 100.00 } } }
+            rg_TER_t4_visible = { ROOT = { check_variable = { ROS_UKR_TER > 99 } } }
+            rg_CHE_t0_visible = { ROOT = { check_variable = { ROS_UKR_CHE < 1 } } }
+            rg_CHE_t1_visible = { ROOT = { check_variable = { ROS_UKR_CHE > 0.99 } check_variable = { ROS_UKR_CHE < 30.00 } } }
+            rg_CHE_t2_visible = { ROOT = { check_variable = { ROS_UKR_CHE > 29.99 } check_variable = { ROS_UKR_CHE < 70.00 } } }
+            rg_CHE_t3_visible = { ROOT = { check_variable = { ROS_UKR_CHE > 69.99 } check_variable = { ROS_UKR_CHE < 100.00 } } }
+            rg_CHE_t4_visible = { ROOT = { check_variable = { ROS_UKR_CHE > 99 } } }
+            rg_KHM_t0_visible = { ROOT = { check_variable = { ROS_UKR_KHM < 1 } } }
+            rg_KHM_t1_visible = { ROOT = { check_variable = { ROS_UKR_KHM > 0.99 } check_variable = { ROS_UKR_KHM < 30.00 } } }
+            rg_KHM_t2_visible = { ROOT = { check_variable = { ROS_UKR_KHM > 29.99 } check_variable = { ROS_UKR_KHM < 70.00 } } }
+            rg_KHM_t3_visible = { ROOT = { check_variable = { ROS_UKR_KHM > 69.99 } check_variable = { ROS_UKR_KHM < 100.00 } } }
+            rg_KHM_t4_visible = { ROOT = { check_variable = { ROS_UKR_KHM > 99 } } }
+            rg_ZHY_t0_visible = { ROOT = { check_variable = { ROS_UKR_ZHY < 1 } } }
+            rg_ZHY_t1_visible = { ROOT = { check_variable = { ROS_UKR_ZHY > 0.99 } check_variable = { ROS_UKR_ZHY < 30.00 } } }
+            rg_ZHY_t2_visible = { ROOT = { check_variable = { ROS_UKR_ZHY > 29.99 } check_variable = { ROS_UKR_ZHY < 70.00 } } }
+            rg_ZHY_t3_visible = { ROOT = { check_variable = { ROS_UKR_ZHY > 69.99 } check_variable = { ROS_UKR_ZHY < 100.00 } } }
+            rg_ZHY_t4_visible = { ROOT = { check_variable = { ROS_UKR_ZHY > 99 } } }
+            rg_VIN_t0_visible = { ROOT = { check_variable = { ROS_UKR_VIN < 1 } } }
+            rg_VIN_t1_visible = { ROOT = { check_variable = { ROS_UKR_VIN > 0.99 } check_variable = { ROS_UKR_VIN < 30.00 } } }
+            rg_VIN_t2_visible = { ROOT = { check_variable = { ROS_UKR_VIN > 29.99 } check_variable = { ROS_UKR_VIN < 70.00 } } }
+            rg_VIN_t3_visible = { ROOT = { check_variable = { ROS_UKR_VIN > 69.99 } check_variable = { ROS_UKR_VIN < 100.00 } } }
+            rg_VIN_t4_visible = { ROOT = { check_variable = { ROS_UKR_VIN > 99 } } }
+            rg_KYI_t0_visible = { ROOT = { check_variable = { ROS_UKR_KYI < 1 } } }
+            rg_KYI_t1_visible = { ROOT = { check_variable = { ROS_UKR_KYI > 0.99 } check_variable = { ROS_UKR_KYI < 30.00 } } }
+            rg_KYI_t2_visible = { ROOT = { check_variable = { ROS_UKR_KYI > 29.99 } check_variable = { ROS_UKR_KYI < 70.00 } } }
+            rg_KYI_t3_visible = { ROOT = { check_variable = { ROS_UKR_KYI > 69.99 } check_variable = { ROS_UKR_KYI < 100.00 } } }
+            rg_KYI_t4_visible = { ROOT = { check_variable = { ROS_UKR_KYI > 99 } } }
+            rg_CHR_t0_visible = { ROOT = { check_variable = { ROS_UKR_CHR < 1 } } }
+            rg_CHR_t1_visible = { ROOT = { check_variable = { ROS_UKR_CHR > 0.99 } check_variable = { ROS_UKR_CHR < 30.00 } } }
+            rg_CHR_t2_visible = { ROOT = { check_variable = { ROS_UKR_CHR > 29.99 } check_variable = { ROS_UKR_CHR < 70.00 } } }
+            rg_CHR_t3_visible = { ROOT = { check_variable = { ROS_UKR_CHR > 69.99 } check_variable = { ROS_UKR_CHR < 100.00 } } }
+            rg_CHR_t4_visible = { ROOT = { check_variable = { ROS_UKR_CHR > 99 } } }
+            rg_SUM_t0_visible = { ROOT = { check_variable = { ROS_UKR_SUM < 1 } } }
+            rg_SUM_t1_visible = { ROOT = { check_variable = { ROS_UKR_SUM > 0.99 } check_variable = { ROS_UKR_SUM < 30.00 } } }
+            rg_SUM_t2_visible = { ROOT = { check_variable = { ROS_UKR_SUM > 29.99 } check_variable = { ROS_UKR_SUM < 70.00 } } }
+            rg_SUM_t3_visible = { ROOT = { check_variable = { ROS_UKR_SUM > 69.99 } check_variable = { ROS_UKR_SUM < 100.00 } } }
+            rg_SUM_t4_visible = { ROOT = { check_variable = { ROS_UKR_SUM > 99 } } }
+            rg_KHA_t0_visible = { ROOT = { check_variable = { ROS_UKR_KHA < 1 } } }
+            rg_KHA_t1_visible = { ROOT = { check_variable = { ROS_UKR_KHA > 0.99 } check_variable = { ROS_UKR_KHA < 30.00 } } }
+            rg_KHA_t2_visible = { ROOT = { check_variable = { ROS_UKR_KHA > 29.99 } check_variable = { ROS_UKR_KHA < 70.00 } } }
+            rg_KHA_t3_visible = { ROOT = { check_variable = { ROS_UKR_KHA > 69.99 } check_variable = { ROS_UKR_KHA < 100.00 } } }
+            rg_KHA_t4_visible = { ROOT = { check_variable = { ROS_UKR_KHA > 99 } } }
+            rg_POL_t0_visible = { ROOT = { check_variable = { ROS_UKR_POL < 1 } } }
+            rg_POL_t1_visible = { ROOT = { check_variable = { ROS_UKR_POL > 0.99 } check_variable = { ROS_UKR_POL < 30.00 } } }
+            rg_POL_t2_visible = { ROOT = { check_variable = { ROS_UKR_POL > 29.99 } check_variable = { ROS_UKR_POL < 70.00 } } }
+            rg_POL_t3_visible = { ROOT = { check_variable = { ROS_UKR_POL > 69.99 } check_variable = { ROS_UKR_POL < 100.00 } } }
+            rg_POL_t4_visible = { ROOT = { check_variable = { ROS_UKR_POL > 99 } } }
+            rg_CKA_t0_visible = { ROOT = { check_variable = { ROS_UKR_CKA < 1 } } }
+            rg_CKA_t1_visible = { ROOT = { check_variable = { ROS_UKR_CKA > 0.99 } check_variable = { ROS_UKR_CKA < 30.00 } } }
+            rg_CKA_t2_visible = { ROOT = { check_variable = { ROS_UKR_CKA > 29.99 } check_variable = { ROS_UKR_CKA < 70.00 } } }
+            rg_CKA_t3_visible = { ROOT = { check_variable = { ROS_UKR_CKA > 69.99 } check_variable = { ROS_UKR_CKA < 100.00 } } }
+            rg_CKA_t4_visible = { ROOT = { check_variable = { ROS_UKR_CKA > 99 } } }
+            rg_KIR_t0_visible = { ROOT = { check_variable = { ROS_UKR_KIR < 1 } } }
+            rg_KIR_t1_visible = { ROOT = { check_variable = { ROS_UKR_KIR > 0.99 } check_variable = { ROS_UKR_KIR < 30.00 } } }
+            rg_KIR_t2_visible = { ROOT = { check_variable = { ROS_UKR_KIR > 29.99 } check_variable = { ROS_UKR_KIR < 70.00 } } }
+            rg_KIR_t3_visible = { ROOT = { check_variable = { ROS_UKR_KIR > 69.99 } check_variable = { ROS_UKR_KIR < 100.00 } } }
+            rg_KIR_t4_visible = { ROOT = { check_variable = { ROS_UKR_KIR > 99 } } }
+            rg_DNI_t0_visible = { ROOT = { check_variable = { ROS_UKR_DNI < 1 } } }
+            rg_DNI_t1_visible = { ROOT = { check_variable = { ROS_UKR_DNI > 0.99 } check_variable = { ROS_UKR_DNI < 30.00 } } }
+            rg_DNI_t2_visible = { ROOT = { check_variable = { ROS_UKR_DNI > 29.99 } check_variable = { ROS_UKR_DNI < 70.00 } } }
+            rg_DNI_t3_visible = { ROOT = { check_variable = { ROS_UKR_DNI > 69.99 } check_variable = { ROS_UKR_DNI < 100.00 } } }
+            rg_DNI_t4_visible = { ROOT = { check_variable = { ROS_UKR_DNI > 99 } } }
+            rg_DON_t0_visible = { ROOT = { check_variable = { ROS_UKR_DON < 1 } } }
+            rg_DON_t1_visible = { ROOT = { check_variable = { ROS_UKR_DON > 0.99 } check_variable = { ROS_UKR_DON < 30.00 } } }
+            rg_DON_t2_visible = { ROOT = { check_variable = { ROS_UKR_DON > 29.99 } check_variable = { ROS_UKR_DON < 70.00 } } }
+            rg_DON_t3_visible = { ROOT = { check_variable = { ROS_UKR_DON > 69.99 } check_variable = { ROS_UKR_DON < 100.00 } } }
+            rg_DON_t4_visible = { ROOT = { check_variable = { ROS_UKR_DON > 99 } } }
+            rg_LUH_t0_visible = { ROOT = { check_variable = { ROS_UKR_LUH < 1 } } }
+            rg_LUH_t1_visible = { ROOT = { check_variable = { ROS_UKR_LUH > 0.99 } check_variable = { ROS_UKR_LUH < 30.00 } } }
+            rg_LUH_t2_visible = { ROOT = { check_variable = { ROS_UKR_LUH > 29.99 } check_variable = { ROS_UKR_LUH < 70.00 } } }
+            rg_LUH_t3_visible = { ROOT = { check_variable = { ROS_UKR_LUH > 69.99 } check_variable = { ROS_UKR_LUH < 100.00 } } }
+            rg_LUH_t4_visible = { ROOT = { check_variable = { ROS_UKR_LUH > 99 } } }
+            rg_ZAP_t0_visible = { ROOT = { check_variable = { ROS_UKR_ZAP < 1 } } }
+            rg_ZAP_t1_visible = { ROOT = { check_variable = { ROS_UKR_ZAP > 0.99 } check_variable = { ROS_UKR_ZAP < 30.00 } } }
+            rg_ZAP_t2_visible = { ROOT = { check_variable = { ROS_UKR_ZAP > 29.99 } check_variable = { ROS_UKR_ZAP < 70.00 } } }
+            rg_ZAP_t3_visible = { ROOT = { check_variable = { ROS_UKR_ZAP > 69.99 } check_variable = { ROS_UKR_ZAP < 100.00 } } }
+            rg_ZAP_t4_visible = { ROOT = { check_variable = { ROS_UKR_ZAP > 99 } } }
+            rg_KHE_t0_visible = { ROOT = { check_variable = { ROS_UKR_KHE < 1 } } }
+            rg_KHE_t1_visible = { ROOT = { check_variable = { ROS_UKR_KHE > 0.99 } check_variable = { ROS_UKR_KHE < 30.00 } } }
+            rg_KHE_t2_visible = { ROOT = { check_variable = { ROS_UKR_KHE > 29.99 } check_variable = { ROS_UKR_KHE < 70.00 } } }
+            rg_KHE_t3_visible = { ROOT = { check_variable = { ROS_UKR_KHE > 69.99 } check_variable = { ROS_UKR_KHE < 100.00 } } }
+            rg_KHE_t4_visible = { ROOT = { check_variable = { ROS_UKR_KHE > 99 } } }
+            rg_MYK_t0_visible = { ROOT = { check_variable = { ROS_UKR_MYK < 1 } } }
+            rg_MYK_t1_visible = { ROOT = { check_variable = { ROS_UKR_MYK > 0.99 } check_variable = { ROS_UKR_MYK < 30.00 } } }
+            rg_MYK_t2_visible = { ROOT = { check_variable = { ROS_UKR_MYK > 29.99 } check_variable = { ROS_UKR_MYK < 70.00 } } }
+            rg_MYK_t3_visible = { ROOT = { check_variable = { ROS_UKR_MYK > 69.99 } check_variable = { ROS_UKR_MYK < 100.00 } } }
+            rg_MYK_t4_visible = { ROOT = { check_variable = { ROS_UKR_MYK > 99 } } }
+            rg_ODE_t0_visible = { ROOT = { check_variable = { ROS_UKR_ODE < 1 } } }
+            rg_ODE_t1_visible = { ROOT = { check_variable = { ROS_UKR_ODE > 0.99 } check_variable = { ROS_UKR_ODE < 30.00 } } }
+            rg_ODE_t2_visible = { ROOT = { check_variable = { ROS_UKR_ODE > 29.99 } check_variable = { ROS_UKR_ODE < 70.00 } } }
+            rg_ODE_t3_visible = { ROOT = { check_variable = { ROS_UKR_ODE > 69.99 } check_variable = { ROS_UKR_ODE < 100.00 } } }
+            rg_ODE_t4_visible = { ROOT = { check_variable = { ROS_UKR_ODE > 99 } } }
+            op_huge_click_enabled = {
+                ROOT = { has_political_power > 64 has_manpower > 7999 NOT = { has_country_flag = ROS_UKR_succession_pause }
+                    OR = {
+                        AND = { check_variable = { ROS_UKR_selected = 1 } check_variable = { ROS_UKR_VOL < 100 } NOT = { has_country_flag = ROS_UKR_VOL_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 2 } check_variable = { ROS_UKR_RIV < 100 } NOT = { has_country_flag = ROS_UKR_RIV_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 3 } check_variable = { ROS_UKR_LVI < 100 } NOT = { has_country_flag = ROS_UKR_LVI_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 4 } check_variable = { ROS_UKR_ZAK < 100 } NOT = { has_country_flag = ROS_UKR_ZAK_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 5 } check_variable = { ROS_UKR_IVA < 100 } NOT = { has_country_flag = ROS_UKR_IVA_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 6 } check_variable = { ROS_UKR_TER < 100 } NOT = { has_country_flag = ROS_UKR_TER_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 7 } check_variable = { ROS_UKR_CHE < 100 } NOT = { has_country_flag = ROS_UKR_CHE_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 8 } check_variable = { ROS_UKR_KHM < 100 } NOT = { has_country_flag = ROS_UKR_KHM_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 9 } check_variable = { ROS_UKR_ZHY < 100 } NOT = { has_country_flag = ROS_UKR_ZHY_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 10 } check_variable = { ROS_UKR_VIN < 100 } NOT = { has_country_flag = ROS_UKR_VIN_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 11 } check_variable = { ROS_UKR_KYI < 100 } NOT = { has_country_flag = ROS_UKR_KYI_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 12 } check_variable = { ROS_UKR_CHR < 100 } NOT = { has_country_flag = ROS_UKR_CHR_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 13 } check_variable = { ROS_UKR_SUM < 100 } NOT = { has_country_flag = ROS_UKR_SUM_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 14 } check_variable = { ROS_UKR_KHA < 100 } NOT = { has_country_flag = ROS_UKR_KHA_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 15 } check_variable = { ROS_UKR_POL < 100 } NOT = { has_country_flag = ROS_UKR_POL_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 16 } check_variable = { ROS_UKR_CKA < 100 } NOT = { has_country_flag = ROS_UKR_CKA_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 17 } check_variable = { ROS_UKR_KIR < 100 } NOT = { has_country_flag = ROS_UKR_KIR_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 18 } check_variable = { ROS_UKR_DNI < 100 } NOT = { has_country_flag = ROS_UKR_DNI_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 19 } check_variable = { ROS_UKR_DON < 100 } NOT = { has_country_flag = ROS_UKR_DON_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 20 } check_variable = { ROS_UKR_LUH < 100 } NOT = { has_country_flag = ROS_UKR_LUH_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 21 } check_variable = { ROS_UKR_ZAP < 100 } NOT = { has_country_flag = ROS_UKR_ZAP_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 22 } check_variable = { ROS_UKR_KHE < 100 } NOT = { has_country_flag = ROS_UKR_KHE_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 23 } check_variable = { ROS_UKR_MYK < 100 } NOT = { has_country_flag = ROS_UKR_MYK_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 24 } check_variable = { ROS_UKR_ODE < 100 } NOT = { has_country_flag = ROS_UKR_ODE_cooldown } }
+                    }
+                }
+            }
+            op_small_click_enabled = {
+                ROOT = { has_political_power > 24 has_manpower > 2499 NOT = { has_country_flag = ROS_UKR_succession_pause }
+                    OR = {
+                        AND = { check_variable = { ROS_UKR_selected = 1 } check_variable = { ROS_UKR_VOL < 100 } NOT = { has_country_flag = ROS_UKR_VOL_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 2 } check_variable = { ROS_UKR_RIV < 100 } NOT = { has_country_flag = ROS_UKR_RIV_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 3 } check_variable = { ROS_UKR_LVI < 100 } NOT = { has_country_flag = ROS_UKR_LVI_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 4 } check_variable = { ROS_UKR_ZAK < 100 } NOT = { has_country_flag = ROS_UKR_ZAK_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 5 } check_variable = { ROS_UKR_IVA < 100 } NOT = { has_country_flag = ROS_UKR_IVA_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 6 } check_variable = { ROS_UKR_TER < 100 } NOT = { has_country_flag = ROS_UKR_TER_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 7 } check_variable = { ROS_UKR_CHE < 100 } NOT = { has_country_flag = ROS_UKR_CHE_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 8 } check_variable = { ROS_UKR_KHM < 100 } NOT = { has_country_flag = ROS_UKR_KHM_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 9 } check_variable = { ROS_UKR_ZHY < 100 } NOT = { has_country_flag = ROS_UKR_ZHY_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 10 } check_variable = { ROS_UKR_VIN < 100 } NOT = { has_country_flag = ROS_UKR_VIN_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 11 } check_variable = { ROS_UKR_KYI < 100 } NOT = { has_country_flag = ROS_UKR_KYI_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 12 } check_variable = { ROS_UKR_CHR < 100 } NOT = { has_country_flag = ROS_UKR_CHR_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 13 } check_variable = { ROS_UKR_SUM < 100 } NOT = { has_country_flag = ROS_UKR_SUM_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 14 } check_variable = { ROS_UKR_KHA < 100 } NOT = { has_country_flag = ROS_UKR_KHA_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 15 } check_variable = { ROS_UKR_POL < 100 } NOT = { has_country_flag = ROS_UKR_POL_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 16 } check_variable = { ROS_UKR_CKA < 100 } NOT = { has_country_flag = ROS_UKR_CKA_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 17 } check_variable = { ROS_UKR_KIR < 100 } NOT = { has_country_flag = ROS_UKR_KIR_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 18 } check_variable = { ROS_UKR_DNI < 100 } NOT = { has_country_flag = ROS_UKR_DNI_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 19 } check_variable = { ROS_UKR_DON < 100 } NOT = { has_country_flag = ROS_UKR_DON_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 20 } check_variable = { ROS_UKR_LUH < 100 } NOT = { has_country_flag = ROS_UKR_LUH_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 21 } check_variable = { ROS_UKR_ZAP < 100 } NOT = { has_country_flag = ROS_UKR_ZAP_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 22 } check_variable = { ROS_UKR_KHE < 100 } NOT = { has_country_flag = ROS_UKR_KHE_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 23 } check_variable = { ROS_UKR_MYK < 100 } NOT = { has_country_flag = ROS_UKR_MYK_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 24 } check_variable = { ROS_UKR_ODE < 100 } NOT = { has_country_flag = ROS_UKR_ODE_cooldown } }
+                    }
+                }
+            }
+            op_tiny_click_enabled = {
+                ROOT = { has_political_power > 9 has_manpower > 749 NOT = { has_country_flag = ROS_UKR_succession_pause }
+                    OR = {
+                        AND = { check_variable = { ROS_UKR_selected = 1 } check_variable = { ROS_UKR_VOL < 100 } NOT = { has_country_flag = ROS_UKR_VOL_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 2 } check_variable = { ROS_UKR_RIV < 100 } NOT = { has_country_flag = ROS_UKR_RIV_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 3 } check_variable = { ROS_UKR_LVI < 100 } NOT = { has_country_flag = ROS_UKR_LVI_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 4 } check_variable = { ROS_UKR_ZAK < 100 } NOT = { has_country_flag = ROS_UKR_ZAK_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 5 } check_variable = { ROS_UKR_IVA < 100 } NOT = { has_country_flag = ROS_UKR_IVA_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 6 } check_variable = { ROS_UKR_TER < 100 } NOT = { has_country_flag = ROS_UKR_TER_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 7 } check_variable = { ROS_UKR_CHE < 100 } NOT = { has_country_flag = ROS_UKR_CHE_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 8 } check_variable = { ROS_UKR_KHM < 100 } NOT = { has_country_flag = ROS_UKR_KHM_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 9 } check_variable = { ROS_UKR_ZHY < 100 } NOT = { has_country_flag = ROS_UKR_ZHY_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 10 } check_variable = { ROS_UKR_VIN < 100 } NOT = { has_country_flag = ROS_UKR_VIN_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 11 } check_variable = { ROS_UKR_KYI < 100 } NOT = { has_country_flag = ROS_UKR_KYI_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 12 } check_variable = { ROS_UKR_CHR < 100 } NOT = { has_country_flag = ROS_UKR_CHR_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 13 } check_variable = { ROS_UKR_SUM < 100 } NOT = { has_country_flag = ROS_UKR_SUM_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 14 } check_variable = { ROS_UKR_KHA < 100 } NOT = { has_country_flag = ROS_UKR_KHA_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 15 } check_variable = { ROS_UKR_POL < 100 } NOT = { has_country_flag = ROS_UKR_POL_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 16 } check_variable = { ROS_UKR_CKA < 100 } NOT = { has_country_flag = ROS_UKR_CKA_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 17 } check_variable = { ROS_UKR_KIR < 100 } NOT = { has_country_flag = ROS_UKR_KIR_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 18 } check_variable = { ROS_UKR_DNI < 100 } NOT = { has_country_flag = ROS_UKR_DNI_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 19 } check_variable = { ROS_UKR_DON < 100 } NOT = { has_country_flag = ROS_UKR_DON_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 20 } check_variable = { ROS_UKR_LUH < 100 } NOT = { has_country_flag = ROS_UKR_LUH_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 21 } check_variable = { ROS_UKR_ZAP < 100 } NOT = { has_country_flag = ROS_UKR_ZAP_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 22 } check_variable = { ROS_UKR_KHE < 100 } NOT = { has_country_flag = ROS_UKR_KHE_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 23 } check_variable = { ROS_UKR_MYK < 100 } NOT = { has_country_flag = ROS_UKR_MYK_cooldown } }
+                        AND = { check_variable = { ROS_UKR_selected = 24 } check_variable = { ROS_UKR_ODE < 100 } NOT = { has_country_flag = ROS_UKR_ODE_cooldown } }
+                    }
+                }
+            }
+        }
+    }
+}

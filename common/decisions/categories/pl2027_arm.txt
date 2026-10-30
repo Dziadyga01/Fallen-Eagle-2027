@@ -1,0 +1,6 @@
+ARM_panel = {
+	icon = generic_army_support
+	allowed = { always = yes }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
+	priority = 95
+}

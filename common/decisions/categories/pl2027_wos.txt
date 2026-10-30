@@ -1,0 +1,6 @@
+WOS_panel = {
+	icon = generic_political_discourse
+	allowed = { OR = { original_tag = SMR original_tag = KPR original_tag = MPR original_tag = LEG original_tag = PLC original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
+	priority = 50
+}

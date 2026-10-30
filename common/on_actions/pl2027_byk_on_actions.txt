@@ -1,0 +1,6 @@
+on_actions = {
+	on_monthly_BYD = {
+		effect = { if = { limit = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } } BYK_sondaz = yes BYK_faworyt = yes } }
+		random_events = { 55 = 0 15 = byk.10 10 = byk.11 10 = byk.12 10 = byk.13 }
+	}
+}

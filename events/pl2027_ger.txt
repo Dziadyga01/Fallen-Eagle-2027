@@ -1,0 +1,148 @@
+add_namespace = ger
+
+country_event = {
+	id = ger.1
+	title = ger.1.t
+	desc = ger.1.d
+	picture = GFX_pl2027_ev081_polityka_5
+	is_triggered_only = yes
+	option = {
+		name = ger.1.a
+		ai_chance = { base = 2 }
+		set_global_flag = GER_kurs_porzadek add_war_support = 0.05
+	}
+	option = {
+		name = ger.1.b
+		ai_chance = { base = 3 }
+		set_global_flag = GER_kurs_tarcza add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = ger.10
+	title = ger.10.t
+	desc = ger.10.d
+	picture = GFX_pl2027_ev081_narada_0
+	is_triggered_only = yes
+	option = {
+		name = ger.10.a
+		ai_chance = { base = 3 modifier = { factor = 2 check_variable = { EUR_zaleznosc > 59 } } }
+		add_to_variable = { EUR_zaleznosc = 5 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes add_stability = 0.02
+	}
+	option = {
+		name = ger.10.b
+		ai_chance = { base = 2 }
+		add_to_variable = { EUR_zaleznosc = -5 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes add_political_power = 20 FROM = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } }
+	}
+}
+
+country_event = {
+	id = ger.11
+	title = ger.11.t
+	desc = ger.11.d
+	picture = GFX_pl2027_ev081_granica_2
+	is_triggered_only = yes
+	option = {
+		name = ger.11.a
+		ai_chance = { base = 2 modifier = { factor = 3 check_variable = { EUR_zaleznosc > 79 } } }
+		add_ideas = GER_idea_stowarzyszony add_to_variable = { EUR_zaleznosc = 10 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes FROM = { add_political_power = 25 }
+	}
+	option = {
+		name = ger.11.b
+		ai_chance = { base = 3 }
+		add_to_variable = { EUR_zaleznosc = -10 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes FROM = { add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } }
+	}
+}
+
+country_event = {
+	id = ger.12
+	title = ger.12.t
+	desc = ger.12.d
+	picture = GFX_pl2027_ev081_gospodarka_3
+	is_triggered_only = yes
+	option = {
+		name = ger.12.a
+		ai_chance = { base = 4 }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } add_opinion_modifier = { target = FROM modifier = WOS_dialog }
+	}
+	option = {
+		name = ger.12.b
+		ai_chance = { base = 1 }
+		add_political_power = 40 add_war_support = 0.02
+	}
+}
+
+news_event = {
+	id = ger.13
+	title = ger.13.t
+	desc = ger.13.d
+	picture = GFX_pl2027_ev081_dyplomacja_5
+	is_triggered_only = yes
+	option = {
+		name = ger.13.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}
+
+country_event = {
+	id = ger.14
+	title = ger.14.t
+	desc = ger.14.d
+	picture = GFX_pl2027_ev081_front_4
+	is_triggered_only = yes
+	option = {
+		name = ger.14.a
+		ai_chance = { base = 1 }
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = ger.15
+	title = ger.15.t
+	desc = ger.15.d
+	picture = GFX_pl2027_ev081_ulica_2
+	is_triggered_only = yes
+	option = {
+		name = ger.15.a
+		ai_chance = { base = 3 }
+		every_country = { limit = { OR = { original_tag = PMN original_tag = SLS original_tag = PSN } is_subject_of = ROOT } add_to_variable = { EUR_zaleznosc = -8 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes } add_political_power = -40
+	}
+	option = {
+		name = ger.15.b
+		ai_chance = { base = 2 }
+		add_stability = -0.03 add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = ger.20
+	title = ger.20.t
+	desc = ger.20.d
+	picture = GFX_pl2027_ev081_granica_2
+	is_triggered_only = yes
+	option = {
+		name = ger.20.a
+		ai_chance = { base = 1 modifier = { factor = 4 check_variable = { EUR_zaleznosc > 69 } } modifier = { factor = 2 check_variable = { EUR_zaleznosc > 49 } } modifier = { factor = 0.1 check_variable = { EUR_zaleznosc < 30 } } modifier = { factor = 4 has_country_flag = EUR_postawa_integr } modifier = { factor = 0.2 has_country_flag = EUR_postawa_niezal } }
+		FROM = { set_country_flag = GER_wcielono add_political_power = 50 annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = ger.20.b
+		ai_chance = { base = 1 modifier = { factor = 4 check_variable = { EUR_zaleznosc < 40 } } modifier = { factor = 0.2 check_variable = { EUR_zaleznosc > 69 } } modifier = { factor = 5 has_country_flag = EUR_postawa_niezal } modifier = { factor = 0.2 has_country_flag = EUR_postawa_integr } }
+		FROM = { set_autonomy = { target = ROOT autonomous_state = autonomy_free } country_event = { id = ger.21 days = 1 } } declare_war_on = { target = FROM type = topple_government } add_war_support = 0.15 add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = ger.21
+	title = ger.21.t
+	desc = ger.21.d
+	picture = GFX_pl2027_ev081_front_4
+	is_triggered_only = yes
+	option = {
+		name = ger.21.a
+		ai_chance = { base = 1 }
+		add_war_support = 0.05
+	}
+}

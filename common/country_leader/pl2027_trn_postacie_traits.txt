@@ -1,0 +1,77 @@
+leader_traits = {
+	TRN_pt_olimpijska_dyscyplina = {
+		random = no
+		training_time_factor = -0.06 army_org_factor = 0.03
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_konkretnie = {
+		random = no
+		drift_defence_factor = 0.20 political_power_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_mlody_dyplomata = {
+		random = no
+		opinion_gain_monthly_factor = 0.25 improve_relations_maintain_cost_factor = -0.25
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_architekt_kompromisu = {
+		random = no
+		stability_factor = 0.03 war_stability_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_torun_obywatelski = {
+		random = no
+		required_garrison_factor = -0.10 local_resources_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_twarz_odbudowy = {
+		random = no
+		war_support_factor = 0.07
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_legenda_starowki = {
+		random = no
+		consumer_goods_factor = -0.04 trade_opinion_factor = 0.15
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_glos_ulic = {
+		random = no
+		conscription_factor = 0.06
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_internetowa_popularnosc = {
+		random = no
+		political_power_factor = 0.10 drift_defence_factor = -0.10
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_robi_wrazenie = {
+		random = no
+		supply_consumption_factor = -0.05 army_fuel_consumption_factor = -0.05
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_sila_solidarnosci = {
+		random = no
+		stability_factor = 0.05 training_time_factor = -0.05
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_nowe_pokolenie_adm = {
+		random = no
+		stability_factor = 0.05 political_power_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_straznik_tradycji = {
+		random = no
+		stability_factor = 0.05 army_core_defence_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_obywatelska_mobilizacja = {
+		random = no
+		stability_factor = 0.05 production_speed_infrastructure_factor = 0.05
+		ai_will_do = { factor = 1 }
+	}
+	TRN_pt_glos_osiedli = {
+		random = no
+		stability_factor = 0.05 production_speed_infrastructure_factor = 0.10
+		ai_will_do = { factor = 1 }
+	}
+}

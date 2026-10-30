@@ -3,14 +3,18 @@ state = {
 	name = "STATE_10"
 	manpower = 42928
 	state_category = town
+	resources = {
+		aluminium = 1
+		steel = 1
+	}
 	history = {
 		owner = SLS
 		add_core_of = SLS
-		victory_points = { 3777 1 }
-		victory_points = { 613 2 }
-		victory_points = { 7067 2 }
-		victory_points = { 7072 1 }
-		victory_points = { 7069 1 }
+		victory_points = { 3777 2 }
+		victory_points = { 613 3 }
+		victory_points = { 7067 3 }
+		victory_points = { 7072 2 }
+		victory_points = { 7069 2 }
 		buildings = {
 			infrastructure = 3
 		}

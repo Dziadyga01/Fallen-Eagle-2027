@@ -1,0 +1,19 @@
+add_namespace = spk
+
+country_event = {
+	id = spk.10
+	title = spk.10.t
+	desc = spk.10.d
+	picture = GFX_pl2027_ev081_media_3
+	is_triggered_only = yes
+	option = {
+		name = spk.10.a
+		ai_chance = { base = 2 }
+		add_to_variable = { SPT_kapital = -15 } clamp_variable = { var = SPT_kapital min = 0 max = 100 } add_to_variable = { SPT_reputacja = 15 } clamp_variable = { var = SPT_reputacja min = 0 max = 100 }
+	}
+	option = {
+		name = spk.10.b
+		ai_chance = { base = 1 }
+		add_stability = -0.05
+	}
+}

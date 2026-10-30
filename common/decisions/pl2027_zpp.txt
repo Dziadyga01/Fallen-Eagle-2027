@@ -1,43 +1,461 @@
-ZPP_frakcje = {
-	ZPP_d_struktury = {
+PRW_frakcje = {
+	PRW_d_struktury = {
 		icon = generic_political_discourse
-		allowed = { original_tag = PRW }
 		cost = 35
-		days_re_enable = 45
-		complete_effect = { custom_effect_tooltip = ZPP_tt_masl8_harcm3 hidden_effect = { add_to_variable = { ZPP_masl = 8 } add_to_variable = { ZPP_harc = -3 } ZPP_przelicz = yes } add_stability = 0.01 }
-		ai_will_do = { factor = 2 modifier = { factor = 2 has_war = yes } }
+		visible = { NOT = { has_global_flag = PL2027_prolog } }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_power_balance_value = { id = PRW_bop value = 0.06 tooltip_side = PRW_maslarze } hidden_effect = { add_to_variable = { PRW_bop = 6 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } add_to_variable = { PRW_spojnosc = 2 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { PRW_spojnosc < 40 } } }
 	}
-	ZPP_d_kadry = {
+	PRW_d_kadry = {
 		icon = generic_political_discourse
-		allowed = { original_tag = PRW }
 		cost = 35
-		days_re_enable = 45
-		complete_effect = { custom_effect_tooltip = ZPP_tt_harc8_maslm3 hidden_effect = { add_to_variable = { ZPP_harc = 8 } add_to_variable = { ZPP_masl = -3 } ZPP_przelicz = yes } add_political_power = 10 }
-		ai_will_do = { factor = 2 modifier = { factor = 2 has_stability > 0.5 } }
+		visible = { NOT = { has_global_flag = PL2027_prolog } }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_power_balance_value = { id = PRW_bop value = -0.06 tooltip_side = PRW_harcerze } hidden_effect = { add_to_variable = { PRW_bop = -6 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } add_political_power = 15 add_to_variable = { PRW_spojnosc = -1 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 2 modifier = { factor = 0.3 check_variable = { PRW_spojnosc < 30 } } }
 	}
-	ZPP_d_serwerownia = {
+	PRW_d_rozejm = {
 		icon = generic_political_discourse
-		allowed = { original_tag = PRW }
-		available = { has_country_flag = ZPP_cyber_aktywny }
+		cost = 50
+		visible = { NOT = { has_global_flag = PL2027_prolog } }
+		available = { OR = { check_variable = { PRW_bop > 15 } check_variable = { PRW_bop < -15 } } }
+		days_re_enable = 120
+		complete_effect = { if = { limit = { check_variable = { PRW_bop > 0 } } add_power_balance_value = { id = PRW_bop value = -0.12 tooltip_side = PRW_harcerze } hidden_effect = { add_to_variable = { PRW_bop = -12 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } } else_if = { limit = { check_variable = { PRW_bop < 0 } } add_power_balance_value = { id = PRW_bop value = 0.12 tooltip_side = PRW_maslarze } hidden_effect = { add_to_variable = { PRW_bop = 12 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } } add_to_variable = { PRW_spojnosc = 6 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 1 modifier = { factor = 4 check_variable = { PRW_spojnosc < 30 } } }
+	}
+	PRW_d_miesiecznica = {
+		icon = generic_political_discourse
+		cost = 10
+		visible = { has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		days_re_enable = 30
+		complete_effect = { country_event = { id = zpp.70 days = 1 } set_country_flag = { flag = PRW_mies_ostatnio days = 45 } add_to_variable = { PRW_mies_licznik = 1 } clamp_variable = { var = PRW_mies_licznik min = 0 max = 999 } }
+		ai_will_do = { factor = 2 modifier = { factor = 5 has_country_flag = PRW_lider_macierewicz } modifier = { factor = 0.3 check_variable = { PRW_zmecz > 70 } } }
+	}
+}
+PRW_kongres_kat = {
+	PRW_d_poparcie_czarnek = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { has_country_flag = PRW_kampania_kongresowa }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_p_czarnek = 8 } clamp_variable = { var = PRW_p_czarnek min = 0 max = 100 } add_power_balance_value = { id = PRW_bop value = 0.05 tooltip_side = PRW_maslarze } hidden_effect = { add_to_variable = { PRW_bop = 5 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } set_country_flag = PRW_nom_czarnek custom_effect_tooltip = WOS_tt_50 }
+		ai_will_do = { factor = 1 modifier = { factor = 2 check_variable = { PRW_p_czarnek > 25 } } }
+	}
+	PRW_d_poparcie_morawiecki = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { has_country_flag = PRW_kampania_kongresowa }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_p_morawiecki = 8 } clamp_variable = { var = PRW_p_morawiecki min = 0 max = 100 } add_power_balance_value = { id = PRW_bop value = -0.05 tooltip_side = PRW_harcerze } hidden_effect = { add_to_variable = { PRW_bop = -5 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } set_country_flag = PRW_nom_morawiecki custom_effect_tooltip = WOS_tt_51 }
+		ai_will_do = { factor = 1 modifier = { factor = 2 check_variable = { PRW_p_morawiecki > 25 } } }
+	}
+	PRW_d_poparcie_ziobro = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { has_country_flag = PRW_kampania_kongresowa }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_p_ziobro = 8 } clamp_variable = { var = PRW_p_ziobro min = 0 max = 100 } add_power_balance_value = { id = PRW_bop value = 0.05 tooltip_side = PRW_maslarze } hidden_effect = { add_to_variable = { PRW_bop = 5 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } set_country_flag = PRW_nom_ziobro custom_effect_tooltip = WOS_tt_52 }
+		ai_will_do = { factor = 1 modifier = { factor = 2 check_variable = { PRW_p_ziobro > 25 } } }
+	}
+	PRW_d_poparcie_kurski = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { has_country_flag = PRW_kampania_kongresowa }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_p_kurski = 8 } clamp_variable = { var = PRW_p_kurski min = 0 max = 100 } add_power_balance_value = { id = PRW_bop value = -0.05 tooltip_side = PRW_harcerze } hidden_effect = { add_to_variable = { PRW_bop = -5 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } set_country_flag = PRW_nom_kurski custom_effect_tooltip = WOS_tt_53 }
+		ai_will_do = { factor = 1 modifier = { factor = 2 check_variable = { PRW_p_kurski > 25 } } }
+	}
+	PRW_d_poparcie_macierewicz = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { has_country_flag = PRW_kampania_kongresowa }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_p_macierewicz = 8 } clamp_variable = { var = PRW_p_macierewicz min = 0 max = 100 } add_power_balance_value = { id = PRW_bop value = 0.05 tooltip_side = PRW_maslarze } hidden_effect = { add_to_variable = { PRW_bop = 5 } clamp_variable = { var = PRW_bop min = -100 max = 100 } } set_country_flag = PRW_nom_macierewicz custom_effect_tooltip = WOS_tt_54 }
+		ai_will_do = { factor = 1 modifier = { factor = 2 check_variable = { PRW_p_macierewicz > 25 } } }
+	}
+	PRW_d_poparcie_kot = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { has_country_flag = PRW_kampania_kongresowa has_country_flag = ZPP_cyber_aktywny }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_p_kot = 8 } clamp_variable = { var = PRW_p_kot min = 0 max = 100 } add_to_variable = { ZPP_cyber = 6 } clamp_variable = { var = ZPP_cyber min = 0 max = 100 } set_country_flag = PRW_nom_kot custom_effect_tooltip = WOS_tt_55 }
+		ai_will_do = { factor = 1 modifier = { factor = 2 check_variable = { PRW_p_kot > 25 } } }
+	}
+}
+PRW_obietnice_kat = {
+	PRW_d_ob_uklad = {
+		icon = generic_political_discourse
+		cost = 70
+		visible = { has_country_flag = PRW_ob_uklad NOT = { has_country_flag = PRW_ob_uklad_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_ob_uklad_ok add_to_variable = { PRW_spojnosc = 5 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } add_stability = 0.02 }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_country_flag = PRW_ob_uklad_termin } } }
+	}
+	PRW_d_ob_struktury = {
+		icon = generic_political_discourse
+		cost = 60
+		visible = { has_country_flag = PRW_ob_struktury NOT = { has_country_flag = PRW_ob_struktury_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_ob_struktury_ok add_to_variable = { PRW_spojnosc = 5 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } add_war_support = 0.02 }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_country_flag = PRW_ob_struktury_termin } } }
+	}
+	PRW_d_ob_kontrakty = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { has_country_flag = PRW_ob_kontrakty NOT = { has_country_flag = PRW_ob_kontrakty_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_ob_kontrakty_ok add_to_variable = { PRW_spojnosc = 5 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } random_owned_controlled_state = { limit = { is_core_of = ROOT } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_country_flag = PRW_ob_kontrakty_termin } } }
+	}
+	PRW_d_ob_rozliczenia = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { has_country_flag = PRW_ob_rozliczenia NOT = { has_country_flag = PRW_ob_rozliczenia_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_ob_rozliczenia_ok add_to_variable = { PRW_spojnosc = 5 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } add_war_support = 0.03 add_stability = -0.02 }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_country_flag = PRW_ob_rozliczenia_termin } } }
+	}
+	PRW_d_ob_media = {
+		icon = generic_political_discourse
+		cost = 60
+		visible = { has_country_flag = PRW_ob_media NOT = { has_country_flag = PRW_ob_media_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_ob_media_ok add_to_variable = { PRW_spojnosc = 5 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } add_political_power = 30 }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_country_flag = PRW_ob_media_termin } } }
+	}
+	PRW_d_ob_pamiec = {
+		icon = generic_political_discourse
+		cost = 0
+		visible = { has_country_flag = PRW_ob_pamiec NOT = { has_country_flag = PRW_ob_pamiec_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_mies3 check_variable = { PRW_mies_licznik > 2 } } }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_ob_pamiec_ok add_to_variable = { PRW_spojnosc = 5 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } add_war_support = 0.02 }
+		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_country_flag = PRW_ob_pamiec_termin } } }
+	}
+	PRW_d_nom_czarnek = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { has_country_flag = PRW_nom_czarnek NOT = { has_country_flag = PRW_nom_czarnek_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_nom_czarnek_ok add_to_variable = { PRW_spojnosc = 4 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_nom_morawiecki = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { has_country_flag = PRW_nom_morawiecki NOT = { has_country_flag = PRW_nom_morawiecki_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_nom_morawiecki_ok add_to_variable = { PRW_spojnosc = 4 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_nom_ziobro = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { has_country_flag = PRW_nom_ziobro NOT = { has_country_flag = PRW_nom_ziobro_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_nom_ziobro_ok add_to_variable = { PRW_spojnosc = 4 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_nom_kurski = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { has_country_flag = PRW_nom_kurski NOT = { has_country_flag = PRW_nom_kurski_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_nom_kurski_ok add_to_variable = { PRW_spojnosc = 4 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_nom_macierewicz = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { has_country_flag = PRW_nom_macierewicz NOT = { has_country_flag = PRW_nom_macierewicz_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_nom_macierewicz_ok add_to_variable = { PRW_spojnosc = 4 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_nom_kot = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { has_country_flag = PRW_nom_kot NOT = { has_country_flag = PRW_nom_kot_ok } has_country_flag = PRW_kongres_rozstrzygniety }
+		available = { always = yes }
+		fire_only_once = yes
+		complete_effect = { set_country_flag = PRW_nom_kot_ok add_to_variable = { PRW_spojnosc = 4 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } }
+		ai_will_do = { factor = 2 }
+	}
+}
+PRW_cz_kat = {
+	PRW_d_cz_nominacje = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { has_country_flag = PRW_lider_czarnek }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_loj = 8 } clamp_variable = { var = PRW_loj min = 0 max = 100 } add_to_variable = { PRW_spojnosc = -2 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { PRW_loj < 50 } } }
+	}
+	PRW_d_cz_zjazd = {
+		icon = generic_political_discourse
 		cost = 25
-		days_re_enable = 45
-		complete_effect = { custom_effect_tooltip = ZPP_tt_cyber8 hidden_effect = { add_to_variable = { ZPP_cyber = 8 } ZPP_przelicz = yes } add_stability = -0.02 }
-		ai_will_do = { factor = 1 modifier = { factor = 0.3 has_stability < 0.35 } }
+		visible = { has_country_flag = PRW_lider_czarnek }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { PRW_loj = 4 } clamp_variable = { var = PRW_loj min = 0 max = 100 } add_to_variable = { PRW_spojnosc = 3 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 2 }
 	}
-	ZPP_d_rozejm = {
+	PRW_d_cz_baron = {
 		icon = generic_political_discourse
-		allowed = { original_tag = PRW }
-		cost = 50
-		days_re_enable = 45
-		complete_effect = { add_stability = 0.03 custom_effect_tooltip = ZPP_tt_1 hidden_effect = { if = { limit = { check_variable = { ZPP_masl > ZPP_harc } check_variable = { ZPP_masl > ZPP_cyber } } add_to_variable = { ZPP_masl = -6 } add_to_variable = { ZPP_harc = 2 } add_to_variable = { ZPP_cyber = 2 } } if = { limit = { check_variable = { ZPP_harc > ZPP_masl } check_variable = { ZPP_harc > ZPP_cyber } } add_to_variable = { ZPP_harc = -6 } add_to_variable = { ZPP_masl = 2 } add_to_variable = { ZPP_cyber = 2 } } if = { limit = { check_variable = { ZPP_cyber > ZPP_masl } check_variable = { ZPP_cyber > ZPP_harc } } add_to_variable = { ZPP_cyber = -6 } add_to_variable = { ZPP_masl = 2 } add_to_variable = { ZPP_harc = 2 } } ZPP_przelicz = yes } }
-		ai_will_do = { factor = 1 modifier = { factor = 3 has_stability < 0.3 } }
+		cost = 0
+		visible = { has_country_flag = PRW_lider_czarnek }
+		available = { check_variable = { PRW_loj < 40 } }
+		days_re_enable = 120
+		complete_effect = { add_stability = -0.02 add_to_variable = { PRW_loj = 12 } clamp_variable = { var = PRW_loj min = 0 max = 100 } add_to_variable = { PRW_spojnosc = -3 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 1 modifier = { factor = 4 check_variable = { PRW_loj < 30 } } }
 	}
-	ZPP_d_kongres = {
+}
+PRW_mo_kat = {
+	PRW_d_mo_k1 = {
 		icon = generic_political_discourse
-		allowed = { original_tag = PRW }
-		available = { custom_trigger_tooltip = { tooltip = ZPP_tt_2 date > 2028.1.31 OR = { check_variable = { ZPP_masl > 54 } check_variable = { ZPP_harc > 54 } check_variable = { ZPP_cyber > 54 } } } NOT = { has_country_flag = ZPP_kongres_cd } }
 		cost = 50
-		complete_effect = { set_country_flag = { flag = ZPP_kongres_cd days = 120 } country_event = { id = zpp.20 days = 2 } }
-		ai_will_do = { factor = 0 }
+		visible = { has_country_flag = PRW_lider_morawiecki }
+		available = { NOT = { has_country_flag = PRW_mo_k1 } }
+		days_re_enable = 30
+		complete_effect = { set_country_flag = PRW_mo_k1 set_country_flag = { flag = PRW_mo_k1_t days = 120 } set_variable = { PRW_mo_k1_p = 0 } custom_effect_tooltip = WOS_tt_64 }
+		ai_will_do = { factor = 3 modifier = { factor = 0.2 has_stability < 0.35 } }
+	}
+	PRW_d_mo_k2 = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { has_country_flag = PRW_lider_morawiecki }
+		available = { NOT = { has_country_flag = PRW_mo_k2 } has_country_flag = PRW_mo_k1 }
+		days_re_enable = 30
+		complete_effect = { set_country_flag = PRW_mo_k2 set_country_flag = { flag = PRW_mo_k2_t days = 120 } set_variable = { PRW_mo_k2_p = 0 } custom_effect_tooltip = WOS_tt_64 }
+		ai_will_do = { factor = 3 modifier = { factor = 0.2 has_stability < 0.35 } }
+	}
+	PRW_d_mo_ulgi = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_lider_morawiecki }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { PRW_auto = 10 } clamp_variable = { var = PRW_auto min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 2 modifier = { factor = 0 check_variable = { PRW_auto > 65 } } }
+	}
+	PRW_d_mo_kontrola = {
+		icon = generic_political_discourse
+		cost = 0
+		visible = { has_country_flag = PRW_lider_morawiecki }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { PRW_auto = -10 } clamp_variable = { var = PRW_auto min = 0 max = 100 } add_political_power = 20 add_stability = 0.02 PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 1 modifier = { factor = 4 check_variable = { PRW_auto > 75 } } }
+	}
+}
+PRW_zi_kat = {
+	PRW_d_zi_teczki = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { has_country_flag = PRW_lider_ziobro }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_aparat = 10 } clamp_variable = { var = PRW_aparat min = 0 max = 100 } add_to_variable = { PRW_opor = 3 } clamp_variable = { var = PRW_opor min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 2 modifier = { factor = 0 check_variable = { PRW_opor > 60 } } }
+	}
+	PRW_d_zi_proces = {
+		icon = generic_political_discourse
+		cost = 0
+		visible = { has_country_flag = PRW_lider_ziobro }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_stability = -0.03 add_war_support = 0.03 add_to_variable = { PRW_aparat = 6 } clamp_variable = { var = PRW_aparat min = 0 max = 100 } add_to_variable = { PRW_opor = 8 } clamp_variable = { var = PRW_opor min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 1 modifier = { factor = 0 check_variable = { PRW_opor > 50 } } }
+	}
+	PRW_d_zi_amnestia = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { has_country_flag = PRW_lider_ziobro }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { PRW_opor = -15 } clamp_variable = { var = PRW_opor min = 0 max = 100 } add_to_variable = { PRW_aparat = -8 } clamp_variable = { var = PRW_aparat min = 0 max = 100 } add_to_variable = { PRW_spojnosc = -3 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 1 modifier = { factor = 6 check_variable = { PRW_opor > 60 } } }
+	}
+}
+PRW_ku_kat = {
+	PRW_d_ku_obietnica = {
+		icon = generic_political_discourse
+		cost = 0
+		visible = { has_country_flag = PRW_lider_kurski }
+		available = { OR = { NOT = { has_country_flag = PRW_tv1 } NOT = { has_country_flag = PRW_tv2 } NOT = { has_country_flag = PRW_tv3 } } }
+		days_re_enable = 30
+		complete_effect = { add_political_power = 40 add_to_variable = { PRW_zasieg = 5 } clamp_variable = { var = PRW_zasieg min = 0 max = 100 } if = { limit = { NOT = { has_country_flag = PRW_tv1 } } set_country_flag = PRW_tv1 set_country_flag = { flag = PRW_tv1_t days = 120 } } else_if = { limit = { NOT = { has_country_flag = PRW_tv2 } } set_country_flag = PRW_tv2 set_country_flag = { flag = PRW_tv2_t days = 120 } } else = { set_country_flag = PRW_tv3 set_country_flag = { flag = PRW_tv3_t days = 120 } } custom_effect_tooltip = WOS_tt_65 PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 2 modifier = { factor = 0 check_variable = { PRW_wiar < 40 } } }
+	}
+	PRW_d_ku_realizacja = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { has_country_flag = PRW_lider_kurski }
+		available = { OR = { has_country_flag = PRW_tv1 has_country_flag = PRW_tv2 has_country_flag = PRW_tv3 } }
+		days_re_enable = 20
+		complete_effect = { if = { limit = { has_country_flag = PRW_tv1 } clr_country_flag = PRW_tv1 } else_if = { limit = { has_country_flag = PRW_tv2 } clr_country_flag = PRW_tv2 } else = { clr_country_flag = PRW_tv3 } add_to_variable = { PRW_wiar = 8 } clamp_variable = { var = PRW_wiar min = 0 max = 100 } add_stability = 0.01 PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 4 }
+	}
+	PRW_d_ku_kampania = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { has_country_flag = PRW_lider_kurski }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { PRW_zasieg = 8 } clamp_variable = { var = PRW_zasieg min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 2 }
+	}
+}
+PRW_ma_kat = {
+	PRW_d_ma_odpoczynek = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { has_country_flag = PRW_lider_macierewicz }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { PRW_zmecz = -10 } clamp_variable = { var = PRW_zmecz min = 0 max = 100 } add_to_variable = { PRW_mob = -3 } clamp_variable = { var = PRW_mob min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 1 modifier = { factor = 5 check_variable = { PRW_zmecz > 55 } } }
+	}
+	PRW_d_ma_raport = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { has_country_flag = PRW_lider_macierewicz }
+		available = { has_completed_focus = PRW_ma_raport }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { PRW_mob = 10 } clamp_variable = { var = PRW_mob min = 0 max = 100 } add_to_variable = { PRW_zmecz = 5 } clamp_variable = { var = PRW_zmecz min = 0 max = 100 } add_stability = -0.02 PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 1 modifier = { factor = 0 check_variable = { PRW_zmecz > 60 } } }
+	}
+}
+PRW_kt_kat = {
+	PRW_d_kt_n = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_lider_kot }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_op_n = 12 } clamp_variable = { var = PRW_op_n min = 0 max = 100 } add_to_variable = { PRW_op_s = -6 } clamp_variable = { var = PRW_op_s min = 0 max = 100 } add_to_variable = { PRW_op_z = -6 } clamp_variable = { var = PRW_op_z min = 0 max = 100 } add_to_variable = { PRW_spojnosc = -2 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 1 modifier = { factor = 3 check_variable = { PRW_op_n < 30 } } }
+	}
+	PRW_d_kt_s = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_lider_kot }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_op_s = 12 } clamp_variable = { var = PRW_op_s min = 0 max = 100 } add_to_variable = { PRW_op_n = -6 } clamp_variable = { var = PRW_op_n min = 0 max = 100 } add_to_variable = { PRW_op_z = -6 } clamp_variable = { var = PRW_op_z min = 0 max = 100 } add_to_variable = { PRW_spojnosc = -2 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 1 modifier = { factor = 3 check_variable = { PRW_op_s < 30 } } }
+	}
+	PRW_d_kt_z = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_lider_kot }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { add_to_variable = { PRW_op_z = 12 } clamp_variable = { var = PRW_op_z min = 0 max = 100 } add_to_variable = { PRW_op_n = -6 } clamp_variable = { var = PRW_op_n min = 0 max = 100 } add_to_variable = { PRW_op_s = -6 } clamp_variable = { var = PRW_op_s min = 0 max = 100 } add_to_variable = { PRW_spojnosc = -2 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } PRW_przelicz_lidera = yes }
+		ai_will_do = { factor = 1 modifier = { factor = 3 check_variable = { PRW_op_z < 30 } } }
+	}
+}
+PRW_reg_kat = {
+	PRW_d_reg_kt_pdl = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_reg_odm_pdl_kt has_country_flag = PRW_lider_kot }
+		available = { NOT = { has_country_flag = PRW_reg_odm_cd_pdl } has_war = no country_exists = PDL NOT = { has_war_with = PDL } }
+		days_re_enable = 120
+		complete_effect = { clr_country_flag = PRW_reg_odm_pdl_kt PDL = { country_event = { id = zpp.210 days = 1 } } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_reg_kt_rad = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_reg_odm_rad_kt has_country_flag = PRW_lider_kot }
+		available = { NOT = { has_country_flag = PRW_reg_odm_cd_rad } has_war = no country_exists = RAD NOT = { has_war_with = RAD } }
+		days_re_enable = 120
+		complete_effect = { clr_country_flag = PRW_reg_odm_rad_kt RAD = { country_event = { id = zpp.211 days = 1 } } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_reg_kt_ptk = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_reg_odm_ptk_kt has_country_flag = PRW_lider_kot }
+		available = { NOT = { has_country_flag = PRW_reg_odm_cd_ptk } has_war = no country_exists = PTK NOT = { has_war_with = PTK } }
+		days_re_enable = 120
+		complete_effect = { clr_country_flag = PRW_reg_odm_ptk_kt PTK = { country_event = { id = zpp.212 days = 1 } } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_reg_ku_pdl = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_reg_odm_pdl_ku has_country_flag = PRW_lider_kurski }
+		available = { NOT = { has_country_flag = PRW_reg_odm_cd_pdl } has_war = no country_exists = PDL NOT = { has_war_with = PDL } }
+		days_re_enable = 120
+		complete_effect = { clr_country_flag = PRW_reg_odm_pdl_ku PDL = { country_event = { id = zpp.220 days = 1 } } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_reg_ku_rad = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_reg_odm_rad_ku has_country_flag = PRW_lider_kurski }
+		available = { NOT = { has_country_flag = PRW_reg_odm_cd_rad } has_war = no country_exists = RAD NOT = { has_war_with = RAD } }
+		days_re_enable = 120
+		complete_effect = { clr_country_flag = PRW_reg_odm_rad_ku RAD = { country_event = { id = zpp.221 days = 1 } } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_reg_ku_ptk = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_reg_odm_ptk_ku has_country_flag = PRW_lider_kurski }
+		available = { NOT = { has_country_flag = PRW_reg_odm_cd_ptk } has_war = no country_exists = PTK NOT = { has_war_with = PTK } }
+		days_re_enable = 120
+		complete_effect = { clr_country_flag = PRW_reg_odm_ptk_ku PTK = { country_event = { id = zpp.222 days = 1 } } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_reg_mo_pdl = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_reg_odm_pdl_mo has_country_flag = PRW_lider_morawiecki }
+		available = { NOT = { has_country_flag = PRW_reg_odm_cd_pdl } has_war = no country_exists = PDL NOT = { has_war_with = PDL } }
+		days_re_enable = 120
+		complete_effect = { clr_country_flag = PRW_reg_odm_pdl_mo PDL = { country_event = { id = zpp.240 days = 1 } } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_reg_mo_rad = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_reg_odm_rad_mo has_country_flag = PRW_lider_morawiecki }
+		available = { NOT = { has_country_flag = PRW_reg_odm_cd_rad } has_war = no country_exists = RAD NOT = { has_war_with = RAD } }
+		days_re_enable = 120
+		complete_effect = { clr_country_flag = PRW_reg_odm_rad_mo RAD = { country_event = { id = zpp.241 days = 1 } } }
+		ai_will_do = { factor = 2 }
+	}
+	PRW_d_reg_mo_ptk = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { has_country_flag = PRW_reg_odm_ptk_mo has_country_flag = PRW_lider_morawiecki }
+		available = { NOT = { has_country_flag = PRW_reg_odm_cd_ptk } has_war = no country_exists = PTK NOT = { has_war_with = PTK } }
+		days_re_enable = 120
+		complete_effect = { clr_country_flag = PRW_reg_odm_ptk_mo PTK = { country_event = { id = zpp.242 days = 1 } } }
+		ai_will_do = { factor = 2 }
 	}
 }

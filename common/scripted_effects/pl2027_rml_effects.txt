@@ -1,0 +1,4 @@
+RML_miesiac = {
+	if = { limit = { country_exists = MLA } MLA = { if = { limit = { NOT = { has_variable = MLA_s7 } } set_variable = { MLA_s7 = 50 } set_variable = { MLA_reduta = 30 } add_dynamic_modifier = { modifier = RML_dm } } add_to_variable = { MLA_s7 = -2 } clamp_variable = { var = MLA_s7 min = 0 max = 100 } if = { limit = { has_war = yes } add_to_variable = { MLA_s7 = -2 } clamp_variable = { var = MLA_s7 min = 0 max = 100 } } add_to_variable = { MLA_reduta = -1 } clamp_variable = { var = MLA_reduta min = 0 max = 100 } if = { limit = { check_variable = { MLA_s7 < 20 } NOT = { has_country_flag = MLA_s7_cd } } set_country_flag = { flag = MLA_s7_cd days = 120 } country_event = { id = rml.10 days = 1 } } set_variable = { RML_dm_0 = MLA_s7 } subtract_from_variable = { RML_dm_0 = 40 } divide_variable = { RML_dm_0 = 500 } set_variable = { RML_dm_1 = MLA_reduta } subtract_from_variable = { RML_dm_1 = 30 } divide_variable = { RML_dm_1 = 700 } } }
+	
+}

@@ -1,0 +1,6 @@
+FAB2_panel = {
+	icon = generic_construction
+	allowed = { always = yes }
+	visible = { NOT = { has_global_flag = PL2027_prolog } }
+	priority = 45
+}

@@ -1,0 +1,15 @@
+# ta sama grupa ideologii co PREV (państwo dające gwarancję)
+PL2027_ideologia_jak_PREV = {
+	OR = {
+		AND = { has_government = totalitarian_socialist PREV = { has_government = totalitarian_socialist } }
+		AND = { has_government = communist PREV = { has_government = communist } }
+		AND = { has_government = libertarian_socialist PREV = { has_government = libertarian_socialist } }
+		AND = { has_government = social_democrat PREV = { has_government = social_democrat } }
+		AND = { has_government = social_liberal PREV = { has_government = social_liberal } }
+		AND = { has_government = market_liberal PREV = { has_government = market_liberal } }
+		AND = { has_government = conservative PREV = { has_government = conservative } }
+		AND = { has_government = authoritarian_democrat PREV = { has_government = authoritarian_democrat } }
+		AND = { has_government = nationalist PREV = { has_government = nationalist } }
+		AND = { has_government = fascist PREV = { has_government = fascist } }
+	}
+}

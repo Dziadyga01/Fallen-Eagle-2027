@@ -1,0 +1,29 @@
+GER_panel = {
+	GER_dec_audyt = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { original_tag = GER has_global_flag = GER_kurs_porzadek }
+		available = { always = yes }
+		days_re_enable = 180
+		complete_effect = { every_country = { limit = { OR = { original_tag = PMN original_tag = SLS original_tag = PSN } is_subject_of = ROOT } country_event = { id = eur.1 days = 1 } } }
+		ai_will_do = { factor = 2 }
+	}
+	GER_dec_transza = {
+		icon = generic_political_discourse
+		cost = 60
+		visible = { original_tag = GER has_global_flag = GER_kurs_tarcza }
+		available = { always = yes }
+		days_re_enable = 180
+		complete_effect = { every_country = { limit = { OR = { original_tag = PMN original_tag = SLS original_tag = PSN } is_subject_of = ROOT } add_political_power = 25 add_to_variable = { EUR_zaleznosc = -3 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	GER_dec_cwiczenia = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = GER }
+		available = { has_war = no }
+		days_re_enable = 120
+		complete_effect = { army_experience = 10 add_war_support = 0.01 }
+		ai_will_do = { factor = 4 }
+	}
+}

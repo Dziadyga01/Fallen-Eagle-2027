@@ -1,0 +1,111 @@
+# The Fallen Eagle: 2027 | Ukraine campaign v0.1 | No actual state transfers.
+ROS_UKR_initialize = {
+    if = {
+        limit = { NOT = { has_country_flag = ROS_UKR_initialized } }
+        set_country_flag = ROS_UKR_initialized
+        set_variable = { ROS_UKR_VOL = 0 }
+        set_variable = { ROS_UKR_RIV = 0 }
+        set_variable = { ROS_UKR_LVI = 0 }
+        set_variable = { ROS_UKR_ZAK = 0 }
+        set_variable = { ROS_UKR_IVA = 0 }
+        set_variable = { ROS_UKR_TER = 0 }
+        set_variable = { ROS_UKR_CHE = 0 }
+        set_variable = { ROS_UKR_KHM = 0 }
+        set_variable = { ROS_UKR_ZHY = 0 }
+        set_variable = { ROS_UKR_VIN = 0 }
+        set_variable = { ROS_UKR_KYI = 0 }
+        set_variable = { ROS_UKR_CHR = 0 }
+        set_variable = { ROS_UKR_SUM = 0 }
+        set_variable = { ROS_UKR_KHA = 0 }
+        set_variable = { ROS_UKR_POL = 0 }
+        set_variable = { ROS_UKR_CKA = 0 }
+        set_variable = { ROS_UKR_KIR = 0 }
+        set_variable = { ROS_UKR_DNI = 0 }
+        set_variable = { ROS_UKR_DON = 100 }
+        set_variable = { ROS_UKR_LUH = 100 }
+        set_variable = { ROS_UKR_ZAP = 100 }
+        set_variable = { ROS_UKR_KHE = 40 }
+        set_variable = { ROS_UKR_MYK = 0 }
+        set_variable = { ROS_UKR_ODE = 0 }
+        set_variable = { ROS_UKR_selected = 22 }
+        set_variable = { ROS_UKR_selected_progress = 40 }
+        ROS_UKR_recalculate = yes
+    }
+}
+
+ROS_UKR_recalculate = {
+    set_variable = { ROS_UKR_total = 0 }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_VOL }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_RIV }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_LVI }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_ZAK }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_IVA }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_TER }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_CHE }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_KHM }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_ZHY }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_VIN }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_KYI }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_CHR }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_SUM }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_KHA }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_POL }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_CKA }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_KIR }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_DNI }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_DON }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_LUH }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_ZAP }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_KHE }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_MYK }
+    add_to_variable = { ROS_UKR_total = ROS_UKR_ODE }
+    clamp_variable = { var = ROS_UKR_total min = 0 max = 2400 }
+    set_variable = { ROS_UKR_dominance = ROS_UKR_total }
+    divide_variable = { ROS_UKR_dominance = 24 }
+    # Keep the currently selected panel label in sync.
+    if = { limit = { check_variable = { ROS_UKR_selected = 1 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_VOL } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 2 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_RIV } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 3 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_LVI } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 4 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_ZAK } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 5 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_IVA } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 6 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_TER } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 7 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_CHE } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 8 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_KHM } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 9 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_ZHY } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 10 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_VIN } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 11 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_KYI } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 12 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_CHR } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 13 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_SUM } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 14 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_KHA } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 15 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_POL } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 16 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_CKA } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 17 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_KIR } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 18 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_DNI } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 19 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_DON } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 20 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_LUH } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 21 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_ZAP } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 22 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_KHE } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 23 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_MYK } }
+    if = { limit = { check_variable = { ROS_UKR_selected = 24 } } set_variable = { ROS_UKR_selected_progress = ROS_UKR_ODE } }
+    # Milestones require real player progress; one-off country flags avoid duplicate events.
+    if = {
+        limit = { check_variable = { ROS_UKR_dominance > 24.99 } NOT = { has_country_flag = ROS_UKR_milestone_25 } }
+        set_country_flag = ROS_UKR_milestone_25
+        country_event = { id = feukr.25 days = 1 }
+    }
+    if = {
+        limit = { check_variable = { ROS_UKR_dominance > 49.99 } NOT = { has_country_flag = ROS_UKR_milestone_50 } }
+        set_country_flag = ROS_UKR_milestone_50
+        country_event = { id = feukr.50 days = 1 }
+    }
+    if = {
+        limit = { check_variable = { ROS_UKR_dominance > 74.99 } NOT = { has_country_flag = ROS_UKR_milestone_75 } }
+        set_country_flag = ROS_UKR_milestone_75
+        country_event = { id = feukr.75 days = 1 }
+    }
+    if = {
+        limit = { check_variable = { ROS_UKR_dominance > 99.99 } NOT = { has_country_flag = ROS_UKR_milestone_100 } }
+        set_country_flag = ROS_UKR_milestone_100
+        country_event = { id = feukr.100 days = 1 }
+    }
+}

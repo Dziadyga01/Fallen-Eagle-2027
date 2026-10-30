@@ -3,6 +3,11 @@ state = {
 	name = "STATE_1118"
 	manpower = 5724
 	state_category = rural
+	resources = {
+		rubber = 2
+		steel = 1
+		oil = 1
+	}
 	history = {
 		owner = ROS
 		add_core_of = KRL

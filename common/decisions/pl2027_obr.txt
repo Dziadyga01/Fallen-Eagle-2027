@@ -2,9 +2,9 @@ OBR_ros = {
 	OBR_d_druga_operacja = {
 		icon = generic_army_support
 		allowed = { original_tag = ROS }
-		available = { custom_trigger_tooltip = { tooltip = OBR_tt_1 NOT = { has_country_flag = ROS_druga_proba_cd } has_war = no NOT = { has_country_flag = ROS_lider_szl } NOT = { has_country_flag = ROS_lider_naw } check_variable = { ROS_proby < 2 } has_war_support > 0.3 } }
+		available = { NOT = { has_country_flag = ROS_druga_gotowa } custom_trigger_tooltip = { tooltip = OBR_tt_1 NOT = { has_country_flag = ROS_druga_proba_cd } has_war = no NOT = { has_country_flag = ROS_lider_szl } NOT = { has_country_flag = ROS_lider_naw } check_variable = { ROS_proby < 2 } has_war_support > 0.3 } }
 		cost = 100
-		complete_effect = { ROS_druga_operacja = yes }
+		complete_effect = { set_country_flag = ROS_druga_gotowa custom_effect_tooltip = WOS_tt_73 }
 		ai_will_do = { factor = 2 modifier = { factor = 0 has_stability < 0.35 } }
 	}
 }

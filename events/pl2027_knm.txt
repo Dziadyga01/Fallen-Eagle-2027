@@ -1,0 +1,19 @@
+add_namespace = knm
+
+country_event = {
+	id = knm.10
+	title = knm.10.t
+	desc = knm.10.d
+	picture = GFX_pl2027_ev081_ulica_4
+	is_triggered_only = yes
+	option = {
+		name = knm.10.a
+		ai_chance = { base = 2 }
+		add_political_power = -50 add_to_variable = { NNA_nierownosci = -20 } clamp_variable = { var = NNA_nierownosci min = 0 max = 100 }
+	}
+	option = {
+		name = knm.10.b
+		ai_chance = { base = 1 }
+		add_stability = -0.06 add_to_variable = { NNA_wzrost = 3 } clamp_variable = { var = NNA_wzrost min = 0 max = 100 }
+	}
+}

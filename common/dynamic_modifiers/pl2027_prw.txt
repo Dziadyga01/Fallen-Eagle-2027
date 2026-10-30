@@ -1,0 +1,45 @@
+PRW_spojnosc_mod = {
+	icon = GFX_idea_DU_ZPP_m_panstwo
+	enable = { always = yes }
+	remove_trigger = { NOT = { original_tag = PRW } }
+	stability_factor = PRW_sp_stab
+	political_power_gain = PRW_sp_pp
+}
+PRW_dm_cz = {
+	icon = GFX_idea_DU_ZPP_m_panstwo
+	enable = { always = yes }
+	stability_factor = PRW_cz_a
+	political_power_gain = PRW_cz_b
+}
+PRW_dm_mo = {
+	icon = GFX_idea_DU_ZPP_h_sztab
+	enable = { always = yes }
+	production_speed_buildings_factor = PRW_mo_a
+	political_power_gain = PRW_mo_b
+}
+PRW_dm_zi = {
+	icon = GFX_idea_DU_ZPP_c_centralizacja
+	enable = { always = yes }
+	political_power_gain = PRW_zi_a
+	stability_factor = PRW_zi_b
+	consumer_goods_factor = PRW_zi_c
+}
+PRW_dm_ku = {
+	icon = GFX_idea_DU_ZPP_h_panstwo
+	enable = { always = yes }
+	political_power_gain = PRW_ku_a
+	stability_factor = PRW_ku_b
+}
+PRW_dm_ma = {
+	icon = GFX_idea_DU_ZPP_maslarze_idea
+	enable = { always = yes }
+	war_support_factor = PRW_ma_a
+	conscription = PRW_ma_b
+	stability_factor = PRW_ma_c
+}
+PRW_dm_kt = {
+	icon = GFX_idea_DU_ZPP_cyber_idea
+	enable = { always = yes }
+	political_power_gain = PRW_kt_a
+	research_speed_factor = PRW_kt_b
+}

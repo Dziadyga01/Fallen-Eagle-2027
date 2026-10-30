@@ -1,0 +1,18 @@
+# FE2027: Ukrainian campaign abstract control system (no new world-map states)
+ROS_UKR_offensive_category = {
+    scripted_gui = FEUKR_MapGUI
+
+    icon = generic_operation
+    allowed = { original_tag = ROS }
+    visible = { has_country_flag = ROS_UKR_initialized }
+    visible_when_empty = yes
+    priority = 94
+}
+
+UKR_UKR_defensive_category = {
+    icon = generic_operation
+    allowed = { original_tag = UKR }
+    visible = { ROS = { has_country_flag = ROS_UKR_initialized } }
+    visible_when_empty = yes
+    priority = 94
+}

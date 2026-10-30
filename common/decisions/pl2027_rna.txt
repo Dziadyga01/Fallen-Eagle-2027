@@ -1,0 +1,29 @@
+RNA_panel = {
+	RNA_dec_bataliony = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { original_tag = NAR has_variable = NAR_porzadek }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { add_to_variable = { NAR_porzadek = 10 } clamp_variable = { var = NAR_porzadek min = 0 max = 100 } add_to_variable = { NAR_kurpie = 6 } clamp_variable = { var = NAR_kurpie min = 0 max = 100 } set_variable = { RNA_dm_0 = NAR_porzadek } subtract_from_variable = { RNA_dm_0 = 40 } divide_variable = { RNA_dm_0 = 400 } set_variable = { RNA_dm_1 = NAR_kurpie } subtract_from_variable = { RNA_dm_1 = 40 } divide_variable = { RNA_dm_1 = -800 } }
+		ai_will_do = { factor = 2 modifier = { factor = 3 check_variable = { NAR_porzadek < 50 } } modifier = { factor = 0 check_variable = { NAR_kurpie > 60 } } }
+	}
+	RNA_dec_sejmiki = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = NAR has_variable = NAR_porzadek }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_to_variable = { NAR_kurpie = -12 } clamp_variable = { var = NAR_kurpie min = 0 max = 100 } add_to_variable = { NAR_porzadek = -4 } clamp_variable = { var = NAR_porzadek min = 0 max = 100 } set_variable = { RNA_dm_0 = NAR_porzadek } subtract_from_variable = { RNA_dm_0 = 40 } divide_variable = { RNA_dm_0 = 400 } set_variable = { RNA_dm_1 = NAR_kurpie } subtract_from_variable = { RNA_dm_1 = 40 } divide_variable = { RNA_dm_1 = -800 } }
+		ai_will_do = { factor = 1 modifier = { factor = 5 check_variable = { NAR_kurpie > 50 } } modifier = { factor = 0.1 check_variable = { NAR_kurpie < 25 } } }
+	}
+	RNA_dec_mleko = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = NAR has_variable = NAR_porzadek }
+		available = { always = yes }
+		days_re_enable = 120
+		complete_effect = { add_to_variable = { NAR_porzadek = 5 } clamp_variable = { var = NAR_porzadek min = 0 max = 100 } add_to_variable = { NAR_kurpie = -4 } clamp_variable = { var = NAR_kurpie min = 0 max = 100 } set_variable = { RNA_dm_0 = NAR_porzadek } subtract_from_variable = { RNA_dm_0 = 40 } divide_variable = { RNA_dm_0 = 400 } set_variable = { RNA_dm_1 = NAR_kurpie } subtract_from_variable = { RNA_dm_1 = 40 } divide_variable = { RNA_dm_1 = -800 } }
+		ai_will_do = { factor = 2  }
+	}
+}

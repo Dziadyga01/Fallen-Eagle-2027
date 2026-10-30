@@ -1,0 +1,55 @@
+RKK_dm = {
+	icon = GFX_idea_DU_REG_rzeczpospolita
+	enable = { always = yes }
+	stability_factor = RKK_dm_0
+	political_power_gain = RKK_dm_1
+	war_support_factor = RKK_dm_2
+}
+RKP_dm = {
+	icon = GFX_idea_DU_REG_t_porozumienie
+	enable = { always = yes }
+	stability_factor = RKP_dm_0
+	production_speed_buildings_factor = RKP_dm_1
+}
+RML_dm = {
+	icon = GFX_idea_DU_REG_t_samodzielnosc
+	enable = { always = yes }
+	political_power_gain = RML_dm_0
+	army_core_defence_factor = RML_dm_1
+}
+RNA_dm = {
+	icon = GFX_idea_DU_REG_t_mobilizacja
+	enable = { always = yes }
+	political_power_gain = RNA_dm_0
+	stability_factor = RNA_dm_1
+}
+RSU_dm = {
+	icon = GFX_idea_DU_REG_t_wojenna
+	enable = { always = yes }
+	army_defence_factor = RSU_dm_0
+	stability_factor = RSU_dm_1
+}
+GDP_dm = {
+	icon = GFX_idea_DU_EK_komisariat
+	enable = { always = yes }
+	consumer_goods_factor = GDP_dm_0
+	political_power_gain = GDP_dm_1
+}
+SPK_dm = {
+	icon = GFX_idea_DU_TFE_dotacje
+	enable = { always = yes }
+	political_power_gain = SPK_dm_0
+	stability_factor = SPK_dm_1
+}
+GDS_dm = {
+	icon = GFX_idea_DU_EK_komisariat
+	enable = { always = yes }
+	production_speed_buildings_factor = GDS_dm_0
+	stability_factor = GDS_dm_1
+}
+KNM_dm = {
+	icon = GFX_idea_DU_TFE_dotacje
+	enable = { always = yes }
+	production_speed_industrial_complex_factor = KNM_dm_0
+	stability_factor = KNM_dm_1
+}

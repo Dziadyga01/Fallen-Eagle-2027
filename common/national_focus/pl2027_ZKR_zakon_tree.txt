@@ -13,410 +13,411 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1690 }
 	initial_show_position = { focus = ZKR_czarny_krzyz }
 
+
 	focus = {
 		id = ZKR_czarny_krzyz
 		icon = GFX_pl2027_tfr_portret_zkr_leader
-		x = 59
+		x = 54
 		y = 0
 		cost = 5
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.03
+		add_political_power = 50
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_odbudowa_malborka
 		icon = GFX_pl2027_081_budowa_0
-		x = 58
+		x = 53
 		y = 1
 		prerequisite = { focus = ZKR_czarny_krzyz }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.05
+		add_stability = 0.05
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_nowa_administracja
 		icon = GFX_pl2027_081_administracja_0
-		x = 73
+		x = 68
 		y = 1
 		prerequisite = { focus = ZKR_czarny_krzyz }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 75
+		add_political_power = 75
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_warsztaty
 		icon = GFX_pl2027_081_fabryka_broni_0
-		x = 70
+		x = 65
 		y = 2
 		prerequisite = { focus = ZKR_nowa_administracja }
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_nowi_bracia
 		icon = GFX_pl2027_081_wiara_0
-		x = 79
+		x = 74
 		y = 2
 		prerequisite = { focus = ZKR_zakon_mil_start }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_manpower = 6000
+		add_manpower = 6000
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kapitula
 		icon = GFX_pl2027_081_korona_0_zkr
-		x = 62
+		x = 57
 		y = 2
 		prerequisite = { focus = ZKR_odbudowa_malborka }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 50
-			add_stability = 0.02
+		add_political_power = 50
+		add_stability = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_msza
 		icon = GFX_pl2027_081_wiara_1
-		x = 66
+		x = 61
 		y = 2
 		prerequisite = { focus = ZKR_odbudowa_malborka }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = ZKR_maryja
-			add_political_power = 25
+		add_ideas = ZKR_maryja
+		add_political_power = 25
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kapelani
 		icon = GFX_pl2027_081_wiara_2
-		x = 65
+		x = 60
 		y = 3
 		prerequisite = { focus = ZKR_msza }
 		prerequisite = { focus = ZKR_kapitula }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_war_support = 0.03
-			army_experience = 10
+		add_war_support = 0.03
+		army_experience = 10
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_bractwa
 		icon = GFX_pl2027_081_wiara_3
-		x = 67
+		x = 62
 		y = 3
 		prerequisite = { focus = ZKR_msza }
 		prerequisite = { focus = ZKR_kapitula }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_manpower = 3000
-			add_stability = 0.02
+		add_manpower = 3000
+		add_stability = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pielgrzymki
 		icon = GFX_pl2027_081_wiara_4
-		x = 65
+		x = 60
 		y = 4
 		prerequisite = { focus = ZKR_kapelani }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 50
+		add_political_power = 50
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_regula_f
 		icon = GFX_pl2027_081_wiara_5
-		x = 67
+		x = 62
 		y = 4
 		prerequisite = { focus = ZKR_bractwa }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = ZKR_regula
+		add_ideas = ZKR_regula
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kazania
 		icon = GFX_pl2027_081_wiara_6
-		x = 65
+		x = 60
 		y = 5
 		prerequisite = { focus = ZKR_pielgrzymki }
 		prerequisite = { focus = ZKR_regula_f }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_war_support = 0.04
-			add_political_power = 25
+		add_war_support = 0.04
+		add_political_power = 25
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kapitula_generalna
 		icon = GFX_pl2027_081_wiara_0
-		x = 65
+		x = 60
 		y = 6
 		prerequisite = { focus = ZKR_kazania }
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { has_idea = ZKR_maryja } remove_ideas = ZKR_maryja }
-			add_ideas = ZKR_wiara_miecz
-			add_stability = 0.03
+		if = { limit = { has_idea = ZKR_maryja } remove_ideas = ZKR_maryja }
+		add_ideas = ZKR_wiara_miecz
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zulawy
 		icon = GFX_pl2027_081_zywnosc_0
-		x = 64
+		x = 59
 		y = 2
 		prerequisite = { focus = ZKR_odbudowa_malborka }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.03
-			add_political_power = 30
+		add_stability = 0.03
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_odbudowa_drog
 		icon = GFX_pl2027_081_budowa_1
-		x = 75
+		x = 70
 		y = 2
 		prerequisite = { focus = ZKR_nowa_administracja }
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_prochownia
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 69
+		x = 64
 		y = 3
 		prerequisite = { focus = ZKR_warsztaty }
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_szkola_rycerska
 		icon = GFX_pl2027_081_szkola_0
-		x = 78
+		x = 73
 		y = 3
 		prerequisite = { focus = ZKR_nowi_bracia }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			army_experience = 15
+		army_experience = 15
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pruski_przemysl
 		icon = GFX_pl2027_081_przemysl_0
-		x = 74
+		x = 69
 		y = 3
 		prerequisite = { focus = ZKR_odbudowa_drog }
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_port_elblag
 		icon = GFX_pl2027_081_port_0
-		x = 76
+		x = 71
 		y = 3
 		prerequisite = { focus = ZKR_odbudowa_drog }
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_political_power = 30
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zbrojownia
 		icon = GFX_pl2027_081_rycerz_0_zkr
-		x = 71
+		x = 66
 		y = 3
 		prerequisite = { focus = ZKR_warsztaty }
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 60 }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 60 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_komturie
 		icon = GFX_pl2027_081_rycerz_1_zkr
-		x = 80
+		x = 75
 		y = 3
 		prerequisite = { focus = ZKR_nowi_bracia }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_tech_bonus = { name = ZKR_komturie_tb bonus = 1.0 uses = 1 category = infantry_weapons }
+		add_tech_bonus = { name = ZKR_komturie_tb bonus = 1.0 uses = 1 category = infantry_weapons }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kanal_elblaski
 		icon = GFX_pl2027_081_port_1
-		x = 73
+		x = 68
 		y = 4
 		prerequisite = { focus = ZKR_pruski_przemysl }
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_stability = 0.02
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_stability = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kupcy
 		icon = GFX_pl2027_081_handel_0
-		x = 75
+		x = 70
 		y = 4
 		prerequisite = { focus = ZKR_pruski_przemysl }
 		prerequisite = { focus = ZKR_port_elblag }
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_political_power = 25
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		add_political_power = 25
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_artyleria
 		icon = GFX_pl2027_081_artyleria_0_zkr
-		x = 71
+		x = 66
 		y = 4
 		prerequisite = { focus = ZKR_zbrojownia }
 		prerequisite = { focus = ZKR_prochownia }
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_tech_bonus = { name = ZKR_artyleria_tb bonus = 1.0 uses = 1 category = artillery }
-			add_equipment_to_stockpile = { type = light_artillery_equipment amount = 40 }
+		add_tech_bonus = { name = ZKR_artyleria_tb bonus = 1.0 uses = 1 category = artillery }
+		add_equipment_to_stockpile = { type = light_artillery_equipment amount = 40 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zmotoryzowani
 		icon = GFX_pl2027_081_zmotoryzowane_0_zkr
-		x = 80
+		x = 75
 		y = 4
 		prerequisite = { focus = ZKR_komturie }
 		prerequisite = { focus = ZKR_szkola_rycerska }
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_equipment_to_stockpile = { type = motorized_equipment amount = 60 }
+		add_equipment_to_stockpile = { type = motorized_equipment amount = 60 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_mury_zamku
 		icon = GFX_pl2027_081_twierdza_0_zkr
-		x = 73
+		x = 68
 		y = 5
 		prerequisite = { focus = ZKR_kanal_elblaski }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_timed_idea = { idea = ZKR_mury_malborka days = 365 }
+		add_timed_idea = { idea = ZKR_mury_malborka days = 365 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_skarbiec
 		icon = GFX_pl2027_081_rycerz_2_zkr
-		x = 75
+		x = 70
 		y = 5
 		prerequisite = { focus = ZKR_kupcy }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 60
-			add_stability = 0.03
+		add_political_power = 60
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_garnizony
 		icon = GFX_pl2027_081_rycerz_3_zkr
-		x = 71
+		x = 66
 		y = 5
 		prerequisite = { focus = ZKR_artyleria }
 		prerequisite = { focus = ZKR_zmotoryzowani }
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { NOT = { has_template = "Chorągiew Zakonna" } } division_template = { name = "Chorągiew Zakonna" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } artillery_brigade = { x = 1 y = 1 } } support = { engineer = { x = 0 y = 0 } recon = { x = 0 y = 1 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Chorągiew Zakonna\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Chorągiew Zakonna\" start_experience_factor = 0.3" owner = ROOT } }
+		if = { limit = { NOT = { has_template = "Chorągiew Zakonna" } } division_template = { name = "Chorągiew Zakonna" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } artillery_brigade = { x = 1 y = 1 } } support = { engineer = { x = 0 y = 0 } recon = { x = 0 y = 1 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Chorągiew Zakonna\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Chorągiew Zakonna\" start_experience_factor = 0.3" owner = ROOT } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_gotowy_na_wojne
 		icon = GFX_pl2027_081_rycerz_0_zkr
-		x = 75
+		x = 70
 		y = 6
-		prerequisite = { focus = ZKR_skarbiec focus = ZKR_zakon_mil_zawodowa focus = ZKR_zakon_ZKR_dec_dostawy_f3 focus = ZKR_zakon_ZKR_dec_doradcy_f3 }
+		prerequisite = { focus = ZKR_skarbiec focus = ZKR_zakon_mil_zawodowa }
 		prerequisite = { focus = ZKR_garnizony }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_war_support = 0.05
-			add_political_power = 50
-			set_country_flag = ZKR_INTERNAL_STABILITY
-			PL2027_fundament_awans = yes
+		add_war_support = 0.05
+		add_political_power = 50
+		set_country_flag = ZKR_INTERNAL_STABILITY
+		PL2027_fundament_awans = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ziemie_wokol
@@ -427,9 +428,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 25
+		add_political_power = 25
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ult_nml
@@ -442,10 +443,10 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = NML } NML = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 3 }
 		completion_reward = {
-			NML = { country_event = { id = zkr.1 } }
-			add_to_variable = { ZKR_agresja = 1 }
+		NML = { country_event = { id = zkr.1 } }
+		add_to_variable = { ZKR_agresja = 1 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_cel_nml
@@ -457,11 +458,11 @@ focus_tree = {
 		available = { ZKR_cel_NML = yes }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_to_variable = { ZKR_cele = 1 }
-			add_stability = 0.02
-			set_country_flag = ZKR_cel_NML
+		add_to_variable = { ZKR_cele = 1 }
+		add_stability = 0.02
+		set_country_flag = ZKR_cel_NML
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ult2_nml
@@ -474,10 +475,10 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = NML } NML = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 5 }
 		completion_reward = {
-			NML = { country_event = { id = zkr.1 } }
-			add_to_variable = { ZKR_agresja = 1 }
+		NML = { country_event = { id = zkr.1 } }
+		add_to_variable = { ZKR_agresja = 1 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ult_gru
@@ -490,10 +491,10 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = GRU } GRU = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 3 }
 		completion_reward = {
-			GRU = { country_event = { id = zkr.1 } }
-			add_to_variable = { ZKR_agresja = 1 }
+		GRU = { country_event = { id = zkr.1 } }
+		add_to_variable = { ZKR_agresja = 1 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_cel_gru
@@ -505,11 +506,11 @@ focus_tree = {
 		available = { ZKR_cel_GRU = yes }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_to_variable = { ZKR_cele = 1 }
-			add_stability = 0.02
-			set_country_flag = ZKR_cel_GRU
+		add_to_variable = { ZKR_cele = 1 }
+		add_stability = 0.02
+		set_country_flag = ZKR_cel_GRU
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ult2_gru
@@ -522,10 +523,10 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = GRU } GRU = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 5 }
 		completion_reward = {
-			GRU = { country_event = { id = zkr.1 } }
-			add_to_variable = { ZKR_agresja = 1 }
+		GRU = { country_event = { id = zkr.1 } }
+		add_to_variable = { ZKR_agresja = 1 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ult_koc
@@ -538,10 +539,10 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = KOC } KOC = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 3 }
 		completion_reward = {
-			KOC = { country_event = { id = zkr.1 } }
-			add_to_variable = { ZKR_agresja = 1 }
+		KOC = { country_event = { id = zkr.1 } }
+		add_to_variable = { ZKR_agresja = 1 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_cel_koc
@@ -553,11 +554,11 @@ focus_tree = {
 		available = { ZKR_cel_KOC = yes }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_to_variable = { ZKR_cele = 1 }
-			add_stability = 0.02
-			set_country_flag = ZKR_cel_KOC
+		add_to_variable = { ZKR_cele = 1 }
+		add_stability = 0.02
+		set_country_flag = ZKR_cel_KOC
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ult2_koc
@@ -570,10 +571,10 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = KOC } KOC = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 5 }
 		completion_reward = {
-			KOC = { country_event = { id = zkr.1 } }
-			add_to_variable = { ZKR_agresja = 1 }
+		KOC = { country_event = { id = zkr.1 } }
+		add_to_variable = { ZKR_agresja = 1 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ult_wmz
@@ -586,10 +587,10 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = WMZ } WMZ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			WMZ = { country_event = { id = zkr.1 } }
-			add_to_variable = { ZKR_agresja = 1 }
+		WMZ = { country_event = { id = zkr.1 } }
+		add_to_variable = { ZKR_agresja = 1 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_cel_wmz
@@ -601,11 +602,11 @@ focus_tree = {
 		available = { ZKR_cel_WMZ = yes }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_to_variable = { ZKR_cele = 1 }
-			add_stability = 0.02
-			set_country_flag = ZKR_cel_WMZ
+		add_to_variable = { ZKR_cele = 1 }
+		add_stability = 0.02
+		set_country_flag = ZKR_cel_WMZ
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ult2_wmz
@@ -618,10 +619,10 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = WMZ } WMZ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 5 }
 		completion_reward = {
-			WMZ = { country_event = { id = zkr.1 } }
-			add_to_variable = { ZKR_agresja = 1 }
+		WMZ = { country_event = { id = zkr.1 } }
+		add_to_variable = { ZKR_agresja = 1 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_dyplomacja_sily
@@ -632,9 +633,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 60
+		add_political_power = 60
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_nowe_komturie
@@ -645,11 +646,11 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.04
-			add_political_power = 30
-			set_country_flag = ZKR_integracja_ziem custom_effect_tooltip = ZKR_integracja_tt
+		add_stability = 0.04
+		add_political_power = 30
+		set_country_flag = ZKR_integracja_ziem custom_effect_tooltip = ZKR_integracja_tt
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kongres
@@ -661,10 +662,10 @@ focus_tree = {
 		available = { OR = { AND = { has_completed_focus = ZKR_gotowy_na_wojne check_variable = { ZKR_cele > 2 } } has_country_flag = ZKR_kryzys_rosyjski } }
 		ai_will_do = { factor = 50 }
 		completion_reward = {
-			add_political_power = 75
-			set_country_flag = ZKR_kongres
+		add_political_power = 75
+		set_country_flag = ZKR_kongres
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_obroncy_baltyku
@@ -672,14 +673,14 @@ focus_tree = {
 		x = 4
 		y = 3
 		prerequisite = { focus = ZKR_kongres }
-		cost = 5
 		mutually_exclusive = { focus = ZKR_pruska_krucjata focus = ZKR_uklad_z_kremlem }
+		cost = 5
 		ai_will_do = { factor = 3 modifier = { factor = 5 has_country_flag = ZKR_wybor_obrona } }
 		completion_reward = {
-			set_country_flag = ZKR_droga_obrona
-			add_stability = 0.03
+		set_country_flag = ZKR_droga_obrona
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pruska_krucjata
@@ -687,14 +688,14 @@ focus_tree = {
 		x = 17
 		y = 3
 		prerequisite = { focus = ZKR_kongres }
-		cost = 5
 		mutually_exclusive = { focus = ZKR_obroncy_baltyku focus = ZKR_uklad_z_kremlem }
+		cost = 5
 		ai_will_do = { factor = 3 modifier = { factor = 5 has_country_flag = ZKR_wybor_krucjata } }
 		completion_reward = {
-			set_country_flag = ZKR_droga_krucjata
-			add_war_support = 0.05
+		set_country_flag = ZKR_droga_krucjata
+		add_war_support = 0.05
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_uklad_z_kremlem
@@ -702,16 +703,16 @@ focus_tree = {
 		x = 28
 		y = 3
 		prerequisite = { focus = ZKR_kongres }
-		cost = 5
 		mutually_exclusive = { focus = ZKR_obroncy_baltyku focus = ZKR_pruska_krucjata }
+		cost = 5
 		available = { country_exists = ROS }
 		bypass = { NOT = { country_exists = ROS } }
 		ai_will_do = { factor = 1 modifier = { factor = 5 has_country_flag = ZKR_wybor_kreml } }
 		completion_reward = {
-			set_country_flag = ZKR_droga_kreml
-			add_political_power = 50
+		set_country_flag = ZKR_droga_kreml
+		add_political_power = 50
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_rozbior
@@ -722,10 +723,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_war_support = 0.08
-			add_stability = 0.03
+		add_war_support = 0.08
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_kociewie
@@ -736,10 +737,10 @@ focus_tree = {
 		cost = 1
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = KOC NOT = { KOC = { is_subject_of = ROOT } } NOT = { has_war_with = KOC } } give_guarantee = KOC KOC = { country_event = { id = zkr.35 } } }
-			add_to_variable = { ZKR_agresja = -1 }
+		if = { limit = { country_exists = KOC NOT = { KOC = { is_subject_of = ROOT } } NOT = { has_war_with = KOC } } if = { limit = { KOC = { PL2027_ideologia_jak_PREV = yes } } give_guarantee = KOC } KOC = { country_event = { id = zkr.35 } } }
+		add_to_variable = { ZKR_agresja = -1 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_grudziadz
@@ -750,10 +751,10 @@ focus_tree = {
 		cost = 1
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = GRU NOT = { GRU = { is_subject_of = ROOT } } NOT = { has_war_with = GRU } } give_guarantee = GRU GRU = { country_event = { id = zkr.35 } } }
-			add_to_variable = { ZKR_agresja = -1 }
+		if = { limit = { country_exists = GRU NOT = { GRU = { is_subject_of = ROOT } } NOT = { has_war_with = GRU } } if = { limit = { GRU = { PL2027_ideologia_jak_PREV = yes } } give_guarantee = GRU } GRU = { country_event = { id = zkr.35 } } }
+		add_to_variable = { ZKR_agresja = -1 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_warmia
@@ -764,9 +765,9 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = WMZ NOT = { WMZ = { is_subject_of = ROOT } } NOT = { has_war_with = WMZ } } give_guarantee = WMZ WMZ = { add_equipment_to_stockpile = { type = ranged_equipment amount = 600 } country_event = { id = zkr.35 } } }
+		if = { limit = { country_exists = WMZ NOT = { WMZ = { is_subject_of = ROOT } } NOT = { has_war_with = WMZ } } if = { limit = { WMZ = { PL2027_ideologia_jak_PREV = yes } } give_guarantee = WMZ } WMZ = { add_equipment_to_stockpile = { type = ranged_equipment amount = 600 } country_event = { id = zkr.35 } } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_twierdza
@@ -777,10 +778,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_timed_idea = { idea = ZKR_mury_malborka days = 365 }
-			add_stability = 0.02
+		add_timed_idea = { idea = ZKR_mury_malborka days = 365 }
+		add_stability = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_sojusz
@@ -791,9 +792,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			ZKR_tarcza_zaproszenia = yes
+		ZKR_tarcza_zaproszenia = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_ochotnicy
@@ -804,10 +805,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			army_experience = 10
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+		army_experience = 10
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_wspolny_sztab
@@ -818,10 +819,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_timed_idea = { idea = ZKR_wspolny_sztab days = 240 }
-			army_experience = 10
+		add_timed_idea = { idea = ZKR_wspolny_sztab days = 240 }
+		army_experience = 10
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_tarcza
@@ -832,9 +833,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = ZKR_tarcza_baltyku
+		add_ideas = ZKR_tarcza_baltyku
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_linia_pasleki
@@ -846,9 +847,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_timed_idea = { idea = ZKR_linia_pasleki days = 365 }
+		add_timed_idea = { idea = ZKR_linia_pasleki days = 365 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_klajpeda
@@ -859,10 +860,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 40
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		add_political_power = 40
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_hanza
@@ -873,10 +874,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_political_power = 30
+		capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_lotnictwo
@@ -887,9 +888,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			air_experience = 25
+		air_experience = 25
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_bruksela
@@ -900,10 +901,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_political_power = 30
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_wojna_z_rosja
@@ -917,10 +918,10 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = ROS } ROS = { has_country_flag = ROS_wojna_rozstrzygnieta } date > 2030.1.1 } }
 		ai_will_do = { factor = 5 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = ROS NOT = { has_war_with = ROS } } declare_war_on = { target = ROS type = annex_everything } }
-			add_war_support = 0.05
+		if = { limit = { country_exists = ROS NOT = { has_war_with = ROS } } declare_war_on = { target = ROS type = annex_everything } }
+		add_war_support = 0.05
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_odbudowa
@@ -933,10 +934,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_stability = 0.03
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_dyplomaci
@@ -948,9 +949,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 60
+		add_political_power = 60
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_otwarty_zakon
@@ -961,10 +962,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_popularity = { ideology = social_liberal popularity = 0.05 }
-			add_stability = 0.03
+		add_popularity = { ideology = social_liberal popularity = 0.05 }
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_bractwa
@@ -975,10 +976,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.05
-			add_manpower = 4000
+		add_stability = 0.05
+		add_manpower = 4000
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_ob_wolne_prusy
@@ -991,11 +992,11 @@ focus_tree = {
 		available = { OR = { NOT = { country_exists = ROS } ROS = { has_country_flag = ROS_wojna_rozstrzygnieta } date > 2030.1.1 } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = ZKR_wolne_prusy
-			set_country_flag = ZKR_sekret
-			PL2027_fundament_awans = yes
+		add_ideas = ZKR_wolne_prusy
+		set_country_flag = ZKR_sekret
+		PL2027_fundament_awans = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_bez_zwyciestwa
@@ -1006,9 +1007,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = ZKR_militaryzacja
+		add_ideas = ZKR_militaryzacja
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_ziemie_utracone
@@ -1019,9 +1020,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			every_state = { limit = { OR = { is_owned_by = GRU is_owned_by = KOC is_owned_by = WMZ is_owned_by = NML is_owned_by = LBW } } add_claim_by = ROOT }
+		every_state = { limit = { OR = { is_owned_by = GRU is_owned_by = KOC is_owned_by = WMZ is_owned_by = NML is_owned_by = LBW } } add_claim_by = ROOT }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_militaryzacja
@@ -1032,10 +1033,10 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_marsz_grudziadz
@@ -1049,12 +1050,12 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = GRU } GRU = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = GRU NOT = { GRU = { is_subject_of = ROOT } } NOT = { has_war_with = GRU } } create_wargoal = { type = annex_everything target = GRU } add_ai_strategy = { type = conquer id = GRU value = 150 } set_country_flag = { flag = ZKR_WAR_COOLDOWN days = 180 } } else = { add_political_power = 50 add_stability = 0.02 }
-			add_to_variable = { ZKR_agresja = 1 }
+		if = { limit = { country_exists = GRU NOT = { GRU = { is_subject_of = ROOT } } NOT = { has_war_with = GRU } } create_wargoal = { type = annex_everything target = GRU } add_ai_strategy = { type = conquer id = GRU value = 150 } set_country_flag = { flag = ZKR_WAR_COOLDOWN days = 180 } } else = { add_political_power = 50 add_stability = 0.02 }
+		add_to_variable = { ZKR_agresja = 1 }
 		 # PL2027_AI_ATAK
-			if = { limit = { is_ai = yes has_war = no country_exists = GRU NOT = { has_war_with = GRU } NOT = { is_in_faction_with = GRU } NOT = { GRU = { is_subject_of = ROOT } } NOT = { is_subject_of = GRU } NOT = { GRU = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = GRU type = annex_everything } } if = { limit = { is_ai = yes country_exists = GRU } add_ai_strategy = { type = conquer id = GRU value = 150 } add_ai_strategy = { type = antagonize id = GRU value = 100 } }
+		if = { limit = { is_ai = yes has_war = no country_exists = GRU NOT = { has_war_with = GRU } NOT = { is_in_faction_with = GRU } NOT = { GRU = { is_subject_of = ROOT } } NOT = { is_subject_of = GRU } NOT = { GRU = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = GRU type = annex_everything } } if = { limit = { is_ai = yes country_exists = GRU } add_ai_strategy = { type = conquer id = GRU value = 150 } add_ai_strategy = { type = antagonize id = GRU value = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_przez_kociewie
@@ -1068,12 +1069,12 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = KOC } KOC = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = KOC NOT = { KOC = { is_subject_of = ROOT } } NOT = { has_war_with = KOC } } create_wargoal = { type = annex_everything target = KOC } add_ai_strategy = { type = conquer id = KOC value = 150 } set_country_flag = { flag = ZKR_WAR_COOLDOWN days = 180 } } else = { add_political_power = 50 add_stability = 0.02 }
-			add_to_variable = { ZKR_agresja = 1 }
+		if = { limit = { country_exists = KOC NOT = { KOC = { is_subject_of = ROOT } } NOT = { has_war_with = KOC } } create_wargoal = { type = annex_everything target = KOC } add_ai_strategy = { type = conquer id = KOC value = 150 } set_country_flag = { flag = ZKR_WAR_COOLDOWN days = 180 } } else = { add_political_power = 50 add_stability = 0.02 }
+		add_to_variable = { ZKR_agresja = 1 }
 		 # PL2027_AI_ATAK
-			if = { limit = { is_ai = yes has_war = no country_exists = KOC NOT = { has_war_with = KOC } NOT = { is_in_faction_with = KOC } NOT = { KOC = { is_subject_of = ROOT } } NOT = { is_subject_of = KOC } NOT = { KOC = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = KOC type = annex_everything } } if = { limit = { is_ai = yes country_exists = KOC } add_ai_strategy = { type = conquer id = KOC value = 150 } add_ai_strategy = { type = antagonize id = KOC value = 100 } }
+		if = { limit = { is_ai = yes has_war = no country_exists = KOC NOT = { has_war_with = KOC } NOT = { is_in_faction_with = KOC } NOT = { KOC = { is_subject_of = ROOT } } NOT = { is_subject_of = KOC } NOT = { KOC = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = KOC type = annex_everything } } if = { limit = { is_ai = yes country_exists = KOC } add_ai_strategy = { type = conquer id = KOC value = 150 } add_ai_strategy = { type = antagonize id = KOC value = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_warmia
@@ -1087,12 +1088,12 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = WMZ } WMZ = { is_subject_of = ROOT } } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = WMZ NOT = { WMZ = { is_subject_of = ROOT } } NOT = { has_war_with = WMZ } } create_wargoal = { type = annex_everything target = WMZ } add_ai_strategy = { type = conquer id = WMZ value = 150 } set_country_flag = { flag = ZKR_WAR_COOLDOWN days = 180 } } else = { add_political_power = 50 add_stability = 0.02 }
-			add_to_variable = { ZKR_agresja = 1 }
+		if = { limit = { country_exists = WMZ NOT = { WMZ = { is_subject_of = ROOT } } NOT = { has_war_with = WMZ } } create_wargoal = { type = annex_everything target = WMZ } add_ai_strategy = { type = conquer id = WMZ value = 150 } set_country_flag = { flag = ZKR_WAR_COOLDOWN days = 180 } } else = { add_political_power = 50 add_stability = 0.02 }
+		add_to_variable = { ZKR_agresja = 1 }
 		 # PL2027_AI_ATAK
-			if = { limit = { is_ai = yes has_war = no country_exists = WMZ NOT = { has_war_with = WMZ } NOT = { is_in_faction_with = WMZ } NOT = { WMZ = { is_subject_of = ROOT } } NOT = { is_subject_of = WMZ } NOT = { WMZ = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = WMZ type = annex_everything } } if = { limit = { is_ai = yes country_exists = WMZ } add_ai_strategy = { type = conquer id = WMZ value = 150 } add_ai_strategy = { type = antagonize id = WMZ value = 100 } }
+		if = { limit = { is_ai = yes has_war = no country_exists = WMZ NOT = { has_war_with = WMZ } NOT = { is_in_faction_with = WMZ } NOT = { WMZ = { is_subject_of = ROOT } } NOT = { is_subject_of = WMZ } NOT = { WMZ = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = WMZ type = annex_everything } } if = { limit = { is_ai = yes country_exists = WMZ } add_ai_strategy = { type = conquer id = WMZ value = 150 } add_ai_strategy = { type = antagonize id = WMZ value = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_choragwie
@@ -1103,10 +1104,10 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { NOT = { has_template = "Chorągiew Zakonna" } } division_template = { name = "Chorągiew Zakonna" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } artillery_brigade = { x = 1 y = 1 } } support = { engineer = { x = 0 y = 0 } recon = { x = 0 y = 1 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Chorągiew Zakonna\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Chorągiew Zakonna\" start_experience_factor = 0.3" owner = ROOT } }
+		if = { limit = { NOT = { has_template = "Chorągiew Zakonna" } } division_template = { name = "Chorągiew Zakonna" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } artillery_brigade = { x = 1 y = 1 } } support = { engineer = { x = 0 y = 0 } recon = { x = 0 y = 1 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Chorągiew Zakonna\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Chorągiew Zakonna\" start_experience_factor = 0.3" owner = ROOT } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_ciezka_jazda
@@ -1117,10 +1118,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_equipment_to_stockpile = { type = motorized_equipment amount = 80 }
-			add_tech_bonus = { name = ZKR_jazda_tb bonus = 1.0 uses = 1 category = infantry_weapons }
+		add_equipment_to_stockpile = { type = motorized_equipment amount = 80 }
+		add_tech_bonus = { name = ZKR_jazda_tb bonus = 1.0 uses = 1 category = infantry_weapons }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_lubawa
@@ -1133,12 +1134,12 @@ focus_tree = {
 		bypass = { NOT = { country_exists = LBW } }
 		ai_will_do = { factor = 15 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = LBW NOT = { LBW = { is_subject_of = ROOT } } NOT = { has_war_with = LBW } } create_wargoal = { type = annex_everything target = LBW } set_country_flag = { flag = ZKR_WAR_COOLDOWN days = 180 } } else = { add_political_power = 50 }
-			add_to_variable = { ZKR_agresja = 1 }
+		if = { limit = { country_exists = LBW NOT = { LBW = { is_subject_of = ROOT } } NOT = { has_war_with = LBW } } create_wargoal = { type = annex_everything target = LBW } set_country_flag = { flag = ZKR_WAR_COOLDOWN days = 180 } } else = { add_political_power = 50 }
+		add_to_variable = { ZKR_agresja = 1 }
 		 # PL2027_AI_ATAK
-			if = { limit = { is_ai = yes has_war = no country_exists = LBW NOT = { has_war_with = LBW } NOT = { is_in_faction_with = LBW } NOT = { LBW = { is_subject_of = ROOT } } NOT = { is_subject_of = LBW } NOT = { LBW = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = LBW type = annex_everything } } if = { limit = { is_ai = yes country_exists = LBW } add_ai_strategy = { type = conquer id = LBW value = 150 } add_ai_strategy = { type = antagonize id = LBW value = 100 } }
+		if = { limit = { is_ai = yes has_war = no country_exists = LBW NOT = { has_war_with = LBW } NOT = { is_in_faction_with = LBW } NOT = { LBW = { is_subject_of = ROOT } } NOT = { is_subject_of = LBW } NOT = { LBW = { strength_ratio = { tag = ROOT ratio > 1.5 } } } } declare_war_on = { target = LBW type = annex_everything } } if = { limit = { is_ai = yes country_exists = LBW } add_ai_strategy = { type = conquer id = LBW value = 150 } add_ai_strategy = { type = antagonize id = LBW value = 100 } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_pomezania
@@ -1149,10 +1150,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.04
-			add_political_power = 30
+		add_stability = 0.04
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_drogi
@@ -1163,10 +1164,10 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_krzyzowcy
@@ -1177,10 +1178,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_manpower = 8000
-			army_experience = 10
+		add_manpower = 8000
+		army_experience = 10
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_ordensburgi
@@ -1191,9 +1192,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_timed_idea = { idea = ZKR_mury_malborka days = 365 }
+		add_timed_idea = { idea = ZKR_mury_malborka days = 365 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_prawo
@@ -1204,10 +1205,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.04
-			set_country_flag = ZKR_sekret
+		add_stability = 0.04
+		set_country_flag = ZKR_sekret
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_integracja
@@ -1218,11 +1219,11 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			every_owned_state = { limit = { is_claimed_by = ROOT NOT = { is_core_of = ROOT } } add_core_of = ROOT }
-			add_stability = -0.02
-			set_country_flag = ZKR_integracja_ziem custom_effect_tooltip = ZKR_integracja_tt
+		every_owned_state = { limit = { is_claimed_by = ROOT NOT = { is_core_of = ROOT } } add_core_of = ROOT }
+		add_stability = -0.02
+		set_country_flag = ZKR_integracja_ziem custom_effect_tooltip = ZKR_integracja_tt
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_administracja
@@ -1233,9 +1234,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 60
+		add_political_power = 60
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_kampania
@@ -1247,9 +1248,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_timed_idea = { idea = ZKR_kampania_pruska days = 180 }
+		add_timed_idea = { idea = ZKR_kampania_pruska days = 180 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_kapitula_wojenna
@@ -1260,10 +1261,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			army_experience = 15
-			add_political_power = 25
+		army_experience = 15
+		add_political_power = 25
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_pk_korona_prus
@@ -1279,9 +1280,9 @@ focus_tree = {
 		available = { ZKR_warunek_prus = yes }
 		ai_will_do = { factor = 50 }
 		completion_reward = {
-			country_event = { id = zkr.80 }
+		country_event = { id = zkr.80 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_tajny_uklad
@@ -1292,12 +1293,12 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			set_country_flag = ZKR_uklad
-			add_dynamic_modifier = { modifier = ZKR_wplywy_mod }
-			add_to_variable = { ZKR_wplywy = 15 } ZKR_wplywy_przelicz = yes
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 1000 }
+		set_country_flag = ZKR_uklad
+		add_dynamic_modifier = { modifier = ZKR_wplywy_mod }
+		add_to_variable = { ZKR_wplywy = 15 } ZKR_wplywy_przelicz = yes
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 1000 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_doradcy
@@ -1308,10 +1309,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			army_experience = 25
-			add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
+		army_experience = 25
+		add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_dostawy
@@ -1322,11 +1323,11 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 1500 }
-			add_equipment_to_stockpile = { type = motorized_equipment amount = 60 }
-			add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 1500 }
+		add_equipment_to_stockpile = { type = motorized_equipment amount = 60 }
+		add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_kredyt
@@ -1337,10 +1338,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
+		capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_operacja
@@ -1355,11 +1356,11 @@ focus_tree = {
 		bypass = { OR = { NOT = { country_exists = ROS } NOT = { country_exists = WMZ } ROS = { has_country_flag = ROS_wojna_rozstrzygnieta } } }
 		ai_will_do = { factor = 1 modifier = { factor = 0.2 has_war = yes } modifier = { factor = 0.4 has_stability < 0.4 } }
 		completion_reward = {
-			if = { limit = { country_exists = WMZ NOT = { has_war_with = WMZ } NOT = { WMZ = { is_subject_of = ROOT } } NOT = { is_in_faction_with = WMZ } } declare_war_on = { target = WMZ type = annex_everything } }
-			if = { limit = { country_exists = ROS } ROS = { give_military_access = ROOT } }
-			add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
+		if = { limit = { country_exists = WMZ NOT = { has_war_with = WMZ } NOT = { WMZ = { is_subject_of = ROOT } } NOT = { is_in_faction_with = WMZ } } declare_war_on = { target = WMZ type = annex_everything } }
+		if = { limit = { country_exists = ROS } ROS = { give_military_access = ROOT } }
+		add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_fabryki
@@ -1371,10 +1372,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
-			add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
+		capital_scope = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_media
@@ -1385,10 +1386,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 40
-			add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
+		add_political_power = 40
+		add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_administracja
@@ -1399,10 +1400,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 50
-			add_to_variable = { ZKR_wplywy = 15 } ZKR_wplywy_przelicz = yes
+		add_political_power = 50
+		add_to_variable = { ZKR_wplywy = 15 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_gaz
@@ -1413,10 +1414,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.04
-			add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
+		add_stability = 0.04
+		add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_szkolenia
@@ -1428,10 +1429,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			army_experience = 15
-			add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
+		army_experience = 15
+		add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_nowy_porzadek
@@ -1442,10 +1443,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 40
-			add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
+		add_political_power = 40
+		add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_korytarz
@@ -1457,10 +1458,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_parasol
@@ -1471,10 +1472,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_timed_idea = { idea = ZKR_mury_malborka days = 365 }
-			add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
+		add_timed_idea = { idea = ZKR_mury_malborka days = 365 }
+		add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_zalezny
@@ -1485,10 +1486,10 @@ focus_tree = {
 		cost = 1
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			country_event = { id = zkr.50 }
-			add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
+		country_event = { id = zkr.50 }
+		add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_kolej
@@ -1499,11 +1500,11 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_political_power = 30
-			add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_political_power = 30
+		add_to_variable = { ZKR_wplywy = 5 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_lojalnosc
@@ -1511,14 +1512,14 @@ focus_tree = {
 		x = 25
 		y = 10
 		prerequisite = { focus = ZKR_kr_zalezny }
-		cost = 5
 		mutually_exclusive = { focus = ZKR_kr_tajna_kapitula }
+		cost = 5
 		ai_will_do = { factor = 3 }
 		completion_reward = {
-			add_stability = 0.03
-			add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
+		add_stability = 0.03
+		add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_tajna_kapitula
@@ -1526,15 +1527,15 @@ focus_tree = {
 		x = 27
 		y = 10
 		prerequisite = { focus = ZKR_kr_zalezny }
-		cost = 5
 		mutually_exclusive = { focus = ZKR_kr_lojalnosc }
+		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			army_experience = 15
-			add_to_variable = { ZKR_wplywy = -15 } ZKR_wplywy_przelicz = yes
-			set_country_flag = ZKR_okazja
+		army_experience = 15
+		add_to_variable = { ZKR_wplywy = -15 } ZKR_wplywy_przelicz = yes
+		set_country_flag = ZKR_okazja
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_protektorat
@@ -1542,14 +1543,14 @@ focus_tree = {
 		x = 25
 		y = 11
 		prerequisite = { focus = ZKR_kr_lojalnosc }
-		cost = 5
 		mutually_exclusive = { focus = ZKR_kr_bunt }
+		cost = 5
 		available = { NOT = { has_country_flag = ZKR_protektorat } NOT = { has_country_flag = ZKR_wojna_domowa } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			ZKR_protektorat = yes
+		ZKR_protektorat = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_kr_bunt
@@ -1557,189 +1558,189 @@ focus_tree = {
 		x = 27
 		y = 11
 		prerequisite = { focus = ZKR_kr_tajna_kapitula }
-		cost = 5
 		mutually_exclusive = { focus = ZKR_kr_protektorat }
+		cost = 5
 		available = { NOT = { has_country_flag = ZKR_protektorat } NOT = { has_country_flag = ZKR_wojna_domowa } }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			ZKR_wojna_domowa = yes
+		ZKR_wojna_domowa = yes
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_start
 		icon = GFX_pl2027_081_sztab_1_zkr
-		x = 87
+		x = 78
 		y = 1
 		prerequisite = { focus = ZKR_czarny_krzyz }
 		cost = 5
 		bypass = { has_country_flag = MIL_start }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_start
-			army_experience = 5
-			add_manpower = 1000
+		set_country_flag = MIL_start
+		army_experience = 5
+		add_manpower = 1000
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_rejestr
 		icon = GFX_pl2027_081_pobor_1_zkr
-		x = 87
+		x = 78
 		y = 2
 		prerequisite = { focus = ZKR_zakon_mil_start }
 		cost = 5
 		bypass = { has_country_flag = MIL_rejestr }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_rejestr
-			add_ideas = MIL_pobor_1
+		set_country_flag = MIL_rejestr
+		add_ideas = MIL_pobor_1
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_ochotnicy
 		icon = GFX_pl2027_081_pobor_3_zkr
-		x = 91
+		x = 82
 		y = 2
 		prerequisite = { focus = ZKR_zakon_mil_start }
 		cost = 5
 		bypass = { has_country_flag = MIL_ochotnicy }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_ochotnicy
-			add_manpower = 3000
+		set_country_flag = MIL_ochotnicy
+		add_manpower = 3000
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_fabryka
 		icon = GFX_pl2027_081_fabryka_broni_1
-		x = 95
+		x = 86
 		y = 2
 		prerequisite = { focus = ZKR_zakon_mil_start }
 		cost = 5
 		bypass = { has_country_flag = MIL_fabryka }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_fabryka
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		set_country_flag = MIL_fabryka
+		random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_pobor
 		icon = GFX_pl2027_081_pobor_2_zkr
-		x = 86
+		x = 77
 		y = 3
 		prerequisite = { focus = ZKR_zakon_mil_rejestr }
 		cost = 5
 		bypass = { has_country_flag = MIL_pobor }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_pobor
-			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
+		set_country_flag = MIL_pobor
+		if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_bataliony
 		icon = GFX_pl2027_081_wojsko_4_zkr
-		x = 90
+		x = 81
 		y = 3
 		prerequisite = { focus = ZKR_zakon_mil_ochotnicy }
 		cost = 7
 		bypass = { has_country_flag = MIL_bataliony }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_bataliony
-			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+		set_country_flag = MIL_bataliony
+		if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_produkcja
 		icon = GFX_pl2027_081_przemysl_4
-		x = 94
+		x = 85
 		y = 3
 		prerequisite = { focus = ZKR_zakon_mil_fabryka }
 		cost = 6
 		bypass = { has_country_flag = MIL_produkcja }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_produkcja
-			add_timed_idea = { idea = MIL_produkcja days = 365 }
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 50 }
+		set_country_flag = MIL_produkcja
+		add_timed_idea = { idea = MIL_produkcja days = 365 }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 50 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_rezerwisci
 		icon = GFX_pl2027_081_pobor_3_zkr
-		x = 88
+		x = 79
 		y = 3
 		prerequisite = { focus = ZKR_zakon_mil_rejestr }
 		cost = 5
 		bypass = { has_country_flag = MIL_rezerwisci }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_rezerwisci
-			add_manpower = 5000
+		set_country_flag = MIL_rezerwisci
+		add_manpower = 5000
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_brygady
 		icon = GFX_pl2027_081_obrona_terytorialna_1_zkr
-		x = 92
+		x = 83
 		y = 3
 		prerequisite = { focus = ZKR_zakon_mil_ochotnicy }
 		cost = 7
 		bypass = { has_country_flag = MIL_brygady }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_brygady
-			if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 40 }
+		set_country_flag = MIL_brygady
+		if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 40 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_zaplecze
 		icon = GFX_pl2027_081_logistyka_0
-		x = 96
+		x = 87
 		y = 3
 		prerequisite = { focus = ZKR_zakon_mil_fabryka }
 		cost = 5
 		bypass = { has_country_flag = MIL_zaplecze }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_zaplecze
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_ideas = MIL_zaopatrzenie
+		set_country_flag = MIL_zaplecze
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_ideas = MIL_zaopatrzenie
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_kadra
 		icon = GFX_pl2027_081_oficer_1_zkr
-		x = 88
+		x = 79
 		y = 4
 		prerequisite = { focus = ZKR_zakon_mil_rezerwisci }
 		prerequisite = { focus = ZKR_zakon_mil_brygady }
@@ -1748,18 +1749,18 @@ focus_tree = {
 		cost = 5
 		bypass = { has_country_flag = MIL_kadra }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_kadra
-			army_experience = 25
-			add_ideas = MIL_kadra
+		set_country_flag = MIL_kadra
+		army_experience = 25
+		add_ideas = MIL_kadra
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_mil_zawodowa
 		icon = GFX_pl2027_081_zawodowa_1_zkr
-		x = 88
+		x = 79
 		y = 5
 		prerequisite = { focus = ZKR_zakon_mil_kadra }
 		prerequisite = { focus = ZKR_zakon_mil_zaplecze }
@@ -1767,389 +1768,14 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_zawodowa }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_zawodowa
-			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
-			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
-			add_manpower = 2000
+		set_country_flag = MIL_zawodowa
+		if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
+		capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+		add_manpower = 2000
 		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_doradcy_f1
-		icon = GFX_pl2027_081_oficer_1_zkr
-		x = 82
-		y = 2
-		prerequisite = { focus = ZKR_zakon_mil_start }
-		cost = 5
-		available = { original_tag = ZKR has_political_power > 24 }
-		bypass = { has_country_flag = DZ_ZKR_dec_doradcy_1 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 6 }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_doradcy_1
-			add_political_power = -25 army_experience = 15 add_to_variable = { ZKR_wplywy = 15 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_doradcy_f2
-		icon = GFX_pl2027_081_oficer_1_zkr
-		x = 82
-		y = 3
-		prerequisite = { focus = ZKR_zakon_ZKR_dec_doradcy_f1 }
-		cost = 5
-		available = { original_tag = ZKR has_political_power > 24 }
-		bypass = { has_country_flag = DZ_ZKR_dec_doradcy_2 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 6 }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_doradcy_2
-			add_political_power = -25 army_experience = 15 add_to_variable = { ZKR_wplywy = 15 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_doradcy_f3
-		icon = GFX_pl2027_081_oficer_1_zkr
-		x = 82
-		y = 4
-		prerequisite = { focus = ZKR_zakon_ZKR_dec_doradcy_f2 }
-		cost = 5
-		available = { original_tag = ZKR has_political_power > 24 }
-		bypass = { has_country_flag = DZ_ZKR_dec_doradcy_3 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 6 }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_doradcy_3
-			add_political_power = -25 army_experience = 15 add_to_variable = { ZKR_wplywy = 15 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_dostawy_f1
-		icon = GFX_pl2027_081_rosja_0_zkr
-		x = 84
-		y = 2
-		prerequisite = { focus = ZKR_zakon_mil_start }
-		cost = 6
-		available = { original_tag = ZKR has_political_power > 14 }
-		bypass = { has_country_flag = DZ_ZKR_dec_dostawy_1 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 6 }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_dostawy_1
-			add_political_power = -15 add_equipment_to_stockpile = { type = ranged_equipment amount = 800 } add_equipment_to_stockpile = { type = support_equipment amount = 60 } add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_dostawy_f2
-		icon = GFX_pl2027_081_rosja_0_zkr
-		x = 84
-		y = 3
-		prerequisite = { focus = ZKR_zakon_ZKR_dec_dostawy_f1 }
-		cost = 6
-		available = { original_tag = ZKR has_political_power > 14 }
-		bypass = { has_country_flag = DZ_ZKR_dec_dostawy_2 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 6 }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_dostawy_2
-			add_political_power = -15 add_equipment_to_stockpile = { type = ranged_equipment amount = 800 } add_equipment_to_stockpile = { type = support_equipment amount = 60 } add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_dostawy_f3
-		icon = GFX_pl2027_081_rosja_0_zkr
-		x = 84
-		y = 4
-		prerequisite = { focus = ZKR_zakon_ZKR_dec_dostawy_f2 }
-		cost = 6
-		available = { original_tag = ZKR has_political_power > 14 }
-		bypass = { has_country_flag = DZ_ZKR_dec_dostawy_3 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 6 }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_dostawy_3
-			add_political_power = -15 add_equipment_to_stockpile = { type = ranged_equipment amount = 800 } add_equipment_to_stockpile = { type = support_equipment amount = 60 } add_to_variable = { ZKR_wplywy = 10 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_odsunac_f1
-		icon = GFX_pl2027_081_oficer_0_zkr
-		x = 53
-		y = 2
-		prerequisite = { focus = ZKR_odbudowa_malborka }
-		cost = 5
-		available = { original_tag = ZKR has_political_power > 39 }
-		bypass = { has_country_flag = DZ_ZKR_dec_odsunac_1 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 3 modifier = { factor = 4 check_variable = { ZKR_wplywy > 75 } } }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_odsunac_1
-			add_political_power = -40 add_stability = -0.02 add_to_variable = { ZKR_wplywy = -10 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_odsunac_f2
-		icon = GFX_pl2027_081_oficer_0_zkr
-		x = 53
-		y = 3
-		prerequisite = { focus = ZKR_zakon_ZKR_dec_odsunac_f1 }
-		cost = 5
-		available = { original_tag = ZKR has_political_power > 39 }
-		bypass = { has_country_flag = DZ_ZKR_dec_odsunac_2 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 3 modifier = { factor = 4 check_variable = { ZKR_wplywy > 75 } } }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_odsunac_2
-			add_political_power = -40 add_stability = -0.02 add_to_variable = { ZKR_wplywy = -10 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_odsunac_f3
-		icon = GFX_pl2027_081_oficer_0_zkr
-		x = 53
-		y = 4
-		prerequisite = { focus = ZKR_zakon_ZKR_dec_odsunac_f2 }
-		cost = 5
-		available = { original_tag = ZKR has_political_power > 39 }
-		bypass = { has_country_flag = DZ_ZKR_dec_odsunac_3 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 3 modifier = { factor = 4 check_variable = { ZKR_wplywy > 75 } } }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_odsunac_3
-			add_political_power = -40 add_stability = -0.02 add_to_variable = { ZKR_wplywy = -10 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_wzmocnic_f1
-		icon = GFX_pl2027_081_rycerz_3_zkr
-		x = 30
-		y = 2
-		prerequisite = { focus = ZKR_ziemie_wokol }
-		cost = 5
-		available = { original_tag = ZKR has_political_power > 59 }
-		bypass = { has_country_flag = DZ_ZKR_dec_wzmocnic_1 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 3 modifier = { factor = 4 check_variable = { ZKR_wplywy > 80 } } }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_wzmocnic_1
-			add_political_power = -60 add_to_variable = { ZKR_wplywy = -15 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_wzmocnic_f2
-		icon = GFX_pl2027_081_rycerz_3_zkr
-		x = 30
-		y = 3
-		prerequisite = { focus = ZKR_zakon_ZKR_dec_wzmocnic_f1 }
-		cost = 5
-		available = { original_tag = ZKR has_political_power > 59 }
-		bypass = { has_country_flag = DZ_ZKR_dec_wzmocnic_2 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 3 modifier = { factor = 4 check_variable = { ZKR_wplywy > 80 } } }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_wzmocnic_2
-			add_political_power = -60 add_to_variable = { ZKR_wplywy = -15 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_wzmocnic_f3
-		icon = GFX_pl2027_081_rycerz_3_zkr
-		x = 30
-		y = 4
-		prerequisite = { focus = ZKR_zakon_ZKR_dec_wzmocnic_f2 }
-		cost = 5
-		available = { original_tag = ZKR has_political_power > 59 }
-		bypass = { has_country_flag = DZ_ZKR_dec_wzmocnic_3 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 3 modifier = { factor = 4 check_variable = { ZKR_wplywy > 80 } } }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_wzmocnic_3
-			add_political_power = -60 add_to_variable = { ZKR_wplywy = -15 } ZKR_wplywy_przelicz = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_ZKR_dec_bunt_f
-		icon = GFX_pl2027_081_bunt_2
-		x = 32
-		y = 2
-		prerequisite = { focus = ZKR_ziemie_wokol }
-		cost = 5
-		available = { original_tag = ZKR OR = { has_country_flag = ZKR_okazja check_variable = { ZKR_wplywy > 59 } } has_political_power > 49 }
-		bypass = { has_country_flag = DZ_ZKR_dec_bunt_1 }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 0 }
-		completion_reward = {
-			set_country_flag = DZ_ZKR_dec_bunt_1
-			add_political_power = -50 ZKR_wojna_domowa = yes
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_zy_s_ulica
-		icon = GFX_pl2027_081_media_0
-		x = 57
-		y = 2
-		prerequisite = { focus = ZKR_odbudowa_malborka }
-		cost = 1
-		bypass = { has_country_flag = TFR_zy_pl_s_ulica }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_ulica
-			country_event = { id = zycie.1 }
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_zy_s_media
-		icon = GFX_pl2027_081_media_1
-		x = 56
-		y = 3
-		prerequisite = { focus = ZKR_zakon_zy_s_ulica }
-		cost = 5
-		bypass = { has_country_flag = TFR_zy_pl_s_media }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_media
-			add_ideas = TFR_media
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_zy_s_spis
-		icon = GFX_pl2027_081_spis_0
-		x = 58
-		y = 3
-		prerequisite = { focus = ZKR_zakon_zy_s_ulica }
-		cost = 1
-		bypass = { has_country_flag = TFR_zy_pl_s_spis }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_spis
-			country_event = { id = zycie.3 }
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_zy_s_kartki
-		icon = GFX_pl2027_081_kartki_0_zkr_k
-		x = 55
-		y = 4
-		prerequisite = { focus = ZKR_zakon_zy_s_media }
-		prerequisite = { focus = ZKR_zakon_zy_s_spis }
-		cost = 5
-		mutually_exclusive = { focus = ZKR_zakon_zy_s_rynek }
-		bypass = { has_country_flag = TFR_zy_pl_s_kartki }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_kartki
-			add_ideas = TFR_kartki
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_zy_s_rynek
-		icon = GFX_pl2027_081_handel_1_zkr_k
-		x = 57
-		y = 4
-		prerequisite = { focus = ZKR_zakon_zy_s_media }
-		prerequisite = { focus = ZKR_zakon_zy_s_spis }
-		cost = 5
-		mutually_exclusive = { focus = ZKR_zakon_zy_s_kartki }
-		bypass = { has_country_flag = TFR_zy_pl_s_rynek }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_rynek
-			add_ideas = TFR_wolny_rynek
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_zy_s_szkoly
-		icon = GFX_pl2027_081_szkola_0
-		x = 53
-		y = 5
-		prerequisite = { focus = ZKR_zakon_zy_s_kartki focus = ZKR_zakon_zy_s_rynek }
-		cost = 5
-		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_szkoly
-			add_stability = 0.03
-			add_political_power = 25
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_zy_s_czarny
-		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 55
-		y = 5
-		prerequisite = { focus = ZKR_zakon_zy_s_kartki focus = ZKR_zakon_zy_s_rynek }
-		cost = 1
-		bypass = { has_country_flag = TFR_zy_pl_s_czarny }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_czarny
-			country_event = { id = zycie.2 }
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_zy_s_straze
-		icon = GFX_pl2027_081_straz_1
-		x = 57
-		y = 5
-		prerequisite = { focus = ZKR_zakon_zy_s_kartki focus = ZKR_zakon_zy_s_rynek }
-		cost = 5
-		bypass = { has_country_flag = TFR_zy_pl_s_straze }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_straze
-			add_manpower = 2500
-			add_stability = 0.02
-		}
-	}
-
-	focus = {
-		id = ZKR_zakon_zy_s_wspolnota
-		icon = GFX_pl2027_081_wspolnota_1
-		x = 53
-		y = 6
-		prerequisite = { focus = ZKR_zakon_zy_s_szkoly }
-		prerequisite = { focus = ZKR_zakon_zy_s_czarny }
-		prerequisite = { focus = ZKR_zakon_zy_s_straze }
-		cost = 7
-		bypass = { has_country_flag = TFR_zy_pl_s_wspolnota }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_wspolnota
-			if = { limit = { has_idea = TFR_kartki } remove_ideas = TFR_kartki }
-			if = { limit = { has_idea = TFR_wolny_rynek } remove_ideas = TFR_wolny_rynek }
-			add_ideas = TFR_spoleczenstwo
-		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_zy_k_admin
@@ -2163,11 +1789,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_k_k_admin
-			add_political_power = 40
-			random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		set_country_flag = TFR_zy_k_k_admin
+		add_political_power = 40
+		random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_zy_k_defilada
@@ -2180,11 +1806,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_k_k_defilada
-			add_war_support = 0.05
-			add_stability = 0.03
+		set_country_flag = TFR_zy_k_k_defilada
+		add_war_support = 0.05
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_zy_k_opor
@@ -2197,10 +1823,10 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_k_k_opor
-			country_event = { id = zycie.10 }
+		set_country_flag = TFR_zy_k_k_opor
+		country_event = { id = zycie.10 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_zy_k_owoce
@@ -2214,15 +1840,15 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_k_k_owoce
-			add_timed_idea = { idea = TFR_owoce days = 365 }
+		set_country_flag = TFR_zy_k_k_owoce
+		add_timed_idea = { idea = TFR_owoce days = 365 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_zy_p_straty
 		icon = GFX_pl2027_081_straty_0
-		x = 60
+		x = 55
 		y = 2
 		prerequisite = { focus = ZKR_odbudowa_malborka }
 		cost = 5
@@ -2231,16 +1857,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_straty
-			country_event = { id = zycie.11 }
-			add_manpower = 3000
+		set_country_flag = TFR_zy_p_p_straty
+		country_event = { id = zycie.11 }
+		add_manpower = 3000
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_zy_p_rzad
 		icon = GFX_pl2027_081_rada_0
-		x = 60
+		x = 55
 		y = 3
 		prerequisite = { focus = ZKR_zakon_zy_p_straty }
 		cost = 5
@@ -2248,50 +1874,50 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_rzad
-			add_stability = 0.05
-			add_political_power = 30
+		set_country_flag = TFR_zy_p_p_rzad
+		add_stability = 0.05
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_zy_p_rewanz
 		icon = GFX_pl2027_081_gotowosc_1_zkr_k
-		x = 59
+		x = 54
 		y = 4
 		prerequisite = { focus = ZKR_zakon_zy_p_rzad }
-		cost = 5
 		mutually_exclusive = { focus = ZKR_zakon_zy_p_pojednanie }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_rewanz
-			add_timed_idea = { idea = TFR_rewanz days = 730 }
+		set_country_flag = TFR_zy_p_p_rewanz
+		add_timed_idea = { idea = TFR_rewanz days = 730 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_zy_p_pojednanie
 		icon = GFX_pl2027_081_pojednanie_3_zkr_k
-		x = 61
+		x = 56
 		y = 4
 		prerequisite = { focus = ZKR_zakon_zy_p_rzad }
-		cost = 5
 		mutually_exclusive = { focus = ZKR_zakon_zy_p_rewanz }
+		cost = 5
 		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_pojednanie
-			add_timed_idea = { idea = TFR_pojednanie days = 730 }
+		set_country_flag = TFR_zy_p_p_pojednanie
+		add_timed_idea = { idea = TFR_pojednanie days = 730 }
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_zy_p_odbudowa
 		icon = GFX_pl2027_081_wyposazenie_2
-		x = 59
+		x = 54
 		y = 5
 		prerequisite = { focus = ZKR_zakon_zy_p_rewanz focus = ZKR_zakon_zy_p_pojednanie }
 		cost = 6
@@ -2299,13 +1925,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_odbudowa
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
-			army_experience = 15
-			add_manpower = 5000
+		set_country_flag = TFR_zy_p_p_odbudowa
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 80 }
+		army_experience = 15
+		add_manpower = 5000
 		}
-	}
+			}
 
 	focus = {
 		id = ZKR_zakon_tree_gotowosc
@@ -2319,9 +1945,9 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
 		ai_will_do = { factor = 30 }
 		completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.05
-			army_experience = 10
+		add_political_power = 50
+		add_war_support = 0.05
+		army_experience = 10
 		}
-	}
+			}
 }

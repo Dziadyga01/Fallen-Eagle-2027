@@ -1,0 +1,19 @@
+add_namespace = rml
+
+country_event = {
+	id = rml.10
+	title = rml.10.t
+	desc = rml.10.d
+	picture = GFX_pl2027_ev081_gospodarka_4
+	is_triggered_only = yes
+	option = {
+		name = rml.10.a
+		ai_chance = { base = 2 }
+		add_political_power = -30 add_to_variable = { MLA_s7 = 20 } clamp_variable = { var = MLA_s7 min = 0 max = 100 }
+	}
+	option = {
+		name = rml.10.b
+		ai_chance = { base = 1 }
+		add_stability = -0.04
+	}
+}

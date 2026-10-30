@@ -1,0 +1,9 @@
+ZPP_bop_decyzje = {
+    icon = generic_political_discourse
+    allowed = { original_tag = PRW }
+    visible = {
+        original_tag = PRW
+        has_power_balance = { id = ZPP_rownowaga_sil }
+    }
+    priority = 96
+}

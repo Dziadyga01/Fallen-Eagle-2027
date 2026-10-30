@@ -1,0 +1,4 @@
+KNM_miesiac = {
+	if = { limit = { country_exists = NNA } NNA = { if = { limit = { NOT = { has_variable = NNA_wzrost } } set_variable = { NNA_wzrost = 40 } set_variable = { NNA_nierownosci = 35 } add_dynamic_modifier = { modifier = KNM_dm } } if = { limit = { check_variable = { NNA_wzrost > 50 } } add_to_variable = { NNA_nierownosci = 1 } clamp_variable = { var = NNA_nierownosci min = 0 max = 100 } } add_to_variable = { NNA_wzrost = -1 } clamp_variable = { var = NNA_wzrost min = 0 max = 100 } if = { limit = { check_variable = { NNA_nierownosci > 74 } NOT = { has_country_flag = NNA_niepokoje_cd } } set_country_flag = { flag = NNA_niepokoje_cd days = 120 } country_event = { id = knm.10 days = 1 } } set_variable = { KNM_dm_0 = NNA_wzrost } subtract_from_variable = { KNM_dm_0 = 30 } divide_variable = { KNM_dm_0 = 400 } set_variable = { KNM_dm_1 = NNA_nierownosci } subtract_from_variable = { KNM_dm_1 = 45 } divide_variable = { KNM_dm_1 = -700 } } }
+	
+}

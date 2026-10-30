@@ -383,12 +383,12 @@ country_event = {
 	option = {
 		name = fed.61.a
 		ai_chance = { factor = 2 modifier = { factor = 0 OR = { has_country_flag = ROS_lider_szl has_country_flag = ROS_lider_naw } } modifier = { factor = 0 FROM = { is_subject_of = ROOT } } }
-		every_country = { limit = { has_country_flag = FED_rebel_aktywny } ROOT = { give_guarantee = PREV } add_equipment_to_stockpile = { type = ranged_equipment amount = 1500 } }
+		every_country = { limit = { has_country_flag = FED_rebel_aktywny } ROOT = { if = { limit = { PREV = { PL2027_ideologia_jak_PREV = yes } } give_guarantee = PREV } } add_equipment_to_stockpile = { type = ranged_equipment amount = 1500 } }
 	}
 	option = {
 		name = fed.61.b
 		ai_chance = { factor = 1 modifier = { factor = 3 FROM = { has_country_flag = FED_wplyw_rosji } } }
-		give_guarantee = FROM
+		if = { limit = { FROM = { PL2027_ideologia_jak_PREV = yes } } give_guarantee = FROM }
 	}
 	option = {
 		name = fed.61.c

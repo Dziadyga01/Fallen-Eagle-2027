@@ -4,16 +4,17 @@ state = {
 	manpower = 34398
 	state_category = town
 	resources = {
-		steel = 2
+		aluminium = 1
+		steel = 5
 	}
 	history = {
 		owner = SRD
 		add_core_of = SRD
-		victory_points = { 4566 1 }
-		victory_points = { 4575 1 }
-		victory_points = { 4541 1 }
-		victory_points = { 4564 1 }
-		victory_points = { 4545 1 }
+		victory_points = { 4566 2 }
+		victory_points = { 4575 2 }
+		victory_points = { 4541 2 }
+		victory_points = { 4564 2 }
+		victory_points = { 4545 2 }
 		buildings = {
 			infrastructure = 3
 		}

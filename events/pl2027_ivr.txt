@@ -1,0 +1,206 @@
+add_namespace = ivr
+
+country_event = {
+	id = ivr.1
+	title = ivr.1.t
+	desc = ivr.1.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = ivr.1.a
+		ai_chance = { base = 3 modifier = { factor = 3 strength_ratio = { tag = FROM ratio < 0.5 } } modifier = { factor = 0.3 strength_ratio = { tag = FROM ratio > 1 } } }
+		FROM = { annex_country = { target = ROOT transfer_troops = yes } }
+	}
+	option = {
+		name = ivr.1.b
+		ai_chance = { base = 2 }
+		FROM = { if = { limit = { NOT = { has_war_with = ROOT } } create_wargoal = { type = annex_everything target = ROOT } } add_opinion_modifier = { target = ROOT modifier = WOS_bunt_podwladnego } }
+	}
+}
+
+country_event = {
+	id = ivr.2
+	title = ivr.2.t
+	desc = ivr.2.d
+	picture = GFX_pl2027_ev081_front_3
+	is_triggered_only = yes
+	option = {
+		name = ivr.2.a
+		ai_chance = { base = 1 }
+		add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = ivr.3
+	title = ivr.3.t
+	desc = ivr.3.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	option = {
+		name = ivr.3.a
+		ai_chance = { base = 3 }
+		add_to_variable = { IVR_m = -4 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = 0.04 add_political_power = -40
+	}
+	option = {
+		name = ivr.3.b
+		ai_chance = { base = 4 }
+		add_to_variable = { IVR_m = 4 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = 0.02
+	}
+	option = {
+		name = ivr.3.c
+		ai_chance = { base = 1 }
+		add_to_variable = { IVR_m = 6 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = -0.03 add_political_power = 40
+	}
+}
+
+country_event = {
+	id = ivr.4
+	title = ivr.4.t
+	desc = ivr.4.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = ivr.4.a
+		ai_chance = { base = 4 }
+		add_to_variable = { IVR_m = 8 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_political_power = -60
+	}
+	option = {
+		name = ivr.4.b
+		ai_chance = { base = 2 modifier = { factor = 0 has_war = yes } }
+		add_to_variable = { IVR_m = 12 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = -0.05
+	}
+	option = {
+		name = ivr.4.c
+		ai_chance = { base = 1 }
+		add_to_variable = { IVR_m = -5 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_political_power = 30
+	}
+}
+
+country_event = {
+	id = ivr.11
+	title = ivr.11.t
+	desc = ivr.11.d
+	picture = GFX_pl2027_ev081_wybory_4
+	is_triggered_only = yes
+	option = {
+		name = ivr.11.a
+		ai_chance = { base = 4 modifier = { factor = 2 check_variable = { IVR_m > 60 } } }
+		set_country_flag = IVR_p_referendum_tak add_to_variable = { IVR_m = 10 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = 0.04
+	}
+	option = {
+		name = ivr.11.b
+		ai_chance = { base = 3 }
+		set_country_flag = IVR_p_referendum_tak add_to_variable = { IVR_m = 2 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = -0.02
+	}
+	option = {
+		name = ivr.11.c
+		ai_chance = { base = 2 modifier = { factor = 2 check_variable = { IVR_m < 45 } } }
+		set_country_flag = IVR_p_referendum_nie add_to_variable = { IVR_m = -12 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = ivr.12
+	title = ivr.12.t
+	desc = ivr.12.d
+	picture = GFX_pl2027_ev081_ulica_3
+	is_triggered_only = yes
+	option = {
+		name = ivr.12.a
+		ai_chance = { base = 3 }
+		add_to_variable = { IVR_m = -8 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = 0.04
+	}
+	option = {
+		name = ivr.12.b
+		ai_chance = { base = 2 }
+		add_to_variable = { IVR_m = 4 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = -0.06 add_war_support = 0.03
+	}
+	option = {
+		name = ivr.12.c
+		ai_chance = { base = 2 }
+		add_to_variable = { IVR_m = -3 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_political_power = -30
+	}
+}
+
+country_event = {
+	id = ivr.13
+	title = ivr.13.t
+	desc = ivr.13.d
+	picture = GFX_pl2027_ev081_narada_4
+	is_triggered_only = yes
+	option = {
+		name = ivr.13.a
+		ai_chance = { base = 3 }
+		add_to_variable = { IVR_m = 6 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_political_power = -80 army_experience = 10
+	}
+	option = {
+		name = ivr.13.b
+		ai_chance = { base = 2 }
+		add_to_variable = { IVR_m = 3 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = -0.05 army_experience = -10
+	}
+}
+
+country_event = {
+	id = ivr.21
+	title = ivr.21.t
+	desc = ivr.21.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = ivr.21.a
+		ai_chance = { base = 4 }
+		add_to_variable = { IVR_m = 12 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_political_power = -40
+	}
+	option = {
+		name = ivr.21.b
+		ai_chance = { base = 2 }
+		add_to_variable = { IVR_m = -6 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_political_power = 80 set_country_flag = IVR_m_jeden_szef
+	}
+	option = {
+		name = ivr.21.c
+		ai_chance = { base = 1 }
+		add_to_variable = { IVR_m = -15 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_war_support = 0.05 set_country_flag = IVR_m_wojna_rodzin
+	}
+}
+
+country_event = {
+	id = ivr.22
+	title = ivr.22.t
+	desc = ivr.22.d
+	picture = GFX_pl2027_ev081_media_2
+	is_triggered_only = yes
+	option = {
+		name = ivr.22.a
+		ai_chance = { base = 3 }
+		add_to_variable = { IVR_m = 4 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_political_power = -50
+	}
+	option = {
+		name = ivr.22.b
+		ai_chance = { base = 2 }
+		add_to_variable = { IVR_m = -4 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = -0.02
+	}
+	option = {
+		name = ivr.22.c
+		ai_chance = { base = 1 }
+		add_to_variable = { IVR_m = 2 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = -0.05 add_war_support = 0.02
+	}
+}
+
+country_event = {
+	id = ivr.23
+	title = ivr.23.t
+	desc = ivr.23.d
+	picture = GFX_pl2027_ev081_ulica_4
+	is_triggered_only = yes
+	option = {
+		name = ivr.23.a
+		ai_chance = { base = 2 modifier = { factor = 0 has_political_power < 150 } }
+		add_to_variable = { IVR_m = 15 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_political_power = -150
+	}
+	option = {
+		name = ivr.23.b
+		ai_chance = { base = 3 }
+		set_country_flag = IVR_m_wojna_rodzin add_to_variable = { IVR_m = -5 } clamp_variable = { var = IVR_m min = 0 max = 100 } add_stability = -0.08
+	}
+}

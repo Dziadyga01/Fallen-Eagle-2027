@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		WOS_idea_kpr_stan = {
+			picture = DU_WWD_dekrety
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.03 political_power_gain = 0.05 war_support_factor = 0.03 }
+		}
+		WOS_idea_kpr_pierscien = {
+			picture = DU_WWD_dekrety
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.1 army_core_defence_factor = 0.05 }
+		}
+		WOS_idea_kpr_cod = {
+			picture = DU_WWD_dekrety
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.1 }
+		}
+		WOS_idea_kpr_porozumienie = {
+			picture = DU_WWD_dekrety
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 political_power_gain = 0.05 }
+		}
+		WOS_idea_kpr_dekrety = {
+			picture = DU_WWD_dekrety
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.15 war_support_factor = 0.05 stability_factor = -0.05 }
+		}
+		WOS_idea_kpr_rada_wojskowa = {
+			picture = DU_WWD_dekrety
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_org_factor = 0.08 political_power_gain = -0.1 stability_factor = 0.02 }
+		}
+	}
+}

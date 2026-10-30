@@ -3,12 +3,16 @@ state = {
 	name = "STATE_816"
 	manpower = 4732
 	state_category = rural
+	resources = {
+		aluminium = 2
+		steel = 1
+	}
 	history = {
 		owner = BST
 		add_core_of = BST
 		victory_points = { 6461 1 }
 		victory_points = { 6459 1 }
-		victory_points = { 340 1 }
+		victory_points = { 340 2 }
 		buildings = {
 			infrastructure = 3
 		}

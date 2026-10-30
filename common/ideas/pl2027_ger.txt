@@ -1,0 +1,58 @@
+ideas = {
+	country = {
+		GER_idea_porzadek = {
+			picture = DU_EK_komisariat
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.1 stability_factor = -0.03 }
+		}
+		GER_idea_tarcza = {
+			picture = DU_EK_misja_ue
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 army_core_defence_factor = 0.05 }
+		}
+		GER_idea_korpus = {
+			picture = DU_ZAG_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_org_factor = 0.05 war_support_factor = 0.05 }
+		}
+		GER_idea_flanka = {
+			picture = DU_ZAG_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.08 war_support_factor = 0.05 }
+		}
+		GER_idea_stowarzyszony = {
+			picture = DU_EK_komisariat
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.1 consumer_goods_factor = -0.03 political_power_gain = -0.1 }
+		}
+		GER_idea_opor_landy = {
+			picture = DU_EK_komisariat
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = -0.05 required_garrison_factor = 0.2 }
+		}
+		GER_idea_f_porzadek = {
+			picture = DU_EK_komisariat
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.1 production_speed_buildings_factor = 0.1 stability_factor = -0.04 }
+		}
+		GER_idea_f_regiony = {
+			picture = DU_EUR_euroregion_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 political_power_gain = 0.05 }
+		}
+		GER_idea_f_tarcza = {
+			picture = DU_ZAG_armia
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.1 army_org_factor = 0.05 stability_factor = 0.03 }
+		}
+	}
+}

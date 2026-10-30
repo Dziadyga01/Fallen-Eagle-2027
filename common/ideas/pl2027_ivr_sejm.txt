@@ -1,0 +1,40 @@
+ideas = {
+	country = {
+		IVR_s_samorzady = {
+			picture = DU_IVRP2_s_prawo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.04 production_speed_buildings_factor = 0.05 }
+		}
+		IVR_s_trybunal = {
+			picture = DU_IVRP2_s_prawo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = -0.03 }
+		}
+		IVR_s_wot = {
+			picture = DU_IVRP2_s_prawo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_core_defence_factor = 0.1 conscription_factor = 0.03 }
+		}
+		IVR_s_f_parlament = {
+			picture = DU_IVRP2_s_prawo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.1 political_power_gain = 0.08 war_support_factor = -0.05 }
+		}
+		IVR_s_f_federacja = {
+			picture = DU_IVRP2_s_prawo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 production_speed_buildings_factor = 0.1 political_power_gain = 0.03 }
+		}
+		IVR_s_f_ocalenie = {
+			picture = DU_IVRP2_s_prawo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.1 political_power_gain = 0.1 stability_factor = -0.05 }
+		}
+	}
+}

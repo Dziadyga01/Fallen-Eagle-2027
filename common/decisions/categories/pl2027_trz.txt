@@ -1,0 +1,6 @@
+TRZ_panel = {
+	icon = generic_form_nation
+	allowed = { original_tag = TRN }
+	visible = { OR = { has_country_flag = TRZ_odm_podgorz has_country_flag = TRZ_odm_lysomice has_country_flag = TRZ_odm_lubicz has_country_flag = TRZ_odm_zlawies has_country_flag = TRZ_odm_solec has_country_flag = TRZ_odm_chelmza has_country_flag = TRZ_odm_dabrowa has_country_flag = TRZ_odm_kujawy has_country_flag = TRZ_odm_chelmno } }
+	priority = 70
+}

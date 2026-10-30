@@ -1,4 +1,4 @@
-# The Fallen Eagle 2027 – Eurokomisariat Śląska
+# The Fallen Eagle 2027 – Eurokomisariat Śląska – Wrocław i Odra
 focus_tree = {
 	id = EK_SLS_tree
 	country = {
@@ -13,6 +13,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 1430 }
 	initial_show_position = { focus = EK_SLS_wroclaw }
 
+
 	focus = {
 		id = EK_SLS_wroclaw
 		icon = GFX_pl2027_081_las_0
@@ -22,10 +23,10 @@ focus_tree = {
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_po_prologu NOT = { has_global_flag = PL2027_prolog } } }
 		ai_will_do = { factor = 50 }
 		completion_reward = {
-			add_political_power = 40
-			add_stability = 0.02
+		add_political_power = 40
+		add_stability = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_miedz
@@ -36,10 +37,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_ideas = EK_SLS_miedz
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		add_ideas = EK_SLS_miedz
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_wroclaw_fabryki
@@ -50,10 +51,10 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			custom_effect_tooltip = EUR_tt_zp3 hidden_effect = { add_to_variable = { EUR_zaleznosc = 3 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		custom_effect_tooltip = EUR_tt_zp3 hidden_effect = { add_to_variable = { EUR_zaleznosc = 3 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_odra
@@ -64,10 +65,10 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_political_power = 20
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_political_power = 20
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_walbrzych
@@ -78,9 +79,9 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_energia
@@ -91,10 +92,10 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_stability = 0.03
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_strefa
@@ -105,24 +106,24 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = EK_SLS_strefa
-			custom_effect_tooltip = EUR_tt_zp4 hidden_effect = { add_to_variable = { EUR_zaleznosc = 4 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes }
+		add_ideas = EK_SLS_strefa
+		custom_effect_tooltip = EUR_tt_zp4 hidden_effect = { add_to_variable = { EUR_zaleznosc = 4 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_statut
 		icon = GFX_pl2027_081_konstytucja_0
 		x = 1
 		y = 2
-		prerequisite = { focus = EK_SLS_zy_s_ulica }
+		prerequisite = { focus = EK_SLS_wroclaw }
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.04
-			add_political_power = 30
+		add_stability = 0.04
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_opole
@@ -133,9 +134,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.03
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_gorny
@@ -146,10 +147,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			every_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no  } add_opinion_modifier = { target = ROOT modifier = EK_stowarzyszenie_op } }
-			add_political_power = 20
+		every_neighbor_country = { limit = { has_country_flag = PL2027_polska is_subject = no  } add_opinion_modifier = { target = ROOT modifier = EK_stowarzyszenie_op } }
+		add_political_power = 20
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_czechy
@@ -160,23 +161,23 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = CZE } CZE = { add_opinion_modifier = { target = ROOT modifier = EK_stowarzyszenie_op } } }
-			add_stability = 0.02
+		if = { limit = { country_exists = CZE } CZE = { add_opinion_modifier = { target = ROOT modifier = EK_stowarzyszenie_op } } }
+		add_stability = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_os_odry
 		icon = GFX_pl2027_081_kolej_0
 		x = 11
 		y = 2
-		prerequisite = { focus = EK_SLS_zy_s_ulica }
+		prerequisite = { focus = EK_SLS_wroclaw }
 		cost = 1
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = PMN NOT = { has_war_with = PMN } } PMN = { country_event = { id = ek.40 days = 2 } } }
+		if = { limit = { country_exists = PMN NOT = { has_war_with = PMN } } PMN = { country_event = { id = ek.40 days = 2 } } }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_kolej
@@ -187,9 +188,9 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_wspolny_rynek
@@ -201,10 +202,10 @@ focus_tree = {
 		available = { has_country_flag = EK_os_odry }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = EK_wspolny_rynek_odry
-			add_political_power = 30
+		add_ideas = EK_wspolny_rynek_odry
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_bez_warszawy
@@ -212,15 +213,15 @@ focus_tree = {
 		x = 20
 		y = 1
 		prerequisite = { focus = EK_SLS_wroclaw }
-		cost = 5
 		mutually_exclusive = { focus = EK_SLS_most }
+		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_political_power = 50
-			set_country_flag = EK_suwerennosc
-			custom_effect_tooltip = EUR_tt_zm5 hidden_effect = { add_to_variable = { EUR_zaleznosc = -5 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes }
+		add_political_power = 50
+		set_country_flag = EK_suwerennosc
+		custom_effect_tooltip = EUR_tt_zm5 hidden_effect = { add_to_variable = { EUR_zaleznosc = -5 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_most
@@ -228,14 +229,14 @@ focus_tree = {
 		x = 22
 		y = 1
 		prerequisite = { focus = EK_SLS_wroclaw }
-		cost = 5
 		mutually_exclusive = { focus = EK_SLS_bez_warszawy }
+		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = SMR } SMR = { add_opinion_modifier = { target = ROOT modifier = EK_sejm_op } } ROOT = { add_opinion_modifier = { target = SMR modifier = EK_sejm_op } } }
-			add_stability = 0.02
+		if = { limit = { country_exists = SMR } SMR = { add_opinion_modifier = { target = ROOT modifier = EK_sejm_op } } ROOT = { add_opinion_modifier = { target = SMR modifier = EK_sejm_op } } }
+		add_stability = 0.02
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_inwestorzy
@@ -246,10 +247,10 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
-			add_political_power = 30
+		random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		add_political_power = 30
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_kredyty
@@ -260,11 +261,11 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { country_exists = SMR } SMR = { add_political_power = 60 add_equipment_to_stockpile = { type = ranged_equipment amount = 600 } } }
-			add_political_power = -30
-			set_country_flag = EK_rada_regionow
+		if = { limit = { country_exists = SMR } SMR = { add_political_power = 60 add_equipment_to_stockpile = { type = ranged_equipment amount = 600 } } }
+		add_political_power = -30
+		set_country_flag = EK_rada_regionow
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_europa
@@ -275,11 +276,11 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			set_country_flag = EK_stowarzyszony
-			if = { limit = { country_exists = PMN PMN = { has_country_flag = EK_erp } } PMN = { add_to_variable = { EK_stowarzyszeni = 1 } add_opinion_modifier = { target = ROOT modifier = EK_stowarzyszenie_op } } }
-			custom_effect_tooltip = EUR_tt_zp4 hidden_effect = { add_to_variable = { EUR_zaleznosc = 4 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes }
+		set_country_flag = EK_stowarzyszony
+		if = { limit = { country_exists = PMN PMN = { has_country_flag = EK_erp } } PMN = { add_to_variable = { EK_stowarzyszeni = 1 } add_opinion_modifier = { target = ROOT modifier = EK_stowarzyszenie_op } } }
+		custom_effect_tooltip = EUR_tt_zp4 hidden_effect = { add_to_variable = { EUR_zaleznosc = 4 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_straz
@@ -290,9 +291,9 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_ideas = EK_SLS_straz
+		add_ideas = EK_SLS_straz
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_brygada
@@ -303,11 +304,11 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			if = { limit = { NOT = { has_template = "Brygada Dolnośląska" } } division_template = { name = "Brygada Dolnośląska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Brygada Dolnośląska\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada Dolnośląska\" start_experience_factor = 0.3" owner = ROOT } }
-			add_manpower = 4000
+		if = { limit = { NOT = { has_template = "Brygada Dolnośląska" } } division_template = { name = "Brygada Dolnośląska" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Brygada Dolnośląska\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada Dolnośląska\" start_experience_factor = 0.3" owner = ROOT } }
+		add_manpower = 4000
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_klodzko
@@ -318,9 +319,9 @@ focus_tree = {
 		cost = 6
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			every_owned_state = { limit = { any_neighbor_state = { NOT = { is_owned_by = ROOT } } } add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } }
+		every_owned_state = { limit = { any_neighbor_state = { NOT = { is_owned_by = ROOT } } } add_building_construction = { type = bunker level = 1 province = { all_provinces = yes limit_to_border = yes } instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_sztab
@@ -331,10 +332,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			army_experience = 25
-			add_ideas = EK_misja_ue
+		army_experience = 25
+		add_ideas = EK_misja_ue
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_start
@@ -345,13 +346,13 @@ focus_tree = {
 		cost = 5
 		bypass = { has_country_flag = MIL_start }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_start
-			army_experience = 5
-			add_manpower = 1000
+		set_country_flag = MIL_start
+		army_experience = 5
+		add_manpower = 1000
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_rejestr
@@ -362,12 +363,12 @@ focus_tree = {
 		cost = 5
 		bypass = { has_country_flag = MIL_rejestr }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_rejestr
-			add_ideas = MIL_pobor_1
+		set_country_flag = MIL_rejestr
+		add_ideas = MIL_pobor_1
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_ochotnicy
@@ -378,12 +379,12 @@ focus_tree = {
 		cost = 5
 		bypass = { has_country_flag = MIL_ochotnicy }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_ochotnicy
-			add_manpower = 3000
+		set_country_flag = MIL_ochotnicy
+		add_manpower = 3000
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_fabryka
@@ -394,12 +395,12 @@ focus_tree = {
 		cost = 5
 		bypass = { has_country_flag = MIL_fabryka }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_fabryka
-			random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		set_country_flag = MIL_fabryka
+		random_owned_controlled_state = { limit = { free_building_slots = { building = arms_factory size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_pobor
@@ -410,12 +411,12 @@ focus_tree = {
 		cost = 5
 		bypass = { has_country_flag = MIL_pobor }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_pobor
-			if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
+		set_country_flag = MIL_pobor
+		if = { limit = { has_idea = MIL_pobor_1 } remove_ideas = MIL_pobor_1 } add_ideas = MIL_pobor_2
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_bataliony
@@ -426,14 +427,14 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_bataliony }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_bataliony
-			if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
+		set_country_flag = MIL_bataliony
+		if = { limit = { NOT = { has_template = "Batalion Obrony" } } division_template = { name = "Batalion Obrony" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } } support = { engineer = { x = 0 y = 0 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Batalion Obrony\" start_experience_factor = 0.2" owner = ROOT } }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 300 }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_produkcja
@@ -444,14 +445,14 @@ focus_tree = {
 		cost = 6
 		bypass = { has_country_flag = MIL_produkcja }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_produkcja
-			add_timed_idea = { idea = MIL_produkcja days = 365 }
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 50 }
+		set_country_flag = MIL_produkcja
+		add_timed_idea = { idea = MIL_produkcja days = 365 }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 50 }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_rezerwisci
@@ -462,12 +463,12 @@ focus_tree = {
 		cost = 5
 		bypass = { has_country_flag = MIL_rezerwisci }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_rezerwisci
-			add_manpower = 5000
+		set_country_flag = MIL_rezerwisci
+		add_manpower = 5000
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_brygady
@@ -478,15 +479,15 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_brygady }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_brygady
-			if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
-			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 40 }
+		set_country_flag = MIL_brygady
+		if = { limit = { NOT = { has_template = "Brygada Obrony Terytorialnej" } } division_template = { name = "Brygada Obrony Terytorialnej" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } support = { recon = { x = 0 y = 0 } engineer = { x = 0 y = 1 } } } }
+		capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+		add_equipment_to_stockpile = { type = ranged_equipment amount = 400 }
+		add_equipment_to_stockpile = { type = support_equipment amount = 40 }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_zaplecze
@@ -497,14 +498,14 @@ focus_tree = {
 		cost = 5
 		bypass = { has_country_flag = MIL_zaplecze }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_zaplecze
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-			add_ideas = MIL_zaopatrzenie
+		set_country_flag = MIL_zaplecze
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_ideas = MIL_zaopatrzenie
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_kadra
@@ -518,13 +519,13 @@ focus_tree = {
 		cost = 5
 		bypass = { has_country_flag = MIL_kadra }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_kadra
-			army_experience = 25
-			add_ideas = MIL_kadra
+		set_country_flag = MIL_kadra
+		army_experience = 25
+		add_ideas = MIL_kadra
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_mil_zawodowa
@@ -537,14 +538,14 @@ focus_tree = {
 		cost = 7
 		bypass = { has_country_flag = MIL_zawodowa }
 		search_filters = { FOCUS_FILTER_MANPOWER }
-		ai_will_do = { factor = 3 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
+		ai_will_do = { factor = 25 modifier = { factor = 3 NOT = { has_army_manpower = { size > 9999 } } } }
 		completion_reward = {
-			set_country_flag = MIL_zawodowa
-			if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
-			capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
-			add_manpower = 2000
+		set_country_flag = MIL_zawodowa
+		if = { limit = { has_idea = MIL_kadra } remove_ideas = MIL_kadra } add_ideas = MIL_zawodowa
+		capital_scope = { create_unit = { division = "division_template = \"Brygada Obrony Terytorialnej\" start_experience_factor = 0.2" owner = ROOT } }
+		add_manpower = 2000
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_atak_plan
@@ -557,11 +558,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		ai_will_do = { factor = 25 }
 		completion_reward = {
-			set_country_flag = ATAK_plan
-			add_war_support = 0.05
-			army_experience = 10
+		set_country_flag = ATAK_plan
+		add_war_support = 0.05
+		army_experience = 10
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_atak_cel1
@@ -569,18 +570,18 @@ focus_tree = {
 		x = 4
 		y = 6
 		prerequisite = { focus = EK_SLS_atak_plan }
-		prerequisite = { focus = EK_SLS_tree_gotowosc }
+		prerequisite = { focus = EK_SLS_mil_bataliony }
 		cost = 8
 		available = { custom_trigger_tooltip = { tooltip = PL2027_req_pokoj has_war = no NOT = { has_idea = PL2027_odbudowa_po_wojnie } } custom_trigger_tooltip = { tooltip = PL2027_req_nie_male OR = { num_of_controlled_states > 3 original_tag = TRN original_tag = BYD original_tag = SMR original_tag = KPR original_tag = MPR original_tag = PLC original_tag = LEG original_tag = WOJ original_tag = PRG original_tag = ZIE original_tag = TEC } } custom_trigger_tooltip = { tooltip = PL2027_ARMIA_3000 has_army_manpower = { size > 2999 } } custom_trigger_tooltip = { tooltip = ATAK_req_cel any_neighbor_country = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } } custom_trigger_tooltip = { tooltip = ATAK_req_pokoj has_war = no } is_subject = no custom_trigger_tooltip = { tooltip = TFE_req_faza4 has_global_flag = TFE_wojny } }
 		bypass = { has_country_flag = ATAK_cel1 }
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		ai_will_do = { factor = 30 modifier = { factor = 0.2 has_war = yes } }
 		completion_reward = {
-			set_country_flag = ATAK_cel1
-			custom_effect_tooltip = ATAK_tt_cel
-			hidden_effect = { random_neighbor_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } if = { limit = { ROOT = { is_ai = yes has_war = no } } ROOT = { declare_war_on = { target = PREV type = annex_everything } } } } }
+		set_country_flag = ATAK_cel1
+		custom_effect_tooltip = ATAK_tt_cel
+		hidden_effect = { random_neighbor_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } if = { limit = { ROOT = { is_ai = yes has_war = no } } ROOT = { declare_war_on = { target = PREV type = annex_everything } } } } }
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_atak_cel2
@@ -594,12 +595,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		ai_will_do = { factor = 30 modifier = { factor = 0.2 has_war = yes } }
 		completion_reward = {
-			set_country_flag = ATAK_cel2
-			custom_effect_tooltip = ATAK_tt_cel
-			hidden_effect = { random_neighbor_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } if = { limit = { ROOT = { is_ai = yes has_war = no } } ROOT = { declare_war_on = { target = PREV type = annex_everything } } } } }
-			add_war_support = 0.03
+		set_country_flag = ATAK_cel2
+		custom_effect_tooltip = ATAK_tt_cel
+		hidden_effect = { random_neighbor_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } if = { limit = { ROOT = { is_ai = yes has_war = no } } ROOT = { declare_war_on = { target = PREV type = annex_everything } } } } }
+		add_war_support = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_atak_integracja
@@ -612,12 +613,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		ai_will_do = { factor = 15 }
 		completion_reward = {
-			set_country_flag = ATAK_integracja
-			every_owned_state = { limit = { NOT = { is_core_of = ROOT } } add_core_of = ROOT }
-			every_country = { limit = { is_subject_of = ROOT } ROOT = { annex_country = { target = PREV transfer_troops = yes } } }
-			add_stability = 0.03
+		set_country_flag = ATAK_integracja
+		every_owned_state = { limit = { NOT = { is_core_of = ROOT } } add_core_of = ROOT }
+		every_country = { limit = { is_subject_of = ROOT } ROOT = { annex_country = { target = PREV transfer_troops = yes } } }
+		add_stability = 0.03
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_atak_cel3
@@ -631,12 +632,12 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		ai_will_do = { factor = 30 modifier = { factor = 0.2 has_war = yes } }
 		completion_reward = {
-			set_country_flag = ATAK_cel3
-			custom_effect_tooltip = ATAK_tt_cel
-			hidden_effect = { random_neighbor_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } if = { limit = { ROOT = { is_ai = yes has_war = no } } ROOT = { declare_war_on = { target = PREV type = annex_everything } } } } }
-			army_experience = 15
+		set_country_flag = ATAK_cel3
+		custom_effect_tooltip = ATAK_tt_cel
+		hidden_effect = { random_neighbor_country = { limit = { exists = yes is_subject = no NOT = { has_war_with = ROOT } NOT = { is_in_faction_with = ROOT } NOT = { strength_ratio = { tag = ROOT ratio > 0.9 } } } ROOT = { create_wargoal = { type = annex_everything target = PREV } } if = { limit = { ROOT = { is_ai = yes has_war = no } } ROOT = { declare_war_on = { target = PREV type = annex_everything } } } } }
+		army_experience = 15
 		}
-	}
+			}
 
 	focus = {
 		id = EK_SLS_atak_dominacja
@@ -650,339 +651,176 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		ai_will_do = { factor = 15 }
 		completion_reward = {
-			set_country_flag = ATAK_dominacja
-			add_political_power = 100
-			add_war_support = 0.05
-			add_stability = 0.03
-			PL2027_fundament_awans = yes
+		set_country_flag = ATAK_dominacja
+		add_political_power = 100
+		add_war_support = 0.05
+		add_stability = 0.03
+		PL2027_fundament_awans = yes
 		}
-	}
+			}
 
 	focus = {
-		id = EK_SLS_zy_s_ulica
-		icon = GFX_pl2027_081_media_0
-		x = 10
+		id = EK_SLS_k_kurs
+		icon = GFX_pl2027_081_dyplomacja_2
+		x = 44
 		y = 1
 		prerequisite = { focus = EK_SLS_wroclaw }
-		cost = 1
-		bypass = { has_country_flag = TFR_zy_pl_s_ulica }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_ulica
-			country_event = { id = zycie.1 }
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_s_media
-		icon = GFX_pl2027_081_media_1
-		x = 16
-		y = 2
-		prerequisite = { focus = EK_SLS_zy_s_ulica }
 		cost = 5
-		bypass = { has_country_flag = TFR_zy_pl_s_media }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
+		available = { OR = { has_global_flag = GER_kurs_porzadek has_global_flag = GER_kurs_tarcza } }
+		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_media
-			add_ideas = TFR_media
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_s_spis
-		icon = GFX_pl2027_081_spis_0
-		x = 18
-		y = 2
-		prerequisite = { focus = EK_SLS_zy_s_ulica }
-		cost = 1
-		bypass = { has_country_flag = TFR_zy_pl_s_spis }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_spis
-			country_event = { id = zycie.3 }
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_s_kartki
-		icon = GFX_pl2027_081_kartki_0_sls_k
-		x = 15
-		y = 3
-		prerequisite = { focus = EK_SLS_zy_s_media }
-		prerequisite = { focus = EK_SLS_zy_s_spis }
-		cost = 5
-		mutually_exclusive = { focus = EK_SLS_zy_s_rynek }
-		bypass = { has_country_flag = TFR_zy_pl_s_kartki }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_kartki
-			add_ideas = TFR_kartki
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_s_rynek
-		icon = GFX_pl2027_081_handel_1_sls_k
-		x = 17
-		y = 3
-		prerequisite = { focus = EK_SLS_zy_s_media }
-		prerequisite = { focus = EK_SLS_zy_s_spis }
-		cost = 5
-		mutually_exclusive = { focus = EK_SLS_zy_s_kartki }
-		bypass = { has_country_flag = TFR_zy_pl_s_rynek }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_rynek
-			add_ideas = TFR_wolny_rynek
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_s_szkoly
-		icon = GFX_pl2027_081_szkola_0
-		x = 13
-		y = 4
-		prerequisite = { focus = EK_SLS_zy_s_kartki focus = EK_SLS_zy_s_rynek }
-		cost = 5
-		bypass = { has_country_flag = TFR_zy_pl_s_szkoly }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_szkoly
-			add_stability = 0.03
 			add_political_power = 25
 		}
 	}
 
 	focus = {
-		id = EK_SLS_zy_s_czarny
-		icon = GFX_pl2027_081_czarny_rynek_1
-		x = 15
-		y = 4
-		prerequisite = { focus = EK_SLS_zy_s_kartki focus = EK_SLS_zy_s_rynek }
-		cost = 1
-		bypass = { has_country_flag = TFR_zy_pl_s_czarny }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_czarny
-			country_event = { id = zycie.2 }
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_s_straze
-		icon = GFX_pl2027_081_straz_1
-		x = 17
-		y = 4
-		prerequisite = { focus = EK_SLS_zy_s_kartki focus = EK_SLS_zy_s_rynek }
-		cost = 5
-		bypass = { has_country_flag = TFR_zy_pl_s_straze }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_straze
-			add_manpower = 2500
-			add_stability = 0.02
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_s_wspolnota
-		icon = GFX_pl2027_081_wspolnota_1
-		x = 13
-		y = 5
-		prerequisite = { focus = EK_SLS_zy_s_szkoly }
-		prerequisite = { focus = EK_SLS_zy_s_czarny }
-		prerequisite = { focus = EK_SLS_zy_s_straze }
-		cost = 7
-		bypass = { has_country_flag = TFR_zy_pl_s_wspolnota }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 12 }
-		completion_reward = {
-			set_country_flag = TFR_zy_pl_s_wspolnota
-			if = { limit = { has_idea = TFR_kartki } remove_ideas = TFR_kartki }
-			if = { limit = { has_idea = TFR_wolny_rynek } remove_ideas = TFR_wolny_rynek }
-			add_ideas = TFR_spoleczenstwo
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_k_admin
-		icon = GFX_pl2027_081_administracja_1
-		x = 5
+		id = EK_SLS_k_lojalnosc
+		icon = GFX_pl2027_081_handel_1
+		x = 43
 		y = 2
-		prerequisite = { focus = EK_SLS_zy_s_ulica }
-		cost = 6
-		available = { custom_trigger_tooltip = { tooltip = TFR_tt_zwyciestwo has_country_flag = TFR_zwyciestwo } }
-		bypass = { has_country_flag = TFR_zy_k_k_admin }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 20 }
-		completion_reward = {
-			set_country_flag = TFR_zy_k_k_admin
-			add_political_power = 40
-			random_owned_controlled_state = { limit = { NOT = { is_core_of = ROOT } free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_k_defilada
-		icon = GFX_pl2027_081_defilada_1_sls
-		x = 4
-		y = 3
-		prerequisite = { focus = EK_SLS_zy_k_admin }
+		prerequisite = { focus = EK_SLS_k_kurs }
+		mutually_exclusive = { focus = EK_SLS_k_opor }
 		cost = 5
-		bypass = { has_country_flag = TFR_zy_k_k_defilada }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 20 }
+		available = { has_global_flag = GER_kurs_porzadek }
+		ai_will_do = { factor = 10 }
 		completion_reward = {
-			set_country_flag = TFR_zy_k_k_defilada
-			add_war_support = 0.05
-			add_stability = 0.03
+			add_to_variable = { EUR_zaleznosc = 10 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes add_political_power = 40 random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
 		}
 	}
 
 	focus = {
-		id = EK_SLS_zy_k_opor
-		icon = GFX_pl2027_081_bunt_3
-		x = 6
-		y = 3
-		prerequisite = { focus = EK_SLS_zy_k_admin }
-		cost = 1
-		bypass = { has_country_flag = TFR_zy_k_k_opor }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 20 }
-		completion_reward = {
-			set_country_flag = TFR_zy_k_k_opor
-			country_event = { id = zycie.10 }
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_k_owoce
-		icon = GFX_pl2027_081_integracja_2_sls
-		x = 4
-		y = 4
-		prerequisite = { focus = EK_SLS_zy_k_defilada }
-		prerequisite = { focus = EK_SLS_zy_k_opor }
-		cost = 5
-		bypass = { has_country_flag = TFR_zy_k_k_owoce }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 20 }
-		completion_reward = {
-			set_country_flag = TFR_zy_k_k_owoce
-			add_timed_idea = { idea = TFR_owoce days = 365 }
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_p_straty
-		icon = GFX_pl2027_081_straty_0
-		x = 8
+		id = EK_SLS_k_opor
+		icon = GFX_pl2027_081_bunt_1
+		x = 45
 		y = 2
-		prerequisite = { focus = EK_SLS_zy_s_ulica }
+		prerequisite = { focus = EK_SLS_k_kurs }
+		mutually_exclusive = { focus = EK_SLS_k_lojalnosc }
 		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = TFR_tt_kleska has_country_flag = TFR_kleska } }
-		bypass = { has_country_flag = TFR_zy_p_p_straty }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 20 }
+		available = { has_global_flag = GER_kurs_porzadek }
+		ai_will_do = { factor = 8 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_straty
-			country_event = { id = zycie.11 }
-			add_manpower = 3000
+			add_to_variable = { EUR_zaleznosc = -12 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes add_stability = -0.02 add_war_support = 0.03
 		}
 	}
 
 	focus = {
-		id = EK_SLS_zy_p_rzad
-		icon = GFX_pl2027_081_rada_0
-		x = 8
-		y = 3
-		prerequisite = { focus = EK_SLS_zy_p_straty }
+		id = EK_SLS_k_obrona
+		icon = GFX_pl2027_081_gotowosc_1
+		x = 47
+		y = 2
+		prerequisite = { focus = EK_SLS_k_kurs }
 		cost = 5
-		bypass = { has_country_flag = TFR_zy_p_p_rzad }
-		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = { has_global_flag = GER_kurs_tarcza }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_rzad
-			add_stability = 0.05
+			army_experience = 15 add_manpower = 3000 add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
+		}
+	}
+
+	focus = {
+		id = EK_SLS_k_samodzielnosc
+		icon = GFX_pl2027_081_wolnosc_0
+		x = 46
+		y = 3
+		prerequisite = { focus = EK_SLS_k_opor focus = EK_SLS_k_obrona }
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { EUR_zaleznosc = -10 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes custom_effect_tooltip = WOS_tt_23 if = { limit = { check_variable = { EUR_zaleznosc < 30 } is_subject = yes } overlord = { country_event = { id = eur.3 days = 1 } } }
+		}
+	}
+
+	focus = {
+		id = EK_SLS_r_start
+		icon = GFX_pl2027_081_mapa_1
+		x = 51
+		y = 1
+		prerequisite = { focus = EK_SLS_wroclaw }
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = EUR_req_2031 date > 2031.1.1 } }
+		ai_will_do = { factor = 15 }
+		completion_reward = {
 			add_political_power = 30
 		}
 	}
 
 	focus = {
-		id = EK_SLS_zy_p_rewanz
-		icon = GFX_pl2027_081_gotowosc_1_sls_k
-		x = 7
+		id = EK_SLS_r_a1
+		icon = GFX_pl2027_081_wolnosc_0
+		x = 50
+		y = 2
+		prerequisite = { focus = EK_SLS_r_start }
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { EUR_zaleznosc = -8 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes if = { limit = { is_subject = yes } add_autonomy_ratio = { value = 0.1 localization = EUR_autonomia_ratio } }
+		}
+	}
+
+	focus = {
+		id = EK_SLS_r_a2
+		icon = GFX_pl2027_081_rada_2
+		x = 50
+		y = 3
+		prerequisite = { focus = EK_SLS_r_a1 }
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { EUR_zaleznosc = -8 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes add_stability = 0.03 if = { limit = { is_subject = yes } add_autonomy_ratio = { value = 0.1 localization = EUR_autonomia_ratio } }
+		}
+	}
+
+	focus = {
+		id = EK_SLS_r_i1
+		icon = GFX_pl2027_081_pieniadze_2
+		x = 52
+		y = 2
+		prerequisite = { focus = EK_SLS_r_start }
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { EUR_zaleznosc = 10 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes random_owned_controlled_state = { limit = { free_building_slots = { building = industrial_complex size > 0 include_locked = yes } } add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = EK_SLS_r_i2
+		icon = GFX_pl2027_081_integracja_1
+		x = 52
+		y = 3
+		prerequisite = { focus = EK_SLS_r_i1 }
+		cost = 5
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_to_variable = { EUR_zaleznosc = 10 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = EK_SLS_r_niezal
+		icon = GFX_pl2027_081_gwardia_0
+		x = 50
 		y = 4
-		prerequisite = { focus = EK_SLS_zy_p_rzad }
+		prerequisite = { focus = EK_SLS_r_a2 }
+		mutually_exclusive = { focus = EK_SLS_r_integr }
 		cost = 5
-		mutually_exclusive = { focus = EK_SLS_zy_p_pojednanie }
-		bypass = { has_country_flag = TFR_zy_p_p_rewanz }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 20 }
+		ai_will_do = { factor = 10 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_rewanz
-			add_timed_idea = { idea = TFR_rewanz days = 730 }
+			set_country_flag = EUR_postawa_niezal add_war_support = 0.08 army_experience = 15 add_manpower = 3000 custom_effect_tooltip = WOS_tt_24
 		}
 	}
 
 	focus = {
-		id = EK_SLS_zy_p_pojednanie
-		icon = GFX_pl2027_081_pojednanie_3_sls_k
-		x = 9
+		id = EK_SLS_r_integr
+		icon = GFX_pl2027_081_korona_2
+		x = 52
 		y = 4
-		prerequisite = { focus = EK_SLS_zy_p_rzad }
+		prerequisite = { focus = EK_SLS_r_i2 }
+		mutually_exclusive = { focus = EK_SLS_r_niezal }
 		cost = 5
-		mutually_exclusive = { focus = EK_SLS_zy_p_rewanz }
-		bypass = { has_country_flag = TFR_zy_p_p_pojednanie }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 20 }
+		ai_will_do = { factor = 10 }
 		completion_reward = {
-			set_country_flag = TFR_zy_p_p_pojednanie
-			add_timed_idea = { idea = TFR_pojednanie days = 730 }
-		}
-	}
-
-	focus = {
-		id = EK_SLS_zy_p_odbudowa
-		icon = GFX_pl2027_081_wyposazenie_2
-		x = 7
-		y = 5
-		prerequisite = { focus = EK_SLS_zy_p_rewanz focus = EK_SLS_zy_p_pojednanie }
-		cost = 6
-		bypass = { has_country_flag = TFR_zy_p_p_odbudowa }
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = { factor = 20 }
-		completion_reward = {
-			set_country_flag = TFR_zy_p_p_odbudowa
-			add_equipment_to_stockpile = { type = ranged_equipment amount = 800 }
-			add_equipment_to_stockpile = { type = support_equipment amount = 80 }
-			army_experience = 15
-			add_manpower = 5000
-		}
-	}
-
-	focus = {
-		id = EK_SLS_tree_gotowosc
-		icon = GFX_pl2027_081_gotowosc_0_sls
-		x = 4
-		y = 5
-		prerequisite = { focus = EK_SLS_zy_k_owoce }
-		prerequisite = { focus = EK_SLS_walbrzych }
-		prerequisite = { focus = EK_SLS_sztab }
-		cost = 5
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
-		ai_will_do = { factor = 30 }
-		completion_reward = {
-			add_political_power = 50
-			add_war_support = 0.05
-			army_experience = 10
+			set_country_flag = EUR_postawa_integr add_to_variable = { EUR_zaleznosc = 10 } clamp_variable = { var = EUR_zaleznosc min = 0 max = 100 } EUR_przelicz = yes add_stability = 0.05 custom_effect_tooltip = WOS_tt_25
 		}
 	}
 }

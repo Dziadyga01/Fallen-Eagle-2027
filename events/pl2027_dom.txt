@@ -16,9 +16,9 @@ country_event = {
 country_event = {
 	id = dom.13
 	hidden = yes
-	trigger = { NOT = { has_global_flag = PL2027_prolog } tag = ROS has_country_flag = ROS_interwencja has_country_flag = ROS_putin_zyje NOT = { has_country_flag = ROS_los_putina } }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } tag = ROS has_country_flag = ROS_interwencja has_country_flag = ROS_putin_zyje NOT = { has_country_flag = ROS_los_putina } NOT = { has_country_flag = ROS_etap_ukraina } }
 	mean_time_to_happen = { days = 7 }
-	immediate = { set_variable = { ROS_bilans = ROS_cel_mazury } multiply_variable = { ROS_bilans = -1 } every_state = { limit = { has_state_flag = ROS_cel_mazury is_controlled_by = ROS } ROS = { add_to_variable = { ROS_bilans = 2 } } } if = { limit = { OR = { check_variable = { ROS_bilans > -1 } NOT = { has_country_flag = ROS_wojna_trwa } } } country_event = { id = ros.20 } } }
+	immediate = { set_variable = { ROS_bilans = ROS_cel_mazury } multiply_variable = { ROS_bilans = -1 } every_state = { limit = { has_state_flag = ROS_cel_mazury is_controlled_by = ROS } ROS = { add_to_variable = { ROS_bilans = 2 } } } if = { limit = { OR = { check_variable = { ROS_bilans > -1 } NOT = { has_country_flag = ROS_wojna_trwa } } } set_country_flag = ROS_etap_ukraina country_event = { id = ukr.1 } } }
 	option = {
 		name = dom.13.a
 		ai_chance = { factor = 1 }

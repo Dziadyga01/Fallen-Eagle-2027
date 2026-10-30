@@ -3,10 +3,14 @@ state = {
 	name = "STATE_725"
 	manpower = 20000
 	state_category = rural
+	resources = {
+		aluminium = 1
+		steel = 2
+	}
 	history = {
 		owner = KPR
 		add_core_of = KPR
-		victory_points = { 6213 1 }
+		victory_points = { 6213 4 }
 		buildings = {
 			infrastructure = 3
 		}

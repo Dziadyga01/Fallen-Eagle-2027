@@ -1,0 +1,227 @@
+# The Fallen Eagle 2027 – Kot Prezesa: projekt Cyber (fikcyjna ścieżka moda)
+focus_tree = {
+	id = PRW_kot_tree
+	country = {
+		factor = 0
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1200 }
+	initial_show_position = { focus = PRW_kt_start }
+
+	focus = {
+		id = PRW_kt_start
+		icon = GFX_pl2027_081_korona_2
+		x = 5
+		y = 0
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_political_power = 50 PRW_przelicz_lidera = yes
+		}
+	}
+
+	focus = {
+		id = PRW_kt_archiwa
+		icon = GFX_pl2027_081_spis_0
+		x = 2
+		y = 1
+		prerequisite = { focus = PRW_kt_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_cj_dane = 15 } clamp_variable = { var = PRW_cj_dane min = 0 max = 100 } if = { limit = { check_variable = { PRW_op_n > 40 } } add_to_variable = { PRW_cj_dane = 10 } clamp_variable = { var = PRW_cj_dane min = 0 max = 100 } } PRW_cj_suma = yes
+		}
+	}
+
+	focus = {
+		id = PRW_kt_glos
+		icon = GFX_pl2027_081_media_4
+		x = 4
+		y = 1
+		prerequisite = { focus = PRW_kt_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_cj_glos = 15 } clamp_variable = { var = PRW_cj_glos min = 0 max = 100 } if = { limit = { check_variable = { PRW_op_z > 40 } } add_to_variable = { PRW_cj_glos = 10 } clamp_variable = { var = PRW_cj_glos min = 0 max = 100 } } PRW_cj_suma = yes
+		}
+	}
+
+	focus = {
+		id = PRW_kt_model
+		icon = GFX_pl2027_081_technika_0
+		x = 6
+		y = 1
+		prerequisite = { focus = PRW_kt_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_cj_model = 15 } clamp_variable = { var = PRW_cj_model min = 0 max = 100 } if = { limit = { check_variable = { PRW_op_s > 40 } } add_to_variable = { PRW_cj_model = 10 } clamp_variable = { var = PRW_cj_model min = 0 max = 100 } } PRW_cj_suma = yes
+		}
+	}
+
+	focus = {
+		id = PRW_kt_zasilanie
+		icon = GFX_pl2027_081_energia_0
+		x = 8
+		y = 1
+		prerequisite = { focus = PRW_kt_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_cj_zasilanie = 25 } clamp_variable = { var = PRW_cj_zasilanie min = 0 max = 100 } PRW_cj_suma = yes
+		}
+	}
+
+	focus = {
+		id = PRW_kt_archiwa2
+		icon = GFX_pl2027_081_spis_0
+		x = 2
+		y = 2
+		prerequisite = { focus = PRW_kt_archiwa }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_cj_dane = 15 } clamp_variable = { var = PRW_cj_dane min = 0 max = 100 } if = { limit = { check_variable = { PRW_op_n > 40 } } add_to_variable = { PRW_cj_dane = 5 } clamp_variable = { var = PRW_cj_dane min = 0 max = 100 } } PRW_cj_suma = yes
+		}
+	}
+
+	focus = {
+		id = PRW_kt_glos2
+		icon = GFX_pl2027_081_telewizja_0
+		x = 4
+		y = 2
+		prerequisite = { focus = PRW_kt_glos }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_cj_glos = 15 } clamp_variable = { var = PRW_cj_glos min = 0 max = 100 } if = { limit = { check_variable = { PRW_op_z > 40 } } add_to_variable = { PRW_cj_glos = 5 } clamp_variable = { var = PRW_cj_glos min = 0 max = 100 } } PRW_cj_suma = yes add_to_variable = { PRW_spojnosc = -2 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 }
+		}
+	}
+
+	focus = {
+		id = PRW_kt_siec
+		icon = GFX_pl2027_081_technika_1
+		x = 6
+		y = 2
+		prerequisite = { focus = PRW_kt_model }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_op_s30 check_variable = { PRW_op_s > 29 } } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_cj_model = 15 } clamp_variable = { var = PRW_cj_model min = 0 max = 100 } if = { limit = { check_variable = { PRW_op_s > 40 } } add_to_variable = { PRW_cj_model = 5 } clamp_variable = { var = PRW_cj_model min = 0 max = 100 } } PRW_cj_suma = yes add_to_variable = { PRW_cj_zasilanie = 5 } clamp_variable = { var = PRW_cj_zasilanie min = 0 max = 100 } PRW_cj_suma = yes
+		}
+	}
+
+	focus = {
+		id = PRW_kt_elektrownia
+		icon = GFX_pl2027_081_energia_1
+		x = 8
+		y = 2
+		prerequisite = { focus = PRW_kt_zasilanie }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_cj_zasilanie = 20 } clamp_variable = { var = PRW_cj_zasilanie min = 0 max = 100 } PRW_cj_suma = yes
+		}
+	}
+
+	focus = {
+		id = PRW_kt_testy
+		icon = GFX_pl2027_081_rada_1
+		x = 5
+		y = 3
+		prerequisite = { focus = PRW_kt_archiwa2 }
+		prerequisite = { focus = PRW_kt_glos2 }
+		prerequisite = { focus = PRW_kt_siec }
+		prerequisite = { focus = PRW_kt_elektrownia }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_cj_dane = 5 } clamp_variable = { var = PRW_cj_dane min = 0 max = 100 } add_to_variable = { PRW_cj_glos = 5 } clamp_variable = { var = PRW_cj_glos min = 0 max = 100 } add_to_variable = { PRW_cj_model = 5 } clamp_variable = { var = PRW_cj_model min = 0 max = 100 } add_to_variable = { PRW_cj_zasilanie = 5 } clamp_variable = { var = PRW_cj_zasilanie min = 0 max = 100 } add_to_variable = { PRW_spojnosc = -3 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } PRW_cj_suma = yes
+		}
+	}
+
+	focus = {
+		id = PRW_kt_konsultacje
+		icon = GFX_pl2027_081_pojednanie_3
+		x = 3
+		y = 4
+		prerequisite = { focus = PRW_kt_testy }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_to_variable = { PRW_spojnosc = 6 } clamp_variable = { var = PRW_spojnosc min = 0 max = 100 } set_variable = { PRW_op_n = 33 } set_variable = { PRW_op_s = 33 } set_variable = { PRW_op_z = 33 } PRW_przelicz_lidera = yes
+		}
+	}
+
+	focus = {
+		id = PRW_kt_final
+		icon = GFX_pl2027_081_technika_2
+		x = 6
+		y = 5
+		prerequisite = { focus = PRW_kt_testy }
+		cost = 6
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_cj30 check_variable = { PRW_cj_dane > 29 } check_variable = { PRW_cj_glos > 29 } check_variable = { PRW_cj_model > 29 } check_variable = { PRW_cj_zasilanie > 29 } } }
+		ai_will_do = { factor = 40 }
+		completion_reward = {
+			country_event = { id = zpp.160 days = 1 } custom_effect_tooltip = WOS_tt_67
+		}
+	}
+
+	focus = {
+		id = PRW_kt_reg_pdl
+		icon = GFX_pl2027_081_granica_1
+		x = 10
+		y = 6
+		prerequisite = { focus = PRW_kt_final }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_pokoj_reg has_war = no } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			if = { limit = { country_exists = PDL PDL = { is_subject_of = ROOT } } annex_country = { target = PDL transfer_troops = yes } } else_if = { limit = { country_exists = PDL NOT = { has_war_with = PDL } } PDL = { country_event = { id = zpp.210 days = 1 } } custom_effect_tooltip = PRW_tt_reg_kt_pdl } else = { add_political_power = 40 }
+		}
+	}
+
+	focus = {
+		id = PRW_kt_reg_rad
+		icon = GFX_pl2027_081_pojednanie_2
+		x = 10
+		y = 7
+		prerequisite = { focus = PRW_kt_reg_pdl }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_pokoj_reg has_war = no } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			if = { limit = { country_exists = RAD RAD = { is_subject_of = ROOT } } annex_country = { target = RAD transfer_troops = yes } } else_if = { limit = { country_exists = RAD NOT = { has_war_with = RAD } } RAD = { country_event = { id = zpp.211 days = 1 } } custom_effect_tooltip = PRW_tt_reg_kt_rad } else = { add_political_power = 40 }
+		}
+	}
+
+	focus = {
+		id = PRW_kt_reg_ptk
+		icon = GFX_pl2027_081_droga_1
+		x = 10
+		y = 8
+		prerequisite = { focus = PRW_kt_reg_rad }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_pokoj_reg has_war = no } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			if = { limit = { country_exists = PTK PTK = { is_subject_of = ROOT } } annex_country = { target = PTK transfer_troops = yes } } else_if = { limit = { country_exists = PTK NOT = { has_war_with = PTK } } PTK = { country_event = { id = zpp.212 days = 1 } } custom_effect_tooltip = PRW_tt_reg_kt_ptk } else = { add_political_power = 40 }
+		}
+	}
+
+	focus = {
+		id = PRW_kt_reg_final
+		icon = GFX_pl2027_081_polska_1
+		x = 10
+		y = 9
+		prerequisite = { focus = PRW_kt_reg_ptk }
+		cost = 4
+		available = { custom_trigger_tooltip = { tooltip = PRW_req_reg_ziemie OR = { NOT = { country_exists = PDL } PDL = { is_subject_of = ROOT } } OR = { NOT = { country_exists = RAD } RAD = { is_subject_of = ROOT } } OR = { NOT = { country_exists = PTK } PTK = { is_subject_of = ROOT } } any_owned_state = { is_core_of = PDL } any_owned_state = { is_core_of = RAD } any_owned_state = { is_core_of = PTK } } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_ideas = PRW_idea_region every_owned_state = { limit = { OR = { is_core_of = PDL is_core_of = RAD is_core_of = PTK } } add_core_of = ROOT } news_event = { id = zpp.197 days = 1 }
+		}
+	}
+}

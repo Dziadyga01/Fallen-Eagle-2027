@@ -9,7 +9,7 @@ country_event = {
 	option = {
 		name = ukw.10.a
 		ai_chance = { base = 1 }
-		add_stability = -0.03 add_to_variable = { UKR_zasoby = 10 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 }
+		add_stability = -0.03 add_to_variable = { UKR_zasoby = 10 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 } if = { limit = { country_exists = ROS NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = UKR_tt_przelom5 ROS = { hidden_effect = { ROS_UKR_przelom_maly = yes } } }
 	}
 }
 

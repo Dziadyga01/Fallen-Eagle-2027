@@ -575,156 +575,181 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_b_woj_les
-		icon = GFX_pl2027_081_ofensywa_0
-		x = 1
+		id = GER_b_mobilizacja_wschod
+		icon = GFX_pl2027_081_wojsko_2
+		x = 11
 		y = 9
 		prerequisite = { focus = GER_b_wcielenie }
 		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = LES is_neighbor_of = LES NOT = { has_war_with = LES } NOT = { LES = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } }
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			army_experience = 15 add_manpower = 20000 capital_scope = { create_unit = { division = "division_template = \"Brygada Zmechanizowana Bundeswehry\" start_experience_factor = 0.4" owner = ROOT } create_unit = { division = "division_template = \"Brygada Zmechanizowana Bundeswehry\" start_experience_factor = 0.4" owner = ROOT } create_unit = { division = "division_template = \"Brygada Zmechanizowana Bundeswehry\" start_experience_factor = 0.4" owner = ROOT } create_unit = { division = "division_template = \"Brygada Grenadierów\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada Grenadierów\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada Grenadierów\" start_experience_factor = 0.3" owner = ROOT } }
+		}
+	}
+
+	focus = {
+		id = GER_b_woj_les
+		icon = GFX_pl2027_081_ofensywa_0
+		x = 10
+		y = 10
+		prerequisite = { focus = GER_b_mobilizacja_wschod }
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = LES NOT = { has_war_with = LES } NOT = { LES = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = LES } LES = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
 		completion_reward = {
 			declare_war_on = { target = LES type = annex_everything }
 		}
 	}
 
 	focus = {
-		id = GER_b_woj_kls
-		icon = GFX_pl2027_081_ofensywa_1
-		x = 3
-		y = 9
-		prerequisite = { focus = GER_b_wcielenie }
-		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = KLS is_neighbor_of = KLS NOT = { has_war_with = KLS } NOT = { KLS = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
-		completion_reward = {
-			declare_war_on = { target = KLS type = annex_everything }
-		}
-	}
-
-	focus = {
-		id = GER_b_woj_not
-		icon = GFX_pl2027_081_ofensywa_3
-		x = 5
-		y = 9
-		prerequisite = { focus = GER_b_wcielenie }
-		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = NOT is_neighbor_of = NOT NOT = { has_war_with = NOT } NOT = { NOT = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
-		completion_reward = {
-			declare_war_on = { target = NOT type = annex_everything }
-		}
-	}
-
-	focus = {
-		id = GER_b_woj_gnz
-		icon = GFX_pl2027_081_ofensywa_0
-		x = 7
-		y = 9
-		prerequisite = { focus = GER_b_wcielenie }
-		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = GNZ is_neighbor_of = GNZ NOT = { has_war_with = GNZ } NOT = { GNZ = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
-		completion_reward = {
-			declare_war_on = { target = GNZ type = annex_everything }
-		}
-	}
-
-	focus = {
-		id = GER_b_woj_wmp
-		icon = GFX_pl2027_081_ofensywa_1
-		x = 9
-		y = 9
-		prerequisite = { focus = GER_b_wcielenie }
-		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = WMP is_neighbor_of = WMP NOT = { has_war_with = WMP } NOT = { WMP = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
-		completion_reward = {
-			declare_war_on = { target = WMP type = annex_everything }
-		}
-	}
-
-	focus = {
 		id = GER_b_woj_krj
-		icon = GFX_pl2027_081_ofensywa_3
-		x = 11
-		y = 9
-		prerequisite = { focus = GER_b_wcielenie }
+		icon = GFX_pl2027_081_ofensywa_1
+		x = 12
+		y = 11
+		prerequisite = { focus = GER_b_woj_les }
 		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = KRJ is_neighbor_of = KRJ NOT = { has_war_with = KRJ } NOT = { KRJ = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = KRJ NOT = { has_war_with = KRJ } NOT = { KRJ = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = KRJ } KRJ = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
 		completion_reward = {
 			declare_war_on = { target = KRJ type = annex_everything }
 		}
 	}
 
 	focus = {
-		id = GER_b_woj_srd
-		icon = GFX_pl2027_081_ofensywa_0
-		x = 13
-		y = 9
-		prerequisite = { focus = GER_b_wcielenie }
+		id = GER_b_woj_not
+		icon = GFX_pl2027_081_ofensywa_3
+		x = 10
+		y = 12
+		prerequisite = { focus = GER_b_woj_krj }
 		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = SRD is_neighbor_of = SRD NOT = { has_war_with = SRD } NOT = { SRD = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = NOT NOT = { has_war_with = NOT } NOT = { NOT = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = NOT } NOT = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
 		completion_reward = {
-			declare_war_on = { target = SRD type = annex_everything }
+			declare_war_on = { target = NOT type = annex_everything }
+		}
+	}
+
+	focus = {
+		id = GER_b_woj_wmp
+		icon = GFX_pl2027_081_ofensywa_0
+		x = 12
+		y = 13
+		prerequisite = { focus = GER_b_woj_not }
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = WMP NOT = { has_war_with = WMP } NOT = { WMP = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = WMP } WMP = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			declare_war_on = { target = WMP type = annex_everything }
 		}
 	}
 
 	focus = {
 		id = GER_b_woj_kpm
 		icon = GFX_pl2027_081_ofensywa_1
-		x = 15
-		y = 9
-		prerequisite = { focus = GER_b_wcielenie }
+		x = 10
+		y = 14
+		prerequisite = { focus = GER_b_woj_wmp }
 		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = KPM is_neighbor_of = KPM NOT = { has_war_with = KPM } NOT = { KPM = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = KPM NOT = { has_war_with = KPM } NOT = { KPM = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = KPM } KPM = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
 		completion_reward = {
 			declare_war_on = { target = KPM type = annex_everything }
 		}
 	}
 
 	focus = {
-		id = GER_b_woj_plk
+		id = GER_b_woj_chj
 		icon = GFX_pl2027_081_ofensywa_3
-		x = 17
-		y = 9
-		prerequisite = { focus = GER_b_wcielenie }
+		x = 12
+		y = 15
+		prerequisite = { focus = GER_b_woj_kpm }
 		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = PLK is_neighbor_of = PLK NOT = { has_war_with = PLK } NOT = { PLK = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = CHJ NOT = { has_war_with = CHJ } NOT = { CHJ = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = CHJ } CHJ = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			declare_war_on = { target = CHJ type = annex_everything }
+		}
+	}
+
+	focus = {
+		id = GER_b_woj_gnz
+		icon = GFX_pl2027_081_ofensywa_0
+		x = 10
+		y = 16
+		prerequisite = { focus = GER_b_woj_chj }
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = GNZ NOT = { has_war_with = GNZ } NOT = { GNZ = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = GNZ } GNZ = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			declare_war_on = { target = GNZ type = annex_everything }
+		}
+	}
+
+	focus = {
+		id = GER_b_woj_plk
+		icon = GFX_pl2027_081_ofensywa_1
+		x = 12
+		y = 17
+		prerequisite = { focus = GER_b_woj_gnz }
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = PLK NOT = { has_war_with = PLK } NOT = { PLK = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = PLK } PLK = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
 		completion_reward = {
 			declare_war_on = { target = PLK type = annex_everything }
 		}
 	}
 
 	focus = {
-		id = GER_b_woj_lwc
-		icon = GFX_pl2027_081_ofensywa_0
-		x = 19
-		y = 9
-		prerequisite = { focus = GER_b_wcielenie }
+		id = GER_b_woj_kls
+		icon = GFX_pl2027_081_ofensywa_3
+		x = 10
+		y = 18
+		prerequisite = { focus = GER_b_woj_plk }
 		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = LWC is_neighbor_of = LWC NOT = { has_war_with = LWC } NOT = { LWC = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = KLS NOT = { has_war_with = KLS } NOT = { KLS = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = KLS } KLS = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
 		completion_reward = {
-			declare_war_on = { target = LWC type = annex_everything }
+			declare_war_on = { target = KLS type = annex_everything }
 		}
 	}
 
 	focus = {
-		id = GER_b_woj_chj
-		icon = GFX_pl2027_081_ofensywa_1
-		x = 21
-		y = 9
-		prerequisite = { focus = GER_b_wcielenie }
+		id = GER_b_woj_srd
+		icon = GFX_pl2027_081_ofensywa_0
+		x = 12
+		y = 19
+		prerequisite = { focus = GER_b_woj_kls }
 		cost = 5
-		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = CHJ is_neighbor_of = CHJ NOT = { has_war_with = CHJ } NOT = { CHJ = { is_subject_of = ROOT } } has_war = no }
-		ai_will_do = { factor = 8 }
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = SRD NOT = { has_war_with = SRD } NOT = { SRD = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = SRD } SRD = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
 		completion_reward = {
-			declare_war_on = { target = CHJ type = annex_everything }
+			declare_war_on = { target = SRD type = annex_everything }
+		}
+	}
+
+	focus = {
+		id = GER_b_woj_lwc
+		icon = GFX_pl2027_081_ofensywa_1
+		x = 10
+		y = 20
+		prerequisite = { focus = GER_b_woj_srd }
+		cost = 5
+		available = { custom_trigger_tooltip = { tooltip = GER_req_wcielono has_country_flag = GER_wcielono } country_exists = LWC NOT = { has_war_with = LWC } NOT = { LWC = { is_subject_of = ROOT } } custom_trigger_tooltip = { tooltip = GER_req_po_kolei has_war = no } }
+		bypass = { OR = { NOT = { country_exists = LWC } LWC = { is_subject_of = ROOT } } }
+		ai_will_do = { factor = 12 }
+		completion_reward = {
+			declare_war_on = { target = LWC type = annex_everything }
 		}
 	}
 

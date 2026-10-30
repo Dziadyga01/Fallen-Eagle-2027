@@ -140,7 +140,7 @@ focus_tree = {
 		completion_reward = {
 		set_politics = { ruling_party = nationalist elections_allowed = no }
 		add_popularity = { ideology = nationalist popularity = 0.15 }
-		if = { limit = { NOT = { has_character = RKKR_a_lider } } recruit_character = RKKR_a_lider } promote_character = RKKR_a_lider
+		if = { limit = { NOT = { has_character = KKR_leader } } recruit_character = KKR_leader } add_country_leader_role = { character = KKR_leader promote_leader = yes country_leader = { ideology = absolute_monarchist expire = "2065.1.1.1" } } custom_effect_tooltip = RKKR_tt_braun_krol
 		add_ideas = RKKR_a_idea
 		add_timed_idea = { idea = REG_t_przejscie days = 120 }
 		set_cosmetic_tag = RKKR_A

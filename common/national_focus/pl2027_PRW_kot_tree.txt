@@ -224,4 +224,122 @@ focus_tree = {
 			add_ideas = PRW_idea_region every_owned_state = { limit = { OR = { is_core_of = PDL is_core_of = RAD is_core_of = PTK } } add_core_of = ROOT } news_event = { id = zpp.197 days = 1 }
 		}
 	}
+
+	focus = {
+		id = PRW_kt_h_start
+		icon = GFX_pl2027_081_rada_1
+		x = 14
+		y = 1
+		prerequisite = { focus = PRW_kt_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = PRW_kt_h_subwencja
+		icon = GFX_pl2027_081_pieniadze_2
+		x = 12
+		y = 2
+		prerequisite = { focus = PRW_kt_h_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_political_power = 60 add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = PRW_kt_h_media
+		icon = GFX_pl2027_081_media_2
+		x = 12
+		y = 3
+		prerequisite = { focus = PRW_kt_h_subwencja }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_war_support = 0.03 add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = PRW_kt_h_kandydat
+		icon = GFX_pl2027_081_wybory_3
+		x = 12
+		y = 4
+		prerequisite = { focus = PRW_kt_h_media }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_political_power = 50 add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = PRW_kt_h_800
+		icon = GFX_pl2027_081_ludzie_2
+		x = 16
+		y = 2
+		prerequisite = { focus = PRW_kt_h_start }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_stability = 0.05 add_political_power = -30
+		}
+	}
+
+	focus = {
+		id = PRW_kt_h_cpk
+		icon = GFX_pl2027_081_kolej_2
+		x = 16
+		y = 3
+		prerequisite = { focus = PRW_kt_h_800 }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { add_extra_state_shared_building_slots = 1 add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = PRW_kt_h_zapora
+		icon = GFX_pl2027_081_granica_0
+		x = 16
+		y = 4
+		prerequisite = { focus = PRW_kt_h_cpk }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_ideas = PRW_idea_zapora
+		}
+	}
+
+	focus = {
+		id = PRW_kt_h_armia
+		icon = GFX_pl2027_081_wojsko_0
+		x = 16
+		y = 5
+		prerequisite = { focus = PRW_kt_h_zapora }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			army_experience = 15 add_manpower = 10000 add_equipment_to_stockpile = { type = light_artillery_equipment amount = 150 }
+		}
+	}
+
+	focus = {
+		id = PRW_kt_h_final
+		icon = GFX_pl2027_081_polska_1
+		x = 14
+		y = 6
+		prerequisite = { focus = PRW_kt_h_kandydat }
+		prerequisite = { focus = PRW_kt_h_armia }
+		cost = 4
+		ai_will_do = { factor = 20 }
+		completion_reward = {
+			add_ideas = PRW_idea_lekcje
+		}
+	}
 }

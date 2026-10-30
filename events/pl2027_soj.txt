@@ -1,0 +1,63 @@
+add_namespace = soj
+
+country_event = {
+	id = soj.1
+	title = soj.1.t
+	desc = soj.1.d
+	picture = GFX_pl2027_ev081_dyplomacja_1
+	is_triggered_only = yes
+	option = {
+		name = soj.1.a
+		ai_chance = { base = 3 modifier = { factor = 0 has_war_with = FROM } }
+		if = { limit = { is_in_faction = no } create_faction = ROS_ZWIAZKOWE } if = { limit = { is_faction_leader = yes } FROM = { if = { limit = { is_in_faction = yes } leave_faction = yes } } add_to_faction = FROM FROM = { country_event = { id = soj.3 days = 1 } } } else = { FROM = { country_event = { id = soj.4 days = 1 } } }
+	}
+	option = {
+		name = soj.1.b
+		ai_chance = { base = 1 }
+		FROM = { country_event = { id = soj.4 days = 1 } }
+	}
+}
+
+country_event = {
+	id = soj.2
+	title = soj.2.t
+	desc = soj.2.d
+	picture = GFX_pl2027_ev081_dyplomacja_2
+	is_triggered_only = yes
+	option = {
+		name = soj.2.a
+		ai_chance = { base = 2 modifier = { factor = 0.2 is_faction_leader = yes } modifier = { factor = 0 has_war_with = FROM } }
+		if = { limit = { is_in_faction = yes } leave_faction = yes } FROM = { if = { limit = { original_tag = PLO is_in_faction = no } create_faction = KOR_KONSORCJUM } if = { limit = { original_tag = WLC is_in_faction = no } create_faction = SOJ_KORPORACJE } if = { limit = { original_tag = KOC is_in_faction = no } create_faction = SOJ_KORPORACJE } if = { limit = { is_faction_leader = yes } add_to_faction = ROOT country_event = { id = soj.3 days = 1 } } else = { country_event = { id = soj.4 days = 1 } } }
+	}
+	option = {
+		name = soj.2.b
+		ai_chance = { base = 1 }
+		FROM = { country_event = { id = soj.4 days = 1 } }
+	}
+}
+
+country_event = {
+	id = soj.3
+	title = soj.3.t
+	desc = soj.3.d
+	picture = GFX_pl2027_ev081_dyplomacja_0
+	is_triggered_only = yes
+	option = {
+		name = soj.3.a
+		ai_chance = { base = 1 }
+		add_political_power = 10
+	}
+}
+
+country_event = {
+	id = soj.4
+	title = soj.4.t
+	desc = soj.4.d
+	picture = GFX_pl2027_ev081_dyplomacja_3
+	is_triggered_only = yes
+	option = {
+		name = soj.4.a
+		ai_chance = { base = 1 }
+		add_political_power = 5
+	}
+}

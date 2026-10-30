@@ -53,22 +53,4 @@ ROSZ_panel = {
 		complete_effect = { capital_scope = { create_unit = { division = "division_template = \"Brygada Zmechanizowana\" start_experience_factor = 0.3" owner = ROOT } create_unit = { division = "division_template = \"Brygada Zmechanizowana\" start_experience_factor = 0.3" owner = ROOT } } }
 		ai_will_do = { factor = 10 }
 	}
-	ROSZ_ua_operacja = {
-		icon = generic_operation
-		cost = 50
-		visible = { original_tag = ROS has_country_flag = ROS_etap_ukraina NOT = { has_global_flag = ROS_ukraina_koniec } }
-		available = { always = yes }
-		days_re_enable = 60
-		complete_effect = { add_to_variable = { ROS_front_ua = 4 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_manpower = -6000 }
-		ai_will_do = { factor = 8 }
-	}
-	ROSZ_ua_rotacja = {
-		icon = generic_army_support
-		cost = 30
-		visible = { original_tag = ROS has_country_flag = ROS_etap_ukraina NOT = { has_global_flag = ROS_ukraina_koniec } }
-		available = { always = yes }
-		days_re_enable = 90
-		complete_effect = { add_to_variable = { ROS_front_ua = 1 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_stability = 0.02 }
-		ai_will_do = { factor = 5 }
-	}
 }

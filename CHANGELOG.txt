@@ -2,6 +2,86 @@
 =================================
 Najnowsza wersja na górze. Wersje „testowe” nie były jeszcze sprawdzone w silniku gry.
 
+The Fallen Eagle Alpha 0.9.30 (wersja testowa) – nazwa moda bez zmian; EUROKOMISARIATY NIE ZNIKAJĄ
+Podstawa: 0.9.29. Nic z tego nie było jeszcze uruchomione w grze.
+
+- Ukryte zdarzenie (średnio co 7 dni) wcielało każdego polskiego podwładnego do zwierzchnika. Wyjątek miał tylko Eurostaat Poznań,
+  więc w pierwszych tygodniach gry (ok. 20 i 30 listopada) Niemcy wchłaniały Eurokomisariaty Pomorza i Śląska, a Brodnica – Brzozie.
+- Teraz podwładni Niemiec nie są wcielani automatycznie – działa tylko późna mechanika wcielenia (najwcześniej 2034, za zgodą albo po wojnie).
+  Brzozie zostaje podwładnym Brodnicy. Pozostałe zasady „aneksje zamiast marionetek” bez zmian.
+- Zmiana działa w nowej grze (w zapisie, w którym Eurokomisariaty już zniknęły, nie wrócą).
+
+The Fallen Eagle Alpha 0.9.29 (wersja testowa) – nazwa moda bez zmian; KONIEC ETAPÓW ROZPADU, SOJUSZE, NIEMCY, KRÓL POLSKI
+Podstawa: 0.9.28. Nic z tego nie było jeszcze uruchomione w grze.
+
+1. ROZPAD: BEZ PROLOGU I BEZ ETAPÓW (prośba autora)
+- Scenariusz „Prolog” (22.10.2027) zniknął z ekranu wyboru – gra startuje tylko 11.11.2027.
+- Usunięte etapy rozpadu (fazy I–V): presja, wskaźniki, modyfikatory faz, zdarzenia faz, secesje i panel „Kryzys”.
+  Mapa zmienia się już tylko przez fokusy i decyzje.
+- Wojny z drzewek nadal ruszają od kwietnia 2028, a decyzje „po fazie III” od połowy lutego 2028 (ten sam termin co dawniej,
+  teraz zwykła data). Teksty warunków mówią o dacie, nie o fazie. Koniec gry po 2029 roku bez zmian.
+- W trwających zapisach modyfikatory faz znikną same przy pierwszym miesiącu gry.
+
+2. SOJUSZE
+- Rosja i Białoruś są w jednym sojuszu (Państwo Związkowe) od startu.
+- Korona Polska (Konfederacja Korony Polskiej) może poprosić Rosję o przyjęcie do sojuszu (decyzja „Sojusz z Rosją”, Rosja decyduje).
+- Korporacje – Płock, Włocławek i Kociewie – mogą zapraszać się nawzajem do sojuszu (panel „Sojusze”). Zaproszenie od Płocka
+  tworzy Konsorcjum Polskich Korporacji, od pozostałych – Sojusz Korporacji. Druga strona może odmówić.
+
+3. PODGÓRZ CZĘŚCIĄ TORUNIA
+- Podgórz nie jest już osobnym państwem – lewobrzeżna dzielnica należy do Republiki Toruńskiej od startu.
+
+4. NIEMCY SILNIEJSZE I WOJNY PO KOLEI
+- Niemcy zaczynają z wojskiem: 16 brygad (6 zmechanizowanych, 10 grenadierów), zapasy sprzętu, 150 000 rezerw
+  oraz fabryki poza mapą (15 cywilnych, 12 wojskowych). Wcześniej nie miały na starcie żadnych jednostek.
+- Wcielanie Eurostaatów zostaje bez zmian (od 2034, za zgodą albo wojną).
+- Po wcieleniu: fokus „Mobilizacja na wschodzie” (6 nowych brygad), a potem kampanie PO KOLEI, od zachodu na wschód:
+  Ziemia Leszczyńska, Republika Krajeńska, Ziemia Nadnotecka, Wolne Miasto Poznań, Republika Pomorska, Ziemia Zaborska,
+  Księstwo Gnieźnieńskie, Księstwo Pałuckie, Ziemia Kaliska, Ziemia Sieradzka, Republika Socjaldemokratyczna.
+  Jeden fokus = jedna wojna; następna dopiero po poprzedniej i bez innej wojny w toku. Fokus jest pomijany,
+  gdy państwa już nie ma albo jest podwładnym Niemiec.
+
+5. KRÓL POLSKI: GRZEGORZ BRAUN (fikcyjna ścieżka moda)
+- W Koronie Polskiej droga Regencji kończy się koronacją Grzegorza Brauna na króla Polski (zamiast anonimowej Rady Regencyjnej).
+
+6. ZJEDNOCZONA POLSKA PRAWICA: „LEKCJE Z LAT W OPOZYCJI”
+- Nowa gałąź (9 fokusów) w drzewku każdego z sześciu przywódców, oparta na prawdziwych wydarzeniach:
+  utrata władzy w 2023 r., odebrana subwencja i zbiórki sympatyków (2024), przejęcie mediów publicznych (2023),
+  kandydat obywatelski w wyborach prezydenckich 2025, 500/800 plus, Centralny Port Komunikacyjny, zapora na granicy
+  z Białorusią, ustawa o obronie Ojczyzny i zakupy uzbrojenia z Korei. Bez wymyślonych cytatów.
+
+The Fallen Eagle Alpha 0.9.28 (wersja testowa) – nazwa moda bez zmian; UKRAINA: JEDEN SYSTEM WOJNY – MAPA OBWODÓW
+Podstawa: 0.9.27 + mapa obwodów autora (panel FEUKR_MapGUI). Nic z tego nie było jeszcze uruchomione w grze.
+
+1. USUNIĘTY STARY, ABSTRAKCYJNY LICZNIK FRONTU (ROS_front_ua)
+- Jedynym źródłem postępu wojny jest teraz dominacja Rosji na mapie 24 obwodów (ROS_UKR_dominance).
+- Usunięte: decyzje „Operacja frontowa” i „Rotacja jednostek”, napis „Front ukraiński: …/100” w panelu
+  „Rosja: zaplecze poza mapą”, ustawianie licznika na starcie i comiesięczne zmiany frontu.
+- Panel „Rosja: zaplecze poza mapą” zostaje: fabryki, transport, mobilizacja, paliwo i posiłki działają jak wcześniej.
+
+2. DRZEWKO „WOJNA NA UKRAINIE” WSPIERA MAPĘ OBWODÓW
+- Fokusy i zdarzenia, które podnosiły stary licznik, zmieniają teraz postęp w konkretnych obwodach:
+  Wojna dronów – charkowski +10; Ofensywa w Donbasie – dniepropetrowski +15; Przewaga w powietrzu – chersoński +10;
+  Przełamanie frontu – chersoński +20 i mikołajowski +10; Gospodarka wojenna – operacje we wszystkich obwodach od razu gotowe.
+- „Ofensywa na południu”: chersoński +20 (z ukraińską kontrofensywą po ok. 1,5 miesiąca) albo +10.
+  Kontrofensywa: utrzymać pozycje kosztem ludzi albo oddać 10 pkt w obwodzie chersońskim.
+- Zakończenia (dominacja startowa ok. 14%):
+  Zwycięstwo – co najmniej 50%; Zamrożony konflikt – co najmniej 12% (Rosja utrzymuje obecne linie);
+  Pokój bez zwycięstwa – ustępstwa w Stambule albo poniżej 12% (Ukraina odzyskała teren).
+- Wszystkie trzy zakończenia korzystają ze wspólnego efektu, który wykonuje się dokładnie raz: wynik wojny, duch narodowy,
+  wiadomość, a po miesiącu los przywódcy (sukcesja) i otwarcie „Drugiej fali”.
+- Po zakończeniu wojny ofensywy na mapie (panel i decyzje) oraz kontrataki Ukrainy są zablokowane, a opóźnione zdarzenia
+  nie zmieniają już obwodów.
+
+3. UKRAINA
+- Uderzenie dronów i Linia obrony – Ukraina odbija 5 pkt w najbliższym obwodzie frontowym; Kontrofensywa – 10 pkt.
+- „Front pęka” (zasoby poniżej 20): zamiast stałego +3 co miesiąc Rosja zyskuje 5 pkt w obwodzie frontowym (najwyżej raz na 120 dni).
+- „Niezłomna Ukraina” wymaga dominacji Rosji poniżej 30% albo końca wojny. Panel pokazuje dominację Rosji (cel: poniżej 50%).
+
+4. ZAPISY GRY
+- Postęp obwodów w trwających zapisach zostaje bez zmian: stary licznik nie jest przeliczany na dominację, mapa nie jest resetowana.
+- Jeśli w zapisie wojna już się skończyła starym systemem, zakończenia nie uruchomią się drugi raz.
+
 The Fallen Eagle Alpha 0.9.27 (wersja testowa) – nazwa moda bez zmian; ROSJA: KONIEC BLOKADY CELÓW WOJENNYCH PO INWAZJI
 Podstawa: 0.9.26. Nic z tego nie było jeszcze uruchomione w grze.
 

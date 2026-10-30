@@ -1,10 +1,9 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			# 0.8.7: start 22.10.2027 – prolog jednej Rzeczypospolitej (zdarzenia prologu planuje PRL_start)
-			if = { limit = { date < 2027.11.1 } set_global_flag = PL2027_prolog if = { limit = { country_exists = POL } TFE_start_jedna_polska = yes POL = { PRL_start = yes } } }
+			# 0.9.29: scenariusz „Prolog” usunięty – zawsze start 11.11.2027
 			# start 11.11.2027 – Polska podzielona, bez zadnego zdarzenia prologu
-			else = {
+			if = { limit = { always = yes }
 				set_global_flag = PL2027_start_listopad
 				random_list = { 50 = { set_global_flag = EK_los_pomorze } 50 = { } }
 				if = { limit = { country_exists = POL POL = { is_ai = no } country_exists = SMR } SMR = { change_tag_from = POL } }

@@ -7,6 +7,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_VOL < 100 }
             NOT = { has_country_flag = ROS_UKR_VOL_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -30,6 +31,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_VOL < 100 }
             NOT = { has_country_flag = ROS_UKR_VOL_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -53,6 +55,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_VOL < 100 }
             NOT = { has_country_flag = ROS_UKR_VOL_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -76,6 +79,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_RIV < 100 }
             NOT = { has_country_flag = ROS_UKR_RIV_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -99,6 +103,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_RIV < 100 }
             NOT = { has_country_flag = ROS_UKR_RIV_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -122,6 +127,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_RIV < 100 }
             NOT = { has_country_flag = ROS_UKR_RIV_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -145,6 +151,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_LVI < 100 }
             NOT = { has_country_flag = ROS_UKR_LVI_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -168,6 +175,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_LVI < 100 }
             NOT = { has_country_flag = ROS_UKR_LVI_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -191,6 +199,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_LVI < 100 }
             NOT = { has_country_flag = ROS_UKR_LVI_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -214,6 +223,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ZAK < 100 }
             NOT = { has_country_flag = ROS_UKR_ZAK_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -237,6 +247,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ZAK < 100 }
             NOT = { has_country_flag = ROS_UKR_ZAK_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -260,6 +271,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ZAK < 100 }
             NOT = { has_country_flag = ROS_UKR_ZAK_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -283,6 +295,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_IVA < 100 }
             NOT = { has_country_flag = ROS_UKR_IVA_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -306,6 +319,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_IVA < 100 }
             NOT = { has_country_flag = ROS_UKR_IVA_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -329,6 +343,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_IVA < 100 }
             NOT = { has_country_flag = ROS_UKR_IVA_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -352,6 +367,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_TER < 100 }
             NOT = { has_country_flag = ROS_UKR_TER_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -375,6 +391,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_TER < 100 }
             NOT = { has_country_flag = ROS_UKR_TER_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -398,6 +415,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_TER < 100 }
             NOT = { has_country_flag = ROS_UKR_TER_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -421,6 +439,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_CHE < 100 }
             NOT = { has_country_flag = ROS_UKR_CHE_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -444,6 +463,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_CHE < 100 }
             NOT = { has_country_flag = ROS_UKR_CHE_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -467,6 +487,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_CHE < 100 }
             NOT = { has_country_flag = ROS_UKR_CHE_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -490,6 +511,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KHM < 100 }
             NOT = { has_country_flag = ROS_UKR_KHM_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -513,6 +535,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KHM < 100 }
             NOT = { has_country_flag = ROS_UKR_KHM_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -536,6 +559,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KHM < 100 }
             NOT = { has_country_flag = ROS_UKR_KHM_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -559,6 +583,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ZHY < 100 }
             NOT = { has_country_flag = ROS_UKR_ZHY_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -582,6 +607,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ZHY < 100 }
             NOT = { has_country_flag = ROS_UKR_ZHY_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -605,6 +631,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ZHY < 100 }
             NOT = { has_country_flag = ROS_UKR_ZHY_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -628,6 +655,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_VIN < 100 }
             NOT = { has_country_flag = ROS_UKR_VIN_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -651,6 +679,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_VIN < 100 }
             NOT = { has_country_flag = ROS_UKR_VIN_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -674,6 +703,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_VIN < 100 }
             NOT = { has_country_flag = ROS_UKR_VIN_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -697,6 +727,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KYI < 100 }
             NOT = { has_country_flag = ROS_UKR_KYI_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -720,6 +751,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KYI < 100 }
             NOT = { has_country_flag = ROS_UKR_KYI_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -743,6 +775,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KYI < 100 }
             NOT = { has_country_flag = ROS_UKR_KYI_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -766,6 +799,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_CHR < 100 }
             NOT = { has_country_flag = ROS_UKR_CHR_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -789,6 +823,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_CHR < 100 }
             NOT = { has_country_flag = ROS_UKR_CHR_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -812,6 +847,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_CHR < 100 }
             NOT = { has_country_flag = ROS_UKR_CHR_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -835,6 +871,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_SUM < 100 }
             NOT = { has_country_flag = ROS_UKR_SUM_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -858,6 +895,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_SUM < 100 }
             NOT = { has_country_flag = ROS_UKR_SUM_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -881,6 +919,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_SUM < 100 }
             NOT = { has_country_flag = ROS_UKR_SUM_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -904,6 +943,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KHA < 100 }
             NOT = { has_country_flag = ROS_UKR_KHA_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -927,6 +967,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KHA < 100 }
             NOT = { has_country_flag = ROS_UKR_KHA_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -950,6 +991,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KHA < 100 }
             NOT = { has_country_flag = ROS_UKR_KHA_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -973,6 +1015,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_POL < 100 }
             NOT = { has_country_flag = ROS_UKR_POL_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -996,6 +1039,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_POL < 100 }
             NOT = { has_country_flag = ROS_UKR_POL_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1019,6 +1063,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_POL < 100 }
             NOT = { has_country_flag = ROS_UKR_POL_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1042,6 +1087,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_CKA < 100 }
             NOT = { has_country_flag = ROS_UKR_CKA_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1065,6 +1111,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_CKA < 100 }
             NOT = { has_country_flag = ROS_UKR_CKA_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1088,6 +1135,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_CKA < 100 }
             NOT = { has_country_flag = ROS_UKR_CKA_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1111,6 +1159,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KIR < 100 }
             NOT = { has_country_flag = ROS_UKR_KIR_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1134,6 +1183,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KIR < 100 }
             NOT = { has_country_flag = ROS_UKR_KIR_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1157,6 +1207,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KIR < 100 }
             NOT = { has_country_flag = ROS_UKR_KIR_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1180,6 +1231,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_DNI < 100 }
             NOT = { has_country_flag = ROS_UKR_DNI_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1203,6 +1255,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_DNI < 100 }
             NOT = { has_country_flag = ROS_UKR_DNI_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1226,6 +1279,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_DNI < 100 }
             NOT = { has_country_flag = ROS_UKR_DNI_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1249,6 +1303,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_DON < 100 }
             NOT = { has_country_flag = ROS_UKR_DON_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1272,6 +1327,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_DON < 100 }
             NOT = { has_country_flag = ROS_UKR_DON_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1295,6 +1351,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_DON < 100 }
             NOT = { has_country_flag = ROS_UKR_DON_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1318,6 +1375,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_LUH < 100 }
             NOT = { has_country_flag = ROS_UKR_LUH_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1341,6 +1399,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_LUH < 100 }
             NOT = { has_country_flag = ROS_UKR_LUH_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1364,6 +1423,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_LUH < 100 }
             NOT = { has_country_flag = ROS_UKR_LUH_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1387,6 +1447,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ZAP < 100 }
             NOT = { has_country_flag = ROS_UKR_ZAP_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1410,6 +1471,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ZAP < 100 }
             NOT = { has_country_flag = ROS_UKR_ZAP_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1433,6 +1495,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ZAP < 100 }
             NOT = { has_country_flag = ROS_UKR_ZAP_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1456,6 +1519,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KHE < 100 }
             NOT = { has_country_flag = ROS_UKR_KHE_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1479,6 +1543,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KHE < 100 }
             NOT = { has_country_flag = ROS_UKR_KHE_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1502,6 +1567,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_KHE < 100 }
             NOT = { has_country_flag = ROS_UKR_KHE_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1525,6 +1591,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_MYK < 100 }
             NOT = { has_country_flag = ROS_UKR_MYK_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1548,6 +1615,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_MYK < 100 }
             NOT = { has_country_flag = ROS_UKR_MYK_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1571,6 +1639,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_MYK < 100 }
             NOT = { has_country_flag = ROS_UKR_MYK_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1594,6 +1663,7 @@ ROS_UKR_offensive_category = {
         cost = 65
         days_re_enable = 60
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ODE < 100 }
             NOT = { has_country_flag = ROS_UKR_ODE_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1617,6 +1687,7 @@ ROS_UKR_offensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ODE < 100 }
             NOT = { has_country_flag = ROS_UKR_ODE_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1640,6 +1711,7 @@ ROS_UKR_offensive_category = {
         cost = 10
         days_re_enable = 14
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             check_variable = { ROS_UKR_ODE < 100 }
             NOT = { has_country_flag = ROS_UKR_ODE_cooldown }
             NOT = { has_country_flag = ROS_UKR_succession_pause }
@@ -1672,6 +1744,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_VOL > 0 }
                 NOT = { has_country_flag = ROS_UKR_VOL_defense_cooldown }
@@ -1693,6 +1766,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_RIV > 0 }
                 NOT = { has_country_flag = ROS_UKR_RIV_defense_cooldown }
@@ -1714,6 +1788,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_LVI > 0 }
                 NOT = { has_country_flag = ROS_UKR_LVI_defense_cooldown }
@@ -1735,6 +1810,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_ZAK > 0 }
                 NOT = { has_country_flag = ROS_UKR_ZAK_defense_cooldown }
@@ -1756,6 +1832,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_IVA > 0 }
                 NOT = { has_country_flag = ROS_UKR_IVA_defense_cooldown }
@@ -1777,6 +1854,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_TER > 0 }
                 NOT = { has_country_flag = ROS_UKR_TER_defense_cooldown }
@@ -1798,6 +1876,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_CHE > 0 }
                 NOT = { has_country_flag = ROS_UKR_CHE_defense_cooldown }
@@ -1819,6 +1898,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_KHM > 0 }
                 NOT = { has_country_flag = ROS_UKR_KHM_defense_cooldown }
@@ -1840,6 +1920,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_ZHY > 0 }
                 NOT = { has_country_flag = ROS_UKR_ZHY_defense_cooldown }
@@ -1861,6 +1942,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_VIN > 0 }
                 NOT = { has_country_flag = ROS_UKR_VIN_defense_cooldown }
@@ -1882,6 +1964,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_KYI > 0 }
                 NOT = { has_country_flag = ROS_UKR_KYI_defense_cooldown }
@@ -1903,6 +1986,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_CHR > 0 }
                 NOT = { has_country_flag = ROS_UKR_CHR_defense_cooldown }
@@ -1924,6 +2008,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_SUM > 0 }
                 NOT = { has_country_flag = ROS_UKR_SUM_defense_cooldown }
@@ -1945,6 +2030,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_KHA > 0 }
                 NOT = { has_country_flag = ROS_UKR_KHA_defense_cooldown }
@@ -1966,6 +2052,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_POL > 0 }
                 NOT = { has_country_flag = ROS_UKR_POL_defense_cooldown }
@@ -1987,6 +2074,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_CKA > 0 }
                 NOT = { has_country_flag = ROS_UKR_CKA_defense_cooldown }
@@ -2008,6 +2096,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_KIR > 0 }
                 NOT = { has_country_flag = ROS_UKR_KIR_defense_cooldown }
@@ -2029,6 +2118,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_DNI > 0 }
                 NOT = { has_country_flag = ROS_UKR_DNI_defense_cooldown }
@@ -2050,6 +2140,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_DON > 0 }
                 NOT = { has_country_flag = ROS_UKR_DON_defense_cooldown }
@@ -2071,6 +2162,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_LUH > 0 }
                 NOT = { has_country_flag = ROS_UKR_LUH_defense_cooldown }
@@ -2092,6 +2184,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_ZAP > 0 }
                 NOT = { has_country_flag = ROS_UKR_ZAP_defense_cooldown }
@@ -2113,6 +2206,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_KHE > 0 }
                 NOT = { has_country_flag = ROS_UKR_KHE_defense_cooldown }
@@ -2134,6 +2228,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_MYK > 0 }
                 NOT = { has_country_flag = ROS_UKR_MYK_defense_cooldown }
@@ -2155,6 +2250,7 @@ UKR_UKR_defensive_category = {
         cost = 25
         days_re_enable = 30
         available = {
+            NOT = { has_global_flag = ROS_ukraina_koniec }
             ROS = {
                 check_variable = { ROS_UKR_ODE > 0 }
                 NOT = { has_country_flag = ROS_UKR_ODE_defense_cooldown }

@@ -70,7 +70,7 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_ideas = ROS_idea_ua_gospodarka add_to_variable = { ROS_front_ua = 2 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 }
+			add_ideas = ROS_idea_ua_gospodarka if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = ROS_ua_tt_cooldown hidden_effect = { clr_country_flag = ROS_UKR_VOL_cooldown clr_country_flag = ROS_UKR_RIV_cooldown clr_country_flag = ROS_UKR_LVI_cooldown clr_country_flag = ROS_UKR_ZAK_cooldown clr_country_flag = ROS_UKR_IVA_cooldown clr_country_flag = ROS_UKR_TER_cooldown clr_country_flag = ROS_UKR_CHE_cooldown clr_country_flag = ROS_UKR_KHM_cooldown clr_country_flag = ROS_UKR_ZHY_cooldown clr_country_flag = ROS_UKR_VIN_cooldown clr_country_flag = ROS_UKR_KYI_cooldown clr_country_flag = ROS_UKR_CHR_cooldown clr_country_flag = ROS_UKR_SUM_cooldown clr_country_flag = ROS_UKR_KHA_cooldown clr_country_flag = ROS_UKR_POL_cooldown clr_country_flag = ROS_UKR_CKA_cooldown clr_country_flag = ROS_UKR_KIR_cooldown clr_country_flag = ROS_UKR_DNI_cooldown clr_country_flag = ROS_UKR_DON_cooldown clr_country_flag = ROS_UKR_LUH_cooldown clr_country_flag = ROS_UKR_ZAP_cooldown clr_country_flag = ROS_UKR_KHE_cooldown clr_country_flag = ROS_UKR_MYK_cooldown clr_country_flag = ROS_UKR_ODE_cooldown } }
 		}
 	}
 
@@ -109,7 +109,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_to_variable = { ROS_front_ua = 4 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_tech_bonus = { name = ROS_ua_drony bonus = 1.0 uses = 2 category = drones }
+			if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = ROS_ua_tt_kha10 hidden_effect = { ROS_UKR_initialize = yes add_to_variable = { ROS_UKR_KHA = 10 } clamp_variable = { var = ROS_UKR_KHA min = 0 max = 100 } ROS_UKR_recalculate = yes } } add_tech_bonus = { name = ROS_ua_drony bonus = 1.0 uses = 2 category = drones }
 		}
 	}
 
@@ -136,7 +136,7 @@ focus_tree = {
 		available = { has_war_support > 0.35 }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_to_variable = { ROS_front_ua = 7 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_manpower = -20000
+			if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = ROS_ua_tt_dni15 hidden_effect = { ROS_UKR_initialize = yes add_to_variable = { ROS_UKR_DNI = 15 } clamp_variable = { var = ROS_UKR_DNI min = 0 max = 100 } ROS_UKR_recalculate = yes } } add_manpower = -20000
 		}
 	}
 
@@ -150,7 +150,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_to_variable = { ROS_front_ua = 5 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } army_experience = 10
+			if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = ROS_ua_tt_khe10b hidden_effect = { ROS_UKR_initialize = yes add_to_variable = { ROS_UKR_KHE = 10 } clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 } ROS_UKR_recalculate = yes } } army_experience = 10
 		}
 	}
 
@@ -164,7 +164,7 @@ focus_tree = {
 		cost = 7
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_to_variable = { ROS_front_ua = 10 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_manpower = -30000
+			if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = ROS_ua_tt_przelamanie hidden_effect = { ROS_UKR_initialize = yes add_to_variable = { ROS_UKR_KHE = 20 } clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 } add_to_variable = { ROS_UKR_MYK = 10 } clamp_variable = { var = ROS_UKR_MYK min = 0 max = 100 } ROS_UKR_recalculate = yes } } add_manpower = -30000
 		}
 	}
 
@@ -242,10 +242,10 @@ focus_tree = {
 		prerequisite = { focus = ROS_ua_rezerwy }
 		mutually_exclusive = { focus = ROS_ua_f_zamrozenie focus = ROS_ua_f_pokoj }
 		cost = 10
-		available = { custom_trigger_tooltip = { tooltip = ROS_req_front_75 check_variable = { ROS_front_ua > 74 } } }
+		available = { NOT = { has_global_flag = ROS_ukraina_koniec } custom_trigger_tooltip = { tooltip = ROS_req_dom_50 check_variable = { ROS_UKR_dominance > 49.99 } } }
 		ai_will_do = { factor = 30 }
 		completion_reward = {
-			set_global_flag = ROS_ukraina_koniec set_country_flag = ROS_ua_wynik_zwyciestwo add_ideas = ROS_idea_ua_zwyciestwo if = { limit = { has_idea = ROS_front_ukrainski } remove_ideas = ROS_front_ukrainski } news_event = { id = ukr.10 days = 1 } custom_effect_tooltip = WOS_tt_26 country_event = { id = ros.20 days = 30 }
+			if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } set_country_flag = ROS_ua_wynik_zwyciestwo } ROS_UKR_zakonczenie = yes custom_effect_tooltip = WOS_tt_26
 		}
 	}
 
@@ -257,10 +257,10 @@ focus_tree = {
 		prerequisite = { focus = ROS_ua_jency focus = ROS_ua_przelamanie focus = ROS_ua_linia }
 		mutually_exclusive = { focus = ROS_ua_f_zwyciestwo focus = ROS_ua_f_pokoj }
 		cost = 10
-		available = { custom_trigger_tooltip = { tooltip = ROS_req_front_40 check_variable = { ROS_front_ua > 39 } } }
+		available = { NOT = { has_global_flag = ROS_ukraina_koniec } custom_trigger_tooltip = { tooltip = ROS_req_dom_12 check_variable = { ROS_UKR_dominance > 11.99 } } }
 		ai_will_do = { factor = 20 }
 		completion_reward = {
-			set_global_flag = ROS_ukraina_koniec set_country_flag = ROS_ua_wynik_zamrozenie add_ideas = ROS_idea_ua_zamrozenie if = { limit = { has_idea = ROS_front_ukrainski } remove_ideas = ROS_front_ukrainski } news_event = { id = ukr.10 days = 1 } custom_effect_tooltip = WOS_tt_26 country_event = { id = ros.20 days = 30 }
+			if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } set_country_flag = ROS_ua_wynik_zamrozenie } ROS_UKR_zakonczenie = yes custom_effect_tooltip = WOS_tt_26
 		}
 	}
 
@@ -272,10 +272,10 @@ focus_tree = {
 		prerequisite = { focus = ROS_ua_jency focus = ROS_ua_weterani }
 		mutually_exclusive = { focus = ROS_ua_f_zwyciestwo focus = ROS_ua_f_zamrozenie }
 		cost = 8
-		available = { OR = { has_country_flag = ROS_ua_rozmowy_ustepstwa check_variable = { ROS_front_ua < 40 } } }
+		available = { NOT = { has_global_flag = ROS_ukraina_koniec } custom_trigger_tooltip = { tooltip = ROS_req_pokoj OR = { has_country_flag = ROS_ua_rozmowy_ustepstwa check_variable = { ROS_UKR_dominance < 12 } } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			set_global_flag = ROS_ukraina_koniec set_country_flag = ROS_ua_wynik_pokoj add_ideas = ROS_idea_ua_pokoj if = { limit = { has_idea = ROS_front_ukrainski } remove_ideas = ROS_front_ukrainski } news_event = { id = ukr.10 days = 1 } custom_effect_tooltip = WOS_tt_26 country_event = { id = ros.20 days = 30 }
+			if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } set_country_flag = ROS_ua_wynik_pokoj } ROS_UKR_zakonczenie = yes custom_effect_tooltip = WOS_tt_26
 		}
 	}
 

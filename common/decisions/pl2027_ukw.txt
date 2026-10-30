@@ -5,7 +5,7 @@ UKW_panel = {
 		visible = { original_tag = UKR country_exists = ROS ROS = { has_country_flag = ROS_etap_ukraina } NOT = { has_global_flag = ROS_ukraina_koniec } }
 		available = { check_variable = { UKR_zasoby > 9 } }
 		days_re_enable = 30
-		complete_effect = { add_to_variable = { UKR_zasoby = -8 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 } if = { limit = { country_exists = ROS } ROS = { add_to_variable = { ROS_front_ua = -3 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } } } }
+		complete_effect = { add_to_variable = { UKR_zasoby = -8 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 } if = { limit = { country_exists = ROS NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = UKR_tt_odbicie5 ROS = { hidden_effect = { ROS_UKR_odbicie_male = yes } } } }
 		ai_will_do = { base = 3 modifier = { factor = 3 check_variable = { UKR_zasoby > 40 } } modifier = { factor = 0 check_variable = { UKR_zasoby < 20 } } }
 	}
 	UKW_dec_pomoc = {

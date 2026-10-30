@@ -1,0 +1,65 @@
+SOJ_panel = {
+	SOJ_kkr_rosja = {
+		icon = generic_form_nation
+		cost = 50
+		visible = { original_tag = KKR country_exists = ROS NOT = { is_in_faction_with = ROS } }
+		available = { is_subject = no NOT = { has_war_with = ROS } OR = { has_government = conservative has_government = nationalist has_government = authoritarian_democrat } ROS = { NOT = { has_war_with = ROOT } OR = { is_in_faction = no is_faction_leader = yes } } }
+		days_re_enable = 180
+		complete_effect = { ROS = { country_event = { id = soj.1 days = 2 } } }
+		ai_will_do = { factor = 3 }
+	}
+	SOJ_kor_PLO_WLC = {
+		icon = generic_form_nation
+		cost = 30
+		visible = { original_tag = PLO country_exists = WLC NOT = { is_in_faction_with = WLC } }
+		available = { is_subject = no NOT = { has_war_with = WLC } OR = { is_in_faction = no is_faction_leader = yes } WLC = { is_subject = no NOT = { has_war_with = ROOT } } }
+		days_re_enable = 120
+		complete_effect = { WLC = { country_event = { id = soj.2 days = 2 } } }
+		ai_will_do = { factor = 2 }
+	}
+	SOJ_kor_PLO_KOC = {
+		icon = generic_form_nation
+		cost = 30
+		visible = { original_tag = PLO country_exists = KOC NOT = { is_in_faction_with = KOC } }
+		available = { is_subject = no NOT = { has_war_with = KOC } OR = { is_in_faction = no is_faction_leader = yes } KOC = { is_subject = no NOT = { has_war_with = ROOT } } }
+		days_re_enable = 120
+		complete_effect = { KOC = { country_event = { id = soj.2 days = 2 } } }
+		ai_will_do = { factor = 2 }
+	}
+	SOJ_kor_WLC_PLO = {
+		icon = generic_form_nation
+		cost = 30
+		visible = { original_tag = WLC country_exists = PLO NOT = { is_in_faction_with = PLO } }
+		available = { is_subject = no NOT = { has_war_with = PLO } OR = { is_in_faction = no is_faction_leader = yes } PLO = { is_subject = no NOT = { has_war_with = ROOT } } }
+		days_re_enable = 120
+		complete_effect = { PLO = { country_event = { id = soj.2 days = 2 } } }
+		ai_will_do = { factor = 2 }
+	}
+	SOJ_kor_WLC_KOC = {
+		icon = generic_form_nation
+		cost = 30
+		visible = { original_tag = WLC country_exists = KOC NOT = { is_in_faction_with = KOC } }
+		available = { is_subject = no NOT = { has_war_with = KOC } OR = { is_in_faction = no is_faction_leader = yes } KOC = { is_subject = no NOT = { has_war_with = ROOT } } }
+		days_re_enable = 120
+		complete_effect = { KOC = { country_event = { id = soj.2 days = 2 } } }
+		ai_will_do = { factor = 2 }
+	}
+	SOJ_kor_KOC_PLO = {
+		icon = generic_form_nation
+		cost = 30
+		visible = { original_tag = KOC country_exists = PLO NOT = { is_in_faction_with = PLO } }
+		available = { is_subject = no NOT = { has_war_with = PLO } OR = { is_in_faction = no is_faction_leader = yes } PLO = { is_subject = no NOT = { has_war_with = ROOT } } }
+		days_re_enable = 120
+		complete_effect = { PLO = { country_event = { id = soj.2 days = 2 } } }
+		ai_will_do = { factor = 2 }
+	}
+	SOJ_kor_KOC_WLC = {
+		icon = generic_form_nation
+		cost = 30
+		visible = { original_tag = KOC country_exists = WLC NOT = { is_in_faction_with = WLC } }
+		available = { is_subject = no NOT = { has_war_with = WLC } OR = { is_in_faction = no is_faction_leader = yes } WLC = { is_subject = no NOT = { has_war_with = ROOT } } }
+		days_re_enable = 120
+		complete_effect = { WLC = { country_event = { id = soj.2 days = 2 } } }
+		ai_will_do = { factor = 2 }
+	}
+}

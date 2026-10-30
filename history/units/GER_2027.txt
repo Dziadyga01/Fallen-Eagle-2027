@@ -1,0 +1,151 @@
+# 0.9.29: Bundeswehra na wschodzie – Niemcy zaczynają z wojskiem (wcześniej bez jednostek na starcie)
+division_template = {
+	name = "Brygada Zmechanizowana Bundeswehry"
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		armored_car = { x = 1 y = 1 }
+		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Brygada Grenadierów"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Brygada Grenadierów (zmot.)"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		name = "9. Brygada Zmechanizowana"
+		location = 17
+		division_template = "Brygada Zmechanizowana Bundeswehry"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "21. Brygada Zmechanizowana"
+		location = 98
+		division_template = "Brygada Zmechanizowana Bundeswehry"
+		start_experience_factor = 0.37
+	}
+	division = {
+		name = "37. Brygada Zmechanizowana"
+		location = 8797
+		division_template = "Brygada Zmechanizowana Bundeswehry"
+		start_experience_factor = 0.44
+	}
+	division = {
+		name = "41. Brygada Zmechanizowana"
+		location = 9306
+		division_template = "Brygada Zmechanizowana Bundeswehry"
+		start_experience_factor = 0.31
+	}
+	division = {
+		name = "12. Brygada Zmechanizowana"
+		location = 9308
+		division_template = "Brygada Zmechanizowana Bundeswehry"
+		start_experience_factor = 0.38
+	}
+	division = {
+		name = "14. Brygada Zmechanizowana"
+		location = 9316
+		division_template = "Brygada Zmechanizowana Bundeswehry"
+		start_experience_factor = 0.45
+	}
+	division = {
+		name = "1. Brygada Grenadierów"
+		location = 9326
+		division_template = "Brygada Grenadierów"
+		start_experience_factor = 0.32
+	}
+	division = {
+		name = "2. Brygada Grenadierów"
+		location = 9455
+		division_template = "Brygada Grenadierów"
+		start_experience_factor = 0.39
+	}
+	division = {
+		name = "3. Brygada Grenadierów"
+		location = 298
+		division_template = "Brygada Grenadierów"
+		start_experience_factor = 0.46
+	}
+	division = {
+		name = "4. Brygada Grenadierów"
+		location = 102
+		division_template = "Brygada Grenadierów"
+		start_experience_factor = 0.33
+	}
+	division = {
+		name = "5. Brygada Grenadierów"
+		location = 7108
+		division_template = "Brygada Grenadierów"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "6. Brygada Grenadierów"
+		location = 7107
+		division_template = "Brygada Grenadierów"
+		start_experience_factor = 0.47
+	}
+	division = {
+		name = "7. Brygada Grenadierów"
+		location = 454
+		division_template = "Brygada Grenadierów"
+		start_experience_factor = 0.34
+	}
+	division = {
+		name = "8. Brygada Grenadierów"
+		location = 1302
+		division_template = "Brygada Grenadierów"
+		start_experience_factor = 0.41
+	}
+	division = {
+		name = "1. Brygada Grenadierów (zmot.)"
+		location = 17
+		division_template = "Brygada Grenadierów (zmot.)"
+		start_experience_factor = 0.48
+	}
+	division = {
+		name = "2. Brygada Grenadierów (zmot.)"
+		location = 98
+		division_template = "Brygada Grenadierów (zmot.)"
+		start_experience_factor = 0.35
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = { type = ranged_equipment amount = 14000 producer = GER }
+	add_equipment_to_stockpile = { type = apc_equipment amount = 1200 producer = GER }
+	add_equipment_to_stockpile = { type = motorized_equipment amount = 700 producer = GER }
+	add_equipment_to_stockpile = { type = armored_car_equipment amount = 300 producer = GER }
+	add_equipment_to_stockpile = { type = light_artillery_equipment amount = 1100 producer = GER }
+	add_equipment_to_stockpile = { type = support_equipment amount = 1000 producer = GER }
+}

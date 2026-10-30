@@ -4,7 +4,7 @@ add_namespace = dom
 country_event = {
 	id = dom.11
 	hidden = yes
-	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = PL2027_polska is_subject = yes NOT = { has_game_rule = { rule = PL2027_MARIONETKI option = DOZWOLONE } } NOT = { AND = { tag = PLC SMR = { exists = yes } is_subject_of = SMR } } NOT = { AND = { tag = WOJ KPR = { exists = yes } is_subject_of = KPR } } NOT = { AND = { tag = LEG MPR = { exists = yes } is_subject_of = MPR } } NOT = { AND = { tag = GNL NML = { exists = yes } is_subject_of = NML } } NOT = { AND = { tag = PSN GER = { exists = yes } is_subject_of = GER } } NOT = { is_subject_of = POL } NOT = { has_country_flag = UNI_federacja } }
+	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = PL2027_polska is_subject = yes NOT = { has_game_rule = { rule = PL2027_MARIONETKI option = DOZWOLONE } } NOT = { AND = { tag = PLC SMR = { exists = yes } is_subject_of = SMR } } NOT = { AND = { tag = WOJ KPR = { exists = yes } is_subject_of = KPR } } NOT = { AND = { tag = LEG MPR = { exists = yes } is_subject_of = MPR } } NOT = { AND = { tag = GNL NML = { exists = yes } is_subject_of = NML } } NOT = { AND = { tag = PSN GER = { exists = yes } is_subject_of = GER } } NOT = { is_subject_of = GER } NOT = { AND = { tag = BRZ is_subject_of = BRO } } NOT = { is_subject_of = POL } NOT = { has_country_flag = UNI_federacja } }
 	mean_time_to_happen = { days = 7 }
 	immediate = { random_country = { limit = { ROOT = { is_subject_of = PREV } } annex_country = { target = ROOT transfer_troops = yes } } }
 	option = {

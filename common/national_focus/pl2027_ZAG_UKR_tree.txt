@@ -363,7 +363,7 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			army_experience = 10 if = { limit = { country_exists = ROS } ROS = { add_to_variable = { ROS_front_ua = -4 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } } }
+			army_experience = 10 if = { limit = { country_exists = ROS NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = UKR_tt_odbicie5 ROS = { hidden_effect = { ROS_UKR_odbicie_male = yes } } }
 		}
 	}
 
@@ -433,7 +433,7 @@ focus_tree = {
 		available = { check_variable = { UKR_zasoby > 24 } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
-			add_to_variable = { UKR_zasoby = -15 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 } if = { limit = { country_exists = ROS } ROS = { add_to_variable = { ROS_front_ua = -6 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } } }
+			add_to_variable = { UKR_zasoby = -15 } clamp_variable = { var = UKR_zasoby min = 0 max = 100 } set_variable = { UKR_dm_a = UKR_zasoby } divide_variable = { UKR_dm_a = 800 } set_variable = { UKR_dm_b = UKR_zasoby } divide_variable = { UKR_dm_b = 1000 } if = { limit = { country_exists = ROS NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = UKR_tt_odbicie10 ROS = { hidden_effect = { ROS_UKR_odbicie_duze = yes } } }
 		}
 	}
 
@@ -444,7 +444,7 @@ focus_tree = {
 		y = 6
 		prerequisite = { focus = UKR_b_o_kontrofensywa }
 		cost = 7
-		available = { custom_trigger_tooltip = { tooltip = UKR_req_front OR = { has_global_flag = ROS_ukraina_koniec ROS = { check_variable = { ROS_front_ua < 60 } } } } }
+		available = { custom_trigger_tooltip = { tooltip = UKR_req_front OR = { has_global_flag = ROS_ukraina_koniec AND = { country_exists = ROS ROS = { check_variable = { ROS_UKR_dominance < 30 } } } } } }
 		ai_will_do = { factor = 10 }
 		completion_reward = {
 			add_ideas = UKR_idea_niezlomna news_event = { id = ukw.30 days = 1 }

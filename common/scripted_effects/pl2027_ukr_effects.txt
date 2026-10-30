@@ -1,4 +1,14 @@
-UKR_miesiac = {
-	if = { limit = { country_exists = ROS ROS = { has_country_flag = ROS_etap_ukraina NOT = { has_global_flag = ROS_ukraina_koniec } } } ROS = { add_to_variable = { ROS_front_ua = -1 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } if = { limit = { has_idea = ROS_idea_ua_gospodarka } add_to_variable = { ROS_front_ua = 1 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } } if = { limit = { has_idea = ROS_idea_ua_linia check_variable = { ROS_front_ua < 40 } } add_to_variable = { ROS_front_ua = 1 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } } } }
-	if = { limit = { NOT = { has_global_flag = UKR_cd_3 } country_exists = ROS ROS = { has_country_flag = ROS_etap_ukraina NOT = { has_global_flag = ROS_ukraina_koniec } check_variable = { ROS_front_ua < 35 } } } random = { chance = 40 set_global_flag = { flag = UKR_cd_3 days = 180 } ROS = { country_event = { id = ukr.3 days = 1 } } } } 
+# 0.9.28: wspólne zakończenie wojny na Ukrainie (zakres: ROS). Wywoływane przez trzy fokusy końcowe drzewka ROS_ukraina_tree;
+# wykonuje się dokładnie raz – kolejne wywołania nic nie robią (także w zapisach, w których wojnę zakończył stary system).
+ROS_UKR_zakonczenie = {
+	if = {
+		limit = { NOT = { has_global_flag = ROS_ukraina_koniec } }
+		set_global_flag = ROS_ukraina_koniec
+		if = { limit = { has_country_flag = ROS_ua_wynik_zwyciestwo } add_ideas = ROS_idea_ua_zwyciestwo }
+		else_if = { limit = { has_country_flag = ROS_ua_wynik_zamrozenie } add_ideas = ROS_idea_ua_zamrozenie }
+		else = { if = { limit = { NOT = { has_country_flag = ROS_ua_wynik_pokoj } } set_country_flag = ROS_ua_wynik_pokoj } add_ideas = ROS_idea_ua_pokoj }
+		if = { limit = { has_idea = ROS_front_ukrainski } remove_ideas = ROS_front_ukrainski }
+		news_event = { id = ukr.10 days = 1 }
+		country_event = { id = ros.20 days = 30 }
+	}
 }

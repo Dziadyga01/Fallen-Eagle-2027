@@ -9,7 +9,7 @@ country_event = {
 	option = {
 		name = ukr.1.a
 		ai_chance = { base = 1 }
-		load_focus_tree = { tree = ROS_ukraina_tree keep_completed = yes } if = { limit = { NOT = { has_variable = ROS_front_ua } } set_variable = { ROS_front_ua = 45 } }
+		load_focus_tree = { tree = ROS_ukraina_tree keep_completed = yes } ROS_UKR_initialize = yes
 	}
 }
 
@@ -22,12 +22,12 @@ country_event = {
 	option = {
 		name = ukr.2.a
 		ai_chance = { base = 3 }
-		add_to_variable = { ROS_front_ua = 8 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_manpower = -15000 add_war_support = 0.02
+		if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = ROS_ua_tt_khe20 hidden_effect = { ROS_UKR_initialize = yes add_to_variable = { ROS_UKR_KHE = 20 } clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 } ROS_UKR_recalculate = yes } } add_manpower = -15000 add_war_support = 0.02 if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } country_event = { id = ukr.3 days = 45 random_days = 15 } }
 	}
 	option = {
 		name = ukr.2.b
 		ai_chance = { base = 3 }
-		add_to_variable = { ROS_front_ua = 4 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_manpower = -5000
+		if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = ROS_ua_tt_khe10 hidden_effect = { ROS_UKR_initialize = yes add_to_variable = { ROS_UKR_KHE = 10 } clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 } ROS_UKR_recalculate = yes } } add_manpower = -5000
 	}
 }
 
@@ -40,12 +40,12 @@ country_event = {
 	option = {
 		name = ukr.3.a
 		ai_chance = { base = 3 }
-		add_to_variable = { ROS_front_ua = 4 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_manpower = -20000
+		add_manpower = -20000
 	}
 	option = {
 		name = ukr.3.b
 		ai_chance = { base = 2 }
-		add_to_variable = { ROS_front_ua = -3 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_stability = 0.01
+		if = { limit = { NOT = { has_global_flag = ROS_ukraina_koniec } } custom_effect_tooltip = ROS_ua_tt_khe_10 hidden_effect = { ROS_UKR_initialize = yes add_to_variable = { ROS_UKR_KHE = -10 } clamp_variable = { var = ROS_UKR_KHE min = 0 max = 100 } ROS_UKR_recalculate = yes } } add_stability = 0.01
 	}
 }
 
@@ -58,7 +58,7 @@ country_event = {
 	option = {
 		name = ukr.4.a
 		ai_chance = { base = 3 }
-		set_country_flag = ROS_ua_rozmowy_twarde add_to_variable = { ROS_front_ua = 2 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 }
+		set_country_flag = ROS_ua_rozmowy_twarde add_war_support = 0.02
 	}
 	option = {
 		name = ukr.4.b
@@ -68,7 +68,7 @@ country_event = {
 	option = {
 		name = ukr.4.c
 		ai_chance = { base = 1 }
-		add_to_variable = { ROS_front_ua = 1 } clamp_variable = { var = ROS_front_ua min = 0 max = 100 } add_war_support = 0.03
+		add_war_support = 0.03
 	}
 }
 

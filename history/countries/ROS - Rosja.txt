@@ -255,7 +255,9 @@ add_offsite_building = { type = industrial_complex level = 20 }
 add_offsite_building = { type = arms_factory level = 15 }
 add_manpower = 120000
 add_ideas = ROS_zaplecze_poza_mapa
-set_variable = { ROS_front_ua = 45 }
+# 0.9.29: Rosja i Białoruś w jednym sojuszu od startu
+create_faction = ROS_ZWIAZKOWE
+add_to_faction = BLR
 # --- gnr ---
 recruit_character = ROS_gen_gerasimow
 recruit_character = ROS_gen_surowikin

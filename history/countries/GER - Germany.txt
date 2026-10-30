@@ -207,6 +207,11 @@ set_technology = {
 	ww2_ballistic_missles = 1
 }
 set_research_slots = 3
+# 0.9.29: Niemcy silniejsze – Bundeswehra na starcie i przemysł poza mapą (większość Niemiec leży poza mapą)
+oob = "GER_2027"
+add_offsite_building = { type = industrial_complex level = 15 }
+add_offsite_building = { type = arms_factory level = 12 }
+add_manpower = 150000
 set_stability = 0.6
 set_war_support = 0.3
 set_politics = {

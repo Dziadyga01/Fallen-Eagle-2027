@@ -1,0 +1,23 @@
+characters = {
+	    KUJ_arkadiusz_fajok = {
+		name = KUJ_arkadiusz_fajok
+		portraits = {
+			civilian = {
+				large = KUJ_arkadiusz_fajok
+				small = KUJ_arkadiusz_fajok_advisor
+
+			}
+		}
+		country_leader = {
+			ideology = centrist
+			expire = "2065.1.1.1"
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = KUJ_fajok
+			traits = { 
+				captain_of_industry
+			}
+		}
+	}
+}

@@ -7,7 +7,12 @@ state = {
 		rubber = 3
 	}
 	history = {
-		owner = TUC
+		2027.11.11 = {
+			owner = TUC
+			remove_core_of = POL
+		}
+		owner = POL
+		add_core_of = POL
 		add_core_of = TUC
 		victory_points = { 8014 1 }
 		victory_points = { 8015 1 }

@@ -4,6 +4,14 @@ scripted_gui = {
 		context_type = player_context
 		visible = { has_global_flag = PL2027_SE_widoczny }
 		triggers = {
+			pl2027_se_obraz_cpz_koniec_visible = { has_global_flag = PL2027_SE_cpz_koniec }
+			pl2027_se_obraz_cpz_ocalona_visible = { has_global_flag = PL2027_SE_cpz_ocalona }
+			pl2027_se_obraz_cpz_belweder_visible = { has_global_flag = PL2027_SE_cpz_belweder }
+			pl2027_se_obraz_cpz_rzad_wygrywa_visible = { has_global_flag = PL2027_SE_cpz_rzad_wygrywa }
+			pl2027_se_obraz_cpz_warszawa_visible = { has_global_flag = PL2027_SE_cpz_warszawa }
+			pl2027_se_obraz_cpz_wojna_visible = { has_global_flag = PL2027_SE_cpz_wojna }
+			pl2027_se_obraz_cpz_pierwsze_panstwo_visible = { has_global_flag = PL2027_SE_cpz_pierwsze_panstwo }
+			pl2027_se_obraz_cpz_trybunal_visible = { has_global_flag = PL2027_SE_cpz_trybunal }
 			pl2027_se_obraz_ivrp_sejm_visible = { has_global_flag = PL2027_SE_ivrp_sejm }
 			pl2027_se_obraz_ivrp_prezydent_visible = { has_global_flag = PL2027_SE_ivrp_prezydent }
 			pl2027_se_obraz_ivrp_mafia_visible = { has_global_flag = PL2027_SE_ivrp_mafia }
@@ -31,6 +39,14 @@ scripted_gui = {
 		effects = {
 			pl2027_se_zamknij_click = {
 				clr_global_flag = PL2027_SE_widoczny
+				clr_global_flag = PL2027_SE_cpz_koniec
+				clr_global_flag = PL2027_SE_cpz_ocalona
+				clr_global_flag = PL2027_SE_cpz_belweder
+				clr_global_flag = PL2027_SE_cpz_rzad_wygrywa
+				clr_global_flag = PL2027_SE_cpz_warszawa
+				clr_global_flag = PL2027_SE_cpz_wojna
+				clr_global_flag = PL2027_SE_cpz_pierwsze_panstwo
+				clr_global_flag = PL2027_SE_cpz_trybunal
 				clr_global_flag = PL2027_SE_ivrp_sejm
 				clr_global_flag = PL2027_SE_ivrp_prezydent
 				clr_global_flag = PL2027_SE_ivrp_mafia

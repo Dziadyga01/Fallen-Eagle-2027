@@ -1,0 +1,191 @@
+CPZ_panel = {
+	CPZ_d_zgromadzenia = {
+		icon = generic_political_discourse
+		cost = 15
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+		available = { always = yes }
+		days_re_enable = 21
+		complete_effect = { custom_effect_tooltip = CPZ_tt_b512cdc6 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -2 } add_to_variable = { global.CPZ_napiecie = -3 } add_to_variable = { global.CPZ_policja = -1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_strefa = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+		available = { always = yes }
+		days_re_enable = 30
+		complete_effect = { custom_effect_tooltip = CPZ_tt_1a19d3a8 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 3 } add_to_variable = { global.CPZ_policja = 2 } add_to_variable = { global.CPZ_napiecie = 3 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_prez = 2 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_odprawa = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = CPZ_tt_1dee2505 hidden_effect = { add_to_variable = { global.CPZ_policja = 5 } add_to_variable = { global.CPZ_p_ko = 1 } add_to_variable = { global.CPZ_p_psl = 1 } add_to_variable = { global.CPZ_p_p2050 = 1 } add_to_variable = { global.CPZ_p_lewica = 1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_posilki = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = CPZ_tt_2e333f5e hidden_effect = { add_to_variable = { global.CPZ_policja = 2 } add_to_variable = { global.CPZ_kryzys = 3 } add_to_variable = { global.CPZ_separatyzm = 3 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_rzecznik = {
+		icon = generic_political_discourse
+		cost = 20
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+		available = { always = yes }
+		days_re_enable = 21
+		complete_effect = { custom_effect_tooltip = CPZ_tt_82868ee7 hidden_effect = { add_to_variable = { global.CPZ_rzad = 2 } add_to_variable = { global.CPZ_napiecie = -1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_wywiad = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+		available = { always = yes }
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = CPZ_tt_c8f36a47 hidden_effect = { add_to_variable = { global.CPZ_rzad = 3 } add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_fakty = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = CPZ_tt_53267f68 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -3 } add_to_variable = { global.CPZ_kryzys = -1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_marszalek = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+		available = { NOT = { has_global_flag = CPZ_wojna } }
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = CPZ_tt_33fd2432 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -3 } add_to_variable = { global.CPZ_p_ko = 2 } add_to_variable = { global.CPZ_p_psl = 2 } add_to_variable = { global.CPZ_p_p2050 = 2 } add_to_variable = { global.CPZ_p_lewica = 2 } CPZ_przelicz = yes } set_country_flag = CPZ_mediacja }
+		ai_will_do = { factor = 3 }
+	}
+	CPZ_d_ustawa = {
+		icon = generic_political_discourse
+		cost = 60
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+		available = { NOT = { has_global_flag = CPZ_wojna } has_political_power > 59 }
+		fire_only_once = yes
+		complete_effect = { custom_effect_tooltip = CPZ_tt_2a03f951 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -4 } add_to_variable = { global.CPZ_p_ko = -2 } add_to_variable = { global.CPZ_p_psl = -2 } add_to_variable = { global.CPZ_p_p2050 = -2 } add_to_variable = { global.CPZ_p_lewica = -2 } add_to_variable = { global.CPZ_prez = -2 } CPZ_przelicz = yes } set_global_flag = CPZ_projekt_ustawy }
+		ai_will_do = { factor = 3 }
+	}
+	CPZ_d_samorzady = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = CPZ_tt_ae4002bf hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -4 } add_to_variable = { global.CPZ_p_ko = 1 } add_to_variable = { global.CPZ_p_psl = 1 } add_to_variable = { global.CPZ_p_p2050 = 1 } add_to_variable = { global.CPZ_p_lewica = 1 } add_to_variable = { global.CPZ_rzad = -1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_mon = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } has_country_flag = CPZ_mon }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = CPZ_tt_2e2ac977 hidden_effect = { add_to_variable = { global.CPZ_wojsko = 5 } add_to_variable = { global.CPZ_rzad = -1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_a2d52d1a hidden_effect = { add_to_variable = { global.CPZ_p_psl = 4 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_apel_wojsko = {
+		icon = generic_political_discourse
+		cost = 25
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } has_global_flag = CPZ_etap1 }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = CPZ_tt_ca784efe hidden_effect = { add_to_variable = { global.CPZ_wojsko = 4 } add_to_variable = { global.CPZ_kryzys = -1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_okragly_stol = {
+		icon = generic_political_discourse
+		cost = 80
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } NOT = { has_global_flag = CPZ_stabilizacja } }
+		available = { NOT = { has_global_flag = CPZ_wojna } custom_trigger_tooltip = { tooltip = CPZ_req_okragly check_variable = { global.CPZ_kryzys < 65 } NOT = { AND = { has_idea = CPZ_i_spor check_variable = { global.CPZ_kryzys > 54 } } } check_variable = { global.CPZ_koalicja > 44 } check_variable = { global.CPZ_wojsko > 54 } check_variable = { global.CPZ_policja > 44 } OR = { has_country_flag = CPZ_mediacja has_global_flag = CPZ_projekt_ustawy has_country_flag = CPZ_kompromis } } }
+		days_re_enable = 90
+		complete_effect = { country_event = { id = cpz.700 days = 3 } }
+		ai_will_do = { factor = 0 }
+	}
+	CPZ_d_ot = {
+		icon = generic_political_discourse
+		cost = 50
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } has_global_flag = CPZ_wojna }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { add_manpower = 6000 army_experience = 5 custom_effect_tooltip = CPZ_tt_f0d24d1d hidden_effect = { add_to_variable = { global.CPZ_wojsko = -3 } add_to_variable = { global.CPZ_separatyzm = -2 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 4 }
+	}
+	CPZ_d_palac = {
+		icon = generic_political_discourse
+		cost = 35
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } NOT = { has_country_flag = CPZ_oboz_prez } has_country_flag = CPZ_kanal_palac }
+		available = { NOT = { has_global_flag = CPZ_wojna } }
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = CPZ_tt_92843f4f hidden_effect = { add_to_variable = { global.CPZ_kryzys = -4 } add_to_variable = { global.CPZ_prez = -1 } add_to_variable = { global.CPZ_rzad = -1 } CPZ_przelicz = yes } set_country_flag = CPZ_mediacja if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = -0.02 tooltip_side = CPZ_bop_rzad } } }
+		ai_will_do = { factor = 3 }
+	}
+	CPZ_d_rozmowy = {
+		icon = generic_political_discourse
+		cost = 30
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } NOT = { has_country_flag = CPZ_oboz_prez } has_country_flag = CPZ_kanal_opozycja }
+		available = { NOT = { has_global_flag = CPZ_wojna } }
+		days_re_enable = 45
+		complete_effect = { custom_effect_tooltip = CPZ_tt_6d7bc33a hidden_effect = { add_to_variable = { global.CPZ_napiecie = -3 } add_to_variable = { global.CPZ_kryzys = -2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_eb6fddb7 hidden_effect = { add_to_variable = { global.CPZ_p_lewica = -3 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_ue = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } NOT = { has_country_flag = CPZ_oboz_prez } has_country_flag = CPZ_ue }
+		available = { always = yes }
+		days_re_enable = 90
+		complete_effect = { custom_effect_tooltip = CPZ_tt_0c16d6df hidden_effect = { add_to_variable = { global.CPZ_rezerwy = 8 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_212cc9c2 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_prez = 2 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_rezerwy = {
+		icon = generic_political_discourse
+		cost = 10
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_rezerwy check_variable = { global.CPZ_rezerwy > 9 } } }
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = CPZ_tt_380eab58 hidden_effect = { add_to_variable = { global.CPZ_rezerwy = -10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_11c508b6 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -3 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_26446a70 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 3 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 3 } add_to_variable = { global.CPZ_lo_wielkopolskie = 3 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 3 } add_to_variable = { global.CPZ_lo_podlaskie = 3 } add_to_variable = { global.CPZ_lo_lubelskie = 3 } add_to_variable = { global.CPZ_lo_lodzkie = 3 } add_to_variable = { global.CPZ_lo_mazowieckie = 3 } add_to_variable = { global.CPZ_lo_zachodnie = 3 } CPZ_przelicz = yes } add_equipment_to_stockpile = { type = ranged_equipment amount = 300 } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_partia_psl = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } NOT = { has_country_flag = CPZ_oboz_prez } NOT = { has_global_flag = CPZ_wyszla_psl } }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = CPZ_tt_a2f0dfc6 hidden_effect = { add_to_variable = { global.CPZ_p_psl = 10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_db706096 hidden_effect = { add_to_variable = { global.CPZ_rzad = -1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_partia_p2050 = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } NOT = { has_country_flag = CPZ_oboz_prez } NOT = { has_global_flag = CPZ_wyszla_p2050 } }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = CPZ_tt_38cc0102 hidden_effect = { add_to_variable = { global.CPZ_p_p2050 = 10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_db706096 hidden_effect = { add_to_variable = { global.CPZ_rzad = -1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+	CPZ_d_partia_lewica = {
+		icon = generic_political_discourse
+		cost = 40
+		visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } NOT = { has_country_flag = CPZ_oboz_prez } NOT = { has_global_flag = CPZ_wyszla_lewica } }
+		available = { always = yes }
+		days_re_enable = 60
+		complete_effect = { custom_effect_tooltip = CPZ_tt_aa45cdc4 hidden_effect = { add_to_variable = { global.CPZ_p_lewica = 10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_db706096 hidden_effect = { add_to_variable = { global.CPZ_rzad = -1 } CPZ_przelicz = yes } }
+		ai_will_do = { factor = 2 }
+	}
+}

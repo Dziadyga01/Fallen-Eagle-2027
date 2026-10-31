@@ -1,5 +1,4 @@
 ﻿capital = 49
-oob = "KRW_2027"
 set_research_slots = 3
 set_stability = 0.45
 set_war_support = 0.35
@@ -55,3 +54,7 @@ set_popularities = {
 recruit_character = KRW_leader
 # --- wpl ---
 set_variable = { REG_BYD = 15 }
+# 0.10.2: jednostki tylko w scenariuszu 11.11.2027
+2027.11.11 = {
+	oob = "KRW_2027"
+}

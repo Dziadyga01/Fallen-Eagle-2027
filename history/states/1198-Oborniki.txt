@@ -8,7 +8,12 @@ state = {
 		steel = 1
 	}
 	history = {
-		owner = PSN
+		2027.11.11 = {
+			owner = PSN
+			remove_core_of = POL
+		}
+		owner = POL
+		add_core_of = POL
 		add_core_of = PSN
 		victory_points = { 7298 2 }
 		victory_points = { 7291 3 }

@@ -1,0 +1,302 @@
+# 0.10.1: Wojsko Polskie – scenariusz 1.10.2026 (Rzeczpospolita jeszcze jednym państwem)
+division_template = {
+	name = "Brygada Zmechanizowana WP"
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Brygada Obrony Terytorialnej"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+units = {
+	division = {
+		name = "1. Brygada Zmechanizowana"
+		location = 1384
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "2. Brygada Obrony Terytorialnej"
+		location = 1384
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "4. Brygada Obrony Terytorialnej"
+		location = 1590
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "5. Brygada Zmechanizowana"
+		location = 1559
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "6. Brygada Obrony Terytorialnej"
+		location = 1559
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "8. Brygada Obrony Terytorialnej"
+		location = 1275
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "9. Brygada Zmechanizowana"
+		location = 671
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "10. Brygada Obrony Terytorialnej"
+		location = 671
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "12. Brygada Obrony Terytorialnej"
+		location = 5486
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "13. Brygada Zmechanizowana"
+		location = 8
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "14. Brygada Obrony Terytorialnej"
+		location = 8
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "16. Brygada Obrony Terytorialnej"
+		location = 749
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "17. Brygada Zmechanizowana"
+		location = 293
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "18. Brygada Obrony Terytorialnej"
+		location = 293
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "20. Brygada Obrony Terytorialnej"
+		location = 4489
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "21. Brygada Zmechanizowana"
+		location = 7232
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "22. Brygada Obrony Terytorialnej"
+		location = 7232
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "24. Brygada Obrony Terytorialnej"
+		location = 7216
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "25. Brygada Zmechanizowana"
+		location = 549
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "26. Brygada Obrony Terytorialnej"
+		location = 549
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "28. Brygada Obrony Terytorialnej"
+		location = 4211
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "29. Brygada Zmechanizowana"
+		location = 1225
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "30. Brygada Obrony Terytorialnej"
+		location = 1225
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "32. Brygada Obrony Terytorialnej"
+		location = 7446
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "33. Brygada Zmechanizowana"
+		location = 860
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "34. Brygada Obrony Terytorialnej"
+		location = 860
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "36. Brygada Obrony Terytorialnej"
+		location = 1486
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "37. Brygada Zmechanizowana"
+		location = 7123
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "38. Brygada Obrony Terytorialnej"
+		location = 7123
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "40. Brygada Obrony Terytorialnej"
+		location = 7161
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "41. Brygada Zmechanizowana"
+		location = 8926
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "42. Brygada Obrony Terytorialnej"
+		location = 8926
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "44. Brygada Obrony Terytorialnej"
+		location = 6620
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "45. Brygada Zmechanizowana"
+		location = 44
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "46. Brygada Obrony Terytorialnej"
+		location = 44
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "48. Brygada Obrony Terytorialnej"
+		location = 1170
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "49. Brygada Zmechanizowana"
+		location = 1718
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "50. Brygada Obrony Terytorialnej"
+		location = 1718
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "52. Brygada Obrony Terytorialnej"
+		location = 72
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "53. Brygada Zmechanizowana"
+		location = 7741
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "54. Brygada Obrony Terytorialnej"
+		location = 7741
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "56. Brygada Obrony Terytorialnej"
+		location = 8234
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "57. Brygada Zmechanizowana"
+		location = 8158
+		division_template = "Brygada Zmechanizowana WP"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "58. Brygada Obrony Terytorialnej"
+		location = 8158
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "60. Brygada Obrony Terytorialnej"
+		location = 1427
+		division_template = "Brygada Obrony Terytorialnej"
+		start_experience_factor = 0.3
+	}
+}
+instant_effect = {
+	add_equipment_to_stockpile = { type = ranged_equipment amount = 20000 producer = POL }
+	add_equipment_to_stockpile = { type = motorized_equipment amount = 1200 producer = POL }
+	add_equipment_to_stockpile = { type = light_artillery_equipment amount = 900 producer = POL }
+	add_equipment_to_stockpile = { type = support_equipment amount = 1200 producer = POL }
+}

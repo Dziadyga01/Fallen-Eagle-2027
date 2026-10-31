@@ -1,0 +1,23 @@
+defined_text = {
+	name = GetCPZPasmo
+	text = {
+		trigger = { check_variable = { global.CPZ_kryzys > -1 } check_variable = { global.CPZ_kryzys < 25 } }
+		localization_key = CPZ_pasmo_0
+	}
+	text = {
+		trigger = { check_variable = { global.CPZ_kryzys > 24.99 } check_variable = { global.CPZ_kryzys < 50 } }
+		localization_key = CPZ_pasmo_1
+	}
+	text = {
+		trigger = { check_variable = { global.CPZ_kryzys > 49.99 } check_variable = { global.CPZ_kryzys < 75 } }
+		localization_key = CPZ_pasmo_2
+	}
+	text = {
+		trigger = { check_variable = { global.CPZ_kryzys > 74.99 } check_variable = { global.CPZ_kryzys < 90 } }
+		localization_key = CPZ_pasmo_3
+	}
+	text = {
+		trigger = { check_variable = { global.CPZ_kryzys > 89.99 } check_variable = { global.CPZ_kryzys < 101 } }
+		localization_key = CPZ_pasmo_4
+	}
+}

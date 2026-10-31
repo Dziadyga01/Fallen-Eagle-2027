@@ -76,11 +76,7 @@ sub_units = {
 			defence = 0.1
 			movement = 0.2
 		}
-		low_urban = {
-			attack = 0.15
-			defence = 0.1
-			movement = 0.2
-		}		
+		
 		river = {
 			attack = 0.05
 			movement = 0.05
@@ -186,9 +182,6 @@ sub_units = {
 			ranged_equipment = 80
 		}
 
-		low_urban = {
-			defence = 0.1
-		}
 	}
 
 	bicycle_battalion = {
@@ -261,9 +254,7 @@ sub_units = {
 		urban = {
 			movement = 0.2
 		}
-		low_urban = {
-			movement = 0.25
-		}		
+		
 		desert = {
 			movement = 0.05
 		}
@@ -830,10 +821,7 @@ sub_units = {
 			attack = -0.2
 			movement = -0.2
 		}		
-		low_urban = {
-			attack = -0.1
-			defence = -0.02
-		}		
+		
 		river = {
 			attack = -0.2
 			movement = -0.2

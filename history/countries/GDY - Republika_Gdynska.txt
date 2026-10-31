@@ -1,5 +1,4 @@
 ﻿capital = 966
-oob = "GDY_2027"
 set_research_slots = 3
 set_stability = 0.45
 set_war_support = 0.35
@@ -62,3 +61,7 @@ recruit_character = GDY_dor_puzdrowska
 recruit_character = GDY_dor_wronski
 recruit_character = GDY_dor_kaszubowski
 recruit_character = GDY_dor_gajewski
+# 0.10.2: jednostki tylko w scenariuszu 11.11.2027
+2027.11.11 = {
+	oob = "GDY_2027"
+}

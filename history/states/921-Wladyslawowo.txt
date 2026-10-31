@@ -10,7 +10,12 @@ state = {
 	}
 	state_category = rural
 	history = {
-		owner = GDY
+		2027.11.11 = {
+			owner = GDY
+			remove_core_of = POL
+		}
+		owner = POL
+		add_core_of = POL
 		add_core_of = GDY
 		victory_points = { 8855 1 }
 		victory_points = { 8856 1 }

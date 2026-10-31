@@ -1,0 +1,5 @@
+on_actions = {
+	on_weekly_POL = { effect = { CPZ_tydzien = yes } }
+	on_daily_POL = { effect = { if = { limit = { date < 2027.1.1 NOT = { has_global_flag = CPZ_scenariusz } NOT = { has_global_flag = PL2027_start_listopad } } CPZ_start = yes } if = { limit = { date > 2027.11.6 has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_gz } } clr_global_flag = CPZ_ocalona CPZ_godzina_zero = yes } } }
+	on_civil_war_end = { effect = { if = { limit = { has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } set_global_flag = CPZ_wojna_koniec if = { limit = { tag = POL } POL = { country_event = { id = cpz.520 days = 1 } } } else = { country_event = { id = cpz.521 days = 1 } } } } }
+}

@@ -224,10 +224,6 @@ set_popularities = {
 	social_liberal = 100
 }
 
-puppet = CZE
-puppet = PMN
-puppet = SLS
-puppet = LIT
 
 recruit_character = GER_ursula
 
@@ -236,3 +232,10 @@ recruit_character = GER_gen_breuer
 recruit_character = GER_gen_mais
 recruit_character = GER_gen_vollmer
 recruit_character = GER_gen_domrose
+# 0.10.2: podwładni Niemiec dopiero w scenariuszu 11.11.2027
+2027.11.11 = {
+	puppet = CZE
+	puppet = PMN
+	puppet = SLS
+	puppet = LIT
+}

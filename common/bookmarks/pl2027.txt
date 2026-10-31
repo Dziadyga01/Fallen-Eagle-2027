@@ -1,5 +1,33 @@
 bookmarks = {
 	bookmark = {
+		name = "PL2027_BOOKMARK_CPZ_NAME"
+		desc = "PL2027_BOOKMARK_CPZ_DESC"
+		date = 2026.10.1.12
+		picture = "GFX_pl2027_select_prolog"
+		default_country = "POL"
+		"POL" = {
+			history = "PL2027_BM_CPZ_POL"
+			ideology = social_liberal
+			ideas = { }
+		}
+		"KPR" = {
+			minor = yes
+			history = "PL2027_BM_CPZ_KPR"
+			ideology = conservative
+			ideas = { }
+		}
+		"GER" = {
+			history = "PL2027_BM_CPZ_GER"
+			ideology = social_liberal
+			ideas = { }
+		}
+		"ROS" = {
+			history = "PL2027_BM_CPZ_ROS"
+			ideology = authoritarian_democrat
+			ideas = { }
+		}
+	}
+	bookmark = {
 		name = "PL2027_BOOKMARK_NAME"
 		desc = "PL2027_BOOKMARK_DESC"
 		date = 2027.11.11.12

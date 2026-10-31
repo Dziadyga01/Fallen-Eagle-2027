@@ -1,0 +1,117 @@
+# The Fallen Eagle 2027 – Czarny Październik: drzewko stabilizacji państwa
+focus_tree = {
+	id = POL_cpz_stabilizacja_tree
+	country = {
+		factor = 0
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 1000 }
+	initial_show_position = { focus = CPZ_s_start }
+
+	focus = {
+		id = CPZ_s_start
+		icon = GFX_pl2027_081_pojednanie_2
+		x = 5
+		y = 0
+		cost = 1
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_74453c5b hidden_effect = { add_to_variable = { global.CPZ_kryzys = -3 } add_to_variable = { global.CPZ_napiecie = -2 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_s_ustawa
+		icon = GFX_pl2027_081_konstytucja_2
+		x = 3
+		y = 1
+		prerequisite = { focus = CPZ_s_start }
+		cost = 2
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_52d501cb hidden_effect = { add_to_variable = { global.CPZ_kryzys = -5 } add_to_variable = { global.CPZ_prez = -3 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_s_sedziowie
+		icon = GFX_pl2027_081_sad_0
+		x = 3
+		y = 2
+		prerequisite = { focus = CPZ_s_ustawa }
+		cost = 2
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_c1427dc6 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -6 } add_to_variable = { global.CPZ_napiecie = -4 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_s_wybory
+		icon = GFX_pl2027_081_wybory_3
+		x = 5
+		y = 1
+		prerequisite = { focus = CPZ_s_start }
+		cost = 2
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_2a413d29 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -4 } add_to_variable = { global.CPZ_prez = -2 } add_to_variable = { global.CPZ_rzad = -2 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_s_regiony
+		icon = GFX_pl2027_081_administracja_1
+		x = 7
+		y = 1
+		prerequisite = { focus = CPZ_s_start }
+		cost = 2
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_680c1f7f hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -8 } add_to_variable = { global.CPZ_koalicja = 1 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_s_administracje
+		icon = GFX_pl2027_081_integracja_0
+		x = 7
+		y = 2
+		prerequisite = { focus = CPZ_s_regiony }
+		cost = 2
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_de525ae5 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -8 } CPZ_przelicz = yes } if = { limit = { check_variable = { global.CPZ_w_pomorskie < 3 } } set_variable = { global.CPZ_w_pomorskie = 0 } } if = { limit = { check_variable = { global.CPZ_w_kujawsko_pomorskie < 3 } } set_variable = { global.CPZ_w_kujawsko_pomorskie = 0 } } if = { limit = { check_variable = { global.CPZ_w_wielkopolskie < 3 } } set_variable = { global.CPZ_w_wielkopolskie = 0 } } if = { limit = { check_variable = { global.CPZ_w_warminsko_mazurskie < 3 } } set_variable = { global.CPZ_w_warminsko_mazurskie = 0 } } if = { limit = { check_variable = { global.CPZ_w_podlaskie < 3 } } set_variable = { global.CPZ_w_podlaskie = 0 } } if = { limit = { check_variable = { global.CPZ_w_lubelskie < 3 } } set_variable = { global.CPZ_w_lubelskie = 0 } } if = { limit = { check_variable = { global.CPZ_w_lodzkie < 3 } } set_variable = { global.CPZ_w_lodzkie = 0 } } if = { limit = { check_variable = { global.CPZ_w_mazowieckie < 3 } } set_variable = { global.CPZ_w_mazowieckie = 0 } } if = { limit = { check_variable = { global.CPZ_w_zachodnie < 3 } } set_variable = { global.CPZ_w_zachodnie = 0 } }
+		}
+	}
+
+	focus = {
+		id = CPZ_s_sluzby
+		icon = GFX_pl2027_081_wojsko_1
+		x = 5
+		y = 2
+		prerequisite = { focus = CPZ_s_wybory }
+		cost = 2
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_4c779c55 hidden_effect = { add_to_variable = { global.CPZ_wojsko = 5 } add_to_variable = { global.CPZ_policja = 5 } add_to_variable = { global.CPZ_kryzys = -3 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_s_final
+		icon = GFX_pl2027_081_polska_1
+		x = 5
+		y = 3
+		prerequisite = { focus = CPZ_s_sedziowie }
+		prerequisite = { focus = CPZ_s_sluzby }
+		prerequisite = { focus = CPZ_s_administracje }
+		cost = 3
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_ocalona check_variable = { global.CPZ_kryzys < 25 } check_variable = { global.CPZ_separatyzm < 40 } check_variable = { global.CPZ_wojsko > 59 } NOT = { has_global_flag = CPZ_wojna } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			CPZ_ocalenie = yes
+		}
+	}
+}

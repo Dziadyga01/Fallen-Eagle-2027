@@ -3,7 +3,9 @@ on_actions = {
 		effect = {
 			# 0.9.29: scenariusz „Prolog” usunięty – zawsze start 11.11.2027
 			# start 11.11.2027 – Polska podzielona, bez zadnego zdarzenia prologu
-			if = { limit = { always = yes }
+			# 0.10.0: scenariusz I „Czarny Październik” (1.10.2026) – jedna Rzeczpospolita
+			if = { limit = { date < 2027.1.1 } CPZ_start = yes }
+			else = {
 				set_global_flag = PL2027_start_listopad
 				random_list = { 50 = { set_global_flag = EK_los_pomorze } 50 = { } }
 				if = { limit = { country_exists = POL POL = { is_ai = no } country_exists = SMR } SMR = { change_tag_from = POL } }

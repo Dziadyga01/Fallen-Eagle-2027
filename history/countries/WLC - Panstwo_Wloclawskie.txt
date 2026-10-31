@@ -1,5 +1,4 @@
 ﻿capital = 147
-oob = "WLC_2027"
 set_research_slots = 3
 set_stability = 0.45
 set_war_support = 0.35
@@ -66,3 +65,7 @@ recruit_character = LOK_wlc_zawislanski
 # --- tp2 ---
 set_variable = { TPZ_lokale = 8 }
 set_variable = { TPZ_dostawy = 55 }
+# 0.10.2: jednostki tylko w scenariuszu 11.11.2027
+2027.11.11 = {
+	oob = "WLC_2027"
+}

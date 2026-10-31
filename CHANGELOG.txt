@@ -2,6 +2,177 @@
 =================================
 Najnowsza wersja na górze. Wersje „testowe” nie były jeszcze sprawdzone w silniku gry.
 
+The Fallen Eagle Alpha 0.10.7 (wersja testowa) – nazwa moda bez zmian; KONIEC RZECZYPOSPOLITEJ: SUPER-WYDARZENIA I CHAOS
+Podstawa: 0.10.6. Nie sprawdzone w grze.
+
+- 8 super-wydarzeń w systemie super eventów: Prezydent w Trybunale, Pierwsze nowe państwo, Polacy przeciw Polakom, Stolica się rozpada,
+  Rząd utrzymuje władzę, Belweder zwycięża, Rzeczpospolita przetrwała, Koniec Rzeczypospolitej. Ilustracje tymczasowo z istniejących super eventów.
+- 18 nowych zdarzeń: 12 zdarzeń chaosu od etapu I (blokady dróg, paliwo, bankomaty, straże obywatelskie, blackout, strajk w kopalniach,
+  dezinformacja, ucieczka z miast, bunt w areszcie, magazyn broni, budżet sejmiku, kibice) i 6 zdarzeń wojennych.
+- 11.11.2027 zawsze świat rozbitej Polski – wszystkie państwa są wolne, nawet po ocaleniu Rzeczypospolitej.
+- AI Rzeczypospolitej prowadzi do rozpadu: nie ratuje Polski, częściej eskaluje, a przy komputerowej Polsce kryzys rośnie szybciej.
+- Okna zdarzeń bez źródeł (zostają w dokumentacji); wyróżnienia białe zamiast żółtych.
+- Lista grafik do przygotowania: docs/GRAFIKI_CZARNY_PAZDZIERNIK.md (super-wydarzenia, ilustracje zdarzeń, portrety).
+
+The Fallen Eagle Alpha 0.10.6 (wersja testowa) – nazwa moda bez zmian; PAŹDZIERNIK 2026 GODZINA PO GODZINIE
+Podstawa: 0.10.5. Nie sprawdzone w grze. Wszystkie nowe zdarzenia mają źródła w docs/TK_2026_LIVELOG.md; w grze streszczenia, bez cytatów.
+
+1. ZDARZENIA OD PIERWSZYCH DNI GRY (wcześniej między 1 a 30 października nic się nie działo)
+- 13.10 opinia Komisji Weneckiej i reakcje rządu i Pałacu.
+- 14.10 prezydent: Berek nie jest sędzią; ślubowanie Macieja Berka w Sejmie; zamieszki przed Trybunałem (blokada wjazdu sędziom, 3 zatrzymanych).
+- 22.10 prezes TK kieruje sprawę sędzi Bentkowskiej do rzecznika dyscyplinarnego.
+- 23.10 oświadczenie pięciu sędziów wybranych przez Sejm.
+- 26–27.10 pismo Kancelarii Prezydenta: Berek nie objął urzędu.
+- 30.10 wieczór „białe kaski” przed Trybunałem – wywiad Adriana Zandberga.
+- 31.10 rano Święczkowski znowu pod bramą Trybunału.
+- 3.11 Zgromadzenie Ogólne sędziów Trybunału (zwołane naprawdę; przebieg to już historia alternatywna).
+
+2. DRZEWKO BLIŻEJ PRAWDZIWYCH WYDARZEŃ
+- „Opinia Komisji Weneckiej” (dostępna od 13.10), „Kordon przy alei Szucha”, „Projekt resetu Trybunału”; opisy fokusów nawiązują do sporu o ślubowania.
+
+3. ZABEZPIECZENIE STARTU
+- Jeśli scenariusz 1.10.2026 nie wystartuje przy uruchomieniu gry, uruchamia go pierwszy dzień rozgrywki (zdarzenia, drzewko, duchy, pasek władzy).
+
+The Fallen Eagle Alpha 0.10.5 (wersja testowa) – nazwa moda bez zmian; UKŁAD DRZEWKA RZECZYPOSPOLITEJ
+Podstawa: 0.10.4. Nie sprawdzone w grze.
+
+- Okienko fokusów ciągłych zasłaniało gałąź odbudowy – przeniesione pod drzewko.
+- Nowy układ: pod przygotowaniami (A) leżą obok siebie ratowanie Polski (B) i rząd Tuska (D), odbudowa (H) między nimi, więc linie są krótkie.
+  Fokusy wojenne (C) i obóz prezydencki (E) w środku, rozpad (F) i administracja regionalna (G) po prawej. Bez długich linii przez całe drzewko.
+
+The Fallen Eagle Alpha 0.10.4 (wersja testowa) – nazwa moda bez zmian; ORĘDZIE PREMIERA I BALANS KRYZYSU
+Podstawa: 0.10.3. Nic z tego nie było jeszcze uruchomione w grze.
+
+- Orędzie premiera z 31.10.2026, 20:00 – streszczenie wystąpienia (Polsat News), bez cytatów. docs/TK_2026_LIVELOG.md uzupełniony.
+- Wystąpienia polityków 30–31.10 mają teraz trzy reakcje rządu do wyboru: stanowczo, wezwanie do spokoju albo bez komentarza.
+- Balans: przewaga obozu prezydenckiego nad rządem podnosi kryzys co tydzień dopiero przy różnicy powyżej 10 punktów.
+- Poprawka: tygodniowy spadek spójności koalicji nie działał (zmienna była nadpisywana średnią partii). Teraz PSL i Polska 2050 tracą poparcie przy kryzysie
+  powyżej 64, Lewica powyżej 74, a przy kryzysie poniżej 40 wszystkie partie koalicji zyskują.
+- Symulacja tygodniowego modelu (skrypt, nie silnik gry): bez działań gracza Rzeczpospolita rozpada się po wojnie domowej (Godzina Zero ok. 27–52 tygodni);
+  aktywny gracz (fokusy przygotowawcze i decyzje) dochodzi do stabilizacji; rozkaz użycia siły pod Trybunałem prowadzi do wojny w pierwszym tygodniu.
+
+The Fallen Eagle Alpha 0.10.3 (wersja testowa) – nazwa moda bez zmian; DRZEWKO RZECZYPOSPOLITEJ 1.10.2026 (95 FOKUSÓW)
+Podstawa: 0.10.2. Nic z tego nie było jeszcze uruchomione w grze. Opis: docs/CZARNY_PAZDZIERNIK.md.
+
+1. POPRAWKA DRZEWKA
+- Polska w scenariuszu 2026 dostawała stare drzewko rządu z 2027 roku. Teraz drzewko scenariusza wybiera się samo (waga dla POL przed 2027 r.)
+  i jest dodatkowo wczytywane w pierwszym zdarzeniu. Scenariusz 11.11.2027 bez zmian.
+
+2. JEDNO DRZEWKO, OSIEM GAŁĘZI (95 fokusów)
+- A. Polska przed kryzysem (15): polityka, bezpieczeństwo, administracja; fokus „Ostatnia szansa na kompromis” dodaje opcję E pod Trybunałem.
+- B. Uratowanie Polski (10): od przywrócenia dialogu do „Rzeczpospolita przetrwała”.
+- C. Wspólne fokusy wojenne (8): obie strony wojny domowej.
+- D. Rząd Donalda Tuska (16) i E. Obóz prezydencko-opozycyjny (16) – każda strona widzi tylko swoją gałąź; po zwycięstwie obozu trzy warianty władzy.
+- F. Rozpad Rzeczypospolitej (12): każdy fokus przesuwa rozpad najwyżej o krok.
+- G. Tymczasowa administracja regionalna (10): dla ścieżki „wybierz województwo”; wzmacnia przyszłe państwo i pozwala przejąć je od razu.
+- H. Odbudowa zjednoczonej Polski (8).
+- Dawne drzewko stabilizacji zastąpione gałęzią B.
+
+3. NOWE MECHANIKI
+- Lojalność administracji, rezerwy państwowe, lojalność każdego z dziewięciu regionów (hamuje rozpad województwa), partie KO, PSL, Polska 2050 i Lewica
+  (partia poniżej 25 wychodzi z koalicji), jedność obozu prezydenckiego.
+- Balance of Power „Władza w Rzeczypospolitej” (rząd – obóz prezydencki).
+- Pięć duchów narodowych na starcie, zmieniających się wraz z kryzysem; duchy czasowe z fokusów wojennych i odbudowy.
+- Kluczowa decyzja pod Trybunałem z nowymi wartościami; wojna domowa od kryzysu 80; porozumienie z prezydentem ją blokuje.
+- Nowe decyzje: negocjacje z Pałacem, rozmowy z opozycją, pomoc UE, rezerwy państwowe, ustępstwa dla partii koalicji.
+- Wartości startowe: kryzys 30, wojsko 60, policja 65, napięcie 35, stabilność ok. 47%.
+
+The Fallen Eagle Alpha 0.10.2 (wersja testowa) – nazwa moda bez zmian; JEDNA POLSKA JUŻ NA EKRANIE WYBORU PAŃSTWA
+Podstawa: 0.10.1. Nic z tego nie było jeszcze uruchomione w grze.
+
+- Poprawka: przy zakładce 1.10.2026 ekran wyboru państwa pokazywał wszystkie państwa regionalne osobno, bo wcielenie
+  do Rzeczypospolitej działo się dopiero po kliknięciu „Start”. Teraz pliki historii mają dwie daty:
+  - bez daty (1.10.2026): wszystkie stany państw regionalnych należą do Rzeczypospolitej (POL ma na nich rdzenie);
+  - blok 2027.11.11: stany wracają do państw regionalnych, rdzeń POL znika – zakładka 11.11.2027 działa jak dotąd.
+- Jednostki państw regionalnych wczytują się tylko w scenariuszu 11.11.2027 (przy uwolnieniu w 2026 r. wracają jak wcześniej).
+- Niemieccy podwładni (Czechy, Litwa, Eurokomisariaty Pomorze i Śląsk) dopiero od 11.11.2027.
+- Ciechocinek dopisany do województwa kujawsko-pomorskiego w mechanice rozpadu.
+- Wcielanie w skrypcie startowym zostało jako zabezpieczenie (wykona się tylko, jeśli jakieś państwo regionalne jednak istnieje).
+
+The Fallen Eagle Alpha 0.10.1 (wersja testowa) – nazwa moda bez zmian; UPADEK RZECZYPOSPOLITEJ: NOWA MECHANIKA ROZPADU
+Podstawa: 0.10.0. Nic z tego nie było jeszcze uruchomione w grze. Opis: docs/CZARNY_PAZDZIERNIK.md.
+
+1. JEDNA POLSKA 1.10.2026 (przebudowa startu)
+- Rzeczpospolita wciela na starcie wszystkie polskie państwa regionalne i frakcje Warszawy – żadne nie ma ziem, Warszawa nie jest podzielona.
+  Państwa nie są usuwane: zostają ich rdzenie, przywódcy, ustroje i jednostki, które wracają przy uwolnieniu.
+- Wojsko Polskie (45 brygad) i rząd Donalda Tuska. Niemcy, Czechy, Litwa, Białoruś, Rosja i Ukraina w swoich granicach.
+- Scenariusz 11.11.2027 bez zmian – pliki historii nie są ruszane, start 2026 działa tylko przez skrypt.
+
+2. ROZPAD OD PODSTAW (zamiast zdarzeń dawnego prologu)
+- Etap I osłabienie władzy → etap II administracje wojewódzkie → etap III kryzysy regionalne (decyzje gracza) →
+  etap IV regiony autonomiczne → etap V niepodległość miast i mniejszych regionów (po jednym, nie wszędzie naraz) →
+  etap VI Godzina Zero, lokalne wojny i sojusze w świecie 11.11.2027.
+- Nowe państwo przejmuje swoje stany i dostaje przywódców, ustrój oraz jednostki z pliku historii.
+- Rozpad Warszawy: dziewięć frakcji, każda z własnym warunkiem.
+
+3. WOJNA DOMOWA I WYBÓR STRONY
+- Drugi ośrodek władzy powstaje dopiero w chwili wybuchu wojny (start_civil_war): Rzeczpospolita Polska (obóz prezydencki).
+  Podział ziem zależy od poparcia obozu prezydenckiego, podział wojska – od lojalności armii. Konfederacja i Korona mogą zostać neutralne.
+- „Kto ma prawo rządzić Polską?”: rząd, obóz prezydencki albo neutralność → województwo (także Warszawa) → państwo,
+  które gracz przejmuje w chwili uzyskania niepodległości.
+
+4. WSKAŹNIKI
+- Dodane: napięcie społeczne i nastroje separatystyczne w regionach (zamiast zaufania społecznego i autonomii regionów).
+
+The Fallen Eagle Alpha 0.10.0 (wersja testowa) – nazwa moda bez zmian; SCENARIUSZ I „CZARNY PAŹDZIERNIK” (1.10.2026)
+Podstawa: 0.9.31. Nic z tego nie było jeszcze uruchomione w grze. Opis mechaniki: docs/CZARNY_PAZDZIERNIK.md, źródła: docs/TK_2026_LIVELOG.md.
+
+1. NOWY PIERWSZY SCENARIUSZ (zamiast usuniętego prologu 22.10.2027; scenariusz 11.11.2027 bez zmian i nadal domyślny)
+- Start 1 października 2026: Polska jest jednym państwem (regiony jako województwa), premier Donald Tusk.
+  Niemcy bez polskich podwładnych, Czechy i Litwa niezależne, Rosja i Białoruś w sojuszu.
+- Mechanika kryzysu: kryzys konstytucyjny 0–100 (pod kontrolą / polaryzacja / paraliż / zagrożenie rozpadem / możliwa wojna domowa)
+  oraz lojalność wojska i policji, poparcie rządu i obozu prezydencko-opozycyjnego, stabilność koalicji, autonomia regionów i zaufanie społeczne.
+- Panel „Kryzys konstytucyjny” z decyzjami rządu (demonstracje, policja, media, instytucje, wojsko) i drzewko kryzysowe rządu (18 fokusów).
+
+2. 30–31 PAŹDZIERNIKA GODZINA PO GODZINIE
+- Ok. 35 zdarzeń z prawdziwego przebiegu kryzysu wokół Trybunału, każde z godziną, opisem, stanowiskami stron i źródłem
+  (streszczenia bez cytatów). Trzy rodzaje okien: zdarzenie, przemówienie (z portretem), wpis z X.
+- Kluczowa decyzja „PREZYDENT POD TRYBUNAŁEM!” (opcje A–D; C i D to historia alternatywna).
+- Orędzie premiera z 31.10 (20:00) przygotowane technicznie – treść do uzupełnienia po wystąpieniu.
+- Wypowiedź Janusza Korwin-Mikkego o wojsku nie jest w grze – brak zweryfikowanego źródła z 2026 r.
+- Reguła gry „Czarny Październik”: pełny (godzina po godzinie) albo skrócony (tylko decyzje). Gra nie pozwala skryptom pauzować –
+  zdarzenie „Nadchodzi przesilenie” zaleca prędkość 1.
+
+3. OD 1 LISTOPADA 2026 – HISTORIA ALTERNATYWNA
+- Rozpad stopniowy: paraliż instytucji → żądania regionów (istniejące zdarzenia prologu) → administracje tymczasowe
+  w kolejnych województwach → państwa regionalne powstają po jednym → Godzina Zero i świat z 11.11.2027 (najpóźniej 10.11.2027).
+- Wojna domowa (fikcja moda): rząd Koalicji 15 Października kontra obóz prezydencko-opozycyjny (Kancelaria Prezydenta).
+  Regiony, wojsko i policja wybierają osobno. Wybór strony: rząd, obóz prezydencki albo neutralność i wybór województwa,
+  a potem państwa regionalnego. Rozpad Warszawy: osiem frakcji, każda z własnym warunkiem.
+- Droga ocalenia: okrągły stół w sprawie Trybunału i drzewko stabilizacji. Ostatni fokus zachowuje jedność Rzeczypospolitej.
+
+4. UWAGI
+- Brakujące portrety (m.in. Kaczyński, Żurek, Zandberg, Bosak, Kosiniak-Kamysz, Korwin-Mikke, Święczkowski, Korwin-Piotrowska):
+  wystarczy wgrać pliki do gfx/leaders/CPZ/<osoba>.dds i przebudować.
+- W tym scenariuszu wojna domowa zaczyna się przez zdarzenie, nie przez fokus (tego wymaga scenariusz).
+
+The Fallen Eagle Alpha 0.9.31 (wersja testowa) – nazwa moda bez zmian; PORZĄDKI W ERROR.LOG
+Podstawa: 0.9.30. Na podstawie error.log autora (ok. 242 tys. wpisów). Nic z tego nie było jeszcze uruchomione w grze.
+
+1. PLIKI GRY PODSTAWOWEJ (ok. 97% wpisów w logu)
+- Pliki gry podstawowej dla krajów, których nie ma w scenariuszu 2027, odwoływały się do ideologii, technologii i sprzętu
+  usuniętych w modzie. Mod zastępuje je pustymi plikami o tych samych nazwach (jak wcześniej np. decisions/AFG.txt):
+  lokalizacja skryptowa (m.in. francuska i rosyjska – sama ta dwójka dawała ponad 200 tys. błędów), drzewka, postacie,
+  decyzje i kategorie decyzji, idee krajów, rajdy, strategie AI, nazwy dywizji i okrętów, on_actions dodatków.
+  Ogólne pliki gry (prawa gospodarcze, poboru i handlu, decyzje stabilności, kategorie ogólne, 00_on_actions) zostają.
+- 356 krajów gry podstawowej dostało pusty plik historii (komunikat „is missing a history file”).
+
+2. BŁĘDY W PLIKACH MODA
+- Kalendarz po etapach rozpadu: usuwanie modyfikatorów faz tylko u krajów, które je mają (425 błędów co miesiąc).
+- 68 decyzji miało warunek flagi w „allowed” (gra tego nie przyjmuje) – warunek przeniesiony do „visible”.
+- Usunięte odwołania do ideologii narodowosocjalistycznej i podideologii neonazistowskiej (nie istnieją w modzie i nie mają istnieć),
+  w tym wpis „Neonazizm” w przeglądarce podideologii. Rosja: poparcie ideologii sumuje się do 100.
+- Codzienność Romanowskiego: warunki zmiennych zapisane poprawnie (bez zmiany treści).
+- Jednostki: usunięty teren „low_urban”, którego ta wersja gry nie zna. Technologie: usunięte modyfikatory budynków spoza gry
+  i doktryny spoza moda. Kolory: usunięty błędny wpis „Pzn”. U Brata Jana: strefa zdemilitaryzowana nie jest już wpisana jako budynek.
+- Wspólnota Brodnicka, Brzozie Polskie, Powiat Iławski i Związek Kurzętnicki mają wreszcie polskie nazwy (wcześniej gra pokazywała skróty).
+
+3. CZEGO NIE RUSZAŁEM
+- Okno dyplomacji i polityki (ok. 500 wpisów „Could not find …”): pliki interfejsu moda są starsze niż wersja gry;
+  do poprawki potrzebne są aktualne pliki interfejsu z gry.
+- Komunikaty „recruit_character should only happen in game/history files” to ostrzeżenia gry – rekrutacja postaci działa.
+- Pozostałe ogólne pliki gry podstawowej (operacje wywiadu, doktryny, AI) dają jeszcze kilka tysięcy wpisów przy wczytywaniu.
+
 The Fallen Eagle Alpha 0.9.30 (wersja testowa) – nazwa moda bez zmian; EUROKOMISARIATY NIE ZNIKAJĄ
 Podstawa: 0.9.29. Nic z tego nie było jeszcze uruchomione w grze.
 

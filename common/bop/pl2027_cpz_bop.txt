@@ -1,0 +1,46 @@
+# The Fallen Eagle 2027 – Czarny Październik: Władza w Rzeczypospolitej (-1 rząd, +1 obóz prezydencko-opozycyjny)
+CPZ_bop = {
+	initial_value = 0
+	left_side = CPZ_bop_rzad
+	right_side = CPZ_bop_prez
+	decision_category = CPZ_panel
+	range = {
+		id = CPZ_bop_rownowaga
+		min = -0.2
+		max = 0.2
+		modifier = { stability_factor = 0.02 }
+	}
+	side = {
+		id = CPZ_bop_rzad
+		icon = GFX_idea_DU_IVRP_republika_sejmowa
+		range = {
+			id = CPZ_bop_rzad_przewaga
+			min = -0.6
+			max = -0.2
+			modifier = { political_power_gain = 0.10 }
+		}
+		range = {
+			id = CPZ_bop_rzad_dominacja
+			min = -1
+			max = -0.6
+			modifier = { political_power_gain = 0.15 stability_factor = -0.03 }
+		}
+	}
+	side = {
+		id = CPZ_bop_prez
+		icon = GFX_idea_DU_IVRP_rzady_prezydenckie
+		range = {
+			id = CPZ_bop_prez_przewaga
+			min = 0.2
+			max = 0.6
+			modifier = { stability_factor = -0.05 war_support_factor = 0.03 }
+		}
+		range = {
+			id = CPZ_bop_prez_dominacja
+			min = 0.6
+			max = 1
+			modifier = { stability_factor = -0.10 political_power_gain = -0.10 }
+			on_activate = { add_to_variable = { global.CPZ_kryzys = 5 } CPZ_przelicz = yes }
+		}
+	}
+}

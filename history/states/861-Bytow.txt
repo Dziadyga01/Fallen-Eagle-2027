@@ -9,7 +9,12 @@ state = {
 		steel = 2
 	}
 	history = {
-		owner = KPM
+		2027.11.11 = {
+			owner = KPM
+			remove_core_of = POL
+		}
+		owner = POL
+		add_core_of = POL
 		add_core_of = KPM
 		victory_points = { 8952 2 }
 		victory_points = { 8962 2 }

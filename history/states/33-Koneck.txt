@@ -8,7 +8,12 @@ state = {
 		steel = 3
 	}
 	history = {
-		owner = WLC
+		2027.11.11 = {
+			owner = WLC
+			remove_core_of = POL
+		}
+		owner = POL
+		add_core_of = POL
 		add_core_of = WLC
 		victory_points = { 459 1 }
 		victory_points = { 8110 1 }

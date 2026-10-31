@@ -1,0 +1,1407 @@
+# The Fallen Eagle 2027 – Czarny Październik: Rzeczpospolita 1.10.2026 (95 fokusów: A przed kryzysem, B ratowanie Polski, C wojna – obie strony,
+# D rząd Donalda Tuska, E obóz prezydencko-opozycyjny, F rozpad, G administracja regionalna, H odbudowa)
+focus_tree = {
+	id = POL_cpz_kryzys_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 200
+			tag = POL
+			date < 2027.1.1
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = { x = 50 y = 2600 }
+	initial_show_position = { focus = CPZ_P01 }
+
+	focus = {
+		id = CPZ_P01
+		icon = GFX_pl2027_081_polska_1
+		x = 6
+		y = 0
+		cost = 0.29
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 15 set_country_flag = CPZ_system_kryzysowy custom_effect_tooltip = CPZ_tt_298826f9
+		}
+	}
+
+	focus = {
+		id = CPZ_P02
+		icon = GFX_pl2027_081_rada_1
+		x = 2
+		y = 1
+		prerequisite = { focus = CPZ_P01 }
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 25 custom_effect_tooltip = CPZ_tt_7651499e hidden_effect = { add_to_variable = { global.CPZ_administracja = 5 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_P03
+		icon = GFX_pl2027_081_dyplomacja_2
+		x = 1
+		y = 2
+		prerequisite = { focus = CPZ_P02 }
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_eec9976a hidden_effect = { add_to_variable = { global.CPZ_napiecie = -8 } CPZ_przelicz = yes } set_country_flag = CPZ_kanal_palac custom_effect_tooltip = CPZ_tt_7da414b1 if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = -0.02 tooltip_side = CPZ_bop_rzad } }
+		}
+	}
+
+	focus = {
+		id = CPZ_P06
+		icon = GFX_pl2027_081_media_3
+		x = 3
+		y = 2
+		prerequisite = { focus = CPZ_P02 }
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 20 custom_effect_tooltip = CPZ_tt_54212bb6 hidden_effect = { add_to_variable = { global.CPZ_rzad = 5 } CPZ_przelicz = yes } if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = -0.03 tooltip_side = CPZ_bop_rzad } }
+		}
+	}
+
+	focus = {
+		id = CPZ_P08
+		icon = GFX_pl2027_081_pojednanie_3
+		x = 0
+		y = 3
+		prerequisite = { focus = CPZ_P03 }
+		cost = 0.57
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_064448d3 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -10 } CPZ_przelicz = yes } set_country_flag = CPZ_kanal_opozycja custom_effect_tooltip = CPZ_tt_0f3e9ee9
+		}
+	}
+
+	focus = {
+		id = CPZ_P12
+		icon = GFX_pl2027_081_parlament_2
+		x = 2
+		y = 3
+		prerequisite = { focus = CPZ_P06 }
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_c2ee869f hidden_effect = { add_to_variable = { global.CPZ_p_ko = 8 } add_to_variable = { global.CPZ_p_psl = 8 } add_to_variable = { global.CPZ_p_p2050 = 8 } add_to_variable = { global.CPZ_p_lewica = 8 } add_to_variable = { global.CPZ_rzad = 3 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_P10
+		icon = GFX_pl2027_081_ludzie_3
+		x = 4
+		y = 3
+		prerequisite = { focus = CPZ_P06 }
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.04 custom_effect_tooltip = CPZ_tt_cb24f0ef hidden_effect = { add_to_variable = { global.CPZ_napiecie = -6 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_P15
+		icon = GFX_pl2027_081_konstytucja_0
+		x = 1
+		y = 4
+		prerequisite = { focus = CPZ_P08 }
+		prerequisite = { focus = CPZ_P12 }
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_1a185e1e hidden_effect = { add_to_variable = { global.CPZ_kryzys = -10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_9b11887e
+		}
+	}
+
+	focus = {
+		id = CPZ_P07
+		icon = GFX_pl2027_081_milicja_0
+		x = 6
+		y = 1
+		prerequisite = { focus = CPZ_P01 }
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_2b56f9c2 hidden_effect = { add_to_variable = { global.CPZ_policja = 8 } add_to_variable = { global.CPZ_napiecie = 5 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_P09
+		icon = GFX_pl2027_081_wojsko_4
+		x = 8
+		y = 1
+		prerequisite = { focus = CPZ_P01 }
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_e8f3e965 hidden_effect = { add_to_variable = { global.CPZ_wojsko = 8 } CPZ_przelicz = yes } set_country_flag = CPZ_mon custom_effect_tooltip = CPZ_tt_aef487f0
+		}
+	}
+
+	focus = {
+		id = CPZ_P04
+		icon = GFX_pl2027_081_sad_1
+		x = 7
+		y = 2
+		prerequisite = { focus = CPZ_P07 focus = CPZ_P09 }
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wenecja date > 2026.10.13 } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_81504c82 hidden_effect = { add_to_variable = { global.CPZ_rzad = 5 } add_to_variable = { global.CPZ_kryzys = -5 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_P05
+		icon = GFX_pl2027_081_administracja_2
+		x = 10
+		y = 1
+		prerequisite = { focus = CPZ_P01 }
+		cost = 0.57
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_3dd68496 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 6 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 6 } add_to_variable = { global.CPZ_lo_wielkopolskie = 6 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 6 } add_to_variable = { global.CPZ_lo_podlaskie = 6 } add_to_variable = { global.CPZ_lo_lubelskie = 6 } add_to_variable = { global.CPZ_lo_lodzkie = 6 } add_to_variable = { global.CPZ_lo_mazowieckie = 6 } add_to_variable = { global.CPZ_lo_zachodnie = 6 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_e727eda7 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -3 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_P13
+		icon = GFX_pl2027_081_integracja_1
+		x = 9
+		y = 2
+		prerequisite = { focus = CPZ_P05 }
+		cost = 0.57
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_4b6e741c hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 8 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 8 } add_to_variable = { global.CPZ_lo_wielkopolskie = 8 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 8 } add_to_variable = { global.CPZ_lo_podlaskie = 8 } add_to_variable = { global.CPZ_lo_lubelskie = 8 } add_to_variable = { global.CPZ_lo_lodzkie = 8 } add_to_variable = { global.CPZ_lo_mazowieckie = 8 } add_to_variable = { global.CPZ_lo_zachodnie = 8 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_7651499e hidden_effect = { add_to_variable = { global.CPZ_administracja = 5 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_P14
+		icon = GFX_pl2027_081_wyposazenie_0
+		x = 11
+		y = 2
+		prerequisite = { focus = CPZ_P05 }
+		cost = 0.57
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_b47052f4 hidden_effect = { add_to_variable = { global.CPZ_rezerwy = 10 } CPZ_przelicz = yes } add_equipment_to_stockpile = { type = ranged_equipment amount = 500 } add_equipment_to_stockpile = { type = support_equipment amount = 100 }
+		}
+	}
+
+	focus = {
+		id = CPZ_P11
+		icon = GFX_pl2027_081_dyplomacja_3
+		x = 11
+		y = 3
+		prerequisite = { focus = CPZ_P14 }
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 15 set_country_flag = CPZ_ue custom_effect_tooltip = CPZ_tt_ba83db45 custom_effect_tooltip = CPZ_tt_3236e35b hidden_effect = { add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_S01
+		icon = GFX_pl2027_081_dyplomacja_4
+		x = 3
+		y = 6
+		prerequisite = { focus = CPZ_P03 focus = CPZ_P08 focus = CPZ_P15 }
+		cost = 0.71
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_pokoj NOT = { has_global_flag = CPZ_wojna } check_variable = { global.CPZ_kryzys < 60 } OR = { has_country_flag = CPZ_kanal_palac has_country_flag = CPZ_kanal_opozycja has_country_flag = CPZ_mediacja has_country_flag = CPZ_kompromis has_global_flag = CPZ_projekt_ustawy } } }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_1a185e1e hidden_effect = { add_to_variable = { global.CPZ_kryzys = -10 } CPZ_przelicz = yes } add_stability = 0.05 if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = -0.02 tooltip_side = CPZ_bop_rzad } }
+		}
+	}
+
+	focus = {
+		id = CPZ_S02
+		icon = GFX_pl2027_081_pojednanie_0
+		x = 2
+		y = 7
+		prerequisite = { focus = CPZ_S01 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_s02 NOT = { has_global_flag = CPZ_wojna } check_variable = { global.CPZ_kryzys < 55 } } }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_cf331488 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -10 } add_to_variable = { global.CPZ_rzad = 5 } CPZ_przelicz = yes } set_global_flag = CPZ_stabilizacja custom_effect_tooltip = CPZ_tt_23aca114
+		}
+	}
+
+	focus = {
+		id = CPZ_S05
+		icon = GFX_pl2027_081_pojednanie_2
+		x = 4
+		y = 7
+		prerequisite = { focus = CPZ_S01 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_s02 NOT = { has_global_flag = CPZ_wojna } check_variable = { global.CPZ_kryzys < 55 } } }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			set_global_flag = CPZ_porozumienie_prez custom_effect_tooltip = CPZ_tt_1f61c1b8 hidden_effect = { add_to_variable = { global.CPZ_prez = -3 } add_to_variable = { global.CPZ_kryzys = -5 } CPZ_przelicz = yes } if = { limit = { has_power_balance = { id = CPZ_bop } } set_power_balance = { id = CPZ_bop left_side = CPZ_bop_rzad right_side = CPZ_bop_prez set_value = 0 } } custom_effect_tooltip = CPZ_tt_c68e1e15
+		}
+	}
+
+	focus = {
+		id = CPZ_S03
+		icon = GFX_pl2027_081_sad_0
+		x = 1
+		y = 8
+		prerequisite = { focus = CPZ_S02 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			remove_ideas = CPZ_i_spor custom_effect_tooltip = CPZ_tt_7c9345d5 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -5 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_S04
+		icon = GFX_pl2027_081_konstytucja_1
+		x = 3
+		y = 8
+		prerequisite = { focus = CPZ_S02 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_stability = 0.05 add_political_power = 60
+		}
+	}
+
+	focus = {
+		id = CPZ_S06
+		icon = GFX_pl2027_081_administracja_0
+		x = 5
+		y = 8
+		prerequisite = { focus = CPZ_S05 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_f0c00582 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 10 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 10 } add_to_variable = { global.CPZ_lo_wielkopolskie = 10 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 10 } add_to_variable = { global.CPZ_lo_podlaskie = 10 } add_to_variable = { global.CPZ_lo_lubelskie = 10 } add_to_variable = { global.CPZ_lo_lodzkie = 10 } add_to_variable = { global.CPZ_lo_mazowieckie = 10 } add_to_variable = { global.CPZ_lo_zachodnie = 10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_acbd7299 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -5 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_S07
+		icon = GFX_pl2027_081_wspolnota_0
+		x = 2
+		y = 9
+		prerequisite = { focus = CPZ_S03 focus = CPZ_S04 }
+		cost = 1.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_stability = 0.08 if = { limit = { has_idea = CPZ_i_podzielone } swap_ideas = { remove_idea = CPZ_i_podzielone add_idea = CPZ_i_podzielone_slabe } }
+		}
+	}
+
+	focus = {
+		id = CPZ_S08
+		icon = GFX_pl2027_081_budowa_0
+		x = 4
+		y = 9
+		prerequisite = { focus = CPZ_S04 focus = CPZ_S06 }
+		cost = 1.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_ideas = CPZ_i_reformy
+		}
+	}
+
+	focus = {
+		id = CPZ_S09
+		icon = GFX_pl2027_081_wybory_0
+		x = 3
+		y = 10
+		prerequisite = { focus = CPZ_S07 }
+		prerequisite = { focus = CPZ_S08 }
+		cost = 2.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			country_event = { id = cpz.710 }
+		}
+	}
+
+	focus = {
+		id = CPZ_S10
+		icon = GFX_pl2027_081_polska_0
+		x = 3
+		y = 11
+		prerequisite = { focus = CPZ_S09 }
+		cost = 2.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_s10 check_variable = { global.CPZ_kryzys < 25 } check_variable = { global.CPZ_separatyzm < 40 } check_variable = { global.CPZ_wojsko > 59 } NOT = { has_global_flag = CPZ_wojna } } }
+		ai_will_do = { factor = 2 }
+		completion_reward = {
+			add_stability = 0.10 remove_ideas = CPZ_i_kryzys CPZ_ocalenie = yes custom_effect_tooltip = CPZ_tt_ef178ebc
+		}
+	}
+
+	focus = {
+		id = CPZ_W01
+		icon = GFX_pl2027_081_wojna_1
+		x = 18
+		y = 0
+		cost = 0.43
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { has_country_flag = CPZ_oboz_prez } if = { limit = { check_variable = { global.CPZ_wojsko < 45 } } army_experience = 15 } else = { army_experience = 5 } } else = { if = { limit = { check_variable = { global.CPZ_wojsko > 59 } } army_experience = 10 add_war_support = 0.03 } else = { army_experience = 5 } } custom_effect_tooltip = CPZ_tt_b171ea18
+		}
+	}
+
+	focus = {
+		id = CPZ_W02
+		icon = GFX_pl2027_081_sztab_2
+		x = 17
+		y = 1
+		prerequisite = { focus = CPZ_W01 }
+		cost = 0.71
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 25 add_timed_idea = { idea = CPZ_i_sztab days = 90 }
+		}
+	}
+
+	focus = {
+		id = CPZ_W03
+		icon = GFX_pl2027_081_pobor_2
+		x = 19
+		y = 1
+		prerequisite = { focus = CPZ_W01 }
+		cost = 0.71
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } has_equipment = { ranged_equipment > 399 } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_manpower = 10000 add_equipment_to_stockpile = { type = ranged_equipment amount = -400 }
+		}
+	}
+
+	focus = {
+		id = CPZ_W04
+		icon = GFX_pl2027_081_wyposazenie_1
+		x = 16
+		y = 2
+		prerequisite = { focus = CPZ_W02 }
+		cost = 0.71
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } custom_trigger_tooltip = { tooltip = CPZ_req_magazyny num_of_controlled_states > 9 } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = ranged_equipment amount = 1200 } add_equipment_to_stockpile = { type = support_equipment amount = 200 }
+		}
+	}
+
+	focus = {
+		id = CPZ_W05
+		icon = GFX_pl2027_081_pieniadze_2
+		x = 18
+		y = 2
+		prerequisite = { focus = CPZ_W02 focus = CPZ_W03 }
+		cost = 1.0
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_b47052f4 hidden_effect = { add_to_variable = { global.CPZ_rezerwy = 10 } CPZ_przelicz = yes } add_timed_idea = { idea = CPZ_i_finanse days = 60 }
+		}
+	}
+
+	focus = {
+		id = CPZ_W06
+		icon = GFX_pl2027_081_szpital_0
+		x = 20
+		y = 2
+		prerequisite = { focus = CPZ_W03 }
+		cost = 1.0
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.04 custom_effect_tooltip = CPZ_tt_f792dcaf hidden_effect = { add_to_variable = { global.CPZ_napiecie = -5 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_W07
+		icon = GFX_pl2027_081_logistyka_0
+		x = 17
+		y = 3
+		prerequisite = { focus = CPZ_W04 focus = CPZ_W05 }
+		cost = 1.0
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_timed_idea = { idea = CPZ_i_lacznosc days = 90 } custom_effect_tooltip = CPZ_tt_7651499e hidden_effect = { add_to_variable = { global.CPZ_administracja = 5 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_W08
+		icon = GFX_pl2027_081_polska_1
+		x = 18
+		y = 4
+		prerequisite = { focus = CPZ_W06 focus = CPZ_W07 }
+		cost = 1.0
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = { id = cpz.540 }
+		}
+	}
+
+	focus = {
+		id = CPZ_G01
+		icon = GFX_pl2027_081_parlament_0
+		x = 10
+		y = 6
+		cost = 0.71
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 35 if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = -0.05 tooltip_side = CPZ_bop_rzad } }
+		}
+	}
+
+	focus = {
+		id = CPZ_G02
+		icon = GFX_pl2027_081_straz_1
+		x = 8
+		y = 7
+		prerequisite = { focus = CPZ_G01 }
+		cost = 0.71
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.05 add_timed_idea = { idea = CPZ_i_kprm days = 90 }
+		}
+	}
+
+	focus = {
+		id = CPZ_G03
+		icon = GFX_pl2027_081_parlament_1
+		x = 10
+		y = 7
+		prerequisite = { focus = CPZ_G01 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_5a8c15a5 hidden_effect = { add_to_variable = { global.CPZ_rzad = 8 } CPZ_przelicz = yes } if = { limit = { check_variable = { global.CPZ_koalicja > 49 } NOT = { has_global_flag = CPZ_wyszla_psl } NOT = { has_global_flag = CPZ_wyszla_p2050 } } add_political_power = 40 } else = { add_political_power = 15 } custom_effect_tooltip = CPZ_tt_eddf3c3a
+		}
+	}
+
+	focus = {
+		id = CPZ_G05
+		icon = GFX_pl2027_081_rada_2
+		x = 12
+		y = 7
+		prerequisite = { focus = CPZ_G01 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_53b01303 hidden_effect = { add_to_variable = { global.CPZ_p_ko = 10 } add_to_variable = { global.CPZ_p_psl = 10 } add_to_variable = { global.CPZ_p_p2050 = 10 } add_to_variable = { global.CPZ_p_lewica = 10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_b21fe284 hidden_effect = { add_to_variable = { global.CPZ_p_psl = 3 } add_to_variable = { global.CPZ_p_p2050 = 3 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_G04
+		icon = GFX_pl2027_081_twierdza_0
+		x = 7
+		y = 8
+		prerequisite = { focus = CPZ_G02 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_timed_idea = { idea = CPZ_i_obrona_instytucji days = 90 }
+		}
+	}
+
+	focus = {
+		id = CPZ_G06
+		icon = GFX_pl2027_081_telewizja_1
+		x = 9
+		y = 8
+		prerequisite = { focus = CPZ_G02 focus = CPZ_G03 }
+		cost = 0.71
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = { id = cpz.547 }
+		}
+	}
+
+	focus = {
+		id = CPZ_G07
+		icon = GFX_pl2027_081_administracja_1
+		x = 11
+		y = 8
+		prerequisite = { focus = CPZ_G03 focus = CPZ_G05 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_f0c00582 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 10 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 10 } add_to_variable = { global.CPZ_lo_wielkopolskie = 10 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 10 } add_to_variable = { global.CPZ_lo_podlaskie = 10 } add_to_variable = { global.CPZ_lo_lubelskie = 10 } add_to_variable = { global.CPZ_lo_lodzkie = 10 } add_to_variable = { global.CPZ_lo_mazowieckie = 10 } add_to_variable = { global.CPZ_lo_zachodnie = 10 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_G08
+		icon = GFX_pl2027_081_twierdza_1
+		x = 13
+		y = 8
+		prerequisite = { focus = CPZ_G05 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } has_equipment = { ranged_equipment > 299 } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = ranged_equipment amount = -300 } add_timed_idea = { idea = CPZ_i_obrona_stolicy days = 60 }
+		}
+	}
+
+	focus = {
+		id = CPZ_G09
+		icon = GFX_pl2027_081_sztab_0
+		x = 8
+		y = 9
+		prerequisite = { focus = CPZ_G04 focus = CPZ_G06 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			army_experience = 15 add_timed_idea = { idea = CPZ_i_mon days = 90 }
+		}
+	}
+
+	focus = {
+		id = CPZ_G10
+		icon = GFX_pl2027_081_fabryka_broni_0
+		x = 10
+		y = 9
+		prerequisite = { focus = CPZ_G06 focus = CPZ_G07 }
+		cost = 1.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_timed_idea = { idea = CPZ_i_gosp_wojenna days = 90 }
+		}
+	}
+
+	focus = {
+		id = CPZ_G11
+		icon = GFX_pl2027_081_dyplomacja_5
+		x = 12
+		y = 9
+		prerequisite = { focus = CPZ_G07 focus = CPZ_G08 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = { id = cpz.546 }
+		}
+	}
+
+	focus = {
+		id = CPZ_G12
+		icon = GFX_pl2027_081_centralizacja_1
+		x = 9
+		y = 10
+		prerequisite = { focus = CPZ_G09 focus = CPZ_G10 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_4eab133c hidden_effect = { add_to_variable = { global.CPZ_administracja = 10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_3845753d hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 5 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 5 } add_to_variable = { global.CPZ_lo_wielkopolskie = 5 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 5 } add_to_variable = { global.CPZ_lo_podlaskie = 5 } add_to_variable = { global.CPZ_lo_lubelskie = 5 } add_to_variable = { global.CPZ_lo_lodzkie = 5 } add_to_variable = { global.CPZ_lo_mazowieckie = 5 } add_to_variable = { global.CPZ_lo_zachodnie = 5 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_G13
+		icon = GFX_pl2027_081_parlament_2
+		x = 11
+		y = 10
+		prerequisite = { focus = CPZ_G10 focus = CPZ_G11 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } custom_trigger_tooltip = { tooltip = CPZ_req_sejm controls_state = 735 } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.08 custom_effect_tooltip = CPZ_tt_6e386509 hidden_effect = { add_to_variable = { global.CPZ_rzad = 3 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_G14
+		icon = GFX_pl2027_081_ofensywa_1
+		x = 10
+		y = 11
+		prerequisite = { focus = CPZ_G12 focus = CPZ_G13 }
+		cost = 1.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = { id = cpz.545 }
+		}
+	}
+
+	focus = {
+		id = CPZ_G15
+		icon = GFX_pl2027_081_integracja_2
+		x = 10
+		y = 12
+		prerequisite = { focus = CPZ_G14 }
+		cost = 2.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_rzad_wygral has_global_flag = CPZ_rzad_wygral } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			every_country = { limit = { is_subject_of = ROOT } ROOT = { annex_country = { target = PREV transfer_troops = yes } } } custom_effect_tooltip = CPZ_tt_f0c00582 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 10 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 10 } add_to_variable = { global.CPZ_lo_wielkopolskie = 10 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 10 } add_to_variable = { global.CPZ_lo_podlaskie = 10 } add_to_variable = { global.CPZ_lo_lubelskie = 10 } add_to_variable = { global.CPZ_lo_lodzkie = 10 } add_to_variable = { global.CPZ_lo_mazowieckie = 10 } add_to_variable = { global.CPZ_lo_zachodnie = 10 } CPZ_przelicz = yes } add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CPZ_G16
+		icon = GFX_pl2027_081_zwyciestwo_0
+		x = 10
+		y = 13
+		prerequisite = { focus = CPZ_G15 }
+		cost = 2.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_rzad_wygral has_global_flag = CPZ_rzad_wygral } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50 set_global_flag = CPZ_stabilizacja set_global_flag = CPZ_rzad_ocalal custom_effect_tooltip = CPZ_tt_4f91dbc1
+		}
+	}
+
+	focus = {
+		id = CPZ_O01
+		icon = GFX_pl2027_081_sztab_1
+		x = 18
+		y = 5
+		cost = 0.71
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 30 set_country_flag = CPZ_o_sztab
+		}
+	}
+
+	focus = {
+		id = CPZ_O02
+		icon = GFX_pl2027_081_media_4
+		x = 16
+		y = 6
+		prerequisite = { focus = CPZ_O01 }
+		cost = 0.71
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_ef89081d hidden_effect = { add_to_variable = { global.CPZ_prez = 5 } CPZ_przelicz = yes } country_event = { id = cpz.548 }
+		}
+	}
+
+	focus = {
+		id = CPZ_O03
+		icon = GFX_pl2027_081_rada_0
+		x = 18
+		y = 6
+		prerequisite = { focus = CPZ_O01 }
+		cost = 1.0
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_ba737b7c hidden_effect = { add_to_variable = { global.CPZ_jednosc = 5 } CPZ_przelicz = yes } set_country_flag = CPZ_o_konferencja
+		}
+	}
+
+	focus = {
+		id = CPZ_O04
+		icon = GFX_pl2027_081_wybory_1
+		x = 20
+		y = 6
+		prerequisite = { focus = CPZ_O01 }
+		cost = 0.71
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_d98065bc hidden_effect = { add_to_variable = { global.CPZ_prez = 8 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_585cdcc9 hidden_effect = { add_to_variable = { global.CPZ_jednosc = -5 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_O05
+		icon = GFX_pl2027_081_dyplomacja_0
+		x = 19
+		y = 7
+		prerequisite = { focus = CPZ_O03 focus = CPZ_O04 }
+		cost = 1.0
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = { id = cpz.549 }
+		}
+	}
+
+	focus = {
+		id = CPZ_O06
+		icon = GFX_pl2027_081_konstytucja_2
+		x = 17
+		y = 7
+		prerequisite = { focus = CPZ_O03 }
+		cost = 1.0
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			set_country_flag = CPZ_rzad_jurka custom_effect_tooltip = CPZ_tt_a428b1cc hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_5ba6ab56
+		}
+	}
+
+	focus = {
+		id = CPZ_O07
+		icon = GFX_pl2027_081_logistyka_2
+		x = 15
+		y = 7
+		prerequisite = { focus = CPZ_O02 }
+		cost = 0.71
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.02 add_political_power = 20
+		}
+	}
+
+	focus = {
+		id = CPZ_O08
+		icon = GFX_pl2027_081_oficer_0
+		x = 15
+		y = 8
+		prerequisite = { focus = CPZ_O07 }
+		cost = 1.0
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_timed_idea = { idea = CPZ_i_dowodcy days = 120 } army_experience = 10 if = { limit = { check_variable = { global.CPZ_wojsko < 50 } } army_experience = 10 }
+		}
+	}
+
+	focus = {
+		id = CPZ_O09
+		icon = GFX_pl2027_081_kampania_0
+		x = 17
+		y = 8
+		prerequisite = { focus = CPZ_O02 focus = CPZ_O06 }
+		cost = 1.0
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_b60287f6 hidden_effect = { add_to_variable = { global.CPZ_prez = 4 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_e384dba4 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = -4 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = -4 } add_to_variable = { global.CPZ_lo_wielkopolskie = -4 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = -4 } add_to_variable = { global.CPZ_lo_podlaskie = -4 } add_to_variable = { global.CPZ_lo_lubelskie = -4 } add_to_variable = { global.CPZ_lo_lodzkie = -4 } add_to_variable = { global.CPZ_lo_mazowieckie = -4 } add_to_variable = { global.CPZ_lo_zachodnie = -4 } CPZ_przelicz = yes } add_manpower = 5000
+		}
+	}
+
+	focus = {
+		id = CPZ_O10
+		icon = GFX_pl2027_081_administracja_2
+		x = 19
+		y = 8
+		prerequisite = { focus = CPZ_O05 }
+		cost = 1.0
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = -0.03 add_political_power = 40
+		}
+	}
+
+	focus = {
+		id = CPZ_O11
+		icon = GFX_pl2027_081_rada_1
+		x = 18
+		y = 9
+		prerequisite = { focus = CPZ_O09 focus = CPZ_O10 }
+		cost = 1.43
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = { id = cpz.550 }
+		}
+	}
+
+	focus = {
+		id = CPZ_O12
+		icon = GFX_pl2027_081_sztab_2
+		x = 16
+		y = 9
+		prerequisite = { focus = CPZ_O08 }
+		cost = 1.0
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_timed_idea = { idea = CPZ_i_jedno_dowodztwo days = 120 }
+		}
+	}
+
+	focus = {
+		id = CPZ_O13
+		icon = GFX_pl2027_081_parlament_0
+		x = 20
+		y = 9
+		prerequisite = { focus = CPZ_O10 }
+		cost = 1.0
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 50 custom_effect_tooltip = CPZ_tt_ba737b7c hidden_effect = { add_to_variable = { global.CPZ_jednosc = 5 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_O14
+		icon = GFX_pl2027_081_ofensywa_3
+		x = 17
+		y = 10
+		prerequisite = { focus = CPZ_O11 }
+		prerequisite = { focus = CPZ_O12 }
+		cost = 1.43
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wojna has_global_flag = CPZ_wojna NOT = { has_global_flag = CPZ_wojna_koniec } } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_timed_idea = { idea = CPZ_i_marsz days = 90 }
+		}
+	}
+
+	focus = {
+		id = CPZ_O15
+		icon = GFX_pl2027_081_zwyciestwo_0
+		x = 18
+		y = 11
+		prerequisite = { focus = CPZ_O13 focus = CPZ_O14 }
+		cost = 2.0
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_prez_wygral has_global_flag = CPZ_prez_wygral } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = { id = cpz.551 }
+		}
+	}
+
+	focus = {
+		id = CPZ_O16
+		icon = GFX_pl2027_081_polska_0
+		x = 18
+		y = 12
+		prerequisite = { focus = CPZ_O15 }
+		cost = 2.0
+		allow_branch = { has_country_flag = CPZ_oboz_prez }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_prez_wygral has_global_flag = CPZ_prez_wygral } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { has_idea = CPZ_i_wojna } remove_ideas = CPZ_i_wojna } add_stability = 0.10 add_political_power = 100 if = { limit = { has_country_flag = CPZ_po_b } load_focus_tree = { tree = IVRP_prezydent_tree keep_completed = no } } custom_effect_tooltip = CPZ_tt_2caef1b9
+		}
+	}
+
+	focus = {
+		id = CPZ_R01
+		icon = GFX_pl2027_081_chaos_0
+		x = 25
+		y = 0
+		cost = 0.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_etap1 OR = { has_global_flag = CPZ_etap1 check_variable = { global.CPZ_kryzys > 49 } } } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_0599ca28 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = -10 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = -10 } add_to_variable = { global.CPZ_lo_wielkopolskie = -10 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = -10 } add_to_variable = { global.CPZ_lo_podlaskie = -10 } add_to_variable = { global.CPZ_lo_lubelskie = -10 } add_to_variable = { global.CPZ_lo_lodzkie = -10 } add_to_variable = { global.CPZ_lo_mazowieckie = -10 } add_to_variable = { global.CPZ_lo_zachodnie = -10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_f4a66a9b hidden_effect = { add_to_variable = { global.CPZ_administracja = -5 } CPZ_przelicz = yes } if = { limit = { NOT = { has_global_flag = CPZ_p50 } } set_global_flag = CPZ_p50 country_event = { id = cpz.300 days = 1 } } custom_effect_tooltip = CPZ_tt_66d280bb
+		}
+	}
+
+	focus = {
+		id = CPZ_R02
+		icon = GFX_pl2027_081_administracja_0
+		x = 24
+		y = 1
+		prerequisite = { focus = CPZ_R01 }
+		cost = 0.71
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_etap1 OR = { has_global_flag = CPZ_etap1 check_variable = { global.CPZ_kryzys > 49 } } } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			if = { limit = { NOT = { has_global_flag = CPZ_p65 } } set_global_flag = CPZ_p65 country_event = { id = cpz.301 days = 1 } } else = { CPZ_krok_dowolny = yes } custom_effect_tooltip = CPZ_tt_4a6c2440
+		}
+	}
+
+	focus = {
+		id = CPZ_R03
+		icon = GFX_pl2027_081_ulica_1
+		x = 26
+		y = 1
+		prerequisite = { focus = CPZ_R01 }
+		cost = 0.71
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_wwa OR = { has_global_flag = CPZ_etap2 check_variable = { global.CPZ_kryzys > 69 } } } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_ad6ae051 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 5 } add_to_variable = { global.CPZ_napiecie = 5 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes } set_global_flag = CPZ_wwa_otwarta custom_effect_tooltip = CPZ_tt_8c3aa473
+		}
+	}
+
+	focus = {
+		id = CPZ_R04
+		icon = GFX_pl2027_081_administracja_1
+		x = 23
+		y = 2
+		prerequisite = { focus = CPZ_R02 }
+		cost = 0.71
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_etap2 has_global_flag = CPZ_etap2 } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_f24c4154 hidden_effect = { add_to_variable = { global.CPZ_administracja = -8 } add_to_variable = { global.CPZ_separatyzm = 5 } CPZ_przelicz = yes } CPZ_krok_dowolny = yes
+		}
+	}
+
+	focus = {
+		id = CPZ_R05
+		icon = GFX_pl2027_081_ultimatum_0
+		x = 25
+		y = 2
+		prerequisite = { focus = CPZ_R02 focus = CPZ_R03 }
+		cost = 0.71
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_etap2 has_global_flag = CPZ_etap2 } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_67aa5801 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 4 } CPZ_przelicz = yes } CPZ_ultimata = yes custom_effect_tooltip = CPZ_tt_1d1b01c6
+		}
+	}
+
+	focus = {
+		id = CPZ_R06
+		icon = GFX_pl2027_081_milicja_1
+		x = 27
+		y = 2
+		prerequisite = { focus = CPZ_R03 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_etap2 has_global_flag = CPZ_etap2 } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_7d790883 hidden_effect = { add_to_variable = { global.CPZ_policja = -8 } add_to_variable = { global.CPZ_wojsko = -5 } CPZ_przelicz = yes } add_manpower = -10000
+		}
+	}
+
+	focus = {
+		id = CPZ_R07
+		icon = GFX_pl2027_081_konstytucja_3
+		x = 24
+		y = 3
+		prerequisite = { focus = CPZ_R04 focus = CPZ_R05 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_etap3 OR = { check_variable = { global.CPZ_w_pomorskie > 1 } check_variable = { global.CPZ_w_kujawsko_pomorskie > 1 } check_variable = { global.CPZ_w_wielkopolskie > 1 } check_variable = { global.CPZ_w_warminsko_mazurskie > 1 } check_variable = { global.CPZ_w_podlaskie > 1 } check_variable = { global.CPZ_w_lubelskie > 1 } check_variable = { global.CPZ_w_lodzkie > 1 } check_variable = { global.CPZ_w_mazowieckie > 1 } check_variable = { global.CPZ_w_zachodnie > 1 } } } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			country_event = { id = cpz.380 }
+		}
+	}
+
+	focus = {
+		id = CPZ_R08
+		icon = GFX_pl2027_081_obrona_terytorialna_1
+		x = 26
+		y = 3
+		prerequisite = { focus = CPZ_R05 focus = CPZ_R06 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_etap2 has_global_flag = CPZ_etap2 } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			set_global_flag = CPZ_r_obrona custom_effect_tooltip = CPZ_tt_316c30c6
+		}
+	}
+
+	focus = {
+		id = CPZ_R09
+		icon = GFX_pl2027_081_wolnosc_0
+		x = 25
+		y = 4
+		prerequisite = { focus = CPZ_R07 }
+		prerequisite = { focus = CPZ_R08 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_etap4 OR = { check_variable = { global.CPZ_w_pomorskie > 2 } check_variable = { global.CPZ_w_kujawsko_pomorskie > 2 } check_variable = { global.CPZ_w_wielkopolskie > 2 } check_variable = { global.CPZ_w_warminsko_mazurskie > 2 } check_variable = { global.CPZ_w_podlaskie > 2 } check_variable = { global.CPZ_w_lubelskie > 2 } check_variable = { global.CPZ_w_lodzkie > 2 } check_variable = { global.CPZ_w_mazowieckie > 2 } check_variable = { global.CPZ_w_zachodnie > 2 } } } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			CPZ_deklaracje = yes custom_effect_tooltip = CPZ_tt_8828df5d
+		}
+	}
+
+	focus = {
+		id = CPZ_R10
+		icon = GFX_pl2027_081_granica_0
+		x = 24
+		y = 5
+		prerequisite = { focus = CPZ_R09 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_uwolnione5 check_variable = { global.CPZ_uwolnione > 5 } } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_8aaf4795 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 5 } add_to_variable = { global.CPZ_separatyzm = 5 } CPZ_przelicz = yes } every_country = { limit = { has_country_flag = CPZ_uwolniony } add_war_support = 0.10 army_experience = 10 }
+		}
+	}
+
+	focus = {
+		id = CPZ_R11
+		icon = GFX_pl2027_081_sojusz_1
+		x = 26
+		y = 5
+		prerequisite = { focus = CPZ_R09 }
+		cost = 1.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_uwolnione5 check_variable = { global.CPZ_uwolnione > 5 } } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			every_country = { limit = { has_country_flag = CPZ_uwolniony } add_political_power = 50 add_stability = 0.05 } set_global_flag = CPZ_r_konferencja
+		}
+	}
+
+	focus = {
+		id = CPZ_R12
+		icon = GFX_pl2027_081_mapa_0
+		x = 25
+		y = 6
+		prerequisite = { focus = CPZ_R10 }
+		prerequisite = { focus = CPZ_R11 }
+		cost = 2.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_uwolnione40 check_variable = { global.CPZ_uwolnione > 39 } } }
+		ai_will_do = { factor = 4 }
+		completion_reward = {
+			CPZ_godzina_zero = yes
+		}
+	}
+
+	focus = {
+		id = CPZ_A01
+		icon = GFX_pl2027_081_administracja_2
+		x = 25
+		y = 8
+		cost = 0.71
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_region has_global_flag = CPZ_gracz_neutralny has_global_flag = CPZ_prio } NOT = { has_global_flag = CPZ_koniec } }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			add_stability = 0.05 add_political_power = 25 set_global_flag = CPZ_g_start
+		}
+	}
+
+	focus = {
+		id = CPZ_A02
+		icon = GFX_pl2027_081_parlament_0
+		x = 24
+		y = 9
+		prerequisite = { focus = CPZ_A01 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_region has_global_flag = CPZ_gracz_neutralny has_global_flag = CPZ_prio } NOT = { has_global_flag = CPZ_koniec } }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			country_event = { id = cpz.565 }
+		}
+	}
+
+	focus = {
+		id = CPZ_A03
+		icon = GFX_pl2027_081_szpital_1
+		x = 26
+		y = 9
+		prerequisite = { focus = CPZ_A01 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_region has_global_flag = CPZ_gracz_neutralny has_global_flag = CPZ_prio } NOT = { has_global_flag = CPZ_koniec } }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_f792dcaf hidden_effect = { add_to_variable = { global.CPZ_napiecie = -5 } CPZ_przelicz = yes } add_stability = 0.05 set_global_flag = CPZ_g_sluzby custom_effect_tooltip = CPZ_tt_18ac0e88
+		}
+	}
+
+	focus = {
+		id = CPZ_A04
+		icon = GFX_pl2027_081_straz_1
+		x = 23
+		y = 10
+		prerequisite = { focus = CPZ_A02 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_region has_global_flag = CPZ_gracz_neutralny has_global_flag = CPZ_prio } NOT = { has_global_flag = CPZ_koniec } has_equipment = { ranged_equipment > 499 } }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			add_equipment_to_stockpile = { type = ranged_equipment amount = -500 } set_global_flag = CPZ_g_straz custom_effect_tooltip = CPZ_tt_4dddb551
+		}
+	}
+
+	focus = {
+		id = CPZ_A05
+		icon = GFX_pl2027_081_zywnosc_0
+		x = 25
+		y = 10
+		prerequisite = { focus = CPZ_A02 focus = CPZ_A03 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_region has_global_flag = CPZ_gracz_neutralny has_global_flag = CPZ_prio } NOT = { has_global_flag = CPZ_koniec } }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			set_global_flag = CPZ_g_zaopatrzenie custom_effect_tooltip = CPZ_tt_205c33c6
+		}
+	}
+
+	focus = {
+		id = CPZ_A06
+		icon = GFX_pl2027_081_mapa_1
+		x = 27
+		y = 10
+		prerequisite = { focus = CPZ_A03 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_region has_global_flag = CPZ_gracz_neutralny has_global_flag = CPZ_prio } NOT = { has_global_flag = CPZ_koniec } }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			country_event = { id = cpz.566 }
+		}
+	}
+
+	focus = {
+		id = CPZ_A07
+		icon = GFX_pl2027_081_handel_1
+		x = 24
+		y = 11
+		prerequisite = { focus = CPZ_A04 focus = CPZ_A05 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_region has_global_flag = CPZ_gracz_neutralny has_global_flag = CPZ_prio } NOT = { has_global_flag = CPZ_koniec } }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			set_global_flag = CPZ_g_sasiedzi custom_effect_tooltip = CPZ_tt_41f1ddfe
+		}
+	}
+
+	focus = {
+		id = CPZ_A08
+		icon = GFX_pl2027_081_wybory_2
+		x = 26
+		y = 11
+		prerequisite = { focus = CPZ_A05 focus = CPZ_A06 }
+		cost = 1.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_region has_global_flag = CPZ_gracz_neutralny has_global_flag = CPZ_prio } NOT = { has_global_flag = CPZ_koniec } }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			country_event = { id = cpz.567 }
+		}
+	}
+
+	focus = {
+		id = CPZ_A09
+		icon = GFX_pl2027_081_wolnosc_0
+		x = 25
+		y = 12
+		prerequisite = { focus = CPZ_A07 }
+		prerequisite = { focus = CPZ_A08 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_region has_global_flag = CPZ_gracz_neutralny has_global_flag = CPZ_prio } NOT = { has_global_flag = CPZ_koniec } }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			country_event = { id = cpz.568 }
+		}
+	}
+
+	focus = {
+		id = CPZ_A10
+		icon = GFX_pl2027_081_polska_1
+		x = 25
+		y = 13
+		prerequisite = { focus = CPZ_A09 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		available = { custom_trigger_tooltip = { tooltip = CPZ_req_region has_global_flag = CPZ_gracz_neutralny has_global_flag = CPZ_prio } NOT = { has_global_flag = CPZ_koniec } }
+		ai_will_do = { factor = 0 }
+		completion_reward = {
+			country_event = { id = cpz.560 } custom_effect_tooltip = CPZ_tt_fbaa9601
+		}
+	}
+
+	focus = {
+		id = CPZ_Z01
+		icon = GFX_pl2027_081_pomoc_0
+		x = 7
+		y = 14
+		prerequisite = { focus = CPZ_S10 focus = CPZ_G16 }
+		cost = 1.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { has_idea = CPZ_i_wojna } remove_ideas = CPZ_i_wojna } add_ideas = CPZ_i_odbudowa
+		}
+	}
+
+	focus = {
+		id = CPZ_Z02
+		icon = GFX_pl2027_081_budowa_1
+		x = 6
+		y = 15
+		prerequisite = { focus = CPZ_Z01 }
+		cost = 1.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_4eab133c hidden_effect = { add_to_variable = { global.CPZ_administracja = 10 } CPZ_przelicz = yes } add_timed_idea = { idea = CPZ_i_komisja days = 180 }
+		}
+	}
+
+	focus = {
+		id = CPZ_Z03
+		icon = GFX_pl2027_081_integracja_0
+		x = 8
+		y = 15
+		prerequisite = { focus = CPZ_Z01 }
+		cost = 1.43
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = CPZ_tt_f0c00582 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 10 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 10 } add_to_variable = { global.CPZ_lo_wielkopolskie = 10 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 10 } add_to_variable = { global.CPZ_lo_podlaskie = 10 } add_to_variable = { global.CPZ_lo_lubelskie = 10 } add_to_variable = { global.CPZ_lo_lodzkie = 10 } add_to_variable = { global.CPZ_lo_mazowieckie = 10 } add_to_variable = { global.CPZ_lo_zachodnie = 10 } CPZ_przelicz = yes } add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = CPZ_Z04
+		icon = GFX_pl2027_081_kolej_2
+		x = 5
+		y = 16
+		prerequisite = { focus = CPZ_Z02 }
+		cost = 2.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } random_owned_controlled_state = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	focus = {
+		id = CPZ_Z05
+		icon = GFX_pl2027_081_pieniadze_3
+		x = 7
+		y = 16
+		prerequisite = { focus = CPZ_Z02 focus = CPZ_Z03 }
+		cost = 2.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			if = { limit = { has_idea = CPZ_i_gospodarka_kryzys } swap_ideas = { remove_idea = CPZ_i_gospodarka_kryzys add_idea = CPZ_i_gospodarka } } if = { limit = { has_idea = CPZ_i_finanse } remove_ideas = CPZ_i_finanse } if = { limit = { has_idea = CPZ_i_gosp_wojenna } remove_ideas = CPZ_i_gosp_wojenna } custom_effect_tooltip = CPZ_tt_b47052f4 hidden_effect = { add_to_variable = { global.CPZ_rezerwy = 10 } CPZ_przelicz = yes }
+		}
+	}
+
+	focus = {
+		id = CPZ_Z06
+		icon = GFX_pl2027_081_konstytucja_0
+		x = 9
+		y = 16
+		prerequisite = { focus = CPZ_Z03 }
+		cost = 2.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = { id = cpz.720 }
+		}
+	}
+
+	focus = {
+		id = CPZ_Z07
+		icon = GFX_pl2027_081_wybory_3
+		x = 7
+		y = 17
+		prerequisite = { focus = CPZ_Z05 }
+		prerequisite = { focus = CPZ_Z06 }
+		cost = 2.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = { id = cpz.721 }
+		}
+	}
+
+	focus = {
+		id = CPZ_Z08
+		icon = GFX_pl2027_081_polska_0
+		x = 7
+		y = 18
+		prerequisite = { focus = CPZ_Z07 }
+		cost = 2.0
+		allow_branch = { NOT = { has_country_flag = CPZ_oboz_prez } }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.10 if = { limit = { has_idea = CPZ_i_odbudowa } remove_ideas = CPZ_i_odbudowa } add_ideas = CPZ_i_odrodzona
+		}
+	}
+}

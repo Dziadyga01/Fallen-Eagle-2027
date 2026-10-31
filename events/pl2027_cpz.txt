@@ -1,0 +1,3034 @@
+add_namespace = cpz
+
+country_event = {
+	id = cpz.1
+	title = cpz.1.t
+	desc = cpz.1.d
+	picture = GFX_tfe_mapa_jedna
+	is_triggered_only = yes
+	immediate = { hidden_effect = { if = { limit = { tag = POL NOT = { has_focus_tree = POL_cpz_kryzys_tree } NOT = { has_global_flag = CPZ_stabilizacja } } load_focus_tree = { tree = POL_cpz_kryzys_tree keep_completed = no } } } }
+	option = {
+		name = cpz.1.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_predkosc
+	}
+}
+
+country_event = {
+	id = cpz.100
+	title = cpz.100.t
+	desc = cpz.100.d
+	picture = GFX_pl2027_ev081_narada_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.100.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_predkosc set_global_flag = CPZ_lancuch
+	}
+}
+
+country_event = {
+	id = cpz.90
+	title = cpz.90.t
+	desc = cpz.90.d
+	picture = GFX_pl2027_ev081_dyplomacja_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.90.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_d1d2a788 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.91
+	title = cpz.91.t
+	desc = cpz.91.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.91.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_47424b60 hidden_effect = { add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.92
+	title = cpz.92.t
+	desc = cpz.92.d
+	picture = GFX_pl2027_ev081_wybory_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.92.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5cf298cd hidden_effect = { add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_rzad = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.93
+	title = cpz.93.t
+	desc = cpz.93.d
+	picture = GFX_pl2027_ev081_porzadek_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.93.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_17e5629f hidden_effect = { add_to_variable = { global.CPZ_napiecie = 3 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_policja = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.93.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_67729139 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_policja = -1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.94
+	title = cpz.94.t
+	desc = cpz.94.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.94.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_9f4789fe hidden_effect = { add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.95
+	title = cpz.95.t
+	desc = cpz.95.d
+	picture = GFX_pl2027_ev081_polityka_0
+	is_triggered_only = yes
+	option = {
+		name = cpz.95.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_c97f03ee hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.96
+	title = cpz.96.t
+	desc = cpz.96.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = cpz.96.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_47424b60 hidden_effect = { add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.119
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = cpz.119.a
+		ai_chance = { factor = 1 }
+		PL2027_SE_cpz_trybunal = yes
+	}
+}
+
+country_event = {
+	id = cpz.101
+	title = cpz.101.t
+	desc = cpz.101.d
+	picture = GFX_pl2027_ev081_porzadek_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.101.a
+		ai_chance = { factor = 3 }
+		custom_effect_tooltip = CPZ_tt_17b1dce9 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.101.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_493e3cb6 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.102
+	title = cpz.102.t
+	desc = cpz.102.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.102.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b803dcf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.103
+	title = cpz.103.t
+	desc = cpz.103.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = cpz.103.a
+		ai_chance = { factor = 3 }
+		custom_effect_tooltip = CPZ_tt_60aa691f hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.103.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_f875ab7b hidden_effect = { add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_rzad = -1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.104
+	title = cpz.104.t
+	desc = cpz.104.d
+	picture = GFX_pl2027_ev081_media_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.104.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_554f0c35 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.105
+	title = cpz.105.t
+	desc = cpz.105.d
+	picture = GFX_pl2027_ev081_media_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.105.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_12695ebd hidden_effect = { add_to_variable = { global.CPZ_napiecie = 3 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.106
+	title = cpz.106.t
+	desc = cpz.106.d
+	picture = GFX_pl2027_ev081_polityka_5
+	is_triggered_only = yes
+	option = {
+		name = cpz.106.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_d1d2a788 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_a2b36fa2 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.106.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_d1d2a788 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_473d26ea hidden_effect = { add_to_variable = { global.CPZ_napiecie = -1 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.106.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_d1d2a788 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.107
+	title = cpz.107.t
+	desc = cpz.107.d
+	picture = GFX_pl2027_ev081_ulica_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.107.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_5edc6f7d hidden_effect = { add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_napiecie = -2 } add_to_variable = { global.CPZ_policja = -1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.107.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_89b53824 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_policja = 2 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.108
+	title = cpz.108.t
+	desc = cpz.108.d
+	picture = GFX_pl2027_ev081_ulica_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.108.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_91f75166 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.110
+	title = cpz.110.t
+	desc = cpz.110.d
+	picture = GFX_pl2027_ev081_media_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.110.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_fe602405 hidden_effect = { add_to_variable = { global.CPZ_rzad = 3 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.109
+	title = cpz.109.t
+	desc = cpz.109.d
+	picture = GFX_pl2027_ev081_ulica_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.109.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_554f0c35 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_a2b36fa2 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.109.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_554f0c35 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_473d26ea hidden_effect = { add_to_variable = { global.CPZ_napiecie = -1 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.109.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_554f0c35 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.115
+	title = cpz.115.t
+	desc = cpz.115.d
+	picture = GFX_pl2027_ev081_porzadek_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.115.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_721eff82 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_a2b36fa2 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.115.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_721eff82 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_473d26ea hidden_effect = { add_to_variable = { global.CPZ_napiecie = -1 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.115.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_721eff82 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.111
+	title = cpz.111.t
+	desc = cpz.111.d
+	picture = GFX_pl2027_ev081_media_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.111.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_e5514f2d hidden_effect = { add_to_variable = { global.CPZ_policja = 2 } add_to_variable = { global.CPZ_kryzys = -1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.112
+	title = cpz.112.t
+	desc = cpz.112.d
+	picture = GFX_pl2027_ev081_porzadek_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.112.a
+		ai_chance = { factor = 3 }
+		custom_effect_tooltip = CPZ_tt_2dd766bc hidden_effect = { add_to_variable = { global.CPZ_policja = 1 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.112.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_1e82c943 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_rzad = -1 } CPZ_przelicz = yes } set_country_flag = CPZ_kompromis
+	}
+}
+
+country_event = {
+	id = cpz.113
+	title = cpz.113.t
+	desc = cpz.113.d
+	picture = GFX_pl2027_ev081_miasto_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.113.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_9f4789fe hidden_effect = { add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.114
+	title = cpz.114.t
+	desc = cpz.114.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.114.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_47424b60 hidden_effect = { add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.120
+	title = cpz.120.t
+	desc = cpz.120.d
+	picture = GFX_pl2027_ev081_narada_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.120.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_683595f5 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.121
+	title = cpz.121.t
+	desc = cpz.121.d
+	picture = GFX_pl2027_ev081_porzadek_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.121.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_280b70b3 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.122
+	title = cpz.122.t
+	desc = cpz.122.d
+	picture = GFX_pl2027_ev081_narada_4
+	is_triggered_only = yes
+	option = {
+		name = cpz.122.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_c8a041f1 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.123
+	title = cpz.123.t
+	desc = cpz.123.d
+	picture = GFX_pl2027_ev081_porzadek_4
+	is_triggered_only = yes
+	option = {
+		name = cpz.123.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_a1b77aef hidden_effect = { add_to_variable = { global.CPZ_kryzys = -15 } add_to_variable = { global.CPZ_policja = -3 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_0f81d7b2 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 4 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 4 } add_to_variable = { global.CPZ_lo_wielkopolskie = 4 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 4 } add_to_variable = { global.CPZ_lo_podlaskie = 4 } add_to_variable = { global.CPZ_lo_lubelskie = 4 } add_to_variable = { global.CPZ_lo_lodzkie = 4 } add_to_variable = { global.CPZ_lo_mazowieckie = 4 } add_to_variable = { global.CPZ_lo_zachodnie = 4 } CPZ_przelicz = yes } set_country_flag = CPZ_kompromis set_global_flag = CPZ_noc_a if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = -0.03 tooltip_side = CPZ_bop_rzad } }
+	}
+	option = {
+		name = cpz.123.b
+		ai_chance = { factor = 5 }
+		custom_effect_tooltip = CPZ_tt_9ea18fce hidden_effect = { add_to_variable = { global.CPZ_kryzys = 10 } add_to_variable = { global.CPZ_policja = 5 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_cfa852a3 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = -3 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = -3 } add_to_variable = { global.CPZ_lo_wielkopolskie = -3 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = -3 } add_to_variable = { global.CPZ_lo_podlaskie = -3 } add_to_variable = { global.CPZ_lo_lubelskie = -3 } add_to_variable = { global.CPZ_lo_lodzkie = -3 } add_to_variable = { global.CPZ_lo_mazowieckie = -3 } add_to_variable = { global.CPZ_lo_zachodnie = -3 } CPZ_przelicz = yes } set_global_flag = CPZ_noc_b
+	}
+	option = {
+		name = cpz.123.c
+		ai_chance = { factor = 4 }
+		custom_effect_tooltip = CPZ_tt_98da438b hidden_effect = { add_to_variable = { global.CPZ_kryzys = 35 } add_to_variable = { global.CPZ_policja = -12 } add_to_variable = { global.CPZ_wojsko = -10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_96a73c7f hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = -12 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = -12 } add_to_variable = { global.CPZ_lo_wielkopolskie = -12 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = -12 } add_to_variable = { global.CPZ_lo_podlaskie = -12 } add_to_variable = { global.CPZ_lo_lubelskie = -12 } add_to_variable = { global.CPZ_lo_lodzkie = -12 } add_to_variable = { global.CPZ_lo_mazowieckie = -12 } add_to_variable = { global.CPZ_lo_zachodnie = -12 } CPZ_przelicz = yes } if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = 0.15 tooltip_side = CPZ_bop_prez } } set_global_flag = CPZ_sciezka_sila set_global_flag = CPZ_noc_c custom_effect_tooltip = CPZ_tt_0272ff0b
+	}
+	option = {
+		name = cpz.123.e
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_fd427282 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -8 } add_to_variable = { global.CPZ_policja = -4 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_a5476223 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 2 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 2 } add_to_variable = { global.CPZ_lo_wielkopolskie = 2 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 2 } add_to_variable = { global.CPZ_lo_podlaskie = 2 } add_to_variable = { global.CPZ_lo_lubelskie = 2 } add_to_variable = { global.CPZ_lo_lodzkie = 2 } add_to_variable = { global.CPZ_lo_mazowieckie = 2 } add_to_variable = { global.CPZ_lo_zachodnie = 2 } CPZ_przelicz = yes } set_country_flag = CPZ_kompromis set_global_flag = CPZ_noc_d
+	}
+	option = {
+		name = cpz.123.f
+		trigger = { has_completed_focus = CPZ_P15 }
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_9886bd1d hidden_effect = { add_to_variable = { global.CPZ_kryzys = -20 } add_to_variable = { global.CPZ_policja = -1 } add_to_variable = { global.CPZ_prez = -2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_3845753d hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 5 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 5 } add_to_variable = { global.CPZ_lo_wielkopolskie = 5 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 5 } add_to_variable = { global.CPZ_lo_podlaskie = 5 } add_to_variable = { global.CPZ_lo_lubelskie = 5 } add_to_variable = { global.CPZ_lo_lodzkie = 5 } add_to_variable = { global.CPZ_lo_mazowieckie = 5 } add_to_variable = { global.CPZ_lo_zachodnie = 5 } CPZ_przelicz = yes } set_country_flag = CPZ_kompromis set_global_flag = CPZ_noc_e if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = -0.05 tooltip_side = CPZ_bop_rzad } }
+	}
+}
+
+country_event = {
+	id = cpz.125
+	title = cpz.125.t
+	desc = cpz.125.d
+	picture = GFX_pl2027_ev081_media_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.125.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_554f0c35 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_a2b36fa2 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.125.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_554f0c35 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_473d26ea hidden_effect = { add_to_variable = { global.CPZ_napiecie = -1 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.125.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_554f0c35 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.126
+	title = cpz.126.t
+	desc = cpz.126.d
+	picture = GFX_pl2027_ev081_porzadek_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.126.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_08c10d58 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.130
+	title = cpz.130.t
+	desc = cpz.130.d
+	picture = GFX_pl2027_ev081_polityka_0
+	is_triggered_only = yes
+	option = {
+		name = cpz.130.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_268e5bfd hidden_effect = { add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.131
+	title = cpz.131.t
+	desc = cpz.131.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.131.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5c21c5de hidden_effect = { add_to_variable = { global.CPZ_rzad = 2 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_a2b36fa2 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.131.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5c21c5de hidden_effect = { add_to_variable = { global.CPZ_rzad = 2 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_473d26ea hidden_effect = { add_to_variable = { global.CPZ_napiecie = -1 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.131.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5c21c5de hidden_effect = { add_to_variable = { global.CPZ_rzad = 2 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.132
+	title = cpz.132.t
+	desc = cpz.132.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.132.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_280b70b3 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.133
+	title = cpz.133.t
+	desc = cpz.133.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	option = {
+		name = cpz.133.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_fdfcddab hidden_effect = { add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_rzad = -1 } add_to_variable = { global.CPZ_p_ko = 1 } add_to_variable = { global.CPZ_p_psl = 1 } add_to_variable = { global.CPZ_p_p2050 = 1 } add_to_variable = { global.CPZ_p_lewica = 1 } CPZ_przelicz = yes } set_country_flag = CPZ_kompromis
+	}
+	option = {
+		name = cpz.133.b
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_b4887afc hidden_effect = { add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_rzad = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.134
+	title = cpz.134.t
+	desc = cpz.134.d
+	picture = GFX_pl2027_ev081_dyplomacja_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.134.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_90aa4029 hidden_effect = { add_to_variable = { global.CPZ_p_ko = -2 } add_to_variable = { global.CPZ_p_psl = -2 } add_to_variable = { global.CPZ_p_p2050 = -2 } add_to_variable = { global.CPZ_p_lewica = -2 } add_to_variable = { global.CPZ_kryzys = -1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.134.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_874696fc hidden_effect = { add_to_variable = { global.CPZ_p_ko = -4 } add_to_variable = { global.CPZ_p_psl = -4 } add_to_variable = { global.CPZ_p_p2050 = -4 } add_to_variable = { global.CPZ_p_lewica = -4 } add_to_variable = { global.CPZ_rzad = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.135
+	title = cpz.135.t
+	desc = cpz.135.d
+	picture = GFX_pl2027_ev081_narada_0
+	is_triggered_only = yes
+	option = {
+		name = cpz.135.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_3236e35b hidden_effect = { add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.137
+	title = cpz.137.t
+	desc = cpz.137.d
+	picture = GFX_pl2027_ev081_wybory_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.137.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_2cf62bf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_napiecie = -1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_a2b36fa2 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.137.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_2cf62bf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_napiecie = -1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_473d26ea hidden_effect = { add_to_variable = { global.CPZ_napiecie = -1 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.137.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_2cf62bf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_napiecie = -1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.136
+	title = cpz.136.t
+	desc = cpz.136.d
+	picture = GFX_pl2027_ev081_wybory_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.136.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_c6b29622 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_p_ko = -2 } add_to_variable = { global.CPZ_p_psl = -2 } add_to_variable = { global.CPZ_p_p2050 = -2 } add_to_variable = { global.CPZ_p_lewica = -2 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_a2b36fa2 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.136.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_c6b29622 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_p_ko = -2 } add_to_variable = { global.CPZ_p_psl = -2 } add_to_variable = { global.CPZ_p_p2050 = -2 } add_to_variable = { global.CPZ_p_lewica = -2 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_473d26ea hidden_effect = { add_to_variable = { global.CPZ_napiecie = -1 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.136.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_c6b29622 hidden_effect = { add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_p_ko = -2 } add_to_variable = { global.CPZ_p_psl = -2 } add_to_variable = { global.CPZ_p_p2050 = -2 } add_to_variable = { global.CPZ_p_lewica = -2 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.138
+	title = cpz.138.t
+	desc = cpz.138.d
+	picture = GFX_pl2027_ev081_narada_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.138.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_7f8e2c01 hidden_effect = { add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_a2b36fa2 hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.138.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_7f8e2c01 hidden_effect = { add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_473d26ea hidden_effect = { add_to_variable = { global.CPZ_napiecie = -1 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.138.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_7f8e2c01 hidden_effect = { add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.139
+	title = cpz.139.t
+	desc = cpz.139.d
+	picture = GFX_pl2027_ev081_media_4
+	is_triggered_only = yes
+	option = {
+		name = cpz.139.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_2e460639 hidden_effect = { add_to_variable = { global.CPZ_rzad = 2 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.150
+	title = cpz.150.t
+	desc = cpz.150.d
+	picture = GFX_pl2027_ev081_media_5
+	is_triggered_only = yes
+	trigger = { always = no }
+	option = {
+		name = cpz.150.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = {
+	id = cpz.199
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = cpz.199.a
+		ai_chance = { factor = 1 }
+		hidden_effect = { add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_napiecie = 3 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_rzad = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_napiecie = -2 } add_to_variable = { global.CPZ_policja = -1 } add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_rzad = 3 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_policja = 2 } add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_policja = 1 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_kryzys = 3 } add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_rzad = 2 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_kryzys = 2 } add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_rzad = -1 } add_to_variable = { global.CPZ_p_ko = 1 } add_to_variable = { global.CPZ_p_psl = 1 } add_to_variable = { global.CPZ_p_p2050 = 1 } add_to_variable = { global.CPZ_p_lewica = 1 } add_to_variable = { global.CPZ_p_ko = -2 } add_to_variable = { global.CPZ_p_psl = -2 } add_to_variable = { global.CPZ_p_p2050 = -2 } add_to_variable = { global.CPZ_p_lewica = -2 } add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_napiecie = -1 } add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_p_ko = -2 } add_to_variable = { global.CPZ_p_psl = -2 } add_to_variable = { global.CPZ_p_p2050 = -2 } add_to_variable = { global.CPZ_p_lewica = -2 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_kryzys = 1 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.210
+	title = cpz.210.t
+	desc = cpz.210.d
+	picture = GFX_pl2027_ev081_narada_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.210.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_03c8d01b hidden_effect = { add_to_variable = { global.CPZ_kryzys = 4 } add_to_variable = { global.CPZ_rzad = 2 } add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.210.b
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_a1093f09 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -3 } add_to_variable = { global.CPZ_napiecie = -2 } add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.210.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b2f6da30 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_rzad = -2 } CPZ_przelicz = yes } set_country_flag = CPZ_mediacja
+	}
+}
+
+country_event = {
+	id = cpz.200
+	title = cpz.200.t
+	desc = cpz.200.d
+	picture = GFX_pl2027_ev081_zaloba_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.200.a
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_faza_dynamiczna custom_effect_tooltip = CPZ_tt_4635ea57 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.350
+	title = cpz.350.t
+	desc = cpz.350.d
+	picture = GFX_tfe_mapa_secesja
+	is_triggered_only = yes
+	option = {
+		name = cpz.350.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b25320fb hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 2 } add_to_variable = { global.CPZ_kryzys = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.351
+	title = cpz.351.t
+	desc = cpz.351.d
+	picture = GFX_tfe_mapa_secesja
+	is_triggered_only = yes
+	option = {
+		name = cpz.351.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_98221eb2 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.352
+	title = cpz.352.t
+	desc = cpz.352.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.352.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_033d9428 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -1 } add_to_variable = { global.CPZ_napiecie = -1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.300
+	title = cpz.300.t
+	desc = cpz.300.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.300.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_319f041b hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 4 } add_to_variable = { global.CPZ_p_ko = -2 } add_to_variable = { global.CPZ_p_psl = -2 } add_to_variable = { global.CPZ_p_p2050 = -2 } add_to_variable = { global.CPZ_p_lewica = -2 } CPZ_przelicz = yes } set_global_flag = CPZ_etap1
+	}
+	option = {
+		name = cpz.300.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_0513cb92 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 7 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } set_global_flag = CPZ_etap1
+	}
+}
+
+country_event = {
+	id = cpz.301
+	title = cpz.301.t
+	desc = cpz.301.d
+	picture = GFX_tfe_mapa_secesja
+	is_triggered_only = yes
+	option = {
+		name = cpz.301.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_15efeccf hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 6 } add_to_variable = { global.CPZ_kryzys = -2 } CPZ_przelicz = yes } set_global_flag = CPZ_etap2
+	}
+	option = {
+		name = cpz.301.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_3ac07541 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 4 } add_to_variable = { global.CPZ_kryzys = 5 } add_to_variable = { global.CPZ_wojsko = -2 } CPZ_przelicz = yes } set_global_flag = CPZ_etap2
+	}
+}
+
+country_event = {
+	id = cpz.320
+	title = cpz.320.t
+	desc = cpz.320.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.320.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5b829a5a hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.330
+	title = cpz.330.t
+	desc = cpz.330.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.330.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_70a4acf5 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_pomorskie_cd days = 42 }
+	}
+	option = {
+		name = cpz.330.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_aa907385 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 3 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_pomorskie_cd days = 14 }
+	}
+}
+
+country_event = {
+	id = cpz.340
+	title = cpz.340.t
+	desc = cpz.340.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.340.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.321
+	title = cpz.321.t
+	desc = cpz.321.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.321.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5b829a5a hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.331
+	title = cpz.331.t
+	desc = cpz.331.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.331.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_70a4acf5 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_kujawsko_pomorskie_cd days = 42 }
+	}
+	option = {
+		name = cpz.331.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_aa907385 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 3 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_kujawsko_pomorskie_cd days = 14 }
+	}
+}
+
+country_event = {
+	id = cpz.341
+	title = cpz.341.t
+	desc = cpz.341.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.341.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.322
+	title = cpz.322.t
+	desc = cpz.322.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.322.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5b829a5a hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.332
+	title = cpz.332.t
+	desc = cpz.332.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.332.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_70a4acf5 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_wielkopolskie_cd days = 42 }
+	}
+	option = {
+		name = cpz.332.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_aa907385 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 3 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_wielkopolskie_cd days = 14 }
+	}
+}
+
+country_event = {
+	id = cpz.342
+	title = cpz.342.t
+	desc = cpz.342.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.342.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.323
+	title = cpz.323.t
+	desc = cpz.323.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.323.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5b829a5a hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.333
+	title = cpz.333.t
+	desc = cpz.333.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.333.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_70a4acf5 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_warminsko_mazurskie_cd days = 42 }
+	}
+	option = {
+		name = cpz.333.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_aa907385 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 3 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_warminsko_mazurskie_cd days = 14 }
+	}
+}
+
+country_event = {
+	id = cpz.343
+	title = cpz.343.t
+	desc = cpz.343.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.343.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.324
+	title = cpz.324.t
+	desc = cpz.324.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.324.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5b829a5a hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.334
+	title = cpz.334.t
+	desc = cpz.334.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.334.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_70a4acf5 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_podlaskie_cd days = 42 }
+	}
+	option = {
+		name = cpz.334.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_aa907385 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 3 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_podlaskie_cd days = 14 }
+	}
+}
+
+country_event = {
+	id = cpz.344
+	title = cpz.344.t
+	desc = cpz.344.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.344.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.325
+	title = cpz.325.t
+	desc = cpz.325.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.325.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5b829a5a hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.335
+	title = cpz.335.t
+	desc = cpz.335.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.335.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_70a4acf5 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_lubelskie_cd days = 42 }
+	}
+	option = {
+		name = cpz.335.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_aa907385 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 3 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_lubelskie_cd days = 14 }
+	}
+}
+
+country_event = {
+	id = cpz.345
+	title = cpz.345.t
+	desc = cpz.345.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.345.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.326
+	title = cpz.326.t
+	desc = cpz.326.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.326.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5b829a5a hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.336
+	title = cpz.336.t
+	desc = cpz.336.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.336.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_70a4acf5 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_lodzkie_cd days = 42 }
+	}
+	option = {
+		name = cpz.336.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_aa907385 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 3 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_lodzkie_cd days = 14 }
+	}
+}
+
+country_event = {
+	id = cpz.346
+	title = cpz.346.t
+	desc = cpz.346.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.346.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.327
+	title = cpz.327.t
+	desc = cpz.327.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.327.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5b829a5a hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.337
+	title = cpz.337.t
+	desc = cpz.337.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.337.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_70a4acf5 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_mazowieckie_cd days = 42 }
+	}
+	option = {
+		name = cpz.337.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_aa907385 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 3 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_mazowieckie_cd days = 14 }
+	}
+}
+
+country_event = {
+	id = cpz.347
+	title = cpz.347.t
+	desc = cpz.347.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.347.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.328
+	title = cpz.328.t
+	desc = cpz.328.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.328.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5b829a5a hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.338
+	title = cpz.338.t
+	desc = cpz.338.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.338.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_70a4acf5 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -2 } add_to_variable = { global.CPZ_p_ko = -1 } add_to_variable = { global.CPZ_p_psl = -1 } add_to_variable = { global.CPZ_p_p2050 = -1 } add_to_variable = { global.CPZ_p_lewica = -1 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_zachodnie_cd days = 42 }
+	}
+	option = {
+		name = cpz.338.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_aa907385 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 3 } add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes } set_global_flag = { flag = CPZ_w_zachodnie_cd days = 14 }
+	}
+}
+
+country_event = {
+	id = cpz.348
+	title = cpz.348.t
+	desc = cpz.348.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.348.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.600
+	title = cpz.600.t
+	desc = cpz.600.d
+	picture = GFX_tfe_mapa_warszawa
+	is_triggered_only = yes
+	option = {
+		name = cpz.600.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b803dcf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.601
+	title = cpz.601.t
+	desc = cpz.601.d
+	picture = GFX_tfe_mapa_warszawa
+	is_triggered_only = yes
+	option = {
+		name = cpz.601.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b803dcf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.602
+	title = cpz.602.t
+	desc = cpz.602.d
+	picture = GFX_tfe_mapa_warszawa
+	is_triggered_only = yes
+	option = {
+		name = cpz.602.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b803dcf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.603
+	title = cpz.603.t
+	desc = cpz.603.d
+	picture = GFX_tfe_mapa_warszawa
+	is_triggered_only = yes
+	option = {
+		name = cpz.603.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b803dcf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.604
+	title = cpz.604.t
+	desc = cpz.604.d
+	picture = GFX_tfe_mapa_warszawa
+	is_triggered_only = yes
+	option = {
+		name = cpz.604.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b803dcf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.605
+	title = cpz.605.t
+	desc = cpz.605.d
+	picture = GFX_tfe_mapa_warszawa
+	is_triggered_only = yes
+	option = {
+		name = cpz.605.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b803dcf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.606
+	title = cpz.606.t
+	desc = cpz.606.d
+	picture = GFX_tfe_mapa_warszawa
+	is_triggered_only = yes
+	option = {
+		name = cpz.606.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b803dcf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.607
+	title = cpz.607.t
+	desc = cpz.607.d
+	picture = GFX_tfe_mapa_warszawa
+	is_triggered_only = yes
+	option = {
+		name = cpz.607.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b803dcf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.608
+	title = cpz.608.t
+	desc = cpz.608.d
+	picture = GFX_tfe_mapa_warszawa
+	is_triggered_only = yes
+	option = {
+		name = cpz.608.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b803dcf7 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.490
+	title = cpz.490.t
+	desc = cpz.490.d
+	picture = GFX_pl2027_ev081_front_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.490.a
+		ai_chance = { factor = 1 }
+		CPZ_wojna_domowa = yes
+	}
+}
+
+news_event = {
+	id = cpz.491
+	title = cpz.491.t
+	desc = cpz.491.d
+	picture = GFX_pl2027_ev081_front_3_news
+	is_triggered_only = yes
+	option = {
+		name = cpz.491.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = {
+	id = cpz.500
+	title = cpz.500.t
+	desc = cpz.500.d
+	picture = GFX_pl2027_ev081_front_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.500.a
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_gracz_rzad
+	}
+	option = {
+		name = cpz.500.b
+		trigger = { any_country = { has_country_flag = CPZ_oboz_prez } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_gracz_prezydent random_country = { limit = { has_country_flag = CPZ_oboz_prez } change_tag_from = ROOT }
+	}
+	option = {
+		name = cpz.500.c
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_gracz_neutralny country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.510
+	title = cpz.510.t
+	desc = cpz.510.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.510.a
+		ai_chance = { factor = 1 }
+		country_event = { id = cpz.530 }
+	}
+	option = {
+		name = cpz.510.b
+		ai_chance = { factor = 1 }
+		country_event = { id = cpz.531 }
+	}
+	option = {
+		name = cpz.510.c
+		ai_chance = { factor = 1 }
+		country_event = { id = cpz.532 }
+	}
+	option = {
+		name = cpz.510.e
+		ai_chance = { factor = 1 }
+		country_event = { id = cpz.533 }
+	}
+	option = {
+		name = cpz.510.f
+		ai_chance = { factor = 1 }
+		country_event = { id = cpz.534 }
+	}
+	option = {
+		name = cpz.510.g
+		ai_chance = { factor = 1 }
+		country_event = { id = cpz.535 }
+	}
+	option = {
+		name = cpz.510.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.511 }
+	}
+}
+
+country_event = {
+	id = cpz.511
+	title = cpz.511.t
+	desc = cpz.511.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.511.a
+		ai_chance = { factor = 1 }
+		country_event = { id = cpz.536 }
+	}
+	option = {
+		name = cpz.511.b
+		ai_chance = { factor = 1 }
+		country_event = { id = cpz.537 }
+	}
+	option = {
+		name = cpz.511.c
+		ai_chance = { factor = 1 }
+		country_event = { id = cpz.538 }
+	}
+	option = {
+		name = cpz.511.e
+		ai_chance = { factor = 1 }
+		country_event = { id = cpz.539 }
+	}
+	option = {
+		name = cpz.511.f
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.530
+	title = cpz.530.t
+	desc = cpz.530.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.530.a
+		trigger = { NOT = { WMG = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_WMG set_global_flag = CPZ_prio set_global_flag = CPZ_prio_pomorskie custom_effect_tooltip = CPZ_tt_c1856193 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.530.b
+		trigger = { NOT = { GDY = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_GDY set_global_flag = CPZ_prio set_global_flag = CPZ_prio_pomorskie custom_effect_tooltip = CPZ_tt_f1b2192a country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.530.c
+		trigger = { NOT = { SPT = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_SPT set_global_flag = CPZ_prio set_global_flag = CPZ_prio_pomorskie custom_effect_tooltip = CPZ_tt_75363bc6 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.530.e
+		trigger = { NOT = { KOC = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KOC set_global_flag = CPZ_prio set_global_flag = CPZ_prio_pomorskie custom_effect_tooltip = CPZ_tt_35b25597 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.530.f
+		trigger = { NOT = { KPM = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KPM set_global_flag = CPZ_prio set_global_flag = CPZ_prio_pomorskie custom_effect_tooltip = CPZ_tt_1d23f397 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.530.g
+		trigger = { NOT = { CHJ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_CHJ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_pomorskie custom_effect_tooltip = CPZ_tt_2fa1fa2d country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.530.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.5301 }
+	}
+	option = {
+		name = cpz.530.i
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.5301
+	title = cpz.5301.t
+	desc = cpz.5301.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.5301.a
+		trigger = { NOT = { ZKR = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_ZKR set_global_flag = CPZ_prio set_global_flag = CPZ_prio_pomorskie custom_effect_tooltip = CPZ_tt_1ebb183e country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5301.b
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.531
+	title = cpz.531.t
+	desc = cpz.531.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.531.a
+		trigger = { NOT = { TRN = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_TRN set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_ffa540c1 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.531.b
+		trigger = { NOT = { BYD = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_BYD set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_9402fe7f country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.531.c
+		trigger = { NOT = { WLC = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_WLC set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_6dca729d country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.531.e
+		trigger = { NOT = { GRU = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_GRU set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_c02227fa country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.531.f
+		trigger = { NOT = { KUJ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KUJ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_ad94d8ce country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.531.g
+		trigger = { NOT = { CHE = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_CHE set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_b01f5ac9 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.531.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.5311 }
+	}
+	option = {
+		name = cpz.531.i
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.5311
+	title = cpz.5311.t
+	desc = cpz.5311.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.5311.a
+		trigger = { NOT = { DOB = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_DOB set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_de3906c6 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5311.b
+		trigger = { NOT = { SWC = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_SWC set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_d34c9ec1 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5311.c
+		trigger = { NOT = { TUC = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_TUC set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_516b4d83 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5311.e
+		trigger = { NOT = { PLK = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_PLK set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_40173a77 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5311.f
+		trigger = { NOT = { KRW = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KRW set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_c532499c country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5311.g
+		trigger = { NOT = { CHZ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_CHZ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_3ee164c1 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5311.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.5312 }
+	}
+	option = {
+		name = cpz.5311.i
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.5312
+	title = cpz.5312.t
+	desc = cpz.5312.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.5312.a
+		trigger = { NOT = { DAB = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_DAB set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_87c45116 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5312.b
+		trigger = { NOT = { LUB = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_LUB set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_ad4272a9 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5312.c
+		trigger = { NOT = { LYS = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_LYS set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_a220c94e country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5312.e
+		trigger = { NOT = { NWW = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_NWW set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_7acf01df country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5312.f
+		trigger = { NOT = { OSD = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_OSD set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_56dd80a6 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5312.g
+		trigger = { NOT = { ROZ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_ROZ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_5b9d1568 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5312.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.5313 }
+	}
+	option = {
+		name = cpz.5312.i
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.5313
+	title = cpz.5313.t
+	desc = cpz.5313.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.5313.a
+		trigger = { NOT = { SCK = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_SCK set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_e825705a country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5313.b
+		trigger = { NOT = { SLK = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_SLK set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_2405394b country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5313.c
+		trigger = { NOT = { UBJ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_UBJ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_7d511db7 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5313.e
+		trigger = { NOT = { BRO = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_BRO set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_b150f9e3 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5313.f
+		trigger = { NOT = { BRZ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_BRZ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_3f78b411 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5313.g
+		trigger = { NOT = { CIE = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_CIE set_global_flag = CPZ_prio set_global_flag = CPZ_prio_kujawsko_pomorskie custom_effect_tooltip = CPZ_tt_f0708c0c country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5313.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.532
+	title = cpz.532.t
+	desc = cpz.532.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.532.a
+		trigger = { NOT = { WMP = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_WMP set_global_flag = CPZ_prio set_global_flag = CPZ_prio_wielkopolskie custom_effect_tooltip = CPZ_tt_0ba5369e country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.532.b
+		trigger = { NOT = { GNZ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_GNZ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_wielkopolskie custom_effect_tooltip = CPZ_tt_58120d4a country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.532.c
+		trigger = { NOT = { KLS = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KLS set_global_flag = CPZ_prio set_global_flag = CPZ_prio_wielkopolskie custom_effect_tooltip = CPZ_tt_34e2eef5 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.532.e
+		trigger = { NOT = { KON = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KON set_global_flag = CPZ_prio set_global_flag = CPZ_prio_wielkopolskie custom_effect_tooltip = CPZ_tt_03003958 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.532.f
+		trigger = { NOT = { LES = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_LES set_global_flag = CPZ_prio set_global_flag = CPZ_prio_wielkopolskie custom_effect_tooltip = CPZ_tt_d3e57887 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.532.g
+		trigger = { NOT = { NOT = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_NOT set_global_flag = CPZ_prio set_global_flag = CPZ_prio_wielkopolskie custom_effect_tooltip = CPZ_tt_a4f945ff country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.532.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.5321 }
+	}
+	option = {
+		name = cpz.532.i
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.5321
+	title = cpz.5321.t
+	desc = cpz.5321.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.5321.a
+		trigger = { NOT = { KRJ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KRJ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_wielkopolskie custom_effect_tooltip = CPZ_tt_0790371b country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5321.b
+		trigger = { NOT = { PSN = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_PSN set_global_flag = CPZ_prio set_global_flag = CPZ_prio_wielkopolskie custom_effect_tooltip = CPZ_tt_96407813 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5321.c
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.533
+	title = cpz.533.t
+	desc = cpz.533.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.533.a
+		trigger = { NOT = { WMZ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_WMZ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warminsko_mazurskie custom_effect_tooltip = CPZ_tt_b54b24fe country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.533.b
+		trigger = { NOT = { MAZ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_MAZ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warminsko_mazurskie custom_effect_tooltip = CPZ_tt_8dcc39d6 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.533.c
+		trigger = { NOT = { LBW = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_LBW set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warminsko_mazurskie custom_effect_tooltip = CPZ_tt_d84fb60a country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.533.e
+		trigger = { NOT = { GNL = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_GNL set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warminsko_mazurskie custom_effect_tooltip = CPZ_tt_10250376 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.533.f
+		trigger = { NOT = { NML = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_NML set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warminsko_mazurskie custom_effect_tooltip = CPZ_tt_22438651 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.533.g
+		trigger = { NOT = { ILA = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_ILA set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warminsko_mazurskie custom_effect_tooltip = CPZ_tt_14af514a country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.533.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.5331 }
+	}
+	option = {
+		name = cpz.533.i
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.5331
+	title = cpz.5331.t
+	desc = cpz.5331.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.5331.a
+		trigger = { NOT = { KRZ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KRZ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warminsko_mazurskie custom_effect_tooltip = CPZ_tt_e77ad0c8 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5331.b
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.534
+	title = cpz.534.t
+	desc = cpz.534.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.534.a
+		trigger = { NOT = { BST = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_BST set_global_flag = CPZ_prio set_global_flag = CPZ_prio_podlaskie custom_effect_tooltip = CPZ_tt_6e6b9511 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.534.b
+		trigger = { NOT = { SUW = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_SUW set_global_flag = CPZ_prio set_global_flag = CPZ_prio_podlaskie custom_effect_tooltip = CPZ_tt_0d606160 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.534.c
+		trigger = { NOT = { NAR = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_NAR set_global_flag = CPZ_prio set_global_flag = CPZ_prio_podlaskie custom_effect_tooltip = CPZ_tt_c35f9cae country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.534.e
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.535
+	title = cpz.535.t
+	desc = cpz.535.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.535.a
+		trigger = { NOT = { PRW = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_PRW set_global_flag = CPZ_prio set_global_flag = CPZ_prio_lubelskie custom_effect_tooltip = CPZ_tt_b1b015ef country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.535.b
+		trigger = { NOT = { PDL = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_PDL set_global_flag = CPZ_prio set_global_flag = CPZ_prio_lubelskie custom_effect_tooltip = CPZ_tt_535e826c country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.535.c
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.536
+	title = cpz.536.t
+	desc = cpz.536.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.536.a
+		trigger = { NOT = { LWC = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_LWC set_global_flag = CPZ_prio set_global_flag = CPZ_prio_lodzkie custom_effect_tooltip = CPZ_tt_2889ac8b country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.536.b
+		trigger = { NOT = { PTK = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_PTK set_global_flag = CPZ_prio set_global_flag = CPZ_prio_lodzkie custom_effect_tooltip = CPZ_tt_cbf8938f country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.536.c
+		trigger = { NOT = { SRD = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_SRD set_global_flag = CPZ_prio set_global_flag = CPZ_prio_lodzkie custom_effect_tooltip = CPZ_tt_688e8bd0 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.536.e
+		trigger = { NOT = { KTN = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KTN set_global_flag = CPZ_prio set_global_flag = CPZ_prio_lodzkie custom_effect_tooltip = CPZ_tt_b808f6c6 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.536.f
+		trigger = { NOT = { LOW = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_LOW set_global_flag = CPZ_prio set_global_flag = CPZ_prio_lodzkie custom_effect_tooltip = CPZ_tt_98088b82 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.536.g
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.537
+	title = cpz.537.t
+	desc = cpz.537.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.537.a
+		trigger = { NOT = { NNA = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_NNA set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_1de311f8 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.537.b
+		trigger = { NOT = { PLO = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_PLO set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_145003b4 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.537.c
+		trigger = { NOT = { KKR = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KKR set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_5ae6a385 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.537.e
+		trigger = { NOT = { RAD = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_RAD set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_755e197f country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.537.f
+		trigger = { NOT = { MLA = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_MLA set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_cec59825 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.537.g
+		trigger = { NOT = { KST = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KST set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_71fca20f country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.537.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.5371 }
+	}
+	option = {
+		name = cpz.537.i
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.5371
+	title = cpz.5371.t
+	desc = cpz.5371.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.5371.a
+		trigger = { NOT = { GRD = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_GRD set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_668d0d83 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5371.b
+		trigger = { NOT = { OTW = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_OTW set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_5112b77b country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5371.c
+		trigger = { NOT = { OZM = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_OZM set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_40ff1ab6 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5371.e
+		trigger = { NOT = { PSC = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_PSC set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_54949837 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5371.f
+		trigger = { NOT = { WLM = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_WLM set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_f47c2635 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5371.g
+		trigger = { NOT = { WOL = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_WOL set_global_flag = CPZ_prio set_global_flag = CPZ_prio_mazowieckie custom_effect_tooltip = CPZ_tt_ca0e5b4f country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5371.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.538
+	title = cpz.538.t
+	desc = cpz.538.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.538.a
+		trigger = { NOT = { PMN = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_PMN set_global_flag = CPZ_prio set_global_flag = CPZ_prio_zachodnie custom_effect_tooltip = CPZ_tt_f26f487a country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.538.b
+		trigger = { NOT = { SLS = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_SLS set_global_flag = CPZ_prio set_global_flag = CPZ_prio_zachodnie custom_effect_tooltip = CPZ_tt_6844732e country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.538.c
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.539
+	title = cpz.539.t
+	desc = cpz.539.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.539.a
+		trigger = { NOT = { SMR = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_SMR set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warszawa custom_effect_tooltip = CPZ_tt_a41d5ddd country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.539.b
+		trigger = { NOT = { PLC = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_PLC set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warszawa custom_effect_tooltip = CPZ_tt_9ec2164a country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.539.c
+		trigger = { NOT = { WOJ = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_WOJ set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warszawa custom_effect_tooltip = CPZ_tt_a478bf48 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.539.e
+		trigger = { NOT = { LEG = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_LEG set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warszawa custom_effect_tooltip = CPZ_tt_26bf7f65 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.539.f
+		trigger = { NOT = { MPR = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_MPR set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warszawa custom_effect_tooltip = CPZ_tt_3f0ab6b4 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.539.g
+		trigger = { NOT = { PRG = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_PRG set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warszawa custom_effect_tooltip = CPZ_tt_d1dd7e62 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.539.h
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.5391 }
+	}
+	option = {
+		name = cpz.539.i
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.5391
+	title = cpz.5391.t
+	desc = cpz.5391.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.5391.a
+		trigger = { NOT = { ZIE = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_ZIE set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warszawa custom_effect_tooltip = CPZ_tt_72481285 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5391.b
+		trigger = { NOT = { TEC = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_TEC set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warszawa custom_effect_tooltip = CPZ_tt_e0859fa4 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5391.c
+		trigger = { NOT = { KPR = { has_country_flag = CPZ_oboz_prez } } }
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_cel_KPR set_global_flag = CPZ_prio set_global_flag = CPZ_prio_warszawa custom_effect_tooltip = CPZ_tt_77a4e274 country_event = { id = cpz.560 days = 45 }
+	}
+	option = {
+		name = cpz.5391.e
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.560
+	title = cpz.560.t
+	desc = cpz.560.d
+	picture = GFX_tfe_mapa_secesja
+	is_triggered_only = yes
+	trigger = { is_ai = no original_tag = POL NOT = { has_global_flag = CPZ_cel_przejety } }
+	option = {
+		name = cpz.560.a
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_cel_przejety if = { limit = { has_global_flag = CPZ_cel_BRO } if = { limit = { country_exists = BRO } if = { limit = { BRO = { is_subject = yes } } CPZ_uwolnij_BRO = yes } else = { BRO = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_BRO = yes } } if = { limit = { has_global_flag = CPZ_cel_BRZ } if = { limit = { country_exists = BRZ } if = { limit = { BRZ = { is_subject = yes } } CPZ_uwolnij_BRZ = yes } else = { BRZ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_BRZ = yes } } if = { limit = { has_global_flag = CPZ_cel_BST } if = { limit = { country_exists = BST } if = { limit = { BST = { is_subject = yes } } CPZ_uwolnij_BST = yes } else = { BST = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_BST = yes } } if = { limit = { has_global_flag = CPZ_cel_BYD } if = { limit = { country_exists = BYD } if = { limit = { BYD = { is_subject = yes } } CPZ_uwolnij_BYD = yes } else = { BYD = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_BYD = yes } } if = { limit = { has_global_flag = CPZ_cel_CHE } if = { limit = { country_exists = CHE } if = { limit = { CHE = { is_subject = yes } } CPZ_uwolnij_CHE = yes } else = { CHE = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_CHE = yes } } if = { limit = { has_global_flag = CPZ_cel_CHJ } if = { limit = { country_exists = CHJ } if = { limit = { CHJ = { is_subject = yes } } CPZ_uwolnij_CHJ = yes } else = { CHJ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_CHJ = yes } } if = { limit = { has_global_flag = CPZ_cel_CHZ } if = { limit = { country_exists = CHZ } if = { limit = { CHZ = { is_subject = yes } } CPZ_uwolnij_CHZ = yes } else = { CHZ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_CHZ = yes } } if = { limit = { has_global_flag = CPZ_cel_CIE } if = { limit = { country_exists = CIE } if = { limit = { CIE = { is_subject = yes } } CPZ_uwolnij_CIE = yes } else = { CIE = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_CIE = yes } } if = { limit = { has_global_flag = CPZ_cel_DAB } if = { limit = { country_exists = DAB } if = { limit = { DAB = { is_subject = yes } } CPZ_uwolnij_DAB = yes } else = { DAB = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_DAB = yes } } if = { limit = { has_global_flag = CPZ_cel_DOB } if = { limit = { country_exists = DOB } if = { limit = { DOB = { is_subject = yes } } CPZ_uwolnij_DOB = yes } else = { DOB = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_DOB = yes } } if = { limit = { has_global_flag = CPZ_cel_GDY } if = { limit = { country_exists = GDY } if = { limit = { GDY = { is_subject = yes } } CPZ_uwolnij_GDY = yes } else = { GDY = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_GDY = yes } } if = { limit = { has_global_flag = CPZ_cel_GNL } if = { limit = { country_exists = GNL } if = { limit = { GNL = { is_subject = yes } } CPZ_uwolnij_GNL = yes } else = { GNL = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_GNL = yes } } if = { limit = { has_global_flag = CPZ_cel_GNZ } if = { limit = { country_exists = GNZ } if = { limit = { GNZ = { is_subject = yes } } CPZ_uwolnij_GNZ = yes } else = { GNZ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_GNZ = yes } } if = { limit = { has_global_flag = CPZ_cel_GRD } if = { limit = { country_exists = GRD } if = { limit = { GRD = { is_subject = yes } } CPZ_uwolnij_GRD = yes } else = { GRD = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_GRD = yes } } if = { limit = { has_global_flag = CPZ_cel_GRU } if = { limit = { country_exists = GRU } if = { limit = { GRU = { is_subject = yes } } CPZ_uwolnij_GRU = yes } else = { GRU = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_GRU = yes } } if = { limit = { has_global_flag = CPZ_cel_ILA } if = { limit = { country_exists = ILA } if = { limit = { ILA = { is_subject = yes } } CPZ_uwolnij_ILA = yes } else = { ILA = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_ILA = yes } } if = { limit = { has_global_flag = CPZ_cel_KKR } if = { limit = { country_exists = KKR } if = { limit = { KKR = { is_subject = yes } } CPZ_uwolnij_KKR = yes } else = { KKR = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KKR = yes } } if = { limit = { has_global_flag = CPZ_cel_KLS } if = { limit = { country_exists = KLS } if = { limit = { KLS = { is_subject = yes } } CPZ_uwolnij_KLS = yes } else = { KLS = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KLS = yes } } if = { limit = { has_global_flag = CPZ_cel_KOC } if = { limit = { country_exists = KOC } if = { limit = { KOC = { is_subject = yes } } CPZ_uwolnij_KOC = yes } else = { KOC = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KOC = yes } } if = { limit = { has_global_flag = CPZ_cel_KON } if = { limit = { country_exists = KON } if = { limit = { KON = { is_subject = yes } } CPZ_uwolnij_KON = yes } else = { KON = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KON = yes } } if = { limit = { has_global_flag = CPZ_cel_KPM } if = { limit = { country_exists = KPM } if = { limit = { KPM = { is_subject = yes } } CPZ_uwolnij_KPM = yes } else = { KPM = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KPM = yes } } if = { limit = { has_global_flag = CPZ_cel_KPR } if = { limit = { country_exists = KPR } if = { limit = { KPR = { is_subject = yes } } CPZ_uwolnij_KPR = yes } else = { KPR = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KPR = yes } } if = { limit = { has_global_flag = CPZ_cel_KRJ } if = { limit = { country_exists = KRJ } if = { limit = { KRJ = { is_subject = yes } } CPZ_uwolnij_KRJ = yes } else = { KRJ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KRJ = yes } } if = { limit = { has_global_flag = CPZ_cel_KRW } if = { limit = { country_exists = KRW } if = { limit = { KRW = { is_subject = yes } } CPZ_uwolnij_KRW = yes } else = { KRW = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KRW = yes } } if = { limit = { has_global_flag = CPZ_cel_KRZ } if = { limit = { country_exists = KRZ } if = { limit = { KRZ = { is_subject = yes } } CPZ_uwolnij_KRZ = yes } else = { KRZ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KRZ = yes } } if = { limit = { has_global_flag = CPZ_cel_KST } if = { limit = { country_exists = KST } if = { limit = { KST = { is_subject = yes } } CPZ_uwolnij_KST = yes } else = { KST = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KST = yes } } if = { limit = { has_global_flag = CPZ_cel_KTN } if = { limit = { country_exists = KTN } if = { limit = { KTN = { is_subject = yes } } CPZ_uwolnij_KTN = yes } else = { KTN = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KTN = yes } } if = { limit = { has_global_flag = CPZ_cel_KUJ } if = { limit = { country_exists = KUJ } if = { limit = { KUJ = { is_subject = yes } } CPZ_uwolnij_KUJ = yes } else = { KUJ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_KUJ = yes } } if = { limit = { has_global_flag = CPZ_cel_LBW } if = { limit = { country_exists = LBW } if = { limit = { LBW = { is_subject = yes } } CPZ_uwolnij_LBW = yes } else = { LBW = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_LBW = yes } } if = { limit = { has_global_flag = CPZ_cel_LEG } if = { limit = { country_exists = LEG } if = { limit = { LEG = { is_subject = yes } } CPZ_uwolnij_LEG = yes } else = { LEG = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_LEG = yes } } if = { limit = { has_global_flag = CPZ_cel_LES } if = { limit = { country_exists = LES } if = { limit = { LES = { is_subject = yes } } CPZ_uwolnij_LES = yes } else = { LES = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_LES = yes } } if = { limit = { has_global_flag = CPZ_cel_LOW } if = { limit = { country_exists = LOW } if = { limit = { LOW = { is_subject = yes } } CPZ_uwolnij_LOW = yes } else = { LOW = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_LOW = yes } } if = { limit = { has_global_flag = CPZ_cel_LUB } if = { limit = { country_exists = LUB } if = { limit = { LUB = { is_subject = yes } } CPZ_uwolnij_LUB = yes } else = { LUB = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_LUB = yes } } if = { limit = { has_global_flag = CPZ_cel_LWC } if = { limit = { country_exists = LWC } if = { limit = { LWC = { is_subject = yes } } CPZ_uwolnij_LWC = yes } else = { LWC = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_LWC = yes } } if = { limit = { has_global_flag = CPZ_cel_LYS } if = { limit = { country_exists = LYS } if = { limit = { LYS = { is_subject = yes } } CPZ_uwolnij_LYS = yes } else = { LYS = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_LYS = yes } } if = { limit = { has_global_flag = CPZ_cel_MAZ } if = { limit = { country_exists = MAZ } if = { limit = { MAZ = { is_subject = yes } } CPZ_uwolnij_MAZ = yes } else = { MAZ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_MAZ = yes } } if = { limit = { has_global_flag = CPZ_cel_MLA } if = { limit = { country_exists = MLA } if = { limit = { MLA = { is_subject = yes } } CPZ_uwolnij_MLA = yes } else = { MLA = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_MLA = yes } } if = { limit = { has_global_flag = CPZ_cel_MPR } if = { limit = { country_exists = MPR } if = { limit = { MPR = { is_subject = yes } } CPZ_uwolnij_MPR = yes } else = { MPR = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_MPR = yes } } if = { limit = { has_global_flag = CPZ_cel_NAR } if = { limit = { country_exists = NAR } if = { limit = { NAR = { is_subject = yes } } CPZ_uwolnij_NAR = yes } else = { NAR = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_NAR = yes } } if = { limit = { has_global_flag = CPZ_cel_NML } if = { limit = { country_exists = NML } if = { limit = { NML = { is_subject = yes } } CPZ_uwolnij_NML = yes } else = { NML = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_NML = yes } } if = { limit = { has_global_flag = CPZ_cel_NNA } if = { limit = { country_exists = NNA } if = { limit = { NNA = { is_subject = yes } } CPZ_uwolnij_NNA = yes } else = { NNA = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_NNA = yes } } if = { limit = { has_global_flag = CPZ_cel_NOT } if = { limit = { country_exists = NOT } if = { limit = { NOT = { is_subject = yes } } CPZ_uwolnij_NOT = yes } else = { NOT = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_NOT = yes } } if = { limit = { has_global_flag = CPZ_cel_NWW } if = { limit = { country_exists = NWW } if = { limit = { NWW = { is_subject = yes } } CPZ_uwolnij_NWW = yes } else = { NWW = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_NWW = yes } } if = { limit = { has_global_flag = CPZ_cel_OSD } if = { limit = { country_exists = OSD } if = { limit = { OSD = { is_subject = yes } } CPZ_uwolnij_OSD = yes } else = { OSD = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_OSD = yes } } if = { limit = { has_global_flag = CPZ_cel_OTW } if = { limit = { country_exists = OTW } if = { limit = { OTW = { is_subject = yes } } CPZ_uwolnij_OTW = yes } else = { OTW = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_OTW = yes } } if = { limit = { has_global_flag = CPZ_cel_OZM } if = { limit = { country_exists = OZM } if = { limit = { OZM = { is_subject = yes } } CPZ_uwolnij_OZM = yes } else = { OZM = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_OZM = yes } } if = { limit = { has_global_flag = CPZ_cel_PDL } if = { limit = { country_exists = PDL } if = { limit = { PDL = { is_subject = yes } } CPZ_uwolnij_PDL = yes } else = { PDL = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_PDL = yes } } if = { limit = { has_global_flag = CPZ_cel_PLC } if = { limit = { country_exists = PLC } if = { limit = { PLC = { is_subject = yes } } CPZ_uwolnij_PLC = yes } else = { PLC = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_PLC = yes } } if = { limit = { has_global_flag = CPZ_cel_PLK } if = { limit = { country_exists = PLK } if = { limit = { PLK = { is_subject = yes } } CPZ_uwolnij_PLK = yes } else = { PLK = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_PLK = yes } } if = { limit = { has_global_flag = CPZ_cel_PLO } if = { limit = { country_exists = PLO } if = { limit = { PLO = { is_subject = yes } } CPZ_uwolnij_PLO = yes } else = { PLO = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_PLO = yes } } if = { limit = { has_global_flag = CPZ_cel_PMN } if = { limit = { country_exists = PMN } if = { limit = { PMN = { is_subject = yes } } CPZ_uwolnij_PMN = yes } else = { PMN = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_PMN = yes } } if = { limit = { has_global_flag = CPZ_cel_PRG } if = { limit = { country_exists = PRG } if = { limit = { PRG = { is_subject = yes } } CPZ_uwolnij_PRG = yes } else = { PRG = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_PRG = yes } } if = { limit = { has_global_flag = CPZ_cel_PRW } if = { limit = { country_exists = PRW } if = { limit = { PRW = { is_subject = yes } } CPZ_uwolnij_PRW = yes } else = { PRW = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_PRW = yes } } if = { limit = { has_global_flag = CPZ_cel_PSC } if = { limit = { country_exists = PSC } if = { limit = { PSC = { is_subject = yes } } CPZ_uwolnij_PSC = yes } else = { PSC = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_PSC = yes } } if = { limit = { has_global_flag = CPZ_cel_PSN } if = { limit = { country_exists = PSN } if = { limit = { PSN = { is_subject = yes } } CPZ_uwolnij_PSN = yes } else = { PSN = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_PSN = yes } } if = { limit = { has_global_flag = CPZ_cel_PTK } if = { limit = { country_exists = PTK } if = { limit = { PTK = { is_subject = yes } } CPZ_uwolnij_PTK = yes } else = { PTK = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_PTK = yes } } if = { limit = { has_global_flag = CPZ_cel_RAD } if = { limit = { country_exists = RAD } if = { limit = { RAD = { is_subject = yes } } CPZ_uwolnij_RAD = yes } else = { RAD = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_RAD = yes } } if = { limit = { has_global_flag = CPZ_cel_ROZ } if = { limit = { country_exists = ROZ } if = { limit = { ROZ = { is_subject = yes } } CPZ_uwolnij_ROZ = yes } else = { ROZ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_ROZ = yes } } if = { limit = { has_global_flag = CPZ_cel_SCK } if = { limit = { country_exists = SCK } if = { limit = { SCK = { is_subject = yes } } CPZ_uwolnij_SCK = yes } else = { SCK = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_SCK = yes } } if = { limit = { has_global_flag = CPZ_cel_SLK } if = { limit = { country_exists = SLK } if = { limit = { SLK = { is_subject = yes } } CPZ_uwolnij_SLK = yes } else = { SLK = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_SLK = yes } } if = { limit = { has_global_flag = CPZ_cel_SLS } if = { limit = { country_exists = SLS } if = { limit = { SLS = { is_subject = yes } } CPZ_uwolnij_SLS = yes } else = { SLS = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_SLS = yes } } if = { limit = { has_global_flag = CPZ_cel_SMR } if = { limit = { country_exists = SMR } if = { limit = { SMR = { is_subject = yes } } CPZ_uwolnij_SMR = yes } else = { SMR = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_SMR = yes } } if = { limit = { has_global_flag = CPZ_cel_SPT } if = { limit = { country_exists = SPT } if = { limit = { SPT = { is_subject = yes } } CPZ_uwolnij_SPT = yes } else = { SPT = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_SPT = yes } } if = { limit = { has_global_flag = CPZ_cel_SRD } if = { limit = { country_exists = SRD } if = { limit = { SRD = { is_subject = yes } } CPZ_uwolnij_SRD = yes } else = { SRD = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_SRD = yes } } if = { limit = { has_global_flag = CPZ_cel_SUW } if = { limit = { country_exists = SUW } if = { limit = { SUW = { is_subject = yes } } CPZ_uwolnij_SUW = yes } else = { SUW = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_SUW = yes } } if = { limit = { has_global_flag = CPZ_cel_SWC } if = { limit = { country_exists = SWC } if = { limit = { SWC = { is_subject = yes } } CPZ_uwolnij_SWC = yes } else = { SWC = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_SWC = yes } } if = { limit = { has_global_flag = CPZ_cel_TEC } if = { limit = { country_exists = TEC } if = { limit = { TEC = { is_subject = yes } } CPZ_uwolnij_TEC = yes } else = { TEC = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_TEC = yes } } if = { limit = { has_global_flag = CPZ_cel_TRN } if = { limit = { country_exists = TRN } if = { limit = { TRN = { is_subject = yes } } CPZ_uwolnij_TRN = yes } else = { TRN = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_TRN = yes } } if = { limit = { has_global_flag = CPZ_cel_TUC } if = { limit = { country_exists = TUC } if = { limit = { TUC = { is_subject = yes } } CPZ_uwolnij_TUC = yes } else = { TUC = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_TUC = yes } } if = { limit = { has_global_flag = CPZ_cel_UBJ } if = { limit = { country_exists = UBJ } if = { limit = { UBJ = { is_subject = yes } } CPZ_uwolnij_UBJ = yes } else = { UBJ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_UBJ = yes } } if = { limit = { has_global_flag = CPZ_cel_WLC } if = { limit = { country_exists = WLC } if = { limit = { WLC = { is_subject = yes } } CPZ_uwolnij_WLC = yes } else = { WLC = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_WLC = yes } } if = { limit = { has_global_flag = CPZ_cel_WLM } if = { limit = { country_exists = WLM } if = { limit = { WLM = { is_subject = yes } } CPZ_uwolnij_WLM = yes } else = { WLM = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_WLM = yes } } if = { limit = { has_global_flag = CPZ_cel_WMG } if = { limit = { country_exists = WMG } if = { limit = { WMG = { is_subject = yes } } CPZ_uwolnij_WMG = yes } else = { WMG = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_WMG = yes } } if = { limit = { has_global_flag = CPZ_cel_WMP } if = { limit = { country_exists = WMP } if = { limit = { WMP = { is_subject = yes } } CPZ_uwolnij_WMP = yes } else = { WMP = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_WMP = yes } } if = { limit = { has_global_flag = CPZ_cel_WMZ } if = { limit = { country_exists = WMZ } if = { limit = { WMZ = { is_subject = yes } } CPZ_uwolnij_WMZ = yes } else = { WMZ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_WMZ = yes } } if = { limit = { has_global_flag = CPZ_cel_WOJ } if = { limit = { country_exists = WOJ } if = { limit = { WOJ = { is_subject = yes } } CPZ_uwolnij_WOJ = yes } else = { WOJ = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_WOJ = yes } } if = { limit = { has_global_flag = CPZ_cel_WOL } if = { limit = { country_exists = WOL } if = { limit = { WOL = { is_subject = yes } } CPZ_uwolnij_WOL = yes } else = { WOL = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_WOL = yes } } if = { limit = { has_global_flag = CPZ_cel_ZIE } if = { limit = { country_exists = ZIE } if = { limit = { ZIE = { is_subject = yes } } CPZ_uwolnij_ZIE = yes } else = { ZIE = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_ZIE = yes } } if = { limit = { has_global_flag = CPZ_cel_ZKR } if = { limit = { country_exists = ZKR } if = { limit = { ZKR = { is_subject = yes } } CPZ_uwolnij_ZKR = yes } else = { ZKR = { change_tag_from = ROOT } } } else = { CPZ_uwolnij_ZKR = yes } }
+	}
+}
+
+country_event = {
+	id = cpz.520
+	title = cpz.520.t
+	desc = cpz.520.d
+	picture = GFX_pl2027_ev081_pokoj_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.520.a
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_rzad_wygral PL2027_SE_cpz_rzad_wygrywa = yes custom_effect_tooltip = CPZ_tt_a1229e02 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -15 } add_to_variable = { global.CPZ_rzad = 5 } add_to_variable = { global.CPZ_prez = -10 } add_to_variable = { global.CPZ_napiecie = -5 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.521
+	title = cpz.521.t
+	desc = cpz.521.d
+	picture = GFX_pl2027_ev081_wybory_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.521.a
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_prez_wygral PL2027_SE_cpz_belweder = yes custom_effect_tooltip = CPZ_tt_49bddd12 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 15 } add_to_variable = { global.CPZ_kryzys = 5 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.700
+	title = cpz.700.t
+	desc = cpz.700.d
+	picture = GFX_pl2027_ev081_pokoj_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.700.a
+		ai_chance = { factor = 3 }
+		set_global_flag = CPZ_stabilizacja if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = -0.05 tooltip_side = CPZ_bop_rzad } } custom_effect_tooltip = CPZ_tt_de17e8bc hidden_effect = { add_to_variable = { global.CPZ_kryzys = -15 } add_to_variable = { global.CPZ_p_ko = 4 } add_to_variable = { global.CPZ_p_psl = 4 } add_to_variable = { global.CPZ_p_p2050 = 4 } add_to_variable = { global.CPZ_p_lewica = 4 } add_to_variable = { global.CPZ_prez = -6 } add_to_variable = { global.CPZ_napiecie = -6 } add_to_variable = { global.CPZ_separatyzm = -5 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.700.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_67eb078f hidden_effect = { add_to_variable = { global.CPZ_kryzys = 6 } add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes } set_global_flag = CPZ_rozmowy_zerwane if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = 0.05 tooltip_side = CPZ_bop_prez } }
+	}
+}
+
+news_event = {
+	id = cpz.790
+	title = cpz.790.t
+	desc = cpz.790.d
+	picture = GFX_tfe_mapa_rp_trwa_news
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = cpz.790.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = {
+	id = cpz.800
+	title = cpz.800.t
+	desc = cpz.800.d
+	picture = GFX_tfe_mapa_rozpad
+	is_triggered_only = yes
+	trigger = { is_ai = no }
+	option = {
+		name = cpz.800.a
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_gz_smr
+	}
+	option = {
+		name = cpz.800.b
+		ai_chance = { factor = 0 }
+		set_global_flag = CPZ_gz_kpr
+	}
+	option = {
+		name = cpz.800.c
+		ai_chance = { factor = 0 }
+		country_event = { id = cpz.510 }
+	}
+}
+
+country_event = {
+	id = cpz.801
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = cpz.801.a
+		ai_chance = { factor = 1 }
+		CPZ_godzina_zero_wykonaj = yes
+	}
+}
+
+news_event = {
+	id = cpz.802
+	title = cpz.802.t
+	desc = cpz.802.d
+	picture = GFX_tfe_mapa_rozpad_news
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = cpz.802.a
+		ai_chance = { factor = 1 }
+		
+	}
+}
+
+country_event = {
+	id = cpz.920
+	title = cpz.920.t
+	desc = cpz.920.d
+	picture = GFX_pl2027_ev081_wisla_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.920.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b810c581 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes } army_experience = 5
+	}
+	option = {
+		name = cpz.920.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_e2756473 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes } add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = cpz.921
+	title = cpz.921.t
+	desc = cpz.921.d
+	picture = GFX_pl2027_ev081_front_4
+	is_triggered_only = yes
+	option = {
+		name = cpz.921.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_c1270a94 hidden_effect = { add_to_variable = { global.CPZ_wojsko = 2 } CPZ_przelicz = yes } add_manpower = 2000
+	}
+	option = {
+		name = cpz.921.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_7d8f3770 hidden_effect = { add_to_variable = { global.CPZ_wojsko = -3 } add_to_variable = { global.CPZ_napiecie = 3 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes } add_war_support = 0.03
+	}
+}
+
+country_event = {
+	id = cpz.922
+	title = cpz.922.t
+	desc = cpz.922.d
+	picture = GFX_pl2027_ev081_uchodzcy_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.922.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_11c508b6 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -3 } CPZ_przelicz = yes } add_war_support = -0.02
+	}
+	option = {
+		name = cpz.922.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_d76d5998 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 5 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes } add_manpower = 3000
+	}
+}
+
+country_event = {
+	id = cpz.923
+	title = cpz.923.t
+	desc = cpz.923.d
+	picture = GFX_pl2027_ev081_szpital_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.923.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5c85fe9a hidden_effect = { add_to_variable = { global.CPZ_napiecie = -2 } CPZ_przelicz = yes } add_stability = 0.02
+	}
+	option = {
+		name = cpz.923.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b810c581 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes } army_experience = 5
+	}
+}
+
+country_event = {
+	id = cpz.924
+	title = cpz.924.t
+	desc = cpz.924.d
+	picture = GFX_pl2027_ev081_granica_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.924.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_3236e35b hidden_effect = { add_to_variable = { global.CPZ_prez = 1 } CPZ_przelicz = yes } add_manpower = 2500
+	}
+	option = {
+		name = cpz.924.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = cpz.925
+	title = cpz.925.t
+	desc = cpz.925.d
+	picture = GFX_pl2027_ev081_zima_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.925.a
+		ai_chance = { factor = 1 }
+		army_experience = 8
+	}
+	option = {
+		name = cpz.925.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b810c581 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes } add_war_support = -0.03
+	}
+}
+
+country_event = {
+	id = cpz.900
+	title = cpz.900.t
+	desc = cpz.900.d
+	picture = GFX_pl2027_ev081_ulica_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.900.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_0c0e82a0 hidden_effect = { add_to_variable = { global.CPZ_policja = -2 } add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.900.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_44416fca hidden_effect = { add_to_variable = { global.CPZ_rzad = -2 } add_to_variable = { global.CPZ_napiecie = -2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_798bd17a hidden_effect = { add_to_variable = { global.CPZ_rezerwy = -4 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.901
+	title = cpz.901.t
+	desc = cpz.901.d
+	picture = GFX_pl2027_ev081_paliwo_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.901.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_11c508b6 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -3 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_f9adf517 hidden_effect = { add_to_variable = { global.CPZ_rezerwy = -6 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.901.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_f9d11672 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 3 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_rzad = -1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.902
+	title = cpz.902.t
+	desc = cpz.902.d
+	picture = GFX_pl2027_ev081_gospodarka_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.902.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_11c508b6 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -3 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_bd1323fb hidden_effect = { add_to_variable = { global.CPZ_rezerwy = -8 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.902.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_f5b9b0c1 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 5 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_rzad = -2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.903
+	title = cpz.903.t
+	desc = cpz.903.d
+	picture = GFX_pl2027_ev081_porzadek_4
+	is_triggered_only = yes
+	option = {
+		name = cpz.903.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_9a585a22 hidden_effect = { add_to_variable = { global.CPZ_policja = -2 } add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.903.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_1a368140 hidden_effect = { add_to_variable = { global.CPZ_policja = -3 } add_to_variable = { global.CPZ_separatyzm = 4 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.904
+	title = cpz.904.t
+	desc = cpz.904.d
+	picture = GFX_pl2027_ev081_blackout_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.904.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_82aab0dd hidden_effect = { add_to_variable = { global.CPZ_wojsko = -1 } add_to_variable = { global.CPZ_napiecie = -1 } add_to_variable = { global.CPZ_administracja = 2 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.904.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_6219cd94 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.905
+	title = cpz.905.t
+	desc = cpz.905.d
+	picture = GFX_pl2027_ev081_praca_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.905.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_5c85fe9a hidden_effect = { add_to_variable = { global.CPZ_napiecie = -2 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_f9adf517 hidden_effect = { add_to_variable = { global.CPZ_rezerwy = -6 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.905.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_7d6b28c4 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 5 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.906
+	title = cpz.906.t
+	desc = cpz.906.d
+	picture = GFX_pl2027_ev081_media_5
+	is_triggered_only = yes
+	option = {
+		name = cpz.906.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_e91b2188 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -3 } add_to_variable = { global.CPZ_prez = 1 } add_to_variable = { global.CPZ_rzad = -1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.906.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_574c107e hidden_effect = { add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } add_to_variable = { global.CPZ_rzad = 1 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.907
+	title = cpz.907.t
+	desc = cpz.907.d
+	picture = GFX_pl2027_ev081_uchodzcy_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.907.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_7830d8d0 hidden_effect = { add_to_variable = { global.CPZ_administracja = -2 } add_to_variable = { global.CPZ_napiecie = -1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.907.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_dd747b4b hidden_effect = { add_to_variable = { global.CPZ_administracja = -4 } add_to_variable = { global.CPZ_napiecie = -3 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_24f3f83c hidden_effect = { add_to_variable = { global.CPZ_rezerwy = -3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.908
+	title = cpz.908.t
+	desc = cpz.908.d
+	picture = GFX_pl2027_ev081_porzadek_5
+	is_triggered_only = yes
+	option = {
+		name = cpz.908.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_8f52b7e8 hidden_effect = { add_to_variable = { global.CPZ_policja = -2 } add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.908.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_14ce685d hidden_effect = { add_to_variable = { global.CPZ_policja = -1 } add_to_variable = { global.CPZ_rzad = -2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.909
+	title = cpz.909.t
+	desc = cpz.909.d
+	picture = GFX_pl2027_ev081_front_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.909.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b99c6c9e hidden_effect = { add_to_variable = { global.CPZ_wojsko = -2 } add_to_variable = { global.CPZ_separatyzm = 2 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.909.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_410c1be9 hidden_effect = { add_to_variable = { global.CPZ_wojsko = -1 } add_to_variable = { global.CPZ_separatyzm = 4 } add_to_variable = { global.CPZ_napiecie = 2 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.910
+	title = cpz.910.t
+	desc = cpz.910.d
+	picture = GFX_pl2027_ev081_polityka_5
+	is_triggered_only = yes
+	option = {
+		name = cpz.910.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_06b145d8 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 4 } add_to_variable = { global.CPZ_rzad = 1 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.910.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_a2c9b331 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 6 } add_to_variable = { global.CPZ_kryzys = -1 } add_to_variable = { global.CPZ_administracja = -3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.911
+	title = cpz.911.t
+	desc = cpz.911.d
+	picture = GFX_pl2027_ev081_kibice_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.911.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_206121e4 hidden_effect = { add_to_variable = { global.CPZ_policja = -1 } add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.911.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_ad232e9c hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 4 } add_to_variable = { global.CPZ_napiecie = 1 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.450
+	title = cpz.450.t
+	desc = cpz.450.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.450.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_ef20f920 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 4 } add_to_variable = { global.CPZ_rzad = -3 } CPZ_przelicz = yes } if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = 0.05 tooltip_side = CPZ_bop_prez } }
+	}
+}
+
+country_event = {
+	id = cpz.451
+	title = cpz.451.t
+	desc = cpz.451.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.451.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_ef20f920 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 4 } add_to_variable = { global.CPZ_rzad = -3 } CPZ_przelicz = yes } if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = 0.05 tooltip_side = CPZ_bop_prez } }
+	}
+}
+
+country_event = {
+	id = cpz.452
+	title = cpz.452.t
+	desc = cpz.452.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.452.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_ef20f920 hidden_effect = { add_to_variable = { global.CPZ_kryzys = 4 } add_to_variable = { global.CPZ_rzad = -3 } CPZ_przelicz = yes } if = { limit = { has_power_balance = { id = CPZ_bop } } add_power_balance_value = { id = CPZ_bop value = 0.05 tooltip_side = CPZ_bop_prez } }
+	}
+}
+
+country_event = {
+	id = cpz.380
+	title = cpz.380.t
+	desc = cpz.380.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.380.a
+		ai_chance = { factor = 3 }
+		custom_effect_tooltip = CPZ_tt_85a5298b hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -8 } add_to_variable = { global.CPZ_kryzys = -3 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_3845753d hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 5 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 5 } add_to_variable = { global.CPZ_lo_wielkopolskie = 5 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 5 } add_to_variable = { global.CPZ_lo_podlaskie = 5 } add_to_variable = { global.CPZ_lo_lubelskie = 5 } add_to_variable = { global.CPZ_lo_lodzkie = 5 } add_to_variable = { global.CPZ_lo_mazowieckie = 5 } add_to_variable = { global.CPZ_lo_zachodnie = 5 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_51fce418 hidden_effect = { set_global_flag = { flag = CPZ_w_pomorskie_cd days = 30 } set_global_flag = { flag = CPZ_w_kujawsko_pomorskie_cd days = 30 } set_global_flag = { flag = CPZ_w_wielkopolskie_cd days = 30 } set_global_flag = { flag = CPZ_w_warminsko_mazurskie_cd days = 30 } set_global_flag = { flag = CPZ_w_podlaskie_cd days = 30 } set_global_flag = { flag = CPZ_w_lubelskie_cd days = 30 } set_global_flag = { flag = CPZ_w_lodzkie_cd days = 30 } set_global_flag = { flag = CPZ_w_mazowieckie_cd days = 30 } set_global_flag = { flag = CPZ_w_zachodnie_cd days = 30 } }
+	}
+	option = {
+		name = cpz.380.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_e727eda7 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -3 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_38798848 hidden_effect = { if = { limit = { check_variable = { global.CPZ_w_pomorskie = 2 } } CPZ_krok_pomorskie = yes } if = { limit = { check_variable = { global.CPZ_w_kujawsko_pomorskie = 2 } } CPZ_krok_kujawsko_pomorskie = yes } if = { limit = { check_variable = { global.CPZ_w_wielkopolskie = 2 } } CPZ_krok_wielkopolskie = yes } if = { limit = { check_variable = { global.CPZ_w_warminsko_mazurskie = 2 } } CPZ_krok_warminsko_mazurskie = yes } if = { limit = { check_variable = { global.CPZ_w_podlaskie = 2 } } CPZ_krok_podlaskie = yes } if = { limit = { check_variable = { global.CPZ_w_lubelskie = 2 } } CPZ_krok_lubelskie = yes } if = { limit = { check_variable = { global.CPZ_w_lodzkie = 2 } } CPZ_krok_lodzkie = yes } if = { limit = { check_variable = { global.CPZ_w_mazowieckie = 2 } } CPZ_krok_mazowieckie = yes } if = { limit = { check_variable = { global.CPZ_w_zachodnie = 2 } } CPZ_krok_zachodnie = yes } }
+	}
+	option = {
+		name = cpz.380.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = CPZ_tt_4eccd9b8 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 10 } add_to_variable = { global.CPZ_kryzys = 4 } CPZ_przelicz = yes } CPZ_ultimata = yes
+	}
+}
+
+country_event = {
+	id = cpz.540
+	title = cpz.540.t
+	desc = cpz.540.d
+	picture = GFX_pl2027_ev081_front_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.540.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_ea7827fb hidden_effect = { add_to_variable = { global.CPZ_kryzys = -8 } add_to_variable = { global.CPZ_napiecie = -5 } CPZ_przelicz = yes } add_war_support = -0.05 set_global_flag = CPZ_rozmowy_wojna
+	}
+	option = {
+		name = cpz.540.b
+		ai_chance = { factor = 2 }
+		add_stability = 0.05 add_political_power = 50
+	}
+	option = {
+		name = cpz.540.c
+		ai_chance = { factor = 1 }
+		add_war_support = 0.08 army_experience = 15 custom_effect_tooltip = CPZ_tt_e2756473 hidden_effect = { add_to_variable = { global.CPZ_napiecie = 4 } if = { limit = { country_exists = POL POL = { has_idea = CPZ_i_spor } } add_to_variable = { global.CPZ_napiecie = 1 } } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.545
+	title = cpz.545.t
+	desc = cpz.545.d
+	picture = GFX_pl2027_ev081_front_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.545.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_6ca42745 hidden_effect = { add_to_variable = { global.CPZ_kryzys = -10 } add_to_variable = { global.CPZ_napiecie = -4 } CPZ_przelicz = yes } add_war_support = -0.05
+	}
+	option = {
+		name = cpz.545.b
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = CPZ_i_ofensywa days = 60 } army_experience = 10
+	}
+}
+
+country_event = {
+	id = cpz.546
+	title = cpz.546.t
+	desc = cpz.546.d
+	picture = GFX_pl2027_ev081_dyplomacja_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.546.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_3d77f8e5 hidden_effect = { add_to_variable = { global.CPZ_rzad = 2 } add_to_variable = { global.CPZ_prez = 3 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_5455590f hidden_effect = { add_to_variable = { global.CPZ_rezerwy = 15 } CPZ_przelicz = yes } add_timed_idea = { idea = CPZ_i_pomoc_ue days = 180 }
+	}
+	option = {
+		name = cpz.546.b
+		ai_chance = { factor = 1 }
+		add_political_power = 40 custom_effect_tooltip = CPZ_tt_07549af2 hidden_effect = { add_to_variable = { global.CPZ_rezerwy = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.547
+	title = cpz.547.t
+	desc = cpz.547.d
+	picture = GFX_pl2027_ev081_media_4
+	is_triggered_only = yes
+	option = {
+		name = cpz.547.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+	}
+	option = {
+		name = cpz.547.b
+		ai_chance = { factor = 1 }
+		add_war_support = 0.05
+	}
+}
+
+country_event = {
+	id = cpz.548
+	title = cpz.548.t
+	desc = cpz.548.d
+	picture = GFX_pl2027_ev081_media_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.548.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_c05b2aca hidden_effect = { add_to_variable = { global.CPZ_prez = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.549
+	title = cpz.549.t
+	desc = cpz.549.d
+	picture = GFX_pl2027_ev081_narada_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.549.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_084b4871 hidden_effect = { add_to_variable = { global.CPZ_jednosc = 10 } CPZ_przelicz = yes } add_manpower = 8000
+	}
+	option = {
+		name = cpz.549.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_585cdcc9 hidden_effect = { add_to_variable = { global.CPZ_jednosc = -5 } CPZ_przelicz = yes } add_political_power = 30
+	}
+}
+
+country_event = {
+	id = cpz.550
+	title = cpz.550.t
+	desc = cpz.550.d
+	picture = GFX_pl2027_ev081_narada_0
+	is_triggered_only = yes
+	option = {
+		name = cpz.550.a
+		ai_chance = { factor = 2 }
+		add_stability = 0.05
+	}
+	option = {
+		name = cpz.550.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_084b4871 hidden_effect = { add_to_variable = { global.CPZ_jednosc = 10 } CPZ_przelicz = yes } add_political_power = -30
+	}
+	option = {
+		name = cpz.550.c
+		trigger = { has_country_flag = CPZ_rzad_jurka }
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_b60287f6 hidden_effect = { add_to_variable = { global.CPZ_prez = 4 } CPZ_przelicz = yes } add_stability = 0.05 custom_effect_tooltip = CPZ_tt_ba737b7c hidden_effect = { add_to_variable = { global.CPZ_jednosc = 5 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.551
+	title = cpz.551.t
+	desc = cpz.551.d
+	picture = GFX_pl2027_ev081_wybory_3
+	is_triggered_only = yes
+	option = {
+		name = cpz.551.a
+		ai_chance = { factor = 2 }
+		set_country_flag = CPZ_po_a add_ideas = CPZ_i_rzad_techniczny set_politics = { elections_allowed = yes } country_event = { id = cpz.552 days = 30 }
+	}
+	option = {
+		name = cpz.551.b
+		ai_chance = { factor = 1 }
+		set_country_flag = CPZ_po_b add_ideas = CPZ_i_adm_prez country_event = { id = cpz.553 days = 30 }
+	}
+	option = {
+		name = cpz.551.c
+		ai_chance = { factor = 1 }
+		set_country_flag = CPZ_po_c add_ideas = CPZ_i_koalicja_prawicy country_event = { id = cpz.554 days = 30 }
+	}
+}
+
+country_event = {
+	id = cpz.552
+	title = cpz.552.t
+	desc = cpz.552.d
+	picture = GFX_pl2027_ev081_wybory_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.552.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05 remove_ideas = CPZ_i_rzad_techniczny custom_effect_tooltip = CPZ_tt_f792dcaf hidden_effect = { add_to_variable = { global.CPZ_napiecie = -5 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.553
+	title = cpz.553.t
+	desc = cpz.553.d
+	picture = GFX_tfe_mapa_secesja
+	is_triggered_only = yes
+	option = {
+		name = cpz.553.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_39f780af hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 6 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.554
+	title = cpz.554.t
+	desc = cpz.554.d
+	picture = GFX_pl2027_ev081_polityka_4
+	is_triggered_only = yes
+	option = {
+		name = cpz.554.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_ba737b7c hidden_effect = { add_to_variable = { global.CPZ_jednosc = 5 } CPZ_przelicz = yes } add_political_power = -40
+	}
+	option = {
+		name = cpz.554.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_9fb1987e hidden_effect = { add_to_variable = { global.CPZ_jednosc = -10 } CPZ_przelicz = yes } add_political_power = 60
+	}
+}
+
+country_event = {
+	id = cpz.565
+	title = cpz.565.t
+	desc = cpz.565.d
+	picture = GFX_pl2027_ev081_narada_5
+	is_triggered_only = yes
+	option = {
+		name = cpz.565.a
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_g_lider_tech custom_effect_tooltip = CPZ_tt_6b192da9
+	}
+	option = {
+		name = cpz.565.b
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_g_lider_samo custom_effect_tooltip = CPZ_tt_18ac0e88
+	}
+	option = {
+		name = cpz.565.c
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_g_lider_kom custom_effect_tooltip = CPZ_tt_4256bb42
+	}
+}
+
+country_event = {
+	id = cpz.566
+	title = cpz.566.t
+	desc = cpz.566.d
+	picture = GFX_tfe_mapa_autonomie
+	is_triggered_only = yes
+	option = {
+		name = cpz.566.a
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_g_droga_autonomia custom_effect_tooltip = CPZ_tt_e727eda7 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -3 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_684b7877
+	}
+	option = {
+		name = cpz.566.b
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_g_droga_federacja custom_effect_tooltip = CPZ_tt_52b68592
+	}
+	option = {
+		name = cpz.566.c
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_g_droga_niepodleglosc CPZ_prio_przyspiesz = yes custom_effect_tooltip = CPZ_tt_b54f78bf
+	}
+}
+
+country_event = {
+	id = cpz.567
+	title = cpz.567.t
+	desc = cpz.567.d
+	picture = GFX_pl2027_ev081_wybory_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.567.a
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_g_referendum CPZ_prio_krok = yes custom_effect_tooltip = CPZ_tt_af7e4d50
+	}
+	option = {
+		name = cpz.567.b
+		ai_chance = { factor = 1 }
+		set_global_flag = CPZ_g_droga_autonomia custom_effect_tooltip = CPZ_tt_42ba9e06 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -2 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.568
+	title = cpz.568.t
+	desc = cpz.568.d
+	picture = GFX_tfe_mapa_secesja
+	is_triggered_only = yes
+	option = {
+		name = cpz.568.a
+		ai_chance = { factor = 1 }
+		CPZ_prio_przyspiesz = yes custom_effect_tooltip = CPZ_tt_459ce729 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = 3 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.710
+	title = cpz.710.t
+	desc = cpz.710.d
+	picture = GFX_pl2027_ev081_wybory_1
+	is_triggered_only = yes
+	option = {
+		name = cpz.710.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_e139cca2 hidden_effect = { add_to_variable = { global.CPZ_rzad = 5 } add_to_variable = { global.CPZ_p_ko = 5 } add_to_variable = { global.CPZ_p_psl = 5 } add_to_variable = { global.CPZ_p_p2050 = 5 } add_to_variable = { global.CPZ_p_lewica = 5 } CPZ_przelicz = yes }
+	}
+	option = {
+		name = cpz.710.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_56966a87 hidden_effect = { add_to_variable = { global.CPZ_napiecie = -5 } add_to_variable = { global.CPZ_prez = 2 } add_to_variable = { global.CPZ_kryzys = -5 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.720
+	title = cpz.720.t
+	desc = cpz.720.d
+	picture = GFX_pl2027_ev081_polityka_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.720.a
+		ai_chance = { factor = 2 }
+		custom_effect_tooltip = CPZ_tt_6e386509 hidden_effect = { add_to_variable = { global.CPZ_rzad = 3 } CPZ_przelicz = yes } add_stability = 0.03
+	}
+	option = {
+		name = cpz.720.b
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_c05b2aca hidden_effect = { add_to_variable = { global.CPZ_prez = 3 } CPZ_przelicz = yes } add_political_power = 50
+	}
+	option = {
+		name = cpz.720.c
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = CPZ_tt_f0c00582 hidden_effect = { add_to_variable = { global.CPZ_lo_pomorskie = 10 } add_to_variable = { global.CPZ_lo_kujawsko_pomorskie = 10 } add_to_variable = { global.CPZ_lo_wielkopolskie = 10 } add_to_variable = { global.CPZ_lo_warminsko_mazurskie = 10 } add_to_variable = { global.CPZ_lo_podlaskie = 10 } add_to_variable = { global.CPZ_lo_lubelskie = 10 } add_to_variable = { global.CPZ_lo_lodzkie = 10 } add_to_variable = { global.CPZ_lo_mazowieckie = 10 } add_to_variable = { global.CPZ_lo_zachodnie = 10 } CPZ_przelicz = yes } custom_effect_tooltip = CPZ_tt_acbd7299 hidden_effect = { add_to_variable = { global.CPZ_separatyzm = -5 } CPZ_przelicz = yes }
+	}
+}
+
+country_event = {
+	id = cpz.721
+	title = cpz.721.t
+	desc = cpz.721.d
+	picture = GFX_pl2027_ev081_wybory_2
+	is_triggered_only = yes
+	option = {
+		name = cpz.721.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.05
+	}
+	option = {
+		name = cpz.721.b
+		ai_chance = { factor = 1 }
+		add_political_power = 50 custom_effect_tooltip = CPZ_tt_f792dcaf hidden_effect = { add_to_variable = { global.CPZ_napiecie = -5 } CPZ_przelicz = yes }
+	}
+}

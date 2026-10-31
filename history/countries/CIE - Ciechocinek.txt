@@ -1,5 +1,4 @@
 capital = 1367
-oob = "CIE_2027"
 set_research_slots = 2
 set_stability = 0.50
 set_war_support = 0.15
@@ -49,3 +48,7 @@ set_popularities = {
 }
 add_ideas = CIE_regional_identity
 recruit_character = CIE_halina
+# 0.10.2: jednostki tylko w scenariuszu 11.11.2027
+2027.11.11 = {
+	oob = "CIE_2027"
+}

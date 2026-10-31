@@ -1,0 +1,184 @@
+ideas = {
+	country = {
+		CPZ_i_kryzys = {
+			picture = DU_OZM_rzad_kryzysowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = -0.1 political_power_gain = -0.15 }
+		}
+		CPZ_i_podzielone = {
+			picture = DU_BYD_i_miasto_bez_rzadu
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = -0.05 production_speed_buildings_factor = -0.05 }
+		}
+		CPZ_i_podzielone_slabe = {
+			picture = DU_OZM_samorzad
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = -0.02 }
+		}
+		CPZ_i_spor = {
+			picture = DU_KNF_konstytucja
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = -0.02 }
+		}
+		CPZ_i_gospodarka = {
+			picture = DU_IVRP2_gospodarka
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.05 }
+		}
+		CPZ_i_gospodarka_kryzys = {
+			picture = DU_OZM_budzet_kryzysowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = -0.03 consumer_goods_factor = 0.03 }
+		}
+		CPZ_i_struktury = {
+			picture = DU_MAL_sprawny_urzad
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.03 political_power_gain = 0.05 }
+		}
+		CPZ_i_struktury_slabe = {
+			picture = DU_BYD_i_rzad_tymczasowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = -0.03 political_power_gain = -0.05 }
+		}
+		CPZ_i_wojna = {
+			picture = DU_BYD_i_stan_wyjatkowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.05 consumer_goods_factor = 0.05 stability_factor = -0.05 }
+		}
+		CPZ_i_odbudowa = {
+			picture = DU_KAL_odbudowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = -0.05 stability_factor = 0.03 }
+		}
+		CPZ_i_odrodzona = {
+			picture = DU_IVRP2_odbudowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.08 political_power_gain = 0.1 production_speed_buildings_factor = 0.05 }
+		}
+		CPZ_i_reformy = {
+			picture = DU_OZM_rzad_technokratow
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = 0.05 production_factory_efficiency_gain_factor = 0.05 }
+		}
+		CPZ_i_sztab = {
+			picture = DU_BYD_i_porzadek
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_org_factor = 0.05 }
+		}
+		CPZ_i_finanse = {
+			picture = DU_OZM_budzet_kryzysowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_buildings_factor = -0.05 }
+		}
+		CPZ_i_lacznosc = {
+			picture = DU_FAB_GDY_urzad
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { supply_consumption_factor = -0.05 }
+		}
+		CPZ_i_kprm = {
+			picture = DU_IVRP_republika_sejmowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.03 }
+		}
+		CPZ_i_obrona_instytucji = {
+			picture = DU_FAB_PLC_porzadek_idea
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.05 }
+		}
+		CPZ_i_obrona_stolicy = {
+			picture = DU_BYD_i_porzadek
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_defence_factor = 0.1 }
+		}
+		CPZ_i_mon = {
+			picture = DU_BYD_i_gosp_wojenna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { supply_consumption_factor = -0.05 }
+		}
+		CPZ_i_gosp_wojenna = {
+			picture = DU_BYD_i_gosp_wojenna
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.1 production_speed_buildings_factor = -0.05 }
+		}
+		CPZ_i_ofensywa = {
+			picture = DU_BYD_i_stan_wyjatkowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_attack_factor = 0.05 }
+		}
+		CPZ_i_dowodcy = {
+			picture = DU_IVRP_rzady_prezydenckie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_org_factor = 0.05 }
+		}
+		CPZ_i_jedno_dowodztwo = {
+			picture = DU_BYD_i_porzadek
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { army_org_factor = 0.05 }
+		}
+		CPZ_i_marsz = {
+			picture = DU_BYD_i_stan_wyjatkowy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { planning_speed = 0.15 supply_consumption_factor = -0.05 }
+		}
+		CPZ_i_komisja = {
+			picture = DU_KAL_odbudowa
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { production_speed_infrastructure_factor = 0.1 }
+		}
+		CPZ_i_zaopatrzenie = {
+			picture = DU_BYD_i_kartki
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { supply_consumption_factor = -0.05 }
+		}
+		CPZ_i_adm_prez = {
+			picture = DU_IVRP_rzady_prezydenckie
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = 0.15 stability_factor = -0.05 }
+		}
+		CPZ_i_rzad_techniczny = {
+			picture = DU_OZM_rzad_technokratow
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { stability_factor = 0.05 political_power_gain = -0.05 }
+		}
+		CPZ_i_koalicja_prawicy = {
+			picture = DU_OZM_rzad_wyborczy
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { war_support_factor = 0.05 stability_factor = 0.02 }
+		}
+		CPZ_i_pomoc_ue = {
+			picture = DU_EK_wspolny_rynek_odry
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { consumer_goods_factor = -0.03 }
+		}
+	}
+}

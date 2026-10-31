@@ -1,6 +1,38 @@
 defined_text = {
 	name = PL2027_SE_Get_naglowek
 	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_koniec }
+		localization_key = PL2027_SE_naglowek_cpz_koniec
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_ocalona }
+		localization_key = PL2027_SE_naglowek_cpz_ocalona
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_belweder }
+		localization_key = PL2027_SE_naglowek_cpz_belweder
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_rzad_wygrywa }
+		localization_key = PL2027_SE_naglowek_cpz_rzad_wygrywa
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_warszawa }
+		localization_key = PL2027_SE_naglowek_cpz_warszawa
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_wojna }
+		localization_key = PL2027_SE_naglowek_cpz_wojna
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_pierwsze_panstwo }
+		localization_key = PL2027_SE_naglowek_cpz_pierwsze_panstwo
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_trybunal }
+		localization_key = PL2027_SE_naglowek_cpz_trybunal
+	}
+	text = {
 		trigger = { has_global_flag = PL2027_SE_ivrp_sejm }
 		localization_key = PL2027_SE_naglowek_ivrp_sejm
 	}
@@ -95,6 +127,38 @@ defined_text = {
 }
 defined_text = {
 	name = PL2027_SE_Get_tytul
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_koniec }
+		localization_key = PL2027_SE_tytul_cpz_koniec
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_ocalona }
+		localization_key = PL2027_SE_tytul_cpz_ocalona
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_belweder }
+		localization_key = PL2027_SE_tytul_cpz_belweder
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_rzad_wygrywa }
+		localization_key = PL2027_SE_tytul_cpz_rzad_wygrywa
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_warszawa }
+		localization_key = PL2027_SE_tytul_cpz_warszawa
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_wojna }
+		localization_key = PL2027_SE_tytul_cpz_wojna
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_pierwsze_panstwo }
+		localization_key = PL2027_SE_tytul_cpz_pierwsze_panstwo
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_trybunal }
+		localization_key = PL2027_SE_tytul_cpz_trybunal
+	}
 	text = {
 		trigger = { has_global_flag = PL2027_SE_ivrp_sejm }
 		localization_key = PL2027_SE_tytul_ivrp_sejm
@@ -191,6 +255,38 @@ defined_text = {
 defined_text = {
 	name = PL2027_SE_Get_opis
 	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_koniec }
+		localization_key = PL2027_SE_opis_cpz_koniec
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_ocalona }
+		localization_key = PL2027_SE_opis_cpz_ocalona
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_belweder }
+		localization_key = PL2027_SE_opis_cpz_belweder
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_rzad_wygrywa }
+		localization_key = PL2027_SE_opis_cpz_rzad_wygrywa
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_warszawa }
+		localization_key = PL2027_SE_opis_cpz_warszawa
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_wojna }
+		localization_key = PL2027_SE_opis_cpz_wojna
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_pierwsze_panstwo }
+		localization_key = PL2027_SE_opis_cpz_pierwsze_panstwo
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_trybunal }
+		localization_key = PL2027_SE_opis_cpz_trybunal
+	}
+	text = {
 		trigger = { has_global_flag = PL2027_SE_ivrp_sejm }
 		localization_key = PL2027_SE_opis_ivrp_sejm
 	}
@@ -285,6 +381,38 @@ defined_text = {
 }
 defined_text = {
 	name = PL2027_SE_Get_przycisk
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_koniec }
+		localization_key = PL2027_SE_przycisk_cpz_koniec
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_ocalona }
+		localization_key = PL2027_SE_przycisk_cpz_ocalona
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_belweder }
+		localization_key = PL2027_SE_przycisk_cpz_belweder
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_rzad_wygrywa }
+		localization_key = PL2027_SE_przycisk_cpz_rzad_wygrywa
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_warszawa }
+		localization_key = PL2027_SE_przycisk_cpz_warszawa
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_wojna }
+		localization_key = PL2027_SE_przycisk_cpz_wojna
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_pierwsze_panstwo }
+		localization_key = PL2027_SE_przycisk_cpz_pierwsze_panstwo
+	}
+	text = {
+		trigger = { has_global_flag = PL2027_SE_cpz_trybunal }
+		localization_key = PL2027_SE_przycisk_cpz_trybunal
+	}
 	text = {
 		trigger = { has_global_flag = PL2027_SE_ivrp_sejm }
 		localization_key = PL2027_SE_przycisk_ivrp_sejm

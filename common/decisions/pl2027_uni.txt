@@ -339,8 +339,7 @@ UNI_kat = {
 	}
 	UNI_odbudowa_ziem = {
 		icon = generic_construction
-		allowed = { has_country_flag = PL2027_polska }
-		visible = { any_owned_state = { NOT = { is_core_of = ROOT } is_controlled_by = ROOT } }
+		visible = { has_country_flag = PL2027_polska any_owned_state = { NOT = { is_core_of = ROOT } is_controlled_by = ROOT } }
 		available = { has_war = no NOT = { has_idea = UNI_odbudowa_administracji } any_owned_state = { NOT = { is_core_of = ROOT } is_controlled_by = ROOT } }
 		cost = 60
 		days_re_enable = 180

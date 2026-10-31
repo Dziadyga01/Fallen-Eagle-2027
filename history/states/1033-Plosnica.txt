@@ -4,7 +4,12 @@ state = {
 	manpower = 2961
 	state_category = rural
 	history = {
-		owner = LBW
+		2027.11.11 = {
+			owner = LBW
+			remove_core_of = POL
+		}
+		owner = POL
+		add_core_of = POL
 		add_core_of = LBW
 		victory_points = { 2901 1 }
 		victory_points = { 833 1 }

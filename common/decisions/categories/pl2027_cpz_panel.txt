@@ -1,0 +1,6 @@
+CPZ_panel = {
+	icon = generic_political_discourse
+	allowed = { always = yes }
+	visible = { original_tag = POL has_global_flag = CPZ_scenariusz NOT = { has_global_flag = CPZ_koniec } }
+	priority = 99
+}

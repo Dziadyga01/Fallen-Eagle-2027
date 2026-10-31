@@ -1,5 +1,4 @@
 ﻿capital = 320
-oob = "LOW_2027"
 set_research_slots = 3
 set_stability = 0.45
 set_war_support = 0.35
@@ -55,3 +54,7 @@ set_popularities = {
 recruit_character = LOW_leader
 # --- lok ---
 recruit_character = LOK_low_ksiezak
+# 0.10.2: jednostki tylko w scenariuszu 11.11.2027
+2027.11.11 = {
+	oob = "LOW_2027"
+}

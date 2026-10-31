@@ -1,5 +1,4 @@
 ﻿capital = 274
-oob = "PRW_2027"
 set_research_slots = 3
 set_stability = 0.45
 set_war_support = 0.35
@@ -63,3 +62,7 @@ recruit_character = PRW_dor_wierzbicki
 recruit_character = PRW_dor_wojtowicz
 recruit_character = PRW_dor_kozak
 recruit_character = PRW_dor_bugaj
+# 0.10.2: jednostki tylko w scenariuszu 11.11.2027
+2027.11.11 = {
+	oob = "PRW_2027"
+}

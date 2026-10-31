@@ -1,0 +1,8 @@
+CPZ_dm = {
+	icon = GFX_idea_DU_EK_komisariat
+	enable = { always = yes }
+	remove_trigger = { NOT = { has_global_flag = CPZ_scenariusz } }
+	stability_factor = CPZ_stab
+	political_power_gain = CPZ_pp
+	war_support_factor = CPZ_ws
+}

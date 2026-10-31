@@ -7,7 +7,12 @@ state = {
 		rubber = 3
 	}
 	history = {
-		owner = NML
+		2027.11.11 = {
+			owner = NML
+			remove_core_of = POL
+		}
+		owner = POL
+		add_core_of = POL
 		add_core_of = NML
 		victory_points = { 10407 9 }
 		victory_points = { 10408 2 }
@@ -18,8 +23,8 @@ state = {
 			industrial_complex = 2
 			arms_factory = 1
 			air_base = 2
-			set_demilitarized_zone = yes
 		}
+		set_demilitarized_zone = yes
 	}
 	provinces = { 10407 10408 10409 10410 }
 	local_supplies = 0.0

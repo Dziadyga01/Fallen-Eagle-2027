@@ -702,8 +702,6 @@ technologies = {
 			modifier = {
 				factor = 5
 				or = {
-					has_doctrine = conventional_warfare
-					has_doctrine = technological_supremacy
 					num_of_factories > 20
 				}
 			}

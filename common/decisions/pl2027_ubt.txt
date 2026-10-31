@@ -1,7 +1,7 @@
 UBT_unia = {
 	UBT_d_zaloz = {
 		icon = generic_political_discourse
-		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = PL2027_polska }
 		available = { NOT = { has_global_flag = UBT_istnieje } has_country_flag = PL2027_polska is_subject = no any_owned_state = { is_coastal = yes } has_global_flag = TFE_faza_2 }
 		cost = 50
 		fire_only_once = yes
@@ -10,7 +10,7 @@ UBT_unia = {
 	}
 	UBT_d_zapros = {
 		icon = generic_political_discourse
-		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = PL2027_polska }
 		targets = { GDY WMG SPT KPM CHJ WMZ NNA KOC ZKR PMN PSN SLS POL KRJ SWC TUC LBW }
 		target_non_existing = no
 		target_trigger = { FROM = { has_country_flag = PL2027_polska is_subject = no any_owned_state = { is_coastal = yes } NOT = { has_country_flag = UBT_czlonek } NOT = { has_war_with = ROOT } } }
@@ -22,7 +22,7 @@ UBT_unia = {
 	}
 	UBT_d_taryfa = {
 		icon = generic_political_discourse
-		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = PL2027_polska }
 		available = { has_country_flag = UBT_czlonek NOT = { has_idea = UBT_taryfa } }
 		cost = 25
 		days_re_enable = 120
@@ -31,7 +31,7 @@ UBT_unia = {
 	}
 	UBT_d_straz = {
 		icon = generic_political_discourse
-		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = PL2027_polska }
 		available = { has_country_flag = UBT_czlonek NOT = { has_idea = UBT_straz_idea } }
 		cost = 40
 		days_re_enable = 180
@@ -40,7 +40,7 @@ UBT_unia = {
 	}
 	UBT_d_waluta = {
 		icon = generic_political_discourse
-		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = PL2027_polska }
 		available = { has_country_flag = UBT_zalozyciel check_variable = { global.UBT_spojnosc > 59 } check_variable = { global.UBT_liczba > 1 } }
 		cost = 75
 		fire_only_once = yes
@@ -49,7 +49,7 @@ UBT_unia = {
 	}
 	UBT_d_federacja = {
 		icon = generic_political_discourse
-		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = PL2027_polska }
 		available = { has_country_flag = UBT_zalozyciel check_variable = { global.UBT_spojnosc > 79 } check_variable = { global.UBT_liczba > 2 } }
 		cost = 100
 		fire_only_once = yes
@@ -58,7 +58,7 @@ UBT_unia = {
 	}
 	UBT_d_wystap = {
 		icon = generic_political_discourse
-		allowed = { has_country_flag = PL2027_polska }
+		visible = { has_country_flag = PL2027_polska }
 		available = { has_country_flag = UBT_czlonek NOT = { has_country_flag = UBT_zalozyciel } }
 		cost = 0
 		complete_effect = { UBT_odejdz = yes custom_effect_tooltip = UBT_tt_sm15 hidden_effect = { add_to_variable = { global.UBT_spojnosc = -15 } clamp_variable = { var = global.UBT_spojnosc min = 0 max = 100 } } }

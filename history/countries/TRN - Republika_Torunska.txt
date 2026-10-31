@@ -1,5 +1,4 @@
 ﻿capital = 156
-oob = "TRN_2027"
 set_research_slots = 3
 set_stability = 0.45
 set_war_support = 0.35
@@ -143,3 +142,7 @@ recruit_character = TRN_dor_wislanska
 recruit_character = TRN_dor_lisowski
 recruit_character = TRN_dor_podgorski
 recruit_character = TRN_dor_barska
+# 0.10.2: jednostki tylko w scenariuszu 11.11.2027
+2027.11.11 = {
+	oob = "TRN_2027"
+}

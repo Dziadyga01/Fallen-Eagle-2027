@@ -1,0 +1,16 @@
+ideas = {
+	country = {
+			KUJ_karta = {
+			picture = ARG_civilian_economy_boost
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = 0.05
+
+			}
+		}
+	}
+}

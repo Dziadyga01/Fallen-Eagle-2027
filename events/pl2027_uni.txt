@@ -5,7 +5,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.1.t
 	desc = uni.1.d
-	picture = GFX_pl2027_ev081_dyplomacja_4
+	picture = GFX_pl2027_bgfull_Kabinet_R_n__6546427ecc
 	is_triggered_only = yes
 	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
 	option = {
@@ -30,7 +30,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.2.t
 	desc = uni.2.d
-	picture = GFX_pl2027_ev081_dyplomacja_0
+	picture = GFX_pl2027_bgfull_Kabinet_R_n2__85a28d4fce
 	is_triggered_only = yes
 	option = {
 		name = uni.2.a
@@ -43,7 +43,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.3.t
 	desc = uni.3.d
-	picture = GFX_pl2027_ev081_miasto_3
+	picture = GFX_pl2027_bgfull_klyb_1__ae6f82ec6e
 	is_triggered_only = yes
 	option = {
 		name = uni.3.a
@@ -68,7 +68,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.4.t
 	desc = uni.4.d
-	picture = GFX_pl2027_ev081_miasto_5
+	picture = GFX_pl2027_bgfull_KONEC_k1__388aa59bad
 	is_triggered_only = yes
 	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
 	option = {
@@ -106,7 +106,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.5.t
 	desc = uni.5.d
-	picture = GFX_pl2027_ev081_dyplomacja_4
+	picture = GFX_pl2027_bgfull_KONEC_k10__6247e98de4
 	is_triggered_only = yes
 	trigger = { country_exists = FROM }
 	option = {
@@ -126,7 +126,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = uni.6.t
 	desc = uni.6.d
-	picture = GFX_pl2027_ev081_wybory_2
+	picture = GFX_pl2027_bgfull_KONEC_k10n__e158ac3153
 	is_triggered_only = yes
 	trigger = { country_exists = TRN country_exists = BYD has_global_flag = UNI_btu_warunki NOT = { has_country_flag = UNI_btu_ratyfikacja } }
 	option = {
@@ -146,7 +146,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.7.t
 	desc = uni.7.d
-	picture = GFX_pl2027_ev081_dyplomacja_0
+	picture = GFX_pl2027_bgfull_KONEC_k10n1__eb7d5e8bf2
 	is_triggered_only = yes
 	option = {
 		name = uni.7.a
@@ -159,7 +159,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.10.t
 	desc = uni.10.d
-	picture = GFX_pl2027_ev081_miasto_1_news
+	picture = GFX_pl2027_bgfull_KONEC_k1n__63a5aa4a58
 	is_triggered_only = yes
 	option = {
 		name = uni.10.a
@@ -172,7 +172,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.11.t
 	desc = uni.11.d
-	picture = GFX_pl2027_ev081_granica_2
+	picture = GFX_pl2027_bgfull_KONEC_k1n1__6510a114ed
 	is_triggered_only = yes
 	option = {
 		name = uni.11.a
@@ -186,7 +186,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.12.t
 	desc = uni.12.d
-	picture = GFX_pl2027_ev081_granica_1_news
+	picture = GFX_pl2027_bgfull_KONEC_k2__386717a539
 	is_triggered_only = yes
 	option = {
 		name = uni.12.a
@@ -199,7 +199,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.13.t
 	desc = uni.13.d
-	picture = GFX_pl2027_ev081_polityka_0_news
+	picture = GFX_pl2027_bgfull_KONEC_k2n__6adf31104b
 	is_triggered_only = yes
 	option = {
 		name = uni.13.a
@@ -212,7 +212,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.101.t
 	desc = uni.101.d
-	picture = GFX_pl2027_ev081_narada_3
+	picture = GFX_pl2027_bgfull_KONEC_k2n1__e3f68095f5
 	is_triggered_only = yes
 	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
 	option = {
@@ -244,7 +244,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.103.t
 	desc = uni.103.d
-	picture = GFX_pl2027_ev081_narada_5
+	picture = GFX_pl2027_bgfull_KONEC_k3__36632493cd
 	is_triggered_only = yes
 	trigger = { has_global_flag = UNI_kujpom_trwa }
 	option = {
@@ -265,7 +265,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = uni.104.t
 	desc = uni.104.d
-	picture = GFX_pl2027_ev081_wybory_2
+	picture = GFX_pl2027_bgfull_KONEC_k3n__a815f8e1fe
 	is_triggered_only = yes
 	trigger = { country_exists = FROM has_country_flag = UNI_kujpom_zgoda NOT = { has_war_with = FROM } }
 	option = {
@@ -296,7 +296,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.106.t
 	desc = uni.106.d
-	picture = GFX_pl2027_ev081_narada_5_news
+	picture = GFX_pl2027_bgfull_KONEC_k3n1__cc31afce8e
 	is_triggered_only = yes
 	option = {
 		name = uni.106.a
@@ -309,7 +309,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.107.t
 	desc = uni.107.d
-	picture = GFX_pl2027_ev081_narada_0
+	picture = GFX_pl2027_bgfull_KONEC_k4__598c67b81b
 	is_triggered_only = yes
 	option = {
 		name = uni.107.a
@@ -322,7 +322,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.108.t
 	desc = uni.108.d
-	picture = GFX_pl2027_ev081_gospodarka_4_news
+	picture = GFX_pl2027_bgfull_KONEC_k4n__6e1f878b29
 	is_triggered_only = yes
 	option = {
 		name = uni.108.a
@@ -335,7 +335,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.111.t
 	desc = uni.111.d
-	picture = GFX_pl2027_ev081_wisla_5
+	picture = GFX_pl2027_bgfull_KONEC_k4n1__28326474be
 	is_triggered_only = yes
 	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
 	option = {
@@ -367,7 +367,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.113.t
 	desc = uni.113.d
-	picture = GFX_pl2027_ev081_narada_0
+	picture = GFX_pl2027_bgfull_KONEC_k5__449bc1b7e6
 	is_triggered_only = yes
 	trigger = { has_global_flag = UNI_trojmiasto_trwa }
 	option = {
@@ -388,7 +388,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = uni.114.t
 	desc = uni.114.d
-	picture = GFX_pl2027_ev081_wybory_5
+	picture = GFX_pl2027_bgfull_KONEC_k5n__fad870a93a
 	is_triggered_only = yes
 	trigger = { country_exists = FROM has_country_flag = UNI_trojmiasto_zgoda NOT = { has_war_with = FROM } }
 	option = {
@@ -419,7 +419,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.116.t
 	desc = uni.116.d
-	picture = GFX_pl2027_ev081_narada_2_news
+	picture = GFX_pl2027_bgfull_KONEC_k5n1__c083bc22b7
 	is_triggered_only = yes
 	option = {
 		name = uni.116.a
@@ -432,7 +432,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.117.t
 	desc = uni.117.d
-	picture = GFX_pl2027_ev081_narada_3
+	picture = GFX_pl2027_bgfull_KONEC_k5n2__1076479af5
 	is_triggered_only = yes
 	option = {
 		name = uni.117.a
@@ -445,7 +445,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.118.t
 	desc = uni.118.d
-	picture = GFX_pl2027_ev081_gospodarka_5_news
+	picture = GFX_pl2027_bgfull_KONEC_k5n3__f32e1e79e0
 	is_triggered_only = yes
 	option = {
 		name = uni.118.a
@@ -458,7 +458,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.121.t
 	desc = uni.121.d
-	picture = GFX_pl2027_ev081_mazury_0
+	picture = GFX_pl2027_bgfull_KONEC_k6__df84f6ca68
 	is_triggered_only = yes
 	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
 	option = {
@@ -490,7 +490,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.123.t
 	desc = uni.123.d
-	picture = GFX_pl2027_ev081_mazury_2
+	picture = GFX_pl2027_bgfull_KONEC_k6n__140d23b48d
 	is_triggered_only = yes
 	trigger = { has_global_flag = UNI_warmaz_trwa }
 	option = {
@@ -511,7 +511,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = uni.124.t
 	desc = uni.124.d
-	picture = GFX_pl2027_ev081_mazury_4
+	picture = GFX_pl2027_bgfull_KONEC_k6n1__d33e2f0e00
 	is_triggered_only = yes
 	trigger = { country_exists = FROM has_country_flag = UNI_warmaz_zgoda NOT = { has_war_with = FROM } }
 	option = {
@@ -542,7 +542,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.126.t
 	desc = uni.126.d
-	picture = GFX_pl2027_ev081_mazury_5_news
+	picture = GFX_pl2027_bgfull_KONEC_k7__4fd088c599
 	is_triggered_only = yes
 	option = {
 		name = uni.126.a
@@ -555,7 +555,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.127.t
 	desc = uni.127.d
-	picture = GFX_pl2027_ev081_mazury_5
+	picture = GFX_pl2027_bgfull_KONEC_k7n__493117e77b
 	is_triggered_only = yes
 	option = {
 		name = uni.127.a
@@ -568,7 +568,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.128.t
 	desc = uni.128.d
-	picture = GFX_pl2027_ev081_mazury_1_news
+	picture = GFX_pl2027_bgfull_KONEC_k7n1__5e14af39d8
 	is_triggered_only = yes
 	option = {
 		name = uni.128.a
@@ -581,7 +581,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.131.t
 	desc = uni.131.d
-	picture = GFX_pl2027_ev081_mazury_0
+	picture = GFX_pl2027_bgfull_KONEC_k9__22d985bae9
 	is_triggered_only = yes
 	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
 	option = {
@@ -613,7 +613,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.133.t
 	desc = uni.133.d
-	picture = GFX_pl2027_ev081_narada_2
+	picture = GFX_pl2027_bgfull_KONEC_k9n__869e052bf0
 	is_triggered_only = yes
 	trigger = { has_global_flag = UNI_pnwsch_trwa }
 	option = {
@@ -634,7 +634,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = uni.134.t
 	desc = uni.134.d
-	picture = GFX_pl2027_ev081_wybory_0
+	picture = GFX_pl2027_bgfull_KONEC_k9n1__44da0a837b
 	is_triggered_only = yes
 	trigger = { country_exists = FROM has_country_flag = UNI_pnwsch_zgoda NOT = { has_war_with = FROM } }
 	option = {
@@ -665,7 +665,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.136.t
 	desc = uni.136.d
-	picture = GFX_pl2027_ev081_narada_5_news
+	picture = GFX_pl2027_bgfull_Kv_b1__0f02012e02
 	is_triggered_only = yes
 	option = {
 		name = uni.136.a
@@ -678,7 +678,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.137.t
 	desc = uni.137.d
-	picture = GFX_pl2027_ev081_narada_3
+	picture = GFX_pl2027_bgfull_Kv_b2__7b45539099
 	is_triggered_only = yes
 	option = {
 		name = uni.137.a
@@ -691,7 +691,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.138.t
 	desc = uni.138.d
-	picture = GFX_pl2027_ev081_gospodarka_0_news
+	picture = GFX_pl2027_bgfull_Kv_b2_1__672f26624d
 	is_triggered_only = yes
 	option = {
 		name = uni.138.a
@@ -704,7 +704,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.141.t
 	desc = uni.141.d
-	picture = GFX_pl2027_ev081_polityka_3
+	picture = GFX_pl2027_bgfull_Kv_b2_1_n__660d96d191
 	is_triggered_only = yes
 	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
 	option = {
@@ -736,7 +736,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.143.t
 	desc = uni.143.d
-	picture = GFX_pl2027_ev081_narada_4
+	picture = GFX_pl2027_bgfull_Kv_b2_2__c9b0f1be3a
 	is_triggered_only = yes
 	trigger = { has_global_flag = UNI_warszawa_trwa }
 	option = {
@@ -757,7 +757,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = uni.144.t
 	desc = uni.144.d
-	picture = GFX_pl2027_ev081_wybory_0
+	picture = GFX_pl2027_bgfull_Kv_b2_3__4acb60f339
 	is_triggered_only = yes
 	trigger = { country_exists = FROM has_country_flag = UNI_warszawa_zgoda NOT = { has_war_with = FROM } }
 	option = {
@@ -788,7 +788,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.146.t
 	desc = uni.146.d
-	picture = GFX_pl2027_ev081_narada_0_news
+	picture = GFX_pl2027_bgfull_Kv_b3__3c07738a5c
 	is_triggered_only = yes
 	option = {
 		name = uni.146.a
@@ -801,7 +801,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.147.t
 	desc = uni.147.d
-	picture = GFX_pl2027_ev081_narada_3
+	picture = GFX_pl2027_bgfull_KV_GR__f13f975c0d
 	is_triggered_only = yes
 	option = {
 		name = uni.147.a
@@ -814,7 +814,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.148.t
 	desc = uni.148.d
-	picture = GFX_pl2027_ev081_gospodarka_4_news
+	picture = GFX_pl2027_bgfull_KV_GR2__2f7a54fdbe
 	is_triggered_only = yes
 	option = {
 		name = uni.148.a
@@ -827,7 +827,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.151.t
 	desc = uni.151.d
-	picture = GFX_pl2027_ev081_narada_3
+	picture = GFX_pl2027_bgfull_KV_GR3__b83ca74b6e
 	is_triggered_only = yes
 	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
 	option = {
@@ -859,7 +859,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.153.t
 	desc = uni.153.d
-	picture = GFX_pl2027_ev081_narada_5
+	picture = GFX_pl2027_bgfull_KV_GR4__62b3c76d99
 	is_triggered_only = yes
 	trigger = { has_global_flag = UNI_europa_trwa }
 	option = {
@@ -880,7 +880,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = uni.154.t
 	desc = uni.154.d
-	picture = GFX_pl2027_ev081_wybory_4
+	picture = GFX_pl2027_bgfull_KV_GR5__4e570f4e98
 	is_triggered_only = yes
 	trigger = { country_exists = FROM has_country_flag = UNI_europa_zgoda NOT = { has_war_with = FROM } }
 	option = {
@@ -911,7 +911,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.156.t
 	desc = uni.156.d
-	picture = GFX_pl2027_ev081_narada_4_news
+	picture = GFX_pl2027_bgfull_KV_GR5_2__311b07e1c0
 	is_triggered_only = yes
 	option = {
 		name = uni.156.a
@@ -924,7 +924,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = uni.157.t
 	desc = uni.157.d
-	picture = GFX_pl2027_ev081_narada_5
+	picture = GFX_pl2027_bgfull_KV_GR6__c4d9d84a44
 	is_triggered_only = yes
 	option = {
 		name = uni.157.a
@@ -937,7 +937,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = uni.158.t
 	desc = uni.158.d
-	picture = GFX_pl2027_ev081_gospodarka_4_news
+	picture = GFX_pl2027_bgfull_KV_GR7__040e32d94c
 	is_triggered_only = yes
 	option = {
 		name = uni.158.a
@@ -950,7 +950,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = uni.90.t
 	desc = uni.90.d
-	picture = GFX_pl2027_ev081_polityka_2
+	picture = GFX_pl2027_bgfull_KV_GR8__83ae253449
 	is_triggered_only = yes
 	option = {
 		name = uni.90.a

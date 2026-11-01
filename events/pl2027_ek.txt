@@ -5,7 +5,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = ek.10.t
 	desc = ek.10.d
-	picture = GFX_tfe_mapa_zachod
+	picture = GFX_pl2027_bgfull_deistvia_AR84__f47dfe7d17
 	is_triggered_only = yes
 	trigger = { country_exists = FROM }
 	option = {
@@ -25,7 +25,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = ek.20.t
 	desc = ek.20.d
-	picture = GFX_tfe_mapa_zachod
+	picture = GFX_pl2027_bgfull_deistvia_AR85__fd1ececf06
 	is_triggered_only = yes
 	option = {
 		name = ek.20.a
@@ -50,7 +50,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = ek.30.t
 	desc = ek.30.d
-	picture = GFX_tfe_mapa_warszawa
+	picture = GFX_pl2027_bgfull_deistvia_AR86__d6b45044f7
 	is_triggered_only = yes
 	option = {
 		name = ek.30.a
@@ -69,7 +69,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = ek.40.t
 	desc = ek.40.d
-	picture = GFX_tfe_mapa_zachod
+	picture = GFX_pl2027_bgfull_deistvia_AR87__ce163d64cf
 	is_triggered_only = yes
 	trigger = { country_exists = FROM NOT = { has_war_with = FROM } }
 	option = {

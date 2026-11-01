@@ -4,7 +4,7 @@ country_event = {
 	id = byk.10
 	title = byk.10.t
 	desc = byk.10.d
-	picture = GFX_pl2027_ev081_miasto_3
+	picture = GFX_pl2027_bgfull_deistvia_AR108__a60b097646
 	is_triggered_only = yes
 	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } NOT = { has_country_flag = BYK_ev_10 } }
 	immediate = { set_country_flag = BYK_ev_10 }
@@ -29,7 +29,7 @@ country_event = {
 	id = byk.11
 	title = byk.11.t
 	desc = byk.11.d
-	picture = GFX_pl2027_ev081_praca_2
+	picture = GFX_pl2027_bgfull_deistvia_AT19_1__f428db0de0
 	is_triggered_only = yes
 	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } NOT = { has_country_flag = BYK_ev_11 } }
 	immediate = { set_country_flag = BYK_ev_11 }
@@ -54,7 +54,7 @@ country_event = {
 	id = byk.12
 	title = byk.12.t
 	desc = byk.12.d
-	picture = GFX_pl2027_ev081_media_2
+	picture = GFX_pl2027_bgfull_G3_FA_3__8553bd6c9f
 	is_triggered_only = yes
 	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } NOT = { has_country_flag = BYK_ev_12 } }
 	immediate = { set_country_flag = BYK_ev_12 }
@@ -79,7 +79,7 @@ country_event = {
 	id = byk.13
 	title = byk.13.t
 	desc = byk.13.d
-	picture = GFX_pl2027_ev081_ulica_3
+	picture = GFX_pl2027_bgfull_deistvia_FASH_106__25188483cd
 	is_triggered_only = yes
 	trigger = { NOT = { has_global_flag = PL2027_prolog } has_country_flag = BYD2_kampania NOT = { has_completed_focus = BYD2_wybory } NOT = { has_country_flag = BYK_ev_13 } }
 	immediate = { set_country_flag = BYK_ev_13 }

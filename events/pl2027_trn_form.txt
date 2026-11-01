@@ -5,7 +5,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = trn.1.t
 	desc = trn.1.d
-	picture = GFX_pl2027_ev081_narada_2
+	picture = GFX_pl2027_bgfull_deistvia_REV29__7af4d822d8
 	is_triggered_only = yes
 	option = {
 		name = trn.1.a
@@ -24,7 +24,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = trn.2.t
 	desc = trn.2.d
-	picture = GFX_pl2027_ev081_dyplomacja_0
+	picture = GFX_pl2027_bgfull_deistvia_REV2n__789986fe08
 	is_triggered_only = yes
 	option = {
 		name = trn.2.a
@@ -42,7 +42,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = trn.3.t
 	desc = trn.3.d
-	picture = GFX_pl2027_ev081_narada_2
+	picture = GFX_pl2027_bgfull_deistvia_REV3__2b0298508f
 	is_triggered_only = yes
 	option = {
 		name = trn.3.a
@@ -61,7 +61,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = trn.4.t
 	desc = trn.4.d
-	picture = GFX_pl2027_ev081_narada_4
+	picture = GFX_pl2027_bgfull_deistvia_REV30__b72b73235f
 	is_triggered_only = yes
 	option = {
 		name = trn.4.a
@@ -73,7 +73,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
 	title = trn.5.t
 	desc = trn.5.d
-	picture = GFX_pl2027_ev081_front_ros_2
+	picture = GFX_pl2027_bgfull_deistvia_REV30_1__53f3a8965d
 	is_triggered_only = yes
 	option = {
 		name = trn.5.a
@@ -91,7 +91,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = trn.6.t
 	desc = trn.6.d
-	picture = GFX_pl2027_ev081_front_ros_1
+	picture = GFX_pl2027_bgfull_deistvia_REV30_2__19795ab1e1
 	is_triggered_only = yes
 	option = {
 		name = trn.6.a
@@ -110,7 +110,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = trn.50.t
 	desc = trn.50.d
-	picture = GFX_pl2027_ev081_polityka_2
+	picture = GFX_pl2027_bgfull_deistvia_REV30_3__7838267f14
 	is_triggered_only = yes
 	option = {
 		name = trn.50.a
@@ -130,7 +130,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = trn.111.t
 	desc = trn.111.d
-	picture = GFX_pl2027_ev081_miasto_1
+	picture = GFX_pl2027_bgfull_deistvia_REV30_3_1__9db1295b11
 	is_triggered_only = yes
 	option = {
 		name = trn.111.a
@@ -151,7 +151,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = trn.112.t
 	desc = trn.112.d
-	picture = GFX_pl2027_ev081_wybory_3
+	picture = GFX_pl2027_bgfull_deistvia_REV30_3_2__6eef0ace61
 	is_triggered_only = yes
 	option = {
 		name = trn.112.a
@@ -172,7 +172,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = trn.113.t
 	desc = trn.113.d
-	picture = GFX_pl2027_ev081_wybory_1
+	picture = GFX_pl2027_bgfull_deistvia_REV30_4__2125e3cc61
 	is_triggered_only = yes
 	option = {
 		name = trn.113.a
@@ -194,7 +194,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = trn.114.t
 	desc = trn.114.d
-	picture = GFX_pl2027_ev081_polityka_4
+	picture = GFX_pl2027_bgfull_deistvia_REV31__4ad88cf5f9
 	is_triggered_only = yes
 	option = {
 		name = trn.114.a
@@ -215,7 +215,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = trn.120.t
 	desc = trn.120.d
-	picture = GFX_pl2027_ev081_narada_1
+	picture = GFX_pl2027_bgfull_deistvia_REV3_1__56062f2ab2
 	is_triggered_only = yes
 	trigger = { NOT = { tag = TRN } }
 	option = {
@@ -236,7 +236,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = trn.121.t
 	desc = trn.121.d
-	picture = GFX_pl2027_ev081_wybory_0_news
+	picture = GFX_pl2027_bgfull_deistvia_REV32__2bd998d5ea
 	major = yes
 	is_triggered_only = yes
 	option = {
@@ -249,7 +249,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = trn.125.t
 	desc = trn.125.d
-	picture = GFX_pl2027_ev081_wybory_2
+	picture = GFX_pl2027_bgfull_deistvia_REV33__77265a7196
 	is_triggered_only = yes
 	option = {
 		name = trn.125.a
@@ -267,7 +267,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = trn.130.t
 	desc = trn.130.d
-	picture = GFX_pl2027_ev081_wisla_1_news
+	picture = GFX_pl2027_bgfull_deistvia_REV34__302a0ad475
 	major = yes
 	is_triggered_only = yes
 	option = {
@@ -279,7 +279,7 @@ country_event = {
 	id = trn.70
 	title = trn.70.t
 	desc = trn.70.d
-	picture = GFX_pl2027_ev081_praca_0
+	picture = GFX_pl2027_bgfull_deistvia_REV35__ed819406ba
 	is_triggered_only = yes
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio }
 		country_event = { id = trn.71 days = 30 }
@@ -307,7 +307,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
 	title = trn.72.t
 	desc = trn.72.d
-	picture = GFX_pl2027_ev081_polityka_1
+	picture = GFX_pl2027_bgfull_deistvia_REV35_yr__5c4a096985
 	is_triggered_only = yes
 	option = {
 		name = trn.72.a
@@ -319,7 +319,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
 	title = trn.80.t
 	desc = trn.80.d
-	picture = GFX_pl2027_ev081_miasto_0
+	picture = GFX_pl2027_bgfull_deistvia_REV36__0825e067e8
 	is_triggered_only = yes
 	option = {
 		name = trn.80.a
@@ -337,7 +337,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = trn.81.t
 	desc = trn.81.d
-	picture = GFX_pl2027_ev081_polityka_4
+	picture = GFX_pl2027_bgfull_deistvia_REV37__4f9e70f055
 	is_triggered_only = yes
 	option = {
 		name = trn.81.a
@@ -351,7 +351,7 @@ country_event = {
 	id = trn.90
 	title = trn.90.t
 	desc = trn.90.d
-	picture = GFX_pl2027_ev081_dyplomacja_5
+	picture = GFX_pl2027_bgfull_deistvia_REV38__f9f570aaad
 	is_triggered_only = yes
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio }
 		country_event = { id = trn.91 days = 30 }
@@ -389,7 +389,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
 	title = trn.92.t
 	desc = trn.92.d
-	picture = GFX_pl2027_ev081_dyplomacja_0
+	picture = GFX_pl2027_bgfull_deistvia_REV38_1__7df2c9d27a
 	is_triggered_only = yes
 	option = {
 		name = trn.92.a
@@ -401,7 +401,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = trn.100.t
 	desc = trn.100.d
-	picture = GFX_pl2027_ev081_ulica_1
+	picture = GFX_pl2027_bgfull_deistvia_REV39__a1f348a191
 	is_triggered_only = yes
 	option = {
 		name = trn.100.a
@@ -414,7 +414,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
 	title = trn.101.t
 	desc = trn.101.d
-	picture = GFX_pl2027_ev081_praca_5
+	picture = GFX_pl2027_bgfull_deistvia_REV39_1__d366cb0d78
 	is_triggered_only = yes
 	option = {
 		name = trn.101.a

@@ -1,0 +1,996 @@
+add_namespace = trk
+
+country_event = {
+	id = trk.12
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.12.t
+	desc = trk.12.d
+	picture = GFX_pl2027_ev081_wybory_3
+	is_triggered_only = yes
+	option = {
+		name = trk.12.a
+		ai_chance = { factor = 1 }
+		custom_effect_tooltip = TRK_tt_1
+	}
+}
+
+country_event = {
+	id = trk.11
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = trk.11.a
+		ai_chance = { factor = 1 }
+		if = { limit = { NOT = { has_country_flag = TR2_rzad_zaprzysiezony } has_country_flag = TR2_wybrany_gulewski } TR2_przejecie_gulewski = yes } if = { limit = { NOT = { has_country_flag = TR2_rzad_zaprzysiezony } has_country_flag = TR2_wybrany_zaleski } TR2_przejecie_zaleski = yes } if = { limit = { NOT = { has_country_flag = TR2_rzad_zaprzysiezony } has_country_flag = TR2_wybrany_romanowski } TR2_przejecie_romanowski = yes } if = { limit = { NOT = { has_country_flag = TR2_rzad_zaprzysiezony } has_country_flag = TR2_wybrany_kowalczyk } TR2_przejecie_kowalczyk = yes } if = { limit = { NOT = { has_country_flag = TR2_rzad_zaprzysiezony } has_country_flag = TR2_wybrany_elana } TR2_przejecie_elana = yes } if = { limit = { NOT = { has_country_flag = TR2_rzad_zaprzysiezony } has_country_flag = TR2_wybrany_krevienko } TR2_przejecie_krevienko = yes }
+	}
+}
+
+country_event = {
+	id = trk.9
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.9.t
+	desc = trk.9.d
+	picture = GFX_pl2027_ev081_wybory_0
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.9.a
+		ai_chance = { factor = 1 }
+		TRK_wymus_rejestracje = yes TR2_sondaz = yes
+	}
+}
+
+country_event = {
+	id = trk.10
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania }
+	option = {
+		name = trk.10.a
+		ai_chance = { factor = 1 }
+		if = { limit = { NOT = { has_country_flag = TR2_wybory_odbyte } NOT = { has_country_flag = TR2_rzad_zaprzysiezony } } TR2_policz_wybory = yes }
+	}
+}
+
+country_event = {
+	id = trk.1
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.1.t
+	desc = trk.1.d
+	picture = GFX_pl2027_ev081_wybory_4
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.1.a
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_romanowski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } }
+		custom_effect_tooltip = TR2_sup_romanowski_p3 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 3 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_romanowski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_romanowski } } } add_dynamic_modifier = { modifier = TR2_kurs_romanowski } } } custom_effect_tooltip = TR2_sup_gulewski_p1 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 1 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.005 } TR2_sondaz = yes } add_political_power = -15
+	}
+	option = {
+		name = trk.1.b
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_zaleski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_kowalczyk } }
+		custom_effect_tooltip = TR2_sup_zaleski_p3 hidden_effect = { add_to_variable = { TR2_pop_zaleski = 3 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_zaleski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_zaleski } } } add_dynamic_modifier = { modifier = TR2_kurs_zaleski } } } custom_effect_tooltip = TR2_sup_kowalczyk_p1 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = 1 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.005 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_romanowski_m2 hidden_effect = { add_to_variable = { TR2_pop_romanowski = -2 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = -0.010 } TR2_sondaz = yes } add_political_power = 10
+	}
+	option = {
+		name = trk.1.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_krevienko } }
+		custom_effect_tooltip = TR2_sup_krevienko_p3 hidden_effect = { add_to_variable = { TR2_pop_krevienko = 3 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_krevienko days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_krevienko } } } add_dynamic_modifier = { modifier = TR2_kurs_krevienko } } } custom_effect_tooltip = TR2_sup_elana_p1 hidden_effect = { add_to_variable = { TR2_pop_elana = 1 } clamp_variable = { var = TR2_pop_elana min = 0 max = 100 } add_popularity = { ideology = fascist popularity = 0.005 } TR2_sondaz = yes } add_stability = -0.02
+	}
+	option = {
+		name = trk.1.e
+		trigger = { has_idea = TRK_autobusy }
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } }
+		custom_effect_tooltip = TR2_sup_gulewski_p3 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 3 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_gulewski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_gulewski } } } add_dynamic_modifier = { modifier = TR2_kurs_gulewski } } } remove_ideas = TRK_autobusy clr_country_flag = TRK_autobusy_zabrane
+	}
+}
+
+country_event = {
+	id = trk.2
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.2.t
+	desc = trk.2.d
+	picture = GFX_pl2027_ev081_gospodarka_2
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.2.a
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_romanowski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_krevienko } }
+		custom_effect_tooltip = TR2_sup_romanowski_p3 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 3 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_romanowski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_romanowski } } } add_dynamic_modifier = { modifier = TR2_kurs_romanowski } } } custom_effect_tooltip = TR2_sup_krevienko_p1 hidden_effect = { add_to_variable = { TR2_pop_krevienko = 1 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = 0.005 } TR2_sondaz = yes } add_stability = 0.02
+	}
+	option = {
+		name = trk.2.b
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_zaleski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_kowalczyk } }
+		custom_effect_tooltip = TR2_sup_zaleski_p3 hidden_effect = { add_to_variable = { TR2_pop_zaleski = 3 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_zaleski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_zaleski } } } add_dynamic_modifier = { modifier = TR2_kurs_zaleski } } } custom_effect_tooltip = TR2_sup_kowalczyk_p1 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = 1 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.005 } TR2_sondaz = yes } random_owned_controlled_state = { limit = { free_building_slots = { building = infrastructure size > 0 } } add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+	}
+	option = {
+		name = trk.2.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_elana } modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } }
+		custom_effect_tooltip = TR2_sup_elana_p3 hidden_effect = { add_to_variable = { TR2_pop_elana = 3 } clamp_variable = { var = TR2_pop_elana min = 0 max = 100 } add_popularity = { ideology = fascist popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_elana days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_elana } } } add_dynamic_modifier = { modifier = TR2_kurs_elana } } } custom_effect_tooltip = TR2_sup_gulewski_p1 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 1 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.005 } TR2_sondaz = yes } add_war_support = 0.02 add_equipment_to_stockpile = { type = ranged_equipment amount = 200 }
+	}
+}
+
+country_event = {
+	id = trk.3
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.3.t
+	desc = trk.3.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.3.a
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_elana } modifier = { factor = 8 has_country_flag = TR2_ai_faw_zaleski } }
+		custom_effect_tooltip = TR2_sup_elana_p3 hidden_effect = { add_to_variable = { TR2_pop_elana = 3 } clamp_variable = { var = TR2_pop_elana min = 0 max = 100 } add_popularity = { ideology = fascist popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_elana days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_elana } } } add_dynamic_modifier = { modifier = TR2_kurs_elana } } } custom_effect_tooltip = TR2_sup_zaleski_p1 hidden_effect = { add_to_variable = { TR2_pop_zaleski = 1 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = 0.005 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_kowalczyk_m2 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = -2 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = -0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_krevienko_m3 hidden_effect = { add_to_variable = { TR2_pop_krevienko = -3 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = -0.015 } TR2_sondaz = yes } add_stability = 0.02
+	}
+	option = {
+		name = trk.3.b
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_kowalczyk } modifier = { factor = 8 has_country_flag = TR2_ai_faw_krevienko } modifier = { factor = 8 has_country_flag = TR2_ai_faw_romanowski } }
+		custom_effect_tooltip = TR2_sup_kowalczyk_p2 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = 2 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_krevienko_p2 hidden_effect = { add_to_variable = { TR2_pop_krevienko = 2 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_romanowski_p1 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 1 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.005 } TR2_sondaz = yes } add_war_support = -0.02
+	}
+	option = {
+		name = trk.3.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } }
+		custom_effect_tooltip = TR2_sup_gulewski_p3 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 3 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_gulewski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_gulewski } } } add_dynamic_modifier = { modifier = TR2_kurs_gulewski } } } add_political_power = -20
+	}
+}
+
+country_event = {
+	id = trk.4
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
+	title = trk.4.t
+	desc = trk.4.d
+	picture = GFX_pl2027_ev081_ulica_0
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.4.a
+		trigger = { has_idea = TRK_ogrzewanie }
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } }
+		custom_effect_tooltip = TR2_sup_gulewski_p3 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 3 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_gulewski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_gulewski } } } add_dynamic_modifier = { modifier = TR2_kurs_gulewski } } } custom_effect_tooltip = TR2_sup_romanowski_p1 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 1 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.005 } TR2_sondaz = yes } add_stability = 0.02
+	}
+	option = {
+		name = trk.4.b
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_romanowski } }
+		custom_effect_tooltip = TR2_sup_romanowski_p3 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 3 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_romanowski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_romanowski } } } add_dynamic_modifier = { modifier = TR2_kurs_romanowski } } } custom_effect_tooltip = TR2_sup_gulewski_p1 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 1 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.005 } TR2_sondaz = yes } add_political_power = -25
+	}
+	option = {
+		name = trk.4.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_krevienko } }
+		custom_effect_tooltip = TR2_sup_krevienko_p4 hidden_effect = { add_to_variable = { TR2_pop_krevienko = 4 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = 0.020 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_krevienko days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_krevienko } } } add_dynamic_modifier = { modifier = TR2_kurs_krevienko } } } add_stability = -0.01
+	}
+	option = {
+		name = trk.4.e
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_elana } }
+		custom_effect_tooltip = TR2_sup_elana_p2 hidden_effect = { add_to_variable = { TR2_pop_elana = 2 } clamp_variable = { var = TR2_pop_elana min = 0 max = 100 } add_popularity = { ideology = fascist popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_zaleski_p1 hidden_effect = { add_to_variable = { TR2_pop_zaleski = 1 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = 0.005 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_romanowski_m3 hidden_effect = { add_to_variable = { TR2_pop_romanowski = -3 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = -0.015 } TR2_sondaz = yes } add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = trk.5
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = trk.5.t
+	desc = trk.5.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.5.a
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_kowalczyk } modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } }
+		custom_effect_tooltip = TR2_sup_kowalczyk_p3 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = 3 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_kowalczyk days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_kowalczyk } } } add_dynamic_modifier = { modifier = TR2_kurs_kowalczyk } } } custom_effect_tooltip = TR2_sup_gulewski_p2 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 2 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.010 } TR2_sondaz = yes } add_fuel = -500 add_political_power = 10
+	}
+	option = {
+		name = trk.5.b
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_zaleski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_elana } }
+		custom_effect_tooltip = TR2_sup_zaleski_p2 hidden_effect = { add_to_variable = { TR2_pop_zaleski = 2 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_elana_p1 hidden_effect = { add_to_variable = { TR2_pop_elana = 1 } clamp_variable = { var = TR2_pop_elana min = 0 max = 100 } add_popularity = { ideology = fascist popularity = 0.005 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_kowalczyk_m2 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = -2 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = -0.010 } TR2_sondaz = yes }
+	}
+	option = {
+		name = trk.5.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_krevienko } modifier = { factor = 8 has_country_flag = TR2_ai_faw_romanowski } }
+		custom_effect_tooltip = TR2_sup_krevienko_p2 hidden_effect = { add_to_variable = { TR2_pop_krevienko = 2 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_romanowski_p2 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 2 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.010 } TR2_sondaz = yes } add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = trk.6
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = trk.6.t
+	desc = trk.6.d
+	picture = GFX_pl2027_ev081_wybory_3
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.6.a
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_elana } modifier = { factor = 8 has_country_flag = TR2_ai_faw_zaleski } }
+		custom_effect_tooltip = TR2_sup_elana_p3 hidden_effect = { add_to_variable = { TR2_pop_elana = 3 } clamp_variable = { var = TR2_pop_elana min = 0 max = 100 } add_popularity = { ideology = fascist popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_elana days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_elana } } } add_dynamic_modifier = { modifier = TR2_kurs_elana } } } custom_effect_tooltip = TR2_sup_zaleski_p2 hidden_effect = { add_to_variable = { TR2_pop_zaleski = 2 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_kowalczyk_m2 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = -2 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = -0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_krevienko_m2 hidden_effect = { add_to_variable = { TR2_pop_krevienko = -2 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = -0.010 } TR2_sondaz = yes } add_stability = 0.01
+	}
+	option = {
+		name = trk.6.b
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } }
+		custom_effect_tooltip = TR2_sup_gulewski_p3 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 3 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_gulewski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_gulewski } } } add_dynamic_modifier = { modifier = TR2_kurs_gulewski } } } add_political_power = -15
+	}
+	option = {
+		name = trk.6.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_kowalczyk } modifier = { factor = 8 has_country_flag = TR2_ai_faw_romanowski } }
+		custom_effect_tooltip = TR2_sup_kowalczyk_p2 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = 2 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_romanowski_p2 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 2 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_krevienko_p1 hidden_effect = { add_to_variable = { TR2_pop_krevienko = 1 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = 0.005 } TR2_sondaz = yes }
+	}
+}
+
+country_event = {
+	id = trk.7
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.7.t
+	desc = trk.7.d
+	picture = GFX_pl2027_ev081_wybory_5
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.7.a
+		ai_chance = { factor = 10 }
+		 add_political_power = -25 add_stability = 0.01 custom_effect_tooltip = TRK_tt_3
+	}
+	option = {
+		name = trk.7.b
+		ai_chance = { factor = 5 }
+		custom_effect_tooltip = TR2_sup_gulewski_m2 hidden_effect = { add_to_variable = { TR2_pop_gulewski = -2 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = -0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_zaleski_m2 hidden_effect = { add_to_variable = { TR2_pop_zaleski = -2 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = -0.010 } TR2_sondaz = yes } custom_effect_tooltip = TRK_tt_4
+	}
+	option = {
+		name = trk.7.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_elana } }
+		custom_effect_tooltip = TR2_sup_elana_p2 hidden_effect = { add_to_variable = { TR2_pop_elana = 2 } clamp_variable = { var = TR2_pop_elana min = 0 max = 100 } add_popularity = { ideology = fascist popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_kowalczyk_m3 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = -3 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = -0.015 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_krevienko_m2 hidden_effect = { add_to_variable = { TR2_pop_krevienko = -2 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = -0.010 } TR2_sondaz = yes } add_stability = -0.02 set_country_flag = TRK_podgorz_odciety
+	}
+}
+
+country_event = {
+	id = trk.8
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.8.t
+	desc = trk.8.d
+	picture = GFX_pl2027_ev081_wybory_3
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.8.a
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_zaleski } }
+		custom_effect_tooltip = TR2_sup_zaleski_p3 hidden_effect = { add_to_variable = { TR2_pop_zaleski = 3 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_zaleski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_zaleski } } } add_dynamic_modifier = { modifier = TR2_kurs_zaleski } } } custom_effect_tooltip = TR2_sup_romanowski_m2 hidden_effect = { add_to_variable = { TR2_pop_romanowski = -2 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = -0.010 } TR2_sondaz = yes } add_political_power = 30
+	}
+	option = {
+		name = trk.8.b
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_kowalczyk } }
+		custom_effect_tooltip = TR2_sup_gulewski_p2 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 2 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_kowalczyk_p2 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = 2 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.010 } TR2_sondaz = yes } add_political_power = 10
+	}
+	option = {
+		name = trk.8.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_romanowski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_krevienko } }
+		custom_effect_tooltip = TR2_sup_romanowski_p2 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 2 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_krevienko_p2 hidden_effect = { add_to_variable = { TR2_pop_krevienko = 2 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = 0.010 } TR2_sondaz = yes } add_political_power = -20
+	}
+}
+
+country_event = {
+	id = trk.13
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.13.t
+	desc = trk.13.d
+	picture = GFX_pl2027_ev081_kolej_0
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.13.a
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } }
+		custom_effect_tooltip = TR2_sup_gulewski_p2 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 2 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.010 } TR2_sondaz = yes } add_stability = 0.02
+	}
+	option = {
+		name = trk.13.b
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_romanowski } }
+		custom_effect_tooltip = TR2_sup_romanowski_p3 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 3 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_romanowski days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_romanowski } } } add_dynamic_modifier = { modifier = TR2_kurs_romanowski } } } custom_effect_tooltip = TR2_sup_krevienko_p1 hidden_effect = { add_to_variable = { TR2_pop_krevienko = 1 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = 0.005 } TR2_sondaz = yes } add_political_power = -20
+	}
+	option = {
+		name = trk.13.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_zaleski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_kowalczyk } }
+		custom_effect_tooltip = TR2_sup_zaleski_p2 hidden_effect = { add_to_variable = { TR2_pop_zaleski = 2 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_kowalczyk_p1 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = 1 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.005 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_romanowski_m2 hidden_effect = { add_to_variable = { TR2_pop_romanowski = -2 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = -0.010 } TR2_sondaz = yes } add_political_power = 15
+	}
+}
+
+country_event = {
+	id = trk.14
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = trk.14.t
+	desc = trk.14.d
+	picture = GFX_pl2027_ev081_wybory_1
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.14.a
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } }
+		custom_effect_tooltip = TR2_sup_gulewski_p2 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 2 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_kowalczyk_p1 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = 1 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.005 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_zaleski_m1 hidden_effect = { add_to_variable = { TR2_pop_zaleski = -1 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = -0.005 } TR2_sondaz = yes } add_political_power = -10
+	}
+	option = {
+		name = trk.14.b
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_zaleski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_elana } }
+		custom_effect_tooltip = TR2_sup_zaleski_p2 hidden_effect = { add_to_variable = { TR2_pop_zaleski = 2 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_elana_p1 hidden_effect = { add_to_variable = { TR2_pop_elana = 1 } clamp_variable = { var = TR2_pop_elana min = 0 max = 100 } add_popularity = { ideology = fascist popularity = 0.005 } TR2_sondaz = yes } add_stability = 0.01
+	}
+	option = {
+		name = trk.14.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_romanowski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_krevienko } }
+		custom_effect_tooltip = TR2_sup_romanowski_p2 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 2 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_krevienko_p2 hidden_effect = { add_to_variable = { TR2_pop_krevienko = 2 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = 0.010 } TR2_sondaz = yes } add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = trk.15
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.15.t
+	desc = trk.15.d
+	picture = GFX_pl2027_ev081_wisla_1
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_kampania NOT = { has_country_flag = TR2_wybory_odbyte } }
+	option = {
+		name = trk.15.a
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_gulewski } modifier = { factor = 8 has_country_flag = TR2_ai_faw_kowalczyk } }
+		custom_effect_tooltip = TR2_sup_gulewski_p2 hidden_effect = { add_to_variable = { TR2_pop_gulewski = 2 } clamp_variable = { var = TR2_pop_gulewski min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_kowalczyk_p2 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = 2 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = 0.010 } TR2_sondaz = yes } add_political_power = -15
+	}
+	option = {
+		name = trk.15.b
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_elana } modifier = { factor = 8 has_country_flag = TR2_ai_faw_zaleski } }
+		custom_effect_tooltip = TR2_sup_elana_p3 hidden_effect = { add_to_variable = { TR2_pop_elana = 3 } clamp_variable = { var = TR2_pop_elana min = 0 max = 100 } add_popularity = { ideology = fascist popularity = 0.015 } TR2_sondaz = yes set_country_flag = { flag = TR2_kurs_elana days = 90 value = 1 } if = { limit = { NOT = { has_dynamic_modifier = { modifier = TR2_kurs_elana } } } add_dynamic_modifier = { modifier = TR2_kurs_elana } } } custom_effect_tooltip = TR2_sup_zaleski_p2 hidden_effect = { add_to_variable = { TR2_pop_zaleski = 2 } clamp_variable = { var = TR2_pop_zaleski min = 0 max = 100 } add_popularity = { ideology = conservative popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_kowalczyk_m2 hidden_effect = { add_to_variable = { TR2_pop_kowalczyk = -2 } clamp_variable = { var = TR2_pop_kowalczyk min = 0 max = 100 } add_popularity = { ideology = social_liberal popularity = -0.010 } TR2_sondaz = yes } add_to_variable = { global.MET_napiecie = 8 } MET_przelicz = yes
+	}
+	option = {
+		name = trk.15.c
+		ai_chance = { factor = 10 modifier = { factor = 8 has_country_flag = TR2_ai_faw_romanowski } }
+		custom_effect_tooltip = TR2_sup_romanowski_p2 hidden_effect = { add_to_variable = { TR2_pop_romanowski = 2 } clamp_variable = { var = TR2_pop_romanowski min = 0 max = 100 } add_popularity = { ideology = social_democrat popularity = 0.010 } TR2_sondaz = yes } custom_effect_tooltip = TR2_sup_krevienko_p1 hidden_effect = { add_to_variable = { TR2_pop_krevienko = 1 } clamp_variable = { var = TR2_pop_krevienko min = 0 max = 100 } add_popularity = { ideology = libertarian_socialist popularity = 0.005 } TR2_sondaz = yes } add_to_variable = { global.MET_napiecie = -5 } MET_przelicz = yes
+	}
+}
+
+country_event = {
+	id = trk.20
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
+	title = trk.20.t
+	desc = trk.20.d
+	picture = GFX_pl2027_ev081_zima_2
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.20.a
+		trigger = { NOT = { has_idea = TRK_ogrzewanie } }
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = TRK_ogrzewanie days = 30 } set_country_flag = TRK_ogrzewanie_bylo
+	}
+	option = {
+		name = trk.20.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.03 add_political_power = 10
+	}
+	option = {
+		name = trk.20.c
+		trigger = { has_idea = TRK_ogrzewanie }
+		ai_chance = { factor = 3 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = trk.21
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.21.t
+	desc = trk.21.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_1
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.21.a
+		trigger = { NOT = { has_idea = TRK_paliwo } }
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = TRK_paliwo days = 45 } add_fuel = 800
+	}
+	option = {
+		name = trk.21.b
+		trigger = { has_idea = TRK_paliwo }
+		ai_chance = { factor = 3 }
+		add_stability = 0.01 add_fuel = -300
+	}
+	option = {
+		name = trk.21.c
+		ai_chance = { factor = 1 }
+		add_stability = -0.02 add_political_power = 15
+	}
+}
+
+country_event = {
+	id = trk.22
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = trk.22.t
+	desc = trk.22.d
+	picture = GFX_pl2027_ev081_media_0
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.22.a
+		ai_chance = { factor = 2 }
+		add_political_power = -10 add_stability = 0.02
+	}
+	option = {
+		name = trk.22.b
+		ai_chance = { factor = 1 }
+		add_political_power = 15 add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = trk.23
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.23.t
+	desc = trk.23.d
+	picture = GFX_pl2027_ev081_gospodarka_2
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.23.a
+		ai_chance = { factor = 2 }
+		army_experience = -5 add_stability = 0.02
+	}
+	option = {
+		name = trk.23.b
+		ai_chance = { factor = 2 }
+		add_political_power = -25 if = { limit = { country_exists = PDG } PDG = { add_political_power = 25 add_opinion_modifier = { target = ROOT modifier = TR2_wspolpraca } } }
+	}
+	option = {
+		name = trk.23.c
+		trigger = { has_country_flag = TRK_podgorz_odciety }
+		ai_chance = { factor = 1 }
+		add_stability = -0.02 add_political_power = 10
+	}
+}
+
+country_event = {
+	id = trk.24
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
+	title = trk.24.t
+	desc = trk.24.d
+	picture = GFX_pl2027_ev081_blackout_2
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.24.a
+		ai_chance = { factor = 3 }
+		add_fuel = -600 add_stability = 0.03
+	}
+	option = {
+		name = trk.24.b
+		trigger = { has_country_flag = TRK_autobusy_zabrane }
+		ai_chance = { factor = 2 }
+		add_stability = 0.01
+	}
+	option = {
+		name = trk.24.c
+		ai_chance = { factor = 1 }
+		if = { limit = { country_exists = BYD } BYD = { add_opinion_modifier = { target = ROOT modifier = TR2_wspolpraca } } } add_political_power = -20
+	}
+}
+
+country_event = {
+	id = trk.25
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.25.t
+	desc = trk.25.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_1
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.25.a
+		ai_chance = { factor = 2 }
+		add_fuel = -400 add_stability = 0.02
+	}
+	option = {
+		name = trk.25.b
+		ai_chance = { factor = 1 }
+		add_political_power = -10 add_stability = 0.01
+	}
+	option = {
+		name = trk.25.c
+		trigger = { has_idea = TRK_dostawy_gmin }
+		ai_chance = { factor = 3 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = trk.26
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.26.t
+	desc = trk.26.d
+	picture = GFX_pl2027_ev081_blackout_5
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.26.a
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = TRK_praca days = 120 }
+	}
+	option = {
+		name = trk.26.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = trk.27
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.27.t
+	desc = trk.27.d
+	picture = GFX_pl2027_ev081_polityka_1
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.27.a
+		ai_chance = { factor = 1 }
+		add_political_power = 10 add_stability = -0.01
+	}
+	option = {
+		name = trk.27.b
+		ai_chance = { factor = 2 }
+		add_political_power = -10 add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = trk.28
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.28.t
+	desc = trk.28.d
+	picture = GFX_pl2027_ev081_wisla_2
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.28.a
+		ai_chance = { factor = 2 }
+		army_experience = -3 add_stability = 0.01
+	}
+	option = {
+		name = trk.28.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.02
+	}
+}
+
+country_event = {
+	id = trk.29
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.29.t
+	desc = trk.29.d
+	picture = GFX_pl2027_ev081_front_0
+	is_triggered_only = yes
+	trigger = { tag = TRN has_country_flag = TRK_autobusy_zabrane }
+	option = {
+		name = trk.29.a
+		ai_chance = { factor = 2 }
+		add_political_power = -25 add_stability = 0.02
+	}
+	option = {
+		name = trk.29.b
+		trigger = { has_idea = TRK_autobusy }
+		ai_chance = { factor = 3 }
+		remove_ideas = TRK_autobusy clr_country_flag = TRK_autobusy_zabrane add_stability = 0.02
+	}
+	option = {
+		name = trk.29.c
+		ai_chance = { factor = 1 }
+		add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = trk.30
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.30.t
+	desc = trk.30.d
+	picture = GFX_pl2027_ev081_szpital_3
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.30.a
+		ai_chance = { factor = 2 }
+		add_political_power = -30 add_stability = 0.02
+	}
+	option = {
+		name = trk.30.b
+		ai_chance = { factor = 1 }
+		add_political_power = -10 add_stability = 0.01 add_timed_idea = { idea = TRK_lekarze_umk days = 90 }
+	}
+	option = {
+		name = trk.30.c
+		ai_chance = { factor = 1 }
+		add_war_support = 0.03 add_to_variable = { global.MET_napiecie = 5 } MET_przelicz = yes
+	}
+}
+
+country_event = {
+	id = trk.31
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = trk.31.t
+	desc = trk.31.d
+	picture = GFX_pl2027_ev081_wybory_1
+	is_triggered_only = yes
+	trigger = { tag = TRN }
+	option = {
+		name = trk.31.a
+		ai_chance = { factor = 2 }
+		add_stability = 0.03 add_political_power = -10
+	}
+	option = {
+		name = trk.31.b
+		ai_chance = { factor = 1 }
+		add_political_power = 20
+	}
+}
+
+country_event = {
+	id = trk.40
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.40.t
+	desc = trk.40.d
+	picture = GFX_pl2027_ev081_miasto_1
+	is_triggered_only = yes
+	option = {
+		name = trk.40.a
+		ai_chance = { factor = 1 }
+		TRK_reforma_m10 = yes add_stability = 0.02
+	}
+	option = {
+		name = trk.40.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.03 TRK_reforma_p5 = yes
+	}
+}
+
+country_event = {
+	id = trk.41
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.41.t
+	desc = trk.41.d
+	picture = GFX_pl2027_ev081_praca_1
+	is_triggered_only = yes
+	option = {
+		name = trk.41.a
+		ai_chance = { factor = 1 }
+		add_political_power = -30
+	}
+	option = {
+		name = trk.41.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.04
+	}
+}
+
+country_event = {
+	id = trk.42
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.42.t
+	desc = trk.42.d
+	picture = GFX_pl2027_ev081_gospodarka_0
+	is_triggered_only = yes
+	option = {
+		name = trk.42.a
+		ai_chance = { factor = 1 }
+		TRK_reforma_m5 = yes add_political_power = 20
+	}
+	option = {
+		name = trk.42.b
+		ai_chance = { factor = 1 }
+		add_political_power = -40 TRK_reforma_p5 = yes
+	}
+}
+
+country_event = {
+	id = trk.43
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.43.t
+	desc = trk.43.d
+	picture = GFX_pl2027_ev081_miasto_4
+	is_triggered_only = yes
+	option = {
+		name = trk.43.a
+		trigger = { NOT = { has_idea = TRK_przedsiebiorcy } }
+		ai_chance = { factor = 1 }
+		TRK_reforma_p10 = yes add_political_power = -10 add_timed_idea = { idea = TRK_przedsiebiorcy days = 60 }
+	}
+	option = {
+		name = trk.43.b
+		ai_chance = { factor = 1 }
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = trk.44
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.44.t
+	desc = trk.44.d
+	picture = GFX_pl2027_ev081_miasto_0
+	is_triggered_only = yes
+	option = {
+		name = trk.44.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.03
+	}
+}
+
+country_event = {
+	id = trk.50
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.50.t
+	desc = trk.50.d
+	picture = GFX_pl2027_ev081_media_2
+	is_triggered_only = yes
+	option = {
+		name = trk.50.a
+		ai_chance = { factor = 1 }
+		TRK_zob_p10 = yes add_political_power = 10
+	}
+	option = {
+		name = trk.50.b
+		ai_chance = { factor = 1 }
+		add_political_power = -20 add_stability = -0.01
+	}
+}
+
+country_event = {
+	id = trk.51
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = trk.51.t
+	desc = trk.51.d
+	picture = GFX_pl2027_ev081_miasto_0
+	is_triggered_only = yes
+	option = {
+		name = trk.51.a
+		ai_chance = { factor = 2 }
+		TRK_zob_m20 = yes add_political_power = -40
+	}
+	option = {
+		name = trk.51.b
+		ai_chance = { factor = 1 }
+		TRK_zob_m10 = yes add_stability = 0.02 add_timed_idea = { idea = TRK_inwestycje_stop days = 120 }
+	}
+	option = {
+		name = trk.51.c
+		ai_chance = { factor = 1 }
+		add_stability = -0.05 add_political_power = 20
+	}
+}
+
+country_event = {
+	id = trk.66
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
+	title = trk.66.t
+	desc = trk.66.d
+	picture = GFX_pl2027_ev081_praca_0
+	is_triggered_only = yes
+	option = {
+		name = trk.66.a
+		ai_chance = { factor = 2 }
+		add_political_power = -30
+	}
+	option = {
+		name = trk.66.b
+		ai_chance = { factor = 1 }
+		add_stability = -0.03 country_event = { id = trk.67 days = 7 }
+	}
+}
+
+country_event = {
+	id = trk.67
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.67.t
+	desc = trk.67.d
+	picture = GFX_pl2027_ev081_kolej_0
+	is_triggered_only = yes
+	option = {
+		name = trk.67.a
+		ai_chance = { factor = 2 }
+		add_political_power = -40 add_stability = 0.02
+	}
+	option = {
+		name = trk.67.b
+		ai_chance = { factor = 1 }
+		remove_ideas = TRK_autobusy clr_country_flag = TRK_autobusy_zabrane add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = trk.70
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
+	title = trk.70.t
+	desc = trk.70.d
+	picture = GFX_pl2027_ev081_dyplomacja_2
+	is_triggered_only = yes
+	option = {
+		name = trk.70.a
+		ai_chance = { factor = 1 }
+		add_stability = 0.01 TRK_koord_m5 = yes
+	}
+	option = {
+		name = trk.70.b
+		ai_chance = { factor = 1 }
+		TRK_koord_p10 = yes add_stability = -0.03
+	}
+}
+
+country_event = {
+	id = trk.80
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.80.t
+	desc = trk.80.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_2
+	is_triggered_only = yes
+	trigger = { has_country_flag = TR2_rzad_zaprzysiezony country_exists = BYD NOT = { has_war_with = BYD } NOT = { has_country_flag = TRK_przeprawy_spor } NOT = { has_country_flag = TRK_przeprawy_rozwiazane } }
+	option = {
+		name = trk.80.a
+		ai_chance = { factor = 2 }
+		add_timed_idea = { idea = TRK_oplaty_przeprawa days = 180 }
+	}
+	option = {
+		name = trk.80.b
+		trigger = { country_exists = BYD }
+		ai_chance = { factor = 3 }
+		set_country_flag = TRK_przeprawy_spor if = { limit = { country_exists = BYD } BYD = { country_event = { id = trk.81 days = 2 } } }
+	}
+	option = {
+		name = trk.80.c
+		trigger = { country_exists = BYD }
+		ai_chance = { factor = 1 }
+		set_country_flag = TRK_przeprawy_spor add_timed_idea = { idea = TRK_blokada days = 120 } add_to_variable = { global.MET_napiecie = 15 } MET_przelicz = yes if = { limit = { country_exists = BYD } BYD = { add_timed_idea = { idea = TRK_blokada days = 120 } country_event = { id = trk.82 days = 3 } } }
+	}
+}
+
+country_event = {
+	id = trk.81
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.81.t
+	desc = trk.81.d
+	picture = GFX_pl2027_ev081_polityka_3
+	is_triggered_only = yes
+	option = {
+		name = trk.81.a
+		ai_chance = { factor = 20 modifier = { factor = 2 strength_ratio = { tag = FROM ratio < 0.8 } } modifier = { factor = 0.5 strength_ratio = { tag = FROM ratio > 1.3 } } modifier = { factor = 2 has_war = yes } modifier = { factor = 1.5 has_stability < 0.4 } }
+		add_political_power = -30 add_timed_idea = { idea = TRK_wspolna_przeprawa days = 365 } add_to_variable = { global.MET_napiecie = -15 } MET_przelicz = yes FROM = { add_political_power = -30 add_timed_idea = { idea = TRK_wspolna_przeprawa days = 365 } remove_ideas = TRK_oplaty_przeprawa set_country_flag = TRK_przeprawy_rozwiazane country_event = { id = trk.83 days = 1 } }
+	}
+	option = {
+		name = trk.81.b
+		ai_chance = { factor = 20 }
+		if = { limit = { country_exists = KOC } KOC = { country_event = { id = trk.84 days = 2 } } } else = { FROM = { country_event = { id = trk.83 days = 1 } } add_political_power = -20 FROM = { add_timed_idea = { idea = TRK_wspolna_przeprawa days = 365 } set_country_flag = TRK_przeprawy_rozwiazane } }
+	}
+	option = {
+		name = trk.81.c
+		ai_chance = { factor = 15 modifier = { factor = 2 strength_ratio = { tag = FROM ratio > 1.3 } } modifier = { factor = 0.3 has_war = yes } }
+		add_to_variable = { global.MET_napiecie = 15 } MET_przelicz = yes FROM = { country_event = { id = trk.82 days = 2 } }
+	}
+}
+
+country_event = {
+	id = trk.82
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = trk.82.t
+	desc = trk.82.d
+	picture = GFX_pl2027_ev081_porzadek_1
+	is_triggered_only = yes
+	option = {
+		name = trk.82.a
+		ai_chance = { factor = 15 modifier = { factor = 3 has_war = yes } modifier = { factor = 2 has_stability < 0.35 } }
+		add_political_power = -60 add_timed_idea = { idea = TRK_wspolna_przeprawa days = 365 } set_country_flag = TRK_przeprawy_rozwiazane remove_ideas = TRK_blokada add_to_variable = { global.MET_napiecie = -10 } MET_przelicz = yes
+	}
+	option = {
+		name = trk.82.b
+		ai_chance = { factor = 15 }
+		if = { limit = { country_exists = KOC } KOC = { country_event = { id = trk.84 days = 2 } } } else = { add_political_power = -40 set_country_flag = TRK_przeprawy_rozwiazane }
+	}
+	option = {
+		name = trk.82.c
+		ai_chance = { factor = 10 modifier = { factor = 0 has_war = yes } modifier = { factor = 0 has_stability < 0.35 } }
+		set_country_flag = TRK_przeprawy_eskalacja add_war_support = 0.05 add_to_variable = { global.MET_napiecie = 20 } MET_przelicz = yes custom_effect_tooltip = TRK_tt_5
+	}
+}
+
+country_event = {
+	id = trk.83
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.83.t
+	desc = trk.83.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_0
+	is_triggered_only = yes
+	option = {
+		name = trk.83.a
+		ai_chance = { factor = 1 }
+		set_country_flag = TRK_przeprawy_rozwiazane remove_ideas = TRK_oplaty_przeprawa remove_ideas = TRK_blokada
+	}
+}
+
+country_event = {
+	id = trk.84
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.84.t
+	desc = trk.84.d
+	picture = GFX_pl2027_ev081_kolej_5
+	is_triggered_only = yes
+	option = {
+		name = trk.84.a
+		ai_chance = { factor = 3 }
+		add_political_power = 50 every_country = { limit = { OR = { tag = TRN tag = BYD } } add_political_power = -40 add_timed_idea = { idea = TRK_wspolna_przeprawa days = 365 } set_country_flag = TRK_przeprawy_rozwiazane remove_ideas = TRK_blokada add_opinion_modifier = { target = PREV modifier = TR2_wspolpraca } } add_to_variable = { global.MET_napiecie = -10 } MET_przelicz = yes
+	}
+	option = {
+		name = trk.84.b
+		ai_chance = { factor = 1 }
+		every_country = { limit = { OR = { tag = TRN tag = BYD } } add_political_power = -10 }
+	}
+}
+
+country_event = {
+	id = trk.95
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
+	title = trk.95.t
+	desc = trk.95.d
+	picture = GFX_pl2027_ev081_granica_1
+	is_triggered_only = yes
+	option = {
+		name = trk.95.a
+		ai_chance = { factor = 10 modifier = { factor = 2 strength_ratio = { tag = FROM ratio > 0.6 } } }
+		add_timed_idea = { idea = TRK_obrona_alarm days = 90 } add_war_support = 0.05
+	}
+	option = {
+		name = trk.95.b
+		trigger = { NOT = { has_war = yes } is_subject = no NOT = { tag = BYD } }
+		ai_chance = { factor = 5 modifier = { factor = 4 strength_ratio = { tag = FROM ratio < 0.4 } } modifier = { factor = 0 strength_ratio = { tag = FROM ratio > 0.8 } } }
+		FROM = { puppet = ROOT }
+	}
+}
+
+country_event = {
+	id = trk.85
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.85.t
+	desc = trk.85.d
+	picture = GFX_pl2027_ev081_zima_2
+	is_triggered_only = yes
+	option = {
+		name = trk.85.a
+		ai_chance = { factor = 3 }
+		add_political_power = 40 FROM = { add_timed_idea = { idea = TRK_umowa_pkp days = 365 } add_to_variable = { REG_KOC = 10 } REG_przelicz = yes }
+	}
+	option = {
+		name = trk.85.b
+		ai_chance = { factor = 2 }
+		add_political_power = 60 FROM = { add_timed_idea = { idea = TRK_umowa_pkp days = 365 } add_to_variable = { REG_KOC = 20 } REG_przelicz = yes set_country_flag = TRK_pkp_wylacznosc add_to_variable = { global.MET_napiecie = 10 } MET_przelicz = yes }
+	}
+	option = {
+		name = trk.85.c
+		ai_chance = { factor = 1 }
+		FROM = { add_political_power = 15 }
+	}
+}
+
+country_event = {
+	id = trk.87
+	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
+	title = trk.87.t
+	desc = trk.87.d
+	picture = GFX_pl2027_ev081_zaopatrzenie_5
+	is_triggered_only = yes
+	option = {
+		name = trk.87.a
+		ai_chance = { factor = 3 }
+		add_political_power = 30 FROM = { add_timed_idea = { idea = TRK_dostawy_tpz days = 150 } add_to_variable = { TPZ_dlug = 20 } clamp_variable = { var = TPZ_dlug min = 0 max = 100 } add_to_variable = { REG_WLC = 10 } REG_przelicz = yes }
+	}
+	option = {
+		name = trk.87.b
+		ai_chance = { factor = 1 }
+		FROM = { add_political_power = -40 add_timed_idea = { idea = TRK_dostawy_tpz days = 90 } }
+	}
+}
+
+country_event = {
+	id = trk.96
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		name = trk.96.a
+		ai_chance = { factor = 1 }
+		if = { limit = { has_country_flag = TRK_cel_PDG } clr_country_flag = TRK_cel_PDG if = { limit = { country_exists = PDG has_war = no has_stability > 0.34 NOT = { has_war_with = PDG } NOT = { PDG = { is_subject_of = ROOT } } is_neighbor_of = PDG strength_ratio = { tag = PDG ratio > 1.2 } } declare_war_on = { target = PDG type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_SLK } clr_country_flag = TRK_cel_SLK if = { limit = { country_exists = SLK has_war = no has_stability > 0.34 NOT = { has_war_with = SLK } NOT = { SLK = { is_subject_of = ROOT } } is_neighbor_of = SLK strength_ratio = { tag = SLK ratio > 1.2 } } declare_war_on = { target = SLK type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_KUJ } clr_country_flag = TRK_cel_KUJ if = { limit = { country_exists = KUJ has_war = no has_stability > 0.34 NOT = { has_war_with = KUJ } NOT = { KUJ = { is_subject_of = ROOT } } is_neighbor_of = KUJ strength_ratio = { tag = KUJ ratio > 1.2 } } declare_war_on = { target = KUJ type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_GRU } clr_country_flag = TRK_cel_GRU if = { limit = { country_exists = GRU has_war = no has_stability > 0.34 NOT = { has_war_with = GRU } NOT = { GRU = { is_subject_of = ROOT } } is_neighbor_of = GRU strength_ratio = { tag = GRU ratio > 1.2 } } declare_war_on = { target = GRU type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_BYD } clr_country_flag = TRK_cel_BYD if = { limit = { country_exists = BYD has_war = no has_stability > 0.34 NOT = { has_war_with = BYD } NOT = { BYD = { is_subject_of = ROOT } } is_neighbor_of = BYD strength_ratio = { tag = BYD ratio > 1.2 } } declare_war_on = { target = BYD type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_WLC } clr_country_flag = TRK_cel_WLC if = { limit = { country_exists = WLC has_war = no has_stability > 0.34 NOT = { has_war_with = WLC } NOT = { WLC = { is_subject_of = ROOT } } is_neighbor_of = WLC strength_ratio = { tag = WLC ratio > 1.2 } } declare_war_on = { target = WLC type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_DOB } clr_country_flag = TRK_cel_DOB if = { limit = { country_exists = DOB has_war = no has_stability > 0.34 NOT = { has_war_with = DOB } NOT = { DOB = { is_subject_of = ROOT } } is_neighbor_of = DOB strength_ratio = { tag = DOB ratio > 1.2 } } declare_war_on = { target = DOB type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_LYS } clr_country_flag = TRK_cel_LYS if = { limit = { country_exists = LYS has_war = no has_stability > 0.34 NOT = { has_war_with = LYS } NOT = { LYS = { is_subject_of = ROOT } } is_neighbor_of = LYS strength_ratio = { tag = LYS ratio > 1.2 } } declare_war_on = { target = LYS type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_ROZ } clr_country_flag = TRK_cel_ROZ if = { limit = { country_exists = ROZ has_war = no has_stability > 0.34 NOT = { has_war_with = ROZ } NOT = { ROZ = { is_subject_of = ROOT } } is_neighbor_of = ROZ strength_ratio = { tag = ROZ ratio > 1.2 } } declare_war_on = { target = ROZ type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_LUB } clr_country_flag = TRK_cel_LUB if = { limit = { country_exists = LUB has_war = no has_stability > 0.34 NOT = { has_war_with = LUB } NOT = { LUB = { is_subject_of = ROOT } } is_neighbor_of = LUB strength_ratio = { tag = LUB ratio > 1.2 } } declare_war_on = { target = LUB type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_CHZ } clr_country_flag = TRK_cel_CHZ if = { limit = { country_exists = CHZ has_war = no has_stability > 0.34 NOT = { has_war_with = CHZ } NOT = { CHZ = { is_subject_of = ROOT } } is_neighbor_of = CHZ strength_ratio = { tag = CHZ ratio > 1.2 } } declare_war_on = { target = CHZ type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_DAB } clr_country_flag = TRK_cel_DAB if = { limit = { country_exists = DAB has_war = no has_stability > 0.34 NOT = { has_war_with = DAB } NOT = { DAB = { is_subject_of = ROOT } } is_neighbor_of = DAB strength_ratio = { tag = DAB ratio > 1.2 } } declare_war_on = { target = DAB type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_CHE } clr_country_flag = TRK_cel_CHE if = { limit = { country_exists = CHE has_war = no has_stability > 0.34 NOT = { has_war_with = CHE } NOT = { CHE = { is_subject_of = ROOT } } is_neighbor_of = CHE strength_ratio = { tag = CHE ratio > 1.2 } } declare_war_on = { target = CHE type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_NWW } clr_country_flag = TRK_cel_NWW if = { limit = { country_exists = NWW has_war = no has_stability > 0.34 NOT = { has_war_with = NWW } NOT = { NWW = { is_subject_of = ROOT } } is_neighbor_of = NWW strength_ratio = { tag = NWW ratio > 1.2 } } declare_war_on = { target = NWW type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_OSD } clr_country_flag = TRK_cel_OSD if = { limit = { country_exists = OSD has_war = no has_stability > 0.34 NOT = { has_war_with = OSD } NOT = { OSD = { is_subject_of = ROOT } } is_neighbor_of = OSD strength_ratio = { tag = OSD ratio > 1.2 } } declare_war_on = { target = OSD type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_PLK } clr_country_flag = TRK_cel_PLK if = { limit = { country_exists = PLK has_war = no has_stability > 0.34 NOT = { has_war_with = PLK } NOT = { PLK = { is_subject_of = ROOT } } is_neighbor_of = PLK strength_ratio = { tag = PLK ratio > 1.2 } } declare_war_on = { target = PLK type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_KRW } clr_country_flag = TRK_cel_KRW if = { limit = { country_exists = KRW has_war = no has_stability > 0.34 NOT = { has_war_with = KRW } NOT = { KRW = { is_subject_of = ROOT } } is_neighbor_of = KRW strength_ratio = { tag = KRW ratio > 1.2 } } declare_war_on = { target = KRW type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_SWC } clr_country_flag = TRK_cel_SWC if = { limit = { country_exists = SWC has_war = no has_stability > 0.34 NOT = { has_war_with = SWC } NOT = { SWC = { is_subject_of = ROOT } } is_neighbor_of = SWC strength_ratio = { tag = SWC ratio > 1.2 } } declare_war_on = { target = SWC type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_TUC } clr_country_flag = TRK_cel_TUC if = { limit = { country_exists = TUC has_war = no has_stability > 0.34 NOT = { has_war_with = TUC } NOT = { TUC = { is_subject_of = ROOT } } is_neighbor_of = TUC strength_ratio = { tag = TUC ratio > 1.2 } } declare_war_on = { target = TUC type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_SCK } clr_country_flag = TRK_cel_SCK if = { limit = { country_exists = SCK has_war = no has_stability > 0.34 NOT = { has_war_with = SCK } NOT = { SCK = { is_subject_of = ROOT } } is_neighbor_of = SCK strength_ratio = { tag = SCK ratio > 1.2 } } declare_war_on = { target = SCK type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_KTN } clr_country_flag = TRK_cel_KTN if = { limit = { country_exists = KTN has_war = no has_stability > 0.34 NOT = { has_war_with = KTN } NOT = { KTN = { is_subject_of = ROOT } } is_neighbor_of = KTN strength_ratio = { tag = KTN ratio > 1.2 } } declare_war_on = { target = KTN type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_KON } clr_country_flag = TRK_cel_KON if = { limit = { country_exists = KON has_war = no has_stability > 0.34 NOT = { has_war_with = KON } NOT = { KON = { is_subject_of = ROOT } } is_neighbor_of = KON strength_ratio = { tag = KON ratio > 1.2 } } declare_war_on = { target = KON type = annex_everything } } } if = { limit = { has_country_flag = TRK_cel_PLO } clr_country_flag = TRK_cel_PLO if = { limit = { country_exists = PLO has_war = no has_stability > 0.34 NOT = { has_war_with = PLO } NOT = { PLO = { is_subject_of = ROOT } } is_neighbor_of = PLO strength_ratio = { tag = PLO ratio > 1.2 } } declare_war_on = { target = PLO type = annex_everything } } }
+	}
+}

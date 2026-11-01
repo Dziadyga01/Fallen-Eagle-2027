@@ -75,7 +75,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = kal.1.t
 	desc = kal.1.d
-	picture = GFX_pl2027_ev081_polityka_4_news
+	picture = GFX_pl2027_bgfull_deistvia_AT4__9bc959b049
 	is_triggered_only = yes
 	option = {
 		name = kal.1.a
@@ -99,7 +99,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = kal.8.t
 	desc = kal.8.d
-	picture = GFX_pl2027_ev081_paliwo_0_news
+	picture = GFX_pl2027_bgfull_deistvia_AT40__2e2554ed2d
 	is_triggered_only = yes
 	option = {
 		name = kal.8.a
@@ -143,7 +143,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = kal.2.t
 	desc = kal.2.d
-	picture = GFX_pl2027_ev081_miasto_5_news
+	picture = GFX_pl2027_bgfull_deistvia_AT40_ALT1__8057ae53d0
 	is_triggered_only = yes
 	option = {
 		name = kal.2.a
@@ -167,7 +167,7 @@ news_event = {
 	id = kal.5
 	title = kal.5.t
 	desc = kal.5.d
-	picture = GFX_pl2027_ev081_kolej_1_news
+	picture = GFX_pl2027_bgfull_deistvia_AT40_ALT2__44bf805593
 	is_triggered_only = yes
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_global_flag = KAL_05 }
 	option = {
@@ -200,7 +200,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
 	title = kal.3.t
 	desc = kal.3.d
-	picture = GFX_pl2027_ev081_blackout_2_news
+	picture = GFX_pl2027_bgfull_deistvia_AT40_ALT3__859ec046ab
 	is_triggered_only = yes
 	option = {
 		name = kal.3.a
@@ -231,7 +231,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = kal.4.t
 	desc = kal.4.d
-	picture = GFX_pl2027_ev081_front_3_news
+	picture = GFX_pl2027_bgfull_deistvia_AT40_ALT4__765ced69a3
 	is_triggered_only = yes
 	option = {
 		name = kal.4.a
@@ -262,7 +262,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
 	title = kal.6.t
 	desc = kal.6.d
-	picture = GFX_pl2027_ev081_blackout_3_news
+	picture = GFX_pl2027_bgfull_deistvia_AT40_ALT5__939a2c7db8
 	is_triggered_only = yes
 	option = {
 		name = kal.6.a
@@ -293,7 +293,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
 	title = kal.9.t
 	desc = kal.9.d
-	picture = GFX_pl2027_ev081_dyplomacja_4_news
+	picture = GFX_pl2027_bgfull_deistvia_AT40_D1__347de2a46e
 	is_triggered_only = yes
 	option = {
 		name = kal.9.a
@@ -317,7 +317,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = kal.7.t
 	desc = kal.7.d
-	picture = GFX_pl2027_ev081_gospodarka_3_news
+	picture = GFX_pl2027_bgfull_deistvia_AT40_D2__381e5e9e93
 	is_triggered_only = yes
 	option = {
 		name = kal.7.a
@@ -348,7 +348,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } }
 	title = kal.10.t
 	desc = kal.10.d
-	picture = GFX_pl2027_ev081_media_4_news
+	picture = GFX_pl2027_bgfull_deistvia_AT40_D3__7f13ded1d4
 	is_triggered_only = yes
 	option = {
 		name = kal.10.a

@@ -4,7 +4,7 @@ country_event = {
 	id = zw2.1
 	title = zw2.1.t
 	desc = zw2.1.d
-	picture = GFX_pl2027_ev081_zaopatrzenie_0
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_1 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_stability < 0.7 }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_1  }
@@ -29,7 +29,7 @@ country_event = {
 	id = zw2.2
 	title = zw2.2.t
 	desc = zw2.2.d
-	picture = GFX_pl2027_ev081_zima_0
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_2 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } date < 2028.3.15 }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_zw2_2  }
@@ -54,7 +54,7 @@ country_event = {
 	id = zw2.3
 	title = zw2.3.t
 	desc = zw2.3.d
-	picture = GFX_pl2027_ev081_front_ros_4
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_3 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_war = yes }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = PL2027_ev_zw2_3  }
@@ -79,7 +79,7 @@ country_event = {
 	id = zw2.4
 	title = zw2.4.t
 	desc = zw2.4.d
-	picture = GFX_pl2027_ev081_granica_3
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_4 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } any_neighbor_country = { tag = BLR } }
 	mean_time_to_happen = { days = 120 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = PL2027_ev_zw2_4  }
@@ -104,7 +104,7 @@ country_event = {
 	id = zw2.5
 	title = zw2.5.t
 	desc = zw2.5.d
-	picture = GFX_pl2027_ev081_media_4
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_5 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_zw2_5  }
@@ -129,7 +129,7 @@ country_event = {
 	id = zw2.6
 	title = zw2.6.t
 	desc = zw2.6.d
-	picture = GFX_pl2027_ev081_praca_3
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_6 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_6  }
@@ -154,7 +154,7 @@ country_event = {
 	id = zw2.7
 	title = zw2.7.t
 	desc = zw2.7.d
-	picture = GFX_pl2027_ev081_front_ros_2
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_7 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } has_war = yes }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } set_country_flag = PL2027_ev_zw2_7  }
@@ -179,7 +179,7 @@ country_event = {
 	id = zw2.8
 	title = zw2.8.t
 	desc = zw2.8.d
-	picture = GFX_pl2027_ev081_miasto_3
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_8 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 200 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_zw2_8  }
@@ -204,7 +204,7 @@ country_event = {
 	id = zw2.9
 	title = zw2.9.t
 	desc = zw2.9.d
-	picture = GFX_pl2027_ev081_blackout_0
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_9 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } set_country_flag = PL2027_ev_zw2_9  }
@@ -229,7 +229,7 @@ country_event = {
 	id = zw2.10
 	title = zw2.10.t
 	desc = zw2.10.d
-	picture = GFX_pl2027_ev081_media_0
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_10 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 200 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_10  }
@@ -254,7 +254,7 @@ country_event = {
 	id = zw2.11
 	title = zw2.11.t
 	desc = zw2.11.d
-	picture = GFX_pl2027_ev081_paliwo_0
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_11 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_11  }
@@ -279,7 +279,7 @@ country_event = {
 	id = zw2.12
 	title = zw2.12.t
 	desc = zw2.12.d
-	picture = GFX_pl2027_ev081_szpital_2
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_12 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } set_country_flag = PL2027_ev_zw2_12  }
@@ -299,7 +299,7 @@ country_event = {
 	id = zw2.13
 	title = zw2.13.t
 	desc = zw2.13.d
-	picture = GFX_pl2027_ev081_ulica_1
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_13 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } } date > 2028.11.10 date < 2028.11.25 }
 	mean_time_to_happen = { days = 2 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_zw2_13  }
@@ -324,7 +324,7 @@ country_event = {
 	id = zw2.14
 	title = zw2.14.t
 	desc = zw2.14.d
-	picture = GFX_pl2027_ev081_kibice_4
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_14 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_tlum } set_country_flag = PL2027_ev_zw2_14  }
@@ -349,7 +349,7 @@ country_event = {
 	id = zw2.15
 	title = zw2.15.t
 	desc = zw2.15.d
-	picture = GFX_pl2027_ev081_front_3
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_15 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 200 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_15  }
@@ -374,7 +374,7 @@ country_event = {
 	id = zw2.16
 	title = zw2.16.t
 	desc = zw2.16.d
-	picture = GFX_pl2027_ev081_miasto_3
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_16 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 168 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_16  }
@@ -399,7 +399,7 @@ country_event = {
 	id = zw2.17
 	title = zw2.17.t
 	desc = zw2.17.d
-	picture = GFX_pl2027_ev081_front_ros_4
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_17 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 240 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } set_country_flag = PL2027_ev_zw2_17  }
@@ -419,7 +419,7 @@ country_event = {
 	id = zw2.18
 	title = zw2.18.t
 	desc = zw2.18.d
-	picture = GFX_pl2027_ev081_kolej_4
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	trigger = { NOT = { has_global_flag = PL2027_prolog } NOT = { has_country_flag = PL2027_ev_zw2_18 } has_country_flag = PL2027_polska date > 2027.11.25 NOT = { has_game_rule = { rule = PL2027_CODZIENNOSC option = WYLACZONE } }  }
 	mean_time_to_happen = { days = 200 }
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } set_country_flag = PL2027_ev_zw2_18  }

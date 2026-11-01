@@ -5,7 +5,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = blr.10.t
 	desc = blr.10.d
-	picture = GFX_tfe_mapa_wschod
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = blr.10.a
@@ -31,7 +31,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_teleks } }
 	title = blr.11.t
 	desc = blr.11.d
-	picture = GFX_pl2027_ev081_paliwo_3
+	picture = GFX_pl2027_bgfull_1_a2_old__67253de024
 	is_triggered_only = yes
 	option = {
 		name = blr.11.a
@@ -51,7 +51,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_alarm } }
 	title = blr.12.t
 	desc = blr.12.d
-	picture = GFX_pl2027_ev081_granica_0
+	picture = GFX_pl2027_bgfull_deistvia_AR1__d9eed68373
 	is_triggered_only = yes
 	option = {
 		name = blr.12.a
@@ -70,7 +70,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = blr.13.t
 	desc = blr.13.d
-	picture = GFX_tfe_mapa_wschod
+	picture = GFX_pl2027_bgfull_AR72n__d98ad49414
 	is_triggered_only = yes
 	option = {
 		name = blr.13.a
@@ -94,7 +94,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_raport } }
 	title = blr.14.t
 	desc = blr.14.d
-	picture = GFX_tfe_mapa_kolej
+	picture = GFX_pl2027_bgfull_deistvia_AT_DOP_1__d648dfa29e
 	is_triggered_only = yes
 	option = {
 		name = blr.14.a

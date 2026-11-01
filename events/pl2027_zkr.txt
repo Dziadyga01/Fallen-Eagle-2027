@@ -5,7 +5,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.1.t
 	desc = zkr.1.d
-	picture = GFX_pl2027_ev081_zakon_2
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.1.a
@@ -30,7 +30,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.4.t
 	desc = zkr.4.d
-	picture = GFX_pl2027_ev081_zakon_0
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.4.a
@@ -43,7 +43,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.2.t
 	desc = zkr.2.d
-	picture = GFX_pl2027_ev081_zakon_0
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.2.a
@@ -55,7 +55,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
 	title = zkr.3.t
 	desc = zkr.3.d
-	picture = GFX_pl2027_ev081_front_ros_0
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.3.a
@@ -74,7 +74,7 @@ country_event = {
 	id = zkr.10
 	title = zkr.10.t
 	desc = zkr.10.d
-	picture = GFX_pl2027_ev081_rosja_3
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front }
 		set_country_flag = ZKR_kryzys_rosyjski
@@ -112,7 +112,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.30.t
 	desc = zkr.30.d
-	picture = GFX_pl2027_ev081_rosja_3
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.30.a
@@ -132,7 +132,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.31.t
 	desc = zkr.31.d
-	picture = GFX_pl2027_ev081_narada_3
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.31.a
@@ -144,7 +144,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.32.t
 	desc = zkr.32.d
-	picture = GFX_pl2027_ev081_narada_5
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.32.a
@@ -156,7 +156,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.35.t
 	desc = zkr.35.d
-	picture = GFX_pl2027_ev081_zakon_3
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.35.a
@@ -182,7 +182,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.41.t
 	desc = zkr.41.d
-	picture = GFX_pl2027_ev081_rosja_2
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.41.a
@@ -197,7 +197,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.50.t
 	desc = zkr.50.d
-	picture = GFX_pl2027_ev081_pokoj_4
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.50.a
@@ -209,7 +209,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.52.t
 	desc = zkr.52.d
-	picture = GFX_pl2027_ev081_rosja_2
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.52.a
@@ -227,7 +227,7 @@ country_event = {
 	id = zkr.60
 	title = zkr.60.t
 	desc = zkr.60.d
-	picture = GFX_pl2027_ev081_rosja_0
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio }
 		if = { limit = { is_subject_of = ROS } ROS = { set_autonomy = { target = ROOT autonomous_state = autonomy_free } } }
@@ -266,7 +266,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.61.t
 	desc = zkr.61.d
-	picture = GFX_pl2027_ev081_rosja_2
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.61.a
@@ -278,7 +278,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
 	title = zkr.70.t
 	desc = zkr.70.d
-	picture = GFX_pl2027_ev081_zakon_2
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.70.a
@@ -290,7 +290,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.71.t
 	desc = zkr.71.d
-	picture = GFX_pl2027_ev081_polityka_3
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.71.a
@@ -302,7 +302,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_front } }
 	title = zkr.75.t
 	desc = zkr.75.d
-	picture = GFX_pl2027_ev081_rosja_2
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.75.a
@@ -318,7 +318,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.76.t
 	desc = zkr.76.d
-	picture = GFX_pl2027_ev081_zakon_4
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.76.a
@@ -335,7 +335,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.80.t
 	desc = zkr.80.d
-	picture = GFX_pl2027_ev081_krolewiec_0
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.80.a
@@ -351,7 +351,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_radio } }
 	title = zkr.81.t
 	desc = zkr.81.d
-	picture = GFX_pl2027_ev081_zakon_0_news
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	major = yes
 	is_triggered_only = yes
 	option = {
@@ -364,7 +364,7 @@ country_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
 	title = zkr.90.t
 	desc = zkr.90.d
-	picture = GFX_pl2027_ev081_zakon_2
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	is_triggered_only = yes
 	option = {
 		name = zkr.90.a
@@ -382,7 +382,7 @@ news_event = {
 	immediate = { if = { limit = { is_ai = no } scoped_sound_effect = pl2027_ev_dzwon } }
 	title = zkr.91.t
 	desc = zkr.91.d
-	picture = GFX_pl2027_ev081_zakon_0_news
+	picture = GFX_pl2027_bgfull_1_a2__c4a04b7195
 	major = yes
 	is_triggered_only = yes
 	option = {
